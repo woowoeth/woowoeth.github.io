@@ -1,0 +1,62 @@
+name: seo
+# Keeps the crawlable layer in step with the site: canonical/OG/JSON-LD, the static
+# item pages, sitemap.xml, robots.txt, llms.txt and llms-full.txt. The generator only
+# writes files whose bytes actually changed, so a no-op run makes no commit.
+on:
+  push:
+  schedule:
+    - cron: "40 3 * * *"
+  workflow_dispatch:
+concurrency:
+  group: seo-${{ github.ref }}
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  seo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Build SEO/GEO artefacts
+        run: python seo/build_seo.py
+      - name: Refuse to publish a broken page
+        run: |
+          # A merge marker or a second canonical in a committed page is worse than a
+          # stale one, so fail the run before it can be pushed.
+          if grep -rInE '^(<{7}|={7}|>{7}) ' --include='*.html' . ; then
+            echo "::error::merge-conflict markers in HTML"; exit 1
+          fi
+          for f in $(git ls-files '*.html'); do
+            n=$(grep -o 'rel="canonical"' "$f" | wc -l)
+            if [ "$n" -gt 1 ]; then echo "::error::$f has $n canonical tags"; exit 1; fi
+          done
+          echo "html looks sane"
+      - name: Commit if anything changed
+        run: |
+          git config user.name "ourword-ai"
+          git config user.email "ops@ourword.ai"
+          git add -A
+          if git diff --cached --quiet; then echo "seo unchanged"; exit 0; fi
+          git commit -m "seo: refresh crawlable layer"
+          # Never --autostash here. An autostash pop that conflicts writes merge markers
+          # straight into index.html and they get committed; that happened once already
+          # and rendered ">>>>>>> Stashed changes" above the fold. Rebase, and if the
+          # rebase cannot apply cleanly, abort and rebuild from the new upstream instead.
+          for i in $(seq 1 6); do
+            git fetch -q origin "${GITHUB_REF_NAME}"
+            if git rebase "origin/${GITHUB_REF_NAME}"; then
+              if git push; then echo pushed; exit 0; fi
+            else
+              git rebase --abort || true
+              git reset --hard "origin/${GITHUB_REF_NAME}"
+              python seo/build_seo.py
+              git add -A
+              git diff --cached --quiet && { echo "seo unchanged after rebuild"; exit 0; }
+              git commit -m "seo: refresh crawlable layer (rebuilt on new upstream)"
+            fi
+            echo "retry $i"; sleep $(( (RANDOM % 5) + 3 ))
+          done
+          echo "::error::seo push failed"; exit 1
