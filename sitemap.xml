@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://woowoeth.github.io/</loc></url>
-  <url><loc>https://woowoeth.github.io/pixelpad/</loc></url>
-  <url><loc>https://woowoeth.github.io/zouni/</loc></url>
-  <url><loc>https://woowoeth.github.io/skill-store/</loc></url>
+  <url><loc>https://ourword.ai/</loc></url>
+  <url><loc>https://ourword.ai/pixelpad/</loc></url>
+  <url><loc>https://ourword.ai/zouni/</loc></url>
+  <url><loc>https://ourword.ai/skill-store/</loc></url>
+<url><loc>https://ourword.ai/humanworld/</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
 </urlset>

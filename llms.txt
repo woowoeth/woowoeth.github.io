@@ -4,9 +4,9 @@
 
 ## 项目
 
-- [像素图鉴 PIXELDEX](https://woowoeth.github.io/pixelpad/)：输入一个中文或英文词，当场生成一张 16×16 像素图并可导出 PNG。收录 45 枚逐格手绘图样；词中含收录字词时取最靠后的最长匹配（「深夜加班」取「加班」画电脑）；都不匹配时按字形哈希生成一枚印记，界面会明确标注该图案不描述词义。源码：https://github.com/woowoeth/pixelpad
-- [走你](https://woowoeth.github.io/zouni/)：输入目的地、天数与预算，生成一份可直接照着走的旅行攻略。源码：https://github.com/woowoeth/zouni
-- [Skill Store](https://woowoeth.github.io/skill-store/)：每天上新的 Agent Skill 精选目录。源码：https://github.com/woowoeth/skill-store
+- [像素图鉴 PIXELDEX](https://ourword.ai/pixelpad/)：输入一个中文或英文词，当场生成一张 16×16 像素图并可导出 PNG。收录 45 枚逐格手绘图样；词中含收录字词时取最靠后的最长匹配（「深夜加班」取「加班」画电脑）；都不匹配时按字形哈希生成一枚印记，界面会明确标注该图案不描述词义。源码：https://github.com/woowoeth/pixelpad
+- [走你](https://ourword.ai/zouni/)：输入目的地、天数与预算，生成一份可直接照着走的旅行攻略。源码：https://github.com/woowoeth/zouni
+- [Skill Store](https://ourword.ai/skill-store/)：每天上新的 Agent Skill 精选目录。源码：https://github.com/woowoeth/skill-store
 
 ## 说明
 

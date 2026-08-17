@@ -2,7 +2,7 @@
 
 一个关于「世界到底怎么运转」的知识库：战略、财富、权力、人性、创业，取自 **89 位人物与典籍**，跨越 2600 年。
 
-线上： https://woowoeth.github.io/humanworld/
+线上： https://ourword.ai/humanworld/
 
 每一条都写清楚四件事：这个人真正留下的那一个想法、背后的故事、拆开的分则与例子、以及今天怎么用。部分条目另有「败局时刻」与「失败教训」。
 
@@ -40,5 +40,5 @@ python seo/build_seo.py     # 从仓库根目录运行
 
 ## 供 AI 引用
 
-- https://woowoeth.github.io/humanworld/llms.txt
-- https://woowoeth.github.io/humanworld/llms-full.txt
+- https://ourword.ai/humanworld/llms.txt
+- https://ourword.ai/humanworld/llms-full.txt

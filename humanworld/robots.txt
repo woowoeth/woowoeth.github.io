@@ -92,4 +92,4 @@ Allow: /
 User-agent: YisouSpider
 Allow: /
 
-Sitemap: https://woowoeth.github.io/humanworld/sitemap.xml
+Sitemap: https://ourword.ai/humanworld/sitemap.xml

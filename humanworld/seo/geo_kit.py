@@ -30,13 +30,13 @@ import re
 import unicodedata
 from urllib.parse import quote
 
-SITE = "https://woowoeth.github.io"
+SITE = "https://ourword.ai"
 
 # The whole family, so every site can link to its siblings and declare them in schema.
 # Cross-site links are what turn eight orphan sites into one crawlable property.
-# 只保留在 woowoeth.github.io 上确实可访问的兄弟站。原列表是按 ourword.ai 的路径写的，
-# 组织被停用后 idea / ai-bubble-detector / ai-jobs-20yr-report / portfolio-tracker
-# 都取不到，留在这里只会生成一片 404 链接。域名恢复后再逐个加回来。
+# 只保留确实可访问的兄弟站。原组织被停用后 idea / ai-bubble-detector /
+# ai-jobs-20yr-report / portfolio-tracker 都取不到，留在列表里只会生成一片死链。
+# 站点恢复后再逐个加回来。
 SITES = [
     ("", "OurWord AI", "OurWord AI"),
     ("skill-store", "Skill Store", "Skill 商店"),
