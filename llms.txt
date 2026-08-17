@@ -43,7 +43,9 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 ## The rest of OurWord AI
 
 - [OurWord AI / OurWord AI 导航](https://ourword.ai/site/)
+- [Idea / 灵感看板](https://ourword.ai/idea/)
 - [Skill Store / Skill 商店](https://ourword.ai/skill-store/)
+- [AI Bubble Monitor / AI 泡沫检测仪](https://ourword.ai/ai-bubble/)
 - [PixelPad / 像素板](https://ourword.ai/pixelpad/)
 - [Zouni / 走你](https://ourword.ai/zouni/)
 

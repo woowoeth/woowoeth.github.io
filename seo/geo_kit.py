@@ -34,13 +34,15 @@ SITE = "https://ourword.ai"
 
 # The whole family, so every site can link to its siblings and declare them in schema.
 # Cross-site links are what turn eight orphan sites into one crawlable property.
-# 只保留确实可访问的兄弟站。原组织被停用后 idea / ai-bubble-detector /
-# ai-jobs-20yr-report / portfolio-tracker 都取不到，留在列表里只会生成一片死链。
-# 站点恢复后再逐个加回来。
+# 只保留确实可访问的兄弟站。原组织被停用时这里删掉了一批取不到的站点；
+# idea 与 ai-bubble（泡沫检测仪，迁址后的新路径）已恢复，加回。
+# 仍不可访问、故不列入：ai-jobs-20yr-report、portfolio-tracker。
 SITES = [
     ("", "Human World", "人类世界生存法则"),
     ("site", "OurWord AI", "OurWord AI 导航"),
+    ("idea", "Idea", "灵感看板"),
     ("skill-store", "Skill Store", "Skill 商店"),
+    ("ai-bubble", "AI Bubble Monitor", "AI 泡沫检测仪"),
     ("pixelpad", "PixelPad", "像素板"),
     ("zouni", "Zouni", "走你"),
 ]
@@ -425,7 +427,7 @@ def org_ld():
     return {"@context": "https://schema.org", "@type": "Organization", "name": "OurWord AI",
             "alternateName": "用 AI 触摸这个世界", "url": SITE + "/",
             "logo": SITE + "/og.png",
-            "sameAs": ["https://github.com/ourword-ai"]
+            "sameAs": ["https://github.com/woowoeth"]
                       + [SITE + "/" + p + "/" for p, _e, _c in SITES if p]}
 
 
