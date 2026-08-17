@@ -41,9 +41,9 @@ SITES = [
     ("", "Human World", "人类世界生存法则"),
     ("site", "OurWord AI", "OurWord AI 导航"),
     ("idea", "Idea", "灵感看板"),
-    ("skill-store", "Skill Store", "Skill 商店"),
-    ("ai-bubble", "AI Bubble Monitor", "AI 泡沫检测仪"),
-    ("pixelpad", "PixelPad", "像素板"),
+    ("skill", "Skill Store", "Skill 商店"),
+    ("ai", "AI Bubble Monitor", "AI 泡沫检测仪"),
+    ("pixel", "PixelPad", "像素板"),
     ("zouni", "Zouni", "走你"),
 ]
 
@@ -769,8 +769,16 @@ def page_404(site, hubs):
                if hubline else "", sibling_links(site, zh)))
     # 历史地址救援：站点先后住过 ourword.ai/HumanWorld/ 和 ourword.ai/humanworld/，
     # 现在在根。旧链接（含 89 个条目页）会打到这里，前缀剥掉后原样转到新位置。
-    rescue = ("<script>(function(){var p=location.pathname,m=p.match(/^\\/(?:HumanWorld|humanworld)(\\/.*)?$/);"
-              "if(m){location.replace((m[1]||'/')+location.search+location.hash);}})();</script>")
+    # 历史地址救援：①站点先后住过 ourword.ai/HumanWorld/ 与 /humanworld/，现在在根；
+    # ②2026-08-17 仓库统一改成单词命名，老路径在这里一次性映射到新路径。
+    # 未知路径不跳转，仍然看到这张 404 页。
+    rescue = ("<script>(function(){var p=location.pathname,"
+              "m=p.match(/^\\/(?:HumanWorld|humanworld)(\\/.*)?$/);"
+              "if(m){location.replace((m[1]||'/')+location.search+location.hash);return;}"
+              "var R={'ourword-site':'site','ai-bubble':'ai','skill-store':'skill','pixelpad':'pixel'},"
+              "s=p.match(/^\\/([^\\/]+)(\\/.*)?$/);"
+              "if(s&&R[s[1]]){location.replace('/'+R[s[1]]+(s[2]||'/')+location.search+location.hash);}"
+              "})();</script>")
     head = ('<meta name="robots" content="noindex,follow">'
             '<link rel="canonical" href="%s">%s' % (esc(site.url("404.html")), rescue))
     return _shell("zh-Hans" if zh else "en", title, head, body)
