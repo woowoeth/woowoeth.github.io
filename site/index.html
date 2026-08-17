@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#fafafa" media="(prefers-color-scheme:light)">
+<meta name="theme-color" content="#0d0d0d" media="(prefers-color-scheme:dark)">
+<link rel="canonical" href="https://ourword.ai/site/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ourword.ai/site/">
+<meta property="og:site_name" content="OurWord.ai">
+<meta property="og:title" content="OurWord.ai — 面向中文读者的小工具">
+<meta property="og:description" content="一个网页解决一件事，不用注册、不用配置，全部计算在你自己的浏览器里完成。">
+<meta property="og:image" content="https://ourword.ai/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"OurWord.ai","url":"https://ourword.ai/site/",
+"description":"面向中文读者的小工具。一个网页解决一件事，全部计算在浏览器里完成。",
+"inLanguage":"zh-CN","hasPart":[
+{"@type":"WebSite","name":"人类世界生存法则","url":"https://ourword.ai/","description":"89 位人物与典籍的生存智慧，跨越 2600 年"},
+{"@type":"SoftwareApplication","name":"像素图鉴 PIXELDEX","url":"https://ourword.ai/pixelpad/","applicationCategory":"DesignApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"输入一个词，画一张 16×16 像素图，可导出 PNG"},
+{"@type":"SoftwareApplication","name":"走你","url":"https://ourword.ai/zouni/","applicationCategory":"TravelApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"输入去哪儿、几天、多少预算，出一份能照着走的攻略"},
+{"@type":"WebSite","name":"Skill Store","url":"https://ourword.ai/skill-store/","description":"每天上新的 Agent Skill 精选店"}]}
+</script>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>OurWord.ai</title>
+<meta name="description" content="OurWord.ai 做面向中文读者的小工具。单文件、无依赖、打开就能用，全部计算在你的浏览器里完成。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%23fafafa'/%3E%3Crect x='2' y='2' width='5' height='5' fill='%230a0a0a'/%3E%3Crect x='9' y='9' width='5' height='5' fill='%230a0a0a'/%3E%3C/svg%3E">
+<style>
+:root{
+  color-scheme:light dark;
+  --ink:#0a0a0a; --ink-70:#404040; --ink-50:#666666; --ink-30:#b3b3b3;
+  --hairline:#e5e5e5; --surface:#ffffff; --bg:#fafafa; --tint:#f0f0f0; --plate:#ffffff;
+  --cta-fill:#0a0a0a; --cta-text:#ffffff;
+  --sp-1:4px; --sp-2:8px; --sp-3:12px; --sp-4:16px; --sp-5:24px; --sp-6:32px;
+  --fs-micro:10px; --fs-caption:11px; --fs-body:13px; --fs-strong:14px; --fs-heading:16px; --fs-display:20px;
+  --h-sm:28px; --h-md:36px; --h-lg:46px;
+  --r-block:8px; --r-card:16px;
+  --shadow-card:0 1px 2px rgba(10,10,10,.03),0 6px 20px rgba(10,10,10,.06);
+  --font:'Inter','Noto Sans CJK SC','PingFang SC','Hiragino Sans GB','Microsoft YaHei',system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);font-family:var(--font);
+  font-size:var(--fs-strong);line-height:1.65;-webkit-font-smoothing:antialiased}
+.caps{letter-spacing:.07em}
+.wrap{max-width:680px;margin:0 auto;padding:0 var(--sp-5)}
+
+header{border-bottom:1px solid var(--hairline)}
+.bar{display:flex;align-items:center;height:60px;gap:var(--sp-3)}
+.glyph{width:20px;height:20px;display:grid;grid-template:repeat(2,1fr)/repeat(2,1fr);flex:none;
+  border:1px solid var(--hairline)}
+.glyph i{display:block}
+.glyph i:nth-child(1),.glyph i:nth-child(4){background:var(--ink)}
+.bar h1{margin:0;font-size:var(--fs-heading);font-weight:700;line-height:1}
+
+.masthead{padding:var(--sp-6) 0 var(--sp-5)}
+.masthead p{margin:0;font-size:var(--fs-body);color:var(--ink-50);max-width:32em}
+
+.sechead{display:flex;align-items:baseline;justify-content:space-between;gap:var(--sp-4);
+  margin-bottom:var(--sp-4);padding-bottom:var(--sp-3);border-bottom:1px solid var(--hairline)}
+.sechead h2{margin:0;font-size:var(--fs-heading);font-weight:700}
+.sechead span{font-size:var(--fs-caption);color:var(--ink-50);font-weight:700;font-variant-numeric:tabular-nums}
+
+.index{background:var(--surface);border-radius:var(--r-card);box-shadow:var(--shadow-card);padding:var(--sp-4)}
+.item{display:flex;align-items:center;gap:var(--sp-4);padding:var(--sp-4);border-radius:var(--r-block);
+  text-decoration:none;color:inherit;transition:background .18s ease-out,transform .18s ease-out}
+.item+.item{margin-top:var(--sp-2)}
+.item:hover{background:var(--tint)}
+.item:active{transform:scale(.985)}
+.item:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+.item .ico{width:var(--h-md);height:var(--h-md);flex:none;border-radius:var(--r-block);
+  background:var(--plate);display:grid;place-items:center}
+.item .ico svg{display:block;width:28px;height:28px}
+.item .body{flex:1;min-width:0}
+.item h3{margin:0 0 2px;font-size:var(--fs-strong);font-weight:700}
+.item p{margin:0;font-size:var(--fs-body);color:var(--ink-50)}
+.item .go{flex:none;color:var(--ink-50);font-size:var(--fs-heading);line-height:1}
+.item:hover .go{color:var(--ink)}
+
+.aside{margin-top:var(--sp-5);font-size:var(--fs-body);color:var(--ink-50)}
+
+footer{border-top:1px solid var(--hairline);margin-top:var(--sp-6);padding:var(--sp-5) 0 var(--sp-6)}
+.foot{font-size:var(--fs-caption);color:var(--ink-50)}
+
+@media (prefers-color-scheme:dark){
+  :root{
+    --ink:#f2f2f2; --ink-70:#c4c4c4; --ink-50:#9a9a9a; --ink-30:#5a5a5a;
+    --hairline:#2a2a2a; --surface:#161616; --bg:#0d0d0d; --tint:#232323; --plate:#e6e6e6;
+    --cta-fill:#f2f2f2; --cta-text:#0d0d0d;
+    --shadow-card:0 0 0 1px var(--hairline);
+  }
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <span class="glyph" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+    <h1>OurWord.ai</h1>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="masthead">
+    <p>面向中文读者的小工具。一个网页解决一件事，不用注册、不用配置，全部计算在你自己的浏览器里完成。</p>
+  </div>
+
+  <div class="sechead">
+    <h2>索引</h2>
+    <span class="caps">4</span>
+  </div>
+
+  <nav class="index">
+    <a class="item" href="https://ourword.ai/">
+      <span class="ico" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" shape-rendering="crispEdges"><rect x="2" y="4" width="12" height="1" fill="#1E1B18"/><rect x="1" y="5" width="1" height="6" fill="#1E1B18"/><rect x="14" y="5" width="1" height="6" fill="#1E1B18"/><rect x="7" y="4" width="2" height="8" fill="#1E1B18"/><rect x="2" y="5" width="5" height="6" fill="#F2EDE4"/><rect x="9" y="5" width="5" height="6" fill="#F2EDE4"/><rect x="3" y="7" width="3" height="1" fill="#B33A32"/><rect x="10" y="7" width="3" height="1" fill="#B33A32"/><rect x="1" y="11" width="14" height="1" fill="#1E1B18"/></svg></span>
+      <span class="body">
+        <h3>人类世界生存法则</h3>
+        <p>89 位人物与典籍的生存智慧，跨越 2600 年</p>
+      </span>
+      <span class="go" aria-hidden="true">→</span>
+    </a>
+    <a class="item" href="https://ourword.ai/pixelpad/">
+      <span class="ico" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -1 16 16" shape-rendering="crispEdges"><rect x="2" y="2" width="12" height="1" fill="#0F2A38"/><rect x="1" y="3" width="1" height="1" fill="#0F2A38"/><rect x="2" y="3" width="2" height="1" fill="#B7FFF3"/><rect x="4" y="3" width="1" height="1" fill="#0F2A38"/><rect x="5" y="3" width="6" height="1" fill="#3FD6C8"/><rect x="11" y="3" width="1" height="1" fill="#0F2A38"/><rect x="12" y="3" width="2" height="1" fill="#1E8296"/><rect x="14" y="3" width="1" height="1" fill="#0F2A38"/><rect x="0" y="4" width="1" height="1" fill="#0F2A38"/><rect x="1" y="4" width="3" height="1" fill="#B7FFF3"/><rect x="4" y="4" width="1" height="1" fill="#0F2A38"/><rect x="5" y="4" width="6" height="1" fill="#3FD6C8"/><rect x="11" y="4" width="1" height="1" fill="#0F2A38"/><rect x="12" y="4" width="3" height="1" fill="#1E8296"/><rect x="15" y="4" width="1" height="1" fill="#0F2A38"/><rect x="1" y="5" width="1" height="1" fill="#0F2A38"/><rect x="2" y="5" width="2" height="1" fill="#B7FFF3"/><rect x="4" y="5" width="8" height="1" fill="#3FD6C8"/><rect x="12" y="5" width="2" height="1" fill="#1E8296"/><rect x="14" y="5" width="1" height="1" fill="#0F2A38"/><rect x="2" y="6" width="1" height="1" fill="#0F2A38"/><rect x="3" y="6" width="1" height="1" fill="#B7FFF3"/><rect x="4" y="6" width="8" height="1" fill="#3FD6C8"/><rect x="12" y="6" width="1" height="1" fill="#1E8296"/><rect x="13" y="6" width="1" height="1" fill="#0F2A38"/><rect x="3" y="7" width="1" height="1" fill="#0F2A38"/><rect x="4" y="7" width="1" height="1" fill="#B7FFF3"/><rect x="5" y="7" width="6" height="1" fill="#3FD6C8"/><rect x="11" y="7" width="1" height="1" fill="#1E8296"/><rect x="12" y="7" width="1" height="1" fill="#0F2A38"/><rect x="4" y="8" width="1" height="1" fill="#0F2A38"/><rect x="5" y="8" width="1" height="1" fill="#B7FFF3"/><rect x="6" y="8" width="4" height="1" fill="#3FD6C8"/><rect x="10" y="8" width="1" height="1" fill="#1E8296"/><rect x="11" y="8" width="1" height="1" fill="#0F2A38"/><rect x="5" y="9" width="1" height="1" fill="#0F2A38"/><rect x="6" y="9" width="1" height="1" fill="#B7FFF3"/><rect x="7" y="9" width="2" height="1" fill="#3FD6C8"/><rect x="9" y="9" width="1" height="1" fill="#1E8296"/><rect x="10" y="9" width="1" height="1" fill="#0F2A38"/><rect x="6" y="10" width="1" height="1" fill="#0F2A38"/><rect x="7" y="10" width="1" height="1" fill="#B7FFF3"/><rect x="8" y="10" width="1" height="1" fill="#1E8296"/><rect x="9" y="10" width="1" height="1" fill="#0F2A38"/><rect x="7" y="11" width="2" height="1" fill="#0F2A38"/></svg></span>
+      <span class="body">
+        <h3>像素图鉴 PIXELDEX</h3>
+        <p>输入一个词，画一张 16×16 像素图，可导出 PNG</p>
+      </span>
+      <span class="go" aria-hidden="true">→</span>
+    </a>
+    <a class="item" href="https://ourword.ai/zouni/">
+      <span class="ico" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 1 16 16" shape-rendering="crispEdges"><rect x="7" y="4" width="2" height="1" fill="#1E2A34"/><rect x="6" y="5" width="1" height="1" fill="#1E2A34"/><rect x="7" y="5" width="2" height="1" fill="#EDE9DC"/><rect x="9" y="5" width="1" height="1" fill="#1E2A34"/><rect x="5" y="6" width="1" height="1" fill="#1E2A34"/><rect x="6" y="6" width="4" height="1" fill="#EDE9DC"/><rect x="10" y="6" width="1" height="1" fill="#1E2A34"/><rect x="4" y="7" width="1" height="1" fill="#1E2A34"/><rect x="5" y="7" width="1" height="1" fill="#5E7A8C"/><rect x="6" y="7" width="4" height="1" fill="#EDE9DC"/><rect x="10" y="7" width="1" height="1" fill="#3A5262"/><rect x="11" y="7" width="1" height="1" fill="#1E2A34"/><rect x="3" y="8" width="1" height="1" fill="#1E2A34"/><rect x="4" y="8" width="3" height="1" fill="#5E7A8C"/><rect x="7" y="8" width="2" height="1" fill="#EDE9DC"/><rect x="9" y="8" width="3" height="1" fill="#3A5262"/><rect x="12" y="8" width="1" height="1" fill="#1E2A34"/><rect x="2" y="9" width="1" height="1" fill="#1E2A34"/><rect x="3" y="9" width="6" height="1" fill="#5E7A8C"/><rect x="9" y="9" width="4" height="1" fill="#3A5262"/><rect x="13" y="9" width="1" height="1" fill="#1E2A34"/><rect x="1" y="10" width="1" height="1" fill="#1E2A34"/><rect x="2" y="10" width="7" height="1" fill="#5E7A8C"/><rect x="9" y="10" width="5" height="1" fill="#3A5262"/><rect x="14" y="10" width="1" height="1" fill="#1E2A34"/><rect x="0" y="11" width="1" height="1" fill="#1E2A34"/><rect x="1" y="11" width="8" height="1" fill="#5E7A8C"/><rect x="9" y="11" width="6" height="1" fill="#3A5262"/><rect x="15" y="11" width="1" height="1" fill="#1E2A34"/><rect x="0" y="12" width="1" height="1" fill="#1E2A34"/><rect x="1" y="12" width="8" height="1" fill="#5E7A8C"/><rect x="9" y="12" width="6" height="1" fill="#3A5262"/><rect x="15" y="12" width="1" height="1" fill="#1E2A34"/><rect x="0" y="13" width="16" height="1" fill="#1E2A34"/></svg></span>
+      <span class="body">
+        <h3>走你</h3>
+        <p>输入去哪儿、几天、多少预算，出一份能照着走的攻略</p>
+      </span>
+      <span class="go" aria-hidden="true">→</span>
+    </a>
+    <a class="item" href="https://ourword.ai/skill-store/">
+      <span class="ico" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="1 1 14 14" shape-rendering="crispEdges"><rect x="1" y="3" width="2" height="1" fill="#4A3208"/><rect x="7" y="3" width="2" height="1" fill="#4A3208"/><rect x="13" y="3" width="2" height="1" fill="#4A3208"/><rect x="1" y="4" width="1" height="1" fill="#4A3208"/><rect x="2" y="4" width="1" height="1" fill="#FFC94D"/><rect x="3" y="4" width="1" height="1" fill="#4A3208"/><rect x="6" y="4" width="1" height="1" fill="#4A3208"/><rect x="7" y="4" width="2" height="1" fill="#FFC94D"/><rect x="9" y="4" width="1" height="1" fill="#4A3208"/><rect x="12" y="4" width="1" height="1" fill="#4A3208"/><rect x="13" y="4" width="1" height="1" fill="#FFC94D"/><rect x="14" y="4" width="1" height="1" fill="#4A3208"/><rect x="1" y="5" width="1" height="1" fill="#4A3208"/><rect x="2" y="5" width="2" height="1" fill="#FFC94D"/><rect x="4" y="5" width="1" height="1" fill="#4A3208"/><rect x="6" y="5" width="1" height="1" fill="#4A3208"/><rect x="7" y="5" width="2" height="1" fill="#FFC94D"/><rect x="9" y="5" width="1" height="1" fill="#4A3208"/><rect x="11" y="5" width="1" height="1" fill="#4A3208"/><rect x="12" y="5" width="2" height="1" fill="#FFC94D"/><rect x="14" y="5" width="1" height="1" fill="#4A3208"/><rect x="1" y="6" width="1" height="1" fill="#4A3208"/><rect x="2" y="6" width="3" height="1" fill="#FFC94D"/><rect x="5" y="6" width="2" height="1" fill="#4A3208"/><rect x="7" y="6" width="2" height="1" fill="#FFC94D"/><rect x="9" y="6" width="2" height="1" fill="#4A3208"/><rect x="11" y="6" width="3" height="1" fill="#FFC94D"/><rect x="14" y="6" width="1" height="1" fill="#4A3208"/><rect x="1" y="7" width="1" height="1" fill="#4A3208"/><rect x="2" y="7" width="12" height="1" fill="#FFC94D"/><rect x="14" y="7" width="1" height="1" fill="#4A3208"/><rect x="1" y="8" width="1" height="1" fill="#4A3208"/><rect x="2" y="8" width="2" height="1" fill="#FFC94D"/><rect x="4" y="8" width="1" height="1" fill="#FF7A9C"/><rect x="5" y="8" width="2" height="1" fill="#FFC94D"/><rect x="7" y="8" width="2" height="1" fill="#FF7A9C"/><rect x="9" y="8" width="2" height="1" fill="#FFC94D"/><rect x="11" y="8" width="1" height="1" fill="#FF7A9C"/><rect x="12" y="8" width="2" height="1" fill="#FFC94D"/><rect x="14" y="8" width="1" height="1" fill="#4A3208"/><rect x="1" y="9" width="1" height="1" fill="#4A3208"/><rect x="2" y="9" width="12" height="1" fill="#FFC94D"/><rect x="14" y="9" width="1" height="1" fill="#4A3208"/><rect x="1" y="10" width="1" height="1" fill="#4A3208"/><rect x="2" y="10" width="12" height="1" fill="#FFE9A8"/><rect x="14" y="10" width="1" height="1" fill="#4A3208"/><rect x="1" y="11" width="1" height="1" fill="#4A3208"/><rect x="2" y="11" width="12" height="1" fill="#D89A16"/><rect x="14" y="11" width="1" height="1" fill="#4A3208"/><rect x="1" y="12" width="14" height="1" fill="#4A3208"/></svg></span>
+      <span class="body">
+        <h3>Skill Store</h3>
+        <p>每天上新的 Agent Skill 精选店</p>
+      </span>
+      <span class="go" aria-hidden="true">→</span>
+    </a>
+  </nav>
+
+  <p class="aside">还在恢复中的项目，回来一个这里就多一行。</p>
+</main>
+
+<footer>
+  <div class="wrap foot">OurWord.ai · 全部在浏览器里完成，不上传任何东西</div>
+</footer>
+
+</body>
+</html>
