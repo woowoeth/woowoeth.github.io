@@ -347,6 +347,7 @@ def patch_index(path, site, items, zh=False, extra_ld=None, hubs=None):
         ld.append(itemlist_ld(site, items, zh))
     ld += (extra_ld or [])
     head = head + head_block(site, site.url(), title, desc, zh=zh, ld=ld)
+    head = _ensure_ga(head, src)
     src = src[:m.start(2)] + head + src[m.end(2):]
     src = _inject_body(src, noscript_index(site, items, zh=zh, hubs=hubs))
     return _write(path, _assert_sane(path, src))
@@ -367,6 +368,7 @@ def patch_page(path, site, rel, title, desc, zh=None, ld=None, h1=""):
     head = _strip_legacy(m.group(2)) + head_block(
         site, url, title, desc, zh=zh,
         ld=(ld if ld is not None else [org_ld(), website_ld(site, zh)]))
+    head = _ensure_ga(head, src)
     src = src[:m.start(2)] + head + src[m.end(2):]
     if "<h1" not in src:
         src = _inject_body(src, _BODY_MARK[0] +
@@ -562,12 +564,37 @@ _PAGE_CSS = (
 )
 
 
+# Google Analytics 4. One property covers every OurWord site; reports split by hostname.
+# It MUST live here, in the generator, not be injected into the output afterwards:
+# every generated page is rewritten from scratch on each run, so an injected snippet
+# survives exactly until the next build. Set OURWORD_GA_ID="" to build without it.
+GA_ID = os.environ.get("OURWORD_GA_ID", "G-DHD3WEXQ8T")
+
+
+def ga_block(ga_id=None):
+    """The gtag.js pair, or "" when no measurement id is configured."""
+    gid = GA_ID if ga_id is None else ga_id
+    if not gid:
+        return ""
+    return ('<script async src="https://www.googletagmanager.com/gtag/js?id=%s"></script>\n'
+            "<script>window.dataLayer=window.dataLayer||[];"
+            "function gtag(){dataLayer.push(arguments);}"
+            'gtag("js",new Date());gtag("config","%s");</script>' % (gid, gid))
+
+
+def _ensure_ga(head, src):
+    """Hand-built pages keep their own <head>; add gtag only if it is not already there."""
+    if GA_ID and GA_ID not in src:
+        return head + "\n" + ga_block()
+    return head
+
+
 def _shell(lang, title, headhtml, body):
     return ("<!DOCTYPE html>\n<html lang=\"%s\">\n<head>\n<meta charset=\"utf-8\">\n"
             "<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\n"
-            "<title>%s</title>\n%s\n<style>%s</style>\n</head>\n<body>\n<main>\n%s\n"
+            "<title>%s</title>\n%s\n%s\n<style>%s</style>\n</head>\n<body>\n<main>\n%s\n"
             "</main>\n</body>\n</html>\n"
-            % (lang, esc(title), headhtml, _PAGE_CSS, body))
+            % (lang, esc(title), headhtml, ga_block(), _PAGE_CSS, body))
 
 
 def _sib_links(site, items, idx, zh, zh_url=False):
