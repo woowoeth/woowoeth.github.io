@@ -182,11 +182,38 @@ def load_items():
     return items
 
 
+
+def patch_static_stats(entries, path="index.html"):
+    """回写首页 header 里的静态统计数字。
+
+    `<b id="st">` 和 `<b id="cat-count">` 在页面加载后会被 JS 填成真实值，但不跑
+    JS 的抓取方（以及所有 AI 回答引擎）看到的是 HTML 里那个写死的数。那个数一旦
+    忘了改就会长期偏低——上线时它停在 62，实际已有 95 条。这里每次构建按 D 数组
+    重新写一遍，让它不可能再过期。
+    """
+    n = len(entries)
+    cats = len({e.get("c") for e in entries if e.get("c")})
+    src = open(path, encoding="utf-8").read()
+    out, hits = src, {}
+    for key, val in (("st", n), ("cat-count", cats)):
+        pat = re.compile(r'(<b id="%s">)([^<]*)(</b>)' % re.escape(key))
+        m = pat.search(out)
+        if not m:
+            raise SystemExit("patch_static_stats: 找不到 <b id=\"%s\">" % key)
+        hits[key] = "%s->%s" % (m.group(2) or "空", val)
+        out = pat.sub(lambda mm: "%s%d%s" % (mm.group(1), val, mm.group(3)), out, count=1)
+    if out != src:
+        open(path, "w", encoding="utf-8").write(out)
+    return hits
+
+
 def main():
     items = load_items()
     rep = G.build(SITE, items, root=".", today=datetime.date.today().isoformat(),
                   how_built=HOW, cite_as=CITE,
                   extra_sitemaps=[])
+    # G.build 会重写 index.html 的 GEO 区块，所以静态统计数字放在它之后回写。
+    rep["stats"] = patch_static_stats(load_array())
     print("HumanWorld seo/geo:", json.dumps(rep, ensure_ascii=False))
     return rep
 
