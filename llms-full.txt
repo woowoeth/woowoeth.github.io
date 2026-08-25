@@ -1,5 +1,5 @@
-# Human World — 70+ people and books on how the world actually works, across 2,600 years
-# 人类世界生存法则 — 70+ 个人物与典籍的生存智慧，跨越 2600 年
+# Human World — 95 people and books on how the world actually works, across 2,600 years
+# 人类世界生存法则 — 95 个人物与典籍的生存智慧，跨越 2600 年
 # https://ourword.ai/
 # Full corpus, plain text. 95 entrys.
 

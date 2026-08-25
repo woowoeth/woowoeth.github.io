@@ -18,16 +18,16 @@ import geo_kit as G
 SITE = G.Site(
     path="",
     name="Human World", name_zh="人类世界生存法则",
-    tagline="70+ people and books on how the world actually works, across 2,600 years",
-    tagline_zh="70+ 个人物与典籍的生存智慧，跨越 2600 年",
+    tagline="%(n)d people and books on how the world actually works, across 2,600 years",
+    tagline_zh="%(n)d 个人物与典籍的生存智慧，跨越 2600 年",
     description=(
         "A knowledge base of the durable rules people have worked out about strategy, money, "
-        "power, human nature and building things — drawn from more than seventy figures and "
+        "power, human nature and building things — drawn from %(n)d figures and "
         "classic texts across 2,600 years. Each entry gives the one idea that person is "
         "actually remembered for, the story behind it, the sub-principles with worked "
         "examples, and how it applies today."),
     description_zh=(
-        "一个关于「世界到底怎么运转」的知识库：战略、财富、权力、人性、创业，取自 70 多位"
+        "一个关于「世界到底怎么运转」的知识库：战略、财富、权力、人性、创业，取自 %(n)d 位"
         "人物与典籍，跨越 2600 年。每一条都写清楚这个人真正留下的那一个想法、背后的故事、"
         "拆开的分则与例子，以及今天怎么用。"),
     keywords=("生存智慧, 战略思维, 孙子兵法, 人性, 财富 投资 原则, 权力 治理, 创业 方法论, "
@@ -183,6 +183,21 @@ def load_items():
 
 
 
+
+def fill_counts(site, n):
+    """SITE 的文案里带 %(n)d 占位符，构建时按 D 数组真实条数填。
+
+    这些字符串原本写死「70+ / 70 多位 / seventy」，条目涨到 95 之后就一直是旧数，
+    而它们会进 meta description、og:title、JSON-LD 和 llms.txt——正是 AI 回答引擎
+    读得最多的地方。和 patch_static_stats 同一个理由：让它不可能再过期。
+    """
+    for attr in ("tagline", "tagline_zh", "description", "description_zh"):
+        v = getattr(site, attr, "")
+        if "%(n)d" in v:
+            setattr(site, attr, v % {"n": n})
+    return site
+
+
 def patch_static_stats(entries, path="index.html"):
     """回写首页 header 里的静态统计数字。
 
@@ -209,6 +224,7 @@ def patch_static_stats(entries, path="index.html"):
 
 def main():
     items = load_items()
+    fill_counts(SITE, len(items))
     rep = G.build(SITE, items, root=".", today=datetime.date.today().isoformat(),
                   how_built=HOW, cite_as=CITE,
                   extra_sitemaps=[])
