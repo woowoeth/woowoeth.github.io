@@ -10,18 +10,17 @@ def main():
     if "hw-home-lockup.css" not in s:
         s = s.replace(
             "</title>",
-            '</title>\n<link rel="stylesheet" href="/assets/hw-home-lockup.css?v=1">',
+            '</title>\n<link rel="stylesheet" href="/assets/hw-home-lockup.css?v=2">',
             1,
         )
         print("linked hw-home-lockup.css")
     else:
-        s = re.sub(
-            r"hw-home-lockup\.css\?v=\d+",
-            "hw-home-lockup.css?v=1",
-            s,
-            count=1,
-        )
-        print("lockup css already linked")
+        s = re.sub(r"hw-home-lockup\.css\?v=\d+", "hw-home-lockup.css?v=2", s, count=1)
+        print("bumped lockup css v=2")
+    s = s.replace(
+        '<img class="brand-logo" src="/favicon.svg" width="44" height="44"',
+        '<img class="brand-logo" src="/favicon.svg" width="36" height="36"',
+    )
     s = s.replace('href="favicon.svg"', 'href="/favicon.svg"')
     s = s.replace('href="favicon-32.png"', 'href="/favicon-32.png"')
     idx.write_text(s, encoding="utf-8")

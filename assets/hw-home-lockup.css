@@ -1,4 +1,48 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@700&display=swap");
+
+/* Match entry-page .mast / .brand exactly */
+.wrap{
+  padding-left:max(24px, env(safe-area-inset-left)) !important;
+  padding-right:max(24px, env(safe-area-inset-right)) !important;
+}
+header.hd{
+  position:relative !important;
+  top:auto !important;
+  z-index:50;
+  margin:0 0 22px !important;
+  padding:28px 0 16px !important;
+  background:transparent !important;
+  -webkit-backdrop-filter:none !important;
+  backdrop-filter:none !important;
+}
+header.hd::after{display:none !important;}
+.brand-lockup,
+header.hd .brand{
+  display:flex !important;
+  flex-direction:row !important;
+  flex-wrap:nowrap !important;
+  align-items:center !important;
+  gap:12px !important;
+  margin:0 0 14px !important;
+  color:inherit !important;
+  text-decoration:none !important;
+  text-transform:none !important;
+  letter-spacing:0 !important;
+  font-size:inherit !important;
+}
+.brand-logo{
+  width:36px !important;
+  height:36px !important;
+  border-radius:9px !important;
+  flex:none !important;
+  box-shadow:none !important;
+}
+.brand-copy{
+  display:flex !important;
+  flex-direction:column !important;
+  gap:3px !important;
+  min-width:0 !important;
+}
 .hd-title,
 .brand .wordmark,
 .brand-lockup .hd-title{
@@ -9,22 +53,21 @@
   line-height:1.25 !important;
   margin:0 !important;
 }
-.brand-logo{
-  width:36px !important;
-  height:36px !important;
-  border-radius:9px !important;
-}
-.hd-en,.slogan{
+.hd-title .dot,
+.brand .dot{color:#9d2933 !important;}
+.hd-en,
+.slogan{
+  margin:0 !important;
+  color:#6f6959 !important;
   font-size:12px !important;
+  line-height:1.4 !important;
   font-weight:400 !important;
   letter-spacing:0 !important;
-  line-height:1.4 !important;
 }
+.hd-row{display:none !important;}
 @media(max-width:600px){
-  .hd-title,
-  .brand .wordmark,
-  .brand-lockup .hd-title{
-    font-size:20px !important;
-    font-weight:700 !important;
+  header.hd{padding:22px 0 14px !important;margin:0 0 18px !important;}
+  .hd-title,.brand .wordmark,.brand-lockup .hd-title{
+    font-size:20px !important;font-weight:700 !important;
   }
 }
