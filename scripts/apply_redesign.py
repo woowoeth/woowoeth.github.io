@@ -4,28 +4,38 @@ import re
 import sys
 ROOT = Path(__file__).resolve().parents[1]
 
+FIXES = [
+    ("他流了三年干旱", "邻国连着三年干旱"),
+    ("下年又乾", "第二年又乾"),
+    ("役励超过收益", "役使超过产出"),
+    ("项羽能打胡孩能城", "项羽能破城"),
+    ("跌坡的业务", "一离开就掉队的业务"),
+    ("走马火之利", "跟风求利"),
+    ("苏秦在死亡边缘能改革", "秦国在死亡边缘能变法"),
+    ("游历齐、宋、藏、梁", "游历齐、宋、滕、梁"),
+    ("师付", "师傅"),
+    ("不积跌步", "不积跬步"),
+    ("塔勖布", "塔勒布"),
+    ("奥缘余", "奥、意"),
+    ("守彏", "守住"),
+]
+
 def main():
     sys.path.insert(0, str(ROOT / "scripts"))
     import inject_week
     idx = ROOT / "index.html"
     s = inject_week.inject(idx.read_text(encoding="utf-8"))
+    for a, b in FIXES:
+        if a in s:
+            s = s.replace(a, b)
+            print("fixed", a)
     if "hw-home-lockup.css" not in s:
-        s = s.replace(
-            "</title>",
-            '</title>\n<link rel="stylesheet" href="/assets/hw-home-lockup.css?v=2">',
-            1,
-        )
-        print("linked hw-home-lockup.css")
+        s = s.replace("</title>", '</title>\n<link rel="stylesheet" href="/assets/hw-home-lockup.css?v=2">', 1)
     else:
         s = re.sub(r"hw-home-lockup\.css\?v=\d+", "hw-home-lockup.css?v=2", s, count=1)
-    s = s.replace(
-        '<img class="brand-logo" src="/favicon.svg" width="44" height="44"',
-        '<img class="brand-logo" src="/favicon.svg" width="36" height="36"',
-    )
-    s = s.replace('href="favicon.svg"', 'href="/favicon.svg"')
-    s = s.replace('href="favicon-32.png"', 'href="/favicon-32.png"')
+    s = s.replace('<img class="brand-logo" src="/favicon.svg" width="44" height="44"',
+                  '<img class="brand-logo" src="/favicon.svg" width="36" height="36"')
     idx.write_text(s, encoding="utf-8")
-
     try:
         sys.path.insert(0, str(ROOT / "seo"))
         import hw_slugs
