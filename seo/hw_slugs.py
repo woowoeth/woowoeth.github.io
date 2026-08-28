@@ -1,13 +1,8 @@
 # -*- coding: utf-8 -*-
-"""Stable English slugs for Human World entries and topic hubs.
-
-Canonical URL: /i/<english-slug>/
-Legacy Chinese path /i/<old-cjk-slug>/ is kept as a static redirect page.
-"""
+"""Stable English slugs for Human World entries and topic hubs."""
 import re
 import unicodedata
 
-# Conventional English names — one per D[].n. Do not rename once live.
 SLUGS = {
     "孙子兵法": "sun-tzu",
     "毛泽东": "mao",
@@ -52,7 +47,7 @@ SLUGS = {
     "王剡": "wang-jian",
     "项羽": "xiang-yu",
     "武则天": "wu-zetian",
-    "朱元瑶": "zhu-yuanzhang",
+    "朱元璇": "zhu-yuanzhang",
     "张居正": "zhang-juzheng",
     "苏轼": "su-shi",
     "尼采": "nietzsche",
@@ -131,7 +126,6 @@ TAG_SLUGS = {
 
 
 def cjk_slug(s, fallback="item"):
-    """Previous slugify: keep CJK, drop punctuation. Used for legacy redirects."""
     s = unicodedata.normalize("NFKD", str(s or ""))
     out = []
     for ch in s.lower():
