@@ -1414,11 +1414,11 @@ function dqDraw(x,s){
   x.font=srcS+'px '+DQ_FONT;
   let sw=0;for(const ch of s.src)sw+=x.measureText(ch).width+srcS*.04;sw-=srcS*.04;
   draw(s.src,W-PADX-sw,FOOT,srcS,srcS*.04,s.p[3]);
+  const lw=Math.round(W*.048),footFs=Math.round(W*.034),mid=FOOT-Math.round(srcS*.36);
   let bx=PADX;
-  if(dqLogoOK){const lw=Math.round(W*.06),lh2=lw*dqLogoImg.height/dqLogoImg.width;
-    x.globalAlpha=.9;x.drawImage(dqLogoImg,bx,FOOT-lh2,lw,lh2);x.globalAlpha=1;bx+=lw+Math.round(W*.02);}
-  x.font=Math.round(W*.034)+'px -apple-system,"PingFang SC",system-ui,sans-serif';
-  x.fillStyle=s.p[2];x.textBaseline="alphabetic";x.fillText("OurWord.ai",bx,FOOT);
+  if(dqLogoOK){x.globalAlpha=.92;x.drawImage(dqLogoImg,bx,mid-lw/2,lw,lw);x.globalAlpha=1;bx+=lw+Math.round(W*.016);}
+  x.font=footFs+'px -apple-system,"PingFang SC",system-ui,sans-serif';
+  x.fillStyle=s.p[2];x.textBaseline="middle";x.fillText("OurWord.ai",bx,mid);
 }
 function dqCanvas(){
   const cv=document.createElement("canvas");cv.width=1080;cv.height=1440;
