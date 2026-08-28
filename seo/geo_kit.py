@@ -40,10 +40,8 @@ SITE = "https://ourword.ai"
 SITES = [
     ("", "Human World", "人类世界生存法则"),
     ("site", "OurWord AI", "OurWord AI 导航"),
-    ("idea", "Idea", "灵感看板"),
     ("skill", "Skill Store", "Skill 商店"),
     ("ai", "AI Bubble Monitor", "AI 泡沫检测仪"),
-    ("pixel", "PixelPad", "像素板"),
     ("zouni", "Zouni", "走你"),
 ]
 
@@ -80,6 +78,13 @@ def urlq(u):
     """Percent-encode a URL for XML <loc>, as the sitemap spec requires. Raw CJK in a
     <loc> is a spec violation and some validators reject the whole file over it."""
     return quote(u, safe="/:?=&#%~+,;@!$'()*[]")
+
+
+def block_text(s):
+    """Like plain(), but line breaks survive — blocks are multi-paragraph."""
+    s = re.sub(r"<[^>]+>", " ", str(s or ""))
+    s = re.sub(r"[ \t\r\f\v]+", " ", s)
+    return "\n".join(x.strip() for x in s.split("\n") if x.strip())
 
 
 def plain(s, limit=None):
@@ -140,7 +145,7 @@ class Item(object):
         self.slug = slugify(slug, "item")
         self.title = plain(title)
         self.summary = plain(summary)
-        self.blocks = [(plain(h), plain(b)) for h, b in (blocks or []) if plain(b)]
+        self.blocks = [(plain(h), block_text(b)) for h, b in (blocks or []) if plain(b)]
         self.title_zh = plain(title_zh)
         self.summary_zh = plain(summary_zh)
         self.blocks_zh = [(plain(h), plain(b)) for h, b in (blocks_zh or []) if plain(b)]
@@ -306,8 +311,6 @@ def head_block(site, page_url, title, description, zh=False, alt_url="",
                % ("article" if item else "website"))
     out.append('<meta property="og:site_name" content="%s">' % esc(site.name))
     out.append('<meta property="og:locale" content="%s">' % ("zh_CN" if zh else "en_US"))
-    out.append('<meta property="og:locale:alternate" content="%s">'
-               % ("en_US" if zh else "zh_CN"))
     out.append('<meta property="og:title" content="%s">' % esc(clip(title, 95)))
     out.append('<meta property="og:description" content="%s">' % esc(clip(description, 300)))
     out.append('<meta property="og:url" content="%s">' % esc(page_url))
@@ -455,7 +458,8 @@ def breadcrumb_ld(site, it, zh):
         {"@type": "ListItem", "position": 1, "name": "OurWord AI", "item": SITE + "/"},
         {"@type": "ListItem", "position": 2, "name": site.name_zh if zh else site.name,
          "item": site.base},
-        {"@type": "ListItem", "position": 3, "name": it.t(zh), "item": it.page(site, zh)}]}
+        {"@type": "ListItem", "position": 3, "name": it.t(zh),
+         "item": it.page(site, zh and it.has_zh())}]}
 
 
 def item_ld(site, it, zh, page_url):
@@ -806,7 +810,7 @@ def page_404(site, hubs):
     rescue = ("<script>(function(){var p=location.pathname,"
               "m=p.match(/^\\/(?:HumanWorld|humanworld)(\\/.*)?$/);"
               "if(m){location.replace((m[1]||'/')+location.search+location.hash);return;}"
-              "var R={'ourword-site':'site','ai-bubble':'ai','skill-store':'skill','pixelpad':'pixel'},"
+              "var R={'ourword-site':'site','ai-bubble':'ai','skill-store':'skill'},"
               "s=p.match(/^\\/([^\\/]+)(\\/.*)?$/);"
               "if(s&&R[s[1]]){location.replace('/'+R[s[1]]+(s[2]||'/')+location.search+location.hash);}"
               "})();</script>")
@@ -871,8 +875,8 @@ def write_llms(site, items, root=".", how_built="", cite_as="", hubs=()):
          "## Read it", "",
          "- Site: %s" % site.base,
          "- Everything on one page: %s" % site.url("all/"),
-         "- Every %s has its own static page: %si/<slug>/ — plus %szh/i/<slug>/ where "
-         "there is Chinese copy" % (site.item_noun, site.base, site.base),
+         "- Every %s has its own static page: %si/<slug>/"
+         % (site.item_noun, site.base),
          "- Full text of everything, one file: %s" % site.url("llms-full.txt"),
          "- All URLs: %s" % site.url("sitemap.xml"),
          "- RSS: %s" % site.url("feed.xml"), ""]

@@ -11,7 +11,7 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 
 - Site: https://ourword.ai/
 - Everything on one page: https://ourword.ai/all/
-- Every entry has its own static page: https://ourword.ai/i/<slug>/ — plus https://ourword.ai/zh/i/<slug>/ where there is Chinese copy
+- Every entry has its own static page: https://ourword.ai/i/<slug>/
 - Full text of everything, one file: https://ourword.ai/llms-full.txt
 - All URLs: https://ourword.ai/sitemap.xml
 - RSS: https://ourword.ai/feed.xml
@@ -36,6 +36,17 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 
 Written by hand, one entry per figure or text. Each entry is condensed to the single idea that person is actually remembered for, then unpacked into sub-principles with historical and modern worked examples.
 
+<!-- chapters:begin -->
+## Deep reads 深度阅读
+
+Long-form chapters hanging off a person page. Not part of the entry index above.
+
+- [毛泽东 · 矛盾论](https://ourword.ai/i/mao/on-contradiction/): 毛泽东 · 矛盾论——一次只打一个结。事情同时在响，每件都像急事。这一篇要回答的不是怎么努力，是先打哪一个结：解了它，别的结自己会松。
+- [毛泽东 · 实践论](https://ourword.ai/i/mao/on-practice/): 毛泽东 · 实践论——从事里认识。道理听懂了，局面没变。这一篇要回答的是：认识从哪里来。不从书里完成，从把事做出去的那一步里完成。
+- [毛泽东 · 论持久战](https://ourword.ai/i/mao/on-protracted-war/): 毛泽东 · 论持久战——时间换力量。弱的一方如果按对方的节奏打，必输。这一篇要回答的是：怎么把战争拖成自己能打的形状。
+- [毛泽东 · 中国革命战争的战略问题](https://ourword.ai/i/mao/strategy-of-the-revolution/): 毛泽东 · 中国革命战争的战略问题——有什么枪打什么仗。别人的胜仗不能直接搬。这一篇要回答的是：你这块地、这点人、这点枪，打法应该长什么样。
+
+<!-- chapters:end -->
 ## Citing
 
 Cite the individual entry page. Quotes from classical texts inside an entry belong to those texts; attribute the condensation and the modern reading to "人类世界生存法则 (OurWord AI)".
@@ -43,10 +54,8 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 ## The rest of OurWord AI
 
 - [OurWord AI / OurWord AI 导航](https://ourword.ai/site/)
-- [Idea / 灵感看板](https://ourword.ai/idea/)
 - [Skill Store / Skill 商店](https://ourword.ai/skill/)
 - [AI Bubble Monitor / AI 泡沫检测仪](https://ourword.ai/ai/)
-- [PixelPad / 像素板](https://ourword.ai/pixel/)
 - [Zouni / 走你](https://ourword.ai/zouni/)
 
 ## Index (100 entrys)

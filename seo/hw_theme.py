@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
 """Editorial item-page theme for Human World."""
+import geo_kit as _gk
 from geo_kit import esc, clip, SITE, org_ld, item_ld, breadcrumb_ld, faq_ld
-from geo_kit import head_block, ga_block, sibling_links, slugify
+from geo_kit import head_block, ga_block, sibling_links
 
 CSS = ""
 
@@ -33,8 +34,63 @@ def _share_btn(title, url, text):
         % (esc(title), esc(url), esc(text), SHARE_SVG)
     )
 
+def _say(text):
+    """One 金句, set into the flow between sections."""
+    return '<figure class="say"><blockquote><p>%s</p></blockquote></figure>' % esc(text)
+
+
+_STRIP = "\u300c\u300d\u201c\u201d\u2018\u2019\u3002\uff0c\u3001\uff01\uff1f\uff1b\uff1a\u2014\u2026 .,!?;:\"'"
+
+
+def _bare(t):
+    return "".join(c for c in str(t or "") if c not in _STRIP)
+
+
+def _weave(html, slots, quotes, texts):
+    """Spread the 金句 evenly over the gaps between sections.
+
+    They used to sit in one block at the very bottom, which nobody scrolls to.
+    `slots` are indices into `html` (after the story section and after each
+    分则); insert back-to-front so earlier indices stay valid.
+
+    Most 分则 open by quoting the same line that is in q[], so a quote dropped
+    next to its own section reads as a stutter. `texts` holds the plain text of
+    the section on either side of each slot; a quote already present there is
+    nudged to the nearest slot where it is not.
+    """
+    if not quotes or not slots:
+        return html
+    quotes = quotes[:len(slots)]
+    step = len(slots) / float(len(quotes))
+    picked = []
+    for i, q in enumerate(quotes):
+        want = min(max(int(i * step + step / 2), 0), len(slots) - 1)
+        bare = _bare(q)
+        order = sorted(range(len(slots)), key=lambda j: (abs(j - want), j))
+        choice = None
+        for j in order:                       # first pass: no echo, not taken
+            if j in picked:
+                continue
+            near = list(texts[j]) + (list(texts[j + 1]) if j + 1 < len(texts) else [])
+            if bare and any(bare in _bare(t) for t in near):
+                continue
+            choice = j
+            break
+        if choice is None:                    # fall back to any free slot
+            choice = next((j for j in order if j not in picked), want)
+        picked.append(choice)
+    for q, j in sorted(zip(quotes, picked), key=lambda pair: -pair[1]):
+        html.insert(slots[j], _say(q))
+    return html
+
+
 def _render_blocks(it, zh):
     html, toc, first_q, n = [], [], True, 0
+    slots, quotes, around = [], [], []
+    for h, b in it.b(zh):
+        if (h or "").strip() in ("金句", "原话"):
+            quotes = _paras(b)
+            continue
     for h, b in it.b(zh):
         h = (h or "").strip()
         paras = _paras(b)
@@ -56,14 +112,11 @@ def _render_blocks(it, zh):
             html.extend("<p>%s</p>" % esc(p) for p in body)
             html.extend('<p class="eg">%s</p>' % esc(p) for p in egs)
             html.append("</section>")
+            slots.append(len(html))
+            around.append([name] + paras)   # heading counts: several 分则 are titled with the quote
             continue
-        if h == "原话":
-            toc.append(("quotes", "原话"))
-            html.append('<section class="quotes" id="quotes"><h2 class="sec-k">原话</h2>')
-            for p in paras:
-                html.append("<blockquote><p>%s</p></blockquote>" % esc(p))
-            html.append("</section>")
-            continue
+        if h in ("金句", "原话"):
+            continue  # woven into the flow by _weave below
         if "对照" in h:
             toc.append(("contrast", "对照着读"))
             html.append('<section id="contrast"><h2 class="sec-k">和谁对照着读</h2><div class="contrast">')
@@ -71,7 +124,7 @@ def _render_blocks(it, zh):
                 name, why = (p.split("：", 1) + [""])[:2] if "：" in p else (p, "")
                 html.append(
                     '<a href="/i/%s/"><span class="n">%s</span><span class="why">%s</span></a>'
-                    % (esc(slugify(name)), esc(name), esc(why))
+                    % (esc(_slug(name)), esc(name), esc(why))
                 )
             html.append("</div></section>")
             continue
@@ -79,10 +132,17 @@ def _render_blocks(it, zh):
             toc.append(("ext", "延伸"))
             html.append('<section id="ext"><h2 class="sec-k">延伸</h2><div class="ext">')
             for p in paras:
-                for name in p.replace("、", " ").replace("，", " ").split():
-                    name = name.strip("·,，、 ")
+                # Entry names may legitimately contain 、 or ，（思考，快与慢 /
+                # 枪炮、病菌与钢铁）. Splitting on them produced /i/思考/ and
+                # /i/枪炮/ — links to pages that never existed. Only fall back to
+                # splitting when the whole line is not itself a known entry.
+                # Split on whitespace ONLY. Entry names never contain a space,
+                # but two of them contain 、 / ， (思考，快与慢 和
+                # 枪炮、病菌与钢铁) — splitting on those produced
+                # /i/思考/ and /i/枪炮/, links to pages that never existed.
+                for name in (x.strip("·,，、 ") for x in p.split()):
                     if name:
-                        html.append('<a href="/i/%s/">%s</a>' % (esc(slugify(name)), esc(name)))
+                        html.append('<a href="/i/%s/">%s</a>' % (esc(_slug(name)), esc(name)))
             html.append("</div></section>")
             continue
         label = h
@@ -103,7 +163,10 @@ def _render_blocks(it, zh):
         html.append('<section class="%s" id="%s"><h2 class="sec-k">%s</h2>' % (klass, aid, esc(label)))
         html.extend("<p>%s</p>" % esc(p) for p in paras)
         html.append("</section>")
-    return "\n".join(html), toc
+        if klass == "sec":
+            slots.append(len(html))
+            around.append([label] + paras)
+    return "\n".join(_weave(html, slots, quotes, around)), toc
 
 def item_page(site, it, items, idx, zh, hub_of=None):
     zh_render = zh or site.zh()
@@ -140,7 +203,7 @@ def item_page(site, it, items, idx, zh, hub_of=None):
             ordered.append(t)
     chips = []
     for t in ordered:
-        sl = slugify(t)
+        sl = _slug(t)
         if hub_of and hub_of.get(sl):
             chips.append('<a class="chip" href="%s">%s</a>' % (esc(site.url("t/%s/" % sl)), esc(t)))
         else:
@@ -211,12 +274,37 @@ def _shell(lang, title, headhtml, body):
         "<title>%s</title>\n%s\n%s\n"
         "<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n"
         "<link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\n"
-        "<link rel=\"stylesheet\" href=\"/assets/hw-entry.css?v=6\">\n"
-        "<link rel=\"stylesheet\" href=\"/assets/hw-chapter.css?v=1\">\n"
+        "<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?"
+        "family=Noto+Serif+SC:wght@500;600;700&display=swap\">\n"
+        "<link rel=\"stylesheet\" href=\"/assets/hw-entry.css?v=9\">\n"
+        "<link rel=\"stylesheet\" href=\"/assets/hw-chapter.css?v=4\">\n"
         "</head>\n<body>\n%s\n"
         "<script src=\"/assets/hw-share.js\" defer></script>\n</body>\n</html>\n"
         % (lang, esc(title), headhtml, ga_block(), body)
     )
+
+def _slug(name):
+    """Resolve through geo_kit at CALL time.
+
+    build_seo swaps in a slug map with `G.slugify = ...`, but this module did
+    `from geo_kit import slugify` at import, so it kept the original function and
+    every 延伸 / 对照 / 标签 link came out as a CJK URL (/i/韩非子/ instead of
+    /i/han-feizi/) that only resolved through a legacy redirect stub.
+    """
+    return _gk.slugify(name)
+
+
+def _known(name):
+    """True when `name` resolves to a real (latin) slug, i.e. it is an entry title."""
+    if not name:
+        return False
+    try:
+        import hw_slugs
+        sl = hw_slugs.slug_for(name)
+    except Exception:
+        return False
+    return bool(sl) and not any("\u4e00" <= ch <= "\u9fff" for ch in sl)
+
 
 def install(G):
     G._PAGE_CSS = CSS

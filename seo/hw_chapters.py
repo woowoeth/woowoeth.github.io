@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 """Child essays hanging off a person/book map page. Not part of D[]."""
+import json
 import os
 from geo_kit import esc, SITE, sibling_links
 import hw_theme
@@ -7,12 +8,13 @@ import hw_theme
 SLOGAN = "100 个人物与典籍的生存智慧，跨越 2600 年"
 
 
+HL = '<mark class="hl" style="background:transparent;color:#9d2933;font-weight:700;text-decoration:underline;text-decoration-color:#9d2933;text-underline-offset:.16em;text-decoration-thickness:1.5px">%s</mark>'
 def rich(s):
     parts = str(s or "").split("==")
     out = []
     for i, p in enumerate(parts):
         t = esc(p)
-        out.append(('<mark class="hl">%s</mark>' % t) if i % 2 else t)
+        out.append((HL % t) if i % 2 else t)
     return "".join(out)
 
 
@@ -90,8 +92,8 @@ CHAPTERS = [
         "story": "1938 年徐州、南京之后，两种错法同时很响：一种说中国必亡，一种说很快就能打赢。毛在延安把已经发生的仗和还没发生的仗画在同一张图上：战略防御、战略相持、战略反攻。他不是在预言日期，是在规定不能做什么——不能拿主力去换一座城的新闻，不能在拳头还没形成时求决战。",
         "f": [
             {"n": "先活下来，再谈胜",
-             "d": "弱者的第一目标不是歾灭，是让对方消灭不了你。主力在，时间就在；主力赌光了，时间立刻归零。",
-             "eg": "放弃延安那年，用空间换部队。城丢了，拳头还在，后面才有运动中的歾灭。一城一地都要报捶的打法，看起来积极，其实是在帮对方完成决战。"},
+             "d": "弱者的第一目标不是歼灭，是让对方消灭不了你。主力在，时间就在；主力赌光了，时间立刻归零。",
+             "eg": "放弃延安那年，用空间换部队。城丢了，拳头还在，后面才有运动中的歼灭。一城一地都要报捷的打法，看起来积极，其实是在帮对方完成决战。"},
             {"n": "相持不是停，是换规则",
              "d": "中间那段最像「没进展」，其实是战争从对方擅长的速决，改成你擅长的消耗。谁先忍受不了相持，谁就会提前决战。",
              "eg": "对手用钱砸速度时，你若跟着比速度，就是在他的规则里决战。相持期要做的，是让对方占着点却守不住面。"},
@@ -118,16 +120,16 @@ CHAPTERS = [
              "d": "==反对本本主义==不是反对学，是反对不看自己这块地。苏军怎么打、北伐怎么打，都是别人的答案。搬过来当条令，第一仗就输在地形上。",
              "eg": "公司里照搬互联网巨头的组织架构，互联网公司照搬制造业的排班，都是本本。书可以帮你起步，不能替你打完这一仗。"},
             {"n": "集中优势兵力",
-             "d": "==集中优势兵力，各个歾灭敌人==。三个打一个，打完再换一个。平摊开去，看起来到处都在打，其实一处都没打穿。这一则和《矛盾论》里的「敢砍」是同一条手，这里写的是打法。",
+             "d": "==集中优势兵力，各个歼灭敌人==。三个打一个，打完再换一个。平摊开去，看起来到处都在打，其实一处都没打穿。这一则和《矛盾论》里的「敢砍」是同一条，这里写的是打法。",
              "eg": "产品线上五个新功能同时推，没有一个能说服用户为什么留下。先把一个打穿，再打第二个，才是集中。"},
             {"n": "你的战场不是别人的战场",
-             "d": "敌强我弱、敌大我小的地方，不能按敌强我强的地方那套打。有什么枪打什么仗，不是自慰，是把打法针在自己的实力上。",
+             "d": "敌强我弱、敌大我小的地方，不能按敌强我强的地方那套打。有什么枪打什么仗，不是自慰，是把打法钉在自己的实力上。",
              "eg": "初创团队照搬上市公司的战役节奏，资金和人手都跟不上。先问自己这点人能打穿哪一块，再决定这周打哪一块。"},
         ],
         "apply": "局面：手上有一份别人赢过的打法，你这块地和他不一样。\n先问：这套打法依赖的条件，我们有几条？\n用反了：仍在用别人的组织图和战役日历；同时开五条线，没有一条打穿。",
         "q": [
             "==没有调查，没有发言权。==",
-            "==集中优势兵力，各个歾灭敌人。==",
+            "==集中优势兵力，各个歼灭敌人。==",
             "我们的战略方针是以一当十，我们的战术方针是以十当一。",
         ],
     },
@@ -217,9 +219,38 @@ def _chapter_page(ch, idx):
                 ('<p class="eg">%s</p>' % rich(f["eg"])) if f.get("eg") else "",
             )
         )
-    toc += [("s7", "今天怎么用"), ("quotes", "原话")]
-    quotes = "".join("<blockquote><p>%s</p></blockquote>" % rich(q) for q in ch["q"])
+    toc += [("s7", "今天怎么用")]
+    says = ['<figure class="say"><blockquote><p>%s</p></blockquote></figure>' % rich(q)
+            for q in ch["q"]]
     apply_paras = "".join("<p>%s</p>" % rich(p) for p in ch["apply"].split("\n") if p.strip())
+    # 金句 used to sit in one block at the bottom. Spread them over the gaps:
+    # one after the story, the rest between the 分则.
+    gaps = len(points) + 1
+    woven = [""] * gaps
+    # text on each side of every gap: gap 0 sits after the story, gap i after 分则 i
+    sides = [_plain(ch["story"])] + [
+        _plain(f["n"]) + _plain(f["d"]) + _plain(f.get("eg", "")) for f in ch["f"]]
+    if says:
+        picked, step = [], gaps / float(min(len(says), gaps))
+        for i, q in enumerate(ch["q"][:gaps]):
+            want = min(int(i * step + step / 2), gaps - 1)
+            bare = _bare(q)
+            order = sorted(range(gaps), key=lambda j: (abs(j - want), j))
+            pick = None
+            for j in order:
+                if j in picked:
+                    continue
+                near = sides[j] + (sides[j + 1] if j + 1 < len(sides) else "")
+                if bare and bare in _bare(near):
+                    continue
+                pick = j
+                break
+            picked.append(pick if pick is not None
+                          else next((j for j in order if j not in picked), want))
+        for q, j in zip(says, picked):
+            woven[j] = q
+    body_points = woven[0] + "\n" + "\n".join(
+        pt + ("\n" + woven[i + 1] if woven[i + 1] else "") for i, pt in enumerate(points))
     toc_html = "".join(
         '<a href="#%s"><span class="i">%02d</span>%s</a>' % (esc(a), i, esc(n))
         for i, (a, n) in enumerate(toc, 1)
@@ -256,7 +287,6 @@ def _chapter_page(ch, idx):
       <p>%s</p></section>
       %s
       <section class="sec apply" id="s7"><h2 class="sec-k">今天怎么用？</h2>%s</section>
-      <section class="quotes" id="quotes"><h2 class="sec-k">原话</h2>%s</section>
     </article>
     <aside class="side"><div class="panel"><p class="ph">本篇结构</p><nav class="toc">%s</nav></div></aside>
   </div>
@@ -272,18 +302,57 @@ def _chapter_page(ch, idx):
         esc(SITE), esc(parent_url), esc(parent), esc(ch["n"]),
         esc(parent), esc(ch["n"]), esc(ch["w"]), esc(ch["src"]), rich(ch["dek"]),
         esc(parent), esc(ch["w"]), share, rich(ch["dek"]),
-        rich(ch["dek"]), rich(ch["story"]), "\n".join(points), apply_paras, quotes,
+        rich(ch["dek"]), rich(ch["story"]), body_points, apply_paras,
         toc_html, prev_html, next_html,
         esc(page_url), sibling_links(None, True),
     )
+    # Entry pages get og:image / twitter cards / robots from geo_kit's head_block.
+    # Chapter pages are built by hand here, so they shipped without any of it and
+    # shared as a bare link with no preview card.
+    dek = _plain(ch["dek"])
+    ld = {
+        "@context": "https://schema.org", "@type": "Article",
+        "headline": ch["n"], "name": ch["n"], "url": page_url,
+        "description": dek, "inLanguage": "zh-Hans",
+        "articleSection": "\u6df1\u5ea6\u9605\u8bfb",
+        "about": {"@type": "Person", "name": parent, "url": parent_url},
+        "isPartOf": {"@type": "WebSite", "name": "\u4eba\u7c7b\u4e16\u754c\u751f\u5b58\u6cd5\u5219",
+                     "url": SITE + "/"},
+        "publisher": {"@type": "Organization", "name": "OurWord AI", "url": SITE + "/"},
+        "mainEntityOfPage": {"@type": "WebPage", "@id": page_url},
+    }
+    crumbs = {
+        "@context": "https://schema.org", "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "OurWord AI", "item": SITE + "/"},
+            {"@type": "ListItem", "position": 2, "name": parent, "item": parent_url},
+            {"@type": "ListItem", "position": 3, "name": ch["n"], "item": page_url},
+        ],
+    }
     head = (
         '<meta name="description" content="%s">\n'
+        '<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">\n'
         '<link rel="canonical" href="%s">\n'
+        '<meta property="og:type" content="article">\n'
+        '<meta property="og:site_name" content="Human World">\n'
+        '<meta property="og:locale" content="zh_CN">\n'
         '<meta property="og:title" content="%s">\n'
         '<meta property="og:description" content="%s">\n'
         '<meta property="og:url" content="%s">\n'
-        '<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"%s","url":"%s"}</script>\n'
-        % (esc(ch["dek"]), page_url, esc(title), esc(ch["dek"]), page_url, ch["n"], page_url)
+        '<meta property="og:image" content="%s/og.png">\n'
+        '<meta property="og:image:width" content="1200">\n'
+        '<meta property="og:image:height" content="630">\n'
+        '<meta property="og:image:alt" content="Human World">\n'
+        '<meta name="twitter:card" content="summary_large_image">\n'
+        '<meta name="twitter:site" content="@futuredotnews">\n'
+        '<meta name="twitter:title" content="%s">\n'
+        '<meta name="twitter:description" content="%s">\n'
+        '<meta name="twitter:image" content="%s/og.png">\n'
+        '<script type="application/ld+json">%s</script>\n'
+        '<script type="application/ld+json">%s</script>\n'
+        % (esc(dek), page_url, esc(title), esc(dek), page_url, SITE,
+           esc(title), esc(dek), SITE,
+           json.dumps(ld, ensure_ascii=False), json.dumps(crumbs, ensure_ascii=False))
     )
     return hw_theme._shell("zh-Hans", title, head, body)
 
@@ -296,3 +365,125 @@ def write_chapters(root="."):
         open(path, "w", encoding="utf-8").write(_chapter_page(ch, i))
         n += 1
     return n
+
+
+# ------------------------------------------------------------------ index layer
+# Chapter pages are not in D[], so geo_kit never sees them. Without this block
+# they exist but are invisible to sitemap.xml / llms.txt / llms-full.txt / feed.xml
+# — i.e. invisible to exactly the crawlers the whole SEO layer exists for.
+_BEGIN = "<!-- chapters:begin -->"
+_END = "<!-- chapters:end -->"
+
+
+_STRIP = "\u300c\u300d\u201c\u201d\u3002\uff0c\u3001\uff01\uff1f\uff1b\uff1a\u2014\u2026 .,!?;:"
+
+
+def _bare(t):
+    return "".join(c for c in _plain(t) if c not in _STRIP)
+
+
+def _plain(s):
+    return str(s or "").replace("==", "").strip()
+
+
+def chapter_url(ch):
+    return "%s/i/%s/%s/" % (SITE, ch["parent_slug"], ch["k"])
+
+
+def chapter_urls():
+    """Absolute URLs, for geo_kit.build(extra_urls=...) -> sitemap.xml."""
+    return [chapter_url(ch) for ch in CHAPTERS]
+
+
+def chapter_summary(ch):
+    return "%s · %s——%s。%s" % (ch["parent"], ch["n"], ch["w"], _plain(ch["dek"]))
+
+
+def _llms_block():
+    L = ["## Deep reads 深度阅读", "",
+         "Long-form chapters hanging off a person page. Not part of the entry index above.",
+         ""]
+    for ch in CHAPTERS:
+        L.append("- [%s · %s](%s): %s"
+                 % (ch["parent"], ch["n"], chapter_url(ch), chapter_summary(ch)))
+    L.append("")
+    return "\n".join(L)
+
+
+def _llms_full_block():
+    F = []
+    for ch in CHAPTERS:
+        F += ["=" * 72, "## %s · %s" % (ch["parent"], ch["n"]),
+              "URL: %s" % chapter_url(ch),
+              "Source: %s" % _plain(ch["src"]),
+              "Tags: 深度阅读, %s, %s" % (ch["parent"], ch["w"]), "",
+              _plain(ch["dek"]), "",
+              "### Q：背后是什么故事？", _plain(ch["story"]), ""]
+        for f in ch["f"]:
+            body = _plain(f["d"])
+            if f.get("eg"):
+                body += "\n例：" + _plain(f["eg"])
+            F += ["### 分则 · %s" % _plain(f["n"]), body, ""]
+        F += ["### Q：今天怎么用？", _plain(ch["apply"]), "",
+              "### 金句", "\n".join(_plain(q) for q in ch["q"]), ""]
+    return "\n".join(F)
+
+
+def _rss_block():
+    xs = []
+    for ch in CHAPTERS:
+        u = chapter_url(ch)
+        xs.append("    <item><title>%s · %s</title><link>%s</link>"
+                  "<guid isPermaLink=\"true\">%s</guid><description>%s</description></item>"
+                  % (esc(ch["parent"]), esc(ch["n"]), esc(u), esc(u),
+                     esc(chapter_summary(ch))))
+    return "\n".join(xs)
+
+
+def _splice(path, block, anchor, before):
+    """Idempotent: drop any previous chapters block, then insert a fresh one."""
+    if not os.path.exists(path):
+        return False
+    src = open(path, encoding="utf-8").read()
+    cur = src
+    if _BEGIN in cur and _END in cur:
+        cur = cur[:cur.index(_BEGIN)] + cur[cur.index(_END) + len(_END):]
+    chunk = "%s\n%s\n%s\n" % (_BEGIN, block, _END)
+    if anchor and anchor in cur:
+        at = cur.index(anchor) + (0 if before else len(anchor))
+        out = cur[:at] + chunk + cur[at:]
+    else:
+        out = cur.rstrip("\n") + "\n" + chunk
+    if out == src:
+        return False
+    open(path, "w", encoding="utf-8").write(out)
+    return True
+
+
+def write_indexes(root="."):
+    """Fold chapters into the artefacts geo_kit already wrote. Call after build()."""
+    return {
+        "llms": _splice(os.path.join(root, "llms.txt"),
+                        _llms_block(), "## Citing", True),
+        "llms_full": _splice(os.path.join(root, "llms-full.txt"),
+                             _llms_full_block(), None, False),
+        "rss": _splice(os.path.join(root, "feed.xml"),
+                       _rss_block(), "    <language>zh-cn</language>\n", False),
+    }
+
+
+def chapter_fingerprints():
+    """Content hash per chapter URL key, for the lastmod manifest in build_seo."""
+    import hashlib
+    out = {}
+    for ch in CHAPTERS:
+        h = hashlib.sha1()
+        for part in (ch["n"], ch["w"], ch["src"], ch["dek"], ch["story"], ch["apply"]):
+            h.update(("%s\x00" % _plain(part)).encode("utf-8"))
+        for f in ch["f"]:
+            for k in ("n", "d", "eg"):
+                h.update(("%s\x00" % _plain(f.get(k, ""))).encode("utf-8"))
+        for q in ch["q"]:
+            h.update(("%s\x00" % _plain(q)).encode("utf-8"))
+        out["i/%s/%s/" % (ch["parent_slug"], ch["k"])] = h.hexdigest()[:16]
+    return out

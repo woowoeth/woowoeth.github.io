@@ -154,7 +154,19 @@ def slug_for(name):
     return cjk_slug(name)
 
 
-def js_map():
+def js_map(names=()):
+    """Homepage slug lookup.
+
+    It used to emit only SLUGS, so entries resolved by the special rules in
+    slug_for (王翰 / 朱元璋) fell through to the JS fallback and the homepage
+    linked at a CJK URL that only worked via a redirect hop. Pass the live entry
+    names and every card links straight at its canonical page.
+    """
+    table = dict(SLUGS)
+    for n in names or ():
+        sl = slug_for(n)
+        if sl and not any("\u4e00" <= ch <= "\u9fff" for ch in sl):
+            table[n] = sl
     pairs = ",".join('"%s":"%s"' % (k.replace("\\", "\\\\").replace('"', '\\"'), v)
-                     for k, v in SLUGS.items())
+                     for k, v in sorted(table.items()))
     return "const HW_SLUGS={%s};" % pairs

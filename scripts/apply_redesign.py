@@ -4,21 +4,10 @@ import re
 import sys
 ROOT = Path(__file__).resolve().parents[1]
 
-FIXES = [
-    ("他流了三年干旱", "邻国连着三年干旱"),
-    ("下年又乾", "第二年又乾"),
-    ("役励超过收益", "役使超过产出"),
-    ("项羽能打胡孩能城", "项羽能破城"),
-    ("跌坡的业务", "一离开就掉队的业务"),
-    ("走马火之利", "跟风求利"),
-    ("苏秦在死亡边缘能改革", "秦国在死亡边缘能变法"),
-    ("游历齐、宋、藏、梁", "游历齐、宋、滕、梁"),
-    ("师付", "师傅"),
-    ("不积跌步", "不积跬步"),
-    ("塔勑布", "塔勒布"),
-    ("奥缘余", "奥、意"),
-    ("守彙", "守住"),
-]
+# Typos are fixed at source now: scripts/inject_week.py (D[] batches) and
+# seo/hw_chapters.py (deep-read chapters). Keep this list empty — patching the
+# built index.html hides the bug in the source and the rules silently rot.
+FIXES = []
 
 NEW_FOOT = (
     'const lw=Math.round(W*.048),footFs=Math.round(W*.034),mid=FOOT-Math.round(srcS*.36);'
@@ -60,30 +49,35 @@ def patch_theme():
         return
     ts = theme.read_text(encoding="utf-8")
     ts = re.sub(r"hw-chapter\.css\?v=\d+", "hw-chapter.css?v=4", ts)
-    ts = ts.replace("<p>本页可直接引用 <code>%s</code></p>\n    ", "")
+    # NOTE: never delete a %s from hw_theme's body template — the arg tuple still
+    # passes page_url and the build dies with "not all arguments converted".
+    # The cite line is removed from the *output* by seo/strip_cite.py instead.
     theme.write_text(ts, encoding="utf-8")
     print("theme css v=4")
 
 def patch_entry_css():
+    """Idempotent by sentinel. The old whitespace-sniffing check never matched its own
+    output, so every CI run appended another copy of the same media query."""
     entry = ROOT / "assets" / "hw-entry.css"
     if not entry.exists():
         return
     es = entry.read_text(encoding="utf-8")
-    es = es.replace(".side,.layout .side{display:none!important}\n.layout{grid-template-columns:minmax(0,1fr)!important}\n", "")
-    if "@media(max-width:900px){.side{display:none" not in es.replace(" ", ""):
-        es += (
-            "\n@media (max-width:900px){\n"
-            "  .side{display:none!important}\n"
-            "  .layout{grid-template-columns:1fr!important}\n}\n"
-        )
-    if "mark.hl{" not in es:
-        es += (
-            "\nmark.hl{background:transparent;color:#9d2933;font-weight:700;"
-            "text-decoration:underline;text-decoration-color:#9d2933;"
-            "text-underline-offset:.16em;text-decoration-thickness:1.5px}\n"
-        )
+    es = es.replace(".side,.layout .side{display:none!important}\n"
+                    ".layout{grid-template-columns:minmax(0,1fr)!important}\n", "")
+    mark = "/* hw-entry-overrides */"
+    if mark in es:
+        es = es[:es.index(mark)].rstrip("\n") + "\n"
+    es = es.rstrip("\n") + "\n\n" + mark + "\n" + (
+        "@media (max-width:900px){\n"
+        "  .side{display:none!important}\n"
+        "  .layout{grid-template-columns:1fr!important}\n}\n"
+        "mark.hl{background:transparent;color:#9d2933;font-weight:700;"
+        "text-decoration:underline;text-decoration-color:#9d2933;"
+        "text-underline-offset:.16em;text-decoration-thickness:1.5px}\n"
+    )
     entry.write_text(es, encoding="utf-8")
-    print("entry css mobile toc + hl")
+    print("entry css overrides")
+
 
 def main():
     sys.path.insert(0, str(ROOT / "scripts"))
@@ -120,7 +114,9 @@ def main():
         sys.path.insert(0, str(ROOT / "seo"))
         import hw_slugs
         src = idx.read_text(encoding="utf-8")
-        js = hw_slugs.js_map() + "\nfunction slugOf(n){return (HW_SLUGS&&HW_SLUGS[n])||String(n).replace(/[·，、。\\s\\.,]/g,'');}"
+        import re as _re
+        _names = _re.findall(r'n:"([^"]+)",e:"', idx.read_text(encoding="utf-8"))
+        js = hw_slugs.js_map(_names) + "\nfunction slugOf(n){return (HW_SLUGS&&HW_SLUGS[n])||String(n).replace(/[·，、。\\s\\.,]/g,'');}"
         pat = re.compile(r"const HW_SLUGS=\{[\s\S]*?\};\nfunction slugOf\(n\)\{[^}]+\}")
         if pat.search(src):
             idx.write_text(pat.sub(lambda _m: js, src, count=1), encoding="utf-8")

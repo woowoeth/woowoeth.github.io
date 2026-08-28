@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 """SEO/GEO build for Human World. Run from repo root: python seo/build_seo.py"""
 import datetime
+import hashlib
 import json
 import os
 import re
@@ -15,7 +16,11 @@ import hw_slugs
 import hw_chapters
 import strip_cite
 
-_orig_slugify = G.slugify
+# Remember the pristine function, not whatever is installed now: importing this
+# module twice would otherwise wrap the patched slugify around itself and
+# recurse until the stack blows.
+_orig_slugify = getattr(G, "_hw_orig_slugify", None) or G.slugify
+G._hw_orig_slugify = _orig_slugify
 
 def slugify(s, fallback="item"):
     mapped = hw_slugs.slug_for(s)
@@ -167,14 +172,17 @@ def load_items():
         if e.get("apply"):
             blocks.append(("Q\uff1a\u4eca\u5929\u600e\u4e48\u7528\uff1f", flat(e["apply"])))
         if e.get("q"):
-            blocks.append(("\u539f\u8bdd", flat(e["q"])))
+            blocks.append(("\u91d1\u53e5", flat(e["q"])))
         if ctr:
             blocks.append(("Q\uff1a\u548c\u8c01\u5bf9\u7167\u7740\u8bfb\uff1f", flat(ctr)))
         if rel:
             blocks.append(("\u5ef6\u4f38", flat(rel)))
         summary = "%s%s\u2014\u2014%s\u3002%s" % (name, ("\uff08%s\uff09" % era if era else ""), one,
                                    G.plain(e.get("d"), 140))
-        is_text = (cat == "\u5178\u7c4d\u00b7\u6d1e\u89c1") or any(
+        # 战国策 and 影响力 are books but match none of the keyword tests, so they
+        # shipped as schema.org/Person.
+        BOOKS = ("\u6218\u56fd\u7b56", "\u5f71\u54cd\u529b")
+        is_text = (cat == "\u5178\u7c4d\u00b7\u6d1e\u89c1") or name in BOOKS or any(
             k in name for k in ("\u7ecf", "\u8bba", "\u7b80\u53f2", "\u5175\u6cd5", "\u53f2\u8bb0", "\u4e66", "\u8bb0", "\u4f20", "\u5f55"))
         extra = ({"about": one} if one else {})
         if is_text:
@@ -234,7 +242,9 @@ def _redirect_html(dest, title):
 
 def write_legacy_redirects(root="."):
     n = 0
-    pairs = list(hw_slugs.SLUGS.items()) + [("\u738b\u5265", "wang-jian"), ("\u6731\u5143\u748b", "zhu-yuanzhang")]
+    pairs = list(hw_slugs.SLUGS.items()) + [("\u738b\u5265", "wang-jian"),
+                                         ("\u738b\u7fe6", "wang-jian"),
+                                         ("\u6731\u5143\u748b", "zhu-yuanzhang")]
     for name, new in pairs:
         old = hw_slugs.cjk_slug(name)
         if not old or old == new:
@@ -262,16 +272,115 @@ def write_legacy_redirects(root="."):
     return n
 
 
+
+LASTMOD_DB = os.path.join("seo", "lastmod.json")
+
+
+def _fingerprint(it):
+    """Stable hash of what a page actually shows."""
+    h = hashlib.sha1()
+    h.update((it.title or "").encode("utf-8"))
+    h.update(b"\x00")
+    h.update((it.summary or "").encode("utf-8"))
+    for head, body in it.blocks:
+        h.update(b"\x00")
+        h.update(("%s\x01%s" % (head, body)).encode("utf-8"))
+    return h.hexdigest()[:16]
+
+
+def stamp_lastmod(items, today, extra=None):
+    """Give every URL a lastmod that reflects the last real content change.
+
+    Items carried updated="" so write_sitemap fell back to the build date: all 119
+    URLs claimed they changed today, every day the cron ran. That is both the
+    signal geo_kit's own docstring warns engines learn to discount, and a
+    guaranteed daily commit with no content behind it. The manifest records a
+    content hash per URL and only moves the date when the hash moves.
+    """
+    try:
+        db = json.load(open(LASTMOD_DB, encoding="utf-8"))
+    except Exception:
+        db = {}
+    seen = {}
+    for it in items:
+        key = "i/%s/" % it.slug
+        fp = _fingerprint(it)
+        rec = db.get(key)
+        date = rec["d"] if (rec and rec.get("h") == fp and rec.get("d")) else today
+        seen[key] = {"h": fp, "d": date}
+        it.updated = date
+    for key, fp in (extra or {}).items():
+        rec = db.get(key)
+        seen[key] = {"h": fp, "d": rec["d"] if (rec and rec.get("h") == fp and rec.get("d")) else today}
+    out = json.dumps(seen, ensure_ascii=False, indent=1, sort_keys=True) + "\n"
+    if not os.path.exists(LASTMOD_DB) or open(LASTMOD_DB, encoding="utf-8").read() != out:
+        os.makedirs(os.path.dirname(LASTMOD_DB), exist_ok=True)
+        open(LASTMOD_DB, "w", encoding="utf-8").write(out)
+    return max((v["d"] for v in seen.values()), default=today)
+
+
+def stamp_feed(root=".", dates=None):
+    """RSS shipped with no <pubDate> and no <lastBuildDate>; readers had nothing
+    to sort or de-duplicate on."""
+    path = os.path.join(root, "feed.xml")
+    if not os.path.exists(path):
+        return False
+    src = open(path, encoding="utf-8").read()
+    out = re.sub(r"\s*<pubDate>[^<]*</pubDate>", "", src)
+    out = re.sub(r"\s*<lastBuildDate>[^<]*</lastBuildDate>", "", out)
+
+    def rfc822(d):
+        try:
+            y, m, dd = (int(x) for x in d.split("-"))
+        except Exception:
+            return ""
+        dt = datetime.datetime(y, m, dd, 8, 0, 0)
+        return dt.strftime("%a, %d %b %Y %H:%M:%S +0800")
+
+    def add(m):
+        chunk = m.group(0)
+        link = re.search(r"<link>([^<]+)</link>", chunk)
+        key = link.group(1).replace("https://ourword.ai/", "") if link else ""
+        d = (dates or {}).get(key)
+        stamp = rfc822(d) if d else ""
+        return chunk.replace("</item>", "<pubDate>%s</pubDate></item>" % stamp) if stamp else chunk
+
+    out = re.sub(r"<item>.*?</item>", add, out, flags=re.S)
+    newest = max((dates or {}).values(), default="")
+    if newest:
+        out = out.replace("<language>zh-cn</language>",
+                          "<language>zh-cn</language>\n    <lastBuildDate>%s</lastBuildDate>"
+                          % rfc822(newest), 1)
+    if out != src:
+        open(path, "w", encoding="utf-8").write(out)
+        return True
+    return False
+
+
+def _url_dates(items, ch_fp):
+    try:
+        db = json.load(open(LASTMOD_DB, encoding="utf-8"))
+    except Exception:
+        db = {}
+    return {k: v.get("d", "") for k, v in db.items() if v.get("d")}
+
+
 def main():
     items = load_items()
     fill_counts(SITE, len(items))
-    rep = G.build(SITE, items, root=".", today=datetime.date.today().isoformat(),
+    today = datetime.date.today().isoformat()
+    ch_fp = hw_chapters.chapter_fingerprints()
+    newest = stamp_lastmod(items, today, extra=ch_fp)
+    rep = G.build(SITE, items, root=".", today=newest,
                   how_built=HOW, cite_as=CITE,
-                  extra_sitemaps=[])
+                  extra_sitemaps=[],
+                  extra_urls=hw_chapters.chapter_urls())
     rep["chapters"] = hw_chapters.write_chapters()
+    rep["chapter_index"] = hw_chapters.write_indexes()
     rep["strip_cite"] = strip_cite.strip_cite()
     rep["stats"] = patch_static_stats(load_array())
     rep["legacy_redirects"] = write_legacy_redirects()
+    rep["feed_dates"] = stamp_feed(".", _url_dates(items, ch_fp))
     print("HumanWorld seo/geo:", json.dumps(rep, ensure_ascii=False))
     return rep
 

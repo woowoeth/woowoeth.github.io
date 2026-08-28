@@ -20,24 +20,15 @@ MARK_OPEN = (
     'text-decoration-thickness:1.5px">'
 )
 
-def patch_theme():
-    p = ROOT / "seo" / "hw_theme.py"
-    if not p.exists():
-        return
-    s = p.read_text(encoding="utf-8")
-    s = re.sub(r"hw-chapter\.css\?v=\d+", "hw-chapter.css?v=5", s)
-    if "id=\"hw-force\"" not in s and "id='hw-force'" not in s:
-        s = s.replace(
-            '</head>\n<body>\n%s\n',
-            STYLE.replace('"', '\\"') + '</head>\n<body>\n%s\n',
-        )
-        # the above may over-escape; inject via raw string in template instead
-    p.write_text(s, encoding="utf-8")
-
 def patch_html():
     n = 0
     for path in (ROOT / "i").rglob("index.html") if (ROOT / "i").exists() else []:
         s = path.read_text(encoding="utf-8")
+        # Legacy CJK-slug stubs are meta-refresh redirects rewritten byte-for-byte
+        # by write_legacy_redirects on every build. Touching them here makes the two
+        # scripts fight and produces a fresh commit every single run.
+        if 'http-equiv="refresh"' in s:
+            continue
         orig = s
         if 'id="hw-force"' not in s:
             s = s.replace("</head>", STYLE + "</head>", 1)

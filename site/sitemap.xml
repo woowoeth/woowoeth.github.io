@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://ourword.ai/site/</loc></url>
-  <url><loc>https://ourword.ai/pixelpad/</loc></url>
   <url><loc>https://ourword.ai/zouni/</loc></url>
-  <url><loc>https://ourword.ai/skill-store/</loc></url>
+  <url><loc>https://ourword.ai/skill/</loc></url>
 </urlset>
