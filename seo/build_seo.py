@@ -13,6 +13,7 @@ import hw_theme
 hw_theme.install(G)
 import hw_slugs
 import hw_chapters
+import strip_cite
 
 _orig_slugify = G.slugify
 
@@ -268,6 +269,7 @@ def main():
                   how_built=HOW, cite_as=CITE,
                   extra_sitemaps=[])
     rep["chapters"] = hw_chapters.write_chapters()
+    rep["strip_cite"] = strip_cite.strip_cite()
     rep["stats"] = patch_static_stats(load_array())
     rep["legacy_redirects"] = write_legacy_redirects()
     print("HumanWorld seo/geo:", json.dumps(rep, ensure_ascii=False))
