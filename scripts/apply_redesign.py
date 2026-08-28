@@ -34,55 +34,56 @@ FOOT_RE = re.compile(
     r"\s*x\.fillStyle=s\.p\[2\];x\.textBaseline=\"alphabetic\";x\.fillText\(\"OurWord\.ai\",bx,FOOT\);"
 )
 
-def patch_theme():
-    theme = ROOT / "seo" / "hw_theme.py"
-    if not theme.exists():
-        return
-    ts = theme.read_text(encoding="utf-8")
-    ts = re.sub(
-        r"    toc_html = \"\"\n    if toc:\n        items_t = \[.*?\n        toc_html = .*?\n",
-        "    toc_html = \"\"\n",
-        ts,
-        count=1,
-        flags=re.S,
-    )
-    ts = ts.replace("hw-chapter.css?v=1", "hw-chapter.css?v=3")
-    ts = ts.replace("hw-chapter.css?v=2", "hw-chapter.css?v=3")
-    ts = ts.replace("<p>本页可直接引用 <code>%s</code></p>\n    ", "")
-    theme.write_text(ts, encoding="utf-8")
-    print("theme patched")
+HL = (
+    '<mark class="hl" style="background:transparent;color:#9d2933;font-weight:700;' 
+    'text-decoration:underline;text-decoration-color:#9d2933;text-underline-offset:.16em;' 
+    'text-decoration-thickness:1.5px">%s</mark>'
+)
 
 def patch_chapters():
     p = ROOT / "seo" / "hw_chapters.py"
     if not p.exists():
         return
     s = p.read_text(encoding="utf-8")
-    s = re.sub(
-        r"\s*<aside class=\"side\">.*?</aside>",
-        "",
-        s,
-        count=1,
-        flags=re.S,
+    s = s.replace(
+        "out.append(('<mark class=\"hl\">%s</mark>' % t) if i % 2 else t)",
+        "out.append((HL % t) if i % 2 else t)",
     )
+    if "HL = " not in s:
+        s = s.replace("def rich(s):", "HL = %r\ndef rich(s):" % HL, 1)
     p.write_text(s, encoding="utf-8")
-    print("chapters toc stripped")
+    print("chapters highlight inlined")
+
+def patch_theme():
+    theme = ROOT / "seo" / "hw_theme.py"
+    if not theme.exists():
+        return
+    ts = theme.read_text(encoding="utf-8")
+    ts = re.sub(r"hw-chapter\.css\?v=\d+", "hw-chapter.css?v=4", ts)
+    ts = ts.replace("<p>本页可直接引用 <code>%s</code></p>\n    ", "")
+    theme.write_text(ts, encoding="utf-8")
+    print("theme css v=4")
 
 def patch_entry_css():
     entry = ROOT / "assets" / "hw-entry.css"
     if not entry.exists():
         return
     es = entry.read_text(encoding="utf-8")
-    block = (
-        "\n.side,.layout .side{display:none!important}\n"
-        ".layout{grid-template-columns:minmax(0,1fr)!important}\n"
-        "mark.hl{background:none!important;color:#9d2933!important;font-weight:700!important;"
-        "text-decoration:underline;text-decoration-color:#9d2933;text-underline-offset:.18em;"
-        "text-decoration-thickness:1.5px;padding:0;box-shadow:none}\n"
-        ".site-foot p:has(code){display:none}\n"
-    )
-    if ".side,.layout .side{display:none" not in es:
-        entry.write_text(es + block, encoding="utf-8")
-        print("entry css patched")
+    es = es.replace(".side,.layout .side{display:none!important}\n.layout{grid-template-columns:minmax(0,1fr)!important}\n", "")
+    if "@media(max-width:900px){.side{display:none" not in es.replace(" ", ""):
+        es += (
+            "\n@media (max-width:900px){\n"
+            "  .side{display:none!important}\n"
+            "  .layout{grid-template-columns:1fr!important}\n}\n"
+        )
+    if "mark.hl{" not in es:
+        es += (
+            "\nmark.hl{background:transparent;color:#9d2933;font-weight:700;"
+            "text-decoration:underline;text-decoration-color:#9d2933;"
+            "text-underline-offset:.16em;text-decoration-thickness:1.5px}\n"
+        )
+    entry.write_text(es, encoding="utf-8")
+    print("entry css mobile toc + hl")
 
 def main():
     sys.path.insert(0, str(ROOT / "scripts"))
@@ -112,8 +113,8 @@ def main():
     else:
         print("dq foot block not found")
     idx.write_text(s, encoding="utf-8")
-    patch_theme()
     patch_chapters()
+    patch_theme()
     patch_entry_css()
     try:
         sys.path.insert(0, str(ROOT / "seo"))
