@@ -123,6 +123,11 @@ def item_page(site, it, items, idx, zh, hub_of=None):
     era = next((t for t in tags if t in eras), "")
     share_text = "%s\n\n%s\n\n%s" % (it.t(zh_render), it.s(zh_render), page_url)
     blocks_html, toc = _render_blocks(it, zh_render)
+    try:
+        import hw_chapters
+        blocks_html = hw_chapters.inject_catalog(blocks_html, it.title)
+    except Exception:
+        pass
     toc_html = ""
     if toc:
         items_t = ['<a href="#%s"><span class="i">%02d</span>%s</a>' % (esc(a), i, esc(n)) for i, (a, n) in enumerate(toc, 1)]
@@ -207,6 +212,7 @@ def _shell(lang, title, headhtml, body):
         "<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n"
         "<link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\n"
         "<link rel=\"stylesheet\" href=\"/assets/hw-entry.css?v=6\">\n"
+        "<link rel=\"stylesheet\" href=\"/assets/hw-chapter.css?v=1\">\n"
         "</head>\n<body>\n%s\n"
         "<script src=\"/assets/hw-share.js\" defer></script>\n</body>\n</html>\n"
         % (lang, esc(title), headhtml, ga_block(), body)
