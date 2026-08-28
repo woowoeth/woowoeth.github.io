@@ -1,0 +1,65 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""Standing checks for the deep-read layer. Run from the repo root."""
+import os
+import re
+import sys
+
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "seo"))
+import hw_chapters as C  # noqa: E402
+
+plain = lambda t: str(t or "").replace("==", "")
+bad = []
+
+# every catalog item must have an essay, and vice versa
+for name, spec in C.PARENTS.items():
+    keys = {it["k"] for it in spec["items"] if it.get("ready")}
+    have = {c["k"] for c in C.CHAPTERS if c["parent"] == name}
+    for k in keys - have:
+        bad.append("%s: catalog lists %s but there is no chapter" % (name, k))
+    for k in have - keys:
+        bad.append("%s: chapter %s is not in the catalog" % (name, k))
+
+# shape: the structure every chapter is supposed to share
+for c in C.CHAPTERS:
+    where = "%s/%s" % (c["parent"], c["n"])
+    if not 25 <= len(plain(c["dek"])) <= 70:
+        bad.append("%s: dek %d chars (want 25-70)" % (where, len(plain(c["dek"]))))
+    if not 80 <= len(plain(c["story"])) <= 190:
+        bad.append("%s: story %d chars (want 80-190)" % (where, len(plain(c["story"]))))
+    if len(c["f"]) < 3:
+        bad.append("%s: only %d 分则" % (where, len(c["f"])))
+    for f in c["f"]:
+        if not 35 <= len(plain(f["d"])) <= 110:
+            bad.append("%s/%s: d %d chars (want 35-110)" % (where, f["n"], len(plain(f["d"]))))
+    if plain(c["apply"]).count("\n") != 2:
+        bad.append("%s: apply is not 局面/先问/用反了" % where)
+    if len(c["q"]) != 3:
+        bad.append("%s: %d quotes (want 3)" % (where, len(c["q"])))
+    if not any("==" in x for x in [c["story"]] + [f["d"] for f in c["f"]] + list(c["q"])):
+        bad.append("%s: no ==highlight== anywhere" % where)
+    if c["src"] and not plain(c["src"]).strip():
+        bad.append("%s: empty src" % where)
+
+# no sentence may appear in two chapters
+seen = {}
+for c in C.CHAPTERS:
+    parts = [plain(c["story"]), plain(c["apply"])] + \
+            [plain(f.get(k, "")) for f in c["f"] for k in ("d", "eg")] + \
+            [plain(q) for q in c["q"]]
+    for blob in parts:
+        for x in re.split(r"(?<=[。！？\n])", blob):
+            x = x.strip()
+            if len(x) > 12:
+                seen.setdefault(x, set()).add(c["n"])
+for x, where in seen.items():
+    if len(where) > 1:
+        bad.append("repeated across %s: %s" % ("/".join(sorted(where)), x[:34]))
+
+print("chapters: %d across %d parents" % (len(C.CHAPTERS), len(C.PARENTS)))
+if bad:
+    print("problems: %d" % len(bad))
+    for b in bad:
+        print("  -", b)
+    sys.exit(1)
+print("all checks pass")

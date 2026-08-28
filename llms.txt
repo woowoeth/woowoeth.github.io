@@ -46,6 +46,14 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [毛泽东 · 论持久战](https://ourword.ai/i/mao/on-protracted-war/): 毛泽东 · 论持久战——时间换力量。弱的一方如果按对方的节奏打，必输。这一篇要回答的是：怎么把战争拖成自己能打的形状。
 - [毛泽东 · 中国革命战争的战略问题](https://ourword.ai/i/mao/strategy-of-the-revolution/): 毛泽东 · 中国革命战争的战略问题——有什么枪打什么仗。别人的胜仗不能直接搬。这一篇要回答的是：你这块地、这点人、这点枪，打法应该长什么样。
 - [毛泽东 · 党委会的工作方法](https://ourword.ai/i/mao/methods-of-work/): 毛泽东 · 党委会的工作方法——把事摆到桌面上。判断做对了，一班人还是各干各的。这一篇要回答的是：怎么让一群人真的按同一个判断动起来。
+- [孙子兵法 · 先胜而后求战](https://ourword.ai/i/sun-tzu/win-before-fighting/): 孙子兵法 · 先胜而后求战——赢在开打之前。输了的人常说运气不好，赢了的人常说打得漂亮。这一篇要回答的是：胜负在哪一刻其实已经定了。
+- [孙子兵法 · 知彼知己](https://ourword.ai/i/sun-tzu/know-both/): 孙子兵法 · 知彼知己——先算清楚再动。「知己知彼」被引用了两千年，多数人只记住了上半句的意思。这一篇要回答的是：知到什么程度才算知。
+- [孙子兵法 · 不战而屈人之兵](https://ourword.ai/i/sun-tzu/win-without-fighting/): 孙子兵法 · 不战而屈人之兵——最好的仗不用打。百战百胜听起来是最高成就。孙子说不是。这一篇要回答的是：为什么打赢一百次仍然是次优解。
+- [孙子兵法 · 以正合，以奇胜](https://ourword.ai/i/sun-tzu/orthodox-and-surprise/): 孙子兵法 · 以正合，以奇胜——正面接住，侧面取胜。人人都想要那一记出其不意。这一篇要回答的是：奇招为什么必须站在正面之上，单独用就是送。
+- [孙子兵法 · 兵形象水](https://ourword.ai/i/sun-tzu/form-like-water/): 孙子兵法 · 兵形象水——避实击虚。「像水一样」被引成了一句鸡汤。这一篇要回答的是：水到底像在哪里，以及它规定了什么不能做。
+- [曾国藩 · 结硬寨，打呆仗](https://ourword.ai/i/zeng-guofan/solid-camp-dull-fight/): 曾国藩 · 结硬寨，打呆仗——用笨办法消灭不确定。他一生没打过几场漂亮仗，却把一支临时拼起来的团练带到了最后。这一篇要回答的是：为什么最笨的打法反而最难被击败。
+- [曾国藩 · 慎独与日课](https://ourword.ai/i/zeng-guofan/self-watch/): 曾国藩 · 慎独与日课——没人看着时的那一段。他给自己定了十二条日课，一天不落地记了三十年。这一篇要回答的是：为什么改自己是唯一一件天天都能做的事。
+- [曾国藩 · 广收慎用](https://ourword.ai/i/zeng-guofan/recruit-and-test/): 曾国藩 · 广收慎用——在真事里看人。他的幕府出过一大批督抚。这一篇要回答的是：怎么在一个人还没做出成绩之前判断他能不能用。
 
 <!-- chapters:end -->
 ## Citing
