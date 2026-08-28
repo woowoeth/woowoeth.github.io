@@ -9,13 +9,19 @@ a.map-row:hover{border-color:#9d2933;color:inherit}
 .map-n{font-weight:650}
 .map-w{color:#9d2933;font-size:13.5px}
 .map-line{font-size:13.5px;color:#6f6959;line-height:1.45}
+.side,.layout .side{display:none!important}
+.layout{grid-template-columns:minmax(0,1fr)!important}
 mark.hl{
-  background:none;
-  color:#9d2933;
-  font-weight:700;
+  background:none!important;
+  color:#9d2933!important;
+  font-weight:700!important;
   font-style:normal;
   padding:0;
   box-shadow:none;
+  text-decoration:underline;
+  text-decoration-color:#9d2933;
+  text-underline-offset:.18em;
+  text-decoration-thickness:1.5px;
 }
 .site-foot p:has(code){display:none}
 @media(max-width:600px){

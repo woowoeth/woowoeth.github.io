@@ -34,6 +34,56 @@ FOOT_RE = re.compile(
     r"\s*x\.fillStyle=s\.p\[2\];x\.textBaseline=\"alphabetic\";x\.fillText\(\"OurWord\.ai\",bx,FOOT\);"
 )
 
+def patch_theme():
+    theme = ROOT / "seo" / "hw_theme.py"
+    if not theme.exists():
+        return
+    ts = theme.read_text(encoding="utf-8")
+    ts = re.sub(
+        r"    toc_html = \"\"\n    if toc:\n        items_t = \[.*?\n        toc_html = .*?\n",
+        "    toc_html = \"\"\n",
+        ts,
+        count=1,
+        flags=re.S,
+    )
+    ts = ts.replace("hw-chapter.css?v=1", "hw-chapter.css?v=3")
+    ts = ts.replace("hw-chapter.css?v=2", "hw-chapter.css?v=3")
+    ts = ts.replace("<p>本页可直接引用 <code>%s</code></p>\n    ", "")
+    theme.write_text(ts, encoding="utf-8")
+    print("theme patched")
+
+def patch_chapters():
+    p = ROOT / "seo" / "hw_chapters.py"
+    if not p.exists():
+        return
+    s = p.read_text(encoding="utf-8")
+    s = re.sub(
+        r"\s*<aside class=\"side\">.*?</aside>",
+        "",
+        s,
+        count=1,
+        flags=re.S,
+    )
+    p.write_text(s, encoding="utf-8")
+    print("chapters toc stripped")
+
+def patch_entry_css():
+    entry = ROOT / "assets" / "hw-entry.css"
+    if not entry.exists():
+        return
+    es = entry.read_text(encoding="utf-8")
+    block = (
+        "\n.side,.layout .side{display:none!important}\n"
+        ".layout{grid-template-columns:minmax(0,1fr)!important}\n"
+        "mark.hl{background:none!important;color:#9d2933!important;font-weight:700!important;"
+        "text-decoration:underline;text-decoration-color:#9d2933;text-underline-offset:.18em;"
+        "text-decoration-thickness:1.5px;padding:0;box-shadow:none}\n"
+        ".site-foot p:has(code){display:none}\n"
+    )
+    if ".side,.layout .side{display:none" not in es:
+        entry.write_text(es + block, encoding="utf-8")
+        print("entry css patched")
+
 def main():
     sys.path.insert(0, str(ROOT / "scripts"))
     import inject_week
@@ -62,20 +112,9 @@ def main():
     else:
         print("dq foot block not found")
     idx.write_text(s, encoding="utf-8")
-    theme = ROOT / "seo" / "hw_theme.py"
-    if theme.exists():
-        ts = theme.read_text(encoding="utf-8")
-        ns = ts.replace("hw-chapter.css?v=1", "hw-chapter.css?v=2")
-        ns = ns.replace("<p>本页可直接引用 <code>%s</code></p>\n    ", "")
-        if ns != ts:
-            theme.write_text(ns, encoding="utf-8")
-            print("theme cite/css patched")
-    entry = ROOT / "assets" / "hw-entry.css"
-    if entry.exists():
-        es = entry.read_text(encoding="utf-8")
-        if "site-foot p:has(code)" not in es:
-            entry.write_text(es + "\n.site-foot p:has(code){display:none}\n", encoding="utf-8")
-            print("entry cite hidden")
+    patch_theme()
+    patch_chapters()
+    patch_entry_css()
     try:
         sys.path.insert(0, str(ROOT / "seo"))
         import hw_slugs
