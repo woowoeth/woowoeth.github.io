@@ -188,9 +188,10 @@ def _chapter_page(ch, idx):
         )
     # Same rule as the entry pages: a 金句 the reader already met in the body is
     # not worth a second printing at the foot.
-    _seen = _bare(ch["story"]) + "".join(
-        _bare(f.get("d", "")) + _bare(f.get("eg", "")) for f in ch["f"]) + _bare(ch["apply"])
-    _keep = [q for q in ch["q"] if _bare(q) and _bare(q) not in _seen]
+    _seen = _bare(ch["story"]) + _bare(ch["dek"]) + "".join(
+        _bare(f.get("n", "")) + _bare(f.get("d", "")) + _bare(f.get("eg", ""))
+        for f in ch["f"]) + _bare(ch["apply"])
+    _keep = [q for q in ch["q"] if _bare(q) and not hw_theme._echoes(q, _seen)]
     quotes = "".join("<blockquote><p>%s</p></blockquote>" % rich(q) for q in _keep)
     toc += [("s7", "今天怎么用")] + ([("quotes", "金句")] if _keep else [])
     # 金句: 1-3 lines lifted from the 分则 they close (option A), plus the full

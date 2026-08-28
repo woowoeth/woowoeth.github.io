@@ -140,6 +140,24 @@ def _pick_pullquotes(pool, want):
     return chosen
 
 
+_OVERLAP = 10
+
+
+def _echoes(quote, body):
+    """True when the quote and the body share a run of _OVERLAP characters.
+
+    Exact containment missed the common case: the body highlights 「先为不可胜，
+    以待敌之可胜」 while the 金句 list carries 「昔之善战者，先为不可胜，以待敌之
+    可胜。」 — different strings, same line, printed twice.
+    """
+    q, b = _bare(quote), _bare(body)
+    if not q:
+        return False
+    if len(q) < _OVERLAP:
+        return q in b
+    return any(q[i:i + _OVERLAP] in b for i in range(len(q) - _OVERLAP + 1))
+
+
 CHAPTER_QUOTES = {}
 
 
@@ -180,6 +198,7 @@ def _render_blocks(it, zh):
                 else:
                     body.append(p)
             html.append('<section class="point" id="%s">' % aid)
+            rendered.add(name)          # a 分则 title is read text too
             html.append("<h2>%s</h2>" % esc(name))
             for para in body:
                 for x in _breathe(para):
@@ -255,6 +274,7 @@ def _render_blocks(it, zh):
             label = label.split("：", 1)[-1].split(":", 1)[-1]
         if first_q and ("留下" in h):
             first_q = False
+            rendered.add(paras[0])      # the pull is body the reader has read too
             html.append('<aside class="pull">%s</aside>' % esc(paras[0]))
             if len(paras) > 1:
                 html.append('<section class="sec">')
@@ -268,6 +288,7 @@ def _render_blocks(it, zh):
         aid = "s%d" % n
         toc.append((aid, label))
         klass = "sec apply" if "今天" in h else "sec"
+        rendered.add(label)
         html.append('<section class="%s" id="%s"><h2 class="sec-k">%s</h2>' % (klass, aid, esc(label)))
         for para in paras:
             for x in _breathe(para):
@@ -292,7 +313,8 @@ def _render_blocks(it, zh):
     seen_body = "".join(rendered)
     in_chapters = CHAPTER_QUOTES.get(it.title, set())
     keep = [q for q in quote_block
-            if _bare(q) and _bare(q) not in _bare(seen_body) and _bare(q) not in in_chapters]
+            if _bare(q) and not _echoes(q, seen_body)
+            and not any(_echoes(q, c) for c in in_chapters)]
     if keep:
         toc.append(("quotes", "金句"))
         html.append('<section class="quotes" id="quotes"><h2 class="sec-k">金句</h2>')
