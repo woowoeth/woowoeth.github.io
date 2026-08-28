@@ -59,6 +59,14 @@ def main():
         "    G.item_page = item_page\n    import hw_list\n    hw_list.install(G)\n",
         "install hw_list",
     )
+    once(
+        ROOT / "seo/geo_kit.py",
+        '''def sibling_links(site, zh=False):\n    """Every site links to every sibling: eight orphans become one crawlable property."""\n    out = []\n    for path, en, cn in SITES:\n        if path == site.path:\n            continue\n        out.append('<a href="%s">%s</a>' % (esc(SITE + "/" + (path + "/" if path else "")),\n                                            esc(cn if zh else en)))\n    return " · ".join(out)\n''',
+        '''def sibling_links(site, zh=False):\n    """Human World only points at the two sister editorial sites."""\n    if site.path == "":\n        return (
+            '<a href="%s">品味</a> · <a href="%s">原声</a>'
+            % (esc(SITE + "/skill/"), esc(SITE + "/podcast/"))\n        )\n    out = []\n    for path, en, cn in SITES:\n        if path == site.path:\n            continue\n        out.append('<a href="%s">%s</a>' % (esc(SITE + "/" + (path + "/" if path else "")),\n                                            esc(cn if zh else en)))\n    return " · ".join(out)\n''',
+        "sibling links taste+podcast",
+    )
     css = ROOT / "assets/hw-entry.css"
     s = css.read_text(encoding="utf-8")
     if "/* list / hub / all */" not in s:
