@@ -115,9 +115,33 @@
   "d": "2026-08-28",
   "h": "3b216ab9c6bb2a20"
  },
+ "i/guan-zhong/buying-deer/": {
+  "d": "2026-08-28",
+  "h": "73c52e4fbb15ca32"
+ },
+ "i/guan-zhong/follow-the-people/": {
+  "d": "2026-08-28",
+  "h": "e9f1f7514668e191"
+ },
+ "i/guan-zhong/granaries-first/": {
+  "d": "2026-08-28",
+  "h": "835df7ecc1276e50"
+ },
  "i/guiguzi/": {
   "d": "2026-08-28",
   "h": "98f96950266f155d"
+ },
+ "i/guiguzi/listen-in-reverse/": {
+  "d": "2026-08-28",
+  "h": "7da71fcc87e0b4ec"
+ },
+ "i/guiguzi/open-and-close/": {
+  "d": "2026-08-28",
+  "h": "b52e7ffb80fc6a25"
+ },
+ "i/guiguzi/sound-out/": {
+  "d": "2026-08-28",
+  "h": "fd138a8c6a7ace98"
  },
  "i/guns-germs-steel/": {
   "d": "2026-08-28",
@@ -166,6 +190,14 @@
  "i/huineng/": {
   "d": "2026-08-28",
   "h": "f2d232e376a6e2f9"
+ },
+ "i/huineng/in-the-world/": {
+  "d": "2026-08-28",
+  "h": "a7964bc19b9feae6"
+ },
+ "i/huineng/originally-not-a-thing/": {
+  "d": "2026-08-28",
+  "h": "4adfd51f4c4827e3"
  },
  "i/huo-qubing/": {
   "d": "2026-08-28",
@@ -510,6 +542,22 @@
  "i/xunzi/": {
   "d": "2026-08-28",
   "h": "6d8799c2d4b3611e"
+ },
+ "i/xunzi/borrow-from-things/": {
+  "d": "2026-08-28",
+  "h": "a378ae10e9665b5b"
+ },
+ "i/xunzi/constant-heaven/": {
+  "d": "2026-08-28",
+  "h": "801fc96725d47eb5"
+ },
+ "i/xunzi/division-makes-groups/": {
+  "d": "2026-08-28",
+  "h": "2fc828e5d616bd63"
+ },
+ "i/xunzi/origin-of-rites/": {
+  "d": "2026-08-28",
+  "h": "0e60abbcf1f044ae"
  },
  "i/zeng-guofan/": {
   "d": "2026-08-28",
