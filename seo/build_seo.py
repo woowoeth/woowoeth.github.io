@@ -1,11 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""SEO/GEO build for 人类世界生存法则. Run from the repo root: python seo/build_seo.py
-
-The knowledge base lives in one inline JS array in index.html, which means every
-crawler that does not run JavaScript — including all the AI answer engines — sees
-an empty page. This reads that array and writes one static page per entry.
-"""
+"""SEO/GEO build for Human World. Run from repo root: python seo/build_seo.py"""
 import datetime
 import json
 import os
@@ -16,40 +11,26 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import geo_kit as G
 import hw_theme
 hw_theme.install(G)
-import hw_theme
-hw_theme.install(G)
-import hw_theme
-hw_theme.install(G)
-import hw_theme
-hw_theme.install(G)
-import hw_theme
-hw_theme.install(G)
-import hw_theme
-hw_theme.install(G)
-import hw_theme
-hw_theme.install(G)
-import hw_theme
-hw_theme.install(G)
-import hw_theme
-hw_theme.install(G)
-import hw_theme
-hw_theme.install(G)
-import hw_theme
-hw_theme.install(G)
-import hw_theme
-hw_theme.install(G)
-import hw_theme
-hw_theme.install(G)
-import hw_theme
-hw_theme.install(G)
-import hw_theme
-hw_theme.install(G)
-import hw_theme
-hw_theme.install(G)
-import hw_theme
-hw_theme.install(G)
-import hw_theme
-hw_theme.install(G)
+import hw_slugs
+
+_orig_slugify = G.slugify
+
+def slugify(s, fallback="item"):
+    if s in hw_slugs.SLUGS:
+        return hw_slugs.SLUGS[s]
+    if s in hw_slugs.TAG_SLUGS:
+        return hw_slugs.TAG_SLUGS[s]
+    key = str(s or "").replace("·", "")
+    if key in hw_slugs.TAG_SLUGS:
+        return hw_slugs.TAG_SLUGS[key]
+    out = _orig_slugify(s, fallback)
+    if any("一" <= ch <= "鿿" for ch in out):
+        mapped = hw_slugs.slug_for(s)
+        if mapped and not any("一" <= ch <= "鿿" for ch in mapped):
+            return mapped
+    return out
+
+G.slugify = slugify
 
 SITE = G.Site(
     path="",
@@ -82,7 +63,6 @@ CITE = ("Cite the individual entry page. Quotes from classical texts inside an e
 
 
 def load_array(path="index.html", varname="D"):
-    """Pull `const D=[...]` out of index.html and turn it into real data."""
     s = open(path, encoding="utf-8").read()
     m = re.search(r"(?:const|let|var)\s+%s\s*=\s*\[" % re.escape(varname), s)
     if not m:
@@ -112,7 +92,6 @@ def load_array(path="index.html", varname="D"):
 
 
 def flat(v):
-    """Fields are variously a string, a list of strings, or a list of {n, why/d} dicts."""
     if v is None:
         return ""
     if isinstance(v, str):
@@ -129,7 +108,6 @@ def flat(v):
 
 
 def era_bucket(y):
-    """A shared era label so entries cluster into hubs instead of each having its own."""
     try:
         y = int(y)
     except Exception:
@@ -145,8 +123,6 @@ def era_bucket(y):
 def load_items():
     items = []
     entries = list(load_array())
-    # 反向关联索引，与 index.html 中的 relOf/contrastOf 保持一致：l 和 contrast 是手写的
-    # 单向边，若不补齐反向，静态页里被指向的一方看不到来源，新条目在抓取层等于孤岛。
     rev_l, rev_c = {}, {}
     for e in entries:
         src = e.get("n") or ""
@@ -155,8 +131,11 @@ def load_items():
         for c in (e.get("contrast") or []):
             if isinstance(c, dict) and c.get("n"):
                 rev_c.setdefault(c["n"], []).append({"n": src, "why": c.get("why") or ""})
+    missing = []
     for e in entries:
         name = e.get("n") or ""
+        if name not in hw_slugs.SLUGS:
+            missing.append(name)
         rel = list(e.get("l") or [])
         seen = set(rel)
         for x in rev_l.get(name, []):
@@ -194,39 +173,28 @@ def load_items():
             blocks.append(("Q：和谁对照着读？", flat(ctr)))
         if rel:
             blocks.append(("延伸", flat(rel)))
-
         summary = "%s%s——%s。%s" % (name, ("（%s）" % era if era else ""), one,
                                    G.plain(e.get("d"), 140))
-        # Chinese-only site: no English twin, so no hreflang pair and no duplicate URL.
-        # geo_kit renders the default /i/ pages in Chinese because Site.lang is zh-Hans.
-        # 典籍 are Books, everyone else is a Person — a truer schema type than
-        # generic Article, and the one an answer engine reasons about.
         is_text = (cat == "典籍·洞见") or any(
             k in name for k in ("经", "论", "简史", "兵法", "史记", "书", "记", "传", "录"))
         extra = ({"about": one} if one else {})
         if is_text:
             extra["bookFormat"] = "https://schema.org/Hardcover"
         items.append(G.Item(
-            slug=name, title=name, summary=summary,
+            slug=hw_slugs.slug_for(name), title=name, summary=summary,
             blocks=blocks,
             tags=[t for t in [cat, era_bucket(e_year), one] if t],
             updated="",
             schema_type="Book" if is_text else "Person",
             schema_extra=extra,
         ))
+    if missing:
+        raise SystemExit("hw_slugs missing names: " + ", ".join(missing))
     items.sort(key=lambda i: i.title)
     return items
 
 
-
-
 def fill_counts(site, n):
-    """SITE 的文案里带 %(n)d 占位符，构建时按 D 数组真实条数填。
-
-    这些字符串原本写死「70+ / 70 多位 / seventy」，条目涨到 95 之后就一直是旧数，
-    而它们会进 meta description、og:title、JSON-LD 和 llms.txt——正是 AI 回答引擎
-    读得最多的地方。和 patch_static_stats 同一个理由：让它不可能再过期。
-    """
     for attr in ("tagline", "tagline_zh", "description", "description_zh"):
         v = getattr(site, attr, "")
         if "%(n)d" in v:
@@ -235,13 +203,6 @@ def fill_counts(site, n):
 
 
 def patch_static_stats(entries, path="index.html"):
-    """回写首页 header 里的静态统计数字。
-
-    `<b id="st">` 和 `<b id="cat-count">` 在页面加载后会被 JS 填成真实值，但不跑
-    JS 的抓取方（以及所有 AI 回答引擎）看到的是 HTML 里那个写死的数。那个数一旦
-    忘了改就会长期偏低——上线时它停在 62，实际已有 95 条。这里每次构建按 D 数组
-    重新写一遍，让它不可能再过期。
-    """
     n = len(entries)
     cats = len({e.get("c") for e in entries if e.get("c")})
     src = open(path, encoding="utf-8").read()
@@ -250,12 +211,55 @@ def patch_static_stats(entries, path="index.html"):
         pat = re.compile(r'(<b id="%s">)([^<]*)(</b>)' % re.escape(key))
         m = pat.search(out)
         if not m:
-            raise SystemExit("patch_static_stats: 找不到 <b id=\"%s\">" % key)
-        hits[key] = "%s->%s" % (m.group(2) or "空", val)
+            raise SystemExit("patch_static_stats: missing <b id=\"%s\">" % key)
+        hits[key] = "%s->%s" % (m.group(2) or "empty", val)
         out = pat.sub(lambda mm: "%s%d%s" % (mm.group(1), val, mm.group(3)), out, count=1)
     if out != src:
         open(path, "w", encoding="utf-8").write(out)
     return hits
+
+
+def _redirect_html(dest, title):
+    dest = dest if dest.startswith("http") else "https://ourword.ai" + dest
+    return (
+        "<!DOCTYPE html>\n<html lang=\"zh-Hans\"><head>\n"
+        "<meta charset=\"utf-8\">\n"
+        "<meta http-equiv=\"refresh\" content=\"0;url=%s\">\n"
+        "<link rel=\"canonical\" href=\"%s\">\n"
+        "<title>%s</title>\n"
+        "<script>location.replace(%s);</script>\n"
+        "</head><body><p><a href=\"%s\">Moved to %s</a></p></body></html>\n"
+        % (G.esc(dest), G.esc(dest), G.esc(title), json.dumps(dest), G.esc(dest), G.esc(dest))
+    )
+
+
+def write_legacy_redirects(root="."):
+    n = 0
+    for name, new in hw_slugs.SLUGS.items():
+        old = hw_slugs.cjk_slug(name)
+        if not old or old == new:
+            continue
+        dest = "/i/%s/" % new
+        path = os.path.join(root, "i", old, "index.html")
+        os.makedirs(os.path.dirname(path), exist_ok=True)
+        html = _redirect_html(dest, name)
+        if not os.path.exists(path) or open(path, encoding="utf-8").read() != html:
+            open(path, "w", encoding="utf-8").write(html)
+            n += 1
+    seen = set()
+    for tag, new in hw_slugs.TAG_SLUGS.items():
+        old = hw_slugs.cjk_slug(tag)
+        if not old or old == new or old in seen:
+            continue
+        seen.add(old)
+        dest = "/t/%s/" % new
+        path = os.path.join(root, "t", old, "index.html")
+        os.makedirs(os.path.dirname(path), exist_ok=True)
+        html = _redirect_html(dest, tag)
+        if not os.path.exists(path) or open(path, encoding="utf-8").read() != html:
+            open(path, "w", encoding="utf-8").write(html)
+            n += 1
+    return n
 
 
 def main():
@@ -264,8 +268,8 @@ def main():
     rep = G.build(SITE, items, root=".", today=datetime.date.today().isoformat(),
                   how_built=HOW, cite_as=CITE,
                   extra_sitemaps=[])
-    # G.build 会重写 index.html 的 GEO 区块，所以静态统计数字放在它之后回写。
     rep["stats"] = patch_static_stats(load_array())
+    rep["legacy_redirects"] = write_legacy_redirects()
     print("HumanWorld seo/geo:", json.dumps(rep, ensure_ascii=False))
     return rep
 
