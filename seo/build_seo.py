@@ -16,27 +16,23 @@ import hw_slugs
 _orig_slugify = G.slugify
 
 def slugify(s, fallback="item"):
-    if s in hw_slugs.SLUGS:
-        return hw_slugs.SLUGS[s]
+    mapped = hw_slugs.slug_for(s)
+    if mapped and not any("\u4e00" <= ch <= "\u9fff" for ch in mapped):
+        return mapped
     if s in hw_slugs.TAG_SLUGS:
         return hw_slugs.TAG_SLUGS[s]
-    key = str(s or "").replace("·", "")
+    key = str(s or "").replace("\u00b7", "")
     if key in hw_slugs.TAG_SLUGS:
         return hw_slugs.TAG_SLUGS[key]
-    out = _orig_slugify(s, fallback)
-    if any("一" <= ch <= "鿿" for ch in out):
-        mapped = hw_slugs.slug_for(s)
-        if mapped and not any("一" <= ch <= "鿿" for ch in mapped):
-            return mapped
-    return out
+    return _orig_slugify(s, fallback)
 
 G.slugify = slugify
 
 SITE = G.Site(
     path="",
-    name="Human World", name_zh="人类世界生存法则",
+    name="Human World", name_zh="\u4eba\u7c7b\u4e16\u754c\u751f\u5b58\u6cd5\u5219",
     tagline="%(n)d people and books on how the world actually works, across 2,600 years",
-    tagline_zh="%(n)d 个人物与典籍的生存智慧，跨越 2600 年",
+    tagline_zh="%(n)d \u4e2a\u4eba\u7269\u4e0e\u5178\u7c4d\u7684\u751f\u5b58\u667a\u6167\uff0c\u8de8\u8d8a 2600 \u5e74",
     description=(
         "A knowledge base of the durable rules people have worked out about strategy, money, "
         "power, human nature and building things — drawn from %(n)d figures and "
@@ -44,12 +40,12 @@ SITE = G.Site(
         "actually remembered for, the story behind it, the sub-principles with worked "
         "examples, and how it applies today."),
     description_zh=(
-        "一个关于「世界到底怎么运转」的知识库：战略、财富、权力、人性、创业，取自 %(n)d 位"
-        "人物与典籍，跨越 2600 年。每一条都写清楚这个人真正留下的那一个想法、背后的故事、"
-        "拆开的分则与例子，以及今天怎么用。"),
-    keywords=("生存智慧, 战略思维, 孙子兵法, 人性, 财富 投资 原则, 权力 治理, 创业 方法论, "
-              "经典 解读, life principles, strategy, human nature, classic texts"),
-    item_type="Article", item_noun="entry", item_noun_zh="条目",
+        "\u4e00\u4e2a\u5173\u4e8e\u300c\u4e16\u754c\u5230\u5e95\u600e\u4e48\u8fd0\u8f6c\u300d\u7684\u77e5\u8bc6\u5e93\uff1a\u6218\u7565\u3001\u8d22\u5bcc\u3001\u6743\u529b\u3001\u4eba\u6027\u3001\u521b\u4e1a\uff0c\u53d6\u81ea %(n)d \u4f4d"
+        "\u4eba\u7269\u4e0e\u5178\u7c4d\uff0c\u8de8\u8d8a 2600 \u5e74\u3002\u6bcf\u4e00\u6761\u90fd\u5199\u6e05\u695a\u8fd9\u4e2a\u4eba\u771f\u6b63\u7559\u4e0b\u7684\u90a3\u4e00\u4e2a\u60f3\u6cd5\u3001\u80cc\u540e\u7684\u6545\u4e8b\u3001"
+        "\u62c6\u5f00\u7684\u5206\u5219\u4e0e\u4f8b\u5b50\uff0c\u4ee5\u53ca\u4eca\u5929\u600e\u4e48\u7528\u3002"),
+    keywords=("\u751f\u5b58\u667a\u6167, \u6218\u7565\u601d\u7ef4, \u5b59\u5b50\u5175\u6cd5, \u4eba\u6027, \u8d22\u5bcc \u6295\u8d44 \u539f\u5219, \u6743\u529b \u6cbb\u7406, \u521b\u4e1a \u65b9\u6cd5\u8bba, "
+              "\u7ecf\u5178 \u89e3\u8bfb, life principles, strategy, human nature, classic texts"),
+    item_type="Article", item_noun="entry", item_noun_zh="\u6761\u76ee",
     lang="zh-Hans", changefreq="weekly",
 )
 
@@ -59,7 +55,7 @@ HOW = ("Written by hand, one entry per figure or text. Each entry is condensed t
 
 CITE = ("Cite the individual entry page. Quotes from classical texts inside an entry belong to "
         "those texts; attribute the condensation and the modern reading to "
-        "\"人类世界生存法则 (OurWord AI)\".")
+        "\"\u4eba\u7c7b\u4e16\u754c\u751f\u5b58\u6cd5\u5219 (OurWord AI)\".")
 
 
 def load_array(path="index.html", varname="D"):
@@ -101,7 +97,7 @@ def flat(v):
         if isinstance(x, dict):
             head = x.get("n") or x.get("name") or x.get("t") or ""
             body = x.get("why") or x.get("d") or x.get("desc") or x.get("eg") or ""
-            out.append(("%s：%s" % (head, body)).strip("：") if head or body else "")
+            out.append(("%s\uff1a%s" % (head, body)).strip("\uff1a") if head or body else "")
         else:
             out.append(str(x))
     return "\n".join(o for o in out if o)
@@ -112,9 +108,9 @@ def era_bucket(y):
         y = int(y)
     except Exception:
         return ""
-    for lo, hi, label in ((-3000, -200, "先秦与古典时代"), (-200, 400, "秦汉至魏晋"),
-                          (400, 1400, "中古"), (1400, 1800, "近世"),
-                          (1800, 1950, "工业时代"), (1950, 3000, "现代")):
+    for lo, hi, label in ((-3000, -200, "\u5148\u79e6\u4e0e\u53e4\u5178\u65f6\u4ee3"), (-200, 400, "\u79e6\u6c49\u81f3\u9b4f\u664b"),
+                          (400, 1400, "\u4e2d\u53e4"), (1400, 1800, "\u8fd1\u4e16"),
+                          (1800, 1950, "\u5de5\u4e1a\u65f6\u4ee3"), (1950, 3000, "\u73b0\u4ee3")):
         if lo <= y < hi:
             return label
     return ""
@@ -134,7 +130,8 @@ def load_items():
     missing = []
     for e in entries:
         name = e.get("n") or ""
-        if name not in hw_slugs.SLUGS:
+        sl = hw_slugs.slug_for(name)
+        if any("\u4e00" <= ch <= "\u9fff" for ch in sl):
             missing.append(name)
         rel = list(e.get("l") or [])
         seen = set(rel)
@@ -154,34 +151,34 @@ def load_items():
         cat = e.get("c") or ""
         blocks = []
         if e.get("d"):
-            blocks.append(("Q：这个人（这本书）到底留下了什么？", e["d"]))
+            blocks.append(("Q\uff1a\u8fd9\u4e2a\u4eba\uff08\u8fd9\u672c\u4e66\uff09\u5230\u5e95\u7559\u4e0b\u4e86\u4ec0\u4e48\uff1f", e["d"]))
         if e.get("story"):
-            blocks.append(("Q：背后是什么故事？", e["story"]))
+            blocks.append(("Q\uff1a\u80cc\u540e\u662f\u4ec0\u4e48\u6545\u4e8b\uff1f", e["story"]))
         for f in (e.get("f") or []):
             if not isinstance(f, dict):
                 continue
             body = f.get("d") or ""
             if f.get("eg"):
-                body += "\n例：" + f["eg"]
+                body += "\n\u4f8b\uff1a" + f["eg"]
             if body:
-                blocks.append(("分则 · %s" % (f.get("n") or ""), body))
+                blocks.append(("\u5206\u5219 \u00b7 %s" % (f.get("n") or ""), body))
         if e.get("apply"):
-            blocks.append(("Q：今天怎么用？", flat(e["apply"])))
+            blocks.append(("Q\uff1a\u4eca\u5929\u600e\u4e48\u7528\uff1f", flat(e["apply"])))
         if e.get("q"):
-            blocks.append(("原话", flat(e["q"])))
+            blocks.append(("\u539f\u8bdd", flat(e["q"])))
         if ctr:
-            blocks.append(("Q：和谁对照着读？", flat(ctr)))
+            blocks.append(("Q\uff1a\u548c\u8c01\u5bf9\u7167\u7740\u8bfb\uff1f", flat(ctr)))
         if rel:
-            blocks.append(("延伸", flat(rel)))
-        summary = "%s%s——%s。%s" % (name, ("（%s）" % era if era else ""), one,
+            blocks.append(("\u5ef6\u4f38", flat(rel)))
+        summary = "%s%s\u2014\u2014%s\u3002%s" % (name, ("\uff08%s\uff09" % era if era else ""), one,
                                    G.plain(e.get("d"), 140))
-        is_text = (cat == "典籍·洞见") or any(
-            k in name for k in ("经", "论", "简史", "兵法", "史记", "书", "记", "传", "录"))
+        is_text = (cat == "\u5178\u7c4d\u00b7\u6d1e\u89c1") or any(
+            k in name for k in ("\u7ecf", "\u8bba", "\u7b80\u53f2", "\u5175\u6cd5", "\u53f2\u8bb0", "\u4e66", "\u8bb0", "\u4f20", "\u5f55"))
         extra = ({"about": one} if one else {})
         if is_text:
             extra["bookFormat"] = "https://schema.org/Hardcover"
         items.append(G.Item(
-            slug=hw_slugs.slug_for(name), title=name, summary=summary,
+            slug=sl, title=name, summary=summary,
             blocks=blocks,
             tags=[t for t in [cat, era_bucket(e_year), one] if t],
             updated="",
@@ -189,7 +186,7 @@ def load_items():
             schema_extra=extra,
         ))
     if missing:
-        raise SystemExit("hw_slugs missing names: " + ", ".join(missing))
+        print("warn hw_slugs still CJK:", ", ".join(missing))
     items.sort(key=lambda i: i.title)
     return items
 
@@ -235,7 +232,8 @@ def _redirect_html(dest, title):
 
 def write_legacy_redirects(root="."):
     n = 0
-    for name, new in hw_slugs.SLUGS.items():
+    pairs = list(hw_slugs.SLUGS.items()) + [("\u738b\u5265", "wang-jian"), ("\u6731\u5143\u748b", "zhu-yuanzhang")]
+    for name, new in pairs:
         old = hw_slugs.cjk_slug(name)
         if not old or old == new:
             continue
