@@ -220,35 +220,31 @@ def _chapter_page(ch, idx):
             )
         )
     toc += [("s7", "今天怎么用")]
-    says = ['<figure class="say"><blockquote><p>%s</p></blockquote></figure>' % rich(q)
-            for q in ch["q"]]
+    says = ['<blockquote class="say"><p>%s</p></blockquote>' % rich(q) for q in ch["q"]]
     apply_paras = "".join("<p>%s</p>" % rich(p) for p in ch["apply"].split("\n") if p.strip())
-    # 金句 used to sit in one block at the bottom. Spread them over the gaps:
-    # one after the story, the rest between the 分则.
+    # Each 金句 goes beside the 分则 it is actually about (scored on character
+    # bigrams), not wherever the spacing happened to land it.
     gaps = len(points) + 1
     woven = [""] * gaps
-    # text on each side of every gap: gap 0 sits after the story, gap i after 分则 i
     sides = [_plain(ch["story"])] + [
         _plain(f["n"]) + _plain(f["d"]) + _plain(f.get("eg", "")) for f in ch["f"]]
-    if says:
-        picked, step = [], gaps / float(min(len(says), gaps))
-        for i, q in enumerate(ch["q"][:gaps]):
-            want = min(int(i * step + step / 2), gaps - 1)
-            bare = _bare(q)
-            order = sorted(range(gaps), key=lambda j: (abs(j - want), j))
-            pick = None
-            for j in order:
-                if j in picked:
-                    continue
-                near = sides[j] + (sides[j + 1] if j + 1 < len(sides) else "")
-                if bare and bare in _bare(near):
-                    continue
-                pick = j
-                break
-            picked.append(pick if pick is not None
-                          else next((j for j in order if j not in picked), want))
-        for q, j in zip(says, picked):
-            woven[j] = q
+    joined = [sides[j] + (sides[j + 1] if j + 1 < len(sides) else "") for j in range(gaps)]
+
+    def _sh(t):
+        b = _bare(t)
+        return {b[i:i + 2] for i in range(len(b) - 1)}
+
+    qs = ch["q"][:gaps]
+    pairs = sorted(((-(len(_sh(q) & _sh(joined[j])) / float(len(_sh(q)) or 1)), i, j)
+                    for i, q in enumerate(qs) for j in range(gaps)))
+    placed, used = {}, set()
+    for _score, i, j in pairs:
+        if i in placed or j in used:
+            continue
+        placed[i] = j
+        used.add(j)
+    for i, j in placed.items():
+        woven[j] = says[i]
     body_points = woven[0] + "\n" + "\n".join(
         pt + ("\n" + woven[i + 1] if woven[i + 1] else "") for i, pt in enumerate(points))
     toc_html = "".join(

@@ -113,34 +113,9 @@ h1{
 .eg::before{content:"例  "; color:var(--seal); font-size:12px; letter-spacing:.08em; font-weight:650}
 .apply{background:var(--surface); border:1px solid var(--rule); border-radius:14px; padding:16px 18px; margin:8px 0 32px}
 .quotes{margin:8px 0 36px}
-/* 金句 — set between sections, not dumped at the end.
-   Hairline rules + a seal dot; inherits --quote so it picks up the mincho
-   on wide screens and the system serif on phones. */
-.say{margin:38px 0;padding:0;text-align:center}
-.say::before{
-  content:""; display:block; width:5px; height:5px; margin:0 auto 20px;
-  background:var(--seal); transform:rotate(45deg); opacity:.75;
-}
-.say::after{
-  content:""; display:block; width:34px; height:1px; margin:20px auto 0;
-  background:var(--rule-2);
-}
-.say blockquote{
-  margin:0; padding:0; border:0; color:var(--ink);
-  font-family:var(--quote); font-size:21px; line-height:1.62; letter-spacing:.01em;
-}
-.say blockquote p{margin:0}
-/* A 金句 is already emphatic; when the whole line is ==marked== the red
-   underline turns it into a wall. Keep the seal colour, drop the rest.
-   Needs !important + higher specificity to beat force_chapter_ui. */
-.say mark.hl{
-  background:transparent!important; color:var(--seal)!important;
-  font-weight:inherit!important; text-decoration:none!important;
-}
-@media (max-width:600px){
-  .say{margin:30px 0}
-  .say blockquote{font-size:18px; line-height:1.66}
-}
+/* 金句 — 穿插在章节之间，外观沿用原来的 blockquote（朱红竖线 + 明朝体），
+   只多一点上下留白把它和正文隔开。 */
+.say{margin:26px 0}
 
 blockquote{margin:0 0 12px; padding:2px 0 2px 14px; border-left:2px solid var(--seal); color:var(--ink-2); font-family:var(--quote); font-size:18px; line-height:1.65}
 blockquote p{margin:0}

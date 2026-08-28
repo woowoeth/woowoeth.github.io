@@ -36,7 +36,7 @@ def _share_btn(title, url, text):
 
 def _say(text):
     """One 金句, set into the flow between sections."""
-    return '<figure class="say"><blockquote><p>%s</p></blockquote></figure>' % esc(text)
+    return '<blockquote class="say"><p>%s</p></blockquote>' % esc(text)
 
 
 _STRIP = "\u300c\u300d\u201c\u201d\u2018\u2019\u3002\uff0c\u3001\uff01\uff1f\uff1b\uff1a\u2014\u2026 .,!?;:\"'"
@@ -46,41 +46,53 @@ def _bare(t):
     return "".join(c for c in str(t or "") if c not in _STRIP)
 
 
+def _shingles(t):
+    b = _bare(t)
+    return {b[i:i + 2] for i in range(len(b) - 1)} or set()
+
+
+def _relevance(quote, text):
+    """Character-bigram overlap. Verbatim quotes score 1.0; a quote that merely
+    shares vocabulary with a section still beats one that shares nothing."""
+    q = _shingles(quote)
+    if not q:
+        return 0.0
+    return len(q & _shingles(text)) / float(len(q))
+
+
 def _weave(html, slots, quotes, texts):
-    """Spread the 金句 evenly over the gaps between sections.
+    """Put each 金句 next to the section it belongs to.
 
-    They used to sit in one block at the very bottom, which nobody scrolls to.
-    `slots` are indices into `html` (after the story section and after each
-    分则); insert back-to-front so earlier indices stay valid.
-
-    Most 分则 open by quoting the same line that is in q[], so a quote dropped
-    next to its own section reads as a stutter. `texts` holds the plain text of
-    the section on either side of each slot; a quote already present there is
-    nudged to the nearest slot where it is not.
+    The previous pass did the opposite: it pushed a quote AWAY from any section
+    that mentioned it, so 「得道者多助」 ended up under 以德服人 while its own
+    section 得民者得天下 got an unrelated line. Now every quote is scored against
+    every section and takes the best free slot.
     """
     if not quotes or not slots:
         return html
     quotes = quotes[:len(slots)]
-    step = len(slots) / float(len(quotes))
-    picked = []
-    for i, q in enumerate(quotes):
-        want = min(max(int(i * step + step / 2), 0), len(slots) - 1)
-        bare = _bare(q)
-        order = sorted(range(len(slots)), key=lambda j: (abs(j - want), j))
-        choice = None
-        for j in order:                       # first pass: no echo, not taken
-            if j in picked:
-                continue
-            near = list(texts[j]) + (list(texts[j + 1]) if j + 1 < len(texts) else [])
-            if bare and any(bare in _bare(t) for t in near):
-                continue
-            choice = j
-            break
-        if choice is None:                    # fall back to any free slot
-            choice = next((j for j in order if j not in picked), want)
-        picked.append(choice)
-    for q, j in sorted(zip(quotes, picked), key=lambda pair: -pair[1]):
-        html.insert(slots[j], _say(q))
+    joined = ["".join(texts[j]) + ("".join(texts[j + 1]) if j + 1 < len(texts) else "")
+              for j in range(len(slots))]
+    pairs = []
+    for qi, q in enumerate(quotes):
+        for j in range(len(slots)):
+            pairs.append((_relevance(q, joined[j]), qi, j))
+    pairs.sort(key=lambda t: (-t[0], t[1], t[2]))
+    placed, used = {}, set()
+    for score, qi, j in pairs:
+        if qi in placed or j in used:
+            continue
+        placed[qi], _ = j, used.add(j)
+    step = len(slots) / float(len(quotes))          # anything unscored: spread out
+    for qi in range(len(quotes)):
+        if qi in placed:
+            continue
+        j = next((k for k in sorted(range(len(slots)),
+                                    key=lambda k: abs(k - int(qi * step + step / 2)))
+                  if k not in used), 0)
+        placed[qi], _ = j, used.add(j)
+    for qi, j in sorted(placed.items(), key=lambda kv: -kv[1]):
+        html.insert(slots[j], _say(quotes[qi]))
     return html
 
 
