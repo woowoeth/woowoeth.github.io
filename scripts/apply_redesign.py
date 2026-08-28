@@ -20,19 +20,18 @@ FIXES = [
     ("守彙", "守住"),
 ]
 
-OLD_FOOT = (
-    'let bx=PADX;\n'
-    '  if(dqLogoOK){const lw=Math.round(W*.06),lh2=lw*dqLogoImg.height/dqLogoImg.width;\n'
-    '    x.globalAlpha=.9;x.drawImage(dqLogoImg,bx,FOOT-lh2,lw,lh2);x.globalAlpha=1;bx+=lw+Math.round(W*.02);}\n'
-    '  x.font=Math.round(W*.034)+\'px -apple-system,"PingFang SC",system-ui,sans-serif\';\n'
-    '  x.fillStyle=s.p[2];x.textBaseline="alphabetic";x.fillText("OurWord.ai",bx,FOOT);'
-)
 NEW_FOOT = (
-    'const lw=Math.round(W*.048),footFs=Math.round(W*.034),mid=FOOT-Math.round(srcS*.36);\n'
-    '  let bx=PADX;\n'
-    '  if(dqLogoOK){x.globalAlpha=.92;x.drawImage(dqLogoImg,bx,mid-lw/2,lw,lw);x.globalAlpha=1;bx+=lw+Math.round(W*.016);}\n'
-    '  x.font=footFs+\'px -apple-system,"PingFang SC",system-ui,sans-serif\';\n'
-    '  x.fillStyle=s.p[2];x.textBaseline="middle";x.fillText("OurWord.ai",bx,mid);'
+    'const lw=Math.round(W*.048),footFs=Math.round(W*.034),mid=FOOT-Math.round(srcS*.36);'
+    'let bx=PADX;'
+    'if(dqLogoOK){x.globalAlpha=.92;x.drawImage(dqLogoImg,bx,mid-lw/2,lw,lw);x.globalAlpha=1;bx+=lw+Math.round(W*.016);}'
+    'x.font=footFs+\'px -apple-system,"PingFang SC",system-ui,sans-serif\';'
+    'x.fillStyle=s.p[2];x.textBaseline="middle";x.fillText("OurWord.ai",bx,mid);'
+)
+FOOT_RE = re.compile(
+    r"let bx=PADX;\s*if\(dqLogoOK\)\{const lw=Math\.round\(W\*\.06\),lh2=lw\*dqLogoImg\.height/dqLogoImg\.width;"
+    r"\s*x\.globalAlpha=\.9;x\.drawImage\(dqLogoImg,bx,FOOT-lh2,lw,lh2\);x\.globalAlpha=1;bx\+=lw\+Math\.round\(W\*\.02\);\}"
+    r"\s*x\.font=Math\.round\(W\*\.034\)\+'px -apple-system,\"PingFang SC\",system-ui,sans-serif';"
+    r"\s*x\.fillStyle=s\.p\[2\];x\.textBaseline=\"alphabetic\";x\.fillText\(\"OurWord\.ai\",bx,FOOT\);"
 )
 
 def main():
@@ -57,12 +56,26 @@ def main():
         s,
         count=1,
     )
-    if OLD_FOOT in s:
-        s = s.replace(OLD_FOOT, NEW_FOOT, 1)
+    if FOOT_RE.search(s):
+        s = FOOT_RE.sub(NEW_FOOT, s, count=1)
         print("dq foot aligned")
     else:
         print("dq foot block not found")
     idx.write_text(s, encoding="utf-8")
+    theme = ROOT / "seo" / "hw_theme.py"
+    if theme.exists():
+        ts = theme.read_text(encoding="utf-8")
+        ns = ts.replace("hw-chapter.css?v=1", "hw-chapter.css?v=2")
+        ns = ns.replace("<p>本页可直接引用 <code>%s</code></p>\n    ", "")
+        if ns != ts:
+            theme.write_text(ns, encoding="utf-8")
+            print("theme cite/css patched")
+    entry = ROOT / "assets" / "hw-entry.css"
+    if entry.exists():
+        es = entry.read_text(encoding="utf-8")
+        if "site-foot p:has(code)" not in es:
+            entry.write_text(es + "\n.site-foot p:has(code){display:none}\n", encoding="utf-8")
+            print("entry cite hidden")
     try:
         sys.path.insert(0, str(ROOT / "seo"))
         import hw_slugs
