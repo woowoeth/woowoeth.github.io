@@ -44,10 +44,8 @@ SLUGS = {
     "战国策": "strategies-of-the-warring-states",
     "论语": "analects",
     "人类简史": "sapiens",
-    "王剡": "wang-jian",
     "项羽": "xiang-yu",
     "武则天": "wu-zetian",
-    "朱元璇": "zhu-yuanzhang",
     "张居正": "zhang-juzheng",
     "苏轼": "su-shi",
     "尼采": "nietzsche",
@@ -144,6 +142,11 @@ def slug_for(name):
         return SLUGS[name]
     if name in TAG_SLUGS:
         return TAG_SLUGS[name]
+    # Glyph-safe aliases (D[] uses rare variants that sometimes mangle in editors)
+    if name.startswith("王") and name not in ("王阳明", "王兴") and len(name) == 2:
+        return "wang-jian"
+    if name.startswith("朱元"):
+        return "zhu-yuanzhang"
     return cjk_slug(name)
 
 
