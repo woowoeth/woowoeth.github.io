@@ -1,0 +1,81 @@
+/* Human World entry pages */
+:root{
+  --bg:#f4f2ec; --bg-tint:#ece8df; --surface:#fffef9; --surface-2:#f7f4ec;
+  --ink:#1c1917; --ink-2:#3f3a34; --muted:#6f6959; --faint:#9a9384;
+  --rule:#e2ddd0; --rule-2:#d0c9b8;
+  --seal:#9d2933; --seal-soft:#f3e4e0;
+  --shadow:0 1px 2px rgba(28,25,23,.05), 0 10px 28px -18px rgba(28,25,23,.22);
+  --serif:"Songti SC","Noto Serif CJK SC","Source Han Serif SC",Georgia,"Times New Roman",serif;
+  --sans:"PingFang SC","HarmonyOS Sans SC","Hiragino Sans GB","Microsoft YaHei",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0; background:var(--bg); color:var(--ink); font-family:var(--sans);
+  font-size:17px; line-height:1.75; -webkit-font-smoothing:antialiased;
+}
+a{color:inherit; text-decoration:none}
+a:hover{color:var(--seal)}
+button{font:inherit; color:inherit; background:none; border:0; cursor:pointer}
+:focus-visible{outline:2px solid var(--seal); outline-offset:3px; border-radius:3px}
+.wrap{max-width:1120px; margin:0 auto; padding:0 clamp(18px,4vw,40px)}
+.mast{padding:clamp(28px,5vw,52px) 0 0}
+.mast-top{display:flex; align-items:flex-end; justify-content:space-between; gap:14px}
+.brand{display:block}
+.brand .hw{display:block; font-size:11px; letter-spacing:.22em; color:var(--muted); margin:0 0 6px}
+.brand .wordmark{display:block; font-family:var(--serif); font-weight:700; margin:0; font-size:clamp(28px,5vw,42px); line-height:.95; letter-spacing:-.02em}
+.brand .dot{color:var(--seal)}
+.slogan{margin:10px 0 0; color:var(--muted); font-size:13.5px}
+.mast-links{display:flex; gap:8px; flex:none}
+.pill{display:inline-flex; align-items:center; height:32px; padding:0 12px; border:1px solid var(--rule-2); border-radius:999px; background:var(--surface); font-size:12.5px; color:var(--ink-2)}
+.pill:hover{border-color:var(--seal); color:var(--seal)}
+.crumb{font-size:13px; color:var(--faint); margin:28px 0 18px}
+.crumb a{color:var(--muted)}
+.crumb a:hover{color:var(--seal)}
+.sep{margin:0 8px; color:var(--rule-2)}
+.layout{display:grid; grid-template-columns:minmax(0,1fr) 280px; gap:48px; align-items:start; padding-bottom:80px}
+@media (max-width:900px){ .layout{grid-template-columns:1fr; gap:36px} .side{order:2} }
+.kicker{font-size:11px; letter-spacing:.16em; color:var(--seal); font-weight:650; margin:0 0 10px}
+h1{font-family:var(--serif); font-weight:700; letter-spacing:-.02em; font-size:clamp(34px,6vw,56px); line-height:1.12; margin:0 0 8px}
+.one{font-family:var(--serif); font-size:clamp(20px,3vw,26px); line-height:1.35; color:var(--ink-2); margin:0 0 16px; font-weight:600}
+.dek{font-size:18px; line-height:1.7; color:var(--ink-2); margin:0 0 18px}
+.meta-row{display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin:0 0 16px}
+.meta-row .when{font-size:12.5px; color:var(--muted); letter-spacing:.04em}
+.share-btn{display:inline-flex; align-items:center; gap:6px; height:32px; padding:0 12px; border:1px solid var(--rule-2); border-radius:999px; background:var(--surface); font-size:12.5px; color:var(--ink-2); cursor:pointer}
+.share-btn:hover{border-color:var(--seal); color:var(--seal)}
+.share-btn svg{width:14px; height:14px}
+.tags{display:flex; flex-wrap:wrap; gap:6px; margin:0 0 28px; padding-bottom:22px; border-bottom:1px solid var(--rule)}
+.tags a,.tags span{font-size:12px; color:var(--ink-2); background:var(--surface); border:1px solid var(--rule); border-radius:999px; padding:3px 10px}
+.pull{background:var(--seal-soft); border-left:3px solid var(--seal); border-radius:0 12px 12px 0; padding:16px 20px; margin:0 0 36px; color:var(--ink-2); font-size:16.5px; line-height:1.7}
+.sec{margin:0 0 34px}
+.sec-k{font-size:12px; letter-spacing:.12em; color:var(--seal); font-weight:650; margin:0 0 10px}
+.sec p{margin:0 0 12px; color:var(--ink)}
+.sec p:last-child{margin-bottom:0}
+.point{margin:0 0 28px}
+.point h2{font-family:var(--serif); font-size:22px; line-height:1.35; font-weight:700; letter-spacing:-.01em; margin:0 0 8px}
+.point p{margin:0 0 10px}
+.eg{color:var(--ink-2); background:var(--surface-2); border-radius:10px; padding:12px 14px; font-size:15.5px; border:1px solid var(--rule)}
+.eg::before{content:"例  "; color:var(--seal); font-size:12px; letter-spacing:.08em; font-weight:650}
+.apply{background:var(--surface); border:1px solid var(--rule); border-radius:14px; padding:18px 20px; margin:8px 0 32px}
+.quotes{margin:8px 0 36px}
+blockquote{margin:0 0 12px; padding:2px 0 2px 16px; border-left:2px solid var(--seal); color:var(--ink-2); font-family:var(--serif); font-size:18px; line-height:1.6}
+blockquote p{margin:0}
+.contrast{display:grid; gap:10px; margin:0 0 32px}
+.contrast a{display:block; background:var(--surface); border:1px solid var(--rule); border-radius:12px; padding:12px 14px}
+.contrast .n{display:block; font-weight:650; margin:0 0 4px}
+.contrast .why{display:block; font-size:14.5px; color:var(--muted); line-height:1.55}
+.ext{display:flex; flex-wrap:wrap; gap:8px; margin:0 0 36px}
+.ext a{background:var(--surface); border:1px solid var(--rule); border-radius:999px; padding:4px 12px; font-size:13.5px}
+.sib{display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap; padding:22px 0; border-top:1px solid var(--rule); margin-top:12px; font-size:14.5px}
+.sib a{color:var(--ink-2)}
+.sib .dir{display:block; font-size:11px; letter-spacing:.12em; color:var(--faint); margin-bottom:4px}
+.site-foot{margin-top:8px; padding:28px 0 48px; border-top:1px solid var(--rule); font-size:13px; color:var(--muted)}
+.site-foot p{margin:0 0 8px}
+.site-foot a{color:var(--ink-2)}
+.site-foot code{font-size:12px; color:var(--faint)}
+.side{position:sticky; top:28px}
+.panel{background:var(--surface); border:1px solid var(--rule); border-radius:16px; padding:16px 16px 18px; box-shadow:var(--shadow)}
+.panel .ph{font-size:11px; letter-spacing:.14em; color:var(--faint); margin:0 0 12px}
+.toc a{display:block; font-size:13.5px; color:var(--ink-2); padding:5px 0; border-top:1px solid var(--rule)}
+.toc a:first-of-type{border-top:0}
+.toc .i{color:var(--faint); font-variant-numeric:tabular-nums; margin-right:8px; font-size:12px}
