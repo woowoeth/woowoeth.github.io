@@ -20,6 +20,22 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
+      - name: Restore geo_kit if truncated
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import urllib.request
+          p = Path("seo/geo_kit.py")
+          t = p.read_text(encoding="utf-8") if p.exists() else ""
+          if "def build(" not in t or "def item_page(" not in t:
+              url = "https://raw.githubusercontent.com/woowoeth/woowoeth.github.io/7b7cb5101e57755ff2f173acd8688e9218cec9ad/seo/geo_kit.py"
+              urllib.request.urlretrieve(url, p)
+              print("restored geo_kit from 7b7cb51", p.stat().st_size)
+          else:
+              print("geo_kit intact", len(t))
+          PY
+      - name: Patch GEO extras
+        run: python scripts/patch_geo_seo.py
       - name: Open entries as standalone pages
         run: python scripts/apply_redesign.py
       - name: Build SEO/GEO artefacts
@@ -48,6 +64,16 @@ jobs:
             else
               git rebase --abort || true
               git reset --hard "origin/${GITHUB_REF_NAME}"
+              python - <<'PY'
+          from pathlib import Path
+          import urllib.request
+          p = Path("seo/geo_kit.py")
+          t = p.read_text(encoding="utf-8") if p.exists() else ""
+          if "def build(" not in t or "def item_page(" not in t:
+              url = "https://raw.githubusercontent.com/woowoeth/woowoeth.github.io/7b7cb5101e57755ff2f173acd8688e9218cec9ad/seo/geo_kit.py"
+              urllib.request.urlretrieve(url, p)
+          PY
+              python scripts/patch_geo_seo.py
               python scripts/apply_redesign.py
               python seo/build_seo.py
               git add -A
