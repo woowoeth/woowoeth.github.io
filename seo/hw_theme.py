@@ -12,6 +12,14 @@ SHARE_SVG = (
     '<path d="M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg>'
 )
 
+def brand_html(home_href):
+    return (
+        '<a class="brand" href="%s">'
+        '<img class="brand-logo" src="/favicon.svg" width="44" height="44" alt="人类世界生存法则">'
+        '<span class="brand-copy"><span class="wordmark">人类世界<span class="dot">生存法则</span></span></span>'
+        '</a>'
+    ) % esc(home_href)
+
 def _paras(text):
     return [p.strip() for p in str(text).split("\n") if p.strip()]
 
@@ -134,10 +142,7 @@ def item_page(site, it, items, idx, zh, hub_of=None):
     body = """
 <header class="mast wrap">
   <div class="mast-top">
-    <a class="brand" href="%s">
-      <span class="hw">HUMAN WORLD</span>
-      <span class="wordmark">人类世界<span class="dot">生存法则</span></span>
-    </a>
+    %s
     <div class="mast-links">
       <a class="pill" href="%s">目录</a>
       <a class="pill" href="%s">全部</a>
@@ -170,7 +175,8 @@ def item_page(site, it, items, idx, zh, hub_of=None):
   </footer>
 </div>
 """ % (
-        esc(SITE + "/"), esc(site.base), esc(site.url("all/")),
+        brand_html(SITE + "/"),
+        esc(site.base), esc(site.url("all/")),
         esc(site.tagline_zh if zh_render else site.tagline),
         esc(SITE + "/"), esc(site.base), esc(site.name_zh if zh_render else site.name),
         esc(it.t(zh_render)),
@@ -204,11 +210,5 @@ def install(G):
     G._PAGE_CSS = CSS
     G._shell = _shell
     G.item_page = item_page
-    import hw_list
-    hw_list.install(G)
-    import hw_list
-    hw_list.install(G)
-    import hw_list
-    hw_list.install(G)
     import hw_list
     hw_list.install(G)
