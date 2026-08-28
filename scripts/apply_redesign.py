@@ -15,9 +15,9 @@ FIXES = [
     ("游历齐、宋、藏、梁", "游历齐、宋、滕、梁"),
     ("师付", "师傅"),
     ("不积跌步", "不积跬步"),
-    ("塔勖布", "塔勒布"),
+    ("塔勑布", "塔勒布"),
     ("奥缘余", "奥、意"),
-    ("守彏", "守住"),
+    ("守彙", "守住"),
 ]
 
 def main():
@@ -35,6 +35,13 @@ def main():
         s = re.sub(r"hw-home-lockup\.css\?v=\d+", "hw-home-lockup.css?v=2", s, count=1)
     s = s.replace('<img class="brand-logo" src="/favicon.svg" width="44" height="44"',
                   '<img class="brand-logo" src="/favicon.svg" width="36" height="36"')
+    s = s.replace('dqLogoImg.src=DQ_LOGO', 'dqLogoImg.src="/favicon.svg"')
+    s = re.sub(
+        r"function dqToday\(\)\{return DQ\.length\?\(\(dqDayNum\(\)%DQ\.length\)\+DQ\.length\)%DQ\.length:0;\}",
+        "function dqToday(){return DQ.length?Math.floor(Math.random()*DQ.length):0;}",
+        s,
+        count=1,
+    )
     idx.write_text(s, encoding="utf-8")
     try:
         sys.path.insert(0, str(ROOT / "seo"))
