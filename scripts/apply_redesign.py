@@ -15,26 +15,83 @@ def once(path: Path, old: str, new: str, label: str):
     path.write_text(s.replace(old, new, 1), encoding="utf-8")
     print("applied %s" % label)
 
+LOCKUP_CSS = '''/* masthead — match entry pages */
+.hd{position:relative;z-index:50;margin:0 0 26px;padding:28px 0 16px;background:transparent}
+.hd::after{display:none}
+.brand{display:flex;flex-direction:row;flex-wrap:nowrap;align-items:center;gap:12px;color:inherit;text-decoration:none;margin:0 0 14px}
+.brand-logo{width:36px;height:36px;border-radius:9px;flex:none}
+.brand-copy{display:flex;flex-direction:column;gap:3px;min-width:0}
+.hd-title,.brand .wordmark{font-family:"Noto Serif SC","Source Han Serif SC","Songti SC","STSong",Georgia,serif;font-size:18px;font-weight:600;letter-spacing:.06em;line-height:1.25;margin:0}
+.hd-title .dot,.brand .dot{color:#9d2933}
+.hd-en,.slogan{margin:0;color:var(--ink-50);font-size:12px;line-height:1.4;font-weight:400;letter-spacing:0}
+.hd-row{display:none}
+.hd-stats{display:flex;gap:20px;flex-wrap:wrap}
+.stat{font-size:12px;color:var(--ink-50);font-variant-numeric:tabular-nums}
+.stat b{color:var(--ink);font-weight:600}
+'''
+
+OLD_CSS = '''/* masthead — glass sticky */
+.hd{position:sticky;top:0;z-index:50;margin:0 -24px 26px;padding:26px 24px 15px;background:var(--glass-chrome);-webkit-backdrop-filter:blur(16px) saturate(160%);backdrop-filter:blur(16px) saturate(160%)}
+.hd::after{content:'';position:absolute;left:24px;right:24px;bottom:0;height:1px;background:linear-gradient(90deg,transparent,rgba(42,46,44,.10),transparent)}
+.brand{font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-50);margin-bottom:11px}
+.hd-row{display:flex;align-items:baseline;gap:12px;margin-bottom:13px;flex-wrap:wrap}
+.hd-title{font-size:26px;font-weight:700;letter-spacing:-.03em;line-height:1.05}
+.hd-en{font-size:13px;color:var(--ink-50);letter-spacing:-.005em;font-weight:400}
+.hd-stats{display:flex;gap:20px;flex-wrap:wrap}
+.stat{font-size:12px;color:var(--ink-50);font-variant-numeric:tabular-nums}
+'''
+
+OLD_HDR = '''  <header class="hd" role="banner">
+    <div class="brand">HUMAN WORLD</div>
+    <div class="hd-row">
+      <h1 class="hd-title">人类世界生存法则</h1>
+      <span class="hd-en">人类文明的坐标，照亮千年的灯塔</span>
+    </div>'''
+
+NEW_HDR = '''  <header class="hd" role="banner">
+    <a class="brand" href="/">
+      <img class="brand-logo" src="/favicon.svg" width="36" height="36" alt="">
+      <span class="brand-copy">
+        <h1 class="hd-title">人类世界<span class="dot">生存法则</span></h1>
+        <p class="hd-en">95 个人物与典籍的生存智慧，跨越 2600 年</p>
+      </span>
+    </a>'''
+
 def main():
     idx = ROOT / "index.html"
     s = idx.read_text(encoding="utf-8")
-    if 'font-family:"Huiwen-mincho"' not in s.split(".hd-title", 1)[-1][:200]:
+    if "fonts.googleapis.com/css2?family=Noto+Serif+SC" not in s:
+        s = s.replace(
+            "</style>",
+            '@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;600;700&display=swap");\n</style>',
+            1,
+        )
+    if OLD_CSS in s:
+        s = s.replace(OLD_CSS, LOCKUP_CSS, 1)
+        print("replaced homepage mast css")
+    elif "Noto Serif SC" in s and ".hd-title,.brand .wordmark" in s:
+        print("homepage mast css already unified")
+    else:
         s = s.replace(
             ".hd-title{font-size:26px;font-weight:700;letter-spacing:-.03em;line-height:1.05}",
-            ".hd-title{font-family:\"Huiwen-mincho\",\"Songti SC\",\"STSong\",serif;font-size:26px;font-weight:700;letter-spacing:.02em;line-height:1.15}",
+            ".hd-title{font-family:\"Noto Serif SC\",\"Source Han Serif SC\",\"Songti SC\",serif;font-size:18px;font-weight:600;letter-spacing:.06em;line-height:1.25}",
         )
-    if ".brand-logo" not in s:
         s = s.replace(
-            ".brand{font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-50);margin-bottom:11px}",
-            ".brand{display:flex;align-items:center;gap:10px;font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-50);margin-bottom:11px}\n.brand-logo{width:40px;height:40px;border-radius:10px}",
+            ".hd-title{font-size:22px}",
+            ".hd-title{font-size:17px}",
         )
-    if 'class="brand-logo"' not in s:
-        s = s.replace(
-            '<div class="brand">HUMAN WORLD</div>',
-            '<div class="brand"><img class="brand-logo" src="/favicon.svg" width="40" height="40" alt=""><span>HUMAN WORLD</span></div>',
-        )
+        print("patched hd-title fallback")
+    if OLD_HDR in s:
+        s = s.replace(OLD_HDR, NEW_HDR, 1)
+        print("replaced homepage header html")
+    elif 'class="brand-logo"' in s and "hd-title" in s:
+        print("homepage header html already has lockup")
+    s = s.replace(".wrap{padding:0 16px 80px}", ".wrap{padding:0 24px 80px}")
+    s = s.replace(
+        ".hd{margin:0 -16px 24px;padding:22px 16px 13px}",
+        ".hd{margin:0 0 24px;padding:22px 0 14px}",
+    )
     idx.write_text(s, encoding="utf-8")
-    print("homepage wordmark + logo")
 
     sys_path = str(ROOT / "seo")
     if sys_path not in sys.path:
