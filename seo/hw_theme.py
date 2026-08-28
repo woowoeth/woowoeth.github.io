@@ -206,3 +206,5 @@ def install(G):
     G.item_page = item_page
     import hw_list
     hw_list.install(G)
+    import hw_list
+    hw_list.install(G)
