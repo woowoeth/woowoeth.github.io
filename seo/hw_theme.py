@@ -16,9 +16,11 @@ def brand_html(home_href, slogan=""):
     extra = ('<span class="slogan">%s</span>' % esc(slogan)) if slogan else ""
     return (
         '<a class="brand" href="%s">'
-        '<img class="brand-logo" src="/favicon.svg" width="44" height="44" alt="人类世界生存法则">'
-        '<span class="brand-copy"><span class="wordmark">人类世界<span class="dot">生存法则</span></span>%s</span>'
-        '</a>'
+        '<img class="brand-logo" src="/favicon.svg" width="40" height="40" alt="">'
+        '<span class="brand-copy">'
+        '<span class="hw">HUMAN WORLD</span>'
+        '<span class="wordmark">人类世界<span class="dot">生存法则</span></span>'
+        '%s</span></a>'
     ) % (esc(home_href), extra)
 
 def _paras(text):
@@ -199,7 +201,7 @@ def _shell(lang, title, headhtml, body):
         "<!DOCTYPE html>\n<html lang=\"%s\">\n<head>\n<meta charset=\"utf-8\">\n"
         "<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\n"
         "<title>%s</title>\n%s\n%s\n"
-        "<link rel=\"stylesheet\" href=\"/assets/hw-entry.css?v=2\">\n"
+        "<link rel=\"stylesheet\" href=\"/assets/hw-entry.css?v=3\">\n"
         "</head>\n<body>\n%s\n"
         "<script src=\"/assets/hw-share.js\" defer></script>\n</body>\n</html>\n"
         % (lang, esc(title), headhtml, ga_block(), body)

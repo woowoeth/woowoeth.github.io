@@ -1,19 +1,25 @@
 /* Human World — shared across home, hubs and entry pages */
+@font-face{
+  font-family:"Huiwen-mincho";
+  src:url("/hw-mincho-subset.woff2") format("woff2");
+  font-display:swap;
+}
 :root{
   --bg:#f7f4ec; --bg-tint:#efe8dc; --surface:#fffdf8; --surface-2:#f3eee6;
   --ink:#1c1917; --ink-2:#3f3a34; --muted:#6f6959; --faint:#9a9384;
   --rule:#e2ddd0; --rule-2:#d0c9b8;
   --seal:#9d2933; --seal-soft:#f0ddd9;
   --shadow:0 1px 2px rgba(28,25,23,.05), 0 10px 28px -18px rgba(28,25,23,.22);
-  --serif:"Songti SC","Noto Serif CJK SC","Source Han Serif SC",Georgia,"Times New Roman",serif;
+  --display:"Huiwen-mincho","Songti SC","STSong","Noto Serif CJK SC",Georgia,serif;
+  --serif:"Huiwen-mincho","Songti SC","STSong","Noto Serif CJK SC",Georgia,serif;
   --sans:"PingFang SC","HarmonyOS Sans SC","Hiragino Sans GB","Microsoft YaHei",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
-  --pad:clamp(24px,5.2vw,48px);
+  --pad:24px;
 }
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
 body{
   margin:0; background:var(--bg); color:var(--ink); font-family:var(--sans);
-  font-size:clamp(16px,.35vw + 15.5px,18px); line-height:1.75;
+  font-size:17px; line-height:1.75;
   -webkit-font-smoothing:antialiased;
 }
 a{color:inherit; text-decoration:none}
@@ -21,12 +27,12 @@ a:hover{color:var(--seal)}
 button{font:inherit; color:inherit; background:none; border:0; cursor:pointer}
 :focus-visible{outline:2px solid var(--seal); outline-offset:3px; border-radius:3px}
 .wrap{
-  max-width:1120px; margin:0 auto;
+  max-width:860px; margin:0 auto;
   padding-left:max(var(--pad), env(safe-area-inset-left));
   padding-right:max(var(--pad), env(safe-area-inset-right));
 }
 
-.mast{padding:clamp(22px,5vw,56px) 0 12px}
+.mast{padding:26px 0 15px}
 .mast-top{display:flex; align-items:flex-start; justify-content:space-between; gap:16px}
 .brand{
   display:flex; flex-direction:row; flex-wrap:nowrap;
@@ -35,18 +41,17 @@ button{font:inherit; color:inherit; background:none; border:0; cursor:pointer}
 .brand:hover{color:inherit}
 .brand-logo{
   width:40px; height:40px; border-radius:10px; flex:none;
-  margin:2px 0 0 0; box-shadow:0 1px 0 rgba(28,25,23,.06);
+  margin:1px 0 0;
 }
-.brand-copy{display:flex; flex-direction:column; gap:4px; min-width:0; flex:1}
-.brand .hw{display:none}
+.brand-copy{display:flex; flex-direction:column; gap:6px; min-width:0; flex:1}
+.brand .hw{display:block; font-size:10px; letter-spacing:.22em; text-transform:uppercase; color:var(--muted); margin:0}
 .brand .wordmark{
-  display:block; font-family:var(--serif); font-weight:700; margin:0;
-  font-size:clamp(22px,5vw,40px); line-height:1.1; letter-spacing:-.03em;
-  white-space:nowrap;
+  display:block; font-family:var(--display); font-weight:700; margin:0;
+  font-size:26px; line-height:1.15; letter-spacing:.02em;
 }
 .brand .dot{color:var(--seal)}
-.slogan{margin:0; color:var(--muted); font-size:13px; line-height:1.4}
-.mast-links{display:flex; gap:8px; flex:none; padding-top:6px}
+.slogan{margin:0; color:var(--muted); font-size:13px; line-height:1.4; letter-spacing:0; font-family:var(--sans)}
+.mast-links{display:flex; gap:8px; flex:none; padding-top:18px}
 .pill{
   display:inline-flex; align-items:center; justify-content:center;
   min-height:32px; padding:0 12px;
@@ -59,16 +64,16 @@ button{font:inherit; color:inherit; background:none; border:0; cursor:pointer}
 .crumb a:hover{color:var(--seal)}
 .sep{margin:0 8px; color:var(--rule-2)}
 .layout{
-  display:grid; grid-template-columns:minmax(0,1fr) minmax(200px,280px);
-  gap:clamp(24px,4vw,48px); align-items:start; padding-bottom:80px;
+  display:grid; grid-template-columns:minmax(0,1fr) minmax(180px,240px);
+  gap:36px; align-items:start; padding-bottom:80px;
 }
 .kicker{font-size:11px; letter-spacing:.16em; color:var(--seal); font-weight:650; margin:0 0 10px}
 h1{
-  font-family:var(--serif); font-weight:700; letter-spacing:-.02em;
-  font-size:clamp(28px,8vw,54px); line-height:1.15; margin:0 0 10px;
+  font-family:var(--display); font-weight:700; letter-spacing:.02em;
+  font-size:clamp(28px,7vw,42px); line-height:1.2; margin:0 0 10px;
 }
-.one{font-family:var(--serif); font-size:clamp(18px,3vw,26px); line-height:1.4; color:var(--ink-2); margin:0 0 16px; font-weight:600}
-.dek{font-size:clamp(16px,.2vw + 16px,18px); line-height:1.75; color:var(--ink-2); margin:0 0 18px; max-width:42em}
+.one{font-family:var(--display); font-size:22px; line-height:1.4; color:var(--ink-2); margin:0 0 16px; font-weight:600}
+.dek{font-size:17px; line-height:1.75; color:var(--ink-2); margin:0 0 18px; max-width:42em}
 .meta-row{display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin:0 0 16px}
 .meta-row .when{font-size:12.5px; color:var(--muted); letter-spacing:.04em}
 .share-btn{
@@ -86,13 +91,13 @@ h1{
 .sec p{margin:0 0 12px; color:var(--ink)}
 .sec p:last-child{margin-bottom:0}
 .point{margin:0 0 28px}
-.point h2{font-family:var(--serif); font-size:clamp(19px,2.4vw,22px); line-height:1.4; font-weight:700; letter-spacing:-.01em; margin:0 0 8px}
+.point h2{font-family:var(--display); font-size:21px; line-height:1.4; font-weight:700; letter-spacing:.01em; margin:0 0 8px}
 .point p{margin:0 0 10px}
 .eg{color:var(--ink-2); background:var(--surface-2); border-radius:10px; padding:12px 14px; font-size:15.5px; border:1px solid var(--rule)}
 .eg::before{content:"例  "; color:var(--seal); font-size:12px; letter-spacing:.08em; font-weight:650}
 .apply{background:var(--surface); border:1px solid var(--rule); border-radius:14px; padding:16px 18px; margin:8px 0 32px}
 .quotes{margin:8px 0 36px}
-blockquote{margin:0 0 12px; padding:2px 0 2px 14px; border-left:2px solid var(--seal); color:var(--ink-2); font-family:var(--serif); font-size:clamp(16.5px,2vw,18px); line-height:1.65}
+blockquote{margin:0 0 12px; padding:2px 0 2px 14px; border-left:2px solid var(--seal); color:var(--ink-2); font-family:var(--display); font-size:18px; line-height:1.65}
 blockquote p{margin:0}
 .contrast{display:grid; gap:10px; margin:0 0 32px}
 .contrast a{display:block; background:var(--surface); border:1px solid var(--rule); border-radius:12px; padding:12px 14px}
@@ -117,7 +122,7 @@ blockquote p{margin:0}
 .feed a{display:flex;flex-direction:column;gap:6px;min-height:120px;background:var(--surface);border:1px solid var(--rule);border-radius:14px;padding:14px 16px 16px;color:inherit}
 .feed a:hover{border-color:var(--seal);color:inherit}
 .feed .k{font-size:11px;letter-spacing:.08em;color:var(--seal)}
-.feed strong{font-family:var(--serif);font-size:18px;line-height:1.3;font-weight:700}
+.feed strong{font-family:var(--display);font-size:18px;line-height:1.3;font-weight:700}
 .feed .s{font-size:13.5px;color:var(--muted);line-height:1.55}
 .hubs{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 22px}
 .hubs a{background:var(--surface);border:1px solid var(--rule);border-radius:999px;padding:6px 12px;font-size:13px;color:var(--ink-2)}
@@ -127,13 +132,10 @@ blockquote p{margin:0}
   .layout{grid-template-columns:1fr; gap:28px}
   .side{order:2; position:static}
 }
-@media (max-width:720px){
+@media (max-width:600px){
+  :root{--pad:16px}
+  .mast{padding:22px 0 13px}
+  .brand .wordmark{font-size:22px}
+  .brand-logo{width:36px; height:36px; border-radius:9px}
   .mast-links{display:none}
-  .brand .wordmark{font-size:24px; white-space:nowrap}
-  .crumb .sep:nth-of-type(2),
-  .crumb a:nth-of-type(2){display:none}
-}
-@media (max-width:380px){
-  .brand-logo{width:34px; height:34px; border-radius:8px}
-  .brand .wordmark{font-size:20px}
 }
