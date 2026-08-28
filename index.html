@@ -1271,7 +1271,7 @@ function dqInterleave(list){
 }
 let DQ=DQ_ALL.slice();
 const dqLogoImg=new Image();let dqLogoOK=false;
-dqLogoImg.onload=()=>{dqLogoOK=true};dqLogoImg.src=DQ_LOGO;
+dqLogoImg.onload=()=>{dqLogoOK=true};dqLogoImg.src="/favicon.svg";
 let dqFontP=null;
 function dqFont(){
   if(!dqFontP)dqFontP=(document.fonts&&document.fonts.load)
@@ -1372,7 +1372,7 @@ function dqBuildPool(){
 // 本地日历日 → 每天 00:00 换句；步长与池大小互质则整轮不重复
 function dqDayNum(){const d=new Date();return Math.floor(Date.UTC(d.getFullYear(),d.getMonth(),d.getDate())/864e5);}
 // 序列本身已按出处铺匀，按日顺序走即可继承其最小间隔；整轮不重复
-function dqToday(){return DQ.length?((dqDayNum()%DQ.length)+DQ.length)%DQ.length:0;}
+function dqToday(){return DQ.length?Math.floor(Math.random()*DQ.length):0;}
 let DQ_I=0;
 function dqCur(){const c=dqLayout(DQ[DQ_I]);c.p=DQ_PAL[DQ_I%DQ_PAL.length];return c;}
 function dqRender(){
