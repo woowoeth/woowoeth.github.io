@@ -14,6 +14,8 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import geo_kit as G
+import hw_theme
+hw_theme.install(G)
 
 SITE = G.Site(
     path="",
