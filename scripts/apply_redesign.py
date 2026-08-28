@@ -21,7 +21,7 @@ LOCKUP_CSS = '''/* masthead — match entry pages */
 .brand{display:flex;flex-direction:row;flex-wrap:nowrap;align-items:center;gap:12px;color:inherit;text-decoration:none;margin:0 0 14px}
 .brand-logo{width:36px;height:36px;border-radius:9px;flex:none}
 .brand-copy{display:flex;flex-direction:column;gap:3px;min-width:0}
-.hd-title,.brand .wordmark{font-family:"Noto Serif SC","Source Han Serif SC","Songti SC","STSong",Georgia,serif;font-size:18px;font-weight:600;letter-spacing:.06em;line-height:1.25;margin:0}
+.hd-title,.brand .wordmark{font-family:"Noto Serif SC","Source Han Serif SC","Songti SC","STSong",Georgia,serif;font-size:20px;font-weight:700;letter-spacing:.04em;line-height:1.25;margin:0}
 .hd-title .dot,.brand .dot{color:#9d2933}
 .hd-en,.slogan{margin:0;color:var(--ink-50);font-size:12px;line-height:1.4;font-weight:400;letter-spacing:0}
 .hd-row{display:none}
@@ -40,6 +40,9 @@ OLD_CSS = '''/* masthead — glass sticky */
 .hd-stats{display:flex;gap:20px;flex-wrap:wrap}
 .stat{font-size:12px;color:var(--ink-50);font-variant-numeric:tabular-nums}
 '''
+
+THIN = '.hd-title,.brand .wordmark{font-family:"Noto Serif SC","Source Han Serif SC","Songti SC","STSong",Georgia,serif;font-size:18px;font-weight:600;letter-spacing:.06em;line-height:1.25;margin:0}'
+BOLD = '.hd-title,.brand .wordmark{font-family:"Noto Serif SC","Source Han Serif SC","Songti SC","STSong",Georgia,serif;font-size:20px;font-weight:700;letter-spacing:.04em;line-height:1.25;margin:0}'
 
 OLD_HDR = '''  <header class="hd" role="banner">
     <div class="brand">HUMAN WORLD</div>
@@ -69,23 +72,12 @@ def main():
     if OLD_CSS in s:
         s = s.replace(OLD_CSS, LOCKUP_CSS, 1)
         print("replaced homepage mast css")
-    elif "Noto Serif SC" in s and ".hd-title,.brand .wordmark" in s:
-        print("homepage mast css already unified")
-    else:
-        s = s.replace(
-            ".hd-title{font-size:26px;font-weight:700;letter-spacing:-.03em;line-height:1.05}",
-            ".hd-title{font-family:\"Noto Serif SC\",\"Source Han Serif SC\",\"Songti SC\",serif;font-size:18px;font-weight:600;letter-spacing:.06em;line-height:1.25}",
-        )
-        s = s.replace(
-            ".hd-title{font-size:22px}",
-            ".hd-title{font-size:17px}",
-        )
-        print("patched hd-title fallback")
+    if THIN in s:
+        s = s.replace(THIN, BOLD, 1)
+        print("bold homepage wordmark")
     if OLD_HDR in s:
         s = s.replace(OLD_HDR, NEW_HDR, 1)
         print("replaced homepage header html")
-    elif 'class="brand-logo"' in s and "hd-title" in s:
-        print("homepage header html already has lockup")
     s = s.replace(".wrap{padding:0 16px 80px}", ".wrap{padding:0 24px 80px}")
     s = s.replace(
         ".hd{margin:0 -16px 24px;padding:22px 16px 13px}",

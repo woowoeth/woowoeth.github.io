@@ -202,7 +202,7 @@ def _shell(lang, title, headhtml, body):
         "<title>%s</title>\n%s\n%s\n"
         "<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n"
         "<link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\n"
-        "<link rel=\"stylesheet\" href=\"/assets/hw-entry.css?v=4\">\n"
+        "<link rel=\"stylesheet\" href=\"/assets/hw-entry.css?v=5\">\n"
         "</head>\n<body>\n%s\n"
         "<script src=\"/assets/hw-share.js\" defer></script>\n</body>\n</html>\n"
         % (lang, esc(title), headhtml, ga_block(), body)
