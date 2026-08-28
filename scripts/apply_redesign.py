@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 from pathlib import Path
+import re
+import sys
 ROOT = Path(__file__).resolve().parents[1]
 
 def once(path: Path, old: str, new: str, label: str):
@@ -28,12 +30,16 @@ HOME_MQ = """
 """
 
 def main():
-    once(
-        ROOT / "seo/build_seo.py",
-        "import geo_kit as G\n",
-        "import geo_kit as G\nimport hw_theme\nhw_theme.install(G)\n",
-        "install hw_theme",
-    )
+    bseo = (ROOT / "seo/build_seo.py").read_text(encoding="utf-8")
+    if "import hw_slugs" not in bseo:
+        once(
+            ROOT / "seo/build_seo.py",
+            "import geo_kit as G\n",
+            "import geo_kit as G\nimport hw_theme\nhw_theme.install(G)\n",
+            "install hw_theme",
+        )
+    else:
+        print("skip install hw_theme (hw_slugs already wired)")
     idx = ROOT / "index.html"
     s = idx.read_text(encoding="utf-8")
     n = 0
@@ -74,16 +80,16 @@ def main():
         "homepage slogan under wordmark",
     )
     sys_path = str(ROOT / "seo")
-    import sys
     if sys_path not in sys.path:
         sys.path.insert(0, sys_path)
-    import hw_slugs, re
+    import hw_slugs
     idx = ROOT / "index.html"
     src = idx.read_text(encoding="utf-8")
     js = hw_slugs.js_map() + "\nfunction slugOf(n){return (HW_SLUGS&&HW_SLUGS[n])||String(n).replace(/[·，、。\\s\\.,]/g,'');}"
     old_fn = "function slugOf(n){return String(n).replace(/[·，、。\\s\\.,]/g,'');}"
-    if "const HW_SLUGS=" in src:
-        src2 = re.sub(r"const HW_SLUGS=\{[\s\S]*?\};\nfunction slugOf\(n\)\{[^}]+\}", js, src, count=1)
+    pat = re.compile(r"const HW_SLUGS=\{[\s\S]*?\};\nfunction slugOf\(n\)\{[^}]+\}")
+    if pat.search(src):
+        src2 = pat.sub(lambda _m: js, src, count=1)
         idx.write_text(src2, encoding="utf-8")
         print("applied slug map refresh")
     elif old_fn in src:
