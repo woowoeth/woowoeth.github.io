@@ -388,7 +388,12 @@ def _inject_body(src, block):
 
 
 def sibling_links(site, zh=False):
-    """Every site links to every sibling: eight orphans become one crawlable property."""
+    """Human World only points at the two sister editorial sites."""
+    if site.path == "":
+        return (
+            '<a href="%s">品味</a> · <a href="%s">原声</a>'
+            % (esc(SITE + "/skill/"), esc(SITE + "/podcast/"))
+        )
     out = []
     for path, en, cn in SITES:
         if path == site.path:
