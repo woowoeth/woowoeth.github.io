@@ -5,8 +5,10 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]
 
 def main():
+    sys.path.insert(0, str(ROOT / "scripts"))
+    import inject_week
     idx = ROOT / "index.html"
-    s = idx.read_text(encoding="utf-8")
+    s = inject_week.inject(idx.read_text(encoding="utf-8"))
     if "hw-home-lockup.css" not in s:
         s = s.replace(
             "</title>",
@@ -16,7 +18,6 @@ def main():
         print("linked hw-home-lockup.css")
     else:
         s = re.sub(r"hw-home-lockup\.css\?v=\d+", "hw-home-lockup.css?v=2", s, count=1)
-        print("bumped lockup css v=2")
     s = s.replace(
         '<img class="brand-logo" src="/favicon.svg" width="44" height="44"',
         '<img class="brand-logo" src="/favicon.svg" width="36" height="36"',
