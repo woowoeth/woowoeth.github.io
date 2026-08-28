@@ -210,3 +210,5 @@ def install(G):
     hw_list.install(G)
     import hw_list
     hw_list.install(G)
+    import hw_list
+    hw_list.install(G)

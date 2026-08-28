@@ -1,9 +1,9 @@
 /* Human World entry pages */
 :root{
-  --bg:#f4f2ec; --bg-tint:#ece8df; --surface:#fffef9; --surface-2:#f7f4ec;
+  --bg:#f7f4ec; --bg-tint:#efe8dc; --surface:#fffdf8; --surface-2:#f3eee6;
   --ink:#1c1917; --ink-2:#3f3a34; --muted:#6f6959; --faint:#9a9384;
   --rule:#e2ddd0; --rule-2:#d0c9b8;
-  --seal:#9d2933; --seal-soft:#f3e4e0;
+  --seal:#9d2933; --seal-soft:#f0ddd9;
   --shadow:0 1px 2px rgba(28,25,23,.05), 0 10px 28px -18px rgba(28,25,23,.22);
   --serif:"Songti SC","Noto Serif CJK SC","Source Han Serif SC",Georgia,"Times New Roman",serif;
   --sans:"PingFang SC","HarmonyOS Sans SC","Hiragino Sans GB","Microsoft YaHei",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
