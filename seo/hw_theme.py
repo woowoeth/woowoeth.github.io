@@ -51,6 +51,30 @@ _ENDS = "。！？"
 _MIN, _MAX = 18, 145
 
 
+def _breathe(text, target=120, floor=45):
+    """Break a wall of text at sentence boundaries.
+
+    story fields run to 350 characters — twelve lines, close to two phone
+    screens, as a single <p>. Nothing is reworded; the paragraph just gets
+    somewhere to breathe.
+    """
+    if len(text) <= 165:
+        return [text]
+    parts = [x for x in re.split(r"(?<=[\u3002\uff01\uff1f])", text) if x.strip()]
+    out, buf = [], ""
+    for x in parts:
+        buf += x
+        if len(buf) >= target:
+            out.append(buf)
+            buf = ""
+    if buf:
+        if out and len(buf) < floor:
+            out[-1] += buf
+        else:
+            out.append(buf)
+    return out or [text]
+
+
 def _spans(text):
     """Sentences, plus runs of adjacent sentences, as pull-quote candidates."""
     parts = [x for x in re.split(r"(?<=[%s])" % _ENDS, text) if x.strip()]
@@ -137,7 +161,8 @@ def _render_blocks(it, zh):
                     body.append(p)
             html.append('<section class="point" id="%s">' % aid)
             html.append("<h2>%s</h2>" % esc(name))
-            html.extend("<p>%s</p>" % esc(p) for p in body)
+            for para in body:
+                html.extend("<p>%s</p>" % esc(x) for x in _breathe(para))
             html.extend('<p class="eg">%s</p>' % esc(p) for p in egs)
             html.append("</section>")
             si = len(slots)
@@ -207,7 +232,8 @@ def _render_blocks(it, zh):
             html.append('<aside class="pull">%s</aside>' % esc(paras[0]))
             if len(paras) > 1:
                 html.append('<section class="sec">')
-                html.extend("<p>%s</p>" % esc(p) for p in paras[1:])
+                for para in paras[1:]:
+                    html.extend("<p>%s</p>" % esc(x) for x in _breathe(para))
                 html.append("</section>")
             continue
         n += 1
@@ -215,7 +241,8 @@ def _render_blocks(it, zh):
         toc.append((aid, label))
         klass = "sec apply" if "今天" in h else "sec"
         html.append('<section class="%s" id="%s"><h2 class="sec-k">%s</h2>' % (klass, aid, esc(label)))
-        html.extend("<p>%s</p>" % esc(p) for p in paras)
+        for para in paras:
+            html.extend("<p>%s</p>" % esc(x) for x in _breathe(para))
         html.append("</section>")
         if klass == "sec" and "今天" not in h:      # the story section is fair game too
             si = len(slots)
@@ -342,7 +369,7 @@ def _shell(lang, title, headhtml, body):
         "<link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\n"
         "<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?"
         "family=Noto+Serif+SC:wght@500;600;700&display=swap\">\n"
-        "<link rel=\"stylesheet\" href=\"/assets/hw-entry.css?v=10\">\n"
+        "<link rel=\"stylesheet\" href=\"/assets/hw-entry.css?v=11\">\n"
         "<link rel=\"stylesheet\" href=\"/assets/hw-chapter.css?v=4\">\n"
         "</head>\n<body>\n%s\n"
         "<script src=\"/assets/hw-share.js\" defer></script>\n</body>\n</html>\n"

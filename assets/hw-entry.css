@@ -113,8 +113,11 @@ h1{
 .eg::before{content:"例  "; color:var(--seal); font-size:12px; letter-spacing:.08em; font-weight:650}
 .apply{background:var(--surface); border:1px solid var(--rule); border-radius:14px; padding:16px 18px; margin:8px 0 32px}
 .quotes{margin:8px 0 36px}
-/* 穿插的金句就是一条普通 blockquote —— 和文末金句区里的完全同款，
-   不加任何自定义样式。class 只用于生成时定位。 */
+/* 穿插的金句和文末金句区里的是同一款 blockquote（朱红竖线、明朝体、18px）。
+   唯一的区别是它独立站在两节之间，所以要自己撑出对称的上下间距：继承来的
+   margin:0 0 12px 会被上一节的 28/32px 底距折叠成「上宽下窄」，而且跟在
+   .point 还是 .sec 后面还不一样。32px ≥ 两者，折叠后上下都是 32px。 */
+blockquote.say{margin:32px 0}
 
 blockquote{margin:0 0 12px; padding:2px 0 2px 14px; border-left:2px solid var(--seal); color:var(--ink-2); font-family:var(--quote); font-size:18px; line-height:1.65}
 blockquote p{margin:0}
