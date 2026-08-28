@@ -136,6 +136,31 @@ CHAPTERS = [
 ]
 
 
+def f_span_raw(source, plain_span):
+    """Map a span picked from the plain text back onto the ==marked== original."""
+    import re as _re
+    flat, index = [], []
+    for i, chunk in enumerate(str(source or "").split("==")):
+        for j, chvalue in enumerate(chunk):
+            flat.append(chvalue)
+            index.append((i, j))
+    plain = "".join(flat)
+    at = plain.find(plain_span)
+    if at < 0:
+        return plain_span
+    end = at + len(plain_span)
+    out, depth = [], 0
+    for k in range(at, end):
+        seg = index[k][0]
+        while depth < seg:
+            out.append("==")
+            depth += 1
+        out.append(flat[k])
+    if depth % 2:
+        out.append("==")
+    return "".join(out)
+
+
 def catalog_html(title):
     spec = PARENTS.get(title)
     if not spec:
@@ -219,34 +244,25 @@ def _chapter_page(ch, idx):
                 ('<p class="eg">%s</p>' % rich(f["eg"])) if f.get("eg") else "",
             )
         )
-    toc += [("s7", "今天怎么用")]
-    says = ['<blockquote class="say"><p>%s</p></blockquote>' % rich(q) for q in ch["q"]]
-    apply_paras = "".join("<p>%s</p>" % rich(p) for p in ch["apply"].split("\n") if p.strip())
-    # Each 金句 goes beside the 分则 it is actually about (scored on character
-    # bigrams), not wherever the spacing happened to land it.
-    gaps = len(points) + 1
-    woven = [""] * gaps
-    sides = [_plain(ch["story"])] + [
-        _plain(f["n"]) + _plain(f["d"]) + _plain(f.get("eg", "")) for f in ch["f"]]
-    joined = [sides[j] + (sides[j + 1] if j + 1 < len(sides) else "") for j in range(gaps)]
-
-    def _sh(t):
-        b = _bare(t)
-        return {b[i:i + 2] for i in range(len(b) - 1)}
-
-    qs = ch["q"][:gaps]
-    pairs = sorted(((-(len(_sh(q) & _sh(joined[j])) / float(len(_sh(q)) or 1)), i, j)
-                    for i, q in enumerate(qs) for j in range(gaps)))
-    placed, used = {}, set()
-    for _score, i, j in pairs:
-        if i in placed or j in used:
-            continue
-        placed[i] = j
-        used.add(j)
-    for i, j in placed.items():
-        woven[j] = says[i]
-    body_points = woven[0] + "\n" + "\n".join(
-        pt + ("\n" + woven[i + 1] if woven[i + 1] else "") for i, pt in enumerate(points))
+    toc += [("s7", "今天怎么用"), ("quotes", "金句")]
+    # 金句: 1-3 lines lifted from the 分则 they close (option A), plus the full
+    # 原文 list restored as a section at the foot.
+    import hw_theme as _t
+    cands = []
+    for i, f in enumerate(ch["f"]):
+        for span in _t._spans(_plain(f["d"])):
+            cands.append((i, span, _t._quotability(span)))
+    want = max(1, min(3, len(ch["f"])))
+    chosen = _t._pick_pullquotes([c for c in cands if c[2] > 0], want)
+    after = {}
+    for i, span, _sc in chosen:
+        raw = f_span_raw(ch["f"][i]["d"], span)
+        after[i] = '<blockquote class="say"><p>%s</p></blockquote>' % rich(raw)
+    body_points = "\n".join(
+        pt + ("\n" + after[i] if i in after else "") for i, pt in enumerate(points))
+    quotes = "".join("<blockquote><p>%s</p></blockquote>" % rich(q) for q in ch["q"])
+    apply_paras = "".join("<p>%s</p>" % rich(p)
+                          for p in ch["apply"].split("\n") if p.strip())
     toc_html = "".join(
         '<a href="#%s"><span class="i">%02d</span>%s</a>' % (esc(a), i, esc(n))
         for i, (a, n) in enumerate(toc, 1)
@@ -283,6 +299,7 @@ def _chapter_page(ch, idx):
       <p>%s</p></section>
       %s
       <section class="sec apply" id="s7"><h2 class="sec-k">今天怎么用？</h2>%s</section>
+      <section class="quotes" id="quotes"><h2 class="sec-k">金句</h2>%s</section>
     </article>
     <aside class="side"><div class="panel"><p class="ph">本篇结构</p><nav class="toc">%s</nav></div></aside>
   </div>
@@ -298,7 +315,7 @@ def _chapter_page(ch, idx):
         esc(SITE), esc(parent_url), esc(parent), esc(ch["n"]),
         esc(parent), esc(ch["n"]), esc(ch["w"]), esc(ch["src"]), rich(ch["dek"]),
         esc(parent), esc(ch["w"]), share, rich(ch["dek"]),
-        rich(ch["dek"]), rich(ch["story"]), body_points, apply_paras,
+        rich(ch["dek"]), rich(ch["story"]), body_points, apply_paras, quotes,
         toc_html, prev_html, next_html,
         esc(page_url), sibling_links(None, True),
     )

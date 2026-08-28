@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 """Editorial item-page theme for Human World."""
+import re
 import geo_kit as _gk
 from geo_kit import esc, clip, SITE, org_ld, item_ld, breadcrumb_ld, faq_ld
 from geo_kit import head_block, ga_block, sibling_links
@@ -46,63 +47,78 @@ def _bare(t):
     return "".join(c for c in str(t or "") if c not in _STRIP)
 
 
-def _shingles(t):
-    b = _bare(t)
-    return {b[i:i + 2] for i in range(len(b) - 1)} or set()
+_ENDS = "。！？"
+_MIN, _MAX = 18, 145
 
 
-def _relevance(quote, text):
-    """Character-bigram overlap. Verbatim quotes score 1.0; a quote that merely
-    shares vocabulary with a section still beats one that shares nothing."""
-    q = _shingles(quote)
-    if not q:
-        return 0.0
-    return len(q & _shingles(text)) / float(len(q))
+def _spans(text):
+    """Sentences, plus runs of adjacent sentences, as pull-quote candidates."""
+    parts = [x for x in re.split(r"(?<=[%s])" % _ENDS, text) if x.strip()]
+    out = []
+    for i in range(len(parts)):
+        run = ""
+        for j in range(i, min(i + 3, len(parts))):
+            run += parts[j]
+            if _MIN <= len(run) <= _MAX:
+                out.append(run.strip())
+    return out
 
 
-def _weave(html, slots, quotes, texts):
-    """Put each 金句 next to the section it belongs to.
+def _quotability(t):
+    """What makes a line worth blowing up: a quotation inside it, a dash landing
+    a verdict, an X-not-Y turn. What kills it: dates, numbers, worked examples."""
+    if not (_MIN <= len(t) <= _MAX):
+        return -1.0
+    s = 0.0
+    if "\u300c" in t and "\u300d" in t:
+        s += 2.2
+    if "\u2014\u2014" in t:
+        s += 1.3
+    if "\u4e0d\u662f" in t and "\u800c\u662f" in t:
+        s += 1.4
+    elif "\u4e0d\u662f" in t or "\u800c\u662f" in t:
+        s += 0.6
+    for w in ("\u53ea\u6709", "\u624d\u7b97", "\u6c38\u8fdc", "\u4ece\u6765",
+              "\u672c\u8d28\u4e0a", "\u5b9e\u9645\u4e0a", "\u771f\u6b63"):
+        if w in t:
+            s += 0.4
+    if re.search(r"\d{3,}|\d+\s*[\u5e74\u6708\u4ebf\u4e07%]", t):
+        s -= 1.6
+    for w in ("\u4f8b\uff1a", "\u6bd4\u5982", "\u4f8b\u5982", "\u516c\u53f8\u7248"):
+        if w in t:
+            s -= 1.2
+    s += min(t.count("\uff0c"), 4) * 0.12
+    return s
 
-    The previous pass did the opposite: it pushed a quote AWAY from any section
-    that mentioned it, so 「得道者多助」 ended up under 以德服人 while its own
-    section 得民者得天下 got an unrelated line. Now every quote is scored against
-    every section and takes the best free slot.
-    """
-    if not quotes or not slots:
-        return html
-    quotes = quotes[:len(slots)]
-    joined = ["".join(texts[j]) + ("".join(texts[j + 1]) if j + 1 < len(texts) else "")
-              for j in range(len(slots))]
-    pairs = []
-    for qi, q in enumerate(quotes):
-        for j in range(len(slots)):
-            pairs.append((_relevance(q, joined[j]), qi, j))
-    pairs.sort(key=lambda t: (-t[0], t[1], t[2]))
-    placed, used = {}, set()
-    for score, qi, j in pairs:
-        if qi in placed or j in used:
-            continue
-        placed[qi], _ = j, used.add(j)
-    step = len(slots) / float(len(quotes))          # anything unscored: spread out
-    for qi in range(len(quotes)):
-        if qi in placed:
-            continue
-        j = next((k for k in sorted(range(len(slots)),
-                                    key=lambda k: abs(k - int(qi * step + step / 2)))
-                  if k not in used), 0)
-        placed[qi], _ = j, used.add(j)
-    for qi, j in sorted(placed.items(), key=lambda kv: -kv[1]):
-        html.insert(slots[j], _say(quotes[qi]))
-    return html
+
+def _pick_pullquotes(pool, want):
+    """1-3 lines, deliberately mixed length: one short, one medium, one long."""
+    buckets = ((18, 45), (46, 90), (91, _MAX))
+    order = [1, 0, 2] if want <= 2 else [1, 0, 2]
+    chosen, used_secs = [], set()
+    for b in order[:want]:
+        lo, hi = buckets[b]
+        best = None
+        for sec, span, sc in pool:
+            if sec in used_secs or not (lo <= len(span) <= hi):
+                continue
+            if best is None or sc > best[2]:
+                best = (sec, span, sc)
+        if best:
+            used_secs.add(best[0])
+            chosen.append(best)
+    for sec, span, sc in sorted(pool, key=lambda x: -x[2]):   # top up if a bucket was empty
+        if len(chosen) >= want:
+            break
+        if sec not in used_secs:
+            used_secs.add(sec)
+            chosen.append((sec, span, sc))
+    return chosen
 
 
 def _render_blocks(it, zh):
     html, toc, first_q, n = [], [], True, 0
-    slots, quotes, around = [], [], []
-    for h, b in it.b(zh):
-        if (h or "").strip() in ("金句", "原话"):
-            quotes = _paras(b)
-            continue
+    slots, pool = [], []          # pool: (section index, span, score)
     for h, b in it.b(zh):
         h = (h or "").strip()
         paras = _paras(b)
@@ -124,11 +140,22 @@ def _render_blocks(it, zh):
             html.extend("<p>%s</p>" % esc(p) for p in body)
             html.extend('<p class="eg">%s</p>' % esc(p) for p in egs)
             html.append("</section>")
+            si = len(slots)
+            # Close the section with its own strongest line rather than opening
+            # with it — the span usually IS the section's first sentence, and
+            # putting it above means reading the same words twice in a row.
             slots.append(len(html))
-            around.append([name] + paras)   # heading counts: several 分则 are titled with the quote
+            for span in _spans("".join(body)):
+                pool.append((si, span, _quotability(span)))
             continue
         if h in ("金句", "原话"):
-            continue  # woven into the flow by _weave below
+            toc.append(("quotes", "金句"))
+            html.append('<section class="quotes" id="quotes">'
+                        '<h2 class="sec-k">金句</h2>')
+            for q in paras:
+                html.append("<blockquote><p>%s</p></blockquote>" % esc(q))
+            html.append("</section>")
+            continue
         if "对照" in h:
             toc.append(("contrast", "对照着读"))
             html.append('<section id="contrast"><h2 class="sec-k">和谁对照着读</h2><div class="contrast">')
@@ -175,10 +202,11 @@ def _render_blocks(it, zh):
         html.append('<section class="%s" id="%s"><h2 class="sec-k">%s</h2>' % (klass, aid, esc(label)))
         html.extend("<p>%s</p>" % esc(p) for p in paras)
         html.append("</section>")
-        if klass == "sec":
-            slots.append(len(html))
-            around.append([label] + paras)
-    return "\n".join(_weave(html, slots, quotes, around)), toc
+    want = max(1, min(3, len(slots) - 1)) if slots else 0
+    for si, span, _sc in sorted(_pick_pullquotes([c for c in pool if c[2] > 0], want),
+                                key=lambda c: -slots[c[0]]):
+        html.insert(slots[si], _say(span))
+    return "\n".join(html), toc
 
 def item_page(site, it, items, idx, zh, hub_of=None):
     zh_render = zh or site.zh()
