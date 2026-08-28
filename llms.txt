@@ -56,6 +56,14 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [毛泽东 · 论持久战](https://ourword.ai/i/mao/on-protracted-war/): 毛泽东 · 论持久战——时间换力量。弱的一方如果按对方的节奏打，必输。这一篇要回答的是：怎么把战争拖成自己能打的形状。
 - [毛泽东 · 中国革命战争的战略问题](https://ourword.ai/i/mao/strategy-of-the-revolution/): 毛泽东 · 中国革命战争的战略问题——有什么枪打什么仗。别人的胜仗不能直接搬。这一篇要回答的是：你这块地、这点人、这点枪，打法应该长什么样。
 - [毛泽东 · 党委会的工作方法](https://ourword.ai/i/mao/methods-of-work/): 毛泽东 · 党委会的工作方法——把事摆到桌面上。判断做对了，一班人还是各干各的。这一篇要回答的是：怎么让一群人真的按同一个判断动起来。
+- [马可·奥勒留 · 障碍即道路](https://ourword.ai/i/marcus-aurelius/obstacle-is-the-way/): 马可·奥勒留 · 障碍即道路——挡路的东西变成路。同一件坏事，有人被它挡住，有人踩着它上去。这一篇要回答的是：这中间发生了什么转换。
+- [马可·奥勒留 · 从高处看](https://ourword.ai/i/marcus-aurelius/view-from-above/): 马可·奥勒留 · 从高处看——把尺度拉远。同一件事，今天天大，一年后想不起来。这一篇要回答的是：怎么把这个事后才有的视角提前用上。
+- [马可·奥勒留 · 晨起预演](https://ourword.ai/i/marcus-aurelius/morning-preparation/): 马可·奥勒留 · 晨起预演——先把今天会遇到的人想一遍。第二卷第一句就是一段准备。这一篇要回答的是：为什么提前预料到不快，能让不快减半。
+- [孟子 · 民为贵](https://ourword.ai/i/mencius/people-first/): 孟子 · 民为贵——权力的地基在最下面。这句话被当成两千年前的民本情怀。这一篇要回答的是：它其实是一句关于权力从哪来的技术判断。
+- [孟子 · 以力服人与以德服人](https://ourword.ai/i/mencius/force-vs-virtue/): 孟子 · 以力服人与以德服人——顺从和心服的区别。同样是听你的，有两种完全不同的听。这一篇要回答的是：怎么分辨你手上的是哪一种。
+- [孟子 · 养浩然之气](https://ourword.ai/i/mencius/flood-like-qi/): 孟子 · 养浩然之气——顶得住压力的那口气。公孙丑问什么是浩然之气，孟子说难言也。这一篇要回答的是：这口气到底怎么来的，以及怎么弄丢。
+- [商鞅 · 徙木立信](https://ourword.ai/i/shang-yang/moving-the-pole/): 商鞅 · 徙木立信——先证明说话算数。变法条文早就写好了，他却先去搬了一根木头。这一篇要回答的是：那根木头解决的是什么问题。
+- [商鞅 · 法不阿贵](https://ourword.ai/i/shang-yang/law-above-rank/): 商鞅 · 法不阿贵——第一次例外就是终点。新法推行一年，太子犯了法。这一篇要回答的是：这一刻的处理决定了整套制度往后十年的效力。
 - [孙子兵法 · 先胜而后求战](https://ourword.ai/i/sun-tzu/win-before-fighting/): 孙子兵法 · 先胜而后求战——赢在开打之前。输了的人常说运气不好，赢了的人常说打得漂亮。这一篇要回答的是：胜负在哪一刻其实已经定了。
 - [孙子兵法 · 知彼知己](https://ourword.ai/i/sun-tzu/know-both/): 孙子兵法 · 知彼知己——先算清楚再动。「知己知彼」被引用了两千年，多数人只记住了上半句的意思。这一篇要回答的是：知到什么程度才算知。
 - [孙子兵法 · 不战而屈人之兵](https://ourword.ai/i/sun-tzu/win-without-fighting/): 孙子兵法 · 不战而屈人之兵——最好的仗不用打。百战百胜听起来是最高成就。孙子说不是。这一篇要回答的是：为什么打赢一百次仍然是次优解。
