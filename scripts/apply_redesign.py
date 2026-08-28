@@ -13,6 +13,20 @@ def once(path: Path, old: str, new: str, label: str):
     path.write_text(s.replace(old, new, 1), encoding="utf-8")
     print("applied %s" % label)
 
+HOME_MQ = """
+/* responsive lockup */
+@media(max-width:720px){
+  .brand-lockup{align-items:flex-start}
+  .hd-title{font-size:26px;white-space:nowrap}
+  .hd-en{margin:0;font-size:12.5px}
+}
+@media(max-width:480px){
+  .brand-logo{width:36px;height:36px;border-radius:9px}
+  .hd-title{font-size:22px;white-space:normal}
+  .wrap{padding-left:16px;padding-right:16px}
+}
+"""
+
 def main():
     once(
         ROOT / "seo/build_seo.py",
@@ -27,15 +41,21 @@ def main():
         (".hd-en{font-size:13.5px;color:var(--ink-50);letter-spacing:0;font-weight:400;margin-left:58px}",
          ".hd-en{font-size:13.5px;color:var(--ink-50);letter-spacing:0;font-weight:400;margin:0}"),
         (".hd{position:relative;z-index:50;margin:0 0 28px;padding:clamp(28px,5vw,56px) 0 8px;background:transparent;-webkit-backdrop-filter:none;backdrop-filter:none}",
-         ".hd{position:relative;z-index:50;margin:0 0 28px;padding:clamp(36px,6vw,64px) 0 22px;background:transparent;-webkit-backdrop-filter:none;backdrop-filter:none}"),
+         ".hd{position:relative;z-index:50;margin:0 0 28px;padding:clamp(28px,6vw,64px) 0 22px;background:transparent;-webkit-backdrop-filter:none;backdrop-filter:none}"),
         (".wrap{max-width:1120px;margin:0 auto;padding:0 clamp(18px,4vw,40px) 96px}",
-         ".wrap{max-width:1120px;margin:0 auto;padding:0 clamp(20px,4vw,48px) 96px}"),
+         ".wrap{max-width:1120px;margin:0 auto;padding:0 clamp(16px,4vw,48px) 96px}"),
         (".brand-lockup{display:flex;align-items:center;gap:14px;text-decoration:none;color:inherit;margin:0 0 14px}",
-         ".brand-lockup{display:flex;align-items:flex-start;gap:14px;text-decoration:none;color:inherit;margin:0 0 14px}"),
+         ".brand-lockup{display:flex;align-items:flex-start;gap:12px;text-decoration:none;color:inherit;margin:0 0 14px}"),
+        (".hd-title{font-family:\"Songti SC\",\"Noto Serif CJK SC\",\"Source Han Serif SC\",Georgia,serif;font-size:clamp(28px,4.6vw,42px);font-weight:700;letter-spacing:-.03em;line-height:.95}",
+         ".hd-title{font-family:\"Songti SC\",\"Noto Serif CJK SC\",\"Source Han Serif SC\",Georgia,serif;font-size:clamp(22px,4.2vw,42px);font-weight:700;letter-spacing:-.03em;line-height:1.05}"),
     ]
     for a, b in pairs:
         if a in s:
             s = s.replace(a, b)
+            n += 1
+    if "/* responsive lockup */" not in s:
+        s = s.replace("/* unified brand lockup — match entry pages / yuansheng */", "/* unified brand lockup — match entry pages / yuansheng */" + HOME_MQ)
+        if "/* responsive lockup */" in s:
             n += 1
     idx.write_text(s, encoding="utf-8")
     print("applied homepage spacing", n)
