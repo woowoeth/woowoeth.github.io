@@ -35,7 +35,7 @@
 *{box-sizing:border-box;margin:0;padding:0}
 html{background:var(--paper)}
 body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Noto Sans SC","Hiragino Sans GB",sans-serif;color:var(--ink);-webkit-font-smoothing:antialiased;font-optical-sizing:auto;line-height:1.55;min-height:100vh}
-.wrap{max-width:1120px;margin:0 auto;padding:0 clamp(18px,4vw,40px) 96px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 clamp(20px,4vw,48px) 96px}
 
 /* skip-link + focus */
 .skip-link{position:absolute;left:12px;top:-52px;z-index:100;padding:8px 16px;background:var(--ink);color:var(--white);border-radius:6px;font-size:13px;font-weight:600;text-decoration:none;transition:top var(--dur-base) var(--ease-out-quart)}
@@ -44,16 +44,16 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC
 
 /* masthead — glass sticky */
 /* unified brand lockup — match entry pages / yuansheng */
-.wrap{max-width:1120px;margin:0 auto;padding:0 clamp(18px,4vw,40px) 96px}
-.hd{position:relative;z-index:50;margin:0 0 28px;padding:clamp(28px,5vw,56px) 0 8px;background:transparent;-webkit-backdrop-filter:none;backdrop-filter:none}
+.wrap{max-width:1120px;margin:0 auto;padding:0 clamp(20px,4vw,48px) 96px}
+.hd{position:relative;z-index:50;margin:0 0 28px;padding:clamp(36px,6vw,64px) 0 22px;background:transparent;-webkit-backdrop-filter:none;backdrop-filter:none}
 .hd::after{display:none}
-.brand-lockup{display:flex;align-items:center;gap:14px;text-decoration:none;color:inherit;margin:0 0 14px}
+.brand-lockup{display:flex;align-items:flex-start;gap:14px;text-decoration:none;color:inherit;margin:0 0 14px}
 .brand-lockup:hover{color:inherit}
 .brand-logo{width:44px;height:44px;border-radius:11px;flex:none;box-shadow:0 1px 0 rgba(28,25,23,.06)}
 .brand-copy{display:flex;flex-direction:column;gap:4px;min-width:0}
 .hd-title{font-family:"Songti SC","Noto Serif CJK SC","Source Han Serif SC",Georgia,serif;font-size:clamp(28px,4.6vw,42px);font-weight:700;letter-spacing:-.03em;line-height:.95}
 .hd-title .dot{color:#9d2933}
-.hd-en{font-size:13.5px;color:var(--ink-50);letter-spacing:0;font-weight:400;margin-left:58px}
+.hd-en{font-size:13.5px;color:var(--ink-50);letter-spacing:0;font-weight:400;margin:0}
 .hd-row{display:none}
 .hd .brand{display:none}
 @media(max-width:600px){
@@ -222,9 +222,9 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC
       <img class="brand-logo" src="/favicon.svg" width="44" height="44" alt="人类世界生存法则">
       <span class="brand-copy">
         <h1 class="hd-title">人类世界<span class="dot">生存法则</span></h1>
+        <p class="hd-en">人类文明的坐标，照亮千年的灯塔</p>
       </span>
     </a>
-    <p class="hd-en">人类文明的坐标，照亮千年的灯塔</p>
     <div class="hd-stats">
       <div class="stat"><b id="st">95</b> 位人物与典籍</div>
       <div class="stat">跨越 <b>2600+</b> 年</div>
