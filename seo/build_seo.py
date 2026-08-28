@@ -18,6 +18,8 @@ import hw_theme
 hw_theme.install(G)
 import hw_theme
 hw_theme.install(G)
+import hw_theme
+hw_theme.install(G)
 
 SITE = G.Site(
     path="",

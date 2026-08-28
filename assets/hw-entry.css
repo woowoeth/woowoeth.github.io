@@ -79,3 +79,13 @@ blockquote p{margin:0}
 .toc a{display:block; font-size:13.5px; color:var(--ink-2); padding:5px 0; border-top:1px solid var(--rule)}
 .toc a:first-of-type{border-top:0}
 .toc .i{color:var(--faint); font-variant-numeric:tabular-nums; margin-right:8px; font-size:12px}
+/* list / hub / all */
+.feed{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;margin:8px 0 40px}
+.feed a{display:flex;flex-direction:column;gap:6px;min-height:132px;background:var(--surface);border:1px solid var(--rule);border-radius:14px;padding:14px 16px 16px;color:inherit}
+.feed a:hover{border-color:var(--seal);color:inherit}
+.feed .k{font-size:11px;letter-spacing:.08em;color:var(--seal)}
+.feed strong{font-family:var(--serif);font-size:18px;line-height:1.3;font-weight:700}
+.feed .s{font-size:13.5px;color:var(--muted);line-height:1.55}
+.hubs{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 22px}
+.hubs a{background:var(--surface);border:1px solid var(--rule);border-radius:999px;padding:4px 12px;font-size:13px;color:var(--ink-2)}
+.hubs a:hover,.hubs a.on{border-color:var(--seal);color:var(--seal)}
