@@ -20,12 +20,12 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
+      - name: Open entries as standalone pages
+        run: python scripts/apply_redesign.py
       - name: Build SEO/GEO artefacts
         run: python seo/build_seo.py
       - name: Refuse to publish a broken page
         run: |
-          # A merge marker or a second canonical in a committed page is worse than a
-          # stale one, so fail the run before it can be pushed.
           if grep -rInE '^(<{7}|={7}|>{7}) ' --include='*.html' . ; then
             echo "::error::merge-conflict markers in HTML"; exit 1
           fi
@@ -41,10 +41,6 @@ jobs:
           git add -A
           if git diff --cached --quiet; then echo "seo unchanged"; exit 0; fi
           git commit -m "seo: refresh crawlable layer"
-          # Never --autostash here. An autostash pop that conflicts writes merge markers
-          # straight into index.html and they get committed; that happened once already
-          # and rendered ">>>>>>> Stashed changes" above the fold. Rebase, and if the
-          # rebase cannot apply cleanly, abort and rebuild from the new upstream instead.
           for i in $(seq 1 6); do
             git fetch -q origin "${GITHUB_REF_NAME}"
             if git rebase "origin/${GITHUB_REF_NAME}"; then
@@ -52,6 +48,7 @@ jobs:
             else
               git rebase --abort || true
               git reset --hard "origin/${GITHUB_REF_NAME}"
+              python scripts/apply_redesign.py
               python seo/build_seo.py
               git add -A
               git diff --cached --quiet && { echo "seo unchanged after rebuild"; exit 0; }
