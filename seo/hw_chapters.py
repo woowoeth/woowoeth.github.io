@@ -249,8 +249,15 @@ def _chapter_page(ch, idx):
     # 原文 list restored as a section at the foot.
     import hw_theme as _t
     cands = []
+    import re as _re
     for i, f in enumerate(ch["f"]):
-        for span in _t._spans(_plain(f["d"])):
+        whole = _plain(f["d"]) + _plain(f.get("eg", ""))
+        for span in _t._spans(whole):
+            if len(whole) - len(span) < 45:          # must be an excerpt, not the section
+                continue
+            own = _re.sub(r"\u300c[^\u300d]*\u300d", "", span)
+            if len(own.strip("\u3002\uff0c\u3001\uff01\uff1f\uff1b\uff1a\u2014 ")) < 20:
+                continue
             cands.append((i, span, _t._quotability(span)))
     want = max(1, min(3, len(ch["f"])))
     chosen = _t._pick_pullquotes([c for c in cands if c[2] > 0], want)

@@ -145,8 +145,23 @@ def _render_blocks(it, zh):
             # with it — the span usually IS the section's first sentence, and
             # putting it above means reading the same words twice in a row.
             slots.append(len(html))
-            for span in _spans("".join(body)):
-                pool.append((si, span, _quotability(span)))
+            whole = "".join(body + egs)
+            eg_text = "".join(egs)
+            for span in _spans(whole):
+                # A callout has to be an EXCERPT. When the span is most of the
+                # section, the reader gets the same paragraph twice in a row —
+                # 实事求是 was a one-sentence section reprinted under itself.
+                if len(whole) - len(span) < 45:
+                    continue
+                # And it has to carry something beyond a quotation that is
+                # already listed in the 金句 section at the foot.
+                own = re.sub(r"\u300c[^\u300d]*\u300d", "", span)
+                if len(own.strip("\u3002\uff0c\u3001\uff01\uff1f\uff1b\uff1a\u2014 ")) < 20:
+                    continue
+                # a worked example can be vivid, but the principle wins when
+                # the section offers one
+                penalty = 0.8 if (eg_text and span in eg_text) else 0.0
+                pool.append((si, span, _quotability(span) - penalty))
             continue
         if h in ("金句", "原话"):
             toc.append(("quotes", "金句"))
@@ -202,6 +217,17 @@ def _render_blocks(it, zh):
         html.append('<section class="%s" id="%s"><h2 class="sec-k">%s</h2>' % (klass, aid, esc(label)))
         html.extend("<p>%s</p>" % esc(p) for p in paras)
         html.append("</section>")
+        if klass == "sec" and "今天" not in h:      # the story section is fair game too
+            si = len(slots)
+            slots.append(len(html))
+            whole = "".join(paras)
+            for span in _spans(whole):
+                if len(whole) - len(span) < 45:
+                    continue
+                own = re.sub(r"\u300c[^\u300d]*\u300d", "", span)
+                if len(own.strip("\u3002\uff0c\u3001\uff01\uff1f\uff1b\uff1a\u2014 ")) < 20:
+                    continue
+                pool.append((si, span, _quotability(span)))
     want = max(1, min(3, len(slots) - 1)) if slots else 0
     for si, span, _sc in sorted(_pick_pullquotes([c for c in pool if c[2] > 0], want),
                                 key=lambda c: -slots[c[0]]):
@@ -316,7 +342,7 @@ def _shell(lang, title, headhtml, body):
         "<link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\n"
         "<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?"
         "family=Noto+Serif+SC:wght@500;600;700&display=swap\">\n"
-        "<link rel=\"stylesheet\" href=\"/assets/hw-entry.css?v=9\">\n"
+        "<link rel=\"stylesheet\" href=\"/assets/hw-entry.css?v=10\">\n"
         "<link rel=\"stylesheet\" href=\"/assets/hw-chapter.css?v=4\">\n"
         "</head>\n<body>\n%s\n"
         "<script src=\"/assets/hw-share.js\" defer></script>\n</body>\n</html>\n"
