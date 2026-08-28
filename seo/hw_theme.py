@@ -143,6 +143,7 @@ def _pick_pullquotes(pool, want):
 def _render_blocks(it, zh):
     html, toc, first_q, n = [], [], True, 0
     slots, pool = [], []          # pool: (section index, span, score)
+    rendered = set()              # every <p> actually emitted on this page
     for h, b in it.b(zh):
         h = (h or "").strip()
         paras = _paras(b)
@@ -162,8 +163,12 @@ def _render_blocks(it, zh):
             html.append('<section class="point" id="%s">' % aid)
             html.append("<h2>%s</h2>" % esc(name))
             for para in body:
-                html.extend("<p>%s</p>" % esc(x) for x in _breathe(para))
-            html.extend('<p class="eg">%s</p>' % esc(p) for p in egs)
+                for x in _breathe(para):
+                    rendered.add(x)
+                    html.append("<p>%s</p>" % esc(x))
+            for p_ in egs:
+                rendered.add(p_)
+                html.append('<p class="eg">%s</p>' % esc(p_))
             html.append("</section>")
             si = len(slots)
             # Close the section with its own strongest line rather than opening
@@ -181,6 +186,12 @@ def _render_blocks(it, zh):
                         # of the section, the reader gets the same paragraph
                         # twice in a row.
                         if len(whole) - len(span) < 45:
+                            continue
+                        # …and a real excerpt of its OWN paragraph. _breathe
+                        # splits long paragraphs on the same sentence
+                        # boundaries _spans uses, so a span can come out byte
+                        # for byte identical to a rendered paragraph.
+                        if len(para) - len(span) < 20:
                             continue
                         # And it has to carry something beyond a 「quotation」
                         # the 金句 section already lists.
@@ -234,7 +245,9 @@ def _render_blocks(it, zh):
             if len(paras) > 1:
                 html.append('<section class="sec">')
                 for para in paras[1:]:
-                    html.extend("<p>%s</p>" % esc(x) for x in _breathe(para))
+                    for x in _breathe(para):
+                        rendered.add(x)
+                        html.append("<p>%s</p>" % esc(x))
                 html.append("</section>")
             continue
         n += 1
@@ -243,7 +256,9 @@ def _render_blocks(it, zh):
         klass = "sec apply" if "今天" in h else "sec"
         html.append('<section class="%s" id="%s"><h2 class="sec-k">%s</h2>' % (klass, aid, esc(label)))
         for para in paras:
-            html.extend("<p>%s</p>" % esc(x) for x in _breathe(para))
+            for x in _breathe(para):
+                rendered.add(x)
+                html.append("<p>%s</p>" % esc(x))
         html.append("</section>")
         if klass == "sec" and "今天" not in h:      # the story section is fair game too
             si = len(slots)
@@ -257,7 +272,8 @@ def _render_blocks(it, zh):
                     continue
                 pool.append((si, span, _quotability(span)))
     want = max(1, min(3, len(slots) - 1)) if slots else 0
-    for si, span, _sc in sorted(_pick_pullquotes([c for c in pool if c[2] > 0], want),
+    pool = [c for c in pool if c[2] > 0 and c[1] not in rendered]
+    for si, span, _sc in sorted(_pick_pullquotes(pool, want),
                                 key=lambda c: -slots[c[0]]):
         html.insert(slots[si], _say(span))
     return "\n".join(html), toc

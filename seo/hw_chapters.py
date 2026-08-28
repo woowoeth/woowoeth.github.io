@@ -281,12 +281,16 @@ def _chapter_page(ch, idx):
             for span in _t._spans(src):
                 if len(whole) - len(span) < 45:      # excerpt, not the section
                     continue
+                if len(src) - len(span) < 20:        # …and not a whole paragraph
+                    continue
                 own = _re.sub(r"\u300c[^\u300d]*\u300d", "", span)
                 if len(own.strip("\u3002\uff0c\u3001\uff01\uff1f\uff1b\uff1a\u2014 ")) < 20:
                     continue
                 cands.append((i, span, _t._quotability(span) - penalty))
     want = max(1, min(3, len(ch["f"])))
-    chosen = _t._pick_pullquotes([c for c in cands if c[2] > 0], want)
+    shown = {_plain(f["d"]) for f in ch["f"]} | {_plain(f.get("eg", "")) for f in ch["f"]}
+    shown |= {x for f in ch["f"] for x in _t._breathe(_plain(f["d"]))}
+    chosen = _t._pick_pullquotes([c for c in cands if c[2] > 0 and c[1] not in shown], want)
     after = {}
     for i, span, _sc in chosen:
         raw = f_span_raw(ch["f"][i]["d"], span)
