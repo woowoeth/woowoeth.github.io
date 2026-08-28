@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@700&display=swap");
+.hd-title,
+.brand .wordmark,
+.brand-lockup .hd-title{
+  font-family:"Noto Serif SC","Source Han Serif SC","Songti SC","STSong",Georgia,serif !important;
+  font-size:20px !important;
+  font-weight:700 !important;
+  letter-spacing:.04em !important;
+  line-height:1.25 !important;
+  margin:0 !important;
+}
+.brand-logo{
+  width:36px !important;
+  height:36px !important;
+  border-radius:9px !important;
+}
+.hd-en,.slogan{
+  font-size:12px !important;
+  font-weight:400 !important;
+  letter-spacing:0 !important;
+  line-height:1.4 !important;
+}
+@media(max-width:600px){
+  .hd-title,
+  .brand .wordmark,
+  .brand-lockup .hd-title{
+    font-size:20px !important;
+    font-weight:700 !important;
+  }
+}
