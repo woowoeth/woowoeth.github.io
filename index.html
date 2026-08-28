@@ -81,7 +81,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC
 .empty{padding:56px;text-align:center;color:var(--ink-30);font-size:14px}
 
 /* overlay + panel */
-.ov{position:fixed;inset:0;background:rgba(42,46,44,.32);z-index:300;overflow-y:auto;padding:40px 16px 80px;display:none;-webkit-backdrop-filter:blur(2px);backdrop-filter:blur(2px)}
+.ov{display:none !important;position:fixed;inset:0;background:rgba(42,46,44,.32);z-index:300;overflow-y:auto;padding:40px 16px 80px;display:none;-webkit-backdrop-filter:blur(2px);backdrop-filter:blur(2px)}
 .ov.open{display:block}
 .panel{background:var(--white);border-radius:16px;box-shadow:0 0 0 1px var(--line),0 12px 48px rgba(42,46,44,.14);max-width:660px;margin:0 auto;padding:36px 40px;position:relative;animation:panel-in var(--dur-slow) var(--ease-out-expo);transform-origin:center top}
 @keyframes panel-in{from{opacity:0;transform:translateY(8px) scale(.99)}to{opacity:1;transform:none}}
@@ -1072,8 +1072,10 @@ function renderTL(){
   }).join('');
 }
 
+function slugOf(n){return String(n).replace(/[·，、。\s\.,]/g,'');}
 function op(name){
   const d=D.find(x=>x.n===name);if(!d)return;
+  location.href='/i/'+encodeURIComponent(slugOf(d.n))+'/';return;
   const fw=d.f.map(x=>`<div class="fw"><div class="fw-n">${x.n}</div><div class="fw-d">${x.d}</div>${x.eg?`<div class="fw-eg">📌 ${x.eg}</div>`:''}</div>`).join('');
   const q=d.q.map(x=>`<div class="q-item">${x}</div>`).join('');
   const ctr=contrastOf(d);

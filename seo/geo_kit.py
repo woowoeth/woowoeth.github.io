@@ -544,18 +544,18 @@ def article_ld(site, url, title, description, sections, zh=True, updated=""):
 
 # --------------------------------------------------------------------- static pages
 _PAGE_CSS = (
-    "*{box-sizing:border-box}body{margin:0;background:#f0f0ec;color:#2a2e2c;"
+    "*{box-sizing:border-box}body{margin:0;background:#f4f0e8;color:#1c1917;"
     "font:16px/1.75 -apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC',"
     "'Noto Sans SC',sans-serif;-webkit-font-smoothing:antialiased}"
     "main{max-width:720px;margin:0 auto;padding:24px 24px 72px}"
-    "a{color:#3a5f3a}nav.bc{font-size:13px;color:#767c76;margin:8px 0 24px}"
+    "a{color:#7a1e26}nav.bc{font-size:13px;color:#767c76;margin:8px 0 24px}"
     "nav.bc a{color:#767c76;text-decoration:none}nav.bc a:hover{text-decoration:underline}"
     "h1{font-size:26px;line-height:1.3;margin:0 0 12px;letter-spacing:-.01em}"
-    "h2{font-size:16px;margin:28px 0 6px;letter-spacing:-.005em}"
+    "h2{font-size:13px;letter-spacing:.08em;color:#9d2933;margin:32px 0 8px;font-weight:650}"
     ".lede{font-size:17px;color:#4c524e;margin:0 0 20px}"
     ".meta{font-size:13px;color:#767c76;margin:0 0 24px}"
     ".tags{margin:20px 0 0}.tags a,.tags span{display:inline-block;font-size:12px;"
-    "color:#4c524e;background:rgba(42,46,44,.05);border-radius:999px;padding:3px 10px;"
+    "color:#4a4338;background:#efe8d8;border-radius:999px;padding:3px 10px;"
     "margin:0 6px 6px 0;text-decoration:none}"
     "footer{margin-top:40px;padding-top:20px;border-top:1px solid rgba(42,46,44,.12);"
     "font-size:13px;color:#767c76}footer a{color:#4c524e}"
