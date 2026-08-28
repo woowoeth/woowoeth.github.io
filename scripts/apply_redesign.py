@@ -21,18 +21,32 @@ def main():
         "import geo_kit as G\nimport hw_theme\nhw_theme.install(G)\n",
         "install hw_theme",
     )
-    once(
-        ROOT / "index.html",
-        "  --white:#fafaf7;--paper:#f0f0ec;--paper2:#eae9e3;\n"
-        "  --ink:#2a2e2c;--ink-70:#4c524e;--ink-50:#767c76;--ink-30:#a3a8a1;\n"
-        "  --up:#66794a;--sulfur:#b8c49a;--up-bg:rgba(184,196,154,.28);\n"
-        "  --down:#b4574b;--down-bg:rgba(180,87,75,.10);",
-        "  --white:#fffef9;--paper:#f4f2ec;--paper2:#ece8df;\n"
-        "  --ink:#1c1917;--ink-70:#3f3a34;--ink-50:#6f6959;--ink-30:#9a9384;\n"
-        "  --up:#9d2933;--sulfur:#f3e4e0;--up-bg:rgba(157,41,51,.12);\n"
-        "  --down:#9d2933;--down-bg:rgba(157,41,51,.10);",
-        "homepage seal/paper tokens",
-    )
+    idx = ROOT / "index.html"
+    s = idx.read_text(encoding="utf-8")
+    repls = [
+        ("--white:#fafaf7", "--white:#fffef9"),
+        ("--paper:#f0f0ec", "--paper:#f4f2ec"),
+        ("--paper2:#eae9e3", "--paper2:#ece8df"),
+        ("--ink:#2a2e2c", "--ink:#1c1917"),
+        ("--ink-70:#4c524e", "--ink-70:#3f3a34"),
+        ("--ink-50:#767c76", "--ink-50:#6f6959"),
+        ("--ink-30:#a3a8a1", "--ink-30:#9a9384"),
+        ("--up:#66794a", "--up:#9d2933"),
+        ("--sulfur:#b8c49a", "--sulfur:#f3e4e0"),
+        ("--up-bg:rgba(184,196,154,.28)", "--up-bg:rgba(157,41,51,.12)"),
+        ("--down:#b4574b", "--down:#9d2933"),
+        ("--down-bg:rgba(180,87,75,.10)", "--down-bg:rgba(157,41,51,.10)"),
+    ]
+    n = 0
+    for a, b in repls:
+        if a in s:
+            s = s.replace(a, b)
+            n += 1
+    if n:
+        idx.write_text(s, encoding="utf-8")
+        print("applied homepage tokens", n)
+    else:
+        print("skip homepage tokens")
     once(
         ROOT / "index.html",
         ".hd-title{font-size:26px;font-weight:700;letter-spacing:-.03em;line-height:1.05}",
