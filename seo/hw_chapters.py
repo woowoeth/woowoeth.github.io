@@ -1,14 +1,15 @@
 # -*- coding: utf-8 -*-
 """Child essays hanging off a person/book map page. Not part of D[]."""
 import os
-from geo_kit import esc, SITE, head_block, ga_block, sibling_links, org_ld
+from geo_kit import esc, SITE, sibling_links
 import hw_theme
+
+SLOGAN = "100 个人物与典籍的生存智慧，跨越 2600 年"
 
 PARENTS = {
     "毛泽东": {
         "slug": "mao",
-        "cat": "战略·博弈",
-        "blurb": "先读这几篇，其余按需",
+        "blurb": "深度阅读",
         "items": [
             {
                 "k": "on-contradiction",
@@ -17,8 +18,6 @@ PARENTS = {
                 "line": "一团乱麻里，先找那根一抽全松的线",
                 "ready": True,
             },
-            {"k": "on-practice", "n": "实践论", "w": "从事里认识", "line": "道理不从书里完成", "ready": False},
-            {"k": "on-protracted-war", "n": "论持久战", "w": "时间换力量", "line": "弱的一方怎么把战争拖成自己能打的形状", "ready": False},
         ],
     }
 }
@@ -56,8 +55,6 @@ CHAPTERS = [
             "捉住了这个主要矛盾，一切问题就迎刃而解了。",
             "伤其十指，不如断其一指。",
         ],
-        "next_n": "实践论",
-        "next_note": "下一篇将写《实践论》",
     }
 ]
 
@@ -66,25 +63,19 @@ def catalog_html(title):
     spec = PARENTS.get(title)
     if not spec:
         return ""
+    live = [it for it in spec["items"] if it.get("ready")]
+    if not live:
+        return ""
     rows = []
-    for it in spec["items"]:
-        if it.get("ready"):
-            href = "/i/%s/%s/" % (spec["slug"], it["k"])
-            rows.append(
-                '<a class="map-row" href="%s">'
-                '<span class="map-n">%s</span>'
-                '<span class="map-w">%s</span>'
-                '<span class="map-line">%s</span></a>'
-                % (esc(href), esc(it["n"]), esc(it["w"]), esc(it["line"]))
-            )
-        else:
-            rows.append(
-                '<div class="map-row pending">'
-                '<span class="map-n">%s</span>'
-                '<span class="map-w">%s</span>'
-                '<span class="map-line">%s</span></div>'
-                % (esc(it["n"]), esc(it["w"]), esc(it.get("line") or "待写"))
-            )
+    for it in live:
+        href = "/i/%s/%s/" % (spec["slug"], it["k"])
+        rows.append(
+            '<a class="map-row" href="%s">'
+            '<span class="map-n">%s</span>'
+            '<span class="map-w">%s</span>'
+            '<span class="map-line">%s</span></a>'
+            % (esc(href), esc(it["n"]), esc(it["w"]), esc(it["line"]))
+        )
     return (
         '<section class="map-cat" id="map">'
         '<h2 class="sec-k">%s</h2>'
@@ -94,6 +85,8 @@ def catalog_html(title):
 
 
 def inject_catalog(blocks_html, title):
+    if 'class="map-cat"' in blocks_html:
+        return blocks_html
     chunk = catalog_html(title)
     if not chunk:
         return blocks_html
@@ -128,12 +121,6 @@ def _chapter_page(ch):
         for i, (a, n) in enumerate(toc, 1)
     )
     share = hw_theme._share_btn(title, page_url, "%s\n\n%s\n\n%s" % (ch["n"], ch["dek"], page_url))
-    next_html = ""
-    if ch.get("next_n"):
-        next_html = (
-            '<span class="sib-pending"><span class="dir">下一篇</span>%s</span>'
-            % esc(ch.get("next_note") or ch["next_n"])
-        )
     body = """
 <header class="mast wrap">
   <div class="mast-top">
@@ -151,7 +138,7 @@ def _chapter_page(ch):
   </nav>
   <div class="layout">
     <article>
-      <p class="kicker">%s · 骨干</p>
+      <p class="kicker">%s</p>
       <h1>%s</h1>
       <p class="one">%s</p>
       <p class="src">%s</p>
@@ -170,7 +157,6 @@ def _chapter_page(ch):
   </div>
   <nav class="sib">
     <a href="%s"><span class="dir">回</span>%s</a>
-    %s
   </nav>
   <footer class="site-foot">
     <p>本页可直接引用 <code>%s</code></p>
@@ -178,35 +164,15 @@ def _chapter_page(ch):
   </footer>
 </div>
 """ % (
-        hw_theme.brand_html(SITE + "/", "毛泽东 · 骨干"),
+        hw_theme.brand_html(SITE + "/", SLOGAN),
         esc(parent_url), esc(parent), esc(SITE),
         esc(SITE), esc(parent_url), esc(parent), esc(ch["n"]),
         esc(parent), esc(ch["n"]), esc(ch["w"]), esc(ch["src"]), esc(ch["dek"]),
         esc(parent), esc(ch["w"]), share, esc(ch["dek"]),
         esc(ch["dek"]), esc(ch["story"]), "\n".join(points), apply_paras, quotes,
-        toc_html, esc(parent_url), esc(parent), next_html,
+        toc_html, esc(parent_url), esc(parent),
         esc(page_url), sibling_links(None, True),
     )
-    head = head_block(
-        type("S", (), {"url": lambda self, p="": SITE + "/" + p, "base": SITE + "/",
-                       "name": "Human World", "name_zh": "人类世界生存法则",
-                       "zh": lambda self: True})(),
-        page_url, title, ch["dek"], zh=True, ld=[org_ld()],
-    ) if False else (
-        '<meta name="description" content="%s">'
-        '<link rel="canonical" href="%s">'
-        '<meta property="og:title" content="%s">'
-        '<meta property="og:description" content="%s">'
-        '<meta property="og:url" content="%s">'
-        '<script type="application/ld+json">%s</script>'
-        % (
-            esc(ch["dek"]), esc(page_url), esc(title), esc(ch["dek"]), esc(page_url),
-            esc('{"@context":"https://schema.org","@type":"Article","headline":"%s","url":"%s"}' % (ch["n"], page_url)).replace("&quot;", '"')
-            if False else
-            '{"@context":"https://schema.org","@type":"Article","headline":"%s","url":"%s"}' % (ch["n"], page_url),
-        )
-    )
-    # fix ld json not escaped as html text incorrectly — write raw script
     head = (
         '<meta name="description" content="%s">\n'
         '<link rel="canonical" href="%s">\n'
@@ -224,7 +190,6 @@ def write_chapters(root="."):
     for ch in CHAPTERS:
         path = os.path.join(root, "i", ch["parent_slug"], ch["k"], "index.html")
         os.makedirs(os.path.dirname(path), exist_ok=True)
-        html = _chapter_page(ch)
-        open(path, "w", encoding="utf-8").write(html)
+        open(path, "w", encoding="utf-8").write(_chapter_page(ch))
         n += 1
     return n
