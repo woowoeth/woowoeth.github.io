@@ -20,6 +20,21 @@ FIXES = [
     ("守彙", "守住"),
 ]
 
+OLD_FOOT = (
+    'let bx=PADX;\n'
+    '  if(dqLogoOK){const lw=Math.round(W*.06),lh2=lw*dqLogoImg.height/dqLogoImg.width;\n'
+    '    x.globalAlpha=.9;x.drawImage(dqLogoImg,bx,FOOT-lh2,lw,lh2);x.globalAlpha=1;bx+=lw+Math.round(W*.02);}\n'
+    '  x.font=Math.round(W*.034)+\'px -apple-system,"PingFang SC",system-ui,sans-serif\';\n'
+    '  x.fillStyle=s.p[2];x.textBaseline="alphabetic";x.fillText("OurWord.ai",bx,FOOT);'
+)
+NEW_FOOT = (
+    'const lw=Math.round(W*.048),footFs=Math.round(W*.034),mid=FOOT-Math.round(srcS*.36);\n'
+    '  let bx=PADX;\n'
+    '  if(dqLogoOK){x.globalAlpha=.92;x.drawImage(dqLogoImg,bx,mid-lw/2,lw,lw);x.globalAlpha=1;bx+=lw+Math.round(W*.016);}\n'
+    '  x.font=footFs+\'px -apple-system,"PingFang SC",system-ui,sans-serif\';\n'
+    '  x.fillStyle=s.p[2];x.textBaseline="middle";x.fillText("OurWord.ai",bx,mid);'
+)
+
 def main():
     sys.path.insert(0, str(ROOT / "scripts"))
     import inject_week
@@ -42,6 +57,11 @@ def main():
         s,
         count=1,
     )
+    if OLD_FOOT in s:
+        s = s.replace(OLD_FOOT, NEW_FOOT, 1)
+        print("dq foot aligned")
+    else:
+        print("dq foot block not found")
     idx.write_text(s, encoding="utf-8")
     try:
         sys.path.insert(0, str(ROOT / "seo"))
