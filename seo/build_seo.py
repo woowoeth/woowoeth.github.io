@@ -42,7 +42,7 @@ SITE = G.Site(
         "examples, and how it applies today."),
     description_zh=(
         "\u4e00\u4e2a\u5173\u4e8e\u300c\u4e16\u754c\u5230\u5e95\u600e\u4e48\u8fd0\u8f6c\u300d\u7684\u77e5\u8bc6\u5e93\uff1a\u6218\u7565\u3001\u8d22\u5bcc\u3001\u6743\u529b\u3001\u4eba\u6027\u3001\u521b\u4e1a\uff0c\u53d6\u81ea %(n)d \u4f4d"
-        "\u4eba\u7269\u4e0e\u5178\u7c4d\uff0c\u8de8\u8d8a 2600 \u5e74\u3002\u6bcf\u4e00\u6761\u90fd\u5199\u6e05\u695a\u8fd9\u4e2a\u4eba\u771f正留下的那一个想法、背后的故事、"
+        "\u4eba\u7269\u4e0e\u5178\u7c4d\uff0c\u8de8\u8d8a 2600 \u5e74\u3002\u6bcf\u4e00\u6761\u90fd\u5199\u6e05\u695a\u8fd9\u4e2a\u4eba\u771f\u6b63\u7559\u4e0b\u7684\u90a3\u4e00\u4e2a\u60f3\u6cd5\u3001\u80cc\u540e\u7684\u6545\u4e8b\u3001"
         "\u62c6\u5f00\u7684\u5206\u5219\u4e0e\u4f8b\u5b50\uff0c\u4ee5\u53ca\u4eca\u5929\u600e\u4e48\u7528\u3002"),
     keywords=("\u751f\u5b58\u667a\u6167, \u6218\u7565\u601d\u7ef4, \u5b59\u5b50\u5175\u6cd5, \u4eba\u6027, \u8d22\u5bcc \u6295\u8d44 \u539f\u5219, \u6743\u529b \u6cbb\u7406, \u521b\u4e1a \u65b9\u6cd5\u8bba, "
               "\u7ecf\u5178 \u89e3\u8bfb, life principles, strategy, human nature, classic texts"),
@@ -264,19 +264,6 @@ def write_legacy_redirects(root="."):
 def main():
     items = load_items()
     fill_counts(SITE, len(items))
-    _orig_item_page = G.item_page
-
-    def item_page(site, it, items, idx, zh, hub_of=None):
-        html = _orig_item_page(site, it, items, idx, zh, hub_of=hub_of)
-        chunk = hw_chapters.catalog_html(it.title)
-        if chunk and 'id="contrast"' in html:
-            html = html.replace('<section id="contrast"', chunk + '<section id="contrast"', 1)
-        elif chunk:
-            html = html.replace('<nav class="sib">', chunk + '<nav class="sib">', 1)
-        return html
-
-    G.item_page = item_page
-    hw_theme.item_page = item_page
     rep = G.build(SITE, items, root=".", today=datetime.date.today().isoformat(),
                   how_built=HOW, cite_as=CITE,
                   extra_sitemaps=[])
