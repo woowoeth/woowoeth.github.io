@@ -1,15 +1,12 @@
 # -*- coding: utf-8 -*-
 from geo_kit import esc, clip, SITE, org_ld, itemlist_ld, head_block, sibling_links
-from hw_theme import _shell
+from hw_theme import _shell, brand_html
 
 def _mast(site, zh, crumb_last, kicker="", heading="", lede=""):
     return """
 <header class=\"mast wrap\">
   <div class=\"mast-top\">
-    <a class=\"brand\" href=\"%s\">
-      <span class=\"hw\">HUMAN WORLD</span>
-      <span class=\"wordmark\">人类世界<span class=\"dot\">生存法则</span></span>
-    </a>
+    %s
     <div class=\"mast-links\">
       <a class=\"pill\" href=\"%s\">目录</a>
       <a class=\"pill\" href=\"%s\">全部</a>
@@ -26,7 +23,8 @@ def _mast(site, zh, crumb_last, kicker="", heading="", lede=""):
   <h1>%s</h1>
   %s
 """ % (
-        esc(SITE + "/"), esc(site.base), esc(site.url("all/")),
+        brand_html(SITE + "/"),
+        esc(site.base), esc(site.url("all/")),
         esc(site.tagline_zh if zh else site.tagline),
         esc(SITE + "/"), esc(site.base), esc(site.name_zh if zh else site.name),
         esc(crumb_last),

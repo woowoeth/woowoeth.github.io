@@ -4,15 +4,81 @@ ROOT = Path(__file__).resolve().parents[1]
 
 def once(path: Path, old: str, new: str, label: str):
     s = path.read_text(encoding="utf-8")
-    if new.strip()[:40] in s and old not in s:
-        print(f"skip {label} (already applied)")
-        return
     if old not in s:
-        raise SystemExit(f"apply_redesign: missing marker for {label}")
+        if "brand-logo" in s and "logo" in label:
+            print("skip %s (already applied)" % label)
+            return
+        if new[:40] in s:
+            print("skip %s (already applied)" % label)
+            return
+        raise SystemExit("apply_redesign: missing marker for %s" % label)
     path.write_text(s.replace(old, new, 1), encoding="utf-8")
-    print(f"applied {label}")
+    print("applied %s" % label)
 
-EXTRA_CSS = "/* list / hub / all */\n.feed{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;margin:8px 0 40px}\n.feed a{display:flex;flex-direction:column;gap:6px;min-height:132px;background:var(--surface);border:1px solid var(--rule);border-radius:14px;padding:14px 16px 16px;color:inherit}\n.feed a:hover{border-color:var(--seal);color:inherit}\n.feed .k{font-size:11px;letter-spacing:.08em;color:var(--seal)}\n.feed strong{font-family:var(--serif);font-size:18px;line-height:1.3;font-weight:700}\n.feed .s{font-size:13.5px;color:var(--muted);line-height:1.55}\n.hubs{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 22px}\n.hubs a{background:var(--surface);border:1px solid var(--rule);border-radius:999px;padding:4px 12px;font-size:13px;color:var(--ink-2)}\n.hubs a:hover,.hubs a.on{border-color:var(--seal);color:var(--seal)}\n"
+HOME_CSS = """
+/* unified brand lockup — match entry pages / yuansheng */
+.wrap{max-width:1120px;margin:0 auto;padding:0 clamp(18px,4vw,40px) 96px}
+.hd{position:relative;z-index:50;margin:0 0 28px;padding:clamp(28px,5vw,56px) 0 8px;background:transparent;-webkit-backdrop-filter:none;backdrop-filter:none}
+.hd::after{display:none}
+.brand-lockup{display:flex;align-items:center;gap:14px;text-decoration:none;color:inherit;margin:0 0 14px}
+.brand-lockup:hover{color:inherit}
+.brand-logo{width:44px;height:44px;border-radius:11px;flex:none;box-shadow:0 1px 0 rgba(28,25,23,.06)}
+.brand-copy{display:flex;flex-direction:column;gap:4px;min-width:0}
+.hd-title{font-family:"Songti SC","Noto Serif CJK SC","Source Han Serif SC",Georgia,serif;font-size:clamp(28px,4.6vw,42px);font-weight:700;letter-spacing:-.03em;line-height:.95}
+.hd-title .dot{color:#9d2933}
+.hd-en{font-size:13.5px;color:var(--ink-50);letter-spacing:0;font-weight:400;margin-left:58px}
+.hd-row{display:none}
+.hd .brand{display:none}
+@media(max-width:600px){
+  .wrap{padding:0 16px 80px}
+  .hd{margin:0 0 22px;padding:22px 0 8px}
+  .hd-title{font-size:26px}
+  .hd-en{margin-left:0}
+}
+"""
+
+OLD_HEADER = """  <header class=\"hd\" role=\"banner\">
+    <div class=\"brand\">HUMAN WORLD</div>
+    <div class=\"hd-row\">
+      <h1 class=\"hd-title\">人类世界生存法则</h1>
+      <span class=\"hd-en\">人类文明的坐标，照亮千年的灯塔</span>
+    </div>"""
+
+NEW_HEADER = """  <header class=\"hd\" role=\"banner\">
+    <a class=\"brand-lockup\" href=\"/\">
+      <img class=\"brand-logo\" src=\"/favicon.svg\" width=\"44\" height=\"44\" alt=\"人类世界生存法则\">
+      <span class=\"brand-copy\">
+        <h1 class=\"hd-title\">人类世界<span class=\"dot\">生存法则</span></h1>
+      </span>
+    </a>
+    <p class=\"hd-en\">人类文明的坐标，照亮千年的灯塔</p>"""
+
+OLD_SIB = '''def sibling_links(site, zh=False):
+    """Every site links to every sibling: eight orphans become one crawlable property."""
+    out = []
+    for path, en, cn in SITES:
+        if path == site.path:
+            continue
+        out.append('<a href="%s">%s</a>' % (esc(SITE + "/" + (path + "/" if path else "")),
+                                            esc(cn if zh else en)))
+    return " · ".join(out)
+'''
+
+NEW_SIB = '''def sibling_links(site, zh=False):
+    """Human World only points at the two sister editorial sites."""
+    if site.path == "":
+        return (
+            '<a href="%s">品味</a> · <a href="%s">原声</a>'
+            % (esc(SITE + "/skill/"), esc(SITE + "/podcast/"))
+        )
+    out = []
+    for path, en, cn in SITES:
+        if path == site.path:
+            continue
+        out.append('<a href="%s">%s</a>' % (esc(SITE + "/" + (path + "/" if path else "")),
+                                            esc(cn if zh else en)))
+    return " · ".join(out)
+'''
 
 def main():
     once(
@@ -42,56 +108,23 @@ def main():
         ("--sulfur:#f3e4e0", "--sulfur:#f0ddd9"),
         ("--up-bg:rgba(184,196,154,.28)", "--up-bg:rgba(157,41,51,.12)"),
         ("--down:#b4574b", "--down:#9d2933"),
-        ("content=\"#f0f0ec\"", "content=\"#f7f4ec\""),
+        ('content="#f0f0ec"', 'content="#f7f4ec"'),
         ("#e7ebdc", "#f0ddd9"),
+        (".wrap{max-width:860px;margin:0 auto;padding:0 24px 96px}",
+         ".wrap{max-width:1120px;margin:0 auto;padding:0 clamp(18px,4vw,40px) 96px}"),
     ]
     n = 0
     for a, b in repls:
         if a in s:
             s = s.replace(a, b)
             n += 1
-    if n:
-        idx.write_text(s, encoding="utf-8")
-        print("applied homepage tokens", n)
-    else:
-        print("skip homepage tokens")
-    once(
-        ROOT / "index.html",
-        ".hd-title{font-size:26px;font-weight:700;letter-spacing:-.03em;line-height:1.05}",
-        '.hd-title{font-family:"Songti SC","Noto Serif CJK SC","Source Han Serif SC",Georgia,serif;font-size:28px;font-weight:700;letter-spacing:-.03em;line-height:1.05}',
-        "homepage serif title",
-    )
-    once(
-        ROOT / "seo/hw_theme.py",
-        "    G.item_page = item_page\n",
-        "    G.item_page = item_page\n    import hw_list\n    hw_list.install(G)\n",
-        "install hw_list",
-    )
-    once(
-        ROOT / "seo/geo_kit.py",
-        '''def sibling_links(site, zh=False):\n    """Every site links to every sibling: eight orphans become one crawlable property."""\n    out = []\n    for path, en, cn in SITES:\n        if path == site.path:\n            continue\n        out.append('<a href="%s">%s</a>' % (esc(SITE + "/" + (path + "/" if path else "")),\n                                            esc(cn if zh else en)))\n    return " · ".join(out)\n''',
-        '''def sibling_links(site, zh=False):\n    """Human World only points at the two sister editorial sites."""\n    if site.path == "":\n        return (
-            '<a href="%s">品味</a> · <a href="%s">原声</a>'
-            % (esc(SITE + "/skill/"), esc(SITE + "/podcast/"))\n        )\n    out = []\n    for path, en, cn in SITES:\n        if path == site.path:\n            continue\n        out.append('<a href="%s">%s</a>' % (esc(SITE + "/" + (path + "/" if path else "")),\n                                            esc(cn if zh else en)))\n    return " · ".join(out)\n''',
-        "sibling links taste+podcast",
-    )
-    css = ROOT / "assets/hw-entry.css"
-    s = css.read_text(encoding="utf-8")
-    old_root = "--bg:#f4f2ec; --bg-tint:#ece8df; --surface:#fffef9; --surface-2:#f7f4ec;"
-    new_root = "--bg:#f7f4ec; --bg-tint:#efe8dc; --surface:#fffdf8; --surface-2:#f3eee6;"
-    if old_root in s:
-        s = s.replace(old_root, new_root, 1).replace("--seal-soft:#f3e4e0;", "--seal-soft:#f0ddd9;")
-        css.write_text(s, encoding="utf-8")
-        print("applied entry palette")
-    elif "--bg:#f7f4ec" in s:
-        print("skip entry palette")
-    else:
-        print("entry palette marker missing")
-    if "/* list / hub / all */" not in css.read_text(encoding="utf-8"):
-        css.write_text(css.read_text(encoding="utf-8").rstrip() + "\n" + EXTRA_CSS, encoding="utf-8")
-        print("applied list css")
-    else:
-        print("skip list css")
+    if "/* unified brand lockup" not in s:
+        s = s.replace("/* masthead — glass sticky */", "/* masthead — glass sticky */" + HOME_CSS)
+        n += 1
+    idx.write_text(s, encoding="utf-8")
+    print("applied homepage tokens/css", n)
+    once(ROOT / "index.html", OLD_HEADER, NEW_HEADER, "homepage brand lockup + logo")
+    once(ROOT / "seo/geo_kit.py", OLD_SIB, NEW_SIB, "sibling links taste+podcast")
 
 if __name__ == "__main__":
     main()
