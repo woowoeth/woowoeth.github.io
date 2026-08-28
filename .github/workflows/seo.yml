@@ -1,9 +1,8 @@
 name: seo
-# Keeps the crawlable layer in step with the site: canonical/OG/JSON-LD, the static
-# item pages, sitemap.xml, robots.txt, llms.txt and llms-full.txt. The generator only
-# writes files whose bytes actually changed, so a no-op run makes no commit.
+# Rebuilds static item pages + sitemap/llms, then pings search indexes.
 on:
   push:
+    branches: [main]
   schedule:
     - cron: "40 3 * * *"
   workflow_dispatch:
@@ -83,3 +82,6 @@ jobs:
             echo "retry $i"; sleep $(( (RANDOM % 5) + 3 ))
           done
           echo "::error::seo push failed"; exit 1
+      - name: Ping search indexes
+        if: success()
+        run: python scripts/ping_index.py
