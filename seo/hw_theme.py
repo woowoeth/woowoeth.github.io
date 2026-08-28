@@ -12,13 +12,14 @@ SHARE_SVG = (
     '<path d="M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg>'
 )
 
-def brand_html(home_href):
+def brand_html(home_href, slogan=""):
+    extra = ('<span class="slogan">%s</span>' % esc(slogan)) if slogan else ""
     return (
         '<a class="brand" href="%s">'
         '<img class="brand-logo" src="/favicon.svg" width="44" height="44" alt="人类世界生存法则">'
-        '<span class="brand-copy"><span class="wordmark">人类世界<span class="dot">生存法则</span></span></span>'
+        '<span class="brand-copy"><span class="wordmark">人类世界<span class="dot">生存法则</span></span>%s</span>'
         '</a>'
-    ) % esc(home_href)
+    ) % (esc(home_href), extra)
 
 def _paras(text):
     return [p.strip() for p in str(text).split("\n") if p.strip()]
@@ -148,7 +149,6 @@ def item_page(site, it, items, idx, zh, hub_of=None):
       <a class="pill" href="%s">全部</a>
     </div>
   </div>
-  <p class="slogan">%s</p>
 </header>
 <div class="wrap">
   <nav class="crumb">
@@ -175,9 +175,8 @@ def item_page(site, it, items, idx, zh, hub_of=None):
   </footer>
 </div>
 """ % (
-        brand_html(SITE + "/"),
+        brand_html(SITE + "/", site.tagline_zh if zh_render else site.tagline),
         esc(site.base), esc(site.url("all/")),
-        esc(site.tagline_zh if zh_render else site.tagline),
         esc(SITE + "/"), esc(site.base), esc(site.name_zh if zh_render else site.name),
         esc(it.t(zh_render)),
         ('<p class="kicker">%s</p>' % esc(cat)) if cat else "",
