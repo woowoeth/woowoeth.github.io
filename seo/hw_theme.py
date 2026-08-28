@@ -140,9 +140,25 @@ def _pick_pullquotes(pool, want):
     return chosen
 
 
+def _dek(summary):
+    """Standfirst for an entry page.
+
+    it.summary is "名字（年代）——关键词。" + the first 140 chars of d, and d is
+    printed in full a few lines below as the pull. Keep the identifying half,
+    which carries the only copy of the precise era; drop the rest. About 12,000
+    characters of same-page duplication across the site.
+    """
+    t = str(summary or "")
+    if "\u2014\u2014" in t:
+        dot = t.find("\u3002", t.index("\u2014\u2014"))
+        if dot > 0:
+            return t[:dot + 1]
+    return t
+
+
 def _render_blocks(it, zh):
     html, toc, first_q, n = [], [], True, 0
-    slots, pool = [], []          # pool: (section index, span, score)
+    slots, pool, quote_block = [], [], []
     rendered = set()              # every <p> actually emitted on this page
     for h, b in it.b(zh):
         h = (h or "").strip()
@@ -201,12 +217,7 @@ def _render_blocks(it, zh):
                         pool.append((si, span, _quotability(span) - penalty))
             continue
         if h in ("金句", "原话"):
-            toc.append(("quotes", "金句"))
-            html.append('<section class="quotes" id="quotes">'
-                        '<h2 class="sec-k">金句</h2>')
-            for q in paras:
-                html.append("<blockquote><p>%s</p></blockquote>" % esc(q))
-            html.append("</section>")
+            quote_block = paras          # rendered last, after the body is known
             continue
         if "对照" in h:
             toc.append(("contrast", "对照着读"))
@@ -272,6 +283,16 @@ def _render_blocks(it, zh):
                     continue
                 pool.append((si, span, _quotability(span)))
     want = max(1, min(3, len(slots) - 1)) if slots else 0
+    # 金句 section: 55 of 100 entries opened a 分则 by citing the very line the
+    # list repeats at the foot. Keep only the ones the reader has not already
+    # met in the body, and drop the section if that leaves nothing.
+    seen_body = "".join(rendered)
+    keep = [q for q in quote_block if _bare(q) and _bare(q) not in _bare(seen_body)]
+    if keep:
+        toc.append(("quotes", "金句"))
+        html.append('<section class="quotes" id="quotes"><h2 class="sec-k">金句</h2>')
+        html.extend("<blockquote><p>%s</p></blockquote>" % esc(q) for q in keep)
+        html.append("</section>")
     pool = [c for c in pool if c[2] > 0 and c[1] not in rendered]
     for si, span, _sc in sorted(_pick_pullquotes(pool, want),
                                 key=lambda c: -slots[c[0]]):
@@ -366,7 +387,7 @@ def item_page(site, it, items, idx, zh, hub_of=None):
         ('<p class="kicker">%s</p>' % esc(cat)) if cat else "",
         esc(it.t(zh_render)),
         ('<p class="one">%s</p>' % esc(one)) if one else "",
-        esc(it.s(zh_render)),
+        esc(_dek(it.s(zh_render))),
         "".join(chips),
         _share_btn(title, page_url, share_text),
         blocks_html, toc_html, prev_html, next_html,

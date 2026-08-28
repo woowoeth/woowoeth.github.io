@@ -157,7 +157,7 @@ def _chapter_page(ch, idx):
     page_url = "%s/i/%s/%s/" % (SITE, ch["parent_slug"], ch["k"])
     title = "%s — %s — 人类世界生存法则" % (ch["n"], parent)
     points = []
-    toc = [("s1", "这一篇在解决什么局面"), ("s2", "背后是什么故事")]
+    toc = [("s2", "背后是什么故事")]
     for i, f in enumerate(ch["f"], 1):
         aid = "p%d" % i
         toc.append((aid, f["n"]))
@@ -168,7 +168,13 @@ def _chapter_page(ch, idx):
                 ('<p class="eg">%s</p>' % rich(f["eg"])) if f.get("eg") else "",
             )
         )
-    toc += [("s7", "今天怎么用"), ("quotes", "金句")]
+    # Same rule as the entry pages: a 金句 the reader already met in the body is
+    # not worth a second printing at the foot.
+    _seen = _bare(ch["story"]) + "".join(
+        _bare(f.get("d", "")) + _bare(f.get("eg", "")) for f in ch["f"]) + _bare(ch["apply"])
+    _keep = [q for q in ch["q"] if _bare(q) and _bare(q) not in _seen]
+    quotes = "".join("<blockquote><p>%s</p></blockquote>" % rich(q) for q in _keep)
+    toc += [("s7", "今天怎么用")] + ([("quotes", "金句")] if _keep else [])
     # 金句: 1-3 lines lifted from the 分则 they close (option A), plus the full
     # 原文 list restored as a section at the foot.
     import hw_theme as _t
@@ -196,7 +202,6 @@ def _chapter_page(ch, idx):
         after[i] = '<blockquote class="say"><p>%s</p></blockquote>' % rich(raw)
     body_points = "\n".join(
         pt + ("\n" + after[i] if i in after else "") for i, pt in enumerate(points))
-    quotes = "".join("<blockquote><p>%s</p></blockquote>" % rich(q) for q in ch["q"])
     apply_paras = "".join("<p>%s</p>" % rich(p)
                           for p in ch["apply"].split("\n") if p.strip())
     toc_html = "".join(
@@ -228,14 +233,11 @@ def _chapter_page(ch, idx):
       <p class="src">%s</p>
       <p class="dek">%s</p>
       <div class="meta-row"><span class="chip">%s</span><span class="chip">%s</span>%s</div>
-      <aside class="pull">%s</aside>
-      <section class="sec" id="s1"><h2 class="sec-k">这一篇在解决什么局面</h2>
-      <p>%s</p></section>
       <section class="sec" id="s2"><h2 class="sec-k">背后是什么故事？</h2>
       <p>%s</p></section>
       %s
       <section class="sec apply" id="s7"><h2 class="sec-k">今天怎么用？</h2>%s</section>
-      <section class="quotes" id="quotes"><h2 class="sec-k">金句</h2>%s</section>
+      %s
     </article>
     <aside class="side"><div class="panel"><p class="ph">本篇结构</p><nav class="toc">%s</nav></div></aside>
   </div>
@@ -250,8 +252,10 @@ def _chapter_page(ch, idx):
         esc(parent_url), esc(parent), esc(SITE),
         esc(SITE), esc(parent_url), esc(parent), esc(ch["n"]),
         esc(parent), esc(ch["n"]), esc(ch["w"]), esc(ch["src"]), rich(ch["dek"]),
-        esc(parent), esc(ch["w"]), share, rich(ch["dek"]),
-        rich(ch["dek"]), rich(ch["story"]), body_points, apply_paras, quotes,
+        esc(parent), esc(ch["w"]), share,
+        rich(ch["story"]), body_points, apply_paras,
+        ('<section class="quotes" id="quotes"><h2 class="sec-k">金句</h2>%s</section>'
+         % quotes) if quotes else "",
         toc_html, prev_html, next_html,
         esc(page_url), sibling_links(None, True),
     )
