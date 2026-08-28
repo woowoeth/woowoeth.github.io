@@ -389,19 +389,12 @@ def _inject_body(src, block):
 
 
 def sibling_links(site, zh=False):
-    """Human World only points at the two sister editorial sites."""
-    if site.path == "":
-        return (
-            '<a href="%s">品味</a> · <a href="%s">原声</a>'
-            % (esc(SITE + "/skill/"), esc(SITE + "/podcast/"))
-        )
-    out = []
-    for path, en, cn in SITES:
-        if path == site.path:
-            continue
-        out.append('<a href="%s">%s</a>' % (esc(SITE + "/" + (path + "/" if path else "")),
-                                            esc(cn if zh else en)))
-    return " · ".join(out)
+    return (
+        '<a href="%s">人类生存法则</a> · '
+        '<a href="%s">原声播客</a> · '
+        '<a href="%s">品位 Skill</a>'
+        % (esc(SITE + "/"), esc(SITE + "/podcast/"), esc(SITE + "/skill/"))
+    )
 
 
 def noscript_index(site, items, zh=False, hubs=None):
