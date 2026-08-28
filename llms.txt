@@ -41,6 +41,13 @@ Written by hand, one entry per figure or text. Each entry is condensed to the si
 
 Long-form chapters hanging off a person page. Not part of the entry index above.
 
+- [论语 · 知之为知之](https://ourword.ai/i/analects/know-what-you-know/): 论语 · 知之为知之——把不知道说出来。承认不懂听起来是谦虚。这一篇要回答的是：它其实是一项操作能力，而且很少有人真正做得到。
+- [论语 · 视其所以，观其所由](https://ourword.ai/i/analects/see-how/): 论语 · 视其所以，观其所由——三层看人法。看人看走眼是常事。这一篇要回答的是：孔子给的那三层，为什么一层比一层难藏。
+- [论语 · 己所不欲，勿施于人](https://ourword.ai/i/analects/reciprocity/): 论语 · 己所不欲，勿施于人——唯一一条能终身行的。子贡问有没有一句话可以终身奉行。这一篇要回答的是：孔子为什么给的是一条否定式的规则。
+- [论语 · 和而不同](https://ourword.ai/i/analects/harmony-not-sameness/): 论语 · 和而不同——一致不等于共识。开会没有一个人反对，通常不是意见统一。这一篇要回答的是：和与同的区别在哪里。
+- [韩非子 · 不恃人之为吾善](https://ourword.ai/i/han-feizi/not-counting-on-goodness/): 韩非子 · 不恃人之为吾善——别设计需要好人的制度。一套制度如果只有在人足够自觉时才转得动，它就还没开始工作。这一篇要回答的是：该怎么设计不依赖自觉的规则。
+- [韩非子 · 二柄](https://ourword.ai/i/han-feizi/two-handles/): 韩非子 · 二柄——赏与罚不能借人。权力具体是什么？这一篇要回答的是：它其实只有两样东西，而且都不能转手。
+- [韩非子 · 形名参同](https://ourword.ai/i/han-feizi/form-and-name/): 韩非子 · 形名参同——说了什么，做到什么。考核最难的不是定标准，是标准和事实对不上时怎么办。这一篇要回答的是：一套两千年前就写清楚的对账法。
 - [毛泽东 · 矛盾论](https://ourword.ai/i/mao/on-contradiction/): 毛泽东 · 矛盾论——一次只打一个结。事情同时在响，每件都像急事。这一篇要回答的不是怎么努力，是先打哪一个结：解了它，别的结自己会松。
 - [毛泽东 · 实践论](https://ourword.ai/i/mao/on-practice/): 毛泽东 · 实践论——从事里认识。道理听懂了，局面没变。这一篇要回答的是：认识从哪里来。不从书里完成，从把事做出去的那一步里完成。
 - [毛泽东 · 论持久战](https://ourword.ai/i/mao/on-protracted-war/): 毛泽东 · 论持久战——时间换力量。弱的一方如果按对方的节奏打，必输。这一篇要回答的是：怎么把战争拖成自己能打的形状。
@@ -51,6 +58,10 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [孙子兵法 · 不战而屈人之兵](https://ourword.ai/i/sun-tzu/win-without-fighting/): 孙子兵法 · 不战而屈人之兵——最好的仗不用打。百战百胜听起来是最高成就。孙子说不是。这一篇要回答的是：为什么打赢一百次仍然是次优解。
 - [孙子兵法 · 以正合，以奇胜](https://ourword.ai/i/sun-tzu/orthodox-and-surprise/): 孙子兵法 · 以正合，以奇胜——正面接住，侧面取胜。人人都想要那一记出其不意。这一篇要回答的是：奇招为什么必须站在正面之上，单独用就是送。
 - [孙子兵法 · 兵形象水](https://ourword.ai/i/sun-tzu/form-like-water/): 孙子兵法 · 兵形象水——避实击虚。「像水一样」被引成了一句鸡汤。这一篇要回答的是：水到底像在哪里，以及它规定了什么不能做。
+- [道德经 · 无为而无不为](https://ourword.ai/i/tao-te-ching/wu-wei/): 道德经 · 无为而无不为——不做的那部分才是关键。无为常被读成不作为。这一篇要回答的是：它其实是一份关于「哪些动作不该做」的清单。
+- [道德经 · 上善若水](https://ourword.ai/i/tao-te-ching/water/): 道德经 · 上善若水——往低处去。水被夸了两千年。这一篇要回答的是：它到底做对了哪一件具体的事。
+- [道德经 · 反者道之动](https://ourword.ai/i/tao-te-ching/reversal/): 道德经 · 反者道之动——到顶就是转折。最危险的时刻不是最弱的时候。这一篇要回答的是：为什么一件事做到极致，转折就在下一步。
+- [道德经 · 有之以为利，无之以为用](https://ourword.ai/i/tao-te-ching/usefulness-of-emptiness/): 道德经 · 有之以为利，无之以为用——空的地方才好用。一个车轮真正起作用的是哪部分？这一篇要回答的是：为什么有用的往往是那些看起来没有东西的地方。
 - [曾国藩 · 结硬寨，打呆仗](https://ourword.ai/i/zeng-guofan/solid-camp-dull-fight/): 曾国藩 · 结硬寨，打呆仗——用笨办法消灭不确定。他一生没打过几场漂亮仗，却把一支临时拼起来的团练带到了最后。这一篇要回答的是：为什么最笨的打法反而最难被击败。
 - [曾国藩 · 慎独与日课](https://ourword.ai/i/zeng-guofan/self-watch/): 曾国藩 · 慎独与日课——没人看着时的那一段。他给自己定了十二条日课，一天不落地记了三十年。这一篇要回答的是：为什么改自己是唯一一件天天都能做的事。
 - [曾国藩 · 广收慎用](https://ourword.ai/i/zeng-guofan/recruit-and-test/): 曾国藩 · 广收慎用——在真事里看人。他的幕府出过一大批督抚。这一篇要回答的是：怎么在一个人还没做出成绩之前判断他能不能用。

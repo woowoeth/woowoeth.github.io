@@ -57,6 +57,24 @@ def _order(ch):
 _load()
 
 
+def _register_quotes():
+    """Tell hw_theme which lines the child essays already carry.
+
+    A chapter is the deep read on exactly that line, so the quote belongs there;
+    repeating it in the parent entry's 金句 list makes a reader who follows the
+    link meet it twice.
+    """
+    table = {}
+    for ch in CHAPTERS:
+        for q in ch["q"]:
+            table.setdefault(ch["parent"], set()).add(
+                "".join(c for c in str(q).replace("==", "") if c not in hw_theme._STRIP))
+    hw_theme.CHAPTER_QUOTES = table
+
+
+_register_quotes()
+
+
 def f_span_raw(source, plain_span):
     """Map a span picked from the plain text back onto the ==marked== original.
 

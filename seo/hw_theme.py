@@ -140,6 +140,9 @@ def _pick_pullquotes(pool, want):
     return chosen
 
 
+CHAPTER_QUOTES = {}
+
+
 def _dek(summary):
     """Standfirst for an entry page.
 
@@ -287,7 +290,9 @@ def _render_blocks(it, zh):
     # list repeats at the foot. Keep only the ones the reader has not already
     # met in the body, and drop the section if that leaves nothing.
     seen_body = "".join(rendered)
-    keep = [q for q in quote_block if _bare(q) and _bare(q) not in _bare(seen_body)]
+    in_chapters = CHAPTER_QUOTES.get(it.title, set())
+    keep = [q for q in quote_block
+            if _bare(q) and _bare(q) not in _bare(seen_body) and _bare(q) not in in_chapters]
     if keep:
         toc.append(("quotes", "金句"))
         html.append('<section class="quotes" id="quotes"><h2 class="sec-k">金句</h2>')
