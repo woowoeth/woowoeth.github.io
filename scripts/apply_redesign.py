@@ -73,6 +73,24 @@ def main():
     </a>''',
         "homepage slogan under wordmark",
     )
+    sys_path = str(ROOT / "seo")
+    import sys
+    if sys_path not in sys.path:
+        sys.path.insert(0, sys_path)
+    import hw_slugs, re
+    idx = ROOT / "index.html"
+    src = idx.read_text(encoding="utf-8")
+    js = hw_slugs.js_map() + "\nfunction slugOf(n){return (HW_SLUGS&&HW_SLUGS[n])||String(n).replace(/[·，、。\\s\\.,]/g,'');}"
+    old_fn = "function slugOf(n){return String(n).replace(/[·，、。\\s\\.,]/g,'');}"
+    if "const HW_SLUGS=" in src:
+        src2 = re.sub(r"const HW_SLUGS=\{[\s\S]*?\};\nfunction slugOf\(n\)\{[^}]+\}", js, src, count=1)
+        idx.write_text(src2, encoding="utf-8")
+        print("applied slug map refresh")
+    elif old_fn in src:
+        idx.write_text(src.replace(old_fn, js, 1), encoding="utf-8")
+        print("applied english slug map")
+    else:
+        print("skip slug map (marker gone)")
 
 if __name__ == "__main__":
     main()
