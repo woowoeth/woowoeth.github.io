@@ -560,7 +560,7 @@ _PAGE_CSS = (
     "footer{margin-top:40px;padding-top:20px;border-top:1px solid rgba(42,46,44,.12);"
     "font-size:13px;color:#767c76}footer a{color:#4c524e}"
     "p{margin:0 0 14px}.sib{margin-top:28px;font-size:14px}"
-    "ul.idx{padding-left:18px}ul.idx li{margin:0 0 10px}"
+    "ul.idx{padding-left:18px}ul.idx li{margin:0 0 10px}.share-btn{font:inherit;font-size:13px;font-weight:600;letter-spacing:.04em;padding:7px 14px;border-radius:999px;border:1px solid rgba(28,25,23,.16);background:#efe8d8;color:#7a1e26;cursor:pointer}.share-row{margin:0 0 20px}"
 )
 
 
@@ -593,7 +593,7 @@ def _shell(lang, title, headhtml, body):
     return ("<!DOCTYPE html>\n<html lang=\"%s\">\n<head>\n<meta charset=\"utf-8\">\n"
             "<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\n"
             "<title>%s</title>\n%s\n%s\n<style>%s</style>\n</head>\n<body>\n<main>\n%s\n"
-            "</main>\n</body>\n</html>\n"
+            "</main>\n<script src=\"/assets/hw-share.js\" defer></script>\n</body>\n</html>\n"
             % (lang, esc(title), headhtml, ga_block(), _PAGE_CSS, body))
 
 
@@ -638,6 +638,11 @@ def item_page(site, it, items, idx, zh, hub_of=None):
         % (esc(SITE + "/"), lbl[0], esc(site.base),
            esc(site.name_zh if zh_render else site.name), esc(it.t(zh_render))),
         "<h1>%s</h1>" % esc(it.t(zh_render)),
+        '<p class="share-row"><button class="share-btn" type="button" data-share '
+        'data-share-title="%s" data-share-url="%s" data-share-text="%s" '
+        'aria-label="分享本页">分享</button></p>'
+        % (esc(title), esc(page_url),
+           esc("%s\n\n%s\n\n%s" % (it.t(zh_render), it.s(zh_render), page_url))),
         '<p class="lede">%s</p>' % esc(it.s(zh_render)),
     ]
     meta = []
