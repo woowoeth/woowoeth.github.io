@@ -127,13 +127,19 @@ def item_page(site, it, items, idx, zh, hub_of=None):
     if toc:
         items_t = ['<a href="#%s"><span class="i">%02d</span>%s</a>' % (esc(a), i, esc(n)) for i, (a, n) in enumerate(toc, 1)]
         toc_html = '<aside class="side"><div class="panel"><p class="ph">本篇结构</p><nav class="toc">%s</nav></div></aside>' % "".join(items_t)
-    tag_bits = []
+    ordered = []
+    if era:
+        ordered.append(era)
     for t in tags:
+        if t not in ordered:
+            ordered.append(t)
+    chips = []
+    for t in ordered:
         sl = slugify(t)
         if hub_of and hub_of.get(sl):
-            tag_bits.append('<a href="%s">%s</a>' % (esc(site.url("t/%s/" % sl)), esc(t)))
+            chips.append('<a class="chip" href="%s">%s</a>' % (esc(site.url("t/%s/" % sl)), esc(t)))
         else:
-            tag_bits.append("<span>%s</span>" % esc(t))
+            chips.append('<span class="chip">%s</span>' % esc(t))
     prev_html = next_html = ""
     if idx > 0:
         p = items[idx - 1]
@@ -164,7 +170,6 @@ def item_page(site, it, items, idx, zh, hub_of=None):
       <p class="dek">%s</p>
       <div class="meta-row">%s%s</div>
       %s
-      %s
     </article>
     %s
   </div>
@@ -184,9 +189,8 @@ def item_page(site, it, items, idx, zh, hub_of=None):
         esc(it.t(zh_render)),
         ('<p class="one">%s</p>' % esc(one)) if one else "",
         esc(it.s(zh_render)),
-        ('<span class="when">%s</span>' % esc(era)) if era else "",
+        "".join(chips),
         _share_btn(title, page_url, share_text),
-        ('<p class="tags">%s</p>' % "".join(tag_bits)) if tag_bits else "",
         blocks_html, toc_html, prev_html, next_html,
         esc(page_url), esc(site.url("llms.txt")), esc(site.url("llms-full.txt")),
         sibling_links(site, zh_render),
@@ -202,7 +206,7 @@ def _shell(lang, title, headhtml, body):
         "<title>%s</title>\n%s\n%s\n"
         "<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n"
         "<link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\n"
-        "<link rel=\"stylesheet\" href=\"/assets/hw-entry.css?v=5\">\n"
+        "<link rel=\"stylesheet\" href=\"/assets/hw-entry.css?v=6\">\n"
         "</head>\n<body>\n%s\n"
         "<script src=\"/assets/hw-share.js\" defer></script>\n</body>\n</html>\n"
         % (lang, esc(title), headhtml, ga_block(), body)
