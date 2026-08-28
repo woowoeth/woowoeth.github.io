@@ -6,11 +6,16 @@
   background:#fffdf8;border:1px solid #e2ddd0;border-radius:12px;padding:12px 14px;
 }
 a.map-row:hover{border-color:#9d2933;color:inherit}
-.map-row.pending{opacity:.55}
 .map-n{font-weight:650}
 .map-w{color:#9d2933;font-size:13.5px}
 .map-line{font-size:13.5px;color:#6f6959;line-height:1.45}
-.sib-pending{text-align:right;margin-left:auto;color:#9a9384;font-size:14.5px}
+mark.hl{
+  background:rgba(157,41,51,.12);
+  color:#9d2933;
+  font-weight:650;
+  padding:0 .12em;
+  border-radius:2px;
+}
 @media(max-width:600px){
   .map-row{grid-template-columns:1fr;gap:4px}
 }
