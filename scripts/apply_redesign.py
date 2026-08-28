@@ -39,6 +39,12 @@ def main():
         '.hd-title{font-family:"Songti SC","Noto Serif CJK SC","Source Han Serif SC",Georgia,serif;font-size:28px;font-weight:700;letter-spacing:-.03em;line-height:1.05}',
         "homepage serif title",
     )
+    once(
+        ROOT / "seo/hw_theme.py",
+        "    G.item_page = item_page\n",
+        "    G.item_page = item_page\n    import hw_list\n    hw_list.install(G)\n",
+        "install hw_list",
+    )
     css = ROOT / "assets/hw-entry.css"
     s = css.read_text(encoding="utf-8")
     if "/* list / hub / all */" not in s:
