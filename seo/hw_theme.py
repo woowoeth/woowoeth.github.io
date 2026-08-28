@@ -204,3 +204,5 @@ def install(G):
     G._PAGE_CSS = CSS
     G._shell = _shell
     G.item_page = item_page
+    import hw_list
+    hw_list.install(G)
