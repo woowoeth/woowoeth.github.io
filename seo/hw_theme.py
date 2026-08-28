@@ -199,7 +199,7 @@ def _shell(lang, title, headhtml, body):
         "<!DOCTYPE html>\n<html lang=\"%s\">\n<head>\n<meta charset=\"utf-8\">\n"
         "<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\n"
         "<title>%s</title>\n%s\n%s\n"
-        "<link rel=\"stylesheet\" href=\"/assets/hw-entry.css\">\n"
+        "<link rel=\"stylesheet\" href=\"/assets/hw-entry.css?v=2\">\n"
         "</head>\n<body>\n%s\n"
         "<script src=\"/assets/hw-share.js\" defer></script>\n</body>\n</html>\n"
         % (lang, esc(title), headhtml, ga_block(), body)
