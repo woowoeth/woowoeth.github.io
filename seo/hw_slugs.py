@@ -97,6 +97,11 @@ SLUGS = {
     "松下幸之助": "matsushita",
     "有限与无限的游戏": "finite-and-infinite-games",
     "枪炮、病菌与钢铁": "guns-germs-steel",
+    "孟子": "mencius",
+    "荀子": "xunzi",
+    "彼得·德鲁克": "drucker",
+    "哈耶克": "hayek",
+    "俾斯麦": "bismarck",
 }
 
 TAG_SLUGS = {
@@ -142,7 +147,6 @@ def slug_for(name):
         return SLUGS[name]
     if name in TAG_SLUGS:
         return TAG_SLUGS[name]
-    # Glyph-safe aliases (D[] uses rare variants that sometimes mangle in editors)
     if name.startswith("王") and name not in ("王阳明", "王兴") and len(name) == 2:
         return "wang-jian"
     if name.startswith("朱元"):
