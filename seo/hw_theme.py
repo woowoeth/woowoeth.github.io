@@ -171,22 +171,23 @@ def _render_blocks(it, zh):
             # putting it above means reading the same words twice in a row.
             slots.append(len(html))
             whole = "".join(body + egs)
-            eg_text = "".join(egs)
-            for span in _spans(whole):
-                # A callout has to be an EXCERPT. When the span is most of the
-                # section, the reader gets the same paragraph twice in a row —
-                # 实事求是 was a one-sentence section reprinted under itself.
-                if len(whole) - len(span) < 45:
-                    continue
-                # And it has to carry something beyond a quotation that is
-                # already listed in the 金句 section at the foot.
-                own = re.sub(r"\u300c[^\u300d]*\u300d", "", span)
-                if len(own.strip("\u3002\uff0c\u3001\uff01\uff1f\uff1b\uff1a\u2014 ")) < 20:
-                    continue
-                # a worked example can be vivid, but the principle wins when
-                # the section offers one
-                penalty = 0.8 if (eg_text and span in eg_text) else 0.0
-                pool.append((si, span, _quotability(span) - penalty))
+            # Candidates are generated per paragraph. Spanning the boundary
+            # produced quotes that stitched the principle onto the worked
+            # example — two visually separate blocks in the page.
+            for paras_src, penalty in ((body, 0.0), (egs, 0.8)):
+                for para in paras_src:
+                    for span in _spans(para):
+                        # A callout has to be an EXCERPT. When the span is most
+                        # of the section, the reader gets the same paragraph
+                        # twice in a row.
+                        if len(whole) - len(span) < 45:
+                            continue
+                        # And it has to carry something beyond a 「quotation」
+                        # the 金句 section already lists.
+                        own = re.sub(r"\u300c[^\u300d]*\u300d", "", span)
+                        if len(own.strip("\u3002\uff0c\u3001\uff01\uff1f\uff1b\uff1a\u2014 ")) < 20:
+                            continue
+                        pool.append((si, span, _quotability(span) - penalty))
             continue
         if h in ("金句", "原话"):
             toc.append(("quotes", "金句"))

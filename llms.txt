@@ -45,6 +45,7 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [毛泽东 · 实践论](https://ourword.ai/i/mao/on-practice/): 毛泽东 · 实践论——从事里认识。道理听懂了，局面没变。这一篇要回答的是：认识从哪里来。不从书里完成，从把事做出去的那一步里完成。
 - [毛泽东 · 论持久战](https://ourword.ai/i/mao/on-protracted-war/): 毛泽东 · 论持久战——时间换力量。弱的一方如果按对方的节奏打，必输。这一篇要回答的是：怎么把战争拖成自己能打的形状。
 - [毛泽东 · 中国革命战争的战略问题](https://ourword.ai/i/mao/strategy-of-the-revolution/): 毛泽东 · 中国革命战争的战略问题——有什么枪打什么仗。别人的胜仗不能直接搬。这一篇要回答的是：你这块地、这点人、这点枪，打法应该长什么样。
+- [毛泽东 · 党委会的工作方法](https://ourword.ai/i/mao/methods-of-work/): 毛泽东 · 党委会的工作方法——把事摆到桌面上。判断做对了，一班人还是各干各的。这一篇要回答的是：怎么让一群人真的按同一个判断动起来。
 
 <!-- chapters:end -->
 ## Citing
