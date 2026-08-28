@@ -24,18 +24,26 @@ def main():
     idx = ROOT / "index.html"
     s = idx.read_text(encoding="utf-8")
     repls = [
-        ("--white:#fafaf7", "--white:#fffef9"),
-        ("--paper:#f0f0ec", "--paper:#f4f2ec"),
-        ("--paper2:#eae9e3", "--paper2:#ece8df"),
+        ("--white:#fafaf7", "--white:#fffdf8"),
+        ("--white:#fffef9", "--white:#fffdf8"),
+        ("--paper:#f0f0ec", "--paper:#f7f4ec"),
+        ("--paper:#f4f2ec", "--paper:#f7f4ec"),
+        ("--paper2:#eae9e3", "--paper2:#efe8dc"),
+        ("--paper2:#ece8df", "--paper2:#efe8dc"),
         ("--ink:#2a2e2c", "--ink:#1c1917"),
-        ("--ink-70:#4c524e", "--ink-70:#3f3a34"),
-        ("--ink-50:#767c76", "--ink-50:#6f6959"),
-        ("--ink-30:#a3a8a1", "--ink-30:#9a9384"),
+        ("--ink-70:#4c524e", "--ink-70:#3a342f"),
+        ("--ink-70:#3f3a34", "--ink-70:#3a342f"),
+        ("--ink-50:#767c76", "--ink-50:#6b6358"),
+        ("--ink-50:#6f6959", "--ink-50:#6b6358"),
+        ("--ink-30:#a3a8a1", "--ink-30:#9a9184"),
+        ("--ink-30:#9a9384", "--ink-30:#9a9184"),
         ("--up:#66794a", "--up:#9d2933"),
-        ("--sulfur:#b8c49a", "--sulfur:#f3e4e0"),
+        ("--sulfur:#b8c49a", "--sulfur:#f0ddd9"),
+        ("--sulfur:#f3e4e0", "--sulfur:#f0ddd9"),
         ("--up-bg:rgba(184,196,154,.28)", "--up-bg:rgba(157,41,51,.12)"),
         ("--down:#b4574b", "--down:#9d2933"),
-        ("--down-bg:rgba(180,87,75,.10)", "--down-bg:rgba(157,41,51,.10)"),
+        ("content=\"#f0f0ec\"", "content=\"#f7f4ec\""),
+        ("#e7ebdc", "#f0ddd9"),
     ]
     n = 0
     for a, b in repls:
@@ -69,8 +77,18 @@ def main():
     )
     css = ROOT / "assets/hw-entry.css"
     s = css.read_text(encoding="utf-8")
-    if "/* list / hub / all */" not in s:
-        css.write_text(s.rstrip() + "\n" + EXTRA_CSS, encoding="utf-8")
+    old_root = "--bg:#f4f2ec; --bg-tint:#ece8df; --surface:#fffef9; --surface-2:#f7f4ec;"
+    new_root = "--bg:#f7f4ec; --bg-tint:#efe8dc; --surface:#fffdf8; --surface-2:#f3eee6;"
+    if old_root in s:
+        s = s.replace(old_root, new_root, 1).replace("--seal-soft:#f3e4e0;", "--seal-soft:#f0ddd9;")
+        css.write_text(s, encoding="utf-8")
+        print("applied entry palette")
+    elif "--bg:#f7f4ec" in s:
+        print("skip entry palette")
+    else:
+        print("entry palette marker missing")
+    if "/* list / hub / all */" not in css.read_text(encoding="utf-8"):
+        css.write_text(css.read_text(encoding="utf-8").rstrip() + "\n" + EXTRA_CSS, encoding="utf-8")
         print("applied list css")
     else:
         print("skip list css")
