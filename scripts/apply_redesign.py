@@ -29,6 +29,13 @@ HOME_MQ = """
 }
 """
 
+FAMILY = (
+    '  <nav class="family" style="margin:0 0 22px;font-size:13px;color:var(--ink-50)">'
+    '<a href="/">人类生存法则</a> · '
+    '<a href="/podcast/">原声播客</a> · '
+    '<a href="/skill/">品位 Skill</a></nav>\n'
+)
+
 def main():
     bseo = (ROOT / "seo/build_seo.py").read_text(encoding="utf-8")
     if "import hw_slugs" not in bseo:
@@ -78,6 +85,14 @@ def main():
       </span>
     </a>''',
         "homepage slogan under wordmark",
+    )
+    once(
+        ROOT / "index.html",
+        '<footer style="text-align:center;padding:8px 24px 48px;font-size:12px;color:var(--ink-30)">\n  <div class="wx">',
+        '<footer style="text-align:center;padding:8px 24px 48px;font-size:12px;color:var(--ink-30)">\n'
+        + FAMILY +
+        '  <div class="wx">',
+        "homepage family footer",
     )
     sys_path = str(ROOT / "seo")
     if sys_path not in sys.path:
