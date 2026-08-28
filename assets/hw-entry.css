@@ -50,8 +50,8 @@ header.mast.wrap{
 .brand-copy{display:flex; flex-direction:column; gap:3px; min-width:0; flex:1}
 .brand .hw{display:none}
 .brand .wordmark{
-  display:block; font-family:var(--display); font-weight:600; margin:0;
-  font-size:18px; line-height:1.25; letter-spacing:.06em;
+  display:block; font-family:var(--display); font-weight:700; margin:0;
+  font-size:20px; line-height:1.25; letter-spacing:.04em;
 }
 .brand .dot{color:var(--seal)}
 .slogan{margin:0; color:var(--muted); font-size:12px; line-height:1.4; letter-spacing:0; font-family:var(--sans); font-weight:400}
@@ -139,6 +139,6 @@ blockquote p{margin:0}
 @media (max-width:600px){
   :root{--pad:24px}
   .mast{padding:22px 0 14px}
-  .brand .wordmark{font-size:17px}
+  .brand .wordmark{font-size:20px; font-weight:700}
   .mast-links{display:none}
 }
