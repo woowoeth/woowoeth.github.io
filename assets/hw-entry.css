@@ -1,4 +1,5 @@
 /* Human World — shared across home, hubs and entry pages */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;600;700&display=swap");
 @font-face{
   font-family:"Huiwen-mincho";
   src:url("/hw-mincho-subset.woff2") format("woff2");
@@ -10,8 +11,8 @@
   --rule:#e2ddd0; --rule-2:#d0c9b8;
   --seal:#9d2933; --seal-soft:#f0ddd9;
   --shadow:0 1px 2px rgba(28,25,23,.05), 0 10px 28px -18px rgba(28,25,23,.22);
-  --display:"Huiwen-mincho","Songti SC","STSong","Noto Serif CJK SC",Georgia,serif;
-  --serif:"Huiwen-mincho","Songti SC","STSong","Noto Serif CJK SC",Georgia,serif;
+  --display:"Noto Serif SC","Source Han Serif SC","Songti SC","STSong",Georgia,serif;
+  --quote:"Huiwen-mincho","Noto Serif SC","Songti SC",serif;
   --sans:"PingFang SC","HarmonyOS Sans SC","Hiragino Sans GB","Microsoft YaHei",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
   --pad:24px;
 }
@@ -31,27 +32,30 @@ button{font:inherit; color:inherit; background:none; border:0; cursor:pointer}
   padding-left:max(var(--pad), env(safe-area-inset-left));
   padding-right:max(var(--pad), env(safe-area-inset-right));
 }
+header.mast.wrap{
+  padding-left:max(24px, env(safe-area-inset-left));
+  padding-right:max(24px, env(safe-area-inset-right));
+}
 
-.mast{padding:26px 0 15px}
+.mast{padding:28px 0 16px}
 .mast-top{display:flex; align-items:flex-start; justify-content:space-between; gap:16px}
 .brand{
   display:flex; flex-direction:row; flex-wrap:nowrap;
-  align-items:flex-start; gap:12px; color:inherit; min-width:0;
+  align-items:center; gap:12px; color:inherit; min-width:0;
 }
 .brand:hover{color:inherit}
 .brand-logo{
-  width:40px; height:40px; border-radius:10px; flex:none;
-  margin:1px 0 0;
+  width:36px; height:36px; border-radius:9px; flex:none;
 }
-.brand-copy{display:flex; flex-direction:column; gap:6px; min-width:0; flex:1}
-.brand .hw{display:block; font-size:10px; letter-spacing:.22em; text-transform:uppercase; color:var(--muted); margin:0}
+.brand-copy{display:flex; flex-direction:column; gap:3px; min-width:0; flex:1}
+.brand .hw{display:none}
 .brand .wordmark{
-  display:block; font-family:var(--display); font-weight:700; margin:0;
-  font-size:26px; line-height:1.15; letter-spacing:.02em;
+  display:block; font-family:var(--display); font-weight:600; margin:0;
+  font-size:18px; line-height:1.25; letter-spacing:.06em;
 }
 .brand .dot{color:var(--seal)}
-.slogan{margin:0; color:var(--muted); font-size:13px; line-height:1.4; letter-spacing:0; font-family:var(--sans)}
-.mast-links{display:flex; gap:8px; flex:none; padding-top:18px}
+.slogan{margin:0; color:var(--muted); font-size:12px; line-height:1.4; letter-spacing:0; font-family:var(--sans); font-weight:400}
+.mast-links{display:flex; gap:8px; flex:none; padding-top:2px}
 .pill{
   display:inline-flex; align-items:center; justify-content:center;
   min-height:32px; padding:0 12px;
@@ -69,10 +73,10 @@ button{font:inherit; color:inherit; background:none; border:0; cursor:pointer}
 }
 .kicker{font-size:11px; letter-spacing:.16em; color:var(--seal); font-weight:650; margin:0 0 10px}
 h1{
-  font-family:var(--display); font-weight:700; letter-spacing:.02em;
-  font-size:clamp(28px,7vw,42px); line-height:1.2; margin:0 0 10px;
+  font-family:var(--display); font-weight:700; letter-spacing:.04em;
+  font-size:clamp(28px,7vw,40px); line-height:1.25; margin:0 0 10px;
 }
-.one{font-family:var(--display); font-size:22px; line-height:1.4; color:var(--ink-2); margin:0 0 16px; font-weight:600}
+.one{font-family:var(--display); font-size:20px; line-height:1.4; color:var(--ink-2); margin:0 0 16px; font-weight:600}
 .dek{font-size:17px; line-height:1.75; color:var(--ink-2); margin:0 0 18px; max-width:42em}
 .meta-row{display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin:0 0 16px}
 .meta-row .when{font-size:12.5px; color:var(--muted); letter-spacing:.04em}
@@ -91,13 +95,13 @@ h1{
 .sec p{margin:0 0 12px; color:var(--ink)}
 .sec p:last-child{margin-bottom:0}
 .point{margin:0 0 28px}
-.point h2{font-family:var(--display); font-size:21px; line-height:1.4; font-weight:700; letter-spacing:.01em; margin:0 0 8px}
+.point h2{font-family:var(--display); font-size:21px; line-height:1.4; font-weight:700; letter-spacing:.02em; margin:0 0 8px}
 .point p{margin:0 0 10px}
 .eg{color:var(--ink-2); background:var(--surface-2); border-radius:10px; padding:12px 14px; font-size:15.5px; border:1px solid var(--rule)}
 .eg::before{content:"例  "; color:var(--seal); font-size:12px; letter-spacing:.08em; font-weight:650}
 .apply{background:var(--surface); border:1px solid var(--rule); border-radius:14px; padding:16px 18px; margin:8px 0 32px}
 .quotes{margin:8px 0 36px}
-blockquote{margin:0 0 12px; padding:2px 0 2px 14px; border-left:2px solid var(--seal); color:var(--ink-2); font-family:var(--display); font-size:18px; line-height:1.65}
+blockquote{margin:0 0 12px; padding:2px 0 2px 14px; border-left:2px solid var(--seal); color:var(--ink-2); font-family:var(--quote); font-size:18px; line-height:1.65}
 blockquote p{margin:0}
 .contrast{display:grid; gap:10px; margin:0 0 32px}
 .contrast a{display:block; background:var(--surface); border:1px solid var(--rule); border-radius:12px; padding:12px 14px}
@@ -133,9 +137,8 @@ blockquote p{margin:0}
   .side{order:2; position:static}
 }
 @media (max-width:600px){
-  :root{--pad:16px}
-  .mast{padding:22px 0 13px}
-  .brand .wordmark{font-size:22px}
-  .brand-logo{width:36px; height:36px; border-radius:9px}
+  :root{--pad:24px}
+  .mast{padding:22px 0 14px}
+  .brand .wordmark{font-size:17px}
   .mast-links{display:none}
 }
