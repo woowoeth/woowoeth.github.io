@@ -3,6 +3,7 @@
 # https://ourword.ai/robots.txt — this copy is here for completeness.
 
 User-agent: *
+Content-Signal: search=yes,ai-input=yes,ai-train=no,use=reference
 Allow: /
 
 User-agent: GPTBot
@@ -90,6 +91,15 @@ User-agent: Sogou web spider
 Allow: /
 
 User-agent: YisouSpider
+Allow: /
+
+User-agent: 360Spider
+Allow: /
+
+User-agent: HaosouSpider
+Allow: /
+
+User-agent: YandexBot
 Allow: /
 
 Sitemap: https://ourword.ai/sitemap.xml
