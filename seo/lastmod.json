@@ -1,4 +1,8 @@
 {
+ "i/adler/": {
+  "d": "2026-08-29",
+  "h": "9fec667e440d2e9d"
+ },
  "i/analects/": {
   "d": "2026-08-28",
   "h": "a26eea94e79d2453"
@@ -131,6 +135,10 @@
   "d": "2026-08-28",
   "h": "f024ac16b7a0e2a2"
  },
+ "i/chris-voss/": {
+  "d": "2026-08-29",
+  "h": "3ade7db5066a9d40"
+ },
  "i/crowd/": {
   "d": "2026-08-28",
   "h": "34679df50e56acbf"
@@ -142,6 +150,10 @@
  "i/crowd/descent-in-crowds/": {
   "d": "2026-08-29",
   "h": "57400f1f41482cd1"
+ },
+ "i/crucial-conversations/": {
+  "d": "2026-08-29",
+  "h": "4e1b4b6ca3f8cfed"
  },
  "i/dalio/": {
   "d": "2026-08-28",
@@ -192,8 +204,8 @@
   "h": "cc721e9741cbce5c"
  },
  "i/epictetus/": {
-  "d": "2026-08-28",
-  "h": "79ae4894e1abfca9"
+  "d": "2026-08-29",
+  "h": "01bddb76c9974e8c"
  },
  "i/epictetus/dichotomy/": {
   "d": "2026-08-29",
@@ -240,8 +252,8 @@
   "h": "61b68fde47c7899e"
  },
  "i/frankl/": {
-  "d": "2026-08-28",
-  "h": "823996caccb8603e"
+  "d": "2026-08-29",
+  "h": "a41edf96206e691a"
  },
  "i/frankl/happiness-ensues/": {
   "d": "2026-08-29",
@@ -274,6 +286,10 @@
  "i/gandhi/salt-march/": {
   "d": "2026-08-29",
   "h": "95491153093b94e7"
+ },
+ "i/gottman/": {
+  "d": "2026-08-29",
+  "h": "e242bc05d0bf5a5c"
  },
  "i/graham/": {
   "d": "2026-08-28",
@@ -316,8 +332,8 @@
   "h": "835df7ecc1276e50"
  },
  "i/guiguzi/": {
-  "d": "2026-08-28",
-  "h": "98f96950266f155d"
+  "d": "2026-08-29",
+  "h": "964d8e02f9f5f2f6"
  },
  "i/guiguzi/listen-in-reverse/": {
   "d": "2026-08-28",
@@ -472,8 +488,8 @@
   "h": "2171509974516e8d"
  },
  "i/influence/": {
-  "d": "2026-08-28",
-  "h": "3675f1fdf9f0236b"
+  "d": "2026-08-29",
+  "h": "d0098483c65caacf"
  },
  "i/influence/reciprocity/": {
   "d": "2026-08-29",
@@ -664,8 +680,8 @@
   "h": "f8f3574363358813"
  },
  "i/marcus-aurelius/": {
-  "d": "2026-08-28",
-  "h": "172fe605112f13c3"
+  "d": "2026-08-29",
+  "h": "fd776dbbb53ef4a5"
  },
  "i/marcus-aurelius/morning-preparation/": {
   "d": "2026-08-28",
@@ -780,8 +796,8 @@
   "h": "e52d225d8c73578d"
  },
  "i/nietzsche/": {
-  "d": "2026-08-28",
-  "h": "0389910ea835816b"
+  "d": "2026-08-29",
+  "h": "c05dd6c1f4e858a6"
  },
  "i/nietzsche/gazing-into-abyss/": {
   "d": "2026-08-29",
@@ -790,6 +806,10 @@
  "i/nietzsche/what-does-not-kill/": {
   "d": "2026-08-29",
   "h": "d48733ba3c9d2a92"
+ },
+ "i/nonviolent-communication/": {
+  "d": "2026-08-29",
+  "h": "4006d7256644dae8"
  },
  "i/old-regime/": {
   "d": "2026-08-28",
@@ -864,8 +884,8 @@
   "h": "b6ba2b089e742cd2"
  },
  "i/schelling/": {
-  "d": "2026-08-28",
-  "h": "c274ea07a3ace2a8"
+  "d": "2026-08-29",
+  "h": "1868dd5bd2d750a8"
  },
  "i/schelling/binding-yourself/": {
   "d": "2026-08-29",
@@ -874,6 +894,10 @@
  "i/schelling/focal-points/": {
   "d": "2026-08-29",
   "h": "47f1f4e8329d59a5"
+ },
+ "i/seneca/": {
+  "d": "2026-08-29",
+  "h": "51ff37857e26d9c8"
  },
  "i/shang-yang/": {
   "d": "2026-08-28",
@@ -912,8 +936,8 @@
   "h": "d1748ffe80c81b0d"
  },
  "i/socrates/": {
-  "d": "2026-08-28",
-  "h": "9e4dbea5c6d5cffc"
+  "d": "2026-08-29",
+  "h": "6f523a7093e85352"
  },
  "i/socrates/knowing-not-knowing/": {
   "d": "2026-08-29",
@@ -960,8 +984,8 @@
   "h": "e95dda2304df2a68"
  },
  "i/su-shi/": {
-  "d": "2026-08-28",
-  "h": "adf3c70a184d420c"
+  "d": "2026-08-29",
+  "h": "d17859ad97725746"
  },
  "i/su-shi/no-bad-people/": {
   "d": "2026-08-29",

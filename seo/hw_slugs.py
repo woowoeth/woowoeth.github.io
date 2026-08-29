@@ -5,6 +5,12 @@ import unicodedata
 
 SLUGS = {
     "孙子兵法": "sun-tzu",
+    "阿德勒": "adler",
+    "约翰·戈特曼": "gottman",
+    "关键对话": "crucial-conversations",
+    "非暴力沟通": "nonviolent-communication",
+    "塞涅卡": "seneca",
+    "克里斯·沃斯": "chris-voss",
     "毛泽东": "mao",
     "粟裕": "su-yu",
     "道德经": "tao-te-ching",
@@ -132,6 +138,7 @@ TAG_SLUGS = {
     "心智与情绪": "mind",
     "学习与成长": "learning",
     "世界如何运转": "world",
+    "家庭与关系": "family",
     "近世": "early-modern",
 }
 
