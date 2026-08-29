@@ -45,23 +45,9 @@ if __name__ == "__main__":
 # HWX v3: 最新 tab + 瀑布流混排 + 今日三样 + 历史行 + 暗色双主题
 HWX_A, HWX_B = "<!--HWX:FIND-->", "<!--/HWX:FIND-->"
 
-HWX_SCENES = [
-    ("要做不可逆的决定",[("caesar","the-rubicon"),("li-ka-shing","knowing-when-to-stop"),("graham","margin-of-safety"),("han-xin","back-to-the-river"),("xiang-yu","sinking-the-boats"),("schelling","binding-yourself")]),
-    ("对手比我强",[("napoleon","decisive-point"),("mao","on-protracted-war"),("sun-tzu","form-like-water"),("musashi","no-favorite-weapon"),("li-bi","strike-the-base"),("boyd","ooda")]),
-    ("我对，但被否了",[("su-yu","daring-to-state"),("thiel","the-contrarian-question"),("marks","second-level-thinking"),("franklin","never-say-certainly"),("boyd","to-be-or-to-do")]),
-    ("连胜，要不要加码",[("art-of-worldly-wisdom","quit-while-winning"),("bismarck","art-of-the-possible"),("buffett","swimming-naked"),("taleb","turkey-problem"),("napoleon","sublime-to-ridiculous"),("zhang-liang","asking-for-less")]),
-    ("亏着，砍还是扛",[("livermore","hope-and-fear-inverted"),("livermore","sitting-tight"),("grove","revolving-door"),("huang","strategic-retreat"),("thinking-fast-and-slow","loss-aversion"),("lynch","stomach-not-brain")]),
-    ("情绪上头",[("epictetus","judgments-not-things"),("su-shi","no-wind-no-rain"),("zhang-yiming","ordinary-mind"),("marcus-aurelius","morning-preparation"),("zhang-liang","picking-up-the-shoe")]),
-    ("谈判与说服",[("schelling","focal-points"),("influence","reciprocity"),("wealth-of-nations","not-benevolence"),("guiguzi","listen-in-reverse"),("caesar","clementia"),("gandhi","salt-march")]),
-    ("团队老出同样的问题",[("thinking-in-systems","structure-drives-behavior"),("han-feizi","not-counting-on-goodness"),("grove","inflection-and-cassandras"),("dalio","believability"),("shang-yang","moving-the-pole"),("zhuge-liang","executing-ma-su")]),
-    ("看不清方向",[("marks","taking-the-temperature"),("einstein","formulating-the-problem"),("mao","on-contradiction"),("wang-xing","core-not-boundary"),("tao-te-ching","reversal"),("huang","zero-billion-markets")]),
-    ("从零开始一件事",[("paul-graham","dont-scale"),("zhu-yuanzhang","delay-the-title"),("thiel","competition-is-for-losers"),("matsushita","tap-water"),("naval","productize-yourself"),("duan-yongping","dare-to-be-last"),("lee-kuan-yew","does-it-work")]),
-    ("投资不亏大钱",[("graham","mr-market"),("buffett","circle-of-competence"),("munger","invert"),("taleb","skin-in-the-game"),("lynch","tenbagger-at-the-mall"),("bai-gui","take-what-others-drop")]),
-    ("看人与防骗",[("analects","see-how"),("zeng-guofan","recruit-and-test"),("zizhi-tongjian","talent-and-virtue"),("strategies-of-the-warring-states","three-mirrors"),("la-rochefoucauld","memory-vs-judgment"),("crowd","assert-repeat-contaminate"),("influence","social-proof")]),
-    ("在低谷",[("frankl","the-last-freedom"),("dalio","pain-plus-reflection"),("nietzsche","what-does-not-kill"),("su-shi","three-exiles"),("marcus-aurelius","obstacle-is-the-way")]),
-    ("忙，但心虚",[("wang-xing","escape-from-thinking"),("jobs","focus-is-saying-no"),("drucker","right-things-first"),("bezos","what-wont-change"),("franklin","one-virtue-a-week")]),
-    ("交班与退场",[("fan-li","leave-at-the-top"),("lee-kuan-yew","from-my-sickbed"),("guo-ziyi","open-gates"),("wang-jian","asking-for-fields"),("li-bi","no-office")]),
-]
+import sys as _sys
+_sys.path.insert(0, str(Path(__file__).resolve().parent))  # CI 从仓库根调用本脚本
+from hwx_scenes import SCENES as HWX_SCENES
 
 HWX_INTROS = {
 "sun-tzu":"最早也最完整的战争方法论，被读了两千五百年","mao":"从绝对弱势打到全局翻盘的战略操盘手",
@@ -151,8 +137,15 @@ def _hwx_payload():
         return m.group(1).strip().rstrip("。") if m else ""
 
     def gloss_of(ch):
-        """金句解析：角度一句 + 适用场景，全部取自已有字段，不另造话。"""
-        return {"pt": ch.get("w", ""), "when": scene_of(ch)}
+        """金句解析：一句自然话，说清「什么时候这句话用得上」。
+
+        材料取自章节已有的 apply「局面」句，只补一个「用在……的时候」的壳，
+        不另造内容。"""
+        sc = scene_of(ch)
+        if not sc:
+            return {"pt": ch.get("w", ""), "when": "", "gl": ""}
+        tail = "" if sc.endswith(("时", "时候")) else "的时候"
+        return {"pt": ch.get("w", ""), "when": sc, "gl": "用在" + sc + tail + "。"}
 
     E, ch_by = [], {}
     for ch in C.CHAPTERS:
@@ -193,7 +186,7 @@ def _hwx_payload():
         if not q: continue
         g = gloss_of(ch)
         QP.append({"q": q, "who": ch["parent"], "cn": ch["n"],
-                   "pt": g["pt"], "when": g["when"],
+                   "pt": g["pt"], "when": g["when"], "gl": g["gl"],
                    "u": "/i/%s/%s/" % (hw_slugs.slug_for(ch["parent"]), ch["k"])})
 
     # 问题卡：10 张第一人称问句
@@ -214,16 +207,20 @@ def _hwx_payload():
     ]
 
     # 处境
-    valid = {(x["s"], k): True for x in E for k, _, _ in ch_by.get(x["n"], [])}
+    ch_index = {(hw_slugs.slug_for(c["parent"]), c["k"]): c for c in C.CHAPTERS}
     S = []
-    for t, refs in HWX_SCENES:
-        for s_, k_ in refs:
-            assert (s_, k_) in valid, "HWX 场景引用不存在: %s/%s (%s)" % (s_, k_, t)
-        S.append({"t": t, "r": [{"who": next(c["parent"] for c in C.CHAPTERS if hw_slugs.slug_for(c["parent"])==s_ and c["k"]==k_),
-                                  "cn": next(c["n"] for c in C.CHAPTERS if hw_slugs.slug_for(c["parent"])==s_ and c["k"]==k_),
-                                  "u": "/i/%s/%s/" % (s_, k_),
-                                  "hint": line_by.get((next(c["parent"] for c in C.CHAPTERS if hw_slugs.slug_for(c["parent"])==s_ and c["k"]==k_), k_), "")}
-                                 for s_, k_ in refs]})
+    for t, questions in HWX_SCENES:
+        qs = []
+        for qtext, refs in questions:
+            answers = []
+            for s_, k_ in refs:
+                assert (s_, k_) in ch_index, "HWX 场景引用不存在: %s/%s (%s)" % (s_, k_, t)
+                c = ch_index[(s_, k_)]
+                answers.append({"who": c["parent"], "cn": c["n"],
+                                "u": "/i/%s/%s/" % (s_, k_),
+                                "hint": line_by.get((c["parent"], k_), "") or c.get("w", "")})
+            qs.append({"q": qtext, "a": answers})
+        S.append({"t": t, "qs": qs})
 
     # 今日一问池（apply 里的「先问」句）
     ASK = []
@@ -299,8 +296,7 @@ body{background:var(--paper);color:var(--ink)}
 #hwx .tq .q{font-size:clamp(18px,3.2vw,24px);font-weight:700;line-height:1.8;margin-bottom:12px}
 #hwx .tq .src{font-size:12.5px;color:var(--muted)}
 #hwx .tq .src a{color:var(--acc);text-decoration:none}
-#hwx .tq .tgl{font-size:12.5px;line-height:1.7;color:var(--ink);opacity:.78;margin-top:10px;border-top:1px dashed var(--line);padding-top:10px}
-#hwx .tq .tgl b{color:var(--acc);font-weight:600;opacity:1}
+#hwx .tq .tgl{font-size:13px;line-height:1.7;color:var(--ink);opacity:.72;margin:0 0 8px}
 #hwx .tq .acts{display:flex;gap:8px;margin-top:14px}
 #hwx .tq .acts button{border:1.5px solid var(--ink);background:transparent;color:var(--ink);border-radius:999px;padding:5px 14px;font-family:inherit;font-size:12.5px;cursor:pointer}
 #hwx .tq .acts .bs{background:var(--ink);color:var(--paper)}
@@ -313,15 +309,20 @@ body{background:var(--paper);color:var(--ink)}
 #hwx .tbox .hint2{display:block;font-size:12.5px;color:var(--acc);opacity:.92;margin-top:6px;line-height:1.6}
 #hwx .hh{font-size:19px;font-weight:700;margin:24px 0 10px;letter-spacing:.03em;display:flex;justify-content:space-between;align-items:baseline}
 #hwx .hh .ct{font-size:12px;color:var(--muted);font-weight:500}
-#hwx .sc{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 4px}
-@media(max-width:640px){#hwx .sc{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;padding-bottom:3px}#hwx .sc::-webkit-scrollbar{display:none}}
+#hwx .sc{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 0}
+#hwx .scmore{border:none;background:transparent;color:var(--acc);font-family:inherit;font-size:12.5px;cursor:pointer;padding:8px 0 2px}
+#hwx .scmore:hover{text-decoration:underline}
 #hwx .sc button{flex:0 0 auto;border:1px solid var(--line);background:transparent;color:inherit;border-radius:999px;padding:5px 12px;font-family:inherit;font-size:13px;cursor:pointer;white-space:nowrap}
 #hwx .sc button.on{background:var(--ink);color:var(--paper);border-color:var(--ink)}
 #hwx .res{display:none;border-left:3px solid var(--acc);padding:4px 0 4px 13px;margin:8px 0 6px}
 #hwx .res.on{display:block}
-#hwx .res a{display:block;padding:5px 0;text-decoration:none;color:inherit}
-#hwx .res a b{font-size:14px;font-weight:600}
-#hwx .res a span{display:block;font-size:12.5px;color:var(--muted)}
+#hwx .res .qz{margin:0 0 14px}
+#hwx .res .qz:last-child{margin-bottom:2px}
+#hwx .res .qzq{font-size:14.5px;font-weight:700;line-height:1.6;margin-bottom:4px}
+#hwx .res .qzq::before{content:"？";color:var(--acc);font-weight:900;margin-right:5px}
+#hwx .res a{display:block;padding:4px 0 4px 16px;text-decoration:none;color:inherit}
+#hwx .res a b{font-size:13.5px;font-weight:600}
+#hwx .res a span{display:block;font-size:12.5px;color:var(--muted);line-height:1.6}
 #hwx .res a:hover b{border-bottom:1px solid}
 #hwx .hist{display:none;align-items:center;gap:8px;margin:12px 0 2px;font-size:12px}
 #hwx .hist .hl{color:var(--acc);font-weight:700;letter-spacing:.1em;flex:0 0 auto}
@@ -366,8 +367,7 @@ body{background:var(--paper);color:var(--ink)}
 #hwx .qc .v{writing-mode:vertical-rl;text-orientation:mixed;height:150px;width:fit-content;max-width:100%;font-family:"Noto Serif SC","Source Han Serif SC","Songti SC","STSong","SimSun",serif;font-size:15px;font-weight:700;line-height:1.9;letter-spacing:.04em;margin:4px auto 12px;overflow:hidden;display:block}
 #hwx .qc .v::before{content:"「"}#hwx .qc .v::after{content:"」"}
 #hwx .qc .who{font-size:11.5px;color:var(--muted);margin-top:2px}
-#hwx .qc .gl{font-size:11.5px;line-height:1.6;color:var(--ink);opacity:.78;margin-top:7px;border-top:1px dashed var(--line);padding-top:7px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
-#hwx .qc .gl b{font-weight:600;color:var(--acc);opacity:1}
+#hwx .qc .gl{font-size:11.5px;line-height:1.6;color:var(--ink);opacity:.72;margin:0 0 6px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
 #hwx .qc .who i{font-style:normal;color:var(--acc)}
 #hwx .qc .seal{position:absolute;top:12px;right:12px;width:20px;height:20px;border:1.5px solid var(--acc);border-radius:4px;color:var(--acc);font-size:11px;display:flex;align-items:center;justify-content:center}
 #hwx .kc{border-radius:14px;background:rgba(163,59,46,.07);border:1px solid rgba(163,59,46,.22);color:var(--ink);padding:14px 14px 12px;display:flex;flex-direction:column}
@@ -420,7 +420,7 @@ function paintQuote(first){
   document.getElementById('hwx-tq').textContent='「'+q1.q+'」';
   document.getElementById('hwx-tqs').innerHTML='—— '+q1.who+' · <a href="'+q1.u+'" data-h="'+esc(q1.who+' · '+q1.cn)+'">'+q1.cn+' →</a>';
   var gl=document.getElementById('hwx-tgl');
-  if(gl)gl.innerHTML=q1.pt?('<b>'+q1.pt+'</b>'+(q1.when?' · 用在：'+q1.when:'')):'';
+  if(gl)gl.textContent=q1.gl||'';
 }
 paintQuote(true);
 document.getElementById('hwx-next').onclick=function(){
@@ -463,23 +463,19 @@ function drawCard(cb){
     if(cur)lines.push(cur);
     var y=560+(5-Math.min(lines.length,5))*46;
     lines.slice(0,6).forEach(function(l){c.fillText(l,100,y);y+=98});
-    c.fillStyle='#8a8377';c.font='500 34px "Noto Serif SC"';c.fillText('—— '+q1.who+' · '+q1.cn,100,y+40);
-    /* 解析：角度 + 什么时候用，让卡片脱离上下文也读得懂 */
-    if(q1.pt){
-      var gy=y+120;
-      c.strokeStyle='#d8d2c6';c.lineWidth=2;
-      c.beginPath();c.moveTo(100,gy-46);c.lineTo(980,gy-46);c.stroke();
-      c.fillStyle='#a33b2e';c.font='700 32px "Noto Serif SC"';c.fillText(q1.pt,100,gy);
-      if(q1.when){
-        c.fillStyle='#3f3a34';c.font='500 30px "Noto Serif SC"';
-        var w='用在：'+q1.when, wl=[], cu='';
-        for(var j=0;j<w.length;j++){var tw=cu+w[j];
-          if(c.measureText(tw).width>860&&PUNC.indexOf(w[j])<0){wl.push(cu);cu=w[j]}else cu=tw}
-        if(cu)wl.push(cu);
-        var wy=gy+50;
-        wl.slice(0,3).forEach(function(l){c.fillText(l,100,wy);wy+=46});
-      }
+    /* 解析：一句话，画在署名之上；行数按实际内容，不预留空档 */
+    var ay=y+46;
+    if(q1.gl){
+      c.fillStyle='#5f5850';c.font='500 31px "Noto Serif SC"';
+      var wl=[],cu='';
+      for(var j=0;j<q1.gl.length;j++){var tw=cu+q1.gl[j];
+        if(c.measureText(tw).width>860&&PUNC.indexOf(q1.gl[j])<0){wl.push(cu);cu=q1.gl[j]}else cu=tw}
+      if(cu)wl.push(cu);
+      wl=wl.slice(0,3);
+      wl.forEach(function(l){c.fillText(l,100,ay);ay+=46});
+      ay+=18;
     }
+    c.fillStyle='#8a8377';c.font='500 34px "Noto Serif SC"';c.fillText('—— '+q1.who+' · '+q1.cn,100,ay);
     c.strokeStyle='#d8d2c6';c.lineWidth=2;c.beginPath();c.moveTo(100,1230);c.lineTo(980,1230);c.stroke();
     c.fillStyle='#1f1c17';c.font='700 34px "Noto Serif SC"';c.fillText('人类世界生存法则',100,1318);
     c.fillStyle='#a33b2e';c.font='500 30px "Noto Serif SC"';c.fillText('OurWord.ai',100,1366);
@@ -493,17 +489,43 @@ document.getElementById('hwx-save').onclick=function(){drawCard(function(b){var 
 document.getElementById('hwx-share').onclick=function(){drawCard(function(b){var f=new File([b],'ourword.png',{type:'image/png'});if(navigator.canShare&&navigator.canShare({files:[f]}))navigator.share({files:[f],title:'人类世界生存法则'});else{var a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='ourword.png';a.click()}})};
 /* ── 处境标签 ── */
 var scEl=document.getElementById('hwx-sc'),resEl=document.getElementById('hwx-res');
+var scMore=document.getElementById('hwx-scmore');
 D.S.forEach(function(s){
-  var b=document.createElement('button');b.textContent=s.t;
+  var b=document.createElement('button');b.type='button';b.textContent=s.t;
   b.onclick=function(){
     var on=b.classList.contains('on');
     scEl.querySelectorAll('button').forEach(function(x){x.classList.remove('on')});
     if(on){resEl.classList.remove('on');resEl.innerHTML='';return}
     b.classList.add('on');
-    resEl.innerHTML=s.r.map(function(r){return '<a href="'+r.u+'" data-h="'+esc(r.who+' · '+r.cn)+'"><b>'+r.who+' · '+r.cn+'</b><span>'+(r.hint||'')+'</span></a>'}).join('');
+    resEl.innerHTML=s.qs.map(function(q){
+      return '<div class="qz"><div class="qzq">'+q.q+'</div>'
+        +q.a.map(function(r){return '<a href="'+r.u+'" data-h="'+esc(r.who+' · '+r.cn)+'"><b>'+r.who+' · '+r.cn+'</b><span>'+(r.hint||'')+'</span></a>'}).join('')
+        +'</div>';
+    }).join('');
     resEl.classList.add('on');
+    resEl.scrollIntoView({behavior:'smooth',block:'nearest'});
   };scEl.appendChild(b);
 });
+/* 默认只露两行，其余收起 */
+(function(){
+  var open=false;
+  function fold(){
+    if(open){scEl.classList.remove('fold');scMore.textContent='收起';return}
+    scEl.classList.add('fold');
+    var rows={},n=0;
+    scEl.querySelectorAll('button').forEach(function(b){
+      var t=Math.round(b.offsetTop);if(!(t in rows)){rows[t]=1;n++}
+      b.style.display=(n<=2)?'':'none';
+    });
+    scMore.textContent='展开全部 '+D.S.length+' 个处境';
+  }
+  scMore.onclick=function(){open=!open;
+    if(open){scEl.querySelectorAll('button').forEach(function(b){b.style.display=''})}
+    fold();};
+  fold();
+  window.addEventListener('resize',function(){if(!open)
+    {scEl.querySelectorAll('button').forEach(function(b){b.style.display=''});fold();}});
+})();
 /* ── 历史行 ── */
 var _mem=[];
 function hload(){try{return JSON.parse(localStorage.getItem('hwx_hist')||'[]')}catch(e){return _mem}}
@@ -544,14 +566,14 @@ function cta(e){
 /* ── 全部 feed（混排） ── */
 /* 金句卡：竖排金句 + 出处 + 一行解析（角度 · 什么时候用），解析取自章节自身字段 */
 function qcard(g,cls){
-  var gl = g.pt ? ('<span class="gl"><b>'+g.pt+'</b>'+(g.when?' · 用在：'+g.when:'')+'</span>') : '';
-  return '<a class="qc '+cls+'" href="'+g.u+'" data-h="'+esc(g.who+' · '+g.cn)+'" data-t="'+esc((g.q+g.who+g.cn+(g.pt||'')+(g.when||'')).toLowerCase())+'">'
+  var gl = g.gl ? ('<span class="gl">'+g.gl+'</span>') : '';
+  return '<a class="qc '+cls+'" href="'+g.u+'" data-h="'+esc(g.who+' · '+g.cn)+'" data-t="'+esc((g.q+g.who+g.cn+(g.gl||'')).toLowerCase())+'">'
     +'<span class="seal">句</span><span class="v">'+g.q+'</span>'
-    +'<span class="who"><i>'+g.who+'</i> · '+g.cn+'</span>'+gl+'</a>';
+    + gl + '<span class="who"><i>'+g.who+'</i> · '+g.cn+'</span></a>';
 }
 /* 章节标题与角度并入搜索索引：搜「止损」应命中利弗莫尔等 */
 var byNC={};D.NC.forEach(function(n){(byNC[n.pn]=byNC[n.pn]||[]).push(n.cn+' '+n.w+' '+n.q)});
-D.S.forEach(function(sc){sc.r.forEach(function(r){(byNC[r.who]=byNC[r.who]||[]).push(r.cn+' '+(r.hint||''))})});
+D.S.forEach(function(sc){sc.qs.forEach(function(q){q.a.forEach(function(r){(byNC[r.who]=byNC[r.who]||[]).push(q.q+' '+r.cn+' '+(r.hint||''))})})});
 D.QP.forEach(function(q){(byNC[q.who]=byNC[q.who]||[]).push(q.cn+' '+q.q)});
 var fullCells=[];
 var qi=0,ki=0;
@@ -637,7 +659,7 @@ switchTab('新');
         "<span class=\"hchips\" id=\"hwx-hchips\"></span><button id=\"hwx-hclr\">清空</button></div>"
         "<div class=\"today\">"
         "<div class=\"tq\"><div class=\"dt\" id=\"hwx-dt\"></div><div class=\"q\" id=\"hwx-tq\"></div>"
-        "<div class=\"src\" id=\"hwx-tqs\"></div><div class=\"tgl\" id=\"hwx-tgl\"></div>"
+        "<div class=\"tgl\" id=\"hwx-tgl\"></div><div class=\"src\" id=\"hwx-tqs\"></div>"
         "<div class=\"acts\"><button id=\"hwx-next\">换一换</button>"
         "<button class=\"bs\" id=\"hwx-save\">保存卡片</button>"
         "<button id=\"hwx-share\">分享</button></div></div>"
@@ -646,7 +668,9 @@ switchTab('新');
         "<div class=\"tbox\"><div class=\"lb\">今日一问</div><a id=\"hwx-ta\"></a></div>"
         "</div></div>"
         "<div class=\"hh\">按处境找 <span style=\"font-size:12px;color:var(--muted);font-weight:500\">「我现在遇到的是……」</span></div>"
-        "<div class=\"sc\" id=\"hwx-sc\"></div><div class=\"res\" id=\"hwx-res\"></div>"
+        "<div class=\"sc\" id=\"hwx-sc\"></div>"
+        "<button class=\"scmore\" id=\"hwx-scmore\" type=\"button\"></button>"
+        "<div class=\"res\" id=\"hwx-res\"></div>"
                 "<div class=\"qbar\"><input id=\"q\" placeholder=\"搜索：人物、书、一句话、处境…\" aria-label=\"搜索\"></div>"
         "<div style=\"display:flex;align-items:baseline;justify-content:space-between;margin-top:14px\">"
         "<div class=\"tabs2\" id=\"hwx-tabs2\">"
