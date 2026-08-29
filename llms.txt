@@ -49,6 +49,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [智慧书 · 做，并且让人看见](https://ourword.ai/i/art-of-worldly-wisdom/do-and-be-seen/): 智慧书 · 做，并且让人看见——实与名各占一半。这条箴言在道德上让人不舒服。这一篇要回答的是：为什么他坚持把它写下来。
 - [白圭 · 人弃我取](https://ourword.ai/i/bai-gui/take-what-others-drop/): 白圭 · 人弃我取——在丰年买，在歉年卖。低买高卖人人都懂。这一篇要回答的是：白圭是怎么让这件事变成可执行的。
 - [白圭 · 智勇仁强](https://ourword.ai/i/bai-gui/four-qualifications/): 白圭 · 智勇仁强——四样缺一样就别做。他把经商说成和用兵、变法一个等级的事。这一篇要回答的是：他为此开出的四条准入条件。
+- [贝索斯 · 永远是第一天](https://ourword.ai/i/bezos/day-one/): 贝索斯 · 永远是第一天——第二天是什么样。有员工问：第二天会怎样？这一篇要回答的是：他的答案，和他为拦住第二天装的四个零件。
+- [贝索斯 · 押注不变的东西](https://ourword.ai/i/bezos/what-wont-change/): 贝索斯 · 押注不变的东西——十年后什么还成立。所有人都问他未来十年会变什么。这一篇要回答的是：他说更重要的是没人问的那个问题。
 - [俾斯麦 · 铁与血](https://ourword.ai/i/bismarck/iron-and-blood/): 俾斯麦 · 铁与血——说破真实的货币。史上最著名的演说之一，场合其实很小。这一篇要回答的是：他在那间委员会会议室里到底在争什么。
 - [俾斯麦 · 可能性的艺术](https://ourword.ai/i/bismarck/art-of-the-possible/): 俾斯麦 · 可能性的艺术——赢三场就急刹车。三场速胜之后，他把此后二十年全部用来防止下一场战争。这一篇要回答的是：这个急刹车比开战更难。
 - [约翰·博伊德 · OODA循环](https://ourword.ai/i/boyd/ooda/): 约翰·博伊德 · OODA循环——快在转向不在动作。他先是王牌飞行教官，四十秒内必能反败为胜。这一篇要回答的是：他从空战里提炼的那个循环，快指的是什么。
@@ -68,6 +70,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [达里奥 · 可信度加权](https://ourword.ai/i/dalio/believability/): 达里奥 · 可信度加权——既不民主也不独裁。一人一票和一人拍板他都不用。这一篇要回答的是：桥水那套「按战绩称重」的意见系统怎么运转。
 - [彼得·德鲁克 · 企业的目的是创造顾客](https://ourword.ai/i/drucker/create-a-customer/): 彼得·德鲁克 · 企业的目的是创造顾客——由外往里定义业务。问企业为什么存在，多数人答赚钱。这一篇要回答的是：德鲁克为什么说这个答案不但错，而且有害。
 - [彼得·德鲁克 · 高效地做不该做的事](https://ourword.ai/i/drucker/right-things-first/): 彼得·德鲁克 · 高效地做不该做的事——效果先于效率。他把两个常被混用的词拆开了。这一篇要回答的是：为什么效率的提升会掩盖方向的错误。
+- [段永平 · 做对的事情，把事情做对](https://ourword.ai/i/duan-yongping/right-things-done-right/): 段永平 · 做对的事情，把事情做对——两段论有先后。这十个字被他重复了几十年。这一篇要回答的是：前后两半为什么不能颠倒，以及那张不做的清单。
+- [段永平 · 敢为天下后](https://ourword.ai/i/duan-yongping/dare-to-be-last/): 段永平 · 敢为天下后——后中争先。人人抢首发，他公开说敢做最后一个。这一篇要回答的是：后发在什么条件下才是优势。
 - [爱因斯坦 · 提出问题比解决问题更重要](https://ourword.ai/i/einstein/formulating-the-problem/): 爱因斯坦 · 提出问题比解决问题更重要——换问题，不换答案。这句话出自他自己的书，不是鸡汤卡片。这一篇要回答的是：他本人是怎么用它的。
 - [爱因斯坦 · 专利局里的奇迹年](https://ourword.ai/i/einstein/patent-office/): 爱因斯坦 · 专利局里的奇迹年——边缘位置的自由。1905年他发表了改变物理学的四篇论文，职务是三级技术审查员。这一篇要回答的是：那个位置给了他什么。
 - [爱比克泰德 · 控制二分法](https://ourword.ai/i/epictetus/dichotomy/): 爱比克泰德 · 控制二分法——先分归不归你管。一个瘸腿的前奴隶写的处世手册，第一句是一次分类。这一篇要回答的是：这个分类为什么要放在一切之前。
@@ -120,6 +124,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [影响力 · 社会认同](https://ourword.ai/i/influence/social-proof/): 影响力 · 社会认同——不确定时看别人。罐头笑声人人讨厌，人人被它逗笑。这一篇要回答的是：这条原理在什么条件下最猛。
 - [创新者的窘境 · 败于良好管理](https://ourword.ai/i/innovators-dilemma/good-management-fails/): 创新者的窘境 · 败于良好管理——教科书动作导致出局。硬盘行业每一代领先者几乎都死于下一代。这一篇要回答的是：验尸报告为什么写着「死因：管理良好」。
 - [创新者的窘境 · 小市场救不了大公司](https://ourword.ai/i/innovators-dilemma/small-markets/): 创新者的窘境 · 小市场救不了大公司——增长需求错配。大公司不是看不见新市场，是看不上。这一篇要回答的是：这个「看不上」为什么是算术问题，以及他给的解法。
+- [乔布斯 · 专注就是说不](https://ourword.ai/i/jobs/focus-is-saying-no/): 乔布斯 · 专注就是说不——砍掉的是好主意。人人都说自己专注。这一篇要回答的是：他给专注下的定义为什么和直觉相反。
+- [乔布斯 · 连点成线只能回头看](https://ourword.ai/i/jobs/connecting-the-dots/): 乔布斯 · 连点成线只能回头看——先攒点，再连线。退学生去旁听了一门毫无用处的课。这一篇要回答的是：那个著名比喻常被用反的地方。
 - [拉罗什富科 · 没人抱怨自己的判断力](https://ourword.ai/i/la-rochefoucauld/memory-vs-judgment/): 拉罗什富科 · 没人抱怨自己的判断力——盲区的形状。一句十几个字的箴言，画出了自我认知的边界。这一篇要回答的是：为什么承认前者容易、承认后者几乎不可能。
 - [拉罗什富科 · 虚伪是恶行向美德的致敬](https://ourword.ai/i/la-rochefoucauld/vice-pays-tribute/): 拉罗什富科 · 虚伪是恶行向美德的致敬——伪装暴露了行情。他把虚伪写成一种致敬。这一篇要回答的是：这个刻薄的比喻里藏着一条读人的方法。
 - [李光耀 · 管用吗](https://ourword.ai/i/lee-kuan-yew/does-it-work/): 李光耀 · 管用吗——让理论排在结果后面。左右两边的理论家都批评过新加坡。这一篇要回答的是：他用哪一个问题打发了所有理论。
@@ -162,14 +168,20 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [宫本武藏 · 观之目强，见之目弱](https://ourword.ai/i/musashi/two-ways-of-seeing/): 宫本武藏 · 观之目强，见之目弱——两种看。他把「看」拆成了两个字。这一篇要回答的是：为什么盯着对方的刀，你就已经输了。
 - [拿破仑 · 决定点上的多数](https://ourword.ai/i/napoleon/decisive-point/): 拿破仑 · 决定点上的多数——总兵力少没关系。他常以少打多，却几乎总在接战瞬间人更多。这一篇要回答的是：这个矛盾是怎么做到的。
 - [拿破仑 · 从伟大到可笑只有一步](https://ourword.ai/i/napoleon/sublime-to-ridiculous/): 拿破仑 · 从伟大到可笑只有一步——没有退出条件的成功。这句俏皮话的出处一点也不俏皮。这一篇要回答的是：他是在什么路上说出它的。
+- [纳瓦尔 · 睡觉时也在赚钱的资产](https://ourword.ai/i/naval/assets-while-you-sleep/): 纳瓦尔 · 睡觉时也在赚钱的资产——财富不是钱。那条著名推文串的第一句就是三个词的切割。这一篇要回答的是：切开之后各自通向哪里。
+- [纳瓦尔 · 把自己产品化](https://ourword.ai/i/naval/productize-yourself/): 纳瓦尔 · 把自己产品化——特定知识乘以杠杆。他把整套方法压成四个字。这一篇要回答的是：「自己」和「产品化」各指什么，以及新杠杆好在哪。
 - [尼采 · 杀不死我的](https://ourword.ai/i/nietzsche/what-does-not-kill/): 尼采 · 杀不死我的——这句话有使用条件。这可能是被引用最多也被用错最多的一句话。这一篇要回答的是：它在什么条件下才成立。
 - [尼采 · 凝视深渊](https://ourword.ai/i/nietzsche/gazing-into-abyss/): 尼采 · 凝视深渊——与怪物战斗的代价。这条箴言只有两句话，却是一整套职业风险提示。这一篇要回答的是：那个变化是怎么发生的。
 - [旧制度与大革命 · 开始改革的时刻](https://ourword.ai/i/old-regime/most-dangerous-moment/): 旧制度与大革命 · 开始改革的时刻——松绑反而引爆。革命前二十年是法国旧制度最繁荣的时期。这一篇要回答的是：托克维尔从这个悖论里提炼的那条定律。
 - [旧制度与大革命 · 穿过革命的集权](https://ourword.ai/i/old-regime/centralization-survived/): 旧制度与大革命 · 穿过革命的集权——推翻一切，继承内核。大革命自称与过去彻底决裂。这一篇要回答的是：托克维尔挖出的那条完整穿过革命的暗线。
 - [战争论 · 政治的继续](https://ourword.ai/i/on-war/continuation-of-politics/): 战争论 · 政治的继续——打是为了谈。全书最有名的一句常被当成犬儒的断言。这一篇要回答的是：它其实是一条约束条款。
 - [战争论 · 摩擦](https://ourword.ai/i/on-war/friction/): 战争论 · 摩擦——最简单的事也是困难的。他为战争学发明了一个物理词。这一篇要回答的是：摩擦从哪里来，以及为什么它不可消除、只可折算。
+- [保罗·格雷厄姆 · 做不能规模化的事](https://ourword.ai/i/paul-graham/dont-scale/): 保罗·格雷厄姆 · 做不能规模化的事——早期要手工。创业者满脑子都是规模化，他劝的是反方向。这一篇要回答的是：手工阶段买到的是什么。
+- [保罗·格雷厄姆 · 默认活着还是默认死去](https://ourword.ai/i/paul-graham/default-alive/): 保罗·格雷厄姆 · 默认活着还是默认死去——先算这道题。他和创业者聊天必先问一道题，多数创始人答不上来。这一篇要回答的是：这道题为什么排在一切讨论之前。
 - [史记 · 不虚美，不隐恶](https://ourword.ai/i/records-of-the-grand-historian/no-praise-no-hiding/): 史记 · 不虚美，不隐恶——功与过写在同一段。班固给《史记》的六个字评语。这一篇要回答的是：做到它到底难在哪。
 - [史记 · 余甚惑焉](https://ourword.ai/i/records-of-the-grand-historian/i-am-confused/): 史记 · 余甚惑焉——把没想明白的写下来。他在列传第一篇就承认自己想不通。这一篇要回答的是：这三个字为什么比任何结论都值钱。
+- [任正非 · 华为的冬天](https://ourword.ai/i/ren-zhengfei/huaweis-winter/): 任正非 · 华为的冬天——在丰年谈倒闭。公司业绩最好的一年，他给全员写了篇讲失败的文章。这一篇要回答的是：把危机感做成制度的那几个零件。
+- [任正非 · 让听得见炮声的人呼唤炮火](https://ourword.ai/i/ren-zhengfei/sound-of-gunfire/): 任正非 · 让听得见炮声的人呼唤炮火——权力向一线倒转。机关不下放权力，一线打不了仗。这一篇要回答的是：这句口号背后那次组织结构的倒转。
 - [人类简史 · 靠虚构合作](https://ourword.ai/i/sapiens/fictions-that-cooperate/): 人类简史 · 靠虚构合作——公司也是一个故事。黑猩猩的协作上限是几十只，智人能百万级协作。这一篇要回答的是：赫拉利说差别在一种谁也摸不着的东西。
 - [人类简史 · 小麦驯化了我们](https://ourword.ai/i/sapiens/wheat-domesticated-us/): 人类简史 · 小麦驯化了我们——奢侈品陷阱。农业革命让人口暴增，也让普通人过得更糟。这一篇要回答的是：一个物种的成功和它成员的幸福为什么会背离。
 - [托马斯·谢林 · 自缚双手的优势](https://ourword.ai/i/schelling/binding-yourself/): 托马斯·谢林 · 自缚双手的优势——砍掉选项换可信。博弈论的常识是选项越多越好。这一篇要回答的是：谢林为什么证明了相反的情形。
@@ -203,6 +215,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [道德经 · 反者道之动](https://ourword.ai/i/tao-te-ching/reversal/): 道德经 · 反者道之动——到顶就是转折。最危险的时刻不是最弱的时候。这一篇要回答的是：为什么一件事做到极致，转折就在下一步。
 - [道德经 · 有之以为利，无之以为用](https://ourword.ai/i/tao-te-ching/usefulness-of-emptiness/): 道德经 · 有之以为利，无之以为用——空的地方才好用。一个车轮真正起作用的是哪部分？这一篇要回答的是：为什么有用的往往是那些看起来没有东西的地方。
 - [技术革命与金融资本 · 泡沫在剧本里](https://ourword.ai/i/technological-revolutions/bubble-in-the-script/): 技术革命与金融资本 · 泡沫在剧本里——狂热是安装期的机制。运河、铁路、电力、汽车、互联网——每次都疯一遍。这一篇要回答的是：佩雷斯为什么说疯是流程的一部分。
+- [彼得·蒂尔 · 竞争是留给失败者的](https://ourword.ai/i/thiel/competition-is-for-losers/): 彼得·蒂尔 · 竞争是留给失败者的——话术是反着说的。商学院教人如何竞争，他说竞争本身就是输。这一篇要回答的是：怎么识破两边都在说的谎。
+- [彼得·蒂尔 · 反主流问题](https://ourword.ai/i/thiel/the-contrarian-question/): 彼得·蒂尔 · 反主流问题——重要而无人同意的真相。他面试必问一道没有标准答案的题。这一篇要回答的是：这道题在筛什么，以及好答案长什么样。
 - [思考，快与慢 · 所见即全部](https://ourword.ai/i/thinking-fast-and-slow/wysiati/): 思考，快与慢 · 所见即全部——缺的信息不报警。卡尼曼为大脑最大的毛病造了一个缩写。这一篇要回答的是：WYSIATI 为什么让人对自己的无知毫无感觉。
 - [思考，快与慢 · 损失厌恶](https://ourword.ai/i/thinking-fast-and-slow/loss-aversion/): 思考，快与慢 · 损失厌恶——亏比赚痛一倍。同样一百块，丢掉的痛苦是捡到的快乐的两倍。这一篇要回答的是：这个不对称在悄悄替你做哪些决定。
 - [系统之美 · 结构决定行为](https://ourword.ai/i/thinking-in-systems/structure-drives-behavior/): 系统之美 · 结构决定行为——别怪零件。同一个问题换了三批人还在发生。这一篇要回答的是：梅多斯为什么说这时候该停止怪人。
