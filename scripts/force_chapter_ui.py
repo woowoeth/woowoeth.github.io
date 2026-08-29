@@ -147,9 +147,23 @@ def _hwx_payload():
         if not it:
             it = (e.get("d", "").split("。")[0])[:38]
             print("HWX 警告：%s 缺手写介绍" % slug)
+        # 搜索索引：并入该条目所有章节的标题、角度、金句与正文关键词，
+        # 使「止损」「复利」这类只在正文出现的词也能搜到。
+        body = []
+        for ch in C.CHAPTERS:
+            if ch["parent"] != e["n"]:
+                continue
+            body.append(ch["n"]); body.append(ch.get("w", ""))
+            body.append(re.sub(r"==", "", ch.get("story", "")))
+            body.append(re.sub(r"==", "", ch.get("apply", "")))
+            for f in ch.get("f", []):
+                body.append(f.get("n", "")); body.append(f.get("d", ""))
+            for q in ch.get("q", []):
+                body.append(re.sub(r"==", "", q))
         E.append({"n": e["n"], "s": slug, "c": e["c"], "w": e["w"], "it": it, "hk": hook,
                   "nc": len(chs), "c0": chs[0][1] if chs else "",
-                  "cs": [n for _, n, _ in chs[:3]] if len(chs) >= 3 else []})
+                  "cs": [n for _, n, _ in chs[:3]] if len(chs) >= 3 else [],
+                  "ix": re.sub(r"[\s，。、；：！？「」（）——…]+", "", " ".join(body))[:900]})
 
     # 金句池：每章取 8-34 字里最长一条，带出处深链
     QP = []
@@ -237,6 +251,16 @@ def hwx_block():
 :root[data-theme="dark"]{--white:#1d1913;--line-strong:rgba(234,227,212,.22);--ink-30:rgba(234,227,212,.42);--ink-50:rgba(234,227,212,.6)}
 body{background:var(--paper);color:var(--ink)}
 .share-btn{background:var(--white)!important;color:var(--ink)!important;border-color:var(--line-strong)!important}
+:root[data-theme="dark"] .dot,:root[data-theme="dark"] .hd-en,:root[data-theme="dark"] .kicker,:root[data-theme="dark"] .sec-k{color:#e0705f!important}
+:root[data-theme="dark"] body{background:#171410!important;color:#eae3d4!important}
+:root[data-theme="dark"] .hd-title,:root[data-theme="dark"] h1,:root[data-theme="dark"] h2,:root[data-theme="dark"] h3{color:#eae3d4!important}
+:root[data-theme="dark"] #hwx .tq .dt{color:#e0705f!important}
+:root[data-theme="dark"] #hwx .tq .src,:root[data-theme="dark"] #hwx .tq .src a,:root[data-theme="dark"] #hwx .tbox .hint{color:#d9d1c0!important;opacity:1}
+:root[data-theme="dark"] #hwx .qc .who,:root[data-theme="dark"] #hwx .pc .it,:root[data-theme="dark"] #hwx .pc .tag,:root[data-theme="dark"] #hwx .pc .ls,:root[data-theme="dark"] #hwx .nc .w,:root[data-theme="dark"] #hwx .nc .pn{color:#a79e8b!important}
+:root[data-theme="dark"] #hwx .cf,:root[data-theme="dark"] #hwx .qc .who i,:root[data-theme="dark"] #hwx .nc .pn i,:root[data-theme="dark"] #hwx .seal{color:#ef8b78!important}
+:root[data-theme="dark"] #hwx .nb{background:#b8452f!important;color:#fff!important}
+:root[data-theme="dark"] #hwx .kc .qm{color:#8a3a2e!important}
+#hwx .kc .qm{color:#c4644f}
 #hwx-theme{position:fixed;top:14px;right:14px;z-index:9999;width:36px;height:36px;border:1px solid var(--line);background:var(--paper);color:var(--ink);border-radius:50%;font-size:15px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 1px 6px rgba(0,0,0,.10);padding:0}
 #hwx-theme:hover{border-color:var(--acc);color:var(--acc)}
 #hwx .today{display:grid;grid-template-columns:1.5fr 1fr;gap:14px;margin:18px 0 6px}
@@ -274,7 +298,10 @@ body{background:var(--paper);color:var(--ink)}
 #hwx .hist .hchips a{flex:0 0 auto;border:1px solid var(--line);border-radius:999px;padding:2px 9px;color:var(--muted);text-decoration:none;white-space:nowrap}
 #hwx .hist .hchips a:hover{color:var(--ink)}
 #hwx .hist button{border:none;background:transparent;color:var(--muted);font-family:inherit;font-size:11px;cursor:pointer;flex:0 0 auto}
-#hwx .tabs2{display:flex;gap:0;border-bottom:2px solid var(--line);margin:22px 0 0}
+#hwx .qbar{margin:22px 0 0}
+#hwx .qbar input{width:100%;border:1.5px solid var(--ink);background:transparent;color:var(--ink);border-radius:999px;padding:10px 18px;font-family:inherit;font-size:15px;outline:none}
+#hwx .qbar input::placeholder{color:var(--muted)}
+#hwx .tabs2{display:flex;gap:0;border-bottom:2px solid var(--line);margin:14px 0 0}
 #hwx .tabs2 button{border:none;background:transparent;padding:8px 18px;font-family:inherit;font-size:15px;font-weight:600;color:var(--muted);cursor:pointer;border-bottom:3px solid transparent;margin-bottom:-2px}
 #hwx .tabs2 button.on{color:var(--ink);border-bottom-color:var(--acc)}
 #hwx .cats{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;margin:10px 0 0}
@@ -458,10 +485,15 @@ function cta(e){
   return(t.indexOf('「」')>=0)?'他的方法都在里面 →':t;
 }
 /* ── 全部 feed（混排） ── */
+/* 章节标题与角度并入搜索索引：搜「止损」应命中利弗莫尔等 */
+var byNC={};D.NC.forEach(function(n){(byNC[n.pn]=byNC[n.pn]||[]).push(n.cn+' '+n.w+' '+n.q)});
+D.S.forEach(function(sc){sc.r.forEach(function(r){(byNC[r.who]=byNC[r.who]||[]).push(r.cn+' '+(r.hint||''))})});
+D.QP.forEach(function(q){(byNC[q.who]=byNC[q.who]||[]).push(q.cn+' '+q.q)});
 var fullCells=[];
 var qi=0,ki=0;
 D.E.forEach(function(e,i){
-  var dt=esc((e.n+' '+e.w+' '+e.c+' '+e.it+' '+e.hk).toLowerCase());
+  var chTxt=(byNC[e.n]||[]).join(' ');
+  var dt=esc((e.n+' '+e.w+' '+e.c+' '+e.it+' '+e.hk+' '+chTxt+' '+(e.ix||'')).toLowerCase());
   fullCells.push('<a class="pc" href="/i/'+e.s+'/" data-h="'+esc(e.n)+'" data-c="'+e.c+'" data-t="'+dt+'" style="--sp:'+(D.CC[e.c]||'#999')+'"><span class="r1"><b>'+e.n+'</b><i class="tag">'+e.w+'</i></span><span class="it">'+e.it+'</span><span class="hk">'+(e.hk||e.w)+'</span>'+(e.cs.length?'<span class="ls">'+e.cs.join(' / ')+'</span>':'')+'<span class="cf">'+cta(e)+'</span></a>');
   if(i%3===2&&qi<D.QP.length){var g=D.QP[(qi*37)%D.QP.length];qi++;
     fullCells.push('<a class="qc xtra" href="'+g.u+'" data-h="'+esc(g.who+' · '+g.cn)+'" data-t="'+esc((g.q+g.who+g.cn).toLowerCase())+'"><span class="seal">句</span><span class="v">'+g.q+'</span><span class="who"><i>'+g.who+'</i> · '+g.cn+'</span></a>');}
@@ -508,6 +540,7 @@ document.querySelectorAll('#hwx-tabs2 button').forEach(function(b){
   b.onclick=function(){switchTab(b.getAttribute('data-t'))};
 });
 function applyFeed(){
+  if(!feed||!ct)return;
   var v=(document.getElementById('q')||{value:''}).value.trim().toLowerCase(),vis=0;
   feed.querySelectorAll('.pc').forEach(function(c){
     var ok=(CAT==='全部'||c.getAttribute('data-c')===CAT)&&(!v||c.getAttribute('data-t').indexOf(v)>=0);
@@ -520,8 +553,11 @@ function applyFeed(){
 }
 /* 搜索框接管 */
 var qin=document.getElementById('q');
-if(qin){qin.setAttribute('placeholder','搜索：人物、书、一句话、处境…');
-  qin.oninput=null;qin.addEventListener('input',function(){if(TAB==='全'){applyFeed()}});}
+if(qin){qin.oninput=null;
+  qin.addEventListener('input',function(){
+    if(qin.value.trim()&&TAB!=='全'){switchTab('全');}   /* 搜索一律在「全部」里进行 */
+    else{applyFeed();}
+  });}
 /* 初始化 */
 switchTab('新');
 })();
@@ -547,7 +583,8 @@ switchTab('新');
         "</div></div>"
         "<div class=\"hh\">按处境找 <span style=\"font-size:12px;color:var(--muted);font-weight:500\">「我现在遇到的是……」</span></div>"
         "<div class=\"sc\" id=\"hwx-sc\"></div><div class=\"res\" id=\"hwx-res\"></div>"
-                "<div style=\"display:flex;align-items:baseline;justify-content:space-between;margin-top:18px\">"
+                "<div class=\"qbar\"><input id=\"q\" placeholder=\"搜索：人物、书、一句话、处境…\" aria-label=\"搜索\"></div>"
+        "<div style=\"display:flex;align-items:baseline;justify-content:space-between;margin-top:14px\">"
         "<div class=\"tabs2\" id=\"hwx-tabs2\">"
         "<button data-t=\"新\" class=\"on\">最新</button><button data-t=\"全\">全部</button></div>"
         "<span class=\"ct\" id=\"hwx-ct\" style=\"font-size:12px;color:var(--muted)\"></span></div>"
@@ -566,6 +603,11 @@ def patch_home_discover():
     p = "index.html"
     s = open(p, encoding="utf-8").read()
     s = re.sub(r"\n*" + re.escape(HWX_A) + r".*?" + re.escape(HWX_B) + r"\n*", "", s, flags=re.S)
+    # 时间轴已隐藏，遗留的 renderTL 仍在找已删除的计数节点并抛错——让它安全空转
+    # 时间轴已隐藏；老 renderTL/rTabs 仍在启动时访问被移除的节点并抛错。
+    # stub 会被后面的函数声明覆盖，所以直接把函数体改成空转。
+    s = s.replace('function renderTL(){\n  rTabs();',
+                  'function renderTL(){\n  return;', 1)
     # 文案兜底：每轮构建强制生效，防止 rebase / 其他脚本回写旧值
     s = s.replace("95 位人物与典籍", "100 位人物与典籍")
     s = s.replace("<title>人类世界生存法则 · 知识库</title>",
@@ -583,6 +625,9 @@ def patch_home_discover():
     s = re.sub(r"(<noscript>)(.*?)(</noscript>)",
                lambda m: m.group(1) + m.group(2).replace("<h1","<h2").replace("</h1>","</h2>") + m.group(3),
                s, flags=re.S)
+    # 搜索框原本在页面上方的 toolbar 里，改为置于 最新/全部 标签之上：
+    # 移除原位置的 toolbar（保留 input 供 HWX 复用，DOM 由 HWX 块内重建）
+    s = re.sub(r'<div class="toolbar">.*?</div>\s*', '', s, flags=re.S, count=1)
     anchor = '<div class="tabs" id="tabs"'
     assert anchor in s, "HWX 锚点丢失"
     s = s.replace(anchor, "\n" + hwx_block() + "\n" + anchor, 1)
@@ -651,12 +696,46 @@ HWX_T_A, HWX_T_B = "<!--HWX:THEME-->", "<!--/HWX:THEME-->"
 
 def theme_widget():
     css = (
-        ':root[data-theme="dark"]{--paper:#171410;--ink:#eae3d4;--acc:#c65f4f;--muted:#9a917f;'
-        '--line:#3a342a;--rule:#3a342a;--white:#1d1913;--line-strong:rgba(234,227,212,.22);'
-        '--ink-30:rgba(234,227,212,.42);--ink-50:rgba(234,227,212,.6);--paper2:#201c15}'
-        ':root[data-theme="dark"] body{background:#171410;color:#eae3d4}'
+        # 站点主变量 + hw-entry/hw-chapter 的整套变量（不补全这些，正文会用亮色墨值印在暗底）
+        ':root[data-theme="dark"]{--paper:#171410;--ink:#eae3d4;--acc:#c65f4f;'
+        '--line:#3a342a;--white:#1d1913;--line-strong:rgba(234,227,212,.22);'
+        '--ink-30:rgba(234,227,212,.42);--ink-50:rgba(234,227,212,.6);--paper2:#201c15;'
+        '--bg:#171410;--bg-tint:#201c15;--surface:#1d1913;--surface-2:#232019;'
+        '--ink-2:#d9d1c0;--muted:#a79e8b;--faint:#8b8371;'
+        '--rule:#3a342a;--rule-2:#443d31;--seal:#e0705f;--seal-soft:#3a221f;'
+        '--shadow:0 1px 2px rgba(0,0,0,.4),0 10px 28px -18px rgba(0,0,0,.6)}'
+        ':root[data-theme="dark"] body{background:var(--bg);color:var(--ink)}'
         ':root[data-theme="dark"] .panel,:root[data-theme="dark"] article{background:transparent}'
-        ':root[data-theme="dark"] .share-btn{background:#1d1913;color:#eae3d4;border-color:rgba(234,227,212,.22)}'
+        # 正文与次级文本走变量，覆盖硬编码墨色（原来 #3f3a34 在暗底对比度仅 1.63）
+        ':root[data-theme="dark"] p,:root[data-theme="dark"] li,:root[data-theme="dark"] .dek,'
+        ':root[data-theme="dark"] .one,:root[data-theme="dark"] .f-d,:root[data-theme="dark"] .eg,'
+        ':root[data-theme="dark"] blockquote{color:var(--ink-2)}'
+        ':root[data-theme="dark"] .src,:root[data-theme="dark"] .why,:root[data-theme="dark"] .meta,'
+        ':root[data-theme="dark"] .sub,:root[data-theme="dark"] .crumb{color:var(--muted)}'
+        # 朱红提亮：#9d2933 在暗底只有 2.45
+        ':root[data-theme="dark"] .kicker,:root[data-theme="dark"] .sec-k,:root[data-theme="dark"] .dot,'
+        ':root[data-theme="dark"] mark.hl,:root[data-theme="dark"] .seal,'
+        ':root[data-theme="dark"] .chip.on{color:#e0705f}'
+        ':root[data-theme="dark"] mark.hl{text-decoration-color:#e0705f}'
+        # 浅底区块：背景跟随暗色，否则白底白字（实测对比度 1.26）
+        ':root[data-theme="dark"] .card,:root[data-theme="dark"] .map,:root[data-theme="dark"] .rel,'
+        ':root[data-theme="dark"] .box,:root[data-theme="dark"] .quote-card,:root[data-theme="dark"] .panel,'
+        ':root[data-theme="dark"] .chip,:root[data-theme="dark"] .side .panel'
+        '{background:var(--surface);border-color:var(--rule)}'
+        ':root[data-theme="dark"] .map-n,:root[data-theme="dark"] .n,'
+        ':root[data-theme="dark"] a{color:var(--ink)}'
+        ':root[data-theme="dark"] .toc a,:root[data-theme="dark"] .sib a{color:var(--ink-2)}'
+        ':root[data-theme="dark"] .share-btn{background:var(--surface);color:var(--ink);border-color:var(--line-strong)}'
+        ':root[data-theme="dark"] .sep,:root[data-theme="dark"] .crumb .sep{color:var(--faint)}'
+        ':root[data-theme="dark"] mark.hl,:root[data-theme="dark"] article mark.hl{color:#e0705f!important;background:transparent}'
+        ':root[data-theme="dark"] .map,:root[data-theme="dark"] .map *,'
+        ':root[data-theme="dark"] .rel,:root[data-theme="dark"] .rel *{background-color:transparent}'
+        ':root[data-theme="dark"] .map,:root[data-theme="dark"] .rel{background:var(--surface)!important}'
+        ':root[data-theme="dark"] .map-cat,:root[data-theme="dark"] .map-list,'
+        ':root[data-theme="dark"] .map-row{background:var(--surface)!important;border-color:var(--rule)!important}'
+        ':root[data-theme="dark"] .map-n{color:var(--ink)!important}'
+        ':root[data-theme="dark"] .map-w,:root[data-theme="dark"] .map-line{color:var(--muted)!important}'
+        ':root[data-theme="dark"] .map .why,:root[data-theme="dark"] .rel .why{color:var(--muted)!important}'
         '#hwx-theme{position:fixed;top:14px;right:14px;z-index:9999;width:36px;height:36px;'
         'border:1px solid var(--rule,#d8d2c6);background:var(--paper,#f5f1e8);color:var(--ink,#1f1c17);'
         'border-radius:50%;font-size:15px;line-height:1;cursor:pointer;display:flex;align-items:center;'
