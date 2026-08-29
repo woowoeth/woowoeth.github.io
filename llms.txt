@@ -51,6 +51,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [白圭 · 智勇仁强](https://ourword.ai/i/bai-gui/four-qualifications/): 白圭 · 智勇仁强——四样缺一样就别做。他把经商说成和用兵、变法一个等级的事。这一篇要回答的是：他为此开出的四条准入条件。
 - [俾斯麦 · 铁与血](https://ourword.ai/i/bismarck/iron-and-blood/): 俾斯麦 · 铁与血——说破真实的货币。史上最著名的演说之一，场合其实很小。这一篇要回答的是：他在那间委员会会议室里到底在争什么。
 - [俾斯麦 · 可能性的艺术](https://ourword.ai/i/bismarck/art-of-the-possible/): 俾斯麦 · 可能性的艺术——赢三场就急刹车。三场速胜之后，他把此后二十年全部用来防止下一场战争。这一篇要回答的是：这个急刹车比开战更难。
+- [约翰·博伊德 · OODA循环](https://ourword.ai/i/boyd/ooda/): 约翰·博伊德 · OODA循环——快在转向不在动作。他先是王牌飞行教官，四十秒内必能反败为胜。这一篇要回答的是：他从空战里提炼的那个循环，快指的是什么。
+- [约翰·博伊德 · 做大人物还是做成事](https://ourword.ai/i/boyd/to-be-or-to-do/): 约翰·博伊德 · 做大人物还是做成事——岔路演讲。他官至上校，再没升过。这一篇要回答的是：他对每个追随者都讲过的那段岔路口演讲。
 - [李小龙 · 像水一样](https://ourword.ai/i/bruce-lee/be-water/): 李小龙 · 像水一样——形随器变。这段话有完整的影像记录，不是后人附会。这一篇要回答的是：像水一样到底是一套什么操作。
 - [李小龙 · 一万次同一脚](https://ourword.ai/i/bruce-lee/one-kick/): 李小龙 · 一万次同一脚——重复的方向。一个以速度和多变闻名的人，留下的却是一句关于重复的话。这一篇要回答的是：这两件事为什么不矛盾。
 - [凯撒 · 骰子已被掷下](https://ourword.ai/i/caesar/the-rubicon/): 凯撒 · 骰子已被掷下——不可逆的那一步。带兵过那条小河就是内战。这一篇要回答的是：他在河边停下来的那段时间在算什么。
@@ -82,6 +84,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [鬼谷子 · 捭阖](https://ourword.ai/i/guiguzi/open-and-close/): 鬼谷子 · 捭阖——该说和该收。谈话里最重要的决定，是在开口之前做的。这一篇要回答的是：这一次到底该开还是该合。
 - [鬼谷子 · 反听](https://ourword.ai/i/guiguzi/listen-in-reverse/): 鬼谷子 · 反听——想让他说，你先别说。怎么让一个不想说的人开口？这一篇要回答的是：鬼谷子给的四个反字。
 - [鬼谷子 · 揣情摩意](https://ourword.ai/i/guiguzi/sound-out/): 鬼谷子 · 揣情摩意——在情绪高低点测量。一个人平时说的和真想的常常不是一回事。这一篇要回答的是：在哪个时刻测最准。
+- [枪炮、病菌与钢铁 · 亚力之问](https://ourword.ai/i/guns-germs-steel/yalis-question/): 枪炮、病菌与钢铁 · 亚力之问——把归因从人身上搬开。整本书是对一个当面提问的回答。这一篇要回答的是：为什么他用五百页把答案从「人」搬到了「地」。
+- [枪炮、病菌与钢铁 · 大陆的轴线](https://ourword.ai/i/guns-germs-steel/axis-of-continents/): 枪炮、病菌与钢铁 · 大陆的轴线——起跑线长什么样。欧亚大陆是横的，美洲和非洲是竖的。这一篇要回答的是：这个小学地理事实为什么值一整章。
 - [郭嘉 · 十胜十败](https://ourword.ai/i/guo-jia/ten-victories/): 郭嘉 · 十胜十败——把士气拆成可核对的条目。面对一个各方面都比自己强的对手，怎么让队伍相信打得过？这一篇要回答的是：郭嘉没有说一句鼓舞的话。
 - [郭嘉 · 留辎重，轻兵兼道](https://ourword.ai/i/guo-jia/leave-the-baggage/): 郭嘉 · 留辎重，轻兵兼道——快是减出来的。所有人都说千里奔袭太险。这一篇要回答的是：郭嘉说险的不是距离，是你带的东西。
 - [郭嘉 · 遗计定辽东](https://ourword.ai/i/guo-jia/waiting-out-liaodong/): 郭嘉 · 遗计定辽东——不逼，让他们自己相争。残敌逃进了别人的地盘，追还是不追？这一篇要回答的是：郭嘉临终留下的那条判断为什么反直觉。
@@ -92,6 +96,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [韩非子 · 形名参同](https://ourword.ai/i/han-feizi/form-and-name/): 韩非子 · 形名参同——说了什么，做到什么。考核最难的不是定标准，是标准和事实对不上时怎么办。这一篇要回答的是：一套两千年前就写清楚的对账法。
 - [韩信 · 背水一战](https://ourword.ai/i/han-xin/back-to-the-river/): 韩信 · 背水一战——把退路先拿掉。背水列阵是兵家大忌，他却赢了。这一篇要回答的是：那两个被后人忽略的前置条件。
 - [韩信 · 不反也不退](https://ourword.ai/i/han-xin/neither-nor/): 韩信 · 不反也不退——最危险的是中间状态。他手上有过三分天下的机会，也有过全身而退的机会。这一篇要回答的是：为什么两个都没选反而最致命。
+- [哈耶克 · 知识是分散的](https://ourword.ai/i/hayek/knowledge-is-dispersed/): 哈耶克 · 知识是分散的——没人拿得到全图。一篇十几页的论文，后来被评为百年最重要的经济学文章之一。这一篇要回答的是：它到底推翻了什么假设。
+- [哈耶克 · 致命的自负](https://ourword.ai/i/hayek/fatal-conceit/): 哈耶克 · 致命的自负——经济学的奇特任务。他给自己学科定的任务不是预测，是泼冷水。这一篇要回答的是：为什么越聪明的人越需要这盆水。
 - [胡雪岩 · 戒欺](https://ourword.ai/i/hu-xueyan/no-cheating/): 胡雪岩 · 戒欺——在能骗的地方立牌子。药材生意最容易掺假。这一篇要回答的是：他把那块匾挂在了什么位置。
 - [胡雪岩 · 囤丝之败](https://ourword.ai/i/hu-xueyan/the-silk-corner/): 胡雪岩 · 囤丝之败——一次押上全部的代价。他曾是大清最有钱的商人，两年之间全部输光。这一篇要回答的是：他判断错的到底是哪一步。
 - [六祖慧能 · 本来无一物](https://ourword.ai/i/huineng/originally-not-a-thing/): 六祖慧能 · 本来无一物——减法比加法难。两首偈子，一首人人称好，一首让一个不识字的人接了衣钵。这一篇要回答的是：差别在哪一层。
@@ -136,10 +142,16 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [拿破仑 · 从伟大到可笑只有一步](https://ourword.ai/i/napoleon/sublime-to-ridiculous/): 拿破仑 · 从伟大到可笑只有一步——没有退出条件的成功。这句俏皮话的出处一点也不俏皮。这一篇要回答的是：他是在什么路上说出它的。
 - [尼采 · 杀不死我的](https://ourword.ai/i/nietzsche/what-does-not-kill/): 尼采 · 杀不死我的——这句话有使用条件。这可能是被引用最多也被用错最多的一句话。这一篇要回答的是：它在什么条件下才成立。
 - [尼采 · 凝视深渊](https://ourword.ai/i/nietzsche/gazing-into-abyss/): 尼采 · 凝视深渊——与怪物战斗的代价。这条箴言只有两句话，却是一整套职业风险提示。这一篇要回答的是：那个变化是怎么发生的。
+- [旧制度与大革命 · 开始改革的时刻](https://ourword.ai/i/old-regime/most-dangerous-moment/): 旧制度与大革命 · 开始改革的时刻——松绑反而引爆。革命前二十年是法国旧制度最繁荣的时期。这一篇要回答的是：托克维尔从这个悖论里提炼的那条定律。
+- [旧制度与大革命 · 穿过革命的集权](https://ourword.ai/i/old-regime/centralization-survived/): 旧制度与大革命 · 穿过革命的集权——推翻一切，继承内核。大革命自称与过去彻底决裂。这一篇要回答的是：托克维尔挖出的那条完整穿过革命的暗线。
 - [战争论 · 政治的继续](https://ourword.ai/i/on-war/continuation-of-politics/): 战争论 · 政治的继续——打是为了谈。全书最有名的一句常被当成犬儒的断言。这一篇要回答的是：它其实是一条约束条款。
 - [战争论 · 摩擦](https://ourword.ai/i/on-war/friction/): 战争论 · 摩擦——最简单的事也是困难的。他为战争学发明了一个物理词。这一篇要回答的是：摩擦从哪里来，以及为什么它不可消除、只可折算。
 - [史记 · 不虚美，不隐恶](https://ourword.ai/i/records-of-the-grand-historian/no-praise-no-hiding/): 史记 · 不虚美，不隐恶——功与过写在同一段。班固给《史记》的六个字评语。这一篇要回答的是：做到它到底难在哪。
 - [史记 · 余甚惑焉](https://ourword.ai/i/records-of-the-grand-historian/i-am-confused/): 史记 · 余甚惑焉——把没想明白的写下来。他在列传第一篇就承认自己想不通。这一篇要回答的是：这三个字为什么比任何结论都值钱。
+- [人类简史 · 靠虚构合作](https://ourword.ai/i/sapiens/fictions-that-cooperate/): 人类简史 · 靠虚构合作——公司也是一个故事。黑猩猩的协作上限是几十只，智人能百万级协作。这一篇要回答的是：赫拉利说差别在一种谁也摸不着的东西。
+- [人类简史 · 小麦驯化了我们](https://ourword.ai/i/sapiens/wheat-domesticated-us/): 人类简史 · 小麦驯化了我们——奢侈品陷阱。农业革命让人口暴增，也让普通人过得更糟。这一篇要回答的是：一个物种的成功和它成员的幸福为什么会背离。
+- [托马斯·谢林 · 自缚双手的优势](https://ourword.ai/i/schelling/binding-yourself/): 托马斯·谢林 · 自缚双手的优势——砍掉选项换可信。博弈论的常识是选项越多越好。这一篇要回答的是：谢林为什么证明了相反的情形。
+- [托马斯·谢林 · 谢林点](https://ourword.ai/i/schelling/focal-points/): 托马斯·谢林 · 谢林点——不沟通的会合。两个人在纽约走散，无法联系，去哪碰头？这一篇要回答的是：为什么多数人给出了同一个答案。
 - [商鞅 · 徙木立信](https://ourword.ai/i/shang-yang/moving-the-pole/): 商鞅 · 徙木立信——先证明说话算数。变法条文早就写好了，他却先去搬了一根木头。这一篇要回答的是：那根木头解决的是什么问题。
 - [商鞅 · 法不阿贵](https://ourword.ai/i/shang-yang/law-above-rank/): 商鞅 · 法不阿贵——第一次例外就是终点。新法推行一年，太子犯了法。这一篇要回答的是：这一刻的处理决定了整套制度往后十年的效力。
 - [司马懿 · 千里袭孟达](https://ourword.ai/i/sima-yi/eight-days/): 司马懿 · 千里袭孟达——对方按常识排的期，就是缺口。对手把你的到达时间算得清清楚楚。这一篇要回答的是：他算错的不是距离，是你会不会守规矩。
@@ -160,6 +172,7 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [道德经 · 上善若水](https://ourword.ai/i/tao-te-ching/water/): 道德经 · 上善若水——往低处去。水被夸了两千年。这一篇要回答的是：它到底做对了哪一件具体的事。
 - [道德经 · 反者道之动](https://ourword.ai/i/tao-te-ching/reversal/): 道德经 · 反者道之动——到顶就是转折。最危险的时刻不是最弱的时候。这一篇要回答的是：为什么一件事做到极致，转折就在下一步。
 - [道德经 · 有之以为利，无之以为用](https://ourword.ai/i/tao-te-ching/usefulness-of-emptiness/): 道德经 · 有之以为利，无之以为用——空的地方才好用。一个车轮真正起作用的是哪部分？这一篇要回答的是：为什么有用的往往是那些看起来没有东西的地方。
+- [技术革命与金融资本 · 泡沫在剧本里](https://ourword.ai/i/technological-revolutions/bubble-in-the-script/): 技术革命与金融资本 · 泡沫在剧本里——狂热是安装期的机制。运河、铁路、电力、汽车、互联网——每次都疯一遍。这一篇要回答的是：佩雷斯为什么说疯是流程的一部分。
 - [思考，快与慢 · 所见即全部](https://ourword.ai/i/thinking-fast-and-slow/wysiati/): 思考，快与慢 · 所见即全部——缺的信息不报警。卡尼曼为大脑最大的毛病造了一个缩写。这一篇要回答的是：WYSIATI 为什么让人对自己的无知毫无感觉。
 - [思考，快与慢 · 损失厌恶](https://ourword.ai/i/thinking-fast-and-slow/loss-aversion/): 思考，快与慢 · 损失厌恶——亏比赚痛一倍。同样一百块，丢掉的痛苦是捡到的快乐的两倍。这一篇要回答的是：这个不对称在悄悄替你做哪些决定。
 - [系统之美 · 结构决定行为](https://ourword.ai/i/thinking-in-systems/structure-drives-behavior/): 系统之美 · 结构决定行为——别怪零件。同一个问题换了三批人还在发生。这一篇要回答的是：梅多斯为什么说这时候该停止怪人。
@@ -172,6 +185,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [王阳明 · 破心中贼](https://ourword.ai/i/wang-yangming/bandits-in-the-heart/): 王阳明 · 破心中贼——最难打的那一仗在里面。他一生打仗没输过。这一篇要回答的是：为什么他说那些仗都是容易的。
 - [国富论 · 晚餐不来自恩惠](https://ourword.ai/i/wealth-of-nations/not-benevolence/): 国富论 · 晚餐不来自恩惠——对准利益说话。全书最著名的一句话讲的是晚餐。这一篇要回答的是：它给出的其实是一条沟通协议。
 - [国富论 · 扣针工厂](https://ourword.ai/i/wealth-of-nations/pin-factory/): 国富论 · 扣针工厂——分工的账。全书从一家小工厂开始。这一篇要回答的是：那笔四万八千倍的账是怎么算出来的，以及它的上限在哪。
+- [国家为什么会失败 · 一墙之隔的诺加莱斯](https://ourword.ai/i/why-nations-fail/two-nogales/): 国家为什么会失败 · 一墙之隔的诺加莱斯——控制变量的天然实验。一道栅栏把一座城分成两半，收入差三倍。这一篇要回答的是：这个案例排除掉了哪些流行解释。
+- [国家为什么会失败 · 精英为什么拦着进步](https://ourword.ai/i/why-nations-fail/fear-of-creative-destruction/): 国家为什么会失败 · 精英为什么拦着进步——不是蠢，是怕。沙皇拒修铁路，奥匈皇帝拒建工厂。这一篇要回答的是：拦住技术的人往往最清楚技术的威力。
 - [武则天 · 不次除官](https://ourword.ai/i/wu-zetian/promote-and-drop/): 武则天 · 不次除官——破格进，也快速退。她提拔的人里有大量后来被贬被杀的。这一篇要回答的是：这套看似混乱的用人法为什么有效。
 - [武则天 · 宰相安得失此人](https://ourword.ai/i/wu-zetian/the-manifesto/): 武则天 · 宰相安得失此人——在骂你的檄文里找人。一篇把你骂得体无完肤的文章送到面前。这一篇要回答的是：她读到最狠的那句时说了什么。
 - [项羽 · 破釜沉舟](https://ourword.ai/i/xiang-yu/sinking-the-boats/): 项羽 · 破釜沉舟——一次性押上全部。巨鹿之战是他一生的顶点。这一篇要回答的是：让他赢得那么彻底的东西，为什么后来一直没变过。
