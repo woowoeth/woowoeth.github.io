@@ -261,3 +261,34 @@ def patch_home_discover():
     print("HWX v2 首页发现层已注入")
 
 patch_home_discover()
+
+# ---------------- 章节页 og:image 指向各自的分享图 ----------------
+# scripts/gen_og.py 一次性生成 i/<slug>/<k>/og.png（静态资产，不进 CI 链）。
+# 这里在每次构建后把「存在 og.png 的章节页」的 og:image / og:image:alt /
+# twitter:image 改写为该页专属图；没有图的页面保持全站图，优雅降级。
+def patch_chapter_og():
+    import os, re
+    n = 0
+    for slug in os.listdir("i"):
+        d1 = os.path.join("i", slug)
+        if not os.path.isdir(d1):
+            continue
+        for k in os.listdir(d1):
+            d2 = os.path.join(d1, k)
+            page = os.path.join(d2, "index.html")
+            png = os.path.join(d2, "og.png")
+            if not (os.path.isdir(d2) and os.path.exists(page) and os.path.exists(png)):
+                continue
+            s = open(page, encoding="utf-8").read()
+            url = "https://ourword.ai/i/%s/%s/og.png" % (slug, k)
+            m = re.search(r"<title>([^<|]+)", s)
+            alt = (m.group(1).strip() if m else "深度阅读")
+            s2 = re.sub(r'(<meta property="og:image" content=")[^"]*(")', r"\g<1>%s\g<2>" % url, s)
+            s2 = re.sub(r'(<meta property="og:image:alt" content=")[^"]*(")', r"\g<1>%s\g<2>" % alt.replace("\\", ""), s2)
+            s2 = re.sub(r'(<meta name="twitter:image" content=")[^"]*(")', r"\g<1>%s\g<2>" % url, s2)
+            if s2 != s:
+                open(page, "w", encoding="utf-8").write(s2)
+                n += 1
+    print("chapter og:image rewired:", n)
+
+patch_chapter_og()
