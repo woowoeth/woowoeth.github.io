@@ -476,7 +476,7 @@ function drawCard(cb){
     }
     ay+=54;   /* 与上一段空出一行 */
     c.fillStyle='#8a8377';c.font='500 34px "Noto Serif SC"';
-    c.textAlign='right';c.fillText(q1.who+' · '+q1.cn+' ——',980,ay);c.textAlign='left';
+    c.textAlign='right';c.fillText('—— '+q1.who+' · '+q1.cn,980,ay);c.textAlign='left';
     c.strokeStyle='#d8d2c6';c.lineWidth=2;c.beginPath();c.moveTo(100,1230);c.lineTo(980,1230);c.stroke();
     c.fillStyle='#1f1c17';c.font='700 34px "Noto Serif SC"';c.fillText('人类世界生存法则',100,1318);
     c.fillStyle='#a33b2e';c.font='500 30px "Noto Serif SC"';c.fillText('OurWord.ai',100,1366);
