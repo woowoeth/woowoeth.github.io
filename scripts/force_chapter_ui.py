@@ -65,6 +65,61 @@ HWX_SCENES = [
     ("交班与退场", [("fan-li","leave-at-the-top"),("lee-kuan-yew","from-my-sickbed"),("guo-ziyi","open-gates"),("wang-jian","asking-for-fields"),("li-bi","no-office")]),
 ]
 
+
+# 100 条一句话介绍（人工手写，keyed by slug；新条目缺介绍时回落到 d 首句并告警）
+HWX_INTROS = {
+"sun-tzu":"最早也最完整的战争方法论，被读了两千五百年","mao":"从绝对弱势打到全局翻盘的战略操盘手",
+"su-yu":"敢三次电报推翻上级部署的战役指挥员","tao-te-ching":"五千字讲透以柔克刚的元典",
+"wang-yangming":"把「知道做不到」判为不知道的心学宗师","zeng-guofan":"资质平平、靠笨功夫成大事的标本",
+"fan-li":"三次散尽家财三次重来的商圣","han-xin":"用兵如神却死于收场的名将",
+"liu-bang":"承认部下都比自己强的开国皇帝","cao-cao":"乱世里只认结果不认出身的组织者",
+"sima-yi":"靠熬和忍拿走天下的终局玩家","zhuge-liang":"把承诺执行到死的丞相",
+"guan-zhong":"先解决吃饭再谈道德的第一名相","buffett":"把复利和常识做到极致的股东信作者",
+"munger":"用上百个思维模型避蠢的巴菲特搭档","li-ka-shing":"九成时间在想失败的华人首富",
+"jobs":"靠砍产品线救活苹果的产品独裁者","zhang-yiming":"把延迟满足做成方法的字节创始人",
+"duan-yongping":"「本分」二字管一生的企业家","inamori":"两造世界五百强、再救日航的经营者",
+"musk":"把一切拆到物理事实重算的造火箭者","huang":"专挑还不存在的市场下注的英伟达掌舵人",
+"thiel":"专问「重要而无人同意」问题的逆向投资人","ren-zhengfei":"在最好年景写《华为的冬天》的创始人",
+"sovereign-individual":"1997年预言数字货币与远程工作的奇书","zhang-liang":"功成身退教科书级别的帝王师",
+"li-bi":"四朝辅政却坚决不要官位的白衣宰相","han-feizi":"不指望人性善的制度设计师",
+"huo-qubing":"不读兵书只看战场的少年名将","li-shimin":"把逆耳之言制度化的皇帝",
+"socrates":"承认自己无知的提问之父","marcus-aurelius":"一边打仗一边写自省笔记的皇帝",
+"machiavelli":"只写人如何做、不写应如何做的政治解剖者","dalio":"把破产教训写成《原则》的桥水创始人",
+"taleb":"专研黑天鹅与反脆弱的风险哲学家","naval":"把财富与运气讲成算法的硅谷天使",
+"wang-xing":"只看核心、不设边界的美团创始人","strategies-of-the-warring-states":"纵横家的话术与人心案例库",
+"analects":"被用了两千年的做人做事底层代码","sapiens":"用「虚构」一词解释人类协作的畅销书",
+"wang-jian":"灭楚之前先自污求田宅的老将","xiang-yu":"赢了所有战役、输掉天下的霸王",
+"wu-zetian":"破格用人也快速弃人的女皇","zhu-yuanzhang":"缓称王、熬死群雄的开国者",
+"zhang-juzheng":"用考成法逼动整个官僚系统的改革家","su-shi":"被贬到哪就把日子过好到哪的大文豪",
+"nietzsche":"专拆现成价值观的锤子哲学家","frankl":"从集中营带出意义疗法的心理学家",
+"soros":"靠认错速度盈利的宏观投机者","influence":"拆解六种顺从开关的说服科学",
+"innovators-dilemma":"解释好公司为何死于好管理的经典","guo-jia":"算人心比算兵力更准的谋士",
+"bruce-lee":"把武术拆到「像水」的截拳道创始人","records-of-the-grand-historian":"功过同录的史家绝唱",
+"zizhi-tongjian":"写给管理者的一千三百年案例集","gandhi":"用一撮盐动摇帝国的非暴力者",
+"einstein":"在专利局改写物理学的问题重构者","shang-yang":"徙木立信再推变法的立规者",
+"caesar":"把宽赦用作武器的内战赢家","mandela":"把审判变成讲台的和解者",
+"napoleon":"在局部永远保持多数的用兵大师","musashi":"六十余战不败的孤剑客",
+"zhuangzi":"把「无用」讲成活路的逍遥派","guo-ziyi":"功高震主却得善终的中兴名将",
+"franklin":"把美德排进日程表的自我管理鼻祖","graham":"发明市场先生与安全边际的价值投资之父",
+"livermore":"四起四落写下投机圣经的作手","thinking-fast-and-slow":"把人类判断的漏洞列成清单的心理学",
+"crowd":"一百年前写透群体失智的社会心理学","bezos":"永远把公司留在第一天的长期主义者",
+"thinking-in-systems":"教人先看结构再怪人的系统论入门","old-regime":"解释革命为何在松绑时爆发的史学经典",
+"on-war":"把战争定义为政治延续的军事哲学","schelling":"证明自缚双手反而更强的博弈论者",
+"hu-xueyan":"靠信用起家也毁于一注的红顶商人","wealth-of-nations":"用晚餐和扣针讲清市场的经济学开山",
+"epictetus":"只管自己能控之事的奴隶哲学家","bai-gui":"人弃我取的商业鼻祖",
+"grove":"只有偏执狂才能生存的英特尔舵手","technological-revolutions":"证明泡沫写在剧本里的技术史框架",
+"marks":"不预测、只定位的周期观察者","feng-dao":"历五代十帝而善终的争议宰相",
+"huineng":"不识字却讲透顿悟的禅宗六祖","simons":"让模型代替人交易的量化之王",
+"lynch":"在商场里找十倍股的基金经理","art-of-worldly-wisdom":"三百年前的处世三百则",
+"why-nations-fail":"用一墙之隔的双城解释贫富的制度经济学","lee-kuan-yew":"只问管不管用的新加坡设计师",
+"boyd":"提出OODA循环、终身上校的空战理论家","guiguzi":"教人先听后说的纵横家祖师",
+"la-rochefoucauld":"三百年前把人心写成箴言的公爵","paul-graham":"教创业者先做不能规模化之事的YC创始人",
+"matsushita":"立志让电器便宜如自来水的经营之神","finite-and-infinite-games":"分清两种游戏的哲学小书",
+"guns-germs-steel":"把文明差距归因于起跑线的地理史观","mencius":"把民心定为权力地基的亚圣",
+"xunzi":"主张制度驯化人性的现实派儒家","drucker":"发明「管理学」这门学科的人",
+"hayek":"证明知识无法集中的经济学家","bismarck":"铁血开国又急刹车的首相",
+}
+
 def _hwx_payload():
     import json, sys as _s
     _s.path.insert(0, "seo")
@@ -83,7 +138,11 @@ def _hwx_payload():
         for k, _n, _w in chs:
             hook = line_by.get((e["n"], k), "")
             if hook: break
-        E.append({"n": e["n"], "s": slug, "c": e["c"], "w": e["w"], "hk": hook,
+        it = HWX_INTROS.get(slug, "")
+        if not it:
+            it = (e.get("d", "").split("。")[0])[:38]
+            print("HWX 警告：%s 缺手写介绍，回落 d 首句" % slug)
+        E.append({"n": e["n"], "s": slug, "c": e["c"], "w": e["w"], "hk": hook, "it": it,
                   "h": [[k, n, w, line_by.get((e["n"], k), "")] for k, n, w in chs]})
     valid = {(x["s"], k) for x in E for k, _, _, _ in x["h"]}
     for t, refs in HWX_SCENES:
@@ -97,7 +156,7 @@ def hwx_block():
     j, ne, nc = _hwx_payload()
     css = """
 #hwx{margin:24px 0 8px}
-#hwx .hwx-h{font-size:15px;letter-spacing:.12em;color:var(--muted,#8a8377);margin:0 0 10px;font-weight:600}
+#hwx .hwx-h{font-size:19px;letter-spacing:.03em;color:var(--ink,#1f1c17);margin:0 0 12px;font-weight:700}
 #hwx .hwx-sc{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:8px}
 #hwx .hwx-sc button{border:1px solid var(--line,#d8d2c6);background:transparent;color:inherit;border-radius:999px;padding:6px 13px;font-size:13.5px;cursor:pointer;line-height:1.6;white-space:nowrap}
 #hwx .hwx-sc button.on{background:var(--ink,#1f1c17);color:var(--paper,#f5f1e8);border-color:var(--ink,#1f1c17)}
@@ -116,8 +175,10 @@ def hwx_block():
 #hwx .hwx-feed{display:grid;grid-template-columns:repeat(auto-fill,minmax(158px,1fr));gap:10px}
 #hwx .hwx-card{display:flex;flex-direction:column;border:1px solid var(--line,#d8d2c6);border-radius:14px;padding:13px 14px 11px;text-decoration:none;color:inherit;background:transparent;transition:border-color .15s}
 #hwx .hwx-card:hover{border-color:var(--acc,#a33b2e)}
+#hwx .hwx-card .r1{display:flex;align-items:baseline;justify-content:space-between;gap:8px}
 #hwx .hwx-card b{font-size:15.5px;line-height:1.4}
-#hwx .hwx-card .cw{font-size:12px;color:var(--muted,#8a8377);margin:3px 0 8px;line-height:1.5}
+#hwx .hwx-card .tag{font-style:normal;font-size:11.5px;color:var(--muted,#8a8377);white-space:nowrap;max-width:52%;overflow:hidden;text-overflow:ellipsis}
+#hwx .hwx-card .it{font-size:12.5px;color:var(--muted,#8a8377);margin:4px 0 7px;line-height:1.6}
 #hwx .hwx-card .hk{font-size:13px;line-height:1.7;flex:1}
 #hwx .hwx-card .hk::before{content:"「"}#hwx .hwx-card .hk::after{content:"」"}
 #hwx .hwx-card .cf{font-size:11.5px;color:var(--acc,#a33b2e);margin-top:9px}
@@ -155,8 +216,8 @@ cats.forEach(function(c){
   catWrap.appendChild(b);
 });
 feed.innerHTML=D.E.map(function(e){
-  var t=(e.n+' '+e.w+' '+e.c+' '+e.hk+' '+e.h.map(function(h){return h[1]+' '+h[2]+' '+h[3]}).join(' ')).toLowerCase().replace(/"/g,'');
-  return '<a class="hwx-card" href="/i/'+e.s+'/" data-c="'+e.c+'" data-t="'+t+'"><b>'+e.n+'</b><span class="cw">'+e.w+'</span><span class="hk">'+(e.hk||e.w)+'</span><span class="cf">'+e.h.length+' 篇深度阅读 →</span></a>';
+  var t=(e.n+' '+e.w+' '+e.c+' '+e.it+' '+e.hk+' '+e.h.map(function(h){return h[1]+' '+h[2]+' '+h[3]}).join(' ')).toLowerCase().replace(/"/g,'');
+  return '<a class="hwx-card" href="/i/'+e.s+'/" data-c="'+e.c+'" data-t="'+t+'"><span class="r1"><b>'+e.n+'</b><i class="tag">'+e.w+'</i></span><span class="it">'+e.it+'</span><span class="hk">'+(e.hk||e.w)+'</span><span class="cf">'+e.h.length+' 篇深度阅读 →</span></a>';
 }).join('');
 function apply(){
   var v=q?q.value.trim().toLowerCase():'';
