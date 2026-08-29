@@ -267,7 +267,7 @@ body{background:var(--paper);color:var(--ink)}
 #hwx .res a b{font-size:14px;font-weight:600}
 #hwx .res a span{display:block;font-size:12.5px;color:var(--muted)}
 #hwx .res a:hover b{border-bottom:1px solid}
-#hwx .hist{display:none;align-items:center;gap:8px;margin:16px 0 -6px;font-size:12px}
+#hwx .hist{display:none;align-items:center;gap:8px;margin:12px 0 2px;font-size:12px}
 #hwx .hist .hl{color:var(--acc);font-weight:700;letter-spacing:.1em;flex:0 0 auto}
 #hwx .hist .hchips{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;flex:1}
 #hwx .hist .hchips::-webkit-scrollbar{display:none}
@@ -302,8 +302,8 @@ body{background:var(--paper);color:var(--ink)}
 #hwx .nc .w{font-size:11.5px;color:var(--muted);margin:2px 0 8px}
 #hwx .nc .q{font-size:13px;line-height:1.7}
 #hwx .nc .q::before{content:"「"}#hwx .nc .q::after{content:"」"}
-#hwx .qc{min-height:230px;border-radius:14px;background:var(--paper2);border:1px solid var(--line);padding:16px 14px 12px;display:flex;flex-direction:column;text-decoration:none;color:inherit;position:relative}
-#hwx .qc .v{flex:1;writing-mode:vertical-rl;font-size:16px;font-weight:700;line-height:1.9;letter-spacing:.12em;margin:0 auto}
+#hwx .qc{min-height:150px;border-radius:14px;background:var(--paper2);border:1px solid var(--line);padding:16px 14px 12px;display:flex;flex-direction:column;text-decoration:none;color:inherit;position:relative}
+#hwx .qc .v{flex:1;font-size:17px;font-weight:700;line-height:1.85;letter-spacing:.02em;display:flex;align-items:center}
 #hwx .qc .v::before{content:"「"}#hwx .qc .v::after{content:"」"}
 #hwx .qc .who{font-size:11.5px;color:var(--muted);margin-top:10px}
 #hwx .qc .who i{font-style:normal;color:var(--acc)}
@@ -350,10 +350,17 @@ function esc(s){return(s||'').replace(/&/g,'&amp;').replace(/"/g,'&quot;')}
 var _n=new Date(),WD='日一二三四五六';
 var day=Math.floor((_n.getTime()-_n.getTimezoneOffset()*60000)/864e5);
 /* ── 今日三样 ── */
-var q1=D.QP[day%D.QP.length];
-document.getElementById('hwx-dt').textContent=(_n.getMonth()+1)+'月'+_n.getDate()+'日 · 星期'+WD[_n.getDay()]+' · 今日一句';
-document.getElementById('hwx-tq').textContent='「'+q1.q+'」';
-document.getElementById('hwx-tqs').innerHTML='—— '+q1.who+' · <a href="'+q1.u+'" data-h="'+esc(q1.who+' · '+q1.cn)+'">'+q1.cn+' →</a>';
+var qIdx=day%D.QP.length, q1=D.QP[qIdx];
+function paintQuote(first){
+  q1=D.QP[qIdx];
+  document.getElementById('hwx-dt').textContent=(_n.getMonth()+1)+'月'+_n.getDate()+'日 · 星期'+WD[_n.getDay()]+(first?' · 今日一句':' · 换一句');
+  document.getElementById('hwx-tq').textContent='「'+q1.q+'」';
+  document.getElementById('hwx-tqs').innerHTML='—— '+q1.who+' · <a href="'+q1.u+'" data-h="'+esc(q1.who+' · '+q1.cn)+'">'+q1.cn+' →</a>';
+}
+paintQuote(true);
+document.getElementById('hwx-next').onclick=function(){
+  qIdx=Math.floor(Math.random()*D.QP.length); paintQuote(false);
+};
 var p1=D.E[(day*7)%D.E.length];
 var tpEl=document.getElementById('hwx-tp');
 tpEl.href='/i/'+p1.s+'/';tpEl.setAttribute('data-h',p1.n);
@@ -462,8 +469,24 @@ D.E.forEach(function(e,i){
     fullCells.push('<div class="kc xtra" data-t="'+esc(k.t.toLowerCase())+'"><span class="qm">？</span><span class="t">'+k.t+'</span><span class="r">'+k.r.map(function(r){return '<a href="'+r.u+'" data-h="'+esc(r.who+' · '+r.cn)+'"><b>'+r.who+'</b> · '+r.cn+' →</a>'}).join('')+'</span></div>');}
 });
 /* ── 最新 feed ── */
-var ncCells=D.NC.map(function(e){
-  return '<a class="nc" href="'+e.u+'" data-h="'+esc(e.pn+' · '+e.cn)+'" style="border-left-color:'+(D.CC[e.c]||'#ccc')+'"><span class="pn"><i>'+e.pn+'</i><span class="nb">新</span></span><b>'+e.cn+'</b><span class="w">'+e.w+'</span>'+(e.q?'<span class="q">'+e.q+'</span>':'')+'</a>';
+/* 最新 tab 混排：每 4 张深度阅读插 1 张人物/书卡、1 张金句卡，每 9 槽插 1 张问题卡 */
+var ncCells=[], _seen={}, _pi=0, _qi=0, _ki=0;
+var byName={}; D.E.forEach(function(e){byName[e.n]=e});
+D.NC.forEach(function(e,i){
+  ncCells.push('<a class="nc" href="'+e.u+'" data-h="'+esc(e.pn+' · '+e.cn)+'" style="border-left-color:'+(D.CC[e.c]||'#ccc')+'"><span class="pn"><i>'+e.pn+'</i><span class="nb">新</span></span><b>'+e.cn+'</b><span class="w">'+e.w+'</span>'+(e.q?'<span class="q">'+e.q+'</span>':'')+'</a>');
+  if(i%4===3){
+    var pe=null;
+    for(var t=0;t<D.NC.length&&!pe;t++){
+      var cand=byName[D.NC[(_pi+t)%D.NC.length].pn];
+      if(cand&&!_seen[cand.s]){pe=cand;_pi=(_pi+t+1)%D.NC.length}
+    }
+    if(pe){_seen[pe.s]=1;
+      ncCells.push('<a class="pc" href="/i/'+pe.s+'/" data-h="'+esc(pe.n)+'" style="--sp:'+(D.CC[pe.c]||'#999')+'"><span class="r1"><b>'+pe.n+'</b><i class="tag">'+pe.w+'</i></span><span class="it">'+pe.it+'</span><span class="hk">'+(pe.hk||pe.w)+'</span><span class="cf">'+cta(pe)+'</span></a>');}
+    var g=D.QP[(_qi*53)%D.QP.length];_qi++;
+    ncCells.push('<a class="qc" href="'+g.u+'" data-h="'+esc(g.who+' · '+g.cn)+'"><span class="seal">句</span><span class="v">'+g.q+'</span><span class="who"><i>'+g.who+'</i> · '+g.cn+'</span></a>');
+  }
+  if(i%9===7&&_ki<D.QQ.length){var k=D.QQ[_ki++];
+    ncCells.push('<div class="kc"><span class="qm">？</span><span class="t">'+k.t+'</span><span class="r">'+k.r.map(function(r){return '<a href="'+r.u+'" data-h="'+esc(r.who+' · '+r.cn)+'"><b>'+r.who+'</b> · '+r.cn+' →</a>'}).join('')+'</span></div>');}
 });
 /* ── 标签页切换 ── */
 var TAB='新';
@@ -510,10 +533,13 @@ switchTab('新');
         "<style>" + css + "</style>\n"
         "<section id=\"hwx\">\n"
         "<button id=\"hwx-theme\" type=\"button\" aria-label=\"切换日夜模式\"></button>\n"
+        "<div class=\"hist\" id=\"hwx-hist\"><span class=\"hl\">最近看过</span>"
+        "<span class=\"hchips\" id=\"hwx-hchips\"></span><button id=\"hwx-hclr\">清空</button></div>"
         "<div class=\"today\">"
         "<div class=\"tq\"><div class=\"dt\" id=\"hwx-dt\"></div><div class=\"q\" id=\"hwx-tq\"></div>"
         "<div class=\"src\" id=\"hwx-tqs\"></div>"
-        "<div class=\"acts\"><button class=\"bs\" id=\"hwx-save\">保存卡片</button>"
+        "<div class=\"acts\"><button id=\"hwx-next\">换一换</button>"
+        "<button class=\"bs\" id=\"hwx-save\">保存卡片</button>"
         "<button id=\"hwx-share\">分享</button></div></div>"
         "<div class=\"tcol\">"
         "<div class=\"tbox\"><div class=\"lb\">今日一篇</div><a id=\"hwx-tp\"></a></div>"
@@ -521,9 +547,7 @@ switchTab('新');
         "</div></div>"
         "<div class=\"hh\">按处境找 <span style=\"font-size:12px;color:var(--muted);font-weight:500\">「我现在遇到的是……」</span></div>"
         "<div class=\"sc\" id=\"hwx-sc\"></div><div class=\"res\" id=\"hwx-res\"></div>"
-        "<div class=\"hist\" id=\"hwx-hist\"><span class=\"hl\">最近看过</span>"
-        "<span class=\"hchips\" id=\"hwx-hchips\"></span><button id=\"hwx-hclr\">清空</button></div>"
-        "<div style=\"display:flex;align-items:baseline;justify-content:space-between;margin-top:18px\">"
+                "<div style=\"display:flex;align-items:baseline;justify-content:space-between;margin-top:18px\">"
         "<div class=\"tabs2\" id=\"hwx-tabs2\">"
         "<button data-t=\"新\" class=\"on\">最新</button><button data-t=\"全\">全部</button></div>"
         "<span class=\"ct\" id=\"hwx-ct\" style=\"font-size:12px;color:var(--muted)\"></span></div>"
@@ -548,6 +572,10 @@ def patch_home_discover():
                   "<title>人类世界生存法则 — 100 位人物与典籍的生存智慧</title>")
     s = s.replace("人类文明的坐标，照亮千年的灯塔",
                   "100 个人物与典籍的生存智慧，跨越 2600 年")
+    # 页头精简：删掉「古今中外 · 东西并观」与页头分享按钮，位置让给「最近看过」
+    s = re.sub(r'<span[^>]*>\s*古今中外[^<]*</span>', '', s)
+    s = re.sub(r'<button class="share-btn"[^>]*>.*?</button>', '', s, flags=re.S, count=1)
+    s = s.replace("古今中外 · 东西并观", "")
     # 去掉 hw-share.js 重复加载
     s = re.sub(r'(?:<script src="/assets/hw-share\.js" defer></script>\s*)+',
                '<script src="/assets/hw-share.js" defer></script>\n', s)
