@@ -41,9 +41,10 @@ def patch_html():
 if __name__ == "__main__":
     patch_html()
 
-# ---------------- HWX: 首页「按处境找」发现层 ----------------
-# 需求：一句话知道每个人/书是谁、能帮我什么；按"我遇到了什么"检索，而非按时间。
-# 结构：处境标签(场景→章节深链) + 100 卡片(名+一句话+章节能力标签) + 即时搜索(挂在已有 #q 上)。
+# ---------------- HWX v2: 首页「按处境找 + 双列人物流」 ----------------
+# v2 依用户反馈：人物入口改小红书式双列卡（名 + 身份一句话 + 钩子句，整卡可点），
+# 卡上不再放章节标签（章节直达走处境区和搜索）；新增类别筛选；处境结果附钩子；
+# 处境标签在手机上单行横滑。数据每次构建自 hw_chapters 再生，场景引用构建期校验。
 HWX_A, HWX_B = "<!--HWX:FIND-->", "<!--/HWX:FIND-->"
 
 HWX_SCENES = [
@@ -68,15 +69,23 @@ def _hwx_payload():
     import json, sys as _s
     _s.path.insert(0, "seo")
     import hw_chapters as C, hw_slugs, build_seo
-    ch_by = {}
+    ch_by, line_by = {}, {}
     for ch in C.CHAPTERS:
         ch_by.setdefault(ch["parent"], []).append((ch["k"], ch["n"], ch["w"]))
-    E, slug_of = [], {}
+    for pname, spec in C.PARENTS.items():
+        for it in spec.get("items", []):
+            line_by[(pname, it["k"])] = it.get("line", "")
+    E = []
     for e in build_seo.load_array():
-        slug = hw_slugs.slug_for(e["n"]); slug_of[e["n"]] = slug
-        E.append({"n": e["n"], "s": slug, "c": e["c"], "w": e["w"],
-                  "h": [[k, n, w] for k, n, w in ch_by.get(e["n"], [])]})
-    valid = {(x["s"], k) for x in E for k, _, _ in x["h"]}
+        slug = hw_slugs.slug_for(e["n"])
+        chs = ch_by.get(e["n"], [])
+        hook = ""
+        for k, _n, _w in chs:
+            hook = line_by.get((e["n"], k), "")
+            if hook: break
+        E.append({"n": e["n"], "s": slug, "c": e["c"], "w": e["w"], "hk": hook,
+                  "h": [[k, n, w, line_by.get((e["n"], k), "")] for k, n, w in chs]})
+    valid = {(x["s"], k) for x in E for k, _, _, _ in x["h"]}
     for t, refs in HWX_SCENES:
         for s_, k_ in refs:
             assert (s_, k_) in valid, "HWX 场景引用不存在: %s/%s (%s)" % (s_, k_, t)
@@ -87,36 +96,41 @@ def _hwx_payload():
 def hwx_block():
     j, ne, nc = _hwx_payload()
     css = """
-#hwx{margin:26px 0 10px}
+#hwx{margin:24px 0 8px}
 #hwx .hwx-h{font-size:15px;letter-spacing:.12em;color:var(--muted,#8a8377);margin:0 0 10px;font-weight:600}
 #hwx .hwx-sc{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:8px}
-#hwx .hwx-sc button{border:1px solid var(--line,#d8d2c6);background:transparent;color:inherit;border-radius:999px;padding:6px 13px;font-size:13.5px;cursor:pointer;line-height:1.6}
+#hwx .hwx-sc button{border:1px solid var(--line,#d8d2c6);background:transparent;color:inherit;border-radius:999px;padding:6px 13px;font-size:13.5px;cursor:pointer;line-height:1.6;white-space:nowrap}
 #hwx .hwx-sc button.on{background:var(--ink,#1f1c17);color:var(--paper,#f5f1e8);border-color:var(--ink,#1f1c17)}
+@media(max-width:640px){#hwx .hwx-sc{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding-bottom:2px}#hwx .hwx-sc::-webkit-scrollbar{display:none}}
 #hwx .hwx-res{display:none;border-left:3px solid var(--acc,#a33b2e);padding:6px 0 6px 14px;margin:10px 0 16px}
 #hwx .hwx-res.on{display:block}
-#hwx .hwx-res a{display:block;padding:5px 0;text-decoration:none;color:inherit;font-size:14.5px;line-height:1.7}
-#hwx .hwx-res a b{font-weight:600}
-#hwx .hwx-res a span{color:var(--muted,#8a8377)}
+#hwx .hwx-res a{display:block;padding:6px 0;text-decoration:none;color:inherit}
+#hwx .hwx-res a b{font-weight:600;font-size:14.5px}
+#hwx .hwx-res a .hk{display:block;color:var(--muted,#8a8377);font-size:13px;line-height:1.6;margin-top:1px}
 #hwx .hwx-res a:hover b{border-bottom:1px solid currentColor}
-#hwx .hwx-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:14px}
-@media(max-width:980px){#hwx .hwx-grid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:640px){#hwx .hwx-grid{grid-template-columns:1fr}}
-#hwx .hwx-card{border:1px solid var(--line,#d8d2c6);border-radius:10px;padding:11px 13px 9px}
-#hwx .hwx-card>a{display:block;text-decoration:none;color:inherit}
-#hwx .hwx-card b{font-size:15.5px}
-#hwx .hwx-card .cw{display:block;font-size:13px;color:var(--muted,#8a8377);margin:2px 0 7px;line-height:1.55}
-#hwx .hwx-chips{display:flex;flex-wrap:wrap;gap:5px}
-#hwx .hwx-chips a{font-size:12px;line-height:1.5;padding:2.5px 8px;border:1px solid var(--line,#d8d2c6);border-radius:999px;text-decoration:none;color:inherit;opacity:.92}
-#hwx .hwx-chips a:hover{border-color:var(--acc,#a33b2e);color:var(--acc,#a33b2e);opacity:1}
+#hwx .hwx-bar{display:flex;align-items:baseline;justify-content:space-between;gap:10px;margin:20px 0 8px;flex-wrap:wrap}
+#hwx .hwx-cat{display:flex;flex-wrap:wrap;gap:6px}
+#hwx .hwx-cat button{border:none;background:transparent;color:var(--muted,#8a8377);font-size:12.5px;cursor:pointer;padding:3px 8px;border-radius:999px;line-height:1.5}
+#hwx .hwx-cat button.on{background:var(--line,#d8d2c6);color:var(--ink,#1f1c17)}
+@media(max-width:640px){#hwx .hwx-cat{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;max-width:100%}#hwx .hwx-cat::-webkit-scrollbar{display:none}#hwx .hwx-cat button{white-space:nowrap}}
+#hwx .hwx-feed{display:grid;grid-template-columns:repeat(auto-fill,minmax(158px,1fr));gap:10px}
+#hwx .hwx-card{display:flex;flex-direction:column;border:1px solid var(--line,#d8d2c6);border-radius:14px;padding:13px 14px 11px;text-decoration:none;color:inherit;background:transparent;transition:border-color .15s}
+#hwx .hwx-card:hover{border-color:var(--acc,#a33b2e)}
+#hwx .hwx-card b{font-size:15.5px;line-height:1.4}
+#hwx .hwx-card .cw{font-size:12px;color:var(--muted,#8a8377);margin:3px 0 8px;line-height:1.5}
+#hwx .hwx-card .hk{font-size:13px;line-height:1.7;flex:1}
+#hwx .hwx-card .hk::before{content:"「"}#hwx .hwx-card .hk::after{content:"」"}
+#hwx .hwx-card .cf{font-size:11.5px;color:var(--acc,#a33b2e);margin-top:9px}
 #hwx .hwx-more{margin-top:12px;font-size:13px;color:var(--muted,#8a8377)}
 #hwx .hwx-hide{display:none!important}
 """.strip()
     js = """
 (function(){
 var D=HWXD, q=document.getElementById('q');
-var scWrap=document.getElementById('hwx-sc'), res=document.getElementById('hwx-res'), grid=document.getElementById('hwx-grid');
+var scWrap=document.getElementById('hwx-sc'), res=document.getElementById('hwx-res');
+var feed=document.getElementById('hwx-feed'), catWrap=document.getElementById('hwx-cat');
 var byS={}; D.E.forEach(function(e){byS[e.s]=e});
-D.S.forEach(function(s,i){
+D.S.forEach(function(s){
   var b=document.createElement('button'); b.type='button'; b.textContent=s.t;
   b.onclick=function(){
     var on=b.classList.contains('on');
@@ -125,33 +139,41 @@ D.S.forEach(function(s,i){
     b.classList.add('on');
     res.innerHTML=s.r.map(function(r){
       var e=byS[r[0]], ch=e.h.filter(function(h){return h[0]===r[1]})[0];
-      return '<a href="/i/'+r[0]+'/'+r[1]+'/"><b>'+e.n+' · '+ch[1]+'</b> <span>— '+ch[2]+'</span></a>';
+      var hint=ch[3]||ch[2];
+      return '<a href="/i/'+r[0]+'/'+r[1]+'/"><b>'+e.n+' · '+ch[1]+'</b><span class="hk">'+hint+'</span></a>';
     }).join('');
-    res.classList.add('on'); res.scrollIntoView({behavior:'smooth',block:'nearest'});
+    res.classList.add('on');
   };
   scWrap.appendChild(b);
 });
-grid.innerHTML=D.E.map(function(e){
-  var chips=e.h.map(function(h){return '<a href="/i/'+e.s+'/'+h[0]+'/" title="'+h[1]+'">'+h[2]+'</a>'}).join('');
-  var t=(e.n+' '+e.w+' '+e.c+' '+e.h.map(function(h){return h[1]+' '+h[2]}).join(' ')).toLowerCase();
-  return '<div class="hwx-card" data-t="'+t.replace(/"/g,'')+'"><a href="/i/'+e.s+'/"><b>'+e.n+'</b><span class="cw">'+e.w+'</span></a><div class="hwx-chips">'+chips+'</div></div>';
+var CAT='全部', cats=['全部'];
+D.E.forEach(function(e){if(cats.indexOf(e.c)<0)cats.push(e.c)});
+cats.forEach(function(c){
+  var b=document.createElement('button'); b.type='button'; b.textContent=c;
+  if(c===CAT)b.classList.add('on');
+  b.onclick=function(){CAT=c;catWrap.querySelectorAll('button').forEach(function(x){x.classList.toggle('on',x.textContent===c)});apply()};
+  catWrap.appendChild(b);
+});
+feed.innerHTML=D.E.map(function(e){
+  var t=(e.n+' '+e.w+' '+e.c+' '+e.hk+' '+e.h.map(function(h){return h[1]+' '+h[2]+' '+h[3]}).join(' ')).toLowerCase().replace(/"/g,'');
+  return '<a class="hwx-card" href="/i/'+e.s+'/" data-c="'+e.c+'" data-t="'+t+'"><b>'+e.n+'</b><span class="cw">'+e.w+'</span><span class="hk">'+(e.hk||e.w)+'</span><span class="cf">'+e.h.length+' 篇深度阅读 →</span></a>';
 }).join('');
-if(q){
-  q.setAttribute('placeholder','搜索：人物、书、一句话、章节、处境…');
-  q.addEventListener('input',function(){
-    var v=q.value.trim().toLowerCase();
-    grid.querySelectorAll('.hwx-card').forEach(function(c){
-      c.classList.toggle('hwx-hide', !!v && c.getAttribute('data-t').indexOf(v)<0);
-    });
+function apply(){
+  var v=q?q.value.trim().toLowerCase():'';
+  feed.querySelectorAll('.hwx-card').forEach(function(c){
+    var ok=(CAT==='全部'||c.getAttribute('data-c')===CAT)&&(!v||c.getAttribute('data-t').indexOf(v)>=0);
+    c.classList.toggle('hwx-hide',!ok);
   });
 }
+if(q){q.setAttribute('placeholder','搜索：人物、书、一句话、章节、处境…');q.addEventListener('input',apply);}
 })();
 """.strip()
     return (HWX_A + "\n<section id=\"hwx\" aria-label=\"按处境找\">"
             "<div class=\"hwx-h\">按处境找 ——「我现在遇到的是……」</div>"
             "<div class=\"hwx-sc\" id=\"hwx-sc\"></div><div class=\"hwx-res\" id=\"hwx-res\"></div>"
-            "<div class=\"hwx-h\" style=\"margin-top:18px\">全部 " + str(ne) + " 个入口 —— 一句话是谁 · 标签是他能帮你的事（点标签直达）</div>"
-            "<div class=\"hwx-grid\" id=\"hwx-grid\"></div>"
+            "<div class=\"hwx-bar\"><div class=\"hwx-h\" style=\"margin:0\">全部 " + str(ne) + " 个入口</div>"
+            "<div class=\"hwx-cat\" id=\"hwx-cat\"></div></div>"
+            "<div class=\"hwx-feed\" id=\"hwx-feed\"></div>"
             "<div class=\"hwx-more\">共 " + str(nc) + " 篇深度阅读。按时间浏览请见下方年表。</div>"
             "<style>" + css + "</style>"
             "<script>var HWXD=" + j + ";</script><script>" + js + "</script>"
@@ -166,6 +188,6 @@ def patch_home_discover():
     assert anchor in s, "HWX 锚点丢失：首页结构变了"
     s = s.replace(anchor, "\n" + hwx_block() + "\n" + anchor, 1)
     open(p, "w", encoding="utf-8").write(s)
-    print("HWX 首页发现层已注入")
+    print("HWX v2 首页发现层已注入")
 
 patch_home_discover()
