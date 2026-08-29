@@ -182,8 +182,10 @@ def hwx_block():
 #hwx .hwx-card .hk{font-size:13px;line-height:1.7;flex:1}
 #hwx .hwx-card .hk::before{content:"「"}#hwx .hwx-card .hk::after{content:"」"}
 #hwx .hwx-card .cf{font-size:11.5px;color:var(--acc,#a33b2e);margin-top:9px}
-#hwx .hwx-more{margin-top:12px;font-size:13px;color:var(--muted,#8a8377)}
 #hwx .hwx-hide{display:none!important}
+.tabs,#tl-wrap{display:none!important}
+.family a{color:inherit;text-decoration:none}
+.family a:hover{color:var(--ink,#1f1c17)}
 """.strip()
     js = """
 (function(){
@@ -220,13 +222,15 @@ feed.innerHTML=D.E.map(function(e){
   return '<a class="hwx-card" href="/i/'+e.s+'/" data-c="'+e.c+'" data-t="'+t+'"><span class="r1"><b>'+e.n+'</b><i class="tag">'+e.w+'</i></span><span class="it">'+e.it+'</span><span class="hk">'+(e.hk||e.w)+'</span><span class="cf">'+e.h.length+' 篇深度阅读 →</span></a>';
 }).join('');
 function apply(){
-  var v=q?q.value.trim().toLowerCase():'';
+  var v=q?q.value.trim().toLowerCase():'', vis=0;
   feed.querySelectorAll('.hwx-card').forEach(function(c){
     var ok=(CAT==='全部'||c.getAttribute('data-c')===CAT)&&(!v||c.getAttribute('data-t').indexOf(v)>=0);
-    c.classList.toggle('hwx-hide',!ok);
+    c.classList.toggle('hwx-hide',!ok); if(ok)vis++;
   });
+  var ct=document.getElementById('ct'); if(ct)ct.textContent=vis+' 个入口';
 }
 if(q){q.setAttribute('placeholder','搜索：人物、书、一句话、章节、处境…');q.addEventListener('input',apply);}
+window.addEventListener('load',apply);
 })();
 """.strip()
     return (HWX_A + "\n<section id=\"hwx\" aria-label=\"按处境找\">"
@@ -235,7 +239,6 @@ if(q){q.setAttribute('placeholder','搜索：人物、书、一句话、章节�
             "<div class=\"hwx-bar\"><div class=\"hwx-h\" style=\"margin:0\">全部 " + str(ne) + " 个入口</div>"
             "<div class=\"hwx-cat\" id=\"hwx-cat\"></div></div>"
             "<div class=\"hwx-feed\" id=\"hwx-feed\"></div>"
-            "<div class=\"hwx-more\">共 " + str(nc) + " 篇深度阅读。按时间浏览请见下方年表。</div>"
             "<style>" + css + "</style>"
             "<script>var HWXD=" + j + ";</script><script>" + js + "</script>"
             "</section>\n" + HWX_B)
@@ -245,6 +248,12 @@ def patch_home_discover():
     p = "index.html"
     s = open(p, encoding="utf-8").read()
     s = re.sub(r"\n*" + re.escape(HWX_A) + r".*?" + re.escape(HWX_B) + r"\n*", "", s, flags=re.S)
+    s = re.sub(r'(?:<script src="/assets/hw-share\.js" defer></script>\s*)+',
+               '<script src="/assets/hw-share.js" defer></script>\n', s)
+    # noscript 的 GEO 区块自带一个 h1，与可见 h1 重复——爬虫视角一页双 h1，降为 h2
+    s = re.sub(r"(<noscript>)(.*?)(</noscript>)",
+               lambda m: m.group(1) + m.group(2).replace("<h1", "<h2").replace("</h1>", "</h2>") + m.group(3),
+               s, flags=re.S)
     anchor = '<div class="tabs" id="tabs"'
     assert anchor in s, "HWX 锚点丢失：首页结构变了"
     s = s.replace(anchor, "\n" + hwx_block() + "\n" + anchor, 1)

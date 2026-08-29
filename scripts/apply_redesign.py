@@ -48,12 +48,12 @@ def patch_theme():
     if not theme.exists():
         return
     ts = theme.read_text(encoding="utf-8")
-    ts = re.sub(r"hw-chapter\.css\?v=\d+", "hw-chapter.css?v=4", ts)
+    ts = re.sub(r"hw-chapter\.css\?v=\d+", "hw-chapter.css?v=5", ts)
     # NOTE: never delete a %s from hw_theme's body template — the arg tuple still
     # passes page_url and the build dies with "not all arguments converted".
     # The cite line is removed from the *output* by seo/strip_cite.py instead.
     theme.write_text(ts, encoding="utf-8")
-    print("theme css v=4")
+    print("theme css v=5")
 
 def patch_entry_css():
     """Idempotent by sentinel. The old whitespace-sniffing check never matched its own
@@ -69,8 +69,16 @@ def patch_entry_css():
         es = es[:es.index(mark)].rstrip("\n") + "\n"
     es = es.rstrip("\n") + "\n\n" + mark + "\n" + (
         "@media (max-width:900px){\n"
-        "  .side{display:none!important}\n"
-        "  .layout{grid-template-columns:1fr!important}\n}\n"
+        "  .layout{grid-template-columns:1fr!important}\n"
+        "  .side{display:block!important;position:static;order:-1;margin:0 0 6px}\n"
+        "  .side .panel{border:0;background:transparent;padding:0;box-shadow:none}\n"
+        "  .side .ph{display:none}\n"
+        "  .side .toc{display:flex;flex-wrap:nowrap;overflow-x:auto;gap:8px;"
+        "-webkit-overflow-scrolling:touch;scrollbar-width:none;padding:2px 0 8px}\n"
+        "  .side .toc::-webkit-scrollbar{display:none}\n"
+        "  .side .toc a{flex:0 0 auto;border:1px solid var(--rule,#d8d2c6);border-radius:999px;"
+        "padding:5px 11px;font-size:12.5px;white-space:nowrap;color:inherit;text-decoration:none}\n"
+        "  .side .toc a .i{color:#9d2933;margin-right:4px}\n}\n"
         "mark.hl{background:transparent;color:#9d2933;font-weight:700;"
         "text-decoration:underline;text-decoration-color:#9d2933;"
         "text-underline-offset:.16em;text-decoration-thickness:1.5px}\n"
