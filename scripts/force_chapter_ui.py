@@ -231,6 +231,14 @@ def hwx_block():
     css = r"""
 :root{color-scheme:light dark;--paper:#f5f1e8;--ink:#1f1c17;--acc:#a33b2e;--muted:#8a8377;--line:#d8d2c6;--paper2:#eee8da;--card:#faf7f0;--kbg:#1f1c17;--kfg:#f5f1e8;--kmut:#cfc7b8}
 @media(prefers-color-scheme:dark){:root{--paper:#171410;--ink:#eae3d4;--acc:#c65f4f;--muted:#9a917f;--line:#3a342a;--paper2:#201c15;--card:#1d1913;--kbg:#eae3d4;--kfg:#171410;--kmut:#5a5344}}
+:root[data-theme="light"]{--paper:#f5f1e8;--ink:#1f1c17;--acc:#a33b2e;--muted:#8a8377;--line:#d8d2c6;--paper2:#eee8da;--card:#faf7f0;--kbg:#1f1c17;--kfg:#f5f1e8;--kmut:#cfc7b8}
+:root[data-theme="dark"]{--paper:#171410;--ink:#eae3d4;--acc:#c65f4f;--muted:#9a917f;--line:#3a342a;--paper2:#201c15;--card:#1d1913;--kbg:#eae3d4;--kfg:#171410;--kmut:#5a5344}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--white:#1d1913;--line-strong:rgba(234,227,212,.22);--ink-30:rgba(234,227,212,.42);--ink-50:rgba(234,227,212,.6)}}
+:root[data-theme="dark"]{--white:#1d1913;--line-strong:rgba(234,227,212,.22);--ink-30:rgba(234,227,212,.42);--ink-50:rgba(234,227,212,.6)}
+body{background:var(--paper);color:var(--ink)}
+.share-btn{background:var(--white)!important;color:var(--ink)!important;border-color:var(--line-strong)!important}
+#hwx-theme{border:1px solid var(--line);background:transparent;color:var(--muted);border-radius:999px;padding:4px 11px;font-family:inherit;font-size:12px;cursor:pointer;white-space:nowrap;flex:0 0 auto}
+#hwx-theme:hover{color:var(--ink);border-color:var(--ink)}
 #hwx .today{display:grid;grid-template-columns:1.5fr 1fr;gap:14px;margin:18px 0 6px}
 @media(max-width:700px){#hwx .today{grid-template-columns:1fr}}
 #hwx .tq{border:1px solid var(--line);border-radius:16px;padding:20px 22px;background:var(--paper2);display:flex;flex-direction:column}
@@ -240,6 +248,8 @@ def hwx_block():
 #hwx .tq .src a{color:var(--acc);text-decoration:none}
 #hwx .tq .acts{display:flex;gap:8px;margin-top:14px}
 #hwx .tq .acts button{border:1.5px solid var(--ink);background:transparent;color:var(--ink);border-radius:999px;padding:5px 14px;font-family:inherit;font-size:12.5px;cursor:pointer}
+#hwx .hwx-top{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin:12px 0 4px}
+#hwx .tagline{font-size:13px;color:var(--muted);line-height:1.7;margin:0;flex:1}
 #hwx .tq .acts .bs{background:var(--ink);color:var(--paper)}
 #hwx .tcol{display:flex;flex-direction:column;gap:14px}
 #hwx .tbox{border:1px solid var(--line);border-radius:16px;padding:14px 16px;flex:1}
@@ -286,9 +296,10 @@ def hwx_block():
 #hwx .pc .hk::before{content:"「"}#hwx .pc .hk::after{content:"」"}
 #hwx .pc .ls{font-size:11px;color:var(--muted);margin-top:8px;border-top:1px dashed var(--line);padding-top:7px;line-height:1.6}
 #hwx .pc .cf{font-size:11px;color:var(--acc);margin-top:8px}
-#hwx .nc{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:14px;padding:12px 13px 10px;text-decoration:none;color:inherit;background:var(--card)}
+#hwx .nc{display:flex;flex-direction:column;border:1px solid var(--line);border-left:4px solid var(--line);border-radius:14px;padding:12px 13px 10px;text-decoration:none;color:inherit;background:var(--card)}
 #hwx .nc .pn{font-size:12px;color:var(--muted);margin-bottom:3px}
 #hwx .nc .pn i{font-style:normal;color:var(--acc)}
+#hwx .nc .nb{font-size:10px;background:var(--acc);color:#fff;border-radius:4px;padding:1px 5px;margin-left:5px;vertical-align:1px}
 #hwx .nc b{font-size:15px}
 #hwx .nc .w{font-size:11.5px;color:var(--muted);margin:2px 0 8px}
 #hwx .nc .q{font-size:13px;line-height:1.7}
@@ -313,6 +324,29 @@ def hwx_block():
     js = r"""
 (function(){
 var D=HWXD;
+/* 日夜模式：默认跟随系统，点击在 跟随/日间/夜间 之间循环并记住 */
+(function(){
+  var R=document.documentElement, KEY='hwx_theme';
+  function sysDark(){return !!(window.matchMedia&&window.matchMedia('(prefers-color-scheme:dark)').matches)}
+  function get(){try{return localStorage.getItem(KEY)||'auto'}catch(e){return 'auto'}}
+  function set(v){try{localStorage.setItem(KEY,v)}catch(e){}}
+  function eff(){var m=get();return m==='auto'?(sysDark()?'dark':'light'):m}
+  function paint(){
+    var m=get();
+    if(m==='auto')R.removeAttribute('data-theme');else R.setAttribute('data-theme',m);
+    var b=document.getElementById('hwx-theme');
+    if(b)b.textContent=(eff()==='dark'?'\u263e 夜间':'\u2600 日间')+(m==='auto'?' · 跟随系统':'');
+  }
+  paint();
+  setTimeout(function(){
+    var b=document.getElementById('hwx-theme');
+    if(!b)return;
+    b.onclick=function(){var o=['auto','light','dark'];set(o[(o.indexOf(get())+1)%3]);paint()};
+    paint();
+  },0);
+  if(window.matchMedia){var mq=window.matchMedia('(prefers-color-scheme:dark)');
+    if(mq.addEventListener)mq.addEventListener('change',paint);else if(mq.addListener)mq.addListener(paint);}
+})();
 function esc(s){return(s||'').replace(/&/g,'&amp;').replace(/"/g,'&quot;')}
 var _n=new Date(),WD='日一二三四五六';
 var day=Math.floor((_n.getTime()-_n.getTimezoneOffset()*60000)/864e5);
@@ -421,7 +455,7 @@ D.E.forEach(function(e,i){
 });
 /* ── 最新 feed ── */
 var ncCells=D.NC.map(function(e){
-  return '<a class="nc" href="'+e.u+'" data-h="'+esc(e.pn+' · '+e.cn)+'"><span class="pn"><i>'+e.pn+'</i> 新增</span><b>'+e.cn+'</b><span class="w">'+e.w+'</span>'+(e.q?'<span class="q">'+e.q+'</span>':'')+'</a>';
+  return '<a class="nc" href="'+e.u+'" data-h="'+esc(e.pn+' · '+e.cn)+'" style="border-left-color:'+(D.CC[e.c]||'#ccc')+'"><span class="pn"><i>'+e.pn+'</i><span class="nb">新</span></span><b>'+e.cn+'</b><span class="w">'+e.w+'</span>'+(e.q?'<span class="q">'+e.q+'</span>':'')+'</a>';
 });
 /* ── 标签页切换 ── */
 var TAB='新';
@@ -467,6 +501,10 @@ switchTab('新');
         "<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;600;700;900&display=swap\">\n"
         "<style>" + css + "</style>\n"
         "<section id=\"hwx\">\n"
+        "<div class=\"hwx-top\">"
+        "<p class=\"tagline\">100 位人物与典籍的深度阅读——每一条写清楚：这个人留下的最重要想法，以及你现在怎么用。</p>"
+        "<button id=\"hwx-theme\" type=\"button\" aria-label=\"切换日夜模式\"></button>"
+        "</div>\n"
         "<div class=\"today\">"
         "<div class=\"tq\"><div class=\"dt\" id=\"hwx-dt\"></div><div class=\"q\" id=\"hwx-tq\"></div>"
         "<div class=\"src\" id=\"hwx-tqs\"></div>"
@@ -499,6 +537,8 @@ def patch_home_discover():
     p = "index.html"
     s = open(p, encoding="utf-8").read()
     s = re.sub(r"\n*" + re.escape(HWX_A) + r".*?" + re.escape(HWX_B) + r"\n*", "", s, flags=re.S)
+    # 过时计数兜底：条目数以 build_seo 为准
+    s = s.replace("95 位人物与典籍", "100 位人物与典籍")
     # 去掉 hw-share.js 重复加载
     s = re.sub(r'(?:<script src="/assets/hw-share\.js" defer></script>\s*)+',
                '<script src="/assets/hw-share.js" defer></script>\n', s)
