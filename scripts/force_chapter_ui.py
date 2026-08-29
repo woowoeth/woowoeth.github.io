@@ -121,6 +121,15 @@ CAT_COLOR = {
     "心智·哲学":"#4e6b7a","财富·投资":"#8a6d2f","创业·产品":"#c26b3f","典籍·洞察":"#6b5b73",
 }
 
+def _tint(hex_color, alpha):
+    """把类别色化成极淡的底色——只用来区分门类，不能抢正文。"""
+    h = hex_color.lstrip("#")
+    r, g, b = int(h[0:2], 16), int(h[2:4], 16), int(h[4:6], 16)
+    return "rgba(%d,%d,%d,%.3f)" % (r, g, b, alpha)
+
+CAT_TINT = {k: _tint(v, 0.055) for k, v in CAT_COLOR.items()}      # 亮色底
+CAT_TINT_D = {k: _tint(v, 0.16) for k, v in CAT_COLOR.items()}     # 暗色底
+
 def _hwx_payload():
     import json, sys as _s, re
     _s.path.insert(0, "seo")
@@ -136,6 +145,15 @@ def _hwx_payload():
         fit = [q for q in qs if 8 <= len(q) <= maxlen]
         return max(fit, key=len) if fit else (qs[0] if qs else "")
 
+    def scene_of(ch):
+        """apply 里的「局面：…」句——这句话说的正是「什么时候用得上」。"""
+        m = re.search(r"局面：(.+?)(?:\n|$)", ch.get("apply", ""))
+        return m.group(1).strip().rstrip("。") if m else ""
+
+    def gloss_of(ch):
+        """金句解析：角度一句 + 适用场景，全部取自已有字段，不另造话。"""
+        return {"pt": ch.get("w", ""), "when": scene_of(ch)}
+
     E, ch_by = [], {}
     for ch in C.CHAPTERS:
         ch_by.setdefault(ch["parent"], []).append((ch["k"], ch["n"], ch["w"]))
@@ -150,6 +168,7 @@ def _hwx_payload():
         # 搜索索引：并入该条目所有章节的标题、角度、金句与正文关键词，
         # 使「止损」「复利」这类只在正文出现的词也能搜到。
         body = []
+        first_ch = next((c for c in C.CHAPTERS if c["parent"] == e["n"]), None)
         for ch in C.CHAPTERS:
             if ch["parent"] != e["n"]:
                 continue
@@ -163,6 +182,8 @@ def _hwx_payload():
         E.append({"n": e["n"], "s": slug, "c": e["c"], "w": e["w"], "it": it, "hk": hook,
                   "nc": len(chs), "c0": chs[0][1] if chs else "",
                   "cs": [n for _, n, _ in chs[:3]] if len(chs) >= 3 else [],
+                  "sc": scene_of(first_ch) if first_ch else "",
+                  "pt": first_ch.get("w", "") if first_ch else "",
                   "ix": re.sub(r"[\s，。、；：！？「」（）——…]+", "", " ".join(body))[:900]})
 
     # 金句池：每章取 8-34 字里最长一条，带出处深链
@@ -170,7 +191,9 @@ def _hwx_payload():
     for ch in C.CHAPTERS:
         q = best_q(ch)
         if not q: continue
+        g = gloss_of(ch)
         QP.append({"q": q, "who": ch["parent"], "cn": ch["n"],
+                   "pt": g["pt"], "when": g["when"],
                    "u": "/i/%s/%s/" % (hw_slugs.slug_for(ch["parent"]), ch["k"])})
 
     # 问题卡：10 张第一人称问句
@@ -208,6 +231,8 @@ def _hwx_payload():
         m = re.search(r"先问：(.+?)(?:\n|$)", ch.get("apply", ""))
         if m:
             ASK.append({"t": m.group(1).strip(), "who": ch["parent"], "cn": ch["n"],
+                        "sc": scene_of(ch), "pt": ch.get("w", ""),
+                        "dek": re.sub(r"==", "", ch.get("dek", "")),
                         "u": "/i/%s/%s/" % (hw_slugs.slug_for(ch["parent"]), ch["k"])})
 
     # NC: 40 最新章节（按章节 py 文件 git 首次 commit 时间降序）
@@ -232,11 +257,12 @@ def _hwx_payload():
         ch = next(c for c in C.CHAPTERS if c["parent"] == pname and c["k"] == k)
         slug = hw_slugs.slug_for(pname)
         NC.append({"pn": pname, "cn": ch["n"], "w": ch.get("w",""), "q": best_q(ch),
+                   "sc": scene_of(ch),
                    "s": slug, "k": k, "u": "/i/%s/%s/" % (slug, k),
                    "c": cat_by.get(pname,"")})
 
     j = json.dumps({"E": E, "QP": QP, "QQ": QQ, "S": S, "ASK": ASK,
-                    "CC": CAT_COLOR, "NC": NC}, ensure_ascii=False, separators=(",",":")).replace("</","<\\/")
+                    "CC": CAT_COLOR, "CT": CAT_TINT, "CTD": CAT_TINT_D, "NC": NC}, ensure_ascii=False, separators=(",",":")).replace("</","<\\/")
     return j, len(E), len(NC)
 
 
@@ -270,6 +296,8 @@ body{background:var(--paper);color:var(--ink)}
 #hwx .tq .q{font-size:clamp(18px,3.2vw,24px);font-weight:700;line-height:1.8;margin-bottom:12px}
 #hwx .tq .src{font-size:12.5px;color:var(--muted)}
 #hwx .tq .src a{color:var(--acc);text-decoration:none}
+#hwx .tq .tgl{font-size:12.5px;line-height:1.7;color:var(--ink);opacity:.78;margin-top:10px;border-top:1px dashed var(--line);padding-top:10px}
+#hwx .tq .tgl b{color:var(--acc);font-weight:600;opacity:1}
 #hwx .tq .acts{display:flex;gap:8px;margin-top:14px}
 #hwx .tq .acts button{border:1.5px solid var(--ink);background:transparent;color:var(--ink);border-radius:999px;padding:5px 14px;font-family:inherit;font-size:12.5px;cursor:pointer}
 #hwx .tq .acts .bs{background:var(--ink);color:var(--paper)}
@@ -279,6 +307,7 @@ body{background:var(--paper);color:var(--ink)}
 #hwx .tbox a{color:inherit;text-decoration:none;display:block}
 #hwx .tbox b{font-size:14.5px}
 #hwx .tbox .hint{display:block;font-size:13px;color:var(--ink);opacity:.72;margin-top:4px;line-height:1.65}
+#hwx .tbox .hint2{display:block;font-size:12.5px;color:var(--acc);opacity:.92;margin-top:6px;line-height:1.6}
 #hwx .hh{font-size:19px;font-weight:700;margin:24px 0 10px;letter-spacing:.03em;display:flex;justify-content:space-between;align-items:baseline}
 #hwx .hh .ct{font-size:12px;color:var(--muted);font-weight:500}
 #hwx .sc{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 4px}
@@ -312,7 +341,8 @@ body{background:var(--paper);color:var(--ink)}
 #hwx .feed>*{break-inside:avoid;width:100%;margin:0 0 11px}
 #hwx .nc-feed{columns:158px;column-gap:11px;margin-top:12px}
 #hwx .nc-feed>*{break-inside:avoid;width:100%;margin:0 0 11px}
-#hwx .pc{display:flex;flex-direction:column;border:1px solid var(--line);border-left:4px solid var(--sp,var(--line));border-radius:14px;padding:12px 13px 10px;text-decoration:none;color:inherit;background:var(--card)}
+#hwx .pc{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:14px;padding:13px 14px 11px;text-decoration:none;color:inherit;background:var(--tint,var(--card))}
+:root[data-theme="dark"] #hwx .pc,:root[data-theme="dark"] #hwx .nc{background:var(--tintd,var(--card))}
 #hwx .pc .r1{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
 #hwx .pc b{font-size:15.5px}
 #hwx .pc .tag{font-size:11px;color:var(--muted);white-space:nowrap;max-width:52%;overflow:hidden;text-overflow:ellipsis;font-style:normal}
@@ -321,7 +351,7 @@ body{background:var(--paper);color:var(--ink)}
 #hwx .pc .hk::before{content:"「"}#hwx .pc .hk::after{content:"」"}
 #hwx .pc .ls{font-size:11px;color:var(--muted);margin-top:8px;border-top:1px dashed var(--line);padding-top:7px;line-height:1.6}
 #hwx .pc .cf{font-size:11px;color:var(--acc);margin-top:8px}
-#hwx .nc{display:flex;flex-direction:column;border:1px solid var(--line);border-left:4px solid var(--line);border-radius:14px;padding:12px 13px 10px;text-decoration:none;color:inherit;background:var(--card)}
+#hwx .nc{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:14px;padding:13px 14px 11px;text-decoration:none;color:inherit;background:var(--tint,var(--card))}
 #hwx .nc .pn{font-size:12px;color:var(--muted);margin-bottom:3px}
 #hwx .nc .pn i{font-style:normal;color:var(--acc)}
 #hwx .nc .nb{font-size:10px;background:var(--acc);color:#fff;border-radius:4px;padding:1px 5px;margin-left:5px;vertical-align:1px}
@@ -329,17 +359,20 @@ body{background:var(--paper);color:var(--ink)}
 #hwx .nc .w{font-size:11.5px;color:var(--muted);margin:2px 0 8px}
 #hwx .nc .q{font-size:13px;line-height:1.7}
 #hwx .nc .q::before{content:"「"}#hwx .nc .q::after{content:"」"}
-#hwx .qc{min-height:150px;border-radius:14px;background:var(--paper2);border:1px solid var(--line);padding:16px 14px 12px;display:flex;flex-direction:column;text-decoration:none;color:inherit;position:relative}
-#hwx .qc .v{flex:1;font-size:17px;font-weight:700;line-height:1.85;letter-spacing:.02em;display:flex;align-items:center}
+#hwx .qc{border-radius:14px;background:var(--paper2);border:1px solid var(--line);padding:15px 13px 12px;display:flex;flex-direction:column;text-decoration:none;color:inherit;position:relative}
+#hwx .qc .v{writing-mode:vertical-rl;text-orientation:mixed;height:250px;width:100%;font-family:"Noto Serif SC","Source Han Serif SC","Songti SC","STSong","SimSun",serif;font-size:15.5px;font-weight:700;line-height:2.0;letter-spacing:.06em;margin:2px 0 10px;overflow:hidden;display:block}
 #hwx .qc .v::before{content:"「"}#hwx .qc .v::after{content:"」"}
-#hwx .qc .who{font-size:11.5px;color:var(--muted);margin-top:10px}
+#hwx .qc .who{font-size:11.5px;color:var(--muted);margin-top:2px}
+#hwx .qc .gl{font-size:12px;line-height:1.65;color:var(--ink);opacity:.78;margin-top:8px;border-top:1px dashed var(--line);padding-top:8px}
+#hwx .qc .gl b{font-weight:600;color:var(--acc);opacity:1}
 #hwx .qc .who i{font-style:normal;color:var(--acc)}
 #hwx .qc .seal{position:absolute;top:12px;right:12px;width:20px;height:20px;border:1.5px solid var(--acc);border-radius:4px;color:var(--acc);font-size:11px;display:flex;align-items:center;justify-content:center}
-#hwx .kc{border-radius:14px;background:var(--kbg);color:var(--kfg);padding:14px 14px 12px;display:flex;flex-direction:column}
-#hwx .kc .qm{font-size:22px;color:#d98b7f;font-weight:900;line-height:1}
-#hwx .kc .t{font-size:14.5px;font-weight:700;line-height:1.65;margin:7px 0 10px;flex:1}
-#hwx .kc .r a{display:block;font-size:12px;color:var(--kmut);text-decoration:none;padding:3px 0}
-#hwx .kc .r a b{color:var(--kfg);font-weight:600}
+#hwx .kc{border-radius:14px;background:rgba(163,59,46,.07);border:1px solid rgba(163,59,46,.22);color:var(--ink);padding:14px 14px 12px;display:flex;flex-direction:column}
+:root[data-theme="dark"] #hwx .kc{background:rgba(224,112,95,.13);border-color:rgba(224,112,95,.3)}
+#hwx .kc .qm{font-size:22px;color:var(--acc);font-weight:900;line-height:1}
+#hwx .kc .t{font-size:14.5px;font-weight:700;line-height:1.65;margin:7px 0 10px;flex:1;color:var(--ink)}
+#hwx .kc .r a{display:block;font-size:12px;color:var(--muted);text-decoration:none;padding:3px 0}
+#hwx .kc .r a b{color:var(--ink);font-weight:600}
 .dq{display:none!important}
 .tabs,#tl-wrap{display:none!important}
 .family a{color:inherit;text-decoration:none}
@@ -380,9 +413,11 @@ var day=Math.floor((_n.getTime()-_n.getTimezoneOffset()*60000)/864e5);
 var qIdx=day%D.QP.length, q1=D.QP[qIdx];
 function paintQuote(first){
   q1=D.QP[qIdx];
-  document.getElementById('hwx-dt').textContent=(_n.getMonth()+1)+'月'+_n.getDate()+'日 · 星期'+WD[_n.getDay()]+(first?' · 今日一句':' · 换一句');
+  document.getElementById('hwx-dt').textContent=(_n.getMonth()+1)+'月'+_n.getDate()+'日 · 星期'+WD[_n.getDay()]+' · 今日一句';
   document.getElementById('hwx-tq').textContent='「'+q1.q+'」';
   document.getElementById('hwx-tqs').innerHTML='—— '+q1.who+' · <a href="'+q1.u+'" data-h="'+esc(q1.who+' · '+q1.cn)+'">'+q1.cn+' →</a>';
+  var gl=document.getElementById('hwx-tgl');
+  if(gl)gl.innerHTML=q1.pt?('<b>'+q1.pt+'</b>'+(q1.when?' · 用在：'+q1.when:'')):'';
 }
 paintQuote(true);
 document.getElementById('hwx-next').onclick=function(){
@@ -391,11 +426,14 @@ document.getElementById('hwx-next').onclick=function(){
 var p1=D.E[(day*7)%D.E.length];
 var tpEl=document.getElementById('hwx-tp');
 tpEl.href='/i/'+p1.s+'/';tpEl.setAttribute('data-h',p1.n);
-tpEl.innerHTML='<b>'+p1.n+' — '+p1.w+'</b><span class="hint">'+p1.it+'</span>';
+tpEl.innerHTML='<b>'+p1.n+' — '+p1.w+'</b><span class="hint">'+p1.it+'</span>'
+  +(p1.sc?'<span class="hint2">什么时候翻开它：'+p1.sc+'</span>':'');
 var a1=D.ASK[(day*13)%D.ASK.length];
 var taEl=document.getElementById('hwx-ta');
 taEl.href=a1.u;taEl.setAttribute('data-h',esc(a1.who+' · '+a1.cn));
-taEl.innerHTML='<b>'+a1.t+'</b><span class="hint">答案在：'+a1.who+' · '+a1.cn+' →</span>';
+taEl.innerHTML='<b>'+a1.t+'</b>'
+  +(a1.sc?'<span class="hint2">遇到的局面：'+a1.sc+'</span>':'')
+  +'<span class="hint">答案在：'+a1.who+' · '+a1.cn+' →</span>';
 /* ── 分享卡 ── */
 function drawCard(cb){
   var cv=document.createElement('canvas');cv.width=1080;cv.height=1440;var c=cv.getContext('2d');
@@ -423,6 +461,22 @@ function drawCard(cb){
     var y=560+(5-Math.min(lines.length,5))*46;
     lines.slice(0,6).forEach(function(l){c.fillText(l,100,y);y+=98});
     c.fillStyle='#8a8377';c.font='500 34px "Noto Serif SC"';c.fillText('—— '+q1.who+' · '+q1.cn,100,y+40);
+    /* 解析：角度 + 什么时候用，让卡片脱离上下文也读得懂 */
+    if(q1.pt){
+      var gy=y+120;
+      c.strokeStyle='#d8d2c6';c.lineWidth=2;
+      c.beginPath();c.moveTo(100,gy-46);c.lineTo(980,gy-46);c.stroke();
+      c.fillStyle='#a33b2e';c.font='700 32px "Noto Serif SC"';c.fillText(q1.pt,100,gy);
+      if(q1.when){
+        c.fillStyle='#3f3a34';c.font='500 30px "Noto Serif SC"';
+        var w='用在：'+q1.when, wl=[], cu='';
+        for(var j=0;j<w.length;j++){var tw=cu+w[j];
+          if(c.measureText(tw).width>860&&PUNC.indexOf(w[j])<0){wl.push(cu);cu=w[j]}else cu=tw}
+        if(cu)wl.push(cu);
+        var wy=gy+50;
+        wl.slice(0,3).forEach(function(l){c.fillText(l,100,wy);wy+=46});
+      }
+    }
     c.strokeStyle='#d8d2c6';c.lineWidth=2;c.beginPath();c.moveTo(100,1230);c.lineTo(980,1230);c.stroke();
     c.fillStyle='#1f1c17';c.font='700 34px "Noto Serif SC"';c.fillText('人类世界生存法则',100,1318);
     c.fillStyle='#a33b2e';c.font='500 30px "Noto Serif SC"';c.fillText('OurWord.ai',100,1366);
@@ -485,6 +539,13 @@ function cta(e){
   return(t.indexOf('「」')>=0)?'他的方法都在里面 →':t;
 }
 /* ── 全部 feed（混排） ── */
+/* 金句卡：竖排金句 + 出处 + 一行解析（角度 · 什么时候用），解析取自章节自身字段 */
+function qcard(g,cls){
+  var gl = g.pt ? ('<span class="gl"><b>'+g.pt+'</b>'+(g.when?' · 用在：'+g.when:'')+'</span>') : '';
+  return '<a class="qc '+cls+'" href="'+g.u+'" data-h="'+esc(g.who+' · '+g.cn)+'" data-t="'+esc((g.q+g.who+g.cn+(g.pt||'')+(g.when||'')).toLowerCase())+'">'
+    +'<span class="seal">句</span><span class="v">'+g.q+'</span>'
+    +'<span class="who"><i>'+g.who+'</i> · '+g.cn+'</span>'+gl+'</a>';
+}
 /* 章节标题与角度并入搜索索引：搜「止损」应命中利弗莫尔等 */
 var byNC={};D.NC.forEach(function(n){(byNC[n.pn]=byNC[n.pn]||[]).push(n.cn+' '+n.w+' '+n.q)});
 D.S.forEach(function(sc){sc.r.forEach(function(r){(byNC[r.who]=byNC[r.who]||[]).push(r.cn+' '+(r.hint||''))})});
@@ -494,9 +555,9 @@ var qi=0,ki=0;
 D.E.forEach(function(e,i){
   var chTxt=(byNC[e.n]||[]).join(' ');
   var dt=esc((e.n+' '+e.w+' '+e.c+' '+e.it+' '+e.hk+' '+chTxt+' '+(e.ix||'')).toLowerCase());
-  fullCells.push('<a class="pc" href="/i/'+e.s+'/" data-h="'+esc(e.n)+'" data-c="'+e.c+'" data-t="'+dt+'" style="--sp:'+(D.CC[e.c]||'#999')+'"><span class="r1"><b>'+e.n+'</b><i class="tag">'+e.w+'</i></span><span class="it">'+e.it+'</span><span class="hk">'+(e.hk||e.w)+'</span>'+(e.cs.length?'<span class="ls">'+e.cs.join(' / ')+'</span>':'')+'<span class="cf">'+cta(e)+'</span></a>');
+  fullCells.push('<a class="pc" href="/i/'+e.s+'/" data-h="'+esc(e.n)+'" data-c="'+e.c+'" data-t="'+dt+'" style="--tint:'+(D.CT[e.c]||'transparent')+';--tintd:'+(D.CTD[e.c]||'transparent')+'"><span class="r1"><b>'+e.n+'</b><i class="tag">'+e.w+'</i></span><span class="it">'+e.it+'</span><span class="hk">'+(e.hk||e.w)+'</span>'+(e.cs.length?'<span class="ls">'+e.cs.join(' / ')+'</span>':'')+'<span class="cf">'+cta(e)+'</span></a>');
   if(i%3===2&&qi<D.QP.length){var g=D.QP[(qi*37)%D.QP.length];qi++;
-    fullCells.push('<a class="qc xtra" href="'+g.u+'" data-h="'+esc(g.who+' · '+g.cn)+'" data-t="'+esc((g.q+g.who+g.cn).toLowerCase())+'"><span class="seal">句</span><span class="v">'+g.q+'</span><span class="who"><i>'+g.who+'</i> · '+g.cn+'</span></a>');}
+    fullCells.push(qcard(g,'xtra'));}
   if(i%8===5&&ki<D.QQ.length){var k=D.QQ[ki++];
     fullCells.push('<div class="kc xtra" data-t="'+esc(k.t.toLowerCase())+'"><span class="qm">？</span><span class="t">'+k.t+'</span><span class="r">'+k.r.map(function(r){return '<a href="'+r.u+'" data-h="'+esc(r.who+' · '+r.cn)+'"><b>'+r.who+'</b> · '+r.cn+' →</a>'}).join('')+'</span></div>');}
 });
@@ -505,7 +566,7 @@ D.E.forEach(function(e,i){
 var ncCells=[], _seen={}, _pi=0, _qi=0, _ki=0;
 var byName={}; D.E.forEach(function(e){byName[e.n]=e});
 D.NC.forEach(function(e,i){
-  ncCells.push('<a class="nc" href="'+e.u+'" data-h="'+esc(e.pn+' · '+e.cn)+'" style="border-left-color:'+(D.CC[e.c]||'#ccc')+'"><span class="pn"><i>'+e.pn+'</i><span class="nb">新</span></span><b>'+e.cn+'</b><span class="w">'+e.w+'</span>'+(e.q?'<span class="q">'+e.q+'</span>':'')+'</a>');
+  ncCells.push('<a class="nc" href="'+e.u+'" data-h="'+esc(e.pn+' · '+e.cn)+'" style="--tint:'+(D.CT[e.c]||'transparent')+';--tintd:'+(D.CTD[e.c]||'transparent')+'"><span class="pn"><i>'+e.pn+'</i><span class="nb">新</span></span><b>'+e.cn+'</b><span class="w">'+e.w+'</span>'+(e.q?'<span class="q">'+e.q+'</span>':'')+'</a>');
   if(i%4===3){
     var pe=null;
     for(var t=0;t<D.NC.length&&!pe;t++){
@@ -515,7 +576,7 @@ D.NC.forEach(function(e,i){
     if(pe){_seen[pe.s]=1;
       ncCells.push('<a class="pc" href="/i/'+pe.s+'/" data-h="'+esc(pe.n)+'" style="--sp:'+(D.CC[pe.c]||'#999')+'"><span class="r1"><b>'+pe.n+'</b><i class="tag">'+pe.w+'</i></span><span class="it">'+pe.it+'</span><span class="hk">'+(pe.hk||pe.w)+'</span><span class="cf">'+cta(pe)+'</span></a>');}
     var g=D.QP[(_qi*53)%D.QP.length];_qi++;
-    ncCells.push('<a class="qc" href="'+g.u+'" data-h="'+esc(g.who+' · '+g.cn)+'"><span class="seal">句</span><span class="v">'+g.q+'</span><span class="who"><i>'+g.who+'</i> · '+g.cn+'</span></a>');
+    ncCells.push(qcard(g,''));
   }
   if(i%9===7&&_ki<D.QQ.length){var k=D.QQ[_ki++];
     ncCells.push('<div class="kc"><span class="qm">？</span><span class="t">'+k.t+'</span><span class="r">'+k.r.map(function(r){return '<a href="'+r.u+'" data-h="'+esc(r.who+' · '+r.cn)+'"><b>'+r.who+'</b> · '+r.cn+' →</a>'}).join('')+'</span></div>');}
@@ -573,7 +634,7 @@ switchTab('新');
         "<span class=\"hchips\" id=\"hwx-hchips\"></span><button id=\"hwx-hclr\">清空</button></div>"
         "<div class=\"today\">"
         "<div class=\"tq\"><div class=\"dt\" id=\"hwx-dt\"></div><div class=\"q\" id=\"hwx-tq\"></div>"
-        "<div class=\"src\" id=\"hwx-tqs\"></div>"
+        "<div class=\"src\" id=\"hwx-tqs\"></div><div class=\"tgl\" id=\"hwx-tgl\"></div>"
         "<div class=\"acts\"><button id=\"hwx-next\">换一换</button>"
         "<button class=\"bs\" id=\"hwx-save\">保存卡片</button>"
         "<button id=\"hwx-share\">分享</button></div></div>"
