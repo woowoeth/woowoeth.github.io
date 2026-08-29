@@ -34,3 +34,6 @@ for dp, dn, fn in os.walk(os.path.join(root, "i")):
 print("文末金句与正文有 %d 字以上重叠：%d 处" % (MIN, len(hits)))
 for p, n, ov, q in sorted(hits, key=lambda x: -x[1])[:14]:
     print("   %-34s %2d字重叠  「%s」" % (p, n, ov[:34]))
+
+import sys
+sys.exit(1 if hits else 0)

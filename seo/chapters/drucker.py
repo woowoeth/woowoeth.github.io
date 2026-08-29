@@ -9,7 +9,7 @@ PARENT = {
         {"k": "create-a-customer", "n": "企业的目的是创造顾客", "w": "由外往里定义业务",
          "line": "利润是结果，不是目的", "ready": True},
         {"k": "right-things-first", "n": "高效地做不该做的事", "w": "效果先于效率",
-         "line": "最无用的事，是把不该做的做得漂亮", "ready": True},
+         "line": "把错事做得漂亮，是最贵的浪费", "ready": True},
     ],
 }
 
