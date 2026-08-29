@@ -111,6 +111,14 @@
   "d": "2026-08-28",
   "h": "34679df50e56acbf"
  },
+ "i/crowd/assert-repeat-contaminate/": {
+  "d": "2026-08-29",
+  "h": "10a72c87c46af48d"
+ },
+ "i/crowd/descent-in-crowds/": {
+  "d": "2026-08-29",
+  "h": "57400f1f41482cd1"
+ },
  "i/dalio/": {
   "d": "2026-08-28",
   "h": "b67fab364a023d9a"
@@ -174,6 +182,14 @@
  "i/finite-and-infinite-games/": {
   "d": "2026-08-28",
   "h": "1b3e9e5ef0e9250f"
+ },
+ "i/finite-and-infinite-games/playing-with-boundaries/": {
+  "d": "2026-08-29",
+  "h": "96d42cdfae2d06be"
+ },
+ "i/finite-and-infinite-games/two-kinds/": {
+  "d": "2026-08-29",
+  "h": "61b68fde47c7899e"
  },
  "i/frankl/": {
   "d": "2026-08-28",
@@ -363,9 +379,25 @@
   "d": "2026-08-28",
   "h": "3675f1fdf9f0236b"
  },
+ "i/influence/reciprocity/": {
+  "d": "2026-08-29",
+  "h": "f75c093f4db02611"
+ },
+ "i/influence/social-proof/": {
+  "d": "2026-08-29",
+  "h": "277c0acb3dff6625"
+ },
  "i/innovators-dilemma/": {
   "d": "2026-08-28",
   "h": "d199234e7cc35e75"
+ },
+ "i/innovators-dilemma/good-management-fails/": {
+  "d": "2026-08-29",
+  "h": "0c0dad8551de745a"
+ },
+ "i/innovators-dilemma/small-markets/": {
+  "d": "2026-08-29",
+  "h": "d3b5e883548229d7"
  },
  "i/jobs/": {
   "d": "2026-08-28",
@@ -599,6 +631,14 @@
   "d": "2026-08-28",
   "h": "68003e392367115e"
  },
+ "i/on-war/continuation-of-politics/": {
+  "d": "2026-08-29",
+  "h": "c4717a12f6427138"
+ },
+ "i/on-war/friction/": {
+  "d": "2026-08-29",
+  "h": "9f2defe6128ebb2b"
+ },
  "i/paul-graham/": {
   "d": "2026-08-28",
   "h": "2c0b9b8ac6167ceb"
@@ -767,9 +807,25 @@
   "d": "2026-08-28",
   "h": "47a8d4dc9133cfe4"
  },
+ "i/thinking-fast-and-slow/loss-aversion/": {
+  "d": "2026-08-29",
+  "h": "351cf3db7945e6b1"
+ },
+ "i/thinking-fast-and-slow/wysiati/": {
+  "d": "2026-08-29",
+  "h": "d74ec636f3ed3eea"
+ },
  "i/thinking-in-systems/": {
   "d": "2026-08-28",
   "h": "ab105756e2e8d9d5"
+ },
+ "i/thinking-in-systems/leverage-points/": {
+  "d": "2026-08-29",
+  "h": "2a461be6d40b78da"
+ },
+ "i/thinking-in-systems/structure-drives-behavior/": {
+  "d": "2026-08-29",
+  "h": "81ab8ab62c94c69a"
  },
  "i/wang-jian/": {
   "d": "2026-08-28",
@@ -810,6 +866,14 @@
  "i/wealth-of-nations/": {
   "d": "2026-08-28",
   "h": "a3451bfabd6a1317"
+ },
+ "i/wealth-of-nations/not-benevolence/": {
+  "d": "2026-08-29",
+  "h": "d4e102acee633212"
+ },
+ "i/wealth-of-nations/pin-factory/": {
+  "d": "2026-08-29",
+  "h": "0daa3f7081bfb870"
  },
  "i/why-nations-fail/": {
   "d": "2026-08-28",
