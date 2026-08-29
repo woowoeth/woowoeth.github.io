@@ -310,8 +310,8 @@ body{background:var(--paper);color:var(--ink)}
 #hwx .hh{font-size:19px;font-weight:700;margin:24px 0 10px;letter-spacing:.03em;display:flex;justify-content:space-between;align-items:baseline}
 #hwx .hh .ct{font-size:12px;color:var(--muted);font-weight:500}
 #hwx .sc{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 0}
-#hwx .scmore{border:none;background:transparent;color:var(--acc);font-family:inherit;font-size:12.5px;cursor:pointer;padding:8px 0 2px}
-#hwx .scmore:hover{text-decoration:underline}
+#hwx .scmore{order:9999;flex:0 0 auto;border:1px dashed var(--line);background:transparent;color:var(--acc);border-radius:999px;padding:5px 12px;font-family:inherit;font-size:13px;cursor:pointer;white-space:nowrap;line-height:1.6}
+#hwx .scmore:hover{border-color:var(--acc)}
 #hwx .sc button{flex:0 0 auto;border:1px solid var(--line);background:transparent;color:inherit;border-radius:999px;padding:5px 12px;font-family:inherit;font-size:13px;cursor:pointer;white-space:nowrap}
 #hwx .sc button.on{background:var(--ink);color:var(--paper);border-color:var(--ink)}
 #hwx .res{display:none;border-left:3px solid var(--acc);padding:4px 0 4px 13px;margin:8px 0 6px}
@@ -473,9 +473,10 @@ function drawCard(cb){
       if(cu)wl.push(cu);
       wl=wl.slice(0,3);
       wl.forEach(function(l){c.fillText(l,100,ay);ay+=46});
-      ay+=18;
     }
-    c.fillStyle='#8a8377';c.font='500 34px "Noto Serif SC"';c.fillText('—— '+q1.who+' · '+q1.cn,100,ay);
+    ay+=54;   /* 与上一段空出一行 */
+    c.fillStyle='#8a8377';c.font='500 34px "Noto Serif SC"';
+    c.textAlign='right';c.fillText(q1.who+' · '+q1.cn+' ——',980,ay);c.textAlign='left';
     c.strokeStyle='#d8d2c6';c.lineWidth=2;c.beginPath();c.moveTo(100,1230);c.lineTo(980,1230);c.stroke();
     c.fillStyle='#1f1c17';c.font='700 34px "Noto Serif SC"';c.fillText('人类世界生存法则',100,1318);
     c.fillStyle='#a33b2e';c.font='500 30px "Noto Serif SC"';c.fillText('OurWord.ai',100,1366);
@@ -509,22 +510,27 @@ D.S.forEach(function(s){
 /* 默认只露两行，其余收起 */
 (function(){
   var open=false;
+  function tags(){return Array.prototype.filter.call(
+    scEl.querySelectorAll('button'),function(b){return b!==scMore})}
+  function showAll(){tags().forEach(function(b){b.style.display=''})}
   function fold(){
-    if(open){scEl.classList.remove('fold');scMore.textContent='收起';return}
-    scEl.classList.add('fold');
-    var rows={},n=0;
-    scEl.querySelectorAll('button').forEach(function(b){
-      var t=Math.round(b.offsetTop);if(!(t in rows)){rows[t]=1;n++}
-      b.style.display=(n<=2)?'':'none';
-    });
-    scMore.textContent='展开全部 '+D.S.length+' 个处境';
+    if(open){showAll();scMore.textContent='收起';return}
+    showAll();
+    /* 先量出两行能放下哪些标签（此时钮已在末位参与排版），超出的收起 */
+    scMore.textContent='展开全部 '+D.S.length+' 个';
+    /* 逐个收起末尾标签，直到「标签 + 展开钮」正好占两行 */
+    var list=tags(), rowTop=function(el){return Math.round(el.getBoundingClientRect().top)};
+    for(var guard=0;guard<200;guard++){
+      var vis=list.filter(function(b){return b.style.display!=='none'});
+      var rows=[];vis.concat([scMore]).forEach(function(b){
+        var t=rowTop(b);if(rows.indexOf(t)<0)rows.push(t)});
+      if(rows.length<=2||!vis.length)break;
+      vis[vis.length-1].style.display='none';
+    }
   }
-  scMore.onclick=function(){open=!open;
-    if(open){scEl.querySelectorAll('button').forEach(function(b){b.style.display=''})}
-    fold();};
+  scMore.onclick=function(){open=!open;fold()};
   fold();
-  window.addEventListener('resize',function(){if(!open)
-    {scEl.querySelectorAll('button').forEach(function(b){b.style.display=''});fold();}});
+  window.addEventListener('resize',function(){if(!open)fold()});
 })();
 /* ── 历史行 ── */
 var _mem=[];
@@ -668,8 +674,8 @@ switchTab('新');
         "<div class=\"tbox\"><div class=\"lb\">今日一问</div><a id=\"hwx-ta\"></a></div>"
         "</div></div>"
         "<div class=\"hh\">按处境找 <span style=\"font-size:12px;color:var(--muted);font-weight:500\">「我现在遇到的是……」</span></div>"
-        "<div class=\"sc\" id=\"hwx-sc\"></div>"
-        "<button class=\"scmore\" id=\"hwx-scmore\" type=\"button\"></button>"
+        "<div class=\"sc\" id=\"hwx-sc\">"
+        "<button class=\"scmore\" id=\"hwx-scmore\" type=\"button\"></button></div>"
         "<div class=\"res\" id=\"hwx-res\"></div>"
                 "<div class=\"qbar\"><input id=\"q\" placeholder=\"搜索：人物、书、一句话、处境…\" aria-label=\"搜索\"></div>"
         "<div style=\"display:flex;align-items:baseline;justify-content:space-between;margin-top:14px\">"
