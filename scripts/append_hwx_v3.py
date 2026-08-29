@@ -1,46 +1,6 @@
-#!/usr/bin/env python3
-# Patch generators AND already-built HTML so highlight/sidebar cannot miss.
-from pathlib import Path
-import re
-
-ROOT = Path(__file__).resolve().parents[1]
-STYLE = (
-    '<style id="hw-force">'
-    'mark,mark.hl{background:transparent!important;color:#9d2933!important;'
-    'font-weight:700!important;text-decoration:underline!important;'
-    'text-decoration-color:#9d2933!important;text-underline-offset:.16em;'
-    'text-decoration-thickness:1.5px}'
-    '@media (max-width:900px){aside.side{display:none!important}'
-    '.layout{grid-template-columns:1fr!important}}'
-    '</style>'
-)
-MARK_OPEN = (
-    '<mark class="hl" style="background:transparent;color:#9d2933;font-weight:700;'
-    'text-decoration:underline;text-decoration-color:#9d2933;text-underline-offset:.16em;'
-    'text-decoration-thickness:1.5px">'
-)
-
-def patch_html():
-    n = 0
-    for path in (ROOT / "i").rglob("index.html") if (ROOT / "i").exists() else []:
-        s = path.read_text(encoding="utf-8")
-        # Legacy CJK-slug stubs are meta-refresh redirects rewritten byte-for-byte
-        # by write_legacy_redirects on every build. Touching them here makes the two
-        # scripts fight and produces a fresh commit every single run.
-        if 'http-equiv="refresh"' in s:
-            continue
-        orig = s
-        if 'id="hw-force"' not in s:
-            s = s.replace("</head>", STYLE + "</head>", 1)
-        s = re.sub(r"<mark class=\"hl\"(?: style=\"[^\"]*\")?>", MARK_OPEN, s)
-        if s != orig:
-            path.write_text(s, encoding="utf-8")
-            n += 1
-    print("force_chapter_ui html", n)
-
-if __name__ == "__main__":
-    patch_html()
-
+# -*- coding: utf-8 -*-
+# ── 以下由 append_hwx_v3.py 生成，不要手动修改这段注释 ──
+import re as _re, subprocess as _sp, os as _os
 
 # HWX v3: 最新 tab + 瀑布流混排 + 今日三样 + 历史行 + 暗色双主题
 HWX_A, HWX_B = "<!--HWX:FIND-->", "<!--/HWX:FIND-->"
@@ -513,34 +473,3 @@ def patch_home_discover():
     print("HWX v3 注入完成")
 
 patch_home_discover()
-
-# ---------------- 章节页 og:image 指向各自的分享图 ----------------
-# scripts/gen_og.py 一次性生成 i/<slug>/<k>/og.png（静态资产，不进 CI 链）。
-# 这里在每次构建后把「存在 og.png 的章节页」的 og:image / og:image:alt /
-# twitter:image 改写为该页专属图；没有图的页面保持全站图，优雅降级。
-def patch_chapter_og():
-    import os, re
-    n = 0
-    for slug in os.listdir("i"):
-        d1 = os.path.join("i", slug)
-        if not os.path.isdir(d1):
-            continue
-        for k in os.listdir(d1):
-            d2 = os.path.join(d1, k)
-            page = os.path.join(d2, "index.html")
-            png = os.path.join(d2, "og.png")
-            if not (os.path.isdir(d2) and os.path.exists(page) and os.path.exists(png)):
-                continue
-            s = open(page, encoding="utf-8").read()
-            url = "https://ourword.ai/i/%s/%s/og.png" % (slug, k)
-            m = re.search(r"<title>([^<|]+)", s)
-            alt = (m.group(1).strip() if m else "深度阅读")
-            s2 = re.sub(r'(<meta property="og:image" content=")[^"]*(")', r"\g<1>%s\g<2>" % url, s)
-            s2 = re.sub(r'(<meta property="og:image:alt" content=")[^"]*(")', r"\g<1>%s\g<2>" % alt.replace("\\", ""), s2)
-            s2 = re.sub(r'(<meta name="twitter:image" content=")[^"]*(")', r"\g<1>%s\g<2>" % url, s2)
-            if s2 != s:
-                open(page, "w", encoding="utf-8").write(s2)
-                n += 1
-    print("chapter og:image rewired:", n)
-
-patch_chapter_og()
