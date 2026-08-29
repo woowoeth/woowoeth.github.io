@@ -237,8 +237,8 @@ def hwx_block():
 :root[data-theme="dark"]{--white:#1d1913;--line-strong:rgba(234,227,212,.22);--ink-30:rgba(234,227,212,.42);--ink-50:rgba(234,227,212,.6)}
 body{background:var(--paper);color:var(--ink)}
 .share-btn{background:var(--white)!important;color:var(--ink)!important;border-color:var(--line-strong)!important}
-#hwx-theme{border:1px solid var(--line);background:transparent;color:var(--muted);border-radius:999px;padding:4px 11px;font-family:inherit;font-size:12px;cursor:pointer;white-space:nowrap;flex:0 0 auto}
-#hwx-theme:hover{color:var(--ink);border-color:var(--ink)}
+#hwx-theme{position:fixed;top:14px;right:14px;z-index:9999;width:36px;height:36px;border:1px solid var(--line);background:var(--paper);color:var(--ink);border-radius:50%;font-size:15px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 1px 6px rgba(0,0,0,.10);padding:0}
+#hwx-theme:hover{border-color:var(--acc);color:var(--acc)}
 #hwx .today{display:grid;grid-template-columns:1.5fr 1fr;gap:14px;margin:18px 0 6px}
 @media(max-width:700px){#hwx .today{grid-template-columns:1fr}}
 #hwx .tq{border:1px solid var(--line);border-radius:16px;padding:20px 22px;background:var(--paper2);display:flex;flex-direction:column}
@@ -248,15 +248,13 @@ body{background:var(--paper);color:var(--ink)}
 #hwx .tq .src a{color:var(--acc);text-decoration:none}
 #hwx .tq .acts{display:flex;gap:8px;margin-top:14px}
 #hwx .tq .acts button{border:1.5px solid var(--ink);background:transparent;color:var(--ink);border-radius:999px;padding:5px 14px;font-family:inherit;font-size:12.5px;cursor:pointer}
-#hwx .hwx-top{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin:12px 0 4px}
-#hwx .tagline{font-size:13px;color:var(--muted);line-height:1.7;margin:0;flex:1}
 #hwx .tq .acts .bs{background:var(--ink);color:var(--paper)}
 #hwx .tcol{display:flex;flex-direction:column;gap:14px}
 #hwx .tbox{border:1px solid var(--line);border-radius:16px;padding:14px 16px;flex:1}
 #hwx .tbox .lb{font-size:10.5px;letter-spacing:.28em;color:var(--acc);font-weight:700;margin-bottom:6px}
 #hwx .tbox a{color:inherit;text-decoration:none;display:block}
 #hwx .tbox b{font-size:14.5px}
-#hwx .tbox .hint{display:block;font-size:12px;color:var(--muted);margin-top:3px;line-height:1.55}
+#hwx .tbox .hint{display:block;font-size:13px;color:var(--ink);opacity:.72;margin-top:4px;line-height:1.65}
 #hwx .hh{font-size:19px;font-weight:700;margin:24px 0 10px;letter-spacing:.03em;display:flex;justify-content:space-between;align-items:baseline}
 #hwx .hh .ct{font-size:12px;color:var(--muted);font-weight:500}
 #hwx .sc{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 4px}
@@ -328,20 +326,21 @@ var D=HWXD;
 (function(){
   var R=document.documentElement, KEY='hwx_theme';
   function sysDark(){return !!(window.matchMedia&&window.matchMedia('(prefers-color-scheme:dark)').matches)}
-  function get(){try{return localStorage.getItem(KEY)||'auto'}catch(e){return 'auto'}}
+  function get(){try{return localStorage.getItem(KEY)||''}catch(e){return ''}}
   function set(v){try{localStorage.setItem(KEY,v)}catch(e){}}
-  function eff(){var m=get();return m==='auto'?(sysDark()?'dark':'light'):m}
+  function eff(){var m=get();return m||(sysDark()?'dark':'light')}
   function paint(){
-    var m=get();
-    if(m==='auto')R.removeAttribute('data-theme');else R.setAttribute('data-theme',m);
+    var m=eff();
+    R.setAttribute('data-theme',m);
     var b=document.getElementById('hwx-theme');
-    if(b)b.textContent=(eff()==='dark'?'\u263e 夜间':'\u2600 日间')+(m==='auto'?' · 跟随系统':'');
+    if(b){b.textContent=(m==='dark'?'\u2600':'\u263e');
+          b.setAttribute('title',m==='dark'?'切换到日间':'切换到夜间');}
   }
   paint();
   setTimeout(function(){
     var b=document.getElementById('hwx-theme');
     if(!b)return;
-    b.onclick=function(){var o=['auto','light','dark'];set(o[(o.indexOf(get())+1)%3]);paint()};
+    b.onclick=function(){set(eff()==='dark'?'light':'dark');paint()};
     paint();
   },0);
   if(window.matchMedia){var mq=window.matchMedia('(prefers-color-scheme:dark)');
@@ -375,8 +374,14 @@ function drawCard(cb){
     c.strokeStyle='#d8d2c6';c.lineWidth=2;c.strokeRect(46,46,988,1348);
     c.fillStyle='#a33b2e';c.font='900 128px "Noto Serif SC"';c.fillText(String(_n.getDate()),96,232);
     c.fillStyle='#8a8377';c.font='500 34px "Noto Serif SC"';c.fillText((_n.getMonth()+1)+'月 · 星期'+WD[_n.getDay()],100,296);
-    c.strokeStyle='#a33b2e';c.lineWidth=3;c.strokeRect(880,110,104,104);
-    c.fillStyle='#a33b2e';c.font='700 56px "Noto Serif SC"';c.fillText('句',904,186);
+    c.fillStyle='#9d2933';
+    (function(x,y,w){var r=w*0.22;c.beginPath();
+      c.moveTo(x+r,y);c.lineTo(x+w-r,y);c.quadraticCurveTo(x+w,y,x+w,y+r);
+      c.lineTo(x+w,y+w-r);c.quadraticCurveTo(x+w,y+w,x+w-r,y+w);
+      c.lineTo(x+r,y+w);c.quadraticCurveTo(x,y+w,x,y+w-r);
+      c.lineTo(x,y+r);c.quadraticCurveTo(x,y,x+r,y);c.closePath();c.fill();})(880,110,104);
+    c.fillStyle='#fff';c.font='700 62px "Noto Serif SC"';
+    c.textAlign='center';c.fillText('人',932,182);c.textAlign='left';
     c.fillStyle='#1f1c17';c.font='700 58px "Noto Serif SC"';
     var q='「'+q1.q+'」',lines=[],cur='',PUNC='，。、；：！？…」）';
     for(var i=0;i<q.length;i++){var tt=cur+q[i];if(c.measureText(tt).width>880&&PUNC.indexOf(q[i])<0){lines.push(cur);cur=q[i]}else cur=tt}
@@ -384,10 +389,13 @@ function drawCard(cb){
     var y=560+(5-Math.min(lines.length,5))*46;
     lines.slice(0,6).forEach(function(l){c.fillText(l,100,y);y+=98});
     c.fillStyle='#8a8377';c.font='500 34px "Noto Serif SC"';c.fillText('—— '+q1.who+' · '+q1.cn,100,y+40);
-    c.strokeStyle='#d8d2c6';c.lineWidth=2;c.beginPath();c.moveTo(100,1268);c.lineTo(980,1268);c.stroke();
-    c.fillStyle='#1f1c17';c.font='700 34px "Noto Serif SC"';c.fillText('人类世界生存法则',100,1330);
-    c.fillStyle='#a33b2e';c.font='500 30px "Noto Serif SC"';c.fillText('ourword.ai'+q1.u,420,1330);
-    cv.toBlob(cb,'image/png');
+    c.strokeStyle='#d8d2c6';c.lineWidth=2;c.beginPath();c.moveTo(100,1230);c.lineTo(980,1230);c.stroke();
+    c.fillStyle='#1f1c17';c.font='700 34px "Noto Serif SC"';c.fillText('人类世界生存法则',100,1318);
+    c.fillStyle='#a33b2e';c.font='500 30px "Noto Serif SC"';c.fillText('OurWord.ai',100,1366);
+    var qr=new Image();
+    qr.onload=function(){c.drawImage(qr,858,1244,122,122);cv.toBlob(cb,'image/png')};
+    qr.onerror=function(){cv.toBlob(cb,'image/png')};
+    qr.src='/wechat-qr.png';
   }
 }
 document.getElementById('hwx-save').onclick=function(){drawCard(function(b){var a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='ourword-'+(_n.getMonth()+1)+'-'+_n.getDate()+'.png';a.click()})};
@@ -501,10 +509,7 @@ switchTab('新');
         "<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;600;700;900&display=swap\">\n"
         "<style>" + css + "</style>\n"
         "<section id=\"hwx\">\n"
-        "<div class=\"hwx-top\">"
-        "<p class=\"tagline\">100 位人物与典籍的深度阅读——每一条写清楚：这个人留下的最重要想法，以及你现在怎么用。</p>"
-        "<button id=\"hwx-theme\" type=\"button\" aria-label=\"切换日夜模式\"></button>"
-        "</div>\n"
+        "<button id=\"hwx-theme\" type=\"button\" aria-label=\"切换日夜模式\"></button>\n"
         "<div class=\"today\">"
         "<div class=\"tq\"><div class=\"dt\" id=\"hwx-dt\"></div><div class=\"q\" id=\"hwx-tq\"></div>"
         "<div class=\"src\" id=\"hwx-tqs\"></div>"
@@ -584,3 +589,91 @@ def patch_chapter_og():
     print("chapter og:image rewired:", n)
 
 patch_chapter_og()
+
+# ---------------- 条目页：手写介绍替换模板句 ----------------
+# 原 dek 是 "格雷厄姆（美·1894-1976年）——安全边际·市场先生。"，与上一行 .one 重复、
+# 信息量为零。改用 HWX_INTROS 的手写介绍；无手写介绍的条目保留原句。
+def patch_entry_intro():
+    import os, re, sys
+    sys.path.insert(0, "seo")
+    import hw_slugs, build_seo
+    n = 0
+    for e in build_seo.load_array():
+        slug = hw_slugs.slug_for(e["n"])
+        intro = HWX_INTROS.get(slug)
+        page = os.path.join("i", slug, "index.html")
+        if not (intro and os.path.exists(page)):
+            continue
+        s = open(page, encoding="utf-8").read()
+        s2 = re.sub(r'<p class="dek">[^<]*</p>',
+                    '<p class="dek">%s</p>' % intro, s, count=1)
+        if s2 != s:
+            open(page, "w", encoding="utf-8").write(s2)
+            n += 1
+    print("entry intro rewritten:", n)
+
+
+# ---------------- 全站：日夜切换按钮 ----------------
+# 首页的按钮在 HWX 块里；其余页面（条目页/章节页/主题页）在这里统一注入。
+HWX_T_A, HWX_T_B = "<!--HWX:THEME-->", "<!--/HWX:THEME-->"
+
+def theme_widget():
+    css = (
+        ':root[data-theme="dark"]{--paper:#171410;--ink:#eae3d4;--acc:#c65f4f;--muted:#9a917f;'
+        '--line:#3a342a;--rule:#3a342a;--white:#1d1913;--line-strong:rgba(234,227,212,.22);'
+        '--ink-30:rgba(234,227,212,.42);--ink-50:rgba(234,227,212,.6);--paper2:#201c15}'
+        ':root[data-theme="dark"] body{background:#171410;color:#eae3d4}'
+        ':root[data-theme="dark"] .panel,:root[data-theme="dark"] article{background:transparent}'
+        ':root[data-theme="dark"] .share-btn{background:#1d1913;color:#eae3d4;border-color:rgba(234,227,212,.22)}'
+        '#hwx-theme{position:fixed;top:14px;right:14px;z-index:9999;width:36px;height:36px;'
+        'border:1px solid var(--rule,#d8d2c6);background:var(--paper,#f5f1e8);color:var(--ink,#1f1c17);'
+        'border-radius:50%;font-size:15px;line-height:1;cursor:pointer;display:flex;align-items:center;'
+        'justify-content:center;box-shadow:0 1px 6px rgba(0,0,0,.10);padding:0}'
+        '#hwx-theme:hover{border-color:#9d2933;color:#9d2933}'
+    )
+    js = (
+        "(function(){var R=document.documentElement,K='hwx_theme';"
+        "function sd(){return !!(window.matchMedia&&window.matchMedia('(prefers-color-scheme:dark)').matches)}"
+        "function g(){try{return localStorage.getItem(K)||''}catch(e){return ''}}"
+        "function st(v){try{localStorage.setItem(K,v)}catch(e){}}"
+        "function eff(){return g()||(sd()?'dark':'light')}"
+        "function paint(){var m=eff();R.setAttribute('data-theme',m);"
+        "var b=document.getElementById('hwx-theme');"
+        "if(b){b.textContent=(m==='dark'?'\\u2600':'\\u263e');"
+        "b.setAttribute('title',m==='dark'?'切换到日间':'切换到夜间')}}"
+        "paint();document.addEventListener('DOMContentLoaded',function(){"
+        "var b=document.getElementById('hwx-theme');if(!b)return;"
+        "b.onclick=function(){st(eff()==='dark'?'light':'dark');paint()};paint()});})();"
+    )
+    return (HWX_T_A + '<style>' + css + '</style>'
+            '<button id="hwx-theme" type="button" aria-label="切换日夜模式"></button>'
+            '<script>' + js + '</script>' + HWX_T_B)
+
+
+def patch_theme_widget():
+    import os, re
+    n = 0
+    for dp, dn, fn in os.walk("."):
+        if ".git" in dp or dp.startswith("./assets"):
+            continue
+        for f in fn:
+            if f != "index.html":
+                continue
+            path = os.path.join(dp, f)
+            s = open(path, encoding="utf-8").read()
+            if 'http-equiv="refresh"' in s:      # 跳转桩跳过
+                continue
+            if path == "./index.html":           # 首页按钮在 HWX 块里
+                continue
+            s2 = re.sub(re.escape(HWX_T_A) + r".*?" + re.escape(HWX_T_B), "", s, flags=re.S)
+            if "</body>" not in s2:
+                continue
+            s2 = s2.replace("</body>", theme_widget() + "</body>", 1)
+            if s2 != s:
+                open(path, "w", encoding="utf-8").write(s2)
+                n += 1
+    print("theme widget on pages:", n)
+
+
+patch_entry_intro()
+patch_theme_widget()
