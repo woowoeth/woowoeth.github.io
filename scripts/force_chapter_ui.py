@@ -542,8 +542,12 @@ def patch_home_discover():
     p = "index.html"
     s = open(p, encoding="utf-8").read()
     s = re.sub(r"\n*" + re.escape(HWX_A) + r".*?" + re.escape(HWX_B) + r"\n*", "", s, flags=re.S)
-    # 过时计数兜底：条目数以 build_seo 为准
+    # 文案兜底：每轮构建强制生效，防止 rebase / 其他脚本回写旧值
     s = s.replace("95 位人物与典籍", "100 位人物与典籍")
+    s = s.replace("<title>人类世界生存法则 · 知识库</title>",
+                  "<title>人类世界生存法则 — 100 位人物与典籍的生存智慧</title>")
+    s = s.replace("人类文明的坐标，照亮千年的灯塔",
+                  "100 个人物与典籍的生存智慧，跨越 2600 年")
     # 去掉 hw-share.js 重复加载
     s = re.sub(r'(?:<script src="/assets/hw-share\.js" defer></script>\s*)+',
                '<script src="/assets/hw-share.js" defer></script>\n', s)
@@ -657,7 +661,7 @@ def patch_theme_widget():
         if ".git" in dp or dp.startswith("./assets"):
             continue
         for f in fn:
-            if f != "index.html":
+            if f not in ("index.html", "404.html"):
                 continue
             path = os.path.join(dp, f)
             s = open(path, encoding="utf-8").read()
