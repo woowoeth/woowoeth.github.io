@@ -66,6 +66,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [乌合之众 · 断言、重复、传染](https://ourword.ai/i/crowd/assert-repeat-contaminate/): 乌合之众 · 断言、重复、传染——群体说服三件套。他把煽动家的手法拆成了三个动词。这一篇要回答的是：这套配方为什么有效，以及怎么防。
 - [达里奥 · 痛苦加反思等于进步](https://ourword.ai/i/dalio/pain-plus-reflection/): 达里奥 · 痛苦加反思等于进步——1982年那次破产。他把公司做没了，后来称那是此生最好的事。这一篇要回答的是：中间那道工序是什么。
 - [达里奥 · 可信度加权](https://ourword.ai/i/dalio/believability/): 达里奥 · 可信度加权——既不民主也不独裁。一人一票和一人拍板他都不用。这一篇要回答的是：桥水那套「按战绩称重」的意见系统怎么运转。
+- [彼得·德鲁克 · 企业的目的是创造顾客](https://ourword.ai/i/drucker/create-a-customer/): 彼得·德鲁克 · 企业的目的是创造顾客——由外往里定义业务。问企业为什么存在，多数人答赚钱。这一篇要回答的是：德鲁克为什么说这个答案不但错，而且有害。
+- [彼得·德鲁克 · 高效地做不该做的事](https://ourword.ai/i/drucker/right-things-first/): 彼得·德鲁克 · 高效地做不该做的事——效果先于效率。他把两个常被混用的词拆开了。这一篇要回答的是：为什么效率的提升会掩盖方向的错误。
 - [爱因斯坦 · 提出问题比解决问题更重要](https://ourword.ai/i/einstein/formulating-the-problem/): 爱因斯坦 · 提出问题比解决问题更重要——换问题，不换答案。这句话出自他自己的书，不是鸡汤卡片。这一篇要回答的是：他本人是怎么用它的。
 - [爱因斯坦 · 专利局里的奇迹年](https://ourword.ai/i/einstein/patent-office/): 爱因斯坦 · 专利局里的奇迹年——边缘位置的自由。1905年他发表了改变物理学的四篇论文，职务是三级技术审查员。这一篇要回答的是：那个位置给了他什么。
 - [爱比克泰德 · 控制二分法](https://ourword.ai/i/epictetus/dichotomy/): 爱比克泰德 · 控制二分法——先分归不归你管。一个瘸腿的前奴隶写的处世手册，第一句是一次分类。这一篇要回答的是：这个分类为什么要放在一切之前。
@@ -84,6 +86,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [甘地 · 手段如种子](https://ourword.ai/i/gandhi/means-are-seeds/): 甘地 · 手段如种子——用什么方式赢，就得到什么。只要目的正当，手段可以将就吗？这一篇要回答的是：他在1909年就把这个问题堵死了。
 - [格雷厄姆 · 市场先生](https://ourword.ai/i/graham/mr-market/): 格雷厄姆 · 市场先生——报价是服务不是指令。他把整个市场拟人成一个躁郁的合伙人。这一篇要回答的是：这个寓言解开的到底是什么枷锁。
 - [格雷厄姆 · 安全边际](https://ourword.ai/i/graham/margin-of-safety/): 格雷厄姆 · 安全边际——给错误留的余量。他说全部投资智慧可以浓缩成三个词。这一篇要回答的是：这三个词买的到底是什么。
+- [安迪·格鲁夫 · 旋转门测试](https://ourword.ai/i/grove/revolving-door/): 安迪·格鲁夫 · 旋转门测试——把自己当成继任者。英特尔靠存储器起家，也差点死在存储器上。这一篇要回答的是：1985年办公室里那两句对话。
+- [安迪·格鲁夫 · 转折点与报信人](https://ourword.ai/i/grove/inflection-and-cassandras/): 安迪·格鲁夫 · 转折点与报信人——坏消息的通道。十倍速的变化来临时，高层几乎总是最后知道的。这一篇要回答的是：格鲁夫给这个结构性时差开的方子。
 - [管仲 · 仓廪实则知礼节](https://ourword.ai/i/guan-zhong/granaries-first/): 管仲 · 仓廪实则知礼节——先解决吃饭。为什么讲道理讲不通？这一篇要回答的是：管仲把顺序倒了过来，先看仓库再谈礼节。
 - [管仲 · 政之所兴，在顺民心](https://ourword.ai/i/guan-zhong/follow-the-people/): 管仲 · 政之所兴，在顺民心——顺着人的欲望修渠。一条推不下去的政策，问题往往不在执行。这一篇要回答的是：管仲检验政策的那把尺子。
 - [管仲 · 买鹿制楚](https://ourword.ai/i/guan-zhong/buying-deer/): 管仲 · 买鹿制楚——用价格打仗。不出一兵而让对手屈服，具体怎么做？这一篇要回答的是：一场两千多年前的经济战全过程。
@@ -110,6 +114,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [六祖慧能 · 佛法在世间](https://ourword.ai/i/huineng/in-the-world/): 六祖慧能 · 佛法在世间——修行不在别处。很多人等一个清净的环境再开始。这一篇要回答的是：慧能为什么说那个环境不存在。
 - [霍去病 · 顾方略何如耳](https://ourword.ai/i/huo-qubing/no-old-manuals/): 霍去病 · 顾方略何如耳——不背兵法，看局面。皇帝亲自要教他兵法，他推掉了。这一篇要回答的是：这句回话是狂妄还是判断。
 - [霍去病 · 取食于敌](https://ourword.ai/i/huo-qubing/feeding-off-the-enemy/): 霍去病 · 取食于敌——补给线就是枷锁。远征最大的限制是粮。这一篇要回答的是：他怎么把这个限制整个拿掉。
+- [稻盛和夫 · 思维方式是乘数](https://ourword.ai/i/inamori/the-multiplier/): 稻盛和夫 · 思维方式是乘数——而且可以为负。他把人生总结成一道乘法。这一篇要回答的是：为什么三个因子里只有一个带正负号。
+- [稻盛和夫 · 动机至善，私心了无](https://ourword.ai/i/inamori/pure-motive/): 稻盛和夫 · 动机至善，私心了无——开战前的半年自问。进军电信前，他把自己审了半年。这一篇要回答的是：这场自我审讯到底在防什么。
 - [影响力 · 互惠](https://ourword.ai/i/influence/reciprocity/): 影响力 · 互惠——亏欠感是杠杆。六大原理里他把互惠排第一。这一篇要回答的是：为什么先给的一方掌握主动。
 - [影响力 · 社会认同](https://ourword.ai/i/influence/social-proof/): 影响力 · 社会认同——不确定时看别人。罐头笑声人人讨厌，人人被它逗笑。这一篇要回答的是：这条原理在什么条件下最猛。
 - [创新者的窘境 · 败于良好管理](https://ourword.ai/i/innovators-dilemma/good-management-fails/): 创新者的窘境 · 败于良好管理——教科书动作导致出局。硬盘行业每一代领先者几乎都死于下一代。这一篇要回答的是：验尸报告为什么写着「死因：管理良好」。
@@ -126,6 +132,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [刘邦 · 三个不如](https://ourword.ai/i/liu-bang/three-i-cannot/): 刘邦 · 三个不如——承认别人比你强。开国庆功宴上他问了一个问题，然后自己给了答案。这一篇要回答的是：那个答案为什么是一种权力，而不是谦虚。
 - [刘邦 · 约法三章](https://ourword.ai/i/liu-bang/three-articles/): 刘邦 · 约法三章——先给一份能记住的规则。刚进入一个陌生地盘，第一件事做什么？这一篇要回答的是：他为什么把整部秦法换成了三句话。
 - [刘邦 · 当场改口](https://ourword.ai/i/liu-bang/changing-mid-sentence/): 刘邦 · 当场改口——被踩一脚就换答案。话已经说出口一半，发现说错了怎么办？这一篇要回答的是：刘邦的做法难看，但每一次都对。
+- [利弗莫尔 · 坐功](https://ourword.ai/i/livermore/sitting-tight/): 利弗莫尔 · 坐功——对了就别动。一个以进出神速闻名的投机客，把功劳记在了不动上。这一篇要回答的是：坐着为什么比判断难。
+- [利弗莫尔 · 把希望和恐惧对调](https://ourword.ai/i/livermore/hope-and-fear-inverted/): 利弗莫尔 · 把希望和恐惧对调——本能用反了方向。他四起四落，破产过多次。这一篇要回答的是：他从自己的血里提炼出的那条对调法则。
 - [彼得·林奇 · 商场里的十倍股](https://ourword.ai/i/lynch/tenbagger-at-the-mall/): 彼得·林奇 · 商场里的十倍股——发现只是起点。「投资你了解的东西」是他被引用最多也被误用最多的话。这一篇要回答的是：被删掉的后半句。
 - [彼得·林奇 · 关键器官是胃](https://ourword.ai/i/lynch/stomach-not-brain/): 彼得·林奇 · 关键器官是胃——拿得住比看得准难。他的基金年化29%，据统计多数持有人却亏了钱。这一篇要回答的是：这个荒诞的差距亏在哪个器官上。
 - [马基雅维利 · 从实然出发](https://ourword.ai/i/machiavelli/as-it-is/): 马基雅维利 · 从实然出发——先看人怎么做，不看人该怎么做。他被骂了五百年。这一篇要回答的是：那句让他背负骂名的话，到底说的是什么。
@@ -143,6 +151,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [马可·奥勒留 · 晨起预演](https://ourword.ai/i/marcus-aurelius/morning-preparation/): 马可·奥勒留 · 晨起预演——先把今天会遇到的人想一遍。第二卷第一句就是一段准备。这一篇要回答的是：为什么提前预料到不快，能让不快减半。
 - [霍华德·马克斯 · 第二层思维](https://ourword.ai/i/marks/second-level-thinking/): 霍华德·马克斯 · 第二层思维——把共识算进价格。同样看好一家公司，两个人的结论可以相反。这一篇要回答的是：马克斯说差别在思考发生在第几层。
 - [霍华德·马克斯 · 给市场量体温](https://ourword.ai/i/marks/taking-the-temperature/): 霍华德·马克斯 · 给市场量体温——不预测，定位。他不做预测，却重仓抄过两次大底。这一篇要回答的是：不知道明天，怎么还能行动。
+- [松下幸之助 · 自来水哲学](https://ourword.ai/i/matsushita/tap-water/): 松下幸之助 · 自来水哲学——把使命定在价格上。他看见路人拧开别人家的水龙头喝水，没人责怪。这一篇要回答的是：他从这一幕里定下的公司使命。
+- [松下幸之助 · 下雨打伞](https://ourword.ai/i/matsushita/umbrella-in-rain/): 松下幸之助 · 下雨打伞——理所当然的经营。被问经营秘诀，他答了四个字。这一篇要回答的是：这个近乎敷衍的答案为什么最难做到。
 - [孟子 · 民为贵](https://ourword.ai/i/mencius/people-first/): 孟子 · 民为贵——权力的地基在最下面。这句话被当成两千年前的民本情怀。这一篇要回答的是：它其实是一句关于权力从哪来的技术判断。
 - [孟子 · 以力服人与以德服人](https://ourword.ai/i/mencius/force-vs-virtue/): 孟子 · 以力服人与以德服人——顺从和心服的区别。同样是听你的，有两种完全不同的听。这一篇要回答的是：怎么分辨你手上的是哪一种。
 - [孟子 · 养浩然之气](https://ourword.ai/i/mencius/flood-like-qi/): 孟子 · 养浩然之气——顶得住压力的那口气。公孙丑问什么是浩然之气，孟子说难言也。这一篇要回答的是：这口气到底怎么来的，以及怎么弄丢。
@@ -168,6 +178,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [商鞅 · 法不阿贵](https://ourword.ai/i/shang-yang/law-above-rank/): 商鞅 · 法不阿贵——第一次例外就是终点。新法推行一年，太子犯了法。这一篇要回答的是：这一刻的处理决定了整套制度往后十年的效力。
 - [司马懿 · 千里袭孟达](https://ourword.ai/i/sima-yi/eight-days/): 司马懿 · 千里袭孟达——对方按常识排的期，就是缺口。对手把你的到达时间算得清清楚楚。这一篇要回答的是：他算错的不是距离，是你会不会守规矩。
 - [司马懿 · 等一个不会重来的时刻](https://ourword.ai/i/sima-yi/waiting/): 司马懿 · 等一个不会重来的时刻——忍到对方彻底松手。示弱示到什么程度才够？这一篇要回答的是：他把粥洒在胸口的那一刻在做什么。
+- [吉姆·西蒙斯 · 像奴隶一样跟随模型](https://ourword.ai/i/simons/slave-to-the-model/): 吉姆·西蒙斯 · 像奴隶一样跟随模型——纪律外包给系统。史上收益最高的基金，规矩是不许聪明人临场发挥。这一篇要回答的是：这条铁律防的是谁。
+- [吉姆·西蒙斯 · 美感与最好的人](https://ourword.ai/i/simons/simons-principles/): 吉姆·西蒙斯 · 美感与最好的人——他公开过自己的原则。一个靠算法赚钱的人总结一生，五条原则没有一条讲数学。这一篇要回答的是：那几条到底在讲什么。
 - [苏格拉底 · 不自以为知道](https://ourword.ai/i/socrates/knowing-not-knowing/): 苏格拉底 · 不自以为知道——聪明只多这一点。德尔斐神谕说没有人比他更智慧。这一篇要回答的是：他不信，于是做了一件很像实验的事。
 - [苏格拉底 · 产婆术](https://ourword.ai/i/socrates/midwifery/): 苏格拉底 · 产婆术——不给答案，只接生。他母亲是产婆，他说自己继承了这门手艺。这一篇要回答的是：为什么他坚持不直接给答案。
 - [索罗斯 · 反身性](https://ourword.ai/i/soros/reflexivity/): 索罗斯 · 反身性——认知改写现实。教科书说价格反映基本面。这一篇要回答的是：索罗斯为什么说箭头是双向的，以及这条回路怎么造出泡沫。
@@ -177,6 +189,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [苏轼 · 也无风雨也无晴](https://ourword.ai/i/su-shi/no-wind-no-rain/): 苏轼 · 也无风雨也无晴——把评价系统关掉。同行的人都狼狈不堪，他不觉得。这一篇要回答的是：那一刻他关掉的是什么。
 - [苏轼 · 黄州惠州儋州](https://ourword.ai/i/su-shi/three-exiles/): 苏轼 · 黄州惠州儋州——在被贬的地方干实事。他晚年自评一生功业，列的是三个贬所。这一篇要回答的是：为什么不是他做过的那些高官。
 - [苏轼 · 眼前见天下无一个不好人](https://ourword.ai/i/su-shi/no-bad-people/): 苏轼 · 眼前见天下无一个不好人——把人当人处理。一个被政敌整到差点丧命的人，说眼前没有一个坏人。这一篇要回答的是：这句话不是天真。
+- [粟裕 · 斗胆直陈](https://ourword.ai/i/su-yu/daring-to-state/): 粟裕 · 斗胆直陈——推翻上级部署的姿态。中央已定的战略是他率三个纵队渡江南进。这一篇要回答的是：一个下级怎么把既定部署翻了过来。
+- [粟裕 · 把小淮海打成大淮海](https://ourword.ai/i/su-yu/enlarging-huaihai/): 粟裕 · 把小淮海打成大淮海——战机出现时敢于扩大方案。淮海战役这个名字出自他的电报。这一篇要回答的是：一场战役怎么在进行中被扩成决战。
 - [孙子兵法 · 先胜而后求战](https://ourword.ai/i/sun-tzu/win-before-fighting/): 孙子兵法 · 先胜而后求战——赢在开打之前。输了的人常说运气不好，赢了的人常说打得漂亮。这一篇要回答的是：胜负在哪一刻其实已经定了。
 - [孙子兵法 · 知彼知己](https://ourword.ai/i/sun-tzu/know-both/): 孙子兵法 · 知彼知己——先算清楚再动。「知己知彼」被引用了两千年，多数人只记住了上半句的意思。这一篇要回答的是：知到什么程度才算知。
 - [孙子兵法 · 不战而屈人之兵](https://ourword.ai/i/sun-tzu/win-without-fighting/): 孙子兵法 · 不战而屈人之兵——最好的仗不用打。百战百胜听起来是最高成就。孙子说不是。这一篇要回答的是：为什么打赢一百次仍然是次优解。
