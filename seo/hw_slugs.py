@@ -124,6 +124,14 @@ TAG_SLUGS = {
     "财富投资": "wealth",
     "中古": "medieval",
     "秦汉至魏晋": "han-wei",
+    "谋略与竞争": "strategy",
+    "权力与组织": "power",
+    "财富与风险": "wealth",
+    "创业与产品": "startups",
+    "识人与相处": "people",
+    "心智与情绪": "mind",
+    "学习与成长": "learning",
+    "世界如何运转": "world",
     "近世": "early-modern",
 }
 

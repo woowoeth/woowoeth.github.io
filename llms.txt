@@ -21,16 +21,17 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 - [工业时代](https://ourword.ai/t/industrial-age/) — 33
 - [现代](https://ourword.ai/t/modern/) — 21
 - [先秦与古典时代](https://ourword.ai/t/classical-era/) — 19
-- [权力·治理](https://ourword.ai/t/power/) — 15
-- [创业·产品](https://ourword.ai/t/startups/) — 15
-- [典籍·洞见](https://ourword.ai/t/classics/) — 14
-- [处世·人性](https://ourword.ai/t/human-nature/) — 14
-- [心智·哲学](https://ourword.ai/t/mind/) — 14
-- [战略·博弈](https://ourword.ai/t/strategy/) — 14
-- [财富·投资](https://ourword.ai/t/wealth/) — 14
+- [权力与组织](https://ourword.ai/t/power/) — 19
+- [创业与产品](https://ourword.ai/t/startups/) — 16
+- [谋略与竞争](https://ourword.ai/t/strategy/) — 16
+- [财富与风险](https://ourword.ai/t/wealth/) — 15
+- [心智与情绪](https://ourword.ai/t/mind/) — 10
+- [识人与相处](https://ourword.ai/t/people/) — 10
+- [世界如何运转](https://ourword.ai/t/world/) — 10
 - [近世](https://ourword.ai/t/early-modern/) — 9
 - [秦汉至魏晋](https://ourword.ai/t/han-wei/) — 9
 - [中古](https://ourword.ai/t/medieval/) — 9
+- [学习与成长](https://ourword.ai/t/learning/) — 4
 
 ## How it is built
 
