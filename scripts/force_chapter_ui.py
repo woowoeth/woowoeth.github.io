@@ -261,7 +261,10 @@ def _hwx_payload():
                    "s": slug, "k": k, "u": "/i/%s/%s/" % (slug, k),
                    "c": cat_by.get(pname,"")})
 
-    j = json.dumps({"E": E, "QP": QP, "QQ": QQ, "S": S, "ASK": ASK,
+    # 竖排卡在 158px 窄列里只放得下 4 列，长句会把卡片撑到别人两倍高：
+    # 另建一个 ≤24 字的短句池给信息流，长句仍归今日一句与分享卡。
+    QS = [q for q in QP if len(q["q"]) <= 20]
+    j = json.dumps({"E": E, "QP": QP, "QS": QS, "QQ": QQ, "S": S, "ASK": ASK,
                     "CC": CAT_COLOR, "CT": CAT_TINT, "CTD": CAT_TINT_D, "NC": NC}, ensure_ascii=False, separators=(",",":")).replace("</","<\\/")
     return j, len(E), len(NC)
 
@@ -360,10 +363,10 @@ body{background:var(--paper);color:var(--ink)}
 #hwx .nc .q{font-size:13px;line-height:1.7}
 #hwx .nc .q::before{content:"「"}#hwx .nc .q::after{content:"」"}
 #hwx .qc{border-radius:14px;background:var(--paper2);border:1px solid var(--line);padding:15px 13px 12px;display:flex;flex-direction:column;text-decoration:none;color:inherit;position:relative}
-#hwx .qc .v{writing-mode:vertical-rl;text-orientation:mixed;height:250px;width:100%;font-family:"Noto Serif SC","Source Han Serif SC","Songti SC","STSong","SimSun",serif;font-size:15.5px;font-weight:700;line-height:2.0;letter-spacing:.06em;margin:2px 0 10px;overflow:hidden;display:block}
+#hwx .qc .v{writing-mode:vertical-rl;text-orientation:mixed;height:150px;width:fit-content;max-width:100%;font-family:"Noto Serif SC","Source Han Serif SC","Songti SC","STSong","SimSun",serif;font-size:15px;font-weight:700;line-height:1.9;letter-spacing:.04em;margin:4px auto 12px;overflow:hidden;display:block}
 #hwx .qc .v::before{content:"「"}#hwx .qc .v::after{content:"」"}
 #hwx .qc .who{font-size:11.5px;color:var(--muted);margin-top:2px}
-#hwx .qc .gl{font-size:12px;line-height:1.65;color:var(--ink);opacity:.78;margin-top:8px;border-top:1px dashed var(--line);padding-top:8px}
+#hwx .qc .gl{font-size:11.5px;line-height:1.6;color:var(--ink);opacity:.78;margin-top:7px;border-top:1px dashed var(--line);padding-top:7px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 #hwx .qc .gl b{font-weight:600;color:var(--acc);opacity:1}
 #hwx .qc .who i{font-style:normal;color:var(--acc)}
 #hwx .qc .seal{position:absolute;top:12px;right:12px;width:20px;height:20px;border:1.5px solid var(--acc);border-radius:4px;color:var(--acc);font-size:11px;display:flex;align-items:center;justify-content:center}
@@ -556,7 +559,7 @@ D.E.forEach(function(e,i){
   var chTxt=(byNC[e.n]||[]).join(' ');
   var dt=esc((e.n+' '+e.w+' '+e.c+' '+e.it+' '+e.hk+' '+chTxt+' '+(e.ix||'')).toLowerCase());
   fullCells.push('<a class="pc" href="/i/'+e.s+'/" data-h="'+esc(e.n)+'" data-c="'+e.c+'" data-t="'+dt+'" style="--tint:'+(D.CT[e.c]||'transparent')+';--tintd:'+(D.CTD[e.c]||'transparent')+'"><span class="r1"><b>'+e.n+'</b><i class="tag">'+e.w+'</i></span><span class="it">'+e.it+'</span><span class="hk">'+(e.hk||e.w)+'</span>'+(e.cs.length?'<span class="ls">'+e.cs.join(' / ')+'</span>':'')+'<span class="cf">'+cta(e)+'</span></a>');
-  if(i%3===2&&qi<D.QP.length){var g=D.QP[(qi*37)%D.QP.length];qi++;
+  if(i%3===2){var g=D.QS[(qi*37)%D.QS.length];qi++;
     fullCells.push(qcard(g,'xtra'));}
   if(i%8===5&&ki<D.QQ.length){var k=D.QQ[ki++];
     fullCells.push('<div class="kc xtra" data-t="'+esc(k.t.toLowerCase())+'"><span class="qm">？</span><span class="t">'+k.t+'</span><span class="r">'+k.r.map(function(r){return '<a href="'+r.u+'" data-h="'+esc(r.who+' · '+r.cn)+'"><b>'+r.who+'</b> · '+r.cn+' →</a>'}).join('')+'</span></div>');}
@@ -575,7 +578,7 @@ D.NC.forEach(function(e,i){
     }
     if(pe){_seen[pe.s]=1;
       ncCells.push('<a class="pc" href="/i/'+pe.s+'/" data-h="'+esc(pe.n)+'" style="--sp:'+(D.CC[pe.c]||'#999')+'"><span class="r1"><b>'+pe.n+'</b><i class="tag">'+pe.w+'</i></span><span class="it">'+pe.it+'</span><span class="hk">'+(pe.hk||pe.w)+'</span><span class="cf">'+cta(pe)+'</span></a>');}
-    var g=D.QP[(_qi*53)%D.QP.length];_qi++;
+    var g=D.QS[(_qi*53)%D.QS.length];_qi++;
     ncCells.push(qcard(g,''));
   }
   if(i%9===7&&_ki<D.QQ.length){var k=D.QQ[_ki++];
