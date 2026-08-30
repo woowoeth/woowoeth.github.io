@@ -41,6 +41,11 @@ jobs:
         run: python seo/build_seo.py
       - name: Force chapter UI onto built HTML
         run: python scripts/force_chapter_ui.py
+      - name: Integrity gate
+        run: |
+          pip install -q pillow pyzbar 2>/dev/null || true
+          sudo apt-get install -y -qq libzbar0 2>/dev/null || true
+          python scripts/check_integrity.py
       - name: Refuse to publish a broken page
         run: |
           if grep -rInE '^(<{7}|={7}|>{7}) ' --include='*.html' . ; then
