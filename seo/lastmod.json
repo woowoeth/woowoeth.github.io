@@ -3,6 +3,14 @@
   "d": "2026-08-29",
   "h": "9fec667e440d2e9d"
  },
+ "i/adler/separation-of-tasks/": {
+  "d": "2026-08-30",
+  "h": "e38a25dd11bcddfe"
+ },
+ "i/adler/teleology/": {
+  "d": "2026-08-30",
+  "h": "831f4df629bf6734"
+ },
  "i/analects/": {
   "d": "2026-08-28",
   "h": "a26eea94e79d2453"
@@ -139,6 +147,14 @@
   "d": "2026-08-29",
   "h": "3ade7db5066a9d40"
  },
+ "i/chris-voss/labeling/": {
+  "d": "2026-08-30",
+  "h": "fa6cac8322106b99"
+ },
+ "i/chris-voss/thats-right/": {
+  "d": "2026-08-30",
+  "h": "5a32a8cabc3d16e1"
+ },
  "i/crowd/": {
   "d": "2026-08-28",
   "h": "34679df50e56acbf"
@@ -154,6 +170,14 @@
  "i/crucial-conversations/": {
   "d": "2026-08-29",
   "h": "4e1b4b6ca3f8cfed"
+ },
+ "i/crucial-conversations/safety-first/": {
+  "d": "2026-08-30",
+  "h": "764a893c95f17ca0"
+ },
+ "i/crucial-conversations/start-with-heart/": {
+  "d": "2026-08-30",
+  "h": "713e2c8cb6514b35"
  },
  "i/dalio/": {
   "d": "2026-08-28",
@@ -290,6 +314,14 @@
  "i/gottman/": {
   "d": "2026-08-29",
   "h": "e242bc05d0bf5a5c"
+ },
+ "i/gottman/four-horsemen/": {
+  "d": "2026-08-30",
+  "h": "c6c9f32c1d642aca"
+ },
+ "i/gottman/repair-attempts/": {
+  "d": "2026-08-30",
+  "h": "d40d4b8a60eb8406"
  },
  "i/graham/": {
   "d": "2026-08-28",
@@ -811,6 +843,14 @@
   "d": "2026-08-29",
   "h": "4006d7256644dae8"
  },
+ "i/nonviolent-communication/needs-behind-blame/": {
+  "d": "2026-08-30",
+  "h": "7adfd1a6c5981a1c"
+ },
+ "i/nonviolent-communication/observation-not-evaluation/": {
+  "d": "2026-08-30",
+  "h": "0549b4b9d46b3a26"
+ },
  "i/old-regime/": {
   "d": "2026-08-28",
   "h": "6cd9cae4df5a517e"
@@ -898,6 +938,14 @@
  "i/seneca/": {
   "d": "2026-08-29",
   "h": "51ff37857e26d9c8"
+ },
+ "i/seneca/on-anger/": {
+  "d": "2026-08-30",
+  "h": "73bc939a7f37df76"
+ },
+ "i/seneca/on-shortness-of-life/": {
+  "d": "2026-08-30",
+  "h": "fad90d737fe0dbd2"
  },
  "i/shang-yang/": {
   "d": "2026-08-28",

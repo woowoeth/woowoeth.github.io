@@ -43,6 +43,8 @@ Written by hand, one entry per figure or text. Each entry is condensed to the si
 
 Long-form chapters hanging off a person page. Not part of the entry index above.
 
+- [阿德勒 · 课题分离](https://ourword.ai/i/adler/separation-of-tasks/): 阿德勒 · 课题分离——先分清这是谁的事。人际关系的痛苦大半来自越界。这一篇要回答的是：边界到底画在哪。
+- [阿德勒 · 不是因为，是为了](https://ourword.ai/i/adler/teleology/): 阿德勒 · 不是因为，是为了——把原因换成目的。弗洛伊德问你经历过什么，阿德勒问你想用它做什么。这一篇要回答的是：这个换问法为什么能解冻。
 - [论语 · 知之为知之](https://ourword.ai/i/analects/know-what-you-know/): 论语 · 知之为知之——把不知道说出来。承认不懂听起来是谦虚。这一篇要回答的是：它其实是一项操作能力，而且很少有人真正做得到。
 - [论语 · 视其所以，观其所由](https://ourword.ai/i/analects/see-how/): 论语 · 视其所以，观其所由——三层看人法。看人看走眼是常事。这一篇要回答的是：孔子给的那三层，为什么一层比一层难藏。
 - [论语 · 己所不欲，勿施于人](https://ourword.ai/i/analects/reciprocity/): 论语 · 己所不欲，勿施于人——唯一一条能终身行的。子贡问有没有一句话可以终身奉行。这一篇要回答的是：孔子为什么给的是一条否定式的规则。
@@ -66,8 +68,12 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [曹操 · 唯才是举](https://ourword.ai/i/cao-cao/talent-only/): 曹操 · 唯才是举——只考一门，不考品行。他公开宣布不看品行只看能力。这一篇要回答的是：这条极端的标准是在什么条件下才成立的。
 - [曹操 · 屯田](https://ourword.ai/i/cao-cao/military-farming/): 曹操 · 屯田——先解决自己的补给。同一个乱世，各方都在抢粮。这一篇要回答的是：他做了一件所有人都没耐心做的事。
 - [曹操 · 官渡烧信](https://ourword.ai/i/cao-cao/burning-the-letters/): 曹操 · 官渡烧信——有些账不能算。手里有一叠证据，能查清谁背叛过你。这一篇要回答的是：他为什么当众把它们烧了。
+- [克里斯·沃斯 · 把对方的情绪说出来](https://ourword.ai/i/chris-voss/labeling/): 克里斯·沃斯 · 把对方的情绪说出来——先标注，再谈事。对方不说话、不接条件。这一篇要回答的是：这时候该说什么。
+- [克里斯·沃斯 · 要的是「说得对」不是「好」](https://ourword.ai/i/chris-voss/thats-right/): 克里斯·沃斯 · 要的是「说得对」不是「好」——两种同意差别巨大。对方点头了，事情却没推进。这一篇要回答的是：你拿到的是哪一种同意。
 - [乌合之众 · 进入群体的人](https://ourword.ai/i/crowd/descent-in-crowds/): 乌合之众 · 进入群体的人——台阶往下走。为什么一群体面人凑在一起会干出格的事？这一篇要回答的是：勒庞给出的三个台阶。
 - [乌合之众 · 断言、重复、传染](https://ourword.ai/i/crowd/assert-repeat-contaminate/): 乌合之众 · 断言、重复、传染——群体说服三件套。他把煽动家的手法拆成了三个动词。这一篇要回答的是：这套配方为什么有效，以及怎么防。
+- [关键对话 · 先造安全感](https://ourword.ai/i/crucial-conversations/safety-first/): 关键对话 · 先造安全感——不安全的人听不进内容。你讲的每一句都对，对方却越退越远。这一篇要回答的是：这时该停下什么。
+- [关键对话 · 从心出发](https://ourword.ai/i/crucial-conversations/start-with-heart/): 关键对话 · 从心出发——先确认自己到底要什么。吵到一半，你已经不记得最初想解决什么了。这一篇要回答的是：目标是怎么被换掉的。
 - [达里奥 · 痛苦加反思等于进步](https://ourword.ai/i/dalio/pain-plus-reflection/): 达里奥 · 痛苦加反思等于进步——1982年那次破产。他把公司做没了，后来称那是此生最好的事。这一篇要回答的是：中间那道工序是什么。
 - [达里奥 · 可信度加权](https://ourword.ai/i/dalio/believability/): 达里奥 · 可信度加权——既不民主也不独裁。一人一票和一人拍板他都不用。这一篇要回答的是：桥水那套「按战绩称重」的意见系统怎么运转。
 - [彼得·德鲁克 · 企业的目的是创造顾客](https://ourword.ai/i/drucker/create-a-customer/): 彼得·德鲁克 · 企业的目的是创造顾客——由外往里定义业务。问企业为什么存在，多数人答赚钱。这一篇要回答的是：德鲁克为什么说这个答案不但错，而且有害。
@@ -90,6 +96,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [富兰克林 · 戒掉「肯定」这个词](https://ourword.ai/i/franklin/never-say-certainly/): 富兰克林 · 戒掉「肯定」这个词——断言换成设想。有人当面告诉他：你让人受不了。这一篇要回答的是：他改的不是观点，是句式。
 - [甘地 · 食盐进军](https://ourword.ai/i/gandhi/salt-march/): 甘地 · 食盐进军——选一个人人都懂的目标物。反抗一个帝国，从哪里下手？这一篇要回答的是：他为什么挑了盐这种最不起眼的东西。
 - [甘地 · 手段如种子](https://ourword.ai/i/gandhi/means-are-seeds/): 甘地 · 手段如种子——用什么方式赢，就得到什么。只要目的正当，手段可以将就吗？这一篇要回答的是：他在1909年就把这个问题堵死了。
+- [约翰·戈特曼 · 末日四骑士](https://ourword.ai/i/gottman/four-horsemen/): 约翰·戈特曼 · 末日四骑士——预测破裂的四种信号。他只看一段十五分钟的争吵。这一篇要回答的是：他到底在看什么。
+- [约翰·戈特曼 · 修复尝试](https://ourword.ai/i/gottman/repair-attempts/): 约翰·戈特曼 · 修复尝试——会不会吵不重要，会不会停才重要。健康的关系也激烈争吵。这一篇要回答的是：那它们和破裂的关系差在哪。
 - [格雷厄姆 · 市场先生](https://ourword.ai/i/graham/mr-market/): 格雷厄姆 · 市场先生——报价是服务不是指令。他把整个市场拟人成一个躁郁的合伙人。这一篇要回答的是：这个寓言解开的到底是什么枷锁。
 - [格雷厄姆 · 安全边际](https://ourword.ai/i/graham/margin-of-safety/): 格雷厄姆 · 安全边际——给错误留的余量。他说全部投资智慧可以浓缩成三个词。这一篇要回答的是：这三个词买的到底是什么。
 - [安迪·格鲁夫 · 旋转门测试](https://ourword.ai/i/grove/revolving-door/): 安迪·格鲁夫 · 旋转门测试——把自己当成继任者。英特尔靠存储器起家，也差点死在存储器上。这一篇要回答的是：1985年办公室里那两句对话。
@@ -180,6 +188,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [纳瓦尔 · 把自己产品化](https://ourword.ai/i/naval/productize-yourself/): 纳瓦尔 · 把自己产品化——特定知识乘以杠杆。他把整套方法压成四个字。这一篇要回答的是：「自己」和「产品化」各指什么，以及新杠杆好在哪。
 - [尼采 · 杀不死我的](https://ourword.ai/i/nietzsche/what-does-not-kill/): 尼采 · 杀不死我的——这句话有使用条件。这可能是被引用最多也被用错最多的一句话。这一篇要回答的是：它在什么条件下才成立。
 - [尼采 · 凝视深渊](https://ourword.ai/i/nietzsche/gazing-into-abyss/): 尼采 · 凝视深渊——与怪物战斗的代价。这条箴言只有两句话，却是一整套职业风险提示。这一篇要回答的是：那个变化是怎么发生的。
+- [非暴力沟通 · 先说观察，别说评论](https://ourword.ai/i/nonviolent-communication/observation-not-evaluation/): 非暴力沟通 · 先说观察，别说评论——第一句就决定成败。多数争吵在开口那一秒就输了。这一篇要回答的是：输在哪一个字上。
+- [非暴力沟通 · 指责底下是需要](https://ourword.ai/i/nonviolent-communication/needs-behind-blame/): 非暴力沟通 · 指责底下是需要——听懂没说出口的那半句。对方在骂你，字面之下他在要什么。这一篇要回答的是：怎么把那半句翻出来。
 - [旧制度与大革命 · 开始改革的时刻](https://ourword.ai/i/old-regime/most-dangerous-moment/): 旧制度与大革命 · 开始改革的时刻——松绑反而引爆。革命前二十年是法国旧制度最繁荣的时期。这一篇要回答的是：托克维尔从这个悖论里提炼的那条定律。
 - [旧制度与大革命 · 穿过革命的集权](https://ourword.ai/i/old-regime/centralization-survived/): 旧制度与大革命 · 穿过革命的集权——推翻一切，继承内核。大革命自称与过去彻底决裂。这一篇要回答的是：托克维尔挖出的那条完整穿过革命的暗线。
 - [战争论 · 政治的继续](https://ourword.ai/i/on-war/continuation-of-politics/): 战争论 · 政治的继续——打是为了谈。全书最有名的一句常被当成犬儒的断言。这一篇要回答的是：它其实是一条约束条款。
@@ -194,6 +204,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [人类简史 · 小麦驯化了我们](https://ourword.ai/i/sapiens/wheat-domesticated-us/): 人类简史 · 小麦驯化了我们——奢侈品陷阱。农业革命让人口暴增，也让普通人过得更糟。这一篇要回答的是：一个物种的成功和它成员的幸福为什么会背离。
 - [托马斯·谢林 · 自缚双手的优势](https://ourword.ai/i/schelling/binding-yourself/): 托马斯·谢林 · 自缚双手的优势——砍掉选项换可信。博弈论的常识是选项越多越好。这一篇要回答的是：谢林为什么证明了相反的情形。
 - [托马斯·谢林 · 谢林点](https://ourword.ai/i/schelling/focal-points/): 托马斯·谢林 · 谢林点——不沟通的会合。两个人在纽约走散，无法联系，去哪碰头？这一篇要回答的是：为什么多数人给出了同一个答案。
+- [塞涅卡 · 时间是唯一追不回的成本](https://ourword.ai/i/seneca/on-shortness-of-life/): 塞涅卡 · 时间是唯一追不回的成本——先算时间再算钱。同一个人为几十块钱货比三家，却轻易答应一场无意义的应酬。这一篇要回答的是：这笔账错在哪。
+- [塞涅卡 · 愤怒有一道闸门](https://ourword.ai/i/seneca/on-anger/): 塞涅卡 · 愤怒有一道闸门——拦不住印象，拦得住判断。愤怒看着像瞬间爆发。这一篇要回答的是：它其实分三步，其中一步归你管。
 - [商鞅 · 徙木立信](https://ourword.ai/i/shang-yang/moving-the-pole/): 商鞅 · 徙木立信——先证明说话算数。变法条文早就写好了，他却先去搬了一根木头。这一篇要回答的是：那根木头解决的是什么问题。
 - [商鞅 · 法不阿贵](https://ourword.ai/i/shang-yang/law-above-rank/): 商鞅 · 法不阿贵——第一次例外就是终点。新法推行一年，太子犯了法。这一篇要回答的是：这一刻的处理决定了整套制度往后十年的效力。
 - [司马懿 · 千里袭孟达](https://ourword.ai/i/sima-yi/eight-days/): 司马懿 · 千里袭孟达——对方按常识排的期，就是缺口。对手把你的到达时间算得清清楚楚。这一篇要回答的是：他算错的不是距离，是你会不会守规矩。

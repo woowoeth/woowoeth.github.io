@@ -50,7 +50,14 @@ _sys.path.insert(0, str(Path(__file__).resolve().parent))  # CI 从仓库根调�
 from hwx_scenes import SCENES as HWX_SCENES
 
 HWX_INTROS = {
-"sun-tzu":"最早也最完整的战争方法论，被读了两千五百年","mao":"从绝对弱势打到全局翻盘的战略操盘手",
+"sun-tzu":"最早也最完整的战争方法论，被读了两千五百年",
+"adler":"把「这是谁的课题」问成一把刀的心理学家",
+"nonviolent-communication":"把吵架拆成四步的沟通课",
+"seneca":"在权力核心里写节制的斯多噶派",
+"chris-voss":"谈判先处理情绪的FBI首席专家",
+"gottman":"用实验室数据预测婚姻存亡的心理学家",
+"crucial-conversations":"研究了两万人怎么把难谈的话谈成",
+"mao":"从绝对弱势打到全局翻盘的战略操盘手",
 "su-yu":"敢三次电报推翻上级部署的战役指挥员","tao-te-ching":"五千字讲透以柔克刚的元典",
 "wang-yangming":"把「知道做不到」判为不知道的心学宗师","zeng-guofan":"资质平平、靠笨功夫成大事的标本",
 "fan-li":"三次散尽家财三次重来的商圣","han-xin":"用兵如神却死于收场的名将",
