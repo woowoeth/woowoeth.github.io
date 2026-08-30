@@ -18,6 +18,56 @@ MARK_OPEN = (
     'text-decoration:none">'
 )
 
+# 读完之后的收尾块：条目页与章节页共用。
+# 文案避开「觉得有用请分享」这种索取式说法——那是替网站要东西。
+# 改成把动作说成读者自己的事：他刚获得了一个可用的想法，
+# 分享是「把它给到那个正需要的人」，收藏是「下次遇到还找得到」。
+OUTRO_CSS = (
+    '<style id="hw-outro">'
+    '.hw-outro{margin:38px 0 8px;padding:22px 20px;border-radius:16px;'
+    'background:var(--surface-2,#f2ece0);text-align:center}'
+    '.hw-outro p{font-family:"Noto Serif SC","Songti SC","STSong",serif;'
+    'font-size:16px;line-height:1.9;margin:0 0 4px;color:var(--ink)}'
+    '.hw-outro small{display:block;font-size:13px;color:var(--muted);'
+    'line-height:1.8;margin-bottom:16px}'
+    '.hw-outro .acts{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}'
+    '.hw-outro .acts button{border:1.5px solid var(--ink);background:transparent;'
+    'color:var(--ink);border-radius:999px;padding:9px 20px;cursor:pointer;'
+    'font-family:"Noto Serif SC","Songti SC",serif;font-size:14.5px}'
+    '.hw-outro .acts button.pri{background:var(--ink);color:var(--paper,#f7f4ec)}'
+    '.hw-outro .acts button:active{transform:scale(.97)}'
+    '</style>'
+)
+
+
+def outro_html(title, url, text):
+    return (
+        '<div class="hw-outro">'
+        '<p>这一篇如果说中了你正在经历的事，</p>'
+        '<small>转给那个也许正需要的人，或者存下来——下次遇到还找得到。</small>'
+        '<div class="acts">'
+        '<button class="pri" type="button" data-share '
+        'data-share-title="%s" data-share-url="%s" data-share-text="%s">分享给一个人</button>'
+        '<button type="button" data-hw-save>收藏这一篇</button>'
+        '</div></div>'
+    ) % (title, url, text)
+
+
+OUTRO_JS = (
+    '<script>(function(){'
+    'var b=document.querySelector(".hw-outro [data-hw-save]");if(!b)return;'
+    'b.onclick=function(){'
+    '  try{'
+    '    var K="hwx_saved",a=JSON.parse(localStorage.getItem(K)||"[]");'
+    '    var u=location.pathname,t=(document.querySelector("h1")||{}).textContent||u;'
+    '    if(!a.some(function(x){return x.u===u})){a.unshift({u:u,t:t});'
+    '      localStorage.setItem(K,JSON.stringify(a.slice(0,200)));}'
+    '    b.textContent="已收藏";b.disabled=true;'
+    '  }catch(e){b.textContent="这台设备不支持收藏";}'
+    '};})();</script>'
+)
+
+
 def patch_html():
     n = 0
     for path in (ROOT / "i").rglob("index.html") if (ROOT / "i").exists() else []:
@@ -31,6 +81,20 @@ def patch_html():
         if 'id="hw-force"' not in s:
             s = s.replace("</head>", STYLE + "</head>", 1)
         s = re.sub(r"<mark class=\"hl\"(?: style=\"[^\"]*\")?>", MARK_OPEN, s)
+        # 读完之后的收尾块——正文结束处，不是页脚
+        if "hw-outro" not in s:
+            m = re.search(r'<h1[^>]*>(.*?)</h1>', s, re.S)
+            _t = re.sub(r"<[^>]+>", "", m.group(1)).strip() if m else "人类世界生存法则"
+            _u = "https://ourword.ai" + "/" + str(path.parent.relative_to(ROOT)) + "/"
+            _u = _u.replace("//", "/").replace("https:/", "https://")
+            _blk = outro_html(_t + " — 人类世界生存法则", _u, _t)
+            for _tail in ('</section>\n</article>', '</div>\n</article>', '</article>'):
+                if _tail in s:
+                    s = s.replace(_tail, _blk + _tail, 1); break
+            else:
+                s = s.replace("</main>", _blk + "</main>", 1)
+            s = s.replace("</head>", OUTRO_CSS + "</head>", 1)
+            s = s.replace("</body>", OUTRO_JS + "</body>", 1)
         if s != orig:
             path.write_text(s, encoding="utf-8")
             n += 1
