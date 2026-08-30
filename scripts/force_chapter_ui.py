@@ -392,7 +392,7 @@ body{background:var(--paper);color:var(--ink)}
 #hwx .today .tq .q{font-size:17px!important;line-height:1.8!important;margin-bottom:8px!important}
 #hwx .today .tq .tgl{display:none}
 #hwx .today .tq .acts button{padding:5px 12px;font-size:12.5px;border-width:1px}
-#hwx .today .tq .acts .bs{background:transparent;color:var(--muted)}
+#hwx .today .tq .acts .bs{background:var(--ink);color:var(--paper);border-color:var(--ink)}
 #hwx .tbox-s{padding:12px 14px}
 #hwx .tbox-s b{font-size:15px}
 #hwx .tbox-s .hint2{display:none}
@@ -468,7 +468,9 @@ body{background:var(--paper);color:var(--ink)}
 #hwx .qc .seal{position:absolute;top:13px;right:13px;width:22px;height:22px;border:1.5px solid var(--acc);border-radius:4px;color:var(--acc);font-size:11px;display:flex;align-items:center;justify-content:center}
 #hwx .kc{border-radius:14px;background:rgba(163,59,46,.07);border:1px solid rgba(163,59,46,.22);color:var(--ink);padding:16px 16px 14px;display:flex;flex-direction:column}
 :root[data-theme="dark"] #hwx .kc{background:rgba(224,112,95,.13);border-color:rgba(224,112,95,.3)}
-#hwx .kc .said{font-size:12px;line-height:1.6;font-family:"Noto Serif SC","Songti SC",serif;margin-bottom:8px;color:var(--acc)}
+#hwx .kc{position:relative}
+#hwx .kc .seal{position:absolute;top:13px;right:13px;width:22px;height:22px;border:1.5px solid var(--acc);border-radius:4px;color:var(--acc);font-size:11px;display:flex;align-items:center;justify-content:center;font-family:"Noto Serif SC","Songti SC",serif}
+#hwx .kc .said{font-size:12px;line-height:1.6;font-family:"Noto Serif SC","Songti SC",serif;margin-bottom:8px;color:var(--acc);padding-right:28px}
 #hwx .kc .qm{display:none;font-size:25px;color:var(--acc);font-weight:900;line-height:1}
 #hwx .kc .t{font-family:"Noto Serif SC","Source Han Serif SC","Songti SC","STSong",serif;font-size:16.5px;font-weight:700;line-height:1.65;margin:9px 0 12px;flex:1;color:var(--ink)}
 #hwx .kc .r a{display:block;font-size:13.5px;color:var(--muted);text-decoration:none;padding:4px 0}
@@ -722,7 +724,7 @@ D.E.forEach(function(e,i){
   if(i%3===2){var g=pickQ();
     fullCells.push(qcard(g,'xtra'));}
   if(i%5===3){var k=D.QQ[ki++%D.QQ.length];
-    fullCells.push('<div class="kc xtra" data-t="'+esc(k.t.toLowerCase())+'">'+(k.r&&k.r[0]?'<span class="said">'+esc(k.r[0].who)+'问过</span>':'')+'<span class="t">'+k.t+'</span><span class="r">'+k.r.map(function(r){return '<a href="'+r.u+'" data-h="'+esc(r.who+' · '+r.cn)+'"><b>'+r.who+'</b> · '+r.cn+' →</a>'}).join('')+'</span></div>');}
+    fullCells.push('<div class="kc xtra" data-t="'+esc(k.t.toLowerCase())+'"><span class="seal">问</span>'+(k.r&&k.r[0]?'<span class="said">'+esc(k.r[0].who)+'问过</span>':'')+'<span class="t">'+k.t+'</span><span class="r">'+k.r.map(function(r){return '<a href="'+r.u+'" data-h="'+esc(r.who+' · '+r.cn)+'"><b>'+r.who+'</b> · '+r.cn+' →</a>'}).join('')+'</span></div>');}
 });
 /* ── 最新 feed ── */
 /* 最新 tab 混排：每 4 张深度阅读插 1 张人物/书卡、1 张金句卡，每 9 槽插 1 张问题卡 */
@@ -742,7 +744,7 @@ D.NC.forEach(function(e,i){
     ncCells.push(qcard(g,''));
   }
   if(i%5===4){var k=D.QQ[_ki++%D.QQ.length];
-    ncCells.push('<div class="kc">'+(k.r&&k.r[0]?'<span class="said">'+esc(k.r[0].who)+'问过</span>':'')+'<span class="t">'+k.t+'</span><span class="r">'+k.r.map(function(r){return '<a href="'+r.u+'" data-h="'+esc(r.who+' · '+r.cn)+'"><b>'+r.who+'</b> · '+r.cn+' →</a>'}).join('')+'</span></div>');}
+    ncCells.push('<div class="kc"><span class="seal">问</span>'+(k.r&&k.r[0]?'<span class="said">'+esc(k.r[0].who)+'问过</span>':'')+'<span class="t">'+k.t+'</span><span class="r">'+k.r.map(function(r){return '<a href="'+r.u+'" data-h="'+esc(r.who+' · '+r.cn)+'"><b>'+r.who+'</b> · '+r.cn+' →</a>'}).join('')+'</span></div>');}
 });
 /* ── 标签页切换 ── */
 var TAB='新';
