@@ -7,17 +7,14 @@ ROOT = Path(__file__).resolve().parents[1]
 STYLE = (
     '<style id="hw-force">'
     'mark,mark.hl{background:transparent!important;color:#9d2933!important;'
-    'font-weight:700!important;text-decoration:underline!important;'
-    'text-decoration-color:#9d2933!important;text-underline-offset:.16em;'
-    'text-decoration-thickness:1.5px}'
+    'font-weight:700!important;text-decoration:none!important;}'
     '@media (max-width:900px){aside.side{display:none!important}'
     '.layout{grid-template-columns:1fr!important}}'
     '</style>'
 )
 MARK_OPEN = (
     '<mark class="hl" style="background:transparent;color:#9d2933;font-weight:700;'
-    'text-decoration:underline;text-decoration-color:#9d2933;text-underline-offset:.16em;'
-    'text-decoration-thickness:1.5px">'
+    'text-decoration:none">'
 )
 
 def patch_html():
@@ -914,7 +911,7 @@ def theme_widget():
         ':root[data-theme="dark"] .kicker,:root[data-theme="dark"] .sec-k,:root[data-theme="dark"] .dot,'
         ':root[data-theme="dark"] mark.hl,:root[data-theme="dark"] .seal,'
         ':root[data-theme="dark"] .chip.on{color:#e0705f}'
-        ':root[data-theme="dark"] mark.hl{text-decoration-color:#e0705f}'
+        ':root[data-theme="dark"] mark.hl{text-decoration:none}'
         # 浅底区块：背景跟随暗色，否则白底白字（实测对比度 1.26）
         ':root[data-theme="dark"] .card,:root[data-theme="dark"] .map,:root[data-theme="dark"] .rel,'
         ':root[data-theme="dark"] .box,:root[data-theme="dark"] .quote-card,:root[data-theme="dark"] .panel,'
