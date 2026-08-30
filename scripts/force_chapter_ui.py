@@ -824,7 +824,7 @@ def patch_home_discover():
                   "100 个人物与典籍的生存智慧，跨越 2600 年")
     # logo 旁的标语已经写了「115 个人物与典籍的生存智慧，跨越 2600 年」，
     # 下面那排 stats 是同一句话拆成三块再说一遍——删掉，并收紧页头下方留白。
-    s = re.sub(r'<div class="hd-stats">.*?</div>\s*</div>\s*', '</div>\n', s, flags=re.S, count=1)
+
     # 页头所在的 .wrap 有 80px 下内距（原本给 stats 和旧内容留的），删掉 stats 后
     # 这块空白就孤零零挂在 logo 下面。只收含页头的那一个 wrap。
     s = s.replace('  .wrap{padding:0 24px 80px}', '  .wrap{padding:0 24px 8px}')

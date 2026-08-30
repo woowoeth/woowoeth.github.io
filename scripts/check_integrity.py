@@ -155,6 +155,13 @@ for label, pat in (("title", r"<title>人类世界生存法则 — (\d+) 位"),
     elif int(m.group(1)) != _n:
         bad("首页计数过期", "%s 写着 %s，实际 %d" % (label, m.group(1), _n))
 
+# 7c) 首页 div 必须配平
+#     用正则删过一个带嵌套的块，替换串多补了一个 </div>，父容器被提前关闭，
+#     其后所有内容逃出 .wrap，整页左右边距消失——而所有既有检查都通过了。
+_open, _close = home.count("<div"), home.count("</div>")
+if _open != _close:
+    bad("首页 div 不配平", "开 %d 闭 %d，差 %+d" % (_open, _close, _close - _open))
+
 # 8) 二维码必须仍可解码
 try:
     from PIL import Image
