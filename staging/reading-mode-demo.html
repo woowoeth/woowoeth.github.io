@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>阅读态 · demo</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;700&display=swap">
+<style>
+:root{
+  --paper:#f7f4ec; --ink:#1c1917; --muted:#6f6959; --line:#e2ddd0; --acc:#a33b2e;
+  --serif:"Noto Serif SC","Songti SC","STSong",serif;
+  --sans:"PingFang SC","Hiragino Sans GB",-apple-system,sans-serif;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);
+  -webkit-font-smoothing:antialiased}
+
+/* ── 顶部方案切换（仅 demo 用，真实产品没有） ── */
+.demo-bar{position:fixed;top:0;left:0;right:0;z-index:100;background:#26221e;
+  padding:8px 12px;display:flex;gap:6px;align-items:center}
+.demo-bar span{color:#b9b2a4;font-size:11px;margin-right:4px;white-space:nowrap}
+.demo-bar button{flex:1;border:1px solid #4a443c;background:transparent;color:#d9d3c6;
+  font-family:var(--serif);font-size:13px;padding:6px 4px;border-radius:6px;cursor:pointer}
+.demo-bar button.on{background:#f7f4ec;color:#1c1917;border-color:#f7f4ec}
+.pane{display:none;padding-top:46px}
+.pane.on{display:block}
+
+/* ════════ 浏览态（现状）════════ */
+.browse{max-width:430px;margin:0 auto;padding:16px 20px 60px}
+.b-head{font-family:var(--serif);font-size:20px;font-weight:700;margin:6px 0 12px}
+.feed{columns:150px;column-gap:12px}
+.feed>*{break-inside:avoid;width:100%;margin:0 0 12px;display:block;
+  border:1px solid var(--line);border-radius:14px;background:#fffdf8;
+  padding:15px 15px 13px;text-decoration:none;color:inherit}
+.feed .pn{font-size:12px;color:var(--acc);margin-bottom:4px}
+.feed b{font-family:var(--serif);font-size:17px;line-height:1.45;display:block}
+.feed .w{font-size:12px;color:var(--muted);margin:4px 0 8px}
+.feed .q{font-family:var(--serif);font-size:14px;line-height:1.8;color:var(--ink)}
+.browse .hint{margin-top:20px;font-size:12.5px;color:var(--muted);line-height:1.8;
+  border-top:1px dashed var(--line);padding-top:14px}
+
+/* ════════ 阅读态 ════════ */
+.read{background:#faf8f2;min-height:100vh}
+.read .prog{position:fixed;top:46px;left:0;height:2px;background:var(--acc);
+  width:0;z-index:90;transition:width .1s}
+.read .topbar{position:fixed;top:46px;left:0;right:0;z-index:80;
+  background:rgba(250,248,242,.94);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);
+  padding:10px 20px;display:flex;justify-content:space-between;align-items:center;
+  border-bottom:1px solid rgba(226,221,208,.6);
+  transform:translateY(-120%);transition:transform .25s}
+.read .topbar.show{transform:none}
+.read .topbar a{color:var(--muted);text-decoration:none;font-size:13px}
+.read .topbar .t{font-family:var(--serif);font-size:14px;font-weight:700}
+
+.art{max-width:640px;margin:0 auto;padding:34px 26px 90px}
+.kicker{font-size:12.5px;color:var(--acc);letter-spacing:.06em;margin-bottom:10px}
+.art h1{font-family:var(--serif);font-size:30px;line-height:1.35;margin:0 0 6px;
+  letter-spacing:-.01em}
+.byline{font-size:13px;color:var(--muted);margin-bottom:26px}
+.byline i{font-style:normal;color:var(--line)}
+.dek{font-family:var(--serif);font-size:18px;line-height:1.9;color:#3f3a34;
+  margin:0 0 30px;padding-left:16px;border-left:2px solid var(--acc)}
+.art p{font-family:var(--serif);font-size:18px;line-height:2.05;margin:0 0 22px;
+  letter-spacing:.01em}
+.art mark{background:none;color:var(--acc);font-weight:700}
+.sec{font-family:var(--serif);font-size:20px;font-weight:700;margin:38px 0 14px;
+  padding-top:26px;border-top:1px solid var(--line)}
+.eg{font-family:var(--sans);font-size:14.5px;line-height:1.9;color:var(--muted);
+  background:#f2ece0;border-radius:10px;padding:14px 16px;margin:0 0 22px}
+.pull{font-family:var(--serif);font-size:22px;line-height:1.85;font-weight:700;
+  text-align:center;margin:36px 0;padding:26px 10px;
+  border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.apply{background:#f2ece0;border-radius:14px;padding:20px;margin:34px 0 0}
+.apply h3{font-family:var(--serif);font-size:16px;margin:0 0 12px}
+.apply div{font-size:15px;line-height:1.95;margin-bottom:8px}
+.apply em{font-style:normal;color:var(--acc);font-weight:700}
+.done{text-align:center;margin:44px 0 0;padding-top:26px;border-top:1px solid var(--line)}
+.done p{font-family:var(--serif);font-size:15px;color:var(--muted);margin:0 0 14px}
+.done a{display:inline-block;font-family:var(--serif);font-size:15px;
+  border:1px solid var(--ink);border-radius:999px;padding:9px 20px;
+  text-decoration:none;color:var(--ink)}
+.legend{max-width:640px;margin:0 auto;padding:0 26px 40px;font-size:12.5px;
+  color:var(--muted);line-height:1.85}
+.legend b{font-family:var(--serif);color:var(--ink)}
+.legend ul{padding-left:18px;margin:8px 0 0}
+.legend li{margin-bottom:5px}
+@media(max-width:520px){
+  .art{padding:26px 22px 80px}
+  .art h1{font-size:26px}
+  .art p{font-size:17px;line-height:1.95}
+  .dek{font-size:16.5px}
+  .pull{font-size:19px}
+}
+</style>
+</head>
+<body>
+
+<div class="demo-bar">
+  <span>对比：</span>
+  <button data-p="browse">浏览态（现状）</button>
+  <button data-p="read" class="on">阅读态</button>
+</div>
+
+<!-- ══ 浏览态 ══ -->
+<div class="pane" id="pbrowse">
+  <div class="browse">
+    <div class="b-head">最新</div>
+    <div class="feed">
+      <a href="#"><div class="pn">粟裕</div><b>斗胆直陈</b>
+        <div class="w">推翻上级部署的姿态</div>
+        <div class="q">「先把原方案准备到位，再拿新账说话」</div></a>
+      <a href="#"><div class="pn">阿德勒</div><b>课题分离</b>
+        <div class="w">先分清这是谁的事</div>
+        <div class="q">「一切烦恼都是人际关系的烦恼」</div></a>
+      <a href="#"><div class="pn">费曼</div><b>第一个别骗的是自己</b>
+        <div class="w">你最好骗</div>
+        <div class="q">「现实必须优先于公关」</div></a>
+      <a href="#"><div class="pn">塞涅卡</div><b>愤怒有一道闸门</b>
+        <div class="w">拦不住印象，拦得住判断</div>
+        <div class="q">「愤怒是短暂的疯狂」</div></a>
+      <a href="#"><div class="pn">戈特曼</div><b>末日四骑士</b>
+        <div class="w">预测破裂的四种信号</div>
+        <div class="q">「最强的信号是鄙视」</div></a>
+      <a href="#"><div class="pn">波普尔</div><b>能不能被推翻</b>
+        <div class="w">解释一切等于没解释</div>
+        <div class="q">「不可证伪是缺陷不是优点」</div></a>
+    </div>
+    <div class="hint">这是浏览态：同屏并列六件事，眼睛在卡片之间跳，
+      适合「不知道要什么，随便看看」。<br>
+      它的问题是——258 篇深度内容用信息流的方式呈现，读者永远停在标题层。</div>
+  </div>
+</div>
+
+<!-- ══ 阅读态 ══ -->
+<div class="pane on" id="pread">
+  <div class="read">
+    <div class="prog" id="prog"></div>
+    <div class="topbar" id="topbar">
+      <a href="#">← 粟裕</a>
+      <span class="t">斗胆直陈</span>
+      <a href="#">分享</a>
+    </div>
+
+    <article class="art" id="art">
+      <div class="kicker">粟裕 · 深度阅读</div>
+      <h1>斗胆直陈</h1>
+      <div class="byline">推翻上级部署的姿态 <i>·</i> 约 4 分钟</div>
+
+      <p class="dek">中央已定的战略是他率三个纵队渡江南进。这一篇要回答的是：一个下级怎么把既定部署翻了过来。</p>
+
+      <p>1948 年初，中央既定方略是粟裕率十万人渡江南进。粟裕反复推演后认为：主力留在中原打大歼灭战，比分兵渡江更能改变全局。1 月 22 日他发长电，<mark>「斗胆直陈」</mark>自己的完整理由；中央复电重申南渡。</p>
+
+      <p>他没有停止执行——一面<mark>全力进行渡江准备</mark>，一面继续测算。4 月他再次上书，这一次带着更细的账：兵力、补给、可歼敌数量、时间窗口。中央召他进京当面陈述，最终采纳，改变了既定部署。</p>
+
+      <div class="pull">先把原方案准备到位，<br>再拿新账说话。</div>
+
+      <h2 class="sec">一、先执行，再进言</h2>
+      <p>下级推翻上级方案，最容易死在姿态上。粟裕的做法是把两件事分开：既定方案照常准备到位，同时把自己的方案算得更细。这让他的进言不是抗命，而是<mark>多提供了一个选项</mark>——上级随时可以否，什么都不耽误。</p>
+      <div class="eg">你觉得排期方案有更优解——先把现方案的准备做完，再拿新算法去谈。带着"我没耽误"去谈，和带着"我不干"去谈，是两件事。</div>
+
+      <h2 class="sec">二、两次进言之间，账变细了</h2>
+      <p>第一次被驳回后，他没有重复立场，而是回去把账做细：兵力、补给、可歼敌数量、时间窗口。<mark>第二次不是同一句话说得更大声，是同一个判断有了新证据。</mark>反复表达立场只会消耗信用，账变细才推得动。</p>
+      <div class="eg">方案被否之后再提，先问自己：这次比上次多了什么具体的数？如果只有决心，那就还不到再提的时候。</div>
+
+      <h2 class="sec">三、敢签字</h2>
+      <p>他要求改变部署的同时，承担了改变之后的结果。这是"斗胆"两个字真正的分量——不是敢说，是<mark>敢为自己说的话负责</mark>。只提意见不担后果的建议，上级没有理由采纳。</p>
+      <div class="eg">提反对意见时，把"如果按我说的做，我负责什么"一起写出来。这一句决定了它是建议还是抱怨。</div>
+
+      <div class="apply">
+        <h3>今天怎么用</h3>
+        <div><em>局面：</em>你确信上级的既定部署有更优解。</div>
+        <div><em>先问：</em>原方案我执行准备到位了吗？我的账比上次细在哪？改道的结果我敢签吗？</div>
+        <div><em>用反了：</em>把斗胆直陈当成反复表达立场——账还是那笔账，只是嗓门大了。</div>
+      </div>
+
+      <div class="done">
+        <p>读完了。粟裕名下还有一篇</p>
+        <a href="#">《不是拼消耗》 →</a>
+      </div>
+    </article>
+
+    <div class="legend">
+      <b>阅读态和浏览态的六个差别：</b>
+      <ul>
+        <li><b>一次只有一件事</b>——整屏没有第二个可点的东西，没有并列卡片抢注意力</li>
+        <li><b>单栏 + 更宽行距</b>——正文 18px / 行高 2.05，宋体，一行 20 字上下</li>
+        <li><b>导航收起</b>——顶栏默认隐藏，往上滑才出现；进来即是读的状态</li>
+        <li><b>底色换了</b>——比首页更浅的纸色，身体收到"换场景了"的信号</li>
+        <li><b>有进度</b>——顶部细线 + "约 4 分钟"，知道还剩多少才愿意读完</li>
+        <li><b>读完有去处</b>——结尾只给一个下一步，不是一堆推荐</li>
+      </ul>
+      <br>
+      <b>关键不是把首页变深，是把两种状态的差别拉开。</b>
+      首页负责让人找到东西，章节页负责让人读进去——现在这两者长得太像，
+      所以首页显得密，章节页显得也只是"长一点的卡片"。
+    </div>
+  </div>
+</div>
+
+<script>
+document.querySelectorAll('.demo-bar button').forEach(function(b){
+  b.onclick=function(){
+    document.querySelectorAll('.demo-bar button').forEach(function(x){x.classList.remove('on')});
+    b.classList.add('on');
+    document.querySelectorAll('.pane').forEach(function(p){p.classList.remove('on')});
+    document.getElementById('p'+b.dataset.p).classList.add('on');
+    scrollTo(0,0);
+  };
+});
+/* 阅读进度 + 顶栏随滑动方向显隐 */
+var last=0, prog=document.getElementById('prog'), bar=document.getElementById('topbar');
+addEventListener('scroll',function(){
+  var art=document.getElementById('art');
+  if(!art||!document.getElementById('pread').classList.contains('on'))return;
+  var h=art.scrollHeight-innerHeight;
+  prog.style.width=Math.max(0,Math.min(100,(scrollY/h)*100))+'%';
+  if(scrollY>140 && scrollY<last) bar.classList.add('show');
+  else bar.classList.remove('show');
+  last=scrollY;
+},{passive:true});
+</script>
+</body>
+</html>

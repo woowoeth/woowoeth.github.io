@@ -318,7 +318,29 @@ def _hwx_payload():
     QS = [q for q in QP if len(q["q"]) <= 20]
     # 问题卡原来只用手写的 10 张，插满就没了。处境层的 114 个问题本身就带答案，
     # 合进来池子扩到 124，频率才提得上去。
-    QQ_ALL = QQ + [{"t": q["q"], "r": q["a"]} for sc in S for q in sc["qs"]]
+    # 问题卡与首页一问共用这个池。补齐 hint（章节一句话）与 sc（apply 的局面句），
+    # 手写的那 10 张原本只有 who/cn/u，放到首页大块里会缺两行。
+    _apply_sc = {}
+    for _c in C.CHAPTERS:
+        _m = re.search(r"局面：(.+?)(?:\n|$)", _c.get("apply", ""))
+        if _m:
+            _apply_sc[(hw_slugs.slug_for(_c["parent"]), _c["k"])] = _m.group(1).strip()
+    def _enrich(ans):
+        out = []
+        for a in ans:
+            b = dict(a)
+            _key = tuple(a["u"].strip("/").split("/")[1:3])
+            if not b.get("hint"):
+                _ch = ch_index.get(_key)
+                if _ch:
+                    b["hint"] = line_by.get((_ch["parent"], _ch["k"]), "") or _ch.get("w", "")
+            _sc = _apply_sc.get(_key)
+            if _sc:
+                b["sc"] = _sc
+            out.append(b)
+        return out
+    QQ_ALL = ([{"t": q["t"], "r": _enrich(q["r"])} for q in QQ]
+              + [{"t": q["q"], "r": _enrich(q["a"])} for sc in S for q in sc["qs"]])
     j = json.dumps({"E": E, "QP": QP, "QS": QS, "QQ": QQ_ALL, "S": S, "ASK": ASK,
                     "CC": CAT_COLOR, "CT": CAT_TINT, "CTD": CAT_TINT_D, "NC": NC}, ensure_ascii=False, separators=(",",":")).replace("</","<\\/")
     return j, len(E), len(NC)
@@ -358,6 +380,22 @@ body{background:var(--paper);color:var(--ink)}
 #hwx .tq .acts{display:flex;gap:8px;margin-top:14px}
 #hwx .tq .acts button{border:1.5px solid var(--ink);background:transparent;color:var(--ink);border-radius:999px;padding:7px 16px;font-family:inherit;font-size:14px;cursor:pointer}
 #hwx .tq .acts .bs{background:var(--ink);color:var(--paper)}
+#hwx .askhero{border:1px solid var(--line);border-radius:16px;background:var(--card);padding:20px 18px 16px;margin-bottom:12px}
+#hwx .askhero .lb{font-size:11.5px;letter-spacing:.28em;color:var(--acc);font-weight:700;margin-bottom:12px}
+#hwx .askhero .said{font-family:"Noto Serif SC","Songti SC",serif;font-size:13px;color:var(--acc);line-height:1.7;margin-bottom:10px}
+#hwx .askhero .q{font-family:"Noto Serif SC","Source Han Serif SC","Songti SC","STSong",serif;font-size:21px;font-weight:700;line-height:1.75;margin:0 0 14px}
+#hwx .askhero .sc{font-size:13.5px;color:var(--muted);line-height:1.8;margin:0 0 14px;padding-left:12px;border-left:2px solid var(--line)}
+#hwx .askhero .go a{display:block;text-decoration:none;color:inherit;border-top:1px dashed var(--line);padding-top:10px;margin-top:8px}
+#hwx .askhero .go b{font-family:"Noto Serif SC","Songti SC",serif;font-size:15.5px;display:block}
+#hwx .askhero .go i{font-style:normal;font-size:12.5px;color:var(--muted);display:block;margin-top:3px}
+#hwx .today .tq{padding:15px 16px}
+#hwx .today .tq .q{font-size:17px!important;line-height:1.8!important;margin-bottom:8px!important}
+#hwx .today .tq .tgl{display:none}
+#hwx .today .tq .acts button{padding:5px 12px;font-size:12.5px;border-width:1px}
+#hwx .today .tq .acts .bs{background:transparent;color:var(--muted)}
+#hwx .tbox-s{padding:12px 14px}
+#hwx .tbox-s b{font-size:15px}
+#hwx .tbox-s .hint2{display:none}
 #hwx .tcol{display:flex;flex-direction:column;gap:14px}
 #hwx .tbox{border:1px solid var(--line);border-radius:16px;padding:14px 16px;flex:1}
 #hwx .tbox .lb{font-size:11.5px;letter-spacing:.28em;color:var(--acc);font-weight:700;margin-bottom:6px}
@@ -490,12 +528,20 @@ var tpEl=document.getElementById('hwx-tp');
 tpEl.href='/i/'+p1.s+'/';tpEl.setAttribute('data-h',p1.n);
 tpEl.innerHTML='<b>'+p1.n+' — '+p1.w+'</b><span class="hint">'+p1.it+'</span>'
   +(p1.sc?'<span class="hint2">什么时候翻开它：'+p1.sc+'</span>':'');
-var a1=D.ASK[(day*13)%D.ASK.length];
-var taEl=document.getElementById('hwx-ta');
-taEl.href=a1.u;taEl.setAttribute('data-h',esc(a1.who+' · '+a1.cn));
-taEl.innerHTML='<b>'+a1.t+'</b>'
-  +(a1.sc?'<span class="hint2">遇到的局面：'+a1.sc+'</span>':'')
-  +'<span class="hint">答案在：'+a1.who+' · '+a1.cn+' →</span>';
+/* 一问不再冲着读者提问，而是「有人也卡在这里」——读者只需认出，不必回答。
+   取 QQ 而非 ASK：前者是处境式的人话（「方案被毙了，还要不要提第二次？」），
+   后者是 apply 里的自省句（「我真正想缓解的是谁的不安？」），接不上「某某也卡在这里」。 */
+var a1=D.QQ[(day*13)%D.QQ.length];
+var a1w=(a1.r&&a1.r[0])?a1.r[0].who:'';
+document.getElementById('hwx-asaid').textContent=a1w?(a1w+'也卡在同一件事上——'):'有人问：';
+document.getElementById('hwx-aq').textContent=a1.t;
+/* 局面用第一个答案对应章节的 apply 局面句，没有就不显示 */
+var a1sc=(a1.r&&a1.r[0]&&a1.r[0].sc)?a1.r[0].sc:'';
+var ascEl=document.getElementById('hwx-asc');
+if(a1sc){ascEl.textContent=a1sc;}else{ascEl.style.display='none';}
+document.getElementById('hwx-ago').innerHTML=(a1.r||[]).slice(0,2).map(function(r){
+  return '<a href="'+r.u+'" data-h="'+esc(r.who+' · '+r.cn)+'"><b>'+r.who+' · '+r.cn+'</b>'
+    +(r.hint?'<i>'+r.hint+'</i>':'')+'</a>';}).join('');
 /* ── 分享卡 ── */
 function drawCard(cb){
   var cv=document.createElement('canvas');cv.width=1080;cv.height=1440;var c=cv.getContext('2d');
@@ -746,15 +792,14 @@ switchTab('新');
         "<button id=\"hwx-theme\" type=\"button\" aria-label=\"切换日夜模式\"></button>\n"
         "<div class=\"hist\" id=\"hwx-hist\"><span class=\"hl\">最近看过</span>"
         "<span class=\"hchips\" id=\"hwx-hchips\"></span><button id=\"hwx-hclr\">清空</button></div>"
-        "<div class=\"today\">"
+        "<div class=\"askhero\" id=\"hwx-askhero\">""<div class=\"lb\">今日一问</div>""<div class=\"said\" id=\"hwx-asaid\"></div>""<div class=\"q\" id=\"hwx-aq\"></div>""<div class=\"sc\" id=\"hwx-asc\"></div>""<div class=\"go\" id=\"hwx-ago\"></div>""</div>""<div class=\"today\">"
         "<div class=\"tq\"><div class=\"dt\" id=\"hwx-dt\"></div><div class=\"q\" id=\"hwx-tq\"></div>"
         "<div class=\"tgl\" id=\"hwx-tgl\"></div><div class=\"src\" id=\"hwx-tqs\"></div>"
         "<div class=\"acts\"><button id=\"hwx-next\">换一换</button>"
         "<button class=\"bs\" id=\"hwx-save\">保存卡片</button>"
         "<button id=\"hwx-share\">分享</button></div></div>"
         "<div class=\"tcol\">"
-        "<div class=\"tbox\"><div class=\"lb\">今日一篇</div><a id=\"hwx-tp\"></a></div>"
-        "<div class=\"tbox\"><div class=\"lb\">今日一问</div><a id=\"hwx-ta\"></a></div>"
+        "<div class=\"tbox tbox-s\"><div class=\"lb\">今日一篇</div><a id=\"hwx-tp\"></a></div>"
         "</div></div>"
         "<div class=\"hh\">按处境找 <span style=\"font-size:12px;color:var(--muted);font-weight:500\">「我现在遇到的是……」</span></div>"
         "<div class=\"sc\" id=\"hwx-sc\">"
