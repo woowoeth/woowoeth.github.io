@@ -381,7 +381,7 @@ body{background:var(--paper);color:var(--ink)}
 #hwx .res a b{font-family:"Noto Serif SC","Source Han Serif SC","Songti SC","STSong",serif;font-size:15px;font-weight:600}
 #hwx .res a span{display:block;font-size:13.5px;color:var(--muted);line-height:1.6}
 #hwx .res a:hover b{border-bottom:1px solid}
-#hwx .hist{display:none;align-items:center;gap:8px;margin:14px 0 2px;font-size:13px}
+#hwx .hist{display:none;align-items:center;gap:8px;margin:2px 0 4px;font-size:13px}
 #hwx .hist .hl{color:var(--acc);font-weight:700;letter-spacing:.1em;flex:0 0 auto}
 #hwx .hist .hchips{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;flex:1}
 #hwx .hist .hchips::-webkit-scrollbar{display:none}
@@ -822,6 +822,27 @@ def patch_home_discover():
                "%d 位人物与典籍" % _n, s)
     s = s.replace("人类文明的坐标，照亮千年的灯塔",
                   "100 个人物与典籍的生存智慧，跨越 2600 年")
+    # logo 旁的标语已经写了「115 个人物与典籍的生存智慧，跨越 2600 年」，
+    # 下面那排 stats 是同一句话拆成三块再说一遍——删掉，并收紧页头下方留白。
+    s = re.sub(r'<div class="hd-stats">.*?</div>\s*</div>\s*', '</div>\n', s, flags=re.S, count=1)
+    # 页头所在的 .wrap 有 80px 下内距（原本给 stats 和旧内容留的），删掉 stats 后
+    # 这块空白就孤零零挂在 logo 下面。只收含页头的那一个 wrap。
+    s = s.replace('  .wrap{padding:0 24px 80px}', '  .wrap{padding:0 24px 8px}')
+    s = s.replace('.hd-stats{display:flex;gap:20px;flex-wrap:wrap;align-items:center}',
+                  '.hd-stats{display:none}')
+    # stats 撤掉后页头留下一块空白（它原来撑着高度），把页头的上下留白一并收回
+    s = s.replace('#hwx .hist{display:none;align-items:center;gap:8px;margin:2px 0 4px;font-size:13px}',
+                  '#hwx .hist{display:none;align-items:center;gap:8px;margin:2px 0 4px;font-size:13px}\n'
+                  'header.hd{padding:20px 0 4px!important;margin:0 0 6px!important}\n'
+                  'header.hd .brand-lockup,header.hd .brand{margin-bottom:0!important}\n'
+                  '#hwx{margin-top:0}')
+    # 页头样式改了，升版本号击穿浏览器缓存
+    s = s.replace("hw-home-lockup.css?v=2", "hw-home-lockup.css?v=3")
+    # stats 节点删了，但仍有代码往 #st / #cat-count 写数——加空值保护
+    s = s.replace("document.getElementById('st').textContent=D.length",
+                  "(document.getElementById('st')||{}).textContent=D.length")
+    s = s.replace("document.getElementById('cat-count').textContent=CATS.length-2",
+                  "(document.getElementById('cat-count')||{}).textContent=CATS.length-2")
     # 页头精简：删掉「古今中外 · 东西并观」与页头分享按钮，位置让给「最近看过」
     s = re.sub(r'<span[^>]*>\s*古今中外[^<]*</span>', '', s)
     s = re.sub(r'<button class="share-btn"[^>]*>.*?</button>', '', s, flags=re.S, count=1)

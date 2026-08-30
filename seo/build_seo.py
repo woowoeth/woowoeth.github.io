@@ -218,7 +218,11 @@ def patch_static_stats(entries, path="index.html"):
         pat = re.compile(r'(<b id="%s">)([^<]*)(</b>)' % re.escape(key))
         m = pat.search(out)
         if not m:
-            raise SystemExit("patch_static_stats: missing <b id=\"%s\">" % key)
+            # 页头那排 stats 已经撤掉（和 logo 旁的标语重复），节点不再存在。
+            # 首页计数现在由 force_chapter_ui 写进 title 和标语，并由
+            # check_integrity 校验，所以这里没有节点是正常的，不该让构建失败。
+            hits[key] = "absent"
+            continue
         hits[key] = "%s->%s" % (m.group(2) or "empty", val)
         out = pat.sub(lambda mm: "%s%d%s" % (mm.group(1), val, mm.group(3)), out, count=1)
     if out != src:
