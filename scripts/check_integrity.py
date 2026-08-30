@@ -147,13 +147,12 @@ check_feed_dupes()
 #     于是两边对不上。
 import re as _re
 _n = len(entries)
-for label, pat in (("title", r"<title>人类世界生存法则 — (\d+) 位"),
-                   ("首页标语", r'class="hd-en"[^>]*>(\d+) 个人物')):
-    m = _re.search(pat, home)
-    if not m:
-        bad("首页计数缺失", label)
-    elif int(m.group(1)) != _n:
-        bad("首页计数过期", "%s 写着 %s，实际 %d" % (label, m.group(1), _n))
+# 标语已从计数式改为「遇到事了，看看以前的人怎么处理」，
+# 页面上不再有需要跟数据同步的数字；改为检查各类页面标语一致。
+_slogan = "遇到事了，看看以前的人怎么处理"
+for _f in ("index.html", "all/index.html"):
+    if os.path.exists(_f) and _slogan not in open(_f, encoding="utf-8").read():
+        bad("标语缺失或不一致", _f)
 
 # 7c) 首页 div 必须配平
 #     用正则删过一个带嵌套的块，替换串多补了一个 </div>，父容器被提前关闭，

@@ -8,7 +8,7 @@ import hw_theme
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
-SLOGAN = "100 个人物与典籍的生存智慧，跨越 2600 年"
+SLOGAN = "遇到事了，看看以前的人怎么处理"
 
 
 HL = '<mark class="hl" style="background:transparent;color:#9d2933;font-weight:700">%s</mark>'

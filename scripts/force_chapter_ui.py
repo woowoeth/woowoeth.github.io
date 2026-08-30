@@ -4,6 +4,7 @@ from pathlib import Path
 import re
 
 ROOT = Path(__file__).resolve().parents[1]
+SLOGAN_TEXT = "遇到事了，看看以前的人怎么处理"
 STYLE = (
     '<style id="hw-force">'
     'mark,mark.hl{background:transparent!important;color:#9d2933!important;'
@@ -816,12 +817,14 @@ def patch_home_discover():
     _n = len(_bs.load_array())
     s = re.sub(r"<title>人类世界生存法则[^<]*</title>",
                "<title>人类世界生存法则 — %d 位人物与典籍的生存智慧</title>" % _n, s)
-    s = re.sub(r"(\d+) (个|位)人物与典籍的生存智慧",
-               lambda m: "%d %s人物与典籍的生存智慧" % (_n, m.group(2)), s)
+    # 标语从「装了什么」改成「能拿来干嘛」——前者让人把它归类成一个收藏，
+    # 后者才让人知道现在就能用。
+    s = re.sub(r"[\d]+ [个位]人物与典籍的生存智慧，跨越 2600 年", "%s" % SLOGAN_TEXT, s)
+    s = re.sub(r"[\d]+ [个位]人物与典籍的生存智慧", "%s" % SLOGAN_TEXT, s)
     s = re.sub(r"(\d+) 位人物与典籍(?=[，、])",
                "%d 位人物与典籍" % _n, s)
     s = s.replace("人类文明的坐标，照亮千年的灯塔",
-                  "100 个人物与典籍的生存智慧，跨越 2600 年")
+                  SLOGAN_TEXT)
     # logo 旁的标语已经写了「115 个人物与典籍的生存智慧，跨越 2600 年」，
     # 下面那排 stats 是同一句话拆成三块再说一遍——删掉，并收紧页头下方留白。
 

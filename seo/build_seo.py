@@ -39,7 +39,7 @@ SITE = G.Site(
     path="",
     name="Human World", name_zh="\u4eba\u7c7b\u4e16\u754c\u751f\u5b58\u6cd5\u5219",
     tagline="%(n)d people and books on how the world actually works, across 2,600 years",
-    tagline_zh="%(n)d \u4e2a\u4eba\u7269\u4e0e\u5178\u7c4d\u7684\u751f\u5b58\u667a\u6167\uff0c\u8de8\u8d8a 2600 \u5e74",
+    tagline_zh="\u9047\u5230\u4e8b\u4e86\uff0c\u770b\u770b\u4ee5\u524d\u7684\u4eba\u600e\u4e48\u5904\u7406",
     description=(
         "A knowledge base of the durable rules people have worked out about strategy, money, "
         "power, human nature and building things — drawn from %(n)d figures and "
