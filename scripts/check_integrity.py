@@ -44,6 +44,13 @@ for e in entries:
     if e["n"] not in parents:
         bad("条目无深度阅读", e["n"])
 
+# 1b) 反向：有章节文件却没有对应条目
+#     rebase 时若取了远端的 index.html，D 数组会退回旧版而 seo/chapters/ 仍是新的，
+#     条目静默丢失。只查「条目→章节」发现不了，必须双向查。
+for pname in sorted(parents):
+    if pname not in names:
+        bad("有章节但条目已丢失", pname)
+
 # 2) 每个条目有手写介绍
 try:
     src = open("scripts/force_chapter_ui.py", encoding="utf-8").read()
