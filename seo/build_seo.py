@@ -245,6 +245,10 @@ def _redirect_html(dest, title):
 
 
 def write_legacy_redirects(root="."):
+    """已停用。中文路径的旧 URL 从未对外发布过，没有权重需要传递，
+    而每次构建都要重写 116 个文件、并让 force_chapter_ui 逐页判断跳过。
+    留空函数而不是删掉调用点，是为了让报告里的 legacy_redirects 仍为 0。"""
+    return 0
     n = 0
     pairs = list(hw_slugs.SLUGS.items()) + [("\u738b\u5265", "wang-jian"),
                                          ("\u738b\u7fe6", "wang-jian"),

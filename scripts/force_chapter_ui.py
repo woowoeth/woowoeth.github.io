@@ -469,7 +469,8 @@ body{background:var(--paper);color:var(--ink)}
 #hwx .res a b{font-family:"Noto Serif SC","Source Han Serif SC","Songti SC","STSong",serif;font-size:15px;font-weight:600}
 #hwx .res a span{display:block;font-size:13.5px;color:var(--muted);line-height:1.6}
 #hwx .res a:hover b{border-bottom:1px solid}
-#hwx .hist{display:none;align-items:center;gap:8px;margin:2px 0 4px;font-size:13px}
+#hwx .hist{display:none;align-items:center;gap:8px;margin:0 0 14px;font-size:13px}
+header.hd{margin-bottom:12px!important}
 #hwx .hist .hl{color:var(--acc);font-weight:700;letter-spacing:.1em;flex:0 0 auto}
 #hwx .hist .hchips{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;flex:1}
 #hwx .hist .hchips::-webkit-scrollbar{display:none}
