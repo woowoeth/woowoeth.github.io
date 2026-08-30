@@ -6,6 +6,15 @@ import unicodedata
 SLUGS = {
     "孙子兵法": "sun-tzu",
     "阿德勒": "adler",
+    "卡尔·纽波特": "cal-newport",
+    "费曼": "feynman",
+    "卡尔·罗杰斯": "carl-rogers",
+    "依恋理论": "attachment-theory",
+    "原子习惯": "atomic-habits",
+    "卡尔·波普尔": "popper",
+    "艾利克森": "ericsson",
+    "蒙台梭利": "montessori",
+    "约翰·瑞迪": "john-ratey",
     "约翰·戈特曼": "gottman",
     "关键对话": "crucial-conversations",
     "非暴力沟通": "nonviolent-communication",
@@ -139,6 +148,7 @@ TAG_SLUGS = {
     "学习与成长": "learning",
     "世界如何运转": "world",
     "家庭与关系": "family",
+    "身心与生活": "living",
     "近世": "early-modern",
 }
 

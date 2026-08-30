@@ -52,6 +52,16 @@ from hwx_scenes import SCENES as HWX_SCENES
 HWX_INTROS = {
 "sun-tzu":"最早也最完整的战争方法论，被读了两千五百年",
 "adler":"把「这是谁的课题」问成一把刀的心理学家",
+"cal-newport":"论证专注为何正在变成稀缺能力",
+"feynman":"用一杯冰水戳穿NASA几百页报告的物理学家",
+"carl-rogers":"第一个把心理治疗全程录音拿来做研究的人",
+"attachment-theory":"从婴儿重聚那一刻看出一生关系模板",
+"atomic-habits":"把改变拆到每天百分之一的行为设计",
+"popper":"用「能不能被推翻」划开科学与空话",
+"ericsson":"证明决定水平的是练法不是时长",
+"montessori":"用环境替代管教的儿童教育奠基者",
+"john-ratey":"把运动重新定义为大脑的药",
+
 "nonviolent-communication":"把吵架拆成四步的沟通课",
 "seneca":"在权力核心里写节制的斯多噶派",
 "chris-voss":"谈判先处理情绪的FBI首席专家",

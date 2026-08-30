@@ -51,6 +51,10 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [论语 · 和而不同](https://ourword.ai/i/analects/harmony-not-sameness/): 论语 · 和而不同——一致不等于共识。开会没有一个人反对，通常不是意见统一。这一篇要回答的是：和与同的区别在哪里。
 - [智慧书 · 见好就收](https://ourword.ai/i/art-of-worldly-wisdom/quit-while-winning/): 智慧书 · 见好就收——在牌桌热的时候离开。一个耶稣会士写的处世箴言，第38条讲的是赌桌纪律。这一篇要回答的是：为什么要在赢的时候走。
 - [智慧书 · 做，并且让人看见](https://ourword.ai/i/art-of-worldly-wisdom/do-and-be-seen/): 智慧书 · 做，并且让人看见——实与名各占一半。这条箴言在道德上让人不舒服。这一篇要回答的是：为什么他坚持把它写下来。
+- [原子习惯 · 落到系统的水平](https://ourword.ai/i/atomic-habits/systems-over-goals/): 原子习惯 · 落到系统的水平——目标不区分胜负。参赛的每支队都想拿冠军。这一篇要回答的是：那么区别在哪。
+- [原子习惯 · 从身份下手](https://ourword.ai/i/atomic-habits/identity-first/): 原子习惯 · 从身份下手——不跟欲望硬扛。靠意志力戒掉的东西，多半会回来。这一篇要回答的是：有没有不用硬扛的路。
+- [依恋理论 · 信息在重聚那一刻](https://ourword.ai/i/attachment-theory/strange-situation/): 依恋理论 · 信息在重聚那一刻——不哭不等于不慌。母亲离开时哭得凶的孩子，未必是最不安的那个。这一篇要回答的是：该看哪一刻。
+- [依恋理论 · 安全基地](https://ourword.ai/i/attachment-theory/secure-base/): 依恋理论 · 安全基地——有退路才敢往前。为什么有人敢冒险，有人不敢。这一篇要回答的是：胆量的前提条件。
 - [白圭 · 人弃我取](https://ourword.ai/i/bai-gui/take-what-others-drop/): 白圭 · 人弃我取——在丰年买，在歉年卖。低买高卖人人都懂。这一篇要回答的是：白圭是怎么让这件事变成可执行的。
 - [白圭 · 智勇仁强](https://ourword.ai/i/bai-gui/four-qualifications/): 白圭 · 智勇仁强——四样缺一样就别做。他把经商说成和用兵、变法一个等级的事。这一篇要回答的是：他为此开出的四条准入条件。
 - [贝索斯 · 永远是第一天](https://ourword.ai/i/bezos/day-one/): 贝索斯 · 永远是第一天——第二天是什么样。有员工问：第二天会怎样？这一篇要回答的是：他的答案，和他为拦住第二天装的四个零件。
@@ -65,9 +69,13 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [巴菲特 · 退潮才知道谁在裸泳](https://ourword.ai/i/buffett/swimming-naked/): 巴菲特 · 退潮才知道谁在裸泳——风险的滞后显形。涨潮的时候，所有泳姿都好看。这一篇要回答的是：为什么风险只在事后可见，以及怎么在事前看它。
 - [凯撒 · 骰子已被掷下](https://ourword.ai/i/caesar/the-rubicon/): 凯撒 · 骰子已被掷下——不可逆的那一步。带兵过那条小河就是内战。这一篇要回答的是：他在河边停下来的那段时间在算什么。
 - [凯撒 · 宽赦作为武器](https://ourword.ai/i/caesar/clementia/): 凯撒 · 宽赦作为武器——用仁慈取胜的新打法。内战里他不杀俘虏、不没收财产。这一篇要回答的是：他自己在信里把动机写得很清楚。
+- [卡尔·纽波特 · 注意力残留](https://ourword.ai/i/cal-newport/attention-residue/): 卡尔·纽波特 · 注意力残留——代价不在那几分钟。「就看一眼」到底花了多少。这一篇要回答的是：账该怎么算。
+- [卡尔·纽波特 · 整块时间要占住](https://ourword.ai/i/cal-newport/schedule-the-depth/): 卡尔·纽波特 · 整块时间要占住——空档不会自己出现。等有空再做，那件事永远不会开始。这一篇要回答的是：该怎么抢时间。
 - [曹操 · 唯才是举](https://ourword.ai/i/cao-cao/talent-only/): 曹操 · 唯才是举——只考一门，不考品行。他公开宣布不看品行只看能力。这一篇要回答的是：这条极端的标准是在什么条件下才成立的。
 - [曹操 · 屯田](https://ourword.ai/i/cao-cao/military-farming/): 曹操 · 屯田——先解决自己的补给。同一个乱世，各方都在抢粮。这一篇要回答的是：他做了一件所有人都没耐心做的事。
 - [曹操 · 官渡烧信](https://ourword.ai/i/cao-cao/burning-the-letters/): 曹操 · 官渡烧信——有些账不能算。手里有一叠证据，能查清谁背叛过你。这一篇要回答的是：他为什么当众把它们烧了。
+- [卡尔·罗杰斯 · 无条件积极关注](https://ourword.ai/i/carl-rogers/unconditional-regard/): 卡尔·罗杰斯 · 无条件积极关注——接纳人，评价事。无条件听着像没有底线。这一篇要回答的是：它到底不设条件在哪一层。
+- [卡尔·罗杰斯 · 复述到对方点头](https://ourword.ai/i/carl-rogers/reflective-listening/): 卡尔·罗杰斯 · 复述到对方点头——共情不是一句话。「我理解你」这句话没有用。这一篇要回答的是：真正的共情是个什么动作。
 - [克里斯·沃斯 · 把对方的情绪说出来](https://ourword.ai/i/chris-voss/labeling/): 克里斯·沃斯 · 把对方的情绪说出来——先标注，再谈事。对方不说话、不接条件。这一篇要回答的是：这时候该说什么。
 - [克里斯·沃斯 · 要的是「说得对」不是「好」](https://ourword.ai/i/chris-voss/thats-right/): 克里斯·沃斯 · 要的是「说得对」不是「好」——两种同意差别巨大。对方点头了，事情却没推进。这一篇要回答的是：你拿到的是哪一种同意。
 - [乌合之众 · 进入群体的人](https://ourword.ai/i/crowd/descent-in-crowds/): 乌合之众 · 进入群体的人——台阶往下走。为什么一群体面人凑在一起会干出格的事？这一篇要回答的是：勒庞给出的三个台阶。
@@ -84,10 +92,14 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [爱因斯坦 · 专利局里的奇迹年](https://ourword.ai/i/einstein/patent-office/): 爱因斯坦 · 专利局里的奇迹年——边缘位置的自由。1905年他发表了改变物理学的四篇论文，职务是三级技术审查员。这一篇要回答的是：那个位置给了他什么。
 - [爱比克泰德 · 控制二分法](https://ourword.ai/i/epictetus/dichotomy/): 爱比克泰德 · 控制二分法——先分归不归你管。一个瘸腿的前奴隶写的处世手册，第一句是一次分类。这一篇要回答的是：这个分类为什么要放在一切之前。
 - [爱比克泰德 · 扰乱你的不是事情](https://ourword.ai/i/epictetus/judgments-not-things/): 爱比克泰德 · 扰乱你的不是事情——中间隔着一层看法。《手册》第五条只有两句话。这一篇要回答的是：它为什么把苏格拉底的死当例子。
+- [艾利克森 · 练已经会的等于休息](https://ourword.ai/i/ericsson/deliberate-practice/): 艾利克森 · 练已经会的等于休息——待在做不到的边缘。同样练三小时，有人在进步有人在原地。这一篇要回答的是：差在练什么。
+- [艾利克森 · 一万小时是误读](https://ourword.ai/i/ericsson/not-ten-thousand-hours/): 艾利克森 · 一万小时是误读——他本人反复澄清过。这个数字比他的研究传播得广得多。这一篇要回答的是：它错在哪。
 - [范蠡 · 旱则资舟](https://ourword.ai/i/fan-li/stock-the-opposite/): 范蠡 · 旱则资舟——在没人要的时候备。什么时候买最便宜？这一篇要回答的是：在所有人都觉得这东西没用的时候。
 - [范蠡 · 长颈鸟喙](https://ourword.ai/i/fan-li/leave-at-the-top/): 范蠡 · 长颈鸟喙——从人身上读结局。他走的时候越国刚刚灭吴，正是最好的时候。这一篇要回答的是：他是从哪里看出来该走的。
 - [冯道 · 惟皇帝救得](https://ourword.ai/i/feng-dao/only-you-can-save/): 冯道 · 惟皇帝救得——改不了局面，就改一句话。契丹灭晋，中原将被屠戮。这一篇要回答的是：一个没有兵的人在那一刻能做什么。
 - [冯道 · 长乐老自叙](https://ourword.ai/i/feng-dao/the-long-happy-old-man/): 冯道 · 长乐老自叙——一千年的争议。他历事四朝十帝，自号长乐老。这一篇要回答的是：骂他的和为他辩的，各自站在什么位置上。
+- [费曼 · 第一个别骗的是自己](https://ourword.ai/i/feynman/dont-fool-yourself/): 费曼 · 第一个别骗的是自己——你最好骗。他把这句话放在科学方法的第一位。这一篇要回答的是：为什么第一道防线是防自己。
+- [费曼 · 讲不明白就是没懂](https://ourword.ai/i/feynman/teach-to-understand/): 费曼 · 讲不明白就是没懂——术语是遮羞布。能复述、能考高分，不等于懂。这一篇要回答的是：怎么验。
 - [有限与无限的游戏 · 两种游戏](https://ourword.ai/i/finite-and-infinite-games/two-kinds/): 有限与无限的游戏 · 两种游戏——先认清自己在玩哪种。全书第一句话就是全部结论。这一篇要回答的是：分清这两种游戏，能少犯哪几类错。
 - [有限与无限的游戏 · 与边界游戏](https://ourword.ai/i/finite-and-infinite-games/playing-with-boundaries/): 有限与无限的游戏 · 与边界游戏——规则是道具不是牢笼。两种玩家对规则的态度截然相反。这一篇要回答的是：改规则和破坏规则的区别在哪里。
 - [弗兰克尔 · 最后的自由](https://ourword.ai/i/frankl/the-last-freedom/): 弗兰克尔 · 最后的自由——态度是拿不走的。这句话如果出自书房，只是格言。这一篇要回答的是：它的证据是在什么地方收集的。
@@ -138,6 +150,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [创新者的窘境 · 小市场救不了大公司](https://ourword.ai/i/innovators-dilemma/small-markets/): 创新者的窘境 · 小市场救不了大公司——增长需求错配。大公司不是看不见新市场，是看不上。这一篇要回答的是：这个「看不上」为什么是算术问题，以及他给的解法。
 - [乔布斯 · 专注就是说不](https://ourword.ai/i/jobs/focus-is-saying-no/): 乔布斯 · 专注就是说不——砍掉的是好主意。人人都说自己专注。这一篇要回答的是：他给专注下的定义为什么和直觉相反。
 - [乔布斯 · 连点成线只能回头看](https://ourword.ai/i/jobs/connecting-the-dots/): 乔布斯 · 连点成线只能回头看——先攒点，再连线。退学生去旁听了一门毫无用处的课。这一篇要回答的是：那个著名比喻常被用反的地方。
+- [约翰·瑞迪 · 运动是给大脑用的](https://ourword.ai/i/john-ratey/exercise-for-the-brain/): 约翰·瑞迪 · 运动是给大脑用的——收益当天可感。把运动当健身房里的事，等于放着最便宜的药不用。这一篇要回答的是：它到底在改什么。
+- [约翰·瑞迪 · 焦虑时动比想有用](https://ourword.ai/i/john-ratey/move-before-you-think/): 约翰·瑞迪 · 焦虑时动比想有用——从生理入手。越想越慌，道理都懂但停不下来。这一篇要回答的是：为什么这时候该出门。
 - [拉罗什富科 · 没人抱怨自己的判断力](https://ourword.ai/i/la-rochefoucauld/memory-vs-judgment/): 拉罗什富科 · 没人抱怨自己的判断力——盲区的形状。一句十几个字的箴言，画出了自我认知的边界。这一篇要回答的是：为什么承认前者容易、承认后者几乎不可能。
 - [拉罗什富科 · 虚伪是恶行向美德的致敬](https://ourword.ai/i/la-rochefoucauld/vice-pays-tribute/): 拉罗什富科 · 虚伪是恶行向美德的致敬——伪装暴露了行情。他把虚伪写成一种致敬。这一篇要回答的是：这个刻薄的比喻里藏着一条读人的方法。
 - [李光耀 · 管用吗](https://ourword.ai/i/lee-kuan-yew/does-it-work/): 李光耀 · 管用吗——让理论排在结果后面。左右两边的理论家都批评过新加坡。这一篇要回答的是：他用哪一个问题打发了所有理论。
@@ -176,6 +190,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [孟子 · 民为贵](https://ourword.ai/i/mencius/people-first/): 孟子 · 民为贵——权力的地基在最下面。这句话被当成两千年前的民本情怀。这一篇要回答的是：它其实是一句关于权力从哪来的技术判断。
 - [孟子 · 以力服人与以德服人](https://ourword.ai/i/mencius/force-vs-virtue/): 孟子 · 以力服人与以德服人——顺从和心服的区别。同样是听你的，有两种完全不同的听。这一篇要回答的是：怎么分辨你手上的是哪一种。
 - [孟子 · 养浩然之气](https://ourword.ai/i/mencius/flood-like-qi/): 孟子 · 养浩然之气——顶得住压力的那口气。公孙丑问什么是浩然之气，孟子说难言也。这一篇要回答的是：这口气到底怎么来的，以及怎么弄丢。
+- [蒙台梭利 · 先改环境，再谈行为](https://ourword.ai/i/montessori/prepared-environment/): 蒙台梭利 · 先改环境，再谈行为——够不到才叫不听话。被视为无法管教的孩子，换了间屋子就变了。这一篇要回答的是：变的是什么。
+- [蒙台梭利 · 帮助我，让我自己做](https://ourword.ai/i/montessori/help-me-do-it-myself/): 蒙台梭利 · 帮助我，让我自己做——代劳省的是你的时间。替他做完只要两分钟。这一篇要回答的是：那两分钟买走了什么。
 - [查理·芒格 · 反过来想](https://ourword.ai/i/munger/invert/): 查理·芒格 · 反过来想——先研究怎么死。他一生把一句数学家的话用到了所有领域。这一篇要回答的是：反过来想在操作上到底是哪几步。
 - [查理·芒格 · 格栅思维](https://ourword.ai/i/munger/latticework/): 查理·芒格 · 格栅思维——一把锤子不够用。他警告的不是无知，是单一学科的专业。这一篇要回答的是：为什么最危险的恰恰是最熟练的那把锤子。
 - [宫本武藏 · 武器不可有偏爱](https://ourword.ai/i/musashi/no-favorite-weapon/): 宫本武藏 · 武器不可有偏爱——别和工具谈感情。一个剑客写下「不可偏爱武器」。这一篇要回答的是：这句话为什么出自一个六十战全胜的人。
@@ -196,6 +212,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [战争论 · 摩擦](https://ourword.ai/i/on-war/friction/): 战争论 · 摩擦——最简单的事也是困难的。他为战争学发明了一个物理词。这一篇要回答的是：摩擦从哪里来，以及为什么它不可消除、只可折算。
 - [保罗·格雷厄姆 · 做不能规模化的事](https://ourword.ai/i/paul-graham/dont-scale/): 保罗·格雷厄姆 · 做不能规模化的事——早期要手工。创业者满脑子都是规模化，他劝的是反方向。这一篇要回答的是：手工阶段买到的是什么。
 - [保罗·格雷厄姆 · 默认活着还是默认死去](https://ourword.ai/i/paul-graham/default-alive/): 保罗·格雷厄姆 · 默认活着还是默认死去——先算这道题。他和创业者聊天必先问一道题，多数创始人答不上来。这一篇要回答的是：这道题为什么排在一切讨论之前。
+- [卡尔·波普尔 · 能不能被推翻](https://ourword.ai/i/popper/falsifiability/): 卡尔·波普尔 · 能不能被推翻——解释一切等于没解释。占星术和物理学都能解释现象。这一篇要回答的是：凭什么说后者才是科学。
+- [卡尔·波普尔 · 去找反例，别再找支持](https://ourword.ai/i/popper/seek-refutation/): 卡尔·波普尔 · 去找反例，别再找支持——一个反例胜过一百个例证。再多的白天鹅也证明不了天鹅都是白的。这一篇要回答的是：那该收集什么。
 - [史记 · 不虚美，不隐恶](https://ourword.ai/i/records-of-the-grand-historian/no-praise-no-hiding/): 史记 · 不虚美，不隐恶——功与过写在同一段。班固给《史记》的六个字评语。这一篇要回答的是：做到它到底难在哪。
 - [史记 · 余甚惑焉](https://ourword.ai/i/records-of-the-grand-historian/i-am-confused/): 史记 · 余甚惑焉——把没想明白的写下来。他在列传第一篇就承认自己想不通。这一篇要回答的是：这三个字为什么比任何结论都值钱。
 - [任正非 · 华为的冬天](https://ourword.ai/i/ren-zhengfei/huaweis-winter/): 任正非 · 华为的冬天——在丰年谈倒闭。公司业绩最好的一年，他给全员写了篇讲失败的文章。这一篇要回答的是：把危机感做成制度的那几个零件。
