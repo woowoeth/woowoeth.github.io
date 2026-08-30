@@ -1,7 +1,7 @@
 {
  "i/adler/": {
   "d": "2026-08-30",
-  "h": "9fec667e440d2e9d"
+  "h": "87781ce269f45bd0"
  },
  "i/adler/separation-of-tasks/": {
   "d": "2026-08-30",
@@ -43,6 +43,10 @@
   "d": "2026-08-29",
   "h": "58d65d6ebf39a077"
  },
+ "i/atomic-habits/": {
+  "d": "2026-08-30",
+  "h": "7788ac9a43d36be0"
+ },
  "i/atomic-habits/identity-first/": {
   "d": "2026-08-30",
   "h": "52e5f1697bf83242"
@@ -50,6 +54,10 @@
  "i/atomic-habits/systems-over-goals/": {
   "d": "2026-08-30",
   "h": "3f4d8cc58975b562"
+ },
+ "i/attachment-theory/": {
+  "d": "2026-08-30",
+  "h": "06f98247e62d5c47"
  },
  "i/attachment-theory/secure-base/": {
   "d": "2026-08-30",
@@ -109,7 +117,7 @@
  },
  "i/bruce-lee/": {
   "d": "2026-08-30",
-  "h": "e1800b13b4bba873"
+  "h": "7d52fae6b98082ba"
  },
  "i/bruce-lee/be-water/": {
   "d": "2026-08-29",
@@ -143,6 +151,10 @@
   "d": "2026-08-29",
   "h": "21e8f888c5d49794"
  },
+ "i/cal-newport/": {
+  "d": "2026-08-30",
+  "h": "623d95a5888a3d1f"
+ },
  "i/cal-newport/attention-residue/": {
   "d": "2026-08-30",
   "h": "e7b8e3cd03fc3949"
@@ -166,6 +178,10 @@
  "i/cao-cao/talent-only/": {
   "d": "2026-08-28",
   "h": "f024ac16b7a0e2a2"
+ },
+ "i/carl-rogers/": {
+  "d": "2026-08-30",
+  "h": "7cf2ac3e89573dde"
  },
  "i/carl-rogers/reflective-listening/": {
   "d": "2026-08-30",
@@ -249,7 +265,7 @@
  },
  "i/einstein/": {
   "d": "2026-08-30",
-  "h": "36a93acc982f4551"
+  "h": "5c972a33d46a016b"
  },
  "i/einstein/formulating-the-problem/": {
   "d": "2026-08-29",
@@ -270,6 +286,10 @@
  "i/epictetus/judgments-not-things/": {
   "d": "2026-08-29",
   "h": "6ed2659971adc8cc"
+ },
+ "i/ericsson/": {
+  "d": "2026-08-30",
+  "h": "d70f3acd60734862"
  },
  "i/ericsson/deliberate-practice/": {
   "d": "2026-08-30",
@@ -303,6 +323,10 @@
   "d": "2026-08-29",
   "h": "5afc20737c485606"
  },
+ "i/feynman/": {
+  "d": "2026-08-30",
+  "h": "76bf39d0564e68c1"
+ },
  "i/feynman/dont-fool-yourself/": {
   "d": "2026-08-30",
   "h": "4af96bbfa5d97542"
@@ -325,7 +349,7 @@
  },
  "i/frankl/": {
   "d": "2026-08-30",
-  "h": "a41edf96206e691a"
+  "h": "2903a25520251f5b"
  },
  "i/frankl/happiness-ensues/": {
   "d": "2026-08-29",
@@ -337,7 +361,7 @@
  },
  "i/franklin/": {
   "d": "2026-08-30",
-  "h": "21c186f7674236b2"
+  "h": "8d509384d626542b"
  },
  "i/franklin/never-say-certainly/": {
   "d": "2026-08-29",
@@ -361,7 +385,7 @@
  },
  "i/gottman/": {
   "d": "2026-08-30",
-  "h": "e242bc05d0bf5a5c"
+  "h": "8b7164a3bb30a6f1"
  },
  "i/gottman/four-horsemen/": {
   "d": "2026-08-30",
@@ -603,6 +627,10 @@
   "d": "2026-08-29",
   "h": "268b2785da8dc99a"
  },
+ "i/john-ratey/": {
+  "d": "2026-08-30",
+  "h": "4bf4e4eb936066ee"
+ },
  "i/john-ratey/exercise-for-the-brain/": {
   "d": "2026-08-30",
   "h": "eaf3bc27de2ec63b"
@@ -823,6 +851,10 @@
   "d": "2026-08-28",
   "h": "a6356aca438b4535"
  },
+ "i/montessori/": {
+  "d": "2026-08-30",
+  "h": "a8d9e8fa37712a42"
+ },
  "i/montessori/help-me-do-it-myself/": {
   "d": "2026-08-30",
   "h": "dfeffe949f4d5bba"
@@ -833,7 +865,7 @@
  },
  "i/munger/": {
   "d": "2026-08-30",
-  "h": "15bb519dcd7ad10a"
+  "h": "2a80421e29b4b385"
  },
  "i/munger/invert/": {
   "d": "2026-08-29",
@@ -845,7 +877,7 @@
  },
  "i/musashi/": {
   "d": "2026-08-30",
-  "h": "bd6e6846b566f1fa"
+  "h": "d65d4fb52cc560b3"
  },
  "i/musashi/no-favorite-weapon/": {
   "d": "2026-08-29",
@@ -905,7 +937,7 @@
  },
  "i/nonviolent-communication/": {
   "d": "2026-08-30",
-  "h": "4006d7256644dae8"
+  "h": "7a747460522e78a0"
  },
  "i/nonviolent-communication/needs-behind-blame/": {
   "d": "2026-08-30",
@@ -950,6 +982,10 @@
  "i/paul-graham/dont-scale/": {
   "d": "2026-08-29",
   "h": "640beb3ff1a8d695"
+ },
+ "i/popper/": {
+  "d": "2026-08-30",
+  "h": "4700bf5da2a14147"
  },
  "i/popper/falsifiability/": {
   "d": "2026-08-30",
@@ -1009,7 +1045,7 @@
  },
  "i/seneca/": {
   "d": "2026-08-30",
-  "h": "51ff37857e26d9c8"
+  "h": "7e711defaacc6f64"
  },
  "i/seneca/on-anger/": {
   "d": "2026-08-30",
@@ -1057,7 +1093,7 @@
  },
  "i/socrates/": {
   "d": "2026-08-30",
-  "h": "6f523a7093e85352"
+  "h": "7853e2874e4e51a6"
  },
  "i/socrates/knowing-not-knowing/": {
   "d": "2026-08-29",
@@ -1209,7 +1245,7 @@
  },
  "i/thinking-fast-and-slow/": {
   "d": "2026-08-30",
-  "h": "47a8d4dc9133cfe4"
+  "h": "83e09a63d0a086cf"
  },
  "i/thinking-fast-and-slow/loss-aversion/": {
   "d": "2026-08-29",
@@ -1325,7 +1361,7 @@
  },
  "i/xunzi/": {
   "d": "2026-08-30",
-  "h": "6d8799c2d4b3611e"
+  "h": "74bf43391e4d3ff1"
  },
  "i/xunzi/borrow-from-things/": {
   "d": "2026-08-28",
@@ -1345,7 +1381,7 @@
  },
  "i/zeng-guofan/": {
   "d": "2026-08-30",
-  "h": "3376b1096d0e72ab"
+  "h": "2516b0d7883751ad"
  },
  "i/zeng-guofan/recruit-and-test/": {
   "d": "2026-08-28",
