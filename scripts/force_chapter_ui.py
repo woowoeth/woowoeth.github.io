@@ -141,6 +141,37 @@ def _tint(hex_color, alpha):
 CAT_TINT = {k: _tint(v, 0.055) for k, v in CAT_COLOR.items()}      # 亮色底
 CAT_TINT_D = {k: _tint(v, 0.16) for k, v in CAT_COLOR.items()}     # 暗色底
 
+# 用户搜的是口语（睡不着、拖延、吵架），内容里写的是书面语。索引只存正文，
+# 这类查询必然落空。试过按词频自动关联，结果「拖延」命中张居正和《战争论》——
+# 词频匹配不出主题。改为显式指定：一个口语词挂到哪几个条目，人工决定。
+SYNONYMS = {
+    "睡不着":   ["john-ratey", "cal-newport", "seneca"],
+    "失眠":     ["john-ratey", "seneca", "marcus-aurelius"],
+    "拖延":     ["atomic-habits", "wang-yangming", "cal-newport", "paul-graham"],
+    "摆烂":     ["atomic-habits", "frankl", "inamori"],
+    "吵架":     ["nonviolent-communication", "gottman", "crucial-conversations", "adler"],
+    "冷战":     ["gottman", "nonviolent-communication", "adler"],
+    "分手":     ["gottman", "attachment-theory", "adler"],
+    "带娃":     ["montessori", "attachment-theory", "adler", "carl-rogers"],
+    "孩子不听话": ["montessori", "adler", "attachment-theory"],
+    "内耗":     ["epictetus", "marcus-aurelius", "seneca", "john-ratey"],
+    "焦虑":     ["epictetus", "seneca", "john-ratey", "marcus-aurelius"],
+    "累":       ["john-ratey", "cal-newport", "seneca"],
+    "没动力":   ["frankl", "inamori", "atomic-habits", "adler"],
+    "社恐":     ["adler", "carl-rogers", "nonviolent-communication"],
+    "被裁":     ["frankl", "su-shi", "nietzsche", "dalio"],
+    "加班":     ["cal-newport", "drucker", "jobs"],
+    "学不会":   ["feynman", "ericsson", "mao"],
+    "记不住":   ["feynman", "ericsson"],
+    "选择困难": ["munger", "buffett", "jobs"],
+}
+
+
+def _syn(slug):
+    """按 slug 反查它被哪些口语词指向。"""
+    return "".join(k for k, slugs in SYNONYMS.items() if slug in slugs)
+
+
 def _hwx_payload():
     import json, sys as _s, re
     _s.path.insert(0, "seo")
@@ -202,7 +233,8 @@ def _hwx_payload():
                   "cs": [n for _, n, _ in chs[:3]] if len(chs) >= 3 else [],
                   "sc": scene_of(first_ch) if first_ch else "",
                   "pt": first_ch.get("w", "") if first_ch else "",
-                  "ix": re.sub(r"[\s，。、；：！？「」（）——…]+", "", " ".join(body))[:900]})
+                  "ix": (re.sub(r"[\s，。、；：！？「」（）——…]+", "", " ".join(body))[:900]
+                         + _syn(slug))})
 
     # 金句池：每章取 8-34 字里最长一条，带出处深链
     QP = []
@@ -519,10 +551,8 @@ var scEl=document.getElementById('hwx-sc'),resEl=document.getElementById('hwx-re
 var scMore=document.getElementById('hwx-scmore');
 D.S.forEach(function(s){
   var b=document.createElement('button');b.type='button';b.textContent=s.t;
-  b.onclick=function(){
-    var on=b.classList.contains('on');
+  b._open=function(){
     scEl.querySelectorAll('button').forEach(function(x){x.classList.remove('on')});
-    if(on){resEl.classList.remove('on');resEl.innerHTML='';return}
     b.classList.add('on');
     resEl.innerHTML=s.qs.map(function(q){
       return '<div class="qz"><div class="qzq">'+q.q+'</div>'
@@ -530,6 +560,13 @@ D.S.forEach(function(s){
         +'</div>';
     }).join('');
     resEl.classList.add('on');
+  };
+  b.onclick=function(){
+    if(b.classList.contains('on')){          /* 再点已展开的，折叠 */
+      b.classList.remove('on');
+      resEl.classList.remove('on');resEl.innerHTML='';return;
+    }
+    b._open();
     resEl.scrollIntoView({behavior:'smooth',block:'nearest'});
   };scEl.appendChild(b);
 });
@@ -558,8 +595,10 @@ D.S.forEach(function(s){
   scMore.onclick=function(){open=!open;fold()};
   fold();
   window.addEventListener('resize',function(){if(!open)fold()});
-  /* 默认展开第一个处境——它是最高频的那个，进站就看得见这层长什么样 */
-  var first=tags()[0]; if(first) first.click();
+  /* 默认展开第一个处境。用 open() 而不是 click()：
+     click 会走「已选中则折叠」这条分支，导致用户点第二个标签时
+     第一下只是取消展开，要点两下才切换。 */
+  var first=tags()[0]; if(first && first._open) first._open();
 })();
 /* ── 历史行 ── */
 var _mem=[];
