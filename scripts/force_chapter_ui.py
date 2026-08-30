@@ -523,6 +523,7 @@ D.S.forEach(function(s){
     resEl.scrollIntoView({behavior:'smooth',block:'nearest'});
   };scEl.appendChild(b);
 });
+
 /* 默认只露两行，其余收起 */
 (function(){
   var open=false;
@@ -547,6 +548,8 @@ D.S.forEach(function(s){
   scMore.onclick=function(){open=!open;fold()};
   fold();
   window.addEventListener('resize',function(){if(!open)fold()});
+  /* 默认展开第一个处境——它是最高频的那个，进站就看得见这层长什么样 */
+  var first=tags()[0]; if(first) first.click();
 })();
 /* ── 历史行 ── */
 var _mem=[];

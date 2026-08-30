@@ -9,6 +9,30 @@
 SCENES = [
 
 # ── 决策 ──
+("情绪上头", [
+    ("为什么这件事这么让我难受？",
+     [("epictetus", "judgments-not-things"), ("epictetus", "dichotomy")]),
+    ("怎么让自己先冷静下来？",
+     [("marcus-aurelius", "view-from-above"), ("su-shi", "no-wind-no-rain")]),
+]),
+("做不完", [
+    ("砍掉哪些才是对的？",
+     [("jobs", "focus-is-saying-no"), ("drucker", "right-things-first")]),
+    ("我是不是在用忙碌逃避思考？",
+     [("wang-xing", "escape-from-thinking"), ("zeng-guofan", "self-watch")]),
+]),
+("起了冲突", [
+    ("对方明显有恶意，我要不要反击？",
+     [("caesar", "clementia"), ("su-shi", "no-bad-people")]),
+    ("怎么不让情绪替我做决定？",
+     [("epictetus", "judgments-not-things"), ("zhang-liang", "picking-up-the-shoe")]),
+]),
+("拖着不开始", [
+    ("总在等准备好，什么时候才算好？",
+     [("paul-graham", "dont-scale"), ("boyd", "ooda")]),
+    ("怎么让自己迈出第一步？",
+     [("wang-yangming", "unity-of-knowing-and-doing"), ("franklin", "one-virtue-a-week")]),
+]),
 ("不可逆的决定", [
     ("这一步迈出去就收不回来，我该怎么想？",
      [("caesar", "the-rubicon"), ("xiang-yu", "sinking-the-boats")]),
@@ -125,12 +149,6 @@ SCENES = [
     ("双方僵住了，从哪里破？",
      [("schelling", "focal-points"), ("guiguzi", "open-and-close")]),
 ]),
-("起了冲突", [
-    ("对方明显有恶意，我要不要反击？",
-     [("caesar", "clementia"), ("su-shi", "no-bad-people")]),
-    ("怎么不让情绪替我做决定？",
-     [("epictetus", "judgments-not-things"), ("zhang-liang", "picking-up-the-shoe")]),
-]),
 ("被猜忌", [
     ("解释还是不解释？",
      [("guo-ziyi", "open-gates"), ("wang-jian", "asking-for-fields")]),
@@ -179,12 +197,6 @@ SCENES = [
     ("多久之内必须看到结果？",
      [("paul-graham", "default-alive"), ("zhang-yiming", "delayed-gratification")]),
 ]),
-("做不完", [
-    ("砍掉哪些才是对的？",
-     [("jobs", "focus-is-saying-no"), ("drucker", "right-things-first")]),
-    ("我是不是在用忙碌逃避思考？",
-     [("wang-xing", "escape-from-thinking"), ("zeng-guofan", "self-watch")]),
-]),
 ("推不动", [
     ("要不要换个方向？",
      [("on-war", "friction"), ("mao", "on-contradiction")]),
@@ -211,12 +223,6 @@ SCENES = [
 ]),
 
 # ── 自己 ──
-("情绪上头", [
-    ("为什么这件事这么让我难受？",
-     [("epictetus", "judgments-not-things"), ("epictetus", "dichotomy")]),
-    ("怎么让自己先冷静下来？",
-     [("marcus-aurelius", "view-from-above"), ("su-shi", "no-wind-no-rain")]),
-]),
 ("在低谷", [
     ("这段日子有什么意义？",
      [("frankl", "the-last-freedom"), ("nietzsche", "what-does-not-kill")]),
@@ -333,12 +339,6 @@ SCENES = [
      [("zhang-liang", "asking-for-less"), ("han-feizi", "two-handles")]),
     ("已经撕破脸了还能修复吗？",
      [("cao-cao", "burning-the-letters"), ("mandela", "springbok-jersey")]),
-]),
-("拖着不开始", [
-    ("总在等准备好，什么时候才算好？",
-     [("paul-graham", "dont-scale"), ("boyd", "ooda")]),
-    ("怎么让自己迈出第一步？",
-     [("wang-yangming", "unity-of-knowing-and-doing"), ("franklin", "one-virtue-a-week")]),
 ]),
 ("觉得没意义", [
     ("每天都在重复，意义在哪？",
