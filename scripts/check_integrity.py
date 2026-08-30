@@ -93,7 +93,49 @@ for e in entries:
     if re.search(r"[\u4e00-\u9fff]", slug or ""):
         bad("条目无英文 slug", "%s → %s" % (e["n"], slug))
 
-# 7) 二维码必须仍可解码
+# 7) 信息流里同类卡片不得重复
+#    真实事故：金句取用写成 (i*53) % 池大小，而池子正好 53 条，
+#    于是两个 feed 里所有金句卡都是同一句。用浏览器跑一遍实际渲染来验。
+def check_feed_dupes():
+    try:
+        from playwright.sync_api import sync_playwright
+    except ImportError:
+        print("（跳过信息流查重：无 playwright）")
+        return
+    import subprocess, time
+    srv = subprocess.Popen(["python3", "-m", "http.server", "8971"], cwd=ROOT,
+                           stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+    time.sleep(2.5)
+    try:
+        with sync_playwright() as pw:
+            b = pw.chromium.launch()
+            pg = b.new_page(viewport={"width": 390, "height": 1200})
+            pg.goto("http://localhost:8971/", timeout=30000)
+            pg.wait_for_timeout(1800)
+            for tab, sel in (("最新", "#hwx-ncfeed"), ("全部", "#hwx-feed")):
+                if tab == "全部":
+                    pg.evaluate("()=>document.querySelectorAll('#hwx-tabs2 button')[1].click()")
+                    pg.wait_for_timeout(800)
+                got = pg.evaluate("""(s)=>{var o={};
+                  ['.qc','.pc','.nc','.kc'].forEach(function(k){
+                    o[k]=Array.from(document.querySelectorAll(s+' '+k))
+                          .map(function(e){return (e.innerText||'').slice(0,40)})});
+                  return o}""", sel)
+                for kind, texts in got.items():
+                    if len(texts) > 1 and len(set(texts)) < len(texts):
+                        from collections import Counter
+                        worst = Counter(texts).most_common(1)[0]
+                        bad("信息流卡片重复",
+                            "%s tab 的 %s：%d 张里只有 %d 种，最多的一张出现 %d 次"
+                            % (tab, kind, len(texts), len(set(texts)), worst[1]))
+            b.close()
+    finally:
+        srv.terminate()
+
+
+check_feed_dupes()
+
+# 8) 二维码必须仍可解码
 try:
     from PIL import Image
     from pyzbar.pyzbar import decode

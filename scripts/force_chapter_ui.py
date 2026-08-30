@@ -499,7 +499,7 @@ function drawCard(cb){
     var qr=new Image();
     qr.onload=function(){c.drawImage(qr,858,1244,122,122);cv.toBlob(cb,'image/png')};
     qr.onerror=function(){cv.toBlob(cb,'image/png')};
-    qr.src='/wechat-qr.png';
+    qr.src='/wechat-qr.png?v=54fb0fdf';
   }
 }
 document.getElementById('hwx-save').onclick=function(){drawCard(function(b){var a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='ourword-'+(_n.getMonth()+1)+'-'+_n.getDate()+'.png';a.click()})};
@@ -589,6 +589,20 @@ function cta(e){
   return(t.indexOf('「」')>=0)?'他的方法都在里面 →':t;
 }
 /* ── 全部 feed（混排） ── */
+/* 金句取用器：按日期确定性洗牌后顺序发牌。
+   原来用 (i*步长)%池大小 取句，步长 53 撞上池大小 53 时恒取第一条——
+   两个 feed 里十张金句卡全是同一句。改成发牌就不再依赖两个数互质。 */
+var _qbag=[], _qi2=0;
+(function(){
+  var a=D.QS.slice(), seed=day;
+  for(var i=a.length-1;i>0;i--){
+    seed=(seed*9301+49297)%233280;
+    var j=Math.floor(seed/233280*(i+1));
+    var t=a[i];a[i]=a[j];a[j]=t;
+  }
+  _qbag=a;
+})();
+function pickQ(){ var g=_qbag[_qi2 % _qbag.length]; _qi2++; return g; }
 /* 金句卡：竖排金句 + 出处 + 一行解析（角度 · 什么时候用），解析取自章节自身字段 */
 function qcard(g,cls){
   var gl = g.gl ? ('<span class="gl">'+g.gl+'</span>') : '';
@@ -606,7 +620,7 @@ D.E.forEach(function(e,i){
   var chTxt=(byNC[e.n]||[]).join(' ');
   var dt=esc((e.n+' '+e.w+' '+e.c+' '+e.it+' '+e.hk+' '+chTxt+' '+(e.ix||'')).toLowerCase());
   fullCells.push('<a class="pc" href="/i/'+e.s+'/" data-h="'+esc(e.n)+'" data-c="'+e.c+'" data-t="'+dt+'" style="--tint:'+(D.CT[e.c]||'transparent')+';--tintd:'+(D.CTD[e.c]||'transparent')+'"><span class="r1"><b>'+e.n+'</b><i class="tag">'+e.w+'</i></span><span class="it">'+e.it+'</span><span class="hk">'+(e.hk||e.w)+'</span>'+(e.cs.length?'<span class="ls">'+e.cs.join(' / ')+'</span>':'')+'<span class="cf">'+cta(e)+'</span></a>');
-  if(i%3===2){var g=D.QS[(qi*37)%D.QS.length];qi++;
+  if(i%3===2){var g=pickQ();
     fullCells.push(qcard(g,'xtra'));}
   if(i%8===5&&ki<D.QQ.length){var k=D.QQ[ki++];
     fullCells.push('<div class="kc xtra" data-t="'+esc(k.t.toLowerCase())+'"><span class="qm">？</span><span class="t">'+k.t+'</span><span class="r">'+k.r.map(function(r){return '<a href="'+r.u+'" data-h="'+esc(r.who+' · '+r.cn)+'"><b>'+r.who+'</b> · '+r.cn+' →</a>'}).join('')+'</span></div>');}
@@ -625,7 +639,7 @@ D.NC.forEach(function(e,i){
     }
     if(pe){_seen[pe.s]=1;
       ncCells.push('<a class="pc" href="/i/'+pe.s+'/" data-h="'+esc(pe.n)+'" style="--sp:'+(D.CC[pe.c]||'#999')+'"><span class="r1"><b>'+pe.n+'</b><i class="tag">'+pe.w+'</i></span><span class="it">'+pe.it+'</span><span class="hk">'+(pe.hk||pe.w)+'</span><span class="cf">'+cta(pe)+'</span></a>');}
-    var g=D.QS[(_qi*53)%D.QS.length];_qi++;
+    var g=pickQ();
     ncCells.push(qcard(g,''));
   }
   if(i%9===7&&_ki<D.QQ.length){var k=D.QQ[_ki++];
@@ -721,6 +735,8 @@ def patch_home_discover():
     # stub 会被后面的函数声明覆盖，所以直接把函数体改成空转。
     s = s.replace('function renderTL(){\n  rTabs();',
                   'function renderTL(){\n  return;', 1)
+    # 二维码换新后文件名不变，浏览器会用旧缓存——按内容哈希击穿
+    s = re.sub(r'(wechat-qr\.png)(\?v=[0-9a-f]+)?', r'\1?v=54fb0fdf', s)
     # 文案兜底：每轮构建强制生效，防止 rebase / 其他脚本回写旧值
     s = s.replace("95 位人物与典籍", "100 位人物与典籍")
     s = s.replace("<title>人类世界生存法则 · 知识库</title>",
