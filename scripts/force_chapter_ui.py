@@ -43,7 +43,7 @@ def outro_html(title, url, text):
     return (
         '<div class="hw-outro">'
         '<p>这一篇如果说中了你正在经历的事，</p>'
-        '<small>转给那个也许正需要的人，或者存下来，下次遇到还找得到。</small>'
+        '<small>转给可能需要的人，或者存下来，下次好找。</small>'
         '<div class="acts">'
         '<button type="button" data-share '
         'data-share-title="%s" data-share-url="%s" data-share-text="%s">分享</button>'
