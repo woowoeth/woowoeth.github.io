@@ -808,8 +808,18 @@ def patch_home_discover():
     s = re.sub(r'(wechat-qr\.png)(\?v=[0-9a-f]+)?', r'\1?v=54fb0fdf', s)
     # 文案兜底：每轮构建强制生效，防止 rebase / 其他脚本回写旧值
     s = s.replace("95 位人物与典籍", "100 位人物与典籍")
-    s = s.replace("<title>人类世界生存法则 · 知识库</title>",
-                  "<title>人类世界生存法则 — 100 位人物与典籍的生存智慧</title>")
+    # 条目数写死过三次（95 → 100 → 现在），每次加条目都漏改。改成按实际数量回写：
+    # 详情页的 slogan 早就是自动的，首页却一直是手填的。
+    import sys as _s2
+    _s2.path.insert(0, "seo")
+    import build_seo as _bs
+    _n = len(_bs.load_array())
+    s = re.sub(r"<title>人类世界生存法则[^<]*</title>",
+               "<title>人类世界生存法则 — %d 位人物与典籍的生存智慧</title>" % _n, s)
+    s = re.sub(r"(\d+) (个|位)人物与典籍的生存智慧",
+               lambda m: "%d %s人物与典籍的生存智慧" % (_n, m.group(2)), s)
+    s = re.sub(r"(\d+) 位人物与典籍(?=[，、])",
+               "%d 位人物与典籍" % _n, s)
     s = s.replace("人类文明的坐标，照亮千年的灯塔",
                   "100 个人物与典籍的生存智慧，跨越 2600 年")
     # 页头精简：删掉「古今中外 · 东西并观」与页头分享按钮，位置让给「最近看过」

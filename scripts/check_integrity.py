@@ -142,6 +142,19 @@ def check_feed_dupes():
 
 check_feed_dupes()
 
+# 7b) 首页显示的条目数必须与实际一致
+#     写死过三次（95 → 100 → 115），每次加条目都漏改，而详情页的 slogan 是自动的，
+#     于是两边对不上。
+import re as _re
+_n = len(entries)
+for label, pat in (("title", r"<title>人类世界生存法则 — (\d+) 位"),
+                   ("首页标语", r'class="hd-en"[^>]*>(\d+) 个人物')):
+    m = _re.search(pat, home)
+    if not m:
+        bad("首页计数缺失", label)
+    elif int(m.group(1)) != _n:
+        bad("首页计数过期", "%s 写着 %s，实际 %d" % (label, m.group(1), _n))
+
 # 8) 二维码必须仍可解码
 try:
     from PIL import Image
