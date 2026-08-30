@@ -459,4 +459,97 @@ SCENES = [
      [("franklin", "one-virtue-a-week"), ("atomic-habits", "systems-over-goals")]),
 ]),
 
+
+# ── 人生转折点：低频但高强度，人最会主动搜的时刻 ──
+("突然没了工作", [
+    ("干了这么多年，说没就没了。",
+     [("huang", "strategic-retreat"), ("su-shi", "three-exiles")]),
+    ("我接下来该干什么？",
+     [("frankl", "the-last-freedom"), ("fan-li", "leave-at-the-top")]),
+]),
+("重要的人走了", [
+    ("我不知道日子怎么继续。",
+     [("frankl", "the-last-freedom"), ("marcus-aurelius", "view-from-above")]),
+    ("我总觉得当初还能做点什么。",
+     [("epictetus", "dichotomy"), ("zhuangzi", "equalizing-things")]),
+]),
+("要重新开始", [
+    ("我这个年纪从头来，太晚了吗？",
+     [("su-shi", "three-exiles"), ("nietzsche", "what-does-not-kill")]),
+    ("过去那些年是不是白费了？",
+     [("dalio", "pain-plus-reflection"), ("frankl", "happiness-ensues")]),
+]),
+("扛不动了", [
+    ("我快撑不住了，但不能倒。",
+     [("marcus-aurelius", "obstacle-is-the-way"), ("epictetus", "dichotomy")]),
+    ("我撑下去，图的是什么？",
+     [("frankl", "the-last-freedom"), ("nietzsche", "what-does-not-kill")]),
+]),
+
+# ── 无能为力：现有全站语气都是「怎么解决」，接不住这类人 ──
+("事情我说了不算", [
+    ("这件事根本不由我决定。",
+     [("epictetus", "dichotomy"), ("machiavelli", "fortune-and-virtu")]),
+    ("我还能做点什么？",
+     [("marcus-aurelius", "obstacle-is-the-way"), ("mandela", "rivonia")]),
+]),
+("已经改不了了", [
+    ("这事已经发生了，我改不了。",
+     [("epictetus", "judgments-not-things"), ("su-shi", "no-wind-no-rain")]),
+    ("我怎么才能不再反复想它？",
+     [("huineng", "originally-not-a-thing"), ("zhuangzi", "equalizing-things")]),
+]),
+("努力也没用", [
+    ("该做的我都做了，还是没用。",
+     [("xunzi", "constant-heaven"), ("machiavelli", "fortune-and-virtu")]),
+    ("那还要不要接着做？",
+     [("tao-te-ching", "wu-wei"), ("frankl", "happiness-ensues")]),
+]),
+
+# ── 说不出口的：搜索量大、私密、典籍最擅长 ──
+("看不得别人好", [
+    ("我朋友过得好，我心里不是滋味。",
+     [("liu-bang", "three-i-cannot"), ("zhuangzi", "equalizing-things")]),
+    ("我怎么老在跟人比？",
+     [("epictetus", "dichotomy"), ("su-shi", "no-bad-people")]),
+]),
+("我做错了事", [
+    ("那件事是我不对，我过不去。",
+     [("wang-yangming", "bandits-in-the-heart"), ("zeng-guofan", "self-watch")]),
+    ("道歉之后呢，就这样了吗？",
+     [("gandhi", "means-are-seeds"), ("dalio", "pain-plus-reflection")]),
+]),
+("怕被看穿", [
+    ("我怕别人发现我其实不行。",
+     [("socrates", "knowing-not-knowing"), ("zeng-guofan", "self-watch")]),
+    ("坐在这个位置上，我心里发虚。",
+     [("liu-bang", "three-i-cannot"), ("wang-yangming", "polish-on-things")]),
+]),
+("放不下一个人", [
+    ("我到现在还恨那个人。",
+     [("wang-yangming", "bandits-in-the-heart"), ("mandela", "springbok-jersey")]),
+    ("原谅是不是等于我认了？",
+     [("mandela", "springbok-jersey"), ("su-shi", "no-bad-people")]),
+]),
+
+# ── 时间尺度：回头看与往前看 ──
+("那件事一直搁在心里", [
+    ("过了这么久我还是耿耿于怀。",
+     [("su-shi", "no-wind-no-rain"), ("huineng", "originally-not-a-thing")]),
+    ("当年那个决定，是不是错了？",
+     [("dalio", "pain-plus-reflection"), ("munger", "invert")]),
+]),
+("不知道要什么", [
+    ("我说不出自己到底想要什么。",
+     [("frankl", "happiness-ensues"), ("zhuangzi", "use-of-uselessness")]),
+    ("五年后我想成为什么样的人？",
+     [("wang-yangming", "innate-knowing"), ("tao-te-ching", "usefulness-of-emptiness")]),
+]),
+("要不要现在转向", [
+    ("我现在换轨道，太冒险吗？",
+     [("fan-li", "leave-at-the-top"), ("tao-te-ching", "reversal")]),
+    ("我怎么知道该坚持还是该改？",
+     [("munger", "invert"), ("huang", "strategic-retreat")]),
+]),
+
 ]
