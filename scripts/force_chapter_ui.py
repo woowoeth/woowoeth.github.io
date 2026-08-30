@@ -784,6 +784,26 @@ def patch_home_discover():
     # stub 会被后面的函数声明覆盖，所以直接把函数体改成空转。
     s = s.replace('function renderTL(){\n  rTabs();',
                   'function renderTL(){\n  return;', 1)
+    # 655KB 的汇文明朝体只被旧金句卡（.dq，早已隐藏）用到，首页却无条件加载它——
+    # 实测拖慢首屏 4.6 秒，而首次绘制其实只要 0.6 秒。改成运行时按需注入：
+    # 只有真的要画旧金句卡时才插入 @font-face，平时一个字节都不下载。
+    s = s.replace(
+        '@font-face{font-family:"Huiwen-mincho";src:url("hw-mincho-subset.woff2") format("woff2");font-display:swap}',
+        '')
+    if "__hwFont=function" not in s:   # 幂等：重复构建不叠加
+        s = s.replace('<body', '<script>window.__hwFont=function(){'
+                      'if(window.__hwFontDone)return;window.__hwFontDone=1;'
+                      'var st=document.createElement("style");'
+                      'st.textContent=\'@font-face{font-family:"Huiwen-mincho";'
+                      'src:url("/hw-mincho-subset.woff2") format("woff2");font-display:swap}\';'
+                      'document.head.appendChild(st)};</script><body', 1)
+    # 旧金句卡真要用时先注入
+    if "if(window.__hwFont)window.__hwFont();" not in s:   # 幂等
+        s = s.replace("function dqFont(){",
+                      "function dqFont(){\n  if(window.__hwFont)window.__hwFont();", 1)
+    # .dq 区块早已隐藏，但它的初始化仍在启动时调用 dqFont() 预取 655KB 字体。
+    # 首屏因此从 0.6 秒拖到 4.6 秒。去掉这次预取，字体只在真要画卡时才下载。
+    s = s.replace("dqRender();dqFont().then(", "dqRender();Promise.resolve().then(", 1)
     # 二维码换新后文件名不变，浏览器会用旧缓存——按内容哈希击穿
     s = re.sub(r'(wechat-qr\.png)(\?v=[0-9a-f]+)?', r'\1?v=54fb0fdf', s)
     # 文案兜底：每轮构建强制生效，防止 rebase / 其他脚本回写旧值
