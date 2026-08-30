@@ -371,7 +371,7 @@ body{background:var(--paper);color:var(--ink)}
 #hwx-theme:hover{border-color:var(--acc);color:var(--acc)}
 #hwx .today{display:grid;grid-template-columns:1.5fr 1fr;gap:14px;margin:18px 0 6px}
 @media(max-width:700px){#hwx .today{grid-template-columns:1fr}}
-#hwx .tq{border:1px solid var(--line);border-radius:16px;padding:20px 22px;background:var(--paper2);display:flex;flex-direction:column}
+#hwx .tq{border:1px solid var(--line);border-radius:16px;padding:20px 22px;background:transparent;display:flex;flex-direction:column}
 #hwx .tq .dt{font-size:12.5px;letter-spacing:.24em;color:var(--acc);font-weight:700;margin-bottom:6px}
 #hwx .tq .q{font-family:"Noto Serif SC","Source Han Serif SC","Songti SC","STSong",serif;font-size:clamp(20px,3.6vw,26px);font-weight:700;line-height:1.85;margin-bottom:14px}
 #hwx .tq .src{font-size:13.5px;color:var(--muted)}
@@ -468,7 +468,8 @@ body{background:var(--paper);color:var(--ink)}
 #hwx .qc .seal{position:absolute;top:13px;right:13px;width:22px;height:22px;border:1.5px solid var(--acc);border-radius:4px;color:var(--acc);font-size:11px;display:flex;align-items:center;justify-content:center}
 #hwx .kc{border-radius:14px;background:rgba(163,59,46,.07);border:1px solid rgba(163,59,46,.22);color:var(--ink);padding:16px 16px 14px;display:flex;flex-direction:column}
 :root[data-theme="dark"] #hwx .kc{background:rgba(224,112,95,.13);border-color:rgba(224,112,95,.3)}
-#hwx .kc .qm{font-size:25px;color:var(--acc);font-weight:900;line-height:1}
+#hwx .kc .said{font-size:12px;line-height:1.6;font-family:"Noto Serif SC","Songti SC",serif;margin-bottom:8px;color:var(--acc)}
+#hwx .kc .qm{display:none;font-size:25px;color:var(--acc);font-weight:900;line-height:1}
 #hwx .kc .t{font-family:"Noto Serif SC","Source Han Serif SC","Songti SC","STSong",serif;font-size:16.5px;font-weight:700;line-height:1.65;margin:9px 0 12px;flex:1;color:var(--ink)}
 #hwx .kc .r a{display:block;font-size:13.5px;color:var(--muted);text-decoration:none;padding:4px 0}
 #hwx .kc .r a b{color:var(--ink);font-weight:600}
@@ -513,7 +514,9 @@ var day=Math.floor((_n.getTime()-_n.getTimezoneOffset()*60000)/864e5);
 var qIdx=day%D.QP.length, q1=D.QP[qIdx];
 function paintQuote(first){
   q1=D.QP[qIdx];
-  document.getElementById('hwx-dt').textContent=(_n.getMonth()+1)+'月'+_n.getDate()+'日 · 星期'+WD[_n.getDay()]+' · 今日一句';
+  /* 页面上不显示日期——它对读者没有用，只是让卡片更花。
+     分享卡里仍然带日期，那里日期是有意义的（记录哪天存的）。 */
+  document.getElementById('hwx-dt').textContent='今日一句';
   document.getElementById('hwx-tq').textContent='「'+q1.q+'」';
   document.getElementById('hwx-tqs').innerHTML='—— '+q1.who+' · <a href="'+q1.u+'" data-h="'+esc(q1.who+' · '+q1.cn)+'">'+q1.cn+' →</a>';
   var gl=document.getElementById('hwx-tgl');
@@ -719,7 +722,7 @@ D.E.forEach(function(e,i){
   if(i%3===2){var g=pickQ();
     fullCells.push(qcard(g,'xtra'));}
   if(i%5===3){var k=D.QQ[ki++%D.QQ.length];
-    fullCells.push('<div class="kc xtra" data-t="'+esc(k.t.toLowerCase())+'"><span class="qm">？</span><span class="t">'+k.t+'</span><span class="r">'+k.r.map(function(r){return '<a href="'+r.u+'" data-h="'+esc(r.who+' · '+r.cn)+'"><b>'+r.who+'</b> · '+r.cn+' →</a>'}).join('')+'</span></div>');}
+    fullCells.push('<div class="kc xtra" data-t="'+esc(k.t.toLowerCase())+'">'+(k.r&&k.r[0]?'<span class="said">'+esc(k.r[0].who)+'问过</span>':'')+'<span class="t">'+k.t+'</span><span class="r">'+k.r.map(function(r){return '<a href="'+r.u+'" data-h="'+esc(r.who+' · '+r.cn)+'"><b>'+r.who+'</b> · '+r.cn+' →</a>'}).join('')+'</span></div>');}
 });
 /* ── 最新 feed ── */
 /* 最新 tab 混排：每 4 张深度阅读插 1 张人物/书卡、1 张金句卡，每 9 槽插 1 张问题卡 */
@@ -739,7 +742,7 @@ D.NC.forEach(function(e,i){
     ncCells.push(qcard(g,''));
   }
   if(i%5===4){var k=D.QQ[_ki++%D.QQ.length];
-    ncCells.push('<div class="kc"><span class="qm">？</span><span class="t">'+k.t+'</span><span class="r">'+k.r.map(function(r){return '<a href="'+r.u+'" data-h="'+esc(r.who+' · '+r.cn)+'"><b>'+r.who+'</b> · '+r.cn+' →</a>'}).join('')+'</span></div>');}
+    ncCells.push('<div class="kc">'+(k.r&&k.r[0]?'<span class="said">'+esc(k.r[0].who)+'问过</span>':'')+'<span class="t">'+k.t+'</span><span class="r">'+k.r.map(function(r){return '<a href="'+r.u+'" data-h="'+esc(r.who+' · '+r.cn)+'"><b>'+r.who+'</b> · '+r.cn+' →</a>'}).join('')+'</span></div>');}
 });
 /* ── 标签页切换 ── */
 var TAB='新';

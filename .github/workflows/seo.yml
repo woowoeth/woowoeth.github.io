@@ -41,6 +41,8 @@ jobs:
         run: python seo/build_seo.py
       - name: Force chapter UI onto built HTML
         run: python scripts/force_chapter_ui.py
+      - name: Question content standard
+        run: python scripts/check_questions.py
       - name: Integrity gate
         run: |
           pip install -q pillow pyzbar 2>/dev/null || true
