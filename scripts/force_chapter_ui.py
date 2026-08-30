@@ -315,7 +315,10 @@ def _hwx_payload():
     # 竖排卡在 158px 窄列里只放得下 4 列，长句会把卡片撑到别人两倍高：
     # 另建一个 ≤24 字的短句池给信息流，长句仍归今日一句与分享卡。
     QS = [q for q in QP if len(q["q"]) <= 20]
-    j = json.dumps({"E": E, "QP": QP, "QS": QS, "QQ": QQ, "S": S, "ASK": ASK,
+    # 问题卡原来只用手写的 10 张，插满就没了。处境层的 114 个问题本身就带答案，
+    # 合进来池子扩到 124，频率才提得上去。
+    QQ_ALL = QQ + [{"t": q["q"], "r": q["a"]} for sc in S for q in sc["qs"]]
+    j = json.dumps({"E": E, "QP": QP, "QS": QS, "QQ": QQ_ALL, "S": S, "ASK": ASK,
                     "CC": CAT_COLOR, "CT": CAT_TINT, "CTD": CAT_TINT_D, "NC": NC}, ensure_ascii=False, separators=(",",":")).replace("</","<\\/")
     return j, len(E), len(NC)
 
@@ -668,7 +671,7 @@ D.E.forEach(function(e,i){
   fullCells.push('<a class="pc" href="/i/'+e.s+'/" data-h="'+esc(e.n)+'" data-c="'+e.c+'" data-t="'+dt+'" style="--tint:'+(D.CT[e.c]||'transparent')+';--tintd:'+(D.CTD[e.c]||'transparent')+'"><span class="r1"><b>'+e.n+'</b><i class="tag">'+e.w+'</i></span><span class="it">'+e.it+'</span><span class="hk">'+(e.hk||e.w)+'</span>'+(e.cs.length?'<span class="ls">'+e.cs.join(' / ')+'</span>':'')+'<span class="cf">'+cta(e)+'</span></a>');
   if(i%3===2){var g=pickQ();
     fullCells.push(qcard(g,'xtra'));}
-  if(i%8===5&&ki<D.QQ.length){var k=D.QQ[ki++];
+  if(i%5===3){var k=D.QQ[ki++%D.QQ.length];
     fullCells.push('<div class="kc xtra" data-t="'+esc(k.t.toLowerCase())+'"><span class="qm">？</span><span class="t">'+k.t+'</span><span class="r">'+k.r.map(function(r){return '<a href="'+r.u+'" data-h="'+esc(r.who+' · '+r.cn)+'"><b>'+r.who+'</b> · '+r.cn+' →</a>'}).join('')+'</span></div>');}
 });
 /* ── 最新 feed ── */
@@ -688,7 +691,7 @@ D.NC.forEach(function(e,i){
     var g=pickQ();
     ncCells.push(qcard(g,''));
   }
-  if(i%9===7&&_ki<D.QQ.length){var k=D.QQ[_ki++];
+  if(i%5===4){var k=D.QQ[_ki++%D.QQ.length];
     ncCells.push('<div class="kc"><span class="qm">？</span><span class="t">'+k.t+'</span><span class="r">'+k.r.map(function(r){return '<a href="'+r.u+'" data-h="'+esc(r.who+' · '+r.cn)+'"><b>'+r.who+'</b> · '+r.cn+' →</a>'}).join('')+'</span></div>');}
 });
 /* ── 标签页切换 ── */
