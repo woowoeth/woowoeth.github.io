@@ -199,6 +199,14 @@ SCENES = [
     ("客户说走就走，我留不住人。",
      [("kevin-kelly", "direct-relationship"), ("influence", "reciprocity")]),
 ]),
+("钱不够", "钱的事", [
+    ("钱不够，我脑子一直乱着。",
+     [("scarcity", "bandwidth-tax"), ("scarcity", "tunneling")]),
+    ("越缺钱，我越容易做错决定。",
+     [("scarcity", "bandwidth-tax"), ("graham", "margin-of-safety")]),
+    ("眼前的事压着，我顾不上长远。",
+     [("scarcity", "tunneling"), ("li-ka-shing", "knowing-when-to-stop")]),
+]),
 
 # ── 人 ──
 ("这人可信吗", "跟人打交道", [
@@ -656,6 +664,12 @@ SCENES = [
     ("我在家全天连轴转，还被说没上班。",
      [("hochschild", "second-shift"), ("satir", "coping-stances")]),
 ]),
+("照顾老人", "家里的事", [
+    ("爸妈老了，我不知道能做什么。",
+     [("hochschild", "second-shift"), ("thomas-gordon", "problem-ownership")]),
+    ("照顾他，把我自己也耗空了。",
+     [("hochschild", "emotional-labor"), ("sapolsky", "stress-mismatch")]),
+]),
 
 # ── 身心与生活 ──
 ("睡不好", "身体与精力", [
@@ -709,6 +723,14 @@ SCENES = [
      [("franklin", "one-virtue-a-week"), ("atomic-habits", "systems-over-goals")]),
     ("家里的活，我好像永远做不完。",
      [("hochschild", "second-shift"), ("cal-newport", "schedule-the-depth")]),
+]),
+("病了", "身体与精力", [
+    ("检查结果出来了，我不敢看。",
+     [("marcus-aurelius", "view-from-above"), ("su-shi", "no-wind-no-rain")]),
+    ("这个病要跟我过一辈子。",
+     [("sapolsky", "predictability"), ("epictetus", "judgments-not-things")]),
+    ("家里人病了，我撑着不能倒。",
+     [("john-ratey", "exercise-for-the-brain"), ("hochschild", "emotional-labor")]),
 ]),
 
 

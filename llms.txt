@@ -1,11 +1,11 @@
 # Human World (人类世界生存法则)
 
-> 128 people and books on how the world actually works, across 2,600 years
+> 129 people and books on how the world actually works, across 2,600 years
 > 遇到事了，看看以前的人怎么处理
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 128 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 129 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
-一个关于「世界到底怎么运转」的知识库：战略、财富、权力、人性、创业，取自 128 位人物与典籍，跨越 2600 年。每一条都写清楚这个人真正留下的那一个想法、背后的故事、拆开的分则与例子，以及今天怎么用。
+一个关于「世界到底怎么运转」的知识库：战略、财富、权力、人性、创业，取自 129 位人物与典籍，跨越 2600 年。每一条都写清楚这个人真正留下的那一个想法、背后的故事、拆开的分则与例子，以及今天怎么用。
 
 ## Read it
 
@@ -18,13 +18,13 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 
 ## Topics
 
-- [现代](https://ourword.ai/t/modern/) — 42
+- [现代](https://ourword.ai/t/modern/) — 43
 - [工业时代](https://ourword.ai/t/industrial-age/) — 39
 - [先秦与古典时代](https://ourword.ai/t/classical-era/) — 19
 - [权力与组织](https://ourword.ai/t/power/) — 19
 - [创业与产品](https://ourword.ai/t/startups/) — 17
 - [谋略与竞争](https://ourword.ai/t/strategy/) — 16
-- [财富与风险](https://ourword.ai/t/wealth/) — 15
+- [财富与风险](https://ourword.ai/t/wealth/) — 16
 - [心智与情绪](https://ourword.ai/t/mind/) — 13
 - [识人与相处](https://ourword.ai/t/people/) — 12
 - [家庭与关系](https://ourword.ai/t/family/) — 10
@@ -243,6 +243,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [萨波尔斯基 · 不确定比强度更伤](https://ourword.ai/i/sapolsky/predictability/): 萨波尔斯基 · 不确定比强度更伤——可预测与控制感。同样的压力，为什么有人垮了有人没事。这一篇要回答的是：真正的变量是什么。
 - [萨提亚 · 冰山：行为之下还有几层](https://ourword.ai/i/satir/iceberg/): 萨提亚 · 冰山：行为之下还有几层——吵的是水面。同一件事吵了十年没有进展。这一篇要回答的是：吵错了层。
 - [萨提亚 · 压力下的四种姿态](https://ourword.ai/i/satir/coping-stances/): 萨提亚 · 压力下的四种姿态——讨好、指责、超理智、打岔。吵架时人会变成另一个人。这一篇要回答的是：变成了哪四种。
+- [稀缺 · 带宽税](https://ourword.ai/i/scarcity/bandwidth-tax/): 稀缺 · 带宽税——缺什么都占同一份脑子。缺钱的人常被说成短视。这一篇要回答的是：那到底是性格，还是处境。
+- [稀缺 · 隧道效应](https://ourword.ai/i/scarcity/tunneling/): 稀缺 · 隧道效应——急事会挤掉要紧事。越忙越顾不上重要的事。这一篇要回答的是：那不是没安排好，是机制。
 - [托马斯·谢林 · 自缚双手的优势](https://ourword.ai/i/schelling/binding-yourself/): 托马斯·谢林 · 自缚双手的优势——砍掉选项换可信。博弈论的常识是选项越多越好。这一篇要回答的是：谢林为什么证明了相反的情形。
 - [托马斯·谢林 · 谢林点](https://ourword.ai/i/schelling/focal-points/): 托马斯·谢林 · 谢林点——不沟通的会合。两个人在纽约走散，无法联系，去哪碰头？这一篇要回答的是：为什么多数人给出了同一个答案。
 - [塞涅卡 · 时间是唯一追不回的成本](https://ourword.ai/i/seneca/on-shortness-of-life/): 塞涅卡 · 时间是唯一追不回的成本——先算时间再算钱。同一个人为几十块钱货比三家，却轻易答应一场无意义的应酬。这一篇要回答的是：这笔账错在哪。
@@ -341,7 +343,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [AI Bubble Monitor / AI 泡沫检测仪](https://ourword.ai/ai/)
 - [Zouni / 走你](https://ourword.ai/zouni/)
 
-## Index (128 entrys)
+## Index (129 entrys)
 
 - [BJ·福格](https://ourword.ai/i/bj-fogg/): BJ·福格（2019年·斯坦福行为设计实验室）——小到不会失败。斯坦福行为设计实验室创始人，研究行为如何被设计出来。他给出一个公式：行为发生需要动机、能力、提示三者同时到位。多数人失败在只调动机——靠决心和自我激励——而动机天然起伏，靠它维持的习惯必然崩。他的主张相反：把行为缩到小得不需要动机，然后挂在一个已有的动作后面。
 - [主权个人](https://ourword.ai/i/sovereign-individual/): 主权个人（1997年·戴维森&莫格）——数字主权。1997年出版，比特币诞生早了11年。两位作者用「暴力经济学」解释了人类社会的全部历史：谁控制暴力，谁就控制财富。他们预言了加密货币、远程工作、数字游民、国家权力衰退。
@@ -429,6 +431,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [王阳明](https://ourword.ai/i/wang-yangming/): 王阳明（明·1472-1529）——知行合一。龙场悟道，创立心学。他是中国历史上极罕见的「立德、立功、立言」三不朽者。他的核心洞察：理不在外物，在人心——不是向外格物，而是向内致良知。
 - [甘地](https://ourword.ai/i/gandhi/): 甘地（印度·1869-1948）——非暴力。从一个在南非被赶下火车的印度律师，到让大英帝国不战而退的精神领袖。他证明了一件事：在特定条件下，道德感染力和意志的坚韧，可以打败军事力量。他的工具不是枪炮，是盐、纺车、绝食和游行。他和毛泽东面对相似的殖民压迫，选择了完全相反的路径，都成功了——这个对照本身就是人类智慧的奇迹。
 - [白圭](https://ourword.ai/i/bai-gui/): 白圭（战国·前370-前300）——人弃我取。名丹，战国魏国人，与孟子、惠施同时，做过魏惠王的官，据说主持过治水，后来游历齐、秦。他做的是农产品的跨季节跨品类交易——不是囤积居奇，而是靠农业周期的错位对冲。《史记·货殖列传》给他的定语是「盖天下言治生祖白圭」：天下讲经营之道的人，都尊他为祖。《汉书》持同样看法。更关键的是他自
+- [稀缺](https://ourword.ai/i/scarcity/): 稀缺（2013年·穆来纳森与沙菲尔）——带宽。行为经济学家穆来纳森与心理学家沙菲尔合著，回答的不是「怎么赚钱」，是「已经不够了会发生什么」。核心主张是：稀缺本身会占用认知带宽——缺钱的人不是不理性，是脑子被「还差多少」持续占着，剩下的判断力就少了。他们最有名的证据是印度甘蔗农研究：同一批人，收成前手头紧时与收成后钱到手时各测
 - [稻盛和夫](https://ourword.ai/i/inamori/): 稻盛和夫（当代·1932-2022）——敬天爱人。27岁创立京瓷，52岁创立KDDI（两家都是世界500强），78岁临危受命重建破产的日本航空，1年扭亏为盈，2年重新上市。他的思想核心是「利他」：不是道德选择，是最优的长期商业策略。
 - [管仲](https://ourword.ai/i/guan-zhong/): 管仲（春秋·前723-前645）——富民强国。中国历史上第一个系统性思考「经济」和「治理」关系的政治家。他帮助齐桓公从一个普通诸侯国做到「九合诸侯，一匡天下」。孔子评价他：「微管仲，吾其被发左衽矣」。
 - [粟裕](https://ourword.ai/i/su-yu/): 粟裕（近代·1907-1984）——以弱胜强。解放军第一战将，淮海战役以60万对阵80万，歼灭国民党精锐55万。他从不用蛮力，只用脑子——找对手必须救的地方打，让对手陷入被动。
