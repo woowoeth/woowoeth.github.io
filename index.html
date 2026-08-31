@@ -48,7 +48,9 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC
 /* responsive lockup */
 /* 页头的字号/尺寸/左右内距由 assets/hw-home-lockup.css 以 !important 统一接管，
    这里再写一遍不会生效（曾经写过，DESIGN.md 也照抄成了规范）。下面只保留
-   lockup 没管的属性：white-space。改页头请改 hw-home-lockup.css。 */
+   lockup 没管的属性：white-space。改页头请改 hw-home-lockup.css。
+   小屏左右留白 24px 是选定的宽松版，不是漏改——原来那条 16px 的对比图看过后
+   决定不采用，别再补回来。见 DESIGN.md §7「留白宽松是选定的」。 */
 @media(max-width:720px){
   .brand-lockup{align-items:flex-start}
   .hd-title{white-space:nowrap}
