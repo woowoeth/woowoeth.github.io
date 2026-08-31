@@ -598,6 +598,12 @@ SCENES = [
     ("平台给我流量，可人不是我的。",
      [("kevin-kelly", "direct-relationship"), ("naval", "assets-while-you-sleep")]),
 ]),
+("信错了人", "跟人打交道", [
+    ("我信错了人，现在不敢再信谁。",
+     [("konnikova", "not-manufacturing-trust"), ("analects", "see-how")]),
+    ("回头看破绽很明显，当时我就是没看见。",
+     [("konnikova", "not-manufacturing-trust"), ("konnikova", "transition-is-the-window")]),
+]),
 
 # ── 家庭与关系 ──
 ("跟伴侣吵", "家里的事", [
@@ -795,6 +801,14 @@ SCENES = [
      [("frankl", "the-last-freedom"), ("nietzsche", "what-does-not-kill")]),
     ("我兵力不如人，只能这么耗着。",
      [("napoleon", "decisive-point"), ("mao", "on-protracted-war")]),
+]),
+("换个地方重来", "人生转弯", [
+    ("换了城市，我谁也不认识。",
+     [("granovetter", "weak-ties"), ("konnikova", "transition-is-the-window")]),
+    ("到了新地方，机会一个都不找上门。",
+     [("granovetter", "weak-ties"), ("granovetter", "no-strong-tie-is-a-bridge")]),
+    ("圈子就这么大，我听不到新消息。",
+     [("granovetter", "no-strong-tie-is-a-bridge"), ("sovereign-individual", "logic-of-violence")]),
 ]),
 
 # ── 无能为力：现有全站语气都是「怎么解决」，接不住这类人 ──

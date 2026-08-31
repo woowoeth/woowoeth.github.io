@@ -240,8 +240,8 @@
   "h": "5a32a8cabc3d16e1"
  },
  "i/crowd/": {
-  "d": "2026-08-28",
-  "h": "34679df50e56acbf"
+  "d": "2026-09-01",
+  "h": "5601ded6aa8884f4"
  },
  "i/crowd/assert-repeat-contaminate/": {
   "d": "2026-08-29",
@@ -479,6 +479,18 @@
   "d": "2026-08-29",
   "h": "ec3f5bde5bbeec27"
  },
+ "i/granovetter/": {
+  "d": "2026-09-01",
+  "h": "47a0ed5507183321"
+ },
+ "i/granovetter/no-strong-tie-is-a-bridge/": {
+  "d": "2026-09-01",
+  "h": "89886b2d90722530"
+ },
+ "i/granovetter/weak-ties/": {
+  "d": "2026-09-01",
+  "h": "0bc68baa31d6daa9"
+ },
  "i/grove/": {
   "d": "2026-08-28",
   "h": "4afe0816f69f31c6"
@@ -676,8 +688,8 @@
   "h": "2171509974516e8d"
  },
  "i/influence/": {
-  "d": "2026-08-29",
-  "h": "d0098483c65caacf"
+  "d": "2026-09-01",
+  "h": "8bf821f356cda326"
  },
  "i/influence/reciprocity/": {
   "d": "2026-08-29",
@@ -725,7 +737,7 @@
  },
  "i/kevin-kelly/": {
   "d": "2026-09-01",
-  "h": "15e221e729b95e77"
+  "h": "c4f4389792d0ec73"
  },
  "i/kevin-kelly/direct-relationship/": {
   "d": "2026-09-01",
@@ -734,6 +746,18 @@
  "i/kevin-kelly/thousand-true-fans/": {
   "d": "2026-09-01",
   "h": "022338654353723f"
+ },
+ "i/konnikova/": {
+  "d": "2026-09-01",
+  "h": "bb8e3f346bfa9444"
+ },
+ "i/konnikova/not-manufacturing-trust/": {
+  "d": "2026-09-01",
+  "h": "c4a7f96f27c84df8"
+ },
+ "i/konnikova/transition-is-the-window/": {
+  "d": "2026-09-01",
+  "h": "b288c75cfd6dfb89"
  },
  "i/kristin-neff/": {
   "d": "2026-09-01",
@@ -1021,7 +1045,7 @@
  },
  "i/naval/": {
   "d": "2026-09-01",
-  "h": "58dada0751d5980c"
+  "h": "c189d5c7c792c2b7"
  },
  "i/naval/assets-while-you-sleep/": {
   "d": "2026-08-29",
@@ -1165,7 +1189,7 @@
  },
  "i/scarcity/": {
   "d": "2026-09-01",
-  "h": "8ac71d226c230072"
+  "h": "d0a2a26fd51fea1c"
  },
  "i/scarcity/bandwidth-tax/": {
   "d": "2026-09-01",
@@ -1260,8 +1284,8 @@
   "h": "3374de2f9811a7f8"
  },
  "i/sovereign-individual/": {
-  "d": "2026-08-28",
-  "h": "af3966742c9e843b"
+  "d": "2026-09-01",
+  "h": "5340edb0bfd2f627"
  },
  "i/sovereign-individual/citizen-to-customer/": {
   "d": "2026-08-29",
@@ -1528,8 +1552,8 @@
   "h": "47d353e9cf59cbff"
  },
  "i/xunzi/": {
-  "d": "2026-08-31",
-  "h": "0733eb715b1ad339"
+  "d": "2026-09-01",
+  "h": "fecd46539503de35"
  },
  "i/xunzi/borrow-from-things/": {
   "d": "2026-08-28",
@@ -1549,7 +1573,7 @@
  },
  "i/zeng-guofan/": {
   "d": "2026-09-01",
-  "h": "b86a9b0393606ea7"
+  "h": "4424b4baf040946a"
  },
  "i/zeng-guofan/recruit-and-test/": {
   "d": "2026-08-28",

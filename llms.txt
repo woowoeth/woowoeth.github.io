@@ -1,11 +1,11 @@
 # Human World (人类世界生存法则)
 
-> 129 people and books on how the world actually works, across 2,600 years
+> 131 people and books on how the world actually works, across 2,600 years
 > 遇到事了，看看以前的人怎么处理
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 129 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 131 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
-一个关于「世界到底怎么运转」的知识库：战略、财富、权力、人性、创业，取自 129 位人物与典籍，跨越 2600 年。每一条都写清楚这个人真正留下的那一个想法、背后的故事、拆开的分则与例子，以及今天怎么用。
+一个关于「世界到底怎么运转」的知识库：战略、财富、权力、人性、创业，取自 131 位人物与典籍，跨越 2600 年。每一条都写清楚这个人真正留下的那一个想法、背后的故事、拆开的分则与例子，以及今天怎么用。
 
 ## Read it
 
@@ -18,7 +18,7 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 
 ## Topics
 
-- [现代](https://ourword.ai/t/modern/) — 43
+- [现代](https://ourword.ai/t/modern/) — 45
 - [工业时代](https://ourword.ai/t/industrial-age/) — 39
 - [先秦与古典时代](https://ourword.ai/t/classical-era/) — 19
 - [权力与组织](https://ourword.ai/t/power/) — 19
@@ -26,11 +26,11 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 - [谋略与竞争](https://ourword.ai/t/strategy/) — 16
 - [财富与风险](https://ourword.ai/t/wealth/) — 16
 - [心智与情绪](https://ourword.ai/t/mind/) — 13
-- [识人与相处](https://ourword.ai/t/people/) — 12
+- [识人与相处](https://ourword.ai/t/people/) — 13
+- [世界如何运转](https://ourword.ai/t/world/) — 11
 - [家庭与关系](https://ourword.ai/t/family/) — 10
 - [秦汉至魏晋](https://ourword.ai/t/han-wei/) — 10
 - [学习与成长](https://ourword.ai/t/learning/) — 10
-- [世界如何运转](https://ourword.ai/t/world/) — 10
 - [近世](https://ourword.ai/t/early-modern/) — 9
 - [中古](https://ourword.ai/t/medieval/) — 9
 - [身心与生活](https://ourword.ai/t/living/) — 6
@@ -125,6 +125,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [约翰·戈特曼 · 修复尝试](https://ourword.ai/i/gottman/repair-attempts/): 约翰·戈特曼 · 修复尝试——会不会吵不重要，会不会停才重要。健康的关系也激烈争吵。这一篇要回答的是：那它们和破裂的关系差在哪。
 - [格雷厄姆 · 市场先生](https://ourword.ai/i/graham/mr-market/): 格雷厄姆 · 市场先生——报价是服务不是指令。他把整个市场拟人成一个躁郁的合伙人。这一篇要回答的是：这个寓言解开的到底是什么枷锁。
 - [格雷厄姆 · 安全边际](https://ourword.ai/i/graham/margin-of-safety/): 格雷厄姆 · 安全边际——给错误留的余量。他说全部投资智慧可以浓缩成三个词。这一篇要回答的是：这三个词买的到底是什么。
+- [格兰诺维特 · 弱连接的力量](https://ourword.ai/i/granovetter/weak-ties/): 格兰诺维特 · 弱连接的力量——机会从不常见的人那儿来。找工作该找谁帮忙，直觉给的答案是错的。这一篇要回答的是：数据给的是什么。
+- [格兰诺维特 · 没有一条强连接是桥](https://ourword.ai/i/granovetter/no-strong-tie-is-a-bridge/): 格兰诺维特 · 没有一条强连接是桥——亲近的人信息是重复的。这句话听起来像修辞，其实是个结构结论。这一篇要回答的是：它凭什么成立。
 - [安迪·格鲁夫 · 旋转门测试](https://ourword.ai/i/grove/revolving-door/): 安迪·格鲁夫 · 旋转门测试——把自己当成继任者。英特尔靠存储器起家，也差点死在存储器上。这一篇要回答的是：1985年办公室里那两句对话。
 - [安迪·格鲁夫 · 转折点与报信人](https://ourword.ai/i/grove/inflection-and-cassandras/): 安迪·格鲁夫 · 转折点与报信人——坏消息的通道。十倍速的变化来临时，高层几乎总是最后知道的。这一篇要回答的是：格鲁夫给这个结构性时差开的方子。
 - [管仲 · 仓廪实则知礼节](https://ourword.ai/i/guan-zhong/granaries-first/): 管仲 · 仓廪实则知礼节——先解决吃饭。为什么讲道理讲不通？这一篇要回答的是：管仲把顺序倒了过来，先看仓库再谈礼节。
@@ -169,6 +171,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [约翰·瑞迪 · 焦虑时动比想有用](https://ourword.ai/i/john-ratey/move-before-you-think/): 约翰·瑞迪 · 焦虑时动比想有用——从生理入手。越想越慌，道理都懂但停不下来。这一篇要回答的是：为什么这时候该出门。
 - [凯文·凯利 · 一千个铁杆粉丝](https://ourword.ai/i/kevin-kelly/thousand-true-fans/): 凯文·凯利 · 一千个铁杆粉丝——不用红，要够深。做创作的人默认要先出名。这一篇要回答的是：那个前提是不是必要的。
 - [凯文·凯利 · 中间不能有人](https://ourword.ai/i/kevin-kelly/direct-relationship/): 凯文·凯利 · 中间不能有人——钱要直接到你手上。这道算术有个前提常被跳过。这一篇要回答的是：跳过它之后为什么算不成。
+- [玛丽亚·康妮科娃 · 骗子不制造信任](https://ourword.ai/i/konnikova/not-manufacturing-trust/): 玛丽亚·康妮科娃 · 骗子不制造信任——他用你已经有的需要。被骗之后人最先问的是「我怎么这么蠢」。这一篇要回答的是：那个问题本身就问错了。
+- [玛丽亚·康妮科娃 · 转变期是高危窗口](https://ourword.ai/i/konnikova/transition-is-the-window/): 玛丽亚·康妮科娃 · 转变期是高危窗口——旧办法不管用的时候。同一个人一辈子的判断力差不多，中招却集中在某几段时间。这一篇要回答的是：哪几段。
 - [克里斯汀·内夫 · 自我关怀不是自尊](https://ourword.ai/i/kristin-neff/not-self-esteem/): 克里斯汀·内夫 · 自我关怀不是自尊——一个要比较，一个不用。自尊是这一代人最熟的词。这一篇要回答的是：它为什么在你最需要的时候掉链子。
 - [克里斯汀·内夫 · 三样必须同时在](https://ourword.ai/i/kristin-neff/three-parts/): 克里斯汀·内夫 · 三样必须同时在——少一样就变成别的东西。自我关怀被讲成「对自己好一点」。这一篇要回答的是：它其实有三个必须同时成立的零件。
 - [拉罗什富科 · 没人抱怨自己的判断力](https://ourword.ai/i/la-rochefoucauld/memory-vs-judgment/): 拉罗什富科 · 没人抱怨自己的判断力——盲区的形状。一句十几个字的箴言，画出了自我认知的边界。这一篇要回答的是：为什么承认前者容易、承认后者几乎不可能。
@@ -343,7 +347,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [AI Bubble Monitor / AI 泡沫检测仪](https://ourword.ai/ai/)
 - [Zouni / 走你](https://ourword.ai/zouni/)
 
-## Index (129 entrys)
+## Index (131 entrys)
 
 - [BJ·福格](https://ourword.ai/i/bj-fogg/): BJ·福格（2019年·斯坦福行为设计实验室）——小到不会失败。斯坦福行为设计实验室创始人，研究行为如何被设计出来。他给出一个公式：行为发生需要动机、能力、提示三者同时到位。多数人失败在只调动机——靠决心和自我激励——而动机天然起伏，靠它维持的习惯必然崩。他的主张相反：把行为缩到小得不需要动机，然后挂在一个已有的动作后面。
 - [主权个人](https://ourword.ai/i/sovereign-individual/): 主权个人（1997年·戴维森&莫格）——数字主权。1997年出版，比特币诞生早了11年。两位作者用「暴力经济学」解释了人类社会的全部历史：谁控制暴力，谁就控制财富。他们预言了加密货币、远程工作、数字游民、国家权力衰退。
@@ -420,6 +424,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [松下幸之助](https://ourword.ai/i/matsushita/): 松下幸之助（日本·1894—1989年）——自来水哲学。9 岁辍学做学徒，23 岁带着两个人在自家做双灯用插座，最后做出松下电器，被日本人称为「经营之神」。他的价值不在于把公司做多大，而在于他是第一个把「企业为什么存在」当成经营技术来回答的人：使命定得对，组织和产品会自己长出来；使命定不对，效率越高越危险。今天讲的使命愿景、事业部制、
 - [枪炮、病菌与钢铁](https://ourword.ai/i/guns-germs-steel/): 枪炮、病菌与钢铁（1997年）——环境而非人种。贾雷德·戴蒙德 1997 年的著作，次年获普利策奖。它回答一个几乎所有人都想过、但很少有人敢直接问的问题：为什么是欧洲人带着枪炮、病菌和钢铁去征服美洲和大洋洲，而不是反过来。戴蒙德的答案是环境，不是人——各大陆在可驯化物种和地理轴线上的差距，经由粮食生产这个中间变量，被放大成一万
 - [查理·芒格](https://ourword.ai/i/munger/): 查理·芒格（当代·1924-2023）——逆向。巴菲特的合伙人，伯克希尔·哈撒韦副主席，99岁去世。他最重要的贡献：把巴菲特从「捡烟蒂」进化到「以合理价格买优秀公司」。他的思维工具箱：多元思维模型+认知偏差清单。
+- [格兰诺维特](https://ourword.ai/i/granovetter/): 格兰诺维特（1973年·美国社会学杂志）——弱连接。社会学家，1973年发表《弱连接的力量》，一篇被引用了几万次的论文。他调查282个人怎么找到工作，发现靠人际关系拿到工作的那批人里，56%说自己只是「偶尔」见到那位帮上忙的人，28%说「极少」——真正起作用的是关系不深的那些人。原因不在意愿，在信息结构：你和好友的圈子高度重叠，他
 - [格雷厄姆](https://ourword.ai/i/graham/): 格雷厄姆（美·1894-1976年）——安全边际·市场先生。本杰明·格雷厄姆，「证券分析之父」「华尔街教父」，价值投资体系的开创者。《证券分析》和《聪明的投资者》至今仍是投资界的圣经。他在哥伦比亚大学教出的学生里走出了巴菲特——巴菲特说自己血管里流的血液「85%来自格雷厄姆」。格雷厄姆的伟大在于：在一个把股票当赌博筹码的年代，他第一个证明
 - [武则天](https://ourword.ai/i/wu-zetian/): 武则天（唐·624-705）——破局。中国历史上唯一的女皇帝。从14岁入宫做才人，到80岁退位，用了66年时间打破了所有规则。在一个「女人不得干政」的时代，她把每一条规则都变成了可以穿越的障碍。
 - [段永平](https://ourword.ai/i/duan-yongping/): 段永平（当代·1961-）——本分。步步高集团创始人，OPPO和vivo的精神源头，巴菲特股东大会上，出价62万美元与巴菲特共进午餐的那个中国人。他的核心：本分（说话算数，做对的事）、长期主义、错事即停。
@@ -429,6 +434,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [王兴](https://ourword.ai/i/wang-xing/): 王兴（当代·1979-）——九败一胜。美团创始人，清华大学毕业。在创立美团之前，他已经失败了八次：做过中国版Facebook（校内网），卖掉了；做过中国版Twitter（饭否），被关掉了。第十次创业，他押注团购，赢得了史上竞争最激烈的互联网大战「千团大战」，把2000家对手打垮，最终把美团做成了一个管吃、管住、管出行
 - [王翦](https://ourword.ai/i/wang-jian/): 王翦（秦·前280-前220）——自保。秦国第一名将，灭赵、灭燕、灭楚，参与灭五国，是秦始皇统一六国的最核心执行者。但更重要的是：他是知识库里在「功高震主」这个问题上处理得最好的人。与他同时代的白起（同等才华，被赐死），形成了最清晰的对比。
 - [王阳明](https://ourword.ai/i/wang-yangming/): 王阳明（明·1472-1529）——知行合一。龙场悟道，创立心学。他是中国历史上极罕见的「立德、立功、立言」三不朽者。他的核心洞察：理不在外物，在人心——不是向外格物，而是向内致良知。
+- [玛丽亚·康妮科娃](https://ourword.ai/i/konnikova/): 玛丽亚·康妮科娃（2016年·《骗局》）——为什么会上当。心理学背景的作家，研究骗局。她的结论把问题整个掉了个方向：被骗的关键不在智力，在你当时正缺什么。骗子并不制造信任，他识别并利用你已经有的需要——他要回答的只有三句：这个人是谁，他想要什么，我怎么顺着那个欲望拿到我要的。所以真正被利用的是那份渴望，不是你的判断力，这也解释了为什么高
 - [甘地](https://ourword.ai/i/gandhi/): 甘地（印度·1869-1948）——非暴力。从一个在南非被赶下火车的印度律师，到让大英帝国不战而退的精神领袖。他证明了一件事：在特定条件下，道德感染力和意志的坚韧，可以打败军事力量。他的工具不是枪炮，是盐、纺车、绝食和游行。他和毛泽东面对相似的殖民压迫，选择了完全相反的路径，都成功了——这个对照本身就是人类智慧的奇迹。
 - [白圭](https://ourword.ai/i/bai-gui/): 白圭（战国·前370-前300）——人弃我取。名丹，战国魏国人，与孟子、惠施同时，做过魏惠王的官，据说主持过治水，后来游历齐、秦。他做的是农产品的跨季节跨品类交易——不是囤积居奇，而是靠农业周期的错位对冲。《史记·货殖列传》给他的定语是「盖天下言治生祖白圭」：天下讲经营之道的人，都尊他为祖。《汉书》持同样看法。更关键的是他自
 - [稀缺](https://ourword.ai/i/scarcity/): 稀缺（2013年·穆来纳森与沙菲尔）——带宽。行为经济学家穆来纳森与心理学家沙菲尔合著，回答的不是「怎么赚钱」，是「已经不够了会发生什么」。核心主张是：稀缺本身会占用认知带宽——缺钱的人不是不理性，是脑子被「还差多少」持续占着，剩下的判断力就少了。他们最有名的证据是印度甘蔗农研究：同一批人，收成前手头紧时与收成后钱到手时各测
