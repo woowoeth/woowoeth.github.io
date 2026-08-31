@@ -1,0 +1,14 @@
+name = "ourword-chat"
+main = "chat.js"
+compatibility_date = "2026-09-01"
+
+# 限流用的 KV。部署前先建：
+#   wrangler kv namespace create HW_CHAT_KV
+# 把命令输出的 id 填到下面这一行，然后再 deploy。
+[[kv_namespaces]]
+binding = "HW_CHAT_KV"
+id = "PUT_KV_NAMESPACE_ID_HERE"
+
+# HW_CHAT_KEY 不写在这里——它是 secret，用命令设：
+#   wrangler secret put HW_CHAT_KEY
+# 写进 wrangler.toml 等于提交到仓库，那就白做代理了。

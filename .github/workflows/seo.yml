@@ -47,6 +47,9 @@ jobs:
         run: python seo/build_seo.py
       - name: Force chapter UI onto built HTML
         run: python scripts/force_chapter_ui.py
+      - name: Chat retrieval index
+        # 内容一变检索索引必须跟着变，否则悬浮球问答会引用到不存在的章节。
+        run: python scripts/build_chat_index.py
       - name: Question content standard
         run: python scripts/check_questions.py
       - name: Situation-layer coverage
@@ -93,6 +96,7 @@ jobs:
               python scripts/apply_redesign.py
               python seo/build_seo.py
               python scripts/force_chapter_ui.py
+              python scripts/build_chat_index.py
               git add -A
               git diff --cached --quiet && { echo "seo unchanged after rebuild"; exit 0; }
               git commit -m "seo: refresh crawlable layer (rebuilt on new upstream)"

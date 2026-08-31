@@ -1,0 +1,174 @@
+/**
+ * 悬浮球问答的线上代理 · Cloudflare Worker
+ *
+ * 存在的理由只有一个：**API key 绝不能进浏览器**。
+ * 站是 GitHub Pages 纯静态，key 写进前端等于公开，额度会被刷爆。
+ * 浏览器 → 这个 Worker → 硅基流动，key 只在 Worker 的 secret 里。
+ *
+ * 与 scripts/chat_dev_proxy.py 是同一套逻辑（本地 demo 就是照这个形状写的），
+ * 改 prompt 或后处理规则时两边都要改，否则线上线下答案不一致。
+ *
+ * 部署：见 worker/README.md
+ */
+
+const ALLOWED_ORIGINS = new Set([
+  'https://ourword.ai',
+  'https://www.ourword.ai',
+]);
+
+const DAILY = 5;              // 每 IP 每天几次
+const MAX_Q = 500;            // 问题长度上限，防止拿它当通用推理后端
+const MAX_CTX = 8;            // 最多几篇资料
+const MAX_TXT = 700;          // 每篇正文截断
+const MODEL = 'deepseek-ai/DeepSeek-V3.2';
+const UPSTREAM = 'https://api.siliconflow.cn/v1/chat/completions';
+
+// 与本地代理逐字一致。改一处就要改两处。
+const SYSTEM = `你是「人类世界生存法则」这个知识库的问答助手。读者会描述自己此刻遇到的事。
+
+铁规矩：
+
+1. 只根据我给你的资料回答。资料里没有的，直说没有，不要自己编，也不要引入
+   资料之外的人物、书名、数字。
+
+2. **说大白话。** 这是最重要的一条。
+   不许用这些词：价值、本质、机制、逻辑、维度、要素、原则、方法论、赋能、
+   抓手、闭环、心智、认知、颗粒度、底层、复盘（除非资料原文就这么写）。
+   不许用「双重困境」「结构性」「归因」这类学术腔。
+   判据很简单：这句话你能不能对着一个没读过书的朋友原样说出口。
+   说不出口就改，改到能说出口为止。
+
+3. 先用一句话说清他这件事卡在哪，再给两到三条能立刻做的事。
+   每条都要具体到动作——做什么、什么时候做、做到什么程度算完。
+
+4. **引用只标在每一段的最后。**
+   一段里用到了哪几份资料，就在这一段的末尾连着写，比如：
+   先联系那些一年见不到几次的人，只说近况，不提要帮忙。他们站在别的圈子里，
+   机会才可能从那儿漏过来。[0][2]
+   不要标在段落中间的句子后面——那会把话打断。没用到资料的段落不要标。
+   **第一段不要标。** 第一段是复述他的处境、说清卡在哪，那是你自己的判断，
+   不是从哪一篇里得来的，挂出处反而假。引用只出现在后面给动作的段落。
+
+5. 提到人名书名时用资料里给的原名，不要改写。
+
+6. 不说教、不安慰、不铺垫。语气像一个读过很多书的朋友在饭桌上跟你说话。
+
+7. 引号一律用「」，不用英文双引号。
+
+8. 分点的时候，每一点可以用一个四到八个字的小标题开头并加粗，像这样：
+   **先别急着问。** 明天找个他放松的时候……
+   加粗只用在这种小标题上，正文里不要用。除了 ** 之外不要用任何其它
+   Markdown 记号——不要井号标题、不要下划线、不要列表符号。
+
+9. **每一段之间空一行。** 分点写的时候也一样，「1.」和「2.」之间要空一行，
+   不要挤在连续的行里。
+
+10. 全文不超过 300 字。
+
+11. 正文里不要出现「资料」两个字——编号用 [0] 这种方括号就够了，
+   读者看到的会是可点的出处链接。`;
+
+function cors(origin) {
+  return {
+    'Access-Control-Allow-Origin': origin,
+    'Access-Control-Allow-Methods': 'POST, OPTIONS',
+    'Access-Control-Allow-Headers': 'Content-Type',
+    'Access-Control-Max-Age': '86400',
+    'Vary': 'Origin',
+  };
+}
+
+function json(obj, status, origin) {
+  return new Response(JSON.stringify(obj), {
+    status,
+    headers: { 'Content-Type': 'application/json; charset=utf-8', ...cors(origin || 'null') },
+  });
+}
+
+/* 排版兜底。prompt 里都写了，但这些是确定性的事，不该指望模型每次都听。
+   与 chat_dev_proxy.py 的后处理保持一致。 */
+function tidy(raw) {
+  raw = raw.replace(/\n*USED\s*[:：].*$/, '').trimEnd();
+  raw = raw.replace(/^\s*#{1,6}\s*/gm, '');          // 去掉 # 标题
+  raw = raw.replace(/^[ \t]+/gm, '');                // 去掉行首缩进
+  let n = 0;
+  raw = raw.replace(/[“”"]/g, () => (++n % 2 === 0 ? '」' : '「'));
+  raw = raw.replace(/[（(]\s*资料\s*(\d+)\s*[)）]/g, '[$1]');
+  raw = raw.replace(/资料\s*(\d+)/g, '[$1]');
+  // 分点之间补空行
+  raw = raw.replace(/(?<=\S)\n(?=(?:\d+[.、]|第[一二三四五六七八九十]+[，、,]))/g, '\n\n');
+  raw = raw.replace(/\n{3,}/g, '\n\n');
+  return raw;
+}
+
+/* 限流：KV 存 ip+日期 → 次数。
+   KV 是最终一致的，边缘节点之间可能短暂不同步，个位数的溢出是接受的——
+   这里要挡的是「有人把它当免费 API 刷」，不是精确计费。 */
+async function overQuota(env, ip) {
+  if (!env.HW_CHAT_KV) return false;                 // 没绑 KV 就不限（部署时必须绑）
+  const day = new Date().toISOString().slice(0, 10);
+  const key = `q:${day}:${ip}`;
+  const n = parseInt((await env.HW_CHAT_KV.get(key)) || '0', 10);
+  if (n >= DAILY) return true;
+  await env.HW_CHAT_KV.put(key, String(n + 1), { expirationTtl: 172800 });
+  return false;
+}
+
+export default {
+  async fetch(request, env) {
+    const origin = request.headers.get('Origin') || '';
+    const ok = ALLOWED_ORIGINS.has(origin);
+
+    if (request.method === 'OPTIONS') {
+      return ok ? new Response(null, { headers: cors(origin) }) : new Response(null, { status: 403 });
+    }
+    if (!ok) return json({ error: 'Forbidden origin' }, 403, null);
+    if (request.method !== 'POST') return json({ error: 'Method Not Allowed' }, 405, origin);
+
+    const ip = request.headers.get('CF-Connecting-IP') || '0.0.0.0';
+    if (await overQuota(env, ip)) {
+      return json({ error: `今天的 ${DAILY} 次已经用完了，明天再来` }, 429, origin);
+    }
+
+    let body;
+    try { body = await request.json(); } catch { return json({ error: 'Invalid JSON' }, 400, origin); }
+
+    const q = String(body.q || '').trim().slice(0, MAX_Q);
+    if (!q) return json({ error: 'empty question' }, 400, origin);
+    const ctx = (Array.isArray(body.ctx) ? body.ctx : []).slice(0, MAX_CTX);
+
+    const parts = ctx.map((c, i) =>
+      `【资料 ${i}】${c.p || ''} · ${c.n || ''}（${c.w || ''}）\n` +
+      `${String(c.txt || '').slice(0, MAX_TXT)}\n出处链接：${c.u || ''}`
+    );
+    const user = `读者说：${q}\n\n可用资料：\n\n${parts.join('\n\n')}`;
+
+    let up;
+    try {
+      up = await fetch(UPSTREAM, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${env.HW_CHAT_KEY}` },
+        body: JSON.stringify({
+          model: MODEL,
+          messages: [{ role: 'system', content: SYSTEM }, { role: 'user', content: user }],
+          temperature: 0.3,
+          max_tokens: 700,
+        }),
+      });
+    } catch (e) {
+      return json({ error: '上游请求失败', detail: String(e).slice(0, 120) }, 502, origin);
+    }
+    if (!up.ok) {
+      return json({ error: `上游返回 ${up.status}` }, 502, origin);
+    }
+
+    let data;
+    try { data = await up.json(); } catch { return json({ error: '上游返回不是 JSON' }, 502, origin); }
+    const raw = data?.choices?.[0]?.message?.content;
+    if (!raw) return json({ error: '上游没有返回内容' }, 502, origin);
+
+    const answer = tidy(raw);
+    const used = [...new Set([...answer.matchAll(/\[(\d+)\]/g)].map(m => parseInt(m[1], 10)))].sort();
+    return json({ answer, used }, 200, origin);
+  },
+};
