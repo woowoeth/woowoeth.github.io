@@ -495,6 +495,13 @@ header.hd{margin-bottom:12px!important}
 #hwx .qbar{margin:22px 0 0}
 #hwx .qbar input{width:100%;border:1px solid var(--line);background:transparent;color:var(--ink);border-radius:999px;padding:12px 20px;font-family:inherit;font-size:16px;outline:none;transition:border-color .15s}\n#hwx .qbar input:focus{border-color:var(--muted)}
 #hwx .qbar input::placeholder{color:var(--muted)}
+/* 一行入口：两行结构（标题+计数 / 提示语），替代原先 1049px 的标签目录。
+   试过 flex 单行，三段挤在一起且箭头折行——中文没有词间空格，靠 gap 撑不开。 */
+#hwx .scline{display:block;width:100%;background:transparent;border:none;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:15px 2px;margin:16px 0 0;cursor:pointer;color:inherit;text-align:left;font-family:inherit}
+#hwx .scline b{font-family:"Noto Serif SC","Songti SC",serif;font-size:19px;font-weight:700;margin-right:10px}
+#hwx .scline span{font-size:12.5px;color:var(--muted)}
+#hwx .scline i{display:block;font-style:normal;margin-top:6px;font-size:13px;color:var(--acc)}
+#hwx .tabs2{flex-shrink:0}
 #hwx .tabs2{display:flex;gap:0;border-bottom:2px solid var(--line);margin:14px 0 0}
 #hwx .tabs2 button{border:none;background:transparent;padding:9px 20px;font-family:"Noto Serif SC","Source Han Serif SC","Songti SC","STSong",serif;font-size:17px;font-weight:600;color:var(--muted);cursor:pointer;border-bottom:3px solid transparent;margin-bottom:-2px}
 #hwx .tabs2 button.on{color:var(--ink);border-bottom-color:var(--acc)}
@@ -824,19 +831,41 @@ D.NC.forEach(function(e,i){
   if(i%5===4){var k=D.QQ[_ki++%D.QQ.length];
     ncCells.push('<div class="kc"><span class="seal">问</span>'+(k.r&&k.r[0]?'<span class="said">'+esc(k.r[0].who)+'问过</span>':'')+'<span class="t">'+k.t+'</span><span class="r">'+k.r.map(function(r){return '<a href="'+r.u+'" data-h="'+esc(r.who+' · '+r.cn)+'"><b>'+r.who+'</b> · '+r.cn+' →</a>'}).join('')+'</span></div>');}
 });
+/* ── 处境 tab：每个问题一张卡，标注所属处境 ──
+   原来「按处境找」是 1049px 的标签目录，三步才到答案，
+   而这些问题 100% 已经在信息流里以卡片出现过。改成卡片流：
+   同一批内容、同一套视觉，扫读即认出，不必先学会我们的分类。 */
+var scCells=[];
+D.S.forEach(function(sc){
+  sc.qs.forEach(function(q){
+    scCells.push('<div class="kc" data-t="'+esc((q.q+sc.t).toLowerCase())+'">'
+      +'<span class="seal">问</span>'
+      +'<span class="said">'+esc(sc.t)+'</span>'
+      +'<span class="t">'+q.q+'</span>'
+      +'<span class="r">'+q.a.map(function(r){
+          return '<a href="'+r.u+'" data-h="'+esc(r.who+' · '+r.cn)+'"><b>'+r.who+'</b> · '+r.cn+' →</a>'
+        }).join('')+'</span></div>');
+  });
+});
 /* ── 标签页切换 ── */
 var TAB='新';
 var feed=document.getElementById('hwx-feed'), ncfeed=document.getElementById('hwx-ncfeed');
+var scfeed=document.getElementById('hwx-scfeed');
 var ct=document.getElementById('hwx-ct');
 var catsRow=document.getElementById('hwx-cats');
 function switchTab(t){
   TAB=t;
   document.querySelectorAll('#hwx-tabs2 button').forEach(function(b){b.classList.toggle('on',b.getAttribute('data-t')===t)});
   if(t==='新'){
-    feed.style.display='none';ncfeed.style.display='';catsRow.style.display='none';
+    feed.style.display='none';scfeed.style.display='none';ncfeed.style.display='';catsRow.style.display='none';
     ncfeed.innerHTML=ncCells.join('');ct.textContent=D.NC.length+' 篇最新';
+  }else if(t==='境'){
+    ncfeed.style.display='none';feed.style.display='none';catsRow.style.display='none';
+    scfeed.style.display='';
+    scfeed.innerHTML=scCells.join('');
+    ct.textContent=D.S.length+' 种处境 · '+scCells.length+' 个问题';
   }else{
-    ncfeed.style.display='none';feed.style.display='';catsRow.style.display='';
+    ncfeed.style.display='none';scfeed.style.display='none';feed.style.display='';catsRow.style.display='';
     feed.innerHTML=fullCells.join('');applyFeed();
   }
 }
@@ -863,6 +892,18 @@ if(qin){qin.oninput=null;
     else{applyFeed();}
   });}
 /* 初始化 */
+/* 一行入口：点它切到「处境」tab，不再就地展开 1049px 的标签目录 */
+(function(){
+  var line=document.getElementById('hwx-scline');
+  if(!line)return;
+  var n=0; D.S.forEach(function(x){n+=x.qs.length});
+  var c=document.getElementById('hwx-sccount');
+  if(c)c.textContent=D.S.length+' 种处境 · '+n+' 个问题';
+  line.onclick=function(){
+    switchTab('境');
+    document.getElementById('hwx-tabs2').scrollIntoView({behavior:'smooth',block:'start'});
+  };
+})();
 switchTab('新');
 })();
 """.strip()
@@ -884,18 +925,21 @@ switchTab('新');
         "<div class=\"tcol\">"
         "<div class=\"tbox tbox-s\"><div class=\"lb\">今日一篇</div><a id=\"hwx-tp\"></a></div>"
         "</div></div>"
-        "<div class=\"hh\">按处境找 <span style=\"font-size:12px;color:var(--muted);font-weight:500\">「我现在遇到的是……」</span></div>"
-        "<div class=\"sc\" id=\"hwx-sc\">"
+        "<button class=\"scline\" id=\"hwx-scline\" type=\"button\">"
+        "<b>按处境找</b><span id=\"hwx-sccount\"></span>"
+        "<i>「我现在遇到的是……」→</i></button>"
+        "<div class=\"sc\" id=\"hwx-sc\" style=\"display:none\">"
         "<button class=\"scmore\" id=\"hwx-scmore\" type=\"button\"></button></div>"
-        "<div class=\"res\" id=\"hwx-res\"></div>"
+        "<div class=\"res\" id=\"hwx-res\" style=\"display:none\"></div>"
                 "<div class=\"qbar\"><input id=\"q\" placeholder=\"搜索：人物、书、一句话、处境…\" aria-label=\"搜索\"></div>"
         "<div style=\"display:flex;align-items:baseline;justify-content:space-between;margin-top:14px\">"
         "<div class=\"tabs2\" id=\"hwx-tabs2\">"
-        "<button data-t=\"新\" class=\"on\">最新</button><button data-t=\"全\">全部</button></div>"
+        "<button data-t=\"新\" class=\"on\">最新</button><button data-t=\"全\">全部</button>"
+        "<button data-t=\"境\">处境</button></div>"
         "<span class=\"ct\" id=\"hwx-ct\" style=\"font-size:12px;color:var(--muted)\"></span></div>"
         "<div class=\"cats\" id=\"hwx-cats\" style=\"display:none\"></div>"
         "<div class=\"nc-feed\" id=\"hwx-ncfeed\"></div>"
-        "<div class=\"feed\" id=\"hwx-feed\" style=\"display:none\"></div>"
+        "<div class=\"feed\" id=\"hwx-feed\" style=\"display:none\"></div><div class=\"nc-feed\" id=\"hwx-scfeed\" style=\"display:none\"></div>"
         "<script>var HWXD=" + j + ";</script>"
         "<script>" + js + "</script>"
         "\n</section>\n" + HWX_B
