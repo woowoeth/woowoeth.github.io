@@ -1,7 +1,7 @@
 {
  "i/adler/": {
-  "d": "2026-08-30",
-  "h": "87781ce269f45bd0"
+  "d": "2026-08-31",
+  "h": "46eb1e9e54f7dd4f"
  },
  "i/adler/separation-of-tasks/": {
   "d": "2026-08-30",
@@ -44,8 +44,8 @@
   "h": "58d65d6ebf39a077"
  },
  "i/atomic-habits/": {
-  "d": "2026-08-30",
-  "h": "7788ac9a43d36be0"
+  "d": "2026-08-31",
+  "h": "74602ce44fd062c9"
  },
  "i/atomic-habits/identity-first/": {
   "d": "2026-08-30",
@@ -56,8 +56,8 @@
   "h": "3f4d8cc58975b562"
  },
  "i/attachment-theory/": {
-  "d": "2026-08-30",
-  "h": "06f98247e62d5c47"
+  "d": "2026-08-31",
+  "h": "90de32f28ed6608a"
  },
  "i/attachment-theory/secure-base/": {
   "d": "2026-08-30",
@@ -102,6 +102,30 @@
  "i/bismarck/iron-and-blood/": {
   "d": "2026-08-29",
   "h": "308830f6cd4a65bf"
+ },
+ "i/bj-fogg/": {
+  "d": "2026-08-31",
+  "h": "2da8bc3a4fd2a84a"
+ },
+ "i/bj-fogg/anchor-and-celebrate/": {
+  "d": "2026-08-31",
+  "h": "d8ac77bc3ad7e3be"
+ },
+ "i/bj-fogg/tiny-habits/": {
+  "d": "2026-08-31",
+  "h": "3f6bb7269f2bc323"
+ },
+ "i/bowen/": {
+  "d": "2026-08-31",
+  "h": "d9e12763aa0199e7"
+ },
+ "i/bowen/differentiation/": {
+  "d": "2026-08-31",
+  "h": "898e1b24701a06e5"
+ },
+ "i/bowen/triangles/": {
+  "d": "2026-08-31",
+  "h": "b155e1fe48de4582"
  },
  "i/boyd/": {
   "d": "2026-08-28",
@@ -152,8 +176,8 @@
   "h": "21e8f888c5d49794"
  },
  "i/cal-newport/": {
-  "d": "2026-08-30",
-  "h": "623d95a5888a3d1f"
+  "d": "2026-08-31",
+  "h": "1edf42cae2304df5"
  },
  "i/cal-newport/attention-residue/": {
   "d": "2026-08-30",
@@ -180,8 +204,8 @@
   "h": "f024ac16b7a0e2a2"
  },
  "i/carl-rogers/": {
-  "d": "2026-08-30",
-  "h": "7cf2ac3e89573dde"
+  "d": "2026-08-31",
+  "h": "3be90d4dd83b85dc"
  },
  "i/carl-rogers/reflective-listening/": {
   "d": "2026-08-30",
@@ -227,6 +251,18 @@
   "d": "2026-08-30",
   "h": "713e2c8cb6514b35"
  },
+ "i/csikszentmihalyi/": {
+  "d": "2026-08-31",
+  "h": "9ee81cd8661deb95"
+ },
+ "i/csikszentmihalyi/flow-channel/": {
+  "d": "2026-08-31",
+  "h": "1c548017b0f2bb33"
+ },
+ "i/csikszentmihalyi/leisure-paradox/": {
+  "d": "2026-08-31",
+  "h": "2b66dde25fc4020f"
+ },
  "i/dalio/": {
   "d": "2026-08-28",
   "h": "b67fab364a023d9a"
@@ -263,6 +299,18 @@
   "d": "2026-08-29",
   "h": "7ae0cde919ebcdbe"
  },
+ "i/dweck/": {
+  "d": "2026-08-31",
+  "h": "2ffd943c4c53649a"
+ },
+ "i/dweck/effect-size/": {
+  "d": "2026-08-31",
+  "h": "1528a1ebfb57ebae"
+ },
+ "i/dweck/praise-the-process/": {
+  "d": "2026-08-31",
+  "h": "76fcd61b93d69046"
+ },
  "i/einstein/": {
   "d": "2026-08-30",
   "h": "5c972a33d46a016b"
@@ -276,8 +324,8 @@
   "h": "cc721e9741cbce5c"
  },
  "i/epictetus/": {
-  "d": "2026-08-29",
-  "h": "01bddb76c9974e8c"
+  "d": "2026-08-31",
+  "h": "ffa4baa0f5870a4e"
  },
  "i/epictetus/dichotomy/": {
   "d": "2026-08-29",
@@ -288,8 +336,8 @@
   "h": "6ed2659971adc8cc"
  },
  "i/ericsson/": {
-  "d": "2026-08-30",
-  "h": "d70f3acd60734862"
+  "d": "2026-08-31",
+  "h": "01c3548b17a6eeb1"
  },
  "i/ericsson/deliberate-practice/": {
   "d": "2026-08-30",
@@ -298,6 +346,18 @@
  "i/ericsson/not-ten-thousand-hours/": {
   "d": "2026-08-30",
   "h": "b5e67dcb0ae8e915"
+ },
+ "i/excellent-sheep/": {
+  "d": "2026-08-31",
+  "h": "80d9c785ccfe1cae"
+ },
+ "i/excellent-sheep/hurdles/": {
+  "d": "2026-08-31",
+  "h": "8c070a0f37306d4f"
+ },
+ "i/excellent-sheep/no-scoreboard/": {
+  "d": "2026-08-31",
+  "h": "ac46ecf65118356a"
  },
  "i/fan-li/": {
   "d": "2026-08-28",
@@ -324,8 +384,8 @@
   "h": "5afc20737c485606"
  },
  "i/feynman/": {
-  "d": "2026-08-30",
-  "h": "76bf39d0564e68c1"
+  "d": "2026-08-31",
+  "h": "9ac43f3df320a251"
  },
  "i/feynman/dont-fool-yourself/": {
   "d": "2026-08-30",
@@ -348,8 +408,8 @@
   "h": "61b68fde47c7899e"
  },
  "i/frankl/": {
-  "d": "2026-08-30",
-  "h": "2903a25520251f5b"
+  "d": "2026-08-31",
+  "h": "af0e7f6c98f64126"
  },
  "i/frankl/happiness-ensues/": {
   "d": "2026-08-29",
@@ -360,8 +420,8 @@
   "h": "603966977a10fe14"
  },
  "i/franklin/": {
-  "d": "2026-08-30",
-  "h": "8d509384d626542b"
+  "d": "2026-08-31",
+  "h": "589d05f88a754d12"
  },
  "i/franklin/never-say-certainly/": {
   "d": "2026-08-29",
@@ -384,8 +444,8 @@
   "h": "95491153093b94e7"
  },
  "i/gottman/": {
-  "d": "2026-08-30",
-  "h": "8b7164a3bb30a6f1"
+  "d": "2026-08-31",
+  "h": "7dfd9cba16f1bdcf"
  },
  "i/gottman/four-horsemen/": {
   "d": "2026-08-30",
@@ -628,8 +688,8 @@
   "h": "268b2785da8dc99a"
  },
  "i/john-ratey/": {
-  "d": "2026-08-30",
-  "h": "4bf4e4eb936066ee"
+  "d": "2026-08-31",
+  "h": "ca8db56258d91046"
  },
  "i/john-ratey/exercise-for-the-brain/": {
   "d": "2026-08-30",
@@ -852,8 +912,8 @@
   "h": "a6356aca438b4535"
  },
  "i/montessori/": {
-  "d": "2026-08-30",
-  "h": "a8d9e8fa37712a42"
+  "d": "2026-08-31",
+  "h": "8749d28062b885e5"
  },
  "i/montessori/help-me-do-it-myself/": {
   "d": "2026-08-30",
@@ -924,8 +984,8 @@
   "h": "e52d225d8c73578d"
  },
  "i/nietzsche/": {
-  "d": "2026-08-29",
-  "h": "c05dd6c1f4e858a6"
+  "d": "2026-08-31",
+  "h": "97687f60012adce8"
  },
  "i/nietzsche/gazing-into-abyss/": {
   "d": "2026-08-29",
@@ -936,8 +996,8 @@
   "h": "d48733ba3c9d2a92"
  },
  "i/nonviolent-communication/": {
-  "d": "2026-08-30",
-  "h": "7a747460522e78a0"
+  "d": "2026-08-31",
+  "h": "117662cfcb5b4afa"
  },
  "i/nonviolent-communication/needs-behind-blame/": {
   "d": "2026-08-30",
@@ -1031,6 +1091,30 @@
   "d": "2026-08-29",
   "h": "b6ba2b089e742cd2"
  },
+ "i/sapolsky/": {
+  "d": "2026-08-31",
+  "h": "5bde173c6e967d53"
+ },
+ "i/sapolsky/predictability/": {
+  "d": "2026-08-31",
+  "h": "c266cae74bff7cd9"
+ },
+ "i/sapolsky/stress-mismatch/": {
+  "d": "2026-08-31",
+  "h": "3308ed8075fbd0bd"
+ },
+ "i/satir/": {
+  "d": "2026-08-31",
+  "h": "592737f975359408"
+ },
+ "i/satir/coping-stances/": {
+  "d": "2026-08-31",
+  "h": "78e108f01caa2060"
+ },
+ "i/satir/iceberg/": {
+  "d": "2026-08-31",
+  "h": "52100f9b36b9e8eb"
+ },
  "i/schelling/": {
   "d": "2026-08-29",
   "h": "1868dd5bd2d750a8"
@@ -1044,8 +1128,8 @@
   "h": "47f1f4e8329d59a5"
  },
  "i/seneca/": {
-  "d": "2026-08-30",
-  "h": "7e711defaacc6f64"
+  "d": "2026-08-31",
+  "h": "aaddd2cb31f2e29e"
  },
  "i/seneca/on-anger/": {
   "d": "2026-08-30",
@@ -1092,8 +1176,8 @@
   "h": "d1748ffe80c81b0d"
  },
  "i/socrates/": {
-  "d": "2026-08-30",
-  "h": "7853e2874e4e51a6"
+  "d": "2026-08-31",
+  "h": "9ba999f9042a5834"
  },
  "i/socrates/knowing-not-knowing/": {
   "d": "2026-08-29",
@@ -1266,6 +1350,30 @@
  "i/thinking-in-systems/structure-drives-behavior/": {
   "d": "2026-08-29",
   "h": "81ab8ab62c94c69a"
+ },
+ "i/thomas-gordon/": {
+  "d": "2026-08-31",
+  "h": "9047194c62080d85"
+ },
+ "i/thomas-gordon/i-message/": {
+  "d": "2026-08-31",
+  "h": "87d3f3953c750963"
+ },
+ "i/thomas-gordon/problem-ownership/": {
+  "d": "2026-08-31",
+  "h": "30484a2d8786db8a"
+ },
+ "i/vygotsky/": {
+  "d": "2026-08-31",
+  "h": "2d73fe2a08d92d7e"
+ },
+ "i/vygotsky/scaffolding/": {
+  "d": "2026-08-31",
+  "h": "c16bac4cbf3435c3"
+ },
+ "i/vygotsky/zpd/": {
+  "d": "2026-08-31",
+  "h": "e955e6c3f025b485"
  },
  "i/wang-jian/": {
   "d": "2026-08-28",
