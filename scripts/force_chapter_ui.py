@@ -509,6 +509,14 @@ header.hd{margin-bottom:12px!important}
 #hwx .cats::-webkit-scrollbar{display:none}
 #hwx .cats button{flex:0 0 auto;border:none;background:transparent;color:var(--muted);font-family:inherit;font-size:14px;cursor:pointer;padding:5px 11px;border-radius:999px}
 #hwx .cats button.on{background:var(--line);color:var(--ink)}
+/* 处境选择条：两行横滑。76 个处境竖着平铺是 1049px，那正是被废掉的旧目录；
+   横滑两行占 78px，一屏能扫到十几个，滑动就能看完全部。
+   不放组名——组名与标签同行会混成半个标签（见 DESIGN.md §7），
+   改用「按组排序」让相邻的处境自然聚在一起。 */
+#hwx .scpick{display:grid;grid-auto-flow:column;grid-template-rows:auto auto;grid-auto-columns:max-content;gap:7px 6px;overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:none;margin:12px 0 0;padding-bottom:2px}
+#hwx .scpick::-webkit-scrollbar{display:none}
+#hwx .scpick button{border:1px solid var(--line);background:transparent;color:inherit;border-radius:999px;padding:7px 14px;font-family:inherit;font-size:14.5px;line-height:1.3;cursor:pointer;white-space:nowrap}
+#hwx .scpick button.on{background:var(--ink);color:var(--paper);border-color:var(--ink)}
 #hwx .feed{columns:150px;column-gap:12px;margin-top:14px}
 #hwx .feed>*{break-inside:avoid;width:100%;margin:0 0 12px}
 #hwx .nc-feed{columns:150px;column-gap:12px;margin-top:14px}
@@ -835,9 +843,10 @@ D.NC.forEach(function(e,i){
    原来「按处境找」是 1049px 的标签目录，三步才到答案，
    而这些问题 100% 已经在信息流里以卡片出现过。改成卡片流：
    同一批内容、同一套视觉，扫读即认出，不必先学会我们的分类。 */
-var scCells=[];
+var scCells=[],scOwner=[];
 D.S.forEach(function(sc){
   sc.qs.forEach(function(q){
+    scOwner.push(sc.t);
     scCells.push('<div class="kc" data-t="'+esc((q.q+sc.t).toLowerCase())+'">'
       +'<span class="seal">问</span>'
       +'<span class="said">'+esc(sc.t)+'</span>'
@@ -855,6 +864,38 @@ function trk(name, params){
 var TAB='新';
 var feed=document.getElementById('hwx-feed'), ncfeed=document.getElementById('hwx-ncfeed');
 var scfeed=document.getElementById('hwx-scfeed');
+var scpick=document.getElementById('hwx-scpick');
+/* 选中的处境；空串＝全部。选择保留，切走再切回来还在原来那一格 */
+var SCSEL='';
+/* 把选中的标签滑进视野：选择会跨 tab 保留，切回来时条子若停在开头，
+   卡片是筛过的而标签看着像没选，人会以为坏了。 */
+function scReveal(){
+  var on=scpick.querySelector('button.on');
+  if(on&&on.scrollIntoView)try{on.scrollIntoView({inline:'center',block:'nearest'})}catch(e){}
+}
+function scRender(){
+  var cells=[],n=0;
+  for(var i=0;i<scCells.length;i++){
+    if(!SCSEL||scOwner[i]===SCSEL){cells.push(scCells[i]);n++;}
+  }
+  scfeed.innerHTML=cells.join('');
+  ct.textContent=n+' 个问题';   /* 处境名由选中的标签表达，不再重复一遍 */
+}
+function scBuild(){
+  var h=['<button type="button" data-s="" class="on">全部</button>'];
+  D.S.forEach(function(sc){h.push('<button type="button" data-s="'+esc(sc.t)+'">'+esc(sc.t)+'</button>')});
+  scpick.innerHTML=h.join('');
+  scpick.querySelectorAll('button').forEach(function(b){
+    b.onclick=function(){
+      var v=b.getAttribute('data-s');
+      SCSEL=(v===SCSEL)?'':v;                       /* 再点一次＝取消，回到全部 */
+      scpick.querySelectorAll('button').forEach(function(x){
+        x.classList.toggle('on',x.getAttribute('data-s')===SCSEL)});
+      trk('situation_pick',{situation:SCSEL||'all'});
+      scRender();
+    };
+  });
+}
 var ct=document.getElementById('hwx-ct');
 var catsRow=document.getElementById('hwx-cats');
 function switchTab(t){
@@ -862,14 +903,16 @@ function switchTab(t){
   document.querySelectorAll('#hwx-tabs2 button').forEach(function(b){b.classList.toggle('on',b.getAttribute('data-t')===t)});
   if(t==='新'){
     feed.style.display='none';scfeed.style.display='none';ncfeed.style.display='';catsRow.style.display='none';
+    scpick.style.display='none';
     ncfeed.innerHTML=ncCells.join('');ct.textContent=D.NC.length+' 篇最新';
   }else if(t==='境'){
     ncfeed.style.display='none';feed.style.display='none';catsRow.style.display='none';
-    scfeed.style.display='';
-    scfeed.innerHTML=scCells.join('');
-    ct.textContent=D.S.length+' 种处境 · '+scCells.length+' 个问题';
+    scfeed.style.display='';scpick.style.display='';
+    if(!scpick.firstChild)scBuild();
+    scRender();scReveal();
   }else{
     ncfeed.style.display='none';scfeed.style.display='none';feed.style.display='';catsRow.style.display='';
+    scpick.style.display='none';
     feed.innerHTML=fullCells.join('');applyFeed();
   }
 }
@@ -984,8 +1027,9 @@ switchTab('新');
         "<div class=\"tabs2\" id=\"hwx-tabs2\">"
         "<button data-t=\"新\" class=\"on\">最新</button><button data-t=\"全\">全部</button>"
         "<button data-t=\"境\">处境</button></div>"
-        "<span class=\"ct\" id=\"hwx-ct\" style=\"font-size:12px;color:var(--muted)\"></span></div>"
+        "<span class=\"ct\" id=\"hwx-ct\" style=\"font-size:12px;color:var(--muted);white-space:nowrap;flex:0 0 auto\"></span></div>"
         "<div class=\"cats\" id=\"hwx-cats\" style=\"display:none\"></div>"
+        "<div class=\"scpick\" id=\"hwx-scpick\" style=\"display:none\" role=\"group\" aria-label=\"按处境筛选\"></div>"
         "<div class=\"nc-feed\" id=\"hwx-ncfeed\"></div>"
         "<div class=\"feed\" id=\"hwx-feed\" style=\"display:none\"></div><div class=\"nc-feed\" id=\"hwx-scfeed\" style=\"display:none\"></div>"
         "<script>var HWXD=" + j + ";</script>"
