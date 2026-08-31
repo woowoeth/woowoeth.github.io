@@ -287,7 +287,7 @@ body{background:var(--paper);color:var(--ink)}
 :root[data-theme="dark"] .hd-title,:root[data-theme="dark"] h1,:root[data-theme="dark"] h2,:root[data-theme="dark"] h3{color:#eae3d4!important}
 :root[data-theme="dark"] #hwx .tq .dt{color:#e0705f!important}
 :root[data-theme="dark"] #hwx .tq .src,:root[data-theme="dark"] #hwx .tq .src a,:root[data-theme="dark"] #hwx .tbox .hint{color:#d9d1c0!important;opacity:1}
-:root[data-theme="dark"] #hwx .qc .who,:root[data-theme="dark"] #hwx .pc .it,:root[data-theme="dark"] #hwx .pc .tag,:root[data-theme="dark"] #hwx .pc .ls,:root[data-theme="dark"] #hwx .nc .w,:root[data-theme="dark"] #hwx .nc .wh,:root[data-theme="dark"] #hwx .nc .pn{color:#a79e8b!important}
+:root[data-theme="dark"] #hwx .qc .who,:root[data-theme="dark"] #hwx .pc .it,:root[data-theme="dark"] #hwx .pc .tag,:root[data-theme="dark"] #hwx .pc .ls,:root[data-theme="dark"] #hwx .nc .w,:root[data-theme="dark"] #hwx .nc .pn{color:#a79e8b!important}
 :root[data-theme="dark"] #hwx .cf,:root[data-theme="dark"] #hwx .qc .who i,:root[data-theme="dark"] #hwx .nc .pn i,:root[data-theme="dark"] #hwx .seal{color:#ef8b78!important}
 :root[data-theme="dark"] #hwx .nb{background:#b8452f!important;color:#fff!important}
 :root[data-theme="dark"] #hwx .kc .qm{color:#8a3a2e!important}
@@ -384,13 +384,10 @@ header.hd{margin-bottom:12px!important}
 #hwx .scpick::-webkit-scrollbar{display:none}
 #hwx .scpick button{border:1px solid var(--line);background:transparent;color:inherit;border-radius:999px;padding:7px 14px;font-family:inherit;font-size:14.5px;line-height:1.3;cursor:pointer;white-space:nowrap}
 #hwx .scpick button.on{background:var(--ink);color:var(--paper);border-color:var(--ink)}
-/* 移动端保持双列。试过单列（列宽 330px）：一屏 5.9→4.2 张、卡片因为变宽反而
-   从 263px 矮到 178px，读起来也更顺——但产品负责人不喜欢单排的样子，改回双列。
-   代价是一屏仍然 6 张左右，这一点是清楚的、被接受的取舍，不是没注意到。 */
 #hwx .feed{columns:150px;column-gap:12px;margin-top:14px}
-#hwx .feed>*{break-inside:avoid;width:100%;margin:0 0 16px}
+#hwx .feed>*{break-inside:avoid;width:100%;margin:0 0 12px}
 #hwx .nc-feed{columns:150px;column-gap:12px;margin-top:14px}
-#hwx .nc-feed>*{break-inside:avoid;width:100%;margin:0 0 16px}
+#hwx .nc-feed>*{break-inside:avoid;width:100%;margin:0 0 12px}
 #hwx .pc{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:14px;padding:17px 17px 15px;text-decoration:none;color:inherit;background:var(--tint,var(--card))}
 :root[data-theme="dark"] #hwx .pc,:root[data-theme="dark"] #hwx .nc{background:var(--tintd,var(--card))}
 #hwx .pc .r1{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
@@ -409,11 +406,6 @@ header.hd{margin-bottom:12px!important}
 #hwx .nc .w{font-size:13px;color:var(--muted);margin:4px 0 10px}
 #hwx .nc .q{font-size:15.5px;line-height:1.85}
 #hwx .nc .q::before{content:"「"}#hwx .nc .q::after{content:"」"}
-/* 「什么时候翻开它」：sc（章节 apply 的「局面」句）早就在 NC 数据里，一直没渲染。
-   金句卡有「用在……的时候」、今日一篇有，唯独人物/章节卡没有——而这恰恰是
-   知识库卡片最该给的：不是这篇讲什么，是你什么时候用得上。
-   顺带把双列一屏的张数从 5.8 压下来，靠的是加有用的内容，不是加留白。 */
-#hwx .nc .wh{font-size:12.5px;color:var(--muted);line-height:1.7;margin-top:10px;border-top:1px dashed var(--line);padding-top:9px}
 #hwx .qc{border-radius:14px;background:var(--paper2);border:1px solid var(--line);padding:17px 15px 14px;display:flex;flex-direction:column;text-decoration:none;color:inherit;position:relative}
 #hwx .qc .v{writing-mode:vertical-rl;text-orientation:mixed;height:186px;width:fit-content;max-width:100%;font-family:"Noto Serif SC","Source Han Serif SC","Songti SC","STSong","SimSun",serif;font-size:17px;font-weight:700;line-height:1.85;letter-spacing:.04em;margin:5px auto 12px;overflow:hidden;display:block}
 #hwx .qc .v::before{content:"「"}#hwx .qc .v::after{content:"」"}
@@ -698,7 +690,7 @@ D.E.forEach(function(e,i){
 var ncCells=[], _seen={}, _pi=0, _qi=0, _ki=0;
 var byName={}; D.E.forEach(function(e){byName[e.n]=e});
 D.NC.forEach(function(e,i){
-  ncCells.push('<a class="nc" href="'+e.u+'" data-h="'+esc(e.pn+' · '+e.cn)+'" style="--tint:'+(D.CT[e.c]||'transparent')+';--tintd:'+(D.CTD[e.c]||'transparent')+'"><span class="pn"><i>'+e.pn+'</i><span class="nb">新</span></span><b>'+e.cn+'</b><span class="w">'+e.w+'</span>'+(e.q?'<span class="q">'+e.q+'</span>':'')+(e.sc?'<span class="wh">什么时候翻开它：'+e.sc+'</span>':'')+'</a>');
+  ncCells.push('<a class="nc" href="'+e.u+'" data-h="'+esc(e.pn+' · '+e.cn)+'" style="--tint:'+(D.CT[e.c]||'transparent')+';--tintd:'+(D.CTD[e.c]||'transparent')+'"><span class="pn"><i>'+e.pn+'</i><span class="nb">新</span></span><b>'+e.cn+'</b><span class="w">'+e.w+'</span>'+(e.q?'<span class="q">'+e.q+'</span>':'')+'</a>');
   if(i%4===3){
     var pe=null;
     for(var t=0;t<D.NC.length&&!pe;t++){
