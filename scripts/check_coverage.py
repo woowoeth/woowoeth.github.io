@@ -47,7 +47,7 @@ cat_of = {e["n"]: e["c"] for e in entries}
 name_by_slug = {hw_slugs.slug_for(e["n"]): e["n"] for e in entries}
 
 used = set()
-for _, group in SCENES:
+for _, _g, group in SCENES:
     for _, refs in group:
         for r in refs:
             used.add(tuple(r))
@@ -85,8 +85,8 @@ if rate < MIN_TOTAL:
 
 print("条目 %d → 章节 %d → 处境 %d → 问题 %d → 答案 %d"
       % (len(entries), len(C.CHAPTERS), len(SCENES),
-         sum(len(g) for _, g in SCENES),
-         sum(len(r) for _, g in SCENES for _, r in g)))
+         sum(len(g) for _, _x, g in SCENES),
+         sum(len(r) for _, _x, g in SCENES for _, r in g)))
 print("章节可达率 %d/%d (%.0f%%)" % (len(used & all_ch), len(all_ch), 100 * rate))
 
 if problems:

@@ -313,7 +313,7 @@ def _hwx_payload():
     # 处境
     ch_index = {(hw_slugs.slug_for(c["parent"]), c["k"]): c for c in C.CHAPTERS}
     S = []
-    for t, questions in HWX_SCENES:
+    for t, grp, questions in HWX_SCENES:
         qs = []
         for qtext, refs in questions:
             answers = []
@@ -324,7 +324,7 @@ def _hwx_payload():
                                 "u": "/i/%s/%s/" % (s_, k_),
                                 "hint": line_by.get((c["parent"], k_), "") or c.get("w", "")})
             qs.append({"q": qtext, "a": answers})
-        S.append({"t": t, "qs": qs})
+        S.append({"t": t, "g": grp, "qs": qs})
 
     # 今日一问池（apply 里的「先问」句）
     ASK = []
@@ -457,6 +457,12 @@ body{background:var(--paper);color:var(--ink)}
 #hwx .sc{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 0}
 #hwx .scmore{order:9999;flex:0 0 auto;border:1px dashed var(--line);background:transparent;color:var(--acc);border-radius:999px;padding:7px 14px;font-family:inherit;font-size:14.5px;cursor:pointer;white-space:nowrap;line-height:1.6}
 #hwx .scmore:hover{border-color:var(--acc)}
+/* 组名独占一行。试过与标签同行以省高度，结果组名混在标签流里像半个标签，
+   比原来更乱——高度靠「每组只露 2 个」和紧凑的行距来收，不靠挤掉标题。 */
+#hwx .scg{flex:0 0 100%;font-family:"Noto Serif SC","Songti SC",serif;font-size:11.5px;color:var(--muted);letter-spacing:.1em;margin:9px 0 -2px;padding:0;line-height:1.4}
+#hwx .scg:first-child{margin-top:0}
+#hwx .sc{row-gap:7px}
+#hwx .sc{flex-wrap:wrap!important;overflow-x:visible!important}
 #hwx .sc button{flex:0 0 auto;border:1px solid var(--line);background:transparent;color:inherit;border-radius:999px;padding:7px 14px;font-family:inherit;font-size:14.5px;cursor:pointer;white-space:nowrap}
 #hwx .sc button.on{background:var(--ink);color:var(--paper);border-color:var(--ink)}
 #hwx .res{display:none;border-left:3px solid var(--acc);padding:4px 0 4px 13px;margin:8px 0 6px}
@@ -651,8 +657,18 @@ document.getElementById('hwx-share').onclick=function(){drawCard(function(b){var
 /* ── 处境标签 ── */
 var scEl=document.getElementById('hwx-sc'),resEl=document.getElementById('hwx-res');
 var scMore=document.getElementById('hwx-scmore');
+/* 按组渲染：原来 76 个处境平铺，折叠逻辑按「两行」算，默认只露得出 4 个——
+   加多少处境用户都看不见。分组之后每组露前 3 个，默认可见约 30 个。 */
+var _seen={};
 D.S.forEach(function(s){
+  if(s.g && !_seen[s.g]){
+    _seen[s.g]=1;
+    var h=document.createElement('span');
+    h.className='scg';h.textContent=s.g;
+    scEl.appendChild(h);
+  }
   var b=document.createElement('button');b.type='button';b.textContent=s.t;
+  b.dataset.g=s.g||'';
   b._open=function(){
     scEl.querySelectorAll('button').forEach(function(x){x.classList.remove('on')});
     b.classList.add('on');
@@ -679,20 +695,23 @@ D.S.forEach(function(s){
   function tags(){return Array.prototype.filter.call(
     scEl.querySelectorAll('button'),function(b){return b!==scMore})}
   function showAll(){tags().forEach(function(b){b.style.display=''})}
+  var PER_GROUP=2;   /* 每组默认露几个——14 组 × 3 个占了 1268px，近两屏 */
+  function heads(){return Array.prototype.slice.call(scEl.querySelectorAll('.scg'))}
   function fold(){
-    if(open){showAll();scMore.textContent='收起';return}
-    showAll();
-    /* 先量出两行能放下哪些标签（此时钮已在末位参与排版），超出的收起 */
-    scMore.textContent='展开全部 '+D.S.length+' 个';
-    /* 逐个收起末尾标签，直到「标签 + 展开钮」正好占两行 */
-    var list=tags(), rowTop=function(el){return Math.round(el.getBoundingClientRect().top)};
-    for(var guard=0;guard<200;guard++){
-      var vis=list.filter(function(b){return b.style.display!=='none'});
-      var rows=[];vis.concat([scMore]).forEach(function(b){
-        var t=rowTop(b);if(rows.indexOf(t)<0)rows.push(t)});
-      if(rows.length<=2||!vis.length)break;
-      vis[vis.length-1].style.display='none';
+    if(open){
+      showAll();heads().forEach(function(h){h.style.display=''});
+      scMore.textContent='收起';return;
     }
+    showAll();
+    scMore.textContent='展开全部 '+D.S.length+' 个';
+    /* 每组只留前 PER_GROUP 个；组标题始终显示，让用户知道底下还有 */
+    var count={};
+    tags().forEach(function(b){
+      var g=b.dataset.g||'';
+      count[g]=(count[g]||0)+1;
+      if(count[g]>PER_GROUP)b.style.display='none';
+    });
+    heads().forEach(function(h){h.style.display=''});
   }
   scMore.onclick=function(){open=!open;fold()};
   fold();

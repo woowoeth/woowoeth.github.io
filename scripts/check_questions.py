@@ -59,7 +59,7 @@ def check(q):
 
 
 def main():
-    rows = [(scene, q) for scene, group in SCENES for q, _ in group]
+    rows = [(scene, q) for scene, _g, group in SCENES for q, _ in group]
     flagged = [(s, q, b) for s, q in rows for b in [check(q)] if b]
     print("问题 %d 条，处境 %d 个" % (len(rows), len(SCENES)))
     if flagged:
