@@ -11,6 +11,7 @@
   5. 新类别条目数不足却进了 slug 表 —— 主题页不生成，链接悬空
   6. 条目没有英文 slug —— 生成中文路径 URL
   7. 二维码被换坏 —— 页脚和分享卡的码扫不出来
+  8. 写了 fail/lesson 却没有任何渲染器读它 —— 4525 字内容在页面上不存在
 
 每一条都曾经是「我以为做完了」。现在改成构建失败。
 """
@@ -106,6 +107,30 @@ for e in entries:
 for e in entries:
     if " " in e["n"] or "\u3000" in e["n"]:
         bad("条目名含空格", "%s —— 会被「延伸」区拆成两个死链，用 · 代替" % e["n"])
+
+# 6b) 写了 fail/lesson 就必须真的渲染出来
+#     真实事故：23 个条目写了「败局时刻」+ 教训，合计 4525 字，
+#     而全站没有任何渲染器读这两个字段——大概是 2026-08-17 改版
+#     （首页卡片从浮层改成跳 /i/<slug>/）之后的遗留。
+#     内容存在、闸门全绿、页面上一个字都没有，躺了两周没人发现。
+#     这一条把「写了」和「看得见」绑死。
+for e in entries:
+    if not (e.get("fail") or e.get("lesson")):
+        continue
+    _sl = hw_slugs.slug_for(e["n"])
+    _f = "i/%s/index.html" % _sl
+    if not os.path.exists(_f):
+        bad("败局未渲染", "%s 有 fail/lesson 但条目页不存在（%s）" % (e["n"], _f))
+        continue
+    _h = open(_f, encoding="utf-8").read()
+    if e.get("fail"):
+        _probe = re.sub(r"<[^>]+>", "", e["fail"])[:18]
+        if _probe and _probe not in _h:
+            bad("败局未渲染", "%s 的 fail 不在 %s 里" % (e["n"], _f))
+    for _l in (e.get("lesson") or [])[:1]:
+        _probe = re.sub(r"<[^>]+>", "", _l)[:16]
+        if _probe and _probe not in _h:
+            bad("败局未渲染", "%s 的 lesson 不在 %s 里" % (e["n"], _f))
 
 # 7) 信息流里同类卡片不得重复
 #    真实事故：金句取用写成 (i*53) % 池大小，而池子正好 53 条，

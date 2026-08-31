@@ -295,7 +295,10 @@ def _render_blocks(it, zh):
                 rendered.add(x)
                 html.append("<p>%s</p>" % esc(x))
         html.append("</section>")
-        if klass == "sec" and "今天" not in h:      # the story section is fair game too
+        # 「后来怎么了？」整段本来就是提炼过的短句（fail 一段 + 教训三条），
+        # 从一个全是金句的段落里再抽金句，抽出来的是把三条教训连成的一串，
+        # 紧跟在它们下面重念一遍。和「今天怎么用」同理，排除。
+        if klass == "sec" and "今天" not in h and "后来" not in h:
             si = len(slots)
             slots.append(len(html))
             whole = "".join(paras)

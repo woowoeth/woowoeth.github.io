@@ -169,6 +169,18 @@ def load_items():
                 body += "\n\u4f8b\uff1a" + f["eg"]
             if body:
                 blocks.append(("\u5206\u5219 \u00b7 %s" % (f.get("n") or ""), body))
+        # 败局时刻：23 个条目写了 fail/lesson，但从来没有任何一个
+        # 渲染器读它们——大概是 2026-08-17 改版后的遗留，
+        # 那一次首页卡片从浮层改成跳 /i/<slug>/。
+        # 位置在「分则」之后、「今天怎么用」之前：
+        # 先看他留下什么，再看它在他自己身上怎么失效的，
+        # 然后才轮到你怎么用。标题不用「他」，因为 23 个里有书。
+        if e.get("fail") or e.get("lesson"):
+            fb = e.get("fail") or ""
+            if e.get("lesson"):
+                fb = (fb + "\n" + flat(e["lesson"])).strip("\n")
+            if fb:
+                blocks.append(("Q\uff1a\u540e\u6765\u600e\u4e48\u4e86\uff1f", fb))
         if e.get("apply"):
             blocks.append(("Q\uff1a\u4eca\u5929\u600e\u4e48\u7528\uff1f", flat(e["apply"])))
         if e.get("q"):
