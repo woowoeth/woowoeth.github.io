@@ -683,6 +683,37 @@ SCENES = [
 
 
 # ── 人生转折点：低频但高强度，人最会主动搜的时刻 ──
+# ── 刚起步：13 篇章节早就在库里（优秀的绵羊、艾利克森、维果茨基、纽波特…），
+#    但 76 个处境里没有一个说的是「第一份工作」「要不要读研」。
+#    内容存在、走不到，和当初 9 个家庭条目挂不上处境是同一种事故。
+#    这一组不写新内容，只接线。 ──
+("一路优秀，突然没了标准", "刚起步", [
+    ("从小按分数活，现在没人给我打分了。",
+     [("excellent-sheep", "hurdles"), ("excellent-sheep", "no-scoreboard")]),
+    ("我一直很优秀，可我不知道要去哪。",
+     [("jobs", "connecting-the-dots"), ("socrates", "knowing-not-knowing")]),
+]),
+("第一份工作", "刚起步", [
+    ("刚进来，我什么都不会。",
+     [("vygotsky", "zpd"), ("ericsson", "deliberate-practice")]),
+    ("我不知道该问人还是自己扛。",
+     [("vygotsky", "scaffolding"), ("socrates", "midwifery")]),
+    ("我干的活好像谁都能干。",
+     [("naval", "productize-yourself"), ("naval", "assets-while-you-sleep")]),
+]),
+("要不要接着读书", "刚起步", [
+    ("读还是工作，我怕选错了。",
+     [("thinking-fast-and-slow", "loss-aversion"), ("huang", "strategic-retreat")]),
+    ("别人都在卷学历，我慌了。",
+     [("ericsson", "not-ten-thousand-hours"), ("dweck", "effect-size")]),
+]),
+("学的用不上", "刚起步", [
+    ("学校教我的那套，在这儿对不上。",
+     [("feynman", "teach-to-understand"), ("bruce-lee", "be-water")]),
+    ("我看着都会，一动手就不行。",
+     [("wang-yangming", "unity-of-knowing-and-doing"), ("wang-yangming", "polish-on-things")]),
+]),
+
 ("突然没了工作", "人生转弯", [
     ("干了这么多年，说没就没了。",
      [("huang", "strategic-retreat"), ("su-shi", "three-exiles")]),
