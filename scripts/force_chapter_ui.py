@@ -335,15 +335,9 @@ def _hwx_payload():
             qs.append({"q": qtext, "a": answers})
         S.append({"t": t, "g": grp, "qs": qs})
 
-    # 今日一问池（apply 里的「先问」句）
-    ASK = []
-    for ch in C.CHAPTERS:
-        m = re.search(r"先问：(.+?)(?:\n|$)", ch.get("apply", ""))
-        if m:
-            ASK.append({"t": m.group(1).strip(), "who": ch["parent"], "cn": ch["n"],
-                        "sc": scene_of(ch), "pt": ch.get("w", ""),
-                        "dek": re.sub(r"==", "", ch.get("dek", "")),
-                        "u": "/i/%s/%s/" % (hw_slugs.slug_for(ch["parent"]), ch["k"])})
+    # ASK（apply 里的「先问」句）已删。今日一问改用 QQ 之后它就没有任何读者了，
+    # 却仍然随首页发给每一个访客：276 条、114KB 原始 / 45KB gzip，占整页 7%。
+    # 和 fail/lesson 是同一种病的反面——那个是写了没人渲染，这个是发了没人读。
 
     # NC: 40 最新章节（按章节 py 文件 git 首次 commit 时间降序）
     import os, subprocess
@@ -399,7 +393,7 @@ def _hwx_payload():
         return out
     QQ_ALL = ([{"t": q["t"], "r": _enrich(q["r"])} for q in QQ]
               + [{"t": q["q"], "r": _enrich(q["a"])} for sc in S for q in sc["qs"]])
-    j = json.dumps({"E": E, "QP": QP, "QS": QS, "QQ": QQ_ALL, "S": S, "ASK": ASK,
+    j = json.dumps({"E": E, "QP": QP, "QS": QS, "QQ": QQ_ALL, "S": S,
                     "CC": CAT_COLOR, "CT": CAT_TINT, "CTD": CAT_TINT_D, "NC": NC}, ensure_ascii=False, separators=(",",":")).replace("</","<\\/")
     return j, len(E), len(NC)
 
