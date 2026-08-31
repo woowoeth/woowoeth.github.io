@@ -14,8 +14,23 @@ import hw_chapters as C, hw_slugs
 
 W, H, M = 1200, 630, 72
 PAPER, INK, ACC, MUTED, LINE = "#f5f1e8", "#1f1c17", "#a33b2e", "#8a8377", "#d8d2c6"
-TTC = "/usr/share/fonts/opentype/noto/NotoSerifCJK-Bold.ttc"
-F = lambda size: ImageFont.truetype(TTC, size, index=2)  # Noto Serif CJK SC Bold
+# 字体：首选 Noto Serif CJK SC Bold —— 已有 276 张图都是它画的，换字体会让新旧图
+# 明显不是一套。本机（macOS）没有它，只能退到 Songti SC Bold；这时脚本自动切到
+# 「只补缺失」模式，绝不重画已有的图。要重画全部，必须在装了 Noto 的机器上跑。
+CANDIDATES = [
+    ("/usr/share/fonts/opentype/noto/NotoSerifCJK-Bold.ttc", 2, True),   # Linux，正统
+    ("/usr/share/fonts/opentype/noto/NotoSerifCJK.ttc", 2, True),
+    ("/System/Library/Fonts/Supplemental/Songti.ttc", 1, False),         # macOS，替补
+]
+TTC = INDEX = None
+CANONICAL = False
+for _p, _i, _ok in CANDIDATES:
+    if pathlib.Path(_p).exists():
+        TTC, INDEX, CANONICAL = _p, _i, _ok
+        break
+if TTC is None:
+    sys.exit("找不到可用的 CJK 衬线字体，候选：\n  " + "\n  ".join(c[0] for c in CANDIDATES))
+F = lambda size: ImageFont.truetype(TTC, size, index=INDEX)
 
 def wrap(draw, text, font, maxw):
     lines, cur = [], ""
@@ -64,18 +79,25 @@ def render(title, sub, quote, out):
     img.convert("P", palette=Image.ADAPTIVE, colors=96).save(out, optimize=True)
 
 def main():
-    n, total = 0, 0
+    only_missing = ("--all" not in sys.argv) if CANONICAL else True
+    if not CANONICAL:
+        print("⚠ 用的是替补字体 %s（正统的 Noto Serif CJK 不在本机）。" % TTC)
+        print("  已自动切到「只补缺失」，不会重画已有的图——新图与旧图字形会有差异，")
+        print("  要统一请在装了 Noto Serif CJK 的机器上跑 python3 scripts/gen_og.py --all。")
+    n, skipped, total = 0, 0, 0
     for ch in C.CHAPTERS:
         slug = hw_slugs.slug_for(ch["parent"])
         out = ROOT / "i" / slug / ch["k"] / "og.png"
         if not out.parent.exists():
             print("跳过（页面目录不存在）:", out.parent); continue
+        if only_missing and out.exists():
+            skipped += 1; continue
         # 选 q[] 中最长的一条：短句常与标题重复，撑不起版面
         qs = [re.sub(r"==", "", q).strip().rstrip("。") for q in (ch.get("q") or [""])]
         quote = max(qs, key=len)
         render("%s · %s" % (ch["parent"], ch["n"]), ch.get("w", ""), quote, out)
         n += 1; total += out.stat().st_size
-    print("生成 %d 张，共 %.1f MB" % (n, total / 1048576))
+    print("生成 %d 张（跳过已存在 %d 张），共 %.1f MB" % (n, skipped, total / 1048576))
 
 if __name__ == "__main__":
     main()

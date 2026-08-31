@@ -386,6 +386,8 @@ SCENES = [
      [("matsushita", "umbrella-in-rain"), ("marcus-aurelius", "morning-preparation")]),
     ("跟烂事纠缠久了，我也变得难看。",
      [("zhuangzi", "ox-carving"), ("tao-te-ching", "water")]),
+    ("我脑子里一直在骂自己。",
+     [("brene-brown", "guilt-not-shame"), ("wang-yangming", "bandits-in-the-heart")]),
 ]),
 ("知道做不到", "自己的状态", [
     ("道理都懂，可我就是不动。",
@@ -428,6 +430,8 @@ SCENES = [
      [("boyd", "to-be-or-to-do"), ("xiang-yu", "brocade-at-night")]),
     ("我是不是天生就不如人？",
      [("dweck", "praise-the-process"), ("dweck", "effect-size")]),
+    ("他们看起来都很稳，只有我在慌。",
+     [("brene-brown", "secrecy-silence-judgment"), ("socrates", "knowing-not-knowing")]),
 ]),
 
 # ── 位置 ──
@@ -789,6 +793,8 @@ SCENES = [
      [("gandhi", "means-are-seeds"), ("dalio", "pain-plus-reflection")]),
     ("我想把它记下来，又怕难看。",
      [("records-of-the-grand-historian", "no-praise-no-hiding"), ("zizhi-tongjian", "what-to-keep")]),
+    ("过去很久了，我还是觉得自己很糟。",
+     [("brene-brown", "guilt-not-shame"), ("zeng-guofan", "self-watch")]),
 ]),
 ("怕被看穿", "说不出口", [
     ("我怕别人发现我其实不行。",
@@ -797,6 +803,8 @@ SCENES = [
      [("liu-bang", "three-i-cannot"), ("wang-yangming", "polish-on-things")]),
     ("我在做的事，经得起看吗？",
      [("hu-xueyan", "no-cheating"), ("mencius", "flood-like-qi")]),
+    ("有件事我谁都没说过。",
+     [("brene-brown", "secrecy-silence-judgment"), ("carl-rogers", "unconditional-regard")]),
 ]),
 ("放不下一个人", "说不出口", [
     ("我到现在还恨那个人。",

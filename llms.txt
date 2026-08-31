@@ -1,11 +1,11 @@
 # Human World (人类世界生存法则)
 
-> 124 people and books on how the world actually works, across 2,600 years
+> 125 people and books on how the world actually works, across 2,600 years
 > 遇到事了，看看以前的人怎么处理
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 124 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 125 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
-一个关于「世界到底怎么运转」的知识库：战略、财富、权力、人性、创业，取自 124 位人物与典籍，跨越 2600 年。每一条都写清楚这个人真正留下的那一个想法、背后的故事、拆开的分则与例子，以及今天怎么用。
+一个关于「世界到底怎么运转」的知识库：战略、财富、权力、人性、创业，取自 125 位人物与典籍，跨越 2600 年。每一条都写清楚这个人真正留下的那一个想法、背后的故事、拆开的分则与例子，以及今天怎么用。
 
 ## Read it
 
@@ -19,14 +19,14 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 ## Topics
 
 - [工业时代](https://ourword.ai/t/industrial-age/) — 39
-- [现代](https://ourword.ai/t/modern/) — 38
+- [现代](https://ourword.ai/t/modern/) — 39
 - [先秦与古典时代](https://ourword.ai/t/classical-era/) — 19
 - [权力与组织](https://ourword.ai/t/power/) — 19
 - [创业与产品](https://ourword.ai/t/startups/) — 16
 - [谋略与竞争](https://ourword.ai/t/strategy/) — 16
 - [财富与风险](https://ourword.ai/t/wealth/) — 15
+- [心智与情绪](https://ourword.ai/t/mind/) — 12
 - [识人与相处](https://ourword.ai/t/people/) — 12
-- [心智与情绪](https://ourword.ai/t/mind/) — 11
 - [秦汉至魏晋](https://ourword.ai/t/han-wei/) — 10
 - [学习与成长](https://ourword.ai/t/learning/) — 10
 - [世界如何运转](https://ourword.ai/t/world/) — 10
@@ -68,6 +68,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [鲍恩 · 拉进第三个人](https://ourword.ai/i/bowen/triangles/): 鲍恩 · 拉进第三个人——张力被固定下来。两个人的矛盾，为什么总会变成三个人的事。这一篇要回答的是：那样做的代价。
 - [约翰·博伊德 · OODA循环](https://ourword.ai/i/boyd/ooda/): 约翰·博伊德 · OODA循环——快在转向不在动作。他先是王牌飞行教官，四十秒内必能反败为胜。这一篇要回答的是：他从空战里提炼的那个循环，快指的是什么。
 - [约翰·博伊德 · 做大人物还是做成事](https://ourword.ai/i/boyd/to-be-or-to-do/): 约翰·博伊德 · 做大人物还是做成事——岔路演讲。他官至上校，再没升过。这一篇要回答的是：他对每个追随者都讲过的那段岔路口演讲。
+- [布琳·布朗 · 内疚能改，羞耻不能](https://ourword.ai/i/brene-brown/guilt-not-shame/): 布琳·布朗 · 内疚能改，羞耻不能——看那句话指着谁。同一件错事，心里那句自我评价只差几个字。这一篇要回答的是：差的是哪几个字，为什么后果相反。
+- [布琳·布朗 · 羞耻的三个生存条件](https://ourword.ai/i/brene-brown/secrecy-silence-judgment/): 布琳·布朗 · 羞耻的三个生存条件——秘密、沉默、评判。羞耻不是一种情绪状态，是一个有条件的机制。这一篇要回答的是：条件是哪三个，怎么拆。
 - [李小龙 · 像水一样](https://ourword.ai/i/bruce-lee/be-water/): 李小龙 · 像水一样——形随器变。这段话有完整的影像记录，不是后人附会。这一篇要回答的是：像水一样到底是一套什么操作。
 - [李小龙 · 一万次同一脚](https://ourword.ai/i/bruce-lee/one-kick/): 李小龙 · 一万次同一脚——重复的方向。一个以速度和多变闻名的人，留下的却是一句关于重复的话。这一篇要回答的是：这两件事为什么不矛盾。
 - [巴菲特 · 能力圈](https://ourword.ai/i/buffett/circle-of-competence/): 巴菲特 · 能力圈——重要的是边界。这条原则常被念成「做熟悉的事」。这一篇要回答的是：他真正强调的是后半句。
@@ -333,7 +335,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [AI Bubble Monitor / AI 泡沫检测仪](https://ourword.ai/ai/)
 - [Zouni / 走你](https://ourword.ai/zouni/)
 
-## Index (124 entrys)
+## Index (125 entrys)
 
 - [BJ·福格](https://ourword.ai/i/bj-fogg/): BJ·福格（2019年·斯坦福行为设计实验室）——小到不会失败。斯坦福行为设计实验室创始人，研究行为如何被设计出来。他给出一个公式：行为发生需要动机、能力、提示三者同时到位。多数人失败在只调动机——靠决心和自我激励——而动机天然起伏，靠它维持的习惯必然崩。他的主张相反：把行为缩到小得不需要动机，然后挂在一个已有的动作后面。
 - [主权个人](https://ourword.ai/i/sovereign-individual/): 主权个人（1997年·戴维森&莫格）——数字主权。1997年出版，比特币诞生早了11年。两位作者用「暴力经济学」解释了人类社会的全部历史：谁控制暴力，谁就控制财富。他们预言了加密货币、远程工作、数字游民、国家权力衰退。
@@ -374,6 +376,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [富兰克林](https://ourword.ai/i/franklin/): 富兰克林（美·1706-1790年）——十三美德·复利人生。本杰明·富兰克林，人类历史上罕见的「全栈人生」：印刷工出身，17岁身无分文闯费城，42岁靠印刷生意实现财务自由后退休，转身成为科学家（电学）、发明家（避雷针、双焦眼镜）、作家（《穷理查年鉴》）、外交家（促成法国援美）、开国元勋（唯一在独立宣言、美法同盟、巴黎和约、宪法四大文件上都
 - [尼采](https://ourword.ai/i/nietzsche/): 尼采（德国·1844-1900）——超越。最被误读的哲学家。纳粹用他的「超人」理论为种族主义背书——但他本人极度厌恶反犹太主义，和姐姐决裂正是因为这个原因。他真正说的是：人能够超越「群众道德」成为「创造自己价值的人」。他10岁丧父，身体极度虚弱，几乎一生在病痛中度过，最终44岁精神崩溃——却在此之前写下了西方哲学史上最有
 - [巴菲特](https://ourword.ai/i/buffett/): 巴菲特（当代·1930-）——护城河。奥马哈的神奇老人，用60年把10000美元变成了一个千亿美元帝国。他的方法：找到有护城河的好公司，以合理价格买入，然后长期持有。他最大的竞争优势不是选股技能，而是情绪控制。
+- [布琳·布朗](https://ourword.ai/i/brene-brown/): 布琳·布朗（2010年·休斯顿大学）——羞耻与内疚。社会工作研究者，花二十年做一件别人不愿碰的事：把「羞耻」变成可以研究的对象，几千份访谈。她最有用的贡献不是鼓励，是一个区分——内疚是「我做了一件坏事」，羞耻是「我是个坏人」。前者指向行为，后者指向人本身；同一件错事，两种说法带来相反的后果。（注意：她关于羞耻与成瘾、抑郁、攻击相关
 - [庄子](https://ourword.ai/i/zhuangzi/): 庄子（战国·约前369-前286年）——逍遥齐物。名周，宋国蒙人，道家第二座高峰。老子讲柔弱胜刚强，是给用世者的兵法；庄子讲逍遥齐物，是给个体的精神出路。他做过漆园小吏，此后终身不仕，穷到向人借米，却拒绝了楚国相位。《庄子》三十三篇，用寓言把一件事说透：人被功名、是非、得失捆住时，如何赢回内心的自由。两千年来，中国读书人得意时读
 - [弗兰克尔](https://ourword.ai/i/frankl/): 弗兰克尔（奥地利·1905-1997）——意义。心理学家，纳粹集中营幸存者，意义疗法（Logotherapy）创始人。他在奥斯维辛集中营里观察到一个现象：同样的极端条件下，有人崩溃，有人存活，差别不在于体力，而在于「有没有活下去的理由」。他的核心命题：人类最后的自由，是在任何境遇中选择自己态度的自由。
 - [张一鸣](https://ourword.ai/i/zhang-yiming/): 张一鸣（当代·1983-）——延迟满足。字节跳动创始人，抖音和今日头条的缔造者。他的特点：极度理性，反对模糊，用算法驱动一切。他相信人的认知偏差是最大的效率损耗，因此把「延迟满足」和「反模糊」当成了个人和团队的核心操作系统。
