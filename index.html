@@ -46,18 +46,18 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC
 /* masthead — glass sticky */
 /* unified brand lockup — match entry pages / yuansheng */
 /* responsive lockup */
+/* 页头的字号/尺寸/左右内距由 assets/hw-home-lockup.css 以 !important 统一接管，
+   这里再写一遍不会生效（曾经写过，DESIGN.md 也照抄成了规范）。下面只保留
+   lockup 没管的属性：white-space。改页头请改 hw-home-lockup.css。 */
 @media(max-width:720px){
   .brand-lockup{align-items:flex-start}
-  .hd-title{font-size:26px;white-space:nowrap}
+  .hd-title{white-space:nowrap}
   .hd-en{margin:0;font-size:12.5px}
 }
 @media(max-width:480px){
-  .brand-logo{width:36px;height:36px;border-radius:9px}
-  .hd-title{font-size:22px;white-space:normal}
-  .wrap{padding-left:16px;padding-right:16px}
+  .hd-title{white-space:normal}
 }
 
-.wrap{max-width:1120px;margin:0 auto;padding:0 clamp(20px,4vw,48px) 96px}
 .hd{position:relative;z-index:50;margin:0 0 28px;padding:clamp(36px,6vw,64px) 0 22px;background:transparent;-webkit-backdrop-filter:none;backdrop-filter:none}
 .hd::after{display:none}
 .brand-lockup{display:flex;align-items:flex-start;gap:14px;text-decoration:none;color:inherit;margin:0 0 14px}
@@ -72,7 +72,6 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC
 @media(max-width:600px){
   .wrap{padding:0 24px 8px}
   .hd{margin:0 0 22px;padding:22px 0 8px}
-  .hd-title{font-size:26px}
   .hd-en{margin-left:0}
 }
 
