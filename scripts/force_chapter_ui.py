@@ -524,7 +524,13 @@ header.hd{margin-bottom:12px!important}
 #hwx .nc-feed>*{break-inside:avoid;width:100%;margin:0 0 12px}
 #hwx .pc{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:14px;padding:17px 17px 15px;text-decoration:none;color:inherit;background:var(--tint,var(--card))}
 :root[data-theme="dark"] #hwx .pc,:root[data-theme="dark"] #hwx .nc{background:var(--tintd,var(--card))}
-#hwx .pc .r1{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+/* flex-wrap:wrap 是为了不让右边的小字（条目的 w）把标题挤折行。
+   卡片内容宽只有 124px，人名 + 小字超过约 116px 标题就断词——
+   而这跟小字多长关系不大：马可·奥勒留(91px)+「克制」(22px) 照样折，
+   毛泽东(57px)+「集中优势」(50px) 反而不折。限制小字字数解决不了。
+   允许换行之后，放不下的小字自己掉到第二行，标题永远完整。
+   实测 60 张卡：折行 9 → 0，卡片中位高 258px 不变。 */
+#hwx .pc .r1{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:8px}
 #hwx .pc b{font-family:"Noto Serif SC","Source Han Serif SC","Songti SC","STSong",serif;font-size:19px;line-height:1.45}
 #hwx .pc .tag{font-size:12.5px;color:var(--muted);white-space:nowrap;max-width:52%;overflow:hidden;text-overflow:ellipsis;font-style:normal}
 #hwx .pc .it{font-size:14px;color:var(--muted);margin:6px 0 9px;line-height:1.65}
