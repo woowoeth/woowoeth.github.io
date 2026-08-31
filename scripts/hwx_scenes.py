@@ -16,12 +16,18 @@ SCENES = [
      [("epictetus", "judgments-not-things"), ("epictetus", "dichotomy")]),
     ("火已经上来了，怎么压住？",
      [("marcus-aurelius", "view-from-above"), ("su-shi", "no-wind-no-rain")]),
+    ("话说出口才发现说错了。",
+     [("liu-bang", "changing-mid-sentence"), ("zhang-yiming", "ordinary-mind")]),
 ]),
 ("做不完", "要做决定", [
     ("全都重要，我砍哪个都疼。",
      [("jobs", "focus-is-saying-no"), ("drucker", "right-things-first")]),
     ("我是不是在用忙掩盖不想面对的事？",
      [("wang-xing", "escape-from-thinking"), ("zeng-guofan", "self-watch")]),
+    ("我在瞎忙，正事一件没动。",
+     [("wang-xing", "escape-from-thinking"), ("drucker", "right-things-first")]),
+    ("事情堆在一起，我不知道先动哪个。",
+     [("mao", "on-contradiction"), ("influence", "social-proof")]),
 ]),
 ("起了冲突", "要做决定", [
     ("他明摆着有恶意，我还忍吗？",
@@ -30,12 +36,16 @@ SCENES = [
      [("epictetus", "judgments-not-things"), ("zhang-liang", "picking-up-the-shoe")]),
     ("我一句话就把人得罪了。",
      [("analects", "reciprocity"), ("chris-voss", "thats-right")]),
+    ("他给我难堪，我忍了这一次。",
+     [("zhang-liang", "picking-up-the-shoe"), ("caesar", "clementia")]),
 ]),
 ("拖着不开始", "要做决定", [
     ("总想再准备准备，就是不开始。",
      [("paul-graham", "dont-scale"), ("boyd", "ooda")]),
     ("我知道该做，可就是动不了。",
      [("wang-yangming", "unity-of-knowing-and-doing"), ("franklin", "one-virtue-a-week")]),
+    ("想等条件齐了再动，可它总不齐。",
+     [("caesar", "the-rubicon"), ("mao", "strategy-of-the-revolution")]),
 ]),
 ("不可逆的决定", "要做决定", [
     ("这一步迈出去就收不回来了。",
@@ -46,6 +56,8 @@ SCENES = [
      [("graham", "margin-of-safety"), ("li-ka-shing", "ninety-percent-failure")]),
     ("我想在动手前先确认能赢。",
      [("sun-tzu", "win-before-fighting"), ("mao", "strategy-of-the-revolution")]),
+    ("机会比预想的大，我敢不敢加码。",
+     [("su-yu", "enlarging-huaihai"), ("dalio", "believability")]),
 ]),
 ("信息不全", "要做决定", [
     ("等数据齐了，还来得及吗？",
@@ -56,6 +68,10 @@ SCENES = [
      [("einstein", "formulating-the-problem"), ("socrates", "midwifery")]),
     ("我对自己和对手都没底。",
      [("sun-tzu", "know-both"), ("guo-jia", "ten-victories")]),
+    ("情况我根本没摸全，就得拍板。",
+     [("records-of-the-grand-historian", "i-am-confused"), ("einstein", "formulating-the-problem")]),
+    ("对手哪儿都比我强，怎么跟人打。",
+     [("sun-tzu", "know-both"), ("guo-jia", "ten-victories")]),
 ]),
 ("方案被否", "要做决定", [
     ("方案被毙了，还提第二次吗？",
@@ -64,6 +80,8 @@ SCENES = [
      [("zhang-liang", "borrowing-chopsticks"), ("strategies-of-the-warring-states", "three-mirrors")]),
     ("该坚持，还是该认这个否定？",
      [("boyd", "to-be-or-to-do"), ("thiel", "the-contrarian-question")]),
+    ("我的方案被否了，还要不要争。",
+     [("su-yu", "daring-to-state"), ("li-shimin", "the-first-debate")]),
 ]),
 ("全票通过", "要做决定", [
     ("所有人都同意，我反而心虚。",
@@ -90,6 +108,8 @@ SCENES = [
      [("musashi", "no-favorite-weapon"), ("huo-qubing", "no-old-manuals")]),
     ("对面比我强，我从哪里下手？",
      [("li-bi", "strike-the-base"), ("sima-yi", "eight-days")]),
+    ("硬碰肯定输，我还有别的打法吗？",
+     [("sun-tzu", "win-without-fighting"), ("guan-zhong", "buying-deer")]),
 ]),
 ("被牵着走", "有对手", [
     ("他每出一招，我都得接吗？",
@@ -100,12 +120,20 @@ SCENES = [
      [("musashi", "two-ways-of-seeing"), ("huo-qubing", "feeding-off-the-enemy")]),
     ("我总在追着别人的节奏跑。",
      [("sima-yi", "eight-days"), ("guo-jia", "leave-the-baggage")]),
+    ("我一直在接招，从没出过招。",
+     [("sun-tzu", "orthodox-and-surprise"), ("musashi", "two-ways-of-seeing")]),
+    ("补给和后勤把我拖住了。",
+     [("huo-qubing", "feeding-off-the-enemy"), ("sun-tzu", "form-like-water")]),
 ]),
 ("进不进红海", "有对手", [
     ("这行早挤满了，我还进吗？",
      [("thiel", "competition-is-for-losers"), ("huang", "zero-billion-markets")]),
     ("别人跑在前面，我还来得及吗？",
      [("duan-yongping", "dare-to-be-last"), ("guo-jia", "waiting-out-liaodong")]),
+    ("这行挤满了人，我还进吗？",
+     [("thiel", "competition-is-for-losers"), ("naval", "assets-while-you-sleep")]),
+    ("对手自己乱起来了，我要不要插一手。",
+     [("guo-jia", "waiting-out-liaodong"), ("sima-yi", "waiting")]),
 ]),
 ("赢了之后", "有对手", [
     ("赢了，追下去还是收手？",
@@ -113,6 +141,10 @@ SCENES = [
     ("赢了这一把，要不要加码？",
      [("su-yu", "enlarging-huaihai"), ("bismarck", "art-of-the-possible")]),
     ("连着顺了几把，我怕栽跟头。",
+     [("taleb", "turkey-problem"), ("buffett", "swimming-naked")]),
+    ("赢是赢了，我不知道什么时候停。",
+     [("napoleon", "sublime-to-ridiculous"), ("li-ka-shing", "knowing-when-to-stop")]),
+    ("顺风顺水这么久，我心里发毛。",
      [("taleb", "turkey-problem"), ("buffett", "swimming-naked")]),
 ]),
 
@@ -126,6 +158,10 @@ SCENES = [
      [("lynch", "stomach-not-brain"), ("livermore", "sitting-tight")]),
     ("亏的时候我比赚的时候难受得多。",
      [("thinking-fast-and-slow", "loss-aversion"), ("taleb", "skin-in-the-game")]),
+    ("看对了方向，我还是没拿住。",
+     [("livermore", "sitting-tight"), ("lynch", "stomach-not-brain")]),
+    ("跌成这样，我不知道该信谁。",
+     [("graham", "mr-market"), ("livermore", "hope-and-fear-inverted")]),
 ]),
 ("该不该买", "钱的事", [
     ("买之前，我真的懂它吗？",
@@ -136,18 +172,24 @@ SCENES = [
      [("bai-gui", "take-what-others-drop"), ("technological-revolutions", "bubble-in-the-script")]),
     ("好东西就在眼前，我看得出吗？",
      [("lynch", "tenbagger-at-the-mall"), ("thinking-fast-and-slow", "loss-aversion")]),
+    ("别人都说好，我就该跟吗？",
+     [("lynch", "tenbagger-at-the-mall"), ("bai-gui", "take-what-others-drop")]),
 ]),
 ("怕错过", "钱的事", [
     ("这趟不上，是不是就没了？",
      [("soros", "reflexivity"), ("crowd", "assert-repeat-contaminate")]),
     ("这是真机会，还是击鼓传花？",
      [("technological-revolutions", "bubble-in-the-script"), ("marks", "second-level-thinking")]),
+    ("所有人都在冲，我怕自己踏空。",
+     [("soros", "reflexivity"), ("influence", "reciprocity")]),
 ]),
 ("让钱生钱", "钱的事", [
     ("钱放着不动，我心里发慌。",
      [("naval", "assets-while-you-sleep"), ("fan-li", "stock-the-opposite")]),
     ("我的收入完全绑在工时上。",
      [("naval", "productize-yourself"), ("wealth-of-nations", "pin-factory")]),
+    ("我只会攒钱，不会让钱干活。",
+     [("bai-gui", "four-qualifications"), ("inamori", "the-multiplier")]),
 ]),
 
 # ── 人 ──
@@ -160,6 +202,10 @@ SCENES = [
      [("guiguzi", "sound-out"), ("han-feizi", "form-and-name")]),
     ("这人有才，但我摸不透他。",
      [("bai-gui", "four-qualifications"), ("la-rochefoucauld", "vice-pays-tribute")]),
+    ("他说得漂亮，我还没见他做过。",
+     [("han-feizi", "form-and-name"), ("analects", "see-how")]),
+    ("简历很好看，可我还是拿不准。",
+     [("zeng-guofan", "recruit-and-test"), ("zizhi-tongjian", "talent-and-virtue")]),
 ]),
 ("要说服人", "跟人打交道", [
     ("我说了不算，得让他自己想到。",
@@ -170,6 +216,10 @@ SCENES = [
      [("mandela", "springbok-jersey"), ("analects", "harmony-not-sameness")]),
     ("我一个人去谈，能谈得下来吗？",
      [("guo-ziyi", "riding-out-alone"), ("wu-zetian", "the-manifesto")]),
+    ("我说的都对，可他就是不听。",
+     [("guiguzi", "listen-in-reverse"), ("analects", "know-what-you-know")]),
+    ("对面人多势众，我只有一张嘴。",
+     [("guo-ziyi", "riding-out-alone"), ("wu-zetian", "the-manifesto")]),
 ]),
 ("谈条件", "跟人打交道", [
     ("我说的话，他们好像不太当真。",
@@ -178,12 +228,18 @@ SCENES = [
      [("schelling", "focal-points"), ("guiguzi", "open-and-close")]),
     ("我该先让一步换个长远？",
      [("strategies-of-the-warring-states", "burning-the-debts"), ("taleb", "skin-in-the-game")]),
+    ("没法商量，我只能猜他会怎么走。",
+     [("schelling", "focal-points"), ("crowd", "assert-repeat-contaminate")]),
+    ("眼前这笔我亏了，值不值得。",
+     [("strategies-of-the-warring-states", "burning-the-debts"), ("guiguzi", "open-and-close")]),
 ]),
 ("被猜忌", "跟人打交道", [
     ("越解释越像心虚，说还是不说？",
      [("guo-ziyi", "open-gates"), ("wang-jian", "asking-for-fields")]),
     ("功劳太大，我反而开始不安。",
      [("fan-li", "leave-at-the-top"), ("han-xin", "neither-nor")]),
+    ("我越做越好，上面反而防着我。",
+     [("wang-jian", "asking-for-fields"), ("han-xin", "neither-nor")]),
 ]),
 
 # ── 团队 ──
@@ -196,6 +252,10 @@ SCENES = [
      [("records-of-the-grand-historian", "no-praise-no-hiding"), ("hu-xueyan", "the-silk-corner")]),
     ("同样的教训我怎么才记得住？",
      [("zizhi-tongjian", "what-to-keep"), ("franklin", "never-say-certainly")]),
+    ("换了一批人，同样的错还在犯。",
+     [("thinking-in-systems", "structure-drives-behavior"), ("han-feizi", "not-counting-on-goodness")]),
+    ("我布置下去的事，没人当回事。",
+     [("zhang-juzheng", "kaocheng"), ("mao", "methods-of-work")]),
 ]),
 ("下不了手", "带人", [
     ("该罚的是跟我最久的人。",
@@ -204,6 +264,8 @@ SCENES = [
      [("grove", "revolving-door"), ("huang", "strategic-retreat")]),
     ("要让人怕我，还是让人服我？",
      [("machiavelli", "feared-not-hated"), ("bismarck", "iron-and-blood")]),
+    ("该罚的是我最看重的那个人。",
+     [("zhuge-liang", "executing-ma-su"), ("shang-yang", "law-above-rank")]),
 ]),
 ("团队没劲", "带人", [
     ("我说了很多遍，团队还是没劲。",
@@ -222,6 +284,10 @@ SCENES = [
      [("liu-bang", "three-i-cannot"), ("simons", "simons-principles")]),
     ("想破格提一个人，又怕压不住。",
      [("wu-zetian", "promote-and-drop"), ("zhuge-liang", "close-the-worthy")]),
+    ("这人能力强，人品我看不透。",
+     [("cao-cao", "talent-only"), ("guiguzi", "sound-out")]),
+    ("我提的人不行，换还是再等等。",
+     [("wu-zetian", "promote-and-drop"), ("zhuge-liang", "close-the-worthy")]),
 ]),
 ("听不到实话", "带人", [
     ("汇报都很好，我却总觉得不对。",
@@ -230,6 +296,8 @@ SCENES = [
      [("mao", "methods-of-work"), ("li-shimin", "boat-and-water")]),
     ("我听到的答应，其实没当真。",
      [("chris-voss", "thats-right"), ("liu-bang", "changing-mid-sentence")]),
+    ("身边人说的都是我爱听的。",
+     [("strategies-of-the-warring-states", "three-mirrors"), ("li-shimin", "boat-and-water")]),
 ]),
 
 # ── 做事 ──
@@ -242,6 +310,10 @@ SCENES = [
      [("paul-graham", "default-alive"), ("zhang-yiming", "delayed-gratification")]),
     ("我现在这一步，往后看得清吗？",
      [("jobs", "connecting-the-dots"), ("einstein", "patent-office")]),
+    ("我连自己能撑多久都算不出来。",
+     [("paul-graham", "default-alive"), ("li-ka-shing", "ninety-percent-failure")]),
+    ("别人都在抢先，我要不要慢一步。",
+     [("zhu-yuanzhang", "delay-the-title"), ("duan-yongping", "dare-to-be-last")]),
 ]),
 ("推不动", "把事做成", [
     ("推了很久推不动，该换方向吗？",
@@ -252,6 +324,10 @@ SCENES = [
      [("old-regime", "most-dangerous-moment"), ("old-regime", "centralization-survived")]),
     ("我以为规划得够细了。",
      [("hayek", "fatal-conceit"), ("why-nations-fail", "fear-of-creative-destruction")]),
+    ("别人的成功打法，我照搬不动。",
+     [("huo-qubing", "no-old-manuals"), ("musashi", "no-favorite-weapon")]),
+    ("计划挺好，落到地上就走样。",
+     [("on-war", "friction"), ("zeng-guofan", "solid-camp-dull-fight")]),
 ]),
 ("扩不扩张", "把事做成", [
     ("什么该做什么不做，我拿不准。",
@@ -260,12 +336,16 @@ SCENES = [
      [("wang-jian", "sixty-thousand"), ("innovators-dilemma", "small-markets")]),
     ("摊子铺开，我拿什么养住？",
      [("cao-cao", "military-farming"), ("guo-jia", "leave-the-baggage")]),
+    ("这块太小了，值得我进吗？",
+     [("innovators-dilemma", "small-markets"), ("huang", "zero-billion-markets")]),
 ]),
 ("成本降不动", "把事做成", [
     ("该降的都降了，还能从哪下刀？",
      [("musk", "idiot-index"), ("musk", "first-principles")]),
     ("我降到多少，局面才会变？",
      [("matsushita", "tap-water"), ("wealth-of-nations", "pin-factory")]),
+    ("这个成本压不下去，我卡住了。",
+     [("musk", "first-principles"), ("xunzi", "borrow-from-things")]),
 ]),
 ("顺境里发慌", "把事做成", [
     ("日子正好，我该准备什么？",
@@ -276,6 +356,10 @@ SCENES = [
      [("hu-xueyan", "the-silk-corner"), ("old-regime", "most-dangerous-moment")]),
     ("行情好的时候我该干什么？",
      [("matsushita", "umbrella-in-rain"), ("tao-te-ching", "water")]),
+    ("现在一切都好，我反而睡不着。",
+     [("ren-zhengfei", "huaweis-winter"), ("bezos", "day-one")]),
+    ("赚钱太顺，我怕自己看不见风险。",
+     [("tao-te-ching", "reversal"), ("art-of-worldly-wisdom", "quit-while-winning")]),
 ]),
 
 # ── 自己 ──
@@ -298,6 +382,10 @@ SCENES = [
      [("wang-yangming", "polish-on-things"), ("huineng", "originally-not-a-thing")]),
     ("我怕自己越斗越像对手。",
      [("nietzsche", "gazing-into-abyss"), ("bismarck", "iron-and-blood")]),
+    ("外面太吵，我静不下来。",
+     [("matsushita", "umbrella-in-rain"), ("marcus-aurelius", "morning-preparation")]),
+    ("跟烂事纠缠久了，我也变得难看。",
+     [("zhuangzi", "ox-carving"), ("tao-te-ching", "water")]),
 ]),
 ("知道做不到", "自己的状态", [
     ("道理都懂，可我就是不动。",
@@ -308,6 +396,10 @@ SCENES = [
      [("ericsson", "deliberate-practice"), ("ericsson", "not-ten-thousand-hours")]),
     ("道理我都懂，就是做不到。",
      [("bj-fogg", "tiny-habits"), ("dweck", "praise-the-process")]),
+    ("书看了不少，用的时候想不起来。",
+     [("feynman", "teach-to-understand"), ("bruce-lee", "be-water")]),
+    ("道理我都懂，可我做不到。",
+     [("popper", "falsifiability"), ("dweck", "effect-size")]),
 ]),
 ("学不进去", "自己的状态", [
     ("看了很多，一到用就想不起来。",
@@ -344,6 +436,10 @@ SCENES = [
      [("li-bi", "no-office"), ("feng-dao", "only-you-can-save")]),
     ("机会挺好，就怕我接不住。",
      [("wang-jian", "sixty-thousand"), ("inamori", "pure-motive")]),
+    ("这个位置我接下来，可能是个坑。",
+     [("zhuge-liang", "longzhong-plan"), ("hayek", "knowledge-is-dispersed")]),
+    ("刚接手，我第一条规矩该立什么。",
+     [("liu-bang", "three-articles"), ("xunzi", "origin-of-rites")]),
 ]),
 ("该不该退", "进退取舍", [
     ("我该什么时候退，才不难看？",
@@ -352,6 +448,8 @@ SCENES = [
      [("lee-kuan-yew", "from-my-sickbed"), ("zhang-liang", "asking-for-less")]),
     ("我这一路的取舍，怎么交代？",
      [("feng-dao", "the-long-happy-old-man"), ("hayek", "fatal-conceit")]),
+    ("该收手了，可我停不下来。",
+     [("lee-kuan-yew", "from-my-sickbed"), ("feng-dao", "only-you-can-save")]),
 ]),
 ("要立规矩", "进退取舍", [
     ("新规矩定了，没人当回事。",
@@ -364,6 +462,8 @@ SCENES = [
      [("zhang-juzheng", "single-whip"), ("xunzi", "origin-of-rites")]),
     ("我为什么非得立规矩？",
      [("xunzi", "division-makes-groups"), ("guan-zhong", "granaries-first")]),
+    ("规矩太多太乱，我自己都记不住。",
+     [("zhang-juzheng", "single-whip"), ("xunzi", "division-makes-groups")]),
 ]),
 ("看不清大势", "进退取舍", [
     ("现在到底是开头还是快结束了？",
@@ -395,6 +495,10 @@ SCENES = [
      [("simons", "simons-principles"), ("wang-yangming", "innate-knowing")]),
     ("我查的资料全都在支持我。",
      [("popper", "seek-refutation"), ("feynman", "dont-fool-yourself")]),
+    ("我死活不肯承认这次买错了。",
+     [("soros", "knowing-when-wrong"), ("simons", "slave-to-the-model")]),
+    ("我这一眼看过去，就是觉得不对。",
+     [("thinking-fast-and-slow", "wysiati"), ("popper", "seek-refutation")]),
 ]),
 ("定不好价", "跟人打交道", [
     ("东西是好东西，可就是卖不动。",
@@ -409,12 +513,16 @@ SCENES = [
      [("gandhi", "means-are-seeds"), ("su-shi", "no-bad-people")]),
     ("对方来势很硬，我硬碰吗？",
      [("gandhi", "salt-march"), ("machiavelli", "feared-not-hated")]),
+    ("对方根本不跟我讲道理。",
+     [("gandhi", "salt-march"), ("crowd", "descent-in-crowds")]),
 ]),
 ("功劳被抢", "跟人打交道", [
     ("事是我做的，功是别人的。",
      [("art-of-worldly-wisdom", "do-and-be-seen"), ("xiang-yu", "brocade-at-night")]),
     ("这个功，我要不要去争？",
      [("zhang-liang", "asking-for-less"), ("guo-ziyi", "open-gates")]),
+    ("活是我干的，功劳记在别人头上。",
+     [("la-rochefoucauld", "memory-vs-judgment"), ("art-of-worldly-wisdom", "do-and-be-seen")]),
 ]),
 ("该不该妥协", "跟人打交道", [
     ("退这一步，是务实还是没底线？",
@@ -423,6 +531,8 @@ SCENES = [
      [("gandhi", "means-are-seeds"), ("machiavelli", "as-it-is")]),
     ("对方有诚意，我怎么判断？",
      [("taleb", "skin-in-the-game"), ("la-rochefoucauld", "vice-pays-tribute")]),
+    ("道理站在我这边，可事办不成。",
+     [("lee-kuan-yew", "does-it-work"), ("analects", "harmony-not-sameness")]),
 ]),
 ("推不动别人", "跟人打交道", [
     ("别的部门就是不配合我。",
@@ -431,6 +541,8 @@ SCENES = [
      [("li-bi", "no-office"), ("zhang-liang", "borrowing-chopsticks")]),
     ("我上面的人明摆着不想变。",
      [("why-nations-fail", "fear-of-creative-destruction"), ("sovereign-individual", "citizen-to-customer")]),
+    ("这摊子太烂，我该下重手吗？",
+     [("zhu-yuanzhang", "heavy-law"), ("guan-zhong", "follow-the-people")]),
 ]),
 ("合伙人闹掰", "跟人打交道", [
     ("分钱这事，我怕埋雷。",
@@ -465,6 +577,8 @@ SCENES = [
      [("gottman", "repair-attempts"), ("crucial-conversations", "safety-first")]),
     ("我们说的根本不是同一件事。",
      [("satir", "iceberg"), ("thomas-gordon", "i-message")]),
+    ("我们一吵就收不住。",
+     [("gottman", "four-horsemen"), ("gottman", "repair-attempts")]),
 ]),
 ("孩子不听", "家里的事", [
     ("说了很多遍，他还是不做。",
@@ -473,6 +587,8 @@ SCENES = [
      [("adler", "separation-of-tasks"), ("montessori", "help-me-do-it-myself")]),
     ("我说的每句他都顶回来。",
      [("thomas-gordon", "i-message"), ("thomas-gordon", "problem-ownership")]),
+    ("说了多少遍，他就是不做。",
+     [("montessori", "prepared-environment"), ("montessori", "help-me-do-it-myself")]),
 ]),
 ("孩子不说话", "家里的事", [
     ("他什么都不跟我讲了。",
@@ -481,6 +597,8 @@ SCENES = [
      [("carl-rogers", "reflective-listening"), ("nonviolent-communication", "observation-not-evaluation")]),
     ("他有事也不跟我讲了。",
      [("thomas-gordon", "problem-ownership"), ("satir", "iceberg")]),
+    ("我一开口，他就把门关上了。",
+     [("nonviolent-communication", "observation-not-evaluation"), ("carl-rogers", "reflective-listening")]),
 ]),
 ("被家人的情绪裹着", "家里的事", [
     ("家里一有事，我整个人就乱了。",
@@ -489,6 +607,8 @@ SCENES = [
      [("adler", "separation-of-tasks"), ("attachment-theory", "secure-base")]),
     ("家里一有事，我就没了自己。",
      [("bowen", "differentiation"), ("satir", "coping-stances")]),
+    ("一到家里，我就变成另一个人。",
+     [("satir", "coping-stances"), ("attachment-theory", "secure-base")]),
 ]),
 ("父母催得紧", "家里的事", [
     ("我每次回家都要吵一轮。",
@@ -497,6 +617,10 @@ SCENES = [
      [("chris-voss", "labeling"), ("crucial-conversations", "start-with-heart")]),
     ("他们的着急全压在我身上。",
      [("bowen", "triangles"), ("bowen", "differentiation")]),
+    ("又吵起来了，我已经忘了为什么。",
+     [("crucial-conversations", "start-with-heart"), ("chris-voss", "labeling")]),
+    ("两个人的事，总要拉进第三个人。",
+     [("bowen", "triangles"), ("adler", "teleology")]),
 ]),
 ("身边人不敢跟我说真话", "家里的事", [
     ("他们只报好消息给我。",
@@ -527,6 +651,8 @@ SCENES = [
      [("cal-newport", "schedule-the-depth"), ("seneca", "on-shortness-of-life")]),
     ("我一坐下就想干点别的。",
      [("csikszentmihalyi", "flow-channel"), ("bj-fogg", "anchor-and-celebrate")]),
+    ("太难我慌，太简单我又走神。",
+     [("csikszentmihalyi", "flow-channel"), ("csikszentmihalyi", "leisure-paradox")]),
 ]),
 ("想改个习惯", "身体与精力", [
     ("我下过很多次决心，每次都断。",
@@ -535,6 +661,8 @@ SCENES = [
      [("atomic-habits", "systems-over-goals"), ("franklin", "one-virtue-a-week")]),
     ("每次都靠咬牙，撑不了几天。",
      [("bj-fogg", "tiny-habits"), ("bj-fogg", "anchor-and-celebrate")]),
+    ("我一直在练，可就是没长进。",
+     [("ericsson", "not-ten-thousand-hours"), ("vygotsky", "zpd")]),
 ]),
 ("长期紧绷", "身体与精力", [
     ("我好像很久没真正松下来了。",
@@ -543,6 +671,8 @@ SCENES = [
      [("john-ratey", "exercise-for-the-brain"), ("epictetus", "dichotomy")]),
     ("我这根弦绷了太久了。",
      [("sapolsky", "stress-mismatch"), ("sapolsky", "predictability")]),
+    ("压力不算大，我却一直绷着。",
+     [("sapolsky", "predictability"), ("nietzsche", "gazing-into-abyss")]),
 ]),
 ("时间不够用", "身体与精力", [
     ("一天下来，没一件是我自己的事。",
@@ -558,6 +688,8 @@ SCENES = [
      [("huang", "strategic-retreat"), ("su-shi", "three-exiles")]),
     ("我接下来该干什么？",
      [("frankl", "the-last-freedom"), ("fan-li", "leave-at-the-top")]),
+    ("行业在变，我看不懂往哪去。",
+     [("sovereign-individual", "logic-of-violence"), ("guns-germs-steel", "axis-of-continents")]),
 ]),
 ("重要的人走了", "人生转弯", [
     ("我不知道日子怎么继续。",
@@ -570,12 +702,16 @@ SCENES = [
      [("su-shi", "three-exiles"), ("nietzsche", "what-does-not-kill")]),
     ("过去那些年是不是白费了？",
      [("dalio", "pain-plus-reflection"), ("frankl", "happiness-ensues")]),
+    ("退路已经没有了，只能往前。",
+     [("xiang-yu", "sinking-the-boats"), ("han-xin", "back-to-the-river")]),
 ]),
 ("扛不动了", "人生转弯", [
     ("我快撑不住了，但不能倒。",
      [("marcus-aurelius", "obstacle-is-the-way"), ("epictetus", "dichotomy")]),
     ("我撑下去，图的是什么？",
      [("frankl", "the-last-freedom"), ("nietzsche", "what-does-not-kill")]),
+    ("我兵力不如人，只能这么耗着。",
+     [("napoleon", "decisive-point"), ("mao", "on-protracted-war")]),
 ]),
 
 # ── 无能为力：现有全站语气都是「怎么解决」，接不住这类人 ──
@@ -586,6 +722,8 @@ SCENES = [
      [("marcus-aurelius", "obstacle-is-the-way"), ("mandela", "rivonia")]),
     ("规则别人定的，我怎么办？",
      [("sovereign-individual", "citizen-to-customer"), ("guns-germs-steel", "yalis-question")]),
+    ("这些规矩谁定的，我就得认吗？",
+     [("sapiens", "fictions-that-cooperate"), ("finite-and-infinite-games", "playing-with-boundaries")]),
 ]),
 ("已经改不了了", "使不上劲", [
     ("这事已经发生了，我改不了。",
@@ -594,12 +732,16 @@ SCENES = [
      [("huineng", "originally-not-a-thing"), ("zhuangzi", "equalizing-things")]),
     ("我们的差距是怎么拉开的？",
      [("guns-germs-steel", "yalis-question"), ("on-war", "continuation-of-politics")]),
+    ("换了新领导，还是老样子。",
+     [("old-regime", "centralization-survived"), ("why-nations-fail", "two-nogales")]),
 ]),
 ("努力也没用", "使不上劲", [
     ("该做的我都做了，还是没用。",
      [("xunzi", "constant-heaven"), ("machiavelli", "fortune-and-virtu")]),
     ("那还要不要接着做？",
      [("tao-te-ching", "wu-wei"), ("frankl", "happiness-ensues")]),
+    ("起点就不一样，我使劲有用吗？",
+     [("xunzi", "constant-heaven"), ("mandela", "rivonia")]),
 ]),
 
 # ── 说不出口的：搜索量大、私密、典籍最擅长 ──
@@ -614,12 +756,16 @@ SCENES = [
      [("wang-yangming", "bandits-in-the-heart"), ("zeng-guofan", "self-watch")]),
     ("道歉之后呢，就这样了吗？",
      [("gandhi", "means-are-seeds"), ("dalio", "pain-plus-reflection")]),
+    ("我想把它记下来，又怕难看。",
+     [("records-of-the-grand-historian", "no-praise-no-hiding"), ("zizhi-tongjian", "what-to-keep")]),
 ]),
 ("怕被看穿", "说不出口", [
     ("我怕别人发现我其实不行。",
      [("socrates", "knowing-not-knowing"), ("zeng-guofan", "self-watch")]),
     ("坐在这个位置上，我心里发虚。",
      [("liu-bang", "three-i-cannot"), ("wang-yangming", "polish-on-things")]),
+    ("我在做的事，经得起看吗？",
+     [("hu-xueyan", "no-cheating"), ("mencius", "flood-like-qi")]),
 ]),
 ("放不下一个人", "说不出口", [
     ("我到现在还恨那个人。",
@@ -642,12 +788,16 @@ SCENES = [
      [("wang-yangming", "innate-knowing"), ("tao-te-ching", "usefulness-of-emptiness")]),
     ("我只会问怎样算做得好。",
      [("excellent-sheep", "no-scoreboard"), ("excellent-sheep", "hurdles")]),
+    ("日子越过越好，我却越来越不快活。",
+     [("sapiens", "wheat-domesticated-us"), ("finite-and-infinite-games", "two-kinds")]),
 ]),
 ("要不要现在转向", "回头与往前", [
     ("我现在换轨道，太冒险吗？",
      [("fan-li", "leave-at-the-top"), ("tao-te-ching", "reversal")]),
     ("我怎么知道该坚持还是该改？",
      [("munger", "invert"), ("huang", "strategic-retreat")]),
+    ("该转了，可现在做得好好的。",
+     [("innovators-dilemma", "good-management-fails"), ("grove", "revolving-door")]),
 ]),
 
 ]
