@@ -101,16 +101,36 @@ function tidy(raw) {
   return raw;
 }
 
-/* 限流：KV 存 ip+日期 → 次数。
-   KV 是最终一致的，边缘节点之间可能短暂不同步，个位数的溢出是接受的——
-   这里要挡的是「有人把它当免费 API 刷」，不是精确计费。 */
+/* 限流：优先用 KV，没绑 KV 就退到 Cache API。
+ *
+ * Cache API 的好处是**零配置**——不用建命名空间、不用填 id，
+ * 在控制台粘完代码就能跑。代价是它按边缘节点各自计数：
+ * 同一个人换个城市（换到另一个 colo）可能多问几次。
+ * 这里要挡的是「有人写脚本把它当免费 API 刷」，不是精确计费，够用。
+ *
+ * 要更准就在控制台给这个 Worker 绑一个 KV、变量名填 HW_CHAT_KV，
+ * 下面的代码会自动优先走 KV，不用改一行。
+ */
 async function overQuota(env, ip) {
-  if (!env.HW_CHAT_KV) return false;                 // 没绑 KV 就不限（部署时必须绑）
   const day = new Date().toISOString().slice(0, 10);
-  const key = `q:${day}:${ip}`;
-  const n = parseInt((await env.HW_CHAT_KV.get(key)) || '0', 10);
+
+  if (env.HW_CHAT_KV) {                              // 绑了 KV：全局准确
+    const key = `q:${day}:${ip}`;
+    const n = parseInt((await env.HW_CHAT_KV.get(key)) || '0', 10);
+    if (n >= DAILY) return true;
+    await env.HW_CHAT_KV.put(key, String(n + 1), { expirationTtl: 172800 });
+    return false;
+  }
+
+  // 没绑 KV：用 Cache API，按边缘节点计数
+  const cache = caches.default;
+  const url = `https://hw-quota.invalid/${day}/${encodeURIComponent(ip)}`;
+  const hit = await cache.match(url);
+  const n = hit ? parseInt(await hit.text(), 10) || 0 : 0;
   if (n >= DAILY) return true;
-  await env.HW_CHAT_KV.put(key, String(n + 1), { expirationTtl: 172800 });
+  await cache.put(url, new Response(String(n + 1), {
+    headers: { 'Cache-Control': 'max-age=172800' },
+  }));
   return false;
 }
 
