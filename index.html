@@ -712,6 +712,10 @@ D.S.forEach(function(sc){
         }).join('')+'</span></div>');
   });
 });
+/* ── 埋点：只发聚合信息，不发用户输入的原文以外的任何东西 ── */
+function trk(name, params){
+  try{ if(window.gtag) gtag('event', name, params||{}); }catch(e){}
+}
 /* ── 标签页切换 ── */
 var TAB='新';
 var feed=document.getElementById('hwx-feed'), ncfeed=document.getElementById('hwx-ncfeed');
@@ -735,7 +739,9 @@ function switchTab(t){
   }
 }
 document.querySelectorAll('#hwx-tabs2 button').forEach(function(b){
-  b.onclick=function(){switchTab(b.getAttribute('data-t'))};
+  b.onclick=function(){var t=b.getAttribute('data-t');
+    trk('tab_switch',{tab:t==='新'?'latest':(t==='全'?'all':'situations')});
+    switchTab(t)};
 });
 function applyFeed(){
   if(!feed||!ct)return;
@@ -752,9 +758,22 @@ function applyFeed(){
 /* 搜索框接管 */
 var qin=document.getElementById('q');
 if(qin){qin.oninput=null;
+  /* 搜索落空记录：这是三个埋点里最值钱的一个——用户搜了什么、我们没有，
+     直接告诉我们该补什么内容，比坐着推理准得多。
+     只在停止输入 1.2 秒后发一次，避免把「睡」「睡不」「睡不着」都记下来。 */
+  var _mt=null, _lastMiss='';
   qin.addEventListener('input',function(){
     if(qin.value.trim()&&TAB!=='全'){switchTab('全');}   /* 搜索一律在「全部」里进行 */
     else{applyFeed();}
+    clearTimeout(_mt);
+    _mt=setTimeout(function(){
+      var v=qin.value.trim();
+      if(v.length<2||v===_lastMiss)return;
+      var n=parseInt((document.getElementById('hwx-ct').textContent||'0'),10)||0;
+      _lastMiss=v;
+      if(n===0) trk('search_miss',{term:v.slice(0,40)});
+      else trk('search_hit',{term:v.slice(0,40), results:n});
+    },1200);
   });}
 /* 初始化 */
 /* 一行入口：点它切到「处境」tab，不再就地展开 1049px 的标签目录 */
@@ -765,9 +784,38 @@ if(qin){qin.oninput=null;
   var c=document.getElementById('hwx-sccount');
   if(c)c.textContent=D.S.length+' 种处境 · '+n+' 个问题';
   line.onclick=function(){
+    trk('situation_entry_click',{});
     switchTab('境');
     document.getElementById('hwx-tabs2').scrollIntoView({behavior:'smooth',block:'start'});
   };
+})();
+/* 卡片点击：用委托，三个 feed 一处覆盖。只记卡片类型和去向，不记内容。 */
+['hwx-ncfeed','hwx-feed','hwx-scfeed'].forEach(function(id){
+  var el=document.getElementById(id); if(!el)return;
+  el.addEventListener('click',function(e){
+    var a=e.target.closest('a[href^="/i/"]'); if(!a)return;
+    var card=e.target.closest('.pc,.nc,.qc,.kc');
+    var kind=card?(card.classList.contains('kc')?'question':
+              card.classList.contains('qc')?'quote':
+              card.classList.contains('nc')?'chapter':'person'):'other';
+    trk('card_click',{card_type:kind, feed:id.replace('hwx-',''), dest:a.getAttribute('href')});
+  },true);
+});
+/* 处境层展开区的答案点击 */
+(function(){
+  var r=document.getElementById('hwx-res'); if(!r)return;
+  r.addEventListener('click',function(e){
+    var a=e.target.closest('a[href^="/i/"]'); if(!a)return;
+    trk('card_click',{card_type:'situation_answer', feed:'res', dest:a.getAttribute('href')});
+  },true);
+})();
+/* 今日一问的答案点击 */
+(function(){
+  var g=document.getElementById('hwx-ago'); if(!g)return;
+  g.addEventListener('click',function(e){
+    var a=e.target.closest('a[href^="/i/"]'); if(!a)return;
+    trk('card_click',{card_type:'daily_question', feed:'hero', dest:a.getAttribute('href')});
+  },true);
 })();
 switchTab('新');
 })();</script>
