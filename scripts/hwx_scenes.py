@@ -18,6 +18,8 @@ SCENES = [
      [("marcus-aurelius", "view-from-above"), ("su-shi", "no-wind-no-rain")]),
     ("话说出口才发现说错了。",
      [("liu-bang", "changing-mid-sentence"), ("zhang-yiming", "ordinary-mind")]),
+    ("我对自己说话，比对谁都狠。",
+     [("kristin-neff", "not-self-esteem"), ("kristin-neff", "three-parts")]),
 ]),
 ("做不完", "要做决定", [
     ("全都重要，我砍哪个都疼。",
@@ -190,6 +192,12 @@ SCENES = [
      [("naval", "productize-yourself"), ("wealth-of-nations", "pin-factory")]),
     ("我只会攒钱，不会让钱干活。",
      [("bai-gui", "four-qualifications"), ("inamori", "the-multiplier")]),
+]),
+("接不到活", "钱的事", [
+    ("这个月没有单子，我开始慌了。",
+     [("kevin-kelly", "thousand-true-fans"), ("paul-graham", "dont-scale")]),
+    ("客户说走就走，我留不住人。",
+     [("kevin-kelly", "direct-relationship"), ("influence", "reciprocity")]),
 ]),
 
 # ── 人 ──
@@ -374,6 +382,8 @@ SCENES = [
      [("records-of-the-grand-historian", "i-am-confused"), ("mencius", "flood-like-qi")]),
     ("我这段没人看见的日子有用吗？",
      [("einstein", "patent-office"), ("jobs", "connecting-the-dots")]),
+    ("撑不下去的时候，我对自己特别狠。",
+     [("kristin-neff", "not-self-esteem"), ("brene-brown", "guilt-not-shame")]),
 ]),
 ("想太多", "自己的状态", [
     ("这事在我脑子里转了二十遍。",
@@ -422,6 +432,8 @@ SCENES = [
      [("tao-te-ching", "usefulness-of-emptiness"), ("zhuangzi", "use-of-uselessness")]),
     ("同样的事，我总比别人费劲。",
      [("zhuangzi", "ox-carving"), ("tao-te-ching", "wu-wei")]),
+    ("一天没干成什么，我却累得说不出话。",
+     [("hochschild", "emotional-labor"), ("cal-newport", "attention-residue")]),
 ]),
 ("被比下去", "自己的状态", [
     ("他什么都比我快一步。",
@@ -432,6 +444,8 @@ SCENES = [
      [("dweck", "praise-the-process"), ("dweck", "effect-size")]),
     ("他们看起来都很稳，只有我在慌。",
      [("brene-brown", "secrecy-silence-judgment"), ("socrates", "knowing-not-knowing")]),
+    ("道理都懂，我就是对自己客气不起来。",
+     [("kristin-neff", "three-parts"), ("carl-rogers", "unconditional-regard")]),
 ]),
 
 # ── 位置 ──
@@ -509,6 +523,8 @@ SCENES = [
      [("wealth-of-nations", "not-benevolence"), ("drucker", "create-a-customer")]),
     ("我定多少钱，人才愿意掏？",
      [("matsushita", "tap-water"), ("musk", "idiot-index")]),
+    ("我不知道该收多少钱。",
+     [("kevin-kelly", "thousand-true-fans"), ("naval", "productize-yourself")]),
 ]),
 ("遇上不讲理", "跟人打交道", [
     ("我跟他讲道理，完全没用。",
@@ -571,6 +587,8 @@ SCENES = [
      [("boyd", "to-be-or-to-do"), ("zhang-yiming", "delayed-gratification")]),
     ("钱和成长，我该先要哪个？",
      [("naval", "productize-yourself"), ("buffett", "circle-of-competence")]),
+    ("平台给我流量，可人不是我的。",
+     [("kevin-kelly", "direct-relationship"), ("naval", "assets-while-you-sleep")]),
 ]),
 
 # ── 家庭与关系 ──
@@ -632,6 +650,12 @@ SCENES = [
     ("我上次的反应，是不是把人吓住了？",
      [("crucial-conversations", "safety-first"), ("cao-cao", "burning-the-letters")]),
 ]),
+("家里的活没人算", "家里的事", [
+    ("我做的这些，好像不算数。",
+     [("hochschild", "second-shift"), ("hochschild", "emotional-labor")]),
+    ("我在家全天连轴转，还被说没上班。",
+     [("hochschild", "second-shift"), ("satir", "coping-stances")]),
+]),
 
 # ── 身心与生活 ──
 ("睡不好", "身体与精力", [
@@ -683,6 +707,8 @@ SCENES = [
      [("seneca", "on-shortness-of-life"), ("cal-newport", "schedule-the-depth")]),
     ("我到底该砍掉哪一块？",
      [("franklin", "one-virtue-a-week"), ("atomic-habits", "systems-over-goals")]),
+    ("家里的活，我好像永远做不完。",
+     [("hochschild", "second-shift"), ("cal-newport", "schedule-the-depth")]),
 ]),
 
 

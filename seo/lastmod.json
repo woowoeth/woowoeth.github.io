@@ -1,7 +1,7 @@
 {
  "i/adler/": {
-  "d": "2026-08-31",
-  "h": "3af6559f34c12f70"
+  "d": "2026-09-01",
+  "h": "9c7e1aa2208d42b2"
  },
  "i/adler/separation-of-tasks/": {
   "d": "2026-08-30",
@@ -116,8 +116,8 @@
   "h": "3f6bb7269f2bc323"
  },
  "i/bowen/": {
-  "d": "2026-08-31",
-  "h": "d9e12763aa0199e7"
+  "d": "2026-09-01",
+  "h": "63c91373503d815d"
  },
  "i/bowen/differentiation/": {
   "d": "2026-08-31",
@@ -140,8 +140,8 @@
   "h": "ce120c3a58b576ee"
  },
  "i/brene-brown/": {
-  "d": "2026-08-31",
-  "h": "dedf90c865c2b17e"
+  "d": "2026-09-01",
+  "h": "651aee81c3ec5aed"
  },
  "i/brene-brown/guilt-not-shame/": {
   "d": "2026-08-31",
@@ -188,8 +188,8 @@
   "h": "21e8f888c5d49794"
  },
  "i/cal-newport/": {
-  "d": "2026-08-31",
-  "h": "1edf42cae2304df5"
+  "d": "2026-09-01",
+  "h": "27ab632fb948d68b"
  },
  "i/cal-newport/attention-residue/": {
   "d": "2026-08-30",
@@ -300,8 +300,8 @@
   "h": "38ca6f95c865ed75"
  },
  "i/duan-yongping/": {
-  "d": "2026-08-29",
-  "h": "9b665afa8f67d421"
+  "d": "2026-09-01",
+  "h": "22722a1d4d724bb1"
  },
  "i/duan-yongping/dare-to-be-last/": {
   "d": "2026-08-29",
@@ -312,8 +312,8 @@
   "h": "7ae0cde919ebcdbe"
  },
  "i/dweck/": {
-  "d": "2026-08-31",
-  "h": "2ffd943c4c53649a"
+  "d": "2026-09-01",
+  "h": "4202a83c01cbb7b6"
  },
  "i/dweck/effect-size/": {
   "d": "2026-08-31",
@@ -420,8 +420,8 @@
   "h": "61b68fde47c7899e"
  },
  "i/frankl/": {
-  "d": "2026-08-31",
-  "h": "8baa426482468582"
+  "d": "2026-09-01",
+  "h": "b7bfe920031f9120"
  },
  "i/frankl/happiness-ensues/": {
   "d": "2026-08-29",
@@ -603,6 +603,18 @@
   "d": "2026-08-29",
   "h": "14ef082902b888c0"
  },
+ "i/hochschild/": {
+  "d": "2026-09-01",
+  "h": "9948de4870ebb5a1"
+ },
+ "i/hochschild/emotional-labor/": {
+  "d": "2026-09-01",
+  "h": "da81e474867aa747"
+ },
+ "i/hochschild/second-shift/": {
+  "d": "2026-09-01",
+  "h": "04fda3dd10a9856f"
+ },
  "i/hu-xueyan/": {
   "d": "2026-08-31",
   "h": "37cbf5b54a3f9147"
@@ -616,8 +628,8 @@
   "h": "67ec58905655e056"
  },
  "i/huang/": {
-  "d": "2026-08-28",
-  "h": "403a0bf0ffc10680"
+  "d": "2026-09-01",
+  "h": "185dfde56d0ef551"
  },
  "i/huang/strategic-retreat/": {
   "d": "2026-08-29",
@@ -652,8 +664,8 @@
   "h": "b9fdbe89fd6921e4"
  },
  "i/inamori/": {
-  "d": "2026-08-28",
-  "h": "87a3d95a3593a3c8"
+  "d": "2026-09-01",
+  "h": "619899f11aaddefa"
  },
  "i/inamori/pure-motive/": {
   "d": "2026-08-29",
@@ -710,6 +722,30 @@
  "i/john-ratey/move-before-you-think/": {
   "d": "2026-08-30",
   "h": "63df988aba5c5336"
+ },
+ "i/kevin-kelly/": {
+  "d": "2026-09-01",
+  "h": "15e221e729b95e77"
+ },
+ "i/kevin-kelly/direct-relationship/": {
+  "d": "2026-09-01",
+  "h": "3f5cd84dfdceadec"
+ },
+ "i/kevin-kelly/thousand-true-fans/": {
+  "d": "2026-09-01",
+  "h": "022338654353723f"
+ },
+ "i/kristin-neff/": {
+  "d": "2026-09-01",
+  "h": "49267b5ccc57c70c"
+ },
+ "i/kristin-neff/not-self-esteem/": {
+  "d": "2026-09-01",
+  "h": "1a7b153a566264f2"
+ },
+ "i/kristin-neff/three-parts/": {
+  "d": "2026-09-01",
+  "h": "d4ae4e8e577a5191"
  },
  "i/la-rochefoucauld/": {
   "d": "2026-08-28",
@@ -984,8 +1020,8 @@
   "h": "8ec28e7fe06f53df"
  },
  "i/naval/": {
-  "d": "2026-08-28",
-  "h": "356a00bacd17af87"
+  "d": "2026-09-01",
+  "h": "58dada0751d5980c"
  },
  "i/naval/assets-while-you-sleep/": {
   "d": "2026-08-29",
@@ -1044,8 +1080,8 @@
   "h": "9f2defe6128ebb2b"
  },
  "i/paul-graham/": {
-  "d": "2026-08-28",
-  "h": "2c0b9b8ac6167ceb"
+  "d": "2026-09-01",
+  "h": "3d16d9fb4f2d4a44"
  },
  "i/paul-graham/default-alive/": {
   "d": "2026-08-29",
@@ -1116,8 +1152,8 @@
   "h": "3308ed8075fbd0bd"
  },
  "i/satir/": {
-  "d": "2026-08-31",
-  "h": "592737f975359408"
+  "d": "2026-09-01",
+  "h": "ee55d7167dd38308"
  },
  "i/satir/coping-stances/": {
   "d": "2026-08-31",
@@ -1328,8 +1364,8 @@
   "h": "1a942351e1fb1d44"
  },
  "i/thiel/": {
-  "d": "2026-08-28",
-  "h": "47c7b97d5f690f61"
+  "d": "2026-09-01",
+  "h": "aea62e01c37bd96b"
  },
  "i/thiel/competition-is-for-losers/": {
   "d": "2026-08-29",
@@ -1364,8 +1400,8 @@
   "h": "81ab8ab62c94c69a"
  },
  "i/thomas-gordon/": {
-  "d": "2026-08-31",
-  "h": "9047194c62080d85"
+  "d": "2026-09-01",
+  "h": "9f769adf472b7b7d"
  },
  "i/thomas-gordon/i-message/": {
   "d": "2026-08-31",
@@ -1500,8 +1536,8 @@
   "h": "0e60abbcf1f044ae"
  },
  "i/zeng-guofan/": {
-  "d": "2026-08-31",
-  "h": "ae94eabc1c65050b"
+  "d": "2026-09-01",
+  "h": "b86a9b0393606ea7"
  },
  "i/zeng-guofan/recruit-and-test/": {
   "d": "2026-08-28",
