@@ -16,6 +16,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          # 必须取全历史。NC（首页「最新」tab）按章节 .py 文件的首次 commit
+          # 时间排序，而 checkout 默认 fetch-depth:1 只有一个 commit——
+          # 于是每个文件拿到同一个时间戳，排序退化成文件名字母序，
+          # 「最新」实际展示的是「字母序前 40 篇」。2026-08-31 发现并修复。
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
