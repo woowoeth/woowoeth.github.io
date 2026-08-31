@@ -2,6 +2,7 @@
 """Child essays hanging off a person/book map page. Not part of D[]."""
 import json
 import os
+import re
 import sys
 from geo_kit import esc, SITE, sibling_links
 import hw_theme
@@ -169,6 +170,61 @@ def _sib(ch, idx):
     return prev_html, next_html
 
 
+def _faq_ld(ch, page_url):
+    """章节页的 FAQPage。
+
+    条目页早就有 FAQPage（geo_kit.faq_ld），章节页一直只有 Article + BreadcrumbList
+    ——而章节层恰恰是答案引擎最该引的一层：290 篇里每一篇都自带问答结构。
+    dek 的后半句就是这一篇要回答的问题，f[] 的每条分则是「小标题 + 解释」，
+    apply 是「局面 / 先问 / 用反了」。这里只是把已有结构吐成 schema，不造新内容。
+
+    上限沿用 geo_kit.faq_ld 的做法：每条答案截到 700 字、最多 12 条。
+    全文在页面上、也在 llms-full.txt 里，head 里堆更多没有额外收益。
+    """
+    qs = []
+    dek = _plain(ch.get("dek", ""))
+    m = re.search(r"\u8fd9\u4e00\u7bc7\u8981\u56de\u7b54\u7684\u662f[\uff1a:](.+)$", dek)
+    story = _plain(ch.get("story", ""))
+    def _as_q(t):
+        t = t.strip().rstrip("\u3002\uff0e.")
+        return t if t.endswith(("\uff1f", "?")) else t + "\uff1f"
+
+    if m and len(story) > 40:
+        qs.append((_as_q(m.group(1)), story))
+    for f in ch.get("f", []):
+        body = _plain(f.get("d", ""))
+        if f.get("eg"):
+            body += "\u3002\u4f8b\uff1a" + _plain(f["eg"])
+        if f.get("n") and len(body) > 40:
+            qs.append((_plain(f["n"]), body))
+    parts = {}
+    for line in _plain(ch.get("apply", "")).split("\n"):
+        for k in ("\u5c40\u9762", "\u5148\u95ee", "\u7528\u53cd\u4e86"):
+            if line.startswith(k + "\uff1a"):
+                parts[k] = line[len(k) + 1:].strip()
+    _seg = [x for x in (parts.get("\u5148\u95ee"), parts.get("\u7528\u53cd\u4e86")) if x]
+    tail = ""
+    for x in _seg:
+        if tail and not tail.endswith(("\u3002", "\uff1f", "\uff01", "?", "!")):
+            tail += "\u3002"
+        tail += x
+    if parts.get("\u5c40\u9762") and len(tail) > 40:
+        # 局面是陈述句（「一段关系让你持续难受……」），硬加问号读着别扭；
+        # dek 那一句本来就是问句，所以两者分开处理。
+        _sit = parts["\u5c40\u9762"].strip().rstrip("\u3002\uff0e.")
+        qs.append((_sit + "\uff0c\u600e\u4e48\u529e\uff1f", tail))
+    if len(qs) < 2:
+        return None
+    return {
+        "@context": "https://schema.org", "@type": "FAQPage",
+        "mainEntity": [
+            {"@type": "Question", "name": q[:180],
+             "acceptedAnswer": {"@type": "Answer", "text": a[:700]}}
+            for q, a in qs[:12]
+        ],
+    }
+
+
 def _chapter_page(ch, idx):
     parent = ch["parent"]
     parent_url = "%s/i/%s/" % (SITE, ch["parent_slug"])
@@ -326,6 +382,12 @@ def _chapter_page(ch, idx):
            esc(title), esc(dek), SITE,
            json.dumps(ld, ensure_ascii=False), json.dumps(crumbs, ensure_ascii=False))
     )
+    # 模板与参数元组是配对的，不能往里加 %s（见 README 三条硬规矩），
+    # 所以 FAQPage 在格式化之后追加。
+    faq = _faq_ld(ch, page_url)
+    if faq:
+        head += ('<script type="application/ld+json">%s</script>\n'
+                 % json.dumps(faq, ensure_ascii=False))
     return hw_theme._shell("zh-Hans", title, head, body)
 
 
