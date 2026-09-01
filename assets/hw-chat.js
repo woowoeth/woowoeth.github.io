@@ -54,6 +54,14 @@
     '#hwq-panel{position:fixed;inset:0;z-index:9999;display:flex;flex-direction:column;',
     'background:var(--paper,#f5f1e8)}',
     '#hwq-panel[hidden]{display:none}',
+    /* 背板。真机 iOS 上键盘弹起来时，面板底边和键盘之间会空出一截，
+       露出下面的页面正文——visualViewport 的几何在模拟环境里量着是对的，
+       真机上不对，而那层行为我这儿复现不出来。
+       与其继续猜几何，不如让露出来的地方没东西可漏：垫一层纸色背板，
+       高度给到 300vh，怎么歪都盖得住。它只是一块纯色，不花什么钱。 */
+    '#hwq-back{position:fixed;left:0;top:0;width:100%;height:300vh;z-index:9997;',
+    'background:var(--paper,#f5f1e8)}',
+    '#hwq-back[hidden]{display:none}',
     '.hwq-col{width:100%;max-width:680px;margin:0 auto;padding:0 20px;box-sizing:border-box}',
 
     '#hwq-head{flex:0 0 auto;border-bottom:1px solid var(--line,#d8d2c6)}',
@@ -116,7 +124,12 @@
     '<textarea id="hwq-in" rows="1" placeholder="说说看……"></textarea>' +
     '<button id="hwq-send" type="button">发送</button></div></div>';
 
+  var back = document.createElement('div');
+  back.id = 'hwq-back'; back.hidden = true;
+  back.setAttribute('aria-hidden', 'true');
+
   document.body.appendChild(ball);
+  document.body.appendChild(back);
   document.body.appendChild(panel);
 
   var log = panel.querySelector('#hwq-logc');       /* 消息进限宽的列里 */
@@ -348,7 +361,7 @@
 
   var prevOverflow = '';
   ball.onclick = function () {
-    ball.hidden = true; panel.hidden = false;
+    ball.hidden = true; back.hidden = false; panel.hidden = false;
     prevOverflow = document.documentElement.style.overflow;
     document.documentElement.style.overflow = 'hidden';  /* 全屏时别让底下的页面跟着滚 */
     startFit();
@@ -358,7 +371,7 @@
   };
   function close() {
     input.blur();                 /* 不 blur 的话 iOS 键盘会赖着不走 */
-    panel.hidden = true; ball.hidden = false;
+    panel.hidden = true; back.hidden = true; ball.hidden = false;
     stopFit(); unfitPanel();
     document.documentElement.style.overflow = prevOverflow;
   }
