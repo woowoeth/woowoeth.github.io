@@ -667,6 +667,8 @@ SCENES = [
      [("excellent-sheep", "hurdles"), ("excellent-sheep", "no-scoreboard")]),
     ("我非得离开这日子才能修行？",
      [("huineng", "in-the-world"), ("feng-dao", "the-long-happy-old-man")]),
+    ("每天做的事跟我在意的相反。",
+     [("maslach", "six-mismatches"), ("frankl", "happiness-ensues")]),
 ]),
 ("要不要跳槽", "跟人打交道", [
     ("还待得下去吗，我不确定。",
@@ -703,6 +705,8 @@ SCENES = [
      [("harvard-study", "social-fitness"), ("granovetter", "no-strong-tie-is-a-bridge")]),
     ("想认识新的人，我不知道从哪起。",
      [("granovetter", "weak-ties"), ("harvard-study", "social-fitness")]),
+    ("一到人多的场合我就发紧。",
+     [("cacioppo", "hypervigilance"), ("satir", "coping-stances")]),
 ]),
 
 # ── 家庭与关系 ──
@@ -806,6 +810,18 @@ SCENES = [
     ("还要不要继续，我拿不定。",
      [("han-xin", "neither-nor"), ("li-ka-shing", "knowing-when-to-stop")]),
 ]),
+("在一起久了没感觉", "家里的事", [
+    ("在一起很多年，没感觉了。",
+     [("perel", "security-and-desire"), ("perel", "not-a-problem-to-solve")]),
+    ("不吵也不亲，我不知道算什么。",
+     [("perel", "not-a-problem-to-solve"), ("gottman", "four-horsemen")]),
+    ("天天在一起，却越来越远。",
+     [("perel", "quality-not-frequency"), ("harvard-study", "someone-to-count-on")]),
+    ("异地两年，我们越来越没话说。",
+     [("perel", "quality-not-frequency"), ("perel", "security-and-desire")]),
+    ("要不要分，我一直定不下来。",
+     [("perel", "not-a-problem-to-solve"), ("li-ka-shing", "knowing-when-to-stop")]),
+]),
 
 # ── 身心与生活 ──
 ("睡不好", "身体与精力", [
@@ -873,6 +889,20 @@ SCENES = [
      [("rat-park", "vietnam-veterans"), ("montessori", "prepared-environment")]),
     ("换了环境，我还是老样子。",
      [("rat-park", "vietnam-veterans"), ("rat-park", "change-the-cage")]),
+]),
+("干不动了", "身体与精力", [
+    ("我不是累，是整个人空了。",
+     [("maslach", "three-signs"), ("frankl", "happiness-ensues")]),
+    ("我每天醒来都不想起床。",
+     [("maslach", "three-signs"), ("john-ratey", "move-before-you-think")]),
+    ("做完什么都没有满足感了。",
+     [("maslach", "three-signs"), ("csikszentmihalyi", "flow-channel")]),
+    ("身体越来越差，我却停不下来。",
+     [("maslach", "fix-the-job"), ("lee-kuan-yew", "from-my-sickbed")]),
+    ("休个假回来，还是那张表。",
+     [("maslach", "fix-the-job"), ("maslach", "six-mismatches")]),
+    ("事不多，可每件都要请示。",
+     [("maslach", "six-mismatches"), ("sapolsky", "predictability")]),
 ]),
 ("时间不够用", "身体与精力", [
     ("一天下来，没一件是我自己的事。",
@@ -967,6 +997,8 @@ SCENES = [
      [("marcus-aurelius", "view-from-above"), ("kristin-neff", "three-parts")]),
     ("我怕时间久了就把他忘了。",
      [("frankl", "the-last-freedom"), ("seneca", "on-shortness-of-life")]),
+    ("养了十几年的狗没了。",
+     [("konnikova", "transition-is-the-window"), ("kleinman", "caring-when-curing-fails")]),
 ]),
 ("要重新开始", "人生转弯", [
     ("我这个年纪从头来，太晚了吗？",
@@ -995,6 +1027,8 @@ SCENES = [
      [("granovetter", "no-strong-tie-is-a-bridge"), ("sovereign-individual", "logic-of-violence")]),
     ("换了城市，熟人一个都没了。",
      [("harvard-study", "social-fitness"), ("granovetter", "weak-ties")]),
+    ("我想换个国家生活。",
+     [("granovetter", "weak-ties"), ("harvard-study", "social-fitness")]),
 ]),
 ("人到中年", "人生转弯", [
     ("四十了，我忽然觉得来不及。",

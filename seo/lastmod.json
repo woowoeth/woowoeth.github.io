@@ -177,7 +177,7 @@
  },
  "i/cacioppo/": {
   "d": "2026-09-01",
-  "h": "9831d8831e67daf7"
+  "h": "41213e090afb8706"
  },
  "i/cacioppo/hypervigilance/": {
   "d": "2026-09-01",
@@ -205,7 +205,7 @@
  },
  "i/cal-newport/": {
   "d": "2026-09-01",
-  "h": "37f3f6877667557b"
+  "h": "e4dd478b2869800a"
  },
  "i/cal-newport/attention-residue/": {
   "d": "2026-08-30",
@@ -280,8 +280,8 @@
   "h": "713e2c8cb6514b35"
  },
  "i/csikszentmihalyi/": {
-  "d": "2026-08-31",
-  "h": "9ee81cd8661deb95"
+  "d": "2026-09-01",
+  "h": "beaefd6ad6f9922d"
  },
  "i/csikszentmihalyi/flow-channel/": {
   "d": "2026-08-31",
@@ -472,8 +472,8 @@
   "h": "95491153093b94e7"
  },
  "i/gottman/": {
-  "d": "2026-08-31",
-  "h": "1aa279a9eba296a8"
+  "d": "2026-09-01",
+  "h": "4ee5912df88bdf55"
  },
  "i/gottman/four-horsemen/": {
   "d": "2026-08-30",
@@ -621,7 +621,7 @@
  },
  "i/harvard-study/": {
   "d": "2026-09-01",
-  "h": "bb0309b21f8a4e01"
+  "h": "414a4ee7b809c382"
  },
  "i/harvard-study/relationships-predict-health/": {
   "d": "2026-09-01",
@@ -649,7 +649,7 @@
  },
  "i/hochschild/": {
   "d": "2026-09-01",
-  "h": "1cccf6c1bff01454"
+  "h": "0322635c38ef603d"
  },
  "i/hochschild/emotional-labor/": {
   "d": "2026-09-01",
@@ -709,7 +709,7 @@
  },
  "i/inamori/": {
   "d": "2026-09-01",
-  "h": "619899f11aaddefa"
+  "h": "37171101b33c6e0f"
  },
  "i/inamori/pure-motive/": {
   "d": "2026-08-29",
@@ -1019,6 +1019,22 @@
   "d": "2026-08-29",
   "h": "2528d19628f3c192"
  },
+ "i/maslach/": {
+  "d": "2026-09-01",
+  "h": "9449fd0a61d5c8dc"
+ },
+ "i/maslach/fix-the-job/": {
+  "d": "2026-09-01",
+  "h": "005010a0d1772797"
+ },
+ "i/maslach/six-mismatches/": {
+  "d": "2026-09-01",
+  "h": "9963cacc2f08fa46"
+ },
+ "i/maslach/three-signs/": {
+  "d": "2026-09-01",
+  "h": "11b2f81055469a45"
+ },
  "i/matsushita/": {
   "d": "2026-08-28",
   "h": "f6ea0674ff5027b4"
@@ -1195,6 +1211,22 @@
   "d": "2026-08-29",
   "h": "640beb3ff1a8d695"
  },
+ "i/perel/": {
+  "d": "2026-09-01",
+  "h": "3f7b24716e2a26d7"
+ },
+ "i/perel/not-a-problem-to-solve/": {
+  "d": "2026-09-01",
+  "h": "eae931019ff0994c"
+ },
+ "i/perel/quality-not-frequency/": {
+  "d": "2026-09-01",
+  "h": "3826793d7aaae1a0"
+ },
+ "i/perel/security-and-desire/": {
+  "d": "2026-09-01",
+  "h": "5e955dd8792d60ad"
+ },
  "i/popper/": {
   "d": "2026-08-30",
   "h": "4700bf5da2a14147"
@@ -1261,7 +1293,7 @@
  },
  "i/sapolsky/": {
   "d": "2026-09-01",
-  "h": "5c61dad2df75f3c0"
+  "h": "99419f81fb4edd35"
  },
  "i/sapolsky/predictability/": {
   "d": "2026-08-31",
@@ -1273,7 +1305,7 @@
  },
  "i/satir/": {
   "d": "2026-09-01",
-  "h": "ee55d7167dd38308"
+  "h": "ffefe3d5426c7b18"
  },
  "i/satir/coping-stances/": {
   "d": "2026-08-31",

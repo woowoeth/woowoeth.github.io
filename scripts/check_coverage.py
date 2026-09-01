@@ -55,6 +55,18 @@ for _, _g, group in SCENES:
 all_ch = {(hw_slugs.slug_for(c["parent"]), c["k"]) for c in C.CHAPTERS}
 problems = []
 
+# ⓪ 引用必须指向真实存在的章节。
+# hwx_scenes.py 的文件头一直写着「所有 (slug, k) 引用在构建时逐条校验，
+# 写错一个就构建失败」——2026-09-01 实测那句话是假的：手写了一个不存在的
+# ("li-kuan-yew-PLACEHOLDER","x")，七道门禁一道都没拦住。
+# 坏引用不会让构建报错，只会让那条问题在页面上和检索里静悄悄地少一个答案，
+# 属于最难发现的一类，所以放在最前面查。
+for scene, _g, group in SCENES:
+    for q, refs in group:
+        for r in refs:
+            if tuple(r) not in all_ch:
+                problems.append("引用指向不存在的章节: [%s] %s → %s" % (scene, q, tuple(r)))
+
 # ① 每个条目至少一篇章节可达
 by_entry = defaultdict(list)
 for c in C.CHAPTERS:
