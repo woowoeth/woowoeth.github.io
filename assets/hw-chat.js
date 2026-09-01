@@ -62,6 +62,8 @@
     '#hwq-back{position:fixed;left:0;top:0;width:100%;height:300vh;z-index:9997;',
     'background:var(--paper,#f5f1e8)}',
     '#hwq-back[hidden]{display:none}',
+    '#hwq-dbg{position:fixed;left:0;top:0;z-index:10000;background:rgba(0,0,0,.82);color:#0f0;',
+    'font:11px/1.45 ui-monospace,Menlo,monospace;padding:6px 8px;white-space:pre;pointer-events:none}',
     '.hwq-col{width:100%;max-width:680px;margin:0 auto;padding:0 20px;box-sizing:border-box}',
 
     '#hwq-head{flex:0 0 auto;border-bottom:1px solid var(--line,#d8d2c6)}',
@@ -318,11 +320,45 @@
      于是面板底边留在键盘后面，Safari 又把输入框顶上来，中间那条就露出了页面本体。
      visualViewport 是唯一拿得到「键盘之上那块可见区域」的接口，实时贴上去。
      没有这个接口的浏览器退回 CSS 的 inset:0，跟改之前一样。 */
+  /* iOS 上键盘不改变布局视口，于是 position:fixed 的面板底边留在键盘后面。
+     interactive-widget=resizes-content 让布局视口自己缩，inset:0 就天然贴合，
+     不用我去算几何——算几何这条路已经错了两版。
+     只在面板开着时改，关掉就还原：它会影响页面上任何输入框获得焦点时的行为，
+     不该为了一个悬浮球改掉整站的默认。 */
+  var META = document.querySelector('meta[name="viewport"]');
+  var METAORIG = META ? META.getAttribute('content') : null;
+  function widenViewport() {
+    if (META && METAORIG && METAORIG.indexOf('interactive-widget') < 0) {
+      META.setAttribute('content', METAORIG + ',interactive-widget=resizes-content');
+    }
+  }
+  function restoreViewport() {
+    if (META && METAORIG != null) META.setAttribute('content', METAORIG);
+  }
+
+  /* 只有带 ?hwqdebug=1 才出现。真机上的 iOS 几何我在这儿复现不出来，
+     与其再猜一版，不如让一张截图把数字全给出来。 */
+  var DEBUG = /[?&]hwqdebug=1/.test(location.search), dbg = null;
+  function paintDbg() {
+    if (!DEBUG) return;
+    if (!dbg) { dbg = document.createElement('div'); dbg.id = 'hwq-dbg'; document.body.appendChild(dbg); }
+    var pr = panel.getBoundingClientRect(), br = back.getBoundingClientRect();
+    dbg.textContent =
+      'inner ' + innerWidth + '\u00d7' + innerHeight +
+      '  client ' + document.documentElement.clientHeight +
+      '\nvv ' + (vv ? Math.round(vv.width) + '\u00d7' + Math.round(vv.height) +
+        ' oT' + Math.round(vv.offsetTop) + ' pT' + Math.round(vv.pageTop) : 'none') +
+      '  scrollY ' + Math.round(scrollY) +
+      '\npanel t' + Math.round(pr.top) + ' h' + Math.round(pr.height) + ' b' + Math.round(pr.bottom) +
+      '\nback  t' + Math.round(br.top) + ' h' + Math.round(br.height) + ' b' + Math.round(br.bottom) +
+      '\nmeta ' + (META ? (META.getAttribute('content') || '').slice(-34) : 'none');
+  }
+
   var vv = window.visualViewport, lastFit = '';
   function fitPanel() {
     if (!vv || panel.hidden) return;
     var key = vv.offsetTop + '|' + vv.offsetLeft + '|' + vv.width + '|' + vv.height;
-    if (key === lastFit) return;          /* 没变就不写样式，免得每次轮询都触发重排 */
+    if (key === lastFit) { paintDbg(); return; }   /* 没变就不写样式，免得每次轮询都触发重排 */
     lastFit = key;
     var st2 = panel.style;
     st2.top = vv.offsetTop + 'px';
@@ -330,6 +366,7 @@
     st2.width = vv.width + 'px';
     st2.height = vv.height + 'px';
     st2.right = 'auto'; st2.bottom = 'auto';
+    paintDbg();
   }
   function unfitPanel() {
     lastFit = '';
@@ -361,6 +398,7 @@
 
   var prevOverflow = '';
   ball.onclick = function () {
+    widenViewport();
     ball.hidden = true; back.hidden = false; panel.hidden = false;
     prevOverflow = document.documentElement.style.overflow;
     document.documentElement.style.overflow = 'hidden';  /* 全屏时别让底下的页面跟着滚 */
@@ -372,6 +410,8 @@
   function close() {
     input.blur();                 /* 不 blur 的话 iOS 键盘会赖着不走 */
     panel.hidden = true; back.hidden = true; ball.hidden = false;
+    restoreViewport();
+    if (dbg) { dbg.parentNode.removeChild(dbg); dbg = null; }
     stopFit(); unfitPanel();
     document.documentElement.style.overflow = prevOverflow;
   }
