@@ -4,7 +4,7 @@
  * 没道理比正文小）、朱红是全站唯一强调色、无阴影、层次靠底色与 1px 细线、
  * 标题宋体正文黑体、触控目标 ≥32px、深色模式三套变量都要顾到。
  *
- * 检索不走 llms-full.txt（1.4MB）。索引里有 290 篇章节和 341 条处境问题；
+ * 检索不走 llms-full.txt（1.4MB）。索引里有 308 篇章节和 428 条处境问题；
  * 那些问题本来就是第一人称口语，跟用户描述处境的说法同源，是最好的匹配信号。
  * 索引 249KB(gzip)，所以点开才加载，不进首屏。
  *
@@ -84,6 +84,11 @@
     'font-family:inherit;font-size:15.5px;padding:11px 18px;cursor:pointer;min-height:36px}',
     '#hwq-send:disabled{opacity:.45;cursor:default}',
 
+    /* 开场白。原先没有，是想错了：标题「你遇到什么事了？」只说了怎么问，
+       没说能问什么——新来的人分不清这是站内搜索、客服，还是通用聊天。 */
+    '#hwq-intro{align-self:stretch;padding-top:4px}',
+    '#hwq-intro p{margin:0;font-size:15px;line-height:1.8;color:var(--muted,#8a8377);text-align:left}',
+
     ':root[data-theme="dark"] .hwq-ai{background:#1d1913}',
     ':root[data-theme="dark"] .hwq-me{background:#201c15}',
     '@media(max-width:480px){.hwq-col{padding:0 16px}#hwq-ball{right:14px;bottom:14px}}'
@@ -108,7 +113,7 @@
     '<span id="hwq-left"></span><button id="hwq-close" type="button" aria-label="关闭">×</button></div></div>' +
     '<div id="hwq-log"><div class="hwq-col" id="hwq-logc"></div></div>' +
     '<div id="hwq-foot"><div class="hwq-col">' +
-    '<textarea id="hwq-in" rows="1" placeholder="说说你现在的处境……"></textarea>' +
+    '<textarea id="hwq-in" rows="1" placeholder="说说看……"></textarea>' +
     '<button id="hwq-send" type="button">发送</button></div></div>';
 
   document.body.appendChild(ball);
@@ -133,11 +138,25 @@
     d.className = 'hwq-hint'; d.textContent = text;
     log.appendChild(d); scroller.scrollTop = scroller.scrollHeight;
   }
+  function showIntro() {
+    if (log.children.length) return;
+    var box = document.createElement('div');
+    box.id = 'hwq-intro';
+    var p = document.createElement('p');
+    p.textContent = '工作、家里、钱、身体，或者说不出口的那些，都可以说。说得越具体，越容易找到真的对得上的人。';
+    box.appendChild(p);
+    log.appendChild(box);
+  }
+  function dropIntro() {
+    var i = log.querySelector('#hwq-intro');
+    if (i) i.parentNode.removeChild(i);
+  }
+
   function refreshLeft() {
     var n = left();
     leftEl.textContent = '今天还能问 ' + n + ' 次';
     send.disabled = n <= 0;
-    input.placeholder = n > 0 ? '说说你现在的处境……' : '今天的 5 次已经用完了，明天再来';
+    input.placeholder = n > 0 ? '说说看……' : '今天的 5 次用完了，明天再来';
   }
 
   /* 把模型写的 [0] 换成行内出处链接。
@@ -235,9 +254,10 @@
   function ask() {
     var q = input.value.trim();
     if (!q || busy) return;
-    if (left() <= 0) { hint('今天的 5 次已经用完了，明天再来。'); return; }
+    if (left() <= 0) { hint('今天的 5 次用完了，明天再来。'); return; }
     busy = true; send.disabled = true;
     input.value = ''; input.style.height = 'auto';
+    dropIntro();
     say('me', q);
     var thinking = say('ai', '在翻书……');
 
@@ -247,7 +267,7 @@
       // 每次多约 1500 字，答案只引用它 USED 里点名的那几篇。
       var hits = retrieve(q, 8);
       if (!hits.length) {
-        thinking.textContent = '这个处境站里还没有对得上的内容。换个说法试试，或者直接搜一下。';
+        thinking.textContent = '这件事站里还没有对得上的内容。换个说法试试，或者直接搜一下。';
         busy = false; refreshLeft(); return;
       }
       return fetch(ENDPOINT, {
@@ -255,29 +275,91 @@
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ q: q, ctx: hits })
       }).then(function (r) {
-        if (!r.ok) throw new Error('HTTP ' + r.status);
-        return r.json();
-      }).then(function (j) {
-        renderAnswer(thinking, j.answer || '（没有返回内容）', hits);
-        useOne(); refreshLeft();
+        // 先无条件取 body：429 的正文里有服务端写好的那句话，比「HTTP 429」有用。
+        return r.json().catch(function () { return null; })
+          .then(function (j) { return { ok: r.ok, status: r.status, body: j }; });
+      }).then(function (res) {
+        if (res.ok && res.body && res.body.answer) {
+          renderAnswer(thinking, res.body.answer, hits);
+          useOne(); refreshLeft();
+          return;
+        }
+        if (res.status === 429) {
+          // 服务端说没额度了就以它为准——前端这份计数只是提示，
+          // 换设备、清缓存都会让它和服务端对不上，这里校准回去。
+          thinking.textContent = (res.body && res.body.error) || '今天的次数用完了，明天再来。';
+          try { localStorage.setItem(LS_KEY, JSON.stringify({ d: today(), n: DAILY_LIMIT })); } catch (e) {}
+          refreshLeft();
+          return;
+        }
+        throw new Error('HTTP ' + res.status);
       }).catch(function (e) {
-        thinking.textContent = '没连上问答服务（' + e.message + '）。本地 demo 需要先跑 scripts/chat_dev_proxy.py。';
+        // 真实用户不该看到 chat_dev_proxy.py 这种字样；细节留给控制台。
+        if (window.console) console.error('[hw-chat]', e);
+        thinking.textContent = '没连上，等一下再试一次。';
       }).then(function () { busy = false; });
     });
   }
+
+  /* iOS 上 position:fixed;inset:0 贴的是布局视口，而键盘弹起来不改变布局视口——
+     于是面板底边留在键盘后面，Safari 又把输入框顶上来，中间那条就露出了页面本体。
+     visualViewport 是唯一拿得到「键盘之上那块可见区域」的接口，实时贴上去。
+     没有这个接口的浏览器退回 CSS 的 inset:0，跟改之前一样。 */
+  var vv = window.visualViewport, lastFit = '';
+  function fitPanel() {
+    if (!vv || panel.hidden) return;
+    var key = vv.offsetTop + '|' + vv.offsetLeft + '|' + vv.width + '|' + vv.height;
+    if (key === lastFit) return;          /* 没变就不写样式，免得每次轮询都触发重排 */
+    lastFit = key;
+    var st2 = panel.style;
+    st2.top = vv.offsetTop + 'px';
+    st2.left = vv.offsetLeft + 'px';
+    st2.width = vv.width + 'px';
+    st2.height = vv.height + 'px';
+    st2.right = 'auto'; st2.bottom = 'auto';
+  }
+  function unfitPanel() {
+    lastFit = '';
+    var st2 = panel.style;
+    st2.top = st2.left = st2.width = st2.height = st2.right = st2.bottom = '';
+  }
+  /* 键盘弹出时 iOS 会发 visualViewport.resize，但只挂这一个事件源不够稳
+     （实测在模拟环境里就没发）。再挂 window 的两个，并在 focus/blur 之后补两刀——
+     键盘有约 300ms 动画，动画结束前量到的高度是中间值。 */
+  function scheduleFit() { fitPanel(); setTimeout(fitPanel, 120); setTimeout(fitPanel, 380); }
+  if (vv) {
+    vv.addEventListener('resize', fitPanel);
+    vv.addEventListener('scroll', fitPanel);
+  }
+  window.addEventListener('resize', scheduleFit);
+  window.addEventListener('orientationchange', scheduleFit);
+
+  /* 事件之外再加一层轮询，只在面板开着的时候跑。
+     理由不是理论上不够，是这条路根本验不了：模拟环境改视口时一个事件都不发，
+     而这正是要修的那个 bug。轮询不依赖任何事件派发，量到变化才写样式，
+     没变化时几乎不花钱。关掉面板就停。 */
+  var fitTimer = null;
+  function startFit() { fitPanel(); if (!fitTimer) fitTimer = setInterval(fitPanel, 150); }
+  function stopFit() { if (fitTimer) { clearInterval(fitTimer); fitTimer = null; } }
+
+  /* 手机上不自动聚焦：一开面板就弹键盘，正好把要给人看的开场白盖掉。
+     桌面没这个问题，光标直接就位反而省一次点击。 */
+  var COARSE = !!(window.matchMedia && window.matchMedia('(pointer:coarse)').matches);
 
   var prevOverflow = '';
   ball.onclick = function () {
     ball.hidden = true; panel.hidden = false;
     prevOverflow = document.documentElement.style.overflow;
     document.documentElement.style.overflow = 'hidden';  /* 全屏时别让底下的页面跟着滚 */
-    // 开场不放引导语：标题已经在问「你遇到什么事了？」，
-    // 输入框有 placeholder，额度在右上角——再写一行是把三件事各说第二遍。
+    startFit();
+    showIntro();
     refreshLeft();
-    setTimeout(function () { input.focus(); }, 50);
+    if (!COARSE) setTimeout(function () { input.focus(); }, 50);
   };
   function close() {
+    input.blur();                 /* 不 blur 的话 iOS 键盘会赖着不走 */
     panel.hidden = true; ball.hidden = false;
+    stopFit(); unfitPanel();
     document.documentElement.style.overflow = prevOverflow;
   }
   panel.querySelector('#hwq-close').onclick = close;
@@ -288,6 +370,11 @@
   input.addEventListener('keydown', function (e) {
     if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); ask(); }
   });
+  input.addEventListener('focus', function () {
+    scheduleFit();
+    setTimeout(function () { scroller.scrollTop = scroller.scrollHeight; }, 300);
+  });
+  input.addEventListener('blur', scheduleFit);
   input.addEventListener('input', function () {
     input.style.height = 'auto';
     input.style.height = Math.min(input.scrollHeight, 88) + 'px';
