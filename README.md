@@ -94,12 +94,15 @@
 
 ## 补内容的规程
 
-**加条目时，这四样必须同时补齐**，缺一构建就失败：
+**加条目时，这五样必须同时补齐**，缺一构建就失败：
 
 1. `index.html` 的 `D[]` —— 条目本体（`l`/`contrast` 只能指向已存在的条目）
 2. `seo/chapters/<slug>.py` —— 至少一篇章节
-3. `scripts/hwx_scenes.py` —— **给新章节挂上问题**，并入现有处境或新开一个
-4. `scripts/force_chapter_ui.py` 的 `HWX_INTROS` —— 首页卡片的手写介绍
+3. `seo/hw_slugs.py` 的 `SLUGS` —— **中文名到 slug 的映射**。章节文件里的
+   `PARENT["slug"]` 不作数：`check_coverage` 走的是 `hw_slugs.slug_for(名字)`，
+   漏了这一条会报「条目进不了处境层」，而错误信息指向的是处境层，很容易误诊
+4. `scripts/hwx_scenes.py` —— **给新章节挂上问题**，并入现有处境或新开一个
+5. `scripts/force_chapter_ui.py` 的 `HWX_INTROS` —— 首页卡片的手写介绍
 
 外加手动跑一次 `scripts/gen_og.py` 生成分享图（它不在 CI 链里）。
 macOS 上没有 Noto Serif CJK，脚本会自动退到 Songti SC Bold 并**只补缺失的图**，

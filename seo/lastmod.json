@@ -1,7 +1,7 @@
 {
  "i/adler/": {
   "d": "2026-09-01",
-  "h": "9c7e1aa2208d42b2"
+  "h": "8650cb160f03c90a"
  },
  "i/adler/separation-of-tasks/": {
   "d": "2026-08-30",
@@ -56,8 +56,8 @@
   "h": "3f4d8cc58975b562"
  },
  "i/attachment-theory/": {
-  "d": "2026-08-31",
-  "h": "90de32f28ed6608a"
+  "d": "2026-09-01",
+  "h": "5c81edaa3827daa1"
  },
  "i/attachment-theory/secure-base/": {
   "d": "2026-08-30",
@@ -141,7 +141,7 @@
  },
  "i/brene-brown/": {
   "d": "2026-09-01",
-  "h": "651aee81c3ec5aed"
+  "h": "1533105439b41d2c"
  },
  "i/brene-brown/guilt-not-shame/": {
   "d": "2026-08-31",
@@ -174,6 +174,22 @@
  "i/buffett/swimming-naked/": {
   "d": "2026-08-29",
   "h": "d5f16962d46ce231"
+ },
+ "i/cacioppo/": {
+  "d": "2026-09-01",
+  "h": "6ff5aa69a1ad67e8"
+ },
+ "i/cacioppo/hypervigilance/": {
+  "d": "2026-09-01",
+  "h": "9ec0bcdd3f9c9e6f"
+ },
+ "i/cacioppo/loneliness-is-a-signal/": {
+  "d": "2026-09-01",
+  "h": "cf2bc9aa2d269ee5"
+ },
+ "i/cacioppo/not-more-socializing/": {
+  "d": "2026-09-01",
+  "h": "84eb62d73a437a94"
  },
  "i/caesar/": {
   "d": "2026-08-31",
@@ -360,8 +376,8 @@
   "h": "b5e67dcb0ae8e915"
  },
  "i/excellent-sheep/": {
-  "d": "2026-08-31",
-  "h": "80d9c785ccfe1cae"
+  "d": "2026-09-01",
+  "h": "7037defe1f995924"
  },
  "i/excellent-sheep/hurdles/": {
   "d": "2026-08-31",
@@ -421,7 +437,7 @@
  },
  "i/frankl/": {
   "d": "2026-09-01",
-  "h": "b7bfe920031f9120"
+  "h": "95e0791b6421619b"
  },
  "i/frankl/happiness-ensues/": {
   "d": "2026-08-29",
@@ -481,7 +497,7 @@
  },
  "i/granovetter/": {
   "d": "2026-09-01",
-  "h": "47a0ed5507183321"
+  "h": "ea0c3cc15c8dd007"
  },
  "i/granovetter/no-strong-tie-is-a-bridge/": {
   "d": "2026-09-01",
@@ -603,6 +619,22 @@
   "d": "2026-08-28",
   "h": "23d3522667261e36"
  },
+ "i/harvard-study/": {
+  "d": "2026-09-01",
+  "h": "bb0309b21f8a4e01"
+ },
+ "i/harvard-study/relationships-predict-health/": {
+  "d": "2026-09-01",
+  "h": "9b3a463728309285"
+ },
+ "i/harvard-study/social-fitness/": {
+  "d": "2026-09-01",
+  "h": "7e7d4e27b60e47ff"
+ },
+ "i/harvard-study/someone-to-count-on/": {
+  "d": "2026-09-01",
+  "h": "00926df806736afc"
+ },
  "i/hayek/": {
   "d": "2026-08-31",
   "h": "024c5416e21dbd9d"
@@ -617,7 +649,7 @@
  },
  "i/hochschild/": {
   "d": "2026-09-01",
-  "h": "9948de4870ebb5a1"
+  "h": "80b365010346b6ae"
  },
  "i/hochschild/emotional-labor/": {
   "d": "2026-09-01",
@@ -761,7 +793,7 @@
  },
  "i/kristin-neff/": {
   "d": "2026-09-01",
-  "h": "49267b5ccc57c70c"
+  "h": "76663a6ca767a6cb"
  },
  "i/kristin-neff/not-self-esteem/": {
   "d": "2026-09-01",
@@ -1164,8 +1196,8 @@
   "h": "b6ba2b089e742cd2"
  },
  "i/sapolsky/": {
-  "d": "2026-08-31",
-  "h": "5bde173c6e967d53"
+  "d": "2026-09-01",
+  "h": "841667f4f92e476f"
  },
  "i/sapolsky/predictability/": {
   "d": "2026-08-31",

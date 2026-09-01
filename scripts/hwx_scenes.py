@@ -402,6 +402,8 @@ SCENES = [
      [("einstein", "patent-office"), ("jobs", "connecting-the-dots")]),
     ("撑不下去的时候，我对自己特别狠。",
      [("kristin-neff", "not-self-esteem"), ("brene-brown", "guilt-not-shame")]),
+    ("我谁也不想见，可又难受。",
+     [("cacioppo", "loneliness-is-a-signal"), ("kristin-neff", "three-parts")]),
 ]),
 ("想太多", "自己的状态", [
     ("这事在我脑子里转了二十遍。",
@@ -452,6 +454,8 @@ SCENES = [
      [("zhuangzi", "ox-carving"), ("tao-te-ching", "wu-wei")]),
     ("一天没干成什么，我却累得说不出话。",
      [("hochschild", "emotional-labor"), ("cal-newport", "attention-residue")]),
+    ("拼了这几年，朋友一个个断了。",
+     [("harvard-study", "relationships-predict-health"), ("harvard-study", "social-fitness")]),
 ]),
 ("被比下去", "自己的状态", [
     ("他什么都比我快一步。",
@@ -632,6 +636,24 @@ SCENES = [
     ("我心软，一次次给他机会。",
      [("adler", "separation-of-tasks"), ("han-feizi", "two-handles")]),
 ]),
+("一个能约的人都没有", "跟人打交道", [
+    ("来了三年，我一个能约的人都没有。",
+     [("cacioppo", "loneliness-is-a-signal"), ("harvard-study", "social-fitness")]),
+    ("人不少，可没一个说得上话的。",
+     [("cacioppo", "loneliness-is-a-signal"), ("harvard-study", "someone-to-count-on")]),
+    ("我总觉得别人在躲我。",
+     [("cacioppo", "hypervigilance"), ("brene-brown", "secrecy-silence-judgment")]),
+    ("活动我去了不少，回来还是一个人。",
+     [("cacioppo", "not-more-socializing"), ("harvard-study", "social-fitness")]),
+    ("想约人，可话到嘴边发不出去。",
+     [("cacioppo", "not-more-socializing"), ("cacioppo", "hypervigilance")]),
+    ("半夜出事，我不知道能打给谁。",
+     [("harvard-study", "someone-to-count-on"), ("granovetter", "weak-ties")]),
+    ("朋友都成家了，我们聊不到一起。",
+     [("harvard-study", "social-fitness"), ("granovetter", "no-strong-tie-is-a-bridge")]),
+    ("想认识新的人，我不知道从哪起。",
+     [("granovetter", "weak-ties"), ("harvard-study", "social-fitness")]),
+]),
 
 # ── 家庭与关系 ──
 ("跟伴侣吵", "家里的事", [
@@ -743,6 +765,8 @@ SCENES = [
      [("seneca", "on-shortness-of-life"), ("john-ratey", "move-before-you-think")]),
     ("我最好的状态去哪了？",
      [("csikszentmihalyi", "leisure-paradox"), ("sapolsky", "stress-mismatch")]),
+    ("我拿身体换事业，值不值。",
+     [("harvard-study", "relationships-predict-health"), ("li-ka-shing", "knowing-when-to-stop")]),
 ]),
 ("坐不住", "身体与精力", [
     ("我一会儿就想去看手机。",
@@ -883,6 +907,8 @@ SCENES = [
      [("granovetter", "weak-ties"), ("granovetter", "no-strong-tie-is-a-bridge")]),
     ("圈子就这么大，我听不到新消息。",
      [("granovetter", "no-strong-tie-is-a-bridge"), ("sovereign-individual", "logic-of-violence")]),
+    ("换了城市，熟人一个都没了。",
+     [("harvard-study", "social-fitness"), ("granovetter", "weak-ties")]),
 ]),
 
 # ── 无能为力：现有全站语气都是「怎么解决」，接不住这类人 ──

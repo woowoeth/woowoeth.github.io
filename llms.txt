@@ -1,11 +1,11 @@
 # Human World (人类世界生存法则)
 
-> 131 people and books on how the world actually works, across 2,600 years
+> 133 people and books on how the world actually works, across 2,600 years
 > 遇到事了，看看以前的人怎么处理
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 131 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 133 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
-一个关于「世界到底怎么运转」的知识库：战略、财富、权力、人性、创业，取自 131 位人物与典籍，跨越 2600 年。每一条都写清楚这个人真正留下的那一个想法、背后的故事、拆开的分则与例子，以及今天怎么用。
+一个关于「世界到底怎么运转」的知识库：战略、财富、权力、人性、创业，取自 133 位人物与典籍，跨越 2600 年。每一条都写清楚这个人真正留下的那一个想法、背后的故事、拆开的分则与例子，以及今天怎么用。
 
 ## Read it
 
@@ -18,17 +18,17 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 
 ## Topics
 
-- [现代](https://ourword.ai/t/modern/) — 45
-- [工业时代](https://ourword.ai/t/industrial-age/) — 39
+- [现代](https://ourword.ai/t/modern/) — 46
+- [工业时代](https://ourword.ai/t/industrial-age/) — 40
 - [先秦与古典时代](https://ourword.ai/t/classical-era/) — 19
 - [权力与组织](https://ourword.ai/t/power/) — 19
 - [创业与产品](https://ourword.ai/t/startups/) — 17
 - [谋略与竞争](https://ourword.ai/t/strategy/) — 16
 - [财富与风险](https://ourword.ai/t/wealth/) — 16
-- [心智与情绪](https://ourword.ai/t/mind/) — 13
+- [心智与情绪](https://ourword.ai/t/mind/) — 14
 - [识人与相处](https://ourword.ai/t/people/) — 13
+- [家庭与关系](https://ourword.ai/t/family/) — 11
 - [世界如何运转](https://ourword.ai/t/world/) — 11
-- [家庭与关系](https://ourword.ai/t/family/) — 10
 - [秦汉至魏晋](https://ourword.ai/t/han-wei/) — 10
 - [学习与成长](https://ourword.ai/t/learning/) — 10
 - [近世](https://ourword.ai/t/early-modern/) — 9
@@ -74,6 +74,9 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [李小龙 · 一万次同一脚](https://ourword.ai/i/bruce-lee/one-kick/): 李小龙 · 一万次同一脚——重复的方向。一个以速度和多变闻名的人，留下的却是一句关于重复的话。这一篇要回答的是：这两件事为什么不矛盾。
 - [巴菲特 · 能力圈](https://ourword.ai/i/buffett/circle-of-competence/): 巴菲特 · 能力圈——重要的是边界。这条原则常被念成「做熟悉的事」。这一篇要回答的是：他真正强调的是后半句。
 - [巴菲特 · 退潮才知道谁在裸泳](https://ourword.ai/i/buffett/swimming-naked/): 巴菲特 · 退潮才知道谁在裸泳——风险的滞后显形。涨潮的时候，所有泳姿都好看。这一篇要回答的是：为什么风险只在事后可见，以及怎么在事前看它。
+- [约翰·卡乔波 · 孤独是饿的一种](https://ourword.ai/i/cacioppo/loneliness-is-a-signal/): 约翰·卡乔波 · 孤独是饿的一种——信号，不是性格。孤独到底是什么东西。这一篇要回答的是：卡乔波为什么把它和饥饿放进同一类。
+- [约翰·卡乔波 · 孤独会让你看错人脸](https://ourword.ai/i/cacioppo/hypervigilance/): 约翰·卡乔波 · 孤独会让你看错人脸——越警觉越孤独。孤独为什么会自己把自己养大。这一篇要回答的是：卡乔波找到的那个循环怎么转。
+- [约翰·卡乔波 · 多社交治不好孤独](https://ourword.ai/i/cacioppo/not-more-socializing/): 约翰·卡乔波 · 多社交治不好孤独——元分析里排第一的不是它。对付孤独最常见的那条建议，效果最差。这一篇要回答的是：数据里排第一的是哪一种。
 - [凯撒 · 骰子已被掷下](https://ourword.ai/i/caesar/the-rubicon/): 凯撒 · 骰子已被掷下——不可逆的那一步。带兵过那条小河就是内战。这一篇要回答的是：他在河边停下来的那段时间在算什么。
 - [凯撒 · 宽赦作为武器](https://ourword.ai/i/caesar/clementia/): 凯撒 · 宽赦作为武器——用仁慈取胜的新打法。内战里他不杀俘虏、不没收财产。这一篇要回答的是：他自己在信里把动机写得很清楚。
 - [卡尔·纽波特 · 注意力残留](https://ourword.ai/i/cal-newport/attention-residue/): 卡尔·纽波特 · 注意力残留——代价不在那几分钟。「就看一眼」到底花了多少。这一篇要回答的是：账该怎么算。
@@ -147,6 +150,9 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [韩非子 · 形名参同](https://ourword.ai/i/han-feizi/form-and-name/): 韩非子 · 形名参同——说了什么，做到什么。考核最难的不是定标准，是标准和事实对不上时怎么办。这一篇要回答的是：一套两千年前就写清楚的对账法。
 - [韩信 · 背水一战](https://ourword.ai/i/han-xin/back-to-the-river/): 韩信 · 背水一战——把退路先拿掉。背水列阵是兵家大忌，他却赢了。这一篇要回答的是：那两个被后人忽略的前置条件。
 - [韩信 · 不反也不退](https://ourword.ai/i/han-xin/neither-nor/): 韩信 · 不反也不退——最危险的是中间状态。他手上有过三分天下的机会，也有过全身而退的机会。这一篇要回答的是：为什么两个都没选反而最致命。
+- [哈佛成人发展研究 · 五十岁的关系，预测八十岁的身体](https://ourword.ai/i/harvard-study/relationships-predict-health/): 哈佛成人发展研究 · 五十岁的关系，预测八十岁的身体——比胆固醇更准。决定晚年健康的到底是什么。这一篇要回答的是：八十多年的追踪数据把哪一项排在第一。
+- [哈佛成人发展研究 · 关系要像身体一样练](https://ourword.ai/i/harvard-study/social-fitness/): 哈佛成人发展研究 · 关系要像身体一样练——不练就会退。都知道身体不练会退，关系也是。这一篇要回答的是：瓦尔丁格说的社交健身，具体练什么。
+- [哈佛成人发展研究 · 半夜两点能打给谁](https://ourword.ai/i/harvard-study/someone-to-count-on/): 哈佛成人发展研究 · 半夜两点能打给谁——数量不算，托底的算。衡量一个人的关系状况，最短的问法是哪一句。这一篇要回答的是：它为什么骗不了人。
 - [哈耶克 · 知识是分散的](https://ourword.ai/i/hayek/knowledge-is-dispersed/): 哈耶克 · 知识是分散的——没人拿得到全图。一篇十几页的论文，后来被评为百年最重要的经济学文章之一。这一篇要回答的是：它到底推翻了什么假设。
 - [哈耶克 · 致命的自负](https://ourword.ai/i/hayek/fatal-conceit/): 哈耶克 · 致命的自负——经济学的奇特任务。他给自己学科定的任务不是预测，是泼冷水。这一篇要回答的是：为什么越聪明的人越需要这盆水。
 - [阿莉·霍克希尔德 · 第二班](https://ourword.ai/i/hochschild/second-shift/): 阿莉·霍克希尔德 · 第二班——下班之后还有一班。家务和照料从来不进工时表。这一篇要回答的是：不记账会记到谁身上。
@@ -347,7 +353,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [AI Bubble Monitor / AI 泡沫检测仪](https://ourword.ai/ai/)
 - [Zouni / 走你](https://ourword.ai/zouni/)
 
-## Index (131 entrys)
+## Index (133 entrys)
 
 - [BJ·福格](https://ourword.ai/i/bj-fogg/): BJ·福格（2019年·斯坦福行为设计实验室）——小到不会失败。斯坦福行为设计实验室创始人，研究行为如何被设计出来。他给出一个公式：行为发生需要动机、能力、提示三者同时到位。多数人失败在只调动机——靠决心和自我激励——而动机天然起伏，靠它维持的习惯必然崩。他的主张相反：把行为缩到小得不需要动机，然后挂在一个已有的动作后面。
 - [主权个人](https://ourword.ai/i/sovereign-individual/): 主权个人（1997年·戴维森&莫格）——数字主权。1997年出版，比特币诞生早了11年。两位作者用「暴力经济学」解释了人类社会的全部历史：谁控制暴力，谁就控制财富。他们预言了加密货币、远程工作、数字游民、国家权力衰退。
@@ -376,6 +382,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [史记](https://ourword.ai/i/records-of-the-grand-historian/): 史记（西汉·前104-前91）——究。司马迁因李陵事件受宫刑，在极度屈辱中完成了这部书。130篇，52万字，记录了从黄帝到汉武帝约3000年的历史——但他写的不是帝王的丰功伟绩，而是人。他是中国历史上第一个为商人立传（货殖列传）、为游侠立传、为刺客立传的史学家。在一个「皇帝写历史」的时代，他坚持让事实和判断都进入记录
 - [司马懿](https://ourword.ai/i/sima-yi/): 司马懿（三国·179-251）——忍。熬过曹操、曹丕、曹叡、曹芳四代，在70岁时发动高平陵之变，一夜夺取曹魏实际控制权。他用一生证明：在长期博弈里，活得最久的那个人赢。
 - [吉姆·西蒙斯](https://ourword.ai/i/simons/): 吉姆·西蒙斯（美国·1938-2024）——概率优势。数学家出身——23岁拿到博士，在MIT和哈佛教书，为国防部破译过冷战密码，与陈省身合作提出「陈-西蒙斯理论」，这是他在数学史上的位置，和投资毫无关系。他48岁才全职做投资，创立文艺复兴科技。旗舰的大奖章基金1988年至今费前年化约66%，在收取5%管理费和44%业绩提成之后仍有约
+- [哈佛成人发展研究](https://ourword.ai/i/harvard-study/): 哈佛成人发展研究（1938年至今·哈佛医学院）——关系的质量决定晚年。人类史上最长的一项成年人追踪研究。1938年从268名哈佛大二学生开始，后来并入波士顿贫民区的456个男孩，两组人每两年问一次近况、每五年做一次体检，很多人被跟了一辈子，如今已经跟到他们的子女。第四任主任罗伯特·瓦尔丁格把八十多年的数据压成一句话：让人晚年健康又快活的，既不是财富
 - [哈耶克](https://ourword.ai/i/hayek/): 哈耶克（奥—英·1899—1992）——分散知识。把「计划为什么会系统性算错」写成经济学的人。不是因为计划者懒，是因为做计划所需的知识，散落在成千上万个当事人头里。价格是这些知识的传输协议。他和凯恩斯辩了一辈子，胜的不是口才，是这一条知识论。
 - [商鞅](https://ourword.ai/i/shang-yang/): 商鞅（战国·前390-前338）——立信。秦国变法的设计者与执行者，中国历史上最彻底的制度改革家。他用两次变法把一个积贫积弱的边陲小国，改造成了横扫六合的战争机器。他的代价：车裂而死。但他定下的规矩，在他死后一百年仍然运行，最终帮助秦国统一了天下。「人死制度存」——这是改革者里最好的结局，也是最悲壮的结局。
 - [国家为什么会失败](https://ourword.ai/i/why-nations-fail/): 国家为什么会失败（美国·2012年）——制度决定论。达龙·阿西莫格鲁与詹姆斯·罗宾逊2012年出版。核心论点极其简洁：国家的贫富不取决于地理、气候、文化，也不取决于领导人聪不聪明，只取决于制度是「包容性」还是「攫取性」。2024年，两位作者与西蒙·约翰逊因这一系列关于制度与繁荣的研究，获得诺贝尔经济学奖。这本书最大的价值不在结论，
@@ -444,6 +451,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [系统之美](https://ourword.ai/i/thinking-in-systems/): 系统之美（美国·2008）——杠杆点。一本讲「为什么好人用好意做出坏结果」的书。作者德内拉·梅多斯是系统动力学创始人福瑞斯特的学生、《增长的极限》主创、《第五项修炼》作者彼得·圣吉的老师。手稿写于1993年，她2001年病逝，同事整理后于2008年出版。她的核心主张是：系统的行为由结构决定，不由参与者的意图决定——换
 - [索罗斯](https://ourword.ai/i/soros/): 索罗斯（当代·1930-）——反身性。量子基金创始人，做空英镑让英格兰银行屈服，一天赚10亿美元，被称为「打垮英格兰银行的人」。但他最重要的贡献不是赚了多少钱，而是他提出了「反身性理论」——彻底颠覆了「市场总是理性的」这个主流假设。他认为：市场参与者的预期本身会影响市场走势，而市场走势又反过来影响参与者的预期——这个
 - [约翰·博伊德](https://ourword.ai/i/boyd/): 约翰·博伊德（美国·1927-1997）——节奏优势。美国空军上校，外号「四十秒博伊德」——他曾公开下战书：任何飞行员，我从劣势位置起飞，四十秒之内咬到你尾后，做不到赔你40美元。据说无人赢过。他一生没当上将军，没出版过一本书（全部思想留在一份叫《制胜与失败》的讲稿里），却重塑了美国战斗机的设计标准（F-15、F-16、A-10都受
+- [约翰·卡乔波](https://ourword.ai/i/cacioppo/): 约翰·卡乔波（1951-2018·芝加哥大学）——孤独是信号不是缺陷。社会神经科学的创立者之一，一辈子研究一件事：孤独在身体和大脑里到底是什么。他做的第一件事是把定义拧紧——孤独不是身边没人，是你想要的联结和实际有的之间那道差，所以热闹的房间里也可以很孤独。定义一改，孤独就从性格问题变成了信号，和饥饿、口渴、疼痛归进同一类：都在提醒你去补一样对生存
 - [约翰·戈特曼](https://ourword.ai/i/gottman/): 约翰·戈特曼（1994年·华盛顿大学）——四种致命信号。心理学家，在实验室里录下几千对夫妻的对话，逐帧标记表情、语气、心率，然后追踪他们几年后是否离婚。他的结论不靠理论：只看一段十五分钟的争吵，他判断这对夫妻会不会分开，准确率超过九成。真正预测破裂的不是吵得凶不凶，是吵的时候有没有出现四种特定的信号。（注意：那个「九成」是模型在自己拟
 - [约翰·瑞迪](https://ourword.ai/i/john-ratey/): 约翰·瑞迪（2008年·哈佛医学院）——先动再想。哈佛医学院精神科教授。他把运动重新定义了一遍：运动的首要收益不是身材，是大脑。运动会促使大脑分泌一类支持神经元生长与连接的蛋白，他称之为「大脑的肥料」，直接影响学习效率、情绪调节和抗压能力。他的主张是，把运动当成健身房里的事，等于把最便宜的认知与情绪药物放着不用。
 - [纳瓦尔](https://ourword.ai/i/naval/): 纳瓦尔（当代·1974-）——杠杆。AngelList联合创始人，早期投资了Twitter、Uber、Notion等公司。2018年他在Twitter上发了一个推文串「如何在不出卖灵魂的情况下致富」，在全球传播超过数百万次。他不是财务顾问，是一个在数字时代找到了「个人主权」路径的思考者。
