@@ -923,6 +923,8 @@ SCENES = [
      [("frankl", "happiness-ensues"), ("sapolsky", "predictability")]),
     ("睡前那会儿，白天的事全回来了。",
      [("marcus-aurelius", "morning-preparation"), ("cal-newport", "attention-residue")]),
+    ("长期失眠，什么办法都试过了。",
+     [("john-ratey", "move-before-you-think"), ("sapolsky", "predictability")]),
 ]),
 ("精力跟不上", "身体与精力", [
     ("一到下午我就废了。",
@@ -1231,6 +1233,8 @@ SCENES = [
      [("brene-brown", "guilt-not-shame"), ("zeng-guofan", "self-watch")]),
     ("我一直在解释，越解释越糟。",
      [("su-shi", "no-more-writing"), ("brene-brown", "guilt-not-shame")]),
+    ("我做了对不起人的事，一直没说。",
+     [("brene-brown", "secrecy-silence-judgment"), ("brene-brown", "guilt-not-shame")]),
 ]),
 ("怕被看穿", "说不出口", [
     ("我怕别人发现我其实不行。",

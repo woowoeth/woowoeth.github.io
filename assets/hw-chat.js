@@ -290,20 +290,46 @@
     if (s.length === 1) g[s] = 1;
     return g;
   }
-  function overlap(a, b) {
-    var n = 0;
-    for (var k in a) if (b[k]) n++;
-    return n;
+  /* 二元组按稀有度加权，不再一视同仁。
+     原来每个二元组算一分，于是「我做了对不起人的事，一直没说」会被
+     「一直、做了、我做、直没」勾到蒲松龄《考了四十年》上，而真正带信息的
+     「对不」（全库只出现 1 次）和它同权。稀有的词才是查询的意思所在。 */
+  var IDF = null;
+  function buildIdf() {
+    if (IDF) return;
+    var dfc = {}, ag = [], sg = [], n = INDEX.alias.length;
+    INDEX.alias.forEach(function (row) {
+      var g = grams(row[0]);
+      ag.push(g); sg.push(grams(row[1]));
+      for (var k in g) dfc[k] = (dfc[k] || 0) + 1;
+    });
+    var cg = INDEX.chapters.map(function (c) {
+      return [grams(c.n + c.w), grams(c.dek)];
+    });
+    IDF = { df: dfc, n: n, dflt: Math.log(n + 1), ag: ag, sg: sg, cg: cg };
+  }
+  function wgt(g) {
+    var c = IDF.df[g];
+    return c ? Math.log((IDF.n + 1) / (1 + c)) : IDF.dflt;
+  }
+  function overlap(a, b) {           /* 加权重合度 */
+    var s = 0;
+    for (var k in a) if (b[k]) s += wgt(k);
+    return s;
   }
   function retrieve(q, k) {
+    buildIdf();
     var qa = grams(q), score = {};
-    INDEX.alias.forEach(function (row) {
-      var s = overlap(qa, grams(row[0])) * 3 + overlap(qa, grams(row[1])) * 2;
-      if (s > 0) row[2].forEach(function (i) { score[i] = (score[i] || 0) + s; });
+    /* 取最大而不是累加：同一个处境下问句越多，累加就越容易把它顶上来——
+       那是「这个处境写得全」，不是「这一条更对得上」。只认最贴的那一条。 */
+    function bump(i, s) { if (s > (score[i] || 0)) score[i] = s; }
+    INDEX.alias.forEach(function (row, j) {
+      var s = overlap(qa, IDF.ag[j]) * 3 + overlap(qa, IDF.sg[j]) * 2;
+      if (s > 0) row[2].forEach(function (i) { bump(i, s); });
     });
     INDEX.chapters.forEach(function (c, i) {
-      var s = overlap(qa, grams(c.n + c.w)) * 2 + overlap(qa, grams(c.dek));
-      if (s > 0) score[i] = (score[i] || 0) + s;
+      var s = overlap(qa, IDF.cg[i][0]) * 2 + overlap(qa, IDF.cg[i][1]);
+      if (s > 0) bump(i, s);
     });
     return Object.keys(score)
       .sort(function (a, b) { return score[b] - score[a]; })
