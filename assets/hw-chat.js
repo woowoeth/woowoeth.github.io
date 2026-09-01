@@ -54,12 +54,11 @@
     '#hwq-panel{position:fixed;inset:0;z-index:9999;display:flex;flex-direction:column;',
     'background:var(--paper,#f5f1e8)}',
     '#hwq-panel[hidden]{display:none}',
-    /* 背板。真机 iOS 上键盘弹起来时，面板底边和键盘之间会空出一截，
-       露出下面的页面正文——visualViewport 的几何在模拟环境里量着是对的，
-       真机上不对，而那层行为我这儿复现不出来。
-       与其继续猜几何，不如让露出来的地方没东西可漏：垫一层纸色背板，
-       高度给到 300vh，怎么歪都盖得住。它只是一块纯色，不花什么钱。 */
-    '#hwq-back{position:fixed;left:0;top:0;width:100%;height:300vh;z-index:9997;',
+    /* 背板。真机读数（scrollY 3186、panel t0 而屏幕顶端仍有页面内容）说明
+       fixed 坐标系的 0 不在屏幕顶端——屏幕顶端是负坐标。所以 top:0 的背板
+       够不着上面那一半，之前一直没挡住。改成从 -150vh 起、总高 400vh，
+       上下都留足余量。它只是一块纯色，不花什么钱。 */
+    '#hwq-back{position:fixed;left:0;top:-150vh;width:100%;height:400vh;z-index:9997;',
     'background:var(--paper,#f5f1e8)}',
     '#hwq-back[hidden]{display:none}',
     '#hwq-dbg{position:fixed;left:0;top:0;z-index:10000;background:rgba(0,0,0,.82);color:#0f0;',
@@ -351,6 +350,8 @@
       '  scrollY ' + Math.round(scrollY) +
       '\npanel t' + Math.round(pr.top) + ' h' + Math.round(pr.height) + ' b' + Math.round(pr.bottom) +
       '\nback  t' + Math.round(br.top) + ' h' + Math.round(br.height) + ' b' + Math.round(br.bottom) +
+      '\nlock ' + (locked ? 'on savedY' + savedY : 'off') +
+      ' bodyTop' + (document.body.style.top || '-') +
       '\nmeta ' + (META ? (META.getAttribute('content') || '').slice(-34) : 'none');
   }
 
@@ -396,12 +397,42 @@
      桌面没这个问题，光标直接就位反而省一次点击。 */
   var COARSE = !!(window.matchMedia && window.matchMedia('(pointer:coarse)').matches);
 
+  /* 真机读数把病根指出来了：scrollY 1968、vv.pageTop 1968，
+     而 panel.getBoundingClientRect().top 是 0——布局视口和视觉视口错开了近 2000px，
+     于是 position:fixed 的原点根本不在屏幕左上角，页面正文从面板上方和下方都会露。
+     前三版都在修键盘那一头，其实是滚动位置没锁住。
+
+     documentElement.style.overflow='hidden' 在 iOS 上拦不住这件事——它不改 scrollY。
+     标准解法是把 body 自己 fixed 住并上移 scrollY，让滚动真的归零，
+     两个视口就重合了。关掉时再滚回原处，用户看不出发生过什么。 */
+  var savedY = 0, locked = false;
+  function lockScroll() {
+    if (locked) return;
+    savedY = window.pageYOffset || document.documentElement.scrollTop || 0;
+    var b = document.body.style;
+    b.position = 'fixed';
+    b.top = (-savedY) + 'px';
+    b.left = '0';
+    b.right = '0';
+    b.width = '100%';
+    b.overflow = 'hidden';
+    locked = true;
+  }
+  function unlockScroll() {
+    if (!locked) return;
+    var b = document.body.style;
+    b.position = ''; b.top = ''; b.left = ''; b.right = ''; b.width = ''; b.overflow = '';
+    locked = false;
+    window.scrollTo(0, savedY);   /* 回到原来看的地方 */
+  }
+
   var prevOverflow = '';
   ball.onclick = function () {
     widenViewport();
+    lockScroll();                 /* 必须在显示面板之前：先归零，fixed 的原点才对 */
     ball.hidden = true; back.hidden = false; panel.hidden = false;
     prevOverflow = document.documentElement.style.overflow;
-    document.documentElement.style.overflow = 'hidden';  /* 全屏时别让底下的页面跟着滚 */
+    document.documentElement.style.overflow = 'hidden';
     startFit();
     showIntro();
     refreshLeft();
@@ -414,6 +445,7 @@
     if (dbg) { dbg.parentNode.removeChild(dbg); dbg = null; }
     stopFit(); unfitPanel();
     document.documentElement.style.overflow = prevOverflow;
+    unlockScroll();
   }
   panel.querySelector('#hwq-close').onclick = close;
   document.addEventListener('keydown', function (e) {
