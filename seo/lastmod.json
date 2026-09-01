@@ -1,7 +1,7 @@
 {
  "i/adler/": {
   "d": "2026-09-01",
-  "h": "8650cb160f03c90a"
+  "h": "276c29bb004eee76"
  },
  "i/adler/separation-of-tasks/": {
   "d": "2026-08-30",
@@ -44,8 +44,8 @@
   "h": "58d65d6ebf39a077"
  },
  "i/atomic-habits/": {
-  "d": "2026-08-31",
-  "h": "74602ce44fd062c9"
+  "d": "2026-09-01",
+  "h": "9cf0f0b2652bae14"
  },
  "i/atomic-habits/identity-first/": {
   "d": "2026-08-30",
@@ -105,7 +105,7 @@
  },
  "i/bj-fogg/": {
   "d": "2026-09-01",
-  "h": "d2b174b76f5df187"
+  "h": "3e0cf52224d6687f"
  },
  "i/bj-fogg/anchor-and-celebrate/": {
   "d": "2026-08-31",
@@ -141,7 +141,7 @@
  },
  "i/brene-brown/": {
   "d": "2026-09-01",
-  "h": "1533105439b41d2c"
+  "h": "434cfe490f0f267e"
  },
  "i/brene-brown/guilt-not-shame/": {
   "d": "2026-08-31",
@@ -177,7 +177,7 @@
  },
  "i/cacioppo/": {
   "d": "2026-09-01",
-  "h": "6ff5aa69a1ad67e8"
+  "h": "9831d8831e67daf7"
  },
  "i/cacioppo/hypervigilance/": {
   "d": "2026-09-01",
@@ -377,7 +377,7 @@
  },
  "i/excellent-sheep/": {
   "d": "2026-09-01",
-  "h": "7037defe1f995924"
+  "h": "7ce13c846231e306"
  },
  "i/excellent-sheep/hurdles/": {
   "d": "2026-08-31",
@@ -437,7 +437,7 @@
  },
  "i/frankl/": {
   "d": "2026-09-01",
-  "h": "c49bfb9188798072"
+  "h": "6d2238ebdef3f969"
  },
  "i/frankl/happiness-ensues/": {
   "d": "2026-08-29",
@@ -767,6 +767,22 @@
   "d": "2026-08-30",
   "h": "63df988aba5c5336"
  },
+ "i/jung/": {
+  "d": "2026-09-01",
+  "h": "9c5560e1df1d6f73"
+ },
+ "i/jung/afternoon-of-life/": {
+  "d": "2026-09-01",
+  "h": "0aad640728ef9fd2"
+ },
+ "i/jung/the-persona/": {
+  "d": "2026-09-01",
+  "h": "2e9b4690f996e1e1"
+ },
+ "i/jung/the-shadow/": {
+  "d": "2026-09-01",
+  "h": "d3bbc0868de9b089"
+ },
  "i/kevin-kelly/": {
   "d": "2026-09-01",
   "h": "aa27acd9958a243b"
@@ -1032,8 +1048,8 @@
   "h": "a6356aca438b4535"
  },
  "i/montessori/": {
-  "d": "2026-08-31",
-  "h": "8749d28062b885e5"
+  "d": "2026-09-01",
+  "h": "f18734768de7b610"
  },
  "i/montessori/help-me-do-it-myself/": {
   "d": "2026-08-30",
@@ -1191,6 +1207,22 @@
   "d": "2026-08-30",
   "h": "fa7715fe6f69e61a"
  },
+ "i/rat-park/": {
+  "d": "2026-09-01",
+  "h": "3d4ddd4635fd36d9"
+ },
+ "i/rat-park/change-the-cage/": {
+  "d": "2026-09-01",
+  "h": "62338c5b885526b7"
+ },
+ "i/rat-park/rat-park/": {
+  "d": "2026-09-01",
+  "h": "0b6b4b70a210034a"
+ },
+ "i/rat-park/vietnam-veterans/": {
+  "d": "2026-09-01",
+  "h": "0e3e4b89a578e5eb"
+ },
  "i/records-of-the-grand-historian/": {
   "d": "2026-08-28",
   "h": "05b97369094f177e"
@@ -1229,7 +1261,7 @@
  },
  "i/sapolsky/": {
   "d": "2026-09-01",
-  "h": "64e2e5f47a6277b7"
+  "h": "5c61dad2df75f3c0"
  },
  "i/sapolsky/predictability/": {
   "d": "2026-08-31",
@@ -1704,8 +1736,8 @@
   "h": "2714ea5f7232f310"
  },
  "i/zhuangzi/": {
-  "d": "2026-08-28",
-  "h": "b5bd53c75bbc92ac"
+  "d": "2026-09-01",
+  "h": "51bc26fe3f1719ed"
  },
  "i/zhuangzi/equalizing-things/": {
   "d": "2026-08-28",

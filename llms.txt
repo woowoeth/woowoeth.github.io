@@ -1,11 +1,11 @@
 # Human World (人类世界生存法则)
 
-> 135 people and books on how the world actually works, across 2,600 years
+> 137 people and books on how the world actually works, across 2,600 years
 > 遇到事了，看看以前的人怎么处理
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 135 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 137 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
-一个关于「世界到底怎么运转」的知识库：战略、财富、权力、人性、创业，取自 135 位人物与典籍，跨越 2600 年。每一条都写清楚这个人真正留下的那一个想法、背后的故事、拆开的分则与例子，以及今天怎么用。
+一个关于「世界到底怎么运转」的知识库：战略、财富、权力、人性、创业，取自 137 位人物与典籍，跨越 2600 年。每一条都写清楚这个人真正留下的那一个想法、背后的故事、拆开的分则与例子，以及今天怎么用。
 
 ## Read it
 
@@ -18,14 +18,14 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 
 ## Topics
 
-- [现代](https://ourword.ai/t/modern/) — 48
-- [工业时代](https://ourword.ai/t/industrial-age/) — 40
+- [现代](https://ourword.ai/t/modern/) — 49
+- [工业时代](https://ourword.ai/t/industrial-age/) — 41
 - [先秦与古典时代](https://ourword.ai/t/classical-era/) — 19
 - [权力与组织](https://ourword.ai/t/power/) — 19
 - [创业与产品](https://ourword.ai/t/startups/) — 17
 - [谋略与竞争](https://ourword.ai/t/strategy/) — 16
 - [财富与风险](https://ourword.ai/t/wealth/) — 16
-- [心智与情绪](https://ourword.ai/t/mind/) — 14
+- [心智与情绪](https://ourword.ai/t/mind/) — 15
 - [识人与相处](https://ourword.ai/t/people/) — 13
 - [家庭与关系](https://ourword.ai/t/family/) — 11
 - [学习与成长](https://ourword.ai/t/learning/) — 11
@@ -33,7 +33,7 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 - [秦汉至魏晋](https://ourword.ai/t/han-wei/) — 10
 - [近世](https://ourword.ai/t/early-modern/) — 9
 - [中古](https://ourword.ai/t/medieval/) — 9
-- [身心与生活](https://ourword.ai/t/living/) — 7
+- [身心与生活](https://ourword.ai/t/living/) — 8
 
 ## How it is built
 
@@ -175,6 +175,9 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [乔布斯 · 连点成线只能回头看](https://ourword.ai/i/jobs/connecting-the-dots/): 乔布斯 · 连点成线只能回头看——先攒点，再连线。退学生去旁听了一门毫无用处的课。这一篇要回答的是：那个著名比喻常被用反的地方。
 - [约翰·瑞迪 · 运动是给大脑用的](https://ourword.ai/i/john-ratey/exercise-for-the-brain/): 约翰·瑞迪 · 运动是给大脑用的——收益当天可感。把运动当健身房里的事，等于放着最便宜的药不用。这一篇要回答的是：它到底在改什么。
 - [约翰·瑞迪 · 焦虑时动比想有用](https://ourword.ai/i/john-ratey/move-before-you-think/): 约翰·瑞迪 · 焦虑时动比想有用——从生理入手。越想越慌，道理都懂但停不下来。这一篇要回答的是：为什么这时候该出门。
+- [荣格 · 人生的下午不能用上午的纲领](https://ourword.ai/i/jung/afternoon-of-life/): 荣格 · 人生的下午不能用上午的纲领——不是错了，是过期了。四十岁前后忽然觉得不对劲，是出了故障吗。这一篇要回答的是：荣格为什么说那是到点了。
+- [荣格 · 你压下去的那部分会回来](https://ourword.ai/i/jung/the-shadow/): 荣格 · 你压下去的那部分会回来——从别人身上跳出来。你最看不惯的那种人，为什么总能一眼把你激怒。这一篇要回答的是：荣格说那里面有你自己。
+- [荣格 · 面具戴久了会长进肉里](https://ourword.ai/i/jung/the-persona/): 荣格 · 面具戴久了会长进肉里——它是必需品，但要脱得下来。戴着一个角色活久了会怎么样。这一篇要回答的是：荣格说面具本身没问题，问题出在哪。
 - [凯文·凯利 · 一千个铁杆粉丝](https://ourword.ai/i/kevin-kelly/thousand-true-fans/): 凯文·凯利 · 一千个铁杆粉丝——不用红，要够深。做创作的人默认要先出名。这一篇要回答的是：那个前提是不是必要的。
 - [凯文·凯利 · 中间不能有人](https://ourword.ai/i/kevin-kelly/direct-relationship/): 凯文·凯利 · 中间不能有人——钱要直接到你手上。这道算术有个前提常被跳过。这一篇要回答的是：跳过它之后为什么算不成。
 - [凯博文 · 医生看到的病，和你过的日子](https://ourword.ai/i/kleinman/disease-and-illness/): 凯博文 · 医生看到的病，和你过的日子——这是两样东西。医生说没什么大事，你却觉得日子塌了。这一篇要回答的是：凯博文为什么说这是两件事。
@@ -249,6 +252,9 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [保罗·格雷厄姆 · 默认活着还是默认死去](https://ourword.ai/i/paul-graham/default-alive/): 保罗·格雷厄姆 · 默认活着还是默认死去——先算这道题。他和创业者聊天必先问一道题，多数创始人答不上来。这一篇要回答的是：这道题为什么排在一切讨论之前。
 - [卡尔·波普尔 · 能不能被推翻](https://ourword.ai/i/popper/falsifiability/): 卡尔·波普尔 · 能不能被推翻——解释一切等于没解释。占星术和物理学都能解释现象。这一篇要回答的是：凭什么说后者才是科学。
 - [卡尔·波普尔 · 去找反例，别再找支持](https://ourword.ai/i/popper/seek-refutation/): 卡尔·波普尔 · 去找反例，别再找支持——一个反例胜过一百个例证。再多的白天鹅也证明不了天鹅都是白的。这一篇要回答的是：那该收集什么。
+- [老鼠公园 · 把笼子换成公园](https://ourword.ai/i/rat-park/rat-park/): 老鼠公园 · 把笼子换成公园——同一只老鼠，不同的处境。关于成瘾最有名的那个实验，结论和直觉相反。这一篇要回答的是：换了笼子会发生什么。
+- [老鼠公园 · 回国之后，大部分人自己停了](https://ourword.ai/i/rat-park/vietnam-veterans/): 老鼠公园 · 回国之后，大部分人自己停了——最硬的那个自然实验。有没有比老鼠更硬的证据。这一篇要回答的是：越战归国士兵那组数字说明了什么。
+- [老鼠公园 · 先拆笼子，不是先拼意志](https://ourword.ai/i/rat-park/change-the-cage/): 老鼠公园 · 先拆笼子，不是先拼意志——以及这条能推到哪儿为止。知道处境要紧之后，具体该动哪一处。这一篇要回答的是：怎么把笼子一格一格拆掉。
 - [史记 · 不虚美，不隐恶](https://ourword.ai/i/records-of-the-grand-historian/no-praise-no-hiding/): 史记 · 不虚美，不隐恶——功与过写在同一段。班固给《史记》的六个字评语。这一篇要回答的是：做到它到底难在哪。
 - [史记 · 余甚惑焉](https://ourword.ai/i/records-of-the-grand-historian/i-am-confused/): 史记 · 余甚惑焉——把没想明白的写下来。他在列传第一篇就承认自己想不通。这一篇要回答的是：这三个字为什么比任何结论都值钱。
 - [任正非 · 华为的冬天](https://ourword.ai/i/ren-zhengfei/huaweis-winter/): 任正非 · 华为的冬天——在丰年谈倒闭。公司业绩最好的一年，他给全员写了篇讲失败的文章。这一篇要回答的是：把危机感做成制度的那几个零件。
@@ -359,7 +365,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [AI Bubble Monitor / AI 泡沫检测仪](https://ourword.ai/ai/)
 - [Zouni / 走你](https://ourword.ai/zouni/)
 
-## Index (135 entrys)
+## Index (137 entrys)
 
 - [BJ·福格](https://ourword.ai/i/bj-fogg/): BJ·福格（2019年·斯坦福行为设计实验室）——小到不会失败。斯坦福行为设计实验室创始人，研究行为如何被设计出来。他给出一个公式：行为发生需要动机、能力、提示三者同时到位。多数人失败在只调动机——靠决心和自我激励——而动机天然起伏，靠它维持的习惯必然崩。他的主张相反：把行为缩到小得不需要动机，然后挂在一个已有的动作后面。
 - [主权个人](https://ourword.ai/i/sovereign-individual/): 主权个人（1997年·戴维森&莫格）——数字主权。1997年出版，比特币诞生早了11年。两位作者用「暴力经济学」解释了人类社会的全部历史：谁控制暴力，谁就控制财富。他们预言了加密货币、远程工作、数字游民、国家权力衰退。
@@ -464,12 +470,14 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [约翰·瑞迪](https://ourword.ai/i/john-ratey/): 约翰·瑞迪（2008年·哈佛医学院）——先动再想。哈佛医学院精神科教授。他把运动重新定义了一遍：运动的首要收益不是身材，是大脑。运动会促使大脑分泌一类支持神经元生长与连接的蛋白，他称之为「大脑的肥料」，直接影响学习效率、情绪调节和抗压能力。他的主张是，把运动当成健身房里的事，等于把最便宜的认知与情绪药物放着不用。
 - [纳瓦尔](https://ourword.ai/i/naval/): 纳瓦尔（当代·1974-）——杠杆。AngelList联合创始人，早期投资了Twitter、Uber、Notion等公司。2018年他在Twitter上发了一个推文串「如何在不出卖灵魂的情况下致富」，在全球传播超过数百万次。他不是财务顾问，是一个在数字时代找到了「个人主权」路径的思考者。
 - [维果茨基](https://ourword.ai/i/vygotsky/): 维果茨基（1934年·苏联心理学家）——再高一点。苏联心理学家，三十七岁去世，留下的概念却影响了整个教育学。他最重要的贡献是「最近发展区」——一个人能力有两条线：自己能做到的，和在他人帮助下能做到的。两条线之间那段空隙，才是学习真正发生的地方。低于它是重复，高于它是挫败。他还强调思维是从社会互动内化来的：先是和别人一起做，然后才
+- [老鼠公园](https://ourword.ai/i/rat-park/): 老鼠公园（1978年·西蒙菲莎大学）——成瘾要看笼子。七十年代末的一组实验，加上一场没人设计的自然实验，合起来动摇了关于成瘾的一个常识。标准做法是把老鼠单独关在空笼子里，给一瓶掺吗啡的水，它会喝到死——结论看着很硬：一沾就完。布鲁斯·亚历山大问了另一个问题：如果笼子不是空的呢。他造了一个有同伴、有轮子、有隧道的大围栏，同样两瓶水，那
 - [胡雪岩](https://ourword.ai/i/hu-xueyan/): 胡雪岩（清·1823-1885）——靠山。晚清最著名的商人，白手起家做到大清首富，官至布政使衔、赏穿黄马褂、戴二品红顶子——「红顶商人」这个词就是为他造的。他也是中国近代第一个和外商正面打商战的人，并且输得干干净净：从巅峰到抄家，只用了两年。他的成功和失败，用的是同一套逻辑。（注意：坊间流传的大量「胡雪岩语录」出自高阳的
 - [艾利克森](https://ourword.ai/i/ericsson/): 艾利克森（1993年·刻意练习研究）——练法比时长重要。心理学家，专门研究各领域顶尖高手是怎么练出来的。他最广为人知的研究被流行文化简化成了「一万小时定律」，而这恰恰是他反复澄清过的误读——决定水平的不是时长，是练法。重复做已经会的事，做十年也不会变强；只有持续在能力边缘、带着明确目标和即时反馈的练习，才产生进步。他把这种练法叫「刻意
 - [苏格拉底](https://ourword.ai/i/socrates/): 苏格拉底（古希腊·前470-前399）——无知之知。他没有留下任何文字，所有思想都通过对话流传下来。他是职业哲学家里最穷的那个，不收学费，整天在广场上问人问题。他被雅典判处死刑，罪名是「腐蚀青年」和「不敬神」——其实是因为他的问题让权贵太难堪。他可以逃跑，弟子们为他安排好了一切，他拒绝了，饮下毒芹。两千年来，他是人类史上死得最明白
 - [苏轼](https://ourword.ai/i/su-shi/): 苏轼（北宋·1037-1101）——旷达。唐宋八大家之一，词、诗、文、书、画全能，同时是美食家、工程师、政治家。他被贬三次，越贬越旷达——不是被打倒了还在撑着，而是真的在最糟的处境里发现了最好的自己。黄州时写出赤壁赋、念奴娇，惠州时写「日啖荔枝三百颗，不辞长作岭南人」，逆境没有摧毁他，反而成全了他。
 - [范蠡](https://ourword.ai/i/fan-li/): 范蠡（春秋战国·前536-前448）——进退。中国历史上最成功的退隐者，商圣陶朱公。他帮助越王勾践从囚徒做到春秋霸主，然后在功成之日彻底离开——改名换姓，三次迁移，三次积累巨富。
 - [荀子](https://ourword.ai/i/xunzi/): 荀子（战国·前313—前238）——化性起伪。孟子讲人天然可好，荀子讲人天然可塑。「伪」不是假，是人工：礼仪、法度、师傅、反复训练，把生出来乱的材料装进可用的形状。韩非出他门下，秦制从他这里接过力。他是中国思想里最早把组织设计当成第一问题的人。
+- [荣格](https://ourword.ai/i/jung/): 荣格（1875-1961·苏黎世）——人生下午的纲领不一样。分析心理学的创立者，弗洛伊德最看重的学生，也是最著名的那个决裂者。他留下的东西里有不少难以验证的部分——集体无意识、原型、共时性——但另外三个概念被反复用了近一百年，因为它们直接对着一个人怎么过日子：把一生分成上午和下午，两段的任务不同；把自己压下去、又从别人身上跳出来的那部分叫
 - [萨提亚](https://ourword.ai/i/satir/): 萨提亚（1964年·家庭治疗先驱）——看冰山下面。家庭治疗的开创者之一。她的转折性主张是：一个人出问题，往往是整个家庭系统在维持某种平衡，把症状放在了最脆弱的那个成员身上。所以治疗对象不该只是那个人。她还给出一套辨识方法：人在压力下会退回四种固定的应对姿态——讨好、指责、超理智、打岔——而第五种「一致性」才是健康的表达。
 - [萨波尔斯基](https://ourword.ai/i/sapolsky/): 萨波尔斯基（1994年·斯坦福大学）——压力是错配。神经内分泌学家，在东非观察野生狒狒群三十年，同时研究人类的压力生理。他那本书的标题就是全部论点：斑马不得胃溃疡，因为它的压力反应只在狮子扑来的几分钟里全开，跑掉之后立刻关闭。人的这套系统一模一样，却被用来应付房贷、上司和一封没回的邮件——为几十秒逃命设计的机制，被开成了几十年的常
 - [蒙台梭利](https://ourword.ai/i/montessori/): 蒙台梭利（1907年·罗马儿童之家）——环境替代管教。意大利第一批女医生之一，从研究智力障碍儿童起步，后来把方法用在正常儿童身上，创办了罗马「儿童之家」。她的核心发现是：儿童不需要被塑造，需要一个被准备好的环境——把工具做成儿童尺寸、把选择权交给儿童、把成人从指挥者退成观察者，此前被认为无法专注的孩子会自发进入长时间的专注状态。

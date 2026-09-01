@@ -20,6 +20,8 @@ SCENES = [
      [("liu-bang", "changing-mid-sentence"), ("zhang-yiming", "ordinary-mind")]),
     ("我对自己说话，比对谁都狠。",
      [("kristin-neff", "not-self-esteem"), ("kristin-neff", "three-parts")]),
+    ("有些人我一见就烦，说不上为什么。",
+     [("jung", "the-shadow"), ("adler", "separation-of-tasks")]),
 ]),
 ("做不完", "要做决定", [
     ("全都重要，我砍哪个都疼。",
@@ -818,6 +820,18 @@ SCENES = [
     ("压力不算大，我却一直绷着。",
      [("sapolsky", "predictability"), ("nietzsche", "gazing-into-abyss")]),
 ]),
+("想戒又戒不掉", "身体与精力", [
+    ("戒了很多次，我每次都破功。",
+     [("rat-park", "change-the-cage"), ("bj-fogg", "tiny-habits")]),
+    ("一到晚上我就控制不住。",
+     [("rat-park", "change-the-cage"), ("rat-park", "rat-park")]),
+    ("我知道不好，可就是停不下来。",
+     [("rat-park", "rat-park"), ("wang-yangming", "unity-of-knowing-and-doing")]),
+    ("是不是我意志力太差了。",
+     [("rat-park", "vietnam-veterans"), ("montessori", "prepared-environment")]),
+    ("换了环境，我还是老样子。",
+     [("rat-park", "vietnam-veterans"), ("rat-park", "change-the-cage")]),
+]),
 ("时间不够用", "身体与精力", [
     ("一天下来，没一件是我自己的事。",
      [("seneca", "on-shortness-of-life"), ("cal-newport", "schedule-the-depth")]),
@@ -938,6 +952,18 @@ SCENES = [
     ("换了城市，熟人一个都没了。",
      [("harvard-study", "social-fitness"), ("granovetter", "weak-ties")]),
 ]),
+("人到中年", "人生转弯", [
+    ("四十了，我忽然觉得来不及。",
+     [("jung", "afternoon-of-life"), ("seneca", "on-shortness-of-life")]),
+    ("该有的都有了，我却更空。",
+     [("jung", "afternoon-of-life"), ("frankl", "happiness-ensues")]),
+    ("我这些年一直在演一个角色。",
+     [("jung", "the-persona"), ("hochschild", "emotional-labor")]),
+    ("身份没了，我不知道自己是谁。",
+     [("jung", "the-persona"), ("frankl", "the-last-freedom")]),
+    ("越使劲越空，我不懂为什么。",
+     [("jung", "afternoon-of-life"), ("zhuangzi", "use-of-uselessness")]),
+]),
 
 # ── 无能为力：现有全站语气都是「怎么解决」，接不住这类人 ──
 ("事情我说了不算", "使不上劲", [
@@ -979,6 +1005,8 @@ SCENES = [
      [("liu-bang", "three-i-cannot"), ("kristin-neff", "not-self-esteem")]),
     ("我这样想，是不是很小人。",
      [("brene-brown", "guilt-not-shame"), ("kristin-neff", "three-parts")]),
+    ("我一见那种人就来气。",
+     [("jung", "the-shadow"), ("brene-brown", "guilt-not-shame")]),
 ]),
 ("我做错了事", "说不出口", [
     ("那件事是我不对，我过不去。",
