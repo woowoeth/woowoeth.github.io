@@ -315,9 +315,14 @@ def _render_blocks(it, zh):
     # met in the body, and drop the section if that leaves nothing.
     seen_body = "".join(rendered)
     in_chapters = CHAPTER_QUOTES.get(it.title, set())
-    keep = [q for q in quote_block
-            if _bare(q) and not _echoes(q, seen_body)
-            and not any(_echoes(q, c) for c in in_chapters)]
+    # 同页去重（seen_body）是硬规则：同一页上下重复一遍，读者一眼看得出。
+    # 跨页那条（in_chapters）不是——章节金句不出现在条目页上，读者在这一页
+    # 并没有见过它。可它原来是硬过滤，代价是 26 个条目的金句段整段消失，
+    # 孙子兵法的「知己知彼」、王阳明的「知行合一」这类名句本来就该两边都有。
+    # 2026-09-01 降为优先级：先用章节里没有的；一条都不剩时，仍然显示。
+    keep = [q for q in quote_block if _bare(q) and not _echoes(q, seen_body)]
+    fresh = [q for q in keep if not any(_echoes(q, c) for c in in_chapters)]
+    keep = fresh or keep
     if keep:
         toc.append(("quotes", "金句"))
         html.append('<section class="quotes" id="quotes"><h2 class="sec-k">金句</h2>')
