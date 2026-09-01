@@ -749,6 +749,10 @@ SCENES = [
      [("thomas-gordon", "problem-ownership"), ("hochschild", "second-shift")]),
     ("我又想尽孝，又想过自己的日子。",
      [("adler", "separation-of-tasks"), ("kristin-neff", "three-parts")]),
+    ("治不好了，我还能做什么。",
+     [("kleinman", "caring-when-curing-fails"), ("frankl", "the-last-freedom")]),
+    ("照顾了两年，我自己先垮了。",
+     [("kleinman", "caring-when-curing-fails"), ("hochschild", "emotional-labor")]),
 ]),
 ("被背叛了", "家里的事", [
     ("他背着我做了那件事。",
@@ -829,6 +833,12 @@ SCENES = [
      [("sapolsky", "predictability"), ("epictetus", "judgments-not-things")]),
     ("家里人病了，我撑着不能倒。",
      [("john-ratey", "exercise-for-the-brain"), ("hochschild", "emotional-labor")]),
+    ("查出个病，我要吃一辈子药了。",
+     [("kleinman", "disease-and-illness"), ("epictetus", "dichotomy")]),
+    ("指标都正常，我还是不敢出门。",
+     [("kleinman", "disease-and-illness"), ("sapolsky", "predictability")]),
+    ("我最怕的那点，医生没问过。",
+     [("kleinman", "eight-questions"), ("carl-rogers", "reflective-listening")]),
 ]),
 
 
@@ -915,6 +925,8 @@ SCENES = [
      [("frankl", "the-last-freedom"), ("nietzsche", "what-does-not-kill")]),
     ("我兵力不如人，只能这么耗着。",
      [("napoleon", "decisive-point"), ("mao", "on-protracted-war")]),
+    ("这事赢不了，我只能一直带着。",
+     [("kleinman", "caring-when-curing-fails"), ("frankl", "the-last-freedom")]),
 ]),
 ("换个地方重来", "人生转弯", [
     ("换了城市，我谁也不认识。",

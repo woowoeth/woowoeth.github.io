@@ -1,11 +1,11 @@
 # Human World (人类世界生存法则)
 
-> 134 people and books on how the world actually works, across 2,600 years
+> 135 people and books on how the world actually works, across 2,600 years
 > 遇到事了，看看以前的人怎么处理
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 134 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 135 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
-一个关于「世界到底怎么运转」的知识库：战略、财富、权力、人性、创业，取自 134 位人物与典籍，跨越 2600 年。每一条都写清楚这个人真正留下的那一个想法、背后的故事、拆开的分则与例子，以及今天怎么用。
+一个关于「世界到底怎么运转」的知识库：战略、财富、权力、人性、创业，取自 135 位人物与典籍，跨越 2600 年。每一条都写清楚这个人真正留下的那一个想法、背后的故事、拆开的分则与例子，以及今天怎么用。
 
 ## Read it
 
@@ -18,7 +18,7 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 
 ## Topics
 
-- [现代](https://ourword.ai/t/modern/) — 47
+- [现代](https://ourword.ai/t/modern/) — 48
 - [工业时代](https://ourword.ai/t/industrial-age/) — 40
 - [先秦与古典时代](https://ourword.ai/t/classical-era/) — 19
 - [权力与组织](https://ourword.ai/t/power/) — 19
@@ -33,7 +33,7 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 - [秦汉至魏晋](https://ourword.ai/t/han-wei/) — 10
 - [近世](https://ourword.ai/t/early-modern/) — 9
 - [中古](https://ourword.ai/t/medieval/) — 9
-- [身心与生活](https://ourword.ai/t/living/) — 6
+- [身心与生活](https://ourword.ai/t/living/) — 7
 
 ## How it is built
 
@@ -177,6 +177,9 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [约翰·瑞迪 · 焦虑时动比想有用](https://ourword.ai/i/john-ratey/move-before-you-think/): 约翰·瑞迪 · 焦虑时动比想有用——从生理入手。越想越慌，道理都懂但停不下来。这一篇要回答的是：为什么这时候该出门。
 - [凯文·凯利 · 一千个铁杆粉丝](https://ourword.ai/i/kevin-kelly/thousand-true-fans/): 凯文·凯利 · 一千个铁杆粉丝——不用红，要够深。做创作的人默认要先出名。这一篇要回答的是：那个前提是不是必要的。
 - [凯文·凯利 · 中间不能有人](https://ourword.ai/i/kevin-kelly/direct-relationship/): 凯文·凯利 · 中间不能有人——钱要直接到你手上。这道算术有个前提常被跳过。这一篇要回答的是：跳过它之后为什么算不成。
+- [凯博文 · 医生看到的病，和你过的日子](https://ourword.ai/i/kleinman/disease-and-illness/): 凯博文 · 医生看到的病，和你过的日子——这是两样东西。医生说没什么大事，你却觉得日子塌了。这一篇要回答的是：凯博文为什么说这是两件事。
+- [凯博文 · 解释模型八问](https://ourword.ai/i/kleinman/eight-questions/): 凯博文 · 解释模型八问——最后一问是你最怕什么。看病时该问什么、又该被问什么。这一篇要回答的是：凯博文那八个问题为什么是这八个。
+- [凯博文 · 治不好，还照护得了](https://ourword.ai/i/kleinman/caring-when-curing-fails/): 凯博文 · 治不好，还照护得了——他照顾妻子十年才明白。有些病治不好，那还能做什么。这一篇要回答的是：凯博文照顾妻子十年之后给的答案。
 - [玛丽亚·康妮科娃 · 骗子不制造信任](https://ourword.ai/i/konnikova/not-manufacturing-trust/): 玛丽亚·康妮科娃 · 骗子不制造信任——他用你已经有的需要。被骗之后人最先问的是「我怎么这么蠢」。这一篇要回答的是：那个问题本身就问错了。
 - [玛丽亚·康妮科娃 · 转变期是高危窗口](https://ourword.ai/i/konnikova/transition-is-the-window/): 玛丽亚·康妮科娃 · 转变期是高危窗口——旧办法不管用的时候。同一个人一辈子的判断力差不多，中招却集中在某几段时间。这一篇要回答的是：哪几段。
 - [克里斯汀·内夫 · 自我关怀不是自尊](https://ourword.ai/i/kristin-neff/not-self-esteem/): 克里斯汀·内夫 · 自我关怀不是自尊——一个要比较，一个不用。自尊是这一代人最熟的词。这一篇要回答的是：它为什么在你最需要的时候掉链子。
@@ -356,7 +359,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [AI Bubble Monitor / AI 泡沫检测仪](https://ourword.ai/ai/)
 - [Zouni / 走你](https://ourword.ai/zouni/)
 
-## Index (134 entrys)
+## Index (135 entrys)
 
 - [BJ·福格](https://ourword.ai/i/bj-fogg/): BJ·福格（2019年·斯坦福行为设计实验室）——小到不会失败。斯坦福行为设计实验室创始人，研究行为如何被设计出来。他给出一个公式：行为发生需要动机、能力、提示三者同时到位。多数人失败在只调动机——靠决心和自我激励——而动机天然起伏，靠它维持的习惯必然崩。他的主张相反：把行为缩到小得不需要动机，然后挂在一个已有的动作后面。
 - [主权个人](https://ourword.ai/i/sovereign-individual/): 主权个人（1997年·戴维森&莫格）——数字主权。1997年出版，比特币诞生早了11年。两位作者用「暴力经济学」解释了人类社会的全部历史：谁控制暴力，谁就控制财富。他们预言了加密货币、远程工作、数字游民、国家权力衰退。
@@ -373,6 +376,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [六祖慧能](https://ourword.ai/i/huineng/): 六祖慧能（唐·638-713）——自性顿悟。一个不识字的岭南樵夫，成为禅宗第六代祖师。由他讲述、门人记录的《六祖坛经》，是唯一一部被中国人尊称为「经」的本土著述（「经」本应专指佛陀所说）。他做的事本质上是一次极端的减法：把佛教从浩繁的经论、渐进的阶梯、寺院的建制里拆出来，还原成一句话——你要找的东西本来就在你身上，问题只是
 - [关键对话](https://ourword.ai/i/crucial-conversations/): 关键对话（2002年·帕特森等）——先造安全感。四位作者研究了两万多人、上千个组织，想弄清一件事：为什么有些人在高风险、有分歧、情绪激烈的对话里能谈成，多数人却不能。他们的结论是，人在感到不安全的瞬间会退回沉默或暴力两种本能，而对话一旦进入这两种状态，内容说得再对也没用。所以关键不是准备论点，是先把安全感建起来。
 - [冯道](https://ourword.ai/i/feng-dao/): 冯道（五代·882-954）——十朝元老。中国历史上最难评价的一个人。历经后唐、后晋、后汉、后周四朝，服务过十位皇帝（包括入主中原的契丹皇帝耶律德光），几乎每一朝都居宰相之位，每一次改朝换代都安然过渡，享年七十三，善终。欧阳修骂他「不知廉耻」，司马光斥他「奸臣之尤」；但在他活着的时代，「当世之士无贤愚，皆仰道为元老，而喜
+- [凯博文](https://ourword.ai/i/kleinman/): 凯博文（1941-·哈佛大学·医学人类学）——治不好，还照护得了。哈佛的医学人类学家，也是精神科医生，在中国做过多年田野。他一辈子在做同一件事：把「病」拆成两半。一半是医生看到的——检查单上的指标、器官里的病变；另一半是病人过的那段日子——疼、怕、干不成事、在家里变成另一个角色。现代医学几乎全部力气都花在前一半上，而人真正在受的是后一半。201
 - [凯撒](https://ourword.ai/i/caesar/): 凯撒（罗马·前100-前44）——渡河。罗马最著名的将军与独裁者，「骰子已经掷出」是他最著名的一句话。从一个负债累累的贵族子弟，到征服高卢、赢得内战、成为罗马终身独裁官——他用二十年走完了这条路。他死于元老院，被他以为信任的人刺杀。他是拿破仑的精神前辈，西方历史上「权力崛起与崩溃」最完整的弧线之一。
 - [凯文·凯利](https://ourword.ai/i/kevin-kelly/): 凯文·凯利（2008年·《连线》创刊主编）——铁杆粉丝。《连线》杂志创刊主编，2008年写了一篇短文，把独立创作者的生存问题变成一道算术：一千个铁杆粉丝，每人每年为你花一百美元，就是十万美元，够一个人活下去。他给铁杆粉丝的定义很硬——会买你做的一切，愿意开两百英里去看你演出。这道题真正的价值是把「成名」从必要条件里拿掉：你不需要一百万
 - [刘邦](https://ourword.ai/i/liu-bang/): 刘邦（汉·前256-前195）——用人。历史上最著名的「草根逆袭」案例。起点：一个基层官吏。终点：汉朝开国皇帝。他的唯一技能是「用人」——不是最聪明的，不是最能打的，但最擅长让比他强的人为他效力。

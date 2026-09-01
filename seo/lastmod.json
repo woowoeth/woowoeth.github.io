@@ -232,8 +232,8 @@
   "h": "f024ac16b7a0e2a2"
  },
  "i/carl-rogers/": {
-  "d": "2026-08-31",
-  "h": "81fa6e9f8177c383"
+  "d": "2026-09-01",
+  "h": "2ce10788ce40f218"
  },
  "i/carl-rogers/reflective-listening/": {
   "d": "2026-08-30",
@@ -437,7 +437,7 @@
  },
  "i/frankl/": {
   "d": "2026-09-01",
-  "h": "95e0791b6421619b"
+  "h": "c49bfb9188798072"
  },
  "i/frankl/happiness-ensues/": {
   "d": "2026-08-29",
@@ -649,7 +649,7 @@
  },
  "i/hochschild/": {
   "d": "2026-09-01",
-  "h": "80b365010346b6ae"
+  "h": "1cccf6c1bff01454"
  },
  "i/hochschild/emotional-labor/": {
   "d": "2026-09-01",
@@ -778,6 +778,22 @@
  "i/kevin-kelly/thousand-true-fans/": {
   "d": "2026-09-01",
   "h": "022338654353723f"
+ },
+ "i/kleinman/": {
+  "d": "2026-09-01",
+  "h": "578f8530c015f7cf"
+ },
+ "i/kleinman/caring-when-curing-fails/": {
+  "d": "2026-09-01",
+  "h": "98aecf1ca81c9cd1"
+ },
+ "i/kleinman/disease-and-illness/": {
+  "d": "2026-09-01",
+  "h": "d3142adc68b2b432"
+ },
+ "i/kleinman/eight-questions/": {
+  "d": "2026-09-01",
+  "h": "aeb40db894bb8451"
  },
  "i/konnikova/": {
   "d": "2026-09-01",
@@ -1213,7 +1229,7 @@
  },
  "i/sapolsky/": {
   "d": "2026-09-01",
-  "h": "841667f4f92e476f"
+  "h": "64e2e5f47a6277b7"
  },
  "i/sapolsky/predictability/": {
   "d": "2026-08-31",
