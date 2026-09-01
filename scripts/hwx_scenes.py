@@ -50,6 +50,8 @@ SCENES = [
      [("wang-yangming", "unity-of-knowing-and-doing"), ("franklin", "one-virtue-a-week")]),
     ("想等条件齐了再动，可它总不齐。",
      [("caesar", "the-rubicon"), ("mao", "strategy-of-the-revolution")]),
+    ("我在等一个万全的时机。",
+     [("caesar", "the-rubicon"), ("caesar", "clementia")]),
 ]),
 ("不可逆的决定", "要做决定", [
     ("这一步迈出去就收不回来了。",
@@ -62,6 +64,8 @@ SCENES = [
      [("sun-tzu", "win-before-fighting"), ("mao", "strategy-of-the-revolution")]),
     ("机会比预想的大，我敢不敢加码。",
      [("su-yu", "enlarging-huaihai"), ("dalio", "believability")]),
+    ("退路是该留着，还是该拿掉。",
+     [("han-xin", "back-to-the-river"), ("han-xin", "neither-nor")]),
 ]),
 ("信息不全", "要做决定", [
     ("等数据齐了，还来得及吗？",
@@ -98,6 +102,8 @@ SCENES = [
      [("popper", "falsifiability"), ("feynman", "dont-fool-yourself")]),
     ("我是不是把话说得太满了？",
      [("franklin", "never-say-certainly"), ("analects", "reciprocity")]),
+    ("顺得不像话，我反倒不安。",
+     [("munger", "invert"), ("munger", "latticework")]),
 ]),
 
 # ── 竞争 ──
@@ -530,6 +536,8 @@ SCENES = [
      [("zhuge-liang", "longzhong-plan"), ("hayek", "knowledge-is-dispersed")]),
     ("刚接手，我第一条规矩该立什么。",
      [("liu-bang", "three-articles"), ("xunzi", "origin-of-rites")]),
+    ("接之前，我该先说清哪一块。",
+     [("zhuge-liang", "longzhong-plan"), ("zhuge-liang", "close-the-worthy")]),
 ]),
 ("该不该退", "进退取舍", [
     ("我该什么时候退，才不难看？",
@@ -569,6 +577,80 @@ SCENES = [
     ("我看不出下一步棋该往哪走。",
      [("zhuge-liang", "longzhong-plan"), ("li-bi", "strike-the-base")]),
 ]),
+
+# ── AI 来了 ──
+# 门牌用今天的词，答案全指向现成的章节——内容层照旧不过期。
+# 这阵过去了，退掉这一组很便宜；退章节才贵。
+("我这行会不会没了", "AI 来了", [
+    ("我这行是不是快没了。",
+     [("taleb", "turkey-problem"), ("technological-revolutions", "bubble-in-the-script")]),
+    ("现在好好的，我怕的是往后。",
+     [("taleb", "turkey-problem"), ("fan-li", "stock-the-opposite")]),
+    ("行业还在，可我这个岗位没了。",
+     [("innovators-dilemma", "good-management-fails"), ("fan-li", "stock-the-opposite")]),
+    ("公司照老样子做，我看着悬。",
+     [("innovators-dilemma", "good-management-fails"), ("taleb", "turkey-problem")]),
+]),
+("追不上新东西", "AI 来了", [
+    ("东西一天一个样，我追不上。",
+     [("bruce-lee", "one-kick"), ("csikszentmihalyi", "flow-channel")]),
+    ("学了就忘，我不知道该练什么。",
+     [("bruce-lee", "one-kick"), ("feynman", "teach-to-understand")]),
+    ("太难我慌，太简单又没长进。",
+     [("csikszentmihalyi", "flow-channel"), ("bruce-lee", "one-kick")]),
+]),
+("手艺不值钱了", "AI 来了", [
+    ("练了十年的手艺，我现在不值钱了。",
+     [("naval", "productize-yourself"), ("duan-yongping", "dare-to-be-last")]),
+    ("机器几秒做完我一天的活。",
+     [("naval", "productize-yourself"), ("kevin-kelly", "direct-relationship")]),
+    ("客户越过我，直接用工具了。",
+     [("kevin-kelly", "direct-relationship"), ("naval", "productize-yourself")]),
+]),
+("工具替我想了", "AI 来了", [
+    ("什么都问它，我自己不会想了。",
+     [("vygotsky", "scaffolding"), ("feynman", "teach-to-understand")]),
+    ("交出去的东西，我讲不明白。",
+     [("feynman", "teach-to-understand"), ("vygotsky", "scaffolding")]),
+    ("离了工具，我就不敢下笔了。",
+     [("vygotsky", "scaffolding"), ("bruce-lee", "one-kick")]),
+]),
+("出得多了人却空了", "AI 来了", [
+    ("东西出得比以前多，我却更空。",
+     [("drucker", "right-things-first"), ("zhuangzi", "use-of-uselessness")]),
+    ("效率高了，做的还是没用的事。",
+     [("drucker", "right-things-first"), ("csikszentmihalyi", "flow-channel")]),
+]),
+("人人都在喊风口", "AI 来了", [
+    ("所有人都说这是风口，我慌。",
+     [("crowd", "assert-repeat-contaminate"), ("soros", "reflexivity")]),
+    ("越涨我越怕，越怕越想追。",
+     [("soros", "reflexivity"), ("technological-revolutions", "bubble-in-the-script")]),
+    ("这轮是真的，还是又一次。",
+     [("technological-revolutions", "bubble-in-the-script"), ("crowd", "assert-repeat-contaminate")]),
+]),
+("要不要现在跳进去", "AI 来了", [
+    ("我该现在冲，还是再等等。",
+     [("duan-yongping", "dare-to-be-last"), ("fan-li", "stock-the-opposite")]),
+    ("这块现在太小，我进不进。",
+     [("huang", "zero-billion-markets"), ("duan-yongping", "dare-to-be-last")]),
+    ("别人都抢先了，我还来得及吗。",
+     [("duan-yongping", "dare-to-be-last"), ("huang", "zero-billion-markets")]),
+]),
+("日子被工具占满", "AI 来了", [
+    ("我一天被消息切得七零八落。",
+     [("cal-newport", "attention-residue"), ("finite-and-infinite-games", "two-kinds")]),
+    ("我停不下来，怕一停就落后。",
+     [("finite-and-infinite-games", "two-kinds"), ("cal-newport", "attention-residue")]),
+]),
+("不知道该练什么了", "AI 来了", [
+    ("标准天天变，我不知道练什么。",
+     [("excellent-sheep", "hurdles"), ("sapiens", "wheat-domesticated-us")]),
+    ("过去管用的那套，现在不算数了。",
+     [("sapiens", "wheat-domesticated-us"), ("excellent-sheep", "hurdles")]),
+    ("越有用的活，越先被替掉了。",
+     [("zhuangzi", "use-of-uselessness"), ("excellent-sheep", "hurdles")]),
+]),
 # ── 本轮新增：补上原先完全没有覆盖的处境 ──
 ("两个都想要", "跟人打交道", [
     ("两个我都想要，可只能选一个。",
@@ -577,6 +659,8 @@ SCENES = [
      [("buffett", "circle-of-competence"), ("duan-yongping", "right-things-done-right")]),
     ("我到底为什么要打这一仗？",
      [("on-war", "continuation-of-politics"), ("sun-tzu", "win-before-fighting")]),
+    ("砍掉的那个也是好主意，我舍不得。",
+     [("jobs", "focus-is-saying-no"), ("jobs", "connecting-the-dots")]),
 ]),
 ("信不信直觉", "跟人打交道", [
     ("直觉和数据打架，我听哪个？",
@@ -597,6 +681,8 @@ SCENES = [
      [("matsushita", "tap-water"), ("musk", "idiot-index")]),
     ("我不知道该收多少钱。",
      [("kevin-kelly", "thousand-true-fans"), ("naval", "productize-yourself")]),
+    ("我按工时收，越做越不值钱。",
+     [("naval", "productize-yourself"), ("naval", "assets-while-you-sleep")]),
 ]),
 ("遇上不讲理", "跟人打交道", [
     ("我跟他讲道理，完全没用。",
@@ -645,6 +731,8 @@ SCENES = [
      [("why-nations-fail", "fear-of-creative-destruction"), ("sovereign-individual", "citizen-to-customer")]),
     ("这摊子太烂，我该下重手吗？",
      [("zhu-yuanzhang", "heavy-law"), ("guan-zhong", "follow-the-people")]),
+    ("我一直在骂人，可事没变。",
+     [("thinking-in-systems", "structure-drives-behavior"), ("thinking-in-systems", "leverage-points")]),
 ]),
 ("合伙人闹掰", "跟人打交道", [
     ("分钱这事，我怕埋雷。",
@@ -1007,6 +1095,8 @@ SCENES = [
      [("dalio", "pain-plus-reflection"), ("frankl", "happiness-ensues")]),
     ("退路已经没有了，只能往前。",
      [("xiang-yu", "sinking-the-boats"), ("han-xin", "back-to-the-river")]),
+    ("从头再来的地方，我该先干什么。",
+     [("su-shi", "three-exiles"), ("su-shi", "no-wind-no-rain")]),
 ]),
 ("扛不动了", "人生转弯", [
     ("我快撑不住了，但不能倒。",
@@ -1053,6 +1143,8 @@ SCENES = [
      [("sovereign-individual", "citizen-to-customer"), ("guns-germs-steel", "yalis-question")]),
     ("这些规矩谁定的，我就得认吗？",
      [("sapiens", "fictions-that-cooperate"), ("finite-and-infinite-games", "playing-with-boundaries")]),
+    ("轮不到我定，我还能管什么。",
+     [("epictetus", "dichotomy"), ("epictetus", "judgments-not-things")]),
 ]),
 ("已经改不了了", "使不上劲", [
     ("这事已经发生了，我改不了。",
@@ -1063,6 +1155,8 @@ SCENES = [
      [("guns-germs-steel", "yalis-question"), ("on-war", "continuation-of-politics")]),
     ("换了新领导，还是老样子。",
      [("old-regime", "centralization-survived"), ("why-nations-fail", "two-nogales")]),
+    ("木已成舟，我还在跟它较劲。",
+     [("zhuangzi", "equalizing-things"), ("zhuangzi", "ox-carving")]),
 ]),
 ("努力也没用", "使不上劲", [
     ("该做的我都做了，还是没用。",
@@ -1115,6 +1209,8 @@ SCENES = [
      [("hu-xueyan", "no-cheating"), ("mencius", "flood-like-qi")]),
     ("有件事我谁都没说过。",
      [("brene-brown", "secrecy-silence-judgment"), ("carl-rogers", "unconditional-regard")]),
+    ("我怕的那一仗，其实在自己心里。",
+     [("wang-yangming", "bandits-in-the-heart"), ("wang-yangming", "innate-knowing")]),
 ]),
 ("放不下一个人", "说不出口", [
     ("我到现在还恨那个人。",
@@ -1177,6 +1273,8 @@ SCENES = [
      [("munger", "invert"), ("huang", "strategic-retreat")]),
     ("该转了，可现在做得好好的。",
      [("innovators-dilemma", "good-management-fails"), ("grove", "revolving-door")]),
+    ("现在做得好好的，我该转吗。",
+     [("grove", "inflection-and-cassandras"), ("grove", "revolving-door")]),
 ]),
 
 ]
