@@ -218,6 +218,10 @@ SCENES = [
      [("hu-xueyan", "the-silk-corner"), ("li-ka-shing", "ninety-percent-failure")]),
     ("同龄人都买房了，就我还在租。",
      [("bai-gui", "take-what-others-drop"), ("scarcity", "bandwidth-tax")]),
+    ("没了收入，我不知道能撑多久。",
+     [("paul-graham", "default-alive"), ("ren-zhengfei", "huaweis-winter")]),
+    ("家里为钱吵，我们越吵越远。",
+     [("hochschild", "second-shift"), ("nonviolent-communication", "needs-behind-blame")]),
 ]),
 
 # ── 人 ──
@@ -234,6 +238,14 @@ SCENES = [
      [("han-feizi", "form-and-name"), ("analects", "see-how")]),
     ("简历很好看，可我还是拿不准。",
      [("zeng-guofan", "recruit-and-test"), ("zizhi-tongjian", "talent-and-virtue")]),
+]),
+("上面说的话不能信", "跟人打交道", [
+    ("画的饼我已经不信了。",
+     [("han-feizi", "form-and-name"), ("hu-xueyan", "no-cheating")]),
+    ("答应我的事，一次次落空。",
+     [("han-feizi", "form-and-name"), ("schelling", "binding-yourself")]),
+    ("我还要不要接着信他。",
+     [("analects", "see-how"), ("konnikova", "not-manufacturing-trust")]),
 ]),
 ("要说服人", "跟人打交道", [
     ("我说了不算，得让他自己想到。",
@@ -327,6 +339,16 @@ SCENES = [
     ("身边人说的都是我爱听的。",
      [("strategies-of-the-warring-states", "three-mirrors"), ("li-shimin", "boat-and-water")]),
 ]),
+("队伍出不了活", "带人", [
+    ("我带的这摊子，一直做不出成绩。",
+     [("liu-bang", "three-i-cannot"), ("zeng-guofan", "recruit-and-test")]),
+    ("布置下去的事，交上来总是走样。",
+     [("zhang-juzheng", "kaocheng"), ("han-feizi", "form-and-name")]),
+    ("我什么都自己上，越管越累。",
+     [("liu-bang", "three-i-cannot"), ("zhuge-liang", "close-the-worthy")]),
+    ("人不差，可就是拧不成一股。",
+     [("xunzi", "division-makes-groups"), ("zeng-guofan", "solid-camp-dull-fight")]),
+]),
 
 # ── 做事 ──
 ("从零开始", "把事做成", [
@@ -342,6 +364,10 @@ SCENES = [
      [("paul-graham", "default-alive"), ("li-ka-shing", "ninety-percent-failure")]),
     ("别人都在抢先，我要不要慢一步。",
      [("zhu-yuanzhang", "delay-the-title"), ("duan-yongping", "dare-to-be-last")]),
+    ("我想辞了自己干，可就是不敢。",
+     [("paul-graham", "default-alive"), ("caesar", "the-rubicon")]),
+    ("想去创业，可我不敢辞。",
+     [("paul-graham", "default-alive"), ("caesar", "the-rubicon")]),
 ]),
 ("推不动", "把事做成", [
     ("推了很久推不动，该换方向吗？",
@@ -600,6 +626,16 @@ SCENES = [
     ("道理站在我这边，可事办不成。",
      [("lee-kuan-yew", "does-it-work"), ("analects", "harmony-not-sameness")]),
 ]),
+("总在讨好别人", "跟人打交道", [
+    ("我总顺着别人，回头就难受。",
+     [("satir", "coping-stances"), ("adler", "separation-of-tasks")]),
+    ("我不会拒绝，答应完就后悔。",
+     [("jobs", "focus-is-saying-no"), ("thomas-gordon", "problem-ownership")]),
+    ("别人一不高兴，我就觉得是我的错。",
+     [("satir", "coping-stances"), ("brene-brown", "guilt-not-shame")]),
+    ("我想说不，可话到嘴边就软了。",
+     [("jobs", "focus-is-saying-no"), ("satir", "iceberg")]),
+]),
 ("推不动别人", "跟人打交道", [
     ("别的部门就是不配合我。",
      [("thinking-in-systems", "leverage-points"), ("ren-zhengfei", "sound-of-gunfire")]),
@@ -679,6 +715,8 @@ SCENES = [
      [("satir", "iceberg"), ("thomas-gordon", "i-message")]),
     ("我们一吵就收不住。",
      [("gottman", "four-horsemen"), ("gottman", "repair-attempts")]),
+    ("为了孩子，我们一直硬撑着。",
+     [("gottman", "four-horsemen"), ("harvard-study", "relationships-predict-health")]),
 ]),
 ("孩子不听", "家里的事", [
     ("说了很多遍，他还是不做。",
@@ -689,6 +727,10 @@ SCENES = [
      [("thomas-gordon", "i-message"), ("thomas-gordon", "problem-ownership")]),
     ("说了多少遍，他就是不做。",
      [("montessori", "prepared-environment"), ("montessori", "help-me-do-it-myself")]),
+    ("孩子沉迷手机，说了也没用。",
+     [("xunzi", "borrow-from-things"), ("montessori", "prepared-environment")]),
+    ("孩子在学校被人欺负了。",
+     [("thomas-gordon", "problem-ownership"), ("montessori", "prepared-environment")]),
 ]),
 ("孩子不说话", "家里的事", [
     ("他什么都不跟我讲了。",
@@ -911,6 +953,8 @@ SCENES = [
      [("boyd", "to-be-or-to-do"), ("fan-li", "stock-the-opposite")]),
     ("没了这个身份，我是谁。",
      [("frankl", "the-last-freedom"), ("zhuangzi", "use-of-uselessness")]),
+    ("存款撑不了几个月了。",
+     [("paul-graham", "default-alive"), ("scarcity", "tunneling")]),
 ]),
 ("重要的人走了", "人生转弯", [
     ("我不知道日子怎么继续。",
@@ -993,6 +1037,16 @@ SCENES = [
      [("tao-te-ching", "wu-wei"), ("frankl", "happiness-ensues")]),
     ("起点就不一样，我使劲有用吗？",
      [("xunzi", "constant-heaven"), ("mandela", "rivonia")]),
+]),
+("被晾在一边", "使不上劲", [
+    ("我被调岗了，明摆着是边缘化。",
+     [("su-shi", "three-exiles"), ("grove", "inflection-and-cassandras")]),
+    ("我手上的活越来越没分量。",
+     [("su-shi", "three-exiles"), ("zhuge-liang", "longzhong-plan")]),
+    ("会不叫我了，事也不找我了。",
+     [("grove", "inflection-and-cassandras"), ("han-xin", "neither-nor")]),
+    ("我该等风头过去，还是走。",
+     [("li-ka-shing", "knowing-when-to-stop"), ("fan-li", "leave-at-the-top")]),
 ]),
 
 # ── 说不出口的：搜索量大、私密、典籍最擅长 ──
