@@ -385,6 +385,44 @@ def _url_dates(items, ch_fp):
     return {k: v.get("d", "") for k, v in db.items() if v.get("d")}
 
 
+def restamp_sitemap(root="."):
+    """把 sitemap 里的 lastmod 换成每个 URL 自己的真实日期。
+
+    geo_kit.write_sitemap 对 extra_urls（319 个章节页）一律盖上构建当天的日期，
+    它的 API 没给按 URL 传日期的口子，而 geo_kit.py 是禁改的（CI 会还原）。
+    结果是 477 条里 391 条天天标着"今天"——geo_kit 自己的注释就写着，
+    一个声称所有页面都变了的 sitemap，引擎学会的是忽略这个字段。
+
+    真实日期在 seo/lastmod.json 里是全的（459 条 = 140 条目 + 319 章节，
+    stamp_lastmod 按内容指纹算出来的），这里只是把它们贴回去。
+    """
+    import re
+    sm = os.path.join(root, "sitemap.xml")
+    if not os.path.exists(sm):
+        return 0
+    try:
+        db = json.load(open(LASTMOD_DB, encoding="utf-8"))
+    except Exception:
+        return 0
+    base = SITE.base.rstrip("/") + "/"
+    src = open(sm, encoding="utf-8").read()
+    n = [0]
+
+    def fix(m):
+        loc, lm = m.group(1), m.group(2)
+        rel = loc[len(base):] if loc.startswith(base) else ""
+        real = (db.get(rel) or {}).get("d")
+        if real and real != lm:
+            n[0] += 1
+            return m.group(0).replace(">%s<" % lm, ">%s<" % real, 1)
+        return m.group(0)
+
+    out = re.sub(r"<loc>([^<]*)</loc><lastmod>([^<]*)</lastmod>", fix, src)
+    if out != src:
+        open(sm, "w", encoding="utf-8").write(out)
+    return n[0]
+
+
 def main():
     items = load_items()
     fill_counts(SITE, len(items))
@@ -401,6 +439,7 @@ def main():
     rep["stats"] = patch_static_stats(load_array())
     rep["legacy_redirects"] = write_legacy_redirects()
     rep["feed_dates"] = stamp_feed(".", _url_dates(items, ch_fp))
+    rep["sitemap_dates"] = restamp_sitemap(".")
     print("HumanWorld seo/geo:", json.dumps(rep, ensure_ascii=False))
     return rep
 

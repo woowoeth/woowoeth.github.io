@@ -170,6 +170,25 @@ def _sib(ch, idx):
     return prev_html, next_html
 
 
+_LASTMOD = None
+
+
+def _dates(rel):
+    """章节自己的真实日期，取自 seo/lastmod.json（stamp_lastmod 按内容指纹算的）。
+
+    Article 原来一个日期字段都没有。Google 的文章富媒体结果要日期，
+    AI 回答引擎也用它判断新鲜度——一篇没有日期的文章，在两边都吃亏。
+    数据本来就有，只是没接上。
+    """
+    global _LASTMOD
+    if _LASTMOD is None:
+        try:
+            _LASTMOD = json.load(open(os.path.join("seo", "lastmod.json"), encoding="utf-8"))
+        except Exception:
+            _LASTMOD = {}
+    return (_LASTMOD.get(rel) or {}).get("d") or ""
+
+
 def _faq_ld(ch, page_url):
     """章节页的 FAQPage。
 
@@ -349,6 +368,11 @@ def _chapter_page(ch, idx):
         "publisher": {"@type": "Organization", "name": "OurWord AI", "url": SITE + "/"},
         "mainEntityOfPage": {"@type": "WebPage", "@id": page_url},
     }
+    _d = _dates("i/%s/%s/" % (ch["parent_slug"], ch["k"]))
+    if _d:
+        ld["datePublished"] = _d
+        ld["dateModified"] = _d
+    ld["image"] = page_url + "og.png"
     crumbs = {
         "@context": "https://schema.org", "@type": "BreadcrumbList",
         "itemListElement": [
