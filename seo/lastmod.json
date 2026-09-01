@@ -377,7 +377,7 @@
  },
  "i/excellent-sheep/": {
   "d": "2026-09-01",
-  "h": "7ce13c846231e306"
+  "h": "3a717fa5a9e1740f"
  },
  "i/excellent-sheep/hurdles/": {
   "d": "2026-08-31",
@@ -388,8 +388,8 @@
   "h": "ac46ecf65118356a"
  },
  "i/fan-li/": {
-  "d": "2026-08-28",
-  "h": "7864583061e85ec1"
+  "d": "2026-09-01",
+  "h": "2fdae0bfb9206aa5"
  },
  "i/fan-li/leave-at-the-top/": {
   "d": "2026-08-29",
@@ -437,7 +437,7 @@
  },
  "i/frankl/": {
   "d": "2026-09-01",
-  "h": "6d2238ebdef3f969"
+  "h": "b7644e73346ad774"
  },
  "i/frankl/happiness-ensues/": {
   "d": "2026-08-29",
@@ -785,7 +785,7 @@
  },
  "i/kevin-kelly/": {
   "d": "2026-09-01",
-  "h": "aa27acd9958a243b"
+  "h": "cbc49cf69ce63ce0"
  },
  "i/kevin-kelly/direct-relationship/": {
   "d": "2026-09-01",
@@ -1089,7 +1089,7 @@
  },
  "i/murakami/": {
   "d": "2026-09-01",
-  "h": "9983fcb090f4aca2"
+  "h": "0256ae1204d1d623"
  },
  "i/murakami/focus-and-endurance/": {
   "d": "2026-09-01",
@@ -1238,6 +1238,22 @@
  "i/popper/seek-refutation/": {
   "d": "2026-08-30",
   "h": "fa7715fe6f69e61a"
+ },
+ "i/pu-songling/": {
+  "d": "2026-09-01",
+  "h": "b3cfb7b1fc854b60"
+ },
+ "i/pu-songling/collecting-at-the-roadside/": {
+  "d": "2026-09-01",
+  "h": "ffbc711b1676ebfd"
+ },
+ "i/pu-songling/forty-years-of-failing/": {
+  "d": "2026-09-01",
+  "h": "9435afb2bad8816b"
+ },
+ "i/pu-songling/the-side-thing/": {
+  "d": "2026-09-01",
+  "h": "2de6298e91487596"
  },
  "i/rat-park/": {
   "d": "2026-09-01",
@@ -1439,9 +1455,17 @@
   "d": "2026-08-29",
   "h": "d17859ad97725746"
  },
+ "i/su-shi/east-slope/": {
+  "d": "2026-09-01",
+  "h": "08ae52890c50aec3"
+ },
  "i/su-shi/no-bad-people/": {
   "d": "2026-08-29",
   "h": "5c814d61960c5a27"
+ },
+ "i/su-shi/no-more-writing/": {
+  "d": "2026-09-01",
+  "h": "5cb70fcde07341f0"
  },
  "i/su-shi/no-wind-no-rain/": {
   "d": "2026-08-29",
