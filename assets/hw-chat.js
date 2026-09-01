@@ -317,15 +317,23 @@
     for (var k in a) if (b[k]) s += wgt(k);
     return s;
   }
+  var lastScene = '';          /* 最近一次检索命中最强的处境名 */
   function retrieve(q, k) {
     buildIdf();
-    var qa = grams(q), score = {};
+    var qa = grams(q), score = {}, sceneBest = 0;
+    lastScene = '';
     /* 取最大而不是累加：同一个处境下问句越多，累加就越容易把它顶上来——
        那是「这个处境写得全」，不是「这一条更对得上」。只认最贴的那一条。 */
     function bump(i, s) { if (s > (score[i] || 0)) score[i] = s; }
     INDEX.alias.forEach(function (row, j) {
       var s = overlap(qa, IDF.ag[j]) * 3 + overlap(qa, IDF.sg[j]) * 2;
-      if (s > 0) row[2].forEach(function (i) { bump(i, s); });
+      if (s > 0) {
+        row[2].forEach(function (i) { bump(i, s); });
+        /* 处境名一直在索引里（alias 行是 [问句, 处境名, [章节]]），
+           只是检索时被丢掉了。带出来，答案就能点名「你这件事是【钱不够】」——
+           把「我这事很特别」变成「这是一类事，有人处理过」。 */
+        if (s > sceneBest) { sceneBest = s; lastScene = row[1]; }
+      }
     });
     INDEX.chapters.forEach(function (c, i) {
       var s = overlap(qa, IDF.cg[i][0]) * 2 + overlap(qa, IDF.cg[i][1]);
@@ -361,7 +369,7 @@
       return fetch(ENDPOINT, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ q: q, ctx: hits })
+        body: JSON.stringify({ q: q, ctx: hits, scene: lastScene })
       }).then(function (r) {
         // 先无条件取 body：429 的正文里有服务端写好的那句话，比「HTTP 429」有用。
         return r.json().catch(function () { return null; })
