@@ -22,6 +22,19 @@
   if (!ENDPOINT) return;
   var DAILY_LIMIT = 5;
   var LS_KEY = 'hw-chat-quota';
+  /* 聊天记录用 sessionStorage 不用 localStorage：这里存的是人描述自己的处境，
+     不该在设备上留到下次打开浏览器。同一个标签页里跨页面跳转会保留——
+     点了「原文」看完再回来，之前问的还在。 */
+  var HIST_KEY = 'hw-chat-log';
+  var HIST_MAX = 20;
+
+  function loadHist() {
+    try { var a = JSON.parse(sessionStorage.getItem(HIST_KEY) || '[]'); return a.length ? a : []; }
+    catch (e) { return []; }
+  }
+  function saveHist(h) {
+    try { sessionStorage.setItem(HIST_KEY, JSON.stringify(h.slice(-HIST_MAX))); } catch (e) {}
+  }
 
   /* ---------- 每日额度（前端只是提示，真正的限流必须在服务端） ---------- */
   function today() { var d = new Date(); return d.getFullYear() + '-' + (d.getMonth() + 1) + '-' + d.getDate(); }
@@ -81,8 +94,15 @@
     /* 引用行内跟在句子后面，不攒到最后——读者在读到那句时就能点过去。
        只写章节名不写人名：人名在落地页第一眼就有，行内每处多六个字太吵。 */
     '.hwq-h{font-weight:700}',
-    '.hwq-cite{color:var(--acc,#a33b2e);text-decoration:none;font-size:13.5px;white-space:nowrap;margin-left:4px;vertical-align:baseline}',
-    '.hwq-cite:hover{opacity:.7}',
+    /* 必须带 #hwq-panel 前缀。站上有条 :root[data-theme="dark"] … a 的规则
+       （优先级 0,2,1）会把链接压成正文色——实测 .hwq-cite(0,1,0) 输，
+       连 a.hwq-cite(0,1,1) 也输，#hwq-panel .hwq-cite(1,1,0) 才赢。
+       用提高优先级而不是 !important：DESIGN.md 里记着这个站已经被
+       !important 坑过一次，不该再加一条。
+       悬浮球从只在首页扩到全站 467 页之后才暴露——首页没有那条规则。 */
+    '#hwq-panel .hwq-cite{color:var(--acc,#a33b2e);text-decoration:none;font-size:13.5px;',
+    'white-space:nowrap;margin-left:4px;vertical-align:baseline}',
+    '#hwq-panel .hwq-cite:hover{opacity:.7}',
 
     '#hwq-foot{flex:0 0 auto;border-top:1px solid var(--line,#d8d2c6);padding-bottom:env(safe-area-inset-bottom)}',
     '#hwq-foot .hwq-col{display:flex;gap:10px;align-items:flex-end;padding-top:12px;padding-bottom:12px}',
@@ -164,6 +184,24 @@
   function dropIntro() {
     var i = log.querySelector('#hwq-intro');
     if (i) i.parentNode.removeChild(i);
+  }
+
+  /* 只留渲染引用要用的三个字段：正文 txt 一篇 700 字，八篇存进去太浪费。 */
+  function slimHits(hits) {
+    return hits.map(function (c) { return { u: c.u, p: c.p, n: c.n }; });
+  }
+  var restored = false;
+  function restoreHist() {
+    if (restored) return;
+    restored = true;
+    loadHist().forEach(function (t) {
+      say('me', t.q);
+      var d = document.createElement('div');
+      d.className = 'hwq-m hwq-ai';
+      log.appendChild(d);
+      renderAnswer(d, t.a, t.hits || []);
+    });
+    scroller.scrollTop = scroller.scrollHeight;
   }
 
   function refreshLeft() {
@@ -295,6 +333,9 @@
       }).then(function (res) {
         if (res.ok && res.body && res.body.answer) {
           renderAnswer(thinking, res.body.answer, hits);
+          var h = loadHist();
+          h.push({ q: q, a: res.body.answer, hits: slimHits(hits) });
+          saveHist(h);
           useOne(); refreshLeft();
           return;
         }
@@ -434,6 +475,7 @@
     prevOverflow = document.documentElement.style.overflow;
     document.documentElement.style.overflow = 'hidden';
     startFit();
+    restoreHist();               /* 先恢复旧记录，有记录时开场白就不出现 */
     showIntro();
     refreshLeft();
     if (!COARSE) setTimeout(function () { input.focus(); }, 50);
