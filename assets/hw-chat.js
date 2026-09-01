@@ -22,18 +22,21 @@
   if (!ENDPOINT) return;
   var DAILY_LIMIT = 5;
   var LS_KEY = 'hw-chat-quota';
-  /* 聊天记录用 sessionStorage 不用 localStorage：这里存的是人描述自己的处境，
-     不该在设备上留到下次打开浏览器。同一个标签页里跨页面跳转会保留——
-     点了「原文」看完再回来，之前问的还在。 */
+  /* 聊天记录存 localStorage。
+     一开始用的是 sessionStorage——理由是这里存的是人描述自己的处境，
+     不该在设备上留到下次打开浏览器。但那是我的判断不是用户的需求：
+     关掉标签页再回来记录就没了，被反映了两次。改成 localStorage，
+     关浏览器也在。只留最近 20 轮，且每轮只存问题、答案和引用链接，
+     不存喂给模型的正文。 */
   var HIST_KEY = 'hw-chat-log';
   var HIST_MAX = 20;
 
   function loadHist() {
-    try { var a = JSON.parse(sessionStorage.getItem(HIST_KEY) || '[]'); return a.length ? a : []; }
+    try { var a = JSON.parse(localStorage.getItem(HIST_KEY) || '[]'); return a.length ? a : []; }
     catch (e) { return []; }
   }
   function saveHist(h) {
-    try { sessionStorage.setItem(HIST_KEY, JSON.stringify(h.slice(-HIST_MAX))); } catch (e) {}
+    try { localStorage.setItem(HIST_KEY, JSON.stringify(h.slice(-HIST_MAX))); } catch (e) {}
   }
 
   /* ---------- 每日额度（前端只是提示，真正的限流必须在服务端） ---------- */
@@ -234,12 +237,17 @@
       });
       if (!ids.length) return line;
       var body = line.replace(/\s*\[\d+\]\s*/g, '').replace(/\s+$/, '');
-      return body + ids.map(function (d) { return '[' + d + ']'; }).join('');
+      // 一段里挂两条以上时给它们编号——否则渲染出来是「原文原文」，
+      // 读者分不清是两个链接还是一个词重复了。只有一条就不编号，
+      // 多写一个「1」是白噪音。
+      return body + ids.map(function (d, i) {
+        return ids.length > 1 ? '[' + d + '|' + (i + 1) + ']' : '[' + d + ']';
+      }).join('');
     }).join('\n');
     // 一遍扫过 **小标题** 和 [编号] 两种记号。
     // 只认这两种，其余一律当普通文字；全程 createTextNode / createElement，
     // 模型输出永远不进 innerHTML。
-    var re = /\*\*(.+?)\*\*|\[(\d+)\]/g, last = 0, m;
+    var re = /\*\*(.+?)\*\*|\[(\d+)(?:\|(\d+))?\]/g, last = 0, m;
     while ((m = re.exec(text)) !== null) {
       if (m.index > last) el.appendChild(document.createTextNode(text.slice(last, m.index)));
       if (m[1] !== undefined) {
@@ -253,7 +261,9 @@
           var a = document.createElement('a');
           a.className = 'hwq-cite';
           a.href = c.u;
-          a.textContent = '原文';   /* 不写章节名——句句都挂个标题太吵，点进去就知道是哪篇 */
+          /* 不写章节名——句句都挂个标题太吵，点进去就知道是哪篇。
+             但一段里有两条时必须编号，不然连着两个「原文」读不出是两个链接。 */
+          a.textContent = m[3] ? '原文' + m[3] : '原文';
           a.title = c.p + ' · ' + c.n;
           el.appendChild(a);
         }

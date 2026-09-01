@@ -1317,7 +1317,7 @@ def chat_widget():
         return ""
     return (HWQ_A
             + '<script>window.HW_CHAT_ENDPOINT="' + HW_CHAT_ENDPOINT + '";</script>'
-            + '<script src="/assets/hw-chat.js?v=6" defer></script>'
+            + '<script src="/assets/hw-chat.js?v=7" defer></script>'
             + HWQ_B)
 
 
