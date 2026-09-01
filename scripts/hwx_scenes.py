@@ -387,6 +387,18 @@ SCENES = [
     ("赚钱太顺，我怕自己看不见风险。",
      [("tao-te-ching", "reversal"), ("art-of-worldly-wisdom", "quit-while-winning")]),
 ]),
+("做的东西没人看", "把事做成", [
+    ("发出去没人看，我还写不写。",
+     [("murakami", "no-one-asked-you-to"), ("kevin-kelly", "thousand-true-fans")]),
+    ("我坐在那儿一个字也写不出来。",
+     [("murakami", "stop-while-it-flows"), ("murakami", "focus-and-endurance")]),
+    ("我是不是根本没这个天赋。",
+     [("murakami", "focus-and-endurance"), ("dweck", "praise-the-process")]),
+    ("开头总是有劲，后面就断了。",
+     [("murakami", "stop-while-it-flows"), ("bj-fogg", "tiny-habits")]),
+    ("我做的东西越来越像别人的。",
+     [("murakami", "no-one-asked-you-to"), ("thiel", "competition-is-for-losers")]),
+]),
 
 # ── 自己 ──
 ("在低谷", "自己的状态", [
@@ -777,6 +789,8 @@ SCENES = [
      [("csikszentmihalyi", "flow-channel"), ("bj-fogg", "anchor-and-celebrate")]),
     ("太难我慌，太简单我又走神。",
      [("csikszentmihalyi", "flow-channel"), ("csikszentmihalyi", "leisure-paradox")]),
+    ("我一坐下就被打断。",
+     [("murakami", "focus-and-endurance"), ("cal-newport", "schedule-the-depth")]),
 ]),
 ("想改个习惯", "身体与精力", [
     ("我下过很多次决心，每次都断。",
@@ -787,6 +801,8 @@ SCENES = [
      [("bj-fogg", "tiny-habits"), ("bj-fogg", "anchor-and-celebrate")]),
     ("我一直在练，可就是没长进。",
      [("ericsson", "not-ten-thousand-hours"), ("vygotsky", "zpd")]),
+    ("热情一过，我就断了。",
+     [("murakami", "focus-and-endurance"), ("bj-fogg", "tiny-habits")]),
 ]),
 ("长期紧绷", "身体与精力", [
     ("我好像很久没真正松下来了。",

@@ -1,11 +1,11 @@
 # Human World (人类世界生存法则)
 
-> 133 people and books on how the world actually works, across 2,600 years
+> 134 people and books on how the world actually works, across 2,600 years
 > 遇到事了，看看以前的人怎么处理
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 133 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 134 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
-一个关于「世界到底怎么运转」的知识库：战略、财富、权力、人性、创业，取自 133 位人物与典籍，跨越 2600 年。每一条都写清楚这个人真正留下的那一个想法、背后的故事、拆开的分则与例子，以及今天怎么用。
+一个关于「世界到底怎么运转」的知识库：战略、财富、权力、人性、创业，取自 134 位人物与典籍，跨越 2600 年。每一条都写清楚这个人真正留下的那一个想法、背后的故事、拆开的分则与例子，以及今天怎么用。
 
 ## Read it
 
@@ -18,7 +18,7 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 
 ## Topics
 
-- [现代](https://ourword.ai/t/modern/) — 46
+- [现代](https://ourword.ai/t/modern/) — 47
 - [工业时代](https://ourword.ai/t/industrial-age/) — 40
 - [先秦与古典时代](https://ourword.ai/t/classical-era/) — 19
 - [权力与组织](https://ourword.ai/t/power/) — 19
@@ -28,9 +28,9 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 - [心智与情绪](https://ourword.ai/t/mind/) — 14
 - [识人与相处](https://ourword.ai/t/people/) — 13
 - [家庭与关系](https://ourword.ai/t/family/) — 11
+- [学习与成长](https://ourword.ai/t/learning/) — 11
 - [世界如何运转](https://ourword.ai/t/world/) — 11
 - [秦汉至魏晋](https://ourword.ai/t/han-wei/) — 10
-- [学习与成长](https://ourword.ai/t/learning/) — 10
 - [近世](https://ourword.ai/t/early-modern/) — 9
 - [中古](https://ourword.ai/t/medieval/) — 9
 - [身心与生活](https://ourword.ai/t/living/) — 6
@@ -223,6 +223,9 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [蒙台梭利 · 帮助我，让我自己做](https://ourword.ai/i/montessori/help-me-do-it-myself/): 蒙台梭利 · 帮助我，让我自己做——代劳省的是你的时间。替他做完只要两分钟。这一篇要回答的是：那两分钟买走了什么。
 - [查理·芒格 · 反过来想](https://ourword.ai/i/munger/invert/): 查理·芒格 · 反过来想——先研究怎么死。他一生把一句数学家的话用到了所有领域。这一篇要回答的是：反过来想在操作上到底是哪几步。
 - [查理·芒格 · 格栅思维](https://ourword.ai/i/munger/latticework/): 查理·芒格 · 格栅思维——一把锤子不够用。他警告的不是无知，是单一学科的专业。这一篇要回答的是：为什么最危险的恰恰是最熟练的那把锤子。
+- [村上春树 · 正写得顺，停笔](https://ourword.ai/i/murakami/stop-while-it-flows/): 村上春树 · 正写得顺，停笔——明天才接得上。写不下去是常态，那写得正顺的时候该怎么办。这一篇要回答的是：村上为什么偏偏在那时停笔。
+- [村上春树 · 才能之外还有两样](https://ourword.ai/i/murakami/focus-and-endurance/): 村上春树 · 才能之外还有两样——集中力和持续力能练。没有才能的人是不是就别做了。这一篇要回答的是：村上说才能之外还有两样，而且能练。
+- [村上春树 · 没人要求你做这件事](https://ourword.ai/i/murakami/no-one-asked-you-to/): 村上春树 · 没人要求你做这件事——所以理由只能自己给。长期做一件没人要求你做的事，靠什么撑住。这一篇要回答的是：村上给自己找的那个理由。
 - [宫本武藏 · 武器不可有偏爱](https://ourword.ai/i/musashi/no-favorite-weapon/): 宫本武藏 · 武器不可有偏爱——别和工具谈感情。一个剑客写下「不可偏爱武器」。这一篇要回答的是：这句话为什么出自一个六十战全胜的人。
 - [宫本武藏 · 观之目强，见之目弱](https://ourword.ai/i/musashi/two-ways-of-seeing/): 宫本武藏 · 观之目强，见之目弱——两种看。他把「看」拆成了两个字。这一篇要回答的是：为什么盯着对方的刀，你就已经输了。
 - [马斯克 · 第一性原理](https://ourword.ai/i/musk/first-principles/): 马斯克 · 第一性原理——拆到物理事实再往上推。人人都在说这个词。这一篇要回答的是：他自己给的定义和那笔电池账。
@@ -353,7 +356,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [AI Bubble Monitor / AI 泡沫检测仪](https://ourword.ai/ai/)
 - [Zouni / 走你](https://ourword.ai/zouni/)
 
-## Index (133 entrys)
+## Index (134 entrys)
 
 - [BJ·福格](https://ourword.ai/i/bj-fogg/): BJ·福格（2019年·斯坦福行为设计实验室）——小到不会失败。斯坦福行为设计实验室创始人，研究行为如何被设计出来。他给出一个公式：行为发生需要动机、能力、提示三者同时到位。多数人失败在只调动机——靠决心和自我激励——而动机天然起伏，靠它维持的习惯必然崩。他的主张相反：把行为缩到小得不需要动机，然后挂在一个已有的动作后面。
 - [主权个人](https://ourword.ai/i/sovereign-individual/): 主权个人（1997年·戴维森&莫格）——数字主权。1997年出版，比特币诞生早了11年。两位作者用「暴力经济学」解释了人类社会的全部历史：谁控制暴力，谁就控制财富。他们预言了加密货币、远程工作、数字游民、国家权力衰退。
@@ -428,6 +431,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [李嘉诚](https://ourword.ai/i/li-ka-shing/): 李嘉诚（当代·1928-）——周期。从塑料花小工厂到长和集团，李嘉诚用70年建立了横跨地产、港口、电信、零售、能源的商业帝国。多次大危机（1967年暴动、1997年金融危机、2008年金融危机）都安然度过，靠的是「逆周期布局+永远保持现金」两个原则。
 - [李小龙](https://ourword.ai/i/bruce-lee/): 李小龙（当代·1940-1973）——无形。功夫明星只是他最表面的标签。他是哲学家、武术家、作家、电影人，用33年的生命留下了一套关于「自我解放」的完整思想体系。他创立截拳道，不是一种武术风格，而是一种反对风格本身的哲学——「吸收有用的，去除无用的，加入自己独特的」。他在好莱坞打破种族天花板，在华人世界重塑了文化自信。他死
 - [李泌](https://ourword.ai/i/li-bi/): 李泌（唐·722-789）——隐。中国历史上最会生存的谋士，没有之一。辅佐了唐玄宗、唐肃宗、唐代宗、唐德宗四代皇帝，三次主动退出朝堂，三次被重新召回，最终以宰相之位善终——73岁。在宦官横行、政治险恶的环境里，这是奇迹。他比范蠡更难：范蠡退出后彻底消失，李泌是在权力旋涡里穿行，退而不远，随时可用。
+- [村上春树](https://ourword.ai/i/murakami/): 村上春树（1949-·《当我谈跑步时我谈些什么》2007）——把创作变成体力活。三十岁前开着一家爵士酒吧，1978年在球场看棒球时忽然决定写小说，1981年关掉店专职写作，同时开始跑步——理由很实际：坐着写东西会发胖，烟也抽得太凶。此后三十多年，他跑完过三十多次全程马拉松和一次一百公里超马，写作与跑步用的是同一套办法。他这本谈跑步的书之所以被大量不跑步的人读
 - [松下幸之助](https://ourword.ai/i/matsushita/): 松下幸之助（日本·1894—1989年）——自来水哲学。9 岁辍学做学徒，23 岁带着两个人在自家做双灯用插座，最后做出松下电器，被日本人称为「经营之神」。他的价值不在于把公司做多大，而在于他是第一个把「企业为什么存在」当成经营技术来回答的人：使命定得对，组织和产品会自己长出来；使命定不对，效率越高越危险。今天讲的使命愿景、事业部制、
 - [枪炮、病菌与钢铁](https://ourword.ai/i/guns-germs-steel/): 枪炮、病菌与钢铁（1997年）——环境而非人种。贾雷德·戴蒙德 1997 年的著作，次年获普利策奖。它回答一个几乎所有人都想过、但很少有人敢直接问的问题：为什么是欧洲人带着枪炮、病菌和钢铁去征服美洲和大洋洲，而不是反过来。戴蒙德的答案是环境，不是人——各大陆在可驯化物种和地理轴线上的差距，经由粮食生产这个中间变量，被放大成一万
 - [查理·芒格](https://ourword.ai/i/munger/): 查理·芒格（当代·1924-2023）——逆向。巴菲特的合伙人，伯克希尔·哈撒韦副主席，99岁去世。他最重要的贡献：把巴菲特从「捡烟蒂」进化到「以合理价格买优秀公司」。他的思维工具箱：多元思维模型+认知偏差清单。

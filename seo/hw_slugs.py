@@ -9,6 +9,7 @@ SLUGS = {
     "格兰诺维特": "granovetter",
     "哈佛成人发展研究": "harvard-study",
     "约翰·卡乔波": "cacioppo",
+    "村上春树": "murakami",
     "稀缺": "scarcity",
     "克里斯汀·内夫": "kristin-neff",
     "阿莉·霍克希尔德": "hochschild",
