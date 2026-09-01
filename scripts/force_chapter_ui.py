@@ -97,9 +97,10 @@ _sys.path.insert(0, str(Path(__file__).resolve().parent))  # CI 从仓库根调�
 from hwx_scenes import SCENES as HWX_SCENES
 
 # 悬浮球问答的后端地址。空字符串＝功能关闭（前端不渲染任何东西）。
-# Cloudflare Worker 部署好之后改成 "/api/chat"（同源，免 CORS），
-# 或者 Worker 实际所在的 https://xxx.workers.dev 地址。
-HW_CHAT_ENDPOINT = ""
+# 2026-09-01 上线。Worker 名字是控制台随机生成的，不好看但只影响这一行；
+# 改名要删了重建，不值当。key 存在 Worker 的 HW_CHAT_KEY secret 里，不进浏览器。
+# 跨站调用由 Worker 的 Origin 白名单挡（fail-closed），跟同不同源无关。
+HW_CHAT_ENDPOINT = "https://wandering-wind-0168.djjian.workers.dev"
 
 HWX_INTROS = {
 "sun-tzu":"最早也最完整的战争方法论，被读了两千五百年",
@@ -1050,10 +1051,7 @@ switchTab('新');
         "<div class=\"scpick\" id=\"hwx-scpick\" style=\"display:none\" role=\"group\" aria-label=\"按处境筛选\"></div>"
         "<div class=\"nc-feed\" id=\"hwx-ncfeed\"></div>"
         "<div class=\"feed\" id=\"hwx-feed\" style=\"display:none\"></div><div class=\"nc-feed\" id=\"hwx-scfeed\" style=\"display:none\"></div>"
-        # 悬浮球问答。HW_CHAT_ENDPOINT 为空字符串时前端直接 return，什么都不渲染——
-        # Worker 部署好之前先这样挂着，上线只需把这里改成 "/api/chat"。
-        "<script>window.HW_CHAT_ENDPOINT=\"" + HW_CHAT_ENDPOINT + "\";</script>"
-        "<script src=\"/assets/hw-chat.js?v=1\" defer></script>"
+        # 悬浮球问答不在这里注入——它要出现在每一页，由 patch_chat_widget() 统一挂。
         "<script>var HWXD=" + j + ";</script>"
         "<script>" + js + "</script>"
         "\n</section>\n" + HWX_B
@@ -1306,3 +1304,50 @@ def patch_theme_widget():
 
 patch_entry_intro()
 patch_theme_widget()
+
+HWQ_A, HWQ_B = "<!--HWX:CHAT-->", "<!--/HWX:CHAT-->"
+
+
+def chat_widget():
+    """悬浮球问答的注入块。HW_CHAT_ENDPOINT 为空时返回空串——
+    前端脚本本来也会 return，但连 <script> 都不发更干净，也省一次请求。"""
+    if not HW_CHAT_ENDPOINT:
+        return ""
+    return (HWQ_A
+            + '<script>window.HW_CHAT_ENDPOINT="' + HW_CHAT_ENDPOINT + '";</script>'
+            + '<script src="/assets/hw-chat.js?v=1" defer></script>'
+            + HWQ_B)
+
+
+def patch_chat_widget():
+    """悬浮球要全局出现，所以走和 patch_theme_widget 一样的全站扫描。
+
+    首页也走这里（不像主题按钮那样特例挂在 HWX 块里）——同一个东西两处注入，
+    迟早有一处忘了改。先剥掉旧块再插新块，所以是幂等的；
+    把 HW_CHAT_ENDPOINT 改回 "" 再跑一次，全站就干净了。
+    """
+    import os, re
+    n = 0
+    block = chat_widget()
+    for dp, dn, fn in os.walk("."):
+        if ".git" in dp or dp.startswith("./assets"):
+            continue
+        for f in fn:
+            if f not in ("index.html", "404.html"):
+                continue
+            path = os.path.join(dp, f)
+            s = open(path, encoding="utf-8").read()
+            if 'http-equiv="refresh"' in s:      # 跳转桩跳过
+                continue
+            s2 = re.sub(re.escape(HWQ_A) + r".*?" + re.escape(HWQ_B), "", s, flags=re.S)
+            if "</body>" not in s2:
+                continue
+            if block:
+                s2 = s2.replace("</body>", block + "</body>", 1)
+            if s2 != s:
+                open(path, "w", encoding="utf-8").write(s2)
+                n += 1
+    print("chat widget on pages:", n)
+
+
+patch_chat_widget()
