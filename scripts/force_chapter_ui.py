@@ -925,8 +925,15 @@ if(ain){
   (function poll(i){ if(paintLeft()||i>20)return; setTimeout(function(){poll(i+1)},100); })(0);
   var fire=function(){
     var t=ain.value.trim(); if(!t){ain.focus();return;}
-    trk('daily_ask',{edited:(t!==a1.t)?1:0,situation:a1.s||''});
-    if(typeof window.hwAsk==='function'){window.hwAsk(t);setTimeout(paintLeft,1400);}
+    /* edited 比的是预填句 bx，不是卡片问句——框里放的一直是 bx，
+       跟 a1.t 比的话每一次都会被记成「改过了」。 */
+    trk('daily_ask',{edited:(t!==(a1.bx||''))?1:0,situation:a1.s||''});
+    /* 把卡片上那两篇和处境名一起带过去。这一问的答案首页已经知道，
+       不该让聊天窗再用二元组检索猜一遍——猜出来的经常是别的篇。 */
+    if(typeof window.hwAsk==='function'){
+      window.hwAsk(t,{pin:(a1.r||[]).slice(0,2).map(function(r){return r.u;}),scene:a1.s||''});
+      setTimeout(paintLeft,1400);
+    }
   };
   document.getElementById('hwx-ago2').onclick=fire;
   ain.addEventListener('keydown',function(e){
@@ -1639,7 +1646,7 @@ def chat_widget():
         return ""
     return (HWQ_A
             + '<script>window.HW_CHAT_ENDPOINT="' + HW_CHAT_ENDPOINT + '";</script>'
-            + '<script src="/assets/hw-chat.js?v=10" defer></script>'
+            + '<script src="/assets/hw-chat.js?v=11" defer></script>'
             + HWQ_B)
 
 

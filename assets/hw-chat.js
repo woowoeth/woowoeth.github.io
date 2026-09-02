@@ -367,6 +367,13 @@
 
   /* ---------- 提问 ---------- */
   var busy = false;
+  /* 首页那一问是唯一一次「我们已经知道答案」的提问：卡片上那两篇出处就是
+     今日一问的答案，处境名也是数据里写死的。检索是给自由输入用的，用在这里
+     等于把已知的答案扔了再猜一遍。
+     而且这里的猜特别不准——预填句是按「不复读卡片」写的，刻意换了一套词，
+     恰好绕开了二元组索引：实测首位命中从 99% 掉到 7%，七成的日子连正确
+     章节都召不回来。所以首页来的这一问带着答案走，检索只负责补后面几篇。 */
+  var pinned = null;
   function ask() {
     var q = input.value.trim();
     if (!q || busy) return;
@@ -382,6 +389,17 @@
       // 多给两篇让模型自己挑（它看得到正文），比调权重划算——
       // 每次多约 1500 字，答案只引用它 USED 里点名的那几篇。
       var hits = retrieve(q, 8);
+      if (pinned) {
+        var seen = {}, head = [];
+        pinned.pin.forEach(function (u) {
+          for (var i = 0; i < INDEX.chapters.length; i++) {
+            if (INDEX.chapters[i].u === u && !seen[u]) { seen[u] = 1; head.push(INDEX.chapters[i]); }
+          }
+        });
+        hits = head.concat(hits.filter(function (c) { return !seen[c.u]; })).slice(0, 8);
+        if (pinned.scene) lastScene = pinned.scene;
+        pinned = null;           /* 只作用于这一条，后面的追问照常检索 */
+      }
       if (!hits.length) {
         thinking.textContent = '这件事站里还没有对得上的内容。换个说法试试，或者直接搜一下。';
         busy = false; refreshLeft(); return;
@@ -575,10 +593,13 @@
   /* 给首页用的一个口子：带着一句话把面板打开并直接问。
      首页「今日一问」下面那个输入框已经让人改过词了，所以这里不再让他
      在面板里重打一遍——他编辑的地方只有一个。 */
-  window.hwAsk = function (text) {
+  window.hwAsk = function (text, opts) {
     var t = String(text || '').trim();
     if (!t) return;
     if (panel.hidden) ball.click();
+    /* opts.pin 是卡片上那两篇的链接，opts.scene 是它属于哪个处境。
+       两个都是首页已经知道的事实，传进来就不必再猜。 */
+    pinned = (opts && opts.pin && opts.pin.length) ? { pin: opts.pin, scene: opts.scene || '' } : null;
     input.value = t.slice(0, 500);
     ask();
   };
