@@ -454,7 +454,10 @@ def _hwx_payload():
         sc = scene_of(ch)
         if not sc:
             return {"pt": ch.get("w", ""), "when": "", "gl": ""}
-        tail = "" if sc.endswith(("时", "时候")) else "的时候"
+        # 本身就以时间词收尾的不再补壳，否则会出「一段时期的时候」这种叠字。
+        tail = "" if sc.endswith(("时", "时候", "时期", "期间", "阶段",
+                                  "之后", "以后", "之前", "那阵", "关头",
+                                  "时刻", "当口")) else "的时候"
         return {"pt": ch.get("w", ""), "when": sc, "gl": "用在" + sc + tail + "。"}
 
     E, ch_by = [], {}
@@ -696,7 +699,6 @@ body{background:var(--paper);color:var(--ink)}
 #hwx .tq .src{font-size:13.5px;color:var(--muted)}
 #hwx .tq .src a{color:var(--acc);text-decoration:none}
 #hwx .tq .tgl{font-size:14.5px;line-height:1.75;color:var(--ink);opacity:.72;margin:0 0 10px}
-#hwx .tq .tgl em{font-style:normal;color:var(--acc)}
 #hwx .tq .acts{display:flex;gap:8px;margin-top:14px}
 #hwx .tq .acts button{border:1.5px solid var(--ink);background:transparent;color:var(--ink);border-radius:999px;padding:7px 16px;font-family:inherit;font-size:14px;cursor:pointer}
 #hwx .tq .acts .bs{background:var(--ink);color:var(--paper)}
@@ -896,10 +898,11 @@ function paintQuote(first){
   /* 有配得准的第一人称问句就用它——「有人这么问过：我一见那种人就来气。」
      读者不必先把自己的处境翻译成条件句，一眼就认出来。
      配不准就退回 when（第二人称条件句，弱一档但不会错）。 */
+  /* 配得准的第一人称问句优先——读者一眼认出自己，不必先把处境翻译成条件句。
+     配不准就退回 gl，那本来就是一句现成的「用在……的时候。」。 */
   var gl=document.getElementById('hwx-tgl');
   if(gl){
-    var w=q1.fq?('<em>有人这么问过：</em>'+esc(q1.fq))
-              :(q1.when?('<em>什么时候想起这句：</em>'+esc(q1.when)):'');
+    var w=q1.fq?('有人这么问过：'+esc(q1.fq)):esc(q1.gl||'');
     gl.innerHTML=w; gl.style.display=w?'':'none';
   }
 }
