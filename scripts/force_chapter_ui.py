@@ -726,6 +726,9 @@ body{background:var(--paper);color:var(--ink)}
 #hwx-theme:hover{border-color:var(--acc);color:var(--acc)}
 #hwx .today{display:grid;grid-template-columns:1.5fr 1fr;gap:14px;margin:18px 0 6px}
 @media(max-width:700px){#hwx .today{grid-template-columns:1fr}}
+/* 日夜切换是 fixed 在右上角的 36px 圆钮；窄屏上它正压在第一张卡的表头右端
+   （处境标签那颗胶囊）上。表头右边让出它的宽度。 */
+@media(max-width:480px){#hwx .askhero .ahead{padding-right:38px}}
 #hwx .tq{border:1px solid var(--line);border-radius:16px;padding:20px 22px;background:transparent;display:flex;flex-direction:column}
 #hwx .tq .dt{font-size:12.5px;letter-spacing:.24em;color:var(--acc);font-weight:700;margin-bottom:6px}
 #hwx .tq .q{font-family:"Noto Serif SC","Source Han Serif SC","Songti SC","STSong",serif;font-size:clamp(20px,3.6vw,26px);font-weight:700;line-height:1.85;margin-bottom:14px}
@@ -741,10 +744,12 @@ body{background:var(--paper);color:var(--ink)}
 #hwx .askhero #hwx-asc-tag button{border:1px solid var(--line);background:transparent;color:var(--muted);border-radius:999px;padding:4px 12px;font-family:inherit;font-size:12.5px;line-height:1.4;cursor:pointer;white-space:nowrap}
 #hwx .askhero #hwx-asc-tag button:hover{border-color:var(--acc);color:var(--acc)}
 #hwx .amine{border-top:1px dashed var(--line);margin-top:14px;padding-top:12px}
-#hwx .amine .arow{display:flex;gap:8px;align-items:flex-end}
-#hwx .amine textarea{flex:1;resize:none;font-family:inherit;font-size:15px;line-height:1.6;color:var(--ink);background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:9px 13px;outline:none;max-height:96px}
-#hwx .amine textarea:focus{border-color:var(--acc)}
-#hwx .amine button{flex:0 0 auto;border:none;border-radius:999px;background:var(--ink);color:var(--paper);font-family:inherit;font-size:15px;padding:10px 20px;cursor:pointer}
+/* 按钮放进框里的右下角。手机上预填句会折成三行，框一长高，贴在框外面的
+   圆球就成了另一样东西；放进去之后它跟着框底走，单行时正好居中（6+30+6=42）。 */
+#hwx .amine .arow{display:flex;align-items:flex-end;gap:4px;border:1px solid var(--line);border-radius:14px;background:var(--paper);padding:0 6px 0 0}
+#hwx .amine .arow:focus-within{border-color:var(--acc)}
+#hwx .amine textarea{flex:1;min-width:0;display:block;resize:none;font-family:inherit;font-size:15px;line-height:1.6;color:var(--ink);background:transparent;border:none;border-radius:14px;padding:9px 13px;outline:none;max-height:96px}
+#hwx .amine button{flex:0 0 auto;height:30px;margin:6px 0;border:none;border-radius:9px;background:var(--ink);color:var(--paper);font-family:inherit;font-size:14px;line-height:30px;padding:0 14px;cursor:pointer}
 #hwx .amine button:disabled{opacity:.4;cursor:default}
 
 #hwx .askhero .said{font-family:"Noto Serif SC","Songti SC",serif;font-size:13.5px;color:var(--acc);line-height:1.7;margin:11px 0 0}
@@ -1882,7 +1887,7 @@ def chat_widget():
         return ""
     return (HWQ_A
             + '<script>window.HW_CHAT_ENDPOINT="' + HW_CHAT_ENDPOINT + '";</script>'
-            + '<script src="/assets/hw-chat.js?v=20" defer></script>'
+            + '<script src="/assets/hw-chat.js?v=21" defer></script>'
             + HWQ_B)
 
 

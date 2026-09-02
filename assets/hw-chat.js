@@ -98,7 +98,7 @@
   /* ---------- 样式 ---------- */
   var CSS = [
     '#hwq-ball{position:fixed;right:18px;bottom:18px;z-index:9998;width:52px;height:52px;',
-    'border-radius:50%;background:var(--acc,#a33b2e);color:#fff;border:none;cursor:pointer;',
+    'border-radius:50%;background:var(--ink,#1f1c17);color:var(--paper,#f5f1e8);border:none;cursor:pointer;',
     'font-family:"Noto Serif SC","Songti SC","STSong",serif;font-size:21px;font-weight:700;',
     'line-height:52px;padding:0;transition:transform .15s ease}',
     '#hwq-ball:hover{transform:scale(1.06)}',
@@ -224,7 +224,10 @@
 
   back.setAttribute('aria-hidden', 'true');
 
-  document.body.appendChild(ball);
+  /* 首页不挂球：那一页有「今日一问」自己的输入框，右下角再放一个「问」
+     等于同一件事给两个入口。首页走 hwAsk 直接开面板，不经过球。 */
+  var HOME = !!document.getElementById('hwx-askhero');
+  if (!HOME) document.body.appendChild(ball);
   document.body.appendChild(back);
   document.body.appendChild(panel);
 
@@ -678,7 +681,7 @@
   }
 
   var prevOverflow = '';
-  ball.onclick = function () {
+  function openPanel() {
     widenViewport();
     lockScroll();                 /* 必须在显示面板之前：先归零，fixed 的原点才对 */
     ball.hidden = true; back.hidden = false; panel.hidden = false;
@@ -689,7 +692,8 @@
     showIntro();
     refreshLeft();
     if (!COARSE) setTimeout(function () { input.focus(); }, 50);
-  };
+  }
+  ball.onclick = openPanel;
   function close() {
     input.blur();                 /* 不 blur 的话 iOS 键盘会赖着不走 */
     panel.hidden = true; back.hidden = true; ball.hidden = false;
@@ -724,7 +728,7 @@
   window.hwAsk = function (text, opts) {
     var t = String(text || '').trim();
     if (!t) return;
-    if (panel.hidden) ball.click();
+    if (panel.hidden) openPanel();
     /* opts.pin 是卡片上那两篇的链接，opts.scene 是它属于哪个处境。
        两个都是首页已经知道的事实，传进来就不必再猜。 */
     pinned = (opts && opts.pin && opts.pin.length) ? { pin: opts.pin, scene: opts.scene || '' } : null;
