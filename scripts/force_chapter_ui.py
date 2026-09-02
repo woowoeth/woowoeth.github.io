@@ -95,6 +95,7 @@ HWX_A, HWX_B = "<!--HWX:FIND-->", "<!--/HWX:FIND-->"
 import sys as _sys
 _sys.path.insert(0, str(Path(__file__).resolve().parent))  # CI 从仓库根调用本脚本
 from hwx_scenes import SCENES as HWX_SCENES
+from quote_asks import QUOTE_ASKS
 
 # 悬浮球问答的后端地址。空字符串＝功能关闭（前端不渲染任何东西）。
 # 2026-09-01 上线。Worker 名字是控制台随机生成的，不好看但只影响这一行；
@@ -516,7 +517,24 @@ def _hwx_payload():
         t = re.sub(r"[，。！？、：；「」（）\s—…·]", "", t)
         return {t[i:i + 2] for i in range(len(t) - 1)}
 
+    # 手挑的那份优先。scripts/quote_asks.py 里 235 条是逐条看引文、看 when、
+    # 看这一篇挂着哪些问句挑出来的；剩下的仍走自动，门槛照旧 2。
+    _all_q, _own = set(), {}
+    for _t, _g, _qs in HWX_SCENES:
+        for _qt, _refs in _qs:
+            _all_q.add(_qt)
+            for _r in _refs:
+                _own.setdefault(_r, set()).add(_qt)
+    for _k, _v in QUOTE_ASKS.items():
+        _sl, _kk = _k.split("/", 1)
+        assert _v in _all_q, "quote_asks 里的问句在处境层不存在：%s → %s" % (_k, _v)
+        assert _v in _own.get((_sl, _kk), set()), (
+            "quote_asks 配的问句没有引用这一篇：%s → %s" % (_k, _v))
+
     def first_person(ch, g):
+        key = "%s/%s" % (hw_slugs.slug_for(ch["parent"]), ch["k"])
+        if key in QUOTE_ASKS:
+            return QUOTE_ASKS[key]
         pool = _prim.get((hw_slugs.slug_for(ch["parent"]), ch["k"]), [])
         if not pool:
             return ""
