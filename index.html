@@ -302,6 +302,7 @@ body{background:var(--paper);color:var(--ink)}
 #hwx .tq .src{font-size:13.5px;color:var(--muted)}
 #hwx .tq .src a{color:var(--acc);text-decoration:none}
 #hwx .tq .tgl{font-size:14.5px;line-height:1.75;color:var(--ink);opacity:.72;margin:0 0 10px}
+#hwx .tq .tgl em{font-style:normal;color:var(--acc)}
 #hwx .tq .acts{display:flex;gap:8px;margin-top:14px}
 #hwx .tq .acts button{border:1.5px solid var(--ink);background:transparent;color:var(--ink);border-radius:999px;padding:7px 16px;font-family:inherit;font-size:14px;cursor:pointer}
 #hwx .tq .acts .bs{background:var(--ink);color:var(--paper)}
@@ -329,7 +330,7 @@ body{background:var(--paper);color:var(--ink)}
 #hwx .askhero .go i{font-style:normal;font-size:12.5px;color:var(--muted);display:block;margin-top:3px}
 #hwx .today .tq{padding:15px 16px}
 #hwx .today .tq .q{font-size:17px!important;line-height:1.8!important;margin-bottom:8px!important}
-#hwx .today .tq .tgl{display:none}
+#hwx .today .tq .tgl{display:block;font-size:13.5px;line-height:1.7;margin:8px 0 10px}
 #hwx .today .tq .acts button{padding:5px 12px;font-size:12.5px;border-width:1px}
 #hwx .today .tq .acts .bs{background:var(--ink);color:var(--paper);border-color:var(--ink)}
 #hwx .tbox-s{padding:12px 14px}
@@ -492,8 +493,17 @@ function paintQuote(first){
   document.getElementById('hwx-dt').textContent='今日一句';
   document.getElementById('hwx-tq').textContent='「'+q1.q+'」';
   document.getElementById('hwx-tqs').innerHTML='—— '+q1.who+' · <a href="'+q1.u+'" data-h="'+esc(q1.who+' · '+q1.cn)+'">'+q1.cn+' →</a>';
+  /* 「什么时候想起这句」——和「今日一篇」的「什么时候翻开它」是同一个手法。
+     这一句 319 条引文本来每条都有（QP 的 when 字段），只是首页一直
+     display:none 藏着，只在分享卡上用。于是首页那块成了名言展示柜：
+     它是关于说话那个人的，不是关于读者的。露出来它才冲着读者。
+     用 when 不用 gl：gl 是「用在……的时候。」，公文腔；when 就是那半句人话。 */
   var gl=document.getElementById('hwx-tgl');
-  if(gl)gl.textContent=q1.gl||'';
+  if(gl){
+    var w=q1.when||'';
+    gl.innerHTML=w?('<em>什么时候想起这句：</em>'+esc(w)):'';
+    gl.style.display=w?'':'none';
+  }
 }
 paintQuote(true);
 document.getElementById('hwx-next').onclick=function(){
