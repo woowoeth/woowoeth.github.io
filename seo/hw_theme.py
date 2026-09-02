@@ -35,9 +35,26 @@ def _share_btn(title, url, text):
         % (esc(title), esc(url), esc(text), SHARE_SVG)
     )
 
-def _say(text):
-    """One 金句, set into the flow between sections."""
-    return '<blockquote class="say"><p>%s</p></blockquote>' % esc(text)
+KEYW = '<b class="key">%s</b>'
+
+
+def _emph_in(html, start, span):
+    """把选中的那一句在它本来所在的段落里加重，而不是另起一块。
+
+    条目页原来把它插在那一节之前当引言（章节页是插在段后），两种摆法
+    都逃不过一件事：同一句话读者会读两遍。全站条目页 358 处、
+    章节页 902 处，全是紧邻正文的逐字截取。
+    找不到就什么都不做——宁可少一处加重，也不要标错位置。
+    """
+    e = esc(span)
+    # slots 记的是这一节在 html 里的插入位置，而那时这一节的段落已经进去了，
+    # 所以只往后找是找不到的（第一版就栽在这儿，全站 0 处加重）。整表找。
+    order = list(range(start, len(html))) + list(range(start - 1, -1, -1))
+    for j in order:
+        if e in html[j]:
+            html[j] = html[j].replace(e, KEYW % e, 1)
+            return True
+    return False
 
 
 _STRIP = "\u300c\u300d\u201c\u201d\u2018\u2019\u3002\uff0c\u3001\uff01\uff1f\uff1b\uff1a\u2014\u2026 .,!?;:\"'"
@@ -331,7 +348,7 @@ def _render_blocks(it, zh):
     pool = [c for c in pool if c[2] > 0 and c[1] not in rendered]
     for si, span, _sc in sorted(_pick_pullquotes(pool, want),
                                 key=lambda c: -slots[c[0]]):
-        html.insert(slots[si], _say(span))
+        _emph_in(html, slots[si], span)
     return "\n".join(html), toc
 
 def item_page(site, it, items, idx, zh, hub_of=None):

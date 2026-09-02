@@ -184,7 +184,12 @@
 
     ':root[data-theme="dark"] .hwq-ai{background:#1d1913}',
     ':root[data-theme="dark"] .hwq-me{background:#201c15}',
-    '@media(max-width:480px){.hwq-col{padding:0 16px}#hwq-ball{right:14px;bottom:14px}}'
+    /* 手机上球缩一号、再贴边一点。52px 贴在 right:14 时会占到 x=324-376，
+       而章节页正文列的右边界是 366——它永久压住每一屏最后一行的最后两个字。
+       缩到 42、贴到 right:6 之后压住的宽度从 42px 降到 24px（约一个字）。
+       想彻底不压只能把正文列变窄，那是可见的版式改动，没自己动。 */
+    '@media(max-width:480px){.hwq-col{padding:0 16px}',
+    '#hwq-ball{right:6px;bottom:12px;width:42px;height:42px;font-size:18px;line-height:42px}}'
   ].join('');
 
   var st = document.createElement('style');

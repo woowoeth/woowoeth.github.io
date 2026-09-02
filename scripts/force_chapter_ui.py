@@ -760,6 +760,7 @@ header.hd{margin-bottom:12px!important}
    横滑两行占 78px，一屏能扫到十几个，滑动就能看完全部。
    不放组名——组名与标签同行会混成半个标签（见 DESIGN.md §7），
    改用「按组排序」让相邻的处境自然聚在一起。 */
+#hwx .scmore-note{grid-column:1/-1;padding:14px 4px 4px;font-size:13.5px;color:var(--muted);line-height:1.7}
 #hwx .scpick{display:grid;grid-auto-flow:column;grid-template-rows:auto auto;grid-auto-columns:max-content;gap:7px 6px;overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:none;margin:12px 0 0;padding-bottom:2px}
 #hwx .scpick::-webkit-scrollbar{display:none}
 #hwx .scpick button{border:1px solid var(--line);background:transparent;color:inherit;border-radius:999px;padding:7px 14px;font-family:inherit;font-size:14.5px;line-height:1.3;cursor:pointer;white-space:nowrap}
@@ -1134,7 +1135,7 @@ D.E.forEach(function(e,i){
   if(i%3===2){var g=pickQ();
     fullCells.push(qcard(g,'xtra'));}
   if(i%5===3){var k=D.QQ[ki++%D.QQ.length];
-    fullCells.push('<div class="kc xtra" data-t="'+esc(k.t.toLowerCase())+'"><span class="seal">问</span>'+(k.r&&k.r[0]?'<span class="said">'+esc(k.r[0].who)+'问过</span>':'')+'<span class="t">'+k.t+'</span><span class="r">'+k.r.map(function(r){return '<a href="'+r.u+'" data-h="'+esc(r.who+' · '+r.cn)+'"><b>'+r.who+'</b> · '+r.cn+' →</a>'}).join('')+'</span></div>');}
+    fullCells.push('<div class="kc xtra" data-t="'+esc((k.t+(k.s||'')+(k.ss||'')).toLowerCase())+'"><span class="seal">问</span>'+(k.r&&k.r[0]?'<span class="said">'+esc(k.r[0].who)+'问过</span>':'')+'<span class="t">'+k.t+'</span><span class="r">'+k.r.map(function(r){return '<a href="'+r.u+'" data-h="'+esc(r.who+' · '+r.cn)+'"><b>'+r.who+'</b> · '+r.cn+' →</a>'}).join('')+'</span></div>');}
 });
 /* ── 最新 feed ── */
 /* 最新 tab 混排：每 4 张深度阅读插 1 张人物/书卡、1 张金句卡，每 9 槽插 1 张问题卡 */
@@ -1160,10 +1161,11 @@ D.NC.forEach(function(e,i){
    原来「按处境找」是 1049px 的标签目录，三步才到答案，
    而这些问题 100% 已经在信息流里以卡片出现过。改成卡片流：
    同一批内容、同一套视觉，扫读即认出，不必先学会我们的分类。 */
-var scCells=[],scOwner=[];
+var scCells=[],scOwner=[],scText=[];
 D.S.forEach(function(sc){
   sc.qs.forEach(function(q){
     scOwner.push(sc.t);
+    scText.push((q.q+sc.t).toLowerCase());
     scCells.push('<div class="kc" data-t="'+esc((q.q+sc.t).toLowerCase())+'">'
       +'<span class="seal">问</span>'
       +'<span class="said">'+esc(sc.t)+'</span>'
@@ -1178,7 +1180,11 @@ function trk(name, params){
   try{ if(window.gtag) gtag('event', name, params||{}); }catch(e){}
 }
 /* ── 标签页切换 ── */
-var TAB='新';
+/* 默认落在「处境」。原来是「最新」——那是一份按章节文件首次提交时间排的
+   更新日志，对第一次来的人毫无意义：他看到的是连着四张蒲松龄，
+   因为蒲松龄是最近加的。68 张卡里 40 张挂着「新」标记，而对第一次来的人
+   所有东西都是新的。「最新」只对回访者有用，不该当门面。 */
+var TAB='境';
 var feed=document.getElementById('hwx-feed'), ncfeed=document.getElementById('hwx-ncfeed');
 var scfeed=document.getElementById('hwx-scfeed');
 var scpick=document.getElementById('hwx-scpick');
@@ -1190,6 +1196,11 @@ function scReveal(){
   var on=scpick.querySelector('button.on');
   if(on&&on.scrollIntoView)try{on.scrollIntoView({inline:'center',block:'nearest'})}catch(e){}
 }
+/* 没选任何组时只渲染前 SC_CAP 张。默认落到「处境」之后，
+   「全部」会把 521 张卡一次铺完，首页从 11050px 涨到 64761px——
+   77 屏，比原来那个 13 屏的信息流糟得多。
+   选了组或选了具体处境就不截断：那时候总数本来就只有几个到几十个。 */
+var SC_CAP=28;
 function scRender(){
   var inGrp={};
   if(SCGRP){D.S.forEach(function(sc){if(sc.g===SCGRP)inGrp[sc.t]=1;});}
@@ -1197,7 +1208,11 @@ function scRender(){
   for(var i=0;i<scCells.length;i++){
     var own=scOwner[i];
     var ok = SCSEL ? (own===SCSEL) : (SCGRP ? !!inGrp[own] : true);
-    if(ok){cells.push(scCells[i]);n++;}
+    if(ok){n++; if(!SCSEL&&!SCGRP&&cells.length>=SC_CAP)continue; cells.push(scCells[i]);}
+  }
+  if(!SCSEL&&!SCGRP&&n>cells.length){
+    cells.push('<div class="scmore-note">还有 '+(n-cells.length)
+      +' 个问题。上面挑一个跟你有关的分组，或者直接搜。</div>');
   }
   scfeed.innerHTML=cells.join('');
   ct.textContent=n+' 个问题';   /* 处境名由选中的标签表达，不再重复一遍 */
@@ -1266,17 +1281,91 @@ document.querySelectorAll('#hwx-tabs2 button').forEach(function(b){
     trk('tab_switch',{tab:t==='新'?'latest':(t==='全'?'all':'situations')});
     switchTab(t)};
 });
+/* 搜索原来两个毛病叠在一起。
+   一是逐字子串（data-t.indexOf(v)），差一个字就 0 条：搜「我很难受」出 0，
+   可站里的问句是「这件事为什么让我这么难受？」。
+   二是范围只覆盖「全部」里的条目和金句卡——112 个处境、521 个问题
+   压根没进索引，所以搜「突然没了工作」（处境名逐字）也是 0，
+   而那个处境下面挂着 8 个问题。
+   读者进这个站的方式恰恰是用自己的话说处境，最该管用的那类输入全废了。
+
+   改成和悬浮球同一套：二元组 + IDF 加权。稀有的词才是查询的意思所在——
+   「的人」在几百张卡里都有，「裁员」只在一两张里有，两者不能同权。
+   而且真的按分数排序，不再让 DOM 顺序决定谁在前面。
+   处境问题在有查询时一并搜、一并排。 */
+function _bg(t){var g={},i;for(i=0;i<t.length-1;i++)g[t.slice(i,i+2)]=1;return g}
+var _IDF=null;
+function _idf(){
+  if(_IDF)return _IDF;
+  var df={},docs=[],i;
+  feed.querySelectorAll('.pc,.xtra').forEach(function(c){docs.push(c.getAttribute('data-t')||'')});
+  for(i=0;i<scText.length;i++)docs.push(scText[i]);
+  docs.forEach(function(d){var g=_bg(d);for(var k in g)df[k]=(df[k]||0)+1});
+  _IDF={df:df,n:docs.length,dflt:Math.log(docs.length+1)};
+  return _IDF;
+}
+function _score(hay,vg){
+  var d=_idf(),s=0;
+  for(var k in vg){
+    if(hay.indexOf(k)<0)continue;
+    var c=d.df[k];
+    s+= c?Math.log((d.n+1)/(1+c)):d.dflt;
+  }
+  return s;
+}
 function applyFeed(){
   if(!feed||!ct)return;
-  var v=(document.getElementById('q')||{value:''}).value.trim().toLowerCase(),vis=0;
-  feed.querySelectorAll('.pc').forEach(function(c){
-    var ok=(CAT==='全部'||c.getAttribute('data-c')===CAT)&&(!v||c.getAttribute('data-t').indexOf(v)>=0);
-    c.classList.toggle('hid',!ok);if(ok)vis++;
+  var v=(document.getElementById('q')||{value:''}).value.trim().toLowerCase();
+  var vg=_bg(v),vn=0,_k;for(_k in vg)vn++;
+  var full=vn?_score(v,vg):0;          /* 整条查询自己的权重之和，当阈值的基准 */
+  /* 两条判据取「或」。按占比会漏掉一类：搜「我很难受」，站里的问句是
+     「这件事为什么让我这么难受？」——只对上「难受」一组，占比不够，
+     可「难受」本身在全站只出现在很少几张卡里，它就是这句查询的意思所在。
+     所以再加一条绝对权重：命中一个足够稀有的词，就够了。 */
+  var need=full*0.32;
+  /* 只对短查询放宽。长查询本来就有足够多的组，占比是可靠的；
+     再叠一条绝对权重，「一个能约的人都没有」会从 30 条涨到 151 条——
+     排序还是对的，但后面全是噪音。 */
+  var rare=(vn<=4)?2.6:Infinity;
+  var qres=document.getElementById('hwx-qres');
+  if(!qres){qres=document.createElement('div');qres.id='hwx-qres';qres.className='scfeed';feed.parentNode.insertBefore(qres,feed);}
+  if(!v){
+    qres.innerHTML='';qres.style.display='none';
+    var vis0=0;
+    feed.querySelectorAll('.pc').forEach(function(c){
+      var ok=(CAT==='全部'||c.getAttribute('data-c')===CAT);
+      c.classList.toggle('hid',!ok);if(ok)vis0++;});
+    feed.querySelectorAll('.xtra').forEach(function(c){
+      var ok=(CAT==='全部');c.classList.toggle('hid',!ok);if(ok)vis0++;});
+    ct.textContent=vis0+' 条知识';
+    return;
+  }
+  /* 条目卡和金句卡：打分、隐藏低分的、按分数重排 */
+  var keep=[];
+  feed.querySelectorAll('.pc,.xtra').forEach(function(c){
+    var isPc=c.classList.contains('pc');
+    var inCat=isPc?(CAT==='全部'||c.getAttribute('data-c')===CAT):(CAT==='全部');
+    var hay=c.getAttribute('data-t')||'';
+    var sc=(hay.indexOf(v)>=0)?full+1:_score(hay,vg);
+    var ok=inCat&&sc>0&&(sc>=need||sc>=rare);
+    c.classList.toggle('hid',!ok);
+    if(ok)keep.push([sc,c]);
   });
-  feed.querySelectorAll('.xtra').forEach(function(c){
-    c.classList.toggle('hid',CAT!=='全部'||!!(v&&c.getAttribute('data-t')&&c.getAttribute('data-t').indexOf(v)<0));
-  });
-  ct.textContent=vis+' 条知识';
+  keep.sort(function(a,b){return b[0]-a[0]});
+  keep.forEach(function(p){feed.appendChild(p[1])});
+  /* 处境里的问题：只在有查询时出现，排在条目前面——
+     用自己的话搜处境的人，要的是「有人问过这件事」，不是一张人物名片。 */
+  var hits=[];
+  for(var i=0;i<scText.length;i++){
+    var t=scText[i];
+    var sc2=(t.indexOf(v)>=0)?full+1:_score(t,vg);
+    if(sc2>0&&(sc2>=need||sc2>=rare))hits.push([sc2,i]);
+  }
+  hits.sort(function(a,b){return b[0]-a[0]});
+  hits=hits.slice(0,12);
+  qres.innerHTML=hits.map(function(p){return scCells[p[1]]}).join('');
+  qres.style.display=hits.length?'':'none';
+  ct.textContent=(keep.length+hits.length)+' 条知识';
 }
 /* 搜索框接管 */
 var qin=document.getElementById('q');
@@ -1340,7 +1429,7 @@ if(qin){qin.oninput=null;
     trk('card_click',{card_type:'daily_question', feed:'hero', dest:a.getAttribute('href')});
   },true);
 })();
-switchTab('新');
+switchTab('境');
 })();
 """.strip()
 
@@ -1514,6 +1603,61 @@ def patch_chapter_og():
 
 patch_chapter_og()
 
+
+def patch_chapter_scene():
+    """章节页末尾加一块「同一件事，还有人这么问」。
+
+    从搜索或 AI 引流进来的人，落地就是一篇章节页。他被说中了，然后呢——
+    页尾只有「上一篇 / 下一篇」，那是按书目顺序排的，是这本书的目录，
+    不是他的处境。112 个处境、521 个问题就在数据里，章节页一个字都没提。
+
+    放在「这一篇如果说中了你正在经历的事」之前：先给同类，再谈转发。
+    """
+    import os, re, html as _h
+    by_ch = {}
+    for t, g, qs in HWX_SCENES:
+        for qtext, refs in qs:
+            for sl, kk in refs:
+                by_ch.setdefault((sl, kk), set()).add(t)
+    n = 0
+    for (sl, kk), scenes in by_ch.items():
+        page = os.path.join("i", sl, kk, "index.html")
+        if not os.path.exists(page):
+            continue
+        s = open(page, encoding="utf-8").read()
+        if 'class="hw-same"' in s or '<div class="hw-outro">' not in s:
+            continue
+        sc = sorted(scenes)[0]
+        qs = next(q for t, g, q in HWX_SCENES if t == sc)[1] if False else None
+        for t, g, q in HWX_SCENES:
+            if t == sc:
+                qs = q
+                break
+        rows = []
+        for qtext, refs in qs:
+            if not refs:
+                continue
+            # 原来把「答案里含本篇」的问题整条剔掉，结果同处境里最贴的几个
+            # 全被滤走，还出现过一页一条都不剩。改成只换链接：优先指向别的篇，
+            # 全都是这一篇时就还指它——问题本身不一样，值得列出来。
+            alt = [r for r in refs if r != (sl, kk)] or list(refs)
+            rows.append((qtext, "/i/%s/%s/" % alt[0]))
+            if len(rows) >= 4:
+                break
+        if not rows:
+            continue
+        blk = ('<section class="hw-same"><p class="ph">同一件事，还有人这么问</p>'
+               + "".join('<a href="%s">%s</a>' % (u, _h.escape(q)) for q, u in rows)
+               + '<a class="more" href="/#hwx-tabs2">%s · 全部 %d 个问题 →</a></section>'
+                 % (_h.escape(sc), len(qs)))
+        s = s.replace('<div class="hw-outro">', blk + '<div class="hw-outro">', 1)
+        open(page, "w", encoding="utf-8").write(s)
+        n += 1
+    print("chapter same-scene block:", n)
+
+
+patch_chapter_scene()
+
 # ---------------- 条目页：手写介绍替换模板句 ----------------
 # 原 dek 是 "格雷厄姆（美·1894-1976年）——安全边际·市场先生。"，与上一行 .one 重复、
 # 信息量为零。改用 HWX_INTROS 的手写介绍；无手写介绍的条目保留原句。
@@ -1646,7 +1790,7 @@ def chat_widget():
         return ""
     return (HWQ_A
             + '<script>window.HW_CHAT_ENDPOINT="' + HW_CHAT_ENDPOINT + '";</script>'
-            + '<script src="/assets/hw-chat.js?v=19" defer></script>'
+            + '<script src="/assets/hw-chat.js?v=20" defer></script>'
             + HWQ_B)
 
 

@@ -117,6 +117,21 @@ h1{
    唯一的区别是它独立站在两节之间，所以要自己撑出对称的上下间距：继承来的
    margin:0 0 12px 会被上一节的 28/32px 底距折叠成「上宽下窄」，而且跟在
    .point 还是 .sec 后面还不一样。32px ≥ 两者，折叠后上下都是 32px。 */
+/* 分则里最值得记住的那一句，就地加重。
+   原来是把它另抄一份放在段后（blockquote.say），全站 902 条无一例外都是
+   紧邻上方那段正文的逐字截取——读者在同一屏内读两遍同一句话。
+   现在回到它本来在的位置：底部一道浅色的衬，像用荧光笔划过，
+   扫读时依然跳出来，但不再是第二遍。 */
+/* 章节页末尾：同一个处境下别人怎么问。
+   被说中之后，最该给的是「这是一类事，有人处理过」，
+   而不是「这本书的下一篇」。 */
+.hw-same{margin:36px 0 28px; padding:16px 18px; border:1px solid var(--rule); border-radius:14px; background:var(--surface-2)}
+.hw-same .ph{margin:0 0 10px; font-size:12px; letter-spacing:.22em; color:var(--seal); font-weight:700}
+.hw-same a{display:block; padding:9px 0; border-top:1px dashed var(--rule); color:var(--ink); font-size:15.5px; line-height:1.6; text-decoration:none}
+.hw-same a:first-of-type{border-top:0}
+.hw-same a:hover{color:var(--seal)}
+.hw-same a.more{margin-top:4px; font-size:13px; color:var(--muted)}
+b.key{font-weight:650; background:linear-gradient(transparent 62%, var(--seal-soft) 62%)}
 blockquote.say{margin:32px 0}
 
 blockquote{margin:0 0 12px; padding:2px 0 2px 14px; border-left:2px solid var(--seal); color:var(--ink-2); font-family:var(--quote); font-size:18px; line-height:1.65}

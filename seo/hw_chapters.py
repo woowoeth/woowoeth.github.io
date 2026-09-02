@@ -22,6 +22,57 @@ def rich(s):
     return "".join(out)
 
 
+KEY = '<b class="key">%s</b>'
+
+
+def _emph(html, raw):
+    """把选中的那一句在已渲染的段落里就地标出来。
+
+    raw 是原文里的一段（可能带 == 高亮标记）。rich(raw) 必然是 rich(源) 的子串——
+    902 条实测 887 条落在分则正文里、15 条落在「例」里，没有落空的。
+    找不到就原样返回，宁可不标，也不要标错位置。
+    """
+    if not raw:
+        return html
+    piece = rich(raw)
+    if piece and piece in html:
+        return html.replace(piece, KEY % piece, 1)
+    return html
+
+
+def _pick_keys(ch):
+    """挑出每篇 1-3 句最值得标出来的话，返回 {分则下标: 原文片段}。
+
+    选法和原来的金句完全一样（同一套 _spans / _quotability / _pick_pullquotes），
+    只是结果不再另起一个 blockquote，而是回到它本来在的那一段里加重。
+    """
+    import re as _re
+    import hw_theme as _t
+    cands = []
+    for i, f in enumerate(ch["f"]):
+        whole = _plain(f["d"]) + _plain(f.get("eg", ""))
+        for src, penalty in ((_plain(f["d"]), 0.0), (_plain(f.get("eg", "")), 0.8)):
+            for span in _t._spans(src):
+                if len(whole) - len(span) < 45:      # excerpt, not the section
+                    continue
+                if len(src) - len(span) < 20:        # …and not a whole paragraph
+                    continue
+                own = _re.sub(r"\u300c[^\u300d]*\u300d", "", span)
+                if len(own.strip("\u3002\uff0c\u3001\uff01\uff1f\uff1b\uff1a\u2014 ")) < 20:
+                    continue
+                cands.append((i, span, _t._quotability(span) - penalty))
+    want = max(1, min(3, len(ch["f"])))
+    shown = {_plain(f["d"]) for f in ch["f"]} | {_plain(f.get("eg", "")) for f in ch["f"]}
+    shown |= {x for f in ch["f"] for x in _t._breathe(_plain(f["d"]))}
+    out = {}
+    for i, span, _sc in _t._pick_pullquotes(
+            [c for c in cands if c[2] > 0 and c[1] not in shown], want):
+        raw = f_span_raw(ch["f"][i]["d"], span) or f_span_raw(ch["f"][i].get("eg", ""), span)
+        if raw:
+            out[i] = raw
+    return out
+
+
 # ---------------------------------------------------------------- data loading
 # One module per parent under seo/chapters/. A single literal was fine for five
 # chapters; at a few hundred it becomes an unreviewable diff every time one line
@@ -249,6 +300,12 @@ def _chapter_page(ch, idx):
     parent_url = "%s/i/%s/" % (SITE, ch["parent_slug"])
     page_url = "%s/i/%s/%s/" % (SITE, ch["parent_slug"], ch["k"])
     title = "%s — %s — 人类世界生存法则" % (ch["n"], parent)
+    # 金句先选出来，因为它要在分则渲染时就地标出来，而不是另起一块贴在段后。
+    # 原来是「段落 → 例 → 金句(=段落里的一句)」，读者在同一屏内把同一句读两遍：
+    # 全站 902 条金句，902 条都是紧邻上方那段正文的逐字截取，317 页无一幸免。
+    # check_pullquotes 一直报 0，是因为它判的是「金句 == 某个完整段落」，
+    # 而这里的金句是段落的一部分——包含，不是相等。
+    _mark = _pick_keys(ch)
     points = []
     toc = [("s2", "背后是什么故事")]
     for i, f in enumerate(ch["f"], 1):
@@ -257,8 +314,10 @@ def _chapter_page(ch, idx):
         points.append(
             '<section class="point" id="%s"><h2>%s</h2><p>%s</p>%s</section>'
             % (
-                aid, rich(f["n"]), rich(f["d"]),
-                ('<p class="eg">%s</p>' % rich(f["eg"])) if f.get("eg") else "",
+                # 这个循环的 i 从 1 起（id 要写成 p1/p2），_pick_keys 的下标从 0 起
+                aid, rich(f["n"]), _emph(rich(f["d"]), _mark.get(i - 1)),
+                ('<p class="eg">%s</p>' % _emph(rich(f["eg"]), _mark.get(i - 1)))
+                if f.get("eg") else "",
             )
         )
     # Same rule as the entry pages: a 金句 the reader already met in the body is
@@ -269,33 +328,7 @@ def _chapter_page(ch, idx):
     _keep = [q for q in ch["q"] if _bare(q) and not hw_theme._echoes(q, _seen)]
     quotes = "".join("<blockquote><p>%s</p></blockquote>" % rich(q) for q in _keep)
     toc += [("s7", "今天怎么用")] + ([("quotes", "金句")] if _keep else [])
-    # 金句: 1-3 lines lifted from the 分则 they close (option A), plus the full
-    # 原文 list restored as a section at the foot.
-    import hw_theme as _t
-    cands = []
-    import re as _re
-    for i, f in enumerate(ch["f"]):
-        whole = _plain(f["d"]) + _plain(f.get("eg", ""))
-        for src, penalty in ((_plain(f["d"]), 0.0), (_plain(f.get("eg", "")), 0.8)):
-            for span in _t._spans(src):
-                if len(whole) - len(span) < 45:      # excerpt, not the section
-                    continue
-                if len(src) - len(span) < 20:        # …and not a whole paragraph
-                    continue
-                own = _re.sub(r"\u300c[^\u300d]*\u300d", "", span)
-                if len(own.strip("\u3002\uff0c\u3001\uff01\uff1f\uff1b\uff1a\u2014 ")) < 20:
-                    continue
-                cands.append((i, span, _t._quotability(span) - penalty))
-    want = max(1, min(3, len(ch["f"])))
-    shown = {_plain(f["d"]) for f in ch["f"]} | {_plain(f.get("eg", "")) for f in ch["f"]}
-    shown |= {x for f in ch["f"] for x in _t._breathe(_plain(f["d"]))}
-    chosen = _t._pick_pullquotes([c for c in cands if c[2] > 0 and c[1] not in shown], want)
-    after = {}
-    for i, span, _sc in chosen:
-        raw = f_span_raw(ch["f"][i]["d"], span)
-        after[i] = '<blockquote class="say"><p>%s</p></blockquote>' % rich(raw)
-    body_points = "\n".join(
-        pt + ("\n" + after[i] if i in after else "") for i, pt in enumerate(points))
+    body_points = "\n".join(points)
     apply_paras = "".join("<p>%s</p>" % rich(p)
                           for p in ch["apply"].split("\n") if p.strip())
     toc_html = "".join(
