@@ -59,6 +59,22 @@
     }
   }
 
+  /* 这个浏览器的身份。服务端按它算额度，不再按 IP——
+     中国的移动网络是 CGNAT，一个出口 IP 后面挂着成千上万部手机，
+     按 IP 算等于一个陌生人问完，整个基站下的人当天都被挡住。
+     清缓存就能换一个新的，挡不住有心人；但有心人不是这道闸要挡的对象。 */
+  var CID_KEY = 'hw-chat-cid';
+  function cid() {
+    try {
+      var v = localStorage.getItem(CID_KEY);
+      if (!v) {
+        v = (Date.now().toString(36) + Math.random().toString(36).slice(2, 12)).replace(/[^a-z0-9]/g, '');
+        localStorage.setItem(CID_KEY, v);
+      }
+      return v;
+    } catch (e) { return ''; }
+  }
+
   /* ---------- 每日额度（前端只是提示，真正的限流必须在服务端） ---------- */
   function today() { var d = new Date(); return d.getFullYear() + '-' + (d.getMonth() + 1) + '-' + d.getDate(); }
   function quota() {
@@ -127,14 +143,41 @@
     'white-space:nowrap;margin-left:4px;vertical-align:baseline}',
     '#hwq-panel .hwq-cite:hover{opacity:.7}',
 
+    /* 等待时那句话自己会动。静止的「在翻书……」和卡死的界面长得一模一样，
+       十一秒里读者没有任何依据判断是哪一种。 */
+    '.hwq-wait{background:linear-gradient(90deg,var(--muted,#8a8377) 0%,var(--muted,#8a8377) 42%,',
+    'var(--ink,#1f1c17) 50%,var(--muted,#8a8377) 58%,var(--muted,#8a8377) 100%);',
+    'background-size:220% 100%;-webkit-background-clip:text;background-clip:text;',
+    '-webkit-text-fill-color:transparent;color:transparent;animation:hwq-sheen 1.9s linear infinite}',
+    '@keyframes hwq-sheen{from{background-position:120% 0}to{background-position:-120% 0}}',
+    '@media(prefers-reduced-motion:reduce){.hwq-wait{animation:none;-webkit-text-fill-color:var(--muted,#8a8377);',
+    'color:var(--muted,#8a8377)}#hwq-send.busy svg{animation:none}}',
+
+    /* 输入区是一个整体，不是「一个圆角框 + 旁边一个按钮」。
+       边框画在外壳上，输入框自己无边框——焦点环也落在外壳，
+       于是「我正在写的地方」是一整块，而不是两个各画各的控件。
+       下面那条是壳内的控制行，只放发送。 */
     '#hwq-foot{flex:0 0 auto;border-top:1px solid var(--line,#d8d2c6);padding-bottom:env(safe-area-inset-bottom)}',
-    '#hwq-foot .hwq-col{display:flex;gap:10px;align-items:flex-end;padding-top:12px;padding-bottom:12px}',
-    '#hwq-in{flex:1;resize:none;border:1px solid var(--line,#d8d2c6);border-radius:999px;background:transparent;',
-    'color:var(--ink,#1f1c17);font-family:inherit;font-size:17px;line-height:1.55;padding:10px 16px;max-height:88px;outline:none}',
-    '#hwq-in:focus{border-color:var(--muted,#8a8377)}',
-    '#hwq-send{flex:0 0 auto;border:none;border-radius:999px;background:var(--ink,#1f1c17);color:var(--paper,#f5f1e8);',
-    'font-family:inherit;font-size:15.5px;padding:11px 18px;cursor:pointer;min-height:36px}',
-    '#hwq-send:disabled{opacity:.45;cursor:default}',
+    '#hwq-foot .hwq-col{padding-top:12px;padding-bottom:12px}',
+    '#hwq-box{border:1px solid var(--line,#d8d2c6);border-radius:20px;background:transparent;',
+    'padding:10px 12px 8px;transition:border-color .15s}',
+    '#hwq-box.on{border-color:var(--muted,#8a8377)}',
+    '#hwq-in{display:block;width:100%;box-sizing:border-box;resize:none;border:none;background:transparent;',
+    'color:var(--ink,#1f1c17);font-family:inherit;font-size:17px;line-height:1.55;padding:0 4px;max-height:88px;outline:none}',
+    '#hwq-bar{display:flex;justify-content:flex-end;margin-top:8px}',
+    /* 发送键三态：空着是描边（能看见但不招手），有字了变实心（该按了），
+       在等回答时变成转圈。原来只有 disabled 一种，11 秒的等待里
+       按钮毫无反应，唯一的反馈是那句「在翻书」，而它可能已经滚上去了。 */
+    '#hwq-send{flex:0 0 auto;width:34px;height:34px;padding:0;border-radius:999px;cursor:pointer;',
+    'display:flex;align-items:center;justify-content:center;',
+    'border:1px solid var(--line,#d8d2c6);background:transparent;color:var(--muted,#8a8377);',
+    'transition:background .15s,color .15s,border-color .15s}',
+    '#hwq-send svg{width:17px;height:17px;display:block}',
+    '#hwq-send.hot{background:var(--ink,#1f1c17);border-color:var(--ink,#1f1c17);color:var(--paper,#f5f1e8)}',
+    '#hwq-send:disabled{cursor:default;opacity:.4}',
+    '#hwq-send.busy{opacity:1}',
+    '#hwq-send.busy svg{animation:hwq-spin .8s linear infinite}',
+    '@keyframes hwq-spin{to{transform:rotate(360deg)}}',
 
     /* 开场白。原先没有，是想错了：标题「你遇到什么事了？」只说了怎么问，
        没说能问什么——新来的人分不清这是站内搜索、客服，还是通用聊天。 */
@@ -160,16 +203,27 @@
   panel.id = 'hwq-panel'; panel.hidden = true;
   panel.setAttribute('role', 'dialog');
   panel.setAttribute('aria-label', '问一问');
+  /* 两个图标都内联。箭头是发送，圆环是等待时转的那个。
+     用 SVG 不用字符：↑ 在不同系统里字重和基线差得离谱，圆里摆不正。 */
+  var ARROW = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" '
+    + 'stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'
+    + '<path d="M12 19V5M5 12l7-7 7 7"/></svg>';
+  var SPIN = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" '
+    + 'stroke-linecap="round" aria-hidden="true">'
+    + '<path d="M21 12a9 9 0 1 1-6.2-8.55"/></svg>';
+
   panel.innerHTML =
     '<div id="hwq-head"><div class="hwq-col"><b>你遇到什么事了？</b>' +
     '<span id="hwq-left"></span><button id="hwq-close" type="button" aria-label="关闭">×</button></div></div>' +
     '<div id="hwq-log"><div class="hwq-col" id="hwq-logc"></div></div>' +
-    '<div id="hwq-foot"><div class="hwq-col">' +
+    '<div id="hwq-foot"><div class="hwq-col"><div id="hwq-box">' +
     '<textarea id="hwq-in" rows="1" placeholder="说说看……"></textarea>' +
-    '<button id="hwq-send" type="button">发送</button></div></div>';
+    '<div id="hwq-bar">' +
+    '<button id="hwq-send" type="button" aria-label="发送">' + ARROW + '</button></div></div></div></div>';
 
   var back = document.createElement('div');
   back.id = 'hwq-back'; back.hidden = true;
+
   back.setAttribute('aria-hidden', 'true');
 
   document.body.appendChild(ball);
@@ -230,8 +284,23 @@
   function refreshLeft() {
     var n = left();
     leftEl.textContent = '今天还能问 ' + n + ' 次';
-    send.disabled = n <= 0;
     input.placeholder = n > 0 ? '说说看……' : '今天的 5 次用完了，明天再来';
+    paintSend();
+  }
+  /* 发送键的三态。空着＝描边，有字＝实心，在等＝转圈。
+     判断顺序是「先看在不在等」——等的时候输入框已经被清空了，
+     按有没有字来判断会让它在最需要反馈的十一秒里退回描边。 */
+  function paintSend() {
+    if (busy) {
+      send.innerHTML = SPIN;
+      send.className = 'hot busy';
+      send.disabled = true;
+      return;
+    }
+    send.innerHTML = ARROW;
+    var ok = left() > 0;
+    send.disabled = !ok;
+    send.className = (ok && input.value.trim()) ? 'hot' : '';
   }
 
   /* 把模型写的 [0] 换成行内出处链接。
@@ -394,11 +463,12 @@
     var q = input.value.trim();
     if (!q || busy) return;
     if (left() <= 0) { hint('今天的 5 次用完了，明天再来。'); return; }
-    busy = true; send.disabled = true;
+    busy = true; paintSend();
     input.value = ''; input.style.height = 'auto';
     dropIntro();
     say('me', q);
     var thinking = say('ai', '在翻书……');
+    thinking.classList.add('hwq-wait');
 
     loadIndex().then(function () {
       // 召回 8 篇而不是 6：二元组匹配偏字面，语义差一层。
@@ -417,19 +487,21 @@
         pinned = null;           /* 只作用于这一条，后面的追问照常检索 */
       }
       if (!hits.length) {
+        thinking.classList.remove('hwq-wait');
         thinking.textContent = '这件事站里还没有对得上的内容。换个说法试试，或者直接搜一下。';
         busy = false; refreshLeft(); return;
       }
       return fetch(ENDPOINT, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ q: q, ctx: hits, scene: lastScene })
+        body: JSON.stringify({ q: q, ctx: hits, scene: lastScene, cid: cid() })
       }).then(function (r) {
         // 先无条件取 body：429 的正文里有服务端写好的那句话，比「HTTP 429」有用。
         return r.json().catch(function () { return null; })
           .then(function (j) { return { ok: r.ok, status: r.status, body: j }; });
       }).then(function (res) {
         if (res.ok && res.body && res.body.answer) {
+          thinking.classList.remove('hwq-wait');
           renderAnswer(thinking, res.body.answer, hits);
           var h = loadHist();
           h.push({ q: q, a: res.body.answer, hits: slimHits(hits), ts: Date.now() });
@@ -438,10 +510,15 @@
           return;
         }
         if (res.status === 429) {
-          // 服务端说没额度了就以它为准——前端这份计数只是提示，
-          // 换设备、清缓存都会让它和服务端对不上，这里校准回去。
+          thinking.classList.remove('hwq-wait');
           thinking.textContent = (res.body && res.body.error) || '今天的次数用完了，明天再来。';
-          try { localStorage.setItem(LS_KEY, JSON.stringify({ d: today(), n: DAILY_LIMIT })); } catch (e) {}
+          /* 只有服务端说「是你自己用完了」时才把本地计数校准到满。
+             scope:'net' 是这个出口 IP 上有人问得多——把它记成读者自己
+             用完了，会让一个一次都没问过的人当天再也点不动，
+             而且提示还告诉他「你的 5 次用完了」。这正是 CGNAT 下的常态。 */
+          if (!res.body || res.body.scope !== 'net') {
+            try { localStorage.setItem(LS_KEY, JSON.stringify({ d: today(), n: DAILY_LIMIT })); } catch (e) {}
+          }
           refreshLeft();
           return;
         }
@@ -449,8 +526,9 @@
       }).catch(function (e) {
         // 真实用户不该看到 chat_dev_proxy.py 这种字样；细节留给控制台。
         if (window.console) console.error('[hw-chat]', e);
+        thinking.classList.remove('hwq-wait');
         thinking.textContent = '没连上，等一下再试一次。';
-      }).then(function () { busy = false; });
+      }).then(function () { busy = false; paintSend(); });
     });
   }
 
@@ -600,6 +678,11 @@
     setTimeout(function () { scroller.scrollTop = scroller.scrollHeight; }, 300);
   });
   input.addEventListener('blur', scheduleFit);
+  input.addEventListener('input', paintSend);
+  /* 焦点环画在外壳上，不是输入框上——整块是一个控件。 */
+  var boxEl = panel.querySelector('#hwq-box');
+  input.addEventListener('focus', function () { boxEl.classList.add('on'); });
+  input.addEventListener('blur', function () { boxEl.classList.remove('on'); });
   input.addEventListener('input', function () {
     input.style.height = 'auto';
     input.style.height = Math.min(input.scrollHeight, 88) + 'px';

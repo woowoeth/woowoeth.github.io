@@ -676,11 +676,18 @@ body{background:var(--paper);color:var(--ink)}
 #hwx .askhero .lb{font-size:11.5px;letter-spacing:.28em;color:var(--acc);font-weight:700}
 #hwx .askhero #hwx-asc-tag button{border:1px solid var(--line);background:transparent;color:var(--muted);border-radius:999px;padding:4px 12px;font-family:inherit;font-size:12.5px;line-height:1.4;cursor:pointer;white-space:nowrap}
 #hwx .askhero #hwx-asc-tag button:hover{border-color:var(--acc);color:var(--acc)}
+/* 输入区是一个整体：边框画在外壳上，输入框自己无边框，动作在壳内的下沿。
+   原来是「一个圆角框 + 旁边一个药丸按钮」，两个控件各画各的边，
+   读者要先分辨哪个是能写字的。 */
 #hwx .amine{border-top:1px dashed var(--line);margin-top:14px;padding-top:12px}
-#hwx .amine .arow{display:flex;gap:8px;align-items:flex-end}
-#hwx .amine textarea{flex:1;resize:none;font-family:inherit;font-size:15px;line-height:1.6;color:var(--ink);background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:9px 13px;outline:none;max-height:96px}
-#hwx .amine textarea:focus{border-color:var(--acc)}
-#hwx .amine button{flex:0 0 auto;border:none;border-radius:999px;background:var(--ink);color:var(--paper);font-family:inherit;font-size:15px;padding:10px 20px;cursor:pointer}
+#hwx .amine .abox{border:1px solid var(--line);border-radius:18px;background:var(--paper);padding:9px 11px 7px;transition:border-color .15s}
+#hwx .amine .abox.on{border-color:var(--acc)}
+#hwx .amine textarea{display:block;width:100%;box-sizing:border-box;resize:none;font-family:inherit;font-size:15px;line-height:1.6;color:var(--ink);background:transparent;border:none;padding:0 3px;outline:none;max-height:96px}
+#hwx .amine .arow{display:flex;justify-content:flex-end;margin-top:7px}
+/* 按钮进壳里，收成一个圆——「问」正好一个字，圆里摆得正。
+   空着描边、有字实心：不催，但写了字就明确该按哪儿。 */
+#hwx .amine button{flex:0 0 auto;width:32px;height:32px;padding:0;border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--muted);font-family:inherit;font-size:14px;line-height:1;cursor:pointer;transition:background .15s,color .15s,border-color .15s}
+#hwx .amine button.hot{background:var(--ink);border-color:var(--ink);color:var(--paper)}
 #hwx .amine button:disabled{opacity:.4;cursor:default}
 
 #hwx .askhero .said{font-family:"Noto Serif SC","Songti SC",serif;font-size:13.5px;color:var(--acc);line-height:1.7;margin:11px 0 0}
@@ -917,11 +924,19 @@ if(ain){
   /* 额度那行文案去掉了，但按钮该禁用还是要禁用——不然点了才知道用完，更糟。
      hw-chat.js 是 defer 加载的，写死延时去读必然踩空，轮询到出现为止。 */
   var goBtn=document.getElementById('hwx-ago2');
+  var boxEl=document.getElementById('hwx-abox');
   var paintLeft=function(){
     if(typeof window.hwLeft!=='function')return false;
-    if(goBtn)goBtn.disabled=(window.hwLeft()<=0);
+    if(goBtn){goBtn.disabled=(window.hwLeft()<=0);paintHot();}
     return true;
   };
+  var paintHot=function(){
+    if(!goBtn)return;
+    goBtn.className=(!goBtn.disabled&&ain.value.trim())?'hot':'';
+  };
+  ain.addEventListener('input',paintHot);
+  ain.addEventListener('focus',function(){boxEl&&boxEl.classList.add('on');});
+  ain.addEventListener('blur',function(){boxEl&&boxEl.classList.remove('on');});
   (function poll(i){ if(paintLeft()||i>20)return; setTimeout(function(){poll(i+1)},100); })(0);
   var fire=function(){
     var t=ain.value.trim(); if(!t){ain.focus();return;}
@@ -1355,9 +1370,10 @@ switchTab('新');
         "<div class=\"askhero\" id=\"hwx-askhero\">"
         "<div class=\"ahead\"><span class=\"lb\">今日一问</span>"
         "<span id=\"hwx-asc-tag\"></span></div>""<div class=\"q\" id=\"hwx-aq\"></div>""<div class=\"go\" id=\"hwx-ago\"></div>"
-        "<div class=\"amine\" id=\"hwx-amine\">"
-        "<div class=\"arow\"><textarea id=\"hwx-ain\" rows=\"1\"></textarea>"
-        "<button type=\"button\" id=\"hwx-ago2\">问</button></div></div>""</div>""<div class=\"today\">"
+        "<div class=\"amine\" id=\"hwx-amine\"><div class=\"abox\" id=\"hwx-abox\">"
+        "<textarea id=\"hwx-ain\" rows=\"1\"></textarea>"
+        "<div class=\"arow\">"
+        "<button type=\"button\" id=\"hwx-ago2\">问</button></div></div></div>""</div>""<div class=\"today\">"
         "<div class=\"tq\"><div class=\"dt\" id=\"hwx-dt\"></div><div class=\"q\" id=\"hwx-tq\"></div>"
         "<div class=\"tgl\" id=\"hwx-tgl\"></div><div class=\"src\" id=\"hwx-tqs\"></div>"
         "<div class=\"acts\"><button id=\"hwx-next\">换一换</button>"
@@ -1646,7 +1662,7 @@ def chat_widget():
         return ""
     return (HWQ_A
             + '<script>window.HW_CHAT_ENDPOINT="' + HW_CHAT_ENDPOINT + '";</script>'
-            + '<script src="/assets/hw-chat.js?v=14" defer></script>'
+            + '<script src="/assets/hw-chat.js?v=16" defer></script>'
             + HWQ_B)
 
 

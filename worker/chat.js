@@ -16,7 +16,8 @@ const ALLOWED_ORIGINS = new Set([
   'https://www.ourword.ai',
 ]);
 
-const DAILY = 5;              // 每 IP 每天几次
+const DAILY = 5;              // 每个浏览器每天几次
+const IP_CEIL = 120;          // 每个出口 IP 每天的上限，只用来挡脚本
 const MAX_Q = 500;            // 问题长度上限，防止拿它当通用推理后端
 const MAX_CTX = 8;            // 最多几篇资料
 const MAX_TXT = 700;          // 每篇正文截断
@@ -138,27 +139,56 @@ function tidy(raw) {
  * 要更准就在控制台给这个 Worker 绑一个 KV、变量名填 HW_CHAT_KV，
  * 下面的代码会自动优先走 KV，不用改一行。
  */
-async function overQuota(env, ip) {
-  const day = new Date().toISOString().slice(0, 10);
+/* 按东八区切天。原来用 UTC，读者的额度在早上八点回满——
+ * 一个中国时区的站，「今天」不该从早上八点开始。 */
+function hwDay() {
+  return new Date(Date.now() + 8 * 3600e3).toISOString().slice(0, 10);
+}
 
-  if (env.HW_CHAT_KV) {                              // 绑了 KV：全局准确
-    const key = `q:${day}:${ip}`;
-    const n = parseInt((await env.HW_CHAT_KV.get(key)) || '0', 10);
-    if (n >= DAILY) return true;
-    await env.HW_CHAT_KV.put(key, String(n + 1), { expirationTtl: 172800 });
-    return false;
+async function counter(env, key) {
+  if (env.HW_CHAT_KV) {
+    return parseInt((await env.HW_CHAT_KV.get(key)) || '0', 10);
   }
+  const hit = await caches.default.match(`https://hw-quota.invalid/${key}`);
+  return hit ? parseInt(await hit.text(), 10) || 0 : 0;
+}
+async function bump(env, key) {
+  const n = (await counter(env, key)) + 1;
+  if (env.HW_CHAT_KV) {
+    await env.HW_CHAT_KV.put(key, String(n), { expirationTtl: 172800 });
+  } else {
+    await caches.default.put(`https://hw-quota.invalid/${key}`,
+      new Response(String(n), { headers: { 'Cache-Control': 'max-age=172800' } }));
+  }
+}
 
-  // 没绑 KV：用 Cache API，按边缘节点计数
-  const cache = caches.default;
-  const url = `https://hw-quota.invalid/${day}/${encodeURIComponent(ip)}`;
-  const hit = await cache.match(url);
-  const n = hit ? parseInt(await hit.text(), 10) || 0 : 0;
-  if (n >= DAILY) return true;
-  await cache.put(url, new Response(String(n + 1), {
-    headers: { 'Cache-Control': 'max-age=172800' },
-  }));
-  return false;
+/* 限流为什么不按 IP 算了。
+ *
+ * 原来是「每 IP 每天 5 次」。中国的移动网络是 CGNAT——同一个出口 IPv4
+ * 后面挂着成千上万部手机；公司、学校、咖啡馆的 Wi-Fi 同理。
+ * 于是一个陌生人问完五次，整栋楼、整个基站下的人当天都被挡在外面，
+ * 而且他们看到的提示是「你今天的 5 次用完了」——他一次都没问过。
+ * 这不是边角情况，是这个站的主力人群的默认情况。
+ *
+ * 改成两层：
+ *   产品规则按浏览器算（cid，客户端生成的随机串，存在 localStorage）。
+ *     清缓存、开无痕就能绕过——但那不是这道闸要挡的人。
+ *   出口 IP 只留一个高得多的天花板，用来挡「有人写脚本刷免费 API」，
+ *     那才是这道闸真正的用途。正常的一栋楼够不到 120。
+ *
+ * 429 要说清是哪一层：把「这个网络今天太忙」说成「你用完了」，
+ * 会让一个一次都没问过的人以为额度被自己花掉了。
+ */
+async function quotaCheck(env, ip, cid) {
+  const day = hwDay();
+  if (cid && (await counter(env, `c:${day}:${cid}`)) >= DAILY) return 'you';
+  if ((await counter(env, `q:${day}:${ip}`)) >= IP_CEIL) return 'net';
+  return '';
+}
+async function quotaUse(env, ip, cid) {
+  const day = hwDay();
+  if (cid) await bump(env, `c:${day}:${cid}`);
+  await bump(env, `q:${day}:${ip}`);
 }
 
 /* 把读者问过的话记下来。
@@ -230,12 +260,18 @@ export default {
     if (request.method !== 'POST') return json({ error: 'Method Not Allowed' }, 405, origin);
 
     const ip = request.headers.get('CF-Connecting-IP') || '0.0.0.0';
-    if (await overQuota(env, ip)) {
-      return json({ error: `今天的 ${DAILY} 次已经用完了，明天再来` }, 429, origin);
-    }
 
     let body;
     try { body = await request.json(); } catch { return json({ error: 'Invalid JSON' }, 400, origin); }
+    const cid = String(body.cid || '').replace(/[^a-z0-9]/gi, '').slice(0, 32);
+
+    const blocked = await quotaCheck(env, ip, cid);
+    if (blocked === 'you') {
+      return json({ error: `今天的 ${DAILY} 次已经用完了，明天再来`, scope: 'you' }, 429, origin);
+    }
+    if (blocked === 'net') {
+      return json({ error: '这个网络今天问得有点多，过一会儿再试', scope: 'net' }, 429, origin);
+    }
 
     const q = String(body.q || '').trim().slice(0, MAX_Q);
     if (!q) return json({ error: 'empty question' }, 400, origin);
@@ -275,6 +311,9 @@ export default {
     const raw = data?.choices?.[0]?.message?.content;
     if (!raw) return json({ error: '上游没有返回内容' }, 502, origin);
 
+    /* 答成了才扣次数。原来是进门就扣——上游超时、502、被限流，
+       读者什么都没拿到却少了一次。和下面 jot 的道理一样。 */
+    await quotaUse(env, ip, cid);
     await jot(env, q, scene);          /* 答成了才记，失败的不算读者问过 */
     const answer = tidy(raw);
     const used = [...new Set([...answer.matchAll(/\[(\d+)\]/g)].map(m => parseInt(m[1], 10)))].sort();
