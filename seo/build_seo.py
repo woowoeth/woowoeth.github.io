@@ -13,6 +13,7 @@ import geo_kit as G
 import hw_theme
 hw_theme.install(G)
 import hw_slugs
+import hw_kind
 import hw_chapters
 import strip_cite
 
@@ -191,11 +192,10 @@ def load_items():
             blocks.append(("\u5ef6\u4f38", flat(rel)))
         summary = "%s%s\u2014\u2014%s\u3002%s" % (name, ("\uff08%s\uff09" % era if era else ""), one,
                                    G.plain(e.get("d"), 140))
-        # 战国策 and 影响力 are books but match none of the keyword tests, so they
-        # shipped as schema.org/Person.
-        BOOKS = ("\u6218\u56fd\u7b56", "\u5f71\u54cd\u529b")
-        is_text = (cat == "\u5178\u7c4d\u00b7\u6d1e\u89c1") or name in BOOKS or any(
-            k in name for k in ("\u7ecf", "\u8bba", "\u7b80\u53f2", "\u5175\u6cd5", "\u53f2\u8bb0", "\u4e66", "\u8bb0", "\u4f20", "\u5f55"))
+        # 原来靠 name 里的关键词猜（经/论/简史/兵法/书/记/传/录）加两个手工补丁，
+        # 140 个条目只认出 11 个——《稀缺》《系统之美》《优秀的绵羊》《老鼠公园》
+        # 这些全被打成了 schema.org/Person。改用 hw_kind 的显式表。
+        is_text = hw_kind.is_work(name)
         extra = ({"about": one} if one else {})
         if is_text:
             extra["bookFormat"] = "https://schema.org/Hardcover"

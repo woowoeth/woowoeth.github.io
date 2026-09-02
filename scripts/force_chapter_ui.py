@@ -253,7 +253,7 @@ def _syn(slug):
 def _hwx_payload():
     import json, sys as _s, re
     _s.path.insert(0, "seo")
-    import hw_chapters as C, hw_slugs, build_seo
+    import hw_chapters as C, hw_slugs, hw_kind, build_seo
 
     line_by = {}
     for pname, spec in C.PARENTS.items():
@@ -353,6 +353,10 @@ def _hwx_payload():
                 c = ch_index[(s_, k_)]
                 answers.append({"who": c["parent"], "cn": c["n"],
                                 "u": "/i/%s/%s/" % (s_, k_),
+                                # wk=1 表示这是一部作品不是一个人。首页「今日一问」
+                                # 原来一律说「X 也卡在同一件事上」，于是出现过
+                                # 「智慧书也卡在同一件事上」——书不会卡在任何事上。
+                                "wk": 1 if hw_kind.is_work(c["parent"]) else 0,
                                 "hint": line_by.get((c["parent"], k_), "") or c.get("w", "")})
             qs.append({"q": qtext, "a": answers})
         S.append({"t": t, "g": grp, "qs": qs})
@@ -403,6 +407,8 @@ def _hwx_payload():
         out = []
         for a in ans:
             b = dict(a)
+            # 两批 QQ（原生的和处境派生的）都过这里，wk 在这儿补最省事。
+            b["wk"] = 1 if hw_kind.is_work(a.get("who", "")) else 0
             _key = tuple(a["u"].strip("/").split("/")[1:3])
             if not b.get("hint"):
                 _ch = ch_index.get(_key)
@@ -533,6 +539,9 @@ header.hd{margin-bottom:12px!important}
 #hwx .scpick::-webkit-scrollbar{display:none}
 #hwx .scpick button{border:1px solid var(--line);background:transparent;color:inherit;border-radius:999px;padding:7px 14px;font-family:inherit;font-size:14.5px;line-height:1.3;cursor:pointer;white-space:nowrap}
 #hwx .scpick button.on{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+#hwx .scpick button.sub{border-style:dashed;font-size:14px}
+#hwx .scpick button.sub.on{border-style:solid}
+#hwx .scpick .scsep{display:block;width:1px;align-self:stretch;background:var(--line);margin:0 4px;grid-row:1/3}
 #hwx .feed{columns:150px;column-gap:12px;margin-top:14px}
 #hwx .feed>*{break-inside:avoid;width:100%;margin:0 0 12px}
 #hwx .nc-feed{columns:150px;column-gap:12px;margin-top:14px}
@@ -639,8 +648,12 @@ tpEl.innerHTML='<b>'+p1.n+' — '+p1.w+'</b><span class="hint">'+p1.it+'</span>'
    取 QQ 而非 ASK：前者是处境式的人话（「方案被毙了，还要不要提第二次？」），
    后者是 apply 里的自省句（「我真正想缓解的是谁的不安？」），接不上「某某也卡在这里」。 */
 var a1=D.QQ[(day*13)%D.QQ.length];
-var a1w=(a1.r&&a1.r[0])?a1.r[0].who:'';
-document.getElementById('hwx-asaid').textContent=a1w?(a1w+'也卡在同一件事上——'):'有人问：';
+var a1r=(a1.r&&a1.r[0])?a1.r[0]:{};
+var a1w=a1r.who||'';
+/* 「X 也卡在同一件事上」对人成立，对书不成立——出现过「智慧书也卡在同一件事上」。
+   wk=1 表示这条的首答主是一部作品，换一句说得通的话。 */
+document.getElementById('hwx-asaid').textContent=
+  !a1w ? '有人问：' : (a1r.wk ? ('《'+a1w+'》整本书在答这件事——') : (a1w+'也卡在同一件事上——'));
 document.getElementById('hwx-aq').textContent=a1.t;
 /* 局面用第一个答案对应章节的 apply 局面句，没有就不显示 */
 var a1sc=(a1.r&&a1.r[0]&&a1.r[0].sc)?a1.r[0].sc:'';
@@ -896,25 +909,53 @@ function scReveal(){
   if(on&&on.scrollIntoView)try{on.scrollIntoView({inline:'center',block:'nearest'})}catch(e){}
 }
 function scRender(){
+  var inGrp={};
+  if(SCGRP){D.S.forEach(function(sc){if(sc.g===SCGRP)inGrp[sc.t]=1;});}
   var cells=[],n=0;
   for(var i=0;i<scCells.length;i++){
-    if(!SCSEL||scOwner[i]===SCSEL){cells.push(scCells[i]);n++;}
+    var own=scOwner[i];
+    var ok = SCSEL ? (own===SCSEL) : (SCGRP ? !!inGrp[own] : true);
+    if(ok){cells.push(scCells[i]);n++;}
   }
   scfeed.innerHTML=cells.join('');
   ct.textContent=n+' 个问题';   /* 处境名由选中的标签表达，不再重复一遍 */
 }
+/* 分两级：先 16 个组，点开才出这一组的处境。
+   原来是把 112 个处境拍平成一条横向滚动的双行条——要找到「一直没成」
+   得横向划过五十多列，而分组信息（S 里的 g 字段）一直都在，只是没用。
+   16 个组一屏放得下，112 个放不下，这是全部的理由。 */
+var SCGRP='';
+function scGroups(){
+  var seen={},out=[];
+  D.S.forEach(function(sc){ if(sc.g&&!seen[sc.g]){seen[sc.g]=1;out.push(sc.g);} });
+  return out;
+}
 function scBuild(){
-  var h=['<button type="button" data-s="" class="on">全部</button>'];
-  D.S.forEach(function(sc){h.push('<button type="button" data-s="'+esc(sc.t)+'">'+esc(sc.t)+'</button>')});
+  var h=['<button type="button" data-g="" class="on">全部</button>'];
+  scGroups().forEach(function(g){
+    h.push('<button type="button" data-g="'+esc(g)+'"'+(g===SCGRP?' class="on"':'')+'>'+esc(g)+'</button>');
+  });
+  if(SCGRP){
+    h.push('<span class="scsep" aria-hidden="true"></span>');
+    D.S.forEach(function(sc){
+      if(sc.g!==SCGRP)return;
+      h.push('<button type="button" class="sub'+(sc.t===SCSEL?' on':'')+'" data-s="'+esc(sc.t)+'">'+esc(sc.t)+'</button>');
+    });
+  }
   scpick.innerHTML=h.join('');
   scpick.querySelectorAll('button').forEach(function(b){
     b.onclick=function(){
-      var v=b.getAttribute('data-s');
-      SCSEL=(v===SCSEL)?'':v;                       /* 再点一次＝取消，回到全部 */
-      scpick.querySelectorAll('button').forEach(function(x){
-        x.classList.toggle('on',x.getAttribute('data-s')===SCSEL)});
-      trk('situation_pick',{situation:SCSEL||'all'});
-      scRender();
+      if(b.hasAttribute('data-g')){
+        var g=b.getAttribute('data-g');
+        SCGRP=(g===SCGRP)?'':g;
+        SCSEL='';                                   /* 换组＝回到该组全部 */
+        trk('situation_group',{group:SCGRP||'all'});
+      }else{
+        var v=b.getAttribute('data-s');
+        SCSEL=(v===SCSEL)?'':v;                     /* 再点一次＝取消 */
+        trk('situation_pick',{situation:SCSEL||'all'});
+      }
+      scBuild(); scRender();
     };
   });
 }

@@ -118,8 +118,6 @@ SCENES = [
      [("musashi", "no-favorite-weapon"), ("huo-qubing", "no-old-manuals")]),
     ("对面比我强，我从哪里下手？",
      [("li-bi", "strike-the-base"), ("sima-yi", "eight-days")]),
-    ("硬碰肯定输，我还有别的打法吗？",
-     [("sun-tzu", "win-without-fighting"), ("guan-zhong", "buying-deer")]),
 ]),
 ("被牵着走", "有对手", [
     ("他每出一招，我都得接吗？",
@@ -1042,7 +1040,7 @@ SCENES = [
      [("vygotsky", "scaffolding"), ("socrates", "midwifery")]),
     ("我干的活好像谁都能干。",
      [("naval", "productize-yourself"), ("naval", "assets-while-you-sleep")]),
-    ("我这段没人看见的日子，有用吗。",
+    ("我这个位置太边缘，学不到东西。",
      [("einstein", "patent-office"), ("murakami", "no-one-asked-you-to")]),
     ("我不知道自己不知道什么。",
      [("thinking-fast-and-slow", "wysiati"), ("socrates", "knowing-not-knowing")]),
