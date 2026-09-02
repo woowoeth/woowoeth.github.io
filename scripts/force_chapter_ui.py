@@ -1701,6 +1701,32 @@ def patch_chapter_og():
 patch_chapter_og()
 
 
+def patch_entry_og():
+    """人物页的分享图：有 i/<slug>/og.png 就指过去，没有仍回落到全站图。
+    人物页的 head 由 geo_kit 生成（不能改），所以和章节页一样在这里事后改写。"""
+    import os, re
+    n = 0
+    for slug in os.listdir("i"):
+        page = os.path.join("i", slug, "index.html")
+        png = os.path.join("i", slug, "og.png")
+        if not (os.path.exists(page) and os.path.exists(png)):
+            continue
+        s = open(page, encoding="utf-8").read()
+        url = "https://ourword.ai/i/%s/og.png" % slug
+        m = re.search(r"<title>([^<|—]+)", s)
+        alt = (m.group(1).strip() if m else "人物").replace("\\", "")
+        s2 = re.sub(r'(<meta property="og:image" content=")[^"]*(")', lambda mm: mm.group(1) + url + mm.group(2), s)
+        s2 = re.sub(r'(<meta property="og:image:alt" content=")[^"]*(")', lambda mm: mm.group(1) + alt + mm.group(2), s2)
+        s2 = re.sub(r'(<meta name="twitter:image" content=")[^"]*(")', lambda mm: mm.group(1) + url + mm.group(2), s2)
+        if s2 != s:
+            open(page, "w", encoding="utf-8").write(s2)
+            n += 1
+    print("entry og:image rewired:", n)
+
+
+patch_entry_og()
+
+
 def patch_chapter_scene():
     """章节页末尾加一块「同一件事，还有人这么问」。
 

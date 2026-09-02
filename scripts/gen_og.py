@@ -1,9 +1,16 @@
 # -*- coding: utf-8 -*-
-"""为每篇章节生成 1200x630 分享图（标题 + 金句排版），输出到 i/<slug>/<k>/og.png。
+"""分享图（og:image）：章节 364 张、人物 155 张、首页 1 张，都是 1200x630。
 
-不挂 CI：图片是一次性生成的静态资产，随仓库提交。新增章节后手动重跑本脚本；
-没有 og.png 的章节页会自动回落到全站图（见 force_chapter_ui.patch_chapter_og）。
-Pillow 的 PNG 输出不含时间戳，同输入必同输出，不破坏幂等。
+这张图给的是还没点开链接的那个人看的，判据是「点不点」，所以：
+- 卡片给问题，页面给论断：大字是 dek 里那句处境问题，不是「人名 · 章名」——那是网页标题的事。
+- 关键信息全排进中央 630x630 的安全区：微信等聊天窗把预览裁成方形，裁完不能缺字。
+- 15 章带示意图的，图进卡片（图影响的正是点不点）；其余放一句金句。
+- logo 用站上那枚红色「人」印（icon-512.png）。
+
+字体：本机 Songti SC。以前 276 张 Noto、88 张 Songti 混着，这一版全部重画统一成 Songti；
+Linux 上没有 Songti 就退到 Noto，但只补缺失、不重画已有的，免得再混。
+不挂 CI：静态资产随仓库提交，新增章节/人物后手动重跑。Pillow 的 PNG 无时间戳，同输入同输出。
+示意图的 PNG 由 scripts/render_figs.py 预先渲好放在 seo/figs/_png/。
 """
 import re, sys, pathlib
 from PIL import Image, ImageDraw, ImageFont
@@ -11,93 +18,169 @@ from PIL import Image, ImageDraw, ImageFont
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "seo"))
 import hw_chapters as C, hw_slugs
+from build_seo import load_array
 
-W, H, M = 1200, 630, 72
-PAPER, INK, ACC, MUTED, LINE = "#f5f1e8", "#1f1c17", "#a33b2e", "#8a8377", "#d8d2c6"
-# 字体：首选 Noto Serif CJK SC Bold —— 已有 276 张图都是它画的，换字体会让新旧图
-# 明显不是一套。本机（macOS）没有它，只能退到 Songti SC Bold；这时脚本自动切到
-# 「只补缺失」模式，绝不重画已有的图。要重画全部，必须在装了 Noto 的机器上跑。
-CANDIDATES = [
-    ("/usr/share/fonts/opentype/noto/NotoSerifCJK-Bold.ttc", 2, True),   # Linux，正统
-    ("/usr/share/fonts/opentype/noto/NotoSerifCJK.ttc", 2, True),
-    ("/System/Library/Fonts/Supplemental/Songti.ttc", 1, False),         # macOS，替补
+W, H = 1200, 630
+X0, X1 = 285, 915            # 中央方形安全区
+PAD = 34
+TX0, TX1 = X0 + PAD, X1 - PAD
+TW = TX1 - TX0               # 562
+PAPER, INK, INK2, MUTED, SEAL, RULE = "#f5f1e8", "#1c1917", "#3f3a34", "#6f6959", "#9d2933", "#e2ddd0"
+FIGPNG = ROOT / "seo" / "figs" / "_png"
+
+# (粗体文件, 粗体 index, 细体文件, 细体 index, 是否正统)
+FONTS = [
+    ("/System/Library/Fonts/Supplemental/Songti.ttc", 1, "/System/Library/Fonts/Supplemental/Songti.ttc", 3, True),
+    ("/usr/share/fonts/opentype/noto/NotoSerifCJK-Bold.ttc", 2, "/usr/share/fonts/opentype/noto/NotoSerifCJK.ttc", 2, False),
 ]
-TTC = INDEX = None
-CANONICAL = False
-for _p, _i, _ok in CANDIDATES:
-    if pathlib.Path(_p).exists():
-        TTC, INDEX, CANONICAL = _p, _i, _ok
-        break
-if TTC is None:
-    sys.exit("找不到可用的 CJK 衬线字体，候选：\n  " + "\n  ".join(c[0] for c in CANDIDATES))
-F = lambda size: ImageFont.truetype(TTC, size, index=INDEX)
+_font = next((f for f in FONTS if pathlib.Path(f[0]).exists() and pathlib.Path(f[2]).exists()), None)
+if _font is None:
+    sys.exit("找不到可用的 CJK 衬线字体")
+CANONICAL = _font[4]
 
-def wrap(draw, text, font, maxw):
+
+def F(kind, size):
+    path, idx = (_font[0], _font[1]) if kind == "b" else (_font[2], _font[3])
+    return ImageFont.truetype(path, size, index=idx)
+
+
+ICON = Image.open(ROOT / "icon-512.png").convert("RGBA")
+
+
+def wrap(d, text, font, maxw):
     lines, cur = [], ""
     for ch in text:
-        if draw.textlength(cur + ch, font=font) <= maxw:
+        if d.textlength(cur + ch, font=font) <= maxw:
             cur += ch
         else:
             lines.append(cur); cur = ch
-    if cur: lines.append(cur)
+    if cur:
+        lines.append(cur)
     return lines
 
-def render(title, sub, quote, out):
+
+def clip(lines, n):
+    if len(lines) <= n:
+        return lines
+    lines = lines[:n]
+    lines[-1] = lines[-1][:-1] + "…"
+    return lines
+
+
+def first_sentence(dek):
+    s = re.split(r"(?<=[。？！])", re.sub("==", "", dek or "").strip())[0].strip()
+    return s if 6 <= len(s) <= 36 else None
+
+
+def base(tag):
     img = Image.new("RGB", (W, H), PAPER)
     d = ImageDraw.Draw(img)
-    # 顶部品牌行
-    fb = F(25)
-    d.text((M, 52), "人类世界生存法则 · ourword.ai", font=fb, fill=MUTED)
-    tag = "深度阅读"
-    d.text((W - M - d.textlength(tag, font=fb), 52), tag, font=fb, fill=ACC)
-    d.line([(M, 104), (W - M, 104)], fill=LINE, width=2)
-    # 标题（人名 · 章节名），过长缩字号并换行
-    ft = F(56)
-    tl = wrap(d, title, ft, W - 2 * M)
-    if len(tl) > 2:
-        ft = F(46); tl = wrap(d, title, ft, W - 2 * M)[:2]
-    y = 146
-    for ln in tl:
-        d.text((M, y), ln, font=ft, fill=INK)
-        y += int(ft.size * 1.32)
-    # 副题 w
-    fs = F(27)
-    d.text((M, y + 8), sub, font=fs, fill=MUTED)
-    # 金句块：底部锚定，红竖线
-    fq = F(33)
-    q = "「" + quote + "」"
-    ql = wrap(d, q, fq, W - 2 * M - 30)
-    if len(ql) > 3:
-        ql = ql[:3]
-        ql[-1] = ql[-1][:-2] + "…」"
-    lh = int(fq.size * 1.62)
+    ic = ICON.resize((52, 52), Image.LANCZOS)
+    img.paste(ic, (TX0, 46), ic)
+    d.text((TX0 + 66, 57), "人类世界生存法则", font=F("b", 24), fill=INK)
+    ft = F("b", 21)
+    d.text((TX1 - d.textlength(tag, font=ft), 61), tag, font=ft, fill=SEAL)
+    d.line([(72, 118), (W - 72, 118)], fill=RULE, width=2)
+    return img, d
+
+
+def headline(d, text, y, max_lines=3):
+    for size in (46, 42, 38):
+        f = F("b", size)
+        lines = wrap(d, text, f, TW)
+        if len(lines) <= max_lines:
+            break
+    for ln in clip(lines, max_lines):
+        d.text((TX0, y), ln, font=f, fill=INK)
+        y += int(size * 1.36)
+    return y
+
+
+def bottom_quote(d, text, size=26, lines=2, fill=INK2):
+    fq = F("l", size)
+    ql = clip(wrap(d, text, fq, TW - 26), lines)
+    lh = int(size * 1.6)
     qh = lh * len(ql)
-    qy = H - 88 - qh
-    d.rectangle([M, qy + 6, M + 6, qy + qh - 6], fill=ACC)
+    qy = H - 70 - qh
+    d.rectangle([TX0, qy + 5, TX0 + 5, qy + qh - 5], fill=SEAL)
     for i, ln in enumerate(ql):
-        d.text((M + 30, qy + i * lh), ln, font=fq, fill=INK)
-    img.convert("P", palette=Image.ADAPTIVE, colors=96).save(out, optimize=True)
+        d.text((TX0 + 26, qy + i * lh), ln, font=fq, fill=fill)
+    return qy
+
+
+def save(img, out):
+    out.parent.mkdir(parents=True, exist_ok=True)
+    img.convert("P", palette=Image.ADAPTIVE, colors=128).save(out, optimize=True)
+
+
+def render_chapter(ch, out):
+    img, d = base("深度阅读")
+    y = headline(d, first_sentence(ch["dek"]) or ch["n"], 150)
+    d.text((TX0, y + 14), "%s · %s" % (ch["parent"], ch["n"]), font=F("b", 26), fill=SEAL)
+    y_after = y + 14 + 36
+    fig = next((f.get("fig") for f in ch["f"] if f.get("fig")), None)
+    if fig and (FIGPNG / (fig + ".png")).exists():
+        im = Image.open(FIGPNG / (fig + ".png")).convert("RGBA")
+        scale = min(TW / im.width, ((H - 52) - (y_after + 22)) / im.height)
+        if scale * im.width >= 300:
+            nw, nh = int(im.width * scale), int(im.height * scale)
+            im = im.resize((nw, nh), Image.LANCZOS)
+            img.paste(im, (TX0 + (TW - nw) // 2, H - 52 - nh), im)
+            save(img, out); return
+    qs = [re.sub("==", "", q).strip().rstrip("。") for q in (ch.get("q") or [""])]
+    bottom_quote(d, max(qs, key=len))
+    save(img, out)
+
+
+def render_person(e, slug, out):
+    img, d = base("人物")
+    y = 150
+    d.text((TX0, y), e["n"], font=F("b", 60), fill=INK); y += 78
+    d.text((TX0, y), e.get("e", ""), font=F("l", 24), fill=MUTED); y += 46
+    for ln in clip(wrap(d, e.get("w", ""), F("b", 30), TW), 2):
+        d.text((TX0, y), ln, font=F("b", 30), fill=SEAL); y += 42
+    P = C.PARENTS.get(slug) or C.PARENTS.get(e["n"]) or {}
+    items = [it.get("n", "") for it in (P.get("items") if isinstance(P, dict) else []) or [] if it.get("ready", True)]
+    bottom_quote(d, " · ".join(items) if items else (e.get("q") or [""])[0], size=24, lines=2, fill=INK2)
+    save(img, out)
+
+
+def render_home(out):
+    img = Image.new("RGB", (W, H), PAPER)
+    d = ImageDraw.Draw(img)
+    ic = ICON.resize((104, 104), Image.LANCZOS)
+    img.paste(ic, (TX0, 128), ic)
+    d.text((TX0, 258), "人类世界生存法则", font=F("b", 60), fill=INK)
+    d.text((TX0, 348), "遇到事了，看看以前的人怎么处理", font=F("l", 30), fill=INK2)
+    d.line([(72, 118), (W - 72, 118)], fill=RULE, width=2)
+    d.text((TX0, 57), "ourword.ai", font=F("b", 24), fill=MUTED)
+    save(img, out)
+
 
 def main():
-    only_missing = ("--all" not in sys.argv) if CANONICAL else True
+    only_missing = (not CANONICAL) or ("--only-missing" in sys.argv)
     if not CANONICAL:
-        print("⚠ 用的是替补字体 %s（正统的 Noto Serif CJK 不在本机）。" % TTC)
-        print("  已自动切到「只补缺失」，不会重画已有的图——新图与旧图字形会有差异，")
-        print("  要统一请在装了 Noto Serif CJK 的机器上跑 python3 scripts/gen_og.py --all。")
-    n, skipped, total = 0, 0, 0
+        print("⚠ 非正统字体（本机没有 Songti SC），只补缺失、不重画已有的图。")
+    n = skipped = 0
     for ch in C.CHAPTERS:
-        slug = hw_slugs.slug_for(ch["parent"])
-        out = ROOT / "i" / slug / ch["k"] / "og.png"
+        out = ROOT / "i" / ch["parent_slug"] / ch["k"] / "og.png"
         if not out.parent.exists():
             print("跳过（页面目录不存在）:", out.parent); continue
         if only_missing and out.exists():
             skipped += 1; continue
-        # 选 q[] 中最长的一条：短句常与标题重复，撑不起版面
-        qs = [re.sub(r"==", "", q).strip().rstrip("。") for q in (ch.get("q") or [""])]
-        quote = max(qs, key=len)
-        render("%s · %s" % (ch["parent"], ch["n"]), ch.get("w", ""), quote, out)
-        n += 1; total += out.stat().st_size
-    print("生成 %d 张（跳过已存在 %d 张），共 %.1f MB" % (n, skipped, total / 1048576))
+        render_chapter(ch, out); n += 1
+    m = 0
+    for e in load_array(str(ROOT / "index.html"), "D"):
+        slug = hw_slugs.slug_for(e["n"])
+        out = ROOT / "i" / slug / "og.png"
+        if not out.parent.exists():
+            continue
+        if only_missing and out.exists():
+            skipped += 1; continue
+        render_person(e, slug, out); m += 1
+    render_home(ROOT / "og.png")
+    print("章节 %d 张、人物 %d 张、首页 1 张（跳过已存在 %d 张）" % (n, m, skipped))
+
 
 if __name__ == "__main__":
     main()
