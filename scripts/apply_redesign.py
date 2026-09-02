@@ -67,8 +67,10 @@ def patch_entry_css():
     if mark in es:
         es = es[:es.index(mark)].rstrip("\n") + "\n"
     es = es.rstrip("\n") + "\n\n" + mark + "\n" + (
+        # 1fr 等于 minmax(auto,1fr)：列会被子元素的最小内容宽度顶开。标签行是 nowrap 的横滑条，
+        # 一条长标签就把整篇文章撑到 449px（易经那页）。桌面规则本来就是 minmax(0,1fr)。
         "@media (max-width:900px){\n"
-        "  .layout{grid-template-columns:1fr!important}\n"
+        "  .layout{grid-template-columns:minmax(0,1fr)!important}\n"
         "  .side{display:block!important;position:static;order:-1;margin:0 0 6px}\n"
         "  .side .panel{border:0;background:transparent;padding:0;box-shadow:none}\n"
         "  .side .ph{display:none}\n"
@@ -78,6 +80,9 @@ def patch_entry_css():
         "  .side .toc a{flex:0 0 auto;border:1px solid var(--rule,#d8d2c6);border-radius:999px;"
         "padding:5px 11px;font-size:12.5px;white-space:nowrap;color:inherit;text-decoration:none}\n"
         "  .side .toc a .i{color:#9d2933;margin-right:4px}\n}\n"
+        # 窄屏标签行改换行：三枚标签和分享按钮都看得见，不靠横滑。
+        "@media (max-width:700px){\n"
+        "  .meta-row{flex-wrap:wrap;overflow:visible}\n}\n"
         "mark.hl{background:transparent;color:#9d2933;font-weight:700;"
         "text-decoration:underline;text-decoration-color:#9d2933;"
         "text-underline-offset:.16em;text-decoration-thickness:1.5px}\n"

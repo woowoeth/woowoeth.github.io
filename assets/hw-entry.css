@@ -198,7 +198,7 @@ blockquote p{margin:0}
 
 /* hw-entry-overrides */
 @media (max-width:900px){
-  .layout{grid-template-columns:1fr!important}
+  .layout{grid-template-columns:minmax(0,1fr)!important}
   .side{display:block!important;position:static;order:-1;margin:0 0 6px}
   .side .panel{border:0;background:transparent;padding:0;box-shadow:none}
   .side .ph{display:none}
@@ -206,5 +206,8 @@ blockquote p{margin:0}
   .side .toc::-webkit-scrollbar{display:none}
   .side .toc a{flex:0 0 auto;border:1px solid var(--rule,#d8d2c6);border-radius:999px;padding:5px 11px;font-size:12.5px;white-space:nowrap;color:inherit;text-decoration:none}
   .side .toc a .i{color:#9d2933;margin-right:4px}
+}
+@media (max-width:700px){
+  .meta-row{flex-wrap:wrap;overflow:visible}
 }
 mark.hl{background:transparent;color:#9d2933;font-weight:700;text-decoration:underline;text-decoration-color:#9d2933;text-underline-offset:.16em;text-decoration-thickness:1.5px}
