@@ -1207,6 +1207,8 @@ SCENES = [
      [("su-shi", "three-exiles"), ("su-shi", "no-wind-no-rain")]),
 ]),
 ("扛不动了", "人生转弯", [
+    ("撑着我的那套说法，这回撑不住了。",
+     [("cs-lewis", "house-of-cards"), ("frankl", "the-last-freedom")]),
     ("我找不到一个撑下去的理由。",
      [("sima-qian", "one-thing-to-finish"), ("frankl", "the-last-freedom")]),
     ("我快撑不住了，但不能倒。",
@@ -1377,6 +1379,8 @@ SCENES = [
      [("su-shi", "no-more-writing"), ("epictetus", "judgments-not-things")]),
 ]),
 ("放不下一个人", "说不出口", [
+    ("我怕忘了他，又怕记住的不是他。",
+     [("cs-lewis", "not-replacing-her"), ("huineng", "originally-not-a-thing")]),
     ("我到现在还恨那个人。",
      [("wang-yangming", "bandits-in-the-heart"), ("mandela", "springbok-jersey")]),
     ("原谅是不是等于我认了？",
@@ -1403,6 +1407,8 @@ SCENES = [
 
 # ── 时间尺度：回头看与往前看 ──
 ("那件事一直搁在心里", "回头与往前", [
+    ("那件事过去很久了，我还是接不上。",
+     [("cs-lewis", "grief-feels-like-fear"), ("su-shi", "no-wind-no-rain")]),
     ("过了这么久我还是耿耿于怀。",
      [("su-shi", "no-wind-no-rain"), ("huineng", "originally-not-a-thing")]),
     ("当年那个决定，是不是错了？",
