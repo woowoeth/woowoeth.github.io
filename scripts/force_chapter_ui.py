@@ -491,6 +491,33 @@ def _hwx_payload():
                          + _syn(slug))})
 
     # 金句池：每章取 8-34 字里最长一条，带出处深链
+    # 「今日一句」原来只有引文加出处，是关于说话那个人的。给它配一句
+    # 第一人称的话——不用新写：每一篇在处境层里本来就挂着问句，
+    # 取「本篇是首答」的那些，再按与 when/pt 的二元组重合度择优。
+    #
+    # 关键是**宁可少，不可错**。不设门槛时 100% 都配得上，但抽检 14 条只有
+    # 9 条对：哈耶克「知识是分散的」配到了「这个位置我接下来，可能是个坑」。
+    # 一句配错的第一人称句正是「艾利克森也卡在这儿」那种假共情——
+    # 比没有更糟。重合度 ≥2 时抽检 12/12 全对，覆盖 19%（61/319），
+    # 剩下的退回 when（第二人称条件句，仍然是冲着读者说的，只是弱一档）。
+    _prim = {}
+    for _t, _g, _qs in HWX_SCENES:
+        for _qt, _refs in _qs:
+            if _refs:
+                _prim.setdefault(_refs[0], []).append(_qt)
+
+    def _bg2(t):
+        t = re.sub(r"[，。！？、：；「」（）\s—…·]", "", t)
+        return {t[i:i + 2] for i in range(len(t) - 1)}
+
+    def first_person(ch, g):
+        pool = _prim.get((hw_slugs.slug_for(ch["parent"]), ch["k"]), [])
+        if not pool:
+            return ""
+        ref = _bg2(g["when"] + g["pt"] + ch["n"])
+        n, q = max((len(_bg2(x) & ref), x) for x in pool)
+        return q if n >= 2 else ""
+
     QP = []
     for ch in C.CHAPTERS:
         q = best_q(ch)
@@ -498,6 +525,7 @@ def _hwx_payload():
         g = gloss_of(ch)
         QP.append({"q": q, "who": ch["parent"], "cn": ch["n"],
                    "pt": g["pt"], "when": g["when"], "gl": g["gl"],
+                   "fq": first_person(ch, g),
                    "u": "/i/%s/%s/" % (hw_slugs.slug_for(ch["parent"]), ch["k"])})
 
     # 问题卡：10 张第一人称问句
@@ -865,11 +893,14 @@ function paintQuote(first){
      display:none 藏着，只在分享卡上用。于是首页那块成了名言展示柜：
      它是关于说话那个人的，不是关于读者的。露出来它才冲着读者。
      用 when 不用 gl：gl 是「用在……的时候。」，公文腔；when 就是那半句人话。 */
+  /* 有配得准的第一人称问句就用它——「有人这么问过：我一见那种人就来气。」
+     读者不必先把自己的处境翻译成条件句，一眼就认出来。
+     配不准就退回 when（第二人称条件句，弱一档但不会错）。 */
   var gl=document.getElementById('hwx-tgl');
   if(gl){
-    var w=q1.when||'';
-    gl.innerHTML=w?('<em>什么时候想起这句：</em>'+esc(w)):'';
-    gl.style.display=w?'':'none';
+    var w=q1.fq?('<em>有人这么问过：</em>'+esc(q1.fq))
+              :(q1.when?('<em>什么时候想起这句：</em>'+esc(q1.when)):'');
+    gl.innerHTML=w; gl.style.display=w?'':'none';
   }
 }
 paintQuote(true);
