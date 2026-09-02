@@ -747,7 +747,10 @@ body{background:var(--paper);color:var(--ink)}
 #hwx .askhero .go i{font-style:normal;font-size:12.5px;color:var(--muted);display:block;margin-top:3px}
 #hwx .today .tq{padding:15px 16px}
 #hwx .today .tq .q{font-size:17px!important;line-height:1.8!important;margin-bottom:8px!important}
-#hwx .today .tq .tgl{display:block;font-size:13.5px;line-height:1.7;margin:8px 0 10px}
+#hwx .today .tq .tgl{display:block;font-size:13.5px;line-height:1.7;margin:12px 0 10px}
+/* 第一人称那句是读者自己的话，给它一道竖线，跟上面的引文分开——
+   没有标签，靠位置和这道线说明它不是引文的续文。 */
+#hwx .today .tq .tgl.mine{padding-left:11px;border-left:2px solid var(--line);color:var(--ink);opacity:.9}
 #hwx .today .tq .acts button{padding:5px 12px;font-size:12.5px;border-width:1px}
 #hwx .today .tq .acts .bs{background:var(--ink);color:var(--paper);border-color:var(--ink)}
 #hwx .tbox-s{padding:12px 14px}
@@ -919,12 +922,16 @@ function paintQuote(first){
   /* 有配得准的第一人称问句就用它——「有人这么问过：我一见那种人就来气。」
      读者不必先把自己的处境翻译成条件句，一眼就认出来。
      配不准就退回 when（第二人称条件句，弱一档但不会错）。 */
-  /* 配得准的第一人称问句优先——读者一眼认出自己，不必先把处境翻译成条件句。
-     配不准就退回 gl，那本来就是一句现成的「用在……的时候。」。 */
+  /* 第一人称那句不加任何标签。原来写「有人这么问过：」，两处不对：
+     一是这些句子多半是陈述句（「我一提，就变成我在抱怨。」），「问过」对不上；
+     二是凡以「有人」开头的标签都在把这句话推远——而这块要的正是读者
+     把它读成自己的话。今日一问也是零框架，就是这个道理。
+     配不准的仍退回 gl，那本来就是现成的一句「用在……的时候。」。 */
   var gl=document.getElementById('hwx-tgl');
   if(gl){
-    var w=q1.fq?('有人这么问过：'+esc(q1.fq)):esc(q1.gl||'');
-    gl.innerHTML=w; gl.style.display=w?'':'none';
+    var w=q1.fq?esc(q1.fq):esc(q1.gl||'');
+    gl.className=q1.fq?'tgl mine':'tgl';
+    gl.textContent=w; gl.style.display=w?'':'none';
   }
 }
 paintQuote(true);
@@ -1523,7 +1530,7 @@ switchTab('境');
         # 埋到四千像素以下等于废掉。
         "<div class=\"today today-foot\">"
         "<div class=\"tq\"><div class=\"dt\" id=\"hwx-dt\"></div><div class=\"q\" id=\"hwx-tq\"></div>"
-        "<div class=\"tgl\" id=\"hwx-tgl\"></div><div class=\"src\" id=\"hwx-tqs\"></div>"
+        "<div class=\"src\" id=\"hwx-tqs\"></div><div class=\"tgl\" id=\"hwx-tgl\"></div>"
         "<div class=\"acts\"><button id=\"hwx-next\">换一换</button>"
         "<button class=\"bs\" id=\"hwx-save\">保存卡片</button>"
         "<button id=\"hwx-share\">分享</button></div></div>"
