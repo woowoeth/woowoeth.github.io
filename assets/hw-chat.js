@@ -129,7 +129,10 @@
     'line-height:1;cursor:pointer;padding:0 4px;margin-left:8px;min-width:32px;min-height:32px}',
 
     '#hwq-log{flex:1;overflow-y:auto;-webkit-overflow-scrolling:touch}',
-    '#hwq-log .hwq-col{display:flex;flex-direction:column;gap:14px;padding-top:18px;padding-bottom:18px}',
+    /* 底部留白比顶部厚得多：答案和输入框之间原来只有 18px，
+       最后一行字几乎贴着输入框。而且答案读完之后要能再往上推一截，
+       没有这块余量就推不动。 */
+    '#hwq-log .hwq-col{display:flex;flex-direction:column;gap:14px;padding-top:18px;padding-bottom:40px}',
     '.hwq-m{max-width:88%;font-size:17px;line-height:1.78;border-radius:12px;padding:10px 12px;white-space:pre-wrap}',
     '.hwq-me{align-self:flex-end;background:var(--paper2,#eee8da);color:var(--ink,#1f1c17)}',
     '.hwq-ai{align-self:flex-start;background:var(--card,#faf7f0);border:1px solid var(--line,#d8d2c6);color:var(--ink,#1f1c17)}',
@@ -286,6 +289,25 @@
   /* 把模型写的 [0] 换成行内出处链接。
      全程只用 createTextNode 与 createElement——模型输出一律当不可信文本，
      绝不 innerHTML 拼进去。 */
+  /* 答完把这条的顶端推到可视区顶上。
+     原来一律滚到最底——答案比一屏长的时候，读者看到的是它的尾巴，
+     得自己往回翻才能从头读。答案短的时候浏览器会把 scrollTop 夹回去，
+     行为跟原来一样。
+
+     anchor 记住「现在该让谁露在顶上」。键盘弹起时那个延时 300ms 的
+     滚到底本来是为了别让新消息被键盘盖住，但它会在 reveal 之后
+     再把答案顶回去——实测 reveal 在 +200ms 生效，+500ms 就被冲掉了。
+     有 anchor 的时候按 anchor 走。 */
+  var anchor = null;
+  function toBottom() { scroller.scrollTop = scroller.scrollHeight; }
+  function reveal(el) {
+    anchor = el || null;
+    if (!anchor) return toBottom();
+    var a = anchor.getBoundingClientRect(), b = scroller.getBoundingClientRect();
+    scroller.scrollTop += (a.top - b.top) - 12;
+  }
+  function keepInView() { if (anchor) reveal(anchor); else toBottom(); }
+
   function renderAnswer(el, text, hits) {
     el.textContent = '';
     /* 中文之间的空格去掉。模型爱写「**先问自己。** 别想怎么……」——
@@ -452,6 +474,7 @@
     busy = true; paintSend();
     input.value = ''; input.style.height = 'auto';
     dropIntro();
+    anchor = null;            /* 自己刚说完话，先跟着最新走 */
     say('me', q);
     var thinking = say('ai', '在翻书……');
     thinking.classList.add('hwq-wait');
@@ -505,6 +528,7 @@
         if (res.ok && res.body && res.body.answer) {
           thinking.classList.remove('hwq-wait');
           renderAnswer(thinking, res.body.answer, hits);
+          reveal(thinking);
           turns.push({ q: q, a: res.body.answer });
           if (turns.length > 6) turns = turns.slice(-6);
           lastHits = hits;
@@ -680,7 +704,7 @@
   });
   input.addEventListener('focus', function () {
     scheduleFit();
-    setTimeout(function () { scroller.scrollTop = scroller.scrollHeight; }, 300);
+    setTimeout(keepInView, 300);
   });
   input.addEventListener('blur', scheduleFit);
   input.addEventListener('input', function () {
