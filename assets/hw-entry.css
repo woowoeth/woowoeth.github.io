@@ -186,7 +186,7 @@ blockquote p{margin:0}
 .hubs a:hover,.hubs a.on{border-color:var(--seal);color:var(--seal)}
 
 @media (max-width:900px){
-  .layout{grid-template-columns:1fr; gap:28px}
+  .layout{grid-template-columns:minmax(0,1fr); gap:28px}
   .side{order:2; position:static}
 }
 @media (max-width:600px){
