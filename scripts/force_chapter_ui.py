@@ -419,8 +419,12 @@ def _hwx_payload():
                 b["sc"] = _sc
             out.append(b)
         return out
+    # 今日一问带上它属于哪个处境。531 条里 521 条本来就来自处境层，
+    # 只是卡片上从不说——于是「今日一问」是一张抽奖券，而不是进入处境层的门。
+    # 带上之后可以点进去看同一类的其他问题。
     QQ_ALL = ([{"t": q["t"], "r": _enrich(q["r"])} for q in QQ]
-              + [{"t": q["q"], "r": _enrich(q["a"])} for sc in S for q in sc["qs"]])
+              + [{"t": q["q"], "r": _enrich(q["a"]), "s": sc["t"], "sg": sc["g"], "sn": len(sc["qs"])}
+                 for sc in S for q in sc["qs"]])
     j = json.dumps({"E": E, "QP": QP, "QS": QS, "QQ": QQ_ALL, "S": S,
                     "CC": CAT_COLOR, "CT": CAT_TINT, "CTD": CAT_TINT_D, "NC": NC}, ensure_ascii=False, separators=(",",":")).replace("</","<\\/")
     return j, len(E), len(NC)
@@ -461,7 +465,10 @@ body{background:var(--paper);color:var(--ink)}
 #hwx .tq .acts button{border:1.5px solid var(--ink);background:transparent;color:var(--ink);border-radius:999px;padding:7px 16px;font-family:inherit;font-size:14px;cursor:pointer}
 #hwx .tq .acts .bs{background:var(--ink);color:var(--paper)}
 #hwx .askhero{border:1px solid var(--line);border-radius:16px;background:var(--card);padding:20px 18px 16px;margin-bottom:12px}
-#hwx .askhero .lb{font-size:11.5px;letter-spacing:.28em;color:var(--acc);font-weight:700;margin-bottom:12px}
+#hwx .askhero .ahead{display:flex;align-items:baseline;justify-content:space-between;gap:10px;margin-bottom:12px}
+#hwx .askhero .lb{font-size:11.5px;letter-spacing:.28em;color:var(--acc);font-weight:700}
+#hwx .askhero #hwx-asc-tag button{border:1px solid var(--line);background:transparent;color:var(--muted);border-radius:999px;padding:4px 11px;font-family:inherit;font-size:12.5px;line-height:1.4;cursor:pointer;white-space:nowrap}
+#hwx .askhero #hwx-asc-tag button:hover{border-color:var(--acc);color:var(--acc)}
 #hwx .askhero .said{font-family:"Noto Serif SC","Songti SC",serif;font-size:13px;color:var(--acc);line-height:1.7;margin-bottom:10px}
 #hwx .askhero .q{font-family:"Noto Serif SC","Source Han Serif SC","Songti SC","STSong",serif;font-size:21px;font-weight:700;line-height:1.75;margin:0 0 14px}
 #hwx .askhero .sc{font-size:13.5px;color:var(--muted);line-height:1.8;margin:0 0 14px;padding-left:12px;border-left:2px solid var(--line)}
@@ -659,6 +666,22 @@ document.getElementById('hwx-aq').textContent=a1.t;
 var a1sc=(a1.r&&a1.r[0]&&a1.r[0].sc)?a1.r[0].sc:'';
 var ascEl=document.getElementById('hwx-asc');
 if(a1sc){ascEl.textContent=a1sc;}else{ascEl.style.display='none';}
+/* 处境标签：点它 → 切到处境 tab 并选中这一格。
+   今日一问从「今天抽到这一句」变成「今天这一类，还有几个」。 */
+var a1sEl=document.getElementById('hwx-asc-tag');
+if(a1sEl){
+  if(a1.s){
+    a1sEl.innerHTML='<button type="button" id="hwx-a1go">【'+esc(a1.s)+'】'
+      +(a1.sn?(' '+a1.sn+' 个问题'):'')+' →</button>';
+    document.getElementById('hwx-a1go').onclick=function(){
+      SCGRP=a1.sg||''; SCSEL=a1.s;
+      switchTab('境'); scBuild(); scRender(); scReveal();
+      trk('daily_to_situation',{situation:a1.s});
+      var el=document.getElementById('hwx-tabs2');
+      if(el&&el.scrollIntoView)try{el.scrollIntoView({block:'start',behavior:'smooth'})}catch(e){}
+    };
+  }else{a1sEl.style.display='none';}
+}
 document.getElementById('hwx-ago').innerHTML=(a1.r||[]).slice(0,2).map(function(r){
   return '<a href="'+r.u+'" data-h="'+esc(r.who+' · '+r.cn)+'"><b>'+r.who+' · '+r.cn+'</b>'
     +(r.hint?'<i>'+r.hint+'</i>':'')+'</a>';}).join('');
@@ -931,7 +954,7 @@ function scGroups(){
   return out;
 }
 function scBuild(){
-  var h=['<button type="button" data-g="" class="on">全部</button>'];
+  var h=['<button type="button" data-g=""'+((!SCGRP&&!SCSEL)?' class="on"':'')+'>全部</button>'];
   scGroups().forEach(function(g){
     h.push('<button type="button" data-g="'+esc(g)+'"'+(g===SCGRP?' class="on"':'')+'>'+esc(g)+'</button>');
   });
@@ -1070,7 +1093,9 @@ switchTab('新');
         "<button id=\"hwx-theme\" type=\"button\" aria-label=\"切换日夜模式\"></button>\n"
         "<div class=\"hist\" id=\"hwx-hist\"><span class=\"hl\">最近看过</span>"
         "<span class=\"hchips\" id=\"hwx-hchips\"></span><button id=\"hwx-hclr\">清空</button></div>"
-        "<div class=\"askhero\" id=\"hwx-askhero\">""<div class=\"lb\">今日一问</div>""<div class=\"said\" id=\"hwx-asaid\"></div>""<div class=\"q\" id=\"hwx-aq\"></div>""<div class=\"sc\" id=\"hwx-asc\"></div>""<div class=\"go\" id=\"hwx-ago\"></div>""</div>""<div class=\"today\">"
+        "<div class=\"askhero\" id=\"hwx-askhero\">"
+        "<div class=\"ahead\"><span class=\"lb\">今日一问</span>"
+        "<span id=\"hwx-asc-tag\"></span></div>""<div class=\"said\" id=\"hwx-asaid\"></div>""<div class=\"q\" id=\"hwx-aq\"></div>""<div class=\"sc\" id=\"hwx-asc\"></div>""<div class=\"go\" id=\"hwx-ago\"></div>""</div>""<div class=\"today\">"
         "<div class=\"tq\"><div class=\"dt\" id=\"hwx-dt\"></div><div class=\"q\" id=\"hwx-tq\"></div>"
         "<div class=\"tgl\" id=\"hwx-tgl\"></div><div class=\"src\" id=\"hwx-tqs\"></div>"
         "<div class=\"acts\"><button id=\"hwx-next\">换一换</button>"
@@ -1080,8 +1105,8 @@ switchTab('新');
         "<div class=\"tbox tbox-s\"><div class=\"lb\">今日一篇</div><a id=\"hwx-tp\"></a></div>"
         "</div></div>"
         "<button class=\"scline\" id=\"hwx-scline\" type=\"button\">"
-        "<b>按处境找</b><span id=\"hwx-sccount\"></span>"
-        "<i>「我现在遇到的是……」→</i></button>"
+        "<b>不是这件事？</b><span id=\"hwx-sccount\"></span>"
+        "<i>看全部处境 →</i></button>"
         "<div class=\"sc\" id=\"hwx-sc\" style=\"display:none\">"
         "<button class=\"scmore\" id=\"hwx-scmore\" type=\"button\"></button></div>"
         "<div class=\"res\" id=\"hwx-res\" style=\"display:none\"></div>"
