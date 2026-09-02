@@ -58,8 +58,8 @@ def outro_html(title, url, text):
         '<small>转给可能需要的人，或者存下来，下次好找。</small>'
         '<div class="acts">'
         '<button type="button" data-share '
-        'data-share-title="%s" data-share-url="%s" data-share-text="%s">分享</button>'
-        + ('<button type="button" data-tea>请喝茶</button>' if TEA_ON else '')
+        'data-share-title="%s" data-share-url="%s" data-share-text="%s">分享给朋友</button>'
+        + ('<button type="button" data-tea>请我喝茶</button>' if TEA_ON else '')
         + '</div></div>'
     ) % (title, url, text)
 
