@@ -39,12 +39,13 @@ OUTRO_CSS = (
 )
 
 
-# 「请喝茶」：只在仓库里有两张收款图时才构建按钮和脚本（assets/pay-wechat.png、
-# assets/pay-alipay.png；支付宝收款链接可选，放 assets/pay.json 的 alipayLink）。
+# 「请我喝茶」：仓库里有支付宝收款图（assets/pay-alipay.png）才构建按钮和脚本；微信码
+# （assets/pay-wechat.png）可选；支付宝收款链接放 assets/pay.json 的 alipayLink（从码里解出来的）。
 # 没图就一个字都不出现——半成品不上线。位置只在读完之后的收尾块，跟分享并排。
 import os as _os, json as _json
 _ASSETS = _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), "..", "assets")
-TEA_ON = all(_os.path.exists(_os.path.join(_ASSETS, f)) for f in ("pay-wechat.png", "pay-alipay.png"))
+TEA_ON = _os.path.exists(_os.path.join(_ASSETS, "pay-alipay.png"))          # 支付宝码是底线
+TEA_WECHAT = _os.path.exists(_os.path.join(_ASSETS, "pay-wechat.png"))      # 微信码可选，没有就在微信里也给支付宝码
 try:
     TEA_ALIPAY_LINK = _json.load(open(_os.path.join(_ASSETS, "pay.json"), encoding="utf-8")).get("alipayLink", "")
 except Exception:
@@ -1971,7 +1972,7 @@ def tea_widget():
     if not TEA_ON:
         return ""
     import json
-    cfg = json.dumps({"wechat": "/assets/pay-wechat.png?v=1", "alipay": "/assets/pay-alipay.png?v=1",
+    cfg = json.dumps({"wechat": "/assets/pay-wechat.png?v=1" if TEA_WECHAT else "", "alipay": "/assets/pay-alipay.png?v=1",
                       "alipayLink": TEA_ALIPAY_LINK}, ensure_ascii=False)
     return (HWT_A + "<script>window.HW_TEA=" + cfg + ";</script>"
             + '<script src="/assets/hw-tea.js?v=1" defer></script>' + HWT_B)

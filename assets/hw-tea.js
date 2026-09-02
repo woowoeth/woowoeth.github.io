@@ -5,7 +5,7 @@
    没有配置就什么都不做——按钮本身也只在有收款图时才会被构建进页面。 */
 (function () {
   var C = window.HW_TEA;
-  if (!C || !C.wechat || !C.alipay) return;
+  if (!C || !C.alipay) return;
   var ua = navigator.userAgent || '';
   var inWeChat = /MicroMessenger/i.test(ua);
   var mobile = /Android|iPhone|iPad|iPod|Mobile/i.test(ua) ||
@@ -43,20 +43,27 @@
     card.setAttribute('role', 'dialog'); card.setAttribute('aria-label', '请我喝杯茶');
     var html = '<button class="x" type="button" aria-label="关闭">×</button>' +
       '<h3>请我喝杯茶</h3><p class="sub">金额随意，帮到了你就好。</p>';
-    if (inWeChat) {
+    if (inWeChat && C.wechat) {
       card.className = 'one';
       html += '<div class="qrs"><figure><img src="' + C.wechat + '" alt="微信收款码"></figure></div>' +
         '<p class="how">长按二维码，识别后就能付。</p>';
+    } else if (inWeChat) {
+      /* 微信里打不开支付宝链接：长按存图，去支付宝扫相册。 */
+      card.className = 'one';
+      html += '<div class="qrs"><figure><img src="' + C.alipay + '" alt="支付宝收款码"></figure></div>' +
+        '<p class="how">长按保存图片，打开支付宝扫相册。</p>';
     } else if (mobile) {
       card.className = 'one';
       html += (C.alipayLink ? '<a class="go" href="' + C.alipayLink + '" rel="noopener">打开支付宝</a>' : '') +
         '<div class="qrs"><figure><img src="' + C.alipay + '" alt="支付宝收款码"></figure></div>' +
         '<p class="how">' + (C.alipayLink ? '或者' : '') + '截图，在支付宝里扫相册。</p>';
     } else {
+      var two = !!C.wechat;
+      if (!two) card.className = 'one';
       html += '<div class="qrs">' +
-        '<figure><img src="' + C.wechat + '" alt="微信收款码"><figcaption>微信</figcaption></figure>' +
-        '<figure><img src="' + C.alipay + '" alt="支付宝收款码"><figcaption>支付宝</figcaption></figure>' +
-        '</div><p class="how">拿手机扫一扫，哪个顺手用哪个。</p>';
+        (two ? '<figure><img src="' + C.wechat + '" alt="微信收款码"><figcaption>微信</figcaption></figure>' : '') +
+        '<figure><img src="' + C.alipay + '" alt="支付宝收款码">' + (two ? '<figcaption>支付宝</figcaption>' : '') + '</figure>' +
+        '</div><p class="how">' + (two ? '拿手机扫一扫，哪个顺手用哪个。' : '打开支付宝，扫一扫。') + '</p>';
     }
     card.innerHTML = html;
     document.body.appendChild(back); document.body.appendChild(card);
