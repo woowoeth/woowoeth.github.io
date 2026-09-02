@@ -257,17 +257,25 @@
       });
       if (!ids.length) return line;
       var body = line.replace(/\s*\[\d+\]\s*/g, '').replace(/\s+$/, '');
-      // 一段里挂两条以上时给它们编号——否则渲染出来是「原文原文」，
-      // 读者分不清是两个链接还是一个词重复了。只有一条就不编号，
-      // 多写一个「1」是白噪音。
-      return body + ids.map(function (d, i) {
-        return ids.length > 1 ? '[' + d + '|' + (i + 1) + ']' : '[' + d + ']';
-      }).join('');
+      return body + ids.map(function (d) { return '[' + d + ']'; }).join('');
     }).join('\n');
+    /* 编号按整篇算，不按段算。原来只在「同一段挂了两条」时才编号，
+       可模型多半是一段挂一条——于是两段各出一个光秃秃的「原文」，
+       读者照样分不清是两个链接还是同一篇被引了两次。
+       整篇只有一条时不编号，多写一个「1」是白噪音。
+       同一篇在多处出现给同一个号，编号认的是篇不是位置。
+       越界的编号（模型偶尔会写 [9] 而只给了 8 篇）不占号：它渲染不出链接，
+       占了号就会出现「只有一个原文2、没有原文1」。 */
+    var num = {}, seq = 0;
+    text.replace(/\[(\d+)\]/g, function (_, d) {
+      if (!(d in num) && hits[parseInt(d, 10)]) num[d] = ++seq;
+      return '';
+    });
+    if (seq < 2) num = {};
     // 一遍扫过 **小标题** 和 [编号] 两种记号。
     // 只认这两种，其余一律当普通文字；全程 createTextNode / createElement，
     // 模型输出永远不进 innerHTML。
-    var re = /\*\*(.+?)\*\*|\[(\d+)(?:\|(\d+))?\]/g, last = 0, m;
+    var re = /\*\*(.+?)\*\*|\[(\d+)\]/g, last = 0, m;
     while ((m = re.exec(text)) !== null) {
       if (m.index > last) el.appendChild(document.createTextNode(text.slice(last, m.index)));
       if (m[1] !== undefined) {
@@ -282,8 +290,8 @@
           a.className = 'hwq-cite';
           a.href = c.u;
           /* 不写章节名——句句都挂个标题太吵，点进去就知道是哪篇。
-             但一段里有两条时必须编号，不然连着两个「原文」读不出是两个链接。 */
-          a.textContent = m[3] ? '原文' + m[3] : '原文';
+             hover 的 title 里有「谁·哪篇」，要认的时候认得出。 */
+          a.textContent = num[m[2]] ? '原文' + num[m[2]] : '原文';
           a.title = c.p + ' · ' + c.n;
           el.appendChild(a);
         }

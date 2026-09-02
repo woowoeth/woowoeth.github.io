@@ -905,12 +905,12 @@ if(a1sEl){
 }
 var ain=document.getElementById('hwx-ain');
 if(ain){
-  /* 框里直接放一句能发出去的话：今天这句 + 一句追问。
-     不让读者自己写——认出「这就是我」之后他想知道的就是「那我该干什么」，
-     那句追问按处境组配（钱的事问先动哪一笔，说不出口问要不要开口）。
+  /* 框里直接放一句能发出去的话，不让读者自己写——认出「这就是我」之后，
+     他想知道的就是「那我该干什么」。
+     但不能是卡片那句的复读：同一句话在三厘米之内出现两次，卡片就从
+     「这就是我」塌成一个表单默认值。所以取 SC_BOX 里一处境一句手写的，
+     前半说这件事正在把人怎么样，后半是一句答得上来的请求。
      想改的人照样能改，但不改也能直接点。 */
-  /* 框里放整句，但不是卡片那句的复读——SC_BOX 里一处境一句手写的，
-     前半说这件事正在把人怎么样，后半是一句答得上来的请求。 */
   ain.value=a1.bx||'';
   var fit=function(){ain.style.height='auto';ain.style.height=Math.min(ain.scrollHeight,96)+'px';};
   ain.addEventListener('input',fit); setTimeout(fit,0);
@@ -1646,7 +1646,7 @@ def chat_widget():
         return ""
     return (HWQ_A
             + '<script>window.HW_CHAT_ENDPOINT="' + HW_CHAT_ENDPOINT + '";</script>'
-            + '<script src="/assets/hw-chat.js?v=11" defer></script>'
+            + '<script src="/assets/hw-chat.js?v=12" defer></script>'
             + HWQ_B)
 
 
