@@ -21,7 +21,11 @@
   var ENDPOINT = window.HW_CHAT_ENDPOINT || '';
   if (!ENDPOINT) return;
   var DAILY_LIMIT = 5;
-  var LS_KEY = 'hw-chat-quota';
+  /* 键名换过一次。旧版限流按 IP 算，被别人占满时前端会把本地计数
+     直接写成「已用 5 次」——于是一个一次都没问过的人，当天再也点不动，
+     而且清不掉，因为按钮在发请求之前就被这份本地计数禁用了。
+     限流改成按浏览器算之后，那批写坏的值必须作废，换个键最干净。 */
+  var LS_KEY = 'hw-chat-quota2';
   /* 聊天记录存 localStorage。
      一开始用的是 sessionStorage——理由是这里存的是人描述自己的处境，
      不该在设备上留到下次打开浏览器。但那是我的判断不是用户的需求：
@@ -153,30 +157,21 @@
     '@media(prefers-reduced-motion:reduce){.hwq-wait{animation:none;-webkit-text-fill-color:var(--muted,#8a8377);',
     'color:var(--muted,#8a8377)}#hwq-send.busy svg{animation:none}}',
 
-    /* 输入区是一个整体，不是「一个圆角框 + 旁边一个按钮」。
-       边框画在外壳上，输入框自己无边框——焦点环也落在外壳，
-       于是「我正在写的地方」是一整块，而不是两个各画各的控件。
-       下面那条是壳内的控制行，只放发送。 */
     '#hwq-foot{flex:0 0 auto;border-top:1px solid var(--line,#d8d2c6);padding-bottom:env(safe-area-inset-bottom)}',
-    '#hwq-foot .hwq-col{padding-top:12px;padding-bottom:12px}',
-    '#hwq-box{border:1px solid var(--line,#d8d2c6);border-radius:20px;background:transparent;',
-    'padding:10px 12px 8px;transition:border-color .15s}',
-    '#hwq-box.on{border-color:var(--muted,#8a8377)}',
-    '#hwq-in{display:block;width:100%;box-sizing:border-box;resize:none;border:none;background:transparent;',
-    'color:var(--ink,#1f1c17);font-family:inherit;font-size:17px;line-height:1.55;padding:0 4px;max-height:88px;outline:none}',
-    '#hwq-bar{display:flex;justify-content:flex-end;margin-top:8px}',
-    /* 发送键三态：空着是描边（能看见但不招手），有字了变实心（该按了），
-       在等回答时变成转圈。原来只有 disabled 一种，11 秒的等待里
-       按钮毫无反应，唯一的反馈是那句「在翻书」，而它可能已经滚上去了。 */
-    '#hwq-send{flex:0 0 auto;width:34px;height:34px;padding:0;border-radius:999px;cursor:pointer;',
-    'display:flex;align-items:center;justify-content:center;',
-    'border:1px solid var(--line,#d8d2c6);background:transparent;color:var(--muted,#8a8377);',
-    'transition:background .15s,color .15s,border-color .15s}',
-    '#hwq-send svg{width:17px;height:17px;display:block}',
-    '#hwq-send.hot{background:var(--ink,#1f1c17);border-color:var(--ink,#1f1c17);color:var(--paper,#f5f1e8)}',
-    '#hwq-send:disabled{cursor:default;opacity:.4}',
-    '#hwq-send.busy{opacity:1}',
-    '#hwq-send.busy svg{animation:hwq-spin .8s linear infinite}',
+    '#hwq-foot .hwq-col{display:flex;gap:10px;align-items:flex-end;padding-top:12px;padding-bottom:12px}',
+    '#hwq-in{flex:1;resize:none;border:1px solid var(--line,#d8d2c6);border-radius:999px;background:transparent;',
+    'color:var(--ink,#1f1c17);font-family:inherit;font-size:17px;line-height:1.55;padding:10px 16px;max-height:88px;outline:none}',
+    '#hwq-in:focus{border-color:var(--muted,#8a8377)}',
+    /* 尺寸和长相都照旧。只加一件事：等回答的时候按钮转圈。
+       原来这 11 秒里按钮毫无反应，唯一的反馈是那句「在翻书」，
+       而它可能已经滚上去了。min-width 钉住，换成转圈时按钮不跳。 */
+    '#hwq-send{flex:0 0 auto;border:none;border-radius:999px;background:var(--ink,#1f1c17);color:var(--paper,#f5f1e8);',
+    'font-family:inherit;font-size:15.5px;padding:11px 18px;cursor:pointer;min-height:36px;min-width:67px;',
+    'line-height:21px}',
+    '#hwq-send:disabled{opacity:.45;cursor:default}',
+    /* 转圈的图标走内联，不改按钮的盒模型——按钮的高度还是由文字行高撑出来的
+       那一个值。改成 flex 居中会让转圈时比写着「发送」时矮 5px，一发一收地跳。 */
+    '#hwq-send svg{width:16px;height:16px;vertical-align:middle;animation:hwq-spin .8s linear infinite}',
     '@keyframes hwq-spin{to{transform:rotate(360deg)}}',
 
     /* 开场白。原先没有，是想错了：标题「你遇到什么事了？」只说了怎么问，
@@ -203,11 +198,7 @@
   panel.id = 'hwq-panel'; panel.hidden = true;
   panel.setAttribute('role', 'dialog');
   panel.setAttribute('aria-label', '问一问');
-  /* 两个图标都内联。箭头是发送，圆环是等待时转的那个。
-     用 SVG 不用字符：↑ 在不同系统里字重和基线差得离谱，圆里摆不正。 */
-  var ARROW = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" '
-    + 'stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'
-    + '<path d="M12 19V5M5 12l7-7 7 7"/></svg>';
+  /* 等待时转的那个圈。内联 SVG，不引图标库（CSP 也不允许）。 */
   var SPIN = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" '
     + 'stroke-linecap="round" aria-hidden="true">'
     + '<path d="M21 12a9 9 0 1 1-6.2-8.55"/></svg>';
@@ -216,10 +207,9 @@
     '<div id="hwq-head"><div class="hwq-col"><b>你遇到什么事了？</b>' +
     '<span id="hwq-left"></span><button id="hwq-close" type="button" aria-label="关闭">×</button></div></div>' +
     '<div id="hwq-log"><div class="hwq-col" id="hwq-logc"></div></div>' +
-    '<div id="hwq-foot"><div class="hwq-col"><div id="hwq-box">' +
+    '<div id="hwq-foot"><div class="hwq-col">' +
     '<textarea id="hwq-in" rows="1" placeholder="说说看……"></textarea>' +
-    '<div id="hwq-bar">' +
-    '<button id="hwq-send" type="button" aria-label="发送">' + ARROW + '</button></div></div></div></div>';
+    '<button id="hwq-send" type="button">发送</button></div></div>';
 
   var back = document.createElement('div');
   back.id = 'hwq-back'; back.hidden = true;
@@ -287,20 +277,10 @@
     input.placeholder = n > 0 ? '说说看……' : '今天的 5 次用完了，明天再来';
     paintSend();
   }
-  /* 发送键的三态。空着＝描边，有字＝实心，在等＝转圈。
-     判断顺序是「先看在不在等」——等的时候输入框已经被清空了，
-     按有没有字来判断会让它在最需要反馈的十一秒里退回描边。 */
   function paintSend() {
-    if (busy) {
-      send.innerHTML = SPIN;
-      send.className = 'hot busy';
-      send.disabled = true;
-      return;
-    }
-    send.innerHTML = ARROW;
-    var ok = left() > 0;
-    send.disabled = !ok;
-    send.className = (ok && input.value.trim()) ? 'hot' : '';
+    if (busy) { send.innerHTML = SPIN; send.disabled = true; return; }
+    send.textContent = '发送';
+    send.disabled = left() <= 0;
   }
 
   /* 把模型写的 [0] 换成行内出处链接。
@@ -452,6 +432,12 @@
 
   /* ---------- 提问 ---------- */
   var busy = false;
+  /* 这一次会话说过的话，还有上一轮用过的那几篇。
+     缺了这两样，答案结尾的追问就是个陷阱：读者回三五个字，
+     那三五个字既没有上下文、二元组也检索不出对的篇目——
+     实测「卡在总是忘记」被答成了带团队出不了活。 */
+  var turns = [];
+  var lastHits = [];
   /* 首页那一问是唯一一次「我们已经知道答案」的提问：卡片上那两篇出处就是
      今日一问的答案，处境名也是数据里写死的。检索是给自由输入用的，用在这里
      等于把已知的答案扔了再猜一遍。
@@ -475,6 +461,16 @@
       // 多给两篇让模型自己挑（它看得到正文），比调权重划算——
       // 每次多约 1500 字，答案只引用它 USED 里点名的那几篇。
       var hits = retrieve(q, 8);
+      /* 续问时把上一轮用过的篇目排到最前，检索只负责补后面。
+         短句检索本来就不准：「卡在总是忘记」六个字，
+         二元组能匹配上什么全看运气。模型看得到对话，让它自己挑。 */
+      if (turns.length && lastHits.length) {
+        var keep = {};
+        var head2 = lastHits.slice(0, 3).filter(function (c) {
+          if (keep[c.u]) return false; keep[c.u] = 1; return true;
+        });
+        hits = head2.concat(hits.filter(function (c) { return !keep[c.u]; })).slice(0, 8);
+      }
       if (pinned) {
         var seen = {}, head = [];
         pinned.pin.forEach(function (u) {
@@ -494,7 +490,13 @@
       return fetch(ENDPOINT, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ q: q, ctx: hits, scene: lastScene, cid: cid() })
+        body: JSON.stringify({
+          q: q, ctx: hits, cid: cid(),
+          /* 处境名只在第一轮送。第二轮再送，模型就会把
+             「你这件事是『想改个习惯』」再点一遍，成了复读。 */
+          scene: turns.length ? '' : lastScene,
+          history: turns.slice(-3),
+        })
       }).then(function (r) {
         // 先无条件取 body：429 的正文里有服务端写好的那句话，比「HTTP 429」有用。
         return r.json().catch(function () { return null; })
@@ -503,6 +505,9 @@
         if (res.ok && res.body && res.body.answer) {
           thinking.classList.remove('hwq-wait');
           renderAnswer(thinking, res.body.answer, hits);
+          turns.push({ q: q, a: res.body.answer });
+          if (turns.length > 6) turns = turns.slice(-6);
+          lastHits = hits;
           var h = loadHist();
           h.push({ q: q, a: res.body.answer, hits: slimHits(hits), ts: Date.now() });
           saveHist(h);
@@ -678,11 +683,6 @@
     setTimeout(function () { scroller.scrollTop = scroller.scrollHeight; }, 300);
   });
   input.addEventListener('blur', scheduleFit);
-  input.addEventListener('input', paintSend);
-  /* 焦点环画在外壳上，不是输入框上——整块是一个控件。 */
-  var boxEl = panel.querySelector('#hwq-box');
-  input.addEventListener('focus', function () { boxEl.classList.add('on'); });
-  input.addEventListener('blur', function () { boxEl.classList.remove('on'); });
   input.addEventListener('input', function () {
     input.style.height = 'auto';
     input.style.height = Math.min(input.scrollHeight, 88) + 'px';

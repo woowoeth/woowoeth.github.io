@@ -117,7 +117,19 @@ SYSTEM = """你是「人类世界生存法则」这个知识库的问答助手�
 12. 全文不超过 340 字。
 
 13. 正文里不要出现「资料」两个字——编号用 [0] 这种方括号就够了，
-   读者看到的会是可点的出处链接。"""
+   读者看到的会是可点的出处链接。
+
+14. **前面有对话的时候，先判断他这句是在接哪一头。**
+   你上一轮结尾问了他一句，所以他很可能只回你三五个字——
+   「卡在总是忘记」这种。那是在回答你，不是新问题。
+   这时候顺着原来那件事往下说，把他这句补进去当细节，
+   绝不要换题：他说改习惯卡在忘记，你就接着说改习惯，
+   不要因为「卡在」两个字就跑去讲带团队。
+   资料我会把上一轮用过的那几篇一并给你，优先在里面挑。
+   只有他明确开了一件新的事，才换。
+
+15. **处境名只在第一轮点。**「你这件事是『想改个习惯』」这种句子
+   一整段对话里最多出现一次，第二轮再点一遍就成了复读。"""
 
 
 def build_prompt(q, ctx, scene=""):
@@ -133,11 +145,15 @@ def build_prompt(q, ctx, scene=""):
     return "%s\n\n可用资料：\n\n%s" % (head, "\n\n".join(parts))
 
 
-def call_model(q, ctx, scene=""):
+def call_model(q, ctx, scene="", history=None):
     body = json.dumps({
         "model": MODEL,
         "messages": [
             {"role": "system", "content": SYSTEM},
+            *[m for t in (history or [])[-3:]
+                for m in ({"role": "user", "content": str(t.get("q", ""))[:200]},
+                          {"role": "assistant", "content": str(t.get("a", ""))[:300]})
+              if t.get("q") and t.get("a")],
             {"role": "user", "content": build_prompt(q, ctx, scene)},
         ],
         "temperature": 0.3,
@@ -200,7 +216,8 @@ class H(BaseHTTPRequestHandler):
         if not q:
             return self._json({"error": "empty question"}, 400)
         try:
-            raw = stub(q, ctx) if not KEY else call_model(q, ctx, (body.get("scene") or "")[:40])
+            raw = stub(q, ctx) if not KEY else call_model(
+                q, ctx, (body.get("scene") or "")[:40], body.get("history") or [])
         except Exception as e:
             return self._json({"error": "upstream failed: %s" % e}, 502)
         # 排版兜底。prompt 里都写了，但这些是确定性的事，不该指望模型每次都听：

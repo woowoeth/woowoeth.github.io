@@ -18,6 +18,9 @@ const ALLOWED_ORIGINS = new Set([
 
 const DAILY = 5;              // 每个浏览器每天几次
 const IP_CEIL = 120;          // 每个出口 IP 每天的上限，只用来挡脚本
+const HIST_TURNS = 3;         // 带几轮历史
+const HIST_Q = 200;           // 每轮读者那句截断
+const HIST_A = 300;           // 每轮答案截断（只为让模型认出自己说过什么）
 const MAX_Q = 500;            // 问题长度上限，防止拿它当通用推理后端
 const MAX_CTX = 8;            // 最多几篇资料
 const MAX_TXT = 700;          // 每篇正文截断
@@ -94,7 +97,19 @@ const SYSTEM = `你是「人类世界生存法则」这个知识库的问答助�
 12. 全文不超过 340 字。
 
 13. 正文里不要出现「资料」两个字——编号用 [0] 这种方括号就够了，
-   读者看到的会是可点的出处链接。`;
+   读者看到的会是可点的出处链接。
+
+14. **前面有对话的时候，先判断他这句是在接哪一头。**
+   你上一轮结尾问了他一句，所以他很可能只回你三五个字——
+   「卡在总是忘记」这种。那是在回答你，不是新问题。
+   这时候顺着原来那件事往下说，把他这句补进去当细节，
+   绝不要换题：他说改习惯卡在忘记，你就接着说改习惯，
+   不要因为「卡在」两个字就跑去讲带团队。
+   资料我会把上一轮用过的那几篇一并给你，优先在里面挑。
+   只有他明确开了一件新的事，才换。
+
+15. **处境名只在第一轮点。**「你这件事是『想改个习惯』」这种句子
+   一整段对话里最多出现一次，第二轮再点一遍就成了复读。`;
 
 function cors(origin) {
   return {
@@ -275,6 +290,18 @@ export default {
 
     const q = String(body.q || '').trim().slice(0, MAX_Q);
     if (!q) return json({ error: 'empty question' }, 400, origin);
+
+    /* 之前每一轮都是一条孤立的 user 消息，模型看不到上一句自己说过什么。
+       而我们的答案结尾偏偏要求追问一句——读者于是回三五个字，
+       那三五个字既没有上下文、也检索不出对的篇目，答案就飞了。
+       实测：「卡在总是忘记」被答成了带团队。带上历史。 */
+    const history = (Array.isArray(body.history) ? body.history : [])
+      .slice(-HIST_TURNS)
+      .map((t) => ({
+        q: String(t && t.q || '').slice(0, HIST_Q),
+        a: String(t && t.a || '').slice(0, HIST_A),
+      }))
+      .filter((t) => t.q && t.a);
     const ctx = (Array.isArray(body.ctx) ? body.ctx : []).slice(0, MAX_CTX);
 
     const parts = ctx.map((c, i) =>
@@ -294,7 +321,14 @@ export default {
         headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${env.HW_CHAT_KEY}` },
         body: JSON.stringify({
           model: MODEL,
-          messages: [{ role: 'system', content: SYSTEM }, { role: 'user', content: user }],
+          messages: [
+            { role: 'system', content: SYSTEM },
+            ...history.flatMap((t) => [
+              { role: 'user', content: t.q },
+              { role: 'assistant', content: t.a },
+            ]),
+            { role: 'user', content: user },
+          ],
           temperature: 0.3,
           max_tokens: 700,
         }),
