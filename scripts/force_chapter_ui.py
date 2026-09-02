@@ -701,6 +701,7 @@ body{background:var(--paper);color:var(--ink)}
 #hwx .tbox-s{padding:12px 14px}
 #hwx .tbox-s b{font-size:15px}
 #hwx .tbox-s .hint2{display:none}
+#hwx .today-foot{margin-top:34px;padding-top:26px;border-top:1px solid var(--line)}
 #hwx .tcol{display:flex;flex-direction:column;gap:14px}
 #hwx .tbox{border:1px solid var(--line);border-radius:16px;padding:14px 16px;flex:1}
 #hwx .tbox .lb{font-size:11.5px;letter-spacing:.28em;color:var(--acc);font-weight:700;margin-bottom:6px}
@@ -1446,7 +1447,30 @@ switchTab('境');
         "<span id=\"hwx-asc-tag\"></span></div>""<div class=\"q\" id=\"hwx-aq\"></div>""<div class=\"go\" id=\"hwx-ago\"></div>"
         "<div class=\"amine\" id=\"hwx-amine\">"
         "<div class=\"arow\"><textarea id=\"hwx-ain\" rows=\"1\"></textarea>"
-        "<button type=\"button\" id=\"hwx-ago2\">问</button></div></div>""</div>""<div class=\"today\">"
+        "<button type=\"button\" id=\"hwx-ago2\">问</button></div></div>""</div>"
+        "<button class=\"scline\" id=\"hwx-scline\" type=\"button\">"
+        "<b>不是这件事？</b><span id=\"hwx-sccount\"></span>"
+        "<i>看全部处境 →</i></button>"
+        "<div class=\"sc\" id=\"hwx-sc\" style=\"display:none\">"
+        "<button class=\"scmore\" id=\"hwx-scmore\" type=\"button\"></button></div>"
+        "<div class=\"res\" id=\"hwx-res\" style=\"display:none\"></div>"
+                "<div class=\"qbar\"><input id=\"q\" placeholder=\"搜你遇到的事：被裁了、睡不着、孩子不听…\" aria-label=\"搜索\"></div>"
+        "<div style=\"display:flex;align-items:baseline;justify-content:space-between;margin-top:14px\">"
+        "<div class=\"tabs2\" id=\"hwx-tabs2\">"
+        "<button data-t=\"新\">最新</button><button data-t=\"全\">全部</button>"
+        "<button data-t=\"境\" class=\"on\">处境</button></div>"
+        "<span class=\"ct\" id=\"hwx-ct\" style=\"font-size:12px;color:var(--muted);white-space:nowrap;flex:0 0 auto\"></span></div>"
+        "<div class=\"cats\" id=\"hwx-cats\" style=\"display:none\"></div>"
+        "<div class=\"scpick\" id=\"hwx-scpick\" style=\"display:none\" role=\"group\" aria-label=\"按处境筛选\"></div>"
+        "<div class=\"nc-feed\" id=\"hwx-ncfeed\"></div>"
+        "<div class=\"feed\" id=\"hwx-feed\" style=\"display:none\"></div><div class=\"nc-feed\" id=\"hwx-scfeed\" style=\"display:none\"></div>"
+        # 「今日一句」「今日一篇」从「今日一问」下面挪到了信息流之后。
+        # 原来三块「今日」并排，只有第一块是第二人称：读者刚在第一张卡里
+        # 认出自己，第二张立刻变成王兴的名言、第三张变成鲍恩——刚起来的
+        # 那口气被推开了。现在上半屏一整条都是关于他的（今日一问 →
+        # 不是这件事？→ 搜你遇到的事 → 处境），这两块是随便看看的东西，
+        # 放给已经在浏览的人。
+        "<div class=\"today today-foot\">"
         "<div class=\"tq\"><div class=\"dt\" id=\"hwx-dt\"></div><div class=\"q\" id=\"hwx-tq\"></div>"
         "<div class=\"tgl\" id=\"hwx-tgl\"></div><div class=\"src\" id=\"hwx-tqs\"></div>"
         "<div class=\"acts\"><button id=\"hwx-next\">换一换</button>"
@@ -1455,22 +1479,6 @@ switchTab('境');
         "<div class=\"tcol\">"
         "<div class=\"tbox tbox-s\"><div class=\"lb\">今日一篇</div><a id=\"hwx-tp\"></a></div>"
         "</div></div>"
-        "<button class=\"scline\" id=\"hwx-scline\" type=\"button\">"
-        "<b>不是这件事？</b><span id=\"hwx-sccount\"></span>"
-        "<i>看全部处境 →</i></button>"
-        "<div class=\"sc\" id=\"hwx-sc\" style=\"display:none\">"
-        "<button class=\"scmore\" id=\"hwx-scmore\" type=\"button\"></button></div>"
-        "<div class=\"res\" id=\"hwx-res\" style=\"display:none\"></div>"
-                "<div class=\"qbar\"><input id=\"q\" placeholder=\"搜索：人物、书、一句话、处境…\" aria-label=\"搜索\"></div>"
-        "<div style=\"display:flex;align-items:baseline;justify-content:space-between;margin-top:14px\">"
-        "<div class=\"tabs2\" id=\"hwx-tabs2\">"
-        "<button data-t=\"新\" class=\"on\">最新</button><button data-t=\"全\">全部</button>"
-        "<button data-t=\"境\">处境</button></div>"
-        "<span class=\"ct\" id=\"hwx-ct\" style=\"font-size:12px;color:var(--muted);white-space:nowrap;flex:0 0 auto\"></span></div>"
-        "<div class=\"cats\" id=\"hwx-cats\" style=\"display:none\"></div>"
-        "<div class=\"scpick\" id=\"hwx-scpick\" style=\"display:none\" role=\"group\" aria-label=\"按处境筛选\"></div>"
-        "<div class=\"nc-feed\" id=\"hwx-ncfeed\"></div>"
-        "<div class=\"feed\" id=\"hwx-feed\" style=\"display:none\"></div><div class=\"nc-feed\" id=\"hwx-scfeed\" style=\"display:none\"></div>"
         # 悬浮球问答不在这里注入——它要出现在每一页，由 patch_chat_widget() 统一挂。
         "<script>var HWXD=" + j + ";</script>"
         "<script>" + js + "</script>"
