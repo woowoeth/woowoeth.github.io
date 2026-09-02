@@ -1,0 +1,9 @@
+<svg viewBox="0 0 360 160" role="img" aria-label="一条越来越陡的虚线曲线，和一条实线：实线一开始与它同路，在画了红圈的那一点离开、走平" xmlns="http://www.w3.org/2000/svg">
+  <defs><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5 0 10z" class="af"/></marker></defs>
+  <path d="M30 132 V25" class="k" marker-end="url(#ar)"/><path d="M28 130 H335" class="k" marker-end="url(#ar)"/>
+  <path d="M30 128 C120 126, 200 116, 250 92 C280 76, 305 50, 322 28" class="kg" stroke-dasharray="4 3"/>
+  <path d="M30 128 C90 127, 130 124, 150 118 C180 108, 230 100, 322 96" class="k2"/>
+  <circle cx="150" cy="118" r="7.5" class="ring"/><circle cx="150" cy="118" r="3.5" class="ring"/>
+  <text x="150" y="146" class="at" text-anchor="middle" font-size="12">早兑现</text>
+  <text x="300" y="40" class="m" text-anchor="middle" font-size="12">复利</text>
+</svg>

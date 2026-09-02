@@ -1,0 +1,11 @@
+<svg viewBox="0 0 360 192" role="img" aria-label="四条小曲线并排：来回震荡的、越来越陡的指数、先陡后平的 S 形、冲过头再崩下来的；最后那条的顶点画了红圈" xmlns="http://www.w3.org/2000/svg">
+  <path d="M30 60 C45 30, 60 30, 75 60 S105 90, 120 60 S150 30, 165 60" class="k2"/>
+  <path d="M200 80 C260 78, 300 60, 335 20" class="k2"/>
+  <path d="M30 165 C70 165, 90 110, 110 105 C130 100, 150 100, 165 98" class="k2"/>
+  <path d="M200 170 C240 160, 265 110, 280 105 C288 103, 292 130, 300 140 C315 160, 325 165, 335 168" class="k2"/>
+  <circle cx="281" cy="105" r="7.5" class="ring"/><circle cx="281" cy="105" r="3.5" class="ring"/>
+  <text x="97" y="96" class="m" text-anchor="middle" font-size="12">震荡</text>
+  <text x="204" y="34" class="m" font-size="12">指数增长</text>
+  <text x="97" y="186" class="m" text-anchor="middle" font-size="12">S 形</text>
+  <text x="267" y="186" class="at" text-anchor="middle" font-size="12">过冲崩塌</text>
+</svg>

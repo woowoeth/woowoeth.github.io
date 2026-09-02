@@ -110,6 +110,26 @@ h1{
 .point h2{font-family:var(--display); font-size:21px; line-height:1.4; font-weight:700; letter-spacing:.02em; margin:0 0 8px}
 .point p{margin:0 0 10px}
 .eg{color:var(--ink-2); background:var(--surface-2); border-radius:10px; padding:12px 14px; font-size:15.5px; border:1px solid var(--rule)}
+/* 分则下的示意图：只给「论点本身是个形状」的章节。宽度不占满一列——它是一个论点
+   的形状，不是版面装饰；颜色全走变量，暗色下跟着翻；淡底用同色低透明度，不另配色。 */
+.hw-fig{margin:6px 0 18px; max-width:420px}
+.hw-fig svg{display:block; width:100%; height:auto; overflow:visible}
+.hw-fig .k{fill:none; stroke:var(--ink); stroke-width:1.6; stroke-linecap:round}
+.hw-fig .k2{fill:none; stroke:var(--ink); stroke-width:2.2; stroke-linecap:round; stroke-linejoin:round}
+.hw-fig .a{fill:none; stroke:var(--seal); stroke-width:1.6; stroke-linecap:round}
+.hw-fig .af{fill:var(--ink)}
+.hw-fig .ad{fill:var(--seal)}
+.hw-fig .box{fill:none; stroke:var(--ink); stroke-width:1.4}
+.hw-fig .band{fill:var(--seal); fill-opacity:.10}
+.hw-fig .zone{fill:var(--ink); fill-opacity:.045}
+.hw-fig .infra{fill:var(--ink); fill-opacity:.16}
+.hw-fig text{font-family:var(--display); font-size:13px; fill:var(--ink)}
+.hw-fig .m{fill:var(--muted)}
+.hw-fig .at{fill:var(--seal)}
+.hw-fig .ring{fill:none; stroke:var(--seal); stroke-width:1.5}
+.hw-fig .tie{fill:none; stroke:var(--ink); stroke-opacity:.35; stroke-width:1.2}
+.hw-fig .k0{fill:none; stroke:var(--ink); stroke-width:1; stroke-opacity:.45}
+.hw-fig .kg{fill:none; stroke:var(--ink); stroke-width:1.4; stroke-opacity:.5; stroke-linecap:round}
 .eg::before{content:"例  "; color:var(--seal); font-size:12px; letter-spacing:.08em; font-weight:650}
 .apply{background:var(--surface); border:1px solid var(--rule); border-radius:14px; padding:16px 18px; margin:8px 0 32px}
 .quotes{margin:8px 0 36px}

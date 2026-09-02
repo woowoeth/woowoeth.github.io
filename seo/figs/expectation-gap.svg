@@ -1,0 +1,12 @@
+<svg viewBox="0 0 360 160" role="img" aria-label="两条线：在一道竖虚线之前贴在一起，之后一条陡升一条缓升，中间的楔形越来越宽；楔形最宽处画了红圈" xmlns="http://www.w3.org/2000/svg">
+  <defs><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5 0 10z" class="af"/></marker></defs>
+  <path d="M30 132 V25" class="k" marker-end="url(#ar)"/><path d="M28 130 H335" class="k" marker-end="url(#ar)"/>
+  <polygon points="130,110 180,74 240,50 300,36 300,93 240,100 180,106" class="band"/>
+  <path d="M130 30 V130" class="kg" stroke-dasharray="4 3"/>
+  <path d="M30 120 L130 112 L300 93" class="k"/>
+  <path d="M30 120 L130 110 C180 72, 240 48, 300 36" class="k2"/>
+  <circle cx="300" cy="64" r="7.5" class="ring"/><circle cx="300" cy="64" r="3.5" class="ring"/>
+  <text x="130" y="20" class="m" text-anchor="middle" font-size="12">改革</text>
+  <text x="320" y="34" class="m" font-size="12">期望</text>
+  <text x="320" y="98" class="m" font-size="12">处境</text>
+</svg>

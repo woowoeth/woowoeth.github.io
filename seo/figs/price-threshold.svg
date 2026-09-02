@@ -1,0 +1,11 @@
+<svg viewBox="0 0 360 160" role="img" aria-label="横轴从贵到便宜，纵轴是市场；曲线长期贴着底，过了一道竖虚线突然跃上一个台阶；跃升处画了红圈" xmlns="http://www.w3.org/2000/svg">
+  <defs><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5 0 10z" class="af"/></marker></defs>
+  <path d="M30 132 V25" class="k" marker-end="url(#ar)"/><path d="M28 130 H335" class="k" marker-end="url(#ar)"/>
+  <path d="M30 122 C80 121, 130 120, 190 116 C200 115, 205 100, 210 80 C215 55, 235 40, 330 32" class="k2"/>
+  <path d="M205 30 V130" class="kg" stroke-dasharray="4 3"/>
+  <circle cx="208" cy="84" r="7.5" class="ring"/><circle cx="208" cy="84" r="3.5" class="ring"/>
+  <text x="205" y="20" class="at" text-anchor="middle" font-size="12">阈值</text>
+  <text x="36" y="20" class="m" font-size="12">市场</text>
+  <text x="40" y="146" class="m" text-anchor="middle" font-size="12">贵</text>
+  <text x="318" y="146" class="m" text-anchor="middle" font-size="12">便宜</text>
+</svg>

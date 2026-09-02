@@ -1,0 +1,12 @@
+<svg viewBox="0 0 360 150" role="img" aria-label="左右两团点，各团内部线连得很密；两团之间只有一根线相连，那根线中间画了红圈" xmlns="http://www.w3.org/2000/svg">
+  <g class="k0">
+    <path d="M60 50 L95 40 M60 50 L120 70 M60 50 L85 95 M60 50 L50 85 M95 40 L120 70 M95 40 L90 68 M120 70 L85 95 M85 95 L50 85 M50 85 L90 68 M90 68 L120 70 M95 40 L85 95"/>
+    <path d="M250 55 L285 40 M250 55 L260 100 M250 55 L280 72 M285 40 L315 70 M285 40 L280 72 M315 70 L300 105 M300 105 L260 100 M260 100 L280 72 M280 72 L315 70 M250 55 L300 105"/>
+  </g>
+  <path d="M120 70 L250 55" class="k"/>
+  <g class="af"><circle cx="60" cy="50" r="4"/><circle cx="95" cy="40" r="4"/><circle cx="120" cy="70" r="4"/><circle cx="85" cy="95" r="4"/><circle cx="50" cy="85" r="4"/><circle cx="90" cy="68" r="4"/>
+  <circle cx="250" cy="55" r="4"/><circle cx="285" cy="40" r="4"/><circle cx="315" cy="70" r="4"/><circle cx="300" cy="105" r="4"/><circle cx="260" cy="100" r="4"/><circle cx="280" cy="72" r="4"/></g>
+  <circle cx="185" cy="62.5" r="7.5" class="ring"/><circle cx="185" cy="62.5" r="3.5" class="ring"/>
+  <text x="185" y="90" class="at" text-anchor="middle" font-size="12">桥</text>
+  <text x="85" y="128" class="m" text-anchor="middle" font-size="12">强连接</text>
+</svg>

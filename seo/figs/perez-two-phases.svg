@@ -1,0 +1,14 @@
+<svg viewBox="0 0 360 170" role="img" aria-label="一条曲线：安装期冲高，到转折点崩下来，展开期在低处重新平稳上升；曲线下一条带轨枕的横带从泡沫期一直伸进展开期——泡沫铺下的设施留了下来" xmlns="http://www.w3.org/2000/svg">
+  <rect x="30" y="20" width="150" height="120" class="zone"/>
+  <rect x="188" y="20" width="152" height="120" class="zone"/>
+  <rect x="80" y="112" width="260" height="14" class="infra"/>
+  <path d="M92 112 v14 M110 112 v14 M128 112 v14 M146 112 v14 M164 112 v14 M182 112 v14 M200 112 v14 M218 112 v14 M236 112 v14 M254 112 v14 M272 112 v14 M290 112 v14 M308 112 v14 M326 112 v14" class="tie"/>
+  <path d="M180 22 V140" class="k" stroke-dasharray="4 3"/>
+  <path d="M30 128 C90 122, 130 90, 165 30 L180 30 C186 60, 190 84, 200 96 C240 90, 300 70, 340 56" class="k2"/>
+  <circle cx="180" cy="30" r="7.5" class="ring"/>
+  <circle cx="180" cy="30" r="3.5" class="ring"/>
+  <text x="105" y="158" class="t" text-anchor="middle" font-size="12">安装期</text>
+  <text x="180" y="14" class="at" text-anchor="middle" font-size="12">转折点</text>
+  <text x="264" y="158" class="t" text-anchor="middle" font-size="12">展开期</text>
+  <text x="300" y="104" class="m" font-size="11">设施</text>
+</svg>

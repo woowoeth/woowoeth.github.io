@@ -1,0 +1,15 @@
+<svg viewBox="0 0 360 132" role="img" aria-label="价格与基本面两个框互相推动成一个回路；回路底部断开，断口处一枚红圈——趋势在这里反转" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5 0 10z" class="af"/></marker>
+  </defs>
+  <rect x="22" y="42" width="86" height="40" rx="8" class="box"/>
+  <text x="65" y="67" class="t" text-anchor="middle">价格</text>
+  <rect x="252" y="42" width="86" height="40" rx="8" class="box"/>
+  <text x="295" y="67" class="t" text-anchor="middle">基本面</text>
+  <path d="M112 48 C160 8, 210 8, 250 46" class="k" marker-end="url(#ar)"/>
+  <path d="M248 78 C226 100, 210 107, 198 107 C195 107, 193 103, 192 97" class="k"/>
+  <path d="M168 97 C167 103, 165 107, 162 107 C150 107, 132 100, 114 82" class="k" marker-end="url(#ar)"/>
+  <circle cx="180" cy="104" r="7.5" class="ring"/>
+  <circle cx="180" cy="104" r="3.5" class="ring"/>
+  <text x="180" y="128" class="at" text-anchor="middle" font-size="12">拐点</text>
+</svg>

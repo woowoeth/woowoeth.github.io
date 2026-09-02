@@ -1,0 +1,18 @@
+<svg viewBox="0 0 360 200" role="img" aria-label="难度与能力两条轴之间的一条斜通道：上方焦虑，下方无聊；一个点向右走出通道落进无聊区，再向上被拉回通道，回到的位置画了一枚红圈" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="ar2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5 0 10z" class="af"/></marker>
+    <marker id="ar2r" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5 0 10z" class="ad"/></marker>
+  </defs>
+  <polygon points="40,170 40,130 330,20 330,60" class="band"/>
+  <path d="M40 172 V22" class="k" marker-end="url(#ar2)"/>
+  <path d="M38 172 H332" class="k" marker-end="url(#ar2)"/>
+  <text x="46" y="20" class="t" font-size="12">难度</text>
+  <text x="300" y="190" class="t" font-size="12">能力</text>
+  <text x="150" y="52" class="m" font-size="12">焦虑</text>
+  <text x="230" y="158" class="m" font-size="12">无聊</text>
+  <circle cx="90" cy="140" r="5" class="af"/>
+  <path d="M97 140 H185" class="k" marker-end="url(#ar2)"/>
+  <path d="M195 140 V108" class="a" stroke-dasharray="4 3" marker-end="url(#ar2r)"/>
+  <circle cx="195" cy="94" r="7.5" class="ring"/>
+  <circle cx="195" cy="94" r="3.5" class="ring"/>
+</svg>

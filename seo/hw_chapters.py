@@ -39,6 +39,18 @@ def _emph(html, raw):
         return html.replace(piece, KEY % piece, 1)
     return html
 
+# 分则标题下的示意图。只有「论点本身是个形状」的章节才有（分则里的 fig 字段），
+# 图是论点的一部分，不是插画：SVG 内联进页面，线条和字全走 CSS 变量，日夜跟着翻。
+# 位置定在分则标题和解释之间——读者刚拿到抽象说法、还没有画面的那一拍。
+FIG_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "figs")
+
+
+def _fig(name):
+    if not name:
+        return ""
+    with open(os.path.join(FIG_DIR, name + ".svg"), encoding="utf-8") as fh:
+        return '<figure class="hw-fig">%s</figure>' % fh.read().strip()
+
 
 def _pick_keys(ch):
     """挑出每篇 1-3 句最值得标出来的话，返回 {分则下标: 原文片段}。
@@ -312,10 +324,10 @@ def _chapter_page(ch, idx):
         aid = "p%d" % i
         toc.append((aid, f["n"]))
         points.append(
-            '<section class="point" id="%s"><h2>%s</h2><p>%s</p>%s</section>'
+            '<section class="point" id="%s"><h2>%s</h2>%s<p>%s</p>%s</section>'
             % (
                 # 这个循环的 i 从 1 起（id 要写成 p1/p2），_pick_keys 的下标从 0 起
-                aid, rich(f["n"]), _emph(rich(f["d"]), _mark.get(i - 1)),
+                aid, rich(f["n"]), _fig(f.get("fig")), _emph(rich(f["d"]), _mark.get(i - 1)),
                 ('<p class="eg">%s</p>' % _emph(rich(f["eg"]), _mark.get(i - 1)))
                 if f.get("eg") else "",
             )

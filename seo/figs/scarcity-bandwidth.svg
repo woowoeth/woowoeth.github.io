@@ -1,0 +1,9 @@
+<svg viewBox="0 0 360 104" role="img" aria-label="一根横条，从左右两头各被填掉一大段，中间只剩一小截，那一小截画了红圈" xmlns="http://www.w3.org/2000/svg">
+  <rect x="30" y="38" width="300" height="30" rx="4" class="box"/>
+  <rect x="31" y="39" width="118" height="28" class="band"/>
+  <rect x="214" y="39" width="115" height="28" class="infra"/>
+  <circle cx="181" cy="53" r="7.5" class="ring"/><circle cx="181" cy="53" r="3.5" class="ring"/>
+  <text x="90" y="58" class="t" text-anchor="middle" font-size="12">缺钱</text>
+  <text x="271" y="58" class="t" text-anchor="middle" font-size="12">缺时间</text>
+  <text x="181" y="90" class="at" text-anchor="middle" font-size="12">剩下</text>
+</svg>

@@ -1,0 +1,10 @@
+<svg viewBox="0 0 360 132" role="img" aria-label="指令与结果两个框：上面一条实线箭头从指令到结果；下面回来的那条是虚线，中间断开，断口处画了红圈——回报这一段缺着" xmlns="http://www.w3.org/2000/svg">
+  <defs><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5 0 10z" class="af"/></marker></defs>
+  <rect x="22" y="42" width="86" height="40" rx="8" class="box"/><text x="65" y="67" class="t" text-anchor="middle">指令</text>
+  <rect x="252" y="42" width="86" height="40" rx="8" class="box"/><text x="295" y="67" class="t" text-anchor="middle">结果</text>
+  <path d="M112 48 C160 8, 210 8, 250 46" class="k" marker-end="url(#ar)"/>
+  <path d="M248 78 C226 100, 210 107, 198 107" class="kg" stroke-dasharray="4 3"/>
+  <path d="M162 107 C150 107, 132 100, 114 82" class="kg" stroke-dasharray="4 3" marker-end="url(#ar)"/>
+  <circle cx="180" cy="104" r="7.5" class="ring"/><circle cx="180" cy="104" r="3.5" class="ring"/>
+  <text x="180" y="128" class="at" text-anchor="middle" font-size="12">回报</text>
+</svg>

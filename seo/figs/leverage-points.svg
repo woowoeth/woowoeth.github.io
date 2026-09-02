@@ -1,0 +1,14 @@
+<svg viewBox="0 0 360 172" role="img" aria-label="一段向右上升的台阶：最低一级挤满了点，越往上点越少；最低那一级的人群画了红圈" xmlns="http://www.w3.org/2000/svg">
+  <path d="M30 150 H100 V120 H170 V90 H240 V60 H330" class="k2"/>
+  <g class="af">
+    <circle cx="38" cy="143" r="2.6"/><circle cx="44" cy="143" r="2.6"/><circle cx="50" cy="143" r="2.6"/><circle cx="56" cy="143" r="2.6"/><circle cx="62" cy="143" r="2.6"/><circle cx="68" cy="143" r="2.6"/><circle cx="74" cy="143" r="2.6"/><circle cx="80" cy="143" r="2.6"/><circle cx="86" cy="143" r="2.6"/><circle cx="92" cy="143" r="2.6"/>
+    <circle cx="47" cy="137" r="2.6"/><circle cx="59" cy="137" r="2.6"/><circle cx="71" cy="137" r="2.6"/><circle cx="83" cy="137" r="2.6"/>
+    <circle cx="124" cy="113" r="2.6"/><circle cx="140" cy="113" r="2.6"/>
+    <circle cx="205" cy="83" r="2.6"/>
+    <circle cx="285" cy="53" r="2.6"/>
+  </g>
+  <circle cx="65" cy="140" r="7.5" class="ring"/><circle cx="65" cy="140" r="3.5" class="ring"/>
+  <text x="65" y="166" class="at" text-anchor="middle" font-size="12">参数</text>
+  <text x="135" y="108" class="m" text-anchor="middle" font-size="12">信息流</text>
+  <text x="285" y="48" class="m" text-anchor="middle" font-size="12">范式</text>
+</svg>

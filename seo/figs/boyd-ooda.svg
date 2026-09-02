@@ -1,0 +1,10 @@
+<svg viewBox="0 0 360 150" role="img" aria-label="两个转动的圈：左边小圈带三个箭头转得快，右边大圈只有一个箭头转得慢；大圈的箭头处画了红圈" xmlns="http://www.w3.org/2000/svg">
+  <defs><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5 0 10z" class="af"/></marker></defs>
+  <path d="M100 44 A28 28 0 0 1 126.3 81.6" class="k" marker-end="url(#ar)"/>
+  <path d="M124.2 86 A28 28 0 0 1 78.6 90" class="k" marker-end="url(#ar)"/>
+  <path d="M75.8 86 A28 28 0 0 1 95.1 44.4" class="k" marker-end="url(#ar)"/>
+  <path d="M245 22 A50 50 0 1 1 198 54.9" class="k" marker-end="url(#ar)"/>
+  <circle cx="198" cy="55" r="7.5" class="ring"/><circle cx="198" cy="55" r="3.5" class="ring"/>
+  <text x="100" y="128" class="t" text-anchor="middle" font-size="12">你</text>
+  <text x="245" y="142" class="t" text-anchor="middle" font-size="12">对手</text>
+</svg>

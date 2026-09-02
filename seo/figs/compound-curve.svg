@@ -1,0 +1,10 @@
+<svg viewBox="0 0 360 160" role="img" aria-label="一条虚直线是预期，一条实曲线前面很长一段贴着底、后面才陡起来；三个月那一点画了红圈，两条线在那里差得最远" xmlns="http://www.w3.org/2000/svg">
+  <defs><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5 0 10z" class="af"/></marker></defs>
+  <path d="M30 132 V25" class="k" marker-end="url(#ar)"/><path d="M28 130 H335" class="k" marker-end="url(#ar)"/>
+  <path d="M30 128 L320 40" class="kg" stroke-dasharray="4 3"/>
+  <path d="M30 128 C120 126, 200 118, 250 95 C280 80, 305 50, 322 28" class="k2"/>
+  <path d="M105 126 V134" class="k"/>
+  <circle cx="105" cy="125" r="7.5" class="ring"/><circle cx="105" cy="125" r="3.5" class="ring"/>
+  <text x="105" y="150" class="at" text-anchor="middle" font-size="12">三个月</text>
+  <text x="322" y="150" class="m" text-anchor="middle" font-size="12">一年</text>
+</svg>

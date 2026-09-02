@@ -1,0 +1,17 @@
+<svg viewBox="0 0 360 150" role="img" aria-label="两个六画的卦并排：左边泰卦上三画断、下三画连，右边否卦正好上下颠倒；泰卦最上面那一画框了红圈" xmlns="http://www.w3.org/2000/svg">
+  <defs><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5 0 10z" class="af"/></marker></defs>
+  <g class="af">
+    <rect x="70" y="30" width="26" height="6"/><rect x="104" y="30" width="26" height="6"/>
+    <rect x="70" y="48" width="26" height="6"/><rect x="104" y="48" width="26" height="6"/>
+    <rect x="70" y="66" width="26" height="6"/><rect x="104" y="66" width="26" height="6"/>
+    <rect x="70" y="84" width="60" height="6"/><rect x="70" y="102" width="60" height="6"/><rect x="70" y="120" width="60" height="6"/>
+    <rect x="230" y="30" width="60" height="6"/><rect x="230" y="48" width="60" height="6"/><rect x="230" y="66" width="60" height="6"/>
+    <rect x="230" y="84" width="26" height="6"/><rect x="264" y="84" width="26" height="6"/>
+    <rect x="230" y="102" width="26" height="6"/><rect x="264" y="102" width="26" height="6"/>
+    <rect x="230" y="120" width="26" height="6"/><rect x="264" y="120" width="26" height="6"/>
+  </g>
+  <path d="M150 78 H208" class="k" marker-end="url(#ar)"/>
+  <rect x="63" y="25" width="74" height="16" rx="8" class="ring"/>
+  <text x="100" y="146" class="t" text-anchor="middle" font-size="12">泰</text>
+  <text x="260" y="146" class="t" text-anchor="middle" font-size="12">否</text>
+</svg>
