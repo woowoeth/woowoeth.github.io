@@ -12,8 +12,8 @@
   "h": "831f4df629bf6734"
  },
  "i/analects/": {
-  "d": "2026-08-28",
-  "h": "a26eea94e79d2453"
+  "d": "2026-09-02",
+  "h": "9d2bc330a1eb5fe0"
  },
  "i/analects/harmony-not-sameness/": {
   "d": "2026-08-28",
@@ -31,9 +31,25 @@
   "d": "2026-08-28",
   "h": "9c6e809b429d07e7"
  },
+ "i/arendt/": {
+  "d": "2026-09-02",
+  "h": "4e327a35dbc5988d"
+ },
+ "i/arendt/banality-of-evil/": {
+  "d": "2026-09-02",
+  "h": "81c63c18fcf24dc0"
+ },
+ "i/arendt/new-york-at-35/": {
+  "d": "2026-09-02",
+  "h": "1508a470aa250256"
+ },
+ "i/arendt/thinking-as-a-duty/": {
+  "d": "2026-09-02",
+  "h": "f3f2a43d91ed874b"
+ },
  "i/art-of-worldly-wisdom/": {
-  "d": "2026-08-28",
-  "h": "beb1f06b486a0f04"
+  "d": "2026-09-02",
+  "h": "4192a49b941f5978"
  },
  "i/art-of-worldly-wisdom/do-and-be-seen/": {
   "d": "2026-08-29",
@@ -44,8 +60,8 @@
   "h": "58d65d6ebf39a077"
  },
  "i/atomic-habits/": {
-  "d": "2026-09-01",
-  "h": "9cf0f0b2652bae14"
+  "d": "2026-09-02",
+  "h": "0cdee4c534a1f1e6"
  },
  "i/atomic-habits/identity-first/": {
   "d": "2026-08-30",
@@ -66,6 +82,22 @@
  "i/attachment-theory/strange-situation/": {
   "d": "2026-08-30",
   "h": "deb82e65e3ea8461"
+ },
+ "i/augustine/": {
+  "d": "2026-09-02",
+  "h": "1811c4733210ddb2"
+ },
+ "i/augustine/not-yet/": {
+  "d": "2026-09-02",
+  "h": "56706eee42b85639"
+ },
+ "i/augustine/the-mind-commands/": {
+  "d": "2026-09-02",
+  "h": "1eec670edc5e36d3"
+ },
+ "i/augustine/the-pear-tree/": {
+  "d": "2026-09-02",
+  "h": "a323b93de38d71c2"
  },
  "i/bai-gui/": {
   "d": "2026-09-01",
@@ -104,8 +136,8 @@
   "h": "308830f6cd4a65bf"
  },
  "i/bj-fogg/": {
-  "d": "2026-09-01",
-  "h": "3e0cf52224d6687f"
+  "d": "2026-09-02",
+  "h": "b89b0c0b3ccdbb88"
  },
  "i/bj-fogg/anchor-and-celebrate/": {
   "d": "2026-08-31",
@@ -140,8 +172,8 @@
   "h": "ce120c3a58b576ee"
  },
  "i/brene-brown/": {
-  "d": "2026-09-01",
-  "h": "434cfe490f0f267e"
+  "d": "2026-09-02",
+  "h": "24773d5ef6d086a9"
  },
  "i/brene-brown/guilt-not-shame/": {
   "d": "2026-08-31",
@@ -153,7 +185,7 @@
  },
  "i/bruce-lee/": {
   "d": "2026-09-02",
-  "h": "5a131c75ab33975c"
+  "h": "fb2b7cf15c15b749"
  },
  "i/bruce-lee/be-water/": {
   "d": "2026-08-29",
@@ -255,6 +287,22 @@
   "d": "2026-08-30",
   "h": "5a32a8cabc3d16e1"
  },
+ "i/chu-shijian/": {
+  "d": "2026-09-02",
+  "h": "1ad382ba7b65cabe"
+ },
+ "i/chu-shijian/oranges-take-five-years/": {
+  "d": "2026-09-02",
+  "h": "da270d445a845b52"
+ },
+ "i/chu-shijian/orchard-at-74/": {
+  "d": "2026-09-02",
+  "h": "ca2324060dff4da3"
+ },
+ "i/chu-shijian/what-he-kept/": {
+  "d": "2026-09-02",
+  "h": "25feb6d78d95398d"
+ },
  "i/crowd/": {
   "d": "2026-09-01",
   "h": "5601ded6aa8884f4"
@@ -278,6 +326,22 @@
  "i/crucial-conversations/start-with-heart/": {
   "d": "2026-08-30",
   "h": "713e2c8cb6514b35"
+ },
+ "i/cs-lewis/": {
+  "d": "2026-09-02",
+  "h": "8c5d5f32e9808eee"
+ },
+ "i/cs-lewis/grief-feels-like-fear/": {
+  "d": "2026-09-02",
+  "h": "58656c04d74a8ba5"
+ },
+ "i/cs-lewis/house-of-cards/": {
+  "d": "2026-09-02",
+  "h": "cca326cab251482f"
+ },
+ "i/cs-lewis/not-replacing-her/": {
+  "d": "2026-09-02",
+  "h": "af4459e0576f5467"
  },
  "i/csikszentmihalyi/": {
   "d": "2026-09-01",
@@ -305,7 +369,7 @@
  },
  "i/drucker/": {
   "d": "2026-09-02",
-  "h": "a5b8c35ad41c8cb0"
+  "h": "87a87e6dfd2d36cf"
  },
  "i/drucker/create-a-customer/": {
   "d": "2026-08-29",
@@ -314,6 +378,22 @@
  "i/drucker/right-things-first/": {
   "d": "2026-08-29",
   "h": "38ca6f95c865ed75"
+ },
+ "i/du-fu/": {
+  "d": "2026-09-02",
+  "h": "864cd169ab5b3453"
+ },
+ "i/du-fu/ten-years-in-changan/": {
+  "d": "2026-09-02",
+  "h": "d1a2cc17852c4598"
+ },
+ "i/du-fu/the-child-who-starved/": {
+  "d": "2026-09-02",
+  "h": "7df709532ff330c1"
+ },
+ "i/du-fu/the-thatched-hut/": {
+  "d": "2026-09-02",
+  "h": "9bf245e888fd55bc"
  },
  "i/duan-yongping/": {
   "d": "2026-09-01",
@@ -365,7 +445,7 @@
  },
  "i/ericsson/": {
   "d": "2026-09-02",
-  "h": "a180924b177d7e08"
+  "h": "3613ae4d639ff09b"
  },
  "i/ericsson/deliberate-practice/": {
   "d": "2026-08-30",
@@ -376,8 +456,8 @@
   "h": "b5e67dcb0ae8e915"
  },
  "i/excellent-sheep/": {
-  "d": "2026-09-01",
-  "h": "3a717fa5a9e1740f"
+  "d": "2026-09-02",
+  "h": "085c1697e5f81a4a"
  },
  "i/excellent-sheep/hurdles/": {
   "d": "2026-08-31",
@@ -388,8 +468,8 @@
   "h": "ac46ecf65118356a"
  },
  "i/fan-li/": {
-  "d": "2026-09-01",
-  "h": "2fdae0bfb9206aa5"
+  "d": "2026-09-02",
+  "h": "a8cc296f0bcacc88"
  },
  "i/fan-li/leave-at-the-top/": {
   "d": "2026-08-29",
@@ -436,8 +516,8 @@
   "h": "61b68fde47c7899e"
  },
  "i/frankl/": {
-  "d": "2026-09-01",
-  "h": "b7644e73346ad774"
+  "d": "2026-09-02",
+  "h": "1da7c75f6703ace6"
  },
  "i/frankl/happiness-ensues/": {
   "d": "2026-08-29",
@@ -459,6 +539,22 @@
   "d": "2026-08-29",
   "h": "3caad819012f6062"
  },
+ "i/fukuzawa/": {
+  "d": "2026-09-02",
+  "h": "6235b0ddce1cd6bd"
+ },
+ "i/fukuzawa/no-one-above/": {
+  "d": "2026-09-02",
+  "h": "efbec05d67bc2d3e"
+ },
+ "i/fukuzawa/practical-learning/": {
+  "d": "2026-09-02",
+  "h": "294d3e558629accd"
+ },
+ "i/fukuzawa/signs-in-yokohama/": {
+  "d": "2026-09-02",
+  "h": "45f9c8c2ebd64c9a"
+ },
  "i/gandhi/": {
   "d": "2026-08-31",
   "h": "8f1efa77b944b64e"
@@ -472,8 +568,8 @@
   "h": "95491153093b94e7"
  },
  "i/gottman/": {
-  "d": "2026-09-01",
-  "h": "4ee5912df88bdf55"
+  "d": "2026-09-02",
+  "h": "0e4b077abe3e16dd"
  },
  "i/gottman/four-horsemen/": {
   "d": "2026-08-30",
@@ -592,8 +688,8 @@
   "h": "db991c76a5d36955"
  },
  "i/han-feizi/": {
-  "d": "2026-08-31",
-  "h": "6d841ad0bf8d4bdb"
+  "d": "2026-09-02",
+  "h": "8eaf542ad70cee97"
  },
  "i/han-feizi/form-and-name/": {
   "d": "2026-08-28",
@@ -723,9 +819,25 @@
   "d": "2026-08-29",
   "h": "b9fdbe89fd6921e4"
  },
+ "i/i-ching/": {
+  "d": "2026-09-02",
+  "h": "829ff0199cdee91d"
+ },
+ "i/i-ching/arrogant-dragon/": {
+  "d": "2026-09-02",
+  "h": "28daeaa4c5321d81"
+ },
+ "i/i-ching/hidden-dragon/": {
+  "d": "2026-09-02",
+  "h": "b4b191258795b444"
+ },
+ "i/i-ching/peace-and-stagnation/": {
+  "d": "2026-09-02",
+  "h": "42dfc9f104e68796"
+ },
  "i/inamori/": {
-  "d": "2026-09-01",
-  "h": "37171101b33c6e0f"
+  "d": "2026-09-02",
+  "h": "3a22f281bfa32c78"
  },
  "i/inamori/pure-motive/": {
   "d": "2026-08-29",
@@ -801,7 +913,7 @@
  },
  "i/kasparov/": {
   "d": "2026-09-02",
-  "h": "01a574d03d69322e"
+  "h": "9d6030e8df239282"
  },
  "i/kasparov/advanced-chess/": {
   "d": "2026-09-02",
@@ -828,8 +940,8 @@
   "h": "022338654353723f"
  },
  "i/kleinman/": {
-  "d": "2026-09-01",
-  "h": "578f8530c015f7cf"
+  "d": "2026-09-02",
+  "h": "ec0bba6b343c6d85"
  },
  "i/kleinman/caring-when-curing-fails/": {
   "d": "2026-09-01",
@@ -904,8 +1016,8 @@
   "h": "55740a15e8cce375"
  },
  "i/li-ka-shing/": {
-  "d": "2026-09-01",
-  "h": "fd7bf64599d04d40"
+  "d": "2026-09-02",
+  "h": "33e6deda71617811"
  },
  "i/li-ka-shing/knowing-when-to-stop/": {
   "d": "2026-08-29",
@@ -972,8 +1084,8 @@
   "h": "c4b038c1a8ae1399"
  },
  "i/machiavelli/": {
-  "d": "2026-09-01",
-  "h": "2a1ab6e7dd53db5a"
+  "d": "2026-09-02",
+  "h": "2e471f2821b3eed6"
  },
  "i/machiavelli/as-it-is/": {
   "d": "2026-08-28",
@@ -1024,8 +1136,8 @@
   "h": "f8f3574363358813"
  },
  "i/marcus-aurelius/": {
-  "d": "2026-08-31",
-  "h": "9500f744c14130ff"
+  "d": "2026-09-02",
+  "h": "2579ec04a0e38553"
  },
  "i/marcus-aurelius/morning-preparation/": {
   "d": "2026-08-28",
@@ -1068,8 +1180,8 @@
   "h": "11b2f81055469a45"
  },
  "i/matsushita/": {
-  "d": "2026-08-28",
-  "h": "f6ea0674ff5027b4"
+  "d": "2026-09-02",
+  "h": "c0c27fc5bb678c16"
  },
  "i/matsushita/tap-water/": {
   "d": "2026-08-29",
@@ -1094,6 +1206,22 @@
  "i/mencius/people-first/": {
   "d": "2026-08-28",
   "h": "a6356aca438b4535"
+ },
+ "i/montaigne/": {
+  "d": "2026-09-02",
+  "h": "88b873ec8fef550b"
+ },
+ "i/montaigne/learning-to-die/": {
+  "d": "2026-09-02",
+  "h": "db790ba7c485d929"
+ },
+ "i/montaigne/the-tower/": {
+  "d": "2026-09-02",
+  "h": "1ff4fbfd28c3cd60"
+ },
+ "i/montaigne/what-do-i-know/": {
+  "d": "2026-09-02",
+  "h": "377b6284c898b851"
  },
  "i/montessori/": {
   "d": "2026-09-01",
@@ -1207,6 +1335,22 @@
   "d": "2026-08-30",
   "h": "0549b4b9d46b3a26"
  },
+ "i/ohno/": {
+  "d": "2026-09-02",
+  "h": "d5093ebf9a2d50ac"
+ },
+ "i/ohno/five-whys/": {
+  "d": "2026-09-02",
+  "h": "cbb2a7901c8e4381"
+ },
+ "i/ohno/inventory-hides-problems/": {
+  "d": "2026-09-02",
+  "h": "d2295eca19d7c959"
+ },
+ "i/ohno/pull-the-cord/": {
+  "d": "2026-09-02",
+  "h": "4098b170b2899c0d"
+ },
  "i/old-regime/": {
   "d": "2026-08-28",
   "h": "6cd9cae4df5a517e"
@@ -1272,8 +1416,8 @@
   "h": "fa7715fe6f69e61a"
  },
  "i/pu-songling/": {
-  "d": "2026-09-01",
-  "h": "b3cfb7b1fc854b60"
+  "d": "2026-09-02",
+  "h": "43aa5093f78b299b"
  },
  "i/pu-songling/collecting-at-the-roadside/": {
   "d": "2026-09-01",
@@ -1288,8 +1432,8 @@
   "h": "2de6298e91487596"
  },
  "i/rat-park/": {
-  "d": "2026-09-01",
-  "h": "3d4ddd4635fd36d9"
+  "d": "2026-09-02",
+  "h": "695d406c334a811c"
  },
  "i/rat-park/change-the-cage/": {
   "d": "2026-09-01",
@@ -1304,8 +1448,8 @@
   "h": "0e3e4b89a578e5eb"
  },
  "i/records-of-the-grand-historian/": {
-  "d": "2026-08-28",
-  "h": "05b97369094f177e"
+  "d": "2026-09-02",
+  "h": "3a546630bbe1bb32"
  },
  "i/records-of-the-grand-historian/i-am-confused/": {
   "d": "2026-08-29",
@@ -1388,8 +1532,8 @@
   "h": "47f1f4e8329d59a5"
  },
  "i/seneca/": {
-  "d": "2026-08-31",
-  "h": "aaddd2cb31f2e29e"
+  "d": "2026-09-02",
+  "h": "bc52d5fd9f21455f"
  },
  "i/seneca/on-anger/": {
   "d": "2026-08-30",
@@ -1410,6 +1554,38 @@
  "i/shang-yang/moving-the-pole/": {
   "d": "2026-08-28",
   "h": "664ec4405354e1c7"
+ },
+ "i/shi-tiesheng/": {
+  "d": "2026-09-02",
+  "h": "703ab0b18b7647cf"
+ },
+ "i/shi-tiesheng/death-is-not-urgent/": {
+  "d": "2026-09-02",
+  "h": "921653d2761edd32"
+ },
+ "i/shi-tiesheng/job-is-being-ill/": {
+  "d": "2026-09-02",
+  "h": "89dcb9e34308a82b"
+ },
+ "i/shi-tiesheng/not-a-question-to-debate/": {
+  "d": "2026-09-02",
+  "h": "717955cf9925d377"
+ },
+ "i/sima-qian/": {
+  "d": "2026-09-02",
+  "h": "a1fcd7906d3be519"
+ },
+ "i/sima-qian/letter-to-ren-an/": {
+  "d": "2026-09-02",
+  "h": "1091a54fdec8b00d"
+ },
+ "i/sima-qian/one-thing-to-finish/": {
+  "d": "2026-09-02",
+  "h": "ec281fec41aba45f"
+ },
+ "i/sima-qian/written-in-adversity/": {
+  "d": "2026-09-02",
+  "h": "7b30955e11a15689"
  },
  "i/sima-yi/": {
   "d": "2026-08-28",
@@ -1484,8 +1660,8 @@
   "h": "e95dda2304df2a68"
  },
  "i/su-shi/": {
-  "d": "2026-08-29",
-  "h": "d17859ad97725746"
+  "d": "2026-09-02",
+  "h": "9fc323e13bf0f589"
  },
  "i/su-shi/east-slope/": {
   "d": "2026-09-01",
@@ -1520,8 +1696,8 @@
   "h": "e452bf42190bfa58"
  },
  "i/sun-tzu/": {
-  "d": "2026-08-28",
-  "h": "cf062eeb0d65eb08"
+  "d": "2026-09-02",
+  "h": "ebf50e97379cf4e4"
  },
  "i/sun-tzu/form-like-water/": {
   "d": "2026-08-29",
@@ -1556,8 +1732,8 @@
   "h": "aa06dca23bb55b77"
  },
  "i/tao-te-ching/": {
-  "d": "2026-08-28",
-  "h": "69c714c7b2a500fd"
+  "d": "2026-09-02",
+  "h": "062c92d255a89b17"
  },
  "i/tao-te-ching/reversal/": {
   "d": "2026-08-28",
@@ -1574,6 +1750,22 @@
  "i/tao-te-ching/wu-wei/": {
   "d": "2026-08-28",
   "h": "622fa072fb945c7a"
+ },
+ "i/tao-yuanming/": {
+  "d": "2026-09-02",
+  "h": "3cad1733c892c470"
+ },
+ "i/tao-yuanming/begging-poem/": {
+  "d": "2026-09-02",
+  "h": "fcd2fd871450ff57"
+ },
+ "i/tao-yuanming/eighty-days/": {
+  "d": "2026-09-02",
+  "h": "b589ca70d05fece9"
+ },
+ "i/tao-yuanming/knowing-what-you-dont-want/": {
+  "d": "2026-09-02",
+  "h": "ec69d48f374c02dc"
  },
  "i/technological-revolutions/": {
   "d": "2026-08-28",
@@ -1609,7 +1801,7 @@
  },
  "i/thinking-in-systems/": {
   "d": "2026-09-02",
-  "h": "6f983dc0ae39efba"
+  "h": "d6796d9c01344e8a"
  },
  "i/thinking-in-systems/leverage-points/": {
   "d": "2026-08-29",
@@ -1668,8 +1860,8 @@
   "h": "4b846a22b33bfd71"
  },
  "i/wang-yangming/": {
-  "d": "2026-08-28",
-  "h": "a336d0614449ebd5"
+  "d": "2026-09-02",
+  "h": "b5daba63f6bd803d"
  },
  "i/wang-yangming/bandits-in-the-heart/": {
   "d": "2026-08-28",
