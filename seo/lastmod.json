@@ -152,8 +152,8 @@
   "h": "f96ffcf484a1e187"
  },
  "i/bruce-lee/": {
-  "d": "2026-09-01",
-  "h": "e0f114c67716404f"
+  "d": "2026-09-02",
+  "h": "5a131c75ab33975c"
  },
  "i/bruce-lee/be-water/": {
   "d": "2026-08-29",
@@ -412,8 +412,8 @@
   "h": "5afc20737c485606"
  },
  "i/feynman/": {
-  "d": "2026-08-31",
-  "h": "9ac43f3df320a251"
+  "d": "2026-09-02",
+  "h": "b6f4cd67c3ecd88c"
  },
  "i/feynman/dont-fool-yourself/": {
   "d": "2026-08-30",
@@ -732,8 +732,8 @@
   "h": "9794d8e3bdd6a980"
  },
  "i/innovators-dilemma/": {
-  "d": "2026-08-28",
-  "h": "d199234e7cc35e75"
+  "d": "2026-09-02",
+  "h": "fc5dbb23d7cb77bf"
  },
  "i/innovators-dilemma/good-management-fails/": {
   "d": "2026-08-29",
@@ -783,9 +783,25 @@
   "d": "2026-09-01",
   "h": "d3bbc0868de9b089"
  },
+ "i/kasparov/": {
+  "d": "2026-09-02",
+  "h": "2fd03a8245ec3dc3"
+ },
+ "i/kasparov/advanced-chess/": {
+  "d": "2026-09-02",
+  "h": "3f9f5fe49c4cb575"
+ },
+ "i/kasparov/excuses-cost-years/": {
+  "d": "2026-09-02",
+  "h": "8eca89902a83b231"
+ },
+ "i/kasparov/process-beats-both/": {
+  "d": "2026-09-02",
+  "h": "0f160c680a7f46fd"
+ },
  "i/kevin-kelly/": {
-  "d": "2026-09-01",
-  "h": "cbc49cf69ce63ce0"
+  "d": "2026-09-02",
+  "h": "788db999ebfb5d5b"
  },
  "i/kevin-kelly/direct-relationship/": {
   "d": "2026-09-01",
@@ -1140,8 +1156,8 @@
   "h": "8ec28e7fe06f53df"
  },
  "i/naval/": {
-  "d": "2026-09-01",
-  "h": "c189d5c7c792c2b7"
+  "d": "2026-09-02",
+  "h": "6faf78c91a031c6c"
  },
  "i/naval/assets-while-you-sleep/": {
   "d": "2026-08-29",
@@ -1512,8 +1528,8 @@
   "h": "14586800b26377dd"
  },
  "i/taleb/": {
-  "d": "2026-09-01",
-  "h": "a67b60f3c2f05da1"
+  "d": "2026-09-02",
+  "h": "5bf3490b9e38061b"
  },
  "i/taleb/skin-in-the-game/": {
   "d": "2026-09-01",

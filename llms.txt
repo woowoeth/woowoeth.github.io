@@ -1,11 +1,11 @@
 # Human World (人类世界生存法则)
 
-> 140 people and books on how the world actually works, across 2,600 years
+> 141 people and books on how the world actually works, across 2,600 years
 > 遇到事了，看看以前的人怎么处理
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 140 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 141 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
-一个关于「世界到底怎么运转」的知识库：战略、财富、权力、人性、创业，取自 140 位人物与典籍，跨越 2600 年。每一条都写清楚这个人真正留下的那一个想法、背后的故事、拆开的分则与例子，以及今天怎么用。
+一个关于「世界到底怎么运转」的知识库：战略、财富、权力、人性、创业，取自 141 位人物与典籍，跨越 2600 年。每一条都写清楚这个人真正留下的那一个想法、背后的故事、拆开的分则与例子，以及今天怎么用。
 
 ## Read it
 
@@ -18,7 +18,7 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 
 ## Topics
 
-- [现代](https://ourword.ai/t/modern/) — 51
+- [现代](https://ourword.ai/t/modern/) — 52
 - [工业时代](https://ourword.ai/t/industrial-age/) — 41
 - [先秦与古典时代](https://ourword.ai/t/classical-era/) — 19
 - [权力与组织](https://ourword.ai/t/power/) — 19
@@ -26,9 +26,9 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 - [谋略与竞争](https://ourword.ai/t/strategy/) — 16
 - [财富与风险](https://ourword.ai/t/wealth/) — 16
 - [心智与情绪](https://ourword.ai/t/mind/) — 15
+- [学习与成长](https://ourword.ai/t/learning/) — 13
 - [识人与相处](https://ourword.ai/t/people/) — 13
 - [家庭与关系](https://ourword.ai/t/family/) — 12
-- [学习与成长](https://ourword.ai/t/learning/) — 12
 - [世界如何运转](https://ourword.ai/t/world/) — 11
 - [近世](https://ourword.ai/t/early-modern/) — 10
 - [秦汉至魏晋](https://ourword.ai/t/han-wei/) — 10
@@ -178,6 +178,9 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [荣格 · 人生的下午不能用上午的纲领](https://ourword.ai/i/jung/afternoon-of-life/): 荣格 · 人生的下午不能用上午的纲领——不是错了，是过期了。四十岁前后忽然觉得不对劲，是出了故障吗。这一篇要回答的是：荣格为什么说那是到点了。
 - [荣格 · 你压下去的那部分会回来](https://ourword.ai/i/jung/the-shadow/): 荣格 · 你压下去的那部分会回来——从别人身上跳出来。你最看不惯的那种人，为什么总能一眼把你激怒。这一篇要回答的是：荣格说那里面有你自己。
 - [荣格 · 面具戴久了会长进肉里](https://ourword.ai/i/jung/the-persona/): 荣格 · 面具戴久了会长进肉里——它是必需品，但要脱得下来。戴着一个角色活久了会怎么样。这一篇要回答的是：荣格说面具本身没问题，问题出在哪。
+- [卡斯帕罗夫 · 输给它之后，他改了规则](https://ourword.ai/i/kasparov/advanced-chess/): 卡斯帕罗夫 · 输给它之后，他改了规则——让人带着机器上场。机器在你这行赢了之后，这门手艺还剩什么。这一篇要回答的是：卡斯帕罗夫为什么把电脑请上了自己的赛场。
+- [卡斯帕罗夫 · 赢的不是最强的人，也不是最强的机器](https://ourword.ai/i/kasparov/process-beats-both/): 卡斯帕罗夫 · 赢的不是最强的人，也不是最强的机器——是流程最好的那一组。人加工具到底强在哪里。这一篇要回答的是：一场允许所有人用电脑的比赛，冠军为什么是两个业余选手。
+- [卡斯帕罗夫 · 他先花了很多年争「那场不算」](https://ourword.ai/i/kasparov/excuses-cost-years/): 卡斯帕罗夫 · 他先花了很多年争「那场不算」——认账比申辩省时间。被取代之后第一年通常在干什么。这一篇要回答的是：卡斯帕罗夫输掉之后先做了什么，二十年后又怎么说。
 - [凯文·凯利 · 一千个铁杆粉丝](https://ourword.ai/i/kevin-kelly/thousand-true-fans/): 凯文·凯利 · 一千个铁杆粉丝——不用红，要够深。做创作的人默认要先出名。这一篇要回答的是：那个前提是不是必要的。
 - [凯文·凯利 · 中间不能有人](https://ourword.ai/i/kevin-kelly/direct-relationship/): 凯文·凯利 · 中间不能有人——钱要直接到你手上。这道算术有个前提常被跳过。这一篇要回答的是：跳过它之后为什么算不成。
 - [凯博文 · 医生看到的病，和你过的日子](https://ourword.ai/i/kleinman/disease-and-illness/): 凯博文 · 医生看到的病，和你过的日子——这是两样东西。医生说没什么大事，你却觉得日子塌了。这一篇要回答的是：凯博文为什么说这是两件事。
@@ -376,7 +379,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [AI Bubble Monitor / AI 泡沫检测仪](https://ourword.ai/ai/)
 - [Zouni / 走你](https://ourword.ai/zouni/)
 
-## Index (140 entrys)
+## Index (141 entrys)
 
 - [BJ·福格](https://ourword.ai/i/bj-fogg/): BJ·福格（2019年·斯坦福行为设计实验室）——小到不会失败。斯坦福行为设计实验室创始人，研究行为如何被设计出来。他给出一个公式：行为发生需要动机、能力、提示三者同时到位。多数人失败在只调动机——靠决心和自我激励——而动机天然起伏，靠它维持的习惯必然崩。他的主张相反：把行为缩到小得不需要动机，然后挂在一个已有的动作后面。
 - [主权个人](https://ourword.ai/i/sovereign-individual/): 主权个人（1997年·戴维森&莫格）——数字主权。1997年出版，比特币诞生早了11年。两位作者用「暴力经济学」解释了人类社会的全部历史：谁控制暴力，谁就控制财富。他们预言了加密货币、远程工作、数字游民、国家权力衰退。
@@ -403,6 +406,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [卡尔·波普尔](https://ourword.ai/i/popper/): 卡尔·波普尔（1902-1994年·奥地利）——能被证伪。科学哲学家。他要解决的问题是：占星术和物理学都能解释现象，凭什么说后者是科学？他的答案改变了整个科学观——区别不在能不能解释，而在能不能被推翻。一个理论如果任何观察都不能与之矛盾，那它不是强大，是空洞。这条判据同样适用于日常判断：一个说什么都对的说法，等于什么都没说。
 - [卡尔·纽波特](https://ourword.ai/i/cal-newport/): 卡尔·纽波特（2016年·乔治城大学）——专注是稀缺品。计算机科学教授，同时研究知识工作者的生产方式。他提出一组对立概念：深度工作是在无干扰状态下的专注思考，能创造新价值、难以复制；浮浅工作是琐碎的事务性动作，容易复制、不产生新能力。他的论断是，随着协作工具让人随时可被打断，深度工作正在变得稀有，而恰恰因为稀有，它成了少数还能拉开差距
 - [卡尔·罗杰斯](https://ourword.ai/i/carl-rogers/): 卡尔·罗杰斯（1902-1987年·美国）——先被接住。人本主义心理学的创立者，第一个把心理治疗过程全程录音、拿出来做研究的人——在此之前治疗室里发生什么全凭治疗师转述。他的核心主张与当时主流相反：治疗师不该是解读者和指导者，而应提供三个条件——真诚、无条件积极关注、共情性理解——人在这三样齐备的环境里会自己往好的方向长。
+- [卡斯帕罗夫](https://ourword.ai/i/kasparov/): 卡斯帕罗夫（1963年- ·苏联巴库）——输给机器之后。国际象棋世界冠军，1985 到 2000 年在位十五年。1996 年在费城赢了 IBM 的深蓝，1997 年 5 月纽约六局重赛以 2.5:3.5 输掉——那是人类冠军第一次在正式比赛中败给机器。这个库里多数人处理的是人与人之间的事，他处理的是另一件：一门练了一辈子的手艺，被一台
 - [原子习惯](https://ourword.ai/i/atomic-habits/): 原子习惯（2018年·詹姆斯·克利尔）——改系统不改目标。克利尔高中时被棒球棒击中面部重伤，康复过程让他对「微小改进的累积」有了切身认识。这本书的主张是：人们高估了目标的作用，低估了系统的作用——因为赢家和输家的目标往往完全相同，区别在系统。他给出的操作层面比多数习惯书更细：从行为的四个环节（提示、渴求、反应、奖赏）分别下手，而不是靠意
 - [史记](https://ourword.ai/i/records-of-the-grand-historian/): 史记（西汉·前104-前91）——究。司马迁因李陵事件受宫刑，在极度屈辱中完成了这部书。130篇，52万字，记录了从黄帝到汉武帝约3000年的历史——但他写的不是帝王的丰功伟绩，而是人。他是中国历史上第一个为商人立传（货殖列传）、为游侠立传、为刺客立传的史学家。在一个「皇帝写历史」的时代，他坚持让事实和判断都进入记录
 - [司马懿](https://ourword.ai/i/sima-yi/): 司马懿（三国·179-251）——忍。熬过曹操、曹丕、曹叡、曹芳四代，在70岁时发动高平陵之变，一夜夺取曹魏实际控制权。他用一生证明：在长期博弈里，活得最久的那个人赢。

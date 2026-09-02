@@ -590,6 +590,8 @@ SCENES = [
      [("innovators-dilemma", "good-management-fails"), ("fan-li", "stock-the-opposite")]),
     ("公司照老样子做，我看着悬。",
      [("innovators-dilemma", "good-management-fails"), ("taleb", "turkey-problem")]),
+    ("我一直在证明它其实不行。",
+     [("kasparov", "excuses-cost-years"), ("taleb", "turkey-problem")]),
 ]),
 ("追不上新东西", "AI 来了", [
     ("东西一天一个样，我追不上。",
@@ -603,7 +605,9 @@ SCENES = [
     ("练了十年的手艺，我现在不值钱了。",
      [("naval", "productize-yourself"), ("duan-yongping", "dare-to-be-last")]),
     ("机器几秒做完我一天的活。",
-     [("naval", "productize-yourself"), ("kevin-kelly", "direct-relationship")]),
+     [("kasparov", "advanced-chess"), ("naval", "productize-yourself")]),
+    ("我最拿手的那一项，它比我强了。",
+     [("kasparov", "advanced-chess"), ("kevin-kelly", "direct-relationship")]),
     ("客户越过我，直接用工具了。",
      [("kevin-kelly", "direct-relationship"), ("naval", "productize-yourself")]),
 ]),
@@ -614,6 +618,8 @@ SCENES = [
      [("feynman", "teach-to-understand"), ("vygotsky", "scaffolding")]),
     ("离了工具，我就不敢下笔了。",
      [("vygotsky", "scaffolding"), ("bruce-lee", "one-kick")]),
+    ("我把答案交出去，自己没验过。",
+     [("kasparov", "process-beats-both"), ("feynman", "teach-to-understand")]),
 ]),
 ("出得多了人却空了", "AI 来了", [
     ("东西出得比以前多，我却更空。",
@@ -650,6 +656,8 @@ SCENES = [
      [("sapiens", "wheat-domesticated-us"), ("excellent-sheep", "hurdles")]),
     ("越有用的活，越先被替掉了。",
      [("zhuangzi", "use-of-uselessness"), ("excellent-sheep", "hurdles")]),
+    ("比不过它了，我还练什么。",
+     [("kasparov", "advanced-chess"), ("excellent-sheep", "hurdles")]),
 ]),
 # ── 本轮新增：补上原先完全没有覆盖的处境 ──
 ("两个都想要", "跟人打交道", [
