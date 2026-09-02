@@ -102,6 +102,182 @@ from hwx_scenes import SCENES as HWX_SCENES
 # 跨站调用由 Worker 的 Origin 白名单挡（fail-closed），跟同不同源无关。
 HW_CHAT_ENDPOINT = "https://wandering-wind-0168.djjian.workers.dev"
 
+# 处境的短标签：首页「今日一问」右上角那个跳转标签只放得下四个字。
+# 112 个处境里 63 个原名超过 4 字，逐个手写——截断会出「一个能约」这种废话。
+# 今日一问下面那个框里预填的整句，一个处境一句，全部手写。
+#
+# 为什么不能拿卡片上那句问句去拼：那句话已经在屏幕上了，框里再出现一次，
+# 读者三厘米之内读到同一句，卡片就从「这就是我」塌成一个表单默认值。
+#
+# 所以每句写成两半：前半说卡片没说的那一半——这件事正在把我怎么样
+# （「一整天都在切换，什么都没往前推」「翻了一遍通讯录，一个都发不出去」），
+# 后半是一句答得上来的请求。共情在前半，能聊下去在后半。
+# 前半必须是代价不是事实：事实卡片已经讲过了，代价才是他没说出口的那句。
+SC_BOX = {
+# 要做决定
+"情绪上头":"我现在整个人是绷着的，怕一开口就把事做死。先怎么办？",
+"做不完":"事情堆成一片，我一整天都在切换，什么都没往前推。今天先动哪一件？",
+"起了冲突":"我跟他已经杠上了，现在每句话都在加码。我该怎么收？",
+"拖着不开始":"这件事我拖了很久，每天都在想它，就是没动。今天怎么起头？",
+"不可逆的决定":"这一步走出去就回不了头，我反复算还是不敢按。我该怎么判断？",
+"信息不全":"该知道的我都不知道，可期限就在那儿。这种情况我怎么定？",
+"方案被否":"被否之后我一直在想是不是我的问题，也不敢再提。我下一步该怎么走？",
+"全票通过":"大家都说好，我却越听越不踏实，又说不出哪儿不对。我该怎么验？",
+# 有对手
+"对手更强":"正面我肯定打不过，可这仗又躲不掉。我还有什么打法？",
+"被牵着走":"他每动一下我就得跟着动，我自己的事一件都推不了。怎么把节奏抢回来？",
+"进不进红海":"这块地方已经杀成一片，可我看不到别的入口。我该进还是绕开？",
+"赢了之后":"最近几把都赢了，我现在下手比以前重，自己都觉得不对。我该怎么办？",
+# 钱的事
+"投资在亏":"这笔一直在亏，我每天一开盘就心慌，也不肯认。我该怎么办？",
+"该不该买":"我心里其实已经想买了，找的理由全在帮自己。我该怎么判断？",
+"怕错过":"看着别人一天天赚，我坐不住了。这件事我该怎么想？",
+"让钱生钱":"我的钱全靠自己上班换，人一停就断了。我该先动哪一步？",
+"接不到活":"活越来越少，我开始不敢花钱了。我先做什么？",
+"钱不够":"钱一紧我整个人就窄了，眼里只剩这个月。我该先动哪一笔？",
+# 跟人打交道
+"这人可信吗":"我得把事交给他，可心里一直有个疙瘩，说不上为什么。我该看什么？",
+"上面说的话不能信":"他答应过的一次也没兑现，我现在听什么都自动打折。我该怎么办？",
+"要说服人":"道理我都摆完了，他还是不动，我快没耐心了。这话我该怎么说？",
+"谈条件":"我们卡住了，谁先松口谁像输。我该怎么开口？",
+"被猜忌":"我能感觉到别人在防着我，可我什么都没做。我该怎么处理？",
+"两个都想要":"两边我都舍不得，可只能留一个。我该怎么选？",
+"信不信直觉":"我心里有个说法，数据却不支持。我该听哪个？",
+"定不好价":"我一直不敢开价，怕报高了人就走了。我该怎么定？",
+"遇上不讲理":"对面根本不接话，只想赢，我硬顶又怕把自己拖脏。我该怎么办？",
+"功劳被抢":"活是我一个人干下来的，报上去却成了别人的成绩。这话我该怎么说？",
+"该不该妥协":"退一步事情就能成，可我心里过不去。我该怎么办？",
+"总在讨好别人":"我总是先答应下来，回头一个人难受。我该怎么改？",
+"推不动别人":"事情卡在别人那儿，我催了几轮还是原地不动。我还能做什么？",
+"合伙人闹掰":"我们已经说不到一块了，可这摊事还得一起做。我该怎么谈？",
+"觉得没意义":"日子一天天过去，我说不上自己图的是什么。我该先想清楚什么？",
+"要不要跳槽":"留着不甘心，走了又怕更差。我该怎么判断？",
+"信错了人":"那件事之后，我对谁都先留一手，自己也累。我该怎么办？",
+"一个能约的人都没有":"我想找个人说说话，翻了一遍通讯录，最后谁也没点开。我先做什么？",
+# 带人
+"错反复犯":"同一个问题反复出，我说了很多遍也没用。我该先改哪一处？",
+"下不了手":"要处理的偏偏是最早跟着我的那个，我拖了好几个月。我该怎么做？",
+"团队没劲":"交代下去都会照办，可没有一个人是主动的，我自己也提不起劲。我该先改哪一处？",
+"招人换人":"这个人到底留不留，我拖了很久没定。我该看哪几点？",
+"听不到实话":"报上来的全是好消息，出事都是最后才知道。我该怎么办？",
+"队伍出不了活":"人都不差，交上来的东西就是不行。我该先动哪一步？",
+# 把事做成
+"从零开始":"手里什么都还没有，我不知道第一步该重还是该轻。我先做什么？",
+"推不动":"我使了很久的劲，几乎没有回响，开始怀疑是不是方向错了。我该先动哪一步？",
+"扩不扩张":"机会摆在那儿，可我怕铺出去以后养不住。我该怎么判断？",
+"成本降不动":"明面上的都抠完了，再压就要伤到人和货。我下一刀该往哪儿切？",
+"顺境里发慌":"越是没出事，我心里越不踏实，又说不上在怕什么。我现在该做什么？",
+"做的东西没人看":"做出来没什么人看，我开始怀疑还有没有必要做。我该怎么办？",
+# 自己的状态
+"在低谷":"这段时间什么都不顺，我把自己关起来了。先做什么能好一点？",
+"想太多":"同一件事我能来回想一整夜，越想越糟。我怎么停下来？",
+"知道做不到":"道理我全懂，可到了当下我还是老样子。先做什么能好一点？",
+"学不进去":"看的时候都懂，用的时候一个也想不起来。我该怎么练？",
+"忙到没自己":"从早排到晚，回头一看全是替别人跑的腿。我该砍掉什么？",
+"被比下去":"身边人好像都比我稳、比我快，我一直在后面追。我该怎么想这件事？",
+"不想卷但怕掉队":"我不想再这么熬下去，可一慢下来就心慌。我该怎么办？",
+# 进退取舍
+"该不该接":"位置递到我手上了，好处一眼看得见，坏处要出事才知道。我该进还是该退？",
+"该不该退":"我心里清楚差不多了，可真到要放手那一下就下不了决心。我该怎么退？",
+"要立规矩":"我立的规矩，执行两周就松回去了，现在连我都懒得再提。我该先改哪一处？",
+"看不清大势":"我分不清眼下是刚开场还是已经到了尾巴，做什么都心里没数。我该往哪边走？",
+# AI 来了
+"我这行会不会没了":"我这行现在还养得活我，可我不知道还剩几年。我现在该练什么？",
+"追不上新东西":"每次刚熟悉一点，前面又换了一茬，我很累。我现在该练什么？",
+"手艺不值钱了":"我练了很多年的东西，现在几秒就做出来了。我现在该练什么？",
+"工具替我想了":"习惯了先让它给个答案，我自己那步慢慢不走了。我现在该练什么？",
+"出得多了人却空了":"我一天能交出去的东西比过去多好几倍，人反而是麻的。我该怎么办？",
+"人人都在喊风口":"身边每个人都在往里冲，我怕自己是最后一个进场的。我该怎么想？",
+"要不要现在跳进去":"我想进去，又觉得不是太早就是太晚。我该怎么判断？",
+"日子被工具占满":"从早到晚都在回消息，一件完整的事都做不成。我先做什么？",
+"不知道该练什么了":"昨天还算本事的东西今天就不值钱了，我不知道往哪儿使劲。我现在该练什么？",
+# 家里的事
+"跟伴侣吵":"我们绕来绕去还是那一件事，每次都以更难看的话收场。我该怎么说？",
+"孩子不听":"他现在听不进我说的，最后总是变成吵架。这话我该怎么说？",
+"孩子不说话":"我连他今天过得怎么样都不知道，问了也只有一个字。我该怎么办？",
+"被家人的情绪裹着":"家里的情绪一上来我就被卷进去，好几天缓不过来。我该怎么办？",
+"父母催得紧":"一说到这事我们就翻脸，可我又不想伤他们。这话我该怎么说？",
+"身边人不敢跟我说真话":"他们只跟我报好的，坏消息总是绕过我。我该先改哪一处？",
+"家里的活没人算":"这些活加起来比上班还长，可在家里它不算数。这话我该怎么说？",
+"照顾老人":"我一边照顾他，一边把自己耗空了。我今天能先做哪一件？",
+"被背叛了":"我嘴上说过去了，可每次想起来还是堵。我该怎么办？",
+"在一起久了没感觉":"我们像合租的室友，各忙各的，谁也不问谁。我该怎么办？",
+# 身体与精力
+"睡不好":"一关灯脑子就开始过电影，翻来覆去到三四点。我今天能先做哪一件？",
+"精力跟不上":"我撑到下午就空了，全靠咖啡顶着。我今天能先做哪一件？",
+"坐不住":"我坐不到十分钟就想去摸手机。我今天能先做哪一件？",
+"想改个习惯":"我靠的一直是那股劲，劲一过就回到原样。这回怎么做才不一样？",
+"长期紧绷":"我好像忘了不使劲是什么感觉，肩膀一直是硬的。我今天能先做哪一件？",
+"想戒又戒不掉":"每次都在同一个时间点上失守，第二天再重来。我该怎么办？",
+"干不动了":"不是忙不过来，是心里那股劲没了，做什么都没反应。我今天能先做哪一件？",
+"时间不够用":"时间全被别人的事占满了，轮到我自己的就没了。我该先夺回哪一段？",
+"病了":"报告拿到手里，我放了三天没敢打开。我今天能先做哪一件？",
+# 刚起步
+"一路优秀，突然没了标准":"我一直是靠达标活着的，现在没有标可以达了。我该先做什么？",
+"第一份工作":"我坐在这儿不知道该干嘛，也不敢老去麻烦人。我该先做什么？",
+"要不要接着读书":"继续念书还是先进去做，这一步我怕走反了。我该怎么判断？",
+"学的用不上":"课上会做的题，到了真事上一件也接不上。我该先练什么？",
+# 人生转弯
+"突然没了工作":"一夜之间我没了去处，明天早上不知道该干什么。接下来我先做什么？",
+"重要的人走了":"他不在了以后，我一直没接上，日子空了一大块。接下来我先做什么？",
+"要重新开始":"前面那些年等于清零，我这个岁数再来一次，心里很虚。接下来我先做什么？",
+"扛不动了":"这副担子只有我一个人扛，放又放不下。接下来我先做什么？",
+"换个地方重来":"换了地方之后，我一个人都不认识。接下来我先做什么？",
+"人到中年":"外面看我样样都齐了，只有我知道里面是空的。接下来我先做什么？",
+# 使不上劲
+"事情我说了不算":"这件事的决定权不在我手上，我只能在旁边干着急。这种时候我还能做什么？",
+"已经改不了了":"事情已经这样了，可我脑子里一遍遍重放。这种时候我还能做什么？",
+"努力也没用":"能做的我全做了，局面一点没动。这种时候我还能做什么？",
+"一直没成":"这件事我从很早就开始做，到今天还差最后一口气。这种时候我还能做什么？",
+"被晾在一边":"我经手的事一件比一件轻，重要的会已经没我了。这种时候我还能做什么？",
+# 回头与往前
+"主线没成副业成了":"正经做的那件不温不火，随手做的反倒起来了。我该往哪边走？",
+"那件事一直搁在心里":"过去很多年了，一想起来我还是难受。我该怎么把它翻过去？",
+"不知道要什么":"问我想过什么日子，我答不上来，只知道现在这样不对。我该往哪边走？",
+"路太多，选不出来":"摆在面前的都不算错，正因为都不错我一直没动。我该往哪边走？",
+"要不要现在转向":"眼下这摊子还转得动，可我心里清楚它不是我要的。我该往哪边走？",
+# 说不出口
+"看不得别人好":"听到身边人的好消息，我第一反应居然是难受。我该怎么办？",
+"我做错了事":"那件事我到现在都没跟人提过，一想起来就烫。这话我要不要说出口？",
+"怕被看穿":"我总觉得自己是混进来的，早晚要露馅。我该怎么办？",
+"放不下一个人":"都这么多年了，我还是会突然想到他。我该怎么办？",
+"开始怕死":"一到夜里这个念头就上来，压都压不住。我该怎么办？",
+}
+
+# 手写的那 10 张 QQ 不来自处境层，本来没有处境标签也没有预填句。
+# 它们各自对应一个已有处境，挂上去就行——不然这 10 天卡片会缺一块。
+QQ_SC = {
+"方案被毙了，还要不要提第二次？":"方案被否",
+"连赢三把，加仓还是收手？":"赢了之后",
+"亏着的仓位，砍还是扛？":"投资在亏",
+"对面比我强十倍，怎么打？":"对手更强",
+"被当众激怒，第一反应做什么？":"情绪上头",
+"团队同一个错犯第三遍了，怪谁？":"错反复犯",
+"看不清方向的时候，先做什么？":"看不清大势",
+"这个人能不能信？":"这人可信吗",
+"从零开始，第一步做重的还是轻的？":"从零开始",
+"现在是该退场的时候吗？":"该不该退",
+}
+
+SC_SHORT = {
+"拖着不开始":"迟迟不动","不可逆的决定":"不可逆","进不进红海":"进红海","这人可信吗":"这人可信",
+"上面说的话不能信":"话不能信","听不到实话":"没有实话","队伍出不了活":"出不了活","成本降不动":"降不动",
+"顺境里发慌":"顺境发慌","做的东西没人看":"没人看","知道做不到":"做不到","忙到没自己":"没有自己",
+"不想卷但怕掉队":"不想卷","看不清大势":"大势不明","我这行会不会没了":"这行没了","追不上新东西":"追不上",
+"手艺不值钱了":"手艺贬值","工具替我想了":"不会想了","出得多了人却空了":"多而空","人人都在喊风口":"都喊风口",
+"要不要现在跳进去":"要不要跳","日子被工具占满":"时间被占","不知道该练什么了":"练什么","两个都想要":"都想要",
+"信不信直觉":"信不信","遇上不讲理":"不讲理","该不该妥协":"该妥协吗","总在讨好别人":"总在讨好",
+"推不动别人":"推不动人","合伙人闹掰":"合伙闹掰","觉得没意义":"没有意义","要不要跳槽":"跳不跳槽",
+"一个能约的人都没有":"没人可约","孩子不说话":"孩子不说","被家人的情绪裹着":"家里情绪","父母催得紧":"父母在催",
+"身边人不敢跟我说真话":"没有真话","家里的活没人算":"家务不算","在一起久了没感觉":"没感觉了","精力跟不上":"精力不够",
+"想改个习惯":"改变习惯","想戒又戒不掉":"戒不掉","时间不够用":"时间不够","一路优秀，突然没了标准":"没了标准",
+"第一份工作":"刚上班","要不要接着读书":"要不要读","学的用不上":"学的没用","突然没了工作":"没了工作",
+"重要的人走了":"有人走了","要重新开始":"重新开始","换个地方重来":"换个地方","事情我说了不算":"说了不算",
+"已经改不了了":"改不了了","努力也没用":"努力没用","主线没成副业成了":"副业成了","被晾在一边":"被晾一边",
+"看不得别人好":"见不得好","我做错了事":"我做错了","放不下一个人":"放不下","那件事一直搁在心里":"搁在心里",
+"不知道要什么":"要什么","路太多，选不出来":"选不出来","要不要现在转向":"要不要转",
+}
+
 HWX_INTROS = {
 "sun-tzu":"最早也最完整的战争方法论，被读了两千五百年",
 "adler":"把「这是谁的课题」问成一把刀的心理学家",
@@ -422,9 +598,40 @@ def _hwx_payload():
     # 今日一问带上它属于哪个处境。531 条里 521 条本来就来自处境层，
     # 只是卡片上从不说——于是「今日一问」是一张抽奖券，而不是进入处境层的门。
     # 带上之后可以点进去看同一类的其他问题。
-    QQ_ALL = ([{"t": q["t"], "r": _enrich(q["r"])} for q in QQ]
-              + [{"t": q["q"], "r": _enrich(q["a"]), "s": sc["t"], "sg": sc["g"], "sn": len(sc["qs"])}
+    _sc_by_name = {sc["t"]: sc for sc in S}
+    def _scfields(name):
+        sc = _sc_by_name[name]
+        return {"s": name, "ss": SC_SHORT.get(name, name), "sg": sc["g"],
+                "sn": len(sc["qs"]), "bx": SC_BOX[name]}
+    QQ_ALL = ([dict({"t": q["t"], "r": _enrich(q["r"])}, **_scfields(QQ_SC[q["t"]])) for q in QQ]
+              + [dict({"t": q["q"], "r": _enrich(q["a"])}, **_scfields(sc["t"]))
                  for sc in S for q in sc["qs"]])
+
+    # 屏幕上同一句话不能出现两次：卡片是问句，框里是预填句，两者相距三厘米。
+    # 逐条比对每个处境的每个问句和它的预填句，共 8 字以上的连续片段就算重复。
+    # 改处境问句或改 SC_BOX 时最容易踩这个，所以放在构建里而不是靠人眼。
+    def _grams(t, n=4):
+        t = re.sub(r"[，。！？、：；「」…—\s]", "", t)
+        return {t[i:i+n] for i in range(len(t) - n + 1)}
+    # 四字片段里有一批是中文绕不开的连接语——「为了什么」「不知道该」「该干什么」。
+    # 拿它们判重会把 34 处全报成撞车，其中大半根本不是。所以先数一遍语料：
+    # 一个片段出现在三个以上处境里就是通用词，只出现在一两个处境里的才是真回声。
+    _df = {}
+    for sc in S:
+        seen = set(_grams(SC_BOX[sc["t"]]))
+        for q in sc["qs"]:
+            seen |= _grams(q["q"])
+        for gm in seen:
+            _df[gm] = _df.get(gm, 0) + 1
+    _pairs = ([(sc["t"], q["q"]) for sc in S for q in sc["qs"]]
+              + [(QQ_SC[q["t"]], q["t"]) for q in QQ])
+    _dup = [(a, b, sorted(g for g in _grams(b) & _grams(SC_BOX[a]) if _df.get(g, 0) < 3))
+            for a, b in _pairs]
+    _dup = [d for d in _dup if d[2]]
+    assert not _dup, "预填句在复读卡片问句：%s" % (_dup[:3],)
+    assert set(SC_BOX) == {sc["t"] for sc in S}, (
+        "SC_BOX 与处境对不上：多 %s 缺 %s" % (set(SC_BOX) - {s_["t"] for s_ in S},
+                                             {s_["t"] for s_ in S} - set(SC_BOX)))
     j = json.dumps({"E": E, "QP": QP, "QS": QS, "QQ": QQ_ALL, "S": S,
                     "CC": CAT_COLOR, "CT": CAT_TINT, "CTD": CAT_TINT_D, "NC": NC}, ensure_ascii=False, separators=(",",":")).replace("</","<\\/")
     return j, len(E), len(NC)
@@ -467,12 +674,23 @@ body{background:var(--paper);color:var(--ink)}
 #hwx .askhero{border:1px solid var(--line);border-radius:16px;background:var(--card);padding:20px 18px 16px;margin-bottom:12px}
 #hwx .askhero .ahead{display:flex;align-items:baseline;justify-content:space-between;gap:10px;margin-bottom:12px}
 #hwx .askhero .lb{font-size:11.5px;letter-spacing:.28em;color:var(--acc);font-weight:700}
-#hwx .askhero #hwx-asc-tag button{border:1px solid var(--line);background:transparent;color:var(--muted);border-radius:999px;padding:4px 11px;font-family:inherit;font-size:12.5px;line-height:1.4;cursor:pointer;white-space:nowrap}
+#hwx .askhero #hwx-asc-tag button{border:1px solid var(--line);background:transparent;color:var(--muted);border-radius:999px;padding:4px 12px;font-family:inherit;font-size:12.5px;line-height:1.4;cursor:pointer;white-space:nowrap}
 #hwx .askhero #hwx-asc-tag button:hover{border-color:var(--acc);color:var(--acc)}
-#hwx .askhero .said{font-family:"Noto Serif SC","Songti SC",serif;font-size:13px;color:var(--acc);line-height:1.7;margin-bottom:10px}
+#hwx .amine{border-top:1px dashed var(--line);margin-top:14px;padding-top:12px}
+#hwx .amine .arow{display:flex;gap:8px;align-items:flex-end}
+#hwx .amine textarea{flex:1;resize:none;font-family:inherit;font-size:15px;line-height:1.6;color:var(--ink);background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:9px 13px;outline:none;max-height:96px}
+#hwx .amine textarea:focus{border-color:var(--acc)}
+#hwx .amine button{flex:0 0 auto;border:none;border-radius:999px;background:var(--ink);color:var(--paper);font-family:inherit;font-size:15px;padding:10px 20px;cursor:pointer}
+#hwx .amine button:disabled{opacity:.4;cursor:default}
+
+#hwx .askhero .said{font-family:"Noto Serif SC","Songti SC",serif;font-size:13.5px;color:var(--acc);line-height:1.7;margin:11px 0 0}
 #hwx .askhero .q{font-family:"Noto Serif SC","Source Han Serif SC","Songti SC","STSong",serif;font-size:21px;font-weight:700;line-height:1.75;margin:0 0 14px}
-#hwx .askhero .sc{font-size:13.5px;color:var(--muted);line-height:1.8;margin:0 0 14px;padding-left:12px;border-left:2px solid var(--line)}
-#hwx .askhero .go a{display:block;text-decoration:none;color:inherit;border-top:1px dashed var(--line);padding-top:10px;margin-top:8px}
+#hwx .askhero .sc{font-size:13.5px;color:var(--muted);line-height:1.8;margin:0;padding-left:12px;border-left:2px solid var(--line)}
+#hwx .askhero .go a{display:block;text-decoration:none;color:inherit;border-top:1px dashed var(--line);padding-top:11px;margin-top:12px}
+#hwx .askhero .go a.lead b{font-size:17px;color:var(--acc)}
+#hwx .askhero .go a.lead i{font-size:14px;line-height:1.75;color:var(--ink);opacity:.85}
+#hwx .askhero .go a.sub b{font-size:14px}
+#hwx .askhero .go a.sub i{font-size:12.5px}
 #hwx .askhero .go b{font-family:"Noto Serif SC","Songti SC",serif;font-size:15.5px;display:block}
 #hwx .askhero .go i{font-style:normal;font-size:12.5px;color:var(--muted);display:block;margin-top:3px}
 #hwx .today .tq{padding:15px 16px}
@@ -659,20 +877,23 @@ var a1r=(a1.r&&a1.r[0])?a1.r[0]:{};
 var a1w=a1r.who||'';
 /* 「X 也卡在同一件事上」对人成立，对书不成立——出现过「智慧书也卡在同一件事上」。
    wk=1 表示这条的首答主是一部作品，换一句说得通的话。 */
-document.getElementById('hwx-asaid').textContent=
-  !a1w ? '有人问：' : (a1r.wk ? ('《'+a1w+'》整本书在答这件事——') : (a1w+'也卡在同一件事上——'));
 document.getElementById('hwx-aq').textContent=a1.t;
-/* 局面用第一个答案对应章节的 apply 局面句，没有就不显示 */
-var a1sc=(a1.r&&a1.r[0]&&a1.r[0].sc)?a1.r[0].sc:'';
-var ascEl=document.getElementById('hwx-asc');
-if(a1sc){ascEl.textContent=a1sc;}else{ascEl.style.display='none';}
-/* 处境标签：点它 → 切到处境 tab 并选中这一格。
-   今日一问从「今天抽到这一句」变成「今天这一类，还有几个」。 */
+/* 这里原来还有两块，都拆了：
+   「局面」是用第二人称把读者刚认出的事再抽象讲一遍，稀释共鸣；
+   「X 也卡在这儿」对一半人是假的——库里很多是研究者不是亲历者，
+   艾利克森研究刻意练习，他没有「练了没长进」。
+   用不真的话制造共情，是这个站最不该干的事。
+   留下的只有：他自己那句话，和一个真做过这件事的人。 */
+/* 今日一问下面放一个已经填好的输入框。
+   一个正难受的人最难的是把事说清楚——空框把最难的一步放在最前面。
+   填成 value 而不是 placeholder：一点就有字，改几个词就成了自己的话。
+   原样发出去也能答，只是那是卡片的处境不是他的，所以话术引导改写。 */
+/* 右上角的处境标签。四个字以内——原名 112 个里有 63 个超长，
+   截断会出「一个能约」这种废话，所以 SC_SHORT 是逐个手写的。 */
 var a1sEl=document.getElementById('hwx-asc-tag');
 if(a1sEl){
   if(a1.s){
-    a1sEl.innerHTML='<button type="button" id="hwx-a1go">【'+esc(a1.s)+'】'
-      +(a1.sn?(' '+a1.sn+' 个问题'):'')+' →</button>';
+    a1sEl.innerHTML='<button type="button" id="hwx-a1go">'+esc(a1.ss||a1.s)+' →</button>';
     document.getElementById('hwx-a1go').onclick=function(){
       SCGRP=a1.sg||''; SCSEL=a1.s;
       switchTab('境'); scBuild(); scRender(); scReveal();
@@ -682,9 +903,40 @@ if(a1sEl){
     };
   }else{a1sEl.style.display='none';}
 }
-document.getElementById('hwx-ago').innerHTML=(a1.r||[]).slice(0,2).map(function(r){
-  return '<a href="'+r.u+'" data-h="'+esc(r.who+' · '+r.cn)+'"><b>'+r.who+' · '+r.cn+'</b>'
-    +(r.hint?'<i>'+r.hint+'</i>':'')+'</a>';}).join('');
+var ain=document.getElementById('hwx-ain');
+if(ain){
+  /* 框里直接放一句能发出去的话：今天这句 + 一句追问。
+     不让读者自己写——认出「这就是我」之后他想知道的就是「那我该干什么」，
+     那句追问按处境组配（钱的事问先动哪一笔，说不出口问要不要开口）。
+     想改的人照样能改，但不改也能直接点。 */
+  /* 框里放整句，但不是卡片那句的复读——SC_BOX 里一处境一句手写的，
+     前半说这件事正在把人怎么样，后半是一句答得上来的请求。 */
+  ain.value=a1.bx||'';
+  var fit=function(){ain.style.height='auto';ain.style.height=Math.min(ain.scrollHeight,96)+'px';};
+  ain.addEventListener('input',fit); setTimeout(fit,0);
+  /* 额度那行文案去掉了，但按钮该禁用还是要禁用——不然点了才知道用完，更糟。
+     hw-chat.js 是 defer 加载的，写死延时去读必然踩空，轮询到出现为止。 */
+  var goBtn=document.getElementById('hwx-ago2');
+  var paintLeft=function(){
+    if(typeof window.hwLeft!=='function')return false;
+    if(goBtn)goBtn.disabled=(window.hwLeft()<=0);
+    return true;
+  };
+  (function poll(i){ if(paintLeft()||i>20)return; setTimeout(function(){poll(i+1)},100); })(0);
+  var fire=function(){
+    var t=ain.value.trim(); if(!t){ain.focus();return;}
+    trk('daily_ask',{edited:(t!==a1.t)?1:0,situation:a1.s||''});
+    if(typeof window.hwAsk==='function'){window.hwAsk(t);setTimeout(paintLeft,1400);}
+  };
+  document.getElementById('hwx-ago2').onclick=fire;
+  ain.addEventListener('keydown',function(e){
+    if(e.key==='Enter'&&!e.shiftKey){e.preventDefault();fire();}
+  });
+}
+/* 第一条放大当主角：一个人、一件他真干过的事，比两个并列的链接有力。 */
+document.getElementById('hwx-ago').innerHTML=(a1.r||[]).slice(0,2).map(function(r,i){
+  return '<a class="'+(i?'sub':'lead')+'" href="'+r.u+'" data-h="'+esc(r.who+' · '+r.cn)+'">'
+    +'<b>'+r.who+' · '+r.cn+'</b>'+(r.hint?'<i>'+r.hint+'</i>':'')+'</a>';}).join('');
 /* ── 分享卡 ── */
 function drawCard(cb){
   var cv=document.createElement('canvas');cv.width=1080;cv.height=1440;var c=cv.getContext('2d');
@@ -1095,7 +1347,10 @@ switchTab('新');
         "<span class=\"hchips\" id=\"hwx-hchips\"></span><button id=\"hwx-hclr\">清空</button></div>"
         "<div class=\"askhero\" id=\"hwx-askhero\">"
         "<div class=\"ahead\"><span class=\"lb\">今日一问</span>"
-        "<span id=\"hwx-asc-tag\"></span></div>""<div class=\"said\" id=\"hwx-asaid\"></div>""<div class=\"q\" id=\"hwx-aq\"></div>""<div class=\"sc\" id=\"hwx-asc\"></div>""<div class=\"go\" id=\"hwx-ago\"></div>""</div>""<div class=\"today\">"
+        "<span id=\"hwx-asc-tag\"></span></div>""<div class=\"q\" id=\"hwx-aq\"></div>""<div class=\"go\" id=\"hwx-ago\"></div>"
+        "<div class=\"amine\" id=\"hwx-amine\">"
+        "<div class=\"arow\"><textarea id=\"hwx-ain\" rows=\"1\"></textarea>"
+        "<button type=\"button\" id=\"hwx-ago2\">问</button></div></div>""</div>""<div class=\"today\">"
         "<div class=\"tq\"><div class=\"dt\" id=\"hwx-dt\"></div><div class=\"q\" id=\"hwx-tq\"></div>"
         "<div class=\"tgl\" id=\"hwx-tgl\"></div><div class=\"src\" id=\"hwx-tqs\"></div>"
         "<div class=\"acts\"><button id=\"hwx-next\">换一换</button>"
@@ -1384,7 +1639,7 @@ def chat_widget():
         return ""
     return (HWQ_A
             + '<script>window.HW_CHAT_ENDPOINT="' + HW_CHAT_ENDPOINT + '";</script>'
-            + '<script src="/assets/hw-chat.js?v=9" defer></script>'
+            + '<script src="/assets/hw-chat.js?v=10" defer></script>'
             + HWQ_B)
 
 

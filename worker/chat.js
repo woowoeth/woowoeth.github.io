@@ -57,6 +57,12 @@ const SYSTEM = `你是「人类世界生存法则」这个知识库的问答助�
    开头写「有一处容易用反：」。这一条不许省——
    别处都在教怎么做，只有这里告诉人反着用会怎样，这是最该带出去的东西。
 
+   最后单起一行，**反问他一句**。只问一句，不超过二十字。
+   问的必须是能让下一次回答更准的那一件事——多久了、试过什么、
+   是哪一头卡住，而不是「你还好吗」这类寒暄。
+   他答了，你下一轮就能挑到更对的那一篇；他不答，这一句也不碍事。
+   问句不要每次同一个句式。
+
 5. 开头那句**不要每次都用同一个句式**，尤其不要每次都以「你卡在」起手——
    连着看两遍就露出模板腔了，读者会觉得对面是个机器而不是人。
    像朋友接话那样开口：有时直接复述他说的那件事，有时点出难处在哪，
@@ -84,7 +90,7 @@ const SYSTEM = `你是「人类世界生存法则」这个知识库的问答助�
 11. **每一段之间空一行。** 分点写的时候也一样，「1.」和「2.」之间要空一行，
    不要挤在连续的行里。
 
-12. 全文不超过 320 字。
+12. 全文不超过 340 字。
 
 13. 正文里不要出现「资料」两个字——编号用 [0] 这种方括号就够了，
    读者看到的会是可点的出处链接。`;
@@ -155,6 +161,50 @@ async function overQuota(env, ip) {
   return false;
 }
 
+/* 把读者问过的话记下来。
+ *
+ * 存什么：问题原文、时间、命中的处境。**不存 IP，不存任何能定位到人的东西**——
+ * 这些是人在描述自己的处境，能少存一样就少存一样。
+ *
+ * 存哪儿，两档：
+ *   零配置  console.log 一行，去 Cloudflare 控制台的 Workers 日志看。
+ *           不用绑任何东西，但保留期只有几天，也不好翻。
+ *   绑 KV   变量名 HW_CHAT_KV（和限流共用一个就行），按天存成 log:YYYY-MM-DD。
+ *           然后带密钥 GET 就能把这些天的问题一次拉下来。
+ *
+ * 拉取：GET ?log=7&key=<HW_LOG_KEY>，返回最近 7 天。
+ * HW_LOG_KEY 没设就整个关闭这个入口——不设密钥宁可读不到，也不能让人随便翻。
+ */
+const LOG_DAYS_MAX = 30;
+
+async function jot(env, q, scene) {
+  const t = new Date().toISOString();
+  try { console.log("ASK " + JSON.stringify({ t, q, s: scene })); } catch (e) {}
+  if (!env.HW_CHAT_KV) return;
+  const day = t.slice(0, 10);
+  const key = `log:${day}`;
+  try {
+    const cur = JSON.parse((await env.HW_CHAT_KV.get(key)) || "[]");
+    cur.push({ t, q, s: scene });
+    await env.HW_CHAT_KV.put(key, JSON.stringify(cur.slice(-500)),
+                             { expirationTtl: 86400 * 90 });
+  } catch (e) {}
+}
+
+async function readLog(env, days) {
+  if (!env.HW_CHAT_KV) return { error: "没绑 KV，问题只写进了 Workers 日志。绑一个变量名叫 HW_CHAT_KV 的 KV 就能从这里读。" };
+  const out = [];
+  const now = Date.now();
+  for (let i = 0; i < Math.min(days, LOG_DAYS_MAX); i++) {
+    const day = new Date(now - i * 86400000).toISOString().slice(0, 10);
+    try {
+      const rows = JSON.parse((await env.HW_CHAT_KV.get(`log:${day}`)) || "[]");
+      if (rows.length) out.push({ day, n: rows.length, rows });
+    } catch (e) {}
+  }
+  return { days: out.length, total: out.reduce((n, d) => n + d.n, 0), log: out };
+}
+
 export default {
   async fetch(request, env) {
     const origin = request.headers.get('Origin') || '';
@@ -163,6 +213,19 @@ export default {
     if (request.method === 'OPTIONS') {
       return ok ? new Response(null, { headers: cors(origin) }) : new Response(null, { status: 403 });
     }
+    /* 取问题清单。放在 Origin 白名单之前——它是给站主自己用的，
+       不从页面上调，所以不该被白名单挡住；改由 HW_LOG_KEY 把门。 */
+    if (request.method === 'GET') {
+      const u = new URL(request.url);
+      if (u.searchParams.has('log')) {
+        if (!env.HW_LOG_KEY || u.searchParams.get('key') !== env.HW_LOG_KEY) {
+          return json({ error: 'Forbidden' }, 403, null);
+        }
+        const d = parseInt(u.searchParams.get('log'), 10) || 7;
+        return json(await readLog(env, d), 200, null);
+      }
+    }
+
     if (!ok) return json({ error: 'Forbidden origin' }, 403, null);
     if (request.method !== 'POST') return json({ error: 'Method Not Allowed' }, 405, origin);
 
@@ -212,6 +275,7 @@ export default {
     const raw = data?.choices?.[0]?.message?.content;
     if (!raw) return json({ error: '上游没有返回内容' }, 502, origin);
 
+    await jot(env, q, scene);          /* 答成了才记，失败的不算读者问过 */
     const answer = tidy(raw);
     const used = [...new Set([...answer.matchAll(/\[(\d+)\]/g)].map(m => parseInt(m[1], 10)))].sort();
     return json({ answer, used }, 200, origin);

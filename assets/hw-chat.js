@@ -28,15 +28,35 @@
      关掉标签页再回来记录就没了，被反映了两次。改成 localStorage，
      关浏览器也在。只留最近 20 轮，且每轮只存问题、答案和引用链接，
      不存喂给模型的正文。 */
+  /* 聊天记录：本地留着，关浏览器再打开也在。
+     原来卡 20 条上限——那是按条数砍，砍掉的可能是上周最要紧的那次。
+     改成按时间：只丢 7 天前的，7 天内不管多少条都留。
+     另有一个条数上限只为兜住 localStorage 的容量，不是产品规则。 */
   var HIST_KEY = 'hw-chat-log';
-  var HIST_MAX = 20;
+  var HIST_DAYS = 7;
+  var HIST_HARD_MAX = 200;      /* 纯粹防 localStorage 撑爆，正常人到不了 */
 
+  function fresh(a) {
+    var cut = Date.now() - HIST_DAYS * 864e5;
+    return a.filter(function (x) { return !x.ts || x.ts >= cut; });
+  }
   function loadHist() {
-    try { var a = JSON.parse(localStorage.getItem(HIST_KEY) || '[]'); return a.length ? a : []; }
-    catch (e) { return []; }
+    try {
+      var a = JSON.parse(localStorage.getItem(HIST_KEY) || '[]');
+      if (!a.length) return [];
+      var f = fresh(a);
+      if (f.length !== a.length) saveHist(f);      /* 顺手把过期的落盘清掉 */
+      return f;
+    } catch (e) { return []; }
   }
   function saveHist(h) {
-    try { localStorage.setItem(HIST_KEY, JSON.stringify(h.slice(-HIST_MAX))); } catch (e) {}
+    var keep = fresh(h).slice(-HIST_HARD_MAX);
+    try { localStorage.setItem(HIST_KEY, JSON.stringify(keep)); }
+    catch (e) {
+      /* 满了就丢最旧的一半再试一次，别让一次写失败把整段记录卡死 */
+      try { localStorage.setItem(HIST_KEY, JSON.stringify(keep.slice(-Math.ceil(keep.length / 2)))); }
+      catch (e2) {}
+    }
   }
 
   /* ---------- 每日额度（前端只是提示，真正的限流必须在服务端） ---------- */
@@ -378,7 +398,7 @@
         if (res.ok && res.body && res.body.answer) {
           renderAnswer(thinking, res.body.answer, hits);
           var h = loadHist();
-          h.push({ q: q, a: res.body.answer, hits: slimHits(hits) });
+          h.push({ q: q, a: res.body.answer, hits: slimHits(hits), ts: Date.now() });
           saveHist(h);
           useOne(); refreshLeft();
           return;
@@ -551,4 +571,16 @@
     input.style.height = Math.min(input.scrollHeight, 88) + 'px';
   });
   refreshLeft();
+
+  /* 给首页用的一个口子：带着一句话把面板打开并直接问。
+     首页「今日一问」下面那个输入框已经让人改过词了，所以这里不再让他
+     在面板里重打一遍——他编辑的地方只有一个。 */
+  window.hwAsk = function (text) {
+    var t = String(text || '').trim();
+    if (!t) return;
+    if (panel.hidden) ball.click();
+    input.value = t.slice(0, 500);
+    ask();
+  };
+  window.hwLeft = left;          /* 首页要知道今天还剩几次 */
 })();
