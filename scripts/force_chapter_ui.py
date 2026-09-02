@@ -39,6 +39,18 @@ OUTRO_CSS = (
 )
 
 
+# 「请喝茶」：只在仓库里有两张收款图时才构建按钮和脚本（assets/pay-wechat.png、
+# assets/pay-alipay.png；支付宝收款链接可选，放 assets/pay.json 的 alipayLink）。
+# 没图就一个字都不出现——半成品不上线。位置只在读完之后的收尾块，跟分享并排。
+import os as _os, json as _json
+_ASSETS = _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), "..", "assets")
+TEA_ON = all(_os.path.exists(_os.path.join(_ASSETS, f)) for f in ("pay-wechat.png", "pay-alipay.png"))
+try:
+    TEA_ALIPAY_LINK = _json.load(open(_os.path.join(_ASSETS, "pay.json"), encoding="utf-8")).get("alipayLink", "")
+except Exception:
+    TEA_ALIPAY_LINK = ""
+
+
 def outro_html(title, url, text):
     return (
         '<div class="hw-outro">'
@@ -47,7 +59,8 @@ def outro_html(title, url, text):
         '<div class="acts">'
         '<button type="button" data-share '
         'data-share-title="%s" data-share-url="%s" data-share-text="%s">分享</button>'
-        '</div></div>'
+        + ('<button type="button" data-tea>请喝茶</button>' if TEA_ON else '')
+        + '</div></div>'
     ) % (title, url, text)
 
 
@@ -1949,3 +1962,45 @@ def patch_chat_widget():
 
 
 patch_chat_widget()
+
+HWT_A, HWT_B = "<!--HWX:TEA-->", "<!--/HWX:TEA-->"
+
+
+def tea_widget():
+    """「请喝茶」弹层脚本。没有收款图时返回空串，全站连 <script> 都不发。"""
+    if not TEA_ON:
+        return ""
+    import json
+    cfg = json.dumps({"wechat": "/assets/pay-wechat.png?v=1", "alipay": "/assets/pay-alipay.png?v=1",
+                      "alipayLink": TEA_ALIPAY_LINK}, ensure_ascii=False)
+    return (HWT_A + "<script>window.HW_TEA=" + cfg + ";</script>"
+            + '<script src="/assets/hw-tea.js?v=1" defer></script>' + HWT_B)
+
+
+def patch_tea_widget():
+    """和 patch_chat_widget 同一套：先剥旧块再插新块，幂等；TEA_ON 为假时全站剥干净。"""
+    import os, re
+    n = 0
+    block = tea_widget()
+    for dp, dn, fn in os.walk("."):
+        if ".git" in dp or dp.startswith("./assets"):
+            continue
+        for f in fn:
+            if f not in ("index.html", "404.html"):
+                continue
+            path = os.path.join(dp, f)
+            s = open(path, encoding="utf-8").read()
+            if 'http-equiv="refresh"' in s:
+                continue
+            s2 = re.sub(re.escape(HWT_A) + r".*?" + re.escape(HWT_B), "", s, flags=re.S)
+            if "</body>" not in s2:
+                continue
+            if block:
+                s2 = s2.replace("</body>", block + "</body>", 1)
+            if s2 != s:
+                open(path, "w", encoding="utf-8").write(s2)
+                n += 1
+    print("tea widget on pages:", n)
+
+
+patch_tea_widget()
