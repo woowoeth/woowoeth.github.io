@@ -149,9 +149,10 @@ def render_home(out):
     img = Image.new("RGB", (W, H), PAPER)
     d = ImageDraw.Draw(img)
     ic = ICON.resize((104, 104), Image.LANCZOS)
-    img.paste(ic, (TX0, 128), ic)
-    d.text((TX0, 258), "人类世界生存法则", font=F("b", 60), fill=INK)
-    d.text((TX0, 348), "遇到事了，看看以前的人怎么处理", font=F("l", 30), fill=INK2)
+    # 印章离分割线 62px，整块（印章 + 标题 + 口号）在竖向居中
+    img.paste(ic, (TX0, 180), ic)
+    d.text((TX0, 312), "人类世界生存法则", font=F("b", 60), fill=INK)
+    d.text((TX0, 404), "遇到事了，看看以前的人怎么处理", font=F("l", 30), fill=INK2)
     d.line([(72, 118), (W - 72, 118)], fill=RULE, width=2)
     d.text((TX0, 57), "ourword.ai", font=F("b", 24), fill=MUTED)
     save(img, out)
