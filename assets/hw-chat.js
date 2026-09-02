@@ -184,6 +184,12 @@
 
     ':root[data-theme="dark"] .hwq-ai{background:#1d1913}',
     ':root[data-theme="dark"] .hwq-me{background:#201c15}',
+    /* 小人头像：每条回答左边一枚。头像是身份不是内容，只在「有人在跟你说话」的地方出现，
+       不上悬浮球；也不进面板标题——390 宽下标题、额度、关闭三样已经满了。深色底用带米白描边的那版。 */
+    '.hwq-ai{position:relative;margin-left:36px;max-width:calc(88% - 36px)}',
+    '.hwq-ai::before{content:"";position:absolute;left:-36px;top:1px;width:28px;height:28px;border-radius:50%;background:url(/assets/hw-avatar.png) center/cover no-repeat}',
+    ':root[data-theme="dark"] .hwq-ai::before{background-image:url(/assets/hw-avatar-dark.png)}',
+    '@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .hwq-ai::before{background-image:url(/assets/hw-avatar-dark.png)}}',
     /* 手机上球缩一号、再贴边一点。52px 贴在 right:14 时会占到 x=324-376，
        而章节页正文列的右边界是 366——它永久压住每一屏最后一行的最后两个字。
        缩到 42、贴到 right:6 之后压住的宽度从 42px 降到 24px（约一个字）。
