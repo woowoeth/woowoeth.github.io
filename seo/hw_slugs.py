@@ -17,6 +17,8 @@ SLUGS = {
     "克里斯蒂娜·马斯拉赫": "maslach",
     "蒲松龄": "pu-songling",
     "卡斯帕罗夫": "kasparov",
+    "诺伯特·维纳": "wiener",
+    "最后一版": "hot-metal",
     "稀缺": "scarcity",
     "克里斯汀·内夫": "kristin-neff",
     "阿莉·霍克希尔德": "hochschild",

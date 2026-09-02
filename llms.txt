@@ -1,11 +1,11 @@
 # Human World (人类世界生存法则)
 
-> 141 people and books on how the world actually works, across 2,600 years
+> 143 people and books on how the world actually works, across 2,600 years
 > 遇到事了，看看以前的人怎么处理
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 141 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 143 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
-一个关于「世界到底怎么运转」的知识库：战略、财富、权力、人性、创业，取自 141 位人物与典籍，跨越 2600 年。每一条都写清楚这个人真正留下的那一个想法、背后的故事、拆开的分则与例子，以及今天怎么用。
+一个关于「世界到底怎么运转」的知识库：战略、财富、权力、人性、创业，取自 143 位人物与典籍，跨越 2600 年。每一条都写清楚这个人真正留下的那一个想法、背后的故事、拆开的分则与例子，以及今天怎么用。
 
 ## Read it
 
@@ -18,18 +18,18 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 
 ## Topics
 
-- [现代](https://ourword.ai/t/modern/) — 52
-- [工业时代](https://ourword.ai/t/industrial-age/) — 41
+- [现代](https://ourword.ai/t/modern/) — 53
+- [工业时代](https://ourword.ai/t/industrial-age/) — 42
 - [先秦与古典时代](https://ourword.ai/t/classical-era/) — 19
 - [权力与组织](https://ourword.ai/t/power/) — 19
 - [创业与产品](https://ourword.ai/t/startups/) — 17
 - [谋略与竞争](https://ourword.ai/t/strategy/) — 16
 - [财富与风险](https://ourword.ai/t/wealth/) — 16
 - [心智与情绪](https://ourword.ai/t/mind/) — 15
-- [学习与成长](https://ourword.ai/t/learning/) — 13
+- [学习与成长](https://ourword.ai/t/learning/) — 14
 - [识人与相处](https://ourword.ai/t/people/) — 13
 - [家庭与关系](https://ourword.ai/t/family/) — 12
-- [世界如何运转](https://ourword.ai/t/world/) — 11
+- [世界如何运转](https://ourword.ai/t/world/) — 12
 - [近世](https://ourword.ai/t/early-modern/) — 10
 - [秦汉至魏晋](https://ourword.ai/t/han-wei/) — 10
 - [身心与生活](https://ourword.ai/t/living/) — 9
@@ -157,6 +157,9 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [哈耶克 · 致命的自负](https://ourword.ai/i/hayek/fatal-conceit/): 哈耶克 · 致命的自负——经济学的奇特任务。他给自己学科定的任务不是预测，是泼冷水。这一篇要回答的是：为什么越聪明的人越需要这盆水。
 - [阿莉·霍克希尔德 · 第二班](https://ourword.ai/i/hochschild/second-shift/): 阿莉·霍克希尔德 · 第二班——下班之后还有一班。家务和照料从来不进工时表。这一篇要回答的是：不记账会记到谁身上。
 - [阿莉·霍克希尔德 · 情感劳动](https://ourword.ai/i/hochschild/emotional-labor/): 阿莉·霍克希尔德 · 情感劳动——那个笑不是你的笑。有些工作要求你不只做事，还要感觉对。这一篇要回答的是：那份要求要收什么代价。
+- [最后一版 · 一门手艺在一夜之间结束](https://ourword.ai/i/hot-metal/one-night/): 最后一版 · 一门手艺在一夜之间结束——1978 年 7 月 1 日。一门手艺整体消失时是什么样子。这一篇要回答的是：纽约时报那一夜之后，排字工人身上发生了什么。
+- [最后一版 · 被替掉的正是最值钱的那一项](https://ourword.ai/i/hot-metal/speed-was-the-craft/): 最后一版 · 被替掉的正是最值钱的那一项——他们最快的地方。为什么先被替掉的常常是最熟练的人。这一篇要回答的是：熟练在什么条件下会变成负债。
+- [最后一版 · 过去了的是哪些人](https://ourword.ai/i/hot-metal/who-got-across/): 最后一版 · 过去了的是哪些人——不是手最快的那批。同一场冲击里为什么有人过去了。这一篇要回答的是：留下来的那批人凭的是什么，而不是靠什么运气。
 - [胡雪岩 · 戒欺](https://ourword.ai/i/hu-xueyan/no-cheating/): 胡雪岩 · 戒欺——在能骗的地方立牌子。药材生意最容易掺假。这一篇要回答的是：他把那块匾挂在了什么位置。
 - [胡雪岩 · 囤丝之败](https://ourword.ai/i/hu-xueyan/the-silk-corner/): 胡雪岩 · 囤丝之败——一次押上全部的代价。他曾是大清最有钱的商人，两年之间全部输光。这一篇要回答的是：他判断错的到底是哪一步。
 - [黄仁勋 · 零亿美元市场](https://ourword.ai/i/huang/zero-billion-markets/): 黄仁勋 · 零亿美元市场——在市场存在前入场。英伟达的打法他自己起过一个名字。这一篇要回答的是：怎么在一个不存在的市场里活到它出现。
@@ -338,6 +341,9 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [国富论 · 扣针工厂](https://ourword.ai/i/wealth-of-nations/pin-factory/): 国富论 · 扣针工厂——分工的账。全书从一家小工厂开始。这一篇要回答的是：那笔四万八千倍的账是怎么算出来的，以及它的上限在哪。
 - [国家为什么会失败 · 一墙之隔的诺加莱斯](https://ourword.ai/i/why-nations-fail/two-nogales/): 国家为什么会失败 · 一墙之隔的诺加莱斯——控制变量的天然实验。一道栅栏把一座城分成两半，收入差三倍。这一篇要回答的是：这个案例排除掉了哪些流行解释。
 - [国家为什么会失败 · 精英为什么拦着进步](https://ourword.ai/i/why-nations-fail/fear-of-creative-destruction/): 国家为什么会失败 · 精英为什么拦着进步——不是蠢，是怕。沙皇拒修铁路，奥匈皇帝拒建工厂。这一篇要回答的是：拦住技术的人往往最清楚技术的威力。
+- [诺伯特·维纳 · 他先去找了工会](https://ourword.ai/i/wiener/wrote-to-the-union/): 诺伯特·维纳 · 他先去找了工会——在自动化落地之前。被技术冲掉之前有没有先手。这一篇要回答的是：一个亲手推动自动化的人，为什么去找了会被它冲掉的那批人。
+- [诺伯特·维纳 · 机器能做的和该让它做的](https://ourword.ai/i/wiener/human-use/): 诺伯特·维纳 · 机器能做的和该让它做的——是两个问题。什么活该交给工具，什么活不该。这一篇要回答的是：维纳凭什么说有些事机器做得到也不该让它做。
+- [诺伯特·维纳 · 控制靠回路，不靠命令](https://ourword.ai/i/wiener/feedback-not-command/): 诺伯特·维纳 · 控制靠回路，不靠命令——看结果比下指令重要。为什么反复交代还是走样。这一篇要回答的是：维纳把控制定义成什么，以及这跟下命令差在哪。
 - [武则天 · 不次除官](https://ourword.ai/i/wu-zetian/promote-and-drop/): 武则天 · 不次除官——破格进，也快速退。她提拔的人里有大量后来被贬被杀的。这一篇要回答的是：这套看似混乱的用人法为什么有效。
 - [武则天 · 宰相安得失此人](https://ourword.ai/i/wu-zetian/the-manifesto/): 武则天 · 宰相安得失此人——在骂你的檄文里找人。一篇把你骂得体无完肤的文章送到面前。这一篇要回答的是：她读到最狠的那句时说了什么。
 - [项羽 · 破釜沉舟](https://ourword.ai/i/xiang-yu/sinking-the-boats/): 项羽 · 破釜沉舟——一次性押上全部。巨鹿之战是他一生的顶点。这一篇要回答的是：让他赢得那么彻底的东西，为什么后来一直没变过。
@@ -379,7 +385,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [AI Bubble Monitor / AI 泡沫检测仪](https://ourword.ai/ai/)
 - [Zouni / 走你](https://ourword.ai/zouni/)
 
-## Index (141 entrys)
+## Index (143 entrys)
 
 - [BJ·福格](https://ourword.ai/i/bj-fogg/): BJ·福格（2019年·斯坦福行为设计实验室）——小到不会失败。斯坦福行为设计实验室创始人，研究行为如何被设计出来。他给出一个公式：行为发生需要动机、能力、提示三者同时到位。多数人失败在只调动机——靠决心和自我激励——而动机天然起伏，靠它维持的习惯必然崩。他的主张相反：把行为缩到小得不需要动机，然后挂在一个已有的动作后面。
 - [主权个人](https://ourword.ai/i/sovereign-individual/): 主权个人（1997年·戴维森&莫格）——数字主权。1997年出版，比特币诞生早了11年。两位作者用「暴力经济学」解释了人类社会的全部历史：谁控制暴力，谁就控制财富。他们预言了加密货币、远程工作、数字游民、国家权力衰退。
@@ -451,6 +457,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [曹操](https://ourword.ai/i/cao-cao/): 曹操（汉末·155-220）——唯才是举。被《三国演义》塑造成奸臣的曹操，历史上是中国最早的系统性能力主义者。他一生发布三道求贤令：不看出身，不看品行，只看能力。同时是军事家、政治家、诗人。
 - [曼德拉](https://ourword.ai/i/mandela/): 曼德拉（南非·1918-2013）——和解。坐了27年牢，出来后没有复仇，而是选择和解，建立了彩虹国家。他是人类历史上「放下仇恨」最有力的示范。他的独特性在于：他不是天生的圣人，他年轻时是武装斗争的支持者，亲手参与建立了武装组织。27年牢狱把他从「愤怒的革命者」变成了「有耐心的建设者」——逆境改变了他的策略，没有改变他的目
 - [曾国藩](https://ourword.ai/i/zeng-guofan/): 曾国藩（清·1811-1872）——慎。历史上最著名的「笨人逆袭」案例。他资质平平，考了七次才中举。但他用「结硬寨打呆仗」的方法，把自己从一个普通官员做成了晚清最重要的人物。他的秘诀不是聪明，而是「比任何人都慎」。
+- [最后一版](https://ourword.ai/i/hot-metal/): 最后一版（1978年·纽约）——一门手艺整体消失。1978 年 7 月 1 日，纽约时报最后一次用铅字热排出版，同一天照相排版接手。这门手艺从学徒到出师要好几年，铸排机的键盘和打字机完全不同，练出来的是一套只在这里管用的本事——第二天，那套本事在报社里没有位置了。有一部纪录片拍下了那一夜，片名叫《Farewell, Etaoin
 - [有限与无限的游戏](https://ourword.ai/i/finite-and-infinite-games/): 有限与无限的游戏（1986年）——求胜还是求续。纽约大学宗教史教授詹姆斯·卡斯写的一本小册子，101 个短章，没有论证，只有陈述。它给出的区分极简单：有限游戏以取胜为目的，无限游戏以延续游戏本身为目的。但这个区分一旦装进脑子，几乎会重排你对野心、竞争、职业和公司的全部理解——因为你会开始发现，自己正在玩的很多局，其实从来没人规
 - [朱元璋](https://ourword.ai/i/zhu-yuanzhang/): 朱元璋（明·1328-1398）——绝境。史上最彻底的草根逆袭。出发点：一个家里人全死于饥荒的16岁孤儿，讨饭为生，当过和尚。终点：明朝开国皇帝，统一天下。他的成功逻辑和所有「精英创始人」完全不同：不是靠资源，不是靠人脉，只靠「活下去」这一个目标。但他的黑暗面同样显著：开国功臣几乎被杀尽，四大案死亡人数超过十万。
 - [李世民](https://ourword.ai/i/li-shimin/): 李世民（唐·598-649）——纳谏。中国历史上被公认最善于纳谏的皇帝，贞观之治的缔造者。他的悖论：用最不道德的方式（玄武门之变，杀兄弟逼父退位）登上皇位，然后用最道德的方式（广开言路、轻徭薄赋）治理天下。他证明了一件事：权力的来源和权力的使用可以是完全不同的两件事。
@@ -501,6 +508,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [蒲松龄](https://ourword.ai/i/pu-songling/): 蒲松龄（1640-1715年·山东淄川）——主线没成，副业成了。十九岁应童子试，县、府、道三试第一，一时名动乡里。然后他考了一辈子举人，从二十多岁考到六十多岁，一次没中，靠在缙绅家坐馆教书养活一家人，七十一岁才援例补了个岁贡生。这个库里绝大多数人是最终成了的人——连败局也是通往成功路上的败局；蒲松龄不是。他这一生的正事从头到尾没成，而顺手做的
 - [论语](https://ourword.ai/i/analects/): 论语（春秋·前551-前479）——仁。孔子和弟子的对话录，中国两千年来读书人的基本教材。但论语被后代统治者包装成了「听话」的哲学，实际上孔子说的很多话和这个方向相反：他辞官、周游列国、不停批评当权者。论语的核心不是礼教，是「仁」——对人真实的关怀。孔子本人是个失败的政治家，却是最成功的教育家：三千弟子，七十二贤人，他
 - [诸葛亮](https://ourword.ai/i/zhuge-liang/): 诸葛亮（三国·181-234）——隆中对。「运筹帷幄」的代名词，「鞠躬尽瘁」的化身。他未出茅庐时就规划了三分天下的格局，辅佐刘备建立蜀汉，治蜀二十年法治清明，六出祁山以攻代守。
+- [诺伯特·维纳](https://ourword.ai/i/wiener/): 诺伯特·维纳（1894-1964年·美国）——技术还没落地就去提醒人。控制论的提出者，1948 年《控制论》出版，1950 年《人有人的用处》。他的位置在这个库里比较特殊：他既是把机器控制这套东西推出来的人，也是最早公开说它会大规模顶替流水线工人的人。1949 年他写信给美国汽车工人联合会的领袖鲁瑟，说自己不愿意这件事在毫无准备的情况下发生，希望工
 - [贝索斯](https://ourword.ai/i/bezos/): 贝索斯（美·1964年-）——飞轮效应·Day 1。杰夫·贝索斯，亚马逊创始人。1994年放弃华尔街对冲基金高薪，在车库创办网上书店，把它做成横跨电商、云计算（AWS）、物流、硬件的两万亿美元帝国。他是长期主义最极端的实践者：亚马逊连续二十年微利甚至亏损，把所有现金流砸进飞轮，被华尔街嘲讽二十年，然后赢了二十年。他的方法论——飞轮
 - [费曼](https://ourword.ai/i/feynman/): 费曼（1918-1988年·美国）——不骗自己。诺贝尔物理奖得主，参与过曼哈顿计划，调查过挑战者号事故。他留给非物理学家的东西比留给物理学家的更多——一套关于「怎么知道自己是不是真懂」的判据。他的标准苛刻到近乎冒犯：如果你不能把一个概念讲到大一新生听懂，说明你自己没懂。他也把这条用在整个科学界身上：科学的第一原则是不要骗自己，
 - [资治通鉴](https://ourword.ai/i/zizhi-tongjian/): 资治通鉴（北宋·1065-1084）——鉴。司马光用19年主持编写，294卷，记录前403年到959年共1362年历史。书名由宋神宗题：「鉴于往事，有资于治道」。它是给统治者看的历史教科书，核心问题只有一个：政权为什么兴，政权为什么亡。186篇「臣光曰」是司马光的判断，精华在这里。与史记的「写人」不同，资治通鉴写的是「权力

@@ -304,8 +304,8 @@
   "h": "3b8a6fadc6c3e86d"
  },
  "i/drucker/": {
-  "d": "2026-08-31",
-  "h": "8accbdac07a8cbae"
+  "d": "2026-09-02",
+  "h": "a5b8c35ad41c8cb0"
  },
  "i/drucker/create-a-customer/": {
   "d": "2026-08-29",
@@ -364,8 +364,8 @@
   "h": "6ed2659971adc8cc"
  },
  "i/ericsson/": {
-  "d": "2026-09-01",
-  "h": "8ba2797ab27b284f"
+  "d": "2026-09-02",
+  "h": "a180924b177d7e08"
  },
  "i/ericsson/deliberate-practice/": {
   "d": "2026-08-30",
@@ -413,7 +413,7 @@
  },
  "i/feynman/": {
   "d": "2026-09-02",
-  "h": "b6f4cd67c3ecd88c"
+  "h": "fe8d48b2681c8bb3"
  },
  "i/feynman/dont-fool-yourself/": {
   "d": "2026-08-30",
@@ -659,6 +659,22 @@
   "d": "2026-09-01",
   "h": "04fda3dd10a9856f"
  },
+ "i/hot-metal/": {
+  "d": "2026-09-02",
+  "h": "0b776471004353bc"
+ },
+ "i/hot-metal/one-night/": {
+  "d": "2026-09-02",
+  "h": "6407f6b8bcb5e040"
+ },
+ "i/hot-metal/speed-was-the-craft/": {
+  "d": "2026-09-02",
+  "h": "08734dc3ea662dcd"
+ },
+ "i/hot-metal/who-got-across/": {
+  "d": "2026-09-02",
+  "h": "7cafd2b8f8d2f6d0"
+ },
  "i/hu-xueyan/": {
   "d": "2026-08-31",
   "h": "37cbf5b54a3f9147"
@@ -733,7 +749,7 @@
  },
  "i/innovators-dilemma/": {
   "d": "2026-09-02",
-  "h": "fc5dbb23d7cb77bf"
+  "h": "90485336dca773b0"
  },
  "i/innovators-dilemma/good-management-fails/": {
   "d": "2026-08-29",
@@ -785,7 +801,7 @@
  },
  "i/kasparov/": {
   "d": "2026-09-02",
-  "h": "2fd03a8245ec3dc3"
+  "h": "01a574d03d69322e"
  },
  "i/kasparov/advanced-chess/": {
   "d": "2026-09-02",
@@ -1157,7 +1173,7 @@
  },
  "i/naval/": {
   "d": "2026-09-02",
-  "h": "6faf78c91a031c6c"
+  "h": "948c0590c9cb37ba"
  },
  "i/naval/assets-while-you-sleep/": {
   "d": "2026-08-29",
@@ -1592,8 +1608,8 @@
   "h": "d74ec636f3ed3eea"
  },
  "i/thinking-in-systems/": {
-  "d": "2026-08-29",
-  "h": "f19a43df1084bdcb"
+  "d": "2026-09-02",
+  "h": "6f983dc0ae39efba"
  },
  "i/thinking-in-systems/leverage-points/": {
   "d": "2026-08-29",
@@ -1694,6 +1710,22 @@
  "i/why-nations-fail/two-nogales/": {
   "d": "2026-08-29",
   "h": "05ae54e3ac1fa3bb"
+ },
+ "i/wiener/": {
+  "d": "2026-09-02",
+  "h": "a4c52739b796ddb0"
+ },
+ "i/wiener/feedback-not-command/": {
+  "d": "2026-09-02",
+  "h": "fbf562af1fc52b3c"
+ },
+ "i/wiener/human-use/": {
+  "d": "2026-09-02",
+  "h": "04ac9fcd8d17722c"
+ },
+ "i/wiener/wrote-to-the-union/": {
+  "d": "2026-09-02",
+  "h": "a0d08f4662e05582"
  },
  "i/wu-zetian/": {
   "d": "2026-08-28",
