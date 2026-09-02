@@ -60,7 +60,7 @@ def outro_html(title, url, text):
         '<div class="acts">'
         '<button type="button" data-share '
         'data-share-title="%s" data-share-url="%s" data-share-text="%s">分享给朋友</button>'
-        + ('<button type="button" data-tea>请我喝茶</button>' if TEA_ON else '')
+        + ('<button type="button" data-tea>请我喝杯茶</button>' if TEA_ON else '')
         + '</div></div>'
     ) % (title, url, text)
 
