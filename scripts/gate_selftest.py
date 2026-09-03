@@ -432,6 +432,69 @@ def _unhooked(t):
     return t[:m.start(1)] + "scripts/gen_og.py" + t[m.end(1):] if m else None
 
 
+
+# ---------- 繁体站那道闸：注入到 tw/ 下的一个页面 ----------
+# 页面动态挑，不写死路径 —— 稿子一改路径就变，而「用例失效」比「门禁失效」更难发现。
+def _pick_tw():
+    base = os.path.join(ROOT, "tw", "i")
+    if not os.path.isdir(base):
+        return ""
+    for parent in sorted(os.listdir(base)):
+        pd = os.path.join(base, parent)
+        if not os.path.isdir(pd):
+            continue
+        for k in sorted(os.listdir(pd)):
+            f = os.path.join(pd, k, "index.html")
+            if os.path.isfile(f):
+                return f
+    return ""
+
+
+TWPAGE = _pick_tw()
+
+
+def _tw_edit(fn):
+    def go():
+        if not TWPAGE or not os.path.exists(TWPAGE):
+            return False
+        t = read(TWPAGE)
+        out = fn(t)
+        if out is None or out == t:
+            return False
+        write(TWPAGE, out)
+        return True
+    return go
+
+
+def _tw_rm():
+    def go():
+        if not TWPAGE or not os.path.exists(TWPAGE):
+            return False
+        os.remove(TWPAGE)          # disarm 会把它拷回来
+        return True
+    return go
+
+
+def _tw_link():
+    return _tw_edit(lambda t: t.replace('href="/tw/assets/', 'href="/tw/zzz/', 1)
+                    if 'href="/tw/assets/' in t else None)
+
+
+def _tw_simp():
+    return _tw_edit(lambda t: t.replace("<h1", "<p>这里是没转过来的简体字说明</p><h1", 1)
+                    if "<h1" in t else None)
+
+
+def _tw_ambig():
+    return _tw_edit(lambda t: t.replace("<h1", "<p>明白髮生了什麼</p><h1", 1)
+                    if "<h1" in t else None)
+
+
+def _tw_href():
+    return _tw_edit(lambda t: t.replace('hreflang="zh-Hant"', 'hreflang="zh-XX"', 1)
+                    if 'hreflang="zh-Hant"' in t else None)
+
+
 CASES = [
     # (分支名, 门禁命令, 被改的文件, 注入函数, 必须报出的理由)
     ("章节·dek 过短",   "check_chapters.py", CHAP, _sub_field("dek", _short(3)),  "dek"),
@@ -468,6 +531,11 @@ CASES = [
     ("台账·看不出脚本", "wikigate.py", LEDGER, _led(_no_script),       "看不出点名了哪个脚本"),
     ("台账·脚本不存在", "wikigate.py", LEDGER, _led(_ghost_script),    "不存在"),
     ("台账·闸没挂上",   "wikigate.py", LEDGER, _led(_unhooked),        "没挂在 gate.py"),
+    ("繁体·缺页",       "check_tw.py", TWPAGE, _tw_rm(),        "繁体站缺页"),
+    ("繁体·链接改坏",   "check_tw.py", TWPAGE, _tw_link(),      "链接对不上"),
+    ("繁体·漏转",       "check_tw.py", TWPAGE, _tw_simp(),      "疑似漏转"),
+    ("繁体·歧义未登记", "check_tw.py", TWPAGE, _tw_ambig(),     "没登记过"),
+    ("繁体·hreflang",   "check_tw.py", TWPAGE, _tw_href(),      "hreflang 两版不一致"),
 ]
 
 

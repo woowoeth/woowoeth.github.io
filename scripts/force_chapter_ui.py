@@ -2154,3 +2154,86 @@ def patch_tea_widget():
 
 
 patch_tea_widget()
+
+
+# ---------------- 繁体版：hreflang + 语言切换 + 首访跟随 ----------------
+HWL_A, HWL_B = "<!--HWX:LANG-->", "<!--/HWX:LANG-->"
+
+
+def patch_lang():
+    """给每一页补语言层：hreflang、切换按钮、首访按浏览器语言跳一次。
+
+    为什么这一步放在正常构建里，而不是放进 build_tw.py：
+    **简体页和繁体页都需要它**。繁体站是 build_tw.py 拿构建好的简体树转出来的，
+    所以只要这里注入一次，转换的时候会跟着复制过去，两边天然对称，不会漏。
+
+    三样东西：
+
+    ① hreflang 用**静态 link 标签**，不靠 JS —— 爬虫不执行脚本，
+       只有静态标签才能让搜索引擎知道这两个 URL 是同一篇的两种语言。
+       这三行在两份拷贝里内容完全一样（各自指向对方），所以 build_tw.py
+       重写绝对地址时必须跳过它们，只改 canonical 和 og:url。
+
+    ② 切换按钮的文字**由 JS 按当前路径决定**，不写死：
+       简体页上显示「繁體」，繁体页上显示「简体」（这四个字会被 build_tw
+       一并转成「簡體」，正好是繁体页该有的写法）。
+
+    ③ 首访跳转：读 navigator.languages，zh-Hant/TW/HK/MO 去 /tw/。
+       跳过一次之后不再自动跳 —— 用户点了切换按钮就把选择记进 localStorage，
+       记住的优先级高于浏览器语言，否则一个在台湾用简体的读者每次都被弹走。
+       整段在 <head> 里同步执行，在首屏渲染之前完成，不会看到闪一下。
+    """
+    import os, re
+    n = 0
+    for dp, dn, fn in os.walk("."):
+        if any(x in dp for x in (".git", "/tw", "node_modules", "__pycache__")):
+            continue
+        for f in fn:
+            if f not in ("index.html", "404.html"):
+                continue
+            path = os.path.join(dp, f)
+            s = open(path, encoding="utf-8").read()
+            if 'http-equiv="refresh"' in s:     # 跳转桩不管
+                continue
+            if HWL_A in s:                       # 幂等：重跑不叠加
+                s = re.sub(re.escape(HWL_A) + r".*?" + re.escape(HWL_B), "", s, flags=re.S)
+            rel = os.path.relpath(path, ".").replace(os.sep, "/")
+            rel = "/" + rel[:-len("index.html")] if rel.endswith("index.html") else "/" + rel
+            if rel == "/404.html":
+                rel = "/404.html"
+            base = "https://ourword.ai"
+            block = (
+                HWL_A
+                + '<link rel="alternate" hreflang="zh-Hans" href="%s%s">' % (base, rel)
+                + '<link rel="alternate" hreflang="zh-Hant" href="%s/tw%s">' % (base, rel)
+                + '<link rel="alternate" hreflang="x-default" href="%s%s">' % (base, rel)
+                + "<script>(function(){try{"
+                  "var K='hwx_lang',p=location.pathname,tw=/^\\/tw(\\/|$)/.test(p);"
+                  "var cur=tw?'tw':'sc',other=tw?p.replace(/^\\/tw/,'')||'/':'/tw'+p;"
+                  "var saved=null;try{saved=localStorage.getItem(K)}catch(e){}"
+                  "var want=saved||((/zh-(hant|tw|hk|mo)/i.test((navigator.languages||[navigator.language||'']).join(',')))?'tw':'sc');"
+                  "if(want!==cur){location.replace(other);return}"
+                  "document.addEventListener('DOMContentLoaded',function(){"
+                  "var b=document.createElement('button');b.id='hwx-lang';b.type='button';"
+                  "b.textContent=tw?'简体':'繁體';"
+                  "b.setAttribute('aria-label',tw?'切换到简体':'切換到繁體');"
+                  "b.onclick=function(){try{localStorage.setItem(K,tw?'sc':'tw')}catch(e){};location.href=other};"
+                  "document.body.appendChild(b)})"
+                  "}catch(e){}})();</script>"
+                  "<style>#hwx-lang{position:fixed;top:14px;right:58px;z-index:9999;height:36px;"
+                  "padding:0 10px;border:1px solid var(--line,#e2ddd0);background:var(--paper,#f5f1e8);"
+                  "color:var(--ink,#1c1917);font:inherit;font-size:13px;line-height:34px;cursor:pointer;"
+                  "border-radius:2px}"
+                  "#hwx-lang:hover{border-color:var(--acc,#9d2933);color:var(--acc,#9d2933)}</style>"
+                + HWL_B
+            )
+            m = re.search(r'<meta name="viewport"[^>]*>\n?', s) or re.search(r"<head[^>]*>\n?", s)
+            if not m:
+                continue
+            s = s[:m.end()] + block + s[m.end():]
+            open(path, "w", encoding="utf-8").write(s)
+            n += 1
+    print("语言层（hreflang + 切换 + 首访跟随）注入 %d 页" % n)
+
+
+patch_lang()

@@ -32,6 +32,7 @@ CHECKS = [
     ("就地加重", "check_pullquotes.py", "同页重复加重 + 旧式 blockquote 残留"),
     ("金句重叠", "check_quote_overlap.py . 10", "文末金句不得与正文大段重合"),
     ("教训去向", "wikigate.py", "FAILURES.md 里每条教训必须写明变成了哪道闸"),
+    ("繁体站", "check_tw.py", "结构一一对应 / 链接一致 / 无漏转 / 歧义字已登记"),
 ]
 
 

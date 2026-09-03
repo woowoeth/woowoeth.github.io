@@ -50,6 +50,12 @@ jobs:
       - name: Chat retrieval index
         # 内容一变检索索引必须跟着变，否则悬浮球问答会引用到不存在的章节。
         run: python scripts/build_chat_index.py
+      - name: Traditional Chinese site
+        # 必须排在**所有**生成步骤之后：繁体站是拿构建好的简体树整树转出来的，
+        # 放在检索索引之前的话，/tw/assets/hw-chat-index.json 会是上一次的旧索引。
+        run: |
+          pip install -q "opencc==1.4.2"
+          python scripts/build_tw.py
       # 原来这里只跑三道（问题内容 / 处境覆盖 / 完整性），另外五道从没在 CI 上跑过，
       # 门禁自检更是一次都没跑。改成走统一入口，八道 + 自检一起。
       # --full 那一档是唯一能回答「这些闸还活着吗」的东西：

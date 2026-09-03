@@ -1,0 +1,219 @@
+/* Human World — shared across home, hubs and entry pages */
+@font-face{
+  font-family:"Huiwen-mincho";
+  src:url("/hw-mincho-subset.woff2") format("woff2");
+  font-display:swap;
+}
+:root{
+  /* 首頁聲明瞭 light dark，章節頁原來沒有：暗色系統下瀏覽器先用白畫布畫一幀
+     （白閃），滾動條和表單控件也停在亮色。這一行兩樣都解決。 */
+  color-scheme: light dark;
+
+  --bg:#f7f4ec; --bg-tint:#efe8dc; --surface:#fffdf8; --surface-2:#f3eee6;
+  --ink:#1c1917; --ink-2:#3f3a34; --muted:#6f6959; --faint:#9a9384;
+  --rule:#e2ddd0; --rule-2:#d0c9b8;
+  --seal:#9d2933; --seal-soft:#f0ddd9;
+  --shadow:0 1px 2px rgba(28,25,23,.05), 0 10px 28px -18px rgba(28,25,23,.22);
+  --display:"Noto Serif TC","Source Han Serif SC","Songti SC","STSong",Georgia,serif;
+  /* Huiwen-mincho is a 670KB subset used only by blockquote. The @font-face
+     below costs nothing until a rendered rule asks for it, so phones get the
+     system serif and never pay for the download. */
+  --quote:"Noto Serif TC","Songti SC","STSong",serif;
+  --sans:"PingFang SC","HarmonyOS Sans SC","Hiragino Sans GB","Microsoft YaHei",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  --pad:24px;
+}
+@media (min-width:900px){
+  :root{--quote:"Huiwen-mincho","Noto Serif TC","Songti SC","STSong",serif}
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0; background:var(--bg); color:var(--ink); font-family:var(--sans);
+  font-size:17px; line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit; text-decoration:none}
+a:hover{color:var(--seal)}
+button{font:inherit; color:inherit; background:none; border:0; cursor:pointer}
+:focus-visible{outline:2px solid var(--seal); outline-offset:3px; border-radius:3px}
+.wrap{
+  max-width:860px; margin:0 auto;
+  padding-left:max(var(--pad), env(safe-area-inset-left));
+  padding-right:max(var(--pad), env(safe-area-inset-right));
+}
+header.mast.wrap{
+  padding-left:max(24px, env(safe-area-inset-left));
+  padding-right:max(24px, env(safe-area-inset-right));
+}
+
+.mast{padding:28px 0 16px}
+.mast-top{display:flex; align-items:flex-start; justify-content:space-between; gap:16px}
+.brand{
+  display:flex; flex-direction:row; flex-wrap:nowrap;
+  align-items:center; gap:12px; color:inherit; min-width:0;
+}
+.brand:hover{color:inherit}
+.brand-logo{
+  width:36px; height:36px; border-radius:9px; flex:none;
+}
+.brand-copy{display:flex; flex-direction:column; gap:3px; min-width:0; flex:1}
+.brand .hw{display:none}
+.brand .wordmark{
+  display:block; font-family:var(--display); font-weight:700; margin:0;
+  font-size:20px; line-height:1.25; letter-spacing:.04em;
+}
+.brand .dot{color:var(--seal)}
+.slogan{margin:0; color:var(--muted); font-size:12px; line-height:1.4; letter-spacing:0; font-family:var(--sans); font-weight:400}
+.mast-links{display:flex; gap:8px; flex:none; padding-top:2px}
+.pill{
+  display:inline-flex; align-items:center; justify-content:center;
+  min-height:32px; padding:0 12px;
+  border:1px solid var(--rule-2); border-radius:999px; background:var(--surface);
+  font-size:12.5px; color:var(--ink-2);
+}
+.pill:hover{border-color:var(--seal); color:var(--seal)}
+.crumb{font-size:13px; color:var(--faint); margin:10px 0 22px; line-height:1.5}
+.crumb a{color:var(--muted)}
+.crumb a:hover{color:var(--seal)}
+.sep{margin:0 8px; color:var(--rule-2)}
+.layout{
+  display:grid; grid-template-columns:minmax(0,1fr) minmax(180px,240px);
+  gap:36px; align-items:start; padding-bottom:80px;
+}
+.kicker{font-size:11px; letter-spacing:.16em; color:var(--seal); font-weight:650; margin:0 0 10px}
+/* 人名底下那句「這人是誰」：章節頁是搜索和 AI 的落地頁，讀者多半不認識頁頭這個名字。 */
+.who{font-size:12.5px; line-height:1.6; color:var(--muted); margin:-6px 0 12px}
+h1{
+  font-family:var(--display); font-weight:700; letter-spacing:.04em;
+  font-size:clamp(28px,7vw,40px); line-height:1.25; margin:0 0 10px;
+}
+.one{font-family:var(--display); font-size:20px; line-height:1.4; color:var(--ink-2); margin:0 0 16px; font-weight:600}
+.dek{font-size:17px; line-height:1.75; color:var(--ink-2); margin:0 0 18px; max-width:42em}
+.meta-row{
+  display:flex; align-items:center; gap:8px;
+  flex-wrap:nowrap; overflow-x:auto; -webkit-overflow-scrolling:touch;
+  margin:0 0 28px; padding-bottom:18px; border-bottom:1px solid var(--rule);
+}
+.meta-row .chip{
+  flex:none; white-space:nowrap;
+  font-size:12px; color:var(--ink-2); background:var(--surface);
+  border:1px solid var(--rule); border-radius:999px; padding:5px 10px;
+}
+.share-btn{
+  display:inline-flex; align-items:center; gap:6px;
+  margin-left:auto; flex:none;
+  min-height:32px; padding:0 12px; border:1px solid var(--rule-2);
+  border-radius:999px; background:var(--surface); font-size:12.5px; color:var(--ink-2); cursor:pointer;
+}
+.share-btn:hover{border-color:var(--seal); color:var(--seal)}
+.share-btn svg{width:14px; height:14px}
+.pull{background:var(--seal-soft); border-left:3px solid var(--seal); border-radius:0 12px 12px 0; padding:16px 18px; margin:0 0 32px; color:var(--ink-2); font-size:16px; line-height:1.7}
+.sec{margin:0 0 32px}
+.sec-k{font-size:12px; letter-spacing:.12em; color:var(--seal); font-weight:650; margin:0 0 10px}
+.sec p{margin:0 0 12px; color:var(--ink)}
+.sec p:last-child{margin-bottom:0}
+.point{margin:0 0 28px}
+.point h2{font-family:var(--display); font-size:21px; line-height:1.4; font-weight:700; letter-spacing:.02em; margin:0 0 8px}
+.point p{margin:0 0 10px}
+.eg{color:var(--ink-2); background:var(--surface-2); border-radius:10px; padding:12px 14px; font-size:15.5px; border:1px solid var(--rule)}
+/* 分則下的示意圖：只給「論點本身是個形狀」的章節。寬度不佔滿一列——它是一個論點
+   的形狀，不是版面裝飾；顏色全走變量，暗色下跟著翻；淡底用同色低透明度，不另配色。 */
+.hw-fig{margin:6px 0 18px; max-width:420px}
+.hw-fig svg{display:block; width:100%; height:auto; overflow:visible}
+.hw-fig .k{fill:none; stroke:var(--ink); stroke-width:1.6; stroke-linecap:round}
+.hw-fig .k2{fill:none; stroke:var(--ink); stroke-width:2.2; stroke-linecap:round; stroke-linejoin:round}
+.hw-fig .a{fill:none; stroke:var(--seal); stroke-width:1.6; stroke-linecap:round}
+.hw-fig .af{fill:var(--ink)}
+.hw-fig .ad{fill:var(--seal)}
+.hw-fig .box{fill:none; stroke:var(--ink); stroke-width:1.4}
+.hw-fig .band{fill:var(--seal); fill-opacity:.10}
+.hw-fig .zone{fill:var(--ink); fill-opacity:.045}
+.hw-fig .infra{fill:var(--ink); fill-opacity:.16}
+.hw-fig text{font-family:var(--display); font-size:13px; fill:var(--ink)}
+.hw-fig .m{fill:var(--muted)}
+.hw-fig .at{fill:var(--seal)}
+.hw-fig .ring{fill:none; stroke:var(--seal); stroke-width:1.5}
+.hw-fig .tie{fill:none; stroke:var(--ink); stroke-opacity:.35; stroke-width:1.2}
+.hw-fig .k0{fill:none; stroke:var(--ink); stroke-width:1; stroke-opacity:.45}
+.hw-fig .kg{fill:none; stroke:var(--ink); stroke-width:1.4; stroke-opacity:.5; stroke-linecap:round}
+.eg::before{content:"例  "; color:var(--seal); font-size:12px; letter-spacing:.08em; font-weight:650}
+.apply{background:var(--surface); border:1px solid var(--rule); border-radius:14px; padding:16px 18px; margin:8px 0 32px}
+.quotes{margin:8px 0 36px}
+/* 穿插的金句和文末金句區裡的是同一款 blockquote（硃紅豎線、明朝體、18px）。
+   唯一的區別是它獨立站在兩節之間，所以要自己撐出對稱的上下間距：繼承來的
+   margin:0 0 12px 會被上一節的 28/32px 底距摺疊成「上寬下窄」，而且跟在
+   .point 還是 .sec 後面還不一樣。32px ≥ 兩者，摺疊後上下都是 32px。 */
+/* 分則裡最值得記住的那一句，就地加重。
+   原來是把它另抄一份放在段後（blockquote.say），全站 902 條無一例外都是
+   緊鄰上方那段正文的逐字截取——讀者在同一屏內讀兩遍同一句話。
+   現在回到它本來在的位置：底部一道淺色的襯，像用熒光筆劃過，
+   掃讀時依然跳出來，但不再是第二遍。 */
+/* 章節頁末尾：同一個處境下別人怎麼問。
+   被說中之後，最該給的是「這是一類事，有人處理過」，
+   而不是「這本書的下一篇」。 */
+.hw-same{margin:36px 0 28px; padding:16px 18px; border:1px solid var(--rule); border-radius:14px; background:var(--surface-2)}
+.hw-same .ph{margin:0 0 10px; font-size:12px; letter-spacing:.22em; color:var(--seal); font-weight:700}
+.hw-same a{display:block; padding:9px 0; border-top:1px dashed var(--rule); color:var(--ink); font-size:15.5px; line-height:1.6; text-decoration:none}
+.hw-same a:first-of-type{border-top:0}
+.hw-same a:hover{color:var(--seal)}
+.hw-same a.more{margin-top:4px; font-size:13px; color:var(--muted)}
+b.key{font-weight:650; background:linear-gradient(transparent 62%, var(--seal-soft) 62%)}
+blockquote.say{margin:32px 0}
+
+blockquote{margin:0 0 12px; padding:2px 0 2px 14px; border-left:2px solid var(--seal); color:var(--ink-2); font-family:var(--quote); font-size:18px; line-height:1.65}
+blockquote p{margin:0}
+.contrast{display:grid; gap:10px; margin:0 0 32px}
+.contrast a{display:block; background:var(--surface); border:1px solid var(--rule); border-radius:12px; padding:12px 14px}
+.contrast .n{display:block; font-weight:650; margin:0 0 4px}
+.contrast .why{display:block; font-size:14.5px; color:var(--muted); line-height:1.55}
+.ext{display:flex; flex-wrap:wrap; gap:8px; margin:0 0 36px}
+.ext a{background:var(--surface); border:1px solid var(--rule); border-radius:999px; padding:6px 12px; font-size:13.5px}
+.sib{display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap; padding:22px 0; border-top:1px solid var(--rule); margin-top:12px; font-size:14.5px}
+.sib a{color:var(--ink-2)}
+.sib .dir{display:block; font-size:11px; letter-spacing:.12em; color:var(--faint); margin-bottom:4px}
+.site-foot{margin-top:8px; padding:28px 0 max(48px, env(safe-area-inset-bottom)); border-top:1px solid var(--rule); font-size:13px; color:var(--muted)}
+.site-foot p{margin:0 0 8px}
+.site-foot a{color:var(--ink-2)}
+.site-foot code{font-size:12px; color:var(--faint); word-break:break-all}
+.side{position:sticky; top:28px}
+.panel{background:var(--surface); border:1px solid var(--rule); border-radius:16px; padding:16px 16px 18px; box-shadow:var(--shadow)}
+.panel .ph{font-size:11px; letter-spacing:.14em; color:var(--faint); margin:0 0 12px}
+.toc a{display:block; font-size:13.5px; color:var(--ink-2); padding:8px 0; border-top:1px solid var(--rule)}
+.toc a:first-of-type{border-top:0}
+.toc .i{color:var(--faint); font-variant-numeric:tabular-nums; margin-right:8px; font-size:12px}
+.feed{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,240px),1fr));gap:12px;margin:8px 0 40px}
+.feed a{display:flex;flex-direction:column;gap:6px;min-height:120px;background:var(--surface);border:1px solid var(--rule);border-radius:14px;padding:14px 16px 16px;color:inherit}
+.feed a:hover{border-color:var(--seal);color:inherit}
+.feed .k{font-size:11px;letter-spacing:.08em;color:var(--seal)}
+.feed strong{font-family:var(--display);font-size:18px;line-height:1.3;font-weight:700}
+.feed .s{font-size:13.5px;color:var(--muted);line-height:1.55}
+.hubs{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 22px}
+.hubs a{background:var(--surface);border:1px solid var(--rule);border-radius:999px;padding:6px 12px;font-size:13px;color:var(--ink-2)}
+.hubs a:hover,.hubs a.on{border-color:var(--seal);color:var(--seal)}
+
+@media (max-width:900px){
+  .layout{grid-template-columns:minmax(0,1fr); gap:28px}
+  .side{order:2; position:static}
+}
+@media (max-width:600px){
+  :root{--pad:24px}
+  .mast{padding:22px 0 14px}
+  .brand .wordmark{font-size:20px; font-weight:700}
+  .mast-links{display:none}
+}
+
+/* hw-entry-overrides */
+@media (max-width:900px){
+  .layout{grid-template-columns:minmax(0,1fr)!important}
+  .side{display:block!important;position:static;order:-1;margin:0 0 6px}
+  .side .panel{border:0;background:transparent;padding:0;box-shadow:none}
+  .side .ph{display:none}
+  .side .toc{display:flex;flex-wrap:nowrap;overflow-x:auto;gap:8px;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding:2px 0 8px}
+  .side .toc::-webkit-scrollbar{display:none}
+  .side .toc a{flex:0 0 auto;border:1px solid var(--rule,#d8d2c6);border-radius:999px;padding:5px 11px;font-size:12.5px;white-space:nowrap;color:inherit;text-decoration:none}
+  .side .toc a .i{color:#9d2933;margin-right:4px}
+}
+@media (max-width:700px){
+  .meta-row{flex-wrap:wrap;overflow:visible}
+}
+mark.hl{background:transparent;color:#9d2933;font-weight:700;text-decoration:underline;text-decoration-color:#9d2933;text-underline-offset:.16em;text-decoration-thickness:1.5px}
