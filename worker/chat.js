@@ -17,6 +17,7 @@ const ALLOWED_ORIGINS = new Set([
 ]);
 
 const DAILY = 5;              // 每个浏览器每天几次
+const PASS_CEIL = 60;         // 「请我喝杯茶」当天畅聊的暗上限，只防脚本
 const IP_CEIL = 120;          // 每个出口 IP 每天的上限，只用来挡脚本
 const HIST_TURNS = 3;         // 带几轮历史
 const HIST_Q = 200;           // 每轮读者那句截断
@@ -194,9 +195,22 @@ async function bump(env, key) {
  * 429 要说清是哪一层：把「这个网络今天太忙」说成「你用完了」，
  * 会让一个一次都没问过的人以为额度被自己花掉了。
  */
-async function quotaCheck(env, ip, cid) {
+/* 「请我喝杯茶，今天接着聊」是信任制：客户端说自己请过了（pass:1）就按 PASS_CEIL 算。
+ * 没有验证——白点的人一天最多让我们多花一块多钱，换来的是零平台、零兑换码、零账号。
+ * 顺手记两个数，定价靠它们：x:day 撞上限的次数（x:day:cid 记到人），p:day 真用上茶额度的人数。 */
+async function quotaCheck(env, ip, cid, pass) {
   const day = hwDay();
-  if (cid && (await counter(env, `c:${day}:${cid}`)) >= DAILY) return 'you';
+  if (cid) {
+    const n = await counter(env, `c:${day}:${cid}`);
+    const cap = pass ? PASS_CEIL : DAILY;
+    if (n >= cap) {
+      if (!pass) { await bump(env, `x:${day}`); await bump(env, `x:${day}:${cid}`); }
+      return 'you';
+    }
+    if (pass && n >= DAILY && !(await counter(env, `p:${day}:${cid}`))) {
+      await bump(env, `p:${day}:${cid}`); await bump(env, `p:${day}`);
+    }
+  }
   if ((await counter(env, `q:${day}:${ip}`)) >= IP_CEIL) return 'net';
   return '';
 }
@@ -244,7 +258,10 @@ async function readLog(env, days) {
     const day = new Date(now - i * 86400000).toISOString().slice(0, 10);
     try {
       const rows = JSON.parse((await env.HW_CHAT_KV.get(`log:${day}`)) || "[]");
-      if (rows.length) out.push({ day, n: rows.length, rows });
+      /* 撞上限与用茶额度的计数按东八区的天记，这里换成同一种天 */
+      const hd = new Date(now - i * 86400000 + 8 * 3600e3).toISOString().slice(0, 10);
+      const caps = await counter(env, `x:${hd}`), passes = await counter(env, `p:${hd}`);
+      if (rows.length || caps || passes) out.push({ day, n: rows.length, caps, passes, rows });
     } catch (e) {}
   }
   return { days: out.length, total: out.reduce((n, d) => n + d.n, 0), log: out };
@@ -279,10 +296,12 @@ export default {
     let body;
     try { body = await request.json(); } catch { return json({ error: 'Invalid JSON' }, 400, origin); }
     const cid = String(body.cid || '').replace(/[^a-z0-9]/gi, '').slice(0, 32);
+    const pass = body.pass === 1 || body.pass === true || body.pass === '1';
 
-    const blocked = await quotaCheck(env, ip, cid);
+    const blocked = await quotaCheck(env, ip, cid, pass);
     if (blocked === 'you') {
-      return json({ error: `今天的 ${DAILY} 次已经用完了，明天再来`, scope: 'you' }, 429, origin);
+      return json({ error: pass ? '今天聊得够多了，明天再来' : `今天的 ${DAILY} 次已经用完了，明天再来`,
+                    scope: 'you', pass: pass ? 1 : 0 }, 429, origin);
     }
     if (blocked === 'net') {
       return json({ error: '这个网络今天问得有点多，过一会儿再试', scope: 'net' }, 429, origin);

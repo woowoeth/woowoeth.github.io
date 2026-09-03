@@ -26,6 +26,8 @@
      而且清不掉，因为按钮在发请求之前就被这份本地计数禁用了。
      限流改成按浏览器算之后，那批写坏的值必须作废，换个键最干净。 */
   var LS_KEY = 'hw-chat-quota2';
+  var PASS_KEY = 'hw-chat-pass';   /* 「请我喝杯茶」当天畅聊：值是当天日期 */
+  var PASS_CEIL = 60;
   /* 聊天记录存 localStorage。
      一开始用的是 sessionStorage——理由是这里存的是人描述自己的处境，
      不该在设备上留到下次打开浏览器。但那是我的判断不是用户的需求：
@@ -93,7 +95,9 @@
     try { localStorage.setItem(LS_KEY, JSON.stringify(q)); } catch (e) {}
     return q.n;
   }
-  function left() { return Math.max(0, DAILY_LIMIT - quota().n); }
+  function pass() { try { return localStorage.getItem(PASS_KEY) === today(); } catch (e) { return false; } }
+  function grantPass() { try { localStorage.setItem(PASS_KEY, today()); } catch (e) {} }
+  function left() { return Math.max(0, (pass() ? PASS_CEIL : DAILY_LIMIT) - quota().n); }
 
   /* ---------- 样式 ---------- */
   var CSS = [
@@ -182,6 +186,15 @@
     '#hwq-intro{align-self:stretch;padding-top:4px}',
     '#hwq-intro p{margin:0;font-size:15px;line-height:1.8;color:var(--muted,#8a8377);text-align:left}',
 
+    '.hwq-tea b{display:block;font-size:16px;margin-bottom:4px}',
+    '.hwq-tea p{margin:0 0 10px;font-size:15px;line-height:1.7}',
+    '.hwq-tea .hwq-how{font-size:13px;color:var(--muted,#8a8377);margin:8px 0 0}',
+    '.hwq-tea .hwq-qr{display:block;width:180px;height:180px;border-radius:12px;background:#fff;padding:6px;box-sizing:border-box;margin:6px 0}',
+    '.hwq-tea a.hwq-go{display:inline-block;margin:0 0 8px;padding:8px 18px;border-radius:999px;background:var(--ink,#1f1c17);color:var(--paper,#f5f1e8);text-decoration:none;font-size:14px}',
+    '.hwq-tea-acts{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}',
+    '.hwq-tea-acts button{border:1px solid var(--ink,#1f1c17);border-radius:999px;padding:7px 16px;font-size:13.5px;cursor:pointer;font-family:inherit}',
+    '.hwq-tea-acts .hwq-yes{background:var(--ink,#1f1c17);color:var(--paper,#f5f1e8)}',
+    '.hwq-tea-acts .hwq-no{background:transparent;color:var(--ink,#1f1c17)}',
     ':root[data-theme="dark"] .hwq-ai{background:#1d1913}',
     ':root[data-theme="dark"] .hwq-me{background:#201c15}',
     /* 小人头像：每条回答左边一枚。头像是身份不是内容，只在「有人在跟你说话」的地方出现，
@@ -270,6 +283,37 @@
     if (i) i.parentNode.removeChild(i);
   }
 
+  /* 撞到第六次时的那张卡：不是「明天再来」，是「请我喝杯茶，今天无限畅聊」。
+     信任制：付完点「我请了」当天解锁，没有验证——白点的人一天最多让站多花一块多。
+     付款路径沿用页尾那套：微信里长按存图去支付宝扫；手机浏览器直接跳支付宝；桌面扫码。 */
+  function teaPass(el) {
+    var C = window.HW_TEA || {};
+    if (!C.alipay) {
+      if (el) el.textContent = '今天的 5 次用完了，明天再来。'; else hint('今天的 5 次用完了，明天再来。');
+      return;
+    }
+    var d = el || say('ai', '');
+    d.classList.remove('hwq-wait'); d.classList.add('hwq-tea');
+    var ua = navigator.userAgent || '';
+    var wx = /MicroMessenger/i.test(ua);
+    var mob = /Android|iPhone|iPad|iPod|Mobile/i.test(ua);
+    var how = wx ? '长按保存图片，打开支付宝扫相册。' : (mob ? '或者截图，在支付宝里扫相册。' : '打开支付宝，扫一扫。');
+    d.innerHTML = '<b>今天的 5 次用完了。</b>' +
+      '<p>请我喝杯茶，今天无限畅聊。金额随意。</p>' +
+      ((!wx && mob && C.alipayLink) ? '<a class="hwq-go" href="' + C.alipayLink + '" rel="noopener">打开支付宝</a>' : '') +
+      '<img class="hwq-qr" src="' + C.alipay + '" alt="支付宝收款码">' +
+      '<p class="hwq-how">' + how + '</p>' +
+      '<div class="hwq-tea-acts"><button type="button" class="hwq-yes">我请了，接着聊</button>' +
+      '<button type="button" class="hwq-no">明天再来</button></div>';
+    d.querySelector('.hwq-yes').onclick = function () {
+      grantPass(); d.parentNode.removeChild(d);
+      hint('谢谢。今天随便聊。'); refreshLeft();
+      if (!COARSE) input.focus();
+    };
+    d.querySelector('.hwq-no').onclick = function () { d.parentNode.removeChild(d); hint('那就明天。'); };
+    scroller.scrollTop = scroller.scrollHeight;
+  }
+
   /* 只留渲染引用要用的三个字段：正文 txt 一篇 700 字，八篇存进去太浪费。 */
   function slimHits(hits) {
     return hits.map(function (c) { return { u: c.u, p: c.p, n: c.n }; });
@@ -290,8 +334,9 @@
 
   function refreshLeft() {
     var n = left();
-    leftEl.textContent = '今天还能问 ' + n + ' 次';
-    input.placeholder = n > 0 ? '说说看……' : '今天的 5 次用完了，明天再来';
+    leftEl.textContent = pass() ? '今天随便聊' : ('今天还能问 ' + n + ' 次');
+    /* 满额时占位符别说「明天再来」——卡片正在说「今天接着聊」，两句不能打架 */
+    input.placeholder = n > 0 ? '说说看……' : (pass() ? '今天聊得够多了，明天再来' : '今天的 5 次用完了');
     paintSend();
   }
   function paintSend() {
@@ -484,7 +529,7 @@
   function ask() {
     var q = input.value.trim();
     if (!q || busy) return;
-    if (left() <= 0) { hint('今天的 5 次用完了，明天再来。'); return; }
+    if (left() <= 0) { if (pass()) hint('今天聊得够多了，明天再来。'); else teaPass(null); return; }
     busy = true; paintSend();
     input.value = ''; input.style.height = 'auto';
     dropIntro();
@@ -528,7 +573,7 @@
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          q: q, ctx: hits, cid: cid(),
+          q: q, ctx: hits, cid: cid(), pass: pass() ? 1 : 0,
           /* 处境名只在第一轮送。第二轮再送，模型就会把
              「你这件事是『想改个习惯』」再点一遍，成了复读。 */
           scene: turns.length ? '' : lastScene,
@@ -554,7 +599,11 @@
         }
         if (res.status === 429) {
           thinking.classList.remove('hwq-wait');
-          thinking.textContent = (res.body && res.body.error) || '今天的次数用完了，明天再来。';
+          if (res.body && res.body.scope === 'you' && !pass() && window.HW_TEA && window.HW_TEA.alipay) {
+            teaPass(thinking);          /* 第六次：不是「明天再来」，是「请我喝杯茶，今天接着聊」 */
+          } else {
+            thinking.textContent = (res.body && res.body.error) || '今天的次数用完了，明天再来。';
+          }
           /* 只有服务端说「是你自己用完了」时才把本地计数校准到满。
              scope:'net' 是这个出口 IP 上有人问得多——把它记成读者自己
              用完了，会让一个一次都没问过的人当天再也点不动，
