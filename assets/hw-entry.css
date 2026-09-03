@@ -77,6 +77,8 @@ header.mast.wrap{
   gap:36px; align-items:start; padding-bottom:80px;
 }
 .kicker{font-size:11px; letter-spacing:.16em; color:var(--seal); font-weight:650; margin:0 0 10px}
+/* 人名底下那句「这人是谁」：章节页是搜索和 AI 的落地页，读者多半不认识页头这个名字。 */
+.who{font-size:12.5px; line-height:1.6; color:var(--muted); margin:-6px 0 12px}
 h1{
   font-family:var(--display); font-weight:700; letter-spacing:.04em;
   font-size:clamp(28px,7vw,40px); line-height:1.25; margin:0 0 10px;

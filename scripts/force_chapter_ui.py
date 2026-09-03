@@ -1918,7 +1918,47 @@ def patch_theme_widget():
     print("theme widget on pages:", n)
 
 
+def patch_chapter_intro():
+    """章节页的人名底下加一句「这人是谁」。
+
+    章节页是搜索和 AI 引流的落地页——读者是带着自己的处境进来的，
+    多数不认识页头那个名字。全站 159 条里有 24 条是普通读者没听过的，
+    而且集中在家庭与关系、身心与生活这两组（那两组本来就该由专门研究
+    这件事的人来答，不该让熟名字去答他没研究过的事）。
+
+    介绍句本来就有（HWX_INTROS，159 条全覆盖），此前只出现在人物页和
+    「全部」信息流卡上，恰好不在读者第一次碰到这个名字的地方。
+    """
+    import os, re, html as _h
+    n = 0
+    for slug in sorted(os.listdir("i")):
+        intro = HWX_INTROS.get(slug)
+        d1 = os.path.join("i", slug)
+        if not (intro and os.path.isdir(d1)):
+            continue
+        for k in sorted(os.listdir(d1)):
+            page = os.path.join(d1, k, "index.html")
+            if not os.path.exists(page):
+                continue
+            s = open(page, encoding="utf-8").read()
+            if 'class="who"' in s:
+                continue
+            # 有几条介绍句本身就是从这一篇的标题来的（鲍恩那句含「既在关系里，又是自己」），
+            # 放上去就成了同一屏读两遍。撞了就跳过——那种页面本来也不缺凭据。
+            body = re.sub(r"<[^>]+>", "", s)
+            if any(intro[i:i + 8] in body for i in range(max(1, len(intro) - 7))):
+                continue
+            s2, cnt = re.subn(r'(<p class="kicker">[^<]*</p>)',
+                              lambda m: m.group(1) + '<p class="who">%s</p>' % _h.escape(intro),
+                              s, count=1)
+            if cnt and s2 != s:
+                open(page, "w", encoding="utf-8").write(s2)
+                n += 1
+    print("chapter who-line:", n)
+
+
 patch_entry_intro()
+patch_chapter_intro()
 patch_theme_widget()
 
 HWQ_A, HWQ_B = "<!--HWX:CHAT-->", "<!--/HWX:CHAT-->"
