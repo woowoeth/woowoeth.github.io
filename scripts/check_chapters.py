@@ -46,7 +46,11 @@ for c in C.CHAPTERS:
         bad.append("%s: 分则里有红字（该交给金句就地加重）" % where)
     if any("==" in x for x in c["q"]):
         bad.append("%s: 文末金句块里有红字" % where)
-    if c["src"] and not plain(c["src"]).strip():
+    # 原来写的是 `if c["src"] and not plain(...)` —— 空串是 falsy，
+    # 这条分支对**真正空掉的 src** 永远不触发，只能抓到「写了但全是 == 或空白」。
+    # 也就是说它想拦的那种情况恰好拦不住。门禁自检注入空 src 时报「这条分支是死的」
+    # 才发现。全站 376 章现在 0 个空 src，收紧不会误伤。
+    if not plain(c.get("src") or "").strip():
         bad.append("%s: empty src" % where)
 
 # no sentence may appear in two chapters
