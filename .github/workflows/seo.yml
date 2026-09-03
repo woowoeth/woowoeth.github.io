@@ -50,15 +50,16 @@ jobs:
       - name: Chat retrieval index
         # 内容一变检索索引必须跟着变，否则悬浮球问答会引用到不存在的章节。
         run: python scripts/build_chat_index.py
-      - name: Question content standard
-        run: python scripts/check_questions.py
-      - name: Situation-layer coverage
-        run: python scripts/check_coverage.py
-      - name: Integrity gate
+      # 原来这里只跑三道（问题内容 / 处境覆盖 / 完整性），另外五道从没在 CI 上跑过，
+      # 门禁自检更是一次都没跑。改成走统一入口，八道 + 自检一起。
+      # --full 那一档是唯一能回答「这些闸还活着吗」的东西：
+      # 它给每条失败分支注入一个该被抓到的缺陷，注入后必须返回 1，
+      # 而且必须报出这条分支自己的理由。见 FAILURES.md。
+      - name: Gates + selftest
         run: |
           pip install -q pillow pyzbar 2>/dev/null || true
           sudo apt-get install -y -qq libzbar0 2>/dev/null || true
-          python scripts/check_integrity.py
+          python scripts/gate.py --full
       - name: Refuse to publish a broken page
         run: |
           if grep -rInE '^(<{7}|={7}|>{7}) ' --include='*.html' . ; then
