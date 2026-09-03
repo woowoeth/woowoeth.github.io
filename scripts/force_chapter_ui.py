@@ -2000,8 +2000,46 @@ def patch_chapter_intro():
     print("chapter who-line:", n)
 
 
+def patch_icons():
+    """给每一页补 favicon 声明。
+
+    首页声明了 /favicon.svg，535 个人物页/章节页一条都没有——浏览器只能回退去要
+    根目录的 /favicon.ico，而那个文件是个黑底白十字，跟站上的红「人」毫无关系。
+    读者收藏一篇文章，书签栏里出现的就是那个十字。
+    （ico 本身也换成了从 icon-512.png 渲的 16/32/48 三档。）
+
+    条目页的 head 由 geo_kit 生成、章节页由 hw_chapters 手拼，两处都没有 icon，
+    所以和 og 一样在这里事后补，一处覆盖全站。
+    """
+    import os, re
+    ICONS = ('<link rel="icon" type="image/svg+xml" href="/favicon.svg">\n'
+             '<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">\n'
+             '<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">\n')
+    n = 0
+    for dp, dn, fn in os.walk("."):
+        if ".git" in dp:
+            continue
+        for f in fn:
+            if f not in ("index.html", "404.html"):
+                continue
+            path = os.path.join(dp, f)
+            s = open(path, encoding="utf-8").read()
+            if 'rel="icon"' in s or 'http-equiv="refresh"' in s:
+                continue
+            m = re.search(r'<meta name="viewport"[^>]*>\n?', s)
+            if not m:
+                m = re.search(r'<meta charset="[^"]*">\n?', s)
+            if not m:
+                continue
+            s2 = s[:m.end()] + ICONS + s[m.end():]
+            open(path, "w", encoding="utf-8").write(s2)
+            n += 1
+    print("favicon 声明补上:", n)
+
+
 patch_entry_intro()
 patch_chapter_intro()
+patch_icons()
 patch_theme_widget()
 
 HWQ_A, HWQ_B = "<!--HWX:CHAT-->", "<!--/HWX:CHAT-->"
