@@ -36,8 +36,16 @@ for c in C.CHAPTERS:
         bad.append("%s: apply is not 局面/先问/用反了" % where)
     if len(c["q"]) != 3:
         bad.append("%s: %d quotes (want 3)" % (where, len(c["q"])))
-    if not any("==" in x for x in [c["story"]] + [f["d"] for f in c["f"]] + list(c["q"])):
-        bad.append("%s: no ==highlight== anywhere" % where)
+    # 正文的加重只留一套：故事段至多一处红字（这一篇引的原话或它赖以成立的那个事实），
+    # 分则交给金句就地加重（b.key），文末金句块整块就是金句、不再往里标红。
+    # 原来是「至少有一处」，改完之后全站 957+745 处压到 363 处。
+    n_story = c["story"].count("==") // 2
+    if n_story > 1:
+        bad.append("%s: story 有 %d 处红字（至多一处）" % (where, n_story))
+    if any("==" in f["d"] for f in c["f"]):
+        bad.append("%s: 分则里有红字（该交给金句就地加重）" % where)
+    if any("==" in x for x in c["q"]):
+        bad.append("%s: 文末金句块里有红字" % where)
     if c["src"] and not plain(c["src"]).strip():
         bad.append("%s: empty src" % where)
 
