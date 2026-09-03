@@ -34,6 +34,8 @@ SCENES = [
      [("mao", "on-contradiction"), ("influence", "social-proof")]),
 ]),
 ("起了冲突", "要做决定", [
+    ("窄路上两个人，我不想先让。",
+     [("caigentan", "leave-a-step"), ("gottman", "repair-attempts")]),
     ("他明摆着有恶意，我还忍吗？",
      [("caesar", "clementia"), ("su-shi", "no-bad-people")]),
     ("我怕自己在气头上做错决定。",
@@ -44,6 +46,8 @@ SCENES = [
      [("zhang-liang", "picking-up-the-shoe"), ("caesar", "clementia")]),
 ]),
 ("拖着不开始", "要做决定", [
+    ("道理我都懂，就是动不了。",
+     [("bhagavad-gita", "frozen-on-the-field"), ("wang-yangming", "unity-of-knowing-and-doing")]),
     ("我想要那个结果，可不想要今天。",
      [("augustine", "not-yet"), ("bj-fogg", "tiny-habits")]),
     ("总想再准备准备，就是不开始。",
@@ -446,6 +450,8 @@ SCENES = [
      [("tao-te-ching", "reversal"), ("art-of-worldly-wisdom", "quit-while-winning")]),
 ]),
 ("做的东西没人看", "把事做成", [
+    ("我说的话，当时没一个人当真。",
+     [("churchill", "no-one-listened"), ("art-of-worldly-wisdom", "do-and-be-seen")]),
     ("发出去没人看，我还写不写。",
      [("murakami", "no-one-asked-you-to"), ("kevin-kelly", "thousand-true-fans")]),
     ("我坐在那儿一个字也写不出来。",
@@ -460,6 +466,8 @@ SCENES = [
 
 # ── 自己 ──
 ("在低谷", "自己的状态", [
+    ("闲下来了，我整天在脑子里跟人吵。",
+     [("churchill", "wilderness-years"), ("epictetus", "judgments-not-things")]),
     ("这段最坏的日子，我做得出东西吗。",
      [("sima-qian", "written-in-adversity"), ("frankl", "the-last-freedom")]),
     ("我需要一个每天都能去待着的地方。",
@@ -482,6 +490,8 @@ SCENES = [
      [("cacioppo", "loneliness-is-a-signal"), ("kristin-neff", "three-parts")]),
 ]),
 ("想太多", "自己的状态", [
+    ("我把后果全想了一遍，然后不敢动了。",
+     [("bhagavad-gita", "frozen-on-the-field"), ("wang-yangming", "bandits-in-the-heart")]),
     ("我最怕的其实是怕本身。",
      [("montaigne", "learning-to-die"), ("epictetus", "judgments-not-things")]),
     ("这事在我脑子里转了二十遍。",
@@ -542,6 +552,8 @@ SCENES = [
      [("harvard-study", "relationships-predict-health"), ("harvard-study", "social-fitness")]),
 ]),
 ("被比下去", "自己的状态", [
+    ("身边人一好，我就不舒服。",
+     [("caigentan", "dont-measure-by-yourself"), ("jung", "the-shadow")]),
     ("他比我强，还是只比我早几年。",
      [("fukuzawa", "no-one-above"), ("dweck", "praise-the-process")]),
     ("他什么都比我快一步。",
@@ -652,6 +664,8 @@ SCENES = [
      [("csikszentmihalyi", "flow-channel"), ("bruce-lee", "one-kick")]),
 ]),
 ("手艺不值钱了", "AI 来了", [
+    ("我这身本事，眼下用不上。",
+     [("curie", "the-little-curies"), ("zhuangzi", "use-of-uselessness")]),
     ("练了十年的手艺，我现在不值钱了。",
      [("hot-metal", "speed-was-the-craft"), ("naval", "productize-yourself")]),
     ("机器几秒做完我一天的活。",
@@ -783,6 +797,8 @@ SCENES = [
      [("lee-kuan-yew", "does-it-work"), ("analects", "harmony-not-sameness")]),
 ]),
 ("总在讨好别人", "跟人打交道", [
+    ("我一直在让，可越让越累。",
+     [("caigentan", "leave-a-step"), ("feng-dao", "the-long-happy-old-man")]),
     ("我总顺着别人，回头就难受。",
      [("satir", "coping-stances"), ("adler", "separation-of-tasks")]),
     ("我不会拒绝，答应完就后悔。",
@@ -815,6 +831,8 @@ SCENES = [
      [("li-ka-shing", "knowing-when-to-stop"), ("han-xin", "neither-nor")]),
 ]),
 ("觉得没意义", "跟人打交道", [
+    ("没有回报的话，我还做不做。",
+     [("bhagavad-gita", "act-without-clinging"), ("frankl", "happiness-ensues")]),
     ("每天都一样，我不知道图什么。",
      [("frankl", "happiness-ensues"), ("zhuangzi", "use-of-uselessness")]),
     ("我做这些，到底为了什么？",
@@ -1175,6 +1193,10 @@ SCENES = [
      [("su-shi", "east-slope"), ("su-shi", "three-exiles")]),
 ]),
 ("重要的人走了", "人生转弯", [
+    ("大家都在等我表现得难过。",
+     [("curie", "the-lecture"), ("kristin-neff", "three-parts")]),
+    ("他走了，明天我该干什么。",
+     [("curie", "the-lecture"), ("cs-lewis", "grief-feels-like-fear")]),
     ("这感觉不像难过，更像我在怕。",
      [("cs-lewis", "grief-feels-like-fear"), ("frankl", "the-last-freedom")]),
     ("撑了我一辈子的那套，这回不管用了。",
@@ -1239,6 +1261,8 @@ SCENES = [
      [("granovetter", "weak-ties"), ("harvard-study", "social-fitness")]),
 ]),
 ("人到中年", "人生转弯", [
+    ("这些年攒的，还用得上吗。",
+     [("churchill", "sixty-five"), ("du-fu", "the-thatched-hut")]),
     ("四十多了从头开始，还来得及吗。",
      [("du-fu", "the-thatched-hut"), ("jung", "afternoon-of-life")]),
     ("四十了，我忽然觉得来不及。",
@@ -1255,6 +1279,8 @@ SCENES = [
 
 # ── 无能为力：现有全站语气都是「怎么解决」，接不住这类人 ──
 ("事情我说了不算", "使不上劲", [
+    ("结果不归我管，那我管什么。",
+     [("bhagavad-gita", "right-to-the-act"), ("frankl", "the-last-freedom")]),
     ("规则不由我定，可我想不想清楚由我。",
      [("arendt", "thinking-as-a-duty"), ("epictetus", "dichotomy")]),
     ("这件事根本不由我决定。",
@@ -1283,6 +1309,8 @@ SCENES = [
      [("zhuangzi", "equalizing-things"), ("zhuangzi", "ox-carving")]),
 ]),
 ("努力也没用", "使不上劲", [
+    ("使了这么久劲，什么都没变。",
+     [("bhagavad-gita", "right-to-the-act"), ("epictetus", "dichotomy")]),
     ("该做的我都做了，还是没用。",
      [("xunzi", "constant-heaven"), ("machiavelli", "fortune-and-virtu")]),
     ("那还要不要接着做？",
@@ -1291,6 +1319,8 @@ SCENES = [
      [("xunzi", "constant-heaven"), ("mandela", "rivonia")]),
 ]),
 ("一直没成", "使不上劲", [
+    ("说了好几年，还是没人听。",
+     [("churchill", "no-one-listened"), ("pu-songling", "forty-years-of-failing")]),
     ("这几年没成的日子，我记下来了吗。",
      [("du-fu", "ten-years-in-changan"), ("pu-songling", "forty-years-of-failing")]),
     ("种下去了，好几年一个果都没有。",
@@ -1315,6 +1345,8 @@ SCENES = [
      [("pu-songling", "collecting-at-the-roadside"), ("murakami", "focus-and-endurance")]),
 ]),
 ("被晾在一边", "使不上劲", [
+    ("没人再找我商量了。",
+     [("churchill", "wilderness-years"), ("su-shi", "east-slope")]),
     ("被边缘之后，我多出了很多时间。",
      [("sima-qian", "written-in-adversity"), ("einstein", "patent-office")]),
     ("我被调岗了，明摆着是边缘化。",
@@ -1329,6 +1361,8 @@ SCENES = [
 
 # ── 说不出口的：搜索量大、私密、典籍最擅长 ──
 ("看不得别人好", "说不出口", [
+    ("他做成了，我心里发闷。",
+     [("caigentan", "dont-measure-by-yourself"), ("brene-brown", "guilt-not-shame")]),
     ("我朋友过得好，我心里不是滋味。",
      [("liu-bang", "three-i-cannot"), ("zhuangzi", "equalizing-things")]),
     ("我怎么老在跟人比？",
@@ -1361,6 +1395,8 @@ SCENES = [
      [("brene-brown", "secrecy-silence-judgment"), ("brene-brown", "guilt-not-shame")]),
 ]),
 ("怕被看穿", "说不出口", [
+    ("我怕人看出我没那么行。",
+     [("caigentan", "hide-the-edge"), ("brene-brown", "secrecy-silence-judgment")]),
     ("出了那件丑事，我不知道还怎么见人。",
      [("sima-qian", "letter-to-ren-an"), ("brene-brown", "guilt-not-shame")]),
     ("我的短处，能不能自己先说出来。",
@@ -1379,6 +1415,8 @@ SCENES = [
      [("su-shi", "no-more-writing"), ("epictetus", "judgments-not-things")]),
 ]),
 ("放不下一个人", "说不出口", [
+    ("有些话我只想说给他听。",
+     [("curie", "journal-of-grief"), ("cs-lewis", "not-replacing-her")]),
     ("我怕忘了他，又怕记住的不是他。",
      [("cs-lewis", "not-replacing-her"), ("huineng", "originally-not-a-thing")]),
     ("我到现在还恨那个人。",
@@ -1407,6 +1445,8 @@ SCENES = [
 
 # ── 时间尺度：回头看与往前看 ──
 ("那件事一直搁在心里", "回头与往前", [
+    ("过去这么久了，我还是没好。",
+     [("curie", "journal-of-grief"), ("cs-lewis", "grief-feels-like-fear")]),
     ("那件事过去很久了，我还是接不上。",
      [("cs-lewis", "grief-feels-like-fear"), ("su-shi", "no-wind-no-rain")]),
     ("过了这么久我还是耿耿于怀。",
