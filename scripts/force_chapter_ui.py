@@ -714,7 +714,15 @@ def _hwx_payload():
     assert set(SC_BOX) == {sc["t"] for sc in S}, (
         "SC_BOX 与处境对不上：多 %s 缺 %s" % (set(SC_BOX) - {s_["t"] for s_ in S},
                                              {s_["t"] for s_ in S} - set(SC_BOX)))
-    j = json.dumps({"E": E, "QP": QP, "QS": QS, "QQ": QQ_ALL, "S": S,
+    # 卡片上的人名多数读者不认识（159 条里 24 条），介绍句本来就有，
+    # 一并送到前端，让「这人是谁」出现在读者第一次碰到名字的地方。
+    import hw_slugs as _hs
+    WHO = {}
+    for _e in build_seo.load_array():
+        _i = HWX_INTROS.get(_hs.slug_for(_e["n"]))
+        if _i:
+            WHO[_e["n"]] = _i
+    j = json.dumps({"E": E, "QP": QP, "QS": QS, "QQ": QQ_ALL, "S": S, "WHO": WHO,
                     "CC": CAT_COLOR, "CT": CAT_TINT, "CTD": CAT_TINT_D, "NC": NC}, ensure_ascii=False, separators=(",",":")).replace("</","<\\/")
     return j, len(E), len(NC)
 
@@ -780,6 +788,9 @@ body{background:var(--paper);color:var(--ink)}
 #hwx .askhero .go a.sub i{font-size:12.5px}
 #hwx .askhero .go b{font-family:"Noto Serif SC","Songti SC",serif;font-size:15.5px;display:block}
 #hwx .askhero .go i{font-style:normal;font-size:12.5px;color:var(--muted);display:block;margin-top:3px}
+/* 今日一问主篇下的「这人是谁」：一天一张、位置最靠前，多一行凭据划算。
+   处境卡不加——28 张连着刷，每张多一行会让扫读变慢，而卡片的主角是那句问题。 */
+#hwx .askhero .go a u{display:block;text-decoration:none;font-size:12.5px;line-height:1.6;color:var(--muted);margin-top:2px}
 #hwx .today .tq{padding:15px 16px}
 #hwx .today .tq .q{font-size:17px!important;line-height:1.8!important;margin-bottom:8px!important}
 #hwx .today .tq .tgl{display:block;font-size:13.5px;line-height:1.7;margin:6px 0 12px}
@@ -1051,9 +1062,12 @@ if(ain){
   });
 }
 /* 第一条放大当主角：一个人、一件他真干过的事，比两个并列的链接有力。 */
+var WHO=(D.WHO||{});
 document.getElementById('hwx-ago').innerHTML=(a1.r||[]).slice(0,2).map(function(r,i){
+  /* 主篇下面补一句「这人是谁」：卡片是读者第一次碰到这个名字的地方。 */
+  var w=(!i&&WHO[r.who])?'<u>'+esc(WHO[r.who])+'</u>':'';
   return '<a class="'+(i?'sub':'lead')+'" href="'+r.u+'" data-h="'+esc(r.who+' · '+r.cn)+'">'
-    +'<b>'+r.who+' · '+r.cn+'</b>'+(r.hint?'<i>'+r.hint+'</i>':'')+'</a>';}).join('');
+    +'<b>'+r.who+' · '+r.cn+'</b>'+w+(r.hint?'<i>'+r.hint+'</i>':'')+'</a>';}).join('');
 /* ── 分享卡 ── */
 function drawCard(cb){
   var cv=document.createElement('canvas');cv.width=1080;cv.height=1440;var c=cv.getContext('2d');
