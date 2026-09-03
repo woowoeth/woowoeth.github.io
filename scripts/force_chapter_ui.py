@@ -767,8 +767,9 @@ body{background:var(--paper);color:var(--ink)}
 #hwx .askhero{border:1px solid var(--line);border-radius:16px;background:var(--card);padding:20px 18px 16px;margin-bottom:12px}
 #hwx .askhero .ahead{display:flex;align-items:baseline;justify-content:space-between;gap:10px;margin-bottom:12px}
 #hwx .askhero .lb{font-size:11.5px;letter-spacing:.28em;color:var(--acc);font-weight:700}
-#hwx .askhero #hwx-asc-tag button{border:1px solid var(--line);background:transparent;color:var(--muted);border-radius:999px;padding:4px 12px;font-family:inherit;font-size:12.5px;line-height:1.4;cursor:pointer;white-space:nowrap}
-#hwx .askhero #hwx-asc-tag button:hover{border-color:var(--acc);color:var(--acc)}
+#hwx .askhero #hwx-asc-tag{margin:-6px 0 14px}
+#hwx .askhero #hwx-asc-tag button{border:0;background:transparent;color:var(--muted);padding:0;font-family:inherit;font-size:12.5px;line-height:1.7;cursor:pointer;text-align:left}
+#hwx .askhero #hwx-asc-tag button:hover{color:var(--acc)}
 #hwx .amine{border-top:1px dashed var(--line);margin-top:14px;padding-top:12px}
 /* 按钮放进框里的右下角。手机上预填句会折成三行，框一长高，贴在框外面的
    圆球就成了另一样东西；放进去之后它跟着框底走，单行时正好居中（6+30+6=42）。 */
@@ -782,7 +783,7 @@ body{background:var(--paper);color:var(--ink)}
 #hwx .askhero .q{font-family:"Noto Serif SC","Source Han Serif SC","Songti SC","STSong",serif;font-size:21px;font-weight:700;line-height:1.75;margin:0 0 14px}
 #hwx .askhero .sc{font-size:13.5px;color:var(--muted);line-height:1.8;margin:0;padding-left:12px;border-left:2px solid var(--line)}
 #hwx .askhero .go a{display:block;text-decoration:none;color:inherit;border-top:1px dashed var(--line);padding-top:11px;margin-top:12px}
-#hwx .askhero .go a.lead b{font-size:17px;color:var(--acc)}
+#hwx .askhero .go a.lead b{font-size:17px;color:var(--ink)}
 #hwx .askhero .go a.lead i{font-size:14px;line-height:1.75;color:var(--ink);opacity:.85}
 #hwx .askhero .go a.sub b{font-size:14px}
 #hwx .askhero .go a.sub i{font-size:12.5px}
@@ -791,6 +792,9 @@ body{background:var(--paper);color:var(--ink)}
 /* 今日一问主篇下的「这人是谁」：一天一张、位置最靠前，多一行凭据划算。
    处境卡不加——28 张连着刷，每张多一行会让扫读变慢，而卡片的主角是那句问题。 */
 #hwx .askhero .go a u{display:block;text-decoration:none;font-size:12.5px;line-height:1.6;color:var(--muted);margin-top:2px}
+#hwx .askhero .go a em{display:block;font-style:normal;font-size:14px;line-height:1.7;color:var(--acc);margin-top:5px}
+#hwx .kc .r a u{display:block;text-decoration:none;font-size:11.5px;line-height:1.55;color:var(--muted);opacity:.85;margin-top:2px}
+#hwx .kc .r a em{display:block;font-style:normal;color:var(--acc);margin-top:3px}
 #hwx .today .tq{padding:15px 16px}
 #hwx .today .tq .q{font-size:17px!important;line-height:1.8!important;margin-bottom:8px!important}
 #hwx .today .tq .tgl{display:block;font-size:13.5px;line-height:1.7;margin:6px 0 12px}
@@ -907,7 +911,9 @@ header.hd{margin-bottom:12px!important}
 #hwx .qc .seal{position:absolute;top:13px;right:13px;width:22px;height:22px;border:1.5px solid var(--acc);border-radius:4px;color:var(--acc);font-size:11px;display:flex;align-items:center;justify-content:center}
 #hwx .kc{border-radius:14px;background:rgba(163,59,46,.07);border:1px solid rgba(163,59,46,.22);color:var(--ink);padding:16px 16px 14px;display:flex;flex-direction:column}
 :root[data-theme="dark"] #hwx .kc{background:rgba(224,112,95,.13);border-color:rgba(224,112,95,.3)}
-#hwx .kc{position:relative}
+#hwx .kc{position:relative;cursor:pointer}
+#hwx .kc:hover{border-color:rgba(163,59,46,.42)}
+:root[data-theme="dark"] #hwx .kc:hover{border-color:rgba(224,112,95,.5)}
 #hwx .kc .seal{position:absolute;top:13px;right:13px;width:22px;height:22px;border:1.5px solid var(--acc);border-radius:4px;color:var(--acc);font-size:11px;display:flex;align-items:center;justify-content:center;font-family:"Noto Serif SC","Songti SC",serif}
 #hwx .kc .said{font-size:12px;line-height:1.6;font-family:"Noto Serif SC","Songti SC",serif;margin-bottom:8px;color:var(--acc);padding-right:28px}
 #hwx .kc .qm{display:none;font-size:25px;color:var(--acc);font-weight:900;line-height:1}
@@ -1009,12 +1015,16 @@ document.getElementById('hwx-aq').textContent=a1.t;
    一个正难受的人最难的是把事说清楚——空框把最难的一步放在最前面。
    填成 value 而不是 placeholder：一点就有字，改几个词就成了自己的话。
    原样发出去也能答，只是那是卡片的处境不是他的，所以话术引导改写。 */
-/* 右上角的处境标签。四个字以内——原名 112 个里有 63 个超长，
-   截断会出「一个能约」这种废话，所以 SC_SHORT 是逐个手写的。 */
+/* 处境标签原来是右上角一枚四字胶囊（「没人看 →」），摆在「今日一问」旁边，
+   读者看不出它跟这张卡什么关系。改到问句底下，用整名并带上「还有几个」——
+   它是这一问的出处，也是「这不是我那件事」时的去处，说清楚了才有人点。 */
 var a1sEl=document.getElementById('hwx-asc-tag');
 if(a1sEl){
   if(a1.s){
-    a1sEl.innerHTML='<button type="button" id="hwx-a1go">'+esc(a1.ss||a1.s)+' →</button>';
+    var _sc=(D.S||[]).filter(function(x){return x.t===a1.s;})[0];
+    var _more=_sc?Math.max(0,(_sc.qs||[]).length-1):0;
+    a1sEl.innerHTML='<button type="button" id="hwx-a1go">这一问来自「'+esc(a1.s)+'」'
+      +(_more?('，那儿还有 '+_more+' 个'):'')+' →</button>';
     document.getElementById('hwx-a1go').onclick=function(){
       SCGRP=a1.sg||''; SCSEL=a1.s;
       switchTab('境'); scBuild(); scRender(); scReveal();
@@ -1063,11 +1073,14 @@ if(ain){
 }
 /* 第一条放大当主角：一个人、一件他真干过的事，比两个并列的链接有力。 */
 var WHO=(D.WHO||{});
-document.getElementById('hwx-ago').innerHTML=(a1.r||[]).slice(0,2).map(function(r,i){
+/* 只放一个例子。两个并列的人名等于让读者先做一道选择题，而这张卡的作用是
+   「有人真干过这件事」——一个就够，硬凑第二个只是把第一个的分量摊薄。 */
+document.getElementById('hwx-ago').innerHTML=(a1.r||[]).slice(0,1).map(function(r,i){
   /* 主篇下面补一句「这人是谁」：卡片是读者第一次碰到这个名字的地方。 */
-  var w=(!i&&WHO[r.who])?'<u>'+esc(WHO[r.who])+'</u>':'';
+  /* 顺序：人 → 这人是谁 → 这一篇说什么 → 去这一篇。链接放最后，前面三行是决定要不要点的依据。 */
+  var w=WHO[r.who]?'<u>'+esc(WHO[r.who])+'</u>':'';
   return '<a class="'+(i?'sub':'lead')+'" href="'+r.u+'" data-h="'+esc(r.who+' · '+r.cn)+'">'
-    +'<b>'+r.who+' · '+r.cn+'</b>'+w+(r.hint?'<i>'+r.hint+'</i>':'')+'</a>';}).join('');
+    +'<b>'+r.who+'</b>'+w+(r.hint?'<i>'+r.hint+'</i>':'')+'<em>'+r.cn+' →</em></a>';}).join('');
 /* ── 分享卡 ── */
 function drawCard(cb){
   var cv=document.createElement('canvas');cv.width=1080;cv.height=1440;var c=cv.getContext('2d');
@@ -1258,7 +1271,7 @@ D.E.forEach(function(e,i){
   if(i%3===2){var g=pickQ();
     fullCells.push(qcard(g,'xtra'));}
   if(i%5===3){var k=D.QQ[ki++%D.QQ.length];
-    fullCells.push('<div class="kc xtra" data-t="'+esc((k.t+(k.s||'')+(k.ss||'')).toLowerCase())+'"><span class="seal">问</span>'+(k.r&&k.r[0]?'<span class="said">'+esc(k.r[0].who)+'问过</span>':'')+'<span class="t">'+k.t+'</span><span class="r">'+k.r.map(function(r){return '<a href="'+r.u+'" data-h="'+esc(r.who+' · '+r.cn)+'"><b>'+r.who+'</b> · '+r.cn+' →</a>'}).join('')+'</span></div>');}
+    fullCells.push('<div class="kc xtra" data-t="'+esc((k.t+(k.s||'')+(k.ss||'')).toLowerCase())+'"><span class="seal">问</span>'+(k.r&&k.r[0]?'<span class="said">'+esc(k.r[0].who)+'问过</span>':'')+'<span class="t">'+k.t+'</span><span class="r">'+k.r.slice(0,1).map(function(r){var w=(D.WHO||{})[r.who];return '<a href="'+r.u+'" data-h="'+esc(r.who+' · '+r.cn)+'"><b>'+r.who+'</b>'+(w?'<u>'+esc(w)+'</u>':'')+'<em>'+r.cn+' →</em></a>'}).join('')+'</span></div>');}
 });
 /* ── 最新 feed ── */
 /* 最新 tab 混排：每 4 张深度阅读插 1 张人物/书卡、1 张金句卡，每 9 槽插 1 张问题卡 */
@@ -1278,7 +1291,7 @@ D.NC.forEach(function(e,i){
     ncCells.push(qcard(g,''));
   }
   if(i%5===4){var k=D.QQ[_ki++%D.QQ.length];
-    ncCells.push('<div class="kc"><span class="seal">问</span>'+(k.r&&k.r[0]?'<span class="said">'+esc(k.r[0].who)+'问过</span>':'')+'<span class="t">'+k.t+'</span><span class="r">'+k.r.map(function(r){return '<a href="'+r.u+'" data-h="'+esc(r.who+' · '+r.cn)+'"><b>'+r.who+'</b> · '+r.cn+' →</a>'}).join('')+'</span></div>');}
+    ncCells.push('<div class="kc"><span class="seal">问</span>'+(k.r&&k.r[0]?'<span class="said">'+esc(k.r[0].who)+'问过</span>':'')+'<span class="t">'+k.t+'</span><span class="r">'+k.r.slice(0,1).map(function(r){var w=(D.WHO||{})[r.who];return '<a href="'+r.u+'" data-h="'+esc(r.who+' · '+r.cn)+'"><b>'+r.who+'</b>'+(w?'<u>'+esc(w)+'</u>':'')+'<em>'+r.cn+' →</em></a>'}).join('')+'</span></div>');}
 });
 /* ── 处境 tab：每个问题一张卡，标注所属处境 ──
    原来「按处境找」是 1049px 的标签目录，三步才到答案，
@@ -1293,8 +1306,11 @@ D.S.forEach(function(sc){
       +'<span class="seal">问</span>'
       +'<span class="said">'+esc(sc.t)+'</span>'
       +'<span class="t">'+q.q+'</span>'
-      +'<span class="r">'+q.a.map(function(r){
-          return '<a href="'+r.u+'" data-h="'+esc(r.who+' · '+r.cn)+'"><b>'+r.who+'</b> · '+r.cn+' →</a>'
+      +'<span class="r">'+q.a.slice(0,1).map(function(r){
+          /* 一张卡只举一个例子，并把「这人是谁」补上：两个并列的人名会让读者先做选择题，
+             而这张卡要说的是「有人真干过这件事」。省下的那一条，正好换成凭据。 */
+          var w=(D.WHO||{})[r.who];
+          return '<a href="'+r.u+'" data-h="'+esc(r.who+' · '+r.cn)+'"><b>'+r.who+'</b>'+(w?'<u>'+esc(w)+'</u>':'')+'<em>'+r.cn+' →</em></a>'
         }).join('')+'</span></div>');
   });
 });
@@ -1524,6 +1540,19 @@ if(qin){qin.oninput=null;
     document.getElementById('hwx-tabs2').scrollIntoView({behavior:'smooth',block:'start'});
   };
 })();
+/* 问题卡整块可点。条目卡（.nc）和人物卡（.pc）本来就是一整个 <a>，只有问题卡
+   是 div 套一个链接——读者点在卡片别处没反应，等于每张卡有一小片能点、一大片不能。
+   委托到 feed 上：点在真链接上走原生跳转，点在卡片别处就跳这张卡唯一那个去处。 */
+['hwx-ncfeed','hwx-feed','hwx-scfeed'].forEach(function(id){
+  var el=document.getElementById(id); if(!el)return;
+  el.addEventListener('click',function(e){
+    if(e.target.closest('a'))return;
+    var card=e.target.closest('.kc'); if(!card)return;
+    var a=card.querySelector('a[href^="/i/"]'); if(!a)return;
+    if(e.metaKey||e.ctrlKey||e.shiftKey||e.button)return;
+    a.click();
+  });
+});
 /* 卡片点击：用委托，三个 feed 一处覆盖。只记卡片类型和去向，不记内容。 */
 ['hwx-ncfeed','hwx-feed','hwx-scfeed'].forEach(function(id){
   var el=document.getElementById(id); if(!el)return;
@@ -1565,8 +1594,8 @@ switchTab('境');
         "<div class=\"hist\" id=\"hwx-hist\"><span class=\"hl\">最近看过</span>"
         "<span class=\"hchips\" id=\"hwx-hchips\"></span><button id=\"hwx-hclr\">清空</button></div>"
         "<div class=\"askhero\" id=\"hwx-askhero\">"
-        "<div class=\"ahead\"><span class=\"lb\">今日一问</span>"
-        "<span id=\"hwx-asc-tag\"></span></div>""<div class=\"q\" id=\"hwx-aq\"></div>""<div class=\"go\" id=\"hwx-ago\"></div>"
+        "<div class=\"ahead\"><span class=\"lb\">今日一问</span></div>"
+        "<div class=\"q\" id=\"hwx-aq\"></div>""<div id=\"hwx-asc-tag\"></div>""<div class=\"go\" id=\"hwx-ago\"></div>"
         "<div class=\"amine\" id=\"hwx-amine\">"
         "<div class=\"arow\"><textarea id=\"hwx-ain\" rows=\"1\"></textarea>"
         "<button type=\"button\" id=\"hwx-ago2\">问</button></div></div>""</div>"
