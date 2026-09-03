@@ -459,7 +459,7 @@ def _shell(lang, title, headhtml, body):
         "<link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\n"
         "<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?"
         "family=Noto+Serif+SC:wght@500;600;700&display=swap\">\n"
-        "<link rel=\"stylesheet\" href=\"/assets/hw-entry.css?v=14\">\n"
+        "<link rel=\"stylesheet\" href=\"/assets/hw-entry.css?v=15\">\n"
         "<link rel=\"stylesheet\" href=\"/assets/hw-chapter.css?v=5\">\n"
         "</head>\n<body>\n%s\n"
         "<script src=\"/assets/hw-share.js\" defer></script>\n</body>\n</html>\n"

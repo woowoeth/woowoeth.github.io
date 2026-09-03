@@ -5,6 +5,10 @@
   font-display:swap;
 }
 :root{
+  /* 首页声明了 light dark，章节页原来没有：暗色系统下浏览器先用白画布画一帧
+     （白闪），滚动条和表单控件也停在亮色。这一行两样都解决。 */
+  color-scheme: light dark;
+
   --bg:#f7f4ec; --bg-tint:#efe8dc; --surface:#fffdf8; --surface-2:#f3eee6;
   --ink:#1c1917; --ink-2:#3f3a34; --muted:#6f6959; --faint:#9a9384;
   --rule:#e2ddd0; --rule-2:#d0c9b8;

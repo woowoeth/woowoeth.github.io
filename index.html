@@ -312,6 +312,11 @@ body{background:var(--paper);color:var(--ink)}
 #hwx .askhero .ahead{display:flex;align-items:baseline;justify-content:space-between;gap:10px;margin-bottom:12px}
 #hwx .askhero .lb{font-size:11.5px;letter-spacing:.28em;color:var(--acc);font-weight:700}
 #hwx .askhero #hwx-asc-tag{margin:-6px 0 14px}
+/* 搜不到时的那块。语气跟站上一致：先说没找到什么，再给一条出路。 */
+#hwx #hwx-none{border:1px dashed var(--line);border-radius:14px;padding:20px 18px;margin:14px 0 8px;text-align:center}
+#hwx #hwx-none b{display:block;font-family:"Noto Serif SC","Songti SC",serif;font-size:17px;line-height:1.7;color:var(--ink)}
+#hwx #hwx-none i{display:block;font-style:normal;font-size:13.5px;line-height:1.8;color:var(--muted);margin:6px 0 14px}
+#hwx #hwx-none button{border:1px solid var(--ink);background:var(--ink);color:var(--paper);border-radius:999px;padding:7px 18px;font-family:inherit;font-size:13.5px;cursor:pointer}
 #hwx .askhero #hwx-asc-tag button{border:0;background:transparent;color:var(--muted);padding:0;font-family:inherit;font-size:12.5px;line-height:1.7;cursor:pointer;text-align:left}
 #hwx .askhero #hwx-asc-tag button:hover{color:var(--acc)}
 #hwx .amine{border-top:1px dashed var(--line);margin-top:14px;padding-top:12px}
@@ -1013,6 +1018,7 @@ function applyFeed(){
   if(!qres){qres=document.createElement('div');qres.id='hwx-qres';qres.className='scfeed';feed.parentNode.insertBefore(qres,feed);}
   if(!v){
     qres.innerHTML='';qres.style.display='none';
+    var _n0=document.getElementById('hwx-none'); if(_n0)_n0.style.display='none';
     var vis0=0;
     feed.querySelectorAll('.pc').forEach(function(c){
       var ok=(CAT==='全部'||c.getAttribute('data-c')===CAT);
@@ -1048,6 +1054,24 @@ function applyFeed(){
   qres.innerHTML=hits.map(function(p){return scCells[p[1]]}).join('');
   qres.style.display=hits.length?'':'none';
   ct.textContent=(keep.length+hits.length)+' 条知识';
+  /* 一条都没有的时候得说话。原来是整片空白——读者分不清是搜不到还是页面坏了。
+     另外两个站都有这句（「没有匹配的，换个词试试」「没有匹配的深读」），只有这儿没有。
+     出路指向处境：用自己的话搜不到，多半是词不对，而处境是按人话写的。 */
+  var none=document.getElementById('hwx-none');
+  if(!none){none=document.createElement('div');none.id='hwx-none';none.style.display='none';feed.parentNode.insertBefore(none,feed);}
+  if(keep.length+hits.length===0){
+    none.innerHTML='<b>没找到「'+esc(v)+'」</b>'
+      +'<i>换个说法试试——或者到下面的处境里挑你自己那一件。</i>'
+      +'<button type="button" id="hwx-none-go">去挑处境 →</button>';
+    none.style.display='';
+    var g=document.getElementById('hwx-none-go');
+    if(g)g.onclick=function(){
+      var qi=document.getElementById('q'); if(qi)qi.value='';
+      SCSEL=''; SCGRP=''; switchTab('境'); applyFeed(); scBuild(); scRender(); scReveal();
+      var el=document.getElementById('hwx-tabs2');
+      if(el&&el.scrollIntoView)try{el.scrollIntoView({block:'start',behavior:'smooth'})}catch(e){}
+    };
+  }else{none.style.display='none';}
 }
 /* 搜索框接管 */
 var qin=document.getElementById('q');
