@@ -197,7 +197,7 @@ CHAPTERS = [
         "q": [
             "I could sit with the Jade Emperor or with a beggar.",
             "I see no bad people.",
-            "Like a fly in your food — you spit it out and only then rest.",
+            "Like a fly in the food: you spit it out before you rest.",
         ],
     },
     {

@@ -26,6 +26,14 @@ is different, and each rule below covers one way it actually goes wrong:
 ⑦ 「今日一句」的每条映射：值必须是处境层里的**原句**，而且那一句必须真的
    引用了这一章。差一个字就是配错，而配错的第一人称句是假共情 —— 中文那边
    的教训写在 quote_asks.py 开头。每章必须且只能有一条。
+⑧ 英文章节的长度闸。中文一个字顶英文一个词还多，照着中文的篇幅写英文，
+   dek 会长到吃掉两行、金句会长到没法当金句用。这几个数是排版定的，不是
+   风格偏好：dek 12-30 词、story 50-110 词、分则 20-55 词、例 8-40 词、
+   金句 ≤14 词。
+   靠眼睛盯 79 章必漏，所以让机器数。
+⑨ 章节数据自身完整：每章七个字段都在，f 至少两条，q 至少两条，
+   story 里恰好一处 ==…== 强调（模板拿它做引文块，没有就是一段白文，
+   两处则第二处不会被渲染）。
 """
 import collections
 import os
@@ -46,7 +54,38 @@ kasparov wiener excellent-sheep maslach cacioppo harvard-study granovetter curie
 hochschild rat-park vygotsky thomas-gordon cs-lewis churchill perel jung sapolsky
 dweck john-ratey gottman montessori boyd""".split()
 
+def load_en():
+    """已经写好的英文章节。
+
+    单独加载而不是靠 HW_CHAPTERS 环境变量切换，是因为这道闸要同时用到两份：
+    引用是否成立要拿**中文章节**当全集校验（那是这一版计划里存在的 79 章），
+    长度和完整性只能校验**已经写出来的**那些。混用一份的话，写到一半时闸门
+    会把还没写的章全报成「引用指向不存在的页」，把真正的错埋掉。
+    """
+    import importlib
+    import pkgutil
+    here = os.path.join(ROOT, "seo", "chapters_en")
+    if not os.path.isdir(here):
+        return []
+    sys.path.insert(0, os.path.join(ROOT, "seo"))
+    out = []
+    for mod in sorted(m.name for m in pkgutil.iter_modules([here])):
+        m = importlib.import_module("chapters_en." + mod)
+        spec = getattr(m, "PARENT", {}) or {}
+        for ch in getattr(m, "CHAPTERS", []) or []:
+            ch = dict(ch)
+            ch["parent_slug"] = spec.get("slug", "")
+            ch["parent"] = spec.get("name", "")
+            out.append(ch)
+    return out
+
+
 CJK = re.compile(r"[　-〿一-鿿＀-￯]")
+# 例（eg）和分则（d）不是一回事，不能共用一个区间：d 是论证，要说完；
+# eg 是一句具体的例子，短才好用。第一版把 20-55 同时套在两者上，
+# 结果闸门把一批写得正好的例子判成太短 —— 照它去注水只会写坏。
+LEN = {"dek": (12, 30), "story": (50, 110),
+       "part": (20, 55), "eg": (8, 40), "quote": (1, 14)}
 MAX_SCENE = 46          # 处境名进 chip 条，长了换行把整排挤散
 MAX_GROUP = 30
 
@@ -118,11 +157,54 @@ def main():
         if key not in QUOTE_ASKS_EN:
             bad.append("no today's line for chapter %s" % key)
 
+    # ⑧⑨ 章节自身
+    def words(x):
+        return len(x.split())
+
+    written = load_en()
+    planned = {(c["parent_slug"], c["k"]) for c in H.CHAPTERS if c["parent_slug"] in PILOT}
+    for ch in sorted(written, key=lambda c: (c["parent_slug"], c["k"])):
+        if (ch["parent_slug"], ch["k"]) not in planned:
+            bad.append("%s/%s is written in English but not in the pilot plan"
+                       % (ch["parent_slug"], ch["k"]))
+            continue
+        where = "%s/%s" % (ch["parent_slug"], ch["k"])
+        for field in ("n", "w", "src", "dek", "story", "apply"):
+            if not (ch.get(field) or "").strip():
+                bad.append("%s is missing %s" % (where, field))
+        parts, quotes = ch.get("f") or [], ch.get("q") or []
+        if len(parts) < 2:
+            bad.append("%s has %d parts, needs at least 2" % (where, len(parts)))
+        if len(quotes) < 2:
+            bad.append("%s has %d lines to keep, needs at least 2" % (where, len(quotes)))
+        n_emph = (ch.get("story") or "").count("==")
+        if n_emph != 2:
+            bad.append("%s: story needs exactly one ==...== span, found %d marks"
+                       % (where, n_emph))
+        for field, key in (("dek", "dek"), ("story", "story")):
+            lo, hi = LEN[key]
+            n = words(ch.get(field) or "")
+            if not lo <= n <= hi:
+                bad.append("%s: %s is %d words (want %d-%d)" % (where, field, n, lo, hi))
+        for i, part in enumerate(parts, 1):
+            for key in ("d", "eg"):
+                lo, hi = LEN["part" if key == "d" else "eg"]
+                n = words(part.get(key) or "")
+                if not lo <= n <= hi:
+                    bad.append("%s: part %d %s is %d words (want %d-%d)"
+                               % (where, i, key, n, lo, hi))
+        for q in quotes:
+            if words(q) > LEN["quote"][1]:
+                bad.append("%s: line to keep is %d words (max %d): %r"
+                           % (where, words(q), LEN["quote"][1], q))
+
     nq = sum(len(q) for _, _, q in SCENES)
-    print("English situations: %d groups · %d situations · %d questions · "
-          "%d entries · %d chapters · %d today's-lines"
+    print("English: %d groups · %d situations · %d questions · "
+          "%d entries · %d chapters planned · %d today's-lines · "
+          "%d/%d chapters written"
           % (len({g for _, g, _ in SCENES}), len(SCENES), nq,
-             len(hit_entry), len(hit_ch), len(QUOTE_ASKS_EN)))
+             len(hit_entry), len(hit_ch), len(QUOTE_ASKS_EN),
+             len(written), len(planned)))
     if bad:
         print("\nnot ready:")
         for b in bad[:40]:
