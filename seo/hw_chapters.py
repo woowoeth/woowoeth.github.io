@@ -95,11 +95,14 @@ PARENTS, CHAPTERS = {}, []
 def _load():
     import importlib
     import pkgutil
-    here = os.path.join(os.path.dirname(os.path.abspath(__file__)), "chapters")
+    # 英文站用同一套模板、另一份数据。这里不写死 "chapters"，
+    # 是为了不必把整个渲染器复制一份 —— 复制出来的两份迟早会走散。
+    pkg = os.environ.get("HW_CHAPTERS", "chapters")
+    here = os.path.join(os.path.dirname(os.path.abspath(__file__)), pkg)
     if not os.path.isdir(here):
         return
     for mod in sorted(m.name for m in pkgutil.iter_modules([here])):
-        m = importlib.import_module("chapters." + mod)
+        m = importlib.import_module(pkg + "." + mod)
         spec = dict(getattr(m, "PARENT", {}) or {})
         name = spec.pop("name", "")
         if not name:

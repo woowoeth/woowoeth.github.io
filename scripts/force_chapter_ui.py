@@ -108,7 +108,9 @@ HWX_A, HWX_B = "<!--HWX:FIND-->", "<!--/HWX:FIND-->"
 
 import sys as _sys
 _sys.path.insert(0, str(Path(__file__).resolve().parent))  # CI 从仓库根调用本脚本
-from hwx_scenes import SCENES as HWX_SCENES
+# 英文站换一份处境表（hwx_scenes_en），其余渲染逻辑一个字不改。
+HWX_SCENES = __import__(_os.environ.get("HW_SCENES", "hwx_scenes"),
+                        fromlist=["SCENES"]).SCENES
 from quote_asks import QUOTE_ASKS
 
 # 悬浮球问答的后端地址。空字符串＝功能关闭（前端不渲染任何东西）。
@@ -1965,11 +1967,26 @@ def theme_widget():
             '<script>' + js + '</script>' + HWX_T_B)
 
 
+
+def _derived(dp):
+    """这个目录是不是「派生出来的语言站」——是的话本脚本一个字都不该碰。
+
+    tw/ 由 build_tw.py 从简体产物整树转出，en/ 由 build_en.py 用英文数据生成。
+    本脚本往页面里盖的是**简体**挂件（切换日夜模式、/assets/… 的资源路径、
+    大陆支付宝收款码）。盖到 tw/ 上的后果实测过：553 页的「切換」变回「切换」、
+    资源指回简体站、繁体读者的 AlipayHK 码被换成大陆码 —— 而页面照样渲染，
+    构建照样通过，只有逐字比对才看得出来。
+
+    正常构建链里 build_tw.py 排在本脚本之后并且整树重建，所以看不出问题；
+    单独跑本脚本就会留下这份污染。五个 walk 里原先只有一个记得躲开 tw/。
+    """
+    return any(x in dp for x in ("/.git", "/tw", "/en", "node_modules", "__pycache__")) \
+        or dp.startswith((".git", "./tw", "./en"))
 def patch_theme_widget():
     import os, re
     n = 0
     for dp, dn, fn in os.walk("."):
-        if ".git" in dp or dp.startswith("./assets"):
+        if _derived(dp) or dp.startswith("./assets"):
             continue
         for f in fn:
             if f not in ("index.html", "404.html"):
@@ -2046,7 +2063,7 @@ def patch_icons():
              '<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">\n')
     n = 0
     for dp, dn, fn in os.walk("."):
-        if ".git" in dp:
+        if _derived(dp):
             continue
         for f in fn:
             if f not in ("index.html", "404.html"):
@@ -2096,7 +2113,7 @@ def patch_chat_widget():
     n = 0
     block = chat_widget()
     for dp, dn, fn in os.walk("."):
-        if ".git" in dp or dp.startswith("./assets"):
+        if _derived(dp) or dp.startswith("./assets"):
             continue
         for f in fn:
             if f not in ("index.html", "404.html"):
@@ -2138,7 +2155,7 @@ def patch_tea_widget():
     n = 0
     block = tea_widget()
     for dp, dn, fn in os.walk("."):
-        if ".git" in dp or dp.startswith("./assets"):
+        if _derived(dp) or dp.startswith("./assets"):
             continue
         for f in fn:
             if f not in ("index.html", "404.html"):
@@ -2191,7 +2208,7 @@ def patch_lang():
     import os, re
     n = 0
     for dp, dn, fn in os.walk("."):
-        if any(x in dp for x in (".git", "/tw", "node_modules", "__pycache__")):
+        if _derived(dp):
             continue
         for f in fn:
             if f not in ("index.html", "404.html"):
