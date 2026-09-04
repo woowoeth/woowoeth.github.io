@@ -369,6 +369,33 @@ def _flat(v):
     return "\n".join(t for t in out if t)
 
 
+def _first_sentences(d, lo=90, hi=170):
+    """取 d 开头的**若干个完整句子**，不硬切。
+
+    原来是 G.plain(d, 140) —— 按字数硬切，切在哪个字母上纯看运气。这个
+    summary 有三个出口，三个都露过切口：条目页导语、分享文案、还有给爬虫
+    和无脚本读者看的条目索引（「He married at fifty-eight; hi」，切在词
+    中间）。它同时还是 meta description，也就是搜索结果里那一段。
+
+    中文那边同样是硬切，但汉字没有词界，切在哪儿都还算「一句没说完」；
+    英文切在词中间就是明显的坏。
+
+    lo/hi 是「至少这么长、最多到这里」：先凑够 lo，再在 hi 之前的最后一个
+    句号处收。一句都凑不满就整句给出去，不留半截词。
+    """
+    import geo_kit as G          # G 是在 en_items() 里才 import 的
+    t = G.plain(d)
+    if len(t) <= hi:
+        return t
+    cut = t[:hi]
+    ends = [m.end() for m in re.finditer(r"[.!?](?=\s|$)", cut) if m.end() >= lo]
+    if ends:
+        return cut[:ends[-1]].strip()
+    # hi 之前没有句号：退到词界，并且明确打省略号
+    sp = cut.rfind(" ")
+    return (cut[:sp] if sp > lo else cut).rstrip(" ,;:—-") + "\u2026"
+
+
 def en_items():
     """把 seo/en_entries.py 变成 geo_kit 的 Item 列表。"""
     import geo_kit as G
@@ -411,7 +438,7 @@ def en_items():
 
         one, era = e.get("w") or "", e.get("e") or ""
         summary = "%s%s \u2014 %s. %s" % (
-            e["n"], (" (%s)" % era if era else ""), one, G.plain(e.get("d"), 140))
+            e["n"], (" (%s)" % era if era else ""), one, _first_sentences(e.get("d")))
         is_text = hw_kind.is_work(e["n"])
         extra = {"about": one} if one else {}
         if is_text:
@@ -584,7 +611,16 @@ def main():
             x = open(p_, encoding="utf-8").read()
             if "</body>" not in x:
                 continue
-            add = "".join(blk for mark, blk in blocks if mark not in x)
+            # 已经有日夜按钮的页面不要再贴一个。英文首页自己的 #hwx 块里
+            # 就带着一个（简体首页在 force_chapter_ui 里是按路径特判跳过
+            # 的），再贴一份的结果是**两个 id="hwx-theme"**：
+            # getElementById 只认第一个，第二个既没人给它换图标、也没人
+            # 给它去框，于是页头右上角挂着一个什么都没有的浅色圆圈 ——
+            # 用户看到的就是它。按「页面上有没有」判，不按路径判。
+            add = "".join(blk for mark, blk in blocks
+                          if mark not in x
+                          and not (mark == "<!--HWX:THEME-->"
+                                   and 'id="hwx-theme"' in x))
             if add:
                 open(p_, "w", encoding="utf-8").write(
                     x.replace("</body>", add + "</body>", 1))

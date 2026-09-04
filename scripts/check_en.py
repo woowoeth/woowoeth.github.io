@@ -311,6 +311,61 @@ def rendered_fonts(port=8932):
     return out
 
 
+# 渲染之后的英文页上，这些是「读者一眼看得出别扭」的东西。
+# 必须在浏览器里量：首页那一层是 JS 运行时拼出来的，静态 HTML 里一个
+# 都看不到 —— 「253  questions」「and 3  more」就是这么漏了一整轮的。
+FLAW_PAGES = ["/en/", "/en/i/su-shi/", "/en/all/"]
+
+
+def rendered_flaws(port=8933):
+    """渲染英文页，读 innerText，找排版上的硬伤。
+
+    ① 连续两个空格 —— 中文里数字和量词之间本来有一个空格（'26'+' 个问题'），
+       而界面串规则的替换串自己又带一个前导空格，拼出来就是两个。
+       中文页上看不出来，英文页上很显眼。
+    ② 标点前有空格 —— 同一类拼接留下的。
+    ③ 中文标点混在英文里。
+    """
+    try:
+        from playwright.sync_api import sync_playwright
+    except Exception:
+        return None
+    import subprocess
+    import time
+    srv = subprocess.Popen([sys.executable, "-m", "http.server", str(port)],
+                           cwd=ROOT, stdout=subprocess.DEVNULL,
+                           stderr=subprocess.DEVNULL)
+    time.sleep(2.0)
+    out = []
+    try:
+        with sync_playwright() as pw:
+            b = pw.chromium.launch()
+            pg = b.new_page(locale="en-US")
+            for path in FLAW_PAGES:
+                pg.goto("http://localhost:%d%s" % (port, path), timeout=30000)
+                pg.wait_for_timeout(2000)
+                txt = pg.evaluate("() => document.body.innerText")
+                for line in txt.split("\n"):
+                    t = line.strip()
+                    if not t:
+                        continue
+                    for pat, why in ((r"\S  +\S", "连续两个空格"),
+                                     (r"\s[,.;:!?]", "标点前有空格"),
+                                     (r"[，。、；：？！]", "中文标点")):
+                        m = re.search(pat, t)
+                        if m:
+                            out.append("%s  %s：…%s…"
+                                       % (path, why,
+                                          t[max(0, m.start() - 35):m.end() + 25]))
+                            break
+                    if len(out) >= 12:
+                        break
+            b.close()
+    finally:
+        srv.terminate()
+    return out
+
+
 def main():
     real = {(c["parent_slug"], c["k"]) for c in H.CHAPTERS}
     bad, seen_q, seen_s = [], {}, {}
@@ -463,6 +518,14 @@ def main():
     else:
         for x in r:
             bad.append("英文页字体不对：%s" % x)
+
+    # ⑭ 渲染之后的英文页上不许有排版硬伤（双空格 / 标点前空格 / 中文标点）
+    fl = rendered_flaws()
+    if fl is None:
+        print("（没装 playwright，跳过渲染后的排版检查）")
+    else:
+        for x in fl[:6]:
+            bad.append("英文页排版：%s" % x)
 
     # ⑫ 渲染之后的首页正文里也不许有中文
     r = rendered_cjk()

@@ -751,8 +751,14 @@ body{background:var(--paper);color:var(--ink)}
 :root[data-theme="dark"] #hwx .nb{background:#b8452f!important;color:#fff!important}
 :root[data-theme="dark"] #hwx .kc .qm{color:#8a3a2e!important}
 #hwx .kc .qm{color:#c4644f}
-#hwx-theme{position:fixed;top:14px;right:14px;z-index:9999;width:36px;height:36px;border:1px solid var(--line);background:var(--paper);color:var(--ink);border-radius:50%;font-size:15px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 1px 6px rgba(0,0,0,.10);padding:0}
-#hwx-theme:hover{border-color:var(--acc);color:var(--acc)}
+#hwx-theme{position:fixed;top:14px;right:14px;z-index:9999;width:32px;height:32px;border:0;background:transparent;color:var(--muted);border-radius:50%;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:none;padding:0}
+#hwx-theme svg{width:17px;height:17px;display:block}
+#hwx-theme:hover{color:var(--ink)}
+/* 数量那一行自己占一行：中文「80 个处境 · 253 个问题」短，跟在标题
+   后面放得下；英文「80 situations · 253 questions」跟在后面就断在
+   「80」和「situations」之间，读者看到的是标题行尾挂着一个孤零零的
+   数字。让它整块下来一行。 */
+#hwx-sccount{display:block}
 #hwx .today{display:grid;grid-template-columns:1.5fr 1fr;gap:14px;margin:18px 0 6px}
 @media(max-width:700px){#hwx .today{grid-template-columns:1fr}}
 /* 日夜切换是 fixed 在右上角的 36px 圆钮；窄屏上它正压在第一张卡的表头右端
@@ -948,6 +954,12 @@ var D=HWXD;
 /* 日夜模式：默认跟随系统，点击在 跟随/日间/夜间 之间循环并记住 */
 (function(){
   var R=document.documentElement, KEY='hwx_theme';
+  /* 这一份和下面注入版是同一段逻辑的两个副本，两边都得有这两个常量 ——
+     只在注入版里定义的话，这一份运行到 paint() 就 ReferenceError，
+     而整个 <script> 从那里往下全不执行：首页一片空白（问题、卡片、
+     处境条全没了）。语法检查看不见这个，它只解析不运行。 */
+  var MOON_SVG='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z"/></svg>';
+  var SUN_SVG='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>';
   function sysDark(){return !!(window.matchMedia&&window.matchMedia('(prefers-color-scheme:dark)').matches)}
   function get(){try{return localStorage.getItem(KEY)||''}catch(e){return ''}}
   function set(v){try{localStorage.setItem(KEY,v)}catch(e){}}
@@ -956,7 +968,7 @@ var D=HWXD;
     var m=eff();
     R.setAttribute('data-theme',m);
     var b=document.getElementById('hwx-theme');
-    if(b){b.textContent=(m==='dark'?'\u2600':'\u263e');
+    if(b){b.innerHTML=(m==='dark'?SUN_SVG:MOON_SVG);
           b.setAttribute('title',m==='dark'?'切换到日间':'切换到夜间');}
   }
   paint();
@@ -1950,21 +1962,35 @@ def theme_widget():
         ':root[data-theme="dark"] .map-n{color:var(--ink)!important}'
         ':root[data-theme="dark"] .map-w,:root[data-theme="dark"] .map-line{color:var(--muted)!important}'
         ':root[data-theme="dark"] .map .why,:root[data-theme="dark"] .rel .why{color:var(--muted)!important}'
-        '#hwx-theme{position:fixed;top:14px;right:14px;z-index:9999;width:36px;height:36px;'
-        'border:1px solid var(--rule,#d8d2c6);background:var(--paper,#f5f1e8);color:var(--ink,#1f1c17);'
-        'border-radius:50%;font-size:15px;line-height:1;cursor:pointer;display:flex;align-items:center;'
-        'justify-content:center;box-shadow:0 1px 6px rgba(0,0,0,.10);padding:0}'
-        '#hwx-theme:hover{border-color:#9d2933;color:#9d2933}'
+'#hwx-theme{position:fixed;top:14px;right:14px;z-index:9999;width:32px;height:32px;'
+        # 不画框、不打阴影：这个按钮是页头的附属物，不是内容。
+        # 它被收进 #hwx-tools 之后和语言下拉框并排，两个都得是
+        # 「文字/图标 + 悬停变深」，一个有圈一个没圈就很乱。
+        'border:0;background:transparent;color:var(--muted,#6f6959);'
+        'border-radius:50%;line-height:1;cursor:pointer;display:flex;align-items:center;'
+        'justify-content:center;box-shadow:none;padding:0}'
+        '#hwx-theme svg{width:17px;height:17px;display:block}'
+        '#hwx-theme:hover{color:var(--ink,#1f1c17)}'
     )
     js = (
         "(function(){var R=document.documentElement,K='hwx_theme';"
         "function sd(){return !!(window.matchMedia&&window.matchMedia('(prefers-color-scheme:dark)').matches)}"
         "function g(){try{return localStorage.getItem(K)||''}catch(e){return ''}}"
+        # SVG 的属性用**双引号**：这段 JS 字符串本身是单引号包的，
+        # 属性再用单引号就得转义，而转义在 Python 源码那一层就被
+        # 吃掉了 —— emit 出来是 '<svg viewBox='0 0 24 24'…'，
+        # 字符串在第二个引号处就断了，整个 <script> 语法错误。
+        "var MOON_SVG='<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z\"/></svg>';"
+        "var SUN_SVG='<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"4\"/><path d=\"M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4\"/></svg>';"
         "function st(v){try{localStorage.setItem(K,v)}catch(e){}}"
         "function eff(){return g()||(sd()?'dark':'light')}"
         "function paint(){var m=eff();R.setAttribute('data-theme',m);"
         "var b=document.getElementById('hwx-theme');"
-        "if(b){b.textContent=(m==='dark'?'\\u2600':'\\u263e');"
+        # 图标用内联 SVG，不用 ☾/☀ 这两个字符。真机上就是空的：
+        # U+263E 在不少系统字体里根本没有字形，读者看到的是一个
+        # 什么都没有的圆圈 —— 而本地和 CI 上都看不出来，因为开发机
+        # 装的字体多。图标不该赌字体里有没有那个码位。
+        "if(b){b.innerHTML=(m==='dark'?SUN_SVG:MOON_SVG);"
         "b.setAttribute('title',m==='dark'?'切换到日间':'切换到夜间')}}"
         "paint();document.addEventListener('DOMContentLoaded',function(){"
         "var b=document.getElementById('hwx-theme');if(!b)return;"

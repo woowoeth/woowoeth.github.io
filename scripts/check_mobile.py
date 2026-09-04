@@ -24,6 +24,9 @@
 ③ 页头不许自己压自己 —— 工具条是绝对定位的、不占位，站名一长就从它底下
    穿过去。中文站名短，勉强不撞；英文「Human World Rules」在 375px 下被
    下拉框压掉「Rules」半个词。判的是两个矩形有没有交集。
+④ 站名必须一行 —— ③ 只保证不重叠，而「不重叠」可以靠把站名压窄来达成，
+   那样站名就断成两行。它是一个名字，断成两行不是排版，是把名字拆了。
+   两条一起才逼出正确的解：工具条自己占一行，站名拿回整行宽度。
 """
 import os
 import subprocess
@@ -121,7 +124,11 @@ def main():
                     return {sw: d.scrollWidth, vw, over: over.slice(0, 4),
                             lang: rect(document.getElementById('hwx-lang')),
                             theme: rect(document.getElementById('hwx-theme')),
-                            title: rect(document.querySelector('.hd-title, .wordmark'))};
+                            title: rect(document.querySelector('.hd-title, .wordmark')),
+                            titleLine: (() => {
+                              const e = document.querySelector('.hd-title, .wordmark');
+                              return e ? parseFloat(getComputedStyle(e).lineHeight) || 0 : 0;
+                            })()};
                 }""")
                 checked += 1
                 if r["sw"] > r["vw"] + 1:
@@ -151,6 +158,14 @@ def main():
                     if ox > 1 and oy > 1:
                         bad.append("%s %s 语言切换压住站名 %dx%dpx"
                                    % (label, path, ox, oy))
+                # ④ 站名必须一行。它是一个**名字**，断成两行不是排版，是把
+                #    名字拆了。③ 只保证不重叠，而「不重叠」可以靠把站名压窄
+                #    来达成 —— 那正是之前那一版：「Human World」/「Rules」。
+                if ta:
+                    lh = r.get("titleLine") or 0
+                    if lh and ta["h"] > lh * 1.6:
+                        bad.append("%s %s 站名断成了 %d 行"
+                                   % (label, path, round(ta["h"] / lh)))
             b.close()
     finally:
         srv.shutdown()
@@ -162,7 +177,7 @@ def main():
             print("  ✗ " + x)
         return 1
     print("✓ 三种语言在 375px 下都不横向滚动、语言切换和夜间模式都在且可点、"
-          "页头不自己压自己")
+          "页头不自己压自己、站名一行")
     return 0
 
 

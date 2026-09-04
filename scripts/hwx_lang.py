@@ -216,44 +216,58 @@ def patch_tree(root="."):
                   # 自己画箭头：appearance:none 之后原生箭头没了，不补一个
                   # 读者看不出这是可点开的。
                   "#hwx-tools .hwx-lang-wrap::after{content:'';position:absolute;"
-                  "right:11px;top:50%;width:5px;height:5px;margin-top:-3px;"
+                  "right:6px;top:50%;width:5px;height:5px;margin-top:-3px;"
                   "border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;"
                   "transform:rotate(45deg);opacity:.55;pointer-events:none}"
-                  "#hwx-lang{height:32px;padding:0 26px 0 13px;border:1px solid var(--line,#e2ddd0);"
-                  "background:var(--paper,#f5f1e8);color:var(--ink,#1c1917);font:inherit;"
-                  "font-size:13px;letter-spacing:.02em;line-height:30px;cursor:pointer;"
-                  "border-radius:16px;-webkit-appearance:none;-moz-appearance:none;appearance:none}"
-                  # 不用红：胭脂红是这个站的印章色，只该出现在「重点」上。
-                  # 而 select 选完之后焦点还在它身上，红环就一直挂着不走，
-                  # 看上去像是这里出了错。hover/focus 都改成墨色深一档。
-                  "#hwx-lang:hover{border-color:var(--rule-2,#d0c9b8)}"
-                  "#hwx-lang:focus-visible{outline:2px solid var(--ink,#1c1917);outline-offset:2px}"
+                  # 不画框。这两个控件是页头的**附属物**，不是内容 ——
+                  # 框一画就变成两个跟站名抢注意力的方块。先是红框
+                  # （胭脂红是印章色，只该出现在重点上，而 select 选完
+                  # 焦点不走、红环一直挂着，看上去像出了错），改成墨色
+                  # 之后还是框。现在一个框都不要：文字 + 一个小箭头。
+                  "#hwx-lang{height:32px;padding:0 20px 0 4px;border:0;"
+                  "background:transparent;color:var(--muted,#6f6959);font:inherit;"
+                  "font-size:13px;letter-spacing:.02em;line-height:32px;cursor:pointer;"
+                  "-webkit-appearance:none;-moz-appearance:none;appearance:none}"
+                  "#hwx-lang:hover{color:var(--ink,#1c1917)}"
+                  # 键盘用户仍然要看得见焦点，但用最轻的一档 ——
+                  # 手指点一下不该留下任何痕迹。
+                  "#hwx-lang:focus-visible{outline:1.5px solid var(--rule-2,#d0c9b8);"
+                  "outline-offset:3px;border-radius:8px}"
                   "#hwx-lang:focus:not(:focus-visible){outline:none}"
                   # 展开的菜单项由系统画，深色模式下要显式给底色，
                   # 否则 Chrome 会用白底黑字，和页面反差刺眼。
                   ":root[data-theme=\"dark\"] #hwx-lang option{background:#1d1913;color:#eae3d4}"
                   # 收进头部之后不该再自己定位，否则会飞回右上角
+                  # 主题按钮跟着一起去框：两个控件是一对，一个有框
+                  # 一个没框比两个都有框更乱。
                   "#hwx-tools #hwx-theme{position:static;width:32px;height:32px;margin:0;"
-                  "box-shadow:none}"
+                  "box-shadow:none;border:0;background:transparent;"
+                  "color:var(--muted,#6f6959);display:inline-flex;"
+                  "align-items:center;justify-content:center}"
+                  "#hwx-tools #hwx-theme:hover{color:var(--ink,#1c1917)}"
+                  "#hwx-tools #hwx-theme svg{width:17px;height:17px;display:block}"
                   "#hwx-tools.in-row{margin-left:auto;align-self:flex-start;flex:0 0 auto}"
-                  # 绝对定位的工具条不占位，站名一长就从它底下穿过去：
-                  # 中文站名 375px 下压 28px，英文「Human World Rules」压
-                  # 64px（「Rules」半个词看不见）。
+                  # 窄屏：工具条不再浮在站名头上，改成**自己占一行**、
+                  # 右对齐、排在站名上面。
                   #
-                  # 限的必须是**宽度**，不是内边距：站名是 flex 项、宽度按内容
-                  # 算，加 padding-right 只是把盒子撑大，右边缘一点没退，
-                  # 重叠反而从 64px 变成 87px（整个下拉框）。
+                  # 之前试过让站名换行来避让（限 max-width），但站名换行本身
+                  # 就是错的 —— 「Human World Rules」是一个名字，断成两行不
+                  # 是排版，是把名字拆了。而只要工具条还浮在同一行上，站名
+                  # 就必然要么被挡要么被压窄：390px 下站名要 212px，工具条
+                  # 占 90px，加上图标和内边距，一行根本放不下两样。
                   #
-                  # 而且百分比在这里也不行：max-width:calc(100% - 190px) 的
-                  # 100% 是按父元素宽度算的，父元素又是 shrink-to-fit ——
-                  # 宽度取决于这个子元素，循环，最后算出 27px，站名断成
-                  # 「Human / World / Rules」三行。所以用视口单位：
-                  # 两侧各 24px 内边距 + 40px 图标 + 12px 间距 + 工具条约 114px
-                  # ≈ 220px，再留 12px 别让站名贴着下拉框。375px 下给站名 143px，「Human World」
-                  # 一行、「Rules」一行；414px 以上一行就放得下。
-                  "@media(max-width:760px){#hwx-tools.float-in-head{top:10px}"
-                  "#hwx-lang{padding:0 22px 0 10px;font-size:12.5px}"
-                  ".hd .hd-title,.hd .wordmark{max-width:calc(100vw - 232px)}}</style>"
+                  # 让出一行（约 36px）换来的是：站名任何宽度都一行、任何
+                  # 宽度都不被挡。320px 上也成立（站名 212px，可用 224px）。
+                  "@media(max-width:760px){"
+                  "header.hd{display:flex;flex-direction:column;align-items:stretch}"
+                  "#hwx-tools.float-in-head{position:static;order:-1;align-self:flex-end;"
+                  "top:auto;right:auto;margin:0 0 4px}"
+                  ".hd .hd-title,.hd .wordmark{max-width:none;white-space:nowrap}"
+                  # 条目页/章节页的站名同样不许换行；那边工具条是 .mast-top
+                  # 里的 flex 项，站名太长时让整行换行，而不是把名字压窄。
+                  ".mast-top{flex-wrap:wrap}"
+                  ".mast-top .wordmark{white-space:nowrap}}"
+                  "</style>"
                 + HWL_B
             )
             m = re.search(r'<meta name="viewport"[^>]*>\n?', s) or re.search(r"<head[^>]*>\n?", s)
