@@ -730,7 +730,7 @@ CASES = [
     ("语言站·缺语言层",   "check_links.py", LAYERPAGE, _links_nolayer(), "没有 <!--HWX:LANG-->"),
     ("英文站·界面漏译",   "check_en.py", ENPAGE, _en_cjk(), "still has Chinese"),
     ("英文站·脚本被截断", "check_en_js.py", ENHOME, _en_js(), "SyntaxError"),
-    ("英文站·字体覆盖丢失", "check_en.py", ENCSS, _en_font(), "不是英文站那一套"),
+    ("英文站·字体覆盖丢失", "check_en.py", ENCSS, _en_font(), "不是英文站的"),
     ("窄屏·横向撑开",     "check_mobile.py", CHAPCSS, _mobile_blowout(), "横向撑开"),
     ("挂件繁体·没跟上",   "check_chat_tw.py", CHATJS, _chat_tw_stale(), "不同步"),
     ("导语·没裁过",       "check_dek.py", ENPAGE, _dek_untrimmed(), "导语"),
