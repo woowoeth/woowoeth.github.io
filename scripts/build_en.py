@@ -434,6 +434,30 @@ def _first_sentences(d, lo=90, hi=170):
     return (cut[:sp] if sp > lo else cut).rstrip(" ,;:—-") + "\u2026"
 
 
+def _dedupe_paragraphs(path):
+    """合掉紧挨着的重复段落。
+
+    llms.txt 的开头是「英文自述 + 中文自述」两段。中文那段翻成英文之后，
+    和上一段**一字不差** —— 英文站的 llms.txt 开头把同一段话说了两遍，
+    而这正是喂给模型的第一屏。中文站不会有这个问题（两段本来就不同语言），
+    所以这是「翻译之后才出现」的重复，翻译规则那一层看不见。
+
+    只合**相邻**的：隔开的重复段落可能是有意的（比如引用），不该动。
+    """
+    if not os.path.exists(path):
+        return 0
+    parts = open(path, encoding="utf-8").read().split("\n\n")
+    out, n = [], 0
+    for x in parts:
+        if out and x.strip() and x.strip() == out[-1].strip():
+            n += 1
+            continue
+        out.append(x)
+    if n:
+        open(path, "w", encoding="utf-8").write("\n\n".join(out))
+    return n
+
+
 def en_items():
     """把 seo/en_entries.py 变成 geo_kit 的 Item 列表。"""
     import geo_kit as G
@@ -687,6 +711,11 @@ def main():
             rel = "/" + (rel[:-len("index.html")] if rel.endswith("index.html") else rel)
             open(p, "w", encoding="utf-8").write(finish(s, rel))
             n_fix += 1
+
+    # 去重必须在**本地化之后**：llms.txt 开头是「英文自述 + 中文自述」两段，
+    # 翻译之前它们一中一英、不重复；翻完才变成一字不差的两段。放在翻译前跑
+    # 等于什么都没做 —— 我第一版就放错了位置，跑完还是两段。
+    _dedupe_paragraphs(os.path.join(OUT, "llms.txt"))
 
     print("English site: %d chapter pages rendered, %d files localised" % (n_ch, n_fix))
     return 0
