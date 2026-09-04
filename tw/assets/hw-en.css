@@ -1,14 +1,29 @@
 /* 由 scripts/build_en.py 生成，別手改 —— 改這裡的話下次構建就沒了。 */
 html[lang="en"]{
-  --display:"Songti SC","Noto Serif CJK SC","Source Han Serif SC","Source Han Serif",Georgia,"Times New Roman",serif;
-  --quote:"Songti SC","Noto Serif CJK SC","Source Han Serif SC","Source Han Serif",Georgia,"Times New Roman",serif;
-  --sans:"PingFang SC","HarmonyOS Sans SC","Hiragino Sans GB","Microsoft YaHei",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+  --display:"Playfair Display",Georgia,"Times New Roman",serif;
+  --quote:"Playfair Display",Georgia,"Times New Roman",serif;
+  --read:"Source Serif 4",Charter,Georgia,"Times New Roman",serif;
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
   /* 站名那幾條帶 !important（要壓住首頁內聯樣式），所以只能從值這一層
      覆蓋 —— 見 assets/hw-home-lockup.css 裡同一處的註釋。 */
-  --brand-serif:"Songti SC","Noto Serif CJK SC","Source Han Serif SC","Source Han Serif",Georgia,"Times New Roman",serif;
+  --brand-serif:"Playfair Display",Georgia,"Times New Roman",serif;
   --brand-track:0;
 }
 html[lang="en"] body{font-family:var(--sans)}
+/* 正文用襯線：這個站的英文頁是拿來**讀一整頁**的，不是掃一眼。
+   界面文字（導航、膠囊、按鈕）留在 --sans 上。 */
+html[lang="en"] article,
+html[lang="en"] .dek,
+html[lang="en"] .lede,
+html[lang="en"] .idx,
+html[lang="en"] .sec p,
+html[lang="en"] blockquote{font-family:var(--read)}
+/* 眉標是界面標籤不是正文（「Mind and feeling」那一行），它在 article
+   裡面，會被上面那條掃到 —— 顯式撥回無襯線。 */
+html[lang="en"] .kicker,
+html[lang="en"] .sec-k,
+html[lang="en"] .chip,
+html[lang="en"] .ph{font-family:var(--sans)}
 html[lang="en"] h1,
 html[lang="en"] h2,
 html[lang="en"] .one,
@@ -20,6 +35,6 @@ html[lang="en"] blockquote{font-family:var(--quote)}
 html[lang="en"] h1,
 html[lang="en"] .one,
 html[lang="en"] .hd-title,
-html[lang="en"] .point h2{letter-spacing:-.015em}
+html[lang="en"] .point h2{letter-spacing:-.02em}
 html[lang="en"] .kicker,
 html[lang="en"] .sec-k{letter-spacing:.008em}

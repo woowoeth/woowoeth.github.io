@@ -219,14 +219,23 @@ CJK_WEBFONTS = ("Noto+Serif+SC", "Noto+Sans+SC", "Noto+Serif+TC",
 # 三类版式各抽一页，每页量标题和正文两个层面。抽样表里少一类版式，那一类
 # 就没人看着 —— 首页的字体族是写死在内联 <style> 里的，条目页走
 # /assets/hw-en.css，两条路完全不同。
+# 抽样的选择器必须指到**那一类字体真正管的元素**。踩过：写 "article p"
+# 抽正文，而 article 里第一个 p 是 p.kicker —— 界面标签，本来就该是无衬线。
+# 闸门于是报「正文不是衬线」，而正文其实是对的：抽样抽偏了，不是产物坏了。
+#
+# 三类版式各抽一页，每处标明该用哪一类字体。角色必须写在表里，不能靠
+# 「叫正文的就是无衬线」这种猜 —— 英文站是杂志排法：标题 display、
+# 正文 read（衬线）、界面 sans，三类各有各的值，猜一定会猜错一类。
 FONT_SAMPLE = [
-    ("英文首页", "/en/", [("标题", ".hd-title"), ("正文", "body")]),
+    ("英文首页", "/en/", [("站名", ".hd-title", "display"),
+                          ("界面", "body", "sans")]),
     ("英文条目", "/en/i/su-shi/",
-     [("标题", "h1"), ("正文", "article p"), ("眉标", ".kicker")]),
+     [("标题", "h1", "display"), ("正文", ".sec p", "read"),
+      ("眉标", ".kicker", "sans")]),
     ("英文章节", "/en/i/su-shi/no-wind-no-rain/",
-     [("标题", "h1"), ("正文", "article p")]),
-    ("英文分类", "/en/t/mind-and-feeling/", [("标题", "h1")]),
-    ("英文全集", "/en/all/", [("标题", "h1")]),
+     [("标题", "h1", "display"), ("正文", ".sec p", "read")]),
+    ("英文分类", "/en/t/mind-and-feeling/", [("标题", "h1", "display")]),
+    ("英文全集", "/en/all/", [("标题", "h1", "display")]),
 ]
 
 
@@ -257,8 +266,9 @@ def rendered_fonts(port=8932):
     import time
     sys.path.insert(0, HERE)
     import build_en
-    want_disp = _norm(build_en.EN_DISPLAY)
-    want_sans = _norm(build_en.EN_SANS)
+    WANT = {"display": build_en.EN_DISPLAY,
+            "read": build_en.EN_READ,
+            "sans": build_en.EN_SANS}
 
     srv = subprocess.Popen([sys.executable, "-m", "http.server", str(port)],
                            cwd=ROOT, stdout=subprocess.DEVNULL,
@@ -282,7 +292,7 @@ def rendered_fonts(port=8932):
                                    % (label, w.replace("+", " ")))
                         break
                 # ⓑ 解出来的字体栈
-                for what, sel in spots:
+                for what, sel, role in spots:
                     fam = pg.evaluate(
                         "s => { const e = document.querySelector(s);"
                         " return e ? getComputedStyle(e).fontFamily : null }", sel)
@@ -290,14 +300,11 @@ def rendered_fonts(port=8932):
                         out.append("%s 的%s（%s）在页面上找不到 —— 抽样表要跟着改"
                                    % (label, what, sel))
                         continue
-                    got = _norm(fam)
-                    want = want_disp if what == "标题" else want_sans
-                    if got != want:
-                        out.append("%s 的%s 解出的不是英文站那一套：\n"
+                    if _norm(fam) != _norm(WANT[role]):
+                        out.append("%s 的%s 解出的不是英文站的「%s」那一套：\n"
                                    "      得到 %s\n      应为 %s"
-                                   % (label, what, fam[:110],
-                                      (build_en.EN_DISPLAY if what == "标题"
-                                       else build_en.EN_SANS)[:110]))
+                                   % (label, what, role, fam[:110],
+                                      WANT[role][:110]))
             b.close()
     finally:
         srv.terminate()

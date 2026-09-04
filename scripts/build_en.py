@@ -1,3 +1,29 @@
+# 英文页按**杂志**排：Playfair Display 做标题，Source Serif 4 做正文。
+# 杂志排法的要点是标题和正文分工，不是一个家族通吃 —— 标题要有编辑性格
+# （高对比、字面收紧，压得住版面），正文要的是另一回事（耐读、字宽均匀、
+# 一整页不累）。用同一个字体做两件事，标题不够抢，正文不够稳。
+#
+# 走到这一步试过四套：
+#
+#   ① 思源宋体（主站原来的样子）—— 那是**下载**下来的 CJK 网络字体，
+#      它的西文是为「和汉字并排」设计的：窄、低对比、重心跟着汉字身框走。
+#      单独排一整页英文就是「完全不适合阅读」。
+#   ② Songti SC（照抄原声站）—— 不下载网络字体，落到系统自带的宋体。
+#      比 ① 好，但它同样是 CJK 字体的配套西文：偏细、字宽不匀，
+#      小段落还行，一整页长文撑不住。
+#   ③ Source Serif 4 通篇 —— Adobe 专门为屏幕阅读做的西文衬线：x 高度大、
+#      笔画结实、字宽均匀。正文对了，但标题也用它，版面平，没有杂志感。
+#   ④ Playfair Display 标题 + Source Serif 4 正文 —— 现在这一套。
+#
+# 教训是 ①②③ 共同的：判断一个西文字体，得拿**一整段真实正文**在真实
+# 字号下看，不能拿标题看 —— 标题上三套差别很小，正文上差别是决定性的。
+#
+# 备选（换的话只改下面两个常量，别的都不用动）：
+#   Fraunces 标题 + Newsreader 正文 —— 性格更强，「旧字模」的不规则感
+#   Newsreader 通篇 —— 本来就是为新闻杂志做的，一个家族最协调
+#   Libre Bodoni 标题 + Lora 正文 —— 时装／文化杂志那一路
+#
+# 界面文字（导航、胶囊、按钮）留系统无衬线：12px 的衬线不够清晰。
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """Build the English site into /en/.
@@ -74,13 +100,15 @@ LOCALE = [
 # 整条 Google Fonts 链接换掉，不是逐个字体名替换：英文要的是另外两个族
 # （Newsreader 做标题、Source Serif 4 做正文），字重也不一样。
 # 具体的变量覆盖在 assets/hw-entry.css 末尾的 html[lang="en"] 块里。
-# 逐字抄自 boke/podcast 的 assets/site.css --serif
-EN_DISPLAY = ('"Songti SC","Noto Serif CJK SC","Source Han Serif SC",'
-              '"Source Han Serif",Georgia,"Times New Roman",serif')
-# 逐字抄自 boke/podcast 的 assets/site.css --sans
-EN_SANS = ('"PingFang SC","HarmonyOS Sans SC","Hiragino Sans GB",'
-           '"Microsoft YaHei",-apple-system,BlinkMacSystemFont,'
-           '"Segoe UI",Roboto,sans-serif')
+EN_DISPLAY = '"Playfair Display",Georgia,"Times New Roman",serif' 
+EN_READ = '"Source Serif 4",Charter,Georgia,"Times New Roman",serif'
+# 界面无衬线：一个 CJK 字体名都不留 —— 它们的西文是配汉字设计的
+EN_SANS = ('-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,'
+           '"Helvetica Neue",Arial,sans-serif')
+
+SSF_URL = ("https://fonts.googleapis.com/css2?family=Playfair+Display:"
+           "wght@600;700;800&family=Source+Serif+4:"
+           "opsz,wght@8..60,400;8..60,600;8..60,700&display=swap")
 
 FONT = [
     ("https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;600;700;900"
@@ -103,8 +131,8 @@ FONT = [
     ('"PingFang SC","HarmonyOS Sans SC","Hiragino Sans GB","Microsoft YaHei",'
      '-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif', EN_SANS),
     # 兜底：漏网的字体名换成拉丁族，别把 CJK 字体名留在英文页上
-    ("Noto+Serif+SC", "Songti+SC"),
-    ("Noto Serif SC", "Songti SC"),
+    ("Noto+Serif+SC", "Source+Serif+4"),
+    ("Noto Serif SC", "Source Serif 4"),
 ]
 
 # 赞赏码：英文页用 AlipayHK，和繁体站同一个。大陆个人收款码在境外收不了；
@@ -149,6 +177,7 @@ EN_CSS = """/* 由 scripts/build_en.py 生成，别手改 —— 改这里的话
 html[lang="en"]{
   --display:%(disp)s;
   --quote:%(disp)s;
+  --read:%(read)s;
   --sans:%(sans)s;
   /* 站名那几条带 !important（要压住首页内联样式），所以只能从值这一层
      覆盖 —— 见 assets/hw-home-lockup.css 里同一处的注释。 */
@@ -156,6 +185,20 @@ html[lang="en"]{
   --brand-track:0;
 }
 html[lang="en"] body{font-family:var(--sans)}
+/* 正文用衬线：这个站的英文页是拿来**读一整页**的，不是扫一眼。
+   界面文字（导航、胶囊、按钮）留在 --sans 上。 */
+html[lang="en"] article,
+html[lang="en"] .dek,
+html[lang="en"] .lede,
+html[lang="en"] .idx,
+html[lang="en"] .sec p,
+html[lang="en"] blockquote{font-family:var(--read)}
+/* 眉标是界面标签不是正文（「Mind and feeling」那一行），它在 article
+   里面，会被上面那条扫到 —— 显式拨回无衬线。 */
+html[lang="en"] .kicker,
+html[lang="en"] .sec-k,
+html[lang="en"] .chip,
+html[lang="en"] .ph{font-family:var(--sans)}
 html[lang="en"] h1,
 html[lang="en"] h2,
 html[lang="en"] .one,
@@ -167,10 +210,10 @@ html[lang="en"] blockquote{font-family:var(--quote)}
 html[lang="en"] h1,
 html[lang="en"] .one,
 html[lang="en"] .hd-title,
-html[lang="en"] .point h2{letter-spacing:-.015em}
+html[lang="en"] .point h2{letter-spacing:-.02em}
 html[lang="en"] .kicker,
 html[lang="en"] .sec-k{letter-spacing:.008em}
-""" % {"disp": EN_DISPLAY, "sans": EN_SANS}
+""" % {"disp": EN_DISPLAY, "read": EN_READ, "sans": EN_SANS}
 EN_CSS_HREF = "/assets/hw-en.css?v=1"
 
 
@@ -463,7 +506,7 @@ def write_home(items):
     # 不换的话英文金句会被宋体渲染 —— 西文字形是配汉字设计的，单独排一句
     # 英文重心和字宽都不对，而这张卡是要被读者存下来转发的。
     s = _sub_once(s, r"const DQ_FONT='[^']*';",
-                  "const DQ_FONT='\"Songti SC\",Georgia,serif';", "DQ_FONT")
+                  "const DQ_FONT='\"Playfair Display\",Georgia,serif';", "DQ_FONT")
 
     # 哪些条目是「作品」不是「人」—— 前端据此说「it says」还是「he says」。
     # 中文那份列的是中文书名。这一批 30 个里，三个不是人。

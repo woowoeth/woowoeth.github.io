@@ -35,7 +35,7 @@
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{background:var(--paper)}
-body{font-family:"PingFang SC","HarmonyOS Sans SC","Hiragino Sans GB","Microsoft YaHei",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;color:var(--ink);-webkit-font-smoothing:antialiased;font-optical-sizing:auto;line-height:1.55;min-height:100vh}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;color:var(--ink);-webkit-font-smoothing:antialiased;font-optical-sizing:auto;line-height:1.55;min-height:100vh}
 .wrap{max-width:1120px;margin:0 auto;padding:0 clamp(20px,4vw,48px) 96px}
 
 /* skip-link + focus */
@@ -66,7 +66,7 @@ body{font-family:"PingFang SC","HarmonyOS Sans SC","Hiragino Sans GB","Microsoft
 .brand-lockup:hover{color:inherit}
 .brand-logo{width:44px;height:44px;border-radius:11px;flex:none;box-shadow:0 1px 0 rgba(28,25,23,.06)}
 .brand-copy{display:flex;flex-direction:column;gap:4px;min-width:0}
-.hd-title{font-family:"Songti SC","Noto Serif CJK SC","Source Han Serif SC","Source Han Serif",Georgia,"Times New Roman",serif;font-size:clamp(22px,4.2vw,42px);font-weight:700;letter-spacing:-.03em;line-height:1.05}
+.hd-title{font-family:"Playfair Display",Georgia,"Times New Roman",serif;font-size:clamp(22px,4.2vw,42px);font-weight:700;letter-spacing:-.03em;line-height:1.05}
 .hd-title .dot{color:#9d2933}
 .hd-en{font-size:13.5px;color:var(--ink-50);letter-spacing:0;font-weight:400;margin:0}
 .hd-row{display:none}
@@ -81,7 +81,7 @@ body{font-family:"PingFang SC","HarmonyOS Sans SC","Hiragino Sans GB","Microsoft
 .hd::after{content:'';position:absolute;left:24px;right:24px;bottom:0;height:1px;background:linear-gradient(90deg,transparent,rgba(42,46,44,.10),transparent)}
 .brand{font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-50);margin-bottom:11px}
 .hd-row{display:flex;align-items:baseline;gap:12px;margin-bottom:13px;flex-wrap:wrap}
-.hd-title{font-family:"Songti SC","Noto Serif CJK SC","Source Han Serif SC","Source Han Serif",Georgia,"Times New Roman",serif;font-size:28px;font-weight:700;letter-spacing:-.03em;line-height:1.05}
+.hd-title{font-family:"Playfair Display",Georgia,"Times New Roman",serif;font-size:28px;font-weight:700;letter-spacing:-.03em;line-height:1.05}
 .hd-en{font-size:13px;color:var(--ink-50);letter-spacing:-.005em;font-weight:400}
 .hd-stats{display:none}.share-btn{font:inherit;font-size:12px;font-weight:600;letter-spacing:.06em;padding:5px 12px;border-radius:999px;border:1px solid var(--line-strong);background:var(--white);color:var(--ink);cursor:pointer}.share-btn:active{transform:scale(.97)}
 .stat{font-size:12px;color:var(--ink-50);font-variant-numeric:tabular-nums}
@@ -301,7 +301,7 @@ body{background:var(--paper);color:var(--ink)}
 @media(max-width:480px){#hwx .askhero .ahead{padding-right:38px}}
 #hwx .tq{border:1px solid var(--line);border-radius:16px;padding:20px 22px;background:transparent;display:flex;flex-direction:column}
 #hwx .tq .dt{font-size:12.5px;letter-spacing:.24em;color:var(--acc);font-weight:700;margin-bottom:6px}
-#hwx .tq .q{font-family:"Songti SC","Noto Serif CJK SC","Source Han Serif SC","Source Han Serif",Georgia,"Times New Roman",serif;font-size:clamp(20px,3.6vw,26px);font-weight:700;line-height:1.85;margin-bottom:14px}
+#hwx .tq .q{font-family:"Playfair Display",Georgia,"Times New Roman",serif;font-size:clamp(20px,3.6vw,26px);font-weight:700;line-height:1.85;margin-bottom:14px}
 #hwx .tq .src{font-size:13.5px;color:var(--muted)}
 #hwx .tq .src a{color:var(--acc);text-decoration:none}
 #hwx .tq .tgl{font-size:14.5px;line-height:1.75;color:var(--ink);opacity:.72;margin:0 0 10px}
@@ -314,7 +314,7 @@ body{background:var(--paper);color:var(--ink)}
 #hwx .askhero #hwx-asc-tag{margin:-6px 0 14px}
 /* 搜不到时的那块。语气跟站上一致：先说没找到什么，再给一条出路。 */
 #hwx #hwx-none{border:1px dashed var(--line);border-radius:14px;padding:20px 18px;margin:14px 0 8px;text-align:center}
-#hwx #hwx-none b{display:block;font-family:"Songti SC","Noto Serif CJK SC","Source Han Serif SC","Source Han Serif",Georgia,"Times New Roman",serif;font-size:17px;line-height:1.7;color:var(--ink)}
+#hwx #hwx-none b{display:block;font-family:"Playfair Display",Georgia,"Times New Roman",serif;font-size:17px;line-height:1.7;color:var(--ink)}
 #hwx #hwx-none i{display:block;font-style:normal;font-size:13.5px;line-height:1.8;color:var(--muted);margin:6px 0 14px}
 #hwx #hwx-none button{border:1px solid var(--ink);background:var(--ink);color:var(--paper);border-radius:999px;padding:7px 18px;font-family:inherit;font-size:13.5px;cursor:pointer}
 #hwx .askhero #hwx-asc-tag button{border:0;background:transparent;color:var(--muted);padding:0;font-family:inherit;font-size:12.5px;line-height:1.7;cursor:pointer;text-align:left}
@@ -328,15 +328,15 @@ body{background:var(--paper);color:var(--ink)}
 #hwx .amine button{flex:0 0 auto;height:30px;margin:6px 0;border:none;border-radius:9px;background:var(--ink);color:var(--paper);font-family:inherit;font-size:14px;line-height:30px;padding:0 14px;cursor:pointer}
 #hwx .amine button:disabled{opacity:.4;cursor:default}
 
-#hwx .askhero .said{font-family:"Songti SC","Noto Serif CJK SC","Source Han Serif SC","Source Han Serif",Georgia,"Times New Roman",serif;font-size:13.5px;color:var(--acc);line-height:1.7;margin:11px 0 0}
-#hwx .askhero .q{font-family:"Songti SC","Noto Serif CJK SC","Source Han Serif SC","Source Han Serif",Georgia,"Times New Roman",serif;font-size:21px;font-weight:700;line-height:1.75;margin:0 0 14px}
+#hwx .askhero .said{font-family:"Playfair Display",Georgia,"Times New Roman",serif;font-size:13.5px;color:var(--acc);line-height:1.7;margin:11px 0 0}
+#hwx .askhero .q{font-family:"Playfair Display",Georgia,"Times New Roman",serif;font-size:21px;font-weight:700;line-height:1.75;margin:0 0 14px}
 #hwx .askhero .sc{font-size:13.5px;color:var(--muted);line-height:1.8;margin:0;padding-left:12px;border-left:2px solid var(--line)}
 #hwx .askhero .go a{display:block;text-decoration:none;color:inherit;border-top:1px dashed var(--line);padding-top:11px;margin-top:12px}
 #hwx .askhero .go a.lead b{font-size:17px;color:var(--ink)}
 #hwx .askhero .go a.lead i{font-size:14px;line-height:1.75;color:var(--ink);opacity:.85}
 #hwx .askhero .go a.sub b{font-size:14px}
 #hwx .askhero .go a.sub i{font-size:12.5px}
-#hwx .askhero .go b{font-family:"Songti SC","Noto Serif CJK SC","Source Han Serif SC","Source Han Serif",Georgia,"Times New Roman",serif;font-size:15.5px;display:block}
+#hwx .askhero .go b{font-family:"Playfair Display",Georgia,"Times New Roman",serif;font-size:15.5px;display:block}
 #hwx .askhero .go i{font-style:normal;font-size:12.5px;color:var(--muted);display:block;margin-top:3px}
 /* Today's question主篇下的「这人是谁」：一天一张、位置最靠前，多一行凭据划算。
    处境卡不加——28 张连着刷，每张多一行会让扫读变慢，而卡片的主角是那句问题。 */
@@ -360,17 +360,17 @@ body{background:var(--paper);color:var(--ink)}
 #hwx .tbox{border:1px solid var(--line);border-radius:16px;padding:14px 16px;flex:1}
 #hwx .tbox .lb{font-size:11.5px;letter-spacing:.28em;color:var(--acc);font-weight:700;margin-bottom:6px}
 #hwx .tbox a{color:inherit;text-decoration:none;display:block}
-#hwx .tbox b{font-family:"Songti SC","Noto Serif CJK SC","Source Han Serif SC","Source Han Serif",Georgia,"Times New Roman",serif;font-size:16.5px}
+#hwx .tbox b{font-family:"Playfair Display",Georgia,"Times New Roman",serif;font-size:16.5px}
 #hwx .tbox .hint{display:block;font-size:14.5px;color:var(--ink);opacity:.72;margin-top:4px;line-height:1.65}
 #hwx .tbox .hint2{display:block;font-size:14px;color:var(--acc);opacity:.92;margin-top:6px;line-height:1.6}
-#hwx .hh{font-family:"Songti SC","Noto Serif CJK SC","Source Han Serif SC","Source Han Serif",Georgia,"Times New Roman",serif;font-size:21px;font-weight:700;margin:24px 0 10px;letter-spacing:.03em;display:flex;justify-content:space-between;align-items:baseline}
+#hwx .hh{font-family:"Playfair Display",Georgia,"Times New Roman",serif;font-size:21px;font-weight:700;margin:24px 0 10px;letter-spacing:.03em;display:flex;justify-content:space-between;align-items:baseline}
 #hwx .hh .ct{font-size:12px;color:var(--muted);font-weight:500}
 #hwx .sc{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 0}
 #hwx .scmore{order:9999;flex:0 0 auto;border:1px dashed var(--line);background:transparent;color:var(--acc);border-radius:999px;padding:7px 14px;font-family:inherit;font-size:14.5px;cursor:pointer;white-space:nowrap;line-height:1.6}
 #hwx .scmore:hover{border-color:var(--acc)}
 /* 组名独占一行。试过与标签同行以省高度，结果组名混在标签流里像半个标签，
    比原来更乱——高度靠「每组只露 2 个」和紧凑的行距来收，不靠挤掉标题。 */
-#hwx .scg{flex:0 0 100%;font-family:"Songti SC","Noto Serif CJK SC","Source Han Serif SC","Source Han Serif",Georgia,"Times New Roman",serif;font-size:11.5px;color:var(--muted);letter-spacing:.1em;margin:9px 0 -2px;padding:0;line-height:1.4}
+#hwx .scg{flex:0 0 100%;font-family:"Playfair Display",Georgia,"Times New Roman",serif;font-size:11.5px;color:var(--muted);letter-spacing:.1em;margin:9px 0 -2px;padding:0;line-height:1.4}
 #hwx .scg:first-child{margin-top:0}
 #hwx .sc{row-gap:7px}
 #hwx .sc{flex-wrap:wrap!important;overflow-x:visible!important}
@@ -380,10 +380,10 @@ body{background:var(--paper);color:var(--ink)}
 #hwx .res.on{display:block}
 #hwx .res .qz{margin:0 0 14px}
 #hwx .res .qz:last-child{margin-bottom:2px}
-#hwx .res .qzq{font-family:"Songti SC","Noto Serif CJK SC","Source Han Serif SC","Source Han Serif",Georgia,"Times New Roman",serif;font-size:16px;font-weight:700;line-height:1.6;margin-bottom:4px}
+#hwx .res .qzq{font-family:"Playfair Display",Georgia,"Times New Roman",serif;font-size:16px;font-weight:700;line-height:1.6;margin-bottom:4px}
 #hwx .res .qzq::before{content:"？";color:var(--acc);font-weight:900;margin-right:5px}
 #hwx .res a{display:block;padding:4px 0 4px 16px;text-decoration:none;color:inherit}
-#hwx .res a b{font-family:"Songti SC","Noto Serif CJK SC","Source Han Serif SC","Source Han Serif",Georgia,"Times New Roman",serif;font-size:15px;font-weight:600}
+#hwx .res a b{font-family:"Playfair Display",Georgia,"Times New Roman",serif;font-size:15px;font-weight:600}
 #hwx .res a span{display:block;font-size:13.5px;color:var(--muted);line-height:1.6}
 #hwx .res a:hover b{border-bottom:1px solid}
 #hwx .hist{display:none;align-items:center;gap:8px;margin:0 0 14px;font-size:13px}
@@ -400,12 +400,19 @@ header.hd{margin-bottom:12px!important}
 /* 一行入口：两行结构（标题+计数 / 提示语），替代原先 1049px 的标签目录。
    试过 flex 单行，三段挤在一起且箭头折行——中文没有词间空格，靠 gap 撑不开。 */
 #hwx .scline{display:block;width:100%;background:transparent;border:none;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:15px 2px;margin:16px 0 0;cursor:pointer;color:inherit;text-align:left;font-family:inherit}
-#hwx .scline b{font-family:"Songti SC","Noto Serif CJK SC","Source Han Serif SC","Source Han Serif",Georgia,"Times New Roman",serif;font-size:19px;font-weight:700;margin-right:10px}
+#hwx .scline b{font-family:"Playfair Display",Georgia,"Times New Roman",serif;font-size:19px;font-weight:700;margin-right:10px}
 #hwx .scline span{font-size:12.5px;color:var(--muted)}
 #hwx .scline i{display:block;font-style:normal;margin-top:6px;font-size:13px;color:var(--acc)}
 #hwx .tabs2{flex-shrink:0}
+@media(max-width:700px){
+/* 标签行和右边那个计数在一行放不下时换行，而不是把整页顶宽。
+   英文的标签比中文长得多（「Situations」对「境」），换成杂志标题字体
+   之后又宽了一截，两件事叠起来在 375px 上就超了 17px —— 而超出的那一下
+   是把**整页**顶成横向可滚，不只是这一行难看。
+   （父容器的 display:flex 是写在行内 style 上的，只能从这里补 wrap。） */
+#hwx div:has(> .tabs2){flex-wrap:wrap;row-gap:4px}}
 #hwx .tabs2{display:flex;gap:0;border-bottom:2px solid var(--line);margin:14px 0 0}
-#hwx .tabs2 button{border:none;background:transparent;padding:9px 20px;font-family:"Songti SC","Noto Serif CJK SC","Source Han Serif SC","Source Han Serif",Georgia,"Times New Roman",serif;font-size:17px;font-weight:600;color:var(--muted);cursor:pointer;border-bottom:3px solid transparent;margin-bottom:-2px}
+#hwx .tabs2 button{border:none;background:transparent;padding:9px 20px;font-family:"Playfair Display",Georgia,"Times New Roman",serif;font-size:17px;font-weight:600;color:var(--muted);cursor:pointer;border-bottom:3px solid transparent;margin-bottom:-2px}
 #hwx .tabs2 button.on{color:var(--ink);border-bottom-color:var(--acc)}
 #hwx .cats{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;margin:10px 0 0}
 #hwx .cats::-webkit-scrollbar{display:none}
@@ -436,7 +443,7 @@ header.hd{margin-bottom:12px!important}
    允许换行之后，放不下的小字自己掉到第二行，标题永远完整。
    实测 60 张卡：折行 9 → 0，卡片中位高 258px 不变。 */
 #hwx .pc .r1{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:8px}
-#hwx .pc b{font-family:"Songti SC","Noto Serif CJK SC","Source Han Serif SC","Source Han Serif",Georgia,"Times New Roman",serif;font-size:19px;line-height:1.45}
+#hwx .pc b{font-family:"Playfair Display",Georgia,"Times New Roman",serif;font-size:19px;line-height:1.45}
 #hwx .pc .tag{font-size:12.5px;color:var(--muted);white-space:nowrap;max-width:52%;overflow:hidden;text-overflow:ellipsis;font-style:normal}
 #hwx .pc .it{font-size:14px;color:var(--muted);margin:6px 0 9px;line-height:1.65}
 #hwx .pc .hk{font-size:15.5px;line-height:1.85;flex:1}
@@ -447,12 +454,12 @@ header.hd{margin-bottom:12px!important}
 #hwx .nc .pn{font-size:13px;color:var(--muted);margin-bottom:5px}
 #hwx .nc .pn i{font-style:normal;color:var(--acc)}
 #hwx .nc .nb{font-size:11px;background:var(--acc);color:#fff;border-radius:4px;padding:1px 5px;margin-left:5px;vertical-align:1px}
-#hwx .nc b{font-family:"Songti SC","Noto Serif CJK SC","Source Han Serif SC","Source Han Serif",Georgia,"Times New Roman",serif;font-size:19px;line-height:1.45}
+#hwx .nc b{font-family:"Playfair Display",Georgia,"Times New Roman",serif;font-size:19px;line-height:1.45}
 #hwx .nc .w{font-size:13px;color:var(--muted);margin:4px 0 10px}
 #hwx .nc .q{font-size:15.5px;line-height:1.85}
 #hwx .nc .q::before{content:"「"}#hwx .nc .q::after{content:"」"}
 #hwx .qc{border-radius:14px;background:var(--paper2);border:1px solid var(--line);padding:17px 15px 14px;display:flex;flex-direction:column;text-decoration:none;color:inherit;position:relative}
-#hwx .qc .v{writing-mode:vertical-rl;text-orientation:mixed;height:186px;width:fit-content;max-width:100%;font-family:"Songti SC","Source Han Serif SC","Songti SC","STSong","SimSun",serif;font-size:17px;font-weight:700;line-height:1.85;letter-spacing:.04em;margin:5px auto 12px;overflow:hidden;display:block}
+#hwx .qc .v{writing-mode:vertical-rl;text-orientation:mixed;height:186px;width:fit-content;max-width:100%;font-family:"Source Serif 4","Source Han Serif SC","Songti SC","STSong","SimSun",serif;font-size:17px;font-weight:700;line-height:1.85;letter-spacing:.04em;margin:5px auto 12px;overflow:hidden;display:block}
 #hwx .qc .v::before{content:"「"}#hwx .qc .v::after{content:"」"}
 #hwx .qc .who{font-size:12.5px;color:var(--muted);margin-top:2px}
 #hwx .qc .gl{font-size:13px;line-height:1.65;color:var(--ink);opacity:.72;margin:0 0 8px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
@@ -463,10 +470,10 @@ header.hd{margin-bottom:12px!important}
 #hwx .kc{position:relative;cursor:pointer}
 #hwx .kc:hover{border-color:rgba(163,59,46,.42)}
 :root[data-theme="dark"] #hwx .kc:hover{border-color:rgba(224,112,95,.5)}
-#hwx .kc .seal{position:absolute;top:13px;right:13px;width:22px;height:22px;border:1.5px solid var(--acc);border-radius:4px;color:var(--acc);font-size:11px;display:flex;align-items:center;justify-content:center;font-family:"Songti SC","Noto Serif CJK SC","Source Han Serif SC","Source Han Serif",Georgia,"Times New Roman",serif}
-#hwx .kc .said{font-size:12px;line-height:1.6;font-family:"Songti SC","Noto Serif CJK SC","Source Han Serif SC","Source Han Serif",Georgia,"Times New Roman",serif;margin-bottom:8px;color:var(--acc);padding-right:28px}
+#hwx .kc .seal{position:absolute;top:13px;right:13px;width:22px;height:22px;border:1.5px solid var(--acc);border-radius:4px;color:var(--acc);font-size:11px;display:flex;align-items:center;justify-content:center;font-family:"Playfair Display",Georgia,"Times New Roman",serif}
+#hwx .kc .said{font-size:12px;line-height:1.6;font-family:"Playfair Display",Georgia,"Times New Roman",serif;margin-bottom:8px;color:var(--acc);padding-right:28px}
 #hwx .kc .qm{display:none;font-size:25px;color:var(--acc);font-weight:900;line-height:1}
-#hwx .kc .t{font-family:"Songti SC","Noto Serif CJK SC","Source Han Serif SC","Source Han Serif",Georgia,"Times New Roman",serif;font-size:16.5px;font-weight:700;line-height:1.65;margin:9px 0 12px;flex:1;color:var(--ink)}
+#hwx .kc .t{font-family:"Playfair Display",Georgia,"Times New Roman",serif;font-size:16.5px;font-weight:700;line-height:1.65;margin:9px 0 12px;flex:1;color:var(--ink)}
 #hwx .kc .r a{display:block;font-size:13.5px;color:var(--muted);text-decoration:none;padding:4px 0}
 #hwx .kc .r a b{color:var(--ink);font-weight:600}
 .dq{display:none!important}
@@ -633,23 +640,23 @@ document.getElementById('hwx-ago').innerHTML=(a1.r||[]).slice(0,1).map(function(
 function drawCard(cb){
   var cv=document.createElement('canvas');cv.width=1080;cv.height=1440;var c=cv.getContext('2d');
   var loaded=0,need=3;function chk(){if(++loaded>=need)render();}
-  document.fonts.load('900 128px "Songti SC"').then(chk).catch(chk);
-  document.fonts.load('700 58px "Songti SC"').then(chk).catch(chk);
-  document.fonts.load('500 34px "Songti SC"').then(chk).catch(chk);
+  document.fonts.load('900 128px "Source Serif 4"').then(chk).catch(chk);
+  document.fonts.load('700 58px "Source Serif 4"').then(chk).catch(chk);
+  document.fonts.load('500 34px "Source Serif 4"').then(chk).catch(chk);
   function render(){
     c.fillStyle='#f5f1e8';c.fillRect(0,0,1080,1440);
     c.strokeStyle='#d8d2c6';c.lineWidth=2;c.strokeRect(46,46,988,1348);
-    c.fillStyle='#a33b2e';c.font='900 128px "Songti SC"';c.fillText(String(_n.getDate()),96,232);
-    c.fillStyle='#8a8377';c.font='500 34px "Songti SC"';c.fillText((_n.getMonth()+1)+' · '+WD[_n.getDay()],100,296);
+    c.fillStyle='#a33b2e';c.font='900 128px "Source Serif 4"';c.fillText(String(_n.getDate()),96,232);
+    c.fillStyle='#8a8377';c.font='500 34px "Source Serif 4"';c.fillText((_n.getMonth()+1)+' · '+WD[_n.getDay()],100,296);
     c.fillStyle='#9d2933';
     (function(x,y,w){var r=w*0.22;c.beginPath();
       c.moveTo(x+r,y);c.lineTo(x+w-r,y);c.quadraticCurveTo(x+w,y,x+w,y+r);
       c.lineTo(x+w,y+w-r);c.quadraticCurveTo(x+w,y+w,x+w-r,y+w);
       c.lineTo(x+r,y+w);c.quadraticCurveTo(x,y+w,x,y+w-r);
       c.lineTo(x,y+r);c.quadraticCurveTo(x,y,x+r,y);c.closePath();c.fill();})(880,110,104);
-    c.fillStyle='#fff';c.font='700 62px "Songti SC"';
+    c.fillStyle='#fff';c.font='700 62px "Source Serif 4"';
     c.textAlign='center';c.fillText('人',932,182);c.textAlign='left';
-    c.fillStyle='#1f1c17';c.font='700 58px "Songti SC"';
+    c.fillStyle='#1f1c17';c.font='700 58px "Source Serif 4"';
     var q='“'+q1.q+'”',lines=[],cur='',PUNC='，。、；：！？…」）';
     for(var i=0;i<q.length;i++){var tt=cur+q[i];if(c.measureText(tt).width>880&&PUNC.indexOf(q[i])<0){lines.push(cur);cur=q[i]}else cur=tt}
     if(cur)lines.push(cur);
@@ -658,7 +665,7 @@ function drawCard(cb){
     /* 解析：一句话，画在署名之上；行数按实际内容，不预留空档 */
     var ay=y+46;
     if(q1.gl){
-      c.fillStyle='#5f5850';c.font='500 31px "Songti SC"';
+      c.fillStyle='#5f5850';c.font='500 31px "Source Serif 4"';
       var wl=[],cu='';
       for(var j=0;j<q1.gl.length;j++){var tw=cu+q1.gl[j];
         if(c.measureText(tw).width>860&&PUNC.indexOf(q1.gl[j])<0){wl.push(cu);cu=q1.gl[j]}else cu=tw}
@@ -667,11 +674,11 @@ function drawCard(cb){
       wl.forEach(function(l){c.fillText(l,100,ay);ay+=46});
     }
     ay+=54;   /* 与上一段空出一行 */
-    c.fillStyle='#8a8377';c.font='500 34px "Songti SC"';
+    c.fillStyle='#8a8377';c.font='500 34px "Source Serif 4"';
     c.textAlign='right';c.fillText('— '+q1.who+' · '+q1.cn,980,ay);c.textAlign='left';
     c.strokeStyle='#d8d2c6';c.lineWidth=2;c.beginPath();c.moveTo(100,1230);c.lineTo(980,1230);c.stroke();
-    c.fillStyle='#1f1c17';c.font='700 34px "Songti SC"';c.fillText('Human World Rules',100,1318);
-    c.fillStyle='#a33b2e';c.font='500 30px "Songti SC"';c.fillText('OurWord.ai',100,1366);
+    c.fillStyle='#1f1c17';c.font='700 34px "Source Serif 4"';c.fillText('Human World Rules',100,1318);
+    c.fillStyle='#a33b2e';c.font='500 30px "Source Serif 4"';c.fillText('OurWord.ai',100,1366);
     var qr=new Image();
     qr.onload=function(){c.drawImage(qr,858,1244,122,122);cv.toBlob(cb,'image/png')};
     qr.onerror=function(){cv.toBlob(cb,'image/png')};
@@ -1296,7 +1303,7 @@ const DQ_PAL=[["#f7f4ec","#1f2328","#5b5f66","#9d2933"],
 const DQ_WORKS=new Set(["Excellent Sheep", "Rat Park", "Harvard Study of Adult Development"]);
 // 「己」「认」两个码位在汇文明朝体中是错字（渲染成 已 / 訒），已从字体子集剔除，
 // 这里的回退栈会自动接管这两个字，其余全部走汇文明朝体。
-const DQ_FONT='"Songti SC",Georgia,serif';
+const DQ_FONT='"Playfair Display",Georgia,serif';
 const DQ_NOSTART="、。，．；：？！）］｝」』》〉】’”…·‧%",DQ_NOEND="（［｛「『《〈【‘“";
 // 人工剔除：非格言（叙事/悲叹/口号/词表）、落款错误、以及重复句
 const DQ_DROP=[];

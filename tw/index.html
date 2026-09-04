@@ -404,6 +404,13 @@ header.hd{margin-bottom:12px!important}
 #hwx .scline span{font-size:12.5px;color:var(--muted)}
 #hwx .scline i{display:block;font-style:normal;margin-top:6px;font-size:13px;color:var(--acc)}
 #hwx .tabs2{flex-shrink:0}
+@media(max-width:700px){
+/* 標籤行和右邊那個計數在一行放不下時換行，而不是把整頁頂寬。
+   英文的標籤比中文長得多（「Situations」對「境」），換成雜誌標題字體
+   之後又寬了一截，兩件事疊起來在 375px 上就超了 17px —— 而超出的那一下
+   是把**整頁**頂成橫向可滾，不只是這一行難看。
+   （父容器的 display:flex 是寫在行內 style 上的，只能從這裡補 wrap。） */
+#hwx div:has(> .tabs2){flex-wrap:wrap;row-gap:4px}}
 #hwx .tabs2{display:flex;gap:0;border-bottom:2px solid var(--line);margin:14px 0 0}
 #hwx .tabs2 button{border:none;background:transparent;padding:9px 20px;font-family:"Noto Serif TC","Source Han Serif SC","Songti SC","STSong",serif;font-size:17px;font-weight:600;color:var(--muted);cursor:pointer;border-bottom:3px solid transparent;margin-bottom:-2px}
 #hwx .tabs2 button.on{color:var(--ink);border-bottom-color:var(--acc)}
