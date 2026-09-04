@@ -31,6 +31,7 @@ is different, and each rule below covers one way it actually goes wrong:
    风格偏好：dek 12-30 词、story 50-110 词、分则 20-55 词、例 8-40 词、
    金句 ≤14 词。
    靠眼睛盯 79 章必漏，所以让机器数。
+⑩ 条目记录不带 == 强调（条目页不渲染它，会显示成两个字面的等号）。
 ⑨ 章节数据自身完整：每章七个字段都在，f 至少两条，q 至少两条，
    story 里恰好一处 ==…== 强调（模板拿它做引文块，没有就是一段白文，
    两处则第二处不会被渲染）。
@@ -156,6 +157,15 @@ def main():
     for key in sorted(q_of):
         if key not in QUOTE_ASKS_EN:
             bad.append("no today's line for chapter %s" % key)
+
+    # ⑩ 条目记录不许带 == 强调：章节页渲染它，条目页不渲染（geo_kit 那条路径
+    #    没有这一步，中文站的条目记录也从不用它）。带进来就是页面上两个等号。
+    from en_entries import ENTRIES as _EN
+    for e in _EN:
+        flat = repr(e)
+        if "==" in flat:
+            bad.append("entry %s uses == emphasis, which entry pages don't render"
+                       % e["slug"])
 
     # ⑧⑨ 章节自身
     def words(x):

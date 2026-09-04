@@ -11,7 +11,11 @@ Two rules this file follows that the Chinese one doesn't have to:
    entry with no English page sends the reader to a Chinese one.
    scripts/check_en.py fails the build on a ref outside the set.
 
-② **The entry story must not be a chapter's story.** Several Chinese entries
+② **条目记录里不写 == 强调。** 章节页会把 ==…== 渲染成红色着重，条目页不会
+   —— geo_kit 那条渲染路径没有这一步，中文站的条目记录也从来不用它。
+   带进来的后果是页面上出现两个字面的等号。scripts/check_en.py 会拦。
+
+③ **The entry story must not be a chapter's story.** Several Chinese entries
    open with the same scene their first chapter opens with — Su Shi in the
    rain, Huineng's two verses, Fan Li's letter to Wen Zhong. That reads fine
    in Chinese because the reader arrives by name and the repetition is a
@@ -38,8 +42,8 @@ ENTRIES = [
             "clinic; campaigned to stop infant drowning in Huangzhou; lived "
             "on the city wall during a flood at Xuzhou saying that while he "
             "was there the water would not take the city; and left recipes. "
-            "==None of that is decoration on the poetry. It is the same "
-            "disposition doing different work.==",
+            "None of that is decoration on the poetry. It is the same "
+            "disposition doing different work.",
         "f": [
             {"n": "The openness has a structure",
              "d": "It wasn't a temperament he was born with. His writing "
@@ -98,8 +102,8 @@ ENTRIES = [
             "grow his own food. The officials sent there mostly died. He had "
             "a stone coffin made and slept beside it, on the reasoning that "
             "the only thing he had not yet let go of was the fear of dying. "
-            "One night he woke shouting. ==The way of the sage is complete "
-            "within my own nature== — he had spent twenty years looking "
+            "One night he woke shouting. The way of the sage is complete "
+            "within my own nature — he had spent twenty years looking "
             "outside for something that was not out there.",
         "f": [
             {"n": "The mind is the principle",
@@ -157,7 +161,7 @@ ENTRIES = [
             "sacred tortoise, dead three thousand years, wrapped in cloth and "
             "housed in the ancestral temple. Would that tortoise rather be "
             "dead and venerated, or alive and dragging its tail in the mud? "
-            "Alive in the mud, they said. ==Then go away==, said Zhuangzi. "
+            "Alive in the mud, they said. Then go away, said Zhuangzi. "
             "I intend to drag my tail in the mud. He refused the trade "
             "itself, not the job. Most of the strategists competing for those "
             "posts died in the resulting purges. He lived past eighty.",
@@ -218,8 +222,8 @@ ENTRIES = [
             "unrecognised among a band of hunters. Arriving at last at a "
             "monastery, he found two monks arguing about a banner moving in "
             "the wind — one saying the wind moved, the other saying the "
-            "banner moved. ==Neither the wind nor the banner is moving, he "
-            "said. Your minds are moving.== The abbot, hearing it, understood "
+            "banner moved. Neither the wind nor the banner is moving, he "
+            "said. Your minds are moving. The abbot, hearing it, understood "
             "who had just walked in. The remark is not a riddle. It is his "
             "whole method in one line: before adjusting the object, check "
             "the thing doing the looking.",
@@ -278,8 +282,8 @@ ENTRIES = [
             "capital. Fan Li went with him and stayed through the whole of "
             "it, and the plan he ran was measured in decades, not seasons — "
             "grow the population, stock the granaries, keep the enemy "
-            "complacent, and do not move early. ==The man famous for leaving "
-            "at the right moment had first spent twenty years not leaving.== "
+            "complacent, and do not move early. The man famous for leaving "
+            "at the right moment had first spent twenty years not leaving. "
             "Knowing when to go is not restlessness. It is the same faculty "
             "that knows when to stay.",
         "f": [
@@ -328,8 +332,8 @@ ENTRIES = [
         "story":
             "In 1967 Hong Kong was in the middle of riots. Bombs were being "
             "left in the streets, British firms were pulling out, and "
-            "property prices collapsed. Everyone was selling. ==He was "
-            "buying.== Three years later the city had stabilised and his "
+            "property prices collapsed. Everyone was selling. He was "
+            "buying. Three years later the city had stabilised and his "
             "holdings were worth several times what he paid. The move looks "
             "like nerve and is mostly arithmetic: he had done the work of "
             "imagining how it could go wrong, and he had the cash to be wrong "
@@ -386,8 +390,8 @@ ENTRIES = [
             "get him. At the Qin court Han Fei was undone by a fellow student "
             "from his own teacher's school, Li Si, who was jealous of him and "
             "spoke against him; he was imprisoned and forced to take poison. "
-            "==The man who wrote the definitive analysis of persuasion and "
-            "court intrigue was killed by a piece of court intrigue.== "
+            "The man who wrote the definitive analysis of persuasion and "
+            "court intrigue was killed by a piece of court intrigue. "
             "Knowing and being able to do it are not the same faculty.",
         "f": [
             {"n": "Law, method and position together",
@@ -446,8 +450,8 @@ ENTRIES = [
             "not passed, but awarded by seniority to a candidate who had "
             "simply been at it long enough. It was the only official "
             "recognition of his life and it arrived when it could change "
-            "nothing. ==By then he had been writing his 'idle book' for four "
-            "decades==: nearly five hundred stories, revised repeatedly, "
+            "nothing. By then he had been writing his 'idle book' for four "
+            "decades: nearly five hundred stories, revised repeatedly, "
             "circulated in manuscript among friends. He died before it was "
             "printed, and never knew.",
         "f": [
@@ -506,8 +510,8 @@ ENTRIES = [
             "4\u20132, losing only the first game \u2014 the first time a "
             "machine had beaten a world champion under tournament conditions, "
             "which at the time was itself the headline. He then had a year to "
-            "prepare, and IBM had a year to rebuild. ==What he faced in 1997 "
-            "was not the machine he had beaten.== That is the ordinary shape "
+            "prepare, and IBM had a year to rebuild. What he faced in 1997 "
+            "was not the machine he had beaten. That is the ordinary shape "
             "of it: you win the first round against a tool, conclude the "
             "threat was overstated, and meet a different thing the following "
             "year.",
@@ -565,8 +569,8 @@ ENTRIES = [
             "Cybernetics came out of the war. He worked on the problem of "
             "aiming anti-aircraft guns at aircraft that were manoeuvring \u2014 "
             "which meant predicting where a human pilot would go, and "
-            "correcting continuously from what the last shot did. ==The "
-            "feedback loop was invented while trying to shoot at people.== "
+            "correcting continuously from what the last shot did. The "
+            "feedback loop was invented while trying to shoot at people. "
             "That origin is why the ethics arrive so early in his work: he "
             "had already spent years modelling a person as a component in a "
             "system, and had seen exactly what that framing permits.",
@@ -624,8 +628,8 @@ ENTRIES = [
             "that circulated very widely, and the argument it makes \u2014 "
             "that the institutions doing the selecting are the problem, not "
             "the students being selected \u2014 is not one that makes a "
-            "person welcome inside those institutions. ==That is worth "
-            "knowing before reading it as a lecture to young people.== His "
+            "person welcome inside those institutions. That is worth "
+            "knowing before reading it as a lecture to young people. His "
             "target is the machinery: every step in it rational, and the sum "
             "a life with no direction.",
         "f": [
@@ -682,8 +686,8 @@ ENTRIES = [
             "running a prison simulation in the psychology building. Visiting "
             "on the sixth night, she saw prisoners being marched to the "
             "lavatory with bags over their heads and objected \u2014 not as a "
-            "methodological point but as a moral one. ==The experiment was "
-            "shut down the next morning.== Her career since has been one long "
+            "methodological point but as a moral one. The experiment was "
+            "shut down the next morning. Her career since has been one long "
             "version of the same argument: look at what the situation is "
             "doing to people before you look at the people.",
         "f": [
@@ -744,9 +748,9 @@ ENTRIES = [
             "loneliness work landed. He did not arrive arguing that people "
             "should be kinder; he arrived with blood pressure, inflammatory "
             "markers, sleep architecture and cognitive decline, on a subject "
-            "everyone else was treating as a mood. ==Once it had numbers "
+            "everyone else was treating as a mood. Once it had numbers "
             "attached it stopped being something you could be told to get "
-            "over.==",
+            "over.",
         "f": [
             {"n": "A signal, not a character defect",
              "d": "Read as a flaw, the first instinct is to say nothing, "
@@ -804,7 +808,7 @@ ENTRIES = [
             "That is not what it set out to measure. In 1938 the question was "
             "what kind of young man grows into a healthy, successful adult, "
             "and the instruments were physical: build, blood pressure, family "
-            "background. ==They measured skull dimensions.== Decade by decade "
+            "background. They measured skull dimensions. Decade by decade "
             "those predictors lost their explanatory power, and the one that "
             "survived was the thing nobody had planned to record. The sample "
             "contains men from excellent circumstances who ended isolated, "
@@ -868,9 +872,9 @@ ENTRIES = [
             "it. Move to a new city or leave an industry and the close "
             "friends survive \u2014 those few hold. What disappears is the "
             "wide band of people you used to see occasionally, and that is "
-            "precisely the layer that brings opportunities. ==So the drought "
+            "precisely the layer that brings opportunities. So the drought "
             "after a move is not imagined and not a comment on you. It is "
-            "structural==, and rebuilding that layer takes time, which is why "
+            "structural, and rebuilding that layer takes time, which is why "
             "the first year somewhere new is so often silent.",
         "f": [
             {"n": "It isn't willingness, it's whether the news is new",
@@ -927,8 +931,8 @@ ENTRIES = [
             "one phrase in the training material: a sincere smile. The "
             "airline was not satisfied with courtesy. It required the smile "
             "to be real \u2014 which means the employee has to manufacture "
-            "the feeling internally, and ==that part of the job has no hours, "
-            "no pay and no name==. She put it beside physical labour: lifting "
+            "the feeling internally, and that part of the job has no hours, "
+            "no pay and no name. She put it beside physical labour: lifting "
             "boxes tires you, and so does producing cheerfulness, except the "
             "second bill arrives late and usually gets recorded as 'she's "
             "changed'.",
@@ -988,8 +992,8 @@ ENTRIES = [
             "by the major journals, funding stopped, and for something like "
             "thirty years the study sat outside the mainstream \u2014 too "
             "hard to replicate cleanly, and pointed at a conclusion the field "
-            "was not organised around. ==Its rehabilitation came from "
-            "somewhere else entirely==: the follow-up data on American "
+            "was not organised around. Its rehabilitation came from "
+            "somewhere else entirely: the follow-up data on American "
             "servicemen returning from Vietnam, where the overwhelming "
             "majority of men addicted to heroin abroad simply stopped once "
             "home. Same people, same drug, different place.",
@@ -1048,8 +1052,8 @@ ENTRIES = [
             "His work nearly disappeared. He died of tuberculosis in 1934, "
             "and within two years his writing was suppressed in the Soviet "
             "Union, where it stayed largely unavailable for two decades. "
-            "==Thought and Language was not published in English until 1962, "
-            "twenty-eight years after his death.== So a body of work "
+            "Thought and Language was not published in English until 1962, "
+            "twenty-eight years after his death. So a body of work "
             "contemporary with Piaget's arrived in the West a generation "
             "late, into a field that had already settled its questions "
             "without it \u2014 which is part of why it reads as fresh now.",
@@ -1106,7 +1110,7 @@ ENTRIES = [
             "opposition, the second produces someone who doesn't consider "
             "anyone else. His third method turns the conflict into a shared "
             "problem: name what each side actually needs and find something "
-            "that meets both. ==Not a vote and not a compromise==, because "
+            "that meets both. Not a vote and not a compromise, because "
             "splitting the difference leaves everyone short. In the "
             "child-rearing thinking of 1962 this was close to heresy.",
         "f": [
@@ -1166,7 +1170,7 @@ ENTRIES = [
             "and the press ran a scandal about her private life, with crowds "
             "outside her house. In the same year she was awarded a second "
             "Nobel Prize, this time in chemistry, and was advised not to come "
-            "and collect it. ==She went.== The composure that produced the "
+            "and collect it. She went. The composure that produced the "
             "November lecture was not a one-off temperament. It was the same "
             "thing, repeatedly.",
         "f": [
@@ -1221,8 +1225,8 @@ ENTRIES = [
             "hours and he refused to give the short version: if you would not "
             "sit through the whole thing he would not present it, because the "
             "argument was cumulative and a summary would be taken as a "
-            "technique. ==So the ideas spread by people who had sat in a room "
-            "with him for a day==, which is why they arrived in doctrine "
+            "technique. So the ideas spread by people who had sat in a room "
+            "with him for a day, which is why they arrived in doctrine "
             "before they arrived in print, and why the version that reached "
             "business books is mostly the one he refused to give.",
         "f": [
@@ -1281,7 +1285,7 @@ ENTRIES = [
             "caused enough of a row that the union later revoked it. He built "
             "walls and a cottage at Chartwell with his own hands and wrote to "
             "a friend that he was spending his days laying bricks and writing "
-            "a book. ==Two hundred bricks and two thousand words a day.== It "
+            "a book. Two hundred bricks and two thousand words a day. It "
             "is the most exact description anyone has given of how to survive "
             "being shut out.",
         "f": [
@@ -1339,8 +1343,8 @@ ENTRIES = [
             "pseudonym was not modesty: the most famous Christian apologist "
             "in the English-speaking world had written a book in which the "
             "arguments he had made for thirty years stop working on him, and "
-            "he was not prepared to sign it. ==Friends began recommending it "
-            "to him, not knowing he had written it.== It went out under his "
+            "he was not prepared to sign it. Friends began recommending it "
+            "to him, not knowing he had written it. It went out under his "
             "own name only after his death.",
         "f": [
             {"n": "Name it correctly and you know how to treat it",
@@ -1399,7 +1403,7 @@ ENTRIES = [
             "called a confrontation with the unconscious \u2014 recording "
             "visions and dialogues in the notebooks that became the Red Book, "
             "which he kept private and which was not published until 2009. "
-            "==He was thirty-eight when it started.== The stages of life essay "
+            "He was thirty-eight when it started. The stages of life essay "
             "comes from someone who had already lost the morning's programme "
             "and had to find another.",
         "f": [
@@ -1455,8 +1459,8 @@ ENTRIES = [
             "The baboons made the second half of the argument. In a "
             "well-fed troop with few predators, most of the day goes on each "
             "other, so their stress hormones track social position rather "
-            "than physical danger. ==Low-ranking animals ran chronically "
-            "elevated cortisol and worse health across the board== \u2014 and "
+            "than physical danger. Low-ranking animals ran chronically "
+            "elevated cortisol and worse health across the board \u2014 and "
             "the exceptions were the ones with allies and with some ability "
             "to predict when they'd be harassed. That is where the real "
             "variable turned out to be: not how hard the pressure is, but "
@@ -1514,9 +1518,9 @@ ENTRIES = [
             "decade several large replication studies have measured mindset "
             "interventions at a fraction of the effect the popular version "
             "implies, close to zero in some populations, with the clearer "
-            "benefits concentrated among disadvantaged students. ==Dweck "
+            "benefits concentrated among disadvantaged students. Dweck "
             "herself has spent years arguing against the version of her own "
-            "idea that spread==, in particular against 'false growth mindset' "
+            "idea that spread, in particular against 'false growth mindset' "
             "\u2014 schools putting the words on a wall, praising effort that "
             "produced nothing, and treating the belief as a substitute for "
             "teaching.",
@@ -1575,8 +1579,8 @@ ENTRIES = [
             "The ninety per cent needs a caveat, and it is the honest part of "
             "this entry. Those figures come largely from models fitted to the "
             "same data they were then measured on, which inflates accuracy; "
-            "independent prospective tests have come out lower. ==What "
-            "survives the criticism is the direction, not the number==: "
+            "independent prospective tests have come out lower. What "
+            "survives the criticism is the direction, not the number: "
             "contempt, criticism, defensiveness and stonewalling really do "
             "predict worse outcomes, and contempt really is the strongest of "
             "the four. Treat it as a set of things to watch for in yourself, "
@@ -1635,9 +1639,9 @@ ENTRIES = [
             "literature. Couples therapy had a great deal to say about "
             "conflict, communication and repair, and almost nothing about "
             "desire in a long relationship, which was treated either as a "
-            "medical question or as a symptom of an unfixed conflict. ==So "
+            "medical question or as a symptom of an unfixed conflict. So "
             "the people who arrived saying nothing is wrong and nothing is "
-            "there had no category to be put in==, and were routinely treated "
+            "there had no category to be put in, and were routinely treated "
             "for a problem they did not have. Naming it was most of the "
             "contribution.",
         "f": [
@@ -1695,7 +1699,7 @@ ENTRIES = [
             "performance \u2014 no measuring who ran fastest, only whether "
             "each student held their own high heart-rate zone. That cohort "
             "went on to results far above their peers on international "
-            "science and maths assessments. ==The design detail is the point==: "
+            "science and maths assessments. The design detail is the point: "
             "removing the comparison is what let unathletic children work "
             "hard, and working hard is the whole of the mechanism.",
         "f": [
@@ -1754,8 +1758,8 @@ ENTRIES = [
             "whose parents worked, and a brief that amounted to keeping them "
             "from wrecking the stairwells. There was no curriculum to defend "
             "and no institution watching, so she could change the furniture "
-            "and watch what happened. ==The method came out of a childcare "
-            "problem in a slum==, not out of a laboratory \u2014 which is why "
+            "and watch what happened. The method came out of a childcare "
+            "problem in a slum, not out of a laboratory \u2014 which is why "
             "every part of it is about what the child can physically reach.",
         "f": [
             {"n": "Check whether the environment matches",

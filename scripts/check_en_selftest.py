@@ -17,6 +17,7 @@ import tempfile
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 SRC = os.path.join(HERE, "hwx_scenes_en.py")
+ENTRIES = os.path.join(ROOT, "seo", "en_entries.py")
 CHAP = os.path.join(ROOT, "seo", "chapters_en", "curie.py")
 QA = os.path.join(HERE, "quote_asks_en.py")
 GATE = os.path.join(HERE, "check_en.py")
@@ -99,6 +100,10 @@ CASES = [
      lambda s: s.replace('        "f": [\n            {"n": "Catch hold of one specific thing that must be done",',
                          '        "f_gone": [\n            {"n": "Catch hold of one specific thing that must be done",', 1),
      "needs at least 2", "chap"),
+    ("⑩ 条目记录里带了 == 强调",
+     lambda s: s.replace('"story":\n            "It is worth knowing the range',
+                         '"story":\n            "==It is worth==knowing the range', 1),
+     "uses == emphasis", "entries"),
     ("問句没有挂任何章节",
      lambda s: s.replace('("It hit me and I can\'t cool down.",\n     [("su-shi", "no-wind-no-rain")]),',
                          '("It hit me and I can\'t cool down.",\n     []),', 1),
@@ -131,10 +136,12 @@ def main():
     origs = {"scenes": orig, "gate": open(GATE, encoding="utf-8").read()}
     origs["qa"] = open(QA, encoding="utf-8").read()
     origs["chap"] = open(CHAP, encoding="utf-8").read()
+    origs["entries"] = open(ENTRIES, encoding="utf-8").read()
     paths = {"scenes": os.path.join(tmp, "scripts", "hwx_scenes_en.py"),
              "gate": os.path.join(tmp, "scripts", "check_en.py"),
              "qa": os.path.join(tmp, "scripts", "quote_asks_en.py"),
-             "chap": os.path.join(tmp, "seo", "chapters_en", "curie.py")}
+             "chap": os.path.join(tmp, "seo", "chapters_en", "curie.py"),
+             "entries": os.path.join(tmp, "seo", "en_entries.py")}
     for case in CASES:
         name, mutate, want = case[:3]
         which = case[3] if len(case) > 3 else "scenes"
