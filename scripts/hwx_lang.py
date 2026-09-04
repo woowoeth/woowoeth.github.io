@@ -21,38 +21,51 @@ HWL_B = "<!--/HWX:LANG-->"
 
 
 def _derived(dp):
-    return any(x in dp for x in ("/.git", "/tw", "/en", "node_modules", "__pycache__")) \
-        or dp.startswith((".git", "./tw", "./en"))
+    """这个目录是不是「派生出来的语言站」—— 是的话本脚本一个字都不该碰。
+
+    tw/ 由 build_tw.py 从简体产物整树转出，en/ 由 build_en.py 用英文数据生成。
+    本脚本往页面里盖的是**简体**挂件（切换日夜模式、/assets/… 的资源路径、
+    大陆支付宝收款码）。盖到 tw/ 上的后果实测过：553 页的「切換」变回「切换」、
+    资源指回简体站、繁体读者的 AlipayHK 码被换成大陆码 —— 页面照样渲染，
+    构建照样通过，只有逐字比对才看得出来。
+
+    **必须按路径段比，不能按子串比。** 第一版写的是 "/tw" in dp，于是
+    i/han-feizi/two-handles/ 被当成繁体目录跳过了 —— "/two-handles" 里就含
+    "/tw"。这样误伤了 5 页（two-nogales、two-kinds、two-handles、
+    two-ways-of-seeing、enlarging-huaihai），它们整层语言层、夜间模式、
+    聊天挂件全都没有，而且没有任何报错。
+    """
+    segs = [x for x in dp.replace("\\", "/").split("/") if x not in ("", ".")]
+    return bool(set(segs) & {".git", "tw", "en", "node_modules", "__pycache__"})
 
 
 def _en_paths():
     """英文版**真实存在**的那些路径（站内绝对路径，带首尾斜杠）。
 
-    为什么从数据推而不是走一遍 en/：英文站由 build_en.py 生成，而本脚本排在
-    它前面。走产物的话，第一次构建时 en/ 还不存在，hreflang 就会整批漏掉；
-    走数据则跟构建顺序无关，同一份输入永远算出同一个集合。
+    读的是构建出来的 en/ 树，不是源数据。第一版从 seo/chapters_en/ 推，
+    理由是「跟构建顺序无关」，但它推出来的是**计划**不是事实：那份数据里
+    有 30 个条目，而 build_en 目前只产出章节页，条目页和首页都还没有。
+    于是 hreflang 宣称 /en/ 存在，首访跟随把英文语系的读者 location.replace
+    到 /en/ —— 一个 404。headless 浏览器就是这么被弹走，站点完整那道闸报
+    「#hwx-tabs2 是 undefined」，看起来毫不相干。
 
-    这一版只有 30 个条目上线，全站 159 个条目里剩下的 129 个**没有**英文版。
-    给它们发 hreflang="en" 等于把搜索引擎指向 404 —— 比不发更糟。
+    代价是 build_en.py 必须排在本脚本前面跑。换来的是这件事永远和事实一致：
+    英文站多一页，hreflang 就多一条；没建的页一条都不会被宣称。
+
+    这一版全站 159 个条目只上线一部分，给没有英文版的页发 hreflang="en"
+    等于把搜索引擎指向 404 —— 比不发更糟。
     """
     import os
-    out = {"/"}
-    here = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "seo", "chapters_en")
-    here = os.path.normpath(here)
-    if not os.path.isdir(here):
+    root = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "en")
+    root = os.path.normpath(root)
+    out = set()
+    if not os.path.isdir(root):
         return out
-    import importlib
-    import pkgutil
-    import sys as _s
-    _s.path.insert(0, os.path.dirname(here))
-    for mod in sorted(m.name for m in pkgutil.iter_modules([here])):
-        m = importlib.import_module("chapters_en." + mod)
-        slug = (getattr(m, "PARENT", {}) or {}).get("slug", "")
-        if not slug:
+    for dp, _dn, fn in os.walk(root):
+        if "index.html" not in fn:
             continue
-        out.add("/i/%s/" % slug)
-        for ch in getattr(m, "CHAPTERS", []) or []:
-            out.add("/i/%s/%s/" % (slug, ch["k"]))
+        rel = os.path.relpath(dp, root).replace(os.sep, "/")
+        out.add("/" if rel == "." else "/" + rel + "/")
     return out
 
 

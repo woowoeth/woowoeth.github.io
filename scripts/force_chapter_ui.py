@@ -1980,8 +1980,13 @@ def _derived(dp):
     正常构建链里 build_tw.py 排在本脚本之后并且整树重建，所以看不出问题；
     单独跑本脚本就会留下这份污染。五个 walk 里原先只有一个记得躲开 tw/。
     """
-    return any(x in dp for x in ("/.git", "/tw", "/en", "node_modules", "__pycache__")) \
-        or dp.startswith((".git", "./tw", "./en"))
+    # **必须按路径段比，不能按子串比。** 第一版写的是 "/tw" in dp，于是
+    # i/han-feizi/two-handles/ 被当成繁体目录跳过 —— "/two-handles" 里就含
+    # "/tw"。这样误伤了 5 页（two-nogales、two-kinds、two-handles、
+    # two-ways-of-seeing、enlarging-huaihai），它们整层语言层、夜间模式、
+    # 聊天挂件全都没有，而且没有任何报错。
+    segs = [x for x in dp.replace("\\", "/").split("/") if x not in ("", ".")]
+    return bool(set(segs) & {".git", "tw", "en", "node_modules", "__pycache__"})
 def patch_theme_widget():
     import os, re
     n = 0

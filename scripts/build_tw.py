@@ -39,8 +39,11 @@ from tw_convert import convert  # noqa: E402
 OUT = os.path.join(ROOT, "tw")
 
 # 不进繁体站的：源码、工具、内部文档，以及 /tw/ 自己
+# en 必须在这里：英文站是另一份内容，不是简体站的转换源。漏掉它的话
+# build_tw 会把 en/ 整棵树当简体内容转一遍塞进 tw/en/ ——「繁体化」英文
+# 是空操作，但地址重写会把姊妹站链接改成 /tw/en/podcast/ 这种不存在的路径。
 SKIP_DIRS = {".git", ".github", "scripts", "seo", "worker", "tests", "node_modules",
-             "__pycache__", "tw", "site", "HumanWorld"}
+             "__pycache__", "tw", "en", "site", "HumanWorld"}
 # 这些根文件不复制（内部文档 / 只对主站有意义的）
 # site.webmanifest 必须复制：页面里写的是相对路径 href="site.webmanifest"，
 # 不复制的话繁体页会去要 /tw/site.webmanifest —— 线上实测 404。
@@ -81,22 +84,49 @@ def restore(s, keep):
     return re.sub("\ue000(\\d+)\ue001", lambda m: keep[int(m.group(1))], s)
 
 
-def retarget(s):
-    """把站内绝对地址指到 /tw/ 下；hreflang 那三行不动。"""
+from lang_urls import fix_urls, sister, prefix  # noqa: E402
+
+
+def retarget(s, rel=None):
+    """站内地址指到 /tw/ 下；hreflang 那几行不动（它说的是别人在哪）。
+
+    姊妹站、JSON-LD、自指地址三条规则见 scripts/lang_urls.py —— 那三条各自
+    对应一次真实事故，写在那个文件的开头。
+    """
     def one(m):
         name, val = m.group(1), m.group(2)
-        if val.startswith("/") and not val.startswith("/tw/"):
-            val = "/tw" + val
+        # 跳转桩写的是 content="0;url=https://…"，前面带个秒数，
+        # URLISH 认不出它是地址。漏掉的后果：繁体的分类跳转桩
+        # tw/t/权力治理/ 把读者弹到**简体**的 /t/power/ 去。
+        if name == "content" and re.match(r"^\s*\d+\s*;\s*url=", val, re.I):
+            pre, u = re.split(r"(?i)url=", val, 1)
+            b = u.replace("https://ourword.ai", "", 1) if u.startswith("https://") else u
+            sis = sister(b, "tw")
+            nb = sis if sis is not None else prefix(b, "tw")
+            return '%s="%surl=%s"' % (name, pre, u.replace(b, nb, 1))
+        bare = val.replace("https://ourword.ai", "", 1) if val.startswith("https://") else val
+        sis = sister(bare, "tw")
+        if sis is not None:
+            return '%s="%s"' % (name, val.replace(bare, sis, 1))
+        if val.startswith("/"):
+            val = prefix(val, "tw")
         elif val.startswith("https://ourword.ai/") and "/tw/" not in val:
-            val = val.replace("https://ourword.ai/", "https://ourword.ai/tw/", 1)
+            val = "https://ourword.ai" + prefix(bare, "tw")
         return '%s="%s"' % (name, val)
 
-    # hreflang 的 link 整行挖出来，改完再放回去
     holes = []
     s = re.sub(r'<link rel="alternate"[^>]*>',
                lambda m: holes.append(m.group(0)) or "\ue002%d\ue003" % (len(holes) - 1), s)
-    s = ATTR.sub(lambda m: one(m) if (URLISH.match(m.group(2)) or "%" in m.group(2)) else m.group(0), s)
-    s = JSURL.sub(lambda m: m.group(1) + ("/tw" + m.group(2)) + m.group(3), s)
+    # 跳转桩的 content="0;url=…" 以数字开头，URLISH 认不出来，
+    # 得单独放行进 one() —— 否则上面那段处理它的分支永远不会被调用。
+    REFRESH = re.compile(r"^\s*\d+\s*;\s*url=", re.I)
+    s = ATTR.sub(lambda m: one(m) if (URLISH.match(m.group(2)) or "%" in m.group(2)
+                                      or REFRESH.match(m.group(2)))
+                 else m.group(0), s)
+    s = JSURL.sub(lambda m: m.group(1) + prefix(m.group(2), "tw") + m.group(3), s)
+    # 通用的一遍：属性之外的地址（JSON-LD、script、链接文字）也要改。
+    # 这里同时把「本页指向自己」那几处改对了，所以不再单独跑 self_url。
+    s = fix_urls(s, "tw")
     s = re.sub("\ue002(\\d+)\ue003", lambda m: holes[int(m.group(1))], s)
     return s
 
@@ -149,6 +179,24 @@ PAY = [
 FONT = [("Noto+Serif+SC", "Noto+Serif+TC"), ("Noto Serif SC", "Noto Serif TC")]
 
 
+# JSON-LD 里的地址是 "url": "…"（冒号），ATTR 那套只认 name="…"（等号），
+# 所以碰不到它们。后果是繁体页和英文页的 Article.url 仍然指着简体页 ——
+# canonical 和 og:url 都改对了，结构化数据却和它们打架，而搜索引擎两个都读。
+#
+# 只替换「这一页指向自己」的那一个地址，不做通用重写：同一段 JSON-LD 里
+# sameAs 列的是组织在别处的身份（/skill/ 之类），那些指向规范地址才是对的，
+# 一律加前缀会把它们一起改错。
+def self_url(s, rel, prefix):
+    if not rel.startswith("/"):
+        rel = "/" + rel
+    a = "https://ourword.ai" + rel
+    b = "https://ourword.ai" + prefix + rel
+    # 两种形态都要换：JSON-LD 里带引号的 "…"，和页脚引用块里的纯文本。
+    # 直接替裸串就够了 —— 调用点在 hreflang 还是占位符的时候执行，
+    # 那几行里的同一个地址碰不到。
+    return s.replace(a + '"', b + '"').replace(a + "<", b + "<").replace(a + " ", b + " ")
+
+
 def do_text(src, dst):
     s = open(src, encoding="utf-8").read()
     if src.endswith(".html"):
@@ -158,13 +206,18 @@ def do_text(src, dst):
     kept, keep = protect(s)
     kept = convert(kept)
     s = restore(kept, keep)
-    s = retarget(s)
+    rel = os.path.relpath(src, ROOT).replace(os.sep, "/")
+    rel = "/" + (rel[:-len("index.html")] if rel.endswith("index.html") else rel)
+    s = retarget(s, rel)
     # sitemap / feed / llms 里的地址在**元素文本和裸行**里，不是属性，
     # retarget 那套按属性走的规则碰不到它们 —— 第一版 tw/sitemap.xml 里
     # 553 条全是简体站的地址，等于把繁体站的地图指向了别人家。
     if os.path.basename(src) in ("sitemap.xml", "feed.xml", "llms.txt", "llms-full.txt"):
-        s = s.replace("https://ourword.ai/", "https://ourword.ai/tw/")
-        s = s.replace("https://ourword.ai/tw/tw/", "https://ourword.ai/tw/")
+        def _one(m):
+            b = m.group(1)
+            sis = sister(b, "tw")
+            return "https://ourword.ai" + (sis if sis is not None else prefix(b, "tw"))
+        s = re.sub(r"https://ourword\.ai(/[^\s\"'<>)]*)", _one, s)
     for a, b in FONT:
         s = s.replace(a, b)
     for a, b in LOCALE:

@@ -30,11 +30,13 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 sys.path.insert(0, HERE)
 
+from lang_urls import SISTER, sister  # noqa: E402
 from tw_convert import NEVER, contexts, load_allow  # noqa: E402
 
 TW = os.path.join(ROOT, "tw")
+# en 是英文站，另一份内容，不参与繁简结构比对。
 SKIP_DIRS = {".git", ".github", "scripts", "seo", "worker", "tests", "node_modules",
-             "__pycache__", "tw", "site", "HumanWorld"}
+             "__pycache__", "tw", "site", "HumanWorld", "en"}
 # 只存在于简体的常用字：出现在 /tw/ 正文里 = 漏转
 SIMP_ONLY = "们这时说过还没个来对开关问题实现样种应认识电话车东车马书长门问闻见东丽乐乡习买卖头条"
 TAG = re.compile(r"<script.*?</script>|<style.*?</style>", re.S)
@@ -92,7 +94,17 @@ def main():
         # 去掉 /tw 前缀再比：相对路径和绝对 URL 两种写法都要归一化。
         # canonical / og:url 本来就该指向各自的地址，归一化之后才能比出「别的链接有没有被改坏」。
         b = [re.sub(r"^/tw(/|$)", r"\1", x) for x in b]
-        b = [x.replace("https://ourword.ai/tw/", "https://ourword.ai/") for x in b]
+        # 跨站地址两版**本来就不同**，不能靠去前缀来对齐：
+        # 简体页写 /podcast/，繁体页写 /podcast/tw/ —— 后者才是对的。
+        # 这一条以前把繁体的正确写法判成「对不上」，等于在强制执行那个 bug：
+        # 555 个繁体页的页脚因此长期指向不存在的 https://ourword.ai/tw/podcast/。
+        def _norm(x):
+            for base in SISTER:
+                if base in x:
+                    return x.split(base)[0] + base
+            return x.replace("https://ourword.ai/tw/", "https://ourword.ai/")
+        a = [_norm(x) for x in a]
+        b = [_norm(x) for x in b]
         # 字体是**有意**换的（SC → TC 字形），不算链接被改坏。
         # 这一条是闸自己抓出来的：换字体那次它报了 500 多页「链接对不上」，
         # 说明②确实在盯着 —— 所以只在这里放行这一处，不放宽整条判据。
@@ -165,9 +177,14 @@ def main():
         if not os.path.exists(p_):
             continue
         t = open(p_, encoding="utf-8").read()
-        stray = len(re.findall(r"https://ourword\.ai/(?!tw/)", t))
+        # 「应全部是 /tw/」这个说法不对：同域下有几个路径**不属于这个仓库**
+        # （/podcast/ /skill/ /ai/ /zouni/ /site/，各归独立仓库），
+        # 它们没有主站的语言目录，加了前缀就是不存在的地址。
+        stray = [u for u in re.findall(r"https://ourword\.ai(/[^\s\"'<>)]*)", t)
+                 if not u.startswith("/tw/") and sister(u, "tw") is None]
         if stray:
-            bad.append("tw/%s 里有 %d 条地址指向简体站（应全部是 /tw/）" % (f, stray))
+            bad.append("tw/%s 里有 %d 条本站地址没指向繁体站：%s"
+                       % (f, len(stray), stray[:3]))
 
     print("繁体站 %d 页 · 校对链接 %d 条 · 歧义字白名单 %d 条" % (len(tw), n_link, len(allow)))
     if bad:

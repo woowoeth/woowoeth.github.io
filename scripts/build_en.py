@@ -93,33 +93,65 @@ def restore(s, keep):
     return re.sub("(\\d+)", lambda m: keep[int(m.group(1))], s)
 
 
-def retarget(s):
-    """站内地址指到 /en/ 下；hreflang 那几行不动（它说的是别人在哪）。"""
+from lang_urls import fix_urls, sister, prefix  # noqa: E402
+
+# 英文站不复制资源：CSS、JS、字体、图片一律用主站那一份，所以 assets=False。
+# 加了 /en 前缀就指向不存在的 /en/assets/，线上是一页没有样式的裸 HTML，
+# 而构建全程不报错。
+ASSETS = False
+
+
+def retarget(s, rel=None):
+    """站内地址指到 /en/ 下；hreflang 那几行不动（它说的是别人在哪）。
+
+    姊妹站、资源不加前缀、JSON-LD 三条规则见 scripts/lang_urls.py，
+    那三条各自对应一次真实事故。
+    """
     def one(m):
         name, val = m.group(1), m.group(2)
-        if val.startswith("/") and not val.startswith("/en/"):
-            val = "/en" + val
+        # 跳转桩写的是 content="0;url=https://…"，前面带个秒数，
+        # URLISH 认不出它是地址。漏掉的后果：繁体的分类跳转桩
+        # tw/t/权力治理/ 把读者弹到**简体**的 /t/power/ 去。
+        if name == "content" and re.match(r"^\s*\d+\s*;\s*url=", val, re.I):
+            pre, u = re.split(r"(?i)url=", val, 1)
+            b = u.replace("https://ourword.ai", "", 1) if u.startswith("https://") else u
+            sis = sister(b, "en")
+            nb = sis if sis is not None else prefix(b, "en", ASSETS)
+            return '%s="%surl=%s"' % (name, pre, u.replace(b, nb, 1))
+        bare = val.replace("https://ourword.ai", "", 1) if val.startswith("https://") else val
+        sis = sister(bare, "en")
+        if sis is not None:
+            return '%s="%s"' % (name, val.replace(bare, sis, 1))
+        if val.startswith("/"):
+            val = prefix(val, "en", ASSETS)
         elif val.startswith("https://ourword.ai/") and "/en/" not in val:
-            val = val.replace("https://ourword.ai/", "https://ourword.ai/en/", 1)
+            val = "https://ourword.ai" + prefix(bare, "en", ASSETS)
         return '%s="%s"' % (name, val)
 
     holes = []
     s = re.sub(r'<link rel="alternate"[^>]*>',
-               lambda m: holes.append(m.group(0)) or "%d" % (len(holes) - 1), s)
-    s = ATTR.sub(lambda m: one(m) if (URLISH.match(m.group(2)) or "%" in m.group(2))
+               lambda m: holes.append(m.group(0)) or "\ue002%d\ue003" % (len(holes) - 1), s)
+    # 跳转桩的 content="0;url=…" 以数字开头，URLISH 认不出来，
+    # 得单独放行进 one() —— 否则上面那段处理它的分支永远不会被调用。
+    REFRESH = re.compile(r"^\s*\d+\s*;\s*url=", re.I)
+    s = ATTR.sub(lambda m: one(m) if (URLISH.match(m.group(2)) or "%" in m.group(2)
+                                      or REFRESH.match(m.group(2)))
                  else m.group(0), s)
-    s = JSURL.sub(lambda m: m.group(1) + ("/en" + m.group(2)) + m.group(3), s)
-    s = re.sub("(\\d+)", lambda m: holes[int(m.group(1))], s)
+    s = JSURL.sub(lambda m: m.group(1) + prefix(m.group(2), "en", ASSETS) + m.group(3), s)
+    # 通用的一遍：属性之外的地址（JSON-LD、script、链接文字）也要改。
+    # 这里同时把「本页指向自己」那几处改对了，所以不再单独跑 self_url。
+    s = fix_urls(s, "en", ASSETS)
+    s = re.sub("\ue002(\\d+)\ue003", lambda m: holes[int(m.group(1))], s)
     return s
 
 
-def finish(s):
+def finish(s, rel=None):
     """一页渲染好之后统一做的四件事，顺序有意义。"""
     import en_ui
     kept, keep = protect(s)          # ① URL 先藏起来
     kept = en_ui.apply(kept)         # ② 界面串（表内已按长度降序）
     s = restore(kept, keep)
-    s = retarget(s)                  # ③ 站内地址改指 /en/
+    s = retarget(s, rel)             # ③ 站内地址改指 /en/（含自指地址）
     for a, b in FONT + LOCALE:       # ④ 字体与语言标记
         s = s.replace(a, b)
     return s
@@ -171,7 +203,9 @@ def main():
                 continue
             p = os.path.join(dp, f)
             s = open(p, encoding="utf-8").read()
-            open(p, "w", encoding="utf-8").write(finish(s))
+            rel = os.path.relpath(p, OUT).replace(os.sep, "/")
+            rel = "/" + (rel[:-len("index.html")] if rel.endswith("index.html") else rel)
+            open(p, "w", encoding="utf-8").write(finish(s, rel))
             n_fix += 1
 
     print("English site: %d chapter pages rendered, %d files localised" % (n_ch, n_fix))

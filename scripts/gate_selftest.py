@@ -500,6 +500,40 @@ def _tw_href():
                     if 'hreflang="zh-Hant"' in t else None)
 
 
+
+# ── 语言站链接（check_links.py）──────────────────────────────────
+# 这道闸防的是「两版一起错，对比两版的检查看不见」那一类，见 FAILURES.md 17。
+# 所以注入也得落在**产物**上：闸读的是构建出来的 tw/ 和 en/，不是源码。
+def _links_sister():
+    """把姊妹站地址改回错的那种写法：/podcast/tw/ → /tw/podcast/。
+
+    这正是线上跑了很久的那个 bug —— 555 个繁体页的页脚都是这个地址，
+    而它不存在。旧的「两版链接一致」检查放行它，因为两边一起错。
+    """
+    return _tw_edit(lambda t: t.replace("https://ourword.ai/podcast/tw/",
+                                        "https://ourword.ai/tw/podcast/", 1)
+                    if "https://ourword.ai/podcast/tw/" in t else None)
+
+
+def _links_nolayer():
+    """把一页的语言层标记拿掉 —— 模拟被 walk 静默跳过。
+
+    _derived() 按子串比路径那次，5 个页面就是这么消失的：没有 hreflang、
+    没有夜间模式、没有聊天挂件，而构建一句话都不说。
+    """
+    tgt = os.path.join(ROOT, "i", "su-shi", "index.html")
+
+    def go():
+        t = read(tgt)
+        if "<!--HWX:LANG-->" not in t:
+            return None
+        arm(tgt)
+        write(tgt, t.replace("<!--HWX:LANG-->", "<!--HWX:GONE-->", 1))
+        return tgt
+
+    return go
+
+
 CASES = [
     # (分支名, 门禁命令, 被改的文件, 注入函数, 必须报出的理由)
     ("章节·dek 过短",   "check_chapters.py", CHAP, _sub_field("dek", _short(3)),  "dek"),
@@ -542,6 +576,8 @@ CASES = [
     ("繁体·歧义未登记", "check_tw.py", TWPAGE, _tw_ambig(),     "没登记过"),
     ("繁体·切错组合",   "check_tw.py", TWPAGE, _tw_never(),     "切错"),
     ("繁体·hreflang",   "check_tw.py", TWPAGE, _tw_href(),      "hreflang 两版不一致"),
+    ("语言站·姊妹站地址", "check_links.py", TWPAGE, _links_sister(), "这个页面不存在"),
+    ("语言站·缺语言层",   "check_links.py", None,   _links_nolayer(), "没有 <!--HWX:LANG-->"),
 ]
 
 
