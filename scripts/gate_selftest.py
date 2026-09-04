@@ -664,6 +664,26 @@ def _dek_untrimmed():
     return go
 
 
+def _en_blocks_flat():
+    """把英文条目页的分则卡片降级成普通段落 —— 模拟版块类型认不出来。
+
+    真事：条目页的版式是 _render_blocks() **按标题文字**认出来的（看到
+    「分则」渲染成 section.point，看到「金句」单独成块……）。英文标题是
+    "The parts · …" "Lines to keep"，它一个都不认识，于是整页英文条目页
+    塌成一串一模一样的 section.sec —— 引言框、分则卡片、金句块、对照块、
+    延伸块，英文一个都没有，而所有闸门全绿。
+    """
+    def go():
+        t = read(ENPAGE)
+        a = '<section class="point"'
+        if a not in t:
+            return None
+        write(ENPAGE, t.replace(a, '<section class="sec"'))
+        return ENPAGE
+
+    return go
+
+
 def _en_js():
     """把一个 JS 单引号字符串截断 —— 模拟盲替换插进了一个撇号。
 
@@ -734,6 +754,7 @@ CASES = [
     ("窄屏·横向撑开",     "check_mobile.py", CHAPCSS, _mobile_blowout(), "横向撑开"),
     ("挂件繁体·没跟上",   "check_chat_tw.py", CHATJS, _chat_tw_stale(), "不同步"),
     ("导语·没裁过",       "check_dek.py", ENPAGE, _dek_untrimmed(), "导语"),
+    ("版块·英文塌成一片", "check_dek.py", ENPAGE, _en_blocks_flat(), "缺这几类版块"),
 ]
 
 

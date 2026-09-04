@@ -158,21 +158,31 @@ def _pick_pullquotes(pool, want):
 
 
 _OVERLAP = 10
+# 英文按字符算。10 个汉字是一整句短语；换算成英文，「一整句短语」大约是
+# 45 个字符（九到十个词）。取 30 试过，太松 —— 70 条金句和正文重合 75 个
+# 字符以上，等于把同一句话在同一页上印两遍，那正是这个站不许的事。
+_OVERLAP_EN = 45
 
 
 def _echoes(quote, body):
-    """True when the quote and the body share a run of _OVERLAP characters.
+    """True when the quote and the body share a long enough run.
 
     Exact containment missed the common case: the body highlights 「先为不可胜，
     以待敌之可胜」 while the 金句 list carries 「昔之善战者，先为不可胜，以待敌之
     可胜。」 — different strings, same line, printed twice.
+
+    阈值必须按语言分。10 个**汉字**是一整句短语，重合了就是真的重复；
+    10 个**英文字符**只是两个短单词（"predictor " / "contempt i"），
+    随便哪句英文金句都能和正文撞上 —— 结果是 6 个英文条目的金句段整段
+    消失，而中文同一个条目好好的。英文按 30 个字符（约六个词）算。
     """
     q, b = _bare(quote), _bare(body)
     if not q:
         return False
-    if len(q) < _OVERLAP:
+    n = _OVERLAP if _looks_cjk(q) else _OVERLAP_EN
+    if len(q) < n:
         return q in b
-    return any(q[i:i + _OVERLAP] in b for i in range(len(q) - _OVERLAP + 1))
+    return any(q[i:i + n] in b for i in range(len(q) - n + 1))
 
 
 CHAPTER_QUOTES = {}
@@ -229,6 +239,57 @@ def _dek(summary):
     return t[:min(ends) + 1] if ends else t
 
 
+# ── 版块标记：中英两套，两套都认 ──────────────────────────
+# _render_blocks 是**按标题文字**认版块类型的：认出「分则」就渲染成
+# section.point（带 h2 和例子），认出「金句」就收集起来最后单独成块，
+# 「对照」「延伸」各有自己的版式。英文站的标题是 "The parts · …"
+# "Lines to keep" "Further"，一个都不认识 —— 于是整页英文条目页塌成
+# 一串一模一样的 section.sec，中文那边有的引言框、分则卡片、金句块、
+# 对照块、延伸块，英文一个都没有。用户说的「看起来与中文版相差甚远」
+# 就是这个。
+#
+# 不加语言开关：中文页上不会出现 "The parts"，英文页上不会出现「分则」，
+# 两套标记同时认不会打架，也就没有「传错语言」这种失败模式。
+def _looks_cjk(t):
+    return bool(re.search(r"[\u4e00-\u9fff]", t or ""))
+
+
+def _is_point(h):
+    return h.startswith("\u5206\u5219") or h.startswith("The parts")
+
+
+def _is_quotes(h):
+    return h in ("\u91d1\u53e5", "\u539f\u8bdd", "Lines to keep")
+
+
+def _is_contrast(h):
+    return "\u5bf9\u7167" in h or "read alongside" in h
+
+
+def _is_ext(h):
+    return h in ("\u5ef6\u4f38", "Further")
+
+
+def _is_pull(h):
+    return "\u7559\u4e0b" in h or "leave behind" in h
+
+
+def _is_apply(h):
+    return "\u4eca\u5929" in h or "use it today" in h
+
+
+def _is_after(h):
+    return "\u540e\u6765" in h or "actually happened" in h
+
+
+def _eg_body(p):
+    """是不是「例」那一行；是就返回例子本身，不是就返回 None。"""
+    for mark in ("\u4f8b\uff1a", "\u4f8b:", "e.g. ", "e.g.: "):
+        if p.startswith(mark):
+            return p[len(mark):].strip()
+    return None
+
+
 def _render_blocks(it, zh):
     html, toc, first_q, n = [], [], True, 0
     slots, pool, quote_block = [], [], []
@@ -238,15 +299,16 @@ def _render_blocks(it, zh):
         paras = _paras(b)
         if not paras:
             continue
-        if h.startswith("分则"):
-            name = h.split("·", 1)[-1].strip() if "·" in h else h
+        if _is_point(h):
+            name = h.split("\u00b7", 1)[-1].strip() if "\u00b7" in h else h
             n += 1
             aid = "p%d" % n
             toc.append((aid, name))
             body, egs = [], []
             for p in paras:
-                if p.startswith("例：") or p.startswith("例:"):
-                    egs.append(p.split("：", 1)[-1].split(":", 1)[-1])
+                eg = _eg_body(p)
+                if eg is not None:
+                    egs.append(eg)
                 else:
                     body.append(p)
             html.append('<section class="point" id="%s">' % aid)
@@ -290,21 +352,27 @@ def _render_blocks(it, zh):
                             continue
                         pool.append((si, span, _quotability(span) - penalty))
             continue
-        if h in ("金句", "原话"):
+        if _is_quotes(h):
             quote_block = paras          # rendered last, after the body is known
             continue
-        if "对照" in h:
+        if _is_contrast(h):
             toc.append(("contrast", "对照着读"))
             html.append('<section id="contrast"><h2 class="sec-k">和谁对照着读</h2><div class="contrast">')
             for p in paras:
-                name, why = (p.split("：", 1) + [""])[:2] if "：" in p else (p, "")
+                # 分隔符两套：中文「名字：理由」，英文「Name — why」。
+                if "\uff1a" in p:
+                    name, why = (p.split("\uff1a", 1) + [""])[:2]
+                elif " \u2014 " in p:
+                    name, why = (p.split(" \u2014 ", 1) + [""])[:2]
+                else:
+                    name, why = p, ""
                 html.append(
                     '<a href="/i/%s/"><span class="n">%s</span><span class="why">%s</span></a>'
                     % (esc(_slug(name)), esc(name), esc(why))
                 )
             html.append("</div></section>")
             continue
-        if h == "延伸":
+        if _is_ext(h):
             toc.append(("ext", "延伸"))
             html.append('<section id="ext"><h2 class="sec-k">延伸</h2><div class="ext">')
             for p in paras:
@@ -316,7 +384,14 @@ def _render_blocks(it, zh):
                 # but two of them contain 、 / ， (思考，快与慢 和
                 # 枪炮、病菌与钢铁) — splitting on those produced
                 # /i/思考/ and /i/枪炮/, links to pages that never existed.
-                for name in (x.strip("·,，、 ") for x in p.split()):
+                # 按空格切**只对中文成立**：条目名里从不含空格，所以一行
+                # 里的几个名字用空格分开。英文名几乎都含空格
+                # （Wang Yangming / C.S. Lewis / Winston Churchill）——
+                # 照切会切出 /en/i/wang/ 和 /en/i/yangming/ 这种从不存在的
+                # 页面。英文那边一行就是一个名字，整行拿来用。
+                names = ([x.strip("\u00b7,\uff0c\u3001 ") for x in p.split()]
+                         if _looks_cjk(p) else [p.strip()])
+                for name in names:
                     if name:
                         html.append('<a href="/i/%s/">%s</a>' % (esc(_slug(name)), esc(name)))
             html.append("</div></section>")
@@ -324,7 +399,7 @@ def _render_blocks(it, zh):
         label = h
         if label.startswith("Q：") or label.startswith("Q:"):
             label = label.split("：", 1)[-1].split(":", 1)[-1]
-        if first_q and ("留下" in h):
+        if first_q and _is_pull(h):
             first_q = False
             rendered.add(paras[0])      # the pull is body the reader has read too
             html.append('<aside class="pull">%s</aside>' % esc(paras[0]))
@@ -339,7 +414,7 @@ def _render_blocks(it, zh):
         n += 1
         aid = "s%d" % n
         toc.append((aid, label))
-        klass = "sec apply" if "今天" in h else "sec"
+        klass = "sec apply" if _is_apply(h) else "sec"
         rendered.add(label)
         html.append('<section class="%s" id="%s"><h2 class="sec-k">%s</h2>' % (klass, aid, esc(label)))
         for para in paras:
@@ -350,7 +425,7 @@ def _render_blocks(it, zh):
         # 「后来怎么了？」整段本来就是提炼过的短句（fail 一段 + 教训三条），
         # 从一个全是金句的段落里再抽金句，抽出来的是把三条教训连成的一串，
         # 紧跟在它们下面重念一遍。和「今天怎么用」同理，排除。
-        if klass == "sec" and "今天" not in h and "后来" not in h:
+        if klass == "sec" and not _is_apply(h) and not _is_after(h):
             si = len(slots)
             slots.append(len(html))
             whole = "".join(paras)

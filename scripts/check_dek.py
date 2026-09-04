@@ -14,7 +14,7 @@
 「… a cook and a provincial governor. He was banished」后面直接没了。
 共用模板里写死 CJK 标点，就是这么只在另一种语言上发作的。
 
-三条判据：
+四条判据：
 ① 模板形制 —— 带「（年代）＋破折号」的那种导语（模板生成的），必须在
    破折号后的第一个句号处结束，后面一个字都不许有。
 ② 不重复 —— 认人那半句之后剩下的字，不许在同页别处出现。① 判形制，
@@ -103,7 +103,29 @@ def main():
         if len(bad) >= 8:
             break
 
-    print("条目页导语：三种语言共 %d 条" % n)
+    # ④ 中英版块构成一致
+    KINDS = (('aside class="pull"', "引言框"),
+             ('section class="point"', "分则卡片"),
+             ('section class="quotes"', "金句块"),
+             ('div class="contrast"', "对照块"),
+             ('div class="ext"', "延伸块"))
+    n_pair = 0
+    for slug in sorted(os.listdir(os.path.join(ROOT, "i"))):
+        zp = os.path.join(ROOT, "i", slug, "index.html")
+        ep = os.path.join(ROOT, "en", "i", slug, "index.html")
+        if not (os.path.isfile(zp) and os.path.isfile(ep)):
+            continue
+        n_pair += 1
+        z = io.open(zp, encoding="utf-8", errors="ignore").read()
+        e = io.open(ep, encoding="utf-8", errors="ignore").read()
+        miss = [name for mark, name in KINDS if (mark in z) and (mark not in e)]
+        if miss:
+            bad.append("英文 /en/i/%s/ 缺这几类版块：%s（简体有）"
+                       % (slug, "、".join(miss)))
+        if len([x for x in bad if "缺这几类版块" in x]) >= 5:
+            break
+
+    print("条目页导语：三种语言共 %d 条 · 中英对照 %d 组" % (n, n_pair))
     if bad:
         print("\n不合格：")
         for x in bad[:8]:
