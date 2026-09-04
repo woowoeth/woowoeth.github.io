@@ -285,7 +285,7 @@
 
   /* 撞到第六次時的那張卡：不是「明天再來」，是「請我喝杯茶，今天無限暢聊」。
      信任制：付完點「我請了」當天解鎖，沒有驗證——白點的人一天最多讓站多花一塊多。
-     付款路徑沿用頁尾那套：微信里長按存圖去支付寶掃；手機瀏覽器直接跳支付寶；桌面掃碼。 */
+     付款路徑沿用頁尾那套：微信里長按存圖去 AlipayHK掃；手機瀏覽器直接跳AlipayHK；桌面掃碼。 */
   function teaPass(el) {
     var C = window.HW_TEA || {};
     if (!C.alipay) {
@@ -297,11 +297,11 @@
     var ua = navigator.userAgent || '';
     var wx = /MicroMessenger/i.test(ua);
     var mob = /Android|iPhone|iPad|iPod|Mobile/i.test(ua);
-    var how = wx ? '長按保存圖片，打開支付寶掃相冊。' : (mob ? '或者截圖，在支付寶裡掃相冊。' : '打開支付寶，掃一掃。');
+    var how = wx ? '長按保存圖片，開啟 AlipayHK 掃相冊。' : (mob ? '或者截圖，在 AlipayHK 裡掃相冊。' : '開啟 AlipayHK，掃一掃。');
     d.innerHTML = '<b>今天的 5 次用完了。</b>' +
       '<p>請我喝杯茶，今天無限暢聊。金額隨意。</p>' +
-      ((!wx && mob && C.alipayLink) ? '<a class="hwq-go" href="' + C.alipayLink + '" rel="noopener">打開支付寶</a>' : '') +
-      '<img class="hwq-qr" src="' + C.alipay + '" alt="支付寶收款碼">' +
+      ((!wx && mob && C.alipayLink) ? '<a class="hwq-go" href="' + C.alipayLink + '" rel="noopener">開啟 AlipayHK</a>' : '') +
+      '<img class="hwq-qr" src="' + C.alipay + '" alt="AlipayHK 收款碼">' +
       '<p class="hwq-how">' + how + '</p>' +
       '<div class="hwq-tea-acts"><button type="button" class="hwq-yes">我請了，接著聊</button>' +
       '<button type="button" class="hwq-no">明天再來</button></div>';

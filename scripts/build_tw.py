@@ -114,6 +114,36 @@ LOCALE = [
 ]
 
 
+# 繁体读者用 AlipayHK 收款码，简体站保持大陆支付宝码。
+#
+# 为什么分开：大陆个人收款码在境外能不能付，取决于**付款方账户在哪**——
+# 大陆支付宝账户在海外照样付得了（那仍是境内转账），绑外卡的账户则不行
+# （个人码被判成转账，外卡走不通）。繁体读者多在港台，AlipayHK 直通。
+#
+# 两处都要换：图，和从码里解出来的深链（点「打开支付宝」走的是链接，不是图）。
+# 图是从原始分享卡里裁出来的：只留码区，品牌、金额（9.99 HKD）、说明全去掉，
+# 中心那张头像换成红「人」印。裁完逐步验过解码结果与原码**逐字符相同**。
+ALIPAY_HK_LINK = ("https://render.alipay.com/p/yuyan/180020010001270667/landing/"
+                  "income.html?qrcode=https://qr.alipay.hk/281004010499ha1j0b9kg7PhWd30nLZv4Zfa")
+PAY = [
+    ("/tw/assets/pay-alipay.png", "/tw/assets/pay-alipayhk.png"),
+    ("https://qr.alipay.com/fkx10243q5q41avrifvyj24", ALIPAY_HK_LINK),
+    # 港台读者装的是 AlipayHK，不是大陆支付宝——文案得跟着码走，
+    # 不然弹窗写着「打開支付寶」而给的是 AlipayHK 码，读者会以为扫错了。
+    # 这些是转换之后的繁体写法，所以匹配的是「支付寶」不是「支付宝」。
+    # 顺序有意义：先换长的，再换短的。反过来会把长句里的「支付寶」先吃掉，
+    # 剩下「AlipayHK收款鏈接」这种缺空格的半成品。
+    ("支付寶收款鏈接", "AlipayHK 收款鏈接"),
+    ("支付寶收款碼", "AlipayHK 收款碼"),
+    ("打開支付寶掃相冊", "開啟 AlipayHK 掃相冊"),
+    ("打開支付寶鏈接", "開啟 AlipayHK 鏈接"),
+    ("打開支付寶", "開啟 AlipayHK"),
+    ("在支付寶裡掃相冊", "在 AlipayHK 裡掃相冊"),
+    ("去支付寶", "去 AlipayHK"),
+    ("支付寶", "AlipayHK"),
+]
+
+
 # 繁体页换成思源宋体繁体：Noto Serif SC 也含繁体字，但字形是简体地区的写法
 # （骨、直、過 这些字的笔画走向不同），繁体读者一眼看得出别扭。
 FONT = [("Noto+Serif+SC", "Noto+Serif+TC"), ("Noto Serif SC", "Noto Serif TC")]
@@ -138,6 +168,8 @@ def do_text(src, dst):
     for a, b in FONT:
         s = s.replace(a, b)
     for a, b in LOCALE:
+        s = s.replace(a, b)
+    for a, b in PAY:
         s = s.replace(a, b)
     os.makedirs(os.path.dirname(dst), exist_ok=True)
     open(dst, "w", encoding="utf-8").write(s)

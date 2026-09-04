@@ -1,6 +1,6 @@
 /* 「請喝茶」：頁尾分享按鈕旁那一枚。點開一張小卡，按環境給不同的付款路徑——
-   微信內置瀏覽器：微信收款碼，長按識別；手機上其他瀏覽器：支付寶收款鏈接直接跳，
-   或截圖後在支付寶裡掃相冊；桌面：兩枚二維碼，拿手機掃。
+   微信內置瀏覽器：微信收款碼，長按識別；手機上其他瀏覽器：AlipayHK 收款鏈接直接跳，
+   或截圖後在 AlipayHK 裡掃相冊；桌面：兩枚二維碼，拿手機掃。
    收款圖和鏈接由頁面注入的 window.HW_TEA 給：{wechat, alipay, alipayLink}。
    沒有配置就什麼都不做——按鈕本身也只在有收款圖時才會被構建進頁面。 */
 (function () {
@@ -48,22 +48,22 @@
       html += '<div class="qrs"><figure><img src="' + C.wechat + '" alt="微信收款碼"></figure></div>' +
         '<p class="how">長按二維碼，識別後就能付。</p>';
     } else if (inWeChat) {
-      /* 微信裡打不開支付寶鏈接：長按存圖，去支付寶掃相冊。 */
+      /* 微信裡打不開AlipayHK鏈接：長按存圖，去 AlipayHK掃相冊。 */
       card.className = 'one';
-      html += '<div class="qrs"><figure><img src="' + C.alipay + '" alt="支付寶收款碼"></figure></div>' +
-        '<p class="how">長按保存圖片，打開支付寶掃相冊。</p>';
+      html += '<div class="qrs"><figure><img src="' + C.alipay + '" alt="AlipayHK 收款碼"></figure></div>' +
+        '<p class="how">長按保存圖片，開啟 AlipayHK 掃相冊。</p>';
     } else if (mobile) {
       card.className = 'one';
-      html += (C.alipayLink ? '<a class="go" href="' + C.alipayLink + '" rel="noopener">打開支付寶</a>' : '') +
-        '<div class="qrs"><figure><img src="' + C.alipay + '" alt="支付寶收款碼"></figure></div>' +
-        '<p class="how">' + (C.alipayLink ? '或者' : '') + '截圖，在支付寶裡掃相冊。</p>';
+      html += (C.alipayLink ? '<a class="go" href="' + C.alipayLink + '" rel="noopener">開啟 AlipayHK</a>' : '') +
+        '<div class="qrs"><figure><img src="' + C.alipay + '" alt="AlipayHK 收款碼"></figure></div>' +
+        '<p class="how">' + (C.alipayLink ? '或者' : '') + '截圖，在 AlipayHK 裡掃相冊。</p>';
     } else {
       var two = !!C.wechat;
       if (!two) card.className = 'one';
       html += '<div class="qrs">' +
         (two ? '<figure><img src="' + C.wechat + '" alt="微信收款碼"><figcaption>微信</figcaption></figure>' : '') +
-        '<figure><img src="' + C.alipay + '" alt="支付寶收款碼">' + (two ? '<figcaption>支付寶</figcaption>' : '') + '</figure>' +
-        '</div><p class="how">' + (two ? '拿手機掃一掃，哪個順手用哪個。' : '打開支付寶，掃一掃。') + '</p>';
+        '<figure><img src="' + C.alipay + '" alt="AlipayHK 收款碼">' + (two ? '<figcaption>AlipayHK</figcaption>' : '') + '</figure>' +
+        '</div><p class="how">' + (two ? '拿手機掃一掃，哪個順手用哪個。' : '開啟 AlipayHK，掃一掃。') + '</p>';
     }
     card.innerHTML = html;
     document.body.appendChild(back); document.body.appendChild(card);
