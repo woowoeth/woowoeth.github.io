@@ -103,7 +103,10 @@ def load_en():
 #   · JS 里的**带引号字符串** —— 页面上大半的字是 JS 拼出来的，必须查。
 #     正则字面量不带引号，注释也不带，天然排除。
 EXEMPT = re.compile(r'data-t="[^"]*"|class="seal">[^<]*<|fillText\(\'[一-鿿]\'')
-LANG_NAMES = ("简体", "繁體", "繁体")
+# 语言选择器里那几项：每一项用它自己的语言写，是有意留的中文。
+# 标签后来从「简体／繁體」缩成「简／繁」（窄屏页头放不下整个词），
+# 短的那两个也得在这张表里，否则 ⑪⑫ 会把它们当漏译报出来。
+LANG_NAMES = ("简体", "繁體", "繁体", "简", "繁")
 # 首页三个标签页的**内部键**：新 / 全 / 境。只出现在 data-t 和 JS 比较里，
 # 从不显示给读者 —— 翻了标签页就废了。
 TAB_KEYS = ("新", "全", "境")
@@ -192,17 +195,30 @@ def rendered_cjk(url="http://localhost:8931/en/"):
                    if ln.strip() and hit.search(ln) and ln.strip() not in keep})
 
 
-# 中文字体名字：这些字体的西文字形是配汉字设计的（半角字宽、重心偏高、
-# 斜体多半是机器倾斜），拿来排整页英文就是「哪里不对但说不出」。
-# 英文页上解出这些字体里的任何一个，都算漏改。
-CJK_FONTS = ("PingFang", "Songti", "STSong", "Noto Serif SC", "Noto Sans SC",
-             "Source Han", "Hiragino Sans GB", "Microsoft YaHei",
-             "HarmonyOS Sans SC", "Huiwen", "Noto Serif CJK", "SimSun",
-             "Heiti", "Yuanti", "Kaiti")
+# 英文页的字体判据，两条，都落在**渲染之后**：
+#
+# ⓐ 不许下载 CJK 网络字体。这才是当初「英文页字体完全不适合阅读」的根因：
+#    主站下载 Noto Serif SC，于是英文标题落到思源宋体的西文字形 —— 那套西文
+#    是为「和汉字并排」设计的（窄、低对比、重心跟着汉字身框走），单独排一
+#    整页英文就是「哪里不对但说不出」。原声站不下载任何网络字体，英文标题
+#    落到系统自带的 Songti SC，它的拉丁字形是 Times 一路的老式衬线，排英文
+#    本来就成立 —— 同一个位置，差别只在有没有下载那个 CJK 字体。
+#    所以拦的是**下载**，不是「出现 CJK 字体名」。系统里的宋体和苹方是好
+#    西文字体，而且后面跟着 Georgia / 系统无衬线兜底，在非苹果平台上也成立。
+#
+# ⓑ 解出来的字体栈必须**就是** build_en 打算给的那一套。这一条防的是覆盖
+#    丢失：那段 html[lang="en"] 的变量覆盖丢过两次，字体照旧下载、页面照旧
+#    拿别的字体排英文，而 ①-⑫ 全绿（它们只看有没有中文**字**，看不见用
+#    什么**字体**）。判据对着 build_en 里的 EN_DISPLAY / EN_SANS 比，
+#    单一来源 —— 有意改字体的人改那一处，闸门跟着走。
 
-# 三类版式各抽一页，每页量三个层面：标题、正文、引文。
-# 抽样表里少一类版式，那一类就没人看着 —— 首页的字体族是写死在内联
-# <style> 里的，条目页走 /assets/hw-en.css，两条路完全不同。
+CJK_WEBFONTS = ("Noto+Serif+SC", "Noto+Sans+SC", "Noto+Serif+TC",
+                "Noto+Sans+TC", "Source+Han", "Noto+Serif+HK", "Noto+Sans+HK",
+                "LXGW", "ZCOOL", "Ma+Shan", "Zhi+Mang", "Liu+Jian")
+
+# 三类版式各抽一页，每页量标题和正文两个层面。抽样表里少一类版式，那一类
+# 就没人看着 —— 首页的字体族是写死在内联 <style> 里的，条目页走
+# /assets/hw-en.css，两条路完全不同。
 FONT_SAMPLE = [
     ("英文首页", "/en/", [("标题", ".hd-title"), ("正文", "body")]),
     ("英文条目", "/en/i/su-shi/",
@@ -214,8 +230,22 @@ FONT_SAMPLE = [
 ]
 
 
+def _norm(fam):
+    """把字体栈normalise成可比的形式：去引号、去空格、小写。
+
+    浏览器会把 '"Songti SC",Georgia' 解析成 '"Songti SC", Georgia' —— 引号和
+    空格都不稳定，逐字符比会假报。
+
+    还有一个别名要抹平：Chrome 在 getComputedStyle 里把 BlinkMacSystemFont
+    规范化成 "system-ui"。不抹的话这道闸会**一直报红而覆盖其实是好的** ——
+    比对着声明去比，就得按浏览器的说法归一化。
+    """
+    t = fam.replace('"', "").replace("'", "").replace(" ", "").lower()
+    return t.replace("blinkmacsystemfont", "system-ui")
+
+
 def rendered_fonts(port=8932):
-    """渲染英文页，读 getComputedStyle 解出来的 font-family。
+    """渲染英文页，量下载了什么字体、解出了什么字体栈。
 
     没装 playwright 就跳过（返回 None），本地跑得动、CI 上一定跑。
     """
@@ -225,6 +255,11 @@ def rendered_fonts(port=8932):
         return None
     import subprocess
     import time
+    sys.path.insert(0, HERE)
+    import build_en
+    want_disp = _norm(build_en.EN_DISPLAY)
+    want_sans = _norm(build_en.EN_SANS)
+
     srv = subprocess.Popen([sys.executable, "-m", "http.server", str(port)],
                            cwd=ROOT, stdout=subprocess.DEVNULL,
                            stderr=subprocess.DEVNULL)
@@ -237,6 +272,16 @@ def rendered_fonts(port=8932):
             for label, path, spots in FONT_SAMPLE:
                 pg.goto("http://localhost:%d%s" % (port, path), timeout=30000)
                 pg.wait_for_timeout(1200)
+                # ⓐ 页面自己声明要下载哪些字体
+                links = pg.evaluate(
+                    "() => [...document.querySelectorAll('link[rel=stylesheet]')]"
+                    ".map(l => l.href).join(' ')")
+                for w in CJK_WEBFONTS:
+                    if w in links:
+                        out.append("%s 还在下载 CJK 网络字体 %s —— 英文页不该下载它"
+                                   % (label, w.replace("+", " ")))
+                        break
+                # ⓑ 解出来的字体栈
                 for what, sel in spots:
                     fam = pg.evaluate(
                         "s => { const e = document.querySelector(s);"
@@ -245,11 +290,14 @@ def rendered_fonts(port=8932):
                         out.append("%s 的%s（%s）在页面上找不到 —— 抽样表要跟着改"
                                    % (label, what, sel))
                         continue
-                    for f in CJK_FONTS:
-                        if f in fam:
-                            out.append("%s 的%s 解出 %s：%s"
-                                       % (label, what, f, fam[:90]))
-                            break
+                    got = _norm(fam)
+                    want = want_disp if what == "标题" else want_sans
+                    if got != want:
+                        out.append("%s 的%s 解出的不是英文站那一套：\n"
+                                   "      得到 %s\n      应为 %s"
+                                   % (label, what, fam[:110],
+                                      (build_en.EN_DISPLAY if what == "标题"
+                                       else build_en.EN_SANS)[:110]))
             b.close()
     finally:
         srv.terminate()
@@ -399,12 +447,15 @@ def main():
     #    覆盖规则却从来没进过仓库 —— 字体下载了，页面照旧拿宋体渲染拉丁
     #    字母，①-⑫ 全绿（它们只看有没有中文**字**，看不见用什么**字体**）。
     #    这段覆盖后来又丢了一次，所以判据必须落在结果上。
+    #    判据的**内容**后来也改过一次：一开始拦的是「出现 CJK 字体名」，
+    #    那是拦错了对象 —— 系统里的宋体和苹方本身是好西文字体，坏的是
+    #    **下载**思源宋体那一类为配汉字设计的西文。见上面 ⓐ 的说明。
     r = rendered_fonts()
     if r is None:
         print("（没装 playwright，跳过英文字体检查）")
     else:
         for x in r:
-            bad.append("英文页用中文字体排字：%s" % x)
+            bad.append("英文页字体不对：%s" % x)
 
     # ⑫ 渲染之后的首页正文里也不许有中文
     r = rendered_cjk()

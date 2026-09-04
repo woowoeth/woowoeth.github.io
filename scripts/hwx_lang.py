@@ -158,8 +158,15 @@ def patch_tree(root="."):
                   # （比如 404 没有 header）才退回悬浮。悬浮的坏处不只是难看：
                   # 它会一直压在聊天窗上面。
                   "document.addEventListener('DOMContentLoaded',function(){"
-                  "var host=document.querySelector('.mast-links')||document.querySelector('.mast-top')"
-                  "||document.querySelector('header.hd');"
+                  # 宿主不能选一个**当前正被隐藏**的容器。踩过：条目页和
+                  # 章节页的 .mast-links 在 700px 以下是 display:none
+                  # （页头导航在手机上收起），工具条被塞进去之后整个
+                  # 尺寸为 0 —— 三种语言的条目页在手机上都没有语言切换、
+                  # 也没有夜间模式开关，而桌面端一切正常。
+                  # 顺序不变（桌面还是优先 .mast-links），只是跳过隐藏的。
+                  "var host=null,cand=['.mast-links','.mast-top','header.hd'];"
+                  "for(var ci=0;ci<cand.length;ci++){var hc=document.querySelector(cand[ci]);"
+                  "if(hc&&getComputedStyle(hc).display!=='none'){host=hc;break}}"
                   "var box=document.createElement('div');box.id='hwx-tools';"
                   # 三种语言并排三个按钮，头部会被挤满（390 宽下标题、额度、
                   # 关闭三样本来就紧）。改成一个下拉：当前语言显示在上面，
@@ -169,7 +176,13 @@ def patch_tree(root="."):
                   # 原生选择器都是白得的，自己画一套还得把这些补回来。
                   # 代价是各平台外观略有差异，用 appearance:none 加自己的箭头
                   # 已经压掉大部分。
-                  "var NAME={sc:'简体',tw:'繁體',en:'English'};"
+                  # 标签只用一个字／两个字母。原来是「简体／繁體／English」，
+                  # 「English」一个词就占 87px，把 375px 的页头挤到站名
+                  # 得换行才不被压住。原生 <select> 收起和展开显示的是
+                  # 同一份文字，所以短标签是列表里也短 —— 语言选择器的
+                  # 惯例本来就是「每一项用它自己的语言写」，简／繁／EN
+                  # 三个都认得出，只读英文的人也认得出 EN 那一项。
+                  "var NAME={sc:'简',tw:'繁',en:'EN'};"
                   "var sel=document.createElement('select');sel.id='hwx-lang';"
                   "sel.setAttribute('aria-label','Language');"
                   "['sc','tw','en'].forEach(function(k){"
@@ -183,7 +196,13 @@ def patch_tree(root="."):
                   "if(host){host.appendChild(box);"
                   # 主题按钮原本 position:fixed 单独浮着，一并收进来并排放
                   "var t=document.getElementById('hwx-theme');if(t)box.appendChild(t);"
-                  "if(host.classList.contains('hd')||host.classList.contains('mast-top'))"
+                  # .mast-top 本身是一行 flex（站名在里面），把工具条当
+                  # 这一行的最后一个 flex 项推到右边就行 —— 不用绝对定位，
+                  # 也就**结构上不可能**压住站名。header.hd 是 relative，
+                  # 那里继续用绝对定位（桌面端那一版的位置没变）。
+                  "if(host.classList.contains('mast-top'))"
+                  "box.classList.add('in-row');"
+                  "else if(host.classList.contains('hd'))"
                   "box.classList.add('float-in-head');}"
                   "else{document.body.appendChild(box);box.classList.add('loose')}"
                   "})"
@@ -216,7 +235,25 @@ def patch_tree(root="."):
                   # 收进头部之后不该再自己定位，否则会飞回右上角
                   "#hwx-tools #hwx-theme{position:static;width:32px;height:32px;margin:0;"
                   "box-shadow:none}"
-                  "@media(max-width:700px){#hwx-tools.float-in-head{top:10px}}</style>"
+                  "#hwx-tools.in-row{margin-left:auto;align-self:flex-start;flex:0 0 auto}"
+                  # 绝对定位的工具条不占位，站名一长就从它底下穿过去：
+                  # 中文站名 375px 下压 28px，英文「Human World Rules」压
+                  # 64px（「Rules」半个词看不见）。
+                  #
+                  # 限的必须是**宽度**，不是内边距：站名是 flex 项、宽度按内容
+                  # 算，加 padding-right 只是把盒子撑大，右边缘一点没退，
+                  # 重叠反而从 64px 变成 87px（整个下拉框）。
+                  #
+                  # 而且百分比在这里也不行：max-width:calc(100% - 190px) 的
+                  # 100% 是按父元素宽度算的，父元素又是 shrink-to-fit ——
+                  # 宽度取决于这个子元素，循环，最后算出 27px，站名断成
+                  # 「Human / World / Rules」三行。所以用视口单位：
+                  # 两侧各 24px 内边距 + 40px 图标 + 12px 间距 + 工具条约 114px
+                  # ≈ 220px，再留 12px 别让站名贴着下拉框。375px 下给站名 143px，「Human World」
+                  # 一行、「Rules」一行；414px 以上一行就放得下。
+                  "@media(max-width:760px){#hwx-tools.float-in-head{top:10px}"
+                  "#hwx-lang{padding:0 22px 0 10px;font-size:12.5px}"
+                  ".hd .hd-title,.hd .wordmark{max-width:calc(100vw - 232px)}}</style>"
                 + HWL_B
             )
             m = re.search(r'<meta name="viewport"[^>]*>\n?', s) or re.search(r"<head[^>]*>\n?", s)

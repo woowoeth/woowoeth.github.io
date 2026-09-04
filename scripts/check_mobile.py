@@ -14,8 +14,16 @@
 同一个 bug 在中文页上表现轻、在英文页上表现重 —— 只量一种语言，
 既可能漏掉，也可能误判成「英文的问题」。
 
-判据是 documentElement.scrollWidth <= clientWidth + 1，也就是
-「读者不需要横向滚动」。允许 1px 是给亚像素留的余量。
+判据三条：
+① 不横向撑开 —— documentElement.scrollWidth <= clientWidth + 1，也就是
+   「读者不需要横向滚动」。允许 1px 是给亚像素留的余量。
+② 语言切换和夜间模式在手机上必须真的**在**、真的能点。踩过：条目页和
+   章节页的 .mast-links 在 700px 以下是 display:none（页头导航在手机上
+   收起），而工具条被塞进了它里面 —— 尺寸 0×0，三种语言的条目页在手机上
+   都没有语言切换、也没有夜间模式开关，而桌面端一切正常，所有闸门全绿。
+③ 页头不许自己压自己 —— 工具条是绝对定位的、不占位，站名一长就从它底下
+   穿过去。中文站名短，勉强不撞；英文「Human World Rules」在 375px 下被
+   下拉框压掉「Rules」半个词。判的是两个矩形有没有交集。
 """
 import os
 import subprocess
@@ -104,7 +112,16 @@ def main():
                              .split(/\\s+/)[0] : '')
                           + ' ' + Math.round(b.width) + 'px');
                     });
-                    return {sw: d.scrollWidth, vw, over: over.slice(0, 4)};
+                    const rect = (e) => {
+                      if (!e) return null;
+                      const q = e.getBoundingClientRect();
+                      return {x: q.x, y: q.y, w: q.width, h: q.height,
+                              right: q.right, bottom: q.bottom};
+                    };
+                    return {sw: d.scrollWidth, vw, over: over.slice(0, 4),
+                            lang: rect(document.getElementById('hwx-lang')),
+                            theme: rect(document.getElementById('hwx-theme')),
+                            title: rect(document.querySelector('.hd-title, .wordmark'))};
                 }""")
                 checked += 1
                 if r["sw"] > r["vw"] + 1:
@@ -112,6 +129,28 @@ def main():
                                % (label, path, r["sw"], r["vw"],
                                   ("　撑开的是 " + "、".join(r["over"]))
                                   if r["over"] else ""))
+
+                # ② 语言切换和夜间模式必须在、必须有尺寸、必须在屏幕里
+                for what, box in (("语言切换", r["lang"]), ("夜间模式", r["theme"])):
+                    if box is None:
+                        bad.append("%s %s 上没有%s" % (label, path, what))
+                    elif box["w"] < 20 or box["h"] < 20:
+                        bad.append("%s %s 的%s尺寸是 %dx%d —— 大概是被塞进了一个"
+                                   "手机上 display:none 的容器里"
+                                   % (label, path, what, box["w"], box["h"]))
+                    elif box["x"] < -1 or box["right"] > r["vw"] + 1:
+                        bad.append("%s %s 的%s跑到屏幕外：x=%d right=%d（屏幕 %d）"
+                                   % (label, path, what, box["x"],
+                                      box["right"], r["vw"]))
+
+                # ③ 页头不许自己压自己
+                ta, la = r["title"], r["lang"]
+                if ta and la and la["w"] > 0:
+                    ox = min(ta["right"], la["right"]) - max(ta["x"], la["x"])
+                    oy = min(ta["bottom"], la["bottom"]) - max(ta["y"], la["y"])
+                    if ox > 1 and oy > 1:
+                        bad.append("%s %s 语言切换压住站名 %dx%dpx"
+                                   % (label, path, ox, oy))
             b.close()
     finally:
         srv.shutdown()
@@ -122,7 +161,8 @@ def main():
         for x in bad:
             print("  ✗ " + x)
         return 1
-    print("✓ 三种语言的首页、条目页、章节页在 375px 下都不需要横向滚动")
+    print("✓ 三种语言在 375px 下都不横向滚动、语言切换和夜间模式都在且可点、"
+          "页头不自己压自己")
     return 0
 
 

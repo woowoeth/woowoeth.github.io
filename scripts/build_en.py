@@ -74,19 +74,21 @@ LOCALE = [
 # 整条 Google Fonts 链接换掉，不是逐个字体名替换：英文要的是另外两个族
 # （Newsreader 做标题、Source Serif 4 做正文），字重也不一样。
 # 具体的变量覆盖在 assets/hw-entry.css 末尾的 html[lang="en"] 块里。
-EN_DISPLAY = '"Newsreader",Georgia,"Times New Roman",serif'
-EN_SANS = ('-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,'
-           '"Helvetica Neue",Arial,sans-serif')
+# 逐字抄自 boke/podcast 的 assets/site.css --serif
+EN_DISPLAY = ('"Songti SC","Noto Serif CJK SC","Source Han Serif SC",'
+              '"Source Han Serif",Georgia,"Times New Roman",serif')
+# 逐字抄自 boke/podcast 的 assets/site.css --sans
+EN_SANS = ('"PingFang SC","HarmonyOS Sans SC","Hiragino Sans GB",'
+           '"Microsoft YaHei",-apple-system,BlinkMacSystemFont,'
+           '"Segoe UI",Roboto,sans-serif')
 
 FONT = [
     ("https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;600;700;900"
      "&display=swap",
-     "https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;"
-     "6..72,600;6..72,700&display=swap"),
+     ""),
     ("https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;600;700"
      "&display=swap",
-     "https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;"
-     "6..72,600;6..72,700&display=swap"),
+     ""),
     # 首页不引 hw-entry.css，字体族是直接写死在内联 <style> 里的，所以
     # html[lang="en"] 那套变量覆盖够不到它 —— 必须在这里逐个换掉字体栈。
     # 长的排在前面：短的会先吃掉长栈的一截，剩下半截换不干净。
@@ -101,8 +103,8 @@ FONT = [
     ('"PingFang SC","HarmonyOS Sans SC","Hiragino Sans GB","Microsoft YaHei",'
      '-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif', EN_SANS),
     # 兜底：漏网的字体名换成拉丁族，别把 CJK 字体名留在英文页上
-    ("Noto+Serif+SC", "Newsreader"),
-    ("Noto Serif SC", "Newsreader"),
+    ("Noto+Serif+SC", "Songti+SC"),
+    ("Noto Serif SC", "Songti SC"),
 ]
 
 # 赞赏码：英文页用 AlipayHK，和繁体站同一个。大陆个人收款码在境外收不了；
@@ -127,11 +129,22 @@ PAY = [
 # 斜体多半是机器倾斜。一行中英混排看不出来，整页英文长文就是「哪里不对
 # 但说不出」。
 #
-# 分工：Newsreader 做标题（带 optical sizing，大字号收得住），正文和界面
-# 都用系统无衬线。正文一开始配的是 Source Serif 4，换掉是因为两件事：
-# 原声站的英文页就是「衬线标题 + 系统无衬线正文」这个配法，用户看了说好；
-# 而中文主站本来也是苹方做正文、宋体做标题 —— 英文跟着同一个结构，
-# 三个站和两种语言才是一套东西，不是各排一套。
+# 用的就是原声站那一套（逐个字体名对齐，不是"差不多"）。为什么原声的
+# 英文好看而主站的不好看，量出来只差一件事：
+#
+#   原声**不下载任何网络字体**，所以英文标题落到 Songti SC —— macOS 自带，
+#   它的拉丁字形是 Times 一路的老式衬线，排英文本来就成立。
+#   主站**下载** Noto Serif SC，于是英文标题落到它的拉丁字形 —— 思源宋体的
+#   西文是为「和汉字并排」设计的：窄、低对比、重心跟着汉字身框走，
+#   单独排一整页英文就是「完全不适合阅读」。
+#
+# 所以修法不是换一个更好的西文字体族，是**不要在英文页上下载那个 CJK
+# 网络字体**，让它落到系统里那个拉丁字形本来就好的宋体上。Newsreader 那
+# 一版是走岔了：它确实是个好西文字体，但和原声不是一个样子，而这两个站
+# 得看起来是一家的。
+#
+# 非苹果平台上 Songti SC / PingFang SC 都不存在，落到 Georgia 和系统无衬线
+# —— 这也是原声在那些平台上的样子。
 EN_CSS = """/* 由 scripts/build_en.py 生成，别手改 —— 改这里的话下次构建就没了。 */
 html[lang="en"]{
   --display:%(disp)s;
@@ -154,7 +167,7 @@ html[lang="en"] blockquote{font-family:var(--quote)}
 html[lang="en"] h1,
 html[lang="en"] .one,
 html[lang="en"] .hd-title,
-html[lang="en"] .point h2{letter-spacing:-.011em}
+html[lang="en"] .point h2{letter-spacing:-.015em}
 html[lang="en"] .kicker,
 html[lang="en"] .sec-k{letter-spacing:.008em}
 """ % {"disp": EN_DISPLAY, "sans": EN_SANS}
@@ -450,7 +463,7 @@ def write_home(items):
     # 不换的话英文金句会被宋体渲染 —— 西文字形是配汉字设计的，单独排一句
     # 英文重心和字宽都不对，而这张卡是要被读者存下来转发的。
     s = _sub_once(s, r"const DQ_FONT='[^']*';",
-                  "const DQ_FONT='\"Newsreader\",Georgia,serif';", "DQ_FONT")
+                  "const DQ_FONT='\"Songti SC\",Georgia,serif';", "DQ_FONT")
 
     # 哪些条目是「作品」不是「人」—— 前端据此说「it says」还是「he says」。
     # 中文那份列的是中文书名。这一批 30 个里，三个不是人。

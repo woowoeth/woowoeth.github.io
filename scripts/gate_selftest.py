@@ -564,24 +564,24 @@ CHAPCSS = os.path.join(ROOT, "assets", "hw-chapter.css")
 
 
 def _en_font():
-    """把英文站的标题字体换回宋体 —— 模拟英文覆盖丢失。
+    """把英文站的标题字体换成别的 —— 模拟英文覆盖丢失。
 
-    真事，而且丢过两次：build_en 一直在下载 Newsreader + Source Serif 4，
-    可覆盖规则从来没进过仓库，英文页就一直拿宋体渲染拉丁字母 ——
-    西文字形是配汉字设计的（半角字宽、重心偏高），整页英文读起来
-    「哪里不对但说不出」。当时 ①-⑫ 全绿：它们只看有没有中文**字**，
-    看不见用什么**字体**去排英文。
+    真事，而且丢过两次：那段 html[lang="en"] 的变量覆盖从来没进过仓库，
+    英文页一直拿别的字体排拉丁字母，而 ①-⑫ 全绿 —— 它们只看有没有
+    中文**字**，看不见用什么**字体**去排英文。
     """
     def go():
         if not os.path.exists(ENCSS):
             return None
         t = read(ENCSS)
-        a = '--display:"Newsreader"'
+        a = "--display:"
         if a not in t:
             return None
         i = t.index(a)
         j = t.index(";", i)
-        write(ENCSS, t[:i] + '--display:"Songti SC",serif' + t[j:])
+        # 换成一个**不是**英文站那一套的字体栈就行 —— 闸门比的是
+        # 「解出来的等不等于 build_en 打算给的」，不是某个字体名的黑名单。
+        write(ENCSS, t[:i] + "--display:Verdana,sans-serif" + t[j:])
         return ENCSS
 
     return go
@@ -730,7 +730,7 @@ CASES = [
     ("语言站·缺语言层",   "check_links.py", LAYERPAGE, _links_nolayer(), "没有 <!--HWX:LANG-->"),
     ("英文站·界面漏译",   "check_en.py", ENPAGE, _en_cjk(), "still has Chinese"),
     ("英文站·脚本被截断", "check_en_js.py", ENHOME, _en_js(), "SyntaxError"),
-    ("英文站·中文字体",   "check_en.py", ENCSS, _en_font(), "用中文字体排字"),
+    ("英文站·字体覆盖丢失", "check_en.py", ENCSS, _en_font(), "不是英文站那一套"),
     ("窄屏·横向撑开",     "check_mobile.py", CHAPCSS, _mobile_blowout(), "横向撑开"),
     ("挂件繁体·没跟上",   "check_chat_tw.py", CHATJS, _chat_tw_stale(), "不同步"),
     ("导语·没裁过",       "check_dek.py", ENPAGE, _dek_untrimmed(), "导语"),

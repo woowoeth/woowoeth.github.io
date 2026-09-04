@@ -1,11 +1,11 @@
 /* 由 scripts/build_en.py 生成，別手改 —— 改這裡的話下次構建就沒了。 */
 html[lang="en"]{
-  --display:"Newsreader",Georgia,"Times New Roman",serif;
-  --quote:"Newsreader",Georgia,"Times New Roman",serif;
-  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --display:"Songti SC","Noto Serif CJK SC","Source Han Serif SC","Source Han Serif",Georgia,"Times New Roman",serif;
+  --quote:"Songti SC","Noto Serif CJK SC","Source Han Serif SC","Source Han Serif",Georgia,"Times New Roman",serif;
+  --sans:"PingFang SC","HarmonyOS Sans SC","Hiragino Sans GB","Microsoft YaHei",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
   /* 站名那幾條帶 !important（要壓住首頁內聯樣式），所以只能從值這一層
      覆蓋 —— 見 assets/hw-home-lockup.css 裡同一處的註釋。 */
-  --brand-serif:"Newsreader",Georgia,"Times New Roman",serif;
+  --brand-serif:"Songti SC","Noto Serif CJK SC","Source Han Serif SC","Source Han Serif",Georgia,"Times New Roman",serif;
   --brand-track:0;
 }
 html[lang="en"] body{font-family:var(--sans)}
@@ -20,6 +20,6 @@ html[lang="en"] blockquote{font-family:var(--quote)}
 html[lang="en"] h1,
 html[lang="en"] .one,
 html[lang="en"] .hd-title,
-html[lang="en"] .point h2{letter-spacing:-.011em}
+html[lang="en"] .point h2{letter-spacing:-.015em}
 html[lang="en"] .kicker,
 html[lang="en"] .sec-k{letter-spacing:.008em}
