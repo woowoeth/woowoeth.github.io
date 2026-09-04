@@ -1670,7 +1670,10 @@ switchTab('境');
         "<div class=\"sc\" id=\"hwx-sc\" style=\"display:none\">"
         "<button class=\"scmore\" id=\"hwx-scmore\" type=\"button\"></button></div>"
         "<div class=\"res\" id=\"hwx-res\" style=\"display:none\"></div>"
-                "<div class=\"qbar\"><input id=\"q\" placeholder=\"搜你遇到的事：被裁了、睡不着、孩子不听…\" aria-label=\"搜索\"></div>"
+                # 只举两个例子。三个例子在 375px 上放不下 —— 而被裁掉的正好是例子，
+                # 也就是这句占位文字唯一的作用。三种语言都超（中文要 317px，
+                # 框内只有 285px），不是英文单独的毛病。
+                "<div class=\"qbar\"><input id=\"q\" placeholder=\"搜你遇到的事：被裁了、睡不着…\" aria-label=\"搜索\"></div>"
         "<div style=\"display:flex;align-items:baseline;justify-content:space-between;margin-top:14px\">"
         "<div class=\"tabs2\" id=\"hwx-tabs2\">"
         "<button data-t=\"新\">最新</button><button data-t=\"全\">全部</button>"

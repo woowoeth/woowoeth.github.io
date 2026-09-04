@@ -208,8 +208,11 @@ UI += [
      "Scan with WeChat to follow. On a phone, press and hold the image to save "
      "it, then scan it from your album."),
     ("没找到想看的？在公众号里告诉我", "Can't find what you're after? Tell me on WeChat"),
-    ("搜你遇到的事：被裁了、睡不着、孩子不听…",
-     "Search what you're in: laid off, can't sleep, kid won't listen…"),
+    # 占位文字必须放得进框里：375px 上输入框的内容宽只有 285px。中文原来
+    # 举三个例子要 317px，英文直译 62 个字符更长 —— 被裁掉的正好是举例，
+    # 也就是这句话唯一的作用。中英都缩到两个例子。
+    ("搜你遇到的事：被裁了、睡不着…",
+     "Search: laid off, can't sleep, no reply"),
     ("OurWord AI 微信公众号二维码", "OurWord AI on WeChat, QR code"),
     ('content="生存法则"', 'content="Human World Rules"'),
     ("你遇到的是别的事？", "Something else on your mind?"),

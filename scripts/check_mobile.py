@@ -24,6 +24,10 @@
 ③ 页头不许自己压自己 —— 工具条是绝对定位的、不占位，站名一长就从它底下
    穿过去。中文站名短，勉强不撞；英文「Human World Rules」在 375px 下被
    下拉框压掉「Rules」半个词。判的是两个矩形有没有交集。
+⑤ 文字必须放得进它的框 —— 英文界面串普遍比中文长（同一句话「搜你遇到的
+   事：被裁了、睡不着、孩子不听…」20 字，英文 62 个字符），塞进按中文宽度
+   定好的控件里就被裁。裁掉的往往正是那句话唯一有用的部分（举例、数字）。
+   判的是 scrollWidth 超出 clientWidth，以及占位文字量出来比输入框还宽。
 ④ 站名必须一行 —— ③ 只保证不重叠，而「不重叠」可以靠把站名压窄来达成，
    那样站名就断成两行。它是一个名字，断成两行不是排版，是把名字拆了。
    两条一起才逼出正确的解：工具条自己占一行，站名拿回整行宽度。
@@ -125,6 +129,43 @@ def main():
                             lang: rect(document.getElementById('hwx-lang')),
                             theme: rect(document.getElementById('hwx-theme')),
                             title: rect(document.querySelector('.hd-title, .wordmark')),
+                            clipped: (() => {
+                              const out = [];
+                              document.querySelectorAll('body *').forEach(el => {
+                                const cs = getComputedStyle(el);
+                                if (cs.display === 'none' || cs.visibility === 'hidden') return;
+                                const q = el.getBoundingClientRect();
+                                if (q.width < 30 || q.height < 8) return;
+                                const name = el.tagName.toLowerCase()
+                                  + (el.id ? '#' + el.id : '')
+                                  + (el.className ? '.' + String(el.className).trim().split(/\\s+/)[0] : '');
+                                if (el.scrollWidth > el.clientWidth + 2
+                                    && cs.overflowX !== 'auto' && cs.overflowX !== 'scroll')
+                                  out.push(name + ' 的内容被裁：'
+                                    + (el.textContent || '').trim().slice(0, 40));
+                                const ph = el.placeholder;
+                                if (ph) {
+                                  const probe = document.createElement('span');
+                                  probe.style.cssText = 'position:absolute;left:-9999px;'
+                                    + 'white-space:nowrap;font:' + cs.font;
+                                  probe.textContent = ph;
+                                  document.body.appendChild(probe);
+                                  const need = probe.getBoundingClientRect().width;
+                                  probe.remove();
+                                  // clientWidth **含内边距**，直接拿它当
+                                  // 可用宽度会算宽 —— 得减掉左右 padding，
+                                  // 那才是文字真正能占的地方。
+                                  const pad = parseFloat(cs.paddingLeft)
+                                            + parseFloat(cs.paddingRight);
+                                  const room = el.clientWidth - pad;
+                                  if (need > room)
+                                    out.push(name + ' 的占位文字放不下（要 '
+                                      + Math.round(need) + 'px，框内只有 '
+                                      + Math.round(room) + 'px）：' + ph.slice(0, 40));
+                                }
+                              });
+                              return out.slice(0, 4);
+                            })(),
                             titleLine: (() => {
                               const e = document.querySelector('.hd-title, .wordmark');
                               return e ? parseFloat(getComputedStyle(e).lineHeight) || 0 : 0;
@@ -158,6 +199,11 @@ def main():
                     if ox > 1 and oy > 1:
                         bad.append("%s %s 语言切换压住站名 %dx%dpx"
                                    % (label, path, ox, oy))
+                # ⑤ 文字放不进框：被裁的内容读者永远看不到，而页面上
+                #    一点异常都看不出来 —— 它只是「短了一截」。
+                for x in (r.get("clipped") or [])[:3]:
+                    bad.append("%s %s %s" % (label, path, x))
+
                 # ④ 站名必须一行。它是一个**名字**，断成两行不是排版，是把
                 #    名字拆了。③ 只保证不重叠，而「不重叠」可以靠把站名压窄
                 #    来达成 —— 那正是之前那一版：「Human World」/「Rules」。
@@ -177,7 +223,7 @@ def main():
             print("  ✗ " + x)
         return 1
     print("✓ 三种语言在 375px 下都不横向滚动、语言切换和夜间模式都在且可点、"
-          "页头不自己压自己、站名一行")
+          "页头不自己压自己、站名一行、文字都放得进框")
     return 0
 
 

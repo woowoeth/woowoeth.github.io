@@ -265,7 +265,12 @@ def patch_tree(root="."):
                   ".hd .hd-title,.hd .wordmark{max-width:none;white-space:nowrap}"
                   # 条目页/章节页的站名同样不许换行；那边工具条是 .mast-top
                   # 里的 flex 项，站名太长时让整行换行，而不是把名字压窄。
+                  # 条目页/章节页也让工具条自己占一行，而且排在站名**上面** ——
+                  # 和首页同一个位置。首页在上、内页在下的话，读者每换一种
+                  # 页面就得重新找一次语言开关在哪。
                   ".mast-top{flex-wrap:wrap}"
+                  "#hwx-tools.in-row{order:-1;flex:0 0 100%;display:flex;"
+                  "justify-content:flex-end;margin:0 0 4px}"
                   ".mast-top .wordmark{white-space:nowrap}}"
                   "</style>"
                 + HWL_B
