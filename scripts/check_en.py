@@ -41,6 +41,7 @@ is different, and each rule below covers one way it actually goes wrong:
    两处则第二处不会被渲染）。
 """
 import collections
+import io
 import os
 import re
 import sys
@@ -191,6 +192,70 @@ def rendered_cjk(url="http://localhost:8931/en/"):
                    if ln.strip() and hit.search(ln) and ln.strip() not in keep})
 
 
+# 中文字体名字：这些字体的西文字形是配汉字设计的（半角字宽、重心偏高、
+# 斜体多半是机器倾斜），拿来排整页英文就是「哪里不对但说不出」。
+# 英文页上解出这些字体里的任何一个，都算漏改。
+CJK_FONTS = ("PingFang", "Songti", "STSong", "Noto Serif SC", "Noto Sans SC",
+             "Source Han", "Hiragino Sans GB", "Microsoft YaHei",
+             "HarmonyOS Sans SC", "Huiwen", "Noto Serif CJK", "SimSun",
+             "Heiti", "Yuanti", "Kaiti")
+
+# 三类版式各抽一页，每页量三个层面：标题、正文、引文。
+# 抽样表里少一类版式，那一类就没人看着 —— 首页的字体族是写死在内联
+# <style> 里的，条目页走 /assets/hw-en.css，两条路完全不同。
+FONT_SAMPLE = [
+    ("英文首页", "/en/", [("标题", ".hd-title"), ("正文", "body")]),
+    ("英文条目", "/en/i/su-shi/",
+     [("标题", "h1"), ("正文", "article p"), ("眉标", ".kicker")]),
+    ("英文章节", "/en/i/su-shi/no-wind-no-rain/",
+     [("标题", "h1"), ("正文", "article p")]),
+    ("英文分类", "/en/t/mind-and-feeling/", [("标题", "h1")]),
+    ("英文全集", "/en/all/", [("标题", "h1")]),
+]
+
+
+def rendered_fonts(port=8932):
+    """渲染英文页，读 getComputedStyle 解出来的 font-family。
+
+    没装 playwright 就跳过（返回 None），本地跑得动、CI 上一定跑。
+    """
+    try:
+        from playwright.sync_api import sync_playwright
+    except Exception:
+        return None
+    import subprocess
+    import time
+    srv = subprocess.Popen([sys.executable, "-m", "http.server", str(port)],
+                           cwd=ROOT, stdout=subprocess.DEVNULL,
+                           stderr=subprocess.DEVNULL)
+    time.sleep(2.0)
+    out = []
+    try:
+        with sync_playwright() as pw:
+            b = pw.chromium.launch()
+            pg = b.new_page(locale="en-US")
+            for label, path, spots in FONT_SAMPLE:
+                pg.goto("http://localhost:%d%s" % (port, path), timeout=30000)
+                pg.wait_for_timeout(1200)
+                for what, sel in spots:
+                    fam = pg.evaluate(
+                        "s => { const e = document.querySelector(s);"
+                        " return e ? getComputedStyle(e).fontFamily : null }", sel)
+                    if fam is None:
+                        out.append("%s 的%s（%s）在页面上找不到 —— 抽样表要跟着改"
+                                   % (label, what, sel))
+                        continue
+                    for f in CJK_FONTS:
+                        if f in fam:
+                            out.append("%s 的%s 解出 %s：%s"
+                                       % (label, what, f, fam[:90]))
+                            break
+            b.close()
+    finally:
+        srv.terminate()
+    return out
+
+
 def main():
     real = {(c["parent_slug"], c["k"]) for c in H.CHAPTERS}
     bad, seen_q, seen_s = [], {}, {}
@@ -326,6 +391,20 @@ def main():
                     break
     else:
         bad.append("no en/ built yet — run python3 scripts/build_en.py")
+
+    # ⑬ 英文页上真正用来排字的必须是拉丁字体。
+    #    量的是**渲染之后 getComputedStyle 解出来的字体栈**，不是「源码里
+    #    有没有那段覆盖」。第一版量的就是后者，而它是个代理：
+    #    build_en 早就把 Google Fonts 链接换成了 Newsreader + Source Serif 4，
+    #    覆盖规则却从来没进过仓库 —— 字体下载了，页面照旧拿宋体渲染拉丁
+    #    字母，①-⑫ 全绿（它们只看有没有中文**字**，看不见用什么**字体**）。
+    #    这段覆盖后来又丢了一次，所以判据必须落在结果上。
+    r = rendered_fonts()
+    if r is None:
+        print("（没装 playwright，跳过英文字体检查）")
+    else:
+        for x in r:
+            bad.append("英文页用中文字体排字：%s" % x)
 
     # ⑫ 渲染之后的首页正文里也不许有中文
     r = rendered_cjk()

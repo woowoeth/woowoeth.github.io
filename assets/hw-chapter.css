@@ -23,7 +23,11 @@ mark.hl{
 }
 .site-foot p:has(code){display:none}
 @media(max-width:900px){
-  .layout{grid-template-columns:1fr!important}
+  /* 必须是 minmax(0,1fr)：1fr 等价于 minmax(auto,1fr)，而 auto 下限取
+     内容的 min-content —— 移动端目录被改成横向滚动的胶囊带之后，
+     它的 min-content 就是整条带子的宽度，轨道被顶到 2000px 开外，
+     整页跟着横向撑开。桌面端看不出来，只有窄屏才发作。 */
+  .layout{grid-template-columns:minmax(0,1fr)!important}
   .side{display:block!important;position:static;order:-1;margin:0 0 6px}
   .side .panel{border:0;background:transparent;padding:0;box-shadow:none}
   .side .ph{display:none}

@@ -74,6 +74,11 @@ LOCALE = [
 # 整条 Google Fonts 链接换掉，不是逐个字体名替换：英文要的是另外两个族
 # （Newsreader 做标题、Source Serif 4 做正文），字重也不一样。
 # 具体的变量覆盖在 assets/hw-entry.css 末尾的 html[lang="en"] 块里。
+EN_DISPLAY = '"Newsreader",Georgia,"Times New Roman",serif'
+EN_SANS = ('-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,'
+           '"Helvetica Neue",Arial,sans-serif')
+EN_READ = '"Source Serif 4",Georgia,"Times New Roman",serif'
+
 FONT = [
     ("https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;600;700;900"
      "&display=swap",
@@ -85,6 +90,19 @@ FONT = [
      "https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;"
      "6..72,600;6..72,700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600"
      "&display=swap"),
+    # 首页不引 hw-entry.css，字体族是直接写死在内联 <style> 里的，所以
+    # html[lang="en"] 那套变量覆盖够不到它 —— 必须在这里逐个换掉字体栈。
+    # 长的排在前面：短的会先吃掉长栈的一截，剩下半截换不干净。
+    ('"Songti SC","Noto Serif CJK SC","Source Han Serif SC",Georgia,serif',
+     EN_DISPLAY),
+    ('"Noto Serif SC","Source Han Serif SC","Songti SC","STSong",serif',
+     EN_DISPLAY),
+    ('"Noto Serif SC","Songti SC","STSong",serif', EN_DISPLAY),
+    ('"Noto Serif SC","Songti SC",serif', EN_DISPLAY),
+    ('-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC",'
+     '"Noto Sans SC","Hiragino Sans GB",sans-serif', EN_SANS),
+    ('"PingFang SC","HarmonyOS Sans SC","Hiragino Sans GB","Microsoft YaHei",'
+     '-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif', EN_SANS),
     # 兜底：漏网的字体名换成拉丁族，别把 CJK 字体名留在英文页上
     ("Noto+Serif+SC", "Source+Serif+4"),
     ("Noto Serif SC", "Source Serif 4"),
@@ -99,6 +117,74 @@ PAY = [
     ("/assets/pay-alipay.png", "/assets/pay-alipayhk.png"),
     ("https://qr.alipay.com/fkx10243q5q41avrifvyj24", ALIPAY_HK_LINK),
 ]
+
+
+# ── 英文排版 ────────────────────────────────────────────────
+# 这段 CSS 由构建**生成**成 assets/hw-en.css，不是手写在 hw-entry.css
+# 末尾的。写在那里试过两次，两次都丢：hw-entry.css 是中文站的样式表，
+# 谁碰一下、哪次回滚一下，尾巴上这块就没了，而且没有任何闸看得见 ——
+# 字体链接照旧下载 Newsreader，页面照旧拿宋体渲染拉丁字母。
+#
+# 为什么英文非得单独一套：中文字体（PingFang SC / 宋体 / 思源宋体）里的
+# 西文字形是**配汉字设计的** —— 字宽被压成半角以对齐字身框，重心偏高，
+# 斜体多半是机器倾斜。一行中英混排看不出来，整页英文长文就是「哪里不对
+# 但说不出」。
+#
+# 分工：Newsreader 做标题（带 optical sizing，大字号收得住），
+# Source Serif 4 做正文（为屏幕阅读设计，x 高度够），
+# 界面文字（导航、胶囊、按钮）留给系统无衬线 —— 12px 的衬线不够清晰。
+EN_CSS = """/* 由 scripts/build_en.py 生成，别手改 —— 改这里的话下次构建就没了。 */
+html[lang="en"]{
+  --display:%(disp)s;
+  --quote:%(disp)s;
+  --read:%(read)s;
+  --sans:%(sans)s;
+  /* 站名那几条带 !important（要压住首页内联样式），所以只能从值这一层
+     覆盖 —— 见 assets/hw-home-lockup.css 里同一处的注释。 */
+  --brand-serif:%(disp)s;
+  --brand-track:0;
+}
+html[lang="en"] body{font-family:var(--sans)}
+html[lang="en"] article,
+html[lang="en"] .dek,
+html[lang="en"] .lede,
+html[lang="en"] .idx{font-family:var(--read)}
+html[lang="en"] h1,
+html[lang="en"] h2,
+html[lang="en"] .one,
+html[lang="en"] .hd-title,
+html[lang="en"] .point h2{font-family:var(--display)}
+html[lang="en"] blockquote{font-family:var(--quote)}
+/* 字距是给汉字调的：汉字是方块，拉开一点更透气；拉丁字母的字距字体里
+   已经调好了，再加 .04em 就散。标题类归零偏紧一点，小标签留一点点。 */
+html[lang="en"] h1,
+html[lang="en"] .one,
+html[lang="en"] .hd-title,
+html[lang="en"] .point h2{letter-spacing:-.011em}
+html[lang="en"] .kicker,
+html[lang="en"] .sec-k{letter-spacing:.008em}
+""" % {"disp": EN_DISPLAY, "read": EN_READ, "sans": EN_SANS}
+EN_CSS_HREF = "/assets/hw-en.css?v=1"
+
+
+def write_en_css():
+    """写出英文样式表。放在 /assets/ 下和其他样式表同级。"""
+    p = os.path.join(ROOT, "assets", "hw-en.css")
+    old = open(p, encoding="utf-8").read() if os.path.exists(p) else None
+    if old != EN_CSS:
+        open(p, "w", encoding="utf-8").write(EN_CSS)
+    return len(EN_CSS)
+
+
+def link_en_css(s):
+    """把英文样式表挂到 </head> 前 —— 必须排在所有其他样式表后面，
+    否则同等权重的规则会被后面的盖回去。首页的字体族是写死在内联
+    <style> 里的，那一层靠 FONT 表逐个换栈，不靠这个文件。"""
+    if EN_CSS_HREF in s or "</head>" not in s:
+        return s
+    tag = '<link rel="stylesheet" href="%s">' % EN_CSS_HREF
+    i = s.rindex("</head>")
+    return s[:i] + tag + s[i:]
 
 
 def protect(s):
@@ -176,7 +262,7 @@ def retarget(s, rel=None):
 
 
 def finish(s, rel=None):
-    """一页渲染好之后统一做的四件事，顺序有意义。"""
+    """一页渲染好之后统一做的五件事，顺序有意义。"""
     import en_ui
     kept, keep = protect(s)          # ① URL 先藏起来
     kept = en_ui.apply(kept)         # ② 界面串（表内已按长度降序）
@@ -184,7 +270,9 @@ def finish(s, rel=None):
     s = retarget(s, rel)             # ③ 站内地址改指 /en/（含自指地址）
     for a, b in FONT + LOCALE + PAY:  # ④ 字体、语言标记、收款码
         s = s.replace(a, b)
-    return s
+    # ⑤ 英文样式表挂在最后：retarget 之后再挂，它才不会被改写成
+    #    /en/assets/（那个路径下没有文件，挂上去等于没挂）。
+    return link_en_css(s)
 
 
 
@@ -216,7 +304,16 @@ def _flat(v):
         if isinstance(x, dict):
             head = x.get("n") or x.get("name") or ""
             body = x.get("why") or x.get("d") or ""
-            out.append((head + " \u2014 " + body).strip(" \u2014") if head or body else "")
+            t = (head + " \u2014 " + body).strip(" \u2014") if head or body else ""
+            # 「名字 — 理由」这类条目必须自己收尾。它们会被拍进 FAQ 的
+            # JSON-LD，而那一层把换行折成空格 —— 不收尾的话
+            # 「…refuses to be defined by losing it C.S. Lewis — …」
+            # 两条连成一句读不通的话。中文那边靠「。」天然分开，
+            # 英文靠的是这一个句点。（纯名字的清单不加，加了像清单里
+            # 每个人名后面都点一下。）
+            if t and not t.endswith((".", "!", "?", "\u2026", ":")):
+                t += "."
+            out.append(t)
         else:
             out.append(str(x))
     return "\n".join(t for t in out if t)
@@ -377,6 +474,7 @@ def main():
     os.environ["HW_SCENES"] = "hwx_scenes_en"
     if os.path.isdir(OUT):
         shutil.rmtree(OUT)
+    write_en_css()
 
     sys.path.insert(0, HERE)
     cwd = os.getcwd()
@@ -393,8 +491,13 @@ def main():
         # 是整块数据都是别的站的。
         os.makedirs(OUT, exist_ok=True)
         n_home = write_home(items)
+        # hubs=True：分类页（/en/t/<tag>/）必须建。关掉它不只是少了 41 个
+        # 落地页 —— item_page() 是按「这个标签有没有 hub」决定分类胶囊是
+        # <a> 还是死的 <span> 的，所以关掉之后英文条目页上「Mind and
+        # feeling / Medieval」三颗胶囊全是不能点的字，读者从条目页没有任何
+        # 横向浏览的出口，而中文版有。geo_kit 里 hub 页的英文文案本来就写好了。
         rep = G.build(SITE, items, root=OUT, item_pages=True, robots=False,
-                      sitemap=True, hubs=False,
+                      sitemap=True, hubs=True,
                       today=__import__("datetime").date.today().isoformat(),
                       extra_urls=[u.replace("https://ourword.ai/",
                                             "https://ourword.ai/en/")

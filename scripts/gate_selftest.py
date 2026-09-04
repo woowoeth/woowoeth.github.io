@@ -559,6 +559,104 @@ def _en_cjk():
     return go
 
 
+ENCSS = os.path.join(ROOT, "assets", "hw-en.css")
+CHAPCSS = os.path.join(ROOT, "assets", "hw-chapter.css")
+
+
+def _en_font():
+    """把英文站的标题字体换回宋体 —— 模拟英文覆盖丢失。
+
+    真事，而且丢过两次：build_en 一直在下载 Newsreader + Source Serif 4，
+    可覆盖规则从来没进过仓库，英文页就一直拿宋体渲染拉丁字母 ——
+    西文字形是配汉字设计的（半角字宽、重心偏高），整页英文读起来
+    「哪里不对但说不出」。当时 ①-⑫ 全绿：它们只看有没有中文**字**，
+    看不见用什么**字体**去排英文。
+    """
+    def go():
+        if not os.path.exists(ENCSS):
+            return None
+        t = read(ENCSS)
+        a = '--display:"Newsreader"'
+        if a not in t:
+            return None
+        i = t.index(a)
+        j = t.index(";", i)
+        write(ENCSS, t[:i] + '--display:"Songti SC",serif' + t[j:])
+        return ENCSS
+
+    return go
+
+
+def _mobile_blowout():
+    """把 minmax(0,1fr) 改回 1fr —— 模拟移动端横向撑开。
+
+    真事：`1fr` 等价于 `minmax(auto,1fr)`，`auto` 这个下限取内容的
+    min-content；移动端侧栏目录被改成一条横向滚动的胶囊带之后，它的
+    min-content 就是整条带子的宽度，网格轨道被顶到 2000px 开外，整页
+    跟着横着滚，英文条目页的正文右半边全在屏幕外。桌面端完全看不见。
+    """
+    def go():
+        t = read(CHAPCSS)
+        a = ".layout{grid-template-columns:minmax(0,1fr)!important}"
+        if a not in t:
+            return None
+        write(CHAPCSS, t.replace(a, ".layout{grid-template-columns:1fr!important}", 1))
+        return CHAPCSS
+
+    return go
+
+
+CHATJS = os.path.join(ROOT, "assets", "hw-chat.js")
+
+
+def _chat_tw_stale():
+    """把繁体表里的「發送」改回简体「发送」—— 模拟改了简体忘了跟繁体。
+
+    真事：把这 32 条文案从页面内联挪进共用 JS 表之后，繁体页上的挂件
+    整块变回了简体（「问」「说说看……」「发送」「今天还能问 5 次」）。
+    内联的年代繁体转换顺带就转了，挪出去之后转换够不着 —— 而所有闸门
+    照旧报绿，只有真的打开一个 /tw/ 页面点开挂件才看得见。
+    """
+    def go():
+        t = read(CHATJS)
+        a = "    tw: {"
+        if a not in t:
+            return None
+        i = t.index(a)
+        j = t.index("\n    },", i)
+        seg = t[i:j].replace("\\u767c\\u9001", "\\u53d1\\u9001")
+        if seg == t[i:j]:
+            return None
+        write(CHATJS, t[:i] + seg + t[j:])
+        return CHATJS
+
+    return go
+
+
+THEME = os.path.join(ROOT, "seo", "hw_theme.py")
+
+
+def _dek_cjk_only():
+    """把 _dek() 改回只认中文标点，重建英文站 —— 模拟共用模板里写死 CJK 标点。
+
+    真事：英文 summary 用的是单破折号和半角句点，中文那套找不到，于是
+    导语整块不裁，页面上露出 d[:140] 那个硬切口，而正文几行之下又把
+    同一段完整印一遍。
+    """
+    def go():
+        t = read(THEME)
+        a = 't.find("\u2014")'
+        if a not in t:
+            return None
+        write(THEME, t.replace(a, 't.find("\u2014\u2014")', 1))
+        import subprocess
+        subprocess.run([sys.executable, os.path.join(HERE, "build_en.py")],
+                       cwd=ROOT, capture_output=True)
+        return THEME
+
+    return go
+
+
 def _en_js():
     """把一个 JS 单引号字符串截断 —— 模拟盲替换插进了一个撇号。
 
@@ -625,6 +723,10 @@ CASES = [
     ("语言站·缺语言层",   "check_links.py", LAYERPAGE, _links_nolayer(), "没有 <!--HWX:LANG-->"),
     ("英文站·界面漏译",   "check_en.py", ENPAGE, _en_cjk(), "still has Chinese"),
     ("英文站·脚本被截断", "check_en_js.py", ENHOME, _en_js(), "SyntaxError"),
+    ("英文站·中文字体",   "check_en.py", ENCSS, _en_font(), "用中文字体排字"),
+    ("窄屏·横向撑开",     "check_mobile.py", CHAPCSS, _mobile_blowout(), "横向撑开"),
+    ("挂件繁体·没跟上",   "check_chat_tw.py", CHATJS, _chat_tw_stale(), "不同步"),
+    ("导语·只认中文标点", "check_dek.py", THEME, _dek_cjk_only(), "导语"),
 ]
 
 

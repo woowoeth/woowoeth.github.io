@@ -204,8 +204,12 @@ def patch_tree(root="."):
                   "background:var(--paper,#f5f1e8);color:var(--ink,#1c1917);font:inherit;"
                   "font-size:13px;letter-spacing:.02em;line-height:30px;cursor:pointer;"
                   "border-radius:16px;-webkit-appearance:none;-moz-appearance:none;appearance:none}"
-                  "#hwx-lang:hover{border-color:var(--acc,#9d2933);color:var(--acc,#9d2933)}"
-                  "#hwx-lang:focus-visible{outline:2px solid var(--acc,#9d2933);outline-offset:2px}"
+                  # 不用红：胭脂红是这个站的印章色，只该出现在「重点」上。
+                  # 而 select 选完之后焦点还在它身上，红环就一直挂着不走，
+                  # 看上去像是这里出了错。hover/focus 都改成墨色深一档。
+                  "#hwx-lang:hover{border-color:var(--rule-2,#d0c9b8)}"
+                  "#hwx-lang:focus-visible{outline:2px solid var(--ink,#1c1917);outline-offset:2px}"
+                  "#hwx-lang:focus:not(:focus-visible){outline:none}"
                   # 展开的菜单项由系统画，深色模式下要显式给底色，
                   # 否则 Chrome 会用白底黑字，和页面反差刺眼。
                   ":root[data-theme=\"dark\"] #hwx-lang option{background:#1d1913;color:#eae3d4}"

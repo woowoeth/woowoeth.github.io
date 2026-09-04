@@ -1,0 +1,30 @@
+/* 由 scripts/build_en.py 生成，别手改 —— 改这里的话下次构建就没了。 */
+html[lang="en"]{
+  --display:"Newsreader",Georgia,"Times New Roman",serif;
+  --quote:"Newsreader",Georgia,"Times New Roman",serif;
+  --read:"Source Serif 4",Georgia,"Times New Roman",serif;
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  /* 站名那几条带 !important（要压住首页内联样式），所以只能从值这一层
+     覆盖 —— 见 assets/hw-home-lockup.css 里同一处的注释。 */
+  --brand-serif:"Newsreader",Georgia,"Times New Roman",serif;
+  --brand-track:0;
+}
+html[lang="en"] body{font-family:var(--sans)}
+html[lang="en"] article,
+html[lang="en"] .dek,
+html[lang="en"] .lede,
+html[lang="en"] .idx{font-family:var(--read)}
+html[lang="en"] h1,
+html[lang="en"] h2,
+html[lang="en"] .one,
+html[lang="en"] .hd-title,
+html[lang="en"] .point h2{font-family:var(--display)}
+html[lang="en"] blockquote{font-family:var(--quote)}
+/* 字距是给汉字调的：汉字是方块，拉开一点更透气；拉丁字母的字距字体里
+   已经调好了，再加 .04em 就散。标题类归零偏紧一点，小标签留一点点。 */
+html[lang="en"] h1,
+html[lang="en"] .one,
+html[lang="en"] .hd-title,
+html[lang="en"] .point h2{letter-spacing:-.011em}
+html[lang="en"] .kicker,
+html[lang="en"] .sec-k{letter-spacing:.008em}

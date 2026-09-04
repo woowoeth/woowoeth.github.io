@@ -185,13 +185,20 @@ def _dek(summary):
     printed in full a few lines below as the pull. Keep the identifying half,
     which carries the only copy of the precise era; drop the rest. About 12,000
     characters of same-page duplication across the site.
+
+    标点必须两套都认。中文是「——」和「。」，英文是「 — 」和「.」——
+    只认中文那套的话，英文页上这一裁整块不发生：读者看到的是
+    it.summary 里 d[:140] 那个硬切口，「… a cook and a provincial
+    governor. He was banished」后面直接没了，而正文几行之下又把同一段
+    完整印一遍。共用模板里写死 CJK 标点，就是这么在另一种语言上发作的。
+    配套的闸：scripts/check_dek.py。
     """
     t = str(summary or "")
-    if "\u2014\u2014" in t:
-        dot = t.find("\u3002", t.index("\u2014\u2014"))
-        if dot > 0:
-            return t[:dot + 1]
-    return t
+    i = t.find("\u2014")          # 破折号：中文「——」是两个，英文「 — 」是一个
+    if i < 0:
+        return t
+    ends = [j for j in (t.find("\u3002", i), t.find(".", i)) if j > 0]
+    return t[:min(ends) + 1] if ends else t
 
 
 def _render_blocks(it, zh):

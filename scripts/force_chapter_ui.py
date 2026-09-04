@@ -10,7 +10,8 @@ STYLE = (
     'mark,mark.hl{background:transparent!important;color:#9d2933!important;'
     'font-weight:700!important;text-decoration:none!important;}'
     '@media (max-width:900px){aside.side{display:none!important}'
-    '.layout{grid-template-columns:1fr!important}}'
+    # minmax(0,1fr)，不是 1fr —— 理由见 assets/hw-chapter.css 同一处注释
+    '.layout{grid-template-columns:minmax(0,1fr)!important}}'
     '</style>'
 )
 MARK_OPEN = (

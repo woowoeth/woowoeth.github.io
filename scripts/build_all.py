@@ -44,6 +44,9 @@ CHAIN = [
     ("英文站", "scripts/build_en.py"),
     ("简体挂件（第二遍，此时才知道哪些页有英文版）", "scripts/force_chapter_ui.py"),
     ("聊天检索索引", "scripts/build_chat_index.py"),
+    # 挂件的繁体文案由简体文案生成。放在繁体站之前：assets/hw-chat.js 是
+    # 三个语言站共用的静态资源，build_tw 只转 tw/ 下的文件、转不到它。
+    ("聊天挂件繁体文案", "scripts/gen_chat_tw.py"),
     ("繁体站", "scripts/build_tw.py"),
 ]
 
