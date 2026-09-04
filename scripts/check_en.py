@@ -31,6 +31,10 @@ is different, and each rule below covers one way it actually goes wrong:
    风格偏好：dek 12-30 词、story 50-110 词、分则 20-55 词、例 8-40 词、
    金句 ≤14 词。
    靠眼睛盯 79 章必漏，所以让机器数。
+⑪ 构建出来的 /en/ 里一个中日韩字符都不许剩。这是整套英文站赖以成立的判据：
+   内容已经是英文，剩下的中文按定义就是没翻的界面串 —— 界面层那 90 多条
+   就是这么一条条数出来的，不是读生成器猜的。
+   两处豁免，都写在下面的 EXEMPT 里，各有理由。
 ⑩ 条目记录不带 == 强调（条目页不渲染它，会显示成两个字面的等号）。
 ⑨ 章节数据自身完整：每章七个字段都在，f 至少两条，q 至少两条，
    story 里恰好一处 ==…== 强调（模板拿它做引文块，没有就是一段白文，
@@ -81,6 +85,66 @@ def load_en():
     return out
 
 
+# /en/ 里允许留中文的地方：
+#
+# ① data-t="新" / "全" / "境" —— 首页标签页的**数据值**，JS 拿它比对
+#    （if(t==='新')）。翻了标签页就废了。
+# ② 语言切换里的 简体 / 繁體 —— 语言的名字用它自己的文字写，是有意的。
+# ③ 红印上的那个字 —— 卡片的印章、分享图上的「人」。那是这个站的标识
+#    （logo 本身就是一枚红「人」印），是图形不是文字。
+#
+# 扫描口径是「**读者看得见的东西**」，不是「整个文件减去注释」。
+# 后者试过，不好使：注释配对会被某个字符串里的 */ 带偏，于是一段注释漏出来；
+# 而 JS 正则字面量里的禁则字符表（/[。，、；：？！…]+$/）也会被当成漏译。
+# 两样都不是给人看的。所以直接只看三处：
+#   · HTML 文本节点（> 和 < 之间）
+#   · 会显示出来的属性（title / alt / placeholder / aria-label / content）
+#   · JS 里的**带引号字符串** —— 页面上大半的字是 JS 拼出来的，必须查。
+#     正则字面量不带引号，注释也不带，天然排除。
+EXEMPT = re.compile(r'data-t="[^"]*"|class="seal">[^<]*<|fillText\(\'[一-鿿]\'')
+LANG_NAMES = ("简体", "繁體", "繁体")
+# 首页三个标签页的**内部键**：新 / 全 / 境。只出现在 data-t 和 JS 比较里，
+# 从不显示给读者 —— 翻了标签页就废了。
+TAB_KEYS = ("新", "全", "境")
+
+# 名字不能叫 CJK —— 文件后面已经有一个 CJK = re.compile(…) 给判据 ③ 用，
+# 同名会被后定义的那个覆盖掉。
+CJK_CHARS = "一-鿿、。《》「」！，：；？"
+TEXT_NODE = re.compile(r">([^<>]{0,300})<")
+VISIBLE_ATTR = re.compile(
+    r'\b(?:title|alt|placeholder|aria-label|content)="([^"]{0,300})"')
+# JS 里的字符串**不用正则去找**。试过，不行：注释里的 don't 会和代码里的
+# 引号配对，整段注释被当成字符串报出来，而真正漏译的反而淹掉。
+# 靠正则切 JS 字符串需要一个真的分词器。
+#
+# 页面上大半的字确实是 JS 拼出来的，所以这一层改用**浏览器读渲染后的正文**
+# —— 见下面的 rendered_cjk()。那才是读者真正看到的东西，也正是截图里
+# 一眼看出「这一问来自「…」」还是中文的那个层面。
+
+
+def cjk_left(path):
+    """静态 HTML 里**读者看得见**的中文片段（文本节点 + 可见属性）。
+
+    JS 拼出来的那一层不在这里查，见 rendered_cjk()。
+    """
+    raw = open(path, encoding="utf-8", errors="ignore").read()
+    # script / style 整块剥掉：它们里面的 > 和 < 会让文本节点的正则
+    # 把 JS 代码当成正文报出来。那一层由 rendered_cjk() 用浏览器覆盖，
+    # 这里只管静态 HTML。
+    raw = re.sub(r"<(script|style)\b[^>]*>.*?</\1>", "", raw, flags=re.S)
+    raw = EXEMPT.sub("", raw)
+    cand = set()
+    for pat in (TEXT_NODE, VISIBLE_ATTR):
+        for m in pat.findall(raw):
+            cand.add(m)
+    hit = re.compile("[" + CJK_CHARS + "]")
+    out = set()
+    for c in cand:
+        c = c.strip()
+        if c and hit.search(c) and c not in LANG_NAMES and c not in TAB_KEYS:
+            out.add(c[:80])
+    return sorted(out)
+
 CJK = re.compile(r"[　-〿一-鿿＀-￯]")
 # 例（eg）和分则（d）不是一回事，不能共用一个区间：d 是论证，要说完；
 # eg 是一句具体的例子，短才好用。第一版把 20-55 同时套在两者上，
@@ -89,6 +153,42 @@ LEN = {"dek": (12, 30), "story": (50, 110),
        "part": (20, 55), "eg": (8, 40), "quote": (1, 14)}
 MAX_SCENE = 46          # 处境名进 chip 条，长了换行把整排挤散
 MAX_GROUP = 30
+
+
+def rendered_cjk(url="http://localhost:8931/en/"):
+    """把英文首页真的渲染一遍，读 body 的可见文字里还有没有中文。
+
+    这一层非有不可：首页大半的字是 JS 画的，静态 HTML 干净不等于页面干净。
+    实测过一次 —— 静态扫描全绿，截图上「这一问来自「I have no one to call」」
+    明晃晃是中文。
+
+    没装 playwright 就跳过（返回 None），本地跑得动、CI 上一定跑。
+    """
+    try:
+        from playwright.sync_api import sync_playwright
+    except Exception:
+        return None
+    import subprocess
+    import time
+    srv = subprocess.Popen([sys.executable, "-m", "http.server", "8931"],
+                           cwd=ROOT, stdout=subprocess.DEVNULL,
+                           stderr=subprocess.DEVNULL)
+    time.sleep(2.0)
+    try:
+        with sync_playwright() as pw:
+            b = pw.chromium.launch()
+            pg = b.new_page(locale="en-US")
+            pg.goto(url, timeout=30000)
+            pg.wait_for_timeout(2500)
+            txt = pg.evaluate("() => document.body.innerText")
+            b.close()
+    finally:
+        srv.terminate()
+    hit = re.compile("[" + CJK_CHARS + "]")
+    # 语言名和红印是有意留的，见文件开头 EXEMPT 那几条的说明。
+    keep = set(LANG_NAMES) | set(TAB_KEYS) | {"问", "句", "人"}
+    return sorted({ln.strip()[:70] for ln in txt.split("\n")
+                   if ln.strip() and hit.search(ln) and ln.strip() not in keep})
 
 
 def main():
@@ -207,6 +307,33 @@ def main():
             if words(q) > LEN["quote"][1]:
                 bad.append("%s: line to keep is %d words (max %d): %r"
                            % (where, words(q), LEN["quote"][1], q))
+
+    # ⑪ 构建产物里不许剩中文
+    en_dir = os.path.join(ROOT, "en")
+    if os.path.isdir(en_dir):
+        n_page = 0
+        for dp, _dn, fn in os.walk(en_dir):
+            for f in fn:
+                if not f.endswith((".html", ".xml", ".txt", ".json")):
+                    continue
+                n_page += 1
+                left = cjk_left(os.path.join(dp, f))
+                if left:
+                    rel = os.path.relpath(os.path.join(dp, f), ROOT)
+                    bad.append("%s still has Chinese: %s"
+                               % (rel, " | ".join(x[:50] for x in left[:2])))
+                if len([x for x in bad if "still has Chinese" in x]) >= 5:
+                    break
+    else:
+        bad.append("no en/ built yet — run python3 scripts/build_en.py")
+
+    # ⑫ 渲染之后的首页正文里也不许有中文
+    r = rendered_cjk()
+    if r is None:
+        print("（没装 playwright，跳过渲染后的中文检查）")
+    elif r:
+        for x in r[:4]:
+            bad.append("英文首页渲染后仍有中文：%s" % x)
 
     nq = sum(len(q) for _, _, q in SCENES)
     print("English: %d groups · %d situations · %d questions · "

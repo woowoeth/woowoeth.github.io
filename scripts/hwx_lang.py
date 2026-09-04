@@ -148,18 +148,25 @@ def patch_tree(root="."):
                   "var host=document.querySelector('.mast-links')||document.querySelector('.mast-top')"
                   "||document.querySelector('header.hd');"
                   "var box=document.createElement('div');box.id='hwx-tools';"
-                  # 三种语言时不做循环按钮：一个「下一种语言」的按钮读者猜不到
-                  # 点下去会去哪。改成把**你不在的那两种**并排列出来，看一眼就知道。
-                  # 这一页没有英文版时自然只剩一个，和原来一模一样。
-                  "var NAME={sc:'简体',tw:'繁體',en:'EN'};"
-                  "var order=['sc','tw','en'];"
-                  "order.forEach(function(k){"
-                  "if(k===cur)return;if(k==='en'&&!HAS_EN)return;"
-                  "var b=document.createElement('button');b.id='hwx-lang-'+k;b.type='button';"
-                  "b.className='pill hwx-lang';b.textContent=NAME[k];"
-                  "b.setAttribute('aria-label','Switch to '+NAME[k]);"
-                  "b.onclick=function(){try{localStorage.setItem(K,k)}catch(e){};location.href=to[k]};"
-                  "box.appendChild(b)});"
+                  # 三种语言并排三个按钮，头部会被挤满（390 宽下标题、额度、
+                  # 关闭三样本来就紧）。改成一个下拉：当前语言显示在上面，
+                  # 点开是全部三种。
+                  #
+                  # 用原生 <select> 不自己画菜单：键盘操作、焦点管理、移动端的
+                  # 原生选择器都是白得的，自己画一套还得把这些补回来。
+                  # 代价是各平台外观略有差异，用 appearance:none 加自己的箭头
+                  # 已经压掉大部分。
+                  "var NAME={sc:'简体',tw:'繁體',en:'English'};"
+                  "var sel=document.createElement('select');sel.id='hwx-lang';"
+                  "sel.setAttribute('aria-label','Language');"
+                  "['sc','tw','en'].forEach(function(k){"
+                  "if(k==='en'&&!HAS_EN)return;"
+                  "var o=document.createElement('option');o.value=k;o.textContent=NAME[k];"
+                  "if(k===cur)o.selected=true;sel.appendChild(o)});"
+                  "sel.onchange=function(){var k=sel.value;if(k===cur)return;"
+                  "try{localStorage.setItem(K,k)}catch(e){};location.href=to[k]};"
+                  "var wrap=document.createElement('span');wrap.className='hwx-lang-wrap';"
+                  "wrap.appendChild(sel);box.appendChild(wrap);"
                   "if(host){host.appendChild(box);"
                   # 主题按钮原本 position:fixed 单独浮着，一并收进来并排放
                   "var t=document.getElementById('hwx-theme');if(t)box.appendChild(t);"
@@ -173,11 +180,22 @@ def patch_tree(root="."):
                   # 不盖正文、也不盖聊天窗
                   "#hwx-tools.float-in-head{position:absolute;top:18px;right:0}"
                   "#hwx-tools.loose{position:fixed;top:14px;right:14px;z-index:9999}"
-                  "#hwx-tools .hwx-lang{height:32px;padding:0 13px;border:1px solid var(--line,#e2ddd0);"
+                  "#hwx-tools .hwx-lang-wrap{position:relative;display:inline-flex}"
+                  # 自己画箭头：appearance:none 之后原生箭头没了，不补一个
+                  # 读者看不出这是可点开的。
+                  "#hwx-tools .hwx-lang-wrap::after{content:'';position:absolute;"
+                  "right:11px;top:50%;width:5px;height:5px;margin-top:-3px;"
+                  "border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;"
+                  "transform:rotate(45deg);opacity:.55;pointer-events:none}"
+                  "#hwx-lang{height:32px;padding:0 26px 0 13px;border:1px solid var(--line,#e2ddd0);"
                   "background:var(--paper,#f5f1e8);color:var(--ink,#1c1917);font:inherit;"
                   "font-size:13px;letter-spacing:.02em;line-height:30px;cursor:pointer;"
-                  "border-radius:16px}"
-                  "#hwx-tools .hwx-lang:hover{border-color:var(--acc,#9d2933);color:var(--acc,#9d2933)}"
+                  "border-radius:16px;-webkit-appearance:none;-moz-appearance:none;appearance:none}"
+                  "#hwx-lang:hover{border-color:var(--acc,#9d2933);color:var(--acc,#9d2933)}"
+                  "#hwx-lang:focus-visible{outline:2px solid var(--acc,#9d2933);outline-offset:2px}"
+                  # 展开的菜单项由系统画，深色模式下要显式给底色，
+                  # 否则 Chrome 会用白底黑字，和页面反差刺眼。
+                  ":root[data-theme=\"dark\"] #hwx-lang option{background:#1d1913;color:#eae3d4}"
                   # 收进头部之后不该再自己定位，否则会飞回右上角
                   "#hwx-tools #hwx-theme{position:static;width:32px;height:32px;margin:0;"
                   "box-shadow:none}"

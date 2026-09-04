@@ -71,7 +71,24 @@ LOCALE = [
 ]
 
 # 思源宋体简体不含合适的西文字形，英文页用 Noto Serif 的拉丁族。
-FONT = [("Noto+Serif+SC", "Noto+Serif"), ("Noto Serif SC", "Noto Serif")]
+# 整条 Google Fonts 链接换掉，不是逐个字体名替换：英文要的是另外两个族
+# （Newsreader 做标题、Source Serif 4 做正文），字重也不一样。
+# 具体的变量覆盖在 assets/hw-entry.css 末尾的 html[lang="en"] 块里。
+FONT = [
+    ("https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;600;700;900"
+     "&display=swap",
+     "https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;"
+     "6..72,600;6..72,700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600"
+     "&display=swap"),
+    ("https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;600;700"
+     "&display=swap",
+     "https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;"
+     "6..72,600;6..72,700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600"
+     "&display=swap"),
+    # 兜底：漏网的字体名换成拉丁族，别把 CJK 字体名留在英文页上
+    ("Noto+Serif+SC", "Source+Serif+4"),
+    ("Noto Serif SC", "Source Serif 4"),
+]
 
 # 赞赏码：英文页用 AlipayHK，和繁体站同一个。大陆个人收款码在境外收不了；
 # AlipayHK 港澳读者用得上，**欧美读者用不了**（注册要香港手机号）。
@@ -262,141 +279,96 @@ def en_items():
 
 
 
-HOME_CSS = """
-.hero{margin:34px 0 10px}
-.hero h1{font-size:clamp(28px,5vw,40px);line-height:1.15;margin:0 0 10px}
-.hero .lede{font-size:17px;line-height:1.6;color:var(--muted,#6b6357);max-width:44em;margin:0}
-.sec-h{margin:44px 0 6px;font-size:13px;letter-spacing:.12em;text-transform:uppercase;
-  color:var(--muted,#6b6357)}
-.sec-s{margin:0 0 16px;color:var(--muted,#6b6357);font-size:15px}
-.grp{margin:0 0 22px}
-.grp-n{font-size:15px;font-weight:600;margin:0 0 8px}
-.chips{display:flex;flex-wrap:wrap;gap:7px}
-.chip2{border:1px solid var(--line,#e2ddd0);background:var(--paper,#f5f1e8);
-  color:var(--ink,#1c1917);font:inherit;font-size:14px;line-height:1.3;padding:6px 12px;
-  border-radius:15px;cursor:pointer}
-.chip2:hover{border-color:var(--acc,#9d2933);color:var(--acc,#9d2933)}
-.chip2[aria-expanded=true]{background:var(--acc,#9d2933);border-color:var(--acc,#9d2933);
-  color:#fff}
-.qs{margin:10px 0 0;padding:14px 16px;border:1px solid var(--line,#e2ddd0);
-  border-radius:10px;background:var(--surface,#fff)}
-.qs[hidden]{display:none}
-.q{margin:0 0 12px}
-.q:last-child{margin-bottom:0}
-.q-t{margin:0 0 4px;font-size:16px;line-height:1.45}
-.q-a{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:14px}
-.q-a a{color:var(--muted,#6b6357);text-decoration:none;border-bottom:1px solid
-  var(--line,#e2ddd0)}
-.q-a a:hover{color:var(--acc,#9d2933);border-color:var(--acc,#9d2933)}
-"""
+
+def _sub_once(s, pat, rep, what):
+    import re
+    new, n = re.subn(pat, lambda _m: rep, s, count=1, flags=re.S)
+    if n != 1:
+        raise SystemExit("英文首页：没找到要替换的 %s —— 中文首页的结构变了，"
+                         "build_en.write_home 要跟着改" % what)
+    return new
 
 
-def _home_body(items):
-    """首页正文：处境层在前，条目在后。
-
-    这一版三十个条目里，英文读者认得的只有荣格、丘吉尔、蒙台梭利几个，
-    所以入口不能是名字墙 —— 读者是搜「I got passed over」进来的，
-    不是搜「Su Shi」。名字放在处境下面。
-    """
-    import json
-    from hwx_scenes_en import SCENES
-    import collections
-
-    groups = collections.OrderedDict()
-    for scene, grp, qs in SCENES:
-        groups.setdefault(grp, []).append(scene)
-    data = {}
-    for scene, grp, qs in SCENES:
-        data[scene] = [[q, [["/en/i/%s/%s/" % r, r[0]] for r in refs]] for q, refs in qs]
-
-    name_of = {it.slug: it.title for it in items}
-    for v in data.values():
-        for _q, refs in v:
-            for r in refs:
-                r[1] = name_of.get(r[1], r[1])
-
-    out = ['<div class="hero"><h1>See how people before you handled it.</h1>'
-           '<p class="lede">Thirty people and books, seventy-nine deep reads. '
-           'Start from where you are, not from a name you already know \u2014 '
-           'most of these are strangers, and that is the point.</p></div>']
-    out.append('<p class="sec-h">Situations</p>')
-    out.append('<p class="sec-s">Pick the one that fits. Every question opens '
-               'onto what somebody already worked out about it.</p>')
-    for grp, scenes in groups.items():
-        out.append('<div class="grp"><p class="grp-n">%s</p><div class="chips">' % grp)
-        for sc in scenes:
-            out.append('<button class="chip2" type="button" aria-expanded="false" '
-                       'data-s="%s">%s</button>' % (esc(sc), esc(sc)))
-        out.append('</div></div>')
-    out.append('<div class="qs" id="qs" hidden></div>')
-
-    out.append('<p class="sec-h">Everyone</p>')
-    out.append('<p class="sec-s">The thirty in this first batch.</p>')
-    out.append('<div class="feed">')
-    for it in items:
-        out.append('<a href="/en/i/%s/"><span class="k">%s</span><strong>%s</strong>'
-                   '<span class="s">%s</span></a>'
-                   % (it.slug, esc(it.tags[0] if it.tags else ""), esc(it.title),
-                      esc(it.summary[:150])))
-    out.append('</div>')
-
-    out.append("<script>var HWQ=%s;(function(){"
-               "var box=document.getElementById('qs');"
-               "document.querySelectorAll('.chip2').forEach(function(b){"
-               "b.onclick=function(){"
-               "var open=b.getAttribute('aria-expanded')==='true';"
-               "document.querySelectorAll('.chip2').forEach(function(x){"
-               "x.setAttribute('aria-expanded','false')});"
-               "if(open){box.hidden=true;return}"
-               "b.setAttribute('aria-expanded','true');"
-               "var qs=HWQ[b.getAttribute('data-s')]||[];"
-               "box.innerHTML=qs.map(function(q){return '<div class=\"q\">'"
-               "+'<p class=\"q-t\">'+q[0]+'</p><div class=\"q-a\">'"
-               "+q[1].map(function(r){return '<a href=\"'+r[0]+'\">'+r[1]+'</a>'}).join('')"
-               "+'</div></div>'}).join('');"
-               "box.hidden=false;"
-               "b.parentNode.parentNode.insertAdjacentElement('afterend',box);"
-               "box.scrollIntoView({block:'nearest'})}})})();</script>"
-               % json.dumps(data, ensure_ascii=False))
-    return "\n".join(out)
-
-
-def esc(t):
-    return (str(t).replace("&", "&amp;").replace("<", "&lt;")
-            .replace(">", "&gt;").replace('"', "&quot;"))
+EN_ERAS = """const ERAS=[
+{label:"800 BC \\u2013 200 BC",min:-800,max:-200},
+{label:"200 BC \\u2013 AD 400",min:-200,max:400},
+{label:"400 \\u2013 1400",min:400,max:1400},
+{label:"1400 \\u2013 1800",min:1400,max:1800},
+{label:"1800 \\u2013 1950",min:1800,max:1950},
+{label:"1950 \\u2013 now",min:1950,max:2100},
+];"""
 
 
 def write_home(items):
-    """英文首页：借 /en/all/ 那一页的外壳，换掉正文。
+    """英文首页 = **克隆中文首页，换掉三个数据块**。
 
-    外壳（head、页眉、页脚、CSS 链接）照搬，是为了和站里其他页一模一样 ——
-    自己再写一套 head，迟早和别的页走散。中文首页那 1MB 的机器不搬：
-    它的处境层数据由 _hwx_payload() 生成，而那个函数是围着中文写的
-    （解析「局面：」、按汉字数挑金句、剥句号），英文化是重写不是参数化。
+    第一版是自己另做了一个简版首页，理由是中文首页那 1MB 机器的处境数据
+    由 _hwx_payload() 生成，而那个函数是围着中文写的。那是把「难做」说成
+    「不该做」—— 结果英文读者少了搜索、分类筛选、年代筛选、每日金句、
+    今日一问、最近看过，整整一层界面。
+
+    正确的做法是同一套机器换数据：首页那套 JS 一行都不改，只把它读的数据块
+    换成英文的。
+
+      const D=[…]     30 个条目（字段与中文站同名，JS 才认得）
+      var HWXD={…}    处境层负载，由 scripts/hwx_en.py 生成，形状与中文一致
+      const ERAS=[…]  年代分档的标签
+      const CATS      它是从 D 推出来的，只有两个字面量，走 en_ui
+
+    剩下的界面文字由 finish() 里的 en_ui 处理 —— 和其他页同一条路。
+    替换找不到就直接失败，不静默跳过：中文首页改了结构而这里没跟上，
+    结果会是一个数据对不上的英文首页，比构建失败难发现得多。
     """
-    import re
-    src = os.path.join(OUT, "all", "index.html")
+    import json
+    sys.path.insert(0, HERE)
+    from en_entries import ENTRIES
+    import hwx_en
+
+    src = os.path.join(ROOT, "index.html")
     if not os.path.exists(src):
         return 0
     s = open(src, encoding="utf-8").read()
-    i, j = s.index("<div class=\"wrap\">", s.index("</header>")), s.rindex("<footer")
-    title = "Human World Rules \u2014 see how people before you handled it"
-    desc = ("Thirty people and books on how the world actually works, and "
-            "seventy-nine deep reads. Find yours by the situation you are in.")
-    head = s[:i]
-    head = re.sub(r"<title>[^<]*</title>", "<title>%s</title>" % title, head)
-    head = re.sub(r'(<meta name="description" content=")[^"]*"',
-                  r"\g<1>%s\"" % desc, head)
-    head = re.sub(r'((?:og|twitter):title" content=")[^"]*"', r"\g<1>%s\"" % title, head)
-    head = re.sub(r'((?:og|twitter):description" content=")[^"]*"',
-                  r"\g<1>%s\"" % desc, head)
-    head = head.replace("https://ourword.ai/en/all/", "https://ourword.ai/en/")
-    head = head.replace("https://ourword.ai/all/", "https://ourword.ai/")
-    head = head.replace("https://ourword.ai/tw/all/", "https://ourword.ai/tw/")
-    head = head.replace("</head>", "<style>%s</style></head>" % HOME_CSS)
-    body = '<div class="wrap">\n' + _home_body(items) + "\n"
-    open(os.path.join(OUT, "index.html"), "w", encoding="utf-8").write(
-        head + body + s[j:])
+
+    D = [{k: e[k] for k in ("c", "n", "e", "w", "y", "d", "story", "f", "q",
+                            "apply", "l", "contrast") if k in e} for e in ENTRIES]
+    s = _sub_once(s, r"const D=\[.*?\n\];",
+                  "const D=" + json.dumps(D, ensure_ascii=False) + ";", "const D")
+    s = _sub_once(s, r"var HWXD=\{.*?\};",
+                  "var HWXD=" + hwx_en.payload() + ";", "HWXD")
+    s = _sub_once(s, r"const ERAS=\[.*?\n\];", EN_ERAS, "ERAS")
+
+    # 名字 → slug。中文站那份按中文名做键，英文页一个也对不上，
+    # 而它是「延伸/对照着读」里的名字变成链接的唯一途径。
+    slugs = {e["n"]: e["slug"] for e in ENTRIES}
+    s = _sub_once(s, r"(?:var|const|let) HW_SLUGS\s*=\s*\{.*?\};",
+                  "const HW_SLUGS=" + json.dumps(slugs, ensure_ascii=False) + ";",
+                  "HW_SLUGS")
+
+    # 金句解析：中文那份 17000 字按中文金句做键，英文金句一条也命中不了，
+    # 留着只是白发 21KB。置空 —— 前端取不到就把解析区隐藏（DQX[t]||""），
+    # 卡片本身照常显示引文、出处、分类和链接。
+    # 要补的话得逐条写 90 句，是另一件事，不在这次范围里。
+    s = _sub_once(s, r"const DQX=\{.*?\};", "const DQX={};", "DQX")
+
+    # 每日金句的黑名单，中文那份列的是中文引文（「悔不用蒯通之计」之类），
+    # 对英文没有意义。
+    s = _sub_once(s, r"(?:var|const|let) DQ_DROP\s*=\s*\[.*?\];",
+                  "const DQ_DROP=[];", "DQ_DROP")
+
+    # 每日金句分享卡是 canvas 画的，字体在 DQ_FONT 里写死成汇文明朝体。
+    # 不换的话英文金句会被宋体渲染 —— 西文字形是配汉字设计的，单独排一句
+    # 英文重心和字宽都不对，而这张卡是要被读者存下来转发的。
+    s = _sub_once(s, r"const DQ_FONT='[^']*';",
+                  "const DQ_FONT='\"Newsreader\",Georgia,serif';", "DQ_FONT")
+
+    # 哪些条目是「作品」不是「人」—— 前端据此说「it says」还是「he says」。
+    # 中文那份列的是中文书名。这一批 30 个里，三个不是人。
+    works = ["Excellent Sheep", "Rat Park", "Harvard Study of Adult Development"]
+    s = _sub_once(s, r"const DQ_WORKS=new Set\(\[.*?\]\);",
+                  "const DQ_WORKS=new Set(" + json.dumps(works, ensure_ascii=False) + ");",
+                  "DQ_WORKS")
+
+    open(os.path.join(OUT, "index.html"), "w", encoding="utf-8").write(s)
     return 1
 
 
@@ -406,6 +378,7 @@ def main():
     if os.path.isdir(OUT):
         shutil.rmtree(OUT)
 
+    sys.path.insert(0, HERE)
     cwd = os.getcwd()
     os.chdir(os.path.join(ROOT, "seo"))
     try:
@@ -414,6 +387,12 @@ def main():
         from build_seo import SITE, fill_counts
         items = en_items()
         fill_counts(SITE, len(items))
+        # 首页要先克隆出来：G.build() 会往 index.html 里补 GEO:HEAD / GEO:BODY
+        # 两块（给爬虫看的条目索引和站点自述）。文件还不存在时它什么也补不了，
+        # 结果是英文首页里留着 159 条中文条目的索引 —— 那不是「界面没翻」，
+        # 是整块数据都是别的站的。
+        os.makedirs(OUT, exist_ok=True)
+        n_home = write_home(items)
         rep = G.build(SITE, items, root=OUT, item_pages=True, robots=False,
                       sitemap=True, hubs=False,
                       today=__import__("datetime").date.today().isoformat(),
@@ -423,9 +402,7 @@ def main():
         n_ch = hw_chapters.write_chapters(root=OUT)
     finally:
         os.chdir(cwd)
-    print("English entries: %d pages" % rep.get("pages", 0))
-    sys.path.insert(0, HERE)
-    print("English home page: %d" % write_home(items))
+    print("English entries: %d pages · home %d" % (rep.get("pages", 0), n_home))
 
     # 三个挂件整块从已构建的简体页里原样搬过来，再由 finish() 统一翻标签、
     # 改资源路径。自己再写一份的话，两边的配色和行为迟早对不上。

@@ -175,3 +175,201 @@ UI = sorted(UI, key=lambda p: -len(p[0]))
 REGEX += [
     (re.compile(r"\[([^\]]*?) / [^\]]*[一-鿿][^\]]*\]"), r"[\1]"),
 ]
+
+
+# 首页那一层。同样是渲染出来数的：把中文首页克隆过来换掉数据之后，
+# 页面上还剩 36 个中文串，全在这里。
+#
+# 三个 data-t 的值（"新" "全" "境"）**不在这张表里，也不能加进来**：
+# 它们是 JS 拿来比对的数据（if(t==='新')），不是显示文字。翻了标签页就废了。
+# 所以下面配的是 >最新</button> 这种带标记的形状，不是裸的词。
+UI += [
+    ("微信扫一扫关注；手机上长按图片 → 存储图像，再用「扫一扫」从相册识别",
+     "Scan with WeChat to follow. On a phone, press and hold the image to save "
+     "it, then scan it from your album."),
+    ("没找到想看的？在公众号里告诉我", "Can't find what you're after? Tell me on WeChat"),
+    ("搜你遇到的事：被裁了、睡不着、孩子不听…",
+     "Search what you're in: laid off, can't sleep, kid won't listen…"),
+    ("OurWord AI 微信公众号二维码", "OurWord AI on WeChat, QR code"),
+    ('content="生存法则"', 'content="Human World Rules"'),
+    ("你遇到的是别的事？", "Something else on your mind?"),
+    ("挑你自己那一件", "Find yours"),
+    ("每日金句", "Line of the day"),
+    ("今日一问", "Today's question"),
+    ("今日一篇", "Today's read"),
+    ("跳至主内容", "Skip to content"),
+    ("最近看过", "Recently viewed"),
+    ("位人物与典籍", " people and books"),
+    ("按处境筛选", "Filter by situation"),
+    (">最新</button>", ">Latest</button>"),
+    (">全部</button>", ">All</button>"),
+    (">处境</button>", ">Situations</button>"),
+    ('<div class="stat">跨越 ', '<div class="stat">across '),
+    ("</b> 年</div>", "</b> years</div>"),
+    ("</b> 大主题</div>", "</b> themes</div>"),
+    ("保存卡片", "Save card"),
+    ("保存图片", "Save image"),
+    ("主题分类", "Themes"),
+    ("人物详情", "Entry detail"),
+    ("上一句", "Previous line"),
+    ("下一句", "Next line"),
+    ("换一换", "Show another"),
+    ('aria-label="搜索"', 'aria-label="Search"'),
+    ("出自 ", "from "),
+    ("清空", "Clear"),
+]
+UI = sorted(UI, key=lambda p: -len(p[0]))
+
+
+# 又是词级规则在长词内部开枪：每日金句卡片 → 「Line of the day卡片」，
+# 复制金句 → 「复制Lines to keep」。整词配整词，长的自然排在前面先跑。
+UI += [
+    ("每日金句卡片", "Line of the day card"),
+    ("复制金句", "Copy the line"),
+    ('<span class="dot">生存法则</span>', '<span class="dot">Rules</span>'),
+    ('id="hwx-ago2">问</button>', 'id="hwx-ago2">Ask</button>'),
+]
+UI = sorted(UI, key=lambda p: -len(p[0]))
+
+
+# 首页 JS 在运行时拼出来的那一层。第一版闸门把 <script> 整块跳过，
+# 于是这些全成了盲区 —— 静态 HTML 干净，页面上一眼还是中文。
+# 现在闸门查字面量了，这些是它数出来的。
+UI += [
+    ("个问题。上面挑一个跟你有关的分组，或者直接搜。",
+     " questions. Pick a group above that fits you, or just search."),
+    ("换个说法试试——或者到下面的处境里Find yours。",
+     "Try saying it another way — or find yours in the situations below."),
+    ("长按图片 → 存储图像（保存到相册）",
+     "Press and hold the image → Save image"),
+    ("复制失败，请长按选择文字", "Copy failed. Press and hold to select the text."),
+    ("看他怎么处理最难的那件事 →", "See how he handled the hardest one →"),
+    ("从最狠的一篇读起 →", "Start with the sharpest one →"),
+    ("他的方法都在里面 →", "His whole method is in there →"),
+    ("篇，句句能落地 →", " pieces, every one usable →"),
+    ("篇，够用很久 →", " pieces, enough for a long time →"),
+    ("条硬原则 →", " hard rules →"),
+    ("值得先看 →", " is the one to read first →"),
+    ("什么时候翻开它：", "When to open it: "),
+    ("已Copy the line到剪贴板", "Copied to the clipboard"),
+    ("缺解析的Lines to keep：", "lines with no note: "),
+    ("核心Lines to keep", "Lines to keep"),
+    ("用 AI 触摸这个世界", "Reaching the world through AI"),
+    ("这一问来自「", "This one comes from “"),
+    ("那儿还有 ", "; there are "),
+    ("按收录顺序 · 最新在前", "In order added, newest first"),
+    ("关联知识库", "Related entries"),
+    ("失败教训", "What it cost"),
+    ("败局时刻", "Where it broke"),
+    ("经典一幕", "The scene"),
+    ("核心框架", "The framework"),
+    ("展开全部", "Show all"),
+    ("图片已保存", "Image saved"),
+    ("去挑处境 →", "Pick a situation →"),
+    ("进去偷师 →", "Go and learn from it →"),
+    # 撇号不能进这一条：它落在一个**单引号 JS 字符串**里，一个 ' 就把字符串截断，
+    # 整个 script 块语法错误，首页直接空白。scripts/check_en_js.py 守这一类。
+    ("看完你会换个打法 →", "It will change how you play it →"),
+    ("篇深读备好了 →", " deep reads ready →"),
+    ("拆开看他的", "Take apart his "),
+    ("套打法 →", " approaches →"),
+    ("篇拆完 →", " taken apart →"),
+    ("篇讲透 →", " explained in full →"),
+    ("篇再走 →", " more before you go →"),
+    ("读透这 ", "Read all "),
+    ("没找到「", "Nothing found for “"),
+    ("关键词：", "Keyword: "),
+    ("今日一句", "Line of the day"),
+    ("日一二三四五六", "SMTWTFS"),
+    ("月 · 星期", " · "),
+    ("条知识", " entries"),
+    ("种处境 · ", " situations · "),
+    ("先读「", "Start with “"),
+    ("他的答案分", "His answer comes in "),
+    ("他的路数，", "His way of doing it, "),
+    ("从「", "From “"),
+    ("共 ${list.length} 位", "${list.length} in all"),
+    ("阅读", "Read"),
+    ("深读", "Deep read"),
+    ("带走", "Take away"),
+    ("应用", "Apply"),
+    ("收起", "Collapse"),
+    ("关闭", "Close"),
+    ("还有", "and "),
+    ("问过", "asked"),
+]
+UI = sorted(UI, key=lambda p: -len(p[0]))
+
+
+# 收尾的几条。两处是我自己犯的老毛病：拿**替换之后**的形态做键
+# （「已Copy the line到剪贴板」），而原文是「已复制金句到剪贴板」，永远配不上。
+UI += [
+    ("换个说法试试——或者到下面的处境里挑你自己那一件。",
+     "Try saying it another way — or pick your own from the situations below."),
+    ("已复制金句到剪贴板", "Copied to the clipboard"),
+    ("缺解析的金句：", "lines with no note: "),
+    ("，那儿还有 ", ", and "),
+    ("核心金句", "Lines to keep"),
+    ("个问题", " questions"),
+    ("篇最新", " newest"),
+    ("」进 →", "” →"),
+    ("个'):''", " more'):''"),
+    ("}位</span>", "} in all</span>"),
+    (">全部</span>", ">All</span>"),
+    ("'全部'", "'All'"),
+    ("'最新'", "'Latest'"),
+]
+UI = sorted(UI, key=lambda p: -len(p[0]))
+
+
+# 最后几处。三点要注意：
+#
+# ① CATS 里的 "最新"/"全部" 既是显示文字**又是比较键**（TAB==="全部"）。
+#    两处必须一起换，只换一处标签页就废了。所以这里配的是带引号的形态，
+#    双引号单引号都要。
+# ② data-t 的 '新'/'全'/'境' 是纯内部键，从不显示 —— 一个字都不能动。
+# ③ 汇文明朝体的字体预载探针写死了一个汉字（'删'）。英文页的引文字体是
+#    Newsreader，这个探针不但没用，还会白拉一个 670KB 的中文字体。
+UI += [
+    ('document.fonts.load(\'140px "Huiwen-mincho"\',\'删\')',
+     'document.fonts.load(\'140px "Newsreader"\',\'A\')'),
+    ('document.fonts.load(\'65px "Huiwen-mincho"\',\'删\')',
+     'document.fonts.load(\'65px "Newsreader"\',\'A\')'),
+    # 逐个点名比较点太脆 —— 漏一处标签页就废了。到这一步页面上剩下的
+    # "最新"/"全部" 只可能是标签页键，对带引号的整体下一条规则更稳。
+    ('"最新"', '"Latest"'),
+    ('"全部"', '"All"'),
+    ('<span class="nb">新</span>', '<span class="nb">New</span>'),
+    ("+' 个';", "+'';"),
+]
+UI = sorted(UI, key=lambda p: -len(p[0]))
+
+
+# 中文标点。闸门原来只查汉字（U+4E00 起），碰不到这几个 —— 于是页面上
+# 出现了「“I have no one to call」」这种半中半英的引号，闸门全绿。
+# 这几个符号在英文页没有任何正当用途，整篇换掉。
+# **不能做通配替换。** 第一版直接把 「」、《》、、 全站换掉，结果替换跑进了
+# JS 正则的字符类 —— /[。，、；：？！…\.]+$/ 被改成 /[。，, ；：？！…\.]+$/，
+# 一个用来剥句尾标点的正则就此失效。en_ui 是盲替换，它不知道自己落在
+# 文本里还是代码里；标点这种到处都是的字符，只能逐个显示位置去打。
+UI += [
+    # 相对路径在 /en/ 下会解析成 /en/wechat-qr.png —— 那个文件在站根，
+    # 于是 404。资源不跟着语言走（见 build_en 的 ASSETS=False），
+    # 但前提是路径得是绝对的。retarget 只处理以 / 开头的地址，碰不到相对路径。
+    ('src="wechat-qr.png', 'src="/wechat-qr.png'),
+    ("'「'+q1.q+'」'", "'“'+q1.q+'”'"),          # 今日一句外面的引号
+    ("」'\n      +(_more", "”'\n      +(_more"),   # 「这一问来自「X」」的收尾
+    ("」值得先看", "” is the one to read first"),
+]
+UI = sorted(UI, key=lambda p: -len(p[0]))
+
+
+# 中文破折号只在三处**显示**（今日一句的署名、分享卡的署名、朗读文本），
+# 其余是 split("——") 这种逻辑用法，动了会出错。所以逐处配，不整篇换 ——
+# 上一版整篇换的时候，它跑进了 JS 正则的字符类里。
+UI += [
+    ("'—— '+q1.who", "'— '+q1.who"),
+    ("fillText('—— '+q1.who", "fillText('— '+q1.who"),
+    ('+s.d.t+"——"+s.src', '+s.d.t+" — "+s.src'),
+]
+UI = sorted(UI, key=lambda p: -len(p[0]))

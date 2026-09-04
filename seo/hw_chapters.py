@@ -89,6 +89,25 @@ def _pick_keys(ch):
 # One module per parent under seo/chapters/. A single literal was fine for five
 # chapters; at a few hundred it becomes an unreviewable diff every time one line
 # changes. Each module exposes PARENT (catalog spec) and CHAPTERS (the essays).
+# 这个渲染器现在同时给中文站和英文站用（HW_CHAPTERS 决定读哪份数据）。
+# FAQ 结构化数据那一段原来把中文写死了：句号、问号、「这一篇要回答的是：」、
+# 「局面/先问/用反了」。套到英文上会产出「…nobody is looking at you.。e.g. …」
+# 这种半中半英的句子，而它进的是 JSON-LD —— 页面上看不见，搜索引擎看得见。
+_EN = os.environ.get("HW_CHAPTERS", "chapters") == "chapters_en"
+L = {
+    "dek_q": r"This piece is about[:：](.+)$" if _EN
+             else r"\u8fd9\u4e00\u7bc7\u8981\u56de\u7b54\u7684\u662f[\uff1a:](.+)$",
+    "stop": "." if _EN else "\u3002",
+    "qmark": "?" if _EN else "\uff1f",
+    "eg": ". e.g. " if _EN else "\u3002\u4f8b\uff1a",
+    "apply_keys": (("Where you are", "Ask first", "Where it goes wrong") if _EN
+                   else ("\u5c40\u9762", "\u5148\u95ee", "\u7528\u53cd\u4e86")),
+    "sep": ": " if _EN else "\uff1a",
+    "howto": ", what do I do?" if _EN else "\uff0c\u600e\u4e48\u529e\uff1f",
+    "minlen": 12 if _EN else 40,     # 英文按词算，40 个字符太短
+}
+
+
 PARENTS, CHAPTERS = {}, []
 
 
@@ -268,36 +287,37 @@ def _faq_ld(ch, page_url):
     """
     qs = []
     dek = _plain(ch.get("dek", ""))
-    m = re.search(r"\u8fd9\u4e00\u7bc7\u8981\u56de\u7b54\u7684\u662f[\uff1a:](.+)$", dek)
+    m = re.search(L["dek_q"], dek)
     story = _plain(ch.get("story", ""))
     def _as_q(t):
         t = t.strip().rstrip("\u3002\uff0e.")
-        return t if t.endswith(("\uff1f", "?")) else t + "\uff1f"
+        return t if t.endswith(("\uff1f", "?")) else t + L["qmark"]
 
     if m and len(story) > 40:
         qs.append((_as_q(m.group(1)), story))
     for f in ch.get("f", []):
         body = _plain(f.get("d", ""))
         if f.get("eg"):
-            body += "\u3002\u4f8b\uff1a" + _plain(f["eg"])
+            body += L["eg"] + _plain(f["eg"])
         if f.get("n") and len(body) > 40:
             qs.append((_plain(f["n"]), body))
     parts = {}
     for line in _plain(ch.get("apply", "")).split("\n"):
-        for k in ("\u5c40\u9762", "\u5148\u95ee", "\u7528\u53cd\u4e86"):
-            if line.startswith(k + "\uff1a"):
-                parts[k] = line[len(k) + 1:].strip()
-    _seg = [x for x in (parts.get("\u5148\u95ee"), parts.get("\u7528\u53cd\u4e86")) if x]
+        for k in L["apply_keys"]:
+            if line.startswith(k + L["sep"]):
+                parts[k] = line[len(k) + len(L["sep"]):].strip()
+    _seg = [x for x in (parts.get(L["apply_keys"][1]),
+                        parts.get(L["apply_keys"][2])) if x]
     tail = ""
     for x in _seg:
-        if tail and not tail.endswith(("\u3002", "\uff1f", "\uff01", "?", "!")):
-            tail += "\u3002"
+        if tail and not tail.endswith(("\u3002", "\uff1f", "\uff01", ".", "?", "!")):
+            tail += L["stop"]
         tail += x
-    if parts.get("\u5c40\u9762") and len(tail) > 40:
+    if parts.get(L["apply_keys"][0]) and len(tail) > 40:
         # 局面是陈述句（「一段关系让你持续难受……」），硬加问号读着别扭；
         # dek 那一句本来就是问句，所以两者分开处理。
-        _sit = parts["\u5c40\u9762"].strip().rstrip("\u3002\uff0e.")
-        qs.append((_sit + "\uff0c\u600e\u4e48\u529e\uff1f", tail))
+        _sit = parts[L["apply_keys"][0]].strip().rstrip("\u3002\uff0e.")
+        qs.append((_sit + L["howto"], tail))
     if len(qs) < 2:
         return None
     return {
