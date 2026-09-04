@@ -2220,10 +2220,14 @@ def patch_lang():
                   "b.onclick=function(){try{localStorage.setItem(K,tw?'sc':'tw')}catch(e){};location.href=other};"
                   "document.body.appendChild(b)})"
                   "}catch(e){}})();</script>"
+                  # 跟主题按钮配成一对：同高、同边框、同阴影，只是一个圆一个胶囊。
+                  # 第一版是直角矩形配圆形，两个尺寸也不一样，看着像两个不相干的东西
+                  # 各自掉在那儿。right:58px 是给 36px 的主题按钮 + 8px 间距留的位。
                   "<style>#hwx-lang{position:fixed;top:14px;right:58px;z-index:9999;height:36px;"
-                  "padding:0 10px;border:1px solid var(--line,#e2ddd0);background:var(--paper,#f5f1e8);"
-                  "color:var(--ink,#1c1917);font:inherit;font-size:13px;line-height:34px;cursor:pointer;"
-                  "border-radius:2px}"
+                  "padding:0 13px;border:1px solid var(--line,#e2ddd0);background:var(--paper,#f5f1e8);"
+                  "color:var(--ink,#1c1917);font:inherit;font-size:13px;letter-spacing:.02em;"
+                  "line-height:34px;cursor:pointer;border-radius:18px;"
+                  "box-shadow:0 1px 6px rgba(0,0,0,.10)}"
                   "#hwx-lang:hover{border-color:var(--acc,#9d2933);color:var(--acc,#9d2933)}</style>"
                 + HWL_B
             )

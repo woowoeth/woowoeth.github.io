@@ -490,6 +490,11 @@ def _tw_ambig():
                     if "<h1" in t else None)
 
 
+def _tw_never():
+    # 「核心系统」被切成「核|心系|统」的那一类错，NEVER 表专门筛它
+    return _tw_edit(lambda t: t.replace("<h1", "<p>核心繫統</p><h1", 1) if "<h1" in t else None)
+
+
 def _tw_href():
     return _tw_edit(lambda t: t.replace('hreflang="zh-Hant"', 'hreflang="zh-XX"', 1)
                     if 'hreflang="zh-Hant"' in t else None)
@@ -535,6 +540,7 @@ CASES = [
     ("繁体·链接改坏",   "check_tw.py", TWPAGE, _tw_link(),      "链接对不上"),
     ("繁体·漏转",       "check_tw.py", TWPAGE, _tw_simp(),      "疑似漏转"),
     ("繁体·歧义未登记", "check_tw.py", TWPAGE, _tw_ambig(),     "没登记过"),
+    ("繁体·切错组合",   "check_tw.py", TWPAGE, _tw_never(),     "切错"),
     ("繁体·hreflang",   "check_tw.py", TWPAGE, _tw_href(),      "hreflang 两版不一致"),
 ]
 

@@ -30,7 +30,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 sys.path.insert(0, HERE)
 
-from tw_convert import contexts, load_allow  # noqa: E402
+from tw_convert import NEVER, contexts, load_allow  # noqa: E402
 
 TW = os.path.join(ROOT, "tw")
 SKIP_DIRS = {".git", ".github", "scripts", "seo", "worker", "tests", "node_modules",
@@ -126,7 +126,18 @@ def main():
         for c, k in sorted(unseen.items())[:30]:
             bad.append("    %s      ← %s" % (c, k))
 
-    # ⑤ 地图类文件必须指向繁体站自己
+    # ⑤ 绝不该出现的组合（分词切错的系统性筛子）
+    for k in sorted(tw):
+        t = text_of(open(tw[k], encoding="utf-8").read())
+        for w in NEVER:
+            if w in t:
+                i = t.index(w)
+                bad.append("切错：%s 里出现「%s」 …%s…" % (k, w, t[max(0, i - 12):i + 13]))
+                break
+        if len([x for x in bad if x.startswith("切错")]) >= 5:
+            break
+
+    # ⑥ 地图类文件必须指向繁体站自己
     #    sitemap/feed/llms 里的地址在元素文本和裸行里，不走属性那套重写规则。
     #    第一版漏了，tw/sitemap.xml 里 553 条全指向简体站 —— 页面全对，
     #    只有打开地图文件才看得见，所以要有一条判据专门盯它。
@@ -145,7 +156,7 @@ def main():
         for b in bad:
             print("  ✗ " + b if not b.startswith("    ") else b)
         return 1
-    print("✓ 结构一一对应、链接一致、无漏转、歧义字全部登记、地图指向自己")
+    print("✓ 结构一一对应、链接一致、无漏转、无切错组合、歧义字全部登记、地图指向自己")
     return 0
 
 
