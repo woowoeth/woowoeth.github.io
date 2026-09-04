@@ -515,21 +515,21 @@ def _links_sister():
                     if "https://ourword.ai/podcast/tw/" in t else None)
 
 
+LAYERPAGE = os.path.join(ROOT, "i", "su-shi", "index.html")
+
+
 def _links_nolayer():
     """把一页的语言层标记拿掉 —— 模拟被 walk 静默跳过。
 
     _derived() 按子串比路径那次，5 个页面就是这么消失的：没有 hreflang、
     没有夜间模式、没有聊天挂件，而构建一句话都不说。
     """
-    tgt = os.path.join(ROOT, "i", "su-shi", "index.html")
-
     def go():
-        t = read(tgt)
+        t = read(LAYERPAGE)
         if "<!--HWX:LANG-->" not in t:
             return None
-        arm(tgt)
-        write(tgt, t.replace("<!--HWX:LANG-->", "<!--HWX:GONE-->", 1))
-        return tgt
+        write(LAYERPAGE, t.replace("<!--HWX:LANG-->", "<!--HWX:GONE-->", 1))
+        return LAYERPAGE
 
     return go
 
@@ -577,7 +577,7 @@ CASES = [
     ("繁体·切错组合",   "check_tw.py", TWPAGE, _tw_never(),     "切错"),
     ("繁体·hreflang",   "check_tw.py", TWPAGE, _tw_href(),      "hreflang 两版不一致"),
     ("语言站·姊妹站地址", "check_links.py", TWPAGE, _links_sister(), "这个页面不存在"),
-    ("语言站·缺语言层",   "check_links.py", None,   _links_nolayer(), "没有 <!--HWX:LANG-->"),
+    ("语言站·缺语言层",   "check_links.py", LAYERPAGE, _links_nolayer(), "没有 <!--HWX:LANG-->"),
 ]
 
 

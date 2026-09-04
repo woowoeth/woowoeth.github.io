@@ -17,6 +17,7 @@ import tempfile
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 SRC = os.path.join(HERE, "hwx_scenes_en.py")
+CHAP = os.path.join(ROOT, "seo", "chapters_en", "curie.py")
 QA = os.path.join(HERE, "quote_asks_en.py")
 GATE = os.path.join(HERE, "check_en.py")
 
@@ -76,6 +77,28 @@ CASES = [
     ("⑦c 有一章漏配了今日一句",
      lambda s: s.replace('    "boyd/ooda": "I\'m only ever reacting. I never set the tempo.",\n', ""),
      "no today's line for chapter boyd/ooda", "qa"),
+    # ⑧⑨ 章节自身：长度闸和字段完整性。这两条是后加的，一度没有注入 ——
+    # 而一道没人看着它失败过的闸，等于没有。
+    ("⑧ dek 太短",
+     lambda s: s.replace('"dek": "The person who mattered most is suddenly gone and the days "',
+                         '"dek": "Too short." + (""', 1)
+                .replace('"still have to continue. What she did seven months later.",',
+                         '"still have to continue."),', 1),
+     "dek is", "chap"),
+    ("⑧b 金句超长",
+     lambda s: s.replace('"It doesn\'t solve the grief. It gives the day a shape.",',
+                         '"It does not solve the grief but it does give the day a shape '
+                         'that you can put yourself inside of somehow.",', 1),
+     "line to keep is", "chap"),
+    ("⑨ story 少了强调段",
+     lambda s: s.replace('"his chair to his widow. ==On 5 November she gave her first "',
+                         '"his chair to his widow. On 5 November she gave her first "', 1)
+                .replace('"lecture==, with the room overflowing', '"lecture, with the room overflowing', 1),
+     "exactly one ==...== span", "chap"),
+    ("⑨b 分则整个丢了",
+     lambda s: s.replace('        "f": [\n            {"n": "Catch hold of one specific thing that must be done",',
+                         '        "f_gone": [\n            {"n": "Catch hold of one specific thing that must be done",', 1),
+     "needs at least 2", "chap"),
     ("問句没有挂任何章节",
      lambda s: s.replace('("It hit me and I can\'t cool down.",\n     [("su-shi", "no-wind-no-rain")]),',
                          '("It hit me and I can\'t cool down.",\n     []),', 1),
@@ -107,9 +130,11 @@ def main():
 
     origs = {"scenes": orig, "gate": open(GATE, encoding="utf-8").read()}
     origs["qa"] = open(QA, encoding="utf-8").read()
+    origs["chap"] = open(CHAP, encoding="utf-8").read()
     paths = {"scenes": os.path.join(tmp, "scripts", "hwx_scenes_en.py"),
              "gate": os.path.join(tmp, "scripts", "check_en.py"),
-             "qa": os.path.join(tmp, "scripts", "quote_asks_en.py")}
+             "qa": os.path.join(tmp, "scripts", "quote_asks_en.py"),
+             "chap": os.path.join(tmp, "seo", "chapters_en", "curie.py")}
     for case in CASES:
         name, mutate, want = case[:3]
         which = case[3] if len(case) > 3 else "scenes"
