@@ -1338,7 +1338,12 @@ var SCSEL='';
    卡片是筛过的而标签看着像没选，人会以为坏了。 */
 function scReveal(){
   var on=scpick.querySelector('button.on');
-  if(on&&on.scrollIntoView)try{on.scrollIntoView({inline:'center',block:'nearest'})}catch(e){}
+  if(!on)return;
+  /* 只把 chip 条横向滚到位，**绝不滚页面**。
+     原来用 scrollIntoView({block:'nearest'})——看着已经防住了纵向，
+     可 chip 条在首屏之下时，'nearest' 仍会把整页往下拉一截去露出它（实测 48px）。
+     读者每次落地都发现页面不在顶上，切换语言时尤其明显。 */
+  try{scpick.scrollLeft = on.offsetLeft - (scpick.clientWidth - on.offsetWidth)/2}catch(e){}
 }
 /* 没选任何组时只渲染前 SC_CAP 张。默认落到「处境」之后，
    「全部」会把 521 张卡一次铺完，首页从 11050px 涨到 64761px——
@@ -2213,22 +2218,40 @@ def patch_lang():
                   "var saved=null;try{saved=localStorage.getItem(K)}catch(e){}"
                   "var want=saved||((/zh-(hant|tw|hk|mo)/i.test((navigator.languages||[navigator.language||'']).join(',')))?'tw':'sc');"
                   "if(want!==cur){location.replace(other);return}"
+                  # 按钮**进头部**，不浮在页面上。找得到头部就放进去，找不到
+                  # （比如 404 没有 header）才退回悬浮。悬浮的坏处不只是难看：
+                  # 它会一直压在聊天窗上面。
                   "document.addEventListener('DOMContentLoaded',function(){"
+                  "var host=document.querySelector('.mast-links')||document.querySelector('.mast-top')"
+                  "||document.querySelector('header.hd');"
+                  "var box=document.createElement('div');box.id='hwx-tools';"
                   "var b=document.createElement('button');b.id='hwx-lang';b.type='button';"
-                  "b.textContent=tw?'简体':'繁體';"
+                  "b.className='pill';b.textContent=tw?'简体':'繁體';"
                   "b.setAttribute('aria-label',tw?'切换到简体':'切換到繁體');"
                   "b.onclick=function(){try{localStorage.setItem(K,tw?'sc':'tw')}catch(e){};location.href=other};"
-                  "document.body.appendChild(b)})"
+                  "box.appendChild(b);"
+                  "if(host){host.appendChild(box);"
+                  # 主题按钮原本 position:fixed 单独浮着，一并收进来并排放
+                  "var t=document.getElementById('hwx-theme');if(t)box.appendChild(t);"
+                  "if(host.classList.contains('hd')||host.classList.contains('mast-top'))"
+                  "box.classList.add('float-in-head');}"
+                  "else{document.body.appendChild(box);box.classList.add('loose')}"
+                  "})"
                   "}catch(e){}})();</script>"
-                  # 跟主题按钮配成一对：同高、同边框、同阴影，只是一个圆一个胶囊。
-                  # 第一版是直角矩形配圆形，两个尺寸也不一样，看着像两个不相干的东西
-                  # 各自掉在那儿。right:58px 是给 36px 的主题按钮 + 8px 间距留的位。
-                  "<style>#hwx-lang{position:fixed;top:14px;right:58px;z-index:9999;height:36px;"
-                  "padding:0 13px;border:1px solid var(--line,#e2ddd0);background:var(--paper,#f5f1e8);"
-                  "color:var(--ink,#1c1917);font:inherit;font-size:13px;letter-spacing:.02em;"
-                  "line-height:34px;cursor:pointer;border-radius:18px;"
-                  "box-shadow:0 1px 6px rgba(0,0,0,.10)}"
-                  "#hwx-lang:hover{border-color:var(--acc,#9d2933);color:var(--acc,#9d2933)}</style>"
+                  "<style>#hwx-tools{display:flex;gap:8px;align-items:center}"
+                  # 头部本身 position:relative，所以贴它右上角＝跟着页面滚，
+                  # 不盖正文、也不盖聊天窗
+                  "#hwx-tools.float-in-head{position:absolute;top:18px;right:0}"
+                  "#hwx-tools.loose{position:fixed;top:14px;right:14px;z-index:9999}"
+                  "#hwx-lang{height:32px;padding:0 13px;border:1px solid var(--line,#e2ddd0);"
+                  "background:var(--paper,#f5f1e8);color:var(--ink,#1c1917);font:inherit;"
+                  "font-size:13px;letter-spacing:.02em;line-height:30px;cursor:pointer;"
+                  "border-radius:16px}"
+                  "#hwx-lang:hover{border-color:var(--acc,#9d2933);color:var(--acc,#9d2933)}"
+                  # 收进头部之后不该再自己定位，否则会飞回右上角
+                  "#hwx-tools #hwx-theme{position:static;width:32px;height:32px;margin:0;"
+                  "box-shadow:none}"
+                  "@media(max-width:700px){#hwx-tools.float-in-head{top:10px}}</style>"
                 + HWL_B
             )
             m = re.search(r'<meta name="viewport"[^>]*>\n?', s) or re.search(r"<head[^>]*>\n?", s)
