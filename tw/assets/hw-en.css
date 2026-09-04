@@ -30,6 +30,40 @@ html[lang="en"] .one,
 html[lang="en"] .hd-title,
 html[lang="en"] .point h2{font-family:var(--display)}
 html[lang="en"] blockquote{font-family:var(--quote)}
+
+/* ── Playfair 只做大標題 ─────────────────────────────────
+   FONT 表是按**字體族**整批替換的，於是原來那個中文宋體用在哪裡，
+   Playfair 就跟到哪裡 —— 11px 的分組標籤、12px 的膠囊、16.5px 的卡片
+   問句全變成了 Playfair。它是高對比的 Didone 展示體：字幹粗細反差大、
+   襯線細如髮絲，20px 以上很有氣勢，12px 上就是一團做作的噪點。
+   中文那邊同一個位置是宋體，宋體在小字號上是**正文字體**，所以中文看著
+   正常、英文看著彆扭 —— 同一份排版，兩種語言的字體分工本來就不一樣。
+
+   規矩：≥20px 的標題歸 Playfair，正文歸 Source Serif 4，界面歸無襯線。 */
+/* 選擇器裡必須帶上 #hwx：頁面自己的規則是 `#hwx .kc .t{…}`，帶 id，
+   權重 (1,2,0)；不帶 id 的 `html[lang="en"] .kc .t` 是 (0,3,1)，
+   id 那一位直接壓死後面所有位，怎麼寫都贏不了。 */
+html[lang="en"] #hwx .kc .t,
+html[lang="en"] #hwx .qzq,
+html[lang="en"] #hwx .kc b,
+html[lang="en"] #hwx .scline b{font-family:var(--read)}
+html[lang="en"] #hwx .said,
+html[lang="en"] #hwx .scg,
+html[lang="en"] #hwx .tabs2 button,
+html[lang="en"] #hwx .chip,
+html[lang="en"] #hwx .pill,
+html[lang="en"] .chip{font-family:var(--sans)}
+
+/* ── 卡片分欄要按英文的字寬來 ───────────────────────────
+   欄寬寫死 150px 是照漢字算的：131px 的正文寬度放得下 8 個漢字，一句
+   12 字的問句兩行就完了。同樣 131px 放得下三個英文單詞 —— 「It hit me
+   and I can't cool down.」要斷成三行，每行三個詞，讀起來是碎的。
+   英文把欄寬放到 260px：390px 的屏上就是一欄，寬屏上仍然是兩欄。 */
+/* 用 columns 簡寫，不用 column-width：頁面寫的是 `columns:150px`，
+   簡寫會把 column-count 一併設回 auto，只覆蓋 column-width 的話
+   兩條各寫各的，最後仍然是它說了算。 */
+html[lang="en"] #hwx .feed,
+html[lang="en"] #hwx .nc-feed{columns:260px}
 /* 字距是給漢字調的：漢字是方塊，拉開一點更透氣；拉丁字母的字距字體裡
    已經調好了，再加 .04em 就散。標題類歸零偏緊一點，小標籤留一點點。 */
 html[lang="en"] h1,

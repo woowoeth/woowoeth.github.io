@@ -205,6 +205,40 @@ html[lang="en"] .one,
 html[lang="en"] .hd-title,
 html[lang="en"] .point h2{font-family:var(--display)}
 html[lang="en"] blockquote{font-family:var(--quote)}
+
+/* ── Playfair 只做大标题 ─────────────────────────────────
+   FONT 表是按**字体族**整批替换的，于是原来那个中文宋体用在哪里，
+   Playfair 就跟到哪里 —— 11px 的分组标签、12px 的胶囊、16.5px 的卡片
+   问句全变成了 Playfair。它是高对比的 Didone 展示体：字干粗细反差大、
+   衬线细如发丝，20px 以上很有气势，12px 上就是一团做作的噪点。
+   中文那边同一个位置是宋体，宋体在小字号上是**正文字体**，所以中文看着
+   正常、英文看着别扭 —— 同一份排版，两种语言的字体分工本来就不一样。
+
+   规矩：≥20px 的标题归 Playfair，正文归 Source Serif 4，界面归无衬线。 */
+/* 选择器里必须带上 #hwx：页面自己的规则是 `#hwx .kc .t{…}`，带 id，
+   权重 (1,2,0)；不带 id 的 `html[lang="en"] .kc .t` 是 (0,3,1)，
+   id 那一位直接压死后面所有位，怎么写都赢不了。 */
+html[lang="en"] #hwx .kc .t,
+html[lang="en"] #hwx .qzq,
+html[lang="en"] #hwx .kc b,
+html[lang="en"] #hwx .scline b{font-family:var(--read)}
+html[lang="en"] #hwx .said,
+html[lang="en"] #hwx .scg,
+html[lang="en"] #hwx .tabs2 button,
+html[lang="en"] #hwx .chip,
+html[lang="en"] #hwx .pill,
+html[lang="en"] .chip{font-family:var(--sans)}
+
+/* ── 卡片分栏要按英文的字宽来 ───────────────────────────
+   栏宽写死 150px 是照汉字算的：131px 的正文宽度放得下 8 个汉字，一句
+   12 字的问句两行就完了。同样 131px 放得下三个英文单词 —— 「It hit me
+   and I can't cool down.」要断成三行，每行三个词，读起来是碎的。
+   英文把栏宽放到 260px：390px 的屏上就是一栏，宽屏上仍然是两栏。 */
+/* 用 columns 简写，不用 column-width：页面写的是 `columns:150px`，
+   简写会把 column-count 一并设回 auto，只覆盖 column-width 的话
+   两条各写各的，最后仍然是它说了算。 */
+html[lang="en"] #hwx .feed,
+html[lang="en"] #hwx .nc-feed{columns:260px}
 /* 字距是给汉字调的：汉字是方块，拉开一点更透气；拉丁字母的字距字体里
    已经调好了，再加 .04em 就散。标题类归零偏紧一点，小标签留一点点。 */
 html[lang="en"] h1,
@@ -214,7 +248,11 @@ html[lang="en"] .point h2{letter-spacing:-.02em}
 html[lang="en"] .kicker,
 html[lang="en"] .sec-k{letter-spacing:.008em}
 """ % {"disp": EN_DISPLAY, "read": EN_READ, "sans": EN_SANS}
-EN_CSS_HREF = "/assets/hw-en.css?v=1"
+# 版本号跟内容走，不写死。写死的话改了 CSS 而 URL 不变，浏览器照旧用
+# 缓存里的旧文件 —— 我自己就被它骗了一轮：改完样式反复重建，页面纹丝不动，
+# 以为是选择器权重不够，其实根本没加载新文件。读者那边同样会中招。
+EN_CSS_HREF = "/assets/hw-en.css?v=" + __import__("hashlib").md5(
+    EN_CSS.encode("utf-8")).hexdigest()[:8]
 
 
 def write_en_css():
