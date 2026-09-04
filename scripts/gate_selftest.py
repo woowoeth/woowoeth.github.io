@@ -534,6 +534,51 @@ def _links_nolayer():
     return go
 
 
+
+# ── 英文站（check_en.py / check_en_js.py）────────────────────────
+# 两道闸都读**构建产物**，所以注入落在 en/ 下的页面上，和繁体那几条一样。
+ENPAGE = os.path.join(ROOT, "en", "i", "su-shi", "index.html")
+ENHOME = os.path.join(ROOT, "en", "index.html")
+
+
+def _en_cjk():
+    """往英文页的正文里塞一句中文 —— 模拟界面串漏译。
+
+    界面层那 90 多条就是靠「/en/ 里不许剩中文」这条判据一条条数出来的；
+    这条判据自己得先能失败。
+    """
+    def go():
+        t = read(ENPAGE)
+        if "<h1" not in t:
+            return None
+        i = t.index("<h1")
+        j = t.index(">", i) + 1
+        write(ENPAGE, t[:j] + "\u8fd9\u91cc\u662f\u6ca1\u8bd1\u7684\u754c\u9762\u4e32" + t[j:])
+        return ENPAGE
+
+    return go
+
+
+def _en_js():
+    """把一个 JS 单引号字符串截断 —— 模拟盲替换插进了一个撇号。
+
+    真事：'You\'ll play it differently after →' 让整个 script 块语法错误，
+    首页打开是空的，而当时所有闸门都报绿 —— 它们查文本，不查能不能跑。
+    """
+    def go():
+        t = read(ENHOME)
+        a = "var HWXD="
+        if a not in t:
+            return None
+        i = t.index(a)
+        j = t.index("</script>", i)
+        # 在这一块的末尾加一句语法上不成立的赋值
+        write(ENHOME, t[:j] + "\nvar _hwx_broken='it'll break';\n" + t[j:])
+        return ENHOME
+
+    return go
+
+
 CASES = [
     # (分支名, 门禁命令, 被改的文件, 注入函数, 必须报出的理由)
     ("章节·dek 过短",   "check_chapters.py", CHAP, _sub_field("dek", _short(3)),  "dek"),
@@ -578,6 +623,8 @@ CASES = [
     ("繁体·hreflang",   "check_tw.py", TWPAGE, _tw_href(),      "hreflang 两版不一致"),
     ("语言站·姊妹站地址", "check_links.py", TWPAGE, _links_sister(), "这个页面不存在"),
     ("语言站·缺语言层",   "check_links.py", LAYERPAGE, _links_nolayer(), "没有 <!--HWX:LANG-->"),
+    ("英文站·界面漏译",   "check_en.py", ENPAGE, _en_cjk(), "still has Chinese"),
+    ("英文站·脚本被截断", "check_en_js.py", ENHOME, _en_js(), "SyntaxError"),
 ]
 
 
