@@ -42,7 +42,9 @@ OUT = os.path.join(ROOT, "tw")
 SKIP_DIRS = {".git", ".github", "scripts", "seo", "worker", "tests", "node_modules",
              "__pycache__", "tw", "site", "HumanWorld"}
 # 这些根文件不复制（内部文档 / 只对主站有意义的）
-SKIP_FILES = {"robots.txt", "CNAME", "site.webmanifest"}
+# site.webmanifest 必须复制：页面里写的是相对路径 href="site.webmanifest"，
+# 不复制的话繁体页会去要 /tw/site.webmanifest —— 线上实测 404。
+SKIP_FILES = {"robots.txt", "CNAME"}
 TEXT_EXT = {".html", ".js", ".json", ".txt", ".xml", ".css", ".svg", ".webmanifest"}
 # 派生产物里体积大又不带文字的，直接复制不转
 BIN_EXT = {".png", ".jpg", ".jpeg", ".ico", ".woff", ".woff2", ".ttf", ".gif", ".webp"}
@@ -99,6 +101,19 @@ def retarget(s):
     return s
 
 
+# 语言标记：繁体页必须自报繁体，否则搜索引擎和分享卡片都按简体归类。
+# 这几处都是转换转不到的（它们是标记不是正文），只能显式替换。
+LOCALE = [
+    ('property="og:locale" content="zh_CN"', 'property="og:locale" content="zh_TW"'),
+    ('"inLanguage":["en","zh-Hans"]', '"inLanguage":["en","zh-Hant"]'),
+    ('"inLanguage":"zh-Hans"', '"inLanguage":"zh-Hant"'),
+    ('"inLanguage": "zh-Hans"', '"inLanguage": "zh-Hant"'),
+    ("<language>zh-cn</language>", "<language>zh-tw</language>"),
+    ("<language>zh-CN</language>", "<language>zh-TW</language>"),
+    ('"lang": "zh-CN"', '"lang": "zh-TW"'),
+]
+
+
 # 繁体页换成思源宋体繁体：Noto Serif SC 也含繁体字，但字形是简体地区的写法
 # （骨、直、過 这些字的笔画走向不同），繁体读者一眼看得出别扭。
 FONT = [("Noto+Serif+SC", "Noto+Serif+TC"), ("Noto Serif SC", "Noto Serif TC")]
@@ -121,6 +136,8 @@ def do_text(src, dst):
         s = s.replace("https://ourword.ai/", "https://ourword.ai/tw/")
         s = s.replace("https://ourword.ai/tw/tw/", "https://ourword.ai/tw/")
     for a, b in FONT:
+        s = s.replace(a, b)
+    for a, b in LOCALE:
         s = s.replace(a, b)
     os.makedirs(os.path.dirname(dst), exist_ok=True)
     open(dst, "w", encoding="utf-8").write(s)

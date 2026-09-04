@@ -137,7 +137,26 @@ def main():
         if len([x for x in bad if x.startswith("切错")]) >= 5:
             break
 
-    # ⑥ 地图类文件必须指向繁体站自己
+    # ⑥ 语言标记必须自报繁体
+    #    og:locale / inLanguage / <language> 是标记不是正文，转换转不到它们。
+    #    漏了的后果是搜索引擎和分享卡片把繁体页按简体归类 —— 页面看着全对，
+    #    只有翻 head 才发现。
+    for k in sorted(tw):
+        t = open(tw[k], encoding="utf-8").read()
+        for pat, why in ((r'og:locale"\s*content="zh_CN"', "og:locale 仍是 zh_CN"),
+                         (r'"inLanguage":\s*"?\[?"?(?:en",")?zh-Hans', "inLanguage 仍是 zh-Hans")):
+            if re.search(pat, t):
+                bad.append("%s：%s" % (k, why))
+                break
+        if len([x for x in bad if "og:locale" in x or "inLanguage" in x]) >= 3:
+            break
+    for f in ("feed.xml",):
+        p_ = os.path.join(TW, f)
+        if os.path.exists(p_) and re.search(r"<language>zh-c?n</language>",
+                                            open(p_, encoding="utf-8").read(), re.I):
+            bad.append("tw/%s 的 <language> 仍是 zh-CN" % f)
+
+    # ⑦ 地图类文件必须指向繁体站自己
     #    sitemap/feed/llms 里的地址在元素文本和裸行里，不走属性那套重写规则。
     #    第一版漏了，tw/sitemap.xml 里 553 条全指向简体站 —— 页面全对，
     #    只有打开地图文件才看得见，所以要有一条判据专门盯它。
@@ -156,7 +175,7 @@ def main():
         for b in bad:
             print("  ✗ " + b if not b.startswith("    ") else b)
         return 1
-    print("✓ 结构一一对应、链接一致、无漏转、无切错组合、歧义字全部登记、地图指向自己")
+    print("✓ 结构一一对应、链接一致、无漏转、无切错组合、歧义字全部登记、语言标记自报繁体、地图指向自己")
     return 0
 
 
