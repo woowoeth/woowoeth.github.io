@@ -431,7 +431,18 @@ def main():
     newest = stamp_lastmod(items, today, extra=ch_fp)
     rep = G.build(SITE, items, root=".", today=newest,
                   how_built=HOW, cite_as=CITE,
-                  extra_sitemaps=[],
+                  # robots.txt 只在**域名根**生效 —— /podcast/robots.txt 和
+                  # /skill/robots.txt 爬虫根本不看（geo_kit 自己的注释也这么写：
+                  # 「the authoritative one for this domain is /robots.txt」）。
+                  # 所以三个站、六份 sitemap 都得在这里声明，少一条就是那半个站
+                  # 没有被主动提交过地图，只能等爬虫自己撞见。
+                  extra_sitemaps=[
+                      "https://ourword.ai/tw/sitemap.xml",
+                      "https://ourword.ai/podcast/sitemap.xml",
+                      "https://ourword.ai/podcast/tw/sitemap.xml",
+                      "https://ourword.ai/skill/sitemap.xml",
+                      "https://ourword.ai/skill/tw/sitemap.xml",
+                  ],
                   extra_urls=hw_chapters.chapter_urls())
     rep["chapters"] = hw_chapters.write_chapters()
     rep["chapter_index"] = hw_chapters.write_indexes()
