@@ -247,31 +247,54 @@ def patch_tree(root="."):
                   "#hwx-tools #hwx-theme:hover{color:var(--ink,#1c1917)}"
                   "#hwx-tools #hwx-theme svg{width:17px;height:17px;display:block}"
                   "#hwx-tools.in-row{margin-left:auto;align-self:flex-start;flex:0 0 auto}"
-                  # 窄屏：工具条不再浮在站名头上，改成**自己占一行**、
-                  # 右对齐、排在站名上面。
+                  # 窄屏：工具条回到**和 logo 同一行**的右上角。
                   #
-                  # 之前试过让站名换行来避让（限 max-width），但站名换行本身
-                  # 就是错的 —— 「Human World Rules」是一个名字，断成两行不
-                  # 是排版，是把名字拆了。而只要工具条还浮在同一行上，站名
-                  # 就必然要么被挡要么被压窄：390px 下站名要 212px，工具条
-                  # 占 90px，加上图标和内边距，一行根本放不下两样。
+                  # 390px 下这一行要塞下：logo + 站名 + 工具条。按原来的尺寸
+                  # 加起来正好等于可用宽度，一点余量都没有 —— 于是站名要么
+                  # 被压窄换行，要么被工具条盖住。所以三样一起收：logo 32px、
+                  # 间距收紧、站名字号跟着视口缩（clamp 的下限保证 320px 上
+                  # 也放得下）。站名仍然是一行，仍然不被挡。
                   #
-                  # 让出一行（约 36px）换来的是：站名任何宽度都一行、任何
-                  # 宽度都不被挡。320px 上也成立（站名 212px，可用 224px）。
+                  # 标语在下一行，和工具条不在同一水平线上，撞不到它，
+                  # 所以它还能用整行宽度。
                   "@media(max-width:760px){"
-                  "header.hd{display:flex;flex-direction:column;align-items:stretch}"
-                  "#hwx-tools.float-in-head{position:static;order:-1;align-self:flex-end;"
-                  "top:auto;right:auto;margin:0 0 4px}"
-                  ".hd .hd-title,.hd .wordmark{max-width:none;white-space:nowrap}"
-                  # 条目页/章节页的站名同样不许换行；那边工具条是 .mast-top
-                  # 里的 flex 项，站名太长时让整行换行，而不是把名字压窄。
-                  # 条目页/章节页也让工具条自己占一行，而且排在站名**上面** ——
-                  # 和首页同一个位置。首页在上、内页在下的话，读者每换一种
-                  # 页面就得重新找一次语言开关在哪。
-                  ".mast-top{flex-wrap:wrap}"
-                  "#hwx-tools.in-row{order:-1;flex:0 0 100%;display:flex;"
-                  "justify-content:flex-end;margin:0 0 4px}"
-                  ".mast-top .wordmark{white-space:nowrap}}"
+                  # 首页的工具条也当 flex 项，不用绝对定位 —— 绝对定位不占
+                  # 位，站名一长就从它底下穿过去（量到过 13px 的重叠）。
+                  # 当 flex 项就**结构上**压不到，而且和条目页是同一种做法。
+                  "header.hd{display:flex;align-items:flex-start}"
+                  "header.hd .brand-lockup,header.hd .brand{flex:1 1 auto;min-width:0}"
+                  "#hwx-tools.float-in-head{position:static;flex:0 0 auto;"
+                  "margin:2px 0 0 auto}"
+                  ".hd .brand-lockup,.hd .brand{gap:10px!important}"
+                  ".hd .brand-logo{width:32px!important;height:32px!important}"
+                  # 选择器要比 hw-home-lockup.css 的 `.brand-lockup .hd-title`
+                  # 更重：那条也带 !important，权重相同就看源码顺序，
+                  # 而它是外链样式表、排在这段内联 <style> 后面 ——
+                  # 同权重的话它赢，字号一直停在 20px 被挤裁。
+                  "header.hd .brand-lockup .hd-title,"
+                  "header.hd .brand .hd-title,"
+                  "header.hd .brand-lockup .wordmark,"
+                  ".hd .hd-title,.hd .wordmark{max-width:none;white-space:nowrap;"
+                  "font-size:clamp(11px,calc((100vw - 196px)/11.3),20px)!important}"
+                  # 条目页/章节页：工具条是 .mast-top 里的 flex 项，
+                  # 让它留在同一行的最右边，不再自己占一行。
+                  ".mast-top{flex-wrap:nowrap;align-items:flex-start}"
+                  "#hwx-tools.in-row{order:0;flex:0 0 auto;margin:0 0 0 auto;"
+                  "align-self:flex-start}"
+                  # 字号 clamp 必须两种页型都覆盖：首页的站名在 .hd 里，
+                  # 条目页/章节页的在 .mast-top 里。只写 .hd 的话内页站名
+                  # 保持 20px 被挤裁 —— 「Human World Rules」右边直接没了。
+                  #
+                  # 字号是**从可用宽度反推**的，不是试出来的 vw 系数：
+                  # 这一行里除站名外固定占掉约 196px（两侧内边距 48 + logo 32
+                  # + 两个间距 22 + 工具条 82 + 余量 12），而「Human World
+                  # Rules」在 1px 字号下约 11.3px 宽 —— 所以
+                  # (100vw - 196) / 11.3 就是「刚好放得下」的字号。
+                  # 试 vw 系数的坑在于：390px 上看着够了，375px 上又裁掉一截，
+                  # 每换一个宽度重试一次。
+                  "header .mast-top .wordmark,.mast-top .wordmark{white-space:nowrap;"
+                  "font-size:clamp(11px,calc((100vw - 196px)/11.3),20px)!important}"
+                  ".mast-top .brand{min-width:0}}"
                   "</style>"
                 + HWL_B
             )
