@@ -218,7 +218,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica N
   .dq-acts{margin-top:0;flex:0 0 auto}
 }
 @media (prefers-reduced-motion:reduce){.dq-card.fade canvas{animation:none}}
-@import url("https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600;6..72,700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600;6..72,700&display=swap");
 </style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-DHD3WEXQ8T"></script>
@@ -273,7 +273,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica N
     </section>
     
 <!--HWX:FIND-->
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600;6..72,700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600;6..72,700&display=swap">
 <style>:root{color-scheme:light dark;--paper:#f5f1e8;--ink:#1f1c17;--acc:#a33b2e;--muted:#8a8377;--line:#d8d2c6;--paper2:#eee8da;--card:#faf7f0;--kbg:#1f1c17;--kfg:#f5f1e8;--kmut:#cfc7b8}
 @media(prefers-color-scheme:dark){:root{--paper:#171410;--ink:#eae3d4;--acc:#c65f4f;--muted:#9a917f;--line:#3a342a;--paper2:#201c15;--card:#1d1913;--kbg:#eae3d4;--kfg:#171410;--kmut:#5a5344}}
 :root[data-theme="light"]{--paper:#f5f1e8;--ink:#1f1c17;--acc:#a33b2e;--muted:#8a8377;--line:#d8d2c6;--paper2:#eee8da;--card:#faf7f0;--kbg:#1f1c17;--kfg:#f5f1e8;--kmut:#cfc7b8}
@@ -452,7 +452,7 @@ header.hd{margin-bottom:12px!important}
 #hwx .nc .q{font-size:15.5px;line-height:1.85}
 #hwx .nc .q::before{content:"「"}#hwx .nc .q::after{content:"」"}
 #hwx .qc{border-radius:14px;background:var(--paper2);border:1px solid var(--line);padding:17px 15px 14px;display:flex;flex-direction:column;text-decoration:none;color:inherit;position:relative}
-#hwx .qc .v{writing-mode:vertical-rl;text-orientation:mixed;height:186px;width:fit-content;max-width:100%;font-family:"Source Serif 4","Source Han Serif SC","Songti SC","STSong","SimSun",serif;font-size:17px;font-weight:700;line-height:1.85;letter-spacing:.04em;margin:5px auto 12px;overflow:hidden;display:block}
+#hwx .qc .v{writing-mode:vertical-rl;text-orientation:mixed;height:186px;width:fit-content;max-width:100%;font-family:"Newsreader","Source Han Serif SC","Songti SC","STSong","SimSun",serif;font-size:17px;font-weight:700;line-height:1.85;letter-spacing:.04em;margin:5px auto 12px;overflow:hidden;display:block}
 #hwx .qc .v::before{content:"「"}#hwx .qc .v::after{content:"」"}
 #hwx .qc .who{font-size:12.5px;color:var(--muted);margin-top:2px}
 #hwx .qc .gl{font-size:13px;line-height:1.65;color:var(--ink);opacity:.72;margin:0 0 8px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
@@ -633,23 +633,23 @@ document.getElementById('hwx-ago').innerHTML=(a1.r||[]).slice(0,1).map(function(
 function drawCard(cb){
   var cv=document.createElement('canvas');cv.width=1080;cv.height=1440;var c=cv.getContext('2d');
   var loaded=0,need=3;function chk(){if(++loaded>=need)render();}
-  document.fonts.load('900 128px "Source Serif 4"').then(chk).catch(chk);
-  document.fonts.load('700 58px "Source Serif 4"').then(chk).catch(chk);
-  document.fonts.load('500 34px "Source Serif 4"').then(chk).catch(chk);
+  document.fonts.load('900 128px "Newsreader"').then(chk).catch(chk);
+  document.fonts.load('700 58px "Newsreader"').then(chk).catch(chk);
+  document.fonts.load('500 34px "Newsreader"').then(chk).catch(chk);
   function render(){
     c.fillStyle='#f5f1e8';c.fillRect(0,0,1080,1440);
     c.strokeStyle='#d8d2c6';c.lineWidth=2;c.strokeRect(46,46,988,1348);
-    c.fillStyle='#a33b2e';c.font='900 128px "Source Serif 4"';c.fillText(String(_n.getDate()),96,232);
-    c.fillStyle='#8a8377';c.font='500 34px "Source Serif 4"';c.fillText((_n.getMonth()+1)+' · '+WD[_n.getDay()],100,296);
+    c.fillStyle='#a33b2e';c.font='900 128px "Newsreader"';c.fillText(String(_n.getDate()),96,232);
+    c.fillStyle='#8a8377';c.font='500 34px "Newsreader"';c.fillText((_n.getMonth()+1)+' · '+WD[_n.getDay()],100,296);
     c.fillStyle='#9d2933';
     (function(x,y,w){var r=w*0.22;c.beginPath();
       c.moveTo(x+r,y);c.lineTo(x+w-r,y);c.quadraticCurveTo(x+w,y,x+w,y+r);
       c.lineTo(x+w,y+w-r);c.quadraticCurveTo(x+w,y+w,x+w-r,y+w);
       c.lineTo(x+r,y+w);c.quadraticCurveTo(x,y+w,x,y+w-r);
       c.lineTo(x,y+r);c.quadraticCurveTo(x,y,x+r,y);c.closePath();c.fill();})(880,110,104);
-    c.fillStyle='#fff';c.font='700 62px "Source Serif 4"';
+    c.fillStyle='#fff';c.font='700 62px "Newsreader"';
     c.textAlign='center';c.fillText('人',932,182);c.textAlign='left';
-    c.fillStyle='#1f1c17';c.font='700 58px "Source Serif 4"';
+    c.fillStyle='#1f1c17';c.font='700 58px "Newsreader"';
     var q='“'+q1.q+'”',lines=[],cur='',PUNC='，。、；：！？…」）';
     for(var i=0;i<q.length;i++){var tt=cur+q[i];if(c.measureText(tt).width>880&&PUNC.indexOf(q[i])<0){lines.push(cur);cur=q[i]}else cur=tt}
     if(cur)lines.push(cur);
@@ -658,7 +658,7 @@ function drawCard(cb){
     /* 解析：一句话，画在署名之上；行数按实际内容，不预留空档 */
     var ay=y+46;
     if(q1.gl){
-      c.fillStyle='#5f5850';c.font='500 31px "Source Serif 4"';
+      c.fillStyle='#5f5850';c.font='500 31px "Newsreader"';
       var wl=[],cu='';
       for(var j=0;j<q1.gl.length;j++){var tw=cu+q1.gl[j];
         if(c.measureText(tw).width>860&&PUNC.indexOf(q1.gl[j])<0){wl.push(cu);cu=q1.gl[j]}else cu=tw}
@@ -667,11 +667,11 @@ function drawCard(cb){
       wl.forEach(function(l){c.fillText(l,100,ay);ay+=46});
     }
     ay+=54;   /* 与上一段空出一行 */
-    c.fillStyle='#8a8377';c.font='500 34px "Source Serif 4"';
+    c.fillStyle='#8a8377';c.font='500 34px "Newsreader"';
     c.textAlign='right';c.fillText('— '+q1.who+' · '+q1.cn,980,ay);c.textAlign='left';
     c.strokeStyle='#d8d2c6';c.lineWidth=2;c.beginPath();c.moveTo(100,1230);c.lineTo(980,1230);c.stroke();
-    c.fillStyle='#1f1c17';c.font='700 34px "Source Serif 4"';c.fillText('Human World Rules',100,1318);
-    c.fillStyle='#a33b2e';c.font='500 30px "Source Serif 4"';c.fillText('OurWord.ai',100,1366);
+    c.fillStyle='#1f1c17';c.font='700 34px "Newsreader"';c.fillText('Human World Rules',100,1318);
+    c.fillStyle='#a33b2e';c.font='500 30px "Newsreader"';c.fillText('OurWord.ai',100,1366);
     var qr=new Image();
     qr.onload=function(){c.drawImage(qr,858,1244,122,122);cv.toBlob(cb,'image/png')};
     qr.onerror=function(){cv.toBlob(cb,'image/png')};

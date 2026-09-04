@@ -43,13 +43,21 @@ header.hd .brand{
   gap:3px !important;
   min-width:0 !important;
 }
+/* 站名的字體和字距走變量，不寫死：這幾條帶 !important（要壓住首頁內聯
+   樣式），值寫死的話英文站怎麼覆蓋都覆蓋不掉 —— 加一層 !important 只是
+   軍備競賽，下一個 !important 又贏回去。英文那份值在生成的
+   assets/hw-en.css 裡，見 scripts/build_en.py 的 EN_CSS。 */
+:root{
+  --brand-serif:"Noto Serif TC","Source Han Serif SC","Songti SC","STSong",Georgia,serif;
+  --brand-track:.04em;
+}
 .hd-title,
 .brand .wordmark,
 .brand-lockup .hd-title{
-  font-family:"Noto Serif TC","Source Han Serif SC","Songti SC","STSong",Georgia,serif !important;
+  font-family:var(--brand-serif) !important;
   font-size:20px !important;
   font-weight:700 !important;
-  letter-spacing:.04em !important;
+  letter-spacing:var(--brand-track) !important;
   line-height:1.25 !important;
   margin:0 !important;
 }

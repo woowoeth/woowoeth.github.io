@@ -633,26 +633,33 @@ def _chat_tw_stale():
     return go
 
 
-THEME = os.path.join(ROOT, "seo", "hw_theme.py")
+def _dek_untrimmed():
+    """把英文条目页的导语换成**没裁过**的那一版 —— 模拟 _dek() 认不出
+    英文标点。
 
+    真事：hw_theme._dek() 只找「——」和「。」，英文 summary 用的是单破折号
+    和半角句点，两个都找不到，于是整块不裁 —— 页面上露出 d[:140] 那个硬
+    切口，而正文几行之下又把同一段完整印一遍。
 
-def _dek_cjk_only():
-    """把 _dek() 改回只认中文标点，重建英文站 —— 模拟共用模板里写死 CJK 标点。
-
-    真事：英文 summary 用的是单破折号和半角句点，中文那套找不到，于是
-    导语整块不裁，页面上露出 d[:140] 那个硬切口，而正文几行之下又把
-    同一段完整印一遍。
+    注入落在**建好的页面**上，不落在 seo/hw_theme.py 上。第一版改的是源码
+    再重建英文站：注入是过了，可自检只还原它声明的那一个文件，119 个建出来
+    的页面就带着坏导语留在工作区里 —— 下一道闸踩到的是上一条用例的残留。
+    注入只动一个文件，和其他用例一样。
     """
     def go():
-        t = read(THEME)
-        a = 't.find("\u2014")'
+        t = read(ENPAGE)
+        a = '<p class="dek">'
         if a not in t:
             return None
-        write(THEME, t.replace(a, 't.find("\u2014\u2014")', 1))
-        import subprocess
-        subprocess.run([sys.executable, os.path.join(HERE, "build_en.py")],
-                       cwd=ROOT, capture_output=True)
-        return THEME
+        i = t.index(a) + len(a)
+        j = t.index("</p>", i)
+        dek = t[i:j]
+        # 找页面上那段完整的介绍，把它接在导语后面 —— 这正是没裁的样子
+        m = re.search(r"<p>([^<]{90,})</p>", t[j:])
+        if not m:
+            return None
+        write(ENPAGE, t[:i] + dek + " " + m.group(1)[:140] + t[j:])
+        return ENPAGE
 
     return go
 
@@ -726,7 +733,7 @@ CASES = [
     ("英文站·中文字体",   "check_en.py", ENCSS, _en_font(), "用中文字体排字"),
     ("窄屏·横向撑开",     "check_mobile.py", CHAPCSS, _mobile_blowout(), "横向撑开"),
     ("挂件繁体·没跟上",   "check_chat_tw.py", CHATJS, _chat_tw_stale(), "不同步"),
-    ("导语·只认中文标点", "check_dek.py", THEME, _dek_cjk_only(), "导语"),
+    ("导语·没裁过",       "check_dek.py", ENPAGE, _dek_untrimmed(), "导语"),
 ]
 
 

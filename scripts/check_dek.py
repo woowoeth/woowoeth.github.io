@@ -14,7 +14,7 @@
 「… a cook and a provincial governor. He was banished」后面直接没了。
 共用模板里写死 CJK 标点，就是这么只在另一种语言上发作的。
 
-两条判据：
+三条判据：
 ① 模板形制 —— 带「（年代）＋破折号」的那种导语（模板生成的），必须在
    破折号后的第一个句号处结束，后面一个字都不许有。
 ② 不重复 —— 认人那半句之后剩下的字，不许在同页别处出现。① 判形制，
@@ -25,6 +25,7 @@
 第一版拿「收尾」当判据，一口气把 159 条里的手写导语全判成缺陷 ——
 闸门判错的时候，先怀疑判据抄的是哪一种语言的习惯。
 """
+import html as _h
 import io
 import os
 import re
@@ -39,6 +40,11 @@ TAGS = re.compile(r"<script.*?</script>|<style.*?</style>", re.S)
 HEAD = re.compile(r"^.*?[—][^。.]*[。.]")
 ERA = re.compile(r"[（(][^（()）]*\d{3,4}[^（()）]*[)）]")
 DASH = re.compile(r"[—]")
+SHARE = re.compile(r'data-share-text="([^"]*)"')
+# 「…」也算收住了：d 的前 140 字里一句都没说完的时候，省略号是诚实的
+# 收尾 —— 拦的是断在半个词上，不是拦「没说完」。
+ENDS_ALL = ("\u3002", ".", "!", "?", "\uff01", "\uff1f", "\u201d", "\u300d",
+            "\u2026")
 DIRS = [("简体", "i"), ("繁体", os.path.join("tw", "i")), ("英文", os.path.join("en", "i"))]
 
 
@@ -74,6 +80,18 @@ def main():
                            % (where, dek[h.end():].strip()[:45]))
                 continue
 
+            # ③ 分享文案必须收在整句上
+            sm = SHARE.search(s)
+            if sm:
+                txt = _h.unescape(sm.group(1)).strip()
+                if txt and not txt.rstrip().endswith(ENDS_ALL):
+                    # 末尾是网址的话看网址前那一段
+                    parts = [x for x in txt.split("\n") if x.strip()]
+                    body_line = parts[-2] if len(parts) >= 2 else parts[-1]
+                    if not body_line.rstrip().endswith(ENDS_ALL):
+                        bad.append("%s 分享文案断在半句：…%s"
+                                   % (where, body_line.rstrip()[-40:]))
+
             # ② 认人那半句之后不许还有别处也有的字
             rest = dek[h.end():].strip() if h else ""
             if len(rest) >= 12:
@@ -91,7 +109,7 @@ def main():
         for x in bad[:8]:
             print("  ✗ " + x)
         return 1
-    print("✓ 模板导语都在破折号后的句号处收住，认人那半句之后没有同页重复的内容")
+    print("✓ 模板导语在句号处收住、认人那半句之后无同页重复、分享文案都收在整句上")
     return 0
 
 

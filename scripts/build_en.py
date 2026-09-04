@@ -77,19 +77,16 @@ LOCALE = [
 EN_DISPLAY = '"Newsreader",Georgia,"Times New Roman",serif'
 EN_SANS = ('-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,'
            '"Helvetica Neue",Arial,sans-serif')
-EN_READ = '"Source Serif 4",Georgia,"Times New Roman",serif'
 
 FONT = [
     ("https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;600;700;900"
      "&display=swap",
      "https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;"
-     "6..72,600;6..72,700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600"
-     "&display=swap"),
+     "6..72,600;6..72,700&display=swap"),
     ("https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;600;700"
      "&display=swap",
      "https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;"
-     "6..72,600;6..72,700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600"
-     "&display=swap"),
+     "6..72,600;6..72,700&display=swap"),
     # 首页不引 hw-entry.css，字体族是直接写死在内联 <style> 里的，所以
     # html[lang="en"] 那套变量覆盖够不到它 —— 必须在这里逐个换掉字体栈。
     # 长的排在前面：短的会先吃掉长栈的一截，剩下半截换不干净。
@@ -104,8 +101,8 @@ FONT = [
     ('"PingFang SC","HarmonyOS Sans SC","Hiragino Sans GB","Microsoft YaHei",'
      '-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif', EN_SANS),
     # 兜底：漏网的字体名换成拉丁族，别把 CJK 字体名留在英文页上
-    ("Noto+Serif+SC", "Source+Serif+4"),
-    ("Noto Serif SC", "Source Serif 4"),
+    ("Noto+Serif+SC", "Newsreader"),
+    ("Noto Serif SC", "Newsreader"),
 ]
 
 # 赞赏码：英文页用 AlipayHK，和繁体站同一个。大陆个人收款码在境外收不了；
@@ -130,14 +127,15 @@ PAY = [
 # 斜体多半是机器倾斜。一行中英混排看不出来，整页英文长文就是「哪里不对
 # 但说不出」。
 #
-# 分工：Newsreader 做标题（带 optical sizing，大字号收得住），
-# Source Serif 4 做正文（为屏幕阅读设计，x 高度够），
-# 界面文字（导航、胶囊、按钮）留给系统无衬线 —— 12px 的衬线不够清晰。
+# 分工：Newsreader 做标题（带 optical sizing，大字号收得住），正文和界面
+# 都用系统无衬线。正文一开始配的是 Source Serif 4，换掉是因为两件事：
+# 原声站的英文页就是「衬线标题 + 系统无衬线正文」这个配法，用户看了说好；
+# 而中文主站本来也是苹方做正文、宋体做标题 —— 英文跟着同一个结构，
+# 三个站和两种语言才是一套东西，不是各排一套。
 EN_CSS = """/* 由 scripts/build_en.py 生成，别手改 —— 改这里的话下次构建就没了。 */
 html[lang="en"]{
   --display:%(disp)s;
   --quote:%(disp)s;
-  --read:%(read)s;
   --sans:%(sans)s;
   /* 站名那几条带 !important（要压住首页内联样式），所以只能从值这一层
      覆盖 —— 见 assets/hw-home-lockup.css 里同一处的注释。 */
@@ -145,10 +143,6 @@ html[lang="en"]{
   --brand-track:0;
 }
 html[lang="en"] body{font-family:var(--sans)}
-html[lang="en"] article,
-html[lang="en"] .dek,
-html[lang="en"] .lede,
-html[lang="en"] .idx{font-family:var(--read)}
 html[lang="en"] h1,
 html[lang="en"] h2,
 html[lang="en"] .one,
@@ -163,7 +157,7 @@ html[lang="en"] .hd-title,
 html[lang="en"] .point h2{letter-spacing:-.011em}
 html[lang="en"] .kicker,
 html[lang="en"] .sec-k{letter-spacing:.008em}
-""" % {"disp": EN_DISPLAY, "read": EN_READ, "sans": EN_SANS}
+""" % {"disp": EN_DISPLAY, "sans": EN_SANS}
 EN_CSS_HREF = "/assets/hw-en.css?v=1"
 
 

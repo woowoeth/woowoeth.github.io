@@ -178,6 +178,34 @@ def _echoes(quote, body):
 CHAPTER_QUOTES = {}
 
 
+def _whole_sentences(t):
+    """砍到最后一个完整句子。
+
+    it.summary 是「名字（年代）——关键词。」+ d 的**前 140 字**，那个 140 是
+    硬切的：切在哪个字上纯看运气。它当页面 meta 用没关系（搜索结果本来就
+    会再截一次），但它同时是**分享文案** —— 读者转发到微信、X 上的那段字
+    就这么断在半句：「…逆境没有摧毁他，反而成」「…a cook」。三种语言都是。
+    配套的闸：scripts/check_dek.py 第 ③ 条。
+    """
+    t = str(t or "").rstrip()
+    if not t:
+        return t
+    # 两套标点都算；引号收尾也算句子结束
+    ends = [t.rfind(c) for c in ("\u3002", ".", "!", "?", "\uff01", "\uff1f",
+                                 "\u201d", "\u300d")]
+    i = max(ends)
+    if i > len(t) * 0.4:
+        return t[:i + 1]
+    # 找不到够靠后的句号（d 的前 140 字里恰好一句都没说完）。第一版这里
+    # 原样返回，等于把硬切口当完整句子交出去 —— 那正是要修的东西。
+    # 老实打个省略号：读者看得懂「这里还有」，看不懂的是断在半个词上。
+    cut = t.rstrip()
+    sp = cut.rfind(" ")
+    if sp > len(cut) * 0.5:      # 英文按词界砍；中文没有空格，走下一行
+        cut = cut[:sp]
+    return cut.rstrip(" ,;:\u3001\uff0c\uff1b\u00b7\u2014-") + "\u2026"
+
+
 def _dek(summary):
     """Standfirst for an entry page.
 
@@ -374,7 +402,8 @@ def item_page(site, it, items, idx, zh, hub_of=None):
     if one in eras:
         one = ""
     era = next((t for t in tags if t in eras), "")
-    share_text = "%s\n\n%s\n\n%s" % (it.t(zh_render), it.s(zh_render), page_url)
+    share_text = "%s\n\n%s\n\n%s" % (
+        it.t(zh_render), _whole_sentences(it.s(zh_render)), page_url)
     blocks_html, toc = _render_blocks(it, zh_render)
     try:
         import hw_chapters
