@@ -73,6 +73,16 @@ LOCALE = [
 # 思源宋体简体不含合适的西文字形，英文页用 Noto Serif 的拉丁族。
 FONT = [("Noto+Serif+SC", "Noto+Serif"), ("Noto Serif SC", "Noto Serif")]
 
+# 赞赏码：英文页用 AlipayHK，和繁体站同一个。大陆个人收款码在境外收不了；
+# AlipayHK 港澳读者用得上，**欧美读者用不了**（注册要香港手机号）。
+# 已知缺口，等接了卡支付回来改这一处。
+ALIPAY_HK_LINK = ("https://render.alipay.com/p/yuyan/180020010001270667/landing/"
+                  "income.html?qrcode=https://qr.alipay.hk/281004010499ha1j0b9kg7PhWd30nLZv4Zfa")
+PAY = [
+    ("/assets/pay-alipay.png", "/assets/pay-alipayhk.png"),
+    ("https://qr.alipay.com/fkx10243q5q41avrifvyj24", ALIPAY_HK_LINK),
+]
+
 
 def protect(s):
     keep = []
@@ -155,7 +165,7 @@ def finish(s, rel=None):
     kept = en_ui.apply(kept)         # ② 界面串（表内已按长度降序）
     s = restore(kept, keep)
     s = retarget(s, rel)             # ③ 站内地址改指 /en/（含自指地址）
-    for a, b in FONT + LOCALE:       # ④ 字体与语言标记
+    for a, b in FONT + LOCALE + PAY:  # ④ 字体、语言标记、收款码
         s = s.replace(a, b)
     return s
 
@@ -417,24 +427,37 @@ def main():
     sys.path.insert(0, HERE)
     print("English home page: %d" % write_home(items))
 
-    # 夜间模式挂件：整块从已构建的简体页里原样搬过来，再由 finish() 统一
-    # 翻标签、改资源路径。自己再写一份的话，两边的深色配色迟早对不上。
+    # 三个挂件整块从已构建的简体页里原样搬过来，再由 finish() 统一翻标签、
+    # 改资源路径。自己再写一份的话，两边的配色和行为迟早对不上。
+    #
+    # 聊天挂件是一份文件两种语言：assets/hw-chat.js 自己看 location.pathname，
+    # /en/ 下就换英文串、换英文检索索引、请求里带 lang:'en'（Worker 据此
+    # 换一套英文系统提示词）。所以这里不需要为英文另搬一份资源。
+    #
+    # 赞赏码换成 AlipayHK，和繁体站同一个：大陆个人码在境外收不了，
+    # AlipayHK 至少港澳读者用得上。**欧美读者两个都用不了** —— 这是个已知
+    # 缺口，等接了卡支付再回来改这里。
     src = os.path.join(ROOT, "i", "su-shi", "no-wind-no-rain", "index.html")
-    theme = ""
+    blocks = []
     if os.path.exists(src):
         t = open(src, encoding="utf-8").read()
-        a, b = "<!--HWX:THEME-->", "<!--/HWX:THEME-->"
-        if a in t and b in t:
-            theme = t[t.index(a):t.index(b) + len(b)]
-    if theme:
-        for dp, _dn, fn in os.walk(OUT):
-            for f in fn:
-                if f in ("index.html", "404.html"):
-                    p_ = os.path.join(dp, f)
-                    x = open(p_, encoding="utf-8").read()
-                    if "<!--HWX:THEME-->" not in x and "</body>" in x:
-                        open(p_, "w", encoding="utf-8").write(
-                            x.replace("</body>", theme + "</body>", 1))
+        for a, b in (("<!--HWX:THEME-->", "<!--/HWX:THEME-->"),
+                     ("<!--HWX:CHAT-->", "<!--/HWX:CHAT-->"),
+                     ("<!--HWX:TEA-->", "<!--/HWX:TEA-->")):
+            if a in t and b in t:
+                blocks.append((a, t[t.index(a):t.index(b) + len(b)]))
+    for dp, _dn, fn in os.walk(OUT):
+        for f in fn:
+            if f not in ("index.html", "404.html"):
+                continue
+            p_ = os.path.join(dp, f)
+            x = open(p_, encoding="utf-8").read()
+            if "</body>" not in x:
+                continue
+            add = "".join(blk for mark, blk in blocks if mark not in x)
+            if add:
+                open(p_, "w", encoding="utf-8").write(
+                    x.replace("</body>", add + "</body>", 1))
 
     # 三语层：和简体、繁体共用 scripts/hwx_lang.py 的同一份实现。
     # 分成两处写的话 hreflang 迟早走散，而走散了不报错，只是搜索引擎

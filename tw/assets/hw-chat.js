@@ -26,6 +26,75 @@
      而且清不掉，因為按鈕在發請求之前就被這份本地計數禁用了。
      限流改成按瀏覽器算之後，那批寫壞的值必須作廢，換個鍵最乾淨。 */
   var LS_KEY = 'hw-chat-quota2';
+
+  /* ---------- 語言 ----------
+     一份文件兩種語言，不是兩份文件：這個掛件是 /assets/ 下的靜態資源，
+     三個語言站共用同一個 URL。複製一份出來給英文站，兩份遲早走散。
+     判據用路徑：/en/… 是英文站，其餘（含 /tw/）走中文那套。
+     繁體頁上的這些字由 build_tw.py 的轉換順帶處理，所以這裡只分中英。 */
+  var LANG = /^\/en(\/|$)/.test(location.pathname) ? 'en' : 'zh';
+  var T = LANG === 'en' ? {
+    ask: 'Stuck? Ask.',
+    head: "What's going on?",
+    ph: 'Tell me\u2026',
+    phDone: "That's today's five. Come back tomorrow.",
+    phPass: "You've had a good run today. Tomorrow.",
+    open: 'Anything \u2014 work, home, money, your body, or the things you '
+        + "don't say out loud. The more specific, the likelier we find "
+        + 'someone it actually matches.',
+    send: 'Send',
+    close: 'Close',
+    thinking: 'Looking it up\u2026',
+    source: 'Read it',
+    left: function (n) { return n + ' left today'; },
+    free: 'Unlimited today',
+    none: "Nothing here matches that yet. Try saying it another way, or search.",
+    neterr: "Couldn't reach it. Try again in a moment.",
+    over: "That's today's five. Come back tomorrow.",
+    teaHead: "That's today's five.",
+    teaBody: 'Buy me a tea and today is unlimited. Any amount.',
+    teaGo: 'Open AlipayHK',
+    teaAlt: 'AlipayHK payment code',
+    teaHowWx: 'Press and hold to save the image, then scan it from your album.',
+    teaHowMob: 'Or screenshot it and scan from your album in AlipayHK.',
+    teaHowPc: 'Open AlipayHK and scan.',
+    teaYes: 'Done \u2014 keep going',
+    teaNo: 'Tomorrow',
+    teaThanks: 'Thank you. Unlimited today.',
+    teaLater: 'Tomorrow then.',
+    ball: 'Ask',
+    srv: "That's today's allowance. Come back tomorrow."
+  } : {
+    ask: '\u9047\u5230\u4e8b\u4e86\uff1f\u95ee\u4e00\u95ee',
+    head: '\u4f60\u9047\u5230\u4ec0\u4e48\u4e8b\u4e86\uff1f',
+    ph: '\u8bf4\u8bf4\u770b\u2026\u2026',
+    phDone: '\u4eca\u5929\u7684 5 \u6b21\u7528\u5b8c\u4e86',
+    phPass: '\u4eca\u5929\u804a\u5f97\u591f\u591a\u4e86\uff0c\u660e\u5929\u518d\u6765',
+    open: '\u5de5\u4f5c\u3001\u5bb6\u91cc\u3001\u94b1\u3001\u8eab\u4f53\uff0c\u6216\u8005\u8bf4\u4e0d\u51fa\u53e3\u7684\u90a3\u4e9b\uff0c\u90fd\u53ef\u4ee5\u8bf4\u3002\u8bf4\u5f97\u8d8a\u5177\u4f53\uff0c\u8d8a\u5bb9\u6613\u627e\u5230\u771f\u7684\u5bf9\u5f97\u4e0a\u7684\u4eba\u3002',
+    send: '\u53d1\u9001',
+    close: '\u5173\u95ed',
+    thinking: '\u5728\u7ffb\u4e66\u2026\u2026',
+    source: '\u539f\u6587',
+    left: function (n) { return '\u4eca\u5929\u8fd8\u80fd\u95ee ' + n + ' \u6b21'; },
+    free: '\u4eca\u5929\u968f\u4fbf\u804a',
+    none: '\u8fd9\u4ef6\u4e8b\u7ad9\u91cc\u8fd8\u6ca1\u6709\u5bf9\u5f97\u4e0a\u7684\u5185\u5bb9\u3002\u6362\u4e2a\u8bf4\u6cd5\u8bd5\u8bd5\uff0c\u6216\u8005\u76f4\u63a5\u641c\u4e00\u4e0b\u3002',
+    neterr: '\u6ca1\u8fde\u4e0a\uff0c\u7b49\u4e00\u4e0b\u518d\u8bd5\u4e00\u6b21\u3002',
+    over: '\u4eca\u5929\u7684 5 \u6b21\u7528\u5b8c\u4e86\uff0c\u660e\u5929\u518d\u6765\u3002',
+    teaHead: '\u4eca\u5929\u7684 5 \u6b21\u7528\u5b8c\u4e86\u3002',
+    teaBody: '\u8bf7\u6211\u559d\u676f\u8336\uff0c\u4eca\u5929\u65e0\u9650\u7545\u804a\u3002\u91d1\u989d\u968f\u610f\u3002',
+    teaGo: '\u6253\u5f00\u652f\u4ed8\u5b9d',
+    teaAlt: '\u652f\u4ed8\u5b9d\u6536\u6b3e\u7801',
+    teaHowWx: '\u957f\u6309\u4fdd\u5b58\u56fe\u7247\uff0c\u6253\u5f00\u652f\u4ed8\u5b9d\u626b\u76f8\u518c\u3002',
+    teaHowMob: '\u6216\u8005\u622a\u56fe\uff0c\u5728\u652f\u4ed8\u5b9d\u91cc\u626b\u76f8\u518c\u3002',
+    teaHowPc: '\u6253\u5f00\u652f\u4ed8\u5b9d\uff0c\u626b\u4e00\u626b\u3002',
+    teaYes: '\u6211\u8bf7\u4e86\uff0c\u63a5\u7740\u804a',
+    teaNo: '\u660e\u5929\u518d\u6765',
+    teaThanks: '\u8c22\u8c22\u3002\u4eca\u5929\u968f\u4fbf\u804a\u3002',
+    teaLater: '\u90a3\u5c31\u660e\u5929\u3002',
+    ball: '\u95ee',
+    srv: '\u4eca\u5929\u7684\u6b21\u6570\u7528\u5b8c\u4e86\uff0c\u660e\u5929\u518d\u6765\u3002'
+  };
+
   var PASS_KEY = 'hw-chat-pass';   /* 「請我喝杯茶」當天暢聊：值是當天日期 */
   var PASS_CEIL = 60;
   /* 聊天記錄存 localStorage。
@@ -218,25 +287,25 @@
   /* ---------- DOM ---------- */
   var ball = document.createElement('button');
   ball.id = 'hwq-ball'; ball.type = 'button';
-  ball.textContent = '問';
-  ball.setAttribute('aria-label', '遇到事了？問一問');
+  ball.textContent = T.ball;
+  ball.setAttribute('aria-label', T.ask);
 
   var panel = document.createElement('div');
   panel.id = 'hwq-panel'; panel.hidden = true;
   panel.setAttribute('role', 'dialog');
-  panel.setAttribute('aria-label', '問一問');
+  panel.setAttribute('aria-label', T.ask);
   /* 等待時轉的那個圈。內聯 SVG，不引圖標庫（CSP 也不允許）。 */
   var SPIN = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" '
     + 'stroke-linecap="round" aria-hidden="true">'
     + '<path d="M21 12a9 9 0 1 1-6.2-8.55"/></svg>';
 
   panel.innerHTML =
-    '<div id="hwq-head"><div class="hwq-col"><b>你遇到什麼事了？</b>' +
-    '<span id="hwq-left"></span><button id="hwq-close" type="button" aria-label="關閉">×</button></div></div>' +
+    '<div id="hwq-head"><div class="hwq-col"><b>' + T.head + '</b>' +
+    '<span id="hwq-left"></span><button id="hwq-close" type="button" aria-label="' + T.close + '">×</button></div></div>' +
     '<div id="hwq-log"><div class="hwq-col" id="hwq-logc"></div></div>' +
     '<div id="hwq-foot"><div class="hwq-col">' +
-    '<textarea id="hwq-in" rows="1" placeholder="說說看……"></textarea>' +
-    '<button id="hwq-send" type="button">發送</button></div></div>';
+    '<textarea id="hwq-in" rows="1" placeholder="' + T.ph + '"></textarea>' +
+    '<button id="hwq-send" type="button">' + T.send + '</button></div></div>';
 
   var back = document.createElement('div');
   back.id = 'hwq-back'; back.hidden = true;
@@ -274,7 +343,7 @@
     var box = document.createElement('div');
     box.id = 'hwq-intro';
     var p = document.createElement('p');
-    p.textContent = '工作、家裡、錢、身體，或者說不出口的那些，都可以說。說得越具體，越容易找到真的對得上的人。';
+    p.textContent = T.open;
     box.appendChild(p);
     log.appendChild(box);
   }
@@ -289,7 +358,7 @@
   function teaPass(el) {
     var C = window.HW_TEA || {};
     if (!C.alipay) {
-      if (el) el.textContent = '今天的 5 次用完了，明天再來。'; else hint('今天的 5 次用完了，明天再來。');
+      if (el) el.textContent = T.over; else hint(T.over);
       return;
     }
     var d = el || say('ai', '');
@@ -297,20 +366,20 @@
     var ua = navigator.userAgent || '';
     var wx = /MicroMessenger/i.test(ua);
     var mob = /Android|iPhone|iPad|iPod|Mobile/i.test(ua);
-    var how = wx ? '長按保存圖片，開啟 AlipayHK 掃相冊。' : (mob ? '或者截圖，在 AlipayHK 裡掃相冊。' : '開啟 AlipayHK，掃一掃。');
-    d.innerHTML = '<b>今天的 5 次用完了。</b>' +
-      '<p>請我喝杯茶，今天無限暢聊。金額隨意。</p>' +
-      ((!wx && mob && C.alipayLink) ? '<a class="hwq-go" href="' + C.alipayLink + '" rel="noopener">開啟 AlipayHK</a>' : '') +
-      '<img class="hwq-qr" src="' + C.alipay + '" alt="AlipayHK 收款碼">' +
+    var how = wx ? T.teaHowWx : (mob ? T.teaHowMob : T.teaHowPc);
+    d.innerHTML = '<b>' + T.teaHead + '</b>' +
+      '<p>' + T.teaBody + '</p>' +
+      ((!wx && mob && C.alipayLink) ? '<a class="hwq-go" href="' + C.alipayLink + '" rel="noopener">' + T.teaGo + '</a>' : '') +
+      '<img class="hwq-qr" src="' + C.alipay + '" alt="' + T.teaAlt + '">' +
       '<p class="hwq-how">' + how + '</p>' +
-      '<div class="hwq-tea-acts"><button type="button" class="hwq-yes">我請了，接著聊</button>' +
-      '<button type="button" class="hwq-no">明天再來</button></div>';
+      '<div class="hwq-tea-acts"><button type="button" class="hwq-yes">' + T.teaYes + '</button>' +
+      '<button type="button" class="hwq-no">' + T.teaNo + '</button></div>';
     d.querySelector('.hwq-yes').onclick = function () {
       grantPass(); d.parentNode.removeChild(d);
-      hint('謝謝。今天隨便聊。'); refreshLeft();
+      hint(T.teaThanks); refreshLeft();
       if (!COARSE) input.focus();
     };
-    d.querySelector('.hwq-no').onclick = function () { d.parentNode.removeChild(d); hint('那就明天。'); };
+    d.querySelector('.hwq-no').onclick = function () { d.parentNode.removeChild(d); hint(T.teaLater); };
     scroller.scrollTop = scroller.scrollHeight;
   }
 
@@ -334,14 +403,14 @@
 
   function refreshLeft() {
     var n = left();
-    leftEl.textContent = pass() ? '今天隨便聊' : ('今天還能問 ' + n + ' 次');
+    leftEl.textContent = pass() ? T.free : T.left(n);
     /* 滿額時佔位符別說「明天再來」——卡片正在說「今天接著聊」，兩句不能打架 */
-    input.placeholder = n > 0 ? '說說看……' : (pass() ? '今天聊得夠多了，明天再來' : '今天的 5 次用完了');
+    input.placeholder = n > 0 ? T.ph : (pass() ? T.phPass : T.phDone);
     paintSend();
   }
   function paintSend() {
     if (busy) { send.innerHTML = SPIN; send.disabled = true; return; }
-    send.textContent = '發送';
+    send.textContent = T.send;
     send.disabled = left() <= 0;
   }
 
@@ -429,7 +498,7 @@
           a.href = c.u;
           /* 不寫章節名——句句都掛個標題太吵，點進去就知道是哪篇。
              hover 的 title 裡有「誰·哪篇」，要認的時候認得出。 */
-          a.textContent = num[m[2]] ? '原文' + num[m[2]] : '原文';
+          a.textContent = num[m[2]] ? T.source + ' ' + num[m[2]] : T.source;
           a.title = c.p + ' · ' + c.n;
           el.appendChild(a);
         }
@@ -444,15 +513,40 @@
   function loadIndex() {
     if (INDEX) return Promise.resolve(INDEX);
     if (loading) return loading;
-    loading = fetch('/tw/assets/hw-chat-index.json')
+    loading = fetch(LANG === 'en' ? '/tw/assets/hw-chat-index-en.json'
+                              : '/tw/assets/hw-chat-index.json')
       .then(function (r) { return r.json(); })
       .then(function (j) { INDEX = j; return j; });
     return loading;
   }
+  /* 英文必須按**詞**切，不能沿用中文的字符二元組。
+     grams() 原本先把空格全刪掉再取兩字窗口 —— 對中文正好（中文沒有詞邊界），
+     對英文等於按字母亂撞："I got passed over" 變成 ig/go/ot/tp… ，
+     和任何一句英文都有一堆重合，IDF 也救不回來。
+     英文取「單詞 + 相鄰詞對」：單詞給召回，詞對認短語。
+     輕量歸一化只做三件最常見的（複數、-ing、-ed），再多就開始誤傷。 */
+  function stem(w) {
+    if (w.length > 4) {
+      if (/ies$/.test(w)) return w.slice(0, -3) + 'y';
+      if (/(ing|ed)$/.test(w)) return w.replace(/(ing|ed)$/, '');
+      if (/s$/.test(w) && !/ss$/.test(w)) return w.slice(0, -1);
+    }
+    return w;
+  }
   function grams(s) {
-    s = String(s || '').toLowerCase().replace(/[\s，。、；：！？「」（）,.!?;:'"]/g, '');
-    var g = {};
-    for (var i = 0; i < s.length - 1; i++) g[s.slice(i, i + 2)] = 1;
+    s = String(s || '').toLowerCase();
+    var g = {}, i;
+    if (LANG === 'en') {
+      var w = s.replace(/[^a-z0-9\s'-]/g, ' ').split(/\s+/);
+      w = w.filter(Boolean).map(stem);
+      for (i = 0; i < w.length; i++) {
+        g[w[i]] = 1;
+        if (i) g[w[i - 1] + ' ' + w[i]] = 1;
+      }
+      return g;
+    }
+    s = s.replace(/[\s，。、；：！？「」（）,.!?;:'"]/g, '');
+    for (i = 0; i < s.length - 1; i++) g[s.slice(i, i + 2)] = 1;
     if (s.length === 1) g[s] = 1;
     return g;
   }
@@ -529,13 +623,13 @@
   function ask() {
     var q = input.value.trim();
     if (!q || busy) return;
-    if (left() <= 0) { if (pass()) hint('今天聊得夠多了，明天再來。'); else teaPass(null); return; }
+    if (left() <= 0) { if (pass()) hint(T.phPass); else teaPass(null); return; }
     busy = true; paintSend();
     input.value = ''; input.style.height = 'auto';
     dropIntro();
     anchor = null;            /* 自己剛說完話，先跟著最新走 */
     say('me', q);
-    var thinking = say('ai', '在翻書……');
+    var thinking = say('ai', T.thinking);
     thinking.classList.add('hwq-wait');
 
     loadIndex().then(function () {
@@ -566,14 +660,14 @@
       }
       if (!hits.length) {
         thinking.classList.remove('hwq-wait');
-        thinking.textContent = '這件事站裡還沒有對得上的內容。換個說法試試，或者直接搜一下。';
+        thinking.textContent = T.none;
         busy = false; refreshLeft(); return;
       }
       return fetch(ENDPOINT, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          q: q, ctx: hits, cid: cid(), pass: pass() ? 1 : 0,
+          q: q, ctx: hits, cid: cid(), pass: pass() ? 1 : 0, lang: LANG,
           /* 處境名只在第一輪送。第二輪再送，模型就會把
              「你這件事是『想改個習慣』」再點一遍，成了復讀。 */
           scene: turns.length ? '' : lastScene,
@@ -602,7 +696,7 @@
           if (res.body && res.body.scope === 'you' && !pass() && window.HW_TEA && window.HW_TEA.alipay) {
             teaPass(thinking);          /* 第六次：不是「明天再來」，是「請我喝杯茶，今天接著聊」 */
           } else {
-            thinking.textContent = (res.body && res.body.error) || '今天的次數用完了，明天再來。';
+            thinking.textContent = (res.body && res.body.error) || T.srv;
           }
           /* 只有服務端說「是你自己用完了」時才把本地計數校準到滿。
              scope:'net' 是這個出口 IP 上有人問得多——把它記成讀者自己
@@ -619,7 +713,7 @@
         // 真實用戶不該看到 chat_dev_proxy.py 這種字樣；細節留給控制台。
         if (window.console) console.error('[hw-chat]', e);
         thinking.classList.remove('hwq-wait');
-        thinking.textContent = '沒連上，等一下再試一次。';
+        thinking.textContent = T.neterr;
       }).then(function () { busy = false; paintSend(); });
     });
   }
