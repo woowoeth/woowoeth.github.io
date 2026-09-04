@@ -66,6 +66,9 @@ def _bare(t):
 
 _ENDS = "。！？"
 _MIN, _MAX = 18, 145
+# 英文按字符算：中文 18-145 字是「一句到一小段」，英文一个词约 5 个
+# 字符，同样的区间是 45-190。照搬 18 的话，三个词就算一条金句。
+_MIN_EN, _MAX_EN = 45, 190
 
 
 def _breathe(text, target=120, floor=45):
@@ -92,22 +95,68 @@ def _breathe(text, target=120, floor=45):
     return out or [text]
 
 
+# 英文断句：句末标点后面必须跟空白 + 大写字母（或到头），否则
+# 「C.S. Lewis」「e.g. 」「1963. 」全会被当成句子边界切开。
+_EN_SPLIT = re.compile(r'(?<=[.!?])(?=\s+["\u201c(]?[A-Z0-9])')
+
+
 def _spans(text):
     """Sentences, plus runs of adjacent sentences, as pull-quote candidates."""
-    parts = [x for x in re.split(r"(?<=[%s])" % _ENDS, text) if x.strip()]
+    if _looks_cjk(text):
+        parts = [x for x in re.split(r"(?<=[%s])" % _ENDS, text) if x.strip()]
+        lo, hi = _MIN, _MAX
+    else:
+        parts = [x for x in _EN_SPLIT.split(text) if x.strip()]
+        lo, hi = _MIN_EN, _MAX_EN
     out = []
     for i in range(len(parts)):
         run = ""
         for j in range(i, min(i + 3, len(parts))):
             run += parts[j]
-            if _MIN <= len(run) <= _MAX:
+            if lo <= len(run) <= hi:
                 out.append(run.strip())
     return out
+
+
+def _quotability_en(t):
+    """英文那一套打分。中文那套全靠「」、——、不是…而是这些标记，英文文本
+    一个都没有，一律 0 分，而门槛是 >0 —— 结果是整个英文站 1477 处就地
+    加重一处都没有，中文页每一节都有一句被挑出来加重，英文页从头到尾一片
+    均匀的灰。这是两边看起来最不像的一处。
+
+    挑的标准和中文那套是同一个：句子里有没有引语、有没有一个破折号落下
+    判断、有没有「不是 X 而是 Y」这种转折。杀掉的也一样：日期、数字、例子。
+    """
+    if not (_MIN_EN <= len(t) <= _MAX_EN):
+        return -1.0
+    s = 0.0
+    low = t.lower()
+    if ('"' in t and t.count('"') >= 2) or ("\u201c" in t and "\u201d" in t):
+        s += 2.2
+    if " \u2014 " in t or " \u2013 " in t:
+        s += 1.3
+    if re.search(r"\bnot\b[^.]{0,60}\bbut\b", low):
+        s += 1.4
+    elif re.search(r"\b(?:not|but|rather than|instead of)\b", low):
+        s += 0.6
+    for w in ("only", "never", "always", "in fact", "actually", "really",
+              "the point is", "what matters", "turns out"):
+        if w in low:
+            s += 0.4
+    if re.search(r"\d{3,}|\d+\s*(?:%|per cent|years|months)", low):
+        s -= 1.6
+    for w in ("e.g.", "for example", "such as", "for instance"):
+        if w in low:
+            s -= 1.2
+    s += min(t.count(","), 4) * 0.12
+    return s
 
 
 def _quotability(t):
     """What makes a line worth blowing up: a quotation inside it, a dash landing
     a verdict, an X-not-Y turn. What kills it: dates, numbers, worked examples."""
+    if not _looks_cjk(t):
+        return _quotability_en(t)
     if not (_MIN <= len(t) <= _MAX):
         return -1.0
     s = 0.0
@@ -134,7 +183,9 @@ def _quotability(t):
 
 def _pick_pullquotes(pool, want):
     """1-3 lines, deliberately mixed length: one short, one medium, one long."""
-    buckets = ((18, 45), (46, 90), (91, _MAX))
+    cjk = any(_looks_cjk(span) for _s, span, _c in pool)
+    buckets = (((18, 45), (46, 90), (91, _MAX)) if cjk
+               else ((45, 90), (91, 140), (141, _MAX_EN)))
     order = [1, 0, 2] if want <= 2 else [1, 0, 2]
     chosen, used_secs = [], set()
     for b in order[:want]:
