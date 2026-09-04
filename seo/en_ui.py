@@ -117,3 +117,61 @@ UI += [
     ("切换到夜间", "Switch to dark"),
 ]
 UI = sorted(UI, key=lambda p: -len(p[0]))
+
+
+# 条目页和 all 页上线之后又数出来的一批。做法同上：渲染 → 看还剩什么中文。
+UI += [
+    # keywords 整串换掉，不逐词换 —— 中英混排的关键词对英文读者没有意义
+    ("生存智慧, 战略思维, 孙子兵法, 人性, 财富 投资 原则, 权力 治理, 创业 方法论, 经典 解读, "
+     "life principles, strategy, human nature, classic texts",
+     "life principles, strategy, power, human nature, money and risk, "
+     "classic texts, how the world works"),
+    ("Human World Rules 的全部 30 个条目，一页列完。",
+     "All 30 entries on Human World Rules, on a single page."),
+    ("这个地址不存在。下面是可以去的地方。",
+     "This page doesn't exist. Here's where you can go."),
+    (">目录<", ">Contents<"),
+    (">全部<", ">All<"),
+]
+UI = sorted(UI, key=lambda p: -len(p[0]))
+
+
+# 站点自述整段替换：**不能靠逐词替换拼出来**。
+# 第一版没有这条，于是词级规则（留下 / 分则 / 今天怎么用）在中文句子内部乱开枪，
+# llms.txt 里出现了「真正What stayed的那一个想法、拆开的The parts」这种半截洋泾浜。
+# 页面渲染正常、构建通过 —— 靠「/en/ 里不许剩中日韩字符」那道闸才发现。
+def _site_pairs():
+    import os
+    import sys
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from build_seo import SITE
+    out = []
+    for zh, en in ((SITE.description_zh, SITE.description),
+                   (SITE.tagline_zh, SITE.tagline),
+                   (SITE.name_zh, SITE.name)):
+        if zh and en:
+            out.append((zh, en))
+            # %(n)d 已被填成具体数字的版本也要认
+            for n in (30, 159):
+                out.append((zh % {"n": n} if "%(n)d" in zh else zh,
+                            en % {"n": n} if "%(n)d" in en else en))
+    return out
+
+
+UI += _site_pairs()
+UI = sorted(UI, key=lambda p: -len(p[0]))
+
+# 少数带变量的句式只能用正则。「N 个条目」里的 N 是构建时算出来的。
+REGEX += [
+    (re.compile(r"([^\s\"<>]+(?: [^\s\"<>]+)*) 的全部 (\d+) 个条目，一页列完。"),
+     r"All \2 entries on \1, on a single page."),
+]
+
+
+# llms.txt 里的兄弟站清单是双语标签 [English / 中文]，英文站只留英文那半。
+# 「Skill Store」换成 Taste：那是品味站在 ?lang=en 下的自称。
+UI += [("Skill Store / Skill 商店", "Taste")]
+UI = sorted(UI, key=lambda p: -len(p[0]))
+REGEX += [
+    (re.compile(r"\[([^\]]*?) / [^\]]*[一-鿿][^\]]*\]"), r"[\1]"),
+]

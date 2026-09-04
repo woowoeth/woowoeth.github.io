@@ -47,6 +47,16 @@ jobs:
         run: python seo/build_seo.py
       - name: Force chapter UI onto built HTML
         run: python scripts/force_chapter_ui.py
+      - name: English site
+        # 排在第一遍 force_chapter_ui 之后：它要从一个已构建的简体页上把
+        # 夜间模式挂件整块搬过去。
+        run: python scripts/build_en.py
+      - name: Force chapter UI again
+        # 必须再跑一遍：hreflang 要知道「哪些页有英文版」，那个集合读的是
+        # 真实的 en/ 树，只有 build_en 跑完才准。少这一遍的后果实测过 ——
+        # 首页宣称有英文版而 /en/ 还不存在，英文语系的浏览器被弹到 404。
+        # 这个脚本是幂等的（重跑零改动），多跑一遍只花几秒。
+        run: python scripts/force_chapter_ui.py
       - name: Chat retrieval index
         # 内容一变检索索引必须跟着变，否则悬浮球问答会引用到不存在的章节。
         run: python scripts/build_chat_index.py

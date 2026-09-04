@@ -185,7 +185,12 @@ def check_feed_dupes():
     try:
         with sync_playwright() as pw:
             b = pw.chromium.launch()
-            pg = b.new_page(viewport={"width": 390, "height": 1200})
+            # locale 必须给中文：首页的首访跟随会把 navigator.languages 里
+            # 完全没有 zh 的浏览器送去 /en/，而 headless Chromium 默认是 en-US。
+            # 不指定的话这道闸测的是英文站，然后报「#hwx-tabs2 是 undefined」
+            # —— 一个和真实问题毫无关系的错。
+            pg = b.new_page(viewport={"width": 390, "height": 1200},
+                            locale="zh-CN")
             pg.goto("http://localhost:8971/", timeout=30000)
             pg.wait_for_timeout(1800)
             for tab, sel in (("最新", "#hwx-ncfeed"), ("全部", "#hwx-feed")):
