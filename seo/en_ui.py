@@ -74,10 +74,10 @@ UI = [
     ("分享", "Share"),
 
     # 页脚与姊妹站
-    ("原声播客", "Podcast"),
+    ("原声", "Podcast"),
     # 品味站自己的英文名就是 Taste（?lang=en 下的 <title> 是
-    # 「Taste — curated agent skills」），不是把「Skill」照抄过来。
-    ("品位 Skill", "Taste"),
+    # 「Taste — curated agent skills」）。
+    ("品味", "Taste"),
     ("全部条目", "Everyone"),
     ("深度阅读", "Deep read"),
 

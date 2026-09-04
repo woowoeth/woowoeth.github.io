@@ -133,14 +133,27 @@ def patch_tree(root="."):
                   "var bare=p.replace(/^\\/(tw|en)/,'')||'/';"
                   "var to={sc:bare,tw:'/tw'+bare,en:'/en'+bare};"
                   "var saved=null;try{saved=localStorage.getItem(K)}catch(e){}"
-                  # 首访跟随浏览器：繁体语系去 /tw/，英文语系去 /en/（这一页有
-                  # 英文版才去）。跟过一次就写进 localStorage，之后以读者
-                  # 自己点过的为准 —— 否则一个在台湾用简体的读者每次都被弹走。
+                  # **URL 里已经写了语言，就以 URL 为准。**
+                  #
+                  # 第一版不是这样，而是无条件跟随浏览器语言。后果实测过：
+                  # 打开 /tw/i/su-shi/… 会被改写成 /i/su-shi/…，打开 /en/… 也一样
+                  # —— 只要浏览器的语言列表里有 zh。也就是说**任何非默认语言的
+                  # 链接都分享不出去**：台湾读者转给朋友的繁体链接、发给英文读者
+                  # 的英文链接，落地全变简体。三个站都是这个毛病。
+                  #
+                  # 现在只在读者落在**默认语言**（无前缀）时才跟随浏览器。
+                  # 落在 /tw/ 或 /en/ 是一个明确的选择，不该被猜测覆盖。
+                  "if(cur!=='sc'){"
+                  # 没有记过偏好的，把这次当成他的选择记下来；已经记过的不动 ——
+                  # 一条别人分享的链接不该永久改掉你的语言。
+                  "if(!saved){try{localStorage.setItem(K,cur)}catch(e){}}"
+                  "}else{"
                   "var L=(navigator.languages||[navigator.language||'']).join(',');"
                   "var guess=/zh-(hant|tw|hk|mo)/i.test(L)?'tw':(/zh/i.test(L)?'sc':(HAS_EN?'en':'sc'));"
                   "var want=saved||guess;"
-                  "if(want!=='en'&&!HAS_EN&&cur==='en'){want='sc'}"
-                  "if(want!==cur&&to[want]){location.replace(to[want]);return}"
+                  "if(want==='en'&&!HAS_EN){want='sc'}"
+                  "if(want!=='sc'&&to[want]){location.replace(to[want]);return}"
+                  "}"
                   # 按钮**进头部**，不浮在页面上。找得到头部就放进去，找不到
                   # （比如 404 没有 header）才退回悬浮。悬浮的坏处不只是难看：
                   # 它会一直压在聊天窗上面。

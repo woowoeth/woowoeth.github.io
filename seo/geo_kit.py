@@ -393,9 +393,9 @@ def _inject_body(src, block):
 
 def sibling_links(site, zh=False):
     return (
-        '<a href="%s">人类生存法则</a> · '
-        '<a href="%s">原声播客</a> · '
-        '<a href="%s">品位 Skill</a>'
+        '<a href="%s">人类世界生存法则</a> · '
+        '<a href="%s">原声</a> · '
+        '<a href="%s">品味</a>'
         % (esc(SITE + "/"), esc(SITE + "/podcast/"), esc(SITE + "/skill/"))
     )
 

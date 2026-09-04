@@ -59,9 +59,22 @@ def sister(val, lang):
     return None
 
 
+# 这几个带扩展名的文件是**按语言生成的内容**，不是三种语言共享的资源：
+# 每个语言站都有自己的一份（build_en 和 build_tw 都生成）。
+# 只按扩展名判断会把它们当资源留在主站 —— 英文条目页底下的「本页可直接引用」
+# 于是指向简体的 llms.txt，而 /en/llms.txt 明明存在。
+LANG_FILES = ("/llms.txt", "/llms-full.txt", "/sitemap.xml", "/feed.xml")
+
+
 def is_page(path):
-    """页面跟着语言走，文件不跟。以 / 或 .html 结尾、或没有扩展名的算页面。"""
+    """页面跟着语言走，资源不跟。
+
+    以 / 或 .html 结尾、或没有扩展名的算页面；LANG_FILES 里那几个虽然带
+    扩展名，也跟着语言走。
+    """
     p = path.split("?")[0].split("#")[0]
+    if p in LANG_FILES:
+        return True
     return p.endswith("/") or p.endswith(".html") or "." not in p.rsplit("/", 1)[-1]
 
 

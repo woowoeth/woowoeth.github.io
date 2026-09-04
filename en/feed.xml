@@ -3,7 +3,7 @@
   <channel>
     <title>Human World — 30 people and books on how the world actually works, across 2,600 years</title>
     <link>https://ourword.ai/en/</link>
-    <atom:link href="https://ourword.ai/feed.xml" rel="self" type="application/rss+xml"/>
+    <atom:link href="https://ourword.ai/en/feed.xml" rel="self" type="application/rss+xml"/>
     <description>A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 30 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.</description>
     <language>en</language>
     <item><title>Arlie Hochschild</title><link>https://ourword.ai/en/i/hochschild/</link><guid isPermaLink="true">https://ourword.ai/en/i/hochschild/</guid><description>Arlie Hochschild (1983 · UC Berkeley) — Work nobody counts. A sociologist who twice gave a name to work that had none. The Managed Heart (1983) named emotional labour: jobs that require not only that</description></item>

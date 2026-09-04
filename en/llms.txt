@@ -12,9 +12,9 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 - Site: https://ourword.ai/en/
 - Everything on one page: https://ourword.ai/en/all/
 - Every entry has its own static page: https://ourword.ai/en/i/<slug>/
-- Full text of everything, one file: https://ourword.ai/llms-full.txt
-- All URLs: https://ourword.ai/sitemap.xml
-- RSS: https://ourword.ai/feed.xml
+- Full text of everything, one file: https://ourword.ai/en/llms-full.txt
+- All URLs: https://ourword.ai/en/sitemap.xml
+- RSS: https://ourword.ai/en/feed.xml
 
 ## Citing
 
