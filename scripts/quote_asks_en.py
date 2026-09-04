@@ -128,6 +128,8 @@ QUOTE_ASKS_EN = {
     "su-shi/three-exiles": "I lost. Is there anything here worth keeping?",
     "su-shi/no-bad-people": "He meant it. Do I still let it go?",
     "su-shi/east-slope": "The income stopped. What do I do first?",
+    "su-shi/silt-into-a-causeway":
+        "I built this for one thing and now it's just sitting there.",
     "su-shi/no-more-writing": "The more I explain, the worse it gets.",
 
     # 王阳明

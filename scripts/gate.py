@@ -39,6 +39,7 @@ CHECKS = [
     ("窄屏", "check_mobile.py", "375px 下三种语言都不需要横向滚动"),
     ("挂件繁体", "check_chat_tw.py", "共用挂件的繁体文案与简体同步"),
     ("条目导语", "check_dek.py", "模板导语收住尾 / 不与正文重复"),
+    ("GEO 同步", "check_geo_sync.py", "章节都进了各语言的 llms/feed"),
 ]
 
 

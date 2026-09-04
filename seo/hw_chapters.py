@@ -522,11 +522,16 @@ def chapter_urls():
 
 
 def chapter_summary(ch):
-    return "%s · %s——%s。%s" % (ch["parent"], ch["n"], ch["w"], _plain(ch["dek"]))
+    # 破折号和句号两套：英文用「 — 」和「. 」。写死中文的话，英文的
+    # feed.xml 和 llms.txt 里每一条都带着「——」和「。」——「不许剩中文」
+    # 那道闸正是这么报出来的。
+    dash, stop = (" \u2014 ", ". ") if _EN else ("\u2014\u2014", "\u3002")
+    return "%s \u00b7 %s%s%s%s%s" % (ch["parent"], ch["n"], dash, ch["w"],
+                                      stop, _plain(ch["dek"]))
 
 
 def _llms_block():
-    L = ["## Deep reads 深度阅读", "",
+    L = ["## Deep reads" if _EN else "## Deep reads \u6df1\u5ea6\u9605\u8bfb", "",
          "Long-form chapters hanging off a person page. Not part of the entry index above.",
          ""]
     for ch in CHAPTERS:
@@ -539,19 +544,30 @@ def _llms_block():
 def _llms_full_block():
     F = []
     for ch in CHAPTERS:
-        F += ["=" * 72, "## %s · %s" % (ch["parent"], ch["n"]),
+        # 这几个小标题是给模型读的目录，同样要跟着语言走 —— 英文站的
+        # llms-full.txt 里挂着「### 分则 ·」「### 金句」，读它的模型会
+        # 以为这是一份中文文档。
+        tag = "Deep read" if _EN else "\u6df1\u5ea6\u9605\u8bfb"
+        h_story = ("### Q: What actually happened?" if _EN
+                   else "### Q\uff1a\u80cc\u540e\u662f\u4ec0\u4e48\u6545\u4e8b\uff1f")
+        h_part = "### The parts \u00b7 %s" if _EN else "### \u5206\u5219 \u00b7 %s"
+        h_apply = ("### Q: How do I use it today?" if _EN
+                   else "### Q\uff1a\u4eca\u5929\u600e\u4e48\u7528\uff1f")
+        h_q = "### Lines to keep" if _EN else "### \u91d1\u53e5"
+        eg_lead = "\ne.g. " if _EN else "\n\u4f8b\uff1a"
+        F += ["=" * 72, "## %s \u00b7 %s" % (ch["parent"], ch["n"]),
               "URL: %s" % chapter_url(ch),
               "Source: %s" % _plain(ch["src"]),
-              "Tags: 深度阅读, %s, %s" % (ch["parent"], ch["w"]), "",
+              "Tags: %s, %s, %s" % (tag, ch["parent"], ch["w"]), "",
               _plain(ch["dek"]), "",
-              "### Q：背后是什么故事？", _plain(ch["story"]), ""]
+              h_story, _plain(ch["story"]), ""]
         for f in ch["f"]:
             body = _plain(f["d"])
             if f.get("eg"):
-                body += "\n例：" + _plain(f["eg"])
-            F += ["### 分则 · %s" % _plain(f["n"]), body, ""]
-        F += ["### Q：今天怎么用？", _plain(ch["apply"]), "",
-              "### 金句", "\n".join(_plain(q) for q in ch["q"]), ""]
+                body += eg_lead + _plain(f["eg"])
+            F += [h_part % _plain(f["n"]), body, ""]
+        F += [h_apply, _plain(ch["apply"]), "",
+              h_q, "\n".join(_plain(q) for q in ch["q"]), ""]
     return "\n".join(F)
 
 
@@ -587,14 +603,25 @@ def _splice(path, block, anchor, before):
 
 
 def write_indexes(root="."):
-    """Fold chapters into the artefacts geo_kit already wrote. Call after build()."""
+    """Fold chapters into the artefacts geo_kit already wrote. Call after build().
+
+    RSS 的锚点必须按这份 feed 自己的 language 标签找。写死 zh-cn 的话，
+    英文站（<language>en</language>）锚点对不上，_splice 会退到「追加到
+    文件末尾」—— 而那是 </rss> **之后**，整个 feed 变成非法 XML。
+    """
+    feed = os.path.join(root, "feed.xml")
+    rss_anchor = "    <language>zh-cn</language>\n"
+    if os.path.exists(feed):
+        head = open(feed, encoding="utf-8").read(4000)
+        m = re.search(r"[ \t]*<language>[^<]*</language>\n", head)
+        if m:
+            rss_anchor = m.group(0)
     return {
         "llms": _splice(os.path.join(root, "llms.txt"),
                         _llms_block(), "## Citing", True),
         "llms_full": _splice(os.path.join(root, "llms-full.txt"),
                              _llms_full_block(), None, False),
-        "rss": _splice(os.path.join(root, "feed.xml"),
-                       _rss_block(), "    <language>zh-cn</language>\n", False),
+        "rss": _splice(feed, _rss_block(), rss_anchor, False),
     }
 
 

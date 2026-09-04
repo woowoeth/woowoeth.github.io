@@ -28,6 +28,9 @@ PARENT = {
         {"k": "east-slope", "n": "Clear the ground first",
          "w": "The first thing he did when the salary stopped", "ready": True,
          "line": "Fifty acres of hillside, broken by his own hands"},
+        {"k": "silt-into-a-causeway", "n": "The mud had to go somewhere",
+         "w": "Turning the by-product into the thing", "ready": True,
+         "line": "The spoil from the dredging is the causeway"},
         {"k": "no-more-writing", "n": "I dare not write",
          "w": "Stopping the defence is a decision", "ready": True,
          "line": "Not a mood — a single action you can tell you took"},
@@ -257,6 +260,56 @@ CHAPTERS = [
             "When the old place is taken, finish one small thing.",
             "A fear with a number attached is half the size.",
         ],
+    },
+    {
+        "k": "silt-into-a-causeway",
+        "n": "The mud had to go somewhere",
+        "w": "Turning the by-product into the thing",
+        "src": "Hangzhou, 1090",
+        "dek": "Dredging a lake leaves you holding the mud. What he did with "
+               "it is still there a thousand years later.",
+        "story":
+            "By 1090 West Lake at Hangzhou was half weed and silt, and Su Shi, "
+            "posted there as prefect, put twenty thousand men on clearing it. "
+            "That solved one problem and created another: the spoil had to go "
+            "somewhere, and carting it out of the city would have cost more "
+            "than the dredging. He laid it across the water instead, as a "
+            "causeway with six bridges. ==A walk that had taken most of a day "
+            "around the shore became a short crossing.== It still carries his "
+            "name.",
+        "f": [
+            {"n": "The waste is only waste until you name a use",
+             "d": "Nobody asked him to build a causeway; the job was to clear "
+                  "the lake. The mud became a road because he was willing to "
+                  "ask what else it could be, at the moment everyone else was "
+                  "asking where to dump it.",
+             "eg": "The meeting notes nobody reads are the onboarding doc "
+                   "nobody has written."},
+            {"n": "Solve it where the work already is",
+             "d": "He did not start a second project. The men, the boats and "
+                  "the spoil were already on the water — the causeway cost "
+                  "the difference between carting mud away and setting it "
+                  "down in a line.",
+             "eg": "The cheapest test is the one that rides along with a "
+                   "release you were shipping anyway."},
+            {"n": "The real job came first",
+             "d": "The causeway is what people remember, but the case he "
+                  "argued was for the lake: without it the farms lost their "
+                  "water, the canal silted, the brewing tax fell. The road "
+                  "was what the work left over, not the reason for it.",
+             "eg": "Keep the tool you built on the way, but don't stop the "
+                   "job to build tools."},
+        ],
+        "q": [
+            "The spoil from the dredging is the causeway.",
+            "Everyone was asking where to dump it. He asked what it could be.",
+            "The road was what the work left over, not the reason for it.",
+        ],
+        "apply":
+            "Next time a job leaves you with something to get rid of — a "
+            "half-finished draft, a dataset built for one question, a team "
+            "freed up by a cancellation — spend ten minutes on what it could "
+            "be before you spend an hour on where it goes.",
     },
     {
         "k": "no-more-writing",

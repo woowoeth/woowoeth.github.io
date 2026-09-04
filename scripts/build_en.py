@@ -618,6 +618,13 @@ def main():
                                             "https://ourword.ai/en/")
                                   for u in hw_chapters.chapter_urls()])
         n_ch = hw_chapters.write_chapters(root=OUT)
+        # 把章节折进 llms.txt / llms-full.txt / feed.xml。
+        # 漏掉这一句的代价：英文的 GEO 层只有 30 个条目，**80 个章节一个
+        # 都没有** —— 而章节才是真正讲道理的那一层。对一个读 llms-full.txt
+        # 的模型来说，英文站看起来只有 30 页内容（中文站 377 章全在里面）。
+        # 页面建出来了、sitemap 也有，所以任何「页面在不在」的检查都发现
+        # 不了；只有去数 llms-full 里的章节地址才看得见。
+        hw_chapters.write_indexes(root=OUT)
     finally:
         os.chdir(cwd)
     print("English entries: %d pages · home %d" % (rep.get("pages", 0), n_home))

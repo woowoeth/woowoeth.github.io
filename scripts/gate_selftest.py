@@ -684,6 +684,35 @@ def _en_blocks_flat():
     return go
 
 
+ENLLMS = os.path.join(ROOT, "en", "llms-full.txt")
+
+
+def _geo_drop_chapters():
+    """把英文 llms-full.txt 里的章节块整块删掉 —— 模拟漏调 write_indexes()。
+
+    真事：build_en 漏了 hw_chapters.write_indexes()，英文的 llms.txt /
+    llms-full.txt / feed.xml 里一个章节都没有，只有 30 个条目，而站上有
+    80 章。页面建出来了、sitemap 也有、链接也通，所有「页面在不在」的检查
+    全绿 —— GEO 层是给模型读的，人打开网站什么都正常，没人会顺手看一眼。
+    """
+    def go():
+        if not os.path.exists(ENLLMS):
+            return None
+        t = read(ENLLMS)
+        a, b = "<!-- chapters:begin -->", "<!-- chapters:end -->"
+        if a in t and b in t:
+            write(ENLLMS, t[:t.index(a)] + t[t.index(b) + len(b):])
+            return ENLLMS
+        # 没有标记就退到「删掉所有章节地址」
+        out = re.sub(r"/i/([^/\s\"<)]+)/([^/\s\"<)]+)/", r"/i/\1/", t)
+        if out == t:
+            return None
+        write(ENLLMS, out)
+        return ENLLMS
+
+    return go
+
+
 def _en_js():
     """把一个 JS 单引号字符串截断 —— 模拟盲替换插进了一个撇号。
 
@@ -755,6 +784,7 @@ CASES = [
     ("挂件繁体·没跟上",   "check_chat_tw.py", CHATJS, _chat_tw_stale(), "不同步"),
     ("导语·没裁过",       "check_dek.py", ENPAGE, _dek_untrimmed(), "导语"),
     ("版块·英文塌成一片", "check_dek.py", ENPAGE, _en_blocks_flat(), "缺这几类版块"),
+    ("GEO·英文漏了章节", "check_geo_sync.py", ENLLMS, _geo_drop_chapters(), "章节"),
 ]
 
 

@@ -76,6 +76,8 @@ SCENES = [
      [("hochschild", "second-shift")]),
     ("The income stopped. What do I do first?",
      [("su-shi", "east-slope")]),
+    ("I built this for one thing and now it's just sitting there.",
+     [("su-shi", "silt-into-a-causeway")]),
 ]),
 
 # ── Dealing with people ──
