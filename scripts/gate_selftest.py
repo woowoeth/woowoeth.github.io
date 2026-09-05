@@ -1019,12 +1019,16 @@ def _en_js():
     """
     def go():
         t = read(ENHOME)
-        a = "var HWXD="
+        # 注入点从 `var HWXD=` 换成 `const D=[`：HWXD 已经被
+        # scripts/split_home_data.py 搬到外部文件了，页面里找不到它，
+        # 这条注入会变成「挑不到注入点」而不是「拦住了」。
+        # 判据要打在**还留在页面里**的那种内联脚本上 —— 这条闸防的正是
+        # 「盲替换把内联 JS 改坏」，而盲替换只碰页面。
+        a = "const D=["
         if a not in t:
             return None
         i = t.index(a)
         j = t.index("</script>", i)
-        # 在这一块的末尾加一句语法上不成立的赋值
         write(ENHOME, t[:j] + "\nvar _hwx_broken='it'll break';\n" + t[j:])
         return ENHOME
 
