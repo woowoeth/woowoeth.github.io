@@ -38,7 +38,9 @@ G.slugify = slugify
 
 SITE = G.Site(
     path="",
-    name="Human World", name_zh="\u4eba\u7c7b\u4e16\u754c\u751f\u5b58\u6cd5\u5219",
+    # 英文站名 = OurWord（域名就是 ourword.ai，站名跟域名一致）。
+    # 中文页用的是 name_zh，这一改不影响中文站。
+    name="OurWord", name_zh="\u4eba\u7c7b\u4e16\u754c\u751f\u5b58\u6cd5\u5219",
     tagline="%(n)d people and books on how the world actually works, across 2,600 years",
     tagline_zh="\u9047\u5230\u4e8b\u4e86\uff0c\u770b\u770b\u4ee5\u524d\u7684\u4eba\u600e\u4e48\u5904\u7406",
     description=(

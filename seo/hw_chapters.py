@@ -94,6 +94,9 @@ def _pick_keys(ch):
 # 「局面/先问/用反了」。套到英文上会产出「…nobody is looking at you.。e.g. …」
 # 这种半中半英的句子，而它进的是 JSON-LD —— 页面上看不见，搜索引擎看得见。
 _EN = os.environ.get("HW_CHAPTERS", "chapters") == "chapters_en"
+# 站名：英文页写 OurWord，中文页写中文名。写死一个的话，英文页的
+# og:site_name 挂着的是另一个站的名字，分享出去显示错的那个。
+SITE_NAME = "OurWord" if _EN else "\u4eba\u7c7b\u4e16\u754c\u751f\u5b58\u6cd5\u5219"
 L = {
     "dek_q": r"This piece is about[:：](.+)$" if _EN
              else r"\u8fd9\u4e00\u7bc7\u8981\u56de\u7b54\u7684\u662f[\uff1a:](.+)$",
@@ -454,7 +457,7 @@ def _chapter_page(ch, idx):
         '<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">\n'
         '<link rel="canonical" href="%s">\n'
         '<meta property="og:type" content="article">\n'
-        '<meta property="og:site_name" content="Human World">\n'
+        '<meta property="og:site_name" content="%s">\n'
         '<meta property="og:locale" content="zh_CN">\n'
         '<meta property="og:title" content="%s">\n'
         '<meta property="og:description" content="%s">\n'
@@ -462,7 +465,7 @@ def _chapter_page(ch, idx):
         '<meta property="og:image" content="%s/og.png">\n'
         '<meta property="og:image:width" content="1200">\n'
         '<meta property="og:image:height" content="630">\n'
-        '<meta property="og:image:alt" content="Human World">\n'
+        '<meta property="og:image:alt" content="%s">\n'
         '<meta name="twitter:card" content="summary_large_image">\n'
         '<meta name="twitter:site" content="@futuredotnews">\n'
         '<meta name="twitter:title" content="%s">\n'
@@ -470,8 +473,12 @@ def _chapter_page(ch, idx):
         '<meta name="twitter:image" content="%s/og.png">\n'
         '<script type="application/ld+json">%s</script>\n'
         '<script type="application/ld+json">%s</script>\n'
-        % (esc(dek), page_url, esc(title), esc(dek), page_url, SITE,
-           esc(title), esc(dek), SITE,
+        # 元组顺序必须跟模板里 %s 出现的顺序一一对上：
+        # description, canonical, og:site_name, og:title, og:description,
+        # og:url, og:image, og:image:alt, twitter:title, twitter:description,
+        # twitter:image, ld, crumbs
+        % (esc(dek), page_url, SITE_NAME, esc(title), esc(dek), page_url, SITE,
+           SITE_NAME, esc(title), esc(dek), SITE,
            json.dumps(ld, ensure_ascii=False), json.dumps(crumbs, ensure_ascii=False))
     )
     # 模板与参数元组是配对的，不能往里加 %s（见 README 三条硬规矩），

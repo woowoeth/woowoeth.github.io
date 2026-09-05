@@ -264,6 +264,25 @@ def write_en_css():
     return len(EN_CSS)
 
 
+def drop_wechat(s):
+    """英文页去掉公众号引导块。
+
+    那一块是「没找到想看的？在公众号里告诉我」+ 一张二维码 + 一句「用微信
+    扫码关注」。英文读者用不了微信公众号 —— 给他们一个扫不了的码，等于在
+    页脚放一块自己不能用的东西；二维码正中间还嵌着「人」字印，那是英文页脚
+    上唯一剩下的中文。
+
+    只在英文页去掉，中文和繁体照旧。
+    """
+    a = s.find('<div class="wx">')
+    if a < 0:
+        return s
+    b = s.find("</div>", s.find('class="wx-hint"', a))
+    if b < 0:
+        return s
+    return s[:a] + s[b + len("</div>"):]
+
+
 def link_en_assets(s):
     """给每个英文页挂上西文字体和英文样式表。
 
@@ -378,7 +397,7 @@ def finish(s, rel=None):
         s = s.replace(a, b)
     # ⑤ 英文样式表挂在最后：retarget 之后再挂，它才不会被改写成
     #    /en/assets/（那个路径下没有文件，挂上去等于没挂）。
-    return link_en_assets(s)
+    return link_en_assets(drop_wechat(s))
 
 
 

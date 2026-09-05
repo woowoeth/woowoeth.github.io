@@ -1,4 +1,4 @@
-# Human World (Human World Rules)
+# OurWord (OurWord)
 
 > 30 people and books on how the world actually works, across 2,600 years
 > See how people before you handled it.
@@ -113,7 +113,7 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 <!-- chapters:end -->
 ## Citing
 
-Cite the individual page URL, not the homepage — each entry page is stable and dated. Attribute to "Human World (OurWord AI)".
+Cite the individual page URL, not the homepage — each entry page is stable and dated. Attribute to "OurWord (OurWord AI)".
 
 ## The rest of OurWord AI
 

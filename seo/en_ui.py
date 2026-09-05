@@ -23,8 +23,11 @@ import re
 UI = [
     # 站名与标语
     ("遇到事了，看看以前的人怎么处理", "See how people before you handled it."),
-    ("人类世界生存法则", "Human World Rules"),
-    ("人类生存法则", "Human World Rules"),
+    # 英文站名就叫 OurWord —— 域名是 ourword.ai，站名跟域名一致，
+    # 读者在地址栏和页头看到的是同一个词。「Human World Rules」是
+    # 中文站名的直译，对英文读者只是一句描述，不是一个名字。
+    ("人类世界生存法则", "OurWord"),
+    ("人类生存法则", "OurWord"),
     (">人类世界<span class=", ">Human World <span class="),
     (">生存法则</span></span>", ">Rules</span></span>"),
 
@@ -127,7 +130,7 @@ UI += [
      "life principles, strategy, power, human nature, money and risk, "
      "classic texts, how the world works"),
     ("Human World Rules 的全部 30 个条目，一页列完。",
-     "All 30 entries on Human World Rules, on a single page."),
+     "All 30 entries on OurWord, on a single page."),
     ("这个地址不存在。下面是可以去的地方。",
      "This page doesn't exist. Here's where you can go."),
     (">目录<", ">Contents<"),
@@ -214,7 +217,7 @@ UI += [
     ("搜你遇到的事：被裁了、睡不着…",
      "Search: laid off, can't sleep, no reply"),
     ("OurWord AI 微信公众号二维码", "OurWord AI on WeChat, QR code"),
-    ('content="生存法则"', 'content="Human World Rules"'),
+    ('content="生存法则"', 'content="OurWord"'),
     ("你遇到的是别的事？", "Something else on your mind?"),
     ("挑你自己那一件", "Find yours"),
     ("每日金句", "Line of the day"),
@@ -249,7 +252,11 @@ UI = sorted(UI, key=lambda p: -len(p[0]))
 UI += [
     ("每日金句卡片", "Line of the day card"),
     ("复制金句", "Copy the line"),
-    ('<span class="dot">生存法则</span>', '<span class="dot">Rules</span>'),
+    # 站名整块换掉，不是逐半翻。中文是「人类世界」+ 红色「生存法则」两截；
+    # 英文名是一个词 OurWord，硬拆成「Human World」+ 红色「Rules」既不是
+    # 名字也不像名字。跟 ourword.ai 自己的写法一致：OurWord + 一个红点。
+    ('人类世界<span class="dot">生存法则</span>',
+     'OurWord<span class="dot">.</span>'),
     ('id="hwx-ago2">问</button>', 'id="hwx-ago2">Ask</button>'),
 ]
 UI = sorted(UI, key=lambda p: -len(p[0]))

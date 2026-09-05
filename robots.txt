@@ -1,4 +1,4 @@
-# Human World — we want to be crawled, indexed, and cited by search and AI answer engines.
+# OurWord — we want to be crawled, indexed, and cited by search and AI answer engines.
 # robots.txt is per-origin: the authoritative one for this domain is
 # https://ourword.ai/robots.txt — this copy is here for completeness.
 

@@ -1,5 +1,5 @@
-# Human World — 30 people and books on how the world actually works, across 2,600 years
-# Human World Rules — See how people before you handled it.
+# OurWord — 30 people and books on how the world actually works, across 2,600 years
+# OurWord — See how people before you handled it.
 # https://ourword.ai/en/
 # Full corpus, plain text. 30 entrys.
 

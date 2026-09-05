@@ -35,7 +35,9 @@ SITE = "https://ourword.ai"
 #   · 不能套主站的语言前缀 —— /tw/ai/ 是不存在的地址
 #   · 不能用"文件在不在"判断死活 —— 实测 /ai/ 200、/zouni/ 301、/site/ 200
 SISTER = {
-    "/podcast/": {"tw": "/podcast/tw/"},
+    # 原声的英文版已经上线（/podcast/en/）。原来这里没有 "en"，是因为当时
+    # 那一版还没做完 —— 结果英文页的姊妹站链接一直把英文读者送到中文原声。
+    "/podcast/": {"tw": "/podcast/tw/", "en": "/podcast/en/"},
     "/skill/": {"tw": "/skill/tw/", "en": "/skill/?lang=en"},
     "/ai/": {},
     "/zouni/": {},

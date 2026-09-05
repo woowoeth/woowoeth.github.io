@@ -1,4 +1,4 @@
-# Human World — 159 people and books on how the world actually works, across 2,600 years
+# OurWord — 159 people and books on how the world actually works, across 2,600 years
 # 人類世界生存法則 — 遇到事了，看看以前的人怎麼處理
 # https://ourword.ai/tw/
 # Full corpus, plain text. 159 entrys.
