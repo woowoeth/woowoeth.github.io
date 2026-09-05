@@ -17,6 +17,14 @@
 # 预填句：读者会打进输入框的那句话。写法是「现在的状态 + 怕什么 + 先怎么办」，
 # 和卡片上那句「你是不是……」的问句是两种不同的话。
 SC_BOX = {
+    # Facing an opponent
+    "Winning is costing too much":
+        "Every round goes my way and there is less of me afterwards. What am "
+        "I spending that nobody counts?",
+    # Getting it done
+    "I'm managing it and it's getting worse":
+        "Every fix I add seems to create the next problem. What should I "
+        "stop doing?",
     # Making a call
     "Anger just took over":
         "I'm wound up and afraid that if I speak now I'll wreck it. Where do I start?",

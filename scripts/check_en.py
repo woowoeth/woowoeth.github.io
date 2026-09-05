@@ -58,7 +58,8 @@ from quote_asks_en import QUOTE_ASKS_EN
 PILOT = """su-shi wang-yangming zhuangzi pu-songling huineng fan-li li-ka-shing han-feizi
 kasparov wiener excellent-sheep maslach cacioppo harvard-study granovetter curie
 hochschild rat-park vygotsky thomas-gordon cs-lewis churchill perel jung sapolsky
-dweck john-ratey gottman montessori boyd""".split()
+dweck john-ratey gottman montessori boyd
+sun-tzu tao-te-ching buffett munger""".split()
 
 def load_en():
     """已经写好的英文章节。

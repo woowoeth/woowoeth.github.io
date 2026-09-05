@@ -25,6 +25,260 @@ Two rules this file follows that the Chinese one doesn't have to:
 
 ENTRIES = [
     {
+        "c": "Strategy and competition", "n": "Sun Tzu", "slug": "sun-tzu",
+        "e": "Spring and Autumn \u00b7 c. 500 BC", "w": "Win first, then fight",
+        "y": -500,
+        "d": "Thirteen short chapters, and the most quoted strategy book in "
+             "the world. The argument underneath it is not about cunning: "
+             "the winner has already secured the win before the fighting "
+             "starts, and the loser starts fighting and then looks for a way "
+             "to win. Almost every famous line is a consequence of that one.",
+        "story":
+            "The king of Wu wanted a demonstration, so he handed Sun Tzu the "
+            "palace women to drill. Sun Tzu made the king's two favourite "
+            "concubines the company commanders, explained the drill, and beat "
+            "the drum. They laughed and did not move. If the orders are not "
+            "clear, he said, that is the commander's fault \u2014 and "
+            "explained again. They laughed again. If the orders are clear and "
+            "still not followed, he said, that is the officers' fault, and he "
+            "had both women executed. The king was appalled. The army that "
+            "came out of it did not lose.",
+        "f": [
+            {"n": "Win first, then fight",
+             "d": "The famous line is that the victorious army wins first and "
+                  "seeks battle afterwards; the defeated army fights first "
+                  "and looks for the win afterwards. It is a claim about "
+                  "where the work happens \u2014 in the conditions, not in "
+                  "the courage.",
+             "eg": "The launch that went well had the pricing, the support "
+                   "load and the two biggest customers settled before anyone "
+                   "wrote a line of the announcement."},
+            {"n": "The best fight is the one nobody has",
+             "d": "Attacking the enemy's plan comes first, his alliances "
+                  "second, his army third, and his walled cities last. Every "
+                  "step down that list costs more and returns less. Winning "
+                  "the fight is not the top of the ladder; not needing it is.",
+             "eg": "The competitor didn't enter the category, not because "
+                   "they lost a price war, but because the integration work "
+                   "would have taken them two years to match."},
+            {"n": "Know both, and know what you don't",
+             "d": "Know the other side and yourself and you are never in "
+                  "danger; know only yourself and you win half; know neither "
+                  "and you lose every time. Most people read this as "
+                  "reconnaissance. Half of it is about you.",
+             "eg": "He had the competitor's roadmap and no honest number for "
+                   "how long his own team actually takes. That is the half "
+                   "that loses."},
+        ],
+        "apply":
+            "Before the next thing you are about to launch, argue, or "
+            "confront, write down what would have to be true for it to be "
+            "already won. If none of it is true yet, you are not ready to "
+            "start \u2014 you are ready to prepare.",
+        "q": [
+            "The victorious army wins first and seeks battle afterwards.",
+            "Winning a hundred battles is not the height of skill. Subduing "
+            "the enemy without fighting is.",
+            "Know the other side and know yourself, and you will not be in "
+            "danger in a hundred battles.",
+        ],
+        "l": ["Han Feizi", "John Boyd", "Fan Li"],
+        "contrast": [
+            {"n": "John Boyd",
+             "why": "Both put the decision before the clash. Sun Tzu settles "
+                    "it in preparation, Boyd in speed of turning"},
+        ],
+    },
+    {
+        "c": "How the world works", "n": "Tao Te Ching", "slug": "tao-te-ching",
+        "e": "Spring and Autumn \u00b7 c. 500 BC", "w": "Subtract", "y": -500,
+        "d": "Five thousand characters, and after the Bible the most "
+             "translated book there is. Where most instruction is addition "
+             "\u2014 learn more, do more, add another method \u2014 this one "
+             "runs the other way. In learning you gain daily; in the way you "
+             "lose daily, until there is nothing left to force, and then "
+             "nothing is left undone.",
+        "story":
+            "Laozi rode west out of the pass on an ox, leaving a country he "
+            "had given up on. The keeper of the pass stopped him and asked "
+            "him to write something down before he went. He wrote five "
+            "thousand characters and disappeared from the record. That is the "
+            "whole biography, and the book is consistent with it: everything "
+            "in it argues that the position of least insistence is the strong "
+            "one.",
+        "f": [
+            {"n": "Reversal is how the way moves",
+             "d": "Whatever reaches its extreme turns into its opposite. It "
+                  "is not consolation for bad times; it is a reading "
+                  "instrument. At the top, look for what is already turning. "
+                  "At the bottom, the same rule is working for you.",
+             "eg": "The quarter everything was going right is the quarter "
+                   "nobody asked what would happen if the one channel "
+                   "bringing all the customers stopped."},
+            {"n": "Water beats stone by not arguing",
+             "d": "The softest thing in the world runs through the hardest. "
+                  "Not passivity \u2014 water keeps going and takes the shape "
+                  "of whatever it meets. Persistence in a form that nothing "
+                  "can push back on outlasts a harder push that has to be "
+                  "sustained.",
+             "eg": "Two years of quietly fixing the thing nobody owned moved "
+                   "more than the reorg that was announced twice and "
+                   "cancelled twice."},
+            {"n": "The empty part is the useful part",
+             "d": "The wheel is useful because of the hole at the centre, the "
+                  "pot because of the space inside, the room because of the "
+                  "gaps where the doors and windows are. What you build gets "
+                  "the credit; what you left out is doing the work.",
+             "eg": "The calendar with two empty afternoons is where the "
+                   "thinking happened. The full one produced attendance."},
+        ],
+        "apply":
+            "Take the thing you are trying to fix by adding \u2014 another "
+            "tool, another rule, another meeting \u2014 and ask what you "
+            "would remove instead. Try the subtraction first; it is cheaper "
+            "and it is reversible.",
+        "q": [
+            "In learning you gain daily. In the way you lose daily.",
+            "The softest thing in the world runs through the hardest.",
+            "Knowing others is intelligence. Knowing yourself is clarity.",
+        ],
+        "l": ["Zhuangzi", "Huineng", "Su Shi"],
+        "contrast": [
+            {"n": "Zhuangzi",
+             "why": "Same tradition, different address: Laozi writes for "
+                    "whoever has to govern, Zhuangzi for whoever wants out"},
+        ],
+    },
+    {
+        "c": "Money and risk", "n": "Warren Buffett", "slug": "buffett",
+        "e": "Contemporary \u00b7 1930\u2013", "w": "The moat", "y": 1930,
+        "d": "Sixty years of compounding, and a method simple enough to say "
+             "in a sentence: buy a business with a durable advantage at a "
+             "sensible price and then do nothing for a very long time. His "
+             "real edge is not stock-picking. It is that he can sit still "
+             "while other people cannot.",
+        "story":
+            "In 1973\u201374 the American market fell by half. The Washington "
+            "Post went from thirty-eight dollars to sixteen. Everyone was "
+            "getting out; he was buying. He wrote to the management that he "
+            "had bought, for ten million dollars, a piece of a company they "
+            "themselves valued at four or five hundred million. The position "
+            "eventually returned more than a hundred times. Nothing about the "
+            "company had changed in those months. What had changed was what "
+            "other people could stand to hold.",
+        "f": [
+            {"n": "Four kinds of moat",
+             "d": "A brand people ask for by name, a network that gets more "
+                  "valuable as it grows, a cost position nobody can match, "
+                  "and a switching cost that makes leaving expensive. The "
+                  "wider the moat, the less the future depends on being "
+                  "clever.",
+             "eg": "Nobody switches accounting software to save nine dollars "
+                   "a month. That is a moat, and it was built by the tedium "
+                   "of migration, not by the features."},
+            {"n": "The edge of the circle matters more than its size",
+             "d": "You do not need to understand every business, only the "
+                  "ones you understand. He stayed out of technology for "
+                  "decades and said so plainly. Knowing where your "
+                  "competence stops is the part that protects you; the size "
+                  "of the circle is vanity.",
+             "eg": "He passed on the deal because he could not explain how "
+                   "the company made money in one sentence. That is not "
+                   "timidity; that is the boundary doing its job."},
+            {"n": "The moat that matters is emotional",
+             "d": "Be fearful when others are greedy and greedy when others "
+                  "are fearful. In 1987, in 2000, in 2008 he was the one "
+                  "buying into the collapse. The analysis was available to "
+                  "everyone. The stomach was not.",
+             "eg": "Everyone knew the rule about buying the dip. Almost "
+                   "nobody transferred the money on the Monday the number "
+                   "was red on every screen."},
+        ],
+        "apply":
+            "Before the next purchase, write in one sentence why this thing "
+            "will still be earning in ten years. If you cannot write the "
+            "sentence, you are not buying a business; you are buying a price "
+            "movement.",
+        "q": [
+            "Be fearful when others are greedy and greedy when others are "
+            "fearful.",
+            "Rule one: never lose money. Rule two: never forget rule one.",
+            "You do not have to understand every company. Only the ones you "
+            "own.",
+        ],
+        "l": ["Charlie Munger", "Li Ka-shing", "Fan Li"],
+        "contrast": [
+            {"n": "Charlie Munger",
+             "why": "The partner who moved him from cheap and broken to good "
+                    "and fairly priced"},
+        ],
+    },
+    {
+        "c": "Learning and growth", "n": "Charlie Munger", "slug": "munger",
+        "e": "Contemporary \u00b7 1924\u20132023", "w": "Invert", "y": 1924,
+        "d": "Buffett's partner for more than half a century, and the reason "
+             "Berkshire stopped buying cheap broken companies and started "
+             "buying good ones at fair prices. His own contribution is a "
+             "method rather than a portfolio: work out how a thing fails, "
+             "then don't do that.",
+        "story":
+            "Invited to give a commencement address at Harvard Law, he told "
+            "the graduating class he would explain how to guarantee a "
+            "miserable life, and then listed the ways: unreliability, envy, "
+            "resentment, learning only from your own experience, giving up "
+            "after the first reverse. It is the method demonstrated on "
+            "itself. If you knew where you were going to die, he liked to "
+            "say, you would simply never go there.",
+        "f": [
+            {"n": "Invert, always invert",
+             "d": "There are countless routes to a thing going well and only "
+                  "a handful of ways it reliably goes wrong. Listing the "
+                  "failure modes and avoiding them is a shorter, more "
+                  "tractable problem than working out how to win.",
+             "eg": "Nobody could say what would make the launch succeed. "
+                   "Everyone could name the three things that would sink it, "
+                   "and two were already true."},
+            {"n": "One hammer is not enough",
+             "d": "To a man with only a hammer everything looks like a nail. "
+                  "He collected models from other fields \u2014 compounding "
+                  "from mathematics, critical mass from physics, selection "
+                  "from biology, the standard biases from psychology \u2014 "
+                  "because a problem rarely arrives in the shape of your one "
+                  "discipline.",
+             "eg": "The retention problem was not a product problem. It was a "
+                   "queueing problem, and nobody in the room had ever been "
+                   "handed that model."},
+            {"n": "Look at the incentive first",
+             "d": "Show me the incentive and I will show you the outcome. To "
+                  "understand why a system produces what it produces, do not "
+                  "start with what people say they value; start with what "
+                  "they are paid, promoted and forgiven for.",
+             "eg": "The review process rewarded shipping. Nobody was ever "
+                   "promoted for deleting a feature, so the surface grew "
+                   "every year and nobody had decided that."},
+        ],
+        "apply":
+            "Take the plan you are about to commit to and spend twenty "
+            "minutes writing only the ways it fails. Then check how many are "
+            "already true. That list is more useful than the plan.",
+        # 条目页的金句不能和正文重复 —— 同页去重会把整块删掉（闸门抓到过
+        # 一次）。「反过来想」「看激励」「一把锤子」三句都写在分则正文里了，
+        # 这里换三句他确实说过、而这一页别处没有的。
+        "q": [
+            "It is remarkable how much long-term advantage we have got by "
+            "trying to be consistently not stupid.",
+            "Knowing what you don't know is more useful than being brilliant.",
+            "Spend each day trying to be a little wiser than you were when "
+            "you woke up.",
+        ],
+        "l": ["Warren Buffett", "Han Feizi", "John Boyd"],
+        "contrast": [
+            {"n": "Warren Buffett",
+             "why": "Same desk for fifty years: Buffett holds the temperament, "
+                    "Munger supplies the checklist of ways to be wrong"},
+        ],
+    },
+    {
         "c": "Mind and feeling", "n": "Su Shi", "slug": "su-shi",
         "e": "Northern Song · 1037–1101", "w": "Unbowed", "y": 1037,
         "d": "One of the great Chinese poets, and also a calligrapher, a "
@@ -50,19 +304,22 @@ ENTRIES = [
                   "records the sequence: the blow lands, there is a long "
                   "stretch of real pain, attention turns inward, the present "
                   "moment turns out to be full, and only then the release. "
-                  "He didn't skip to serenity. He walked through the middle."},
+                  "He didn't skip to serenity. He walked through the middle.",
+             "eg": "Two people laid off the same week. One posts about the fresh start on day three and is still hollow in month six; the other is wretched for a month, then starts."},
             {"n": "The constraint produced the work",
              "d": "His three years in Huangzhou produced the two Red Cliff "
                   "rhapsodies and his best-known lyrics. Having lost the "
                   "ability to change anything outside himself, he was left "
                   "with what he could still do — and that turned out to be "
-                  "the most concentrated output of his life."},
+                  "the most concentrated output of his life.",
+             "eg": "The book got written the year the funding fell through, because there was nothing left to run and the writing was the only thing still in his hands."},
             {"n": "He lost the politics and won everything else",
              "d": "He opposed the reformers' new laws, then opposed the "
                   "conservatives when they abolished all of them. He held to "
                   "the measure rather than the side, and both sides exiled "
                   "him for it. In the political record he is a failure. A "
-                  "thousand years later he is the one people quote."},
+                  "thousand years later he is the one people quote.",
+             "eg": "The one who wouldn't sign either faction's memo got passed over twice, and is the person both sides quote when they explain what went wrong."},
         ],
         "apply":
             "Next time you're overruled, shelved, or watching something fail, "
@@ -110,19 +367,22 @@ ENTRIES = [
              "d": "The meaning and value of a thing arrive with the mind that "
                   "meets it. Practically, this moves the standard: your "
                   "judgement doesn't come from an external authority that has "
-                  "to be consulted before you may act."},
+                  "to be consulted before you may act.",
+             "eg": "You already know the deck is dishonest. Waiting for someone senior to say it first is not caution; it is looking for a person to hold the judgement for you."},
             {"n": "Knowing and doing are one",
              "d": "'I know I should get up early' from someone who never does "
                   "is not knowledge, it's an idea about knowledge. Real "
                   "knowing shows up in the body. This is the sentence he is "
                   "most quoted for and the one most often quoted without "
-                  "being applied."},
+                  "being applied.",
+             "eg": "'I know I should exercise' from someone who hasn't in a year is not knowledge. The knowing showed up in the ones who went twice this week."},
             {"n": "The hardest campaign is interior",
              "d": "He never lost a battle, and wrote from the field that "
                   "breaking the bandits in the hills is easy and breaking the "
                   "ones in the heart is hard. What actually stops people is "
                   "fear, laziness, vanity and self-deception — none of which "
-                  "appears on any plan."},
+                  "appears on any plan.",
+             "eg": "The plan was never the problem. Sending the email that admits the number was wrong is the whole difficulty, and no amount of planning touches it."},
         ],
         "apply":
             "When a team knows what to do and doesn't do it, the problem is "
@@ -171,18 +431,21 @@ ENTRIES = [
                   "a thousand years. Things with no immediate use — a hobby "
                   "that earns nothing, reading with no purpose, experience "
                   "that won't fit a CV — are often what still holds when "
-                  "everything scheduled has been spent."},
+                  "everything scheduled has been spent.",
+             "eg": "The reading that earned nothing for six years is what made you the only person in the room who saw the second-order effect."},
             {"n": "Cut along the grain",
              "d": "His cook's blade lasts nineteen years because it never "
                   "meets bone, only the gaps between joints. Effort that "
                   "meets resistance everywhere is usually not short of force. "
-                  "It is in the wrong place."},
+                  "It is in the wrong place.",
+             "eg": "The rewrite that ate three weekends went in on a Tuesday evening, once he stopped fighting the framework and used the hook it already had."},
             {"n": "Whose standard is this",
              "d": "There is a right and wrong on that side and one on this "
                   "side. What looks like stupidity from where you stand is "
                   "generally coherent from where they stand. Holding several "
                   "positions at once isn't fence-sitting; it's the thing that "
-                  "shrinks your blind spot."},
+                  "shrinks your blind spot.",
+             "eg": "The team that moves too slowly is optimising for the outage you have never had. From where they sit, your speed is the reckless part."},
         ],
         "apply":
             "In an environment where everyone is competing, the scarcest "
@@ -233,18 +496,21 @@ ENTRIES = [
                   "requires accumulation. Sudden awakening says the distance "
                   "was never there — only a misrecognition. So 'sudden' isn't "
                   "speed. It is the discovery that there is nowhere to "
-                  "travel."},
+                  "travel.",
+             "eg": "Nothing new arrived the day she stopped apologising for the price. She had the same evidence in January; what changed was that she stopped waiting to deserve it."},
             {"n": "No-thought is not blankness",
              "d": "It means a thought arises, you see it, and you neither "
                   "follow it nor suppress it. This is the part of the text "
                   "closest to something modern and operable — it describes "
                   "keeping distance from a feeling rather than eliminating "
-                  "it."},
+                  "it.",
+             "eg": "The urge to check the message is there either way. Watching it pass without opening the app is the practice; suppressing it is just a second urge."},
             {"n": "Everything outward rests on 'I am not enough'",
              "d": "Books, teachers, the next achievement: every outward "
                   "search is built on a premise nobody examines. He puts the "
                   "premise itself in question, which is why this is the only "
-                  "subtraction in a library otherwise made of addition."},
+                  "subtraction in a library otherwise made of addition.",
+             "eg": "Another course, another certificate, one more year of preparation. Each purchase quietly restates the premise that you are not ready yet."},
         ],
         "apply":
             "Almost all modern self-improvement is addition — one more book, "
@@ -291,17 +557,20 @@ ENTRIES = [
              "d": "His judgement about the king wasn't 'this is dangerous "
                   "now' but 'here is what this man becomes when things go "
                   "well' — true long before it mattered. Situations change; "
-                  "the construction of a person doesn't."},
+                  "the construction of a person doesn't.",
+             "eg": "He was generous when the round closed and vicious when it didn't. That wasn't the market changing him; it was one man under two conditions."},
             {"n": "Buy what nobody wants",
              "d": "In drought, stock boats; in flood, stock carts. The entire "
                   "difficulty of the rule is that at the moment of buying, "
                   "every visible piece of evidence says the thing is "
-                  "worthless."},
+                  "worthless.",
+             "eg": "The hard part is not spotting the empty office block. It is signing the lease in the month every person you respect tells you the sector is finished."},
             {"n": "Letting go is harder than accumulating",
              "d": "Three fortunes made and three given away, a "
                   "chancellorship returned. Many people can accumulate. "
                   "Almost nobody puts down a position already in hand and "
-                  "starts again."},
+                  "starts again.",
+             "eg": "Plenty of people can build the team to forty. Almost nobody hands it over while it is still going well and starts again at one."},
         ],
         "apply":
             "At every stage of a career, ask periodically: is this "
@@ -344,17 +613,20 @@ ENTRIES = [
                   "Land in the 1967 riots; a steady withdrawal from mainland "
                   "property from the 2010s, roughly a decade before the "
                   "consensus. Each time, acting before others noticed the "
-                  "turn."},
+                  "turn.",
+             "eg": "Hiring in the quarter everyone else froze feels like a mistake for eighteen months, which is exactly how long it has to feel wrong to still be cheap."},
             {"n": "Never take the last coin",
              "d": "He exits before his own estimate of the top, giving up the "
                   "final ten or twenty per cent in exchange for certainty. "
                   "Wanting the last coin means selling only once everyone "
-                  "agrees the top has passed."},
+                  "agrees the top has passed.",
+             "eg": "You sold at eight and it went to ten. The twenty per cent you left behind is what bought you never having to guess where the top was."},
             {"n": "Cash is oxygen",
              "d": "Large reserves at all times, accepting lower returns to "
                   "keep liquidity. In 2008 several large groups ran out of "
                   "funding. He didn't. Low gearing isn't caution — it buys "
-                  "more chances to be wrong."},
+                  "more chances to be wrong.",
+             "eg": "Six months of runway isn't caution. It is the number of times you get to be wrong before being wrong is fatal."},
         ],
         "apply":
             "Once a year, run a cash stress test: if your main income stopped "
@@ -399,19 +671,22 @@ ENTRIES = [
                   "you assess and check the people below you; position is the "
                   "authority the seat itself carries. Missing the first, the "
                   "rules get bypassed. Missing the second, you get compliance "
-                  "in form only. Missing the third, nobody listens."},
+                  "in form only. Missing the third, nobody listens.",
+             "eg": "The policy exists, nobody checks it, and the person enforcing it has no standing to say no. Any one of the three missing and the other two stop working."},
             {"n": "People follow interest, not exhortation",
              "d": "He doesn't believe in natural loyalty; he believes in "
                   "incentives. Design the system well and people behave the "
                   "way you wanted. It is Munger's 'show me the incentive and "
                   "I'll show you the outcome', stated twenty-two centuries "
-                  "earlier."},
+                  "earlier.",
+             "eg": "The all-hands asked everyone to prioritise quality. Bonuses stayed tied to shipped count. Everyone shipped."},
             {"n": "The difficulty of persuasion",
              "d": "The hard part of speaking, he wrote, is not what you know "
                   "but working out what the listener actually cares about. He "
                   "catalogued the fatal errors — exposing what they don't "
                   "want exposed, speaking at the wrong moment, being too "
-                  "direct — and then died of one."},
+                  "direct — and then died of one.",
+             "eg": "Your deck answered whether it could be built. The one person who could approve it was worried about who gets blamed if it fails."},
         ],
         "apply":
             "When designing incentives for a team, ask what this system will "
@@ -460,19 +735,22 @@ ENTRIES = [
                   "restart, but once every three years, just short, until he "
                   "was old. Most advice about failure assumes a turning point "
                   "to point at. Here there isn't one, and none of it "
-                  "applies."},
+                  "applies.",
+             "eg": "Not one bad year: eleven rounds of interviews across four years, each ending at the final stage, with nothing to point at as the moment it went wrong."},
             {"n": "He never let it be the only thing",
              "d": "He didn't stop sitting the exam and he didn't stake his "
                   "life on it. The tutoring continued, the family was kept, "
                   "the stories accumulated. Running things in parallel means "
                   "that when the thing that never works fails again, "
-                  "something else in your hands is working."},
+                  "something else in your hands is working.",
+             "eg": "Keeping the job while the thing you care about takes years means a bad year stays a bad year, instead of becoming the end of the story."},
             {"n": "The side thing got real investment",
              "d": "The stories weren't dashed off — forty years, nearly five "
                   "hundred pieces, repeatedly revised. They were last in his "
                   "ranking, not last in his investment. And he never quit the "
                   "job: the tutoring fed him and gave him the forty "
-                  "uninterrupted years."},
+                  "uninterrupted years.",
+             "eg": "Two hours every Sunday for six years is not a hobby. It was last in his ranking and first in his hours."},
         ],
         "apply":
             "When something you've worked at for years hasn't happened and "
@@ -521,18 +799,21 @@ ENTRIES = [
                   "closed. Training on a closed track has no exit however "
                   "hard you train. The first move isn't redoubling effort; "
                   "it's removing the lost item from your own list of what you "
-                  "are worth."},
+                  "are worth.",
+             "eg": "No amount of practice makes you faster than the model at drafting a first version. The real question is which part of the work that leaves you."},
             {"n": "Change the rules, not the effort",
              "d": "He didn't train harder and he didn't leave chess. A year "
                   "later he staged a tournament where each side brought a "
                   "computer to the board. When a tool matches an ability, the "
                   "valuable position moves to how the tool is used \u2014 and "
-                  "someone has to define that position first."},
+                  "someone has to define that position first.",
+             "eg": "The translators who priced per word lost. The ones who charged for deciding what not to translate did not."},
             {"n": "The appeal and the next move cost the same hours",
              "d": "He spent years arguing the match hadn't been fair, and "
                   "withdrew all of it in 2017. Proving the loss didn't count "
                   "and working out what to train next come out of the same "
-                  "person in the same stretch of time."},
+                  "person in the same stretch of time.",
+             "eg": "The months spent proving the review was unfair were the same months available for the work that would have made the review irrelevant."},
         ],
         "apply":
             "When a core skill in your field gets matched by a tool, don't "
@@ -579,18 +860,21 @@ ENTRIES = [
              "d": "The year he wrote to the union there was still time to "
                   "arrange something. Once it lands you only get to react. "
                   "The stretch while you still have work is the only window "
-                  "you get to plan in."},
+                  "you get to plan in.",
+             "eg": "The time to learn the next thing is while the current work still pays. Once it stops you are learning and job-hunting at the same time."},
             {"n": "'It can' doesn't imply 'give it to it'",
              "d": "Whether a machine can do a task is technical. What is left "
                   "of the person afterwards is a different question, and the "
                   "answer isn't automatically good. Hand over the repetition, "
-                  "not the judgement."},
+                  "not the judgement.",
+             "eg": "Let it draft the summary. Deciding which three of the twenty issues actually get raised is the part that was your job."},
             {"n": "Control is a loop, not an order",
              "d": "His definition: not issuing an instruction but correcting "
                   "the next move from the actual result. Cut the report back "
                   "and the movement goes off, however well it was aimed. It "
                   "applies unchanged to managing people and to practising a "
-                  "skill."},
+                  "skill.",
+             "eg": "You set the goal in January and next heard about it in June. The instruction was fine; there was nothing correcting it in between."},
         ],
         "apply":
             "When something is spreading through your field and hasn't "
@@ -637,17 +921,20 @@ ENTRIES = [
              "d": "'Be best at this' is drilled constantly inside any "
                   "evaluation system. 'Decide what's worth doing' can only be "
                   "trained where there is no correct answer. So the smoother "
-                  "the run, the likelier the second is blank."},
+                  "the run, the likelier the second is blank.",
+             "eg": "Ten years of being the person who clears every bar, and the first question with no right answer — should we even build this — is the one he can't start."},
             {"n": "Never having failed makes failure unimaginable",
              "d": "The price of an unbroken record is no experience of "
                   "failing, so failure gets imagined as catastrophic \u2014 "
                   "and the result is avoiding anything you might not be good "
-                  "at, with a range that narrows year by year."},
+                  "at, with a range that narrows year by year.",
+             "eg": "She picked the third language she already half-knew over the one she wanted, because a visible beginner year was unthinkable."},
             {"n": "The prescription is time with no scoreboard",
              "d": "Not a different subject or a different job, but a stretch "
                   "long enough to get past novelty, doing something nobody is "
                   "grading. Where a metric exists, attention slides to it, so "
-                  "the question can only surface somewhere without one."},
+                  "the question can only surface somewhere without one.",
+             "eg": "Six months of pottery with nobody grading it did more than another certificate, precisely because there was no number to optimise."},
         ],
         "apply":
             "If you can say exactly what counts as doing well and can't say "
@@ -695,17 +982,20 @@ ENTRIES = [
              "d": "Rest fixes exhaustion. It does not fix detachment or a "
                   "collapse in accomplishment, and those two usually arrive "
                   "first. So somebody can look like they're working normally, "
-                  "and still be delivering, months into it."},
+                  "and still be delivering, months into it.",
+             "eg": "He came back from three weeks off rested and still couldn't care about the release. The sleep debt was gone; the other two weren't."},
             {"n": "Fix the job, not the person",
              "d": "Told the problem is their attitude, a person adds a layer "
                   "of self-blame and stays in the same environment. Personal "
                   "remedies aren't useless \u2014 they're second. Reverse the "
-                  "order and they stop being support and start being cover."},
+                  "order and they stop being support and start being cover.",
+             "eg": "The wellness app arrived the same quarter the team lost two people and kept the same roadmap. Everyone downloaded it. Nothing changed."},
             {"n": "Six ways to be mismatched",
              "d": "Workload, control, reward, community, fairness, values. "
                   "Most people watch only the first. In her data, having no "
                   "say and doing work that runs against what you believe are "
-                  "often more lethal than volume."},
+                  "often more lethal than volume.",
+             "eg": "The hours were fine. Being told what to ship and then blamed for shipping it is the one that emptied him out."},
         ],
         "apply":
             "Before deciding you need a holiday, check which of the three you "
@@ -756,13 +1046,15 @@ ENTRIES = [
              "d": "Read as a flaw, the first instinct is to say nothing, "
                   "which seals the only exit. As a signal it carries no "
                   "shame: it doesn't say something is wrong with you, it says "
-                  "something needs doing."},
+                  "something needs doing.",
+             "eg": "Read as 'something is wrong with me', the message stays unsent. Read as hunger, it gets sent."},
             {"n": "Vigilance grows it by itself",
              "d": "Lonely people read neutral faces as unfriendlier. The "
                   "reading makes them withdraw, withdrawal thins the "
                   "relationship, and the thin relationship confirms the "
                   "reading. Nobody has to have rejected them for the loop to "
-                  "keep turning."},
+                  "keep turning.",
+             "eg": "He read the unanswered message as being dropped, so he stopped writing first, so the messages thinned, and the thinning proved him right."},
             {"n": "The effective intervention is the reading, not the "
                   "opportunity",
              "d": "In the meta-analysis, more chances to socialise, more "
@@ -819,17 +1111,20 @@ ENTRIES = [
              "d": "It reads like a greeting card and lands on hard measures: "
                   "satisfaction with close relationships at fifty predicted "
                   "health at eighty better than cholesterol did. The body "
-                  "settles the bill."},
+                  "settles the bill.",
+             "eg": "It sounds like a card in a gift shop until you see it beat cholesterol at fifty for predicting how eighty goes."},
             {"n": "Quality counts, headcount doesn't",
              "d": "And a long, high-conflict relationship does more damage "
                   "than separating. What protects is what happens inside it, "
                   "not whether it is still standing \u2014 'staying for the "
-                  "children' does not balance on this ledger."},
+                  "children' does not balance on this ledger.",
+             "eg": "Two hundred contacts and nobody to call at 2am is not a large network. It is a large list."},
             {"n": "The window stays open later than people assume",
              "d": "The clearest improvements came from people who started in "
                   "their fifties and sixties: reconnecting with estranged "
                   "family, turning acquaintances into regular company. Fifty "
-                  "is not too late for eighty."},
+                  "is not too late for eighty.",
+             "eg": "He rang the brother he hadn't spoken to in eleven years at fifty-eight. That call is inside the window, not past it."},
         ],
         "apply":
             "If relationships feel like something to handle once this busy "
@@ -881,17 +1176,20 @@ ENTRIES = [
              "d": "Close friends want to help more and hold almost the same "
                   "information you do. A weak tie isn't more generous. He is "
                   "standing somewhere else, holding the part you can't reach "
-                  "from here."},
+                  "from here.",
+             "eg": "Your five closest friends have already told you every opening they know about. The person you met once at a conference knows the one you haven't heard."},
             {"n": "Closure is what strong ties produce",
              "d": "Close to A and close to B means A and B probably know each "
                   "other. The circle closes, and once closed the three of you "
                   "know largely the same things. Closure gives support and "
-                  "trust, and it stops new information arriving."},
+                  "trust, and it stops new information arriving.",
+             "eg": "Everyone in the group chat forwarded the same article. That is what a closed circle feels like from inside: agreement, and no new information."},
             {"n": "Maintain breadth, not depth",
              "d": "Rather than pouring everything into a few people, keep "
                   "more weak ties in the 'still knows who you are' state. The "
                   "cost is an occasional message with no request attached \u2014 "
-                  "and the line has to be kept while you don't need it."},
+                  "and the line has to be kept while you don't need it.",
+             "eg": "One message a year with nothing attached — congratulations on the new job — keeps a line open. Reappearing only when you need something closes it."},
         ],
         "apply":
             "If you're looking for something \u2014 work, a partner, "
@@ -942,17 +1240,20 @@ ENTRIES = [
                   "doesn't disappear for going unrecorded; it becomes one "
                   "person's invisible load, and that person often has no "
                   "language to complain in, because on paper nothing "
-                  "happened."},
+                  "happened.",
+             "eg": "Nobody schedules remembering the birthdays, noticing who has gone quiet, smoothing the meeting afterwards. It still takes hours, and the same person does it."},
             {"n": "Surface acting and deep acting bill differently",
              "d": "Putting the face on while knowing you are exhausts through "
                   "tension. Persuading yourself you mean it exhausts because "
                   "afterwards you can't find yourself. Both have a cost; they "
-                  "arrive at different times."},
+                  "arrive at different times.",
+             "eg": "Smiling through the call knowing you don't mean it leaves you tense. Talking yourself into meaning it leaves you unsure which part was you."},
             {"n": "Care time is rigid",
              "d": "You can write a document faster. You cannot feed a child "
                   "faster or sit with a sick parent faster. So 'efficiency' "
                   "barely applies \u2014 the work can only be taken over by "
-                  "someone else, or not done, and then someone else pays."},
+                  "someone else, or not done, and then someone else pays.",
+             "eg": "You can review the document twice as fast this quarter. You cannot get a two-year-old to sleep twice as fast."},
         ],
         "apply":
             "When the work at home lands on one person and saying so hasn't "
@@ -1002,17 +1303,20 @@ ENTRIES = [
              "d": "The original design treated the cage as scenery and the "
                   "drug as the only thing that varied. Make the cage vary too "
                   "and the conclusion moves: same rat, same bottle, very "
-                  "different behaviour."},
+                  "different behaviour.",
+             "eg": "Same person, same phone. Alone in a rented room at eleven at night, and in a house with people in it: the two evenings do not look alike."},
             {"n": "The empty space is manufacturing the demand",
              "d": "The park rats weren't restrained; they didn't much want "
                   "it. Alexander's word was dislocation \u2014 pull someone "
                   "out of the relationships and position they belong in and "
-                  "they will find something to fill the gap."},
+                  "they will find something to fill the gap.",
+             "eg": "The drinking started the year he moved cities and knew nobody, and thinned out once there was somewhere to be on Thursdays."},
             {"n": "It has a boundary, and it has to be said",
              "d": "Replications were not uniformly successful and the "
                   "interpretation is still argued over. Situation is the "
                   "underrated term, not the only one. Explaining everything "
-                  "with it delays people who need medical care."},
+                  "with it delays people who need medical care.",
+             "eg": "Telling someone in withdrawal that the cage is the whole problem leaves them holding an explanation and no treatment."},
         ],
         "apply":
             "If you're trying to stop something and every attempt ran on "
@@ -1062,17 +1366,20 @@ ENTRIES = [
              "d": "Two children stopping at the same point alone can be far "
                   "apart: give a hint, and one moves a long way and the other "
                   "doesn't. Identical current level, completely different "
-                  "zone \u2014 and the zone decides what they can learn next."},
+                  "zone \u2014 and the zone decides what they can learn next.",
+             "eg": "Two candidates fail the same task. One takes a single hint and finishes; the other needs the answer. Same score, different hire."},
             {"n": "Teaching runs ahead of development",
              "d": "Against the orthodoxy of his day, he held that you don't "
                   "wait for readiness. Appropriate guidance pulls development "
                   "forward. The pitch is: hard enough to need help, not so "
-                  "hard that help doesn't get it done."},
+                  "hard that help doesn't get it done.",
+             "eg": "Handing him the migration with a review at every step taught more than three more months of tickets he could already do."},
             {"n": "Scaffolding goes up in order to come down",
              "d": "Help that stays becomes dependence and leaves the person "
                   "at the level where they're held. Whether a piece of help "
                   "worked isn't whether the task got done \u2014 it's whether "
-                  "less support is needed next time."},
+                  "less support is needed next time.",
+             "eg": "If she still needs you on the call the fourth time, the help isn't working, however well each call goes."},
         ],
         "apply":
             "Teaching someone, or teaching yourself, find the position where "
@@ -1119,18 +1426,21 @@ ENTRIES = [
                   "me, how I feel. Nothing in it judges the other person, so "
                   "there is nothing to defend against. The part most often "
                   "dropped is the middle one, and it is where the persuasion "
-                  "lives."},
+                  "lives.",
+             "eg": "'You're careless' starts a defence. 'When the numbers arrive after five I redo the deck at night, and I'm worn out' does not."},
             {"n": "Work out whose problem it is first",
              "d": "A child upset about a bad grade owns it, and the move is "
                   "listening. A child wrecking the room you work in \u2014 "
                   "that's yours, and the move is an I-message. Getting it "
                   "backwards is the common error, and it lays your anxiety on "
-                  "top of theirs."},
+                  "top of theirs.",
+             "eg": "The teenager miserable about a grade needs listening to. The music through the wall while you work is yours to raise."},
             {"n": "No effect you can name may mean no problem",
              "d": "If you can't say what it actually does to you, this may be "
                   "a preference rather than a problem. The step doubles as a "
                   "filter: when you can't fill it in, ask why you're "
-                  "insisting."},
+                  "insisting.",
+             "eg": "He couldn't say what the messy desk actually cost him. That was the answer: a preference wearing the clothes of a rule."},
         ],
         "apply":
             "Before raising something, split it into behaviour, effect on me, "
@@ -1178,18 +1488,21 @@ ENTRIES = [
              "d": "An enormous blank can't be faced directly. What can be "
                   "faced has a time, a place and a content. It doesn't solve "
                   "the grief; it gives the day a shape you can put yourself "
-                  "inside."},
+                  "inside.",
+             "eg": "'Sort out my life' is unfaceable. 'Thursday, nine to ten, the second drawer' is not, and the day now has a shape to stand in."},
             {"n": "What can't be said aloud gets written to them",
              "d": "For more than a year she wrote to Pierre in a notebook "
                   "nobody saw in her lifetime. Said to the living it becomes "
                   "a request for comfort; said to yourself it becomes "
                   "analysis. Only addressed to them does the true thing come "
-                  "out."},
+                  "out.",
+             "eg": "Written to a friend it becomes a request for comfort. Written to the person who died it stays what it actually is."},
             {"n": "Put the skill where it's most needed now",
              "d": "In the war she left the laboratory, raised money, fitted "
                   "vehicles with X-ray equipment, learned to drive and repair "
                   "them, and took them to the front. Those years are "
-                  "academically almost blank, and were not wasted."},
+                  "academically almost blank, and were not wasted.",
+             "eg": "The year he stopped shipping features and rebuilt the on-call rota is missing from his promotion packet, and it is what the team remembers."},
         ],
         "apply":
             "When the most important person has gone and life still has to "

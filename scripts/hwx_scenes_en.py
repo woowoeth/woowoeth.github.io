@@ -42,10 +42,18 @@ SCENES = [
 ("A decision I can't undo", "Making a call", [
     ("If this is wrong, is there a way back?",
      [("li-ka-shing", "ninety-percent-failure")]),
+    ("It starts on Monday and I'm bracing myself. Is that the problem?",
+     [("sun-tzu", "win-before-fighting")]),
+    ("I think I know them well enough. Do I know my own side?",
+     [("sun-tzu", "know-both")]),
 ]),
 ("I don't have enough information", "Making a call", [
     ("By the time the data is in, will it be too late?",
      [("boyd", "ooda")]),
+    ("Everyone I know is in this. I don't actually understand it.",
+     [("buffett", "circle-of-competence")]),
+    ("I keep listing reasons this will work. Should I do the other list?",
+     [("munger", "invert")]),
 ]),
 ("They said no to my plan", "Making a call", [
     ("Do I push, or do I take the no?",
@@ -60,6 +68,8 @@ SCENES = [
 ("After the win", "Facing an opponent", [
     ("I won, and now I don't know when to stop.",
      [("li-ka-shing", "knowing-when-to-stop")]),
+    ("It's going well and I can't shake the feeling it won't last.",
+     [("tao-te-ching", "reversal")]),
 ]),
 
 # ── Money ──
@@ -78,6 +88,27 @@ SCENES = [
      [("su-shi", "east-slope")]),
     ("I built this for one thing and now it's just sitting there.",
      [("su-shi", "silt-into-a-causeway")]),
+]),
+
+("Winning is costing too much", "Facing an opponent", [
+    ("I keep winning these and I'm more tired every time.",
+     [("sun-tzu", "win-without-fighting")]),
+    ("My clever move didn't land. Was the idea wrong?",
+     [("sun-tzu", "orthodox-and-surprise")]),
+    ("They set the agenda every week and I just respond.",
+     [("sun-tzu", "form-like-water")]),
+]),
+("I'm managing it and it's getting worse", "Getting it done", [
+    ("The more rules I add, the more people route around them.",
+     [("tao-te-ching", "wu-wei")]),
+    ("Everyone is chasing the same thing. Where is nobody standing?",
+     [("tao-te-ching", "water")]),
+    ("Every hour is booked and one delay wrecks the week.",
+     [("tao-te-ching", "usefulness-of-emptiness")]),
+    ("The numbers look great. Is that skill or is it leverage?",
+     [("buffett", "swimming-naked")]),
+    ("I've diagnosed this three times and it's always the same cause.",
+     [("munger", "latticework")]),
 ]),
 
 # ── Dealing with people ──

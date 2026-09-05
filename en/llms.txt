@@ -1,9 +1,9 @@
 # OurWord (OurWord)
 
-> 30 people and books on how the world actually works, across 2,600 years
+> 34 people and books on how the world actually works, across 2,600 years
 > See how people before you handled it.
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 30 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 34 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
 ## Read it
 
@@ -17,12 +17,14 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 ## Topics
 
 - [Modern](https://ourword.ai/en/t/modern/) — 15
-- [The industrial age](https://ourword.ai/en/t/the-industrial-age/) — 8
+- [The industrial age](https://ourword.ai/en/t/the-industrial-age/) — 10
 - [Family and relationships](https://ourword.ai/en/t/family-and-relationships/) — 7
 - [Mind and feeling](https://ourword.ai/en/t/mind-and-feeling/) — 7
+- [Learning and growth](https://ourword.ai/en/t/learning-and-growth/) — 6
 - [Body and daily life](https://ourword.ai/en/t/body-and-daily-life/) — 5
-- [Learning and growth](https://ourword.ai/en/t/learning-and-growth/) — 5
-- [Pre-Qin and classical](https://ourword.ai/en/t/pre-qin-and-classical/) — 3
+- [Pre-Qin and classical](https://ourword.ai/en/t/pre-qin-and-classical/) — 5
+- [How the world works](https://ourword.ai/en/t/how-the-world-works/) — 3
+- [Money and risk](https://ourword.ai/en/t/money-and-risk/) — 3
 
 <!-- chapters:begin -->
 ## Deep reads
@@ -31,6 +33,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 
 - [John Boyd · The OODA loop](https://ourword.ai/en/i/boyd/ooda/): John Boyd · The OODA loop — Fast means turning, not moving. He was a fighter instructor who could win from any position in forty seconds. What 'fast' meant in the loop he built.
 - [John Boyd · To be somebody, or to do something](https://ourword.ai/en/i/boyd/to-be-or-to-do/): John Boyd · To be somebody, or to do something — The fork in the road. He made colonel and never rose again. The speech he gave every young officer who wanted to follow him.
+- [Warren Buffett · The circle of competence](https://ourword.ai/en/i/buffett/circle-of-competence/): Warren Buffett · The circle of competence — The edge matters more than the size. Everyone hears it as a licence to stay small. The working part is the sentence after it, and it is about the edge.
+- [Warren Buffett · You find out at low tide](https://ourword.ai/en/i/buffett/swimming-naked/): Warren Buffett · You find out at low tide — Risk shows up late, on purpose. In a rising market every stroke looks good. The question is how to see the risk while it is still invisible.
 - [John Cacioppo · Loneliness is a kind of hunger](https://ourword.ai/en/i/cacioppo/loneliness-is-a-signal/): John Cacioppo · Loneliness is a kind of hunger — A signal, not a personality. What loneliness actually is. Why thirty years of research put it in the same category as hunger and thirst.
 - [John Cacioppo · Loneliness makes you misread faces](https://ourword.ai/en/i/cacioppo/hypervigilance/): John Cacioppo · Loneliness makes you misread faces — The more watchful, the more alone. Why loneliness feeds itself. The loop Cacioppo found, and where you can cut it.
 - [John Cacioppo · More socialising doesn't fix it](https://ourword.ai/en/i/cacioppo/not-more-socializing/): John Cacioppo · More socialising doesn't fix it — The meta-analysis ranks it third. The most common advice for loneliness performs worst. What came first in the data.
@@ -78,6 +82,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [Christina Maslach · Six ways to be mismatched](https://ourword.ai/en/i/maslach/six-mismatches/): Christina Maslach · Six ways to be mismatched — Workload is only the first. Same hours, and one person breaks while another doesn't. The six places she found the mismatch.
 - [Maria Montessori · Change the environment before the behaviour](https://ourword.ai/en/i/montessori/prepared-environment/): Maria Montessori · Change the environment before the behaviour — Out of reach is what looks like defiance. Children considered unmanageable changed when the room changed. What was it that actually changed?
 - [Maria Montessori · Help me to do it myself](https://ourword.ai/en/i/montessori/help-me-do-it-myself/): Maria Montessori · Help me to do it myself — Doing it for them saves your time. Doing it for them takes two minutes. What those two minutes bought, and what they cost.
+- [Charlie Munger · Invert, always invert](https://ourword.ai/en/i/munger/invert/): Charlie Munger · Invert, always invert — Study the ways it dies first. He was asked how to have a good life and answered the other question instead. The swap is the whole method.
+- [Charlie Munger · One hammer is not enough](https://ourword.ai/en/i/munger/latticework/): Charlie Munger · One hammer is not enough — The danger is the skill, not the ignorance. What he warned about was not ignorance. It was being very well trained in exactly one thing.
 - [Esther Perel · Security and desire want opposite things](https://ourword.ai/en/i/perel/security-and-desire/): Esther Perel · Security and desire want opposite things — Which is why the better it gets, the flatter. The steadier life gets, the less you feel, and most people assume they changed. Perel says the structure did it.
 - [Esther Perel · Feeling nothing isn't the same as something being wrong](https://ourword.ai/en/i/perel/not-a-problem-to-solve/): Esther Perel · Feeling nothing isn't the same as something being wrong — First tell a wound from an emptiness. 'We can't go on like this' can sit on top of two completely different things. Tell them apart before you act.
 - [Esther Perel · It isn't how often. It's not being there](https://ourword.ai/en/i/perel/quality-not-frequency/): Esther Perel · It isn't how often. It's not being there — Present in the room, absent in attention. You live in the same place. So why does it feel like long distance? What she says to count instead.
@@ -95,6 +101,15 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [Su Shi · Clear the ground first](https://ourword.ai/en/i/su-shi/east-slope/): Su Shi · Clear the ground first — The first thing he did when the salary stopped. Exiled to Huangzhou, his salary essentially gone. The first thing he did was not write poetry.
 - [Su Shi · The mud had to go somewhere](https://ourword.ai/en/i/su-shi/silt-into-a-causeway/): Su Shi · The mud had to go somewhere — Turning the by-product into the thing. Dredging a lake leaves you holding the mud. What he did with it is still there a thousand years later.
 - [Su Shi · I dare not write](https://ourword.ai/en/i/su-shi/no-more-writing/): Su Shi · I dare not write — Stopping the defence is a decision. After his own words were used to build a case against him, did he keep writing? The question is which kind he stopped.
+- [Sun Tzu · Win first, then fight](https://ourword.ai/en/i/sun-tzu/win-before-fighting/): Sun Tzu · Win first, then fight — The work happens before the clash. Everyone quotes it as bravado. Read slowly it says the opposite: by the time you are fighting, it is mostly decided.
+- [Sun Tzu · Know both, and know which is harder](https://ourword.ai/en/i/sun-tzu/know-both/): Sun Tzu · Know both, and know which is harder — Your own numbers are the flattered ones. Quoted for two thousand years, usually as a case for research. The half everybody skips is the one about yourself.
+- [Sun Tzu · The best fight is the one nobody has](https://ourword.ai/en/i/sun-tzu/win-without-fighting/): Sun Tzu · The best fight is the one nobody has — Winning a hundred times is not the top of the list. A hundred victories sounds like the ceiling. He says it isn't, and the reason is arithmetic rather than modesty.
+- [Sun Tzu · The flank only works if the front holds](https://ourword.ai/en/i/sun-tzu/orthodox-and-surprise/): Sun Tzu · The flank only works if the front holds — A clever move on its own is a donation. Everyone wants the unexpected move. The chapter is mostly about the unglamorous thing it has to stand on.
+- [Sun Tzu · Take the shape of what you meet](https://ourword.ai/en/i/sun-tzu/form-like-water/): Sun Tzu · Take the shape of what you meet — Avoiding the strong part is the hard half. 'Be like water' became a poster. The chapter is stricter than the poster, and most of it is about what not to do.
+- [Tao Te Ching · Whatever peaks, turns](https://ourword.ai/en/i/tao-te-ching/reversal/): Tao Te Ching · Whatever peaks, turns — The top is where to start worrying. Usually read as comfort for bad times. It is more useful as an instrument, and it is sharpest when things are going well.
+- [Tao Te Ching · The part you don't do](https://ourword.ai/en/i/tao-te-ching/wu-wei/): Tao Te Ching · The part you don't do — A list of moves to leave out. Usually translated as non-action and read as passivity. It is closer to a list of the moves that make things worse.
+- [Tao Te Ching · Go to the low ground](https://ourword.ai/en/i/tao-te-ching/water/): Tao Te Ching · Go to the low ground — Not competing is a choice of location. Water has been praised for two thousand years. The text credits it with one specific thing, and it is about position.
+- [Tao Te Ching · The empty part is the useful part](https://ourword.ai/en/i/tao-te-ching/usefulness-of-emptiness/): Tao Te Ching · The empty part is the useful part — What you left out is doing the work. Which part of a wheel is doing the work? The chapter is short enough to be a definition and it underwrites the whole book.
 - [Thomas Gordon · The I-message](https://ourword.ai/en/i/thomas-gordon/i-message/): Thomas Gordon · The I-message — Say the effect, not the character. The same event, said one way, starts a fight; said another, starts action. Where the structural difference is.
 - [Thomas Gordon · Whose problem is this](https://ourword.ai/en/i/thomas-gordon/problem-ownership/): Thomas Gordon · Whose problem is this — Different owner, opposite method. Your child is upset, you explain, and each explanation pushes them further away. What to do in that moment.
 - [Lev Vygotsky · The zone of proximal development](https://ourword.ai/en/i/vygotsky/zpd/): Lev Vygotsky · The zone of proximal development — Look at the second line. Two people at the same level today may end up far apart. Which measure the difference shows up in.
@@ -122,12 +137,13 @@ Cite the individual page URL, not the homepage — each entry page is stable and
 - [AI Bubble Monitor](https://ourword.ai/ai/)
 - [Zouni](https://ourword.ai/zouni/)
 
-## Index (30 entrys)
+## Index (34 entrys)
 
 - [Arlie Hochschild](https://ourword.ai/en/i/hochschild/): Arlie Hochschild (1983 · UC Berkeley) — Work nobody counts. A sociologist who twice gave a name to work that had none. The Managed Heart (1983) named emotional labour: jobs that require not only that…
 - [C.S. Lewis](https://ourword.ai/en/i/cs-lewis/): C.S. Lewis (1898–1963 · Oxford) — The notebooks after she died. A writer and professor at Oxford and Cambridge, author of Narnia and of many books arguing people into belief.
 - [Carl Jung](https://ourword.ai/en/i/jung/): Carl Jung (1875–1961 · Zurich) — The afternoon has its own programme. The founder of analytical psychology, Freud's most valued student and his most famous defector.
 - [Carol Dweck](https://ourword.ai/en/i/dweck/): Carol Dweck (2006 · Stanford) — Ability can grow. The Stanford psychologist behind the distinction between fixed and growth mindsets: whether you believe ability is a fixed quantity or something that…
+- [Charlie Munger](https://ourword.ai/en/i/munger/): Charlie Munger (Contemporary · 1924–2023) — Invert. Buffett's partner for more than half a century, and the reason Berkshire stopped buying cheap broken companies and started buying good ones at fair…
 - [Christina Maslach](https://ourword.ai/en/i/maslach/): Christina Maslach (1946– · UC Berkeley) — Burnout is the job. Burnout became measurable largely because of her work. Her 1981 inventory split it into three components — emotional exhaustion…
 - [Esther Perel](https://ourword.ai/en/i/perel/): Esther Perel (1958– · Belgium and New York) — Flat isn't broken. Thirty years of couples therapy, nine languages, and a caseload across many cultures. She doesn't work on how to argue — Gottman…
 - [Excellent Sheep](https://ourword.ai/en/i/excellent-sheep/): Excellent Sheep (2014 · William Deresiewicz) — Can clear, can't choose. A critique of elite education by someone who taught at Yale for ten years and sat on admissions.
@@ -150,7 +166,10 @@ Cite the individual page URL, not the homepage — each entry page is stable and
 - [Rat Park](https://ourword.ai/en/i/rat-park/): Rat Park (1978 · Simon Fraser University) — Look at the cage. A set of experiments from the late 1970s, plus a natural experiment nobody designed, which together unsettled a piece of common sense…
 - [Robert Sapolsky](https://ourword.ai/en/i/sapolsky/): Robert Sapolsky (1994 · Stanford) — Stress is a mismatch. A neuroendocrinologist who spent thirty years with a troop of wild baboons in East Africa while studying human stress physiology.
 - [Su Shi](https://ourword.ai/en/i/su-shi/): Su Shi (Northern Song · 1037–1101) — Unbowed. One of the great Chinese poets, and also a calligrapher, a painter, a hydraulic engineer, a cook and a provincial governor.
+- [Sun Tzu](https://ourword.ai/en/i/sun-tzu/): Sun Tzu (Spring and Autumn · c. 500 BC) — Win first, then fight. Thirteen short chapters, and the most quoted strategy book in the world. The argument underneath it is not about cunning: the winner…
+- [Tao Te Ching](https://ourword.ai/en/i/tao-te-ching/): Tao Te Ching (Spring and Autumn · c. 500 BC) — Subtract. Five thousand characters, and after the Bible the most translated book there is. Where most instruction is addition — learn more, do more, add…
 - [Thomas Gordon](https://ourword.ai/en/i/thomas-gordon/): Thomas Gordon (1962 · Parent Effectiveness Training) — The I-message. A student of Carl Rogers who turned humanistic psychology into a course ordinary parents could take.
 - [Wang Yangming](https://ourword.ai/en/i/wang-yangming/): Wang Yangming (Ming · 1472–1529) — Knowing is doing. A philosopher who was also the most effective general of his generation — an almost unheard-of combination.
+- [Warren Buffett](https://ourword.ai/en/i/buffett/): Warren Buffett (Contemporary · 1930–) — The moat. Sixty years of compounding, and a method simple enough to say in a sentence: buy a business with a durable advantage at a sensible price and then do…
 - [Winston Churchill](https://ourword.ai/en/i/churchill/): Winston Churchill (1874–1965 · Britain) — Ten years out, back at 65. Politician and writer. He went out with the government in 1929, lost the Exchequer, and held no office for ten years — the…
 - [Zhuangzi](https://ourword.ai/en/i/zhuangzi/): Zhuangzi (Warring States · c. 369–286 BC) — Free and equal. The second peak of Daoism, and a very different writer from Laozi. Where Laozi addresses the person who has to govern, Zhuangzi addresses…

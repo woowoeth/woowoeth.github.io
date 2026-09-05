@@ -130,6 +130,34 @@ QUOTE_ASKS_EN = {
     "su-shi/east-slope": "The income stopped. What do I do first?",
     "su-shi/silt-into-a-causeway":
         "I built this for one thing and now it's just sitting there.",
+
+    # 孙子兵法 / 道德经 / 巴菲特 / 芒格
+    "sun-tzu/win-before-fighting":
+        "It starts on Monday and I'm bracing myself. Is that the problem?",
+    "tao-te-ching/reversal":
+        "It's going well and I can't shake the feeling it won't last.",
+    "buffett/circle-of-competence":
+        "Everyone I know is in this. I don't actually understand it.",
+    "munger/invert":
+        "I keep listing reasons this will work. Should I do the other list?",
+    "sun-tzu/know-both":
+        "I think I know them well enough. Do I know my own side?",
+    "sun-tzu/win-without-fighting":
+        "I keep winning these and I'm more tired every time.",
+    "sun-tzu/orthodox-and-surprise":
+        "My clever move didn't land. Was the idea wrong?",
+    "sun-tzu/form-like-water":
+        "They set the agenda every week and I just respond.",
+    "tao-te-ching/wu-wei":
+        "The more rules I add, the more people route around them.",
+    "tao-te-ching/water":
+        "Everyone is chasing the same thing. Where is nobody standing?",
+    "tao-te-ching/usefulness-of-emptiness":
+        "Every hour is booked and one delay wrecks the week.",
+    "buffett/swimming-naked":
+        "The numbers look great. Is that skill or is it leverage?",
+    "munger/latticework":
+        "I've diagnosed this three times and it's always the same cause.",
     "su-shi/no-more-writing": "The more I explain, the worse it gets.",
 
     # 王阳明

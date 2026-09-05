@@ -1,7 +1,7 @@
-# OurWord — 30 people and books on how the world actually works, across 2,600 years
+# OurWord — 34 people and books on how the world actually works, across 2,600 years
 # OurWord — See how people before you handled it.
 # https://ourword.ai/en/
-# Full corpus, plain text. 30 entrys.
+# Full corpus, plain text. 34 entrys.
 
 ========================================================================
 ## Arlie Hochschild
@@ -17,13 +17,13 @@ A sociologist who twice gave a name to work that had none. The Managed Heart (19
 Doing fieldwork with Delta flight attendants she kept meeting one phrase in the training material: a sincere smile. The airline was not satisfied with courtesy. It required the smile to be real — which means the employee has to manufacture the feeling internally, and that part of the job has no hours, no pay and no name. She put it beside physical labour: lifting boxes tires you, and so does producing cheerfulness, except the second bill arrives late and usually gets recorded as 'she's changed'.
 
 ### The parts · Work off the timesheet is paid for by whoever does it
-Anything unmeasured gets treated as done in passing. It doesn't disappear for going unrecorded; it becomes one person's invisible load, and that person often has no language to complain in, because on paper nothing happened.
+Anything unmeasured gets treated as done in passing. It doesn't disappear for going unrecorded; it becomes one person's invisible load, and that person often has no language to complain in, because on paper nothing happened. e.g. Nobody schedules remembering the birthdays, noticing who has gone quiet, smoothing the meeting afterwards. It still takes hours, and the same person does it.
 
 ### The parts · Surface acting and deep acting bill differently
-Putting the face on while knowing you are exhausts through tension. Persuading yourself you mean it exhausts because afterwards you can't find yourself. Both have a cost; they arrive at different times.
+Putting the face on while knowing you are exhausts through tension. Persuading yourself you mean it exhausts because afterwards you can't find yourself. Both have a cost; they arrive at different times. e.g. Smiling through the call knowing you don't mean it leaves you tense. Talking yourself into meaning it leaves you unsure which part was you.
 
 ### The parts · Care time is rigid
-You can write a document faster. You cannot feed a child faster or sit with a sick parent faster. So 'efficiency' barely applies — the work can only be taken over by someone else, or not done, and then someone else pays.
+You can write a document faster. You cannot feed a child faster or sit with a sick parent faster. So 'efficiency' barely applies — the work can only be taken over by someone else, or not done, and then someone else pays. e.g. You can review the document twice as fast this quarter. You cannot get a two-year-old to sleep twice as fast.
 
 ### Q: How do I use it today?
 When the work at home lands on one person and saying so hasn't changed it, don't start with fairness. Log two weeks: every task, who did it, how long. Most negotiations fail because the two people are looking at different lists. At work, if you got little done and can't face speaking, ask how much of the day went on holding a required feeling — and whether any of that was counted.
@@ -140,6 +140,40 @@ Lev Vygotsky — Both about where learning happens. He locates it in the task's 
 Lev Vygotsky Excellent Sheep
 
 ========================================================================
+## Charlie Munger
+URL: https://ourword.ai/en/i/munger/
+Tags: Learning and growth, The industrial age, Invert
+
+Charlie Munger (Contemporary · 1924–2023) — Invert. Buffett's partner for more than half a century, and the reason Berkshire stopped buying cheap broken companies and started buying good ones at fair prices.
+
+### Q: What did this one leave behind?
+Buffett's partner for more than half a century, and the reason Berkshire stopped buying cheap broken companies and started buying good ones at fair prices. His own contribution is a method rather than a portfolio: work out how a thing fails, then don't do that.
+
+### Q: What actually happened?
+Invited to give a commencement address at Harvard Law, he told the graduating class he would explain how to guarantee a miserable life, and then listed the ways: unreliability, envy, resentment, learning only from your own experience, giving up after the first reverse. It is the method demonstrated on itself. If you knew where you were going to die, he liked to say, you would simply never go there.
+
+### The parts · Invert, always invert
+There are countless routes to a thing going well and only a handful of ways it reliably goes wrong. Listing the failure modes and avoiding them is a shorter, more tractable problem than working out how to win. e.g. Nobody could say what would make the launch succeed. Everyone could name the three things that would sink it, and two were already true.
+
+### The parts · One hammer is not enough
+To a man with only a hammer everything looks like a nail. He collected models from other fields — compounding from mathematics, critical mass from physics, selection from biology, the standard biases from psychology — because a problem rarely arrives in the shape of your one discipline. e.g. The retention problem was not a product problem. It was a queueing problem, and nobody in the room had ever been handed that model.
+
+### The parts · Look at the incentive first
+Show me the incentive and I will show you the outcome. To understand why a system produces what it produces, do not start with what people say they value; start with what they are paid, promoted and forgiven for. e.g. The review process rewarded shipping. Nobody was ever promoted for deleting a feature, so the surface grew every year and nobody had decided that.
+
+### Q: How do I use it today?
+Take the plan you are about to commit to and spend twenty minutes writing only the ways it fails. Then check how many are already true. That list is more useful than the plan.
+
+### Lines to keep
+It is remarkable how much long-term advantage we have got by trying to be consistently not stupid. Knowing what you don't know is more useful than being brilliant. Spend each day trying to be a little wiser than you were when you woke up.
+
+### Q: What should I read alongside?
+Warren Buffett — Same desk for fifty years: Buffett holds the temperament, Munger supplies the checklist of ways to be wrong.
+
+### Further
+Warren Buffett Han Feizi John Boyd
+
+========================================================================
 ## Christina Maslach
 URL: https://ourword.ai/en/i/maslach/
 Tags: Body and daily life, Modern, Burnout is the job
@@ -153,13 +187,13 @@ Burnout became measurable largely because of her work. Her 1981 inventory split 
 There is an earlier thing she is known for. In August 1971 she was a recent Stanford PhD, and her partner Philip Zimbardo was running a prison simulation in the psychology building. Visiting on the sixth night, she saw prisoners being marched to the lavatory with bags over their heads and objected — not as a methodological point but as a moral one. The experiment was shut down the next morning. Her career since has been one long version of the same argument: look at what the situation is doing to people before you look at the people.
 
 ### The parts · Only one of the three is tiredness
-Rest fixes exhaustion. It does not fix detachment or a collapse in accomplishment, and those two usually arrive first. So somebody can look like they're working normally, and still be delivering, months into it.
+Rest fixes exhaustion. It does not fix detachment or a collapse in accomplishment, and those two usually arrive first. So somebody can look like they're working normally, and still be delivering, months into it. e.g. He came back from three weeks off rested and still couldn't care about the release. The sleep debt was gone; the other two weren't.
 
 ### The parts · Fix the job, not the person
-Told the problem is their attitude, a person adds a layer of self-blame and stays in the same environment. Personal remedies aren't useless — they're second. Reverse the order and they stop being support and start being cover.
+Told the problem is their attitude, a person adds a layer of self-blame and stays in the same environment. Personal remedies aren't useless — they're second. Reverse the order and they stop being support and start being cover. e.g. The wellness app arrived the same quarter the team lost two people and kept the same roadmap. Everyone downloaded it. Nothing changed.
 
 ### The parts · Six ways to be mismatched
-Workload, control, reward, community, fairness, values. Most people watch only the first. In her data, having no say and doing work that runs against what you believe are often more lethal than volume.
+Workload, control, reward, community, fairness, values. Most people watch only the first. In her data, having no say and doing work that runs against what you believe are often more lethal than volume. e.g. The hours were fine. Being told what to ship and then blamed for shipping it is the one that emptied him out.
 
 ### Q: How do I use it today?
 Before deciding you need a holiday, check which of the three you have: drained, nothing left for people, no satisfaction on finishing. Then score the six areas one at a time. 'Work is exhausting' implies no action; the six-line version usually names something specific — decision rights, fairness, or different work.
@@ -221,13 +255,13 @@ A critique of elite education by someone who taught at Yale for ten years and sa
 He left academia after writing it. The book began as an essay that circulated very widely, and the argument it makes — that the institutions doing the selecting are the problem, not the students being selected — is not one that makes a person welcome inside those institutions. That is worth knowing before reading it as a lecture to young people. His target is the machinery: every step in it rational, and the sum a life with no direction.
 
 ### The parts · Two abilities that don't substitute
-'Be best at this' is drilled constantly inside any evaluation system. 'Decide what's worth doing' can only be trained where there is no correct answer. So the smoother the run, the likelier the second is blank.
+'Be best at this' is drilled constantly inside any evaluation system. 'Decide what's worth doing' can only be trained where there is no correct answer. So the smoother the run, the likelier the second is blank. e.g. Ten years of being the person who clears every bar, and the first question with no right answer — should we even build this — is the one he can't start.
 
 ### The parts · Never having failed makes failure unimaginable
-The price of an unbroken record is no experience of failing, so failure gets imagined as catastrophic — and the result is avoiding anything you might not be good at, with a range that narrows year by year.
+The price of an unbroken record is no experience of failing, so failure gets imagined as catastrophic — and the result is avoiding anything you might not be good at, with a range that narrows year by year. e.g. She picked the third language she already half-knew over the one she wanted, because a visible beginner year was unthinkable.
 
 ### The parts · The prescription is time with no scoreboard
-Not a different subject or a different job, but a stretch long enough to get past novelty, doing something nobody is grading. Where a metric exists, attention slides to it, so the question can only surface somewhere without one.
+Not a different subject or a different job, but a stretch long enough to get past novelty, doing something nobody is grading. Where a metric exists, attention slides to it, so the question can only surface somewhere without one. e.g. Six months of pottery with nobody grading it did more than another certificate, precisely because there was no number to optimise.
 
 ### Q: How do I use it today?
 If you can say exactly what counts as doing well and can't say what you want, do one thing that isn't scored, for long enough to get past the novelty. Facing any opportunity, separate two things: is it the content that draws me, or is it simply the next hurdle on the track I'm already on?
@@ -255,13 +289,13 @@ The most successful exit in Chinese history. He spent more than twenty years hel
 The part usually skipped is the twenty years before the exit. Yue had been crushed; its king was a servant in the enemy capital. Fan Li went with him and stayed through the whole of it, and the plan he ran was measured in decades, not seasons — grow the population, stock the granaries, keep the enemy complacent, and do not move early. The man famous for leaving at the right moment had first spent twenty years not leaving. Knowing when to go is not restlessness. It is the same faculty that knows when to stay.
 
 ### The parts · Read the person, not the situation
-His judgement about the king wasn't 'this is dangerous now' but 'here is what this man becomes when things go well' — true long before it mattered. Situations change; the construction of a person doesn't.
+His judgement about the king wasn't 'this is dangerous now' but 'here is what this man becomes when things go well' — true long before it mattered. Situations change; the construction of a person doesn't. e.g. He was generous when the round closed and vicious when it didn't. That wasn't the market changing him; it was one man under two conditions.
 
 ### The parts · Buy what nobody wants
-In drought, stock boats; in flood, stock carts. The entire difficulty of the rule is that at the moment of buying, every visible piece of evidence says the thing is worthless.
+In drought, stock boats; in flood, stock carts. The entire difficulty of the rule is that at the moment of buying, every visible piece of evidence says the thing is worthless. e.g. The hard part is not spotting the empty office block. It is signing the lease in the month every person you respect tells you the sector is finished.
 
 ### The parts · Letting go is harder than accumulating
-Three fortunes made and three given away, a chancellorship returned. Many people can accumulate. Almost nobody puts down a position already in hand and starts again.
+Three fortunes made and three given away, a chancellorship returned. Many people can accumulate. Almost nobody puts down a position already in hand and starts again. e.g. Plenty of people can build the team to forty. Almost nobody hands it over while it is still going well and starts again at one.
 
 ### Q: How do I use it today?
 At every stage of a career, ask periodically: is this relationship, or this job, still in the phase where I gain from it, or has it hit its ceiling and started accumulating risk? The second phase looks exactly like the first from inside.
@@ -273,7 +307,7 @@ The birds are gone, so the good bow is put away. You can share hardship with him
 Li Ka-shing — Two and a half millennia apart, the same two rules: buy when nobody wants it, and leave before the top.
 
 ### Further
-Li Ka-shing Su Shi Han Feizi Pu Songling
+Li Ka-shing Su Shi Sun Tzu Warren Buffett Han Feizi Pu Songling
 
 ========================================================================
 ## Garry Kasparov
@@ -289,13 +323,13 @@ World chess champion for fifteen years, from 1985 to 2000. In 1996 he beat IBM's
 The 1996 match is usually left out, and it matters. He won it 4–2, losing only the first game — the first time a machine had beaten a world champion under tournament conditions, which at the time was itself the headline. He then had a year to prepare, and IBM had a year to rebuild. What he faced in 1997 was not the machine he had beaten. That is the ordinary shape of it: you win the first round against a tool, conclude the threat was overstated, and meet a different thing the following year.
 
 ### The parts · Strike out what is already lost
-The day machines won on depth of calculation, that track closed. Training on a closed track has no exit however hard you train. The first move isn't redoubling effort; it's removing the lost item from your own list of what you are worth.
+The day machines won on depth of calculation, that track closed. Training on a closed track has no exit however hard you train. The first move isn't redoubling effort; it's removing the lost item from your own list of what you are worth. e.g. No amount of practice makes you faster than the model at drafting a first version. The real question is which part of the work that leaves you.
 
 ### The parts · Change the rules, not the effort
-He didn't train harder and he didn't leave chess. A year later he staged a tournament where each side brought a computer to the board. When a tool matches an ability, the valuable position moves to how the tool is used — and someone has to define that position first.
+He didn't train harder and he didn't leave chess. A year later he staged a tournament where each side brought a computer to the board. When a tool matches an ability, the valuable position moves to how the tool is used — and someone has to define that position first. e.g. The translators who priced per word lost. The ones who charged for deciding what not to translate did not.
 
 ### The parts · The appeal and the next move cost the same hours
-He spent years arguing the match hadn't been fair, and withdrew all of it in 2017. Proving the loss didn't count and working out what to train next come out of the same person in the same stretch of time.
+He spent years arguing the match hadn't been fair, and withdrew all of it in 2017. Proving the loss didn't count and working out what to train next come out of the same person in the same stretch of time. e.g. The months spent proving the review was unfair were the same months available for the work that would have made the review irrelevant.
 
 ### Q: How do I use it today?
 When a core skill in your field gets matched by a tool, don't train harder first. Ask which item is now clearly lost, strike it out, and see what's left that the tool can't replace. And if you notice yourself repeating that it isn't actually any good, count how many times this month — then count what new thing you practised in the same month.
@@ -323,13 +357,13 @@ The systematiser of Chinese Legalism, who combined law, administrative method an
 He had a stammer and could not argue in person, so he wrote. His essays reached the king of Qin, who read them and said that if he could meet this man he would die content, then invaded Han to get him. At the Qin court Han Fei was undone by a fellow student from his own teacher's school, Li Si, who was jealous of him and spoke against him; he was imprisoned and forced to take poison. The man who wrote the definitive analysis of persuasion and court intrigue was killed by a piece of court intrigue. Knowing and being able to do it are not the same faculty.
 
 ### The parts · Law, method and position together
-Law is the written rule everyone is held to; method is how you assess and check the people below you; position is the authority the seat itself carries. Missing the first, the rules get bypassed. Missing the second, you get compliance in form only. Missing the third, nobody listens.
+Law is the written rule everyone is held to; method is how you assess and check the people below you; position is the authority the seat itself carries. Missing the first, the rules get bypassed. Missing the second, you get compliance in form only. Missing the third, nobody listens. e.g. The policy exists, nobody checks it, and the person enforcing it has no standing to say no. Any one of the three missing and the other two stop working.
 
 ### The parts · People follow interest, not exhortation
-He doesn't believe in natural loyalty; he believes in incentives. Design the system well and people behave the way you wanted. It is Munger's 'show me the incentive and I'll show you the outcome', stated twenty-two centuries earlier.
+He doesn't believe in natural loyalty; he believes in incentives. Design the system well and people behave the way you wanted. It is Munger's 'show me the incentive and I'll show you the outcome', stated twenty-two centuries earlier. e.g. The all-hands asked everyone to prioritise quality. Bonuses stayed tied to shipped count. Everyone shipped.
 
 ### The parts · The difficulty of persuasion
-The hard part of speaking, he wrote, is not what you know but working out what the listener actually cares about. He catalogued the fatal errors — exposing what they don't want exposed, speaking at the wrong moment, being too direct — and then died of one.
+The hard part of speaking, he wrote, is not what you know but working out what the listener actually cares about. He catalogued the fatal errors — exposing what they don't want exposed, speaking at the wrong moment, being too direct — and then died of one. e.g. Your deck answered whether it could be built. The one person who could approve it was worried about who gets blamed if it fails.
 
 ### Q: How do I use it today?
 When designing incentives for a team, ask what this system will make people do, not what it ought to make them do. People act on interest. Aligning what you want with what pays is the whole of the job.
@@ -341,7 +375,7 @@ The ruler controls by two handles: punishment and favour. The difficulty of pers
 Zhuangzi — Same era, opposite answers: Han Feizi designs the machine, Zhuangzi declines to be a component. Thomas Gordon — Two theories of getting compliance: rules and consequences, or naming the effect on you. Both work, on different things. John Boyd — Two theories of an organisation that works: rules and consequences, or shared intent and delegated authority.
 
 ### Further
-Fan Li John Boyd
+Fan Li Sun Tzu Charlie Munger John Boyd
 
 ========================================================================
 ## Harvard Study of Adult Development
@@ -357,13 +391,13 @@ The longest study of adult life ever run. It began in 1938 with 268 Harvard soph
 That is not what it set out to measure. In 1938 the question was what kind of young man grows into a healthy, successful adult, and the instruments were physical: build, blood pressure, family background. They measured skull dimensions. Decade by decade those predictors lost their explanatory power, and the one that survived was the thing nobody had planned to record. The sample contains men from excellent circumstances who ended isolated, and men from the tenements surrounded by people all their lives, and it is the second group whose health curves run higher.
 
 ### The parts · A predictor, not a consolation
-It reads like a greeting card and lands on hard measures: satisfaction with close relationships at fifty predicted health at eighty better than cholesterol did. The body settles the bill.
+It reads like a greeting card and lands on hard measures: satisfaction with close relationships at fifty predicted health at eighty better than cholesterol did. The body settles the bill. e.g. It sounds like a card in a gift shop until you see it beat cholesterol at fifty for predicting how eighty goes.
 
 ### The parts · Quality counts, headcount doesn't
-And a long, high-conflict relationship does more damage than separating. What protects is what happens inside it, not whether it is still standing — 'staying for the children' does not balance on this ledger.
+And a long, high-conflict relationship does more damage than separating. What protects is what happens inside it, not whether it is still standing — 'staying for the children' does not balance on this ledger. e.g. Two hundred contacts and nobody to call at 2am is not a large network. It is a large list.
 
 ### The parts · The window stays open later than people assume
-The clearest improvements came from people who started in their fifties and sixties: reconnecting with estranged family, turning acquaintances into regular company. Fifty is not too late for eighty.
+The clearest improvements came from people who started in their fifties and sixties: reconnecting with estranged family, turning acquaintances into regular company. Fifty is not too late for eighty. e.g. He rang the brother he hadn't spoken to in eleven years at fifty-eight. That call is inside the window, not past it.
 
 ### Q: How do I use it today?
 If relationships feel like something to handle once this busy stretch is over, count one number: in the last month, how many times did you see someone for no practical reason? If you can't count one, it isn't a 'later' problem. The smallest useful move is one message a week to one person, about nothing in particular.
@@ -391,13 +425,13 @@ An illiterate woodcutter from the far south who became the sixth patriarch of Ch
 Years after receiving the transmission he was still living unrecognised among a band of hunters. Arriving at last at a monastery, he found two monks arguing about a banner moving in the wind — one saying the wind moved, the other saying the banner moved. Neither the wind nor the banner is moving, he said. Your minds are moving. The abbot, hearing it, understood who had just walked in. The remark is not a riddle. It is his whole method in one line: before adjusting the object, check the thing doing the looking.
 
 ### The parts · Sudden doesn't mean fast
-Gradual practice assumes distance from the goal and so requires accumulation. Sudden awakening says the distance was never there — only a misrecognition. So 'sudden' isn't speed. It is the discovery that there is nowhere to travel.
+Gradual practice assumes distance from the goal and so requires accumulation. Sudden awakening says the distance was never there — only a misrecognition. So 'sudden' isn't speed. It is the discovery that there is nowhere to travel. e.g. Nothing new arrived the day she stopped apologising for the price. She had the same evidence in January; what changed was that she stopped waiting to deserve it.
 
 ### The parts · No-thought is not blankness
-It means a thought arises, you see it, and you neither follow it nor suppress it. This is the part of the text closest to something modern and operable — it describes keeping distance from a feeling rather than eliminating it.
+It means a thought arises, you see it, and you neither follow it nor suppress it. This is the part of the text closest to something modern and operable — it describes keeping distance from a feeling rather than eliminating it. e.g. The urge to check the message is there either way. Watching it pass without opening the app is the practice; suppressing it is just a second urge.
 
 ### The parts · Everything outward rests on 'I am not enough'
-Books, teachers, the next achievement: every outward search is built on a premise nobody examines. He puts the premise itself in question, which is why this is the only subtraction in a library otherwise made of addition.
+Books, teachers, the next achievement: every outward search is built on a premise nobody examines. He puts the premise itself in question, which is why this is the only subtraction in a library otherwise made of addition. e.g. Another course, another certificate, one more year of preparation. Each purchase quietly restates the premise that you are not ready yet.
 
 ### Q: How do I use it today?
 Almost all modern self-improvement is addition — one more book, one more course, one more streak — and the unstated premise is always that who you are now is insufficient. Next time something grips you, do one thing only: notice the thought, say 'there it is', and neither follow it nor scold yourself for having it. Most of the pain is in the long derivation that follows, not in the thought.
@@ -409,7 +443,7 @@ There was never a thing there, so where would dust settle? Not the wind moving, 
 Wang Yangming — Huineng is upstream: 'the nature is already complete' and 'innate knowing' are one idea in two vocabularies.
 
 ### Further
-Wang Yangming Zhuangzi Su Shi
+Wang Yangming Zhuangzi Su Shi Tao Te Ching
 
 ========================================================================
 ## John Boyd
@@ -440,10 +474,10 @@ If you and a competitor are both accelerating and you're buying tools for every 
 Observe, orient, decide, act. One road: promotion and medals. The other: doing what should be done. Machines don't fight and terrain doesn't fight. People do.
 
 ### Q: What should I read alongside?
-Han Feizi — Two theories of an organisation that works: rules and consequences, or shared intent and delegated authority.
+Han Feizi — Two theories of an organisation that works: rules and consequences, or shared intent and delegated authority. Sun Tzu — Both put the decision before the clash. Sun Tzu settles it in preparation, Boyd in speed of turning.
 
 ### Further
-Garry Kasparov Han Feizi Norbert Wiener
+Garry Kasparov Han Feizi Sun Tzu Charlie Munger Norbert Wiener
 
 ========================================================================
 ## John Cacioppo
@@ -459,10 +493,10 @@ A founder of social neuroscience who spent a career on one question: what loneli
 He started as a psychophysiologist — someone who attaches electrodes and measures what the body does. That is why the loneliness work landed. He did not arrive arguing that people should be kinder; he arrived with blood pressure, inflammatory markers, sleep architecture and cognitive decline, on a subject everyone else was treating as a mood. Once it had numbers attached it stopped being something you could be told to get over.
 
 ### The parts · A signal, not a character defect
-Read as a flaw, the first instinct is to say nothing, which seals the only exit. As a signal it carries no shame: it doesn't say something is wrong with you, it says something needs doing.
+Read as a flaw, the first instinct is to say nothing, which seals the only exit. As a signal it carries no shame: it doesn't say something is wrong with you, it says something needs doing. e.g. Read as 'something is wrong with me', the message stays unsent. Read as hunger, it gets sent.
 
 ### The parts · Vigilance grows it by itself
-Lonely people read neutral faces as unfriendlier. The reading makes them withdraw, withdrawal thins the relationship, and the thin relationship confirms the reading. Nobody has to have rejected them for the loop to keep turning.
+Lonely people read neutral faces as unfriendlier. The reading makes them withdraw, withdrawal thins the relationship, and the thin relationship confirms the reading. Nobody has to have rejected them for the loop to keep turning. e.g. He read the unanswered message as being dropped, so he stopped writing first, so the messages thinned, and the thinning proved him right.
 
 ### The parts · The effective intervention is the reading, not the opportunity
 In the meta-analysis, more chances to socialise, more support and better skills all did little. What came first was correcting the automatic conclusions — which is why doing more events changes nothing.
@@ -561,13 +595,13 @@ A Soviet psychologist who died at thirty-seven and left concepts that shaped the
 His work nearly disappeared. He died of tuberculosis in 1934, and within two years his writing was suppressed in the Soviet Union, where it stayed largely unavailable for two decades. Thought and Language was not published in English until 1962, twenty-eight years after his death. So a body of work contemporary with Piaget's arrived in the West a generation late, into a field that had already settled its questions without it — which is part of why it reads as fresh now.
 
 ### The parts · Look at the second line
-Two children stopping at the same point alone can be far apart: give a hint, and one moves a long way and the other doesn't. Identical current level, completely different zone — and the zone decides what they can learn next.
+Two children stopping at the same point alone can be far apart: give a hint, and one moves a long way and the other doesn't. Identical current level, completely different zone — and the zone decides what they can learn next. e.g. Two candidates fail the same task. One takes a single hint and finishes; the other needs the answer. Same score, different hire.
 
 ### The parts · Teaching runs ahead of development
-Against the orthodoxy of his day, he held that you don't wait for readiness. Appropriate guidance pulls development forward. The pitch is: hard enough to need help, not so hard that help doesn't get it done.
+Against the orthodoxy of his day, he held that you don't wait for readiness. Appropriate guidance pulls development forward. The pitch is: hard enough to need help, not so hard that help doesn't get it done. e.g. Handing him the migration with a review at every step taught more than three more months of tickets he could already do.
 
 ### The parts · Scaffolding goes up in order to come down
-Help that stays becomes dependence and leaves the person at the level where they're held. Whether a piece of help worked isn't whether the task got done — it's whether less support is needed next time.
+Help that stays becomes dependence and leaves the person at the level where they're held. Whether a piece of help worked isn't whether the task got done — it's whether less support is needed next time. e.g. If she still needs you on the call the fourth time, the help isn't working, however well each call goes.
 
 ### Q: How do I use it today?
 Teaching someone, or teaching yourself, find the position where it can't be done alone and can be done with one hint. That gap is what to practise. And plan the withdrawal when you give the help: first time demonstrate a step, second time prompt the opening, third time nothing.
@@ -595,13 +629,13 @@ From a plastic flower workshop to a group spanning property, ports, telecoms, re
 In 1967 Hong Kong was in the middle of riots. Bombs were being left in the streets, British firms were pulling out, and property prices collapsed. Everyone was selling. He was buying. Three years later the city had stabilised and his holdings were worth several times what he paid. The move looks like nerve and is mostly arithmetic: he had done the work of imagining how it could go wrong, and he had the cash to be wrong for a while.
 
 ### The parts · Counter-cyclical, in both directions
-Buy in the trough, take money off the table at the peak. Land in the 1967 riots; a steady withdrawal from mainland property from the 2010s, roughly a decade before the consensus. Each time, acting before others noticed the turn.
+Buy in the trough, take money off the table at the peak. Land in the 1967 riots; a steady withdrawal from mainland property from the 2010s, roughly a decade before the consensus. Each time, acting before others noticed the turn. e.g. Hiring in the quarter everyone else froze feels like a mistake for eighteen months, which is exactly how long it has to feel wrong to still be cheap.
 
 ### The parts · Never take the last coin
-He exits before his own estimate of the top, giving up the final ten or twenty per cent in exchange for certainty. Wanting the last coin means selling only once everyone agrees the top has passed.
+He exits before his own estimate of the top, giving up the final ten or twenty per cent in exchange for certainty. Wanting the last coin means selling only once everyone agrees the top has passed. e.g. You sold at eight and it went to ten. The twenty per cent you left behind is what bought you never having to guess where the top was.
 
 ### The parts · Cash is oxygen
-Large reserves at all times, accepting lower returns to keep liquidity. In 2008 several large groups ran out of funding. He didn't. Low gearing isn't caution — it buys more chances to be wrong.
+Large reserves at all times, accepting lower returns to keep liquidity. In 2008 several large groups ran out of funding. He didn't. Low gearing isn't caution — it buys more chances to be wrong. e.g. Six months of runway isn't caution. It is the number of times you get to be wrong before being wrong is fatal.
 
 ### Q: How do I use it today?
 Once a year, run a cash stress test: if your main income stopped for six months, how long would your reserves last? If the answer is under six months, start building the reserve now rather than after the answer matters.
@@ -613,7 +647,7 @@ Never forget stability while growing; never forget growth while stable. Ninety p
 Fan Li — Both left before the top. Fan Li left the whole game; Li Ka-shing left one position and stayed in.
 
 ### Further
-Fan Li
+Fan Li Warren Buffett
 
 ========================================================================
 ## Maria Montessori
@@ -663,13 +697,13 @@ Physicist and chemist, born in Warsaw, in Paris from 1891, and in 1903 a Nobel l
 1911 was the year both things happened. She was refused admission to the Académie des sciences by a narrow vote, in a campaign that made much of her being a woman and a foreigner; and the press ran a scandal about her private life, with crowds outside her house. In the same year she was awarded a second Nobel Prize, this time in chemistry, and was advised not to come and collect it. She went. The composure that produced the November lecture was not a one-off temperament. It was the same thing, repeatedly.
 
 ### The parts · Catch hold of one thing with an hour and a place
-An enormous blank can't be faced directly. What can be faced has a time, a place and a content. It doesn't solve the grief; it gives the day a shape you can put yourself inside.
+An enormous blank can't be faced directly. What can be faced has a time, a place and a content. It doesn't solve the grief; it gives the day a shape you can put yourself inside. e.g. 'Sort out my life' is unfaceable. 'Thursday, nine to ten, the second drawer' is not, and the day now has a shape to stand in.
 
 ### The parts · What can't be said aloud gets written to them
-For more than a year she wrote to Pierre in a notebook nobody saw in her lifetime. Said to the living it becomes a request for comfort; said to yourself it becomes analysis. Only addressed to them does the true thing come out.
+For more than a year she wrote to Pierre in a notebook nobody saw in her lifetime. Said to the living it becomes a request for comfort; said to yourself it becomes analysis. Only addressed to them does the true thing come out. e.g. Written to a friend it becomes a request for comfort. Written to the person who died it stays what it actually is.
 
 ### The parts · Put the skill where it's most needed now
-In the war she left the laboratory, raised money, fitted vehicles with X-ray equipment, learned to drive and repair them, and took them to the front. Those years are academically almost blank, and were not wasted.
+In the war she left the laboratory, raised money, fitted vehicles with X-ray equipment, learned to drive and repair them, and took them to the front. Those years are academically almost blank, and were not wasted. e.g. The year he stopped shipping features and rebuilt the on-call rota is missing from his promotion packet, and it is what the team remembers.
 
 ### Q: How do I use it today?
 When the most important person has gone and life still has to continue, look for one thing in the next few days that has to be done at a set hour in a set place. If there are things you can't say to anyone, ask who they are actually addressed to, and write them to that person. Don't set yourself a date to be better by.
@@ -697,13 +731,13 @@ A sociologist whose 1973 paper, The Strength of Weak Ties, has been cited tens o
 The finding has a consequence people meet without recognising it. Move to a new city or leave an industry and the close friends survive — those few hold. What disappears is the wide band of people you used to see occasionally, and that is precisely the layer that brings opportunities. So the drought after a move is not imagined and not a comment on you. It is structural, and rebuilding that layer takes time, which is why the first year somewhere new is so often silent.
 
 ### The parts · It isn't willingness, it's whether the news is new
-Close friends want to help more and hold almost the same information you do. A weak tie isn't more generous. He is standing somewhere else, holding the part you can't reach from here.
+Close friends want to help more and hold almost the same information you do. A weak tie isn't more generous. He is standing somewhere else, holding the part you can't reach from here. e.g. Your five closest friends have already told you every opening they know about. The person you met once at a conference knows the one you haven't heard.
 
 ### The parts · Closure is what strong ties produce
-Close to A and close to B means A and B probably know each other. The circle closes, and once closed the three of you know largely the same things. Closure gives support and trust, and it stops new information arriving.
+Close to A and close to B means A and B probably know each other. The circle closes, and once closed the three of you know largely the same things. Closure gives support and trust, and it stops new information arriving. e.g. Everyone in the group chat forwarded the same article. That is what a closed circle feels like from inside: agreement, and no new information.
 
 ### The parts · Maintain breadth, not depth
-Rather than pouring everything into a few people, keep more weak ties in the 'still knows who you are' state. The cost is an occasional message with no request attached — and the line has to be kept while you don't need it.
+Rather than pouring everything into a few people, keep more weak ties in the 'still knows who you are' state. The cost is an occasional message with no request attached — and the line has to be kept while you don't need it. e.g. One message a year with nothing attached — congratulations on the new job — keeps a line open. Reappearing only when you need something closes it.
 
 ### Q: How do I use it today?
 If you're looking for something — work, a partner, customers — and circling the same few people, count how many of the people you contacted in six months are ones you see a few times a year. If almost none, a whole source of opportunity is switched off. Just after a move or a career change, expect this and rebuild deliberately.
@@ -731,13 +765,13 @@ The founder of cybernetics: Cybernetics in 1948, The Human Use of Human Beings i
 Cybernetics came out of the war. He worked on the problem of aiming anti-aircraft guns at aircraft that were manoeuvring — which meant predicting where a human pilot would go, and correcting continuously from what the last shot did. The feedback loop was invented while trying to shoot at people. That origin is why the ethics arrive so early in his work: he had already spent years modelling a person as a component in a system, and had seen exactly what that framing permits.
 
 ### The parts · The people who see it coming aren't hit yet
-The year he wrote to the union there was still time to arrange something. Once it lands you only get to react. The stretch while you still have work is the only window you get to plan in.
+The year he wrote to the union there was still time to arrange something. Once it lands you only get to react. The stretch while you still have work is the only window you get to plan in. e.g. The time to learn the next thing is while the current work still pays. Once it stops you are learning and job-hunting at the same time.
 
 ### The parts · 'It can' doesn't imply 'give it to it'
-Whether a machine can do a task is technical. What is left of the person afterwards is a different question, and the answer isn't automatically good. Hand over the repetition, not the judgement.
+Whether a machine can do a task is technical. What is left of the person afterwards is a different question, and the answer isn't automatically good. Hand over the repetition, not the judgement. e.g. Let it draft the summary. Deciding which three of the twenty issues actually get raised is the part that was your job.
 
 ### The parts · Control is a loop, not an order
-His definition: not issuing an instruction but correcting the next move from the actual result. Cut the report back and the movement goes off, however well it was aimed. It applies unchanged to managing people and to practising a skill.
+His definition: not issuing an instruction but correcting the next move from the actual result. Cut the report back and the movement goes off, however well it was aimed. It applies unchanged to managing people and to practising a skill. e.g. You set the goal in January and next heard about it in June. The instruction was fine; there was nothing correcting it in between.
 
 ### Q: How do I use it today?
 When something is spreading through your field and hasn't reached your income yet, ask which of your tasks it can already do, and who in your field you have actually talked to about it. When shifting work onto a tool, check whether what's left needs any judgement — if it doesn't, you handed over the wrong half.
@@ -765,13 +799,13 @@ At nineteen he came first in three examinations and was locally famous. Then he 
 At seventy-one he was finally granted a minor honorary status — not passed, but awarded by seniority to a candidate who had simply been at it long enough. It was the only official recognition of his life and it arrived when it could change nothing. By then he had been writing his 'idle book' for four decades: nearly five hundred stories, revised repeatedly, circulated in manuscript among friends. He died before it was printed, and never knew.
 
 ### The parts · Failure with no turning point
-There was no decisive year — not one big defeat and a restart, but once every three years, just short, until he was old. Most advice about failure assumes a turning point to point at. Here there isn't one, and none of it applies.
+There was no decisive year — not one big defeat and a restart, but once every three years, just short, until he was old. Most advice about failure assumes a turning point to point at. Here there isn't one, and none of it applies. e.g. Not one bad year: eleven rounds of interviews across four years, each ending at the final stage, with nothing to point at as the moment it went wrong.
 
 ### The parts · He never let it be the only thing
-He didn't stop sitting the exam and he didn't stake his life on it. The tutoring continued, the family was kept, the stories accumulated. Running things in parallel means that when the thing that never works fails again, something else in your hands is working.
+He didn't stop sitting the exam and he didn't stake his life on it. The tutoring continued, the family was kept, the stories accumulated. Running things in parallel means that when the thing that never works fails again, something else in your hands is working. e.g. Keeping the job while the thing you care about takes years means a bad year stays a bad year, instead of becoming the end of the story.
 
 ### The parts · The side thing got real investment
-The stories weren't dashed off — forty years, nearly five hundred pieces, repeatedly revised. They were last in his ranking, not last in his investment. And he never quit the job: the tutoring fed him and gave him the forty uninterrupted years.
+The stories weren't dashed off — forty years, nearly five hundred pieces, repeatedly revised. They were last in his ranking, not last in his investment. And he never quit the job: the tutoring fed him and gave him the forty uninterrupted years. e.g. Two hours every Sunday for six years is not a hobby. It was last in his ranking and first in his hours.
 
 ### Q: How do I use it today?
 When something you've worked at for years hasn't happened and you can't say when it would, don't start with whether to persist. Ask what else moved forward this year. If you can't name one thing, fill that gap first. And if the side thing is growing, count what you've actually put into it over three years before you talk about swapping their status.
@@ -799,13 +833,13 @@ A set of experiments from the late 1970s, plus a natural experiment nobody desig
 The work was not welcomed. Alexander's papers were turned down by the major journals, funding stopped, and for something like thirty years the study sat outside the mainstream — too hard to replicate cleanly, and pointed at a conclusion the field was not organised around. Its rehabilitation came from somewhere else entirely: the follow-up data on American servicemen returning from Vietnam, where the overwhelming majority of men addicted to heroin abroad simply stopped once home. Same people, same drug, different place.
 
 ### The parts · The cage is a variable, not the background
-The original design treated the cage as scenery and the drug as the only thing that varied. Make the cage vary too and the conclusion moves: same rat, same bottle, very different behaviour.
+The original design treated the cage as scenery and the drug as the only thing that varied. Make the cage vary too and the conclusion moves: same rat, same bottle, very different behaviour. e.g. Same person, same phone. Alone in a rented room at eleven at night, and in a house with people in it: the two evenings do not look alike.
 
 ### The parts · The empty space is manufacturing the demand
-The park rats weren't restrained; they didn't much want it. Alexander's word was dislocation — pull someone out of the relationships and position they belong in and they will find something to fill the gap.
+The park rats weren't restrained; they didn't much want it. Alexander's word was dislocation — pull someone out of the relationships and position they belong in and they will find something to fill the gap. e.g. The drinking started the year he moved cities and knew nobody, and thinned out once there was somewhere to be on Thursdays.
 
 ### The parts · It has a boundary, and it has to be said
-Replications were not uniformly successful and the interpretation is still argued over. Situation is the underrated term, not the only one. Explaining everything with it delays people who need medical care.
+Replications were not uniformly successful and the interpretation is still argued over. Situation is the underrated term, not the only one. Explaining everything with it delays people who need medical care. e.g. Telling someone in withdrawal that the cage is the whole problem leaves them holding an explanation and no treatment.
 
 ### Q: How do I use it today?
 If you're trying to stop something and every attempt ran on holding out, don't fight the thing. Log the last ten times — hour, place, what else was in your hands, who was there — and look for the recurring empty slot. Withdraw the props one at a time and it gets harder by itself. Then fill the slot, because a vacated one refills the same way.
@@ -867,13 +901,13 @@ One of the great Chinese poets, and also a calligrapher, a painter, a hydraulic 
 It is worth knowing the range before the philosophy. The same man who wrote the most quoted lines in the language dredged the West Lake at Hangzhou and built a causeway across it that still carries his name; set up what may be China's first public clinic; campaigned to stop infant drowning in Huangzhou; lived on the city wall during a flood at Xuzhou saying that while he was there the water would not take the city; and left recipes. None of that is decoration on the poetry. It is the same disposition doing different work.
 
 ### The parts · The openness has a structure
-It wasn't a temperament he was born with. His writing records the sequence: the blow lands, there is a long stretch of real pain, attention turns inward, the present moment turns out to be full, and only then the release. He didn't skip to serenity. He walked through the middle.
+It wasn't a temperament he was born with. His writing records the sequence: the blow lands, there is a long stretch of real pain, attention turns inward, the present moment turns out to be full, and only then the release. He didn't skip to serenity. He walked through the middle. e.g. Two people laid off the same week. One posts about the fresh start on day three and is still hollow in month six; the other is wretched for a month, then starts.
 
 ### The parts · The constraint produced the work
-His three years in Huangzhou produced the two Red Cliff rhapsodies and his best-known lyrics. Having lost the ability to change anything outside himself, he was left with what he could still do — and that turned out to be the most concentrated output of his life.
+His three years in Huangzhou produced the two Red Cliff rhapsodies and his best-known lyrics. Having lost the ability to change anything outside himself, he was left with what he could still do — and that turned out to be the most concentrated output of his life. e.g. The book got written the year the funding fell through, because there was nothing left to run and the writing was the only thing still in his hands.
 
 ### The parts · He lost the politics and won everything else
-He opposed the reformers' new laws, then opposed the conservatives when they abolished all of them. He held to the measure rather than the side, and both sides exiled him for it. In the political record he is a failure. A thousand years later he is the one people quote.
+He opposed the reformers' new laws, then opposed the conservatives when they abolished all of them. He held to the measure rather than the side, and both sides exiled him for it. In the political record he is a failure. A thousand years later he is the one people quote. e.g. The one who wouldn't sign either faction's memo got passed over twice, and is the person both sides quote when they explain what went wrong.
 
 ### Q: How do I use it today?
 Next time you're overruled, shelved, or watching something fail, try treating the stretch that follows as an enforced turn inward. The best thinking and the best work often happen in the period when there is nothing to administer.
@@ -885,7 +919,75 @@ A bamboo stick and straw sandals beat a horse. Who's afraid? Looking back at tha
 Zhuangzi — Two ways of not being owned: Zhuangzi refuses the post, Su Shi takes it and refuses to be defined by losing it. C.S. Lewis — Both wrote through the worst of it. Lewis to find out what he actually believed, Su Shi to find out what was still enjoyable.
 
 ### Further
-Wang Yangming Fan Li Zhuangzi Huineng Winston Churchill
+Wang Yangming Fan Li Zhuangzi Tao Te Ching Huineng Winston Churchill
+
+========================================================================
+## Sun Tzu
+URL: https://ourword.ai/en/i/sun-tzu/
+Tags: Strategy and competition, Pre-Qin and classical, Win first, then fight
+
+Sun Tzu (Spring and Autumn · c. 500 BC) — Win first, then fight. Thirteen short chapters, and the most quoted strategy book in the world. The argument underneath it is not about cunning: the winner has already secured the win before…
+
+### Q: What did this one leave behind?
+Thirteen short chapters, and the most quoted strategy book in the world. The argument underneath it is not about cunning: the winner has already secured the win before the fighting starts, and the loser starts fighting and then looks for a way to win. Almost every famous line is a consequence of that one.
+
+### Q: What actually happened?
+The king of Wu wanted a demonstration, so he handed Sun Tzu the palace women to drill. Sun Tzu made the king's two favourite concubines the company commanders, explained the drill, and beat the drum. They laughed and did not move. If the orders are not clear, he said, that is the commander's fault — and explained again. They laughed again. If the orders are clear and still not followed, he said, that is the officers' fault, and he had both women executed. The king was appalled. The army that came out of it did not lose.
+
+### The parts · Win first, then fight
+The famous line is that the victorious army wins first and seeks battle afterwards; the defeated army fights first and looks for the win afterwards. It is a claim about where the work happens — in the conditions, not in the courage. e.g. The launch that went well had the pricing, the support load and the two biggest customers settled before anyone wrote a line of the announcement.
+
+### The parts · The best fight is the one nobody has
+Attacking the enemy's plan comes first, his alliances second, his army third, and his walled cities last. Every step down that list costs more and returns less. Winning the fight is not the top of the ladder; not needing it is. e.g. The competitor didn't enter the category, not because they lost a price war, but because the integration work would have taken them two years to match.
+
+### The parts · Know both, and know what you don't
+Know the other side and yourself and you are never in danger; know only yourself and you win half; know neither and you lose every time. Most people read this as reconnaissance. Half of it is about you. e.g. He had the competitor's roadmap and no honest number for how long his own team actually takes. That is the half that loses.
+
+### Q: How do I use it today?
+Before the next thing you are about to launch, argue, or confront, write down what would have to be true for it to be already won. If none of it is true yet, you are not ready to start — you are ready to prepare.
+
+### Lines to keep
+The victorious army wins first and seeks battle afterwards. Winning a hundred battles is not the height of skill. Subduing the enemy without fighting is. Know the other side and know yourself, and you will not be in danger in a hundred battles.
+
+### Q: What should I read alongside?
+John Boyd — Both put the decision before the clash. Sun Tzu settles it in preparation, Boyd in speed of turning.
+
+### Further
+Han Feizi John Boyd Fan Li
+
+========================================================================
+## Tao Te Ching
+URL: https://ourword.ai/en/i/tao-te-ching/
+Tags: How the world works, Pre-Qin and classical, Subtract
+
+Tao Te Ching (Spring and Autumn · c. 500 BC) — Subtract. Five thousand characters, and after the Bible the most translated book there is. Where most instruction is addition — learn more, do more, add another method — this one…
+
+### Q: What did this one leave behind?
+Five thousand characters, and after the Bible the most translated book there is. Where most instruction is addition — learn more, do more, add another method — this one runs the other way. In learning you gain daily; in the way you lose daily, until there is nothing left to force, and then nothing is left undone.
+
+### Q: What actually happened?
+Laozi rode west out of the pass on an ox, leaving a country he had given up on. The keeper of the pass stopped him and asked him to write something down before he went. He wrote five thousand characters and disappeared from the record. That is the whole biography, and the book is consistent with it: everything in it argues that the position of least insistence is the strong one.
+
+### The parts · Reversal is how the way moves
+Whatever reaches its extreme turns into its opposite. It is not consolation for bad times; it is a reading instrument. At the top, look for what is already turning. At the bottom, the same rule is working for you. e.g. The quarter everything was going right is the quarter nobody asked what would happen if the one channel bringing all the customers stopped.
+
+### The parts · Water beats stone by not arguing
+The softest thing in the world runs through the hardest. Not passivity — water keeps going and takes the shape of whatever it meets. Persistence in a form that nothing can push back on outlasts a harder push that has to be sustained. e.g. Two years of quietly fixing the thing nobody owned moved more than the reorg that was announced twice and cancelled twice.
+
+### The parts · The empty part is the useful part
+The wheel is useful because of the hole at the centre, the pot because of the space inside, the room because of the gaps where the doors and windows are. What you build gets the credit; what you left out is doing the work. e.g. The calendar with two empty afternoons is where the thinking happened. The full one produced attendance.
+
+### Q: How do I use it today?
+Take the thing you are trying to fix by adding — another tool, another rule, another meeting — and ask what you would remove instead. Try the subtraction first; it is cheaper and it is reversible.
+
+### Lines to keep
+In learning you gain daily. In the way you lose daily. The softest thing in the world runs through the hardest. Knowing others is intelligence. Knowing yourself is clarity.
+
+### Q: What should I read alongside?
+Zhuangzi — Same tradition, different address: Laozi writes for whoever has to govern, Zhuangzi for whoever wants out.
+
+### Further
+Zhuangzi Huineng Su Shi
 
 ========================================================================
 ## Thomas Gordon
@@ -901,13 +1003,13 @@ A student of Carl Rogers who turned humanistic psychology into a course ordinary
 He observed that most parents know two moves — win (I decide) or lose (fine, have it your way) — and that both carry a long bill: the first produces compliance or opposition, the second produces someone who doesn't consider anyone else. His third method turns the conflict into a shared problem: name what each side actually needs and find something that meets both. Not a vote and not a compromise, because splitting the difference leaves everyone short. In the child-rearing thinking of 1962 this was close to heresy.
 
 ### The parts · Say the effect, not the character
-Three parts: the specific behaviour, its actual effect on me, how I feel. Nothing in it judges the other person, so there is nothing to defend against. The part most often dropped is the middle one, and it is where the persuasion lives.
+Three parts: the specific behaviour, its actual effect on me, how I feel. Nothing in it judges the other person, so there is nothing to defend against. The part most often dropped is the middle one, and it is where the persuasion lives. e.g. 'You're careless' starts a defence. 'When the numbers arrive after five I redo the deck at night, and I'm worn out' does not.
 
 ### The parts · Work out whose problem it is first
-A child upset about a bad grade owns it, and the move is listening. A child wrecking the room you work in — that's yours, and the move is an I-message. Getting it backwards is the common error, and it lays your anxiety on top of theirs.
+A child upset about a bad grade owns it, and the move is listening. A child wrecking the room you work in — that's yours, and the move is an I-message. Getting it backwards is the common error, and it lays your anxiety on top of theirs. e.g. The teenager miserable about a grade needs listening to. The music through the wall while you work is yours to raise.
 
 ### The parts · No effect you can name may mean no problem
-If you can't say what it actually does to you, this may be a preference rather than a problem. The step doubles as a filter: when you can't fill it in, ask why you're insisting.
+If you can't say what it actually does to you, this may be a preference rather than a problem. The step doubles as a filter: when you can't fill it in, ask why you're insisting. e.g. He couldn't say what the messy desk actually cost him. That was the answer: a preference wearing the clothes of a rule.
 
 ### Q: How do I use it today?
 Before raising something, split it into behaviour, effect on me, and how I feel, with no line about what kind of person they are. And before you open your mouth, ask whose problem this is. If it's theirs, listen and say back what you heard; advice at that moment moves them from solving their problem to handling your opinion.
@@ -935,13 +1037,13 @@ A philosopher who was also the most effective general of his generation — an a
 In 1506 he offended a powerful eunuch, was beaten in open court and exiled to Longchang in Guizhou — a malarial posting on the edge of the empire where he had to build his own shelter and grow his own food. The officials sent there mostly died. He had a stone coffin made and slept beside it, on the reasoning that the only thing he had not yet let go of was the fear of dying. One night he woke shouting. The way of the sage is complete within my own nature — he had spent twenty years looking outside for something that was not out there.
 
 ### The parts · The mind is the principle
-The meaning and value of a thing arrive with the mind that meets it. Practically, this moves the standard: your judgement doesn't come from an external authority that has to be consulted before you may act.
+The meaning and value of a thing arrive with the mind that meets it. Practically, this moves the standard: your judgement doesn't come from an external authority that has to be consulted before you may act. e.g. You already know the deck is dishonest. Waiting for someone senior to say it first is not caution; it is looking for a person to hold the judgement for you.
 
 ### The parts · Knowing and doing are one
-'I know I should get up early' from someone who never does is not knowledge, it's an idea about knowledge. Real knowing shows up in the body. This is the sentence he is most quoted for and the one most often quoted without being applied.
+'I know I should get up early' from someone who never does is not knowledge, it's an idea about knowledge. Real knowing shows up in the body. This is the sentence he is most quoted for and the one most often quoted without being applied. e.g. 'I know I should exercise' from someone who hasn't in a year is not knowledge. The knowing showed up in the ones who went twice this week.
 
 ### The parts · The hardest campaign is interior
-He never lost a battle, and wrote from the field that breaking the bandits in the hills is easy and breaking the ones in the heart is hard. What actually stops people is fear, laziness, vanity and self-deception — none of which appears on any plan.
+He never lost a battle, and wrote from the field that breaking the bandits in the hills is easy and breaking the ones in the heart is hard. What actually stops people is fear, laziness, vanity and self-deception — none of which appears on any plan. e.g. The plan was never the problem. Sending the email that admits the number was wrong is the whole difficulty, and no amount of planning touches it.
 
 ### Q: How do I use it today?
 When a team knows what to do and doesn't do it, the problem is usually not execution. Either they don't actually believe it matters, or the incentives point elsewhere. Fix what they believe before you talk about delivery.
@@ -954,6 +1056,40 @@ Huineng — The same insight in two traditions: Huineng says what you seek is al
 
 ### Further
 Huineng Su Shi Zhuangzi
+
+========================================================================
+## Warren Buffett
+URL: https://ourword.ai/en/i/buffett/
+Tags: Money and risk, The industrial age, The moat
+
+Warren Buffett (Contemporary · 1930–) — The moat. Sixty years of compounding, and a method simple enough to say in a sentence: buy a business with a durable advantage at a sensible price and then do nothing for a very…
+
+### Q: What did this one leave behind?
+Sixty years of compounding, and a method simple enough to say in a sentence: buy a business with a durable advantage at a sensible price and then do nothing for a very long time. His real edge is not stock-picking. It is that he can sit still while other people cannot.
+
+### Q: What actually happened?
+In 1973–74 the American market fell by half. The Washington Post went from thirty-eight dollars to sixteen. Everyone was getting out; he was buying. He wrote to the management that he had bought, for ten million dollars, a piece of a company they themselves valued at four or five hundred million. The position eventually returned more than a hundred times. Nothing about the company had changed in those months. What had changed was what other people could stand to hold.
+
+### The parts · Four kinds of moat
+A brand people ask for by name, a network that gets more valuable as it grows, a cost position nobody can match, and a switching cost that makes leaving expensive. The wider the moat, the less the future depends on being clever. e.g. Nobody switches accounting software to save nine dollars a month. That is a moat, and it was built by the tedium of migration, not by the features.
+
+### The parts · The edge of the circle matters more than its size
+You do not need to understand every business, only the ones you understand. He stayed out of technology for decades and said so plainly. Knowing where your competence stops is the part that protects you; the size of the circle is vanity. e.g. He passed on the deal because he could not explain how the company made money in one sentence. That is not timidity; that is the boundary doing its job.
+
+### The parts · The moat that matters is emotional
+Be fearful when others are greedy and greedy when others are fearful. In 1987, in 2000, in 2008 he was the one buying into the collapse. The analysis was available to everyone. The stomach was not. e.g. Everyone knew the rule about buying the dip. Almost nobody transferred the money on the Monday the number was red on every screen.
+
+### Q: How do I use it today?
+Before the next purchase, write in one sentence why this thing will still be earning in ten years. If you cannot write the sentence, you are not buying a business; you are buying a price movement.
+
+### Lines to keep
+Be fearful when others are greedy and greedy when others are fearful. Rule one: never lose money. Rule two: never forget rule one. You do not have to understand every company. Only the ones you own.
+
+### Q: What should I read alongside?
+Charlie Munger — The partner who moved him from cheap and broken to good and fairly priced.
+
+### Further
+Charlie Munger Li Ka-shing Fan Li
 
 ========================================================================
 ## Winston Churchill
@@ -1003,13 +1139,13 @@ The second peak of Daoism, and a very different writer from Laozi. Where Laozi a
 He was fishing on the Pu river when two officials arrived from the king of Chu to offer him the government of the state. He didn't put the rod down. I hear, he said, that Chu keeps a sacred tortoise, dead three thousand years, wrapped in cloth and housed in the ancestral temple. Would that tortoise rather be dead and venerated, or alive and dragging its tail in the mud? Alive in the mud, they said. Then go away, said Zhuangzi. I intend to drag my tail in the mud. He refused the trade itself, not the job. Most of the strategists competing for those posts died in the resulting purges. He lived past eighty.
 
 ### The parts · The use of the useless
-The tree too crooked to be timber is the one that reaches a thousand years. Things with no immediate use — a hobby that earns nothing, reading with no purpose, experience that won't fit a CV — are often what still holds when everything scheduled has been spent.
+The tree too crooked to be timber is the one that reaches a thousand years. Things with no immediate use — a hobby that earns nothing, reading with no purpose, experience that won't fit a CV — are often what still holds when everything scheduled has been spent. e.g. The reading that earned nothing for six years is what made you the only person in the room who saw the second-order effect.
 
 ### The parts · Cut along the grain
-His cook's blade lasts nineteen years because it never meets bone, only the gaps between joints. Effort that meets resistance everywhere is usually not short of force. It is in the wrong place.
+His cook's blade lasts nineteen years because it never meets bone, only the gaps between joints. Effort that meets resistance everywhere is usually not short of force. It is in the wrong place. e.g. The rewrite that ate three weekends went in on a Tuesday evening, once he stopped fighting the framework and used the hook it already had.
 
 ### The parts · Whose standard is this
-There is a right and wrong on that side and one on this side. What looks like stupidity from where you stand is generally coherent from where they stand. Holding several positions at once isn't fence-sitting; it's the thing that shrinks your blind spot.
+There is a right and wrong on that side and one on this side. What looks like stupidity from where you stand is generally coherent from where they stand. Holding several positions at once isn't fence-sitting; it's the thing that shrinks your blind spot. e.g. The team that moves too slowly is optimising for the outage you have never had. From where they sit, your speed is the reckless part.
 
 ### Q: How do I use it today?
 In an environment where everyone is competing, the scarcest capacity is the ability not to enter. Before joining the race everyone else is running, ask whose right and wrong you are using. Keep a third of your time for things with no use — over a long enough horizon that is usually the best-performing position you hold.
@@ -1018,10 +1154,10 @@ In an environment where everyone is competing, the scarcest capacity is the abil
 Everyone knows the use of the useful. Nobody knows the use of the useless. A frog in a well can't discuss the sea. It is bound by its hole. The friendship of the wise is bland as water.
 
 ### Q: What should I read alongside?
-Han Feizi — The same century, opposite conclusions: Han Feizi builds the machine of state, Zhuangzi declines to be a part in it. Su Shi — Two ways of not being owned: Zhuangzi refuses the post, Su Shi takes it and refuses to be defined by losing it.
+Han Feizi — The same century, opposite conclusions: Han Feizi builds the machine of state, Zhuangzi declines to be a part in it. Tao Te Ching — Same tradition, different address: Laozi writes for whoever has to govern, Zhuangzi for whoever wants out. Su Shi — Two ways of not being owned: Zhuangzi refuses the post, Su Shi takes it and refuses to be defined by losing it.
 
 ### Further
-Su Shi Huineng Wang Yangming Carl Jung
+Su Shi Huineng Wang Yangming Tao Te Ching Carl Jung
 <!-- chapters:begin -->
 ========================================================================
 ## John Boyd · The OODA loop
@@ -1088,6 +1224,72 @@ Where it goes wrong: using 'to do' as consolation while nothing actually gets do
 One road: promotion and medals. The other: doing what should be done.
 You won't rise fast, but you won't have to betray yourself.
 People, ideas, hardware — in that order.
+
+========================================================================
+## Warren Buffett · The circle of competence
+URL: https://ourword.ai/en/i/buffett/circle-of-competence/
+Source: Berkshire letters, 1996
+Tags: Deep read, Warren Buffett, The edge matters more than the size
+
+Everyone hears it as a licence to stay small. The working part is the sentence after it, and it is about the edge.
+
+### Q: What actually happened?
+The formulation in the 1996 letter is that investors need only be able to evaluate selected businesses, and — the part that gets dropped — that the size of the circle is not very important; knowing its boundaries is vital. He stayed out of technology for most of forty years and said so in public, repeatedly, while it was making other people rich. That is not an admission of limitation. It is the discipline itself, performed where everyone could see it.
+
+### The parts · The boundary is a claim you can check
+Inside the circle you can say how the thing makes money in a sentence, and say what would have to happen for it to stop. If either sentence comes out vague, you are outside, whatever your job title says.
+e.g. He had used the product for years and still could not say who paid, or for what. That is outside, regardless of how familiar it felt.
+
+### The parts · Familiarity is not competence
+The most common way the boundary moves without anyone deciding is that something becomes familiar — in the news, in conversation, in the portfolio of someone you respect — and familiarity gets read as understanding.
+e.g. Everyone at the table owned it, so it stopped feeling like a decision and started feeling like a default.
+
+### The parts · Staying out has to be sayable out loud
+A boundary you hold privately erodes, because there is no cost to crossing it quietly. Said in public it becomes something you would have to explain reversing, and that friction is the point.
+e.g. Writing 'we don't do this, and here is why' in the team doc is what stopped it being reopened every quarter by whoever had just read an article.
+
+### Q: How do I use it today?
+Where you are: about to commit money, time or reputation to something you sort of understand.
+Ask first: can you say in one sentence how it makes money, and one sentence for what would stop it? If not, you are outside the edge.
+Where it goes wrong: using it as a reason never to learn anything new — the circle is meant to grow, deliberately and slowly, not to be defended forever.
+
+### Lines to keep
+The size of the circle is not very important. Knowing its boundaries is vital.
+Familiarity gets read as understanding, and nobody notices the swap.
+A boundary you never say out loud is one you will cross quietly.
+
+========================================================================
+## Warren Buffett · You find out at low tide
+URL: https://ourword.ai/en/i/buffett/swimming-naked/
+Source: Berkshire letters, 1992 and 2001
+Tags: Deep read, Warren Buffett, Risk shows up late, on purpose
+
+In a rising market every stroke looks good. The question is how to see the risk while it is still invisible.
+
+### Q: What actually happened?
+He used the picture repeatedly: only when the tide goes out do you discover who has been swimming naked. It points at a structural feature of risk. Leverage, mismatch and luck do not just stay hidden during a boom — they amplify returns, so the naked swimmer is the fastest one in the water. Which is why his own disciplines are all counter-cyclical, and why Berkshire has carried an amount of cash that looks like underperformance for years at a time.
+
+### The parts · Boom-time returns have risk premium mixed in
+Whoever is beating the market may be doing it with skill, or by carrying more leverage and buying less insurance. On the statement the two are indistinguishable. So read a result by asking what is left of it once the borrowing and the exposure are taken out.
+e.g. The fund's three great years were one leverage decision made in the first of them, and nobody separated the two.
+
+### The parts · Put the trunks on while the tide is in
+Looking for protection at low tide means paying peak prices for the things that are scarcest in a crisis — cash, insurance, credit — if you can get them at all. Every protection has to be bought while it is not needed, which is exactly what makes it hard.
+e.g. The credit line arranged in the good quarter cost almost nothing and was the reason the bad one was survivable.
+
+### The parts · Put the tide going out into the model
+You cannot know when it turns, but every decision can be run through the test: funding stops, the largest customer leaves, rates double — does this still stand? What does not stand is fragile however much it is currently earning.
+e.g. Half of revenue came through one channel, and the plan for that channel closing was a sentence nobody had written.
+
+### Q: How do I use it today?
+Where you are: things are going well and the returns look like skill.
+Ask first: run it through one low tide — funding stops, the big customer leaves, rates double. What is left standing?
+Where it goes wrong: reading it as a reason to hold cash forever — the point is buying protection early, not declining to swim.
+
+### Lines to keep
+Only when the tide goes out do you discover who has been swimming naked.
+Every protection has to be bought while it is not needed.
+What cannot survive the test is fragile, however much it is earning now.
 
 ========================================================================
 ## John Cacioppo · Loneliness is a kind of hunger
@@ -2641,6 +2843,72 @@ Every unnecessary help is an obstacle to development.
 Ten extra minutes today buys years of not being involved.
 
 ========================================================================
+## Charlie Munger · Invert, always invert
+URL: https://ourword.ai/en/i/munger/invert/
+Source: Harvard Law commencement, 1986
+Tags: Deep read, Charlie Munger, Study the ways it dies first
+
+He was asked how to have a good life and answered the other question instead. The swap is the whole method.
+
+### Q: What actually happened?
+Invited to address a graduating class, he announced he would explain how to guarantee a miserable life, and then worked through it: be unreliable, learn only from your own experience, go down when you take your first reverse, be consumed by envy and resentment. If you knew where you were going to die, he liked to say, you would simply never go there. The talk is the method demonstrated on itself, and it is more usable than any list of virtues he could have read out instead.
+
+### The parts · One list is short and the other isn't
+There are countless ways a thing can go well and a small number of ways it reliably goes wrong. The inverted question is simply a smaller problem, and a smaller problem is one you can actually finish.
+e.g. Nobody in the room could say what would make the product work. Everyone could name the three things that would kill it, and two were already true.
+
+### The parts · Failure modes are checkable; success stories aren't
+You can go and look at whether the runway is short, whether one customer is half the revenue, whether the one person who understands the system is leaving. 'Is this a great idea' has no such test.
+e.g. The post-mortem was written before the launch, and two of its causes were fixed in the week it was written.
+
+### The parts · It does not tell you what to do
+Avoiding every failure mode leaves you alive, not successful. Inversion clears the ground; something still has to be built on it. Used alone it produces people who are very good at not losing and have not won anything.
+e.g. Three years of avoiding every avoidable mistake, and nothing shipped that anyone remembers.
+
+### Q: How do I use it today?
+Where you are: about to commit to a plan you believe in.
+Ask first: spend twenty minutes writing only the ways this fails, then check how many are already true today.
+Where it goes wrong: stopping there — a list of avoided deaths is not a direction, and people who only invert end up very safe and very still.
+
+### Lines to keep
+Invert, always invert.
+If you knew where you were going to die, you would never go there.
+Inversion clears the ground. It does not build anything on it.
+
+========================================================================
+## Charlie Munger · One hammer is not enough
+URL: https://ourword.ai/en/i/munger/latticework/
+Source: USC Business School, 1994
+Tags: Deep read, Charlie Munger, The danger is the skill, not the ignorance
+
+What he warned about was not ignorance. It was being very well trained in exactly one thing.
+
+### Q: What actually happened?
+At USC in 1994 he laid out the method of his life: you have to carry a number of models in your head and hang experience on that latticework. He put the count at eighty or ninety, drawn from mathematics, psychology, physics, biology and engineering. The warning attached to it is the line everyone knows: to a man with only a hammer, every problem looks like a nail — and the man with the hammer is not the ignorant one, he is the well-trained one.
+
+### The parts · The deeper the training, the better hidden the distortion
+The hammer problem is not incompetence. It is that your discipline arrives with a viewfinder: the finance person sees a cost problem, the growth person a funnel problem. Each account is coherent, because any problem does have that face — and the coherence is what stops the search.
+e.g. Churn was diagnosed as a pricing problem for three quarters by the only people who were asked, who all came from pricing.
+
+### The parts · Problems do not arrive by department
+A pricing decision is economics and psychology and, because the competitor reacts, something close to biology. The latticework means laying several models over the same situation and seeing which one explains the most, rather than which one you already own.
+e.g. The retention question turned out to be a queueing problem, and nobody in the room had ever been handed that model.
+
+### The parts · Load the models before you need them
+A model you go and look up during the decision arrives too late to shape it. The models have to be in the head and automatic. There is no shortcut: take the two or three hardest ideas from each field and keep them.
+e.g. He read about critical mass years before the network product, which is why the question came up in week one instead of year two.
+
+### Q: How do I use it today?
+Where you are: diagnosing a problem inside your own speciality.
+Ask first: how would someone from a completely different field describe this? If you cannot produce a second account, you have one model, not a diagnosis.
+Where it goes wrong: collecting models as trivia — the test is whether one of them changed a decision.
+
+### Lines to keep
+To a man with only a hammer, every problem looks like a nail.
+The hammer man is not the ignorant one. He is the trained one.
+A model you look up during the decision arrives too late to shape it.
+
+========================================================================
 ## Esther Perel · Security and desire want opposite things
 URL: https://ourword.ai/en/i/perel/security-and-desire/
 Source: Esther Perel, Mating in Captivity, 2006
@@ -3198,6 +3466,303 @@ Where it goes wrong: hearing this as say nothing — clarify a fact once; and do
 He stopped defending himself. He did not stop writing.
 Every reply earns another, unless somebody stops.
 'Let it go' can't be done. 'I don't write those' can.
+
+========================================================================
+## Sun Tzu · Win first, then fight
+URL: https://ourword.ai/en/i/sun-tzu/win-before-fighting/
+Source: Art of War, Form
+Tags: Deep read, Sun Tzu, The work happens before the clash
+
+Everyone quotes it as bravado. Read slowly it says the opposite: by the time you are fighting, it is mostly decided.
+
+### Q: What actually happened?
+The line is four characters longer in Chinese than in any translation, and it is built as a pair: the victorious army wins first and seeks battle afterwards, the defeated army fights first and looks for the win afterwards. It is not advice about how to fight. It is a claim about when the outcome is set. The book spends its early chapters on measurement — ground, numbers, supply, weather, the character of the commander — because that is where the decision actually happens.
+
+### The parts · Preparation is not the same as planning
+A plan is a description of what you intend to do. Preparation is changing the conditions until the intended thing becomes easy. The first can be done at a desk in an afternoon; the second takes months and shows up as very little visible activity.
+e.g. The negotiation that went well was decided in the six weeks of getting a second supplier to the point of being usable.
+
+### The parts · If it needs courage, something upstream went wrong
+Reaching for nerve is usually the sign that the conditions were not set. Sometimes there is no choice. But treating courage as the plan converts an upstream failure into a personal one, and hides the part that could have been fixed.
+e.g. He had to wing the board meeting because the numbers had not been reconciled the week before, and afterwards told himself he was bad under pressure.
+
+### The parts · Not starting is a move
+If the conditions are not there, the strongest available action is to not begin yet. This is the hardest part to practise, because waiting looks identical to doing nothing, and only one of them has a reason.
+e.g. They held the launch a quarter and shipped into a market that had already heard of them, instead of into silence.
+
+### Q: How do I use it today?
+Where you are: something is coming that you are bracing for.
+Ask first: what would have to already be true for this to go well? Write the list, and see how much of it is still available to change.
+Where it goes wrong: reading it as never act until certain — the book is about setting conditions, not about waiting; and the conditions include a deadline.
+
+### Lines to keep
+The victorious army wins first and seeks battle afterwards.
+The defeated army fights first and looks for the win afterwards.
+If it takes nerve, look at what was left undone upstream.
+
+========================================================================
+## Sun Tzu · Know both, and know which is harder
+URL: https://ourword.ai/en/i/sun-tzu/know-both/
+Source: Art of War, Attack by Stratagem / Estimates
+Tags: Deep read, Sun Tzu, Your own numbers are the flattered ones
+
+Quoted for two thousand years, usually as a case for research. The half everybody skips is the one about yourself.
+
+### Q: What actually happened?
+The Estimates chapter is not a maxim, it is a form to fill in: five dimensions and seven comparisons — whose ruler has the way, whose commanders are abler, who has the ground and the season, whose discipline is enforced, whose troops are stronger, whose are better drilled, whose rewards and punishments are clear. Then a coldly practical conclusion: if the count comes out favourable, fight; if it does not, don't. He called it reckoning in the temple — settle it before you decide whether to go at all.
+
+### The parts · Knowing is a filled-in table, not an impression
+'I have a rough sense of the competition' is not knowing. The value of a list of comparisons is that it forces out the row you cannot answer, and the row you cannot answer is usually the one that decides it.
+e.g. Nobody could say what their support costs per account were. That empty cell was the entire margin difference.
+
+### The parts · Your own side is the harder half
+Their information is outside you and can be gone and found. Yours has been through several people who each had a reason to round it kindly. The order in the sentence puts them first; the difficulty runs the other way.
+e.g. The competitor's timeline came from their own blog. His own timeline came from a manager reporting to the person who set it.
+
+### The parts · The count has to be allowed to say no
+More reckoning wins, less reckoning loses. The point of the exercise is not to find a way to win; it is that it can output 'this one should not be fought'. A process that ends in action whatever it computes is not a decision, it is a ceremony.
+e.g. Every quarterly review ended with the same launch date. The review was not deciding anything and everyone knew it.
+
+### Q: How do I use it today?
+Where you are: about to commit to something competitive on the strength of a general sense.
+Ask first: which rows can you actually fill in, and which is blank? Go and fill the blank one before anything else.
+Where it goes wrong: turning it into endless analysis — the count has a deadline, and 'we cannot know' is itself a row.
+
+### Lines to keep
+More reckoning wins. Less reckoning loses.
+Theirs is outside and findable. Yours has been through people.
+A process that ends in action whatever it computes is a ceremony.
+
+========================================================================
+## Sun Tzu · The best fight is the one nobody has
+URL: https://ourword.ai/en/i/sun-tzu/win-without-fighting/
+Source: Art of War, Attack by Stratagem
+Tags: Deep read, Sun Tzu, Winning a hundred times is not the top of the list
+
+A hundred victories sounds like the ceiling. He says it isn't, and the reason is arithmetic rather than modesty.
+
+### Q: What actually happened?
+The chapter gives a ranked list that runs against instinct: attack the enemy's plan first, his alliances second, his army third, and his walled cities last. Each step down costs more and returns less. On sieges he is unusually specific — three months to prepare the engines, three more for the ramps, and a commander who loses patience and sends men up the walls like ants, a third of them dead and the city still standing. He calls that the disaster of assault.
+
+### The parts · Winning is also spending
+A hundred victories is not the height of skill; subduing the enemy without fighting is. Every win costs people, money, time and trust. The side that won five times can easily be stronger than the side that won a hundred.
+e.g. They won the pricing war and came out of it with a team that had shipped nothing new for a year.
+
+### The parts · Plan, then alliances, then force
+Attacking the plan means making their approach stop making sense on its own terms. Attacking alliances means removing the support it rests on. Neither requires contact. By the time only fighting is left, the first two were skipped or botched.
+e.g. The integration deal with the distributor ended the competitor's route to market without a single price change.
+
+### The parts · The most expensive move is the one you take personally
+Assault happens when there is nothing else left, or when someone cannot stand to walk away. He singles out the commander who attacks in anger. Losing a third of your strength to a wall you did not need is a decision made by a mood.
+e.g. The lawsuit was about being right. Two years and a quarter of the budget later, it was still about being right.
+
+### Q: How do I use it today?
+Where you are: locked into a fight you expect to win.
+Ask first: what does winning this cost, and what would have to be true for it not to be necessary at all?
+Where it goes wrong: reading it as avoid all conflict — the ranking has fighting on it; it is just not at the top.
+
+### Lines to keep
+Winning a hundred battles is not the height of skill.
+Every win you take spends people, money, time and trust.
+A third of your strength on a wall you did not need.
+
+========================================================================
+## Sun Tzu · The flank only works if the front holds
+URL: https://ourword.ai/en/i/sun-tzu/orthodox-and-surprise/
+Source: Art of War, Energy
+Tags: Deep read, Sun Tzu, A clever move on its own is a donation
+
+Everyone wants the unexpected move. The chapter is mostly about the unglamorous thing it has to stand on.
+
+### Q: What actually happened?
+The Energy chapter asks why the same troops behave like a rolling log one day and a scattered crowd the next. His answer is the pairing: engage with the orthodox, win with the extraordinary. The orthodox is the part that meets them head on and holds; the extraordinary is what comes from the side. He insists the two convert into each other endlessly — which means today's surprise, once used, becomes tomorrow's front.
+
+### The parts · Without the front, the flank hits air
+The surprise works because the other side is already gripped and cannot turn. Let the front go slack and the clever move lands on nothing, with your best people stranded out in the open.
+e.g. The campaign was inventive and the sales team could not answer the second question, so it produced attention and no orders.
+
+### The parts · A surprise used once becomes the expected thing
+Any unexpected move, once used and written up, enters the other side's expectations and becomes part of the front. Planning to live for years off one trick is spending a one-time resource as if it were income.
+e.g. The referral loop worked brilliantly, was copied within two quarters, and is now the baseline everyone has.
+
+### The parts · Position, not heroics
+The chapter ends not on cleverness but on structure: put the rock at the top of a thousand-foot mountain and the force of it coming down is not the rock's. Seek it in the position, and do not demand it of the people.
+e.g. Before asking the team to try harder, someone should ask why the same work takes three approvals.
+
+### Q: How do I use it today?
+Where you are: pinning your hopes on one inventive move.
+Ask first: what is holding the front while that move happens, and is it actually holding?
+Where it goes wrong: concluding that only the basics matter — the front alone defends and never wins.
+
+### Lines to keep
+Engage with the orthodox, win with the extraordinary.
+Used once, the surprise becomes the thing they expect.
+Seek it in the position; do not demand it of the people.
+
+========================================================================
+## Sun Tzu · Take the shape of what you meet
+URL: https://ourword.ai/en/i/sun-tzu/form-like-water/
+Source: Art of War, Weak Points and Strong
+Tags: Deep read, Sun Tzu, Avoiding the strong part is the hard half
+
+'Be like water' became a poster. The chapter is stricter than the poster, and most of it is about what not to do.
+
+### Q: What actually happened?
+The chapter is about who is setting the terms: bring the enemy to you; do not be brought to him. Strike what he must defend and he has to come. Decline the engagement and he cannot force it. Then the image everybody knows: water has no constant shape, it avoids the heights and runs to the low ground, and an army has no constant form either — it avoids what is solid and strikes what is hollow.
+
+### The parts · Having no fixed shape is the point
+What water resembles is not softness, it is the absence of a preset form. Its shape is decided entirely by what it meets. Which makes 'what is our style of competing' a question with a flaw built into it.
+e.g. The playbook that won the first market was applied unchanged to the second, where the constraint was regulatory rather than technical.
+
+### The parts · Avoiding the solid part is discipline, not opportunism
+The hard half is the avoiding. The places that look most worth taking, most prestigious, most expected of you are usually exactly where they are thickest. Declining them means absorbing internal pressure, which is harder than spotting the gap.
+e.g. Everyone wanted the flagship account. The three unglamorous ones nobody was fighting over paid for the year.
+
+### The parts · Who wrote this week's calendar
+Initiative is not moving first. It is that the other side has to answer at your tempo. There is a simple test: look at the week you just had and ask whether you scheduled it, or whether their moves did.
+e.g. Four of the five priorities were reactions to a competitor's announcement, and nobody had decided that was the plan.
+
+### Q: How do I use it today?
+Where you are: reacting to a competitor, or defending the position you are proudest of.
+Ask first: where are they actually thin, and what would it cost you internally to walk away from the thick part?
+Where it goes wrong: using it to justify having no strategy at all — no fixed shape is not the same as no direction.
+
+### Lines to keep
+Bring the enemy to you; do not be brought to him.
+Water has no constant shape. That is what it is being praised for.
+Did you write this week's calendar, or did their moves?
+
+========================================================================
+## Tao Te Ching · Whatever peaks, turns
+URL: https://ourword.ai/en/i/tao-te-ching/reversal/
+Source: Tao Te Ching 40
+Tags: Deep read, Tao Te Ching, The top is where to start worrying
+
+Usually read as comfort for bad times. It is more useful as an instrument, and it is sharpest when things are going well.
+
+### Q: What actually happened?
+Four characters: reversal is the movement of the way. The claim is not that things get better, nor that they get worse. It is that anything carried to its extreme starts producing its opposite. Which means the most dangerous moment is not the trough — it is the peak, because that is where nobody is looking for the turn. In the trough the rule is working for you and nothing needs to be done about it.
+
+### The parts · Read it at the top, not at the bottom
+In a bad stretch the line reads as reassurance and asks nothing of you. In a good stretch it asks a question you would rather not answer: which of the things carrying us right now is at full stretch, and what happens when it stops.
+e.g. The year revenue doubled is the year nobody asked what share of it came through one partner.
+
+### The parts · Extremes, not durations
+It says nothing about how long anything lasts. A thing at moderate stretch can run for decades. What turns is what has been pushed as far as it goes — margin at its thinnest, hours at their longest, patience at its end.
+e.g. The team was not tired because two years had passed. It was tired because the last four months had run at the rate of a launch week.
+
+### The parts · The move is to give something back early
+If the turn is structural, the cheap version is to stop short of the extreme on purpose: take some off the table, keep the slack, decline the last increment. The expensive version is to have it taken from you at the turn.
+e.g. He cut his own hours in the good quarter, which cost output, and was the reason he was still there for the bad one.
+
+### Q: How do I use it today?
+Where you are: something is going unusually well and you are being asked to push it further.
+Ask first: what is at full stretch right now, and what breaks when it stops?
+Where it goes wrong: reading it as fatalism, or as a reason not to grow — it is about not running any single thing to its limit, not about staying small.
+
+### Lines to keep
+Reversal is the movement of the way.
+The dangerous moment is the peak, because nobody is looking for the turn there.
+Stop short of the extreme on purpose, or have it taken at the turn.
+
+========================================================================
+## Tao Te Ching · The part you don't do
+URL: https://ourword.ai/en/i/tao-te-ching/wu-wei/
+Source: Tao Te Ching 37, 57, 63
+Tags: Deep read, Tao Te Ching, A list of moves to leave out
+
+Usually translated as non-action and read as passivity. It is closer to a list of the moves that make things worse.
+
+### Q: What actually happened?
+His verdict on governing is cold: the more prohibitions there are, the poorer the people; the more laws are published, the more thieves there are. The alternative he offers is not letting go. It is: I do nothing and they transform themselves, I stay still and they correct themselves, I leave them alone and they prosper. The load-bearing word is themselves. The point is not to stop things happening; it is to stop being the thing that prevents them.
+
+### The parts · Subtracting moves, not making none
+In learning you gain daily; in the way you lose daily. Getting good at running something is largely removing the actions that look like management and function as interference. Take out enough and the thing moves on its own.
+e.g. Cancelling the weekly status meeting is what finally got the status written down where anyone could read it.
+
+### The parts · There is a mechanism behind more rules, more problems
+Every prohibition creates an incentive to route around it, and every correction leaves room for the next deviation. This is not a claim about morality; it is that a control grows the behaviour it was built to stop.
+e.g. The expense policy got three pages longer and the number of creatively categorised dinners went up.
+
+### The parts · Act while it is still small
+Deal with the difficult while it is easy, the large while it is small. Non-action is not never acting — it is moving the action earlier, when a small one is enough. Wait and you need a large one, and large ones have consequences of their own.
+e.g. A ten-minute conversation in March, or a reorganisation in September. It was the same problem.
+
+### Q: How do I use it today?
+Where you are: about to add a rule, a process or a meeting to fix something.
+Ask first: which existing action is producing this problem, and what happens if you remove it instead?
+Where it goes wrong: reading it as never intervene — it argues for intervening earlier and smaller, not less.
+
+### Lines to keep
+The more laws are published, the more thieves there are.
+Every prohibition creates a reason to route around it.
+Deal with the difficult while it is easy.
+
+========================================================================
+## Tao Te Ching · Go to the low ground
+URL: https://ourword.ai/en/i/tao-te-ching/water/
+Source: Tao Te Ching 8, 66
+Tags: Deep read, Tao Te Ching, Not competing is a choice of location
+
+Water has been praised for two thousand years. The text credits it with one specific thing, and it is about position.
+
+### Q: What actually happened?
+He gives water two lines, and both are needed. It benefits all things without contending — and it settles in the places people find distasteful. The second is what makes the first possible: not contending is not a posture, it is a choice of site. He is blunter later — the reason the rivers and seas are king of the hundred valleys is that they are good at being below them. Things flow to you because you are lower.
+
+### The parts · Not contending means standing where nobody is
+The line is usually read as moral advice and is closer to geometry: if the position you are in is one nobody wants, the act of contending does not arise. It is settled at the siting stage, not in the fight.
+e.g. Everyone was building the assistant. He built the boring importer that all of them needed and none of them wanted to own.
+
+### The parts · The places people find distasteful
+Low competitive density hides in the work that is dirty, slow, or takes years to show a result. Those positions are empty precisely because they look bad and produce nothing reportable for a long time.
+e.g. Nobody wanted the migration. The person who took it ended up the only one who understood how the whole thing worked.
+
+### The parts · Height stops the flow
+If you want people, information or resources to come to you, you have to be positioned below them. This is most visible with information: the higher the posture, the less of what is actually happening reaches you.
+e.g. Nobody brought him bad news for a year, and he took that as evidence there wasn't any.
+
+### Q: How do I use it today?
+Where you are: choosing what to work on, in a space where everyone is going for the same thing.
+Ask first: which necessary job is empty because it looks unrewarding, and what would being there let you see?
+Where it goes wrong: mistaking it for accepting bad treatment — the low ground is a position, not a status.
+
+### Lines to keep
+It benefits all things without contending, and settles where people find distasteful.
+The rivers rule the valleys by being below them.
+The higher the posture, the less of what is happening reaches you.
+
+========================================================================
+## Tao Te Ching · The empty part is the useful part
+URL: https://ourword.ai/en/i/tao-te-ching/usefulness-of-emptiness/
+Source: Tao Te Ching 11
+Tags: Deep read, Tao Te Ching, What you left out is doing the work
+
+Which part of a wheel is doing the work? The chapter is short enough to be a definition and it underwrites the whole book.
+
+### Q: What actually happened?
+Three parallel examples: thirty spokes share one hub, and because of the nothing at its centre the cart is useful; clay is worked into a vessel, and because of the space inside it holds; doors and windows are cut for a room, and the emptiness is what you live in. One conclusion: what is there provides the advantage, what is not there provides the use. The visible part gets the credit. The gap does the job.
+
+### The parts · Slack is not waste
+The schedule with every slot filled, the interface with every field used, the plant run at full capacity — all have removed the room that absorbs surprise. One thing goes off plan and there is nowhere for it to go.
+e.g. The team with two unbooked afternoons absorbed the outage. The fully booked one moved every deadline by a week.
+
+### The parts · The empty place belongs to nobody
+The hole in the hub is not owned by any spoke, and that is exactly why the wheel turns. Organisations need the same thing: capacity that belongs to no department, available for whatever actually turns up.
+e.g. The unassigned engineer was the reason the incident was handled the same day instead of entering a queue.
+
+### The parts · Less is what makes it usable
+Function is not improved by addition. Everything added spends someone's understanding and someone's maintenance. The hard judgement is never what else could go in; it is what should be left out.
+e.g. Removing four of the seven options doubled the number of people who finished the setup.
+
+### Q: How do I use it today?
+Where you are: a plan, a schedule or a product that is full.
+Ask first: where is the room for the thing you did not predict? If there is none, the plan only works if nothing surprises you.
+Where it goes wrong: using it to defend doing less — the point is deliberate space, not low effort.
+
+### Lines to keep
+What is there provides the advantage. What is not there provides the use.
+The hole in the hub belongs to no spoke, which is why it turns.
+The hard judgement is what to leave out.
 
 ========================================================================
 ## Thomas Gordon · The I-message
