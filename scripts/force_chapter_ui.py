@@ -925,7 +925,15 @@ header.hd{margin-bottom:12px!important}
 #hwx .nc .q{font-size:15.5px;line-height:1.85}
 #hwx .nc .q::before{content:"「"}#hwx .nc .q::after{content:"」"}
 #hwx .qc{border-radius:14px;background:var(--paper2);border:1px solid var(--line);padding:17px 15px 14px;display:flex;flex-direction:column;text-decoration:none;color:inherit;position:relative}
-#hwx .qc .v{writing-mode:vertical-rl;text-orientation:mixed;height:186px;width:fit-content;max-width:100%;font-family:"Noto Serif SC","Source Han Serif SC","Songti SC","STSong","SimSun",serif;font-size:17px;font-weight:700;line-height:1.85;letter-spacing:.04em;margin:5px auto 12px;overflow:hidden;display:block}
+/* 金句横排，不再竖排。
+   竖排是好看的，但它在这里要付三样代价：
+   一、一列 186px 高，超出就被 overflow:hidden 切掉，长一点的句子读者
+      看到的是半句；
+   二、卡片被撑成 165×330 的窄长条，一屏塞不下几张，扫读变慢；
+   三、英文页用的是同一条规则 —— 拉丁字母在 vertical-rl 下整行旋转
+      90 度，那不是「另一种排法」，是读不了。
+   横排之后句子完整、卡片按内容长短决定高度、中英一致。 */
+#hwx .qc .v{font-family:"Noto Serif SC","Source Han Serif SC","Songti SC","STSong","SimSun",serif;font-size:16.5px;font-weight:700;line-height:1.75;letter-spacing:.01em;margin:6px 0 10px;display:block}
 #hwx .qc .v::before{content:"「"}#hwx .qc .v::after{content:"」"}
 #hwx .qc .who{font-size:12.5px;color:var(--muted);margin-top:2px}
 #hwx .qc .gl{font-size:13px;line-height:1.65;color:var(--ink);opacity:.72;margin:0 0 8px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}

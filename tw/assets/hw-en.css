@@ -43,6 +43,7 @@ html[lang="en"] blockquote{font-family:var(--quote)}
 /* 選擇器裡必須帶上 #hwx：頁面自己的規則是 `#hwx .kc .t{…}`，帶 id，
    權重 (1,2,0)；不帶 id 的 `html[lang="en"] .kc .t` 是 (0,3,1)，
    id 那一位直接壓死後面所有位，怎麼寫都贏不了。 */
+html[lang="en"] #hwx .qc .v,
 html[lang="en"] #hwx .kc .t,
 html[lang="en"] #hwx .qzq,
 html[lang="en"] #hwx .kc b,
@@ -53,6 +54,20 @@ html[lang="en"] #hwx .tabs2 button,
 html[lang="en"] #hwx .chip,
 html[lang="en"] #hwx .pill,
 html[lang="en"] .chip{font-family:var(--sans)}
+
+/* ── 引號用英文的那一對 ─────────────────────────────────
+   卡片上的引文是用 ::before/::after 加「」包起來的。中文頁對，英文頁
+   就成了「The winner had already won when the fighting started」——
+   一句英文外面套一對中文書名號。這不是細節潔癖：讀者一眼看出這一頁
+   是從別的語言搬過來的，而整站在做的事正是讓它讀起來像本來就是英文。
+   直接寫引號字符，不寫 \201C —— EN_CSS 是普通三引號串，
+   \201 會被 Python 當成八進制轉義吃掉，生成出來是 content:"C"。 */
+html[lang="en"] #hwx .qc .v::before,
+html[lang="en"] #hwx .pc .hk::before,
+html[lang="en"] #hwx .nc .q::before{content:"“"}
+html[lang="en"] #hwx .qc .v::after,
+html[lang="en"] #hwx .pc .hk::after,
+html[lang="en"] #hwx .nc .q::after{content:"”"}
 
 /* ── 卡片分欄要按英文的字寬來 ───────────────────────────
    欄寬寫死 150px 是照漢字算的：131px 的正文寬度放得下 8 個漢字，一句
