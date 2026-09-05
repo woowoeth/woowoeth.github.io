@@ -1,9 +1,9 @@
 # OurWord (OurWord)
 
-> 159 people and books on how the world actually works, across 2,600 years
+> 160 people and books on how the world actually works, across 2,600 years
 > See how people before you handled it.
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 159 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 160 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
 ## Read it
 
@@ -17,7 +17,7 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 ## Topics
 
 - [Modern](https://ourword.ai/en/t/modern/) — 61
-- [The industrial age](https://ourword.ai/en/t/the-industrial-age/) — 42
+- [The industrial age](https://ourword.ai/en/t/the-industrial-age/) — 43
 - [Power and organisation](https://ourword.ai/en/t/power-and-organisation/) — 20
 - [Pre-Qin and classical](https://ourword.ai/en/t/pre-qin-and-classical/) — 20
 - [Mind and feeling](https://ourword.ai/en/t/mind-and-feeling/) — 19
@@ -25,11 +25,11 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 - [Strategy and competition](https://ourword.ai/en/t/strategy-and-competition/) — 17
 - [Learning and growth](https://ourword.ai/en/t/learning-and-growth/) — 16
 - [Money and risk](https://ourword.ai/en/t/money-and-risk/) — 15
+- [How the world works](https://ourword.ai/en/t/how-the-world-works/) — 14
 - [Qin, Han and the Six Dynasties](https://ourword.ai/en/t/qin-han-and-the-six-dynasties/) — 14
 - [Reading people](https://ourword.ai/en/t/reading-people/) — 14
 - [Body and daily life](https://ourword.ai/en/t/body-and-daily-life/) — 13
 - [Family and relationships](https://ourword.ai/en/t/family-and-relationships/) — 13
-- [How the world works](https://ourword.ai/en/t/how-the-world-works/) — 13
 - [Early modern](https://ourword.ai/en/t/early-modern/) — 12
 - [Medieval](https://ourword.ai/en/t/medieval/) — 10
 
@@ -195,6 +195,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [The I Ching · The hidden dragon does not act](https://ourword.ai/en/i/i-ching/hidden-dragon/): The I Ching · The hidden dragon does not act — Newly in place, do not move yet. Just arrived, just promoted, just moved. This one asks why the first line of the first hexagram says do not act.
 - [The I Ching · The overreaching dragon repents](https://ourword.ai/en/i/i-ching/arrogant-dragon/): The I Ching · The overreaching dragon repents — The line above the peak. What the risk is when everything has gone your way for a long time, and why the top line is not the best one.
 - [The I Ching · After Peace comes Standstill](https://ourword.ai/en/i/i-ching/peace-and-stagnation/): The I Ching · After Peace comes Standstill — Run it to the limit and it turns. What to prepare when everything is going well, and what to hope for when it is jammed. Why the two sit side by side.
+- [Ivan Illich · The two watersheds](https://ourword.ai/en/i/illich/two-watersheds/): Ivan Illich · The two watersheds — A tool that starts eating its own purpose. Everyone says tools are neutral and it depends how you use them. What is worth reading is why he says they are not.
+- [Ivan Illich · Count what the tool costs you](https://ourword.ai/en/i/illich/effective-speed/): Ivan Illich · Count what the tool costs you — Time saved and time spent belong on one ledger. An arithmetic problem about cars, and the reason it applies without modification to the tools on your machine.
 - [Kazuo Inamori · The way of thinking is a multiplier](https://ourword.ai/en/i/inamori/the-multiplier/): Kazuo Inamori · The way of thinking is a multiplier — And it can be negative. He reduced a life to a single multiplication. Why only one of the three factors carries a sign.
 - [Kazuo Inamori · Pure motive, no self-interest](https://ourword.ai/en/i/inamori/pure-motive/): Kazuo Inamori · Pure motive, no self-interest — Six months of asking before he started. Before entering telecoms he interrogated himself for half a year. What that self-examination was actually guarding against.
 - [Influence · Reciprocity](https://ourword.ai/en/i/influence/reciprocity/): Influence · Reciprocity — The sense of owing is the lever. Of the six principles he puts this one first. Why the side that gives first is the side holding the initiative.
@@ -428,7 +430,7 @@ Cite the individual page URL, not the homepage — each entry page is stable and
 - [AI Bubble Monitor](https://ourword.ai/ai/)
 - [Zouni](https://ourword.ai/zouni/)
 
-## Index (159 entrys)
+## Index (160 entrys)
 
 - [Albert Einstein](https://ourword.ai/en/i/einstein/): Albert Einstein (Germany · 1879–1955) — Imagination. The physicist, and the father of relativity — but the legacy that travels furthest is not a formula, it is a way of working.
 - [Alfred Adler](https://ourword.ai/en/i/adler/): Alfred Adler (1870–1937 · Austria) — Whose task is this. The founder of individual psychology, an early colleague of Freud's who broke with him over a disagreement about direction.
@@ -485,6 +487,7 @@ Cite the individual page URL, not the homepage — each entry page is stable and
 - [Huineng](https://ourword.ai/en/i/huineng/): Huineng (Tang · 638–713) — Already complete. An illiterate woodcutter from the far south who became the sixth patriarch of Chan Buddhism.
 - [Huo Qubing](https://ourword.ai/en/i/huo-qubing/): Huo Qubing (Han · 140–117 BC) — Undivided. Nephew of Emperor Wu of Han. At seventeen he took eight hundred riders far behind the Xiongnu lines; at nineteen he ran two campaigns through the Hexi…
 - [Influence](https://ourword.ai/en/i/influence/): Influence (1984 · Robert Cialdini) — Triggers. Cialdini spent three years undercover among salespeople, fundraisers and advertisers, studying how persuasion actually happens.
+- [Ivan Illich](https://ourword.ai/en/i/illich/): Ivan Illich (Austria–Mexico · 1926–2002) — A ceiling. A priest who spent the 1970s taking apart four systems everybody treated as progress: schooling, transport, medicine, and the idea of a tool…
 - [Jeff Bezos](https://ourword.ai/en/i/bezos/): Jeff Bezos (United States · 1964–) — The flywheel. Left a Wall Street job in 1994 to sell books out of a garage and built it into a two-trillion-dollar company across retail, cloud, logistics and…
 - [Jensen Huang](https://ourword.ai/en/i/huang/): Jensen Huang (Contemporary · 1963–) — Zero-billion markets. Founder and chief executive of Nvidia, still in the seat after more than thirty years. In 2006 he made a decision that looked like burning…
 - [Jesse Livermore](https://ourword.ai/en/i/livermore/): Jesse Livermore (United States · 1877–1940) — Sitting tight. The most famous speculator in American history and the model for Reminiscences of a Stock Operator.

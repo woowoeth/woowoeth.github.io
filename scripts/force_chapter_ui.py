@@ -297,6 +297,7 @@ SC_SHORT = {
 }
 
 HWX_INTROS = {
+    "illich": "\u795e\u7236\u51fa\u8eab\uff0c\u5199\u4e0b\u300c\u533b\u7597\u5728\u5236\u9020\u75c5\u4eba\u300d\uff0c\u665a\u5e74\u62d2\u7edd\u4e86\u81ea\u5df1\u90a3\u4e2a\u7624\u7684\u624b\u672f",
 "kasparov":"1997 年输给深蓝的世界冠军，第二年把电脑请上了自己的赛场",
 "wiener":"控制论的提出者，1949 年主动写信给汽车工人工会提醒自动化",
 "hot-metal":"1978 年 7 月 1 日那一夜，一门养了几代人的排字手艺结束了",

@@ -692,6 +692,8 @@ SCENES = [
      [("wiener", "human-use"), ("drucker", "right-things-first")]),
 ]),
 ("出得多了人却空了", "AI 来了", [
+    ("它当初明明省事，我现在说不清了。",
+     [("illich", "two-watersheds")]),
     ("东西出得比以前多，我却更空。",
      [("drucker", "right-things-first"), ("zhuangzi", "use-of-uselessness")]),
     ("效率高了，做的还是没用的事。",
@@ -714,6 +716,8 @@ SCENES = [
      [("duan-yongping", "dare-to-be-last"), ("huang", "zero-billion-markets")]),
 ]),
 ("日子被工具占满", "AI 来了", [
+    ("装了一堆省时间的工具，日子反而更满。",
+     [("illich", "effective-speed")]),
     ("我一天被消息切得七零八落。",
      [("cal-newport", "attention-residue"), ("finite-and-infinite-games", "two-kinds")]),
     ("我停不下来，怕一停就落后。",

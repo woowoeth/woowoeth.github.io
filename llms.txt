@@ -1,11 +1,11 @@
 # OurWord (人类世界生存法则)
 
-> 159 people and books on how the world actually works, across 2,600 years
+> 160 people and books on how the world actually works, across 2,600 years
 > 遇到事了，看看以前的人怎么处理
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 159 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 160 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
-一个关于「世界到底怎么运转」的知识库：战略、财富、权力、人性、创业，取自 159 位人物与典籍，跨越 2600 年。每一条都写清楚这个人真正留下的那一个想法、背后的故事、拆开的分则与例子，以及今天怎么用。
+一个关于「世界到底怎么运转」的知识库：战略、财富、权力、人性、创业，取自 160 位人物与典籍，跨越 2600 年。每一条都写清楚这个人真正留下的那一个想法、背后的故事、拆开的分则与例子，以及今天怎么用。
 
 ## Read it
 
@@ -19,7 +19,7 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 ## Topics
 
 - [现代](https://ourword.ai/t/modern/) — 58
-- [工业时代](https://ourword.ai/t/industrial-age/) — 45
+- [工业时代](https://ourword.ai/t/industrial-age/) — 46
 - [先秦与古典时代](https://ourword.ai/t/classical-era/) — 20
 - [心智与情绪](https://ourword.ai/t/mind/) — 20
 - [权力与组织](https://ourword.ai/t/power/) — 20
@@ -30,10 +30,10 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 - [识人与相处](https://ourword.ai/t/people/) — 14
 - [家庭与关系](https://ourword.ai/t/family/) — 13
 - [身心与生活](https://ourword.ai/t/living/) — 13
+- [世界如何运转](https://ourword.ai/t/world/) — 13
 - [近世](https://ourword.ai/t/early-modern/) — 12
 - [秦汉至魏晋](https://ourword.ai/t/han-wei/) — 12
 - [中古](https://ourword.ai/t/medieval/) — 12
-- [世界如何运转](https://ourword.ai/t/world/) — 12
 
 ## How it is built
 
@@ -201,6 +201,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [易经 · 潜龙勿用](https://ourword.ai/i/i-ching/hidden-dragon/): 易经 · 潜龙勿用——刚到一个位置，先别动。刚接手、刚上任、刚进一个新地方，第一步该做什么。这一篇要回答的是：乾卦为什么把「勿用」放在第一格。
 - [易经 · 亢龙有悔](https://ourword.ai/i/i-ching/arrogant-dragon/): 易经 · 亢龙有悔——盛到头的那一格。一路顺到最高处的时候，风险在哪。这一篇要回答的是：乾卦最上面一格为什么不是最好，而是有悔。
 - [易经 · 泰的下一卦是否](https://ourword.ai/i/i-ching/peace-and-stagnation/): 易经 · 泰的下一卦是否——顺到极点就翻。一切顺利的时候该准备什么，卡死的时候还能指望什么。这一篇要回答的是：泰和否为什么紧挨着排。
+- [伊万·伊里奇 · 两道分水岭](https://ourword.ai/i/illich/two-watersheds/): 伊万·伊里奇 · 两道分水岭——工具会反过来吃掉目的。人人都说工具是中性的，好坏看怎么用。这一篇要回答的是：他为什么说不是。
+- [伊万·伊里奇 · 算上你为它付出的时间](https://ourword.ai/i/illich/effective-speed/): 伊万·伊里奇 · 算上你为它付出的时间——省下的和花掉的要记在同一本账上。一个关于汽车的算术题。这一篇要回答的是：它为什么能原样用在今天的工具上。
 - [稻盛和夫 · 思维方式是乘数](https://ourword.ai/i/inamori/the-multiplier/): 稻盛和夫 · 思维方式是乘数——而且可以为负。他把人生总结成一道乘法。这一篇要回答的是：为什么三个因子里只有一个带正负号。
 - [稻盛和夫 · 动机至善，私心了无](https://ourword.ai/i/inamori/pure-motive/): 稻盛和夫 · 动机至善，私心了无——开战前的半年自问。进军电信前，他把自己审了半年。这一篇要回答的是：这场自我审讯到底在防什么。
 - [影响力 · 互惠](https://ourword.ai/i/influence/reciprocity/): 影响力 · 互惠——亏欠感是杠杆。六大原理里他把互惠排第一。这一篇要回答的是：为什么先给的一方掌握主动。
@@ -434,7 +436,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [AI Bubble Monitor / AI 泡沫检测仪](https://ourword.ai/ai/)
 - [Zouni / 走你](https://ourword.ai/zouni/)
 
-## Index (159 entrys)
+## Index (160 entrys)
 
 - [BJ·福格](https://ourword.ai/i/bj-fogg/): BJ·福格（2019年·斯坦福行为设计实验室）——小到不会失败。斯坦福行为设计实验室创始人，研究行为如何被设计出来。他给出一个公式：行为发生需要动机、能力、提示三者同时到位。多数人失败在只调动机——靠决心和自我激励——而动机天然起伏，靠它维持的习惯必然崩。他的主张相反：把行为缩到小得不需要动机，然后挂在一个已有的动作后面。
 - [C.S.刘易斯](https://ourword.ai/i/cs-lewis/): C.S.刘易斯（1898-1963年·英国牛津）——妻子死后几个月的日记。作家，牛津和剑桥的教授，写过《纳尼亚传奇》和大量劝人信仰的书。五十八岁结婚，妻子乔伊四年后因癌症去世。之后几个月他在四本练习簿上记自己的状态，后来用笔名出版，就是《卿卿如晤》。收他是因为「重要的人走了」那六个问题，原来靠弗兰克尔和苏轼在答——一个是集中营的幸存者，一个是被贬的官员
@@ -444,6 +446,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [乔布斯](https://ourword.ai/i/jobs/): 乔布斯（当代·1955-2011）——极简。苹果联合创始人，被迫离开苹果，在NeXT和皮克斯度过12年，然后回来把濒死的苹果变成了全球最有价值的公司。他的思想核心是：简单比复杂更难，专注意味着说不，设计是产品如何工作而不只是外观。
 - [人类简史](https://ourword.ai/i/sapiens/): 人类简史（2011年·赫拉利）——虚构。以色列历史学家尤瓦尔·赫拉利用一本书重新解释了人类6万年的历史。核心论点惊人简洁：智人能统治地球，不是因为最强壮或最聪明，而是因为唯一能相信「虚构」的动物——金钱、国家、宗教、法律、公司，都是集体想象出来的「虚构」。这些虚构让陌生人能够大规模合作，这才是人类最危险的武器。
 - [任正非](https://ourword.ai/i/ren-zhengfei/): 任正非（当代·1944-）——韧。1987年，43岁，用2万元创立华为，从交换机代理商起步。30多年后，华为是全球最大电信设备商。他的管理思想：自我批判是组织免疫系统，以客户为中心是组织的北极星。
+- [伊万·伊里奇](https://ourword.ai/i/illich/): 伊万·伊里奇（奥地利—墨西哥·1926-2002）——上限。神父出身的思想家，1970年代连出四本书拆掉了四套人人默认为进步的系统：学校、交通、医疗、以及「工具」这个概念本身。他的核心论断只有一句：每样工具都会跨过两道分水岭，越过第二道，它开始生产它本来要消灭的东西。医疗制造病人，学校制造无知感，交通制造距离。他不反技术，他要给技术设上限
 - [优秀的绵羊](https://ourword.ai/i/excellent-sheep/): 优秀的绵羊（2014年·德雷谢维奇）——会考不会想。作者在耶鲁任教十年、做过招生评审，写下对精英教育的批评。他的观察是：这套系统筛选出的年轻人极其擅长跨越一道道设定好的栏杆——成绩、竞赛、实习、简历——却普遍说不出自己想要什么。他称他们为优秀的绵羊：能力很强，方向全靠外部给定，一旦没有下一道栏杆就陷入茫然，且对失败有超出常人的恐惧
 - [依恋理论](https://ourword.ai/i/attachment-theory/): 依恋理论（1950-1970年代·鲍尔比与艾恩斯沃斯）——早期模板。鲍尔比研究战后孤儿院的孩子，提出人对亲近关系的需求是本能而非依赖；他的合作者艾恩斯沃斯设计了「陌生情境」实验，把一岁婴儿与照料者短暂分离再重聚，从重聚那一刻的反应里，识别出几种稳定的依恋模式。这套模式会成为一个人此后处理亲密关系的默认模板——不是决定论，但确实是出厂设置。
 - [保罗·格雷厄姆](https://ourword.ai/i/paul-graham/): 保罗·格雷厄姆（美国·1964年—）——做不可规模化的事。Lisp 黑客，1995 年做出 Viaweb——世界上第一个跑在浏览器里的商用软件，1998 年卖给雅虎。2005 年和几个人办了 Y Combinator，用「一次投一批、给小钱、给三个月」的方式重写了早期投资的形态，Airbnb、Stripe、Dropbox 都从这里出来。

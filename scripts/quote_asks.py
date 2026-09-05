@@ -398,4 +398,10 @@ QUOTE_ASKS = {
     "zhu-yuanzhang/delay-the-title": "别人都在抢先，我要不要慢一步。",
     "zhuge-liang/executing-ma-su": "该罚的是我最看重的那个人。",
     "zhuge-liang/longzhong-plan": "我看不出下一步棋该往哪走。",
+    # 伊万·伊里奇
+    "illich/two-watersheds":
+        "\u5b83\u5f53\u521d\u660e\u660e\u7701\u4e8b\uff0c\u6211\u73b0\u5728\u8bf4\u4e0d\u6e05\u4e86\u3002",
+    "illich/effective-speed":
+        "\u88c5\u4e86\u4e00\u5806\u7701\u65f6\u95f4\u7684\u5de5\u5177\uff0c\u65e5\u5b50\u53cd\u800c\u66f4\u6ee1\u3002",
+
 }

@@ -82,7 +82,12 @@ python3 scripts/gate.py           # 十八道闸
 python3 scripts/gate_selftest.py  # 反向验：注入缺陷必须被拦下
 ```
 
-分享图（`scripts/gen_og.py`）在构建链里，不用单独跑。
+分享图**不在**构建链里，加了新人之后要单独跑一次（不跑的话「语言站链接」
+那道闸会报 og.png 不存在）：
+
+```bash
+python3 scripts/gen_og.py     # 已存在的会跳过，只画新的
+```
 
 ---
 

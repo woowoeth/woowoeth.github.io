@@ -5,6 +5,7 @@ import unicodedata
 
 SLUGS = {
     "孙子兵法": "sun-tzu",
+    "伊万·伊里奇": "illich",
     "玛丽亚·康妮科娃": "konnikova",
     "格兰诺维特": "granovetter",
     "哈佛成人发展研究": "harvard-study",
