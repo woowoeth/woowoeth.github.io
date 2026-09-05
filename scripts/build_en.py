@@ -753,7 +753,7 @@ def add_en_closing():
             title = _h.escape(_h.unescape(m.group(1)).split(" — ")[0], quote=True)
         url = "https://ourword.ai/en/i/%s/%s/" % (sl, kk)
         blk = ('<section class="hw-same">'
-               '<p class="ph">Other people are asking the same thing</p>'
+               '<p class="ph">Same situation, other people are asking</p>'
                + "".join('<a href="%s">%s</a>' % (u, _h.escape(q))
                          for q, u in rows)
                + '<a class="more" href="/en/#hwx-tabs2">%s · all %d questions'

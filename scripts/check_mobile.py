@@ -172,6 +172,20 @@ def main():
                             titleLine: (() => {
                               const e = document.querySelector('.hd-title, .wordmark');
                               return e ? parseFloat(getComputedStyle(e).lineHeight) || 0 : 0;
+                            })(),
+                            // 读完之后那一块：读者能不能说一句自己的。
+                            // 输入框是 hw-chat.js 运行时生成的，静态查不到，
+                            // 只能在浏览器里问它在不在、接没接上。
+                            yours: (() => {
+                              const s = document.querySelector('.hw-same');
+                              if (!s) return null;
+                              const ta = s.querySelector('.arow textarea');
+                              const go = s.querySelector('.arow .go');
+                              return {ta: !!ta, go: !!go,
+                                      ph: ta ? ta.placeholder : '',
+                                      tail: [...s.children].slice(-2)
+                                            .map(e => e.className).join(','),
+                                      ask: typeof window.hwAsk};
                             })()};
                 }""")
                 checked += 1
@@ -241,6 +255,40 @@ def main():
                     if lh and ta["h"] > lh * 1.6:
                         bad.append("%s %s 站名断成了 %d 行"
                                    % (label, path, round(ta["h"] / lh)))
+
+                # ⑦ 章节页读完之后，读者要能说一句自己的。
+                #    这一块是站里做共情的地方，顺序是：四条别人的问句 →
+                #    你呢 → 转发。原来是「你不是一个人 → 转给别人」，读者
+                #    从头到尾没有一次开口的机会 —— 在他最可能想「这说的就是
+                #    我」的那一秒，站点的下一句是「转发出去」。
+                #    输入框由 hw-chat.js 运行时生成，静态扫不到，只能在浏览器
+                #    里验：在不在、接没接上 hwAsk、顺序对不对。
+                # 章节页 = `i` 后面还有两段（人 / 篇）。拿斜杠数量判会
+                # 把 /tw/i/su-shi/ 这种**条目页**也算进来 —— 条目页本来
+                # 就没有这一块，报出来的是假警报。
+                _seg = [x for x in path.split("/") if x]
+                _is_ch = "i" in _seg and len(_seg) - _seg.index("i") == 3
+                if _is_ch:
+                    y = r.get("yours")
+                    if not y:
+                        bad.append("%s %s 没有「还有人这么问」那一块"
+                                   % (label, path))
+                    else:
+                        if not (y["ta"] and y["go"]):
+                            bad.append("%s %s 读完之后没有让读者说一句的输入框"
+                                       % (label, path))
+                        elif not (y["ph"] or "").strip():
+                            bad.append("%s %s 输入框没有占位文字（空框子等于让"
+                                       "读者先想「我该说什么」，那一步就是流失点）"
+                                       % (label, path))
+                        if y.get("ask") != "function":
+                            bad.append("%s %s 上 window.hwAsk 不在，输入框问不出去"
+                                       % (label, path))
+                        if not (y.get("tail") or "").startswith("arow"):
+                            bad.append("%s %s 那一块顺序不对（末两个是 %s）——"
+                                       "导航夹在问句和输入框中间，会把"
+                                       "「他们问 → 你呢」这条线打断"
+                                       % (label, path, y.get("tail")))
             b.close()
     finally:
         srv.shutdown()

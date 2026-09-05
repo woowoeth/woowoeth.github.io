@@ -559,6 +559,28 @@ def _en_cjk():
     return go
 
 
+CHATJS = os.path.join(ROOT, "assets", "hw-chat.js")
+
+
+def _yours_gone():
+    """把章节页读完之后那个输入框拆掉 —— 读者又没法说话了。
+
+    它是 hw-chat.js 运行时生成的，静态扫不到：页面照样渲染、HTML 一个字
+    没变、构建照样通过，只是那一块又退回成「四条别人的问句 + 转发」，
+    读者从头到尾没有一次开口的机会。所以注入落在**脚本**上，
+    判据只能在浏览器里。
+    """
+    def go():
+        t = read(CHATJS)
+        a = "same.appendChild(row);"
+        if a not in t:
+            return None
+        write(CHATJS, t.replace(a, "/* injected: */ void row;", 1))
+        return CHATJS
+
+    return go
+
+
 ENCHAP = os.path.join(ROOT, "en", "i", "bezos", "day-one", "index.html")
 ENCSS = os.path.join(ROOT, "assets", "hw-en.css")
 CHAPCSS = os.path.join(ROOT, "assets", "hw-chapter.css")
@@ -851,6 +873,8 @@ CASES = [
     ("英文站·读完之后那块没了", "check_en.py", ENCHAP, _en_closing(),
      "还有人这么问"),
     ("窄屏·横向撑开",     "check_mobile.py", CHAPCSS, _mobile_blowout(), "横向撑开"),
+    ("窄屏·读者说不了话", "check_mobile.py", CHATJS, _yours_gone(),
+     "没有让读者说一句的输入框"),
     ("挂件繁体·没跟上",   "check_chat_tw.py", CHATJS, _chat_tw_stale(), "不同步"),
     ("导语·没裁过",       "check_dek.py", ENPAGE, _dek_untrimmed(), "导语"),
     ("版块·英文塌成一片", "check_dek.py", ENPAGE, _en_blocks_flat(), "缺这几类版块"),

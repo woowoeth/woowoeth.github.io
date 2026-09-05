@@ -156,7 +156,20 @@ h1{
 .hw-same a{display:block; padding:9px 0; border-top:1px dashed var(--rule); color:var(--ink); font-size:15.5px; line-height:1.6; text-decoration:none}
 .hw-same a:first-of-type{border-top:0}
 .hw-same a:hover{color:var(--seal)}
-.hw-same a.more{margin-top:4px; font-size:13px; color:var(--muted)}
+.hw-same a.more{margin-top:12px; font-size:13px; color:var(--muted); border-top:0; padding-top:0}
+/* 讀完之後讓讀者說一句自己的。輸入框由 assets/hw-chat.js 生成 ——
+   三種語言的章節頁都加載它，寫在構建裡就要各來一份。 */
+.hw-same .arow{display:flex; align-items:center; gap:6px; margin-top:14px;
+  border:1px solid var(--rule); border-radius:14px; background:var(--paper); padding:0 8px 0 0}
+.hw-same .arow textarea{flex:1; border:0; background:transparent; resize:none; outline:none;
+  font:inherit; font-size:15px; line-height:1.8; padding:12px 13px; color:var(--ink);
+  overflow:hidden; height:46px}
+.hw-same .arow textarea::placeholder{color:var(--muted)}
+.hw-same .arow .go{flex:none; border:0; background:var(--ink); color:var(--paper);
+  border-radius:999px; padding:8px 18px; cursor:pointer; font-size:14px; font-family:inherit}
+.hw-same .arow .go:active{transform:scale(.97)}
+/* 這一行現在是句子，不是標籤 —— 標籤那套 .22em 的字距要收回來 */
+.hw-same .ph{letter-spacing:.02em; font-size:14px; margin:0 0 10px}
 b.key{font-weight:650; background:linear-gradient(transparent 62%, var(--seal-soft) 62%)}
 blockquote.say{margin:32px 0}
 

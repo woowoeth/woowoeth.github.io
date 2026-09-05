@@ -1950,7 +1950,7 @@ def patch_chapter_scene():
                 break
         if not rows:
             continue
-        blk = ('<section class="hw-same"><p class="ph">同一件事，还有人这么问</p>'
+        blk = ('<section class="hw-same"><p class="ph">同一处境，还有人这么问</p>'
                + "".join('<a href="%s">%s</a>' % (u, _h.escape(q)) for q, u in rows)
                + '<a class="more" href="/#hwx-tabs2">%s · 全部 %d 个问题 →</a></section>'
                  % (_h.escape(sc), len(qs)))

@@ -64,6 +64,8 @@
       teaNo: 'Tomorrow',
       teaThanks: 'Thank you. Unlimited today.',
       teaLater: 'Tomorrow then.',
+      yours: 'And you?',
+      yoursGo: 'Ask',
       ball: 'Ask',
       srv: "That's today's allowance. Come back tomorrow."
     },
@@ -94,6 +96,8 @@
       teaNo: '\u660e\u5929\u518d\u6765',
       teaThanks: '\u8c22\u8c22\u3002\u4eca\u5929\u968f\u4fbf\u804a\u3002',
       teaLater: '\u90a3\u5c31\u660e\u5929\u3002',
+      yours: '\u4f60\u5462\uff1f',
+      yoursGo: '\u95ee',
       ball: '\u95ee',
       srv: '\u4eca\u5929\u7684\u6b21\u6570\u7528\u5b8c\u4e86\uff0c\u660e\u5929\u518d\u6765\u3002'
     },
@@ -128,6 +132,8 @@
       teaNo: '\u660e\u5929\u518d\u4f86',
       teaThanks: '\u8b1d\u8b1d\u3002\u4eca\u5929\u96a8\u4fbf\u804a\u3002',
       teaLater: '\u90a3\u5c31\u660e\u5929\u3002',
+      yours: '\u4f60\u5462\uff1f',
+      yoursGo: '\u554f',
       ball: '\u554f',
       srv: '\u4eca\u5929\u7684\u6b21\u6578\u7528\u5b8c\u4e86\uff0c\u660e\u5929\u518d\u4f86\u3002'
     },
@@ -922,5 +928,55 @@
     input.value = t.slice(0, 500);
     ask();
   };
+  /* ── 章節頁讀完之後那一塊：讓讀者說一句自己的 ────────────────
+     位置在四條別人的問句**下面**、轉發**上面**。順序是有講究的：
+     讀者最可能想「這說的就是我」的那一秒，站點原來的下一句是「轉發出去」——
+     他從頭到尾沒有一次開口的機會。
+
+     輸入框由這裡生成，不在構建裡各寫一遍：三種語言的章節頁都加載這個文件，
+     寫在構建裡就要在 force_chapter_ui 和 build_en 裡各來一份，而分成兩處
+     寫的東西遲早走散（英文站少一整塊收尾就是這麼來的）。
+
+     佔位符只有「你呢？」三個字，因為上面剛有四條真人的問句 —— 那四條已經
+     告訴讀者答案長什麼樣了，比預填一句我替他寫的話更準。 */
+  (function () {
+    var same = document.querySelector('.hw-same');
+    if (!same || same.querySelector('.arow')) return;
+    var row = document.createElement('div');
+    row.className = 'arow';
+    var ta = document.createElement('textarea');
+    ta.rows = 1;
+    ta.placeholder = T.yours;
+    var go = document.createElement('button');
+    go.type = 'button';
+    go.className = 'go';
+    go.textContent = T.yoursGo;
+    row.appendChild(ta);
+    row.appendChild(go);
+    same.appendChild(row);
+    /* 「全部 N 個問題 →」原來夾在問句和輸入框中間，把「他們問 → 你呢」
+       這條線打斷了。挪到輸入框之後。 */
+    var more = same.querySelector('a.more');
+    if (more) same.appendChild(more);
+
+    function fire() {
+      var t = (ta.value || '').trim();
+      if (!t) { ta.focus(); return; }
+      /* 把**這一篇**釘住：讀者是讀完這一篇才開口的，答案不該讓檢索再猜一遍。
+         處境名從那一行導航鏈接裡取，它寫的就是這一篇屬於哪個處境。 */
+      var scene = more ? (more.textContent || '').split('\u00b7')[0].trim() : '';
+      window.hwAsk(t, { pin: [location.pathname], scene: scene });
+      ta.value = '';
+    }
+    go.onclick = fire;
+    ta.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); fire(); }
+    });
+    ta.addEventListener('input', function () {
+      ta.style.height = 'auto';
+      ta.style.height = Math.min(ta.scrollHeight, 96) + 'px';
+    });
+  })();
+
   window.hwLeft = left;          /* 首頁要知道今天還剩幾次 */
 })();
