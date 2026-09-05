@@ -55,7 +55,11 @@
     var title = b.getAttribute('data-share-title') || document.title;
     var wx = inWeChat();
     if (!wx && navigator.share) {
-      navigator.share({ title: title, text: text, url: url })
+      // text 傳**不帶鏈接**的那一份。帶鏈接的話，它和 url 字段是同一個
+      // 地址，一次分享出現兩個 URL —— 微信會當成兩個條目，文本正常發出，
+      // URL 另存成一個臨時文件跟著發過去（原聲那邊實測到過）。
+      var desc = b.getAttribute('data-share-desc') || text;
+      navigator.share({ title: title, text: desc, url: url })
         .catch(function (err) {
           if (err && err.name === 'AbortError') return;
           fallback(text);

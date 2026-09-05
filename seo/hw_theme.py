@@ -28,11 +28,25 @@ def _paras(text):
     return [p.strip() for p in str(text).split("\n") if p.strip()]
 
 def _share_btn(title, url, text):
+    """两份分享文案，用途不同，不能共用一份。
+
+    data-share-text 是**粘贴**用的：末尾带链接，粘到微信、备忘录、任何地方
+    都立得住。
+    data-share-desc 是**系统分享面板**用的：一句简介，**不带链接** ——
+    链接由 navigator.share 的 url 字段单独出一次。
+
+    共用一份的代价：text 末尾的链接和 url 字段是同一个地址，一次分享出现
+    两个 URL，微信会把它当成两个条目（原声那边实测到过：文本正常发出，
+    URL 另存成一个一百多字节的临时文件跟着发过去）。
+    """
+    desc = text.split("\n\n")
+    desc = desc[1] if len(desc) >= 3 else (desc[0] if desc else "")
     return (
         '<button class="share-btn" type="button" data-share '
-        'data-share-title="%s" data-share-url="%s" data-share-text="%s" '
+        'data-share-title="%s" data-share-url="%s" data-share-desc="%s" '
+        'data-share-text="%s" '
         'aria-label="分享本页">%s 分享</button>'
-        % (esc(title), esc(url), esc(text), SHARE_SVG)
+        % (esc(title), esc(url), esc(desc), esc(text), SHARE_SVG)
     )
 
 KEYW = '<b class="key">%s</b>'
