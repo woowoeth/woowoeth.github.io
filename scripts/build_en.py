@@ -106,9 +106,9 @@ EN_READ = '"Source Serif 4",Charter,Georgia,"Times New Roman",serif'
 EN_SANS = ('-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,'
            '"Helvetica Neue",Arial,sans-serif')
 
-SSF_URL = ("https://fonts.googleapis.com/css2?family=Playfair+Display:"
-           "wght@600;700;800&family=Source+Serif+4:"
-           "opsz,wght@8..60,400;8..60,600;8..60,700&display=swap")
+EN_FONT_URL = ("https://fonts.googleapis.com/css2?family=Playfair+Display:"
+               "wght@600;700;800&family=Source+Serif+4:"
+               "opsz,wght@8..60,400;8..60,600;8..60,700&display=swap")
 
 FONT = [
     ("https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;600;700;900"
@@ -264,15 +264,33 @@ def write_en_css():
     return len(EN_CSS)
 
 
-def link_en_css(s):
-    """把英文样式表挂到 </head> 前 —— 必须排在所有其他样式表后面，
-    否则同等权重的规则会被后面的盖回去。首页的字体族是写死在内联
-    <style> 里的，那一层靠 FONT 表逐个换栈，不靠这个文件。"""
-    if EN_CSS_HREF in s or "</head>" not in s:
+def link_en_assets(s):
+    """给每个英文页挂上西文字体和英文样式表。
+
+    字体链接必须**主动挂上**，不能靠 FONT 表替换。踩过：表里写的是
+    「把中文字体的 Google Fonts 地址换成英文的」，可条目页和章节页本来
+    就没有那条地址（中文站那两类页用的是系统宋体）—— 换无可换，于是
+    **一个英文页都没有加载 webfont**，Playfair 和 Source Serif 4 全部落到
+    Georgia 兜底。首页因为原来有那条地址，看着是对的，内页不对。
+    这也是为什么同样声明了 Playfair，主站看起来和原声不一样。
+
+    英文样式表排在所有其他样式表后面 —— 同等权重的规则要靠源码顺序赢。
+    """
+    if "</head>" not in s:
         return s
-    tag = '<link rel="stylesheet" href="%s">' % EN_CSS_HREF
+    add = ""
+    # 判据要看**这条字体样式表在不在**，不能看 preconnect 在不在：
+    # 条目页和章节页本来就带着 fonts.gstatic.com 的 preconnect（给中文站
+    # 用的），拿它当判据的话这些页全被跳过 —— 只有首页挂上了。
+    if "Playfair+Display" not in s:
+        add += ('<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>'
+                '<link rel="stylesheet" href="%s">' % EN_FONT_URL)
+    if EN_CSS_HREF not in s:
+        add += '<link rel="stylesheet" href="%s">' % EN_CSS_HREF
+    if not add:
+        return s
     i = s.rindex("</head>")
-    return s[:i] + tag + s[i:]
+    return s[:i] + add + s[i:]
 
 
 def protect(s):
@@ -360,7 +378,7 @@ def finish(s, rel=None):
         s = s.replace(a, b)
     # ⑤ 英文样式表挂在最后：retarget 之后再挂，它才不会被改写成
     #    /en/assets/（那个路径下没有文件，挂上去等于没挂）。
-    return link_en_css(s)
+    return link_en_assets(s)
 
 
 

@@ -291,6 +291,36 @@ def rendered_fonts(port=8932):
                         out.append("%s 还在下载 CJK 网络字体 %s —— 英文页不该下载它"
                                    % (label, w.replace("+", " ")))
                         break
+                # ⓒ 声明了不等于**装上了**。这一条是这道闸漏掉一整轮的原因：
+                #    ⓑ 比的是 getComputedStyle 里那串**声明**，而声明里写着
+                #    Playfair 的页面可以一个 webfont 都没加载 —— 条目页和
+                #    章节页本来就没有 Google Fonts 那条链接（中文站那两类页
+                #    用系统宋体），FONT 表「把中文字体地址换成英文的」换无
+                #    可换，于是全站落到 Georgia 兜底，而 ⓑ 一路绿灯。
+                #    判据必须落在「document.fonts 里有没有一个 status 是
+                #    loaded 的同名字体」上。
+                want_fams = set()
+                for v in WANT.values():
+                    first = v.split(",")[0].strip().strip('"')
+                    if " " in first or first[:1].isupper():
+                        want_fams.add(first)
+                got = pg.evaluate("""async (fams) => {
+                    await Promise.all(fams.map(f =>
+                        document.fonts.load('700 24px "' + f + '"').catch(() => 0)));
+                    const out = {};
+                    for (const f of fams) out[f] = false;
+                    document.fonts.forEach(ff => {
+                        if (out.hasOwnProperty(ff.family) && ff.status === 'loaded')
+                            out[ff.family] = true;
+                    });
+                    return out;
+                }""", sorted(f for f in want_fams if f not in
+                             ("-apple-system", "BlinkMacSystemFont")))
+                for fam, ok in sorted(got.items()):
+                    if not ok:
+                        out.append("%s 声明了 %s 却没有装上它 —— 页面上是兜底字体"
+                                   % (label, fam))
+
                 # ⓑ 解出来的字体栈
                 for what, sel, role in spots:
                     fam = pg.evaluate(
