@@ -766,10 +766,10 @@ body{background:var(--paper);color:var(--ink)}
 @media(max-width:480px){#hwx .askhero .ahead{padding-right:38px}}
 #hwx .tq{border:1px solid var(--line);border-radius:16px;padding:20px 22px;background:transparent;display:flex;flex-direction:column}
 #hwx .tq .dt{font-size:12.5px;letter-spacing:.24em;color:var(--acc);font-weight:700;margin-bottom:6px}
-#hwx .tq .q{font-family:"Noto Serif SC","Source Han Serif SC","Songti SC","STSong",serif;font-size:clamp(20px,3.6vw,26px);font-weight:700;line-height:1.85;margin-bottom:14px}
+#hwx .tq .tgl{font-family:"Noto Serif SC","Source Han Serif SC","Songti SC","STSong",serif;font-size:clamp(19px,3.4vw,24px);font-weight:700;line-height:1.75;color:var(--ink);opacity:1;margin:0 0 12px}
+#hwx .tq .q{font-size:15px;line-height:1.9;color:var(--ink);opacity:.7;margin-bottom:10px}
 #hwx .tq .src{font-size:13.5px;color:var(--muted)}
 #hwx .tq .src a{color:var(--acc);text-decoration:none}
-#hwx .tq .tgl{font-size:14.5px;line-height:1.75;color:var(--ink);opacity:.72;margin:0 0 10px}
 #hwx .tq .acts{display:flex;gap:8px;margin-top:14px}
 #hwx .tq .acts button{border:1.5px solid var(--ink);background:transparent;color:var(--ink);border-radius:999px;padding:7px 16px;font-family:inherit;font-size:14px;cursor:pointer}
 #hwx .tq .acts .bs{background:var(--ink);color:var(--paper)}
@@ -810,7 +810,8 @@ body{background:var(--paper);color:var(--ink)}
 #hwx .kc .r a u{display:block;text-decoration:none;font-size:11.5px;line-height:1.55;color:var(--muted);opacity:.85;margin-top:2px}
 #hwx .kc .r a em{display:block;font-style:normal;color:var(--acc);margin-top:3px}
 #hwx .today .tq{padding:15px 16px}
-#hwx .today .tq .q{font-size:17px!important;line-height:1.8!important;margin-bottom:8px!important}
+#hwx .today .tq .tgl{font-size:18px!important;line-height:1.7!important;margin-bottom:10px!important}
+#hwx .today .tq .q{font-size:14.5px!important;line-height:1.9!important;margin-bottom:8px!important}
 #hwx .today .tq .tgl{display:block;font-size:13.5px;line-height:1.7;margin:6px 0 12px}
 /* 第一人称那句是读者自己的话，给它一道竖线，跟上面的引文分开——
    没有标签，靠这道线说明它不是引文的续文。 */
@@ -1659,8 +1660,15 @@ switchTab('境');
         # 放到整页最底下是过了：那两块有换一换 / 保存卡片 / 分享，
         # 埋到四千像素以下等于废掉。
         "<div class=\"today today-foot\">"
-        "<div class=\"tq\"><div class=\"dt\" id=\"hwx-dt\"></div><div class=\"q\" id=\"hwx-tq\"></div>"
-        "<div class=\"tgl\" id=\"hwx-tgl\"></div><div class=\"src\" id=\"hwx-tqs\"></div>"
+        # 「关于你」那一句（tgl）在引文（q）**前面**。上一版把它从
+        # display:none 里放出来了，理由写在下面 paintQuote 的注释里：
+        #「首页那块成了名言展示柜：它是关于说话那个人的，不是关于读者的」。
+        # 但只放出来、没换位置 —— 读者仍然先遇到十八世纪的扣针工厂，
+        # 再遇到自己那句「我的收入完全绑在工时上」。今日一问那张卡是对的
+        # （第一行就是读者自己的话），这张跟上。
+        "<div class=\"tq\"><div class=\"dt\" id=\"hwx-dt\"></div>"
+        "<div class=\"tgl\" id=\"hwx-tgl\"></div><div class=\"q\" id=\"hwx-tq\"></div>"
+        "<div class=\"src\" id=\"hwx-tqs\"></div>"
         "<div class=\"acts\"><button id=\"hwx-next\">换一换</button>"
         "<button class=\"bs\" id=\"hwx-save\">保存卡片</button>"
         "<button id=\"hwx-share\">分享</button></div></div>"
