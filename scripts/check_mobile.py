@@ -28,6 +28,9 @@
    事：被裁了、睡不着、孩子不听…」20 字，英文 62 个字符），塞进按中文宽度
    定好的控件里就被裁。裁掉的往往正是那句话唯一有用的部分（举例、数字）。
    判的是 scrollWidth 超出 clientWidth，以及占位文字量出来比输入框还宽。
+⑥ 切页签要把信息流带回标签行 —— 读者已经往下翻了两屏，一换页签内容整个
+   换掉、位置却留在原地，落在新一批卡片的中间，前面那些永远不会被看到。
+   这一条只在**行为**上看得见，静态检查全绿。
 ④ 站名必须一行 —— ③ 只保证不重叠，而「不重叠」可以靠把站名压窄来达成，
    那样站名就断成两行。它是一个名字，断成两行不是排版，是把名字拆了。
    两条一起才逼出正确的解：工具条自己占一行，站名拿回整行宽度。
@@ -199,6 +202,32 @@ def main():
                     if ox > 1 and oy > 1:
                         bad.append("%s %s 语言切换压住站名 %dx%dpx"
                                    % (label, path, ox, oy))
+                # ⑥ 信息流的滚动行为：切页签要回到标签行，返回要停在原位。
+                #    这两条只在**行为**上看得见，静态检查一点异常都发现不了 ——
+                #    页面正常渲染、链接都通、样式也对，只是每次换个页签就落在
+                #    新一批卡片的中间，前面那些永远不会被看到。
+                if path in ("/", "/tw/", "/en/"):
+                    beh = pg.evaluate("""() => {
+                      const tabs = document.querySelectorAll('#hwx-tabs2 button');
+                      if (tabs.length < 2) return null;
+                      const bar = document.getElementById('hwx-tabs2');
+                      window.scrollTo(0, 2000);
+                      const before = window.scrollY;
+                      const off = [...tabs].find(b => !b.classList.contains('on'));
+                      if (!off) return null;
+                      off.click();
+                      const after = window.scrollY;
+                      const barTop = bar.getBoundingClientRect().top + window.scrollY;
+                      return {before, after, barTop,
+                              saves: typeof sessionStorage !== 'undefined'};
+                    }""")
+                    if beh and beh["before"] > beh["barTop"] + 40 \
+                            and beh["after"] >= beh["before"] - 40:
+                        bad.append("%s %s 切页签没有把信息流带回标签行"
+                                   "（切前 %d，切后 %d，标签行在 %d）"
+                                   % (label, path, beh["before"],
+                                      beh["after"], beh["barTop"]))
+
                 # ⑤ 文字放不进框：被裁的内容读者永远看不到，而页面上
                 #    一点异常都看不出来 —— 它只是「短了一截」。
                 for x in (r.get("clipped") or [])[:3]:
@@ -223,7 +252,7 @@ def main():
             print("  ✗ " + x)
         return 1
     print("✓ 三种语言在 375px 下都不横向滚动、语言切换和夜间模式都在且可点、"
-          "页头不自己压自己、站名一行、文字都放得进框")
+          "页头不自己压自己、站名一行、文字都放得进框、切页签回到标签行")
     return 0
 
 

@@ -1451,8 +1451,58 @@ function switchTab(t){
 document.querySelectorAll('#hwx-tabs2 button').forEach(function(b){
   b.onclick=function(){var t=b.getAttribute('data-t');
     trk('tab_switch',{tab:t==='新'?'latest':(t==='全'?'all':'situations')});
-    switchTab(t)};
+    switchTab(t);
+    /* 切页签要把信息流带回开头。原来不动：读者已经往下翻了两屏，一换页签
+       内容整个换掉、位置却留在原地——落在新一批卡片的中间，前面那些永远
+       不会被看到。换页签这个动作的意思就是「给我看别的」。
+       回到标签行本身，不是回页首：页首上面还有今日一问那几张卡，
+       读者刚刚已经翻过去了。 */
+    /* 瞬时，不平滑。内容已经整个换掉了，再平滑滚过两屏是滑过一堆
+       已经不存在的东西；而且 smooth 在后台标签页和 reduced-motion 下
+       行为不一致，瞬时到位是每次都一样的那个。 */
+    var tb=document.getElementById('hwx-tabs2');
+    if(tb){var y=tb.getBoundingClientRect().top+scrollY-8;
+      if(scrollY>y)scrollTo(0,y);}
+  };
 });
+
+/* 从内容页返回要停在原来的位置。
+   信息流是 JS 渲染的，浏览器恢复滚动位置的时候卡片还没画出来，页面高度
+   还是零——恢复到哪都一样，结果就是回到顶部，读者得重新翻一遍。
+   所以自己记：点进任何一张卡之前，把当前页签和位置存进 sessionStorage；
+   回来渲染完再放回去，然后**立刻清掉**——只有「返回」该恢复，重新打开
+   首页不该。 */
+var HWX_POS='hwx_feed_pos';
+addEventListener('pagehide',function(){
+  try{sessionStorage.setItem(HWX_POS,JSON.stringify({t:TAB,y:scrollY}))}catch(e){}
+});
+(function(){
+  var raw=null;
+  try{raw=sessionStorage.getItem(HWX_POS);sessionStorage.removeItem(HWX_POS)}catch(e){}
+  if(!raw)return;
+  var st=null; try{st=JSON.parse(raw)}catch(e){}
+  if(!st||!st.y)return;
+  /* 只有真的是「返回」才恢复：导航类型是 back_forward，或者上一页就是本站。
+     重新在地址栏打开首页时不该跳到半截。 */
+  var nav=(performance.getEntriesByType&&performance.getEntriesByType('navigation')[0])||{};
+  var back=nav.type==='back_forward'||(document.referrer&&document.referrer.indexOf(location.origin)===0);
+  if(!back)return;
+  /* 必须等 load 之后再放：页面启动时还会自己调一次 switchTab('境')
+     （处境层的初始化），在 rAF 里恢复的话页签会被它盖回去 ——
+     实测位置恢复对了、页签却停在「处境」，而存的是「全部」。 */
+  /* 恢复页签靠**点那个按钮**，不靠比较 TAB。页面上有不止一个叫 TAB 的
+     变量（另一处的值是「最新」，而按钮的 data-t 是「新/全/境」），拿它
+     比较永远对不上；点按钮走的是和用户完全一样的那条路径。
+     再往后推一档（load 之后再 60ms）：启动时还有一次 switchTab('境')，
+     早了会被它盖回去 —— 实测位置恢复对了、页签却停在「处境」。 */
+  addEventListener('load',function(){setTimeout(function(){
+    if(st.t){
+      var b=document.querySelector('#hwx-tabs2 button[data-t="'+st.t+'"]');
+      if(b&&!b.classList.contains('on'))b.click();
+    }
+    scrollTo(0,st.y);
+  },60)});
+})();
 /* 搜索原来两个毛病叠在一起。
    一是逐字子串（data-t.indexOf(v)），差一个字就 0 条：搜「我很难受」出 0，
    可站里的问句是「这件事为什么让我这么难受？」。
