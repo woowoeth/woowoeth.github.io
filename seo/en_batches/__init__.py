@@ -91,3 +91,56 @@ def merge_scenes(base):
 
 def slugs():
     return [e["slug"] for e in collect("ENTRIES", [])]
+
+
+def conflicts(base_scenes=(), base_names=(), base_slugs=()):
+    """跨批次的冲突 —— **只有把所有批次摆在一起才看得见**的那一类。
+
+    每一批单独看都是对的：slug 不重、名字不重、处境名不重。合起来就未必。
+    check_batch.py 是给写手用的，它只看自己那一批，看不见这些；
+    所以这一条只能长在这里，由 check_en.py 调。
+
+    查四样：
+    ① 同一个 slug 被两批都写了 —— 后导入的那批静默覆盖前一批。
+    ② 同一个英文名被两个 slug 用了 —— 交叉引用会指错人。
+    ③ 处境名「几乎一样」—— 「Too many paths」和「Too many options」
+       会在 chip 条上并排站着，读者以为是两个地方，其实内容被劈成两半。
+    ④ 同一个 slug/章key 有两句今日一句 —— 后写的赢，前一批的白写。
+    """
+    import re
+    out = []
+    seen_slug, seen_name, seen_ask = {}, {}, {}
+    for s in base_slugs:
+        seen_slug[s] = "已上线"
+    for n in base_names:
+        seen_name[n] = "已上线"
+    scenes = {t: "已上线" for t in base_scenes}
+
+    def norm(t):
+        return re.sub(r"[^a-z]", "", t.lower())
+
+    nscene = {norm(t): t for t in scenes}
+    for m in _mods():
+        who = m.__name__.rsplit(".", 1)[-1]
+        for e in getattr(m, "ENTRIES", []) or []:
+            sl, nm = e.get("slug"), e.get("n")
+            if sl in seen_slug:
+                out.append("slug %s 在 %s 和 %s 里各有一条，后一条会静默覆盖"
+                           % (sl, seen_slug[sl], who))
+            seen_slug[sl] = who
+            if nm in seen_name and seen_name[nm] != who:
+                out.append("英文名「%s」被两处用了（%s / %s）—— 交叉引用会指错人"
+                           % (nm, seen_name[nm], who))
+            seen_name[nm] = who
+        for t, _g, _q in getattr(m, "SCENES", []) or []:
+            k = norm(t)
+            if k in nscene and nscene[k] != t:
+                out.append("处境名几乎一样：「%s」和「%s」—— chip 条上会并排"
+                           " 站着两个，内容被劈成两半" % (nscene[k], t))
+            nscene.setdefault(k, t)
+        for key in getattr(m, "ASKS", {}) or {}:
+            if key in seen_ask and seen_ask[key] != who:
+                out.append("%s 的今日一句在 %s 和 %s 里各写了一句，后一句赢"
+                           % (key, seen_ask[key], who))
+            seen_ask[key] = who
+    return out

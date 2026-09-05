@@ -66,6 +66,7 @@ jobs musk bezos thiel paul-graham naval""".split()
 sys.path.insert(0, os.path.join(ROOT, "seo"))
 from en_batches import slugs as _batch_slugs           # noqa: E402
 from en_batches import broken as _batch_broken         # noqa: E402
+from en_batches import conflicts as _batch_conflicts   # noqa: E402
 PILOT = PILOT + [s for s in _batch_slugs() if s not in PILOT]
 
 def load_en():
@@ -678,6 +679,10 @@ def main():
     # 批次包为了让十几个人能同时写而容忍导入失败，真门禁这里必须不容忍。
     for _m, _why in sorted(_batch_broken().items()):
         bad.append("批次 %s 导不进来，整批的人会静默消失：%s" % (_m, _why))
+    # 跨批次的冲突：每一批单独看都对，合起来才出问题。
+    import hwx_scenes_en as _S
+    for _c in _batch_conflicts(base_scenes=[t for t, _g, _q in _S.SCENES]):
+        bad.append("批次之间打架：%s" % _c)
 
     # ⑮ 信息流四种卡的标题必须是同一个字体、同一个字号
     cv = card_headline_voice()
