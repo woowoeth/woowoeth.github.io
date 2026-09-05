@@ -76,10 +76,14 @@ SCENES = [
 ("Making money work", "Money", [
     ("Cash sitting still makes me anxious.",
      [("fan-li", "stock-the-opposite")]),
+    ("I'm busy and earning, and it all stops the day I stop.",
+     [("naval", "assets-while-you-sleep")]),
 ]),
 ("Not enough money", "Money", [
     ("This month is on me. I can't think about next year.",
      [("li-ka-shing", "knowing-when-to-stop")]),
+    ("There's money in the account and I don't know when it runs out.",
+     [("paul-graham", "default-alive")]),
     ("I can't pay it back and I haven't told anyone at home.",
      [("li-ka-shing", "ninety-percent-failure")]),
     ("Money fights are pushing us apart.",
@@ -93,6 +97,8 @@ SCENES = [
 ("Winning is costing too much", "Facing an opponent", [
     ("I keep winning these and I'm more tired every time.",
      [("sun-tzu", "win-without-fighting")]),
+    ("We're all fighting hard and nobody in this market is making money.",
+     [("thiel", "competition-is-for-losers")]),
     ("My clever move didn't land. Was the idea wrong?",
      [("sun-tzu", "orthodox-and-surprise")]),
     ("They set the agenda every week and I just respond.",
@@ -131,6 +137,9 @@ SCENES = [
 ("Do I trust my gut", "Dealing with people", [
     ("Can I trust what my gut is telling me this time?",
      [("wang-yangming", "innate-knowing")]),
+    ("Everyone in the room agrees. I don't. Am I seeing something or just "
+     "being difficult?",
+     [("thiel", "the-contrarian-question")]),
 ]),
 ("Someone is being unreasonable", "Dealing with people", [
     ("Do I fight the way he fights?",
@@ -205,11 +214,24 @@ SCENES = [
 ("Nothing ships", "Leading people", [
     ("I explained it and what came back was not it.",
      [("wiener", "feedback-not-command")]),
+    ("Everything is orderly now and we've somehow got slower.",
+     [("bezos", "day-one")]),
     ("What I ask for and what I get are never the same thing.",
      [("han-feizi", "form-and-name")]),
 ]),
 
 # ── Getting it done ──
+("Everyone says it can't be done cheaper", "Getting it done", [
+    ("I'm told this is just what it costs. Is it?",
+     [("musk", "first-principles")]),
+    ("Costs won't come down and I can't see where to cut first.",
+     [("musk", "idiot-index")]),
+]),
+("I'm building something nobody asked for", "Getting it done", [
+    ("It's live and nothing is happening. Do I market it or go talk to "
+     "people?",
+     [("paul-graham", "dont-scale")]),
+]),
 ("Starting from nothing", "Getting it done", [
     ("I can't even work out how long I can last.",
      [("li-ka-shing", "ninety-percent-failure")]),
@@ -323,6 +345,8 @@ SCENES = [
 ("My craft stopped being worth anything", "AI arrived", [
     ("What I'm good at, nobody needs right now.",
      [("curie", "the-little-curies"), ("zhuangzi", "use-of-uselessness")]),
+    ("Anything I can be trained to do, something else can now do too.",
+     [("naval", "productize-yourself")]),
     ("It does in seconds what used to be my whole day.",
      [("kasparov", "advanced-chess")]),
     ("The one thing I was best at, it now does better.",
@@ -685,6 +709,8 @@ SCENES = [
 ("I don't know what I want", "Looking back, moving on", [
     ("I can't name what I want. I can name what I don't.",
      [("excellent-sheep", "no-scoreboard")]),
+    ("The thing I can't leave alone has no use I can point to.",
+     [("jobs", "connecting-the-dots")]),
     ("I genuinely cannot say what I want.",
      [("zhuangzi", "use-of-uselessness")]),
     ("Who do I want to be in five years?",
@@ -695,6 +721,8 @@ SCENES = [
 ("Too many paths", "Looking back, moving on", [
     ("Every option makes sense and I can't choose.",
      [("boyd", "to-be-or-to-do"), ("excellent-sheep", "hurdles")]),
+    ("They're all good ideas. That's exactly the problem.",
+     [("jobs", "focus-is-saying-no")]),
     ("I'm climbing and it isn't the thing I wanted.",
      [("boyd", "to-be-or-to-do"), ("zhuangzi", "use-of-uselessness")]),
     ("What I want to do and what I should do are two different things.",
@@ -705,6 +733,8 @@ SCENES = [
 ("Do I change direction now", "Looking back, moving on", [
     ("Is switching tracks now too big a risk?",
      [("fan-li", "leave-at-the-top")]),
+    ("Everyone's chasing the new thing. Do we have to?",
+     [("bezos", "what-wont-change")]),
 ]),
 
 # ── Things you don't say out loud ──

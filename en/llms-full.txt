@@ -1,7 +1,7 @@
-# OurWord — 34 people and books on how the world actually works, across 2,600 years
+# OurWord — 40 people and books on how the world actually works, across 2,600 years
 # OurWord — See how people before you handled it.
 # https://ourword.ai/en/
-# Full corpus, plain text. 34 entrys.
+# Full corpus, plain text. 40 entrys.
 
 ========================================================================
 ## Arlie Hochschild
@@ -168,10 +168,10 @@ Take the plan you are about to commit to and spend twenty minutes writing only t
 It is remarkable how much long-term advantage we have got by trying to be consistently not stupid. Knowing what you don't know is more useful than being brilliant. Spend each day trying to be a little wiser than you were when you woke up.
 
 ### Q: What should I read alongside?
-Warren Buffett — Same desk for fifty years: Buffett holds the temperament, Munger supplies the checklist of ways to be wrong.
+Warren Buffett — Same desk for fifty years: Buffett holds the temperament, Munger supplies the checklist of ways to be wrong. Elon Musk — Reduce to physics, or carry many borrowed models at once — two opposite cures for the same blindness.
 
 ### Further
-Warren Buffett Han Feizi John Boyd
+Warren Buffett Han Feizi John Boyd Elon Musk
 
 ========================================================================
 ## Christina Maslach
@@ -206,6 +206,40 @@ Robert Sapolsky — Same conclusion from two directions: she measures the job, h
 
 ### Further
 Robert Sapolsky Arlie Hochschild
+
+========================================================================
+## Elon Musk
+URL: https://ourword.ai/en/i/musk/
+Tags: Starting and building, Modern, First principles
+
+Elon Musk (Contemporary · 1971–) — First principles. Co-founder of PayPal, Tesla, SpaceX and Neuralink. The method is a single move repeated: go back to what is physically true and re-derive everything from there.
+
+### Q: What did this one leave behind?
+Co-founder of PayPal, Tesla, SpaceX and Neuralink. The method is a single move repeated: go back to what is physically true and re-derive everything from there. When told a thing is impossible, his first question is whether physics forbids it. If not, impossible is a description of current engineering and current prices, and both of those are temporary.
+
+### Q: What actually happened?
+2008 was the year it nearly ended. The first three Falcon 1 launches failed, Tesla could not fund production of the Roadster, and the money was gone. The fourth Falcon flew in September and reached orbit; the Tesla financing closed on Christmas Eve. He has said that if the fourth launch had failed there was nothing left for a fifth. The interesting part is not the survival. It is that the same method produced three catastrophic failures and then the thing nobody else had done, and there was no way to tell those apart from inside.
+
+### The parts · Physics is law; the rest is advice
+The limit of any technology is set by physical law, not by what the current industry can do. Working back from the physical limit rather than forward from today's practice changes what counts as an acceptable answer, and forces engineering that the incremental route never reaches. e.g. Asking how much lighter this can be given the material produces a different programme from asking how much lighter than last year's.
+
+### The parts · Most of the week should go into making the thing
+He has said roughly eighty per cent of his time goes to engineering and design. That is a budget, not a boast: meetings without an output, reviews that only inform, and reporting that changes no decision are the default state of any organisation past a certain size, and they consume exactly the hours the product needed. e.g. Cancel the standing meeting for a month and see what actually breaks. Usually the answer is the feeling of being informed.
+
+### The parts · The method does not tell you when you are wrong
+Reasoning up from fundamentals is equally confident when the fundamentals are misjudged, and it removes the handrail that convention provides. That is the real cost of it: no external check, and a strong internal one. It belongs on the few questions worth that exposure. e.g. The schedule derived from physics is right about what is possible and famously wrong about when. Both come from the same calculation.
+
+### Q: How do I use it today?
+Next time something is described as impossible or as simply costing what it costs, ask what physical law or published price actually sets the floor. Everything between that floor and today's number is somebody's decision, and decisions can be remade.
+
+### Lines to keep
+Physics is the law. Everything else is a recommendation. We reason from first principles rather than by analogy. Try to be useful. Do things that are useful to other people.
+
+### Q: What should I read alongside?
+Charlie Munger — Reduce to physics, or carry many borrowed models at once — two opposite cures for the same blindness.
+
+### Further
+Peter Thiel Jeff Bezos Charlie Munger
 
 ========================================================================
 ## Esther Perel
@@ -444,6 +478,40 @@ Wang Yangming — Huineng is upstream: 'the nature is already complete' and 'inn
 
 ### Further
 Wang Yangming Zhuangzi Su Shi Tao Te Ching
+
+========================================================================
+## Jeff Bezos
+URL: https://ourword.ai/en/i/bezos/
+Tags: Starting and building, Modern, The flywheel
+
+Jeff Bezos (United States · 1964–) — The flywheel. Left a Wall Street job in 1994 to sell books out of a garage and built it into a two-trillion-dollar company across retail, cloud, logistics and hardware.
+
+### Q: What did this one leave behind?
+Left a Wall Street job in 1994 to sell books out of a garage and built it into a two-trillion-dollar company across retail, cloud, logistics and hardware. He is the most extreme practitioner of the long term on record: twenty years of thin profit and open ridicule while every dollar went back into the flywheel, and then twenty years of winning.
+
+### Q: What actually happened?
+In 1994 he was a vice-president at a New York hedge fund and wanted to leave and sell books online. His boss told him it was a good idea, but a better one for somebody who did not already have a good job. So he invented a way to decide: project yourself to eighty and look back — which choice would you regret? He knew at eighty he would not remember a bonus he gave up in 1994, and would mind very much never having been part of the internet at all. He resigned within days. What makes the frame sharp is that it changes the timescale of the question by force, and once the timescale moves the answer surfaces on its own.
+
+### The parts · Regret minimisation
+For decisions large enough to define a stretch of life, shift the vantage point to eighty. Short-term losses — salary, standing, safety — shrink automatically from there, and the things that turn out to matter, whether you tried, whether you were there, enlarge automatically. It is built for the fork between safe and unremarkable and risky and alive. e.g. The offer you keep re-reading at midnight is not a spreadsheet problem. Run it from eighty and it usually stops being close.
+
+### The parts · The flywheel is slow before it is fast
+Lower prices bring customers, customers bring traffic, traffic brings sellers, scale lowers cost, and cost lowers prices again. No first step and no last one. The part people underestimate is the beginning, where it is heavy, exhausting and appears to do nothing — which is where almost everyone stops. e.g. Find the loop where each turn makes the next one easier, then accept that the first two years will look indistinguishable from failure.
+
+### The parts · Your margin is my opportunity
+Every comfortable high margin in an industry is a door held open for an attacker. He compressed his own margins deliberately to leave nothing worth attacking. Turn it around as a self-check: whatever you are earning comfortably from is precisely what somebody is currently aiming at. e.g. The product line nobody wants to touch because it funds everything else is the one a competitor is already modelling.
+
+### Q: How do I use it today?
+Sort your decisions by whether they can be undone: the reversible ones move fast and low, the irreversible ones get the meeting. Before starting anything new, write the press release you would publish on launch day — if you cannot make it exciting to a customer, do not start.
+
+### Lines to keep
+Your margin is my opportunity. If you think three years out you have many competitors. Think seven and you have few. Failure and invention are inseparable twins.
+
+### Q: What should I read alongside?
+Steve Jobs — One cut the range to four; the other refused to stop adding — both were right about their own business.
+
+### Further
+Warren Buffett Elon Musk Steve Jobs Paul Graham
 
 ========================================================================
 ## John Boyd
@@ -752,6 +820,40 @@ John Cacioppo — Both about the shape of a network: Granovetter on what it brin
 Harvard Study of Adult Development John Cacioppo
 
 ========================================================================
+## Naval Ravikant
+URL: https://ourword.ai/en/i/naval/
+Tags: Starting and building, Modern, Leverage
+
+Naval Ravikant (Contemporary · 1974–) — Leverage. Co-founder of AngelList and an early investor in Twitter, Uber and Notion. In 2018 he posted a numbered thread called how to get rich without getting lucky, which has…
+
+### Q: What did this one leave behind?
+Co-founder of AngelList and an early investor in Twitter, Uber and Notion. In 2018 he posted a numbered thread called how to get rich without getting lucky, which has since been read millions of times. He is not a financial adviser. He is someone who worked out a route to personal sovereignty in a digital economy and then wrote the route down.
+
+### Q: What actually happened?
+The thread was later compiled into a book by a reader, Eric Jorgenson, and released free — the whole text, downloadable, with Naval taking nothing from it. For a man whose entire subject is leverage, that is the argument made in the form of a decision rather than a sentence: a book that costs nothing travels further than one that earns, and reach compounds where royalties merely add. He gave away the thing most authors protect, because giving it away was the higher-leverage move.
+
+### The parts · Four kinds of leverage, and two need permission
+Labour means managing other people and requires leadership. Capital means money making money and requires having some. Code runs once written, at zero marginal cost. Media is read once written, at zero marginal cost. The first two need somebody's consent; the last two need nobody's, and that is historically new. e.g. The essay published tonight and the fund raised next spring carry the same idea. Only one of them can start tonight.
+
+### The parts · Wealth, money and status are three different games
+Wealth is assets that work while you sleep and it is positive sum. Money is the instrument for moving wealth about. Status is your rank, and it is zero sum — for you to rise somebody falls. How much time goes into each decides which game you are actually in, whatever you say you are doing. e.g. A year spent on titles and a year spent on something that earns are indistinguishable while they are happening, and very distinguishable afterwards.
+
+### The parts · Happiness by subtraction
+He argues happiness comes from removing desires rather than satisfying them: every unmet want is a standing source of unhappiness, so peace is not owning everything but no longer being pulled by what you do not own. He read a great deal of eastern philosophy and is restating an old line in a modern setting. e.g. The list of things that would finally make it fine has been rewritten four times, and each version was believed completely at the time.
+
+### Q: How do I use it today?
+Ask which part of your work could be written once and used many times — code, writing, a process, a framework, a tool. Identify those and move your hours towards them, because everything else is priced by the hour and stops when you do.
+
+### Lines to keep
+Wealth is assets that earn while you sleep. If your income is measured in hours you will never truly be wealthy. Code and media are the permissionless leverage of this era.
+
+### Q: What should I read alongside?
+Tao Te Ching — Both end at enough; one arrives through leverage, the other by never picking the load up.
+
+### Further
+Peter Thiel Tao Te Ching Warren Buffett Paul Graham
+
+========================================================================
 ## Norbert Wiener
 URL: https://ourword.ai/en/i/wiener/
 Tags: How the world works, Modern, He warned them first
@@ -784,6 +886,77 @@ Garry Kasparov — Wiener warned before it arrived; Kasparov was the first perso
 
 ### Further
 Garry Kasparov John Boyd
+
+========================================================================
+## Paul Graham
+URL: https://ourword.ai/en/i/paul-graham/
+Tags: Starting and building, Modern, Do things that do not scale
+
+Paul Graham (United States · 1964–) — Do things that do not scale. A Lisp hacker who built Viaweb in 1995 — the first commercial software that ran inside a browser — and sold it to Yahoo in 1998.
+
+### Q: What did this one leave behind?
+A Lisp hacker who built Viaweb in 1995 — the first commercial software that ran inside a browser — and sold it to Yahoo in 1998. In 2005 he started Y Combinator and rewrote what early-stage investment looked like. His real influence is in several hundred essays: most of what now passes for startup common sense has its earliest and clearest statement in one of them.
+
+### Q: What actually happened?
+Y Combinator began as a summer experiment with a deliberately strange shape: fund a whole batch at once, give each of them a small amount of money and three months, and have dinner with them every week. Every part of it was the opposite of how investment worked — small cheques, no track record required, founders as young as they came, decisions in a ten-minute interview. The batch was the point. Founders learn more from the company two tables over, at the same stage and similarly frightened, than from anybody with an office.
+
+### The parts · Make something people want
+It is the only thing on the wall at YC. His judgement after thousands of companies is that the fatal mistake is singular: building something nobody actually wanted. Everything else — the wrong hire, the wrong price, the bad quarter — is repairable. e.g. A team can survive being outbuilt. It cannot survive having been right about a need that was not there.
+
+### The parts · Schlep blindness
+The best openings often sit behind work that is tedious and unglamorous — bank integrations, compliance, refunds. The mind skips over those ideas so quickly that you never notice having skipped. Which is exactly why they are still available. e.g. Everybody saw the market. The reason nobody took it is that the first nine months are paperwork.
+
+### The parts · A maker's day is not divisible
+Managers work in hours, makers need whole blocks. A single meeting in the middle of an afternoon does not cost an hour; it costs the afternoon, because neither remaining piece is long enough to get into the work. e.g. Push every meeting to one end of the day. The output change is larger than any productivity system.
+
+### The parts · Better a few who love it
+A hundred users who love the thing are worth more than ten thousand who find it acceptable. The first group tells you why, brings other people, and forgives the rough edges. The second leaves quietly and teaches you nothing. e.g. Chasing a satisfaction score upward across everyone is usually how a product becomes something nobody would miss.
+
+### Q: How do I use it today?
+In the cold-start phase do not build channels, buy traffic or automate. Find the first hundred users by hand and serve each one until they are happy; when that work is crushing you, that is the signal to scale. Test an idea on three questions: do I want it, can I build it, and why has nobody done it — no answer to the third usually means it is not worth doing, or you have not yet seen the tedium hiding in it.
+
+### Lines to keep
+There is one fatal mistake: building something nobody wants. Do things that do not scale. It is the only route to scale. Better to have a few people love you than many find you acceptable.
+
+### Q: What should I read alongside?
+Peter Thiel — Start from the users in front of you, or start from whether the market can ever hold a profit.
+
+### Further
+Peter Thiel Naval Ravikant Jeff Bezos Steve Jobs
+
+========================================================================
+## Peter Thiel
+URL: https://ourword.ai/en/i/thiel/
+Tags: Starting and building, Modern, Zero to one
+
+Peter Thiel (Contemporary · 1967–) — Zero to one. Co-founded PayPal, was the first outside investor in Facebook, and is the most consequential contrarian in the Valley.
+
+### Q: What did this one leave behind?
+Co-founded PayPal, was the first outside investor in Facebook, and is the most consequential contrarian in the Valley. His central claim: competition is an ideological trap, and what actually creates value is a monopoly rather than a fight.
+
+### Q: What actually happened?
+In 2004 Facebook was a few months old and looked to most people like a social directory for Harvard undergraduates. He put in half a million dollars for a bit over ten per cent. By the 2012 listing that half million was worth around a billion. What he had seen was not that students liked it. It was that once a network of that shape closes, leaving costs the user everything and nothing else can be substituted for it — which is his definition of the only kind of business worth owning.
+
+### The parts · Zero to one, not one to n
+Going from one to n is copying: more of something that exists, in a crowd, at thin margins. Going from zero to one is making a category that was not there. Almost all commerce is the first kind. The second is rare, and when it works the value is not competed away because there is nobody to compete with yet. e.g. A better version of an existing product is a fight over an existing pool. A thing people had no word for last year is not.
+
+### The parts · The power law is not a slogan about focus
+Venture returns are not normally distributed: a single investment can return more than everything else combined. The consequence is uncomfortable — spreading effort evenly for the sake of balance guarantees you miss the only outcome that mattered. Back the one you believe can be that, with everything. e.g. The portfolio designed so nothing can go badly wrong is also designed so nothing can go extraordinarily right.
+
+### The parts · Definite optimism
+He divides views of the future by two axes: optimistic or pessimistic, definite or indefinite. His complaint about the present is indefinite optimism — a belief things will improve with no plan for how. Definite optimism is having an actual picture of the thing you intend to build, which is what makes long projects possible at all. e.g. We are excited about the space is indefinite. We are building this specific thing and it will take six years is definite, and only the second can be worked on today.
+
+### Q: How do I use it today?
+Run the question on yourself: what important thing do you believe that most people disagree with? If you can give a real answer with evidence behind it, that is where your advantage probably is. If you cannot, your judgement is currently the room's average.
+
+### Lines to keep
+Competition is for losers. The best businesses are the ones that do not compete. What important truth do very few people agree with you on?
+
+### Q: What should I read alongside?
+Paul Graham — One starts from the structure of the market, the other from the hundred people in front of you.
+
+### Further
+Steve Jobs Sun Tzu Warren Buffett Elon Musk Paul Graham Naval Ravikant
 
 ========================================================================
 ## Pu Songling
@@ -888,6 +1061,40 @@ John Ratey — Same system, two handles: Sapolsky on what keeps it switched on, 
 John Ratey Christina Maslach John Cacioppo Rat Park
 
 ========================================================================
+## Steve Jobs
+URL: https://ourword.ai/en/i/jobs/
+Tags: Starting and building, Modern, Subtract
+
+Steve Jobs (Contemporary · 1955–2011) — Subtract. Co-founded Apple, was pushed out of it, spent twelve years at NeXT and Pixar, came back and turned a company weeks from insolvency into the most valuable one in the…
+
+### Q: What did this one leave behind?
+Co-founded Apple, was pushed out of it, spent twelve years at NeXT and Pixar, came back and turned a company weeks from insolvency into the most valuable one in the world. The centre of his thinking is that simple is harder than complex, that focus is a word for refusal, and that design is how a thing works rather than how it looks.
+
+### Q: What actually happened?
+In 1985 he lost a board fight and left the company he had started. He has said the twelve years that followed were the most creative of his life, and the arithmetic supports him: NeXT built the operating system Apple eventually bought to save itself, and Pixar changed what an animated film was. Neither was a detour back to Apple. Both were the thing itself, done properly, by someone who no longer had a large company's permission to worry about.
+
+### The parts · Simplicity is expensive
+Making something simple is not removing features until it is thin. It is understanding the thing well enough that the shape becomes obvious. That takes longer than adding, which is why most products are complicated: complication is what you ship when you ran out of time to understand. e.g. The settings screen with forty switches is not generous. It is a record of forty arguments nobody was willing to settle.
+
+### The parts · The product is every point of contact
+He treated the box, the shop, the repair counter and the advertising as parts of the product, because the customer does not experience them separately. A company that is excellent in the object and careless at the counter has not made a good product; it has made a good component. e.g. Unboxing designed as a small ceremony does more for how the thing feels than another processor generation.
+
+### The parts · Belief is a resource, and it is borrowed
+The famous distortion field was not a trick. People delivered work they did not believe possible because somebody credible refused to accept it was not. Used well it raises what a group thinks it can attempt; used badly it is a way of demanding miracles and blaming people for the shortfall. e.g. The same sentence, this has to be twice as fast, is either the best week a team ever had or the reason three of them leave. The difference is whether the person saying it is also in the room at two in the morning.
+
+### Q: How do I use it today?
+List everything you are currently working on and ask which half you would keep if you could only keep half. Then stop the other half today, and write down who is accountable for having stopped it.
+
+### Lines to keep
+Simple can be harder than complex; you have to work to get your thinking clean. Focus means saying no to the hundred other good ideas that there are. Design is not just how it looks. Design is how it works.
+
+### Q: What should I read alongside?
+Jeff Bezos — Cut to four products; the other man expanded into everything and won too.
+
+### Further
+Peter Thiel Jeff Bezos Paul Graham
+
+========================================================================
 ## Su Shi
 URL: https://ourword.ai/en/i/su-shi/
 Tags: Mind and feeling, Medieval, Unbowed
@@ -953,7 +1160,7 @@ The victorious army wins first and seeks battle afterwards. Winning a hundred ba
 John Boyd — Both put the decision before the clash. Sun Tzu settles it in preparation, Boyd in speed of turning.
 
 ### Further
-Han Feizi John Boyd Fan Li
+Han Feizi John Boyd Fan Li Peter Thiel
 
 ========================================================================
 ## Tao Te Ching
@@ -984,10 +1191,10 @@ Take the thing you are trying to fix by adding — another tool, another rule, a
 In learning you gain daily. In the way you lose daily. The softest thing in the world runs through the hardest. Knowing others is intelligence. Knowing yourself is clarity.
 
 ### Q: What should I read alongside?
-Zhuangzi — Same tradition, different address: Laozi writes for whoever has to govern, Zhuangzi for whoever wants out.
+Zhuangzi — Same tradition, different address: Laozi writes for whoever has to govern, Zhuangzi for whoever wants out. Naval Ravikant — Both end at enough; one arrives through leverage, the other by never picking the load up.
 
 ### Further
-Zhuangzi Huineng Su Shi
+Zhuangzi Huineng Su Shi Naval Ravikant
 
 ========================================================================
 ## Thomas Gordon
@@ -1089,7 +1296,7 @@ Be fearful when others are greedy and greedy when others are fearful. Rule one: 
 Charlie Munger — The partner who moved him from cheap and broken to good and fairly priced.
 
 ### Further
-Charlie Munger Li Ka-shing Fan Li
+Charlie Munger Li Ka-shing Fan Li Jeff Bezos Peter Thiel Naval Ravikant
 
 ========================================================================
 ## Winston Churchill
@@ -1159,6 +1366,72 @@ Han Feizi — The same century, opposite conclusions: Han Feizi builds the machi
 ### Further
 Su Shi Huineng Wang Yangming Tao Te Ching Carl Jung
 <!-- chapters:begin -->
+========================================================================
+## Jeff Bezos · Always Day 1
+URL: https://ourword.ai/en/i/bezos/day-one/
+Source: Amazon shareholder letters, 2016 and 2015
+Tags: Deep read, Jeff Bezos, What Day 2 looks like
+
+Someone asked what Day 2 would look like. The answer, and the four parts he installed to keep it away.
+
+### Q: What actually happened?
+He named the headquarters Day 1. In 2016 somebody asked what Day 2 looks like, and he answered in the shareholder letter: Day 2 is stasis. Followed by irrelevance. Followed by excruciating, painful decline. Followed by death. And that is why it is always Day 1. What follows is not a slogan but a recipe: customer obsession, resisting proxies, embracing external trends, high-velocity decisions. The last is the most quoted — most decisions are two-way doors you can walk back through, so they belong to small teams moving fast, at seventy per cent of the information you wish you had.
+
+### The parts · Day 2 starts when process takes over from outcome
+The first thing he names is the proxy: as an organisation grows, people start checking whether the process was followed rather than whether the customer was served. The process is not the thing, and it is a young manager's easiest confusion. When we followed the process becomes a defence, Day 2 has already begun.
+e.g. When we went through every required review is treated as the conclusion of a post-mortem rather than the start of one, the process is now signing off on outcomes.
+
+### The parts · Sort the door before you set the speed
+One-way doors — irreversible — should be slow and heavy; two-way doors fast and light. Most organisations apply one-way approval to everything and drag reversible decisions out for months. Sorting is step one; step two is handing the two-way ones to whoever is closest.
+e.g. Label every proposal one-way or two-way. On the two-way ones cut two layers of approval and cap it at forty-eight hours. Speed itself grows a culture willing to try.
+
+### The parts · Customer obsession is the vaccine because customers are never satisfied
+He ranks this first, and the reason is mechanical: customers are divinely discontent even when they say they are happy. Obsession with competitors goes mediocre as the competitors do; obsession with process calcifies. Only discontent is an engine that never stops.
+e.g. Change the quarterly goal from beat the competitor to remove an annoyance the customer has stopped complaining about. The first has a finish line; the second does not, and only goals without one keep you young.
+
+### Q: How do I use it today?
+Where you are: the company has grown, everything is orderly, and it feels slower.
+Ask first: of the last three significant decisions, which were one-way and which two-way? For the two-way ones, how long did they take and through how many layers?
+Where it goes wrong: applying high velocity to the irreversible ones, or turning customer obsession into support scripts while the actual obsession stays on the dashboard.
+
+### Lines to keep
+Day 2 is stasis, followed by irrelevance, then decline, then death.
+Most decisions belong at seventy per cent of the information you wish you had.
+Customers are divinely discontent, even when they report being happy.
+
+========================================================================
+## Jeff Bezos · Bet on what will not change
+URL: https://ourword.ai/en/i/bezos/what-wont-change/
+Source: Public interviews (re:Invent 2012 among others); the 1997 shareholder letter
+Tags: Deep read, Jeff Bezos, The question almost nobody asks
+
+Everyone asks him what the next ten years will change. He says the more useful question is the one he almost never gets.
+
+### Q: What actually happened?
+He is asked constantly what will change in the next ten years. He says he is almost never asked what is not going to change — and that the second question matters more, because you can build a strategy around what is stable. His own answer is unglamorous: in ten years customers will still want lower prices, faster delivery, more selection. Nobody will ever say, I love Amazon, I just wish the prices were higher and the delivery slower. Every dollar put into those is still paying interest a decade on.
+
+### The parts · Change is news; constancy is foundation
+A strategy that chases change is rebuilt every two years. Investment in a need that does not move compounds for twenty. The sorting question is easy to run: list what you are currently funding and ask whether customers will still want it in ten years. Two piles. The resources belong on the certain one.
+e.g. Channels, formats and algorithms change annually. Cheaper, faster, less hassle never do. Re-sort the budget on that test and most companies find they have bet the wrong way.
+
+### The parts · A need that does not change has no ceiling
+Faster can always be faster; cheaper can always be cheaper. Improvements aimed at those never reach a day when they are done, so the moat can keep deepening indefinitely. An advantage built on a trend has a shelf life by construction: when the trend passes, the accumulation resets to zero.
+e.g. Three days to next day to same day — each layer built on the last. Growth from riding a hot format starts over when the format does.
+
+### The parts · Long term does not mean slow, it means willing to look bad
+The 1997 letter says it outright: decisions are made on long-term market leadership, not short-term profit or Wall Street's reaction. Betting on what does not change means years of putting profit back into logistics, with ugly statements and steady ridicule. The ticket price is sitting through that stretch.
+e.g. Declaring long-term thinking while reviewing teams quarterly on short-term profit asks people to run a marathon on a sprinter's breathing. Until the review cycle changes, the strategy is wall decoration.
+
+### Q: How do I use it today?
+Where you are: the strategy meeting is all new trends and new tactics.
+Ask first: what three things will our customers certainly still want in ten years, and what share of current spending is aimed at those three?
+Where it goes wrong: using constancy as an excuse to ignore trends — embracing external trends is one of his own four. What does not change is the need; how you meet it has to change constantly.
+
+### Lines to keep
+You can build a strategy around the things that are stable over time.
+No customer will ever ask for higher prices and slower delivery.
+We make decisions on long-term market leadership, not short-term reactions.
+
 ========================================================================
 ## John Boyd · The OODA loop
 URL: https://ourword.ai/en/i/boyd/ooda/
@@ -2348,6 +2621,72 @@ To seek it outside the world is to hunt for a rabbit's horns.
 If the mind is level, what need of precepts.
 
 ========================================================================
+## Steve Jobs · Focus is what you say no to
+URL: https://ourword.ai/en/i/jobs/focus-is-saying-no/
+Source: WWDC 1997 Q&A (on film); the 1997–98 product-line cuts
+Tags: Deep read, Steve Jobs, The things you cut are the good ones
+
+Everyone says they are focused. What makes his definition worth reading is that it points the opposite way from the instinct.
+
+### Q: What actually happened?
+Apple in 1997 had dozens of overlapping product lines and was close to insolvent. He drew a two-by-two on a whiteboard — consumer and pro, desktop and portable — one machine per square, everything else cancelled, including the Newton, which had years of work in it. At WWDC that year he said the part people leave out: people think focus means saying yes to the thing you have got to focus on; it means saying no to the hundred other good ideas that there are. And then the harder sentence — that he was as proud of the things they had not done as of the things they had.
+
+### The parts · The test comes from good ideas, not bad ones
+A bad idea does not require focus to refuse; it dies on its own. What dilutes a company is the hundred directions that are genuinely decent — each with a champion, a deck and a reason. The whole difficulty of focus is that every cut lands on something that was right.
+e.g. The real work in a roadmap review is not killing the weak proposals. It is keeping one of five that all hold up. Keeping two is not a decision.
+
+### The parts · The number of squares is the discipline
+The grid works because it is a physical constraint. There are four squares; for something new to enter, something has to leave. Without a container that hard, focus always loses to one more will not hurt — addition needs no argument, only subtraction does.
+e.g. Put the current work in a table with a fixed number of rows on the wall. Any new proposal answers one question first: which row does it replace?
+
+### The parts · Give credit for what was not done
+Organisations reward shipping, so everyone starts things and nobody stops them. As proud of what we have not done is a medal for subtraction — markets not entered, features not added. Those decisions are invisible, and unless they carry the same standing as a launch, no is something people say and never do.
+e.g. Add a page to the annual review: what we turned down this year and what it saved. The day someone is willing to own that page is the day no becomes politically possible.
+
+### Q: How do I use it today?
+Where you are: the list of directions keeps growing and each one makes sense on its own.
+Ask first: if only one could stay, which? And who will publicly own saying no to the rest?
+Where it goes wrong: turning no into contempt for anything new. He killed the Newton and shipped the iPod two years later — the squares are there to be emptied, not sealed.
+
+### Lines to keep
+Focus means saying no to the hundred other good ideas that there are.
+As proud of what we have not done as of what we did.
+Simple is harder than complex. You must get your thinking clean.
+
+========================================================================
+## Steve Jobs · The dots only connect backwards
+URL: https://ourword.ai/en/i/jobs/connecting-the-dots/
+Source: Stanford commencement address, 2005 (full text and film)
+Tags: Deep read, Steve Jobs, Collect first, connect later
+
+A dropout sat in on a class with no use whatsoever. The famous line about it is usually run in the wrong direction.
+
+### Q: What actually happened?
+The first of the three Stanford stories is about dropping out: with no required courses left to take, he sat in on the calligraphy class that fascinated him — serifs, the space between letter pairs — with no prospect of any of it being useful. Ten years later, designing the Mac, all of it came back, and the Mac became the first computer with beautiful type. His summary: you cannot connect the dots looking forward; you can only connect them looking backwards. So you have to trust that they will somehow connect later — because looking forward there is no evidence at all.
+
+### The parts · Connecting is hindsight, not a forecast
+The common misuse runs the line forwards: that you can work out in advance which dots will join up. He is saying the reverse. In the moment he walked into that classroom there was no argument for it. The causality only exists afterwards; beforehand it was a bad use of a term.
+e.g. Anyone who asks what this will do for my career only ever studies things whose answer is already known — and everyone has those dots, so everyone draws the same line.
+
+### The parts · Pick dots by obsession, not by usefulness
+If forward reasoning cannot justify the choice, the choice needs a different signal, and his was curiosity to the point of absorption. That is not romance, it is odds: you go deeper into what grips you, and only a dot that goes deep is worth connecting to anything. Shallow dots join to nothing.
+e.g. Rather than spending evenings on a strategically chosen skill, take the thing you actually cannot leave alone as far as being able to teach it. Depth is the entry fee.
+
+### The parts · Trusting they connect is what lets you commit now
+The function of trust here is not comfort, it is solving a problem in the present: without it nobody puts real time into work with an unclear return, so they collect only safe dots. What the trust buys is the nerve to commit; the bill does not come due for a decade.
+e.g. Taking the sidelined project, or a craft with no market yet — the question at the moment of choosing is not where does this lead, it is would I bet three years on it.
+
+### Q: How do I use it today?
+Where you are: something has hold of you and you cannot see any use in it.
+Ask first: am I judging it by what it leads to, or by how deep I am likely to go?
+Where it goes wrong: using the line to excuse a series of three-week enthusiasms. What fails to connect is not the unfashionable dot, it is the shallow one.
+
+### Lines to keep
+You cannot connect the dots looking forward, only looking backwards.
+You have to trust that the dots will somehow connect in your future.
+Stay hungry. Stay foolish.
+
+========================================================================
 ## John Ratey · Exercise is for the brain
 URL: https://ourword.ai/en/i/john-ratey/exercise-for-the-brain/
 Source: Spark; the Naperville school programme
@@ -2907,6 +3246,204 @@ Where it goes wrong: collecting models as trivia — the test is whether one of 
 To a man with only a hammer, every problem looks like a nail.
 The hammer man is not the ignorant one. He is the trained one.
 A model you look up during the decision arrives too late to shape it.
+
+========================================================================
+## Elon Musk · Boil it down to what is physically true
+URL: https://ourword.ai/en/i/musk/first-principles/
+Source: TED interview, 2013
+Tags: Deep read, Elon Musk, Analogy quotes the going rate; physics gives the floor
+
+The phrase is everywhere now. What is worth having is his own definition, and the arithmetic he did on a battery.
+
+### Q: What actually happened?
+In the 2013 TED interview he set it out plainly: reason from first principles rather than by analogy. Analogy is everyone does it this way, so we will too. First principles is boiling a thing down to its most fundamental truths and reasoning up. His example was batteries. Everyone said a pack costs six hundred dollars a kilowatt-hour and always will. From first principles: what is a battery made of? Cobalt, nickel, aluminium, carbon, polymers, a steel can. Buy those on the metal exchange and it comes to eighty. The other five hundred is the price of how they are currently assembled — and assembly can be reinvented.
+
+### The parts · Analogy gives you the market rate, physics gives the floor
+It has always cost this and the industry standard both quote the price of other people's methods, not the cost of the thing. Separate the two: where is the floor set by materials and physical law, and who collects the gap between that floor and today's price?
+e.g. Margins in this kind of service are just thin — take it apart: what does delivery actually cost, and how many hands take a cut in between? The gap is the opportunity list.
+
+### The parts · Keep going until you hit something that cannot be reduced
+Most attempts stop halfway and treat a supplier quote or an industry convention as bedrock. Those are still somebody's decisions. The test is whether you can still ask why. If you can, you are not at the bottom. The bottom feels like a physical law or a published market price.
+e.g. Servers are expensive is not bedrock. The market price of silicon, electricity and bandwidth is. Stopping at the invoice is haggling; going to the floor is rebuilding.
+
+### The parts · It is expensive, so spend it where the leverage is
+He has said himself that analogy is usually the cheaper move, and he is right: reasoning up the whole chain costs an enormous amount of attention. The correct use is selective — the one or two assumptions that decide whether the thing lives. Doing it everywhere means reinventing the wheel everywhere.
+e.g. Apply it to the cost structure that decides the business and buy stationery by analogy. Teams that cannot tell the difference exhaust on wheels the attention the rocket needed.
+
+### Q: How do I use it today?
+Where you are: everyone is telling you that some cost or method simply is what it is.
+Ask first: what irreducible facts is it made of, and who is collecting the difference between their sum and today's price?
+Where it goes wrong: using the phrase as a way of dismissing all experience, or spending it on things too small to be worth rebuilding.
+
+### Lines to keep
+We reason from first principles rather than by analogy.
+Boil things down to the most fundamental truths and reason up from there.
+Those materials, bought on the metal exchange, come to about eighty a kilowatt-hour.
+
+========================================================================
+## Elon Musk · Part price over material price
+URL: https://ourword.ai/en/i/musk/idiot-index/
+Source: Isaacson's biography, on the SpaceX costing method
+Tags: Deep read, Elon Musk, A number that tells you where to start
+
+He gives every component a humiliating score. What it does is turn a way of thinking into something you can run on a spreadsheet.
+
+### Q: What actually happened?
+Isaacson records a hard metric inside SpaceX: the idiot index — the finished price of a part divided by the cost of its raw material. An aluminium part holding a few hundred dollars of metal, bought for tens of thousands, scores in the dozens. A score that absurd says what you are paying for is process and inertia, not physics. The rule follows: a high index is either explained or made in house. Many Falcon parts ended up built on site, at a fraction of the industry price. What makes the index good is that it turns a judgement call into a list you can sort.
+
+### The parts · The index turns judgement into a scanner
+First principles depends on someone deciding to think. The index makes the candidates queue up on their own: run the ratio across every purchased line, sort descending, and the rebuild priority list writes itself. The best form a method can take is decaying from an insight into a division anyone can do.
+e.g. Divide each outsourced fee by what doing it in house would cost in people and tools. The few at the top of that list are the ones to bring back.
+
+### The parts · A high score is a toll booth left by history
+A part selling at fifty times its metal usually has no villain behind it: years of safety margin, layers of certification, small batches, a sole supplier. Every layer had a reason once; stacked up they are a row of toll booths. You do not negotiate those away, you route around them.
+e.g. Half of an incumbent supplier's quote is paying for a process set twenty years ago. What will not come down under pressure often goes to zero on a different route.
+
+### The parts · Where the score is low, leave it alone
+The tool carries its own limit. A part scoring near one is already priced against physics; making it yourself will not be cheaper, only slower. So it guards against more than overpaying — it guards against the compulsion to build everything. Vertical integration belongs where the index is high, not everywhere.
+e.g. Bringing a part scoring thirty in house saves money. Bringing one scoring one point two in house trades somebody else's scale for your own tuition.
+
+### Q: How do I use it today?
+Where you are: costs will not come down and you cannot see where to cut.
+Ask first: divide every line by its underlying material or compute cost. Who scores highest?
+Where it goes wrong: bringing everything in house on sight of a high score without doing your own scale and yield arithmetic, or using the index as a stick to squeeze suppliers.
+
+### Lines to keep
+The idiot index: a part's finished cost over its material cost.
+A ratio that high means you are paying for process and inertia, not physics.
+High index: either explain it, or make it ourselves.
+
+========================================================================
+## Naval Ravikant · Assets that earn while you sleep
+URL: https://ourword.ai/en/i/naval/assets-while-you-sleep/
+Source: How to Get Rich (Without Getting Lucky), the tweetstorm
+Tags: Deep read, Naval Ravikant, Wealth is not money
+
+The first line cuts one word into three. What matters is where each of the three leads.
+
+### Q: What actually happened?
+The storm opens: seek wealth, not money or status. Each is defined. Wealth is assets that earn while you sleep — businesses, code, content, equity. Money is how we transfer wealth. Status is your place in the social hierarchy. What matters is the kind of game each is. Creating wealth is positive sum: everyone can get richer. Status is zero sum — for you to rise somebody falls, which is why people attacking wealth creators are usually playing status. And there is one road to the first: ownership. You will not get rich renting out your time, because time does not copy.
+
+### The parts · Work out which game you are actually playing
+A great deal of hard work leads to status rather than wealth: titles, visibility, rankings. Those prizes produce no cash flow and require you to keep showing up to hold them. One test: stop for three months. Is it still producing? If yes it is an asset.
+e.g. Two people work equally hard for a year. One accumulates a title and photographs with useful people; the other accumulates a tool with subscription revenue. The difference shows itself the first time either takes a holiday.
+
+### The parts · Selling time has a ceiling because time will not copy
+Work priced by the hour earns rate times hours. Both factors are hard-capped, and the whole thing goes to zero while you sleep. The way out is not raising the rate, it is changing the formula — detaching output from duration. Things made once and sold many times: code, content, courses, systems, equity.
+e.g. A top consultant and an ordinary one differ by rate. A consultant and someone who turned the method into software differ by formula. The first is optimisation, the second is a different race.
+
+### The parts · Recognising a status attack saves you the reply
+Anyone who does something visible attracts a portion of criticism whose purpose is not correction but position — pushing you down in a zero-sum game. Separating the two kinds matters practically: the first deserves a careful answer, and answering the second is scoring a point in somebody else's game.
+e.g. Feedback after a launch splits in two. Specific problems go on the fix list. Insinuations about your motives and your standing are best left where they are.
+
+### Q: How do I use it today?
+Where you are: busy, doing reasonably well, and it all stops the moment you do.
+Ask first: of what I built this past year, what keeps producing when I am not there? What proportion?
+Where it goes wrong: using not playing status games to excuse being bad at people — reputation and relationships are themselves assets. What is worth avoiding is ranking for its own sake.
+
+### Lines to keep
+Seek wealth, not money or status.
+Wealth is assets that earn while you sleep.
+You will not get rich renting out your time. You need equity.
+
+========================================================================
+## Naval Ravikant · Productise yourself
+URL: https://ourword.ai/en/i/naval/productize-yourself/
+Source: The How to Get Rich tweetstorm; The Almanack of Naval Ravikant
+Tags: Deep read, Naval Ravikant, Specific knowledge times leverage
+
+He compresses the whole method into two words. What each of the two refers to, and why the new leverage is different in kind.
+
+### Q: What actually happened?
+The formula collapses into a phrase: productise yourself. Yourself means specific knowledge — the kind you cannot be trained for, growing out of your temperament, obsessions and history; it feels like play to you and looks like work to others. Productise means putting leverage on it. Labour and capital are the old kinds and both need somebody's permission. The new kind replicates at zero marginal cost: code and media, which need permission from nobody. What you wrote keeps working while you sleep.
+
+### The parts · Specific knowledge is not on any syllabus
+Any skill taught in a standard way is supplied in unlimited quantity and priced accordingly. Specific knowledge comes from the part that cannot be standardised: your combination of oddities, the crossings between fields, an obsession out of proportion to its subject. The detection method is his own line — play to you, labour to others.
+e.g. Someone technical who can also make complicated things funny; someone clinical who is compulsive about spreadsheets. Each piece is ordinary. The combination has no second supplier.
+
+### The parts · Permissionless means you can start today
+The bottleneck in the old leverage is persuasion: nothing moves until you have hired someone or raised something. Code and media delete that step. Writing, recording, publishing — live today, at the cost of time rather than consent. The opportunity of this generation is essentially that the entry price of leverage fell to zero.
+e.g. The same insight can wait for funding and a team, or go out as a public series of posts that grows an audience. The second needs nobody's approval, and frequently produces the first.
+
+### The parts · Productising means taking yourself out of delivery
+Where the two words end up: packaging your judgement, taste and method into something that delivers without you present. The test is replication — each additional user should cost you an amount of time approaching zero. Until then what you own is a good job. After it, an asset.
+e.g. Five years of consulting turned into a book, a course, a self-serve tool. The same knowledge moves from sold by the occasion to permanently on sale.
+
+### Q: How do I use it today?
+Where you are: capable, and your income is welded to your hours.
+Ask first: what do I do that is play to me and labour to others? Can it be packaged as code or as content and published without anyone's permission?
+Where it goes wrong: reading productise as everyone should sell a course — without specific knowledge, leverage only amplifies the average. And do not use polishing the knowledge to postpone publishing forever; leverage only counts what shipped.
+
+### Lines to keep
+Productise yourself.
+Specific knowledge feels like play to you but looks like work to others.
+Code and media are permissionless leverage.
+
+========================================================================
+## Paul Graham · Do things that do not scale
+URL: https://ourword.ai/en/i/paul-graham/dont-scale/
+Source: Do Things That Don't Scale, 2013
+Tags: Deep read, Paul Graham, The early work is meant to be handmade
+
+Founders think about scale constantly. He argues for the opposite direction — and is specific about what the handmade phase actually buys.
+
+### Q: What actually happened?
+The essay opens against the instinct: startups do not take off by themselves; the founders make them take off. The common mistake is chasing something scalable on day one, when the early period calls for recruiting users by hand. Airbnb had stalled, so the founders flew to New York week after week, knocked on hosts' doors and photographed their apartments themselves. Completely unscalable — and it found the switch that moved conversion. The output of that phase is not the handful of users; it is an unusually concentrated understanding of them, plus people so over-served they will tell others.
+
+### The parts · Doing it by hand is the highest-bandwidth research there is
+Surveys and dashboards show the shadow a behaviour casts; being in the room shows the behaviour. In people's living rooms it turned out photograph quality was the bottleneck — an insight the analytics could only ever have shown as low conversion. The expensive thing early on is not slow growth, it is understanding wrongly.
+e.g. Have the founders deliver the first hundred customers personally. Every one is a piece of research arriving with its full context. Time saved by delegating it comes back doubled on the wrong roadmap.
+
+### The parts · Over-serving is how you manufacture the first advocates
+If early users get service indistinguishable from a large company's, they have no reason to speak about you. The handmade phase gives what no scaled operation could — a founder replying in minutes, the product bent around one person. That unreasonable care is the raw material of word of mouth.
+e.g. Answering the first cohort at any cost brings customers later that are cheaper than any advertising, because the story they tell cannot be bought.
+
+### The parts · Unscalable is a stage, not a creed
+The essay gets quoted in halves. The correct loop is: do it by hand, extract the one move that was actually doing the work, then build that move into the product or the process. Airbnb turned professional photography into a platform feature. Handwork without extraction is diligence covering for an absence of leverage.
+e.g. After three months of founders closing deals personally, the deliverable is a list of the three actions that decide a sale — then those get standardised. Not a fourth month of closing deals.
+
+### Q: How do I use it today?
+Where you are: the product just launched and you are torn between building growth machinery and serving users by hand.
+Ask first: is our understanding of why people buy or leave at dashboard level or living-room level?
+Where it goes wrong: keeping it handmade past the point of scale, so founders are still carrying the business on their backs; or doing it by hand for a long time and never extracting the repeatable move.
+
+### Lines to keep
+Startups do not take off by themselves. The founders make them take off.
+In the early days you have to recruit users manually.
+They went door to door photographing the hosts' apartments themselves.
+
+========================================================================
+## Paul Graham · Default alive or default dead
+URL: https://ourword.ai/en/i/paul-graham/default-alive/
+Source: Default Alive or Default Dead?, 2015
+Tags: Deep read, Paul Graham, Run this number before anything else
+
+He asks founders one question first, and most of them cannot answer it. Why it comes before every other conversation.
+
+### Q: What actually happened?
+The first thing he asks a startup is are you default alive or default dead? The definition is hard-edged: assuming expenses stay constant and growth continues as it has been, do you reach profitability on the money you have left? If yes, default alive. If no, default dead. What surprised him is how many founders do not know which they are. It comes first because it sets the character of every other conversation: a default alive company can talk about ambition; a default dead one has a single agenda item, getting out of that state — and is usually still discussing hiring, assuming the next round will arrive.
+
+### The parts · You have to run it yourself, because nothing raises an alarm
+A default dead company looks entirely normal from inside: the product ships, the team grows, there is money in the account. Death is scheduled months out on a calendar nobody turns to. The question brings that date forward to today — three numbers, ten minutes.
+e.g. Put the current answer and the death date on this trajectory as page one of the monthly meeting. The existence of that page reorders everything after it.
+
+### The parts · Counting on the next round outsources your survival to a mood
+He names the standard consolation: investor appetite swings with the market and your death date does not. The right move when default dead is not to fundraise harder but to move the two variables under your control — expenses and growth — until you are back on the living side.
+e.g. A survival plan with raise a B round written into it has handed the switch to somebody else's fund cycle. Cut to within reach of break-even first; the negotiation even smells different.
+
+### The parts · The usual cause is hiring too early
+His first-named cause of default dead is over-hiring — using growth needs people to raise the burn ahead of growth that then does not arrive. The remedy is counter-intuitive: early growth comes far more from founders making the product better than from headcount. People should be added when growth is dragging you into adding them.
+e.g. Build the team and wait for the business bets a fixed cost on a forecast. Let the pain of growth force each new hire instead, and the company stays on the living side.
+
+### Q: How do I use it today?
+Where you are: things are running normally and you cannot say where the cash-flow threshold is.
+Ask first: flat expenses, current growth — profitable before the money runs out? If the answer is no, today's agenda should be replaced entirely.
+Where it goes wrong: using default alive as an excuse not to grow — safe and stationary. The question protects the floor; the ceiling still takes ambition.
+
+### Lines to keep
+Are you default alive or default dead?
+With expenses flat and growth as it is, do you reach profitability in time?
+What surprises me is how many founders do not know the answer.
 
 ========================================================================
 ## Esther Perel · Security and desire want opposite things
@@ -3763,6 +4300,72 @@ Where it goes wrong: using it to defend doing less — the point is deliberate s
 What is there provides the advantage. What is not there provides the use.
 The hole in the hub belongs to no spoke, which is why it turns.
 The hard judgement is what to leave out.
+
+========================================================================
+## Peter Thiel · Competition is for losers
+URL: https://ourword.ai/en/i/thiel/competition-is-for-losers/
+Source: Zero to One, chapters three and four
+Tags: Deep read, Peter Thiel, Both sides lie, in opposite directions
+
+Business school teaches you to compete. He says competing is the loss. The usable part is how to hear through what both sides say.
+
+### Q: What actually happened?
+His verdict is blunt: competition is for losers. In a perfectly competitive market, price falls to cost and the profit is consumed in the fighting. What earns over time is some kind of monopoly — patent, network effect, scale or brand — ten times better with no substitute. The good part is where he takes apart the language. Monopolists pretend to be in fierce competition, defining the market as enormous so their share looks small. Competitors pretend to be unique, slicing the market thin enough to lead it. So when you read a company, start by inverting whatever it says about where its market ends.
+
+### The parts · Profit measures monopoly; it is not a prize for competing
+The closer an industry gets to the textbook picture of perfect competition, the more uniformly everybody in it grinds for thin margins. Fierce competition is not health; it is profit being burned collectively. So the first question about a battlefield is not can I win, it is whether winning leaves anything to eat.
+e.g. In a subsidised delivery war there are no roles other than loser. Everyone is funding the customer's discount. Choosing that fight means losing even when you win it.
+
+### The parts · How a company draws its market is a mirror
+We are nought point one per cent of all restaurant spending and we lead local organic lunch are one move pointed two ways: the first hides profit, the second manufactures it. Redraw the boundary by hand — what would this customer actually choose instead?
+e.g. Pull in everything a user genuinely considers alongside it, and a company calling itself the segment leader often turns out to be seventh.
+
+### The parts · The way out of competition is a gap nobody can close
+What he prescribes is not monopolistic behaviour but a monopoly-sized gap: be ten times better in a small market, own it completely, then expand in concentric circles — the way Amazon started with books. Deliberately choose small, become overwhelming, then widen. Better to be unanswerable in a narrow market than seventh in a large one.
+e.g. A product benchmarked against a whole industry from day one is guaranteed to be average. Pick a use case narrow enough to own outright; expansion then travels with a monopoly's margin and reputation.
+
+### Q: How do I use it today?
+Where you are: choosing a new battlefield, or listening to a company describe its position.
+Ask first: if we win here, is there any profit left? And the market boundary it just described — is it hiding something or inventing something?
+Where it goes wrong: reading it as avoid every direct fight. Some positions can only be taken. What he objects to is the profitless kind of attrition, not fighting.
+
+### Lines to keep
+Competition is for losers.
+Monopolists pretend they are in competition; competitors pretend they are unique.
+All happy companies differ: each earns a monopoly solving a unique problem.
+
+========================================================================
+## Peter Thiel · The important truth few agree with
+URL: https://ourword.ai/en/i/thiel/the-contrarian-question/
+Source: Zero to One, chapters one and eight
+Tags: Deep read, Peter Thiel, The question he asks in every interview
+
+He opens with a question that has no model answer. What it is screening for, and what a good answer looks like.
+
+### Q: What actually happened?
+Zero to One opens on it: what important truth do very few people agree with you on? A good answer takes the form most people believe X, but the truth is the opposite of X. It is hard because it asks for two scarce things at once — independent judgement, and the nerve to say it out loud, when everyone learned at school that being different is dangerous. It runs into his argument about secrets: there remain many important truths not yet widely known, and every great company is built on one. Most people have stopped believing secrets exist, and so stopped looking.
+
+### The parts · The question screens for where a judgement came from
+Someone who cannot answer is not short of opinions; every opinion arrived pre-formed. Whether the answer is right is secondary. What it exposes is whether this person's judgement is produced or forwarded — and a forwarder, however clever, only takes you where the crowd already is.
+e.g. Ask a candidate which consensus in their field they think is wrong. If the answer is hollow, every call they make later will be the average of the voices already in the room.
+
+### The parts · Secrets are where nobody wants to look
+Secrets are not gone because they were all found, he says, but because four pressures stopped people looking: incrementalism, risk aversion, complacency, and a flat certainty that the world is understood. So the method runs backwards — go to the corners nobody looks at.
+e.g. Markets that reports call settled, technical routes a big company abandoned, an old defect users have gone numb to. That is usually the address.
+
+### The parts · A contrarian position needs the discipline of evidence
+The dangerous misuse is treating difference as proof. Going against consensus is the entry fee; after it you owe heavier evidence, not lighter. The full answer has three parts: the consensus is X, I think the opposite, and here is what I see that others cannot.
+e.g. Everyone is wrong about this has to be followed immediately by because I have seen this data, these users, this cost structure. If it cannot be, demote it to an untested guess and do not bet on it.
+
+### Q: How do I use it today?
+Where you are: testing whether you — or a candidate — has judgement of your own.
+Ask first: on what important question do I differ from most people, and what is my evidence? Is it something I have seen, or something I want?
+Where it goes wrong: disagreeing for its own sake, or using the question to disqualify anyone holding a consensus view. The consensus is usually right; the secret is the exception.
+
+### Lines to keep
+What important truth do very few people agree with you on?
+A good answer: most people believe X, but the truth is the opposite.
+There are still many important truths that are not yet widely known.
 
 ========================================================================
 ## Thomas Gordon · The I-message

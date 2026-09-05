@@ -167,7 +167,7 @@ ENTRIES = [
             "company had changed in those months. What had changed was what "
             "other people could stand to hold.",
         "f": [
-            {"n": "Four kinds of moat",
+    {"n": "Four kinds of moat",
              "d": "A brand people ask for by name, a network that gets more "
                   "valuable as it grows, a cost position nobody can match, "
                   "and a switching cost that makes leaving expensive. The "
@@ -211,6 +211,433 @@ ENTRIES = [
             {"n": "Charlie Munger",
              "why": "The partner who moved him from cheap and broken to good "
                     "and fairly priced"},
+        ],
+    },
+    # ── Starting and building ──────────────────────────────────────
+    # 这一类在英文站上原来是空的（中文有 19 条）。分类芯片是读者进站的一条
+    # 主路，一整条路在英文这边不存在，比「条目少」严重。这六个人先把它开出来，
+    # 而且他们彼此可以互相引用 —— 交叉链接不会指向没有英文页的人。
+    #
+    # 条目故事一律避开各自章节用过的场景（见文件顶部第 ③ 条）：
+    # 乔布斯用 1985 年出局的十二年、马斯克用 2008 年那一年、
+    # 格雷厄姆用 YC 的批量投法、纳瓦尔用《宝典》免费送出去这件事。
+    {
+        "c": "Starting and building", "n": "Steve Jobs", "slug": "jobs",
+        "e": "Contemporary \u00b7 1955\u20132011", "w": "Subtract",
+        "y": 1955,
+        "d": "Co-founded Apple, was pushed out of it, spent twelve years at "
+             "NeXT and Pixar, came back and turned a company weeks from "
+             "insolvency into the most valuable one in the world. The centre "
+             "of his thinking is that simple is harder than complex, that "
+             "focus is a word for refusal, and that design is how a thing "
+             "works rather than how it looks.",
+        "story":
+            "In 1985 he lost a board fight and left the company he had "
+            "started. He has said the twelve years that followed were the "
+            "most creative of his life, and the arithmetic supports him: NeXT "
+            "built the operating system Apple eventually bought to save "
+            "itself, and Pixar changed what an animated film was. Neither was "
+            "a detour back to Apple. Both were the thing itself, done "
+            "properly, by someone who no longer had a large company's "
+            "permission to worry about.",
+        "f": [
+            {"n": "Simplicity is expensive",
+             "d": "Making something simple is not removing features until it "
+                  "is thin. It is understanding the thing well enough that "
+                  "the shape becomes obvious. That takes longer than adding, "
+                  "which is why most products are complicated: complication "
+                  "is what you ship when you ran out of time to understand.",
+             "eg": "The settings screen with forty switches is not generous. "
+                   "It is a record of forty arguments nobody was willing to "
+                   "settle."},
+            {"n": "The product is every point of contact",
+             "d": "He treated the box, the shop, the repair counter and the "
+                  "advertising as parts of the product, because the customer "
+                  "does not experience them separately. A company that is "
+                  "excellent in the object and careless at the counter has "
+                  "not made a good product; it has made a good component.",
+             "eg": "Unboxing designed as a small ceremony does more for how "
+                   "the thing feels than another processor generation."},
+            {"n": "Belief is a resource, and it is borrowed",
+             "d": "The famous distortion field was not a trick. People "
+                  "delivered work they did not believe possible because "
+                  "somebody credible refused to accept it was not. Used well "
+                  "it raises what a group thinks it can attempt; used badly "
+                  "it is a way of demanding miracles and blaming people for "
+                  "the shortfall.",
+             "eg": "The same sentence, this has to be twice as fast, is "
+                   "either the best week a team ever had or the reason three "
+                   "of them leave. The difference is whether the person "
+                   "saying it is also in the room at two in the morning."},
+        ],
+        "apply":
+            "List everything you are currently working on and ask which half "
+            "you would keep if you could only keep half. Then stop the other "
+            "half today, and write down who is accountable for having stopped "
+            "it.",
+        "q": [
+            "Simple can be harder than complex; you have to work to get your "
+            "thinking clean.",
+            "Focus means saying no to the hundred other good ideas that there "
+            "are.",
+            "Design is not just how it looks. Design is how it works.",
+        ],
+        "l": ["Peter Thiel", "Jeff Bezos", "Paul Graham"],
+        "contrast": [
+            {"n": "Jeff Bezos",
+             "why": "Cut to four products; the other man expanded into "
+                    "everything and won too"},
+        ],
+    },
+    {
+        "c": "Starting and building", "n": "Elon Musk", "slug": "musk",
+        "e": "Contemporary \u00b7 1971\u2013", "w": "First principles",
+        "y": 1971,
+        "d": "Co-founder of PayPal, Tesla, SpaceX and Neuralink. The method "
+             "is a single move repeated: go back to what is physically true "
+             "and re-derive everything from there. When told a thing is "
+             "impossible, his first question is whether physics forbids it. "
+             "If not, impossible is a description of current engineering and "
+             "current prices, and both of those are temporary.",
+        "story":
+            "2008 was the year it nearly ended. The first three Falcon 1 "
+            "launches failed, Tesla could not fund production of the "
+            "Roadster, and the money was gone. The fourth Falcon flew in "
+            "September and reached orbit; the Tesla financing closed on "
+            "Christmas Eve. He has said that if the fourth launch had failed "
+            "there was nothing left for a fifth. The interesting part is not "
+            "the survival. It is that the same method produced three "
+            "catastrophic failures and then the thing nobody else had done, "
+            "and there was no way to tell those apart from inside.",
+        "f": [
+            {"n": "Physics is law; the rest is advice",
+             "d": "The limit of any technology is set by physical law, not by "
+                  "what the current industry can do. Working back from the "
+                  "physical limit rather than forward from today's practice "
+                  "changes what counts as an acceptable answer, and forces "
+                  "engineering that the incremental route never reaches.",
+             "eg": "Asking how much lighter this can be given the material "
+                   "produces a different programme from asking how much "
+                   "lighter than last year's."},
+            {"n": "Most of the week should go into making the thing",
+             "d": "He has said roughly eighty per cent of his time goes to "
+                  "engineering and design. That is a budget, not a boast: "
+                  "meetings without an output, reviews that only inform, and "
+                  "reporting that changes no decision are the default state "
+                  "of any organisation past a certain size, and they consume "
+                  "exactly the hours the product needed.",
+             "eg": "Cancel the standing meeting for a month and see what "
+                   "actually breaks. Usually the answer is the feeling of "
+                   "being informed."},
+            {"n": "The method does not tell you when you are wrong",
+             "d": "Reasoning up from fundamentals is equally confident when "
+                  "the fundamentals are misjudged, and it removes the "
+                  "handrail that convention provides. That is the real cost "
+                  "of it: no external check, and a strong internal one. It "
+                  "belongs on the few questions worth that exposure.",
+             "eg": "The schedule derived from physics is right about what is "
+                   "possible and famously wrong about when. Both come from "
+                   "the same calculation."},
+        ],
+        "apply":
+            "Next time something is described as impossible or as simply "
+            "costing what it costs, ask what physical law or published price "
+            "actually sets the floor. Everything between that floor and "
+            "today's number is somebody's decision, and decisions can be "
+            "remade.",
+        "q": [
+            "Physics is the law. Everything else is a recommendation.",
+            "We reason from first principles rather than by analogy.",
+            "Try to be useful. Do things that are useful to other people.",
+        ],
+        "l": ["Peter Thiel", "Jeff Bezos", "Charlie Munger"],
+        "contrast": [
+            {"n": "Charlie Munger",
+             "why": "Reduce to physics, or carry many borrowed models at "
+                    "once \u2014 two opposite cures for the same blindness"},
+        ],
+    },
+    {
+        "c": "Starting and building", "n": "Jeff Bezos", "slug": "bezos",
+        "e": "United States \u00b7 1964\u2013", "w": "The flywheel",
+        "y": 1964,
+        "d": "Left a Wall Street job in 1994 to sell books out of a garage "
+             "and built it into a two-trillion-dollar company across retail, "
+             "cloud, logistics and hardware. He is the most extreme "
+             "practitioner of the long term on record: twenty years of thin "
+             "profit and open ridicule while every dollar went back into the "
+             "flywheel, and then twenty years of winning.",
+        "story":
+            "In 1994 he was a vice-president at a New York hedge fund and "
+            "wanted to leave and sell books online. His boss told him it was "
+            "a good idea, but a better one for somebody who did not already "
+            "have a good job. So he invented a way to decide: project "
+            "yourself to eighty and look back — which choice would you "
+            "regret? He knew at eighty he would not remember a bonus he gave "
+            "up in 1994, and would mind very much never having been part of "
+            "the internet at all. He resigned within days. What makes the "
+            "frame sharp is that it changes the timescale of the question by "
+            "force, and once the timescale moves the answer surfaces on its "
+            "own.",
+        "f": [
+            {"n": "Regret minimisation",
+             "d": "For decisions large enough to define a stretch of life, "
+                  "shift the vantage point to eighty. Short-term losses — "
+                  "salary, standing, safety — shrink automatically from "
+                  "there, and the things that turn out to matter, whether you "
+                  "tried, whether you were there, enlarge automatically. It "
+                  "is built for the fork between safe and unremarkable and "
+                  "risky and alive.",
+             "eg": "The offer you keep re-reading at midnight is not a "
+                   "spreadsheet problem. Run it from eighty and it usually "
+                   "stops being close."},
+            {"n": "The flywheel is slow before it is fast",
+             "d": "Lower prices bring customers, customers bring traffic, "
+                  "traffic brings sellers, scale lowers cost, and cost lowers "
+                  "prices again. No first step and no last one. The part "
+                  "people underestimate is the beginning, where it is heavy, "
+                  "exhausting and appears to do nothing — which is where "
+                  "almost everyone stops.",
+             "eg": "Find the loop where each turn makes the next one easier, "
+                   "then accept that the first two years will look "
+                   "indistinguishable from failure."},
+            {"n": "Your margin is my opportunity",
+             "d": "Every comfortable high margin in an industry is a door "
+                  "held open for an attacker. He compressed his own margins "
+                  "deliberately to leave nothing worth attacking. Turn it "
+                  "around as a self-check: whatever you are earning "
+                  "comfortably from is precisely what somebody is currently "
+                  "aiming at.",
+             "eg": "The product line nobody wants to touch because it funds "
+                   "everything else is the one a competitor is already "
+                   "modelling."},
+        ],
+        "apply":
+            "Sort your decisions by whether they can be undone: the "
+            "reversible ones move fast and low, the irreversible ones get the "
+            "meeting. Before starting anything new, write the press release "
+            "you would publish on launch day — if you cannot make it exciting "
+            "to a customer, do not start.",
+        "q": [
+            "Your margin is my opportunity.",
+            "If you think three years out you have many competitors. Think "
+            "seven and you have few.",
+            "Failure and invention are inseparable twins.",
+        ],
+        "l": ["Warren Buffett", "Elon Musk", "Steve Jobs"],
+        "contrast": [
+            {"n": "Steve Jobs",
+             "why": "One cut the range to four; the other refused to stop "
+                    "adding \u2014 both were right about their own business"},
+        ],
+    },
+    {
+        "c": "Starting and building", "n": "Peter Thiel", "slug": "thiel",
+        "e": "Contemporary \u00b7 1967\u2013", "w": "Zero to one",
+        "y": 1967,
+        "d": "Co-founded PayPal, was the first outside investor in Facebook, "
+             "and is the most consequential contrarian in the Valley. His "
+             "central claim: competition is an ideological trap, and what "
+             "actually creates value is a monopoly rather than a fight.",
+        "story":
+            "In 2004 Facebook was a few months old and looked to most people "
+            "like a social directory for Harvard undergraduates. He put in "
+            "half a million dollars for a bit over ten per cent. By the 2012 "
+            "listing that half million was worth around a billion. What he "
+            "had seen was not that students liked it. It was that once a "
+            "network of that shape closes, leaving costs the user everything "
+            "and nothing else can be substituted for it \u2014 which is his "
+            "definition of the only kind of business worth owning.",
+        "f": [
+            {"n": "Zero to one, not one to n",
+             "d": "Going from one to n is copying: more of something that "
+                  "exists, in a crowd, at thin margins. Going from zero to "
+                  "one is making a category that was not there. Almost all "
+                  "commerce is the first kind. The second is rare, and when "
+                  "it works the value is not competed away because there is "
+                  "nobody to compete with yet.",
+             "eg": "A better version of an existing product is a fight over "
+                   "an existing pool. A thing people had no word for last "
+                   "year is not."},
+            {"n": "The power law is not a slogan about focus",
+             "d": "Venture returns are not normally distributed: a single "
+                  "investment can return more than everything else combined. "
+                  "The consequence is uncomfortable — spreading effort evenly "
+                  "for the sake of balance guarantees you miss the only "
+                  "outcome that mattered. Back the one you believe can be "
+                  "that, with everything.",
+             "eg": "The portfolio designed so nothing can go badly wrong is "
+                   "also designed so nothing can go extraordinarily right."},
+            {"n": "Definite optimism",
+             "d": "He divides views of the future by two axes: optimistic or "
+                  "pessimistic, definite or indefinite. His complaint about "
+                  "the present is indefinite optimism — a belief things will "
+                  "improve with no plan for how. Definite optimism is having "
+                  "an actual picture of the thing you intend to build, which "
+                  "is what makes long projects possible at all.",
+             "eg": "We are excited about the space is indefinite. We are "
+                   "building this specific thing and it will take six years "
+                   "is definite, and only the second can be worked on today."},
+        ],
+        "apply":
+            "Run the question on yourself: what important thing do you "
+            "believe that most people disagree with? If you can give a real "
+            "answer with evidence behind it, that is where your advantage "
+            "probably is. If you cannot, your judgement is currently the "
+            "room's average.",
+        "q": [
+            "Competition is for losers.",
+            "The best businesses are the ones that do not compete.",
+            "What important truth do very few people agree with you on?",
+        ],
+        "l": ["Steve Jobs", "Sun Tzu", "Warren Buffett"],
+        "contrast": [
+            {"n": "Paul Graham",
+             "why": "One starts from the structure of the market, the other "
+                    "from the hundred people in front of you"},
+        ],
+    },
+    {
+        "c": "Starting and building", "n": "Paul Graham", "slug": "paul-graham",
+        "e": "United States \u00b7 1964\u2013",
+        "w": "Do things that do not scale", "y": 1964,
+        "d": "A Lisp hacker who built Viaweb in 1995 \u2014 the first "
+             "commercial software that ran inside a browser \u2014 and sold "
+             "it to Yahoo in 1998. In 2005 he started Y Combinator and "
+             "rewrote what early-stage investment looked like. His real "
+             "influence is in several hundred essays: most of what now passes "
+             "for startup common sense has its earliest and clearest "
+             "statement in one of them.",
+        "story":
+            "Y Combinator began as a summer experiment with a deliberately "
+            "strange shape: fund a whole batch at once, give each of them a "
+            "small amount of money and three months, and have dinner with "
+            "them every week. Every part of it was the opposite of how "
+            "investment worked \u2014 small cheques, no track record "
+            "required, founders as young as they came, decisions in a "
+            "ten-minute interview. The batch was the point. Founders learn "
+            "more from the company two tables over, at the same stage and "
+            "similarly frightened, than from anybody with an office.",
+        "f": [
+            {"n": "Make something people want",
+             "d": "It is the only thing on the wall at YC. His judgement "
+                  "after thousands of companies is that the fatal mistake is "
+                  "singular: building something nobody actually wanted. "
+                  "Everything else \u2014 the wrong hire, the wrong price, "
+                  "the bad quarter \u2014 is repairable.",
+             "eg": "A team can survive being outbuilt. It cannot survive "
+                   "having been right about a need that was not there."},
+            {"n": "Schlep blindness",
+             "d": "The best openings often sit behind work that is tedious "
+                  "and unglamorous — bank integrations, compliance, refunds. "
+                  "The mind skips over those ideas so quickly that you never "
+                  "notice having skipped. Which is exactly why they are still "
+                  "available.",
+             "eg": "Everybody saw the market. The reason nobody took it is "
+                   "that the first nine months are paperwork."},
+            {"n": "A maker's day is not divisible",
+             "d": "Managers work in hours, makers need whole blocks. A single "
+                  "meeting in the middle of an afternoon does not cost an "
+                  "hour; it costs the afternoon, because neither remaining "
+                  "piece is long enough to get into the work.",
+             "eg": "Push every meeting to one end of the day. The output "
+                   "change is larger than any productivity system."},
+            {"n": "Better a few who love it",
+             "d": "A hundred users who love the thing are worth more than ten "
+                  "thousand who find it acceptable. The first group tells you "
+                  "why, brings other people, and forgives the rough edges. "
+                  "The second leaves quietly and teaches you nothing.",
+             "eg": "Chasing a satisfaction score upward across everyone is "
+                   "usually how a product becomes something nobody would "
+                   "miss."},
+        ],
+        "apply":
+            "In the cold-start phase do not build channels, buy traffic or "
+            "automate. Find the first hundred users by hand and serve each "
+            "one until they are happy; when that work is crushing you, that "
+            "is the signal to scale. Test an idea on three questions: do I "
+            "want it, can I build it, and why has nobody done it \u2014 no "
+            "answer to the third usually means it is not worth doing, or you "
+            "have not yet seen the tedium hiding in it.",
+        "q": [
+            "There is one fatal mistake: building something nobody wants.",
+            "Do things that do not scale. It is the only route to scale.",
+            "Better to have a few people love you than many find you "
+            "acceptable.",
+        ],
+        "l": ["Peter Thiel", "Naval Ravikant", "Jeff Bezos", "Steve Jobs"],
+        "contrast": [
+            {"n": "Peter Thiel",
+             "why": "Start from the users in front of you, or start from "
+                    "whether the market can ever hold a profit"},
+        ],
+    },
+    {
+        "c": "Starting and building", "n": "Naval Ravikant", "slug": "naval",
+        "e": "Contemporary \u00b7 1974\u2013", "w": "Leverage", "y": 1974,
+        "d": "Co-founder of AngelList and an early investor in Twitter, Uber "
+             "and Notion. In 2018 he posted a numbered thread called how to "
+             "get rich without getting lucky, which has since been read "
+             "millions of times. He is not a financial adviser. He is "
+             "someone who worked out a route to personal sovereignty in a "
+             "digital economy and then wrote the route down.",
+        "story":
+            "The thread was later compiled into a book by a reader, Eric "
+            "Jorgenson, and released free \u2014 the whole text, downloadable, "
+            "with Naval taking nothing from it. For a man whose entire "
+            "subject is leverage, that is the argument made in the form of a "
+            "decision rather than a sentence: a book that costs nothing "
+            "travels further than one that earns, and reach compounds where "
+            "royalties merely add. He gave away the thing most authors "
+            "protect, because giving it away was the higher-leverage move.",
+        "f": [
+            {"n": "Four kinds of leverage, and two need permission",
+             "d": "Labour means managing other people and requires "
+                  "leadership. Capital means money making money and requires "
+                  "having some. Code runs once written, at zero marginal "
+                  "cost. Media is read once written, at zero marginal cost. "
+                  "The first two need somebody's consent; the last two need "
+                  "nobody's, and that is historically new.",
+             "eg": "The essay published tonight and the fund raised next "
+                   "spring carry the same idea. Only one of them can start "
+                   "tonight."},
+            {"n": "Wealth, money and status are three different games",
+             "d": "Wealth is assets that work while you sleep and it is "
+                  "positive sum. Money is the instrument for moving wealth "
+                  "about. Status is your rank, and it is zero sum \u2014 for "
+                  "you to rise somebody falls. How much time goes into each "
+                  "decides which game you are actually in, whatever you say "
+                  "you are doing.",
+             "eg": "A year spent on titles and a year spent on something that "
+                   "earns are indistinguishable while they are happening, and "
+                   "very distinguishable afterwards."},
+            {"n": "Happiness by subtraction",
+             "d": "He argues happiness comes from removing desires rather "
+                  "than satisfying them: every unmet want is a standing "
+                  "source of unhappiness, so peace is not owning everything "
+                  "but no longer being pulled by what you do not own. He "
+                  "read a great deal of eastern philosophy and is "
+                  "restating an old line in a modern setting.",
+             "eg": "The list of things that would finally make it fine has "
+                   "been rewritten four times, and each version was believed "
+                   "completely at the time."},
+        ],
+        "apply":
+            "Ask which part of your work could be written once and used many "
+            "times \u2014 code, writing, a process, a framework, a tool. "
+            "Identify those and move your hours towards them, because "
+            "everything else is priced by the hour and stops when you do.",
+        "q": [
+            "Wealth is assets that earn while you sleep.",
+            "If your income is measured in hours you will never truly be "
+            "wealthy.",
+            "Code and media are the permissionless leverage of this era.",
+        ],
+        "l": ["Peter Thiel", "Tao Te Ching", "Warren Buffett"],
+        "contrast": [
+            {"n": "Tao Te Ching",
+             "why": "Both end at enough; one arrives through leverage, the "
+                    "other by never picking the load up"},
         ],
     },
     {

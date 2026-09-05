@@ -17,6 +17,13 @@
 # 预填句：读者会打进输入框的那句话。写法是「现在的状态 + 怕什么 + 先怎么办」，
 # 和卡片上那句「你是不是……」的问句是两种不同的话。
 SC_BOX = {
+    # Starting and building
+    "Everyone says it can't be done cheaper":
+        "Every quote comes back the same and everyone tells me that is the "
+        "market. Where do I start taking it apart?",
+    "I'm building something nobody asked for":
+        "I made the thing and the silence is total. How do I find out "
+        "whether anyone wants it?",
     # Facing an opponent
     "Winning is costing too much":
         "Every round goes my way and there is less of me afterwards. What am "
@@ -205,6 +212,8 @@ SC_BOX = {
 
 # 短名：进 chip 条用。英文多数本来就短，只收超过 30 个字符的那几个。
 SC_SHORT = {
+    "Everyone says it can't be done cheaper": "It can't be cheaper",
+    "I'm building something nobody asked for": "Nobody asked for it",
     "I don't want to race but I'm scared to stop": "Don't want to race",
     "The side thing worked, the main thing didn't": "The side thing won",
     "Things are going well and it scares me": "Going well, and scared",
@@ -247,6 +256,12 @@ SC_SHORT = {
 # 条目介绍：一句话说清「这是谁、为什么在这里」。卡片上的名字英文读者多半
 # 不认识，这一句要出现在他第一次碰到名字的地方。
 INTROS = {
+    "jobs": "Pushed out of the company he founded, back twelve years later to save it",
+    "musk": "Asks whether physics forbids it, and treats everything else as engineering",
+    "bezos": "Left a Wall Street job to sell books out of a garage in 1994",
+    "thiel": "First outside money into Facebook; thinks competing is already losing",
+    "paul-graham": "Started Y Combinator, and wrote most of what founders now repeat",
+    "naval": "Gave the book of his own method away free, because reach beats royalties",
     "su-shi": "Song poet, exiled three times, and freer each time it happened",
     "wang-yangming": "A philosopher who was also his generation's best general",
     "zhuangzi": "Turned down the government of a state to stay in the mud",
@@ -366,6 +381,7 @@ CAT_COLOR = {
     "Body and daily life": "#7a6a8a",
     "Family and relationships": "#a35f6e",
     "How the world works": "#6b5b73",
+    "Starting and building": "#c26b3f",
 }
 
 

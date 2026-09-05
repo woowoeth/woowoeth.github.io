@@ -1,9 +1,9 @@
 # OurWord (OurWord)
 
-> 34 people and books on how the world actually works, across 2,600 years
+> 40 people and books on how the world actually works, across 2,600 years
 > See how people before you handled it.
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 34 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 40 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
 ## Read it
 
@@ -16,11 +16,12 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 
 ## Topics
 
-- [Modern](https://ourword.ai/en/t/modern/) — 15
+- [Modern](https://ourword.ai/en/t/modern/) — 21
 - [The industrial age](https://ourword.ai/en/t/the-industrial-age/) — 10
 - [Family and relationships](https://ourword.ai/en/t/family-and-relationships/) — 7
 - [Mind and feeling](https://ourword.ai/en/t/mind-and-feeling/) — 7
 - [Learning and growth](https://ourword.ai/en/t/learning-and-growth/) — 6
+- [Starting and building](https://ourword.ai/en/t/starting-and-building/) — 6
 - [Body and daily life](https://ourword.ai/en/t/body-and-daily-life/) — 5
 - [Pre-Qin and classical](https://ourword.ai/en/t/pre-qin-and-classical/) — 5
 - [How the world works](https://ourword.ai/en/t/how-the-world-works/) — 3
@@ -31,6 +32,8 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 
 Long-form chapters hanging off a person page. Not part of the entry index above.
 
+- [Jeff Bezos · Always Day 1](https://ourword.ai/en/i/bezos/day-one/): Jeff Bezos · Always Day 1 — What Day 2 looks like. Someone asked what Day 2 would look like. The answer, and the four parts he installed to keep it away.
+- [Jeff Bezos · Bet on what will not change](https://ourword.ai/en/i/bezos/what-wont-change/): Jeff Bezos · Bet on what will not change — The question almost nobody asks. Everyone asks him what the next ten years will change. He says the more useful question is the one he almost never gets.
 - [John Boyd · The OODA loop](https://ourword.ai/en/i/boyd/ooda/): John Boyd · The OODA loop — Fast means turning, not moving. He was a fighter instructor who could win from any position in forty seconds. What 'fast' meant in the loop he built.
 - [John Boyd · To be somebody, or to do something](https://ourword.ai/en/i/boyd/to-be-or-to-do/): John Boyd · To be somebody, or to do something — The fork in the road. He made colonel and never rose again. The speech he gave every young officer who wanted to follow him.
 - [Warren Buffett · The circle of competence](https://ourword.ai/en/i/buffett/circle-of-competence/): Warren Buffett · The circle of competence — The edge matters more than the size. Everyone hears it as a licence to stay small. The working part is the sentence after it, and it is about the edge.
@@ -67,6 +70,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [Arlie Hochschild · Emotional labour](https://ourword.ai/en/i/hochschild/emotional-labor/): Arlie Hochschild · Emotional labour — That smile isn't hers. Some jobs ask you not only to do the work but to feel the right thing. What that requirement costs.
 - [Huineng · There was never a thing there](https://ourword.ai/en/i/huineng/originally-not-a-thing/): Huineng · There was never a thing there — Subtraction is harder than addition. Two verses. Everyone admired one; the other went to an illiterate kitchen worker. What separates them.
 - [Huineng · The practice is here, not elsewhere](https://ourword.ai/en/i/huineng/in-the-world/): Huineng · The practice is here, not elsewhere — There is no better place to start. People wait for a quiet enough setting to begin. Why Huineng said that setting doesn't exist.
+- [Steve Jobs · Focus is what you say no to](https://ourword.ai/en/i/jobs/focus-is-saying-no/): Steve Jobs · Focus is what you say no to — The things you cut are the good ones. Everyone says they are focused. What makes his definition worth reading is that it points the opposite way from the instinct.
+- [Steve Jobs · The dots only connect backwards](https://ourword.ai/en/i/jobs/connecting-the-dots/): Steve Jobs · The dots only connect backwards — Collect first, connect later. A dropout sat in on a class with no use whatsoever. The famous line about it is usually run in the wrong direction.
 - [John Ratey · Exercise is for the brain](https://ourword.ai/en/i/john-ratey/exercise-for-the-brain/): John Ratey · Exercise is for the brain — You can feel the return the same day. Filing exercise under the gym leaves the cheapest medicine unused. What it's actually changing.
 - [John Ratey · When anxious, move before you think](https://ourword.ai/en/i/john-ratey/move-before-you-think/): John Ratey · When anxious, move before you think — Start with the physiology. The more you think, the worse it gets, and knowing that doesn't stop it. Why this is the moment to go outside.
 - [Carl Jung · You can't run the afternoon on the morning's programme](https://ourword.ai/en/i/jung/afternoon-of-life/): Carl Jung · You can't run the afternoon on the morning's programme — Not wrong. Expired. Something feels wrong around forty. Is it a fault? Jung said it's the hour.
@@ -84,6 +89,12 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [Maria Montessori · Help me to do it myself](https://ourword.ai/en/i/montessori/help-me-do-it-myself/): Maria Montessori · Help me to do it myself — Doing it for them saves your time. Doing it for them takes two minutes. What those two minutes bought, and what they cost.
 - [Charlie Munger · Invert, always invert](https://ourword.ai/en/i/munger/invert/): Charlie Munger · Invert, always invert — Study the ways it dies first. He was asked how to have a good life and answered the other question instead. The swap is the whole method.
 - [Charlie Munger · One hammer is not enough](https://ourword.ai/en/i/munger/latticework/): Charlie Munger · One hammer is not enough — The danger is the skill, not the ignorance. What he warned about was not ignorance. It was being very well trained in exactly one thing.
+- [Elon Musk · Boil it down to what is physically true](https://ourword.ai/en/i/musk/first-principles/): Elon Musk · Boil it down to what is physically true — Analogy quotes the going rate; physics gives the floor. The phrase is everywhere now. What is worth having is his own definition, and the arithmetic he did on a battery.
+- [Elon Musk · Part price over material price](https://ourword.ai/en/i/musk/idiot-index/): Elon Musk · Part price over material price — A number that tells you where to start. He gives every component a humiliating score. What it does is turn a way of thinking into something you can run on a spreadsheet.
+- [Naval Ravikant · Assets that earn while you sleep](https://ourword.ai/en/i/naval/assets-while-you-sleep/): Naval Ravikant · Assets that earn while you sleep — Wealth is not money. The first line cuts one word into three. What matters is where each of the three leads.
+- [Naval Ravikant · Productise yourself](https://ourword.ai/en/i/naval/productize-yourself/): Naval Ravikant · Productise yourself — Specific knowledge times leverage. He compresses the whole method into two words. What each of the two refers to, and why the new leverage is different in kind.
+- [Paul Graham · Do things that do not scale](https://ourword.ai/en/i/paul-graham/dont-scale/): Paul Graham · Do things that do not scale — The early work is meant to be handmade. Founders think about scale constantly. He argues for the opposite direction — and is specific about what the handmade phase actually buys.
+- [Paul Graham · Default alive or default dead](https://ourword.ai/en/i/paul-graham/default-alive/): Paul Graham · Default alive or default dead — Run this number before anything else. He asks founders one question first, and most of them cannot answer it. Why it comes before every other conversation.
 - [Esther Perel · Security and desire want opposite things](https://ourword.ai/en/i/perel/security-and-desire/): Esther Perel · Security and desire want opposite things — Which is why the better it gets, the flatter. The steadier life gets, the less you feel, and most people assume they changed. Perel says the structure did it.
 - [Esther Perel · Feeling nothing isn't the same as something being wrong](https://ourword.ai/en/i/perel/not-a-problem-to-solve/): Esther Perel · Feeling nothing isn't the same as something being wrong — First tell a wound from an emptiness. 'We can't go on like this' can sit on top of two completely different things. Tell them apart before you act.
 - [Esther Perel · It isn't how often. It's not being there](https://ourword.ai/en/i/perel/quality-not-frequency/): Esther Perel · It isn't how often. It's not being there — Present in the room, absent in attention. You live in the same place. So why does it feel like long distance? What she says to count instead.
@@ -110,6 +121,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [Tao Te Ching · The part you don't do](https://ourword.ai/en/i/tao-te-ching/wu-wei/): Tao Te Ching · The part you don't do — A list of moves to leave out. Usually translated as non-action and read as passivity. It is closer to a list of the moves that make things worse.
 - [Tao Te Ching · Go to the low ground](https://ourword.ai/en/i/tao-te-ching/water/): Tao Te Ching · Go to the low ground — Not competing is a choice of location. Water has been praised for two thousand years. The text credits it with one specific thing, and it is about position.
 - [Tao Te Ching · The empty part is the useful part](https://ourword.ai/en/i/tao-te-ching/usefulness-of-emptiness/): Tao Te Ching · The empty part is the useful part — What you left out is doing the work. Which part of a wheel is doing the work? The chapter is short enough to be a definition and it underwrites the whole book.
+- [Peter Thiel · Competition is for losers](https://ourword.ai/en/i/thiel/competition-is-for-losers/): Peter Thiel · Competition is for losers — Both sides lie, in opposite directions. Business school teaches you to compete. He says competing is the loss. The usable part is how to hear through what both sides say.
+- [Peter Thiel · The important truth few agree with](https://ourword.ai/en/i/thiel/the-contrarian-question/): Peter Thiel · The important truth few agree with — The question he asks in every interview. He opens with a question that has no model answer. What it is screening for, and what a good answer looks like.
 - [Thomas Gordon · The I-message](https://ourword.ai/en/i/thomas-gordon/i-message/): Thomas Gordon · The I-message — Say the effect, not the character. The same event, said one way, starts a fight; said another, starts action. Where the structural difference is.
 - [Thomas Gordon · Whose problem is this](https://ourword.ai/en/i/thomas-gordon/problem-ownership/): Thomas Gordon · Whose problem is this — Different owner, opposite method. Your child is upset, you explain, and each explanation pushes them further away. What to do in that moment.
 - [Lev Vygotsky · The zone of proximal development](https://ourword.ai/en/i/vygotsky/zpd/): Lev Vygotsky · The zone of proximal development — Look at the second line. Two people at the same level today may end up far apart. Which measure the difference shows up in.
@@ -137,7 +150,7 @@ Cite the individual page URL, not the homepage — each entry page is stable and
 - [AI Bubble Monitor](https://ourword.ai/ai/)
 - [Zouni](https://ourword.ai/zouni/)
 
-## Index (34 entrys)
+## Index (40 entrys)
 
 - [Arlie Hochschild](https://ourword.ai/en/i/hochschild/): Arlie Hochschild (1983 · UC Berkeley) — Work nobody counts. A sociologist who twice gave a name to work that had none. The Managed Heart (1983) named emotional labour: jobs that require not only that…
 - [C.S. Lewis](https://ourword.ai/en/i/cs-lewis/): C.S. Lewis (1898–1963 · Oxford) — The notebooks after she died. A writer and professor at Oxford and Cambridge, author of Narnia and of many books arguing people into belief.
@@ -145,6 +158,7 @@ Cite the individual page URL, not the homepage — each entry page is stable and
 - [Carol Dweck](https://ourword.ai/en/i/dweck/): Carol Dweck (2006 · Stanford) — Ability can grow. The Stanford psychologist behind the distinction between fixed and growth mindsets: whether you believe ability is a fixed quantity or something that…
 - [Charlie Munger](https://ourword.ai/en/i/munger/): Charlie Munger (Contemporary · 1924–2023) — Invert. Buffett's partner for more than half a century, and the reason Berkshire stopped buying cheap broken companies and started buying good ones at fair…
 - [Christina Maslach](https://ourword.ai/en/i/maslach/): Christina Maslach (1946– · UC Berkeley) — Burnout is the job. Burnout became measurable largely because of her work. Her 1981 inventory split it into three components — emotional exhaustion…
+- [Elon Musk](https://ourword.ai/en/i/musk/): Elon Musk (Contemporary · 1971–) — First principles. Co-founder of PayPal, Tesla, SpaceX and Neuralink. The method is a single move repeated: go back to what is physically true and re-derive…
 - [Esther Perel](https://ourword.ai/en/i/perel/): Esther Perel (1958– · Belgium and New York) — Flat isn't broken. Thirty years of couples therapy, nine languages, and a caseload across many cultures. She doesn't work on how to argue — Gottman…
 - [Excellent Sheep](https://ourword.ai/en/i/excellent-sheep/): Excellent Sheep (2014 · William Deresiewicz) — Can clear, can't choose. A critique of elite education by someone who taught at Yale for ten years and sat on admissions.
 - [Fan Li](https://ourword.ai/en/i/fan-li/): Fan Li (Spring and Autumn · 536–448 BC) — When to go. The most successful exit in Chinese history. He spent more than twenty years helping the king of Yue climb from hostage to hegemon, and walked…
@@ -152,6 +166,7 @@ Cite the individual page URL, not the homepage — each entry page is stable and
 - [Han Feizi](https://ourword.ai/en/i/han-feizi/): Han Feizi (Warring States · 280–233 BC) — Law, method, position. The systematiser of Chinese Legalism, who combined law, administrative method and positional authority into one theory of power.
 - [Harvard Study of Adult Development](https://ourword.ai/en/i/harvard-study/): Harvard Study of Adult Development (1938–present · Harvard Medical School) — Relationships predict the end. The longest study of adult life ever run. It began in 1938 with 268 Harvard sophomores…
 - [Huineng](https://ourword.ai/en/i/huineng/): Huineng (Tang · 638–713) — Already complete. An illiterate woodcutter from the far south who became the sixth patriarch of Chan Buddhism.
+- [Jeff Bezos](https://ourword.ai/en/i/bezos/): Jeff Bezos (United States · 1964–) — The flywheel. Left a Wall Street job in 1994 to sell books out of a garage and built it into a two-trillion-dollar company across retail, cloud, logistics and…
 - [John Boyd](https://ourword.ai/en/i/boyd/): John Boyd (United States · 1927–1997) — Tempo. A US Air Force colonel known as Forty-Second Boyd, from a standing bet: any pilot, he starts from the disadvantaged position, and if he isn't on their…
 - [John Cacioppo](https://ourword.ai/en/i/cacioppo/): John Cacioppo (1951–2018 · University of Chicago) — Loneliness is a signal. A founder of social neuroscience who spent a career on one question: what loneliness actually is in the body and the brain.
 - [John Gottman](https://ourword.ai/en/i/gottman/): John Gottman (1994 · University of Washington) — Four fatal signals. A psychologist who recorded thousands of couples in a laboratory, coding expression, tone and heart rate frame by frame, then…
@@ -161,10 +176,14 @@ Cite the individual page URL, not the homepage — each entry page is stable and
 - [Maria Montessori](https://ourword.ai/en/i/montessori/): Maria Montessori (1907 · Casa dei Bambini, Rome) — The room, not the discipline. One of Italy's first women doctors, who began with children with intellectual disabilities and then applied the same…
 - [Marie Curie](https://ourword.ai/en/i/curie/): Marie Curie (1867–1934 · Warsaw and Paris) — She took his course. Physicist and chemist, born in Warsaw, in Paris from 1891, and in 1903 a Nobel laureate in physics alongside her husband Pierre.
 - [Mark Granovetter](https://ourword.ai/en/i/granovetter/): Mark Granovetter (1973 · American Journal of Sociology) — Weak ties. A sociologist whose 1973 paper, The Strength of Weak Ties, has been cited tens of thousands of times.
+- [Naval Ravikant](https://ourword.ai/en/i/naval/): Naval Ravikant (Contemporary · 1974–) — Leverage. Co-founder of AngelList and an early investor in Twitter, Uber and Notion. In 2018 he posted a numbered thread called how to get rich without getting…
 - [Norbert Wiener](https://ourword.ai/en/i/wiener/): Norbert Wiener (1894–1964 · United States) — He warned them first. The founder of cybernetics: Cybernetics in 1948, The Human Use of Human Beings in 1950. His position here is unusual — he is both…
+- [Paul Graham](https://ourword.ai/en/i/paul-graham/): Paul Graham (United States · 1964–) — Do things that do not scale. A Lisp hacker who built Viaweb in 1995 — the first commercial software that ran inside a browser — and sold it to Yahoo in 1998.
+- [Peter Thiel](https://ourword.ai/en/i/thiel/): Peter Thiel (Contemporary · 1967–) — Zero to one. Co-founded PayPal, was the first outside investor in Facebook, and is the most consequential contrarian in the Valley.
 - [Pu Songling](https://ourword.ai/en/i/pu-songling/): Pu Songling (1640–1715 · Shandong) — The side thing won. At nineteen he came first in three examinations and was locally famous. Then he sat the provincial examination for forty years and never…
 - [Rat Park](https://ourword.ai/en/i/rat-park/): Rat Park (1978 · Simon Fraser University) — Look at the cage. A set of experiments from the late 1970s, plus a natural experiment nobody designed, which together unsettled a piece of common sense…
 - [Robert Sapolsky](https://ourword.ai/en/i/sapolsky/): Robert Sapolsky (1994 · Stanford) — Stress is a mismatch. A neuroendocrinologist who spent thirty years with a troop of wild baboons in East Africa while studying human stress physiology.
+- [Steve Jobs](https://ourword.ai/en/i/jobs/): Steve Jobs (Contemporary · 1955–2011) — Subtract. Co-founded Apple, was pushed out of it, spent twelve years at NeXT and Pixar, came back and turned a company weeks from insolvency into the most…
 - [Su Shi](https://ourword.ai/en/i/su-shi/): Su Shi (Northern Song · 1037–1101) — Unbowed. One of the great Chinese poets, and also a calligrapher, a painter, a hydraulic engineer, a cook and a provincial governor.
 - [Sun Tzu](https://ourword.ai/en/i/sun-tzu/): Sun Tzu (Spring and Autumn · c. 500 BC) — Win first, then fight. Thirteen short chapters, and the most quoted strategy book in the world. The argument underneath it is not about cunning: the winner…
 - [Tao Te Ching](https://ourword.ai/en/i/tao-te-ching/): Tao Te Ching (Spring and Autumn · c. 500 BC) — Subtract. Five thousand characters, and after the Bible the most translated book there is. Where most instruction is addition — learn more, do more, add…

@@ -172,3 +172,34 @@ QUOTE_ASKS_EN = {
     "zhuangzi/ox-carving": "The same task costs me more than it costs everyone else.",
     "zhuangzi/equalizing-things": "He's a step ahead of me on everything.",
 }
+
+# ── Starting and building（这一类的英文条目原来是空的，六个人一起进来）──
+# 每章一句「读者的处境」。它出现在今日一句卡上，和处境卡的问句相距不远，
+# 所以两处不能是同一句话的复述 —— 处境卡问的是「你现在遇到什么」，
+# 这里说的是「你此刻心里那句话」。
+QUOTE_ASKS_EN.update({
+    'jobs/focus-is-saying-no':
+        "They're all good ideas. That's exactly the problem.",
+    'jobs/connecting-the-dots':
+        "The thing I can't leave alone has no use I can point to.",
+    'musk/first-principles':
+        "I'm told this is just what it costs. Is it?",
+    'musk/idiot-index':
+        "Costs won't come down and I can't see where to cut first.",
+    'bezos/day-one':
+        "Everything is orderly now and we've somehow got slower.",
+    'bezos/what-wont-change':
+        "Everyone's chasing the new thing. Do we have to?",
+    'thiel/competition-is-for-losers':
+        "We're all fighting hard and nobody in this market is making money.",
+    'thiel/the-contrarian-question':
+        "Everyone in the room agrees. I don't. Am I seeing something or just being difficult?",
+    'paul-graham/dont-scale':
+        "It's live and nothing is happening. Do I market it or go talk to people?",
+    'paul-graham/default-alive':
+        "There's money in the account and I don't know when it runs out.",
+    'naval/assets-while-you-sleep':
+        "I'm busy and earning, and it all stops the day I stop.",
+    'naval/productize-yourself':
+        'Anything I can be trained to do, something else can now do too.',
+})
