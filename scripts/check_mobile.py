@@ -181,7 +181,9 @@ def main():
                               if (!s) return null;
                               const ta = s.querySelector('.arow textarea');
                               const go = s.querySelector('.arow .go');
-                              return {ta: !!ta, go: !!go,
+                              const toc = document.querySelector('.toc');
+                              return {toc: !!(toc && toc.offsetParent),
+                                      ta: !!ta, go: !!go,
                                       ph: ta ? ta.placeholder : '',
                                       tail: [...s.children].slice(-2)
                                             .map(e => e.className).join(','),
@@ -284,7 +286,16 @@ def main():
                         if y.get("ask") != "function":
                             bad.append("%s %s 上 window.hwAsk 不在，输入框问不出去"
                                        % (label, path))
-                        if not (y.get("tail") or "").startswith("arow"):
+                    # 窄屏上不该出现那排 01/02 章内导航：它是侧栏里的目录，
+                    #    中文站靠 force_chapter_ui 注的
+                    #    `@media(max-width:900px){aside.side{display:none}}`
+                    #    收起来 —— 而那个函数只走 i/，英文站一页都没拿到，
+                    #    于是英文手机上面包屑底下多出一排横滚胶囊。
+                    #    判据放在「渲染出来看不看得见」，不是「样式在不在」。
+                    if y and y.get("toc"):
+                        bad.append("%s %s 窄屏上露出了章内目录（那排 01/02）——"
+                                   "侧栏没被收起来" % (label, path))
+                    if not (y.get("tail") or "").startswith("arow"):
                             bad.append("%s %s 那一块顺序不对（末两个是 %s）——"
                                        "导航夹在问句和输入框中间，会把"
                                        "「他们问 → 你呢」这条线打断"

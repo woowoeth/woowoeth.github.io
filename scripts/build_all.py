@@ -37,6 +37,10 @@ import sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 CHAIN = [
+    # index.html 既是产物又是输入：build_en 要读它里面的 var HWXD={，
+    # apply_redesign 要读 const D=[。提交里存的是拆过的（小）版本，
+    # 构建一开始先装回去，后面九步看到的就还是老样子。
+    ("首页数据装回", "scripts/split_home_data.py --inline"),
     ("GEO 附加项", "scripts/patch_geo_seo.py"),
     ("条目页独立成页", "scripts/apply_redesign.py"),
     ("SEO/GEO 产物", "seo/build_seo.py"),
@@ -48,6 +52,9 @@ CHAIN = [
     # 三个语言站共用的静态资源，build_tw 只转 tw/ 下的文件、转不到它。
     ("聊天挂件繁体文案", "scripts/gen_chat_tw.py"),
     ("繁体站", "scripts/build_tw.py"),
+    # 拆首页数据必须在 build_tw **之后**：繁体页是从简体页转出来的，
+    # 先拆的话 tw/index.html 会指向 assets/ 下那份简体数据，繁体站当场变简体。
+    ("首页数据外置", "scripts/split_home_data.py"),
     # 盖章必须在**所有**站都构建完之后：它扫的是最终产物，
     # 中英繁三个站里任何一处的 /assets/ 引用都要盖到。
     ("资源版本号盖章", "scripts/stamp_assets.py"),
@@ -57,7 +64,9 @@ CHAIN = [
 def main():
     for i, (name, script) in enumerate(CHAIN, 1):
         print("\n[%d/%d] %s  —  %s" % (i, len(CHAIN), name, script))
-        r = subprocess.run([sys.executable, script], cwd=ROOT)
+        # 允许在表里带参数（"scripts/x.py --inline"）—— 同一个脚本
+        # 两个方向各跑一次，比拆成两个文件清楚。
+        r = subprocess.run([sys.executable] + script.split(), cwd=ROOT)
         if r.returncode:
             print("✗ 第 %d 步失败：%s" % (i, script))
             return r.returncode

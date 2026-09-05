@@ -206,6 +206,23 @@ html[lang="en"] .hd-title,
 html[lang="en"] .point h2{font-family:var(--display)}
 html[lang="en"] blockquote{font-family:var(--quote)}
 
+/* ── 窄屏把侧栏收起来 ────────────────────────────────────
+   中文章节页在 900px 以下是不显示侧栏的（`force_chapter_ui.py` 的 STYLE
+   里那条 `@media (max-width:900px){aside.side{display:none!important}}`）。
+   但那个函数只走 `i/` —— 中文站 —— 而英文站是另一条构建链，一页都没拿到。
+   结果：英文手机上，面包屑底下多出一排「01 What actually happened /
+   02 …」的横滚胶囊，中文同一页没有。用户看到的就是它。
+
+   （今天第二次遇到同一个形状了：`patch_chapter_scene()` 也是把路径写死成
+   `i/`，导致「同一处境，还有人这么问」那一整块英文 0/377 页有。
+   写任何页面级的加工，先问一句：这个函数跑不跑 en/？） */
+@media (max-width:900px){
+  html[lang="en"] aside.side{display:none!important}
+  /* minmax(0,1fr)，不是 1fr —— 1fr 的下限是 min-content，
+     一条 nowrap 的横滚条会把整列撑出屏幕。 */
+  html[lang="en"] .layout{grid-template-columns:minmax(0,1fr)!important}
+}
+
 /* ── Playfair 只做大标题 ─────────────────────────────────
    FONT 表是按**字体族**整批替换的，于是原来那个中文宋体用在哪里，
    Playfair 就跟到哪里 —— 11px 的分组标签、12px 的胶囊、16.5px 的卡片

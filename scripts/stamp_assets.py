@@ -30,24 +30,30 @@ import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
-REF = re.compile(r'(/assets/([A-Za-z0-9._-]+\.(?:css|js)))(\?v=[A-Za-z0-9.]*)?')
+# 前缀要一起吃进来：繁体站引的是 /tw/assets/…，而 tw/assets/ 下的文件是
+# **转换过的**，和 assets/ 下同名文件内容不同。只匹配 /assets/… 的话，
+# 繁体页上的版本号会按简体文件算 —— 繁体的 JS 变了 URL 却不变，
+# 繁体用户照样吃缓存。这正是这条规则要防的事，只是差点漏掉繁体自己。
+REF = re.compile(r'((?:/[a-z]{2})?/assets/([A-Za-z0-9._-]+\.(?:css|js)))(\?v=[A-Za-z0-9.]*)?')
 SKIP = {".git", "node_modules", "__pycache__"}
 
 
-def digest(name, _c={}):
-    if name not in _c:
-        p = os.path.join(ROOT, "assets", name)
+def digest(ref, _c={}):
+    """ref 是页面里写的那个路径（/assets/x.js 或 /tw/assets/x.js）。
+    按它自己的路径去找文件，不要一律折回 assets/。"""
+    if ref not in _c:
+        p = os.path.join(ROOT, ref.lstrip("/").replace("/", os.sep))
         if not os.path.exists(p):
-            _c[name] = None
+            _c[ref] = None
         else:
-            _c[name] = hashlib.md5(
+            _c[ref] = hashlib.md5(
                 io.open(p, "rb").read()).hexdigest()[:8]
-    return _c[name]
+    return _c[ref]
 
 
 def stamp(text):
     def go(m):
-        d = digest(m.group(2))
+        d = digest(m.group(1))
         if not d:
             return m.group(0)          # 仓库里没有这个文件，别乱改
         return "%s?v=%s" % (m.group(1), d)

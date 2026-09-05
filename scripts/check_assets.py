@@ -33,10 +33,10 @@ def main():
             s = open(p, encoding="utf-8", errors="ignore").read()
             hit = False
             for m in REF.finditer(s):
-                name, ver = m.group(2), (m.group(3) or "")
+                name, ver = m.group(1), (m.group(3) or "")
                 d = digest(name)
                 if d is None:
-                    bad.append("%s 引用了不存在的 assets/%s"
+                    bad.append("%s 引用了不存在的 %s"
                                % (os.path.relpath(p, ROOT), name))
                     continue
                 n_ref += 1
@@ -48,6 +48,24 @@ def main():
                                   ver or "(没有)", "?v=" + d))
             if hit:
                 n_page += 1
+    # 首页的数据必须是**外置**的，而且页面得真的引到它。
+    # 装回去（构建期间的中间态）被提交出去的话，页面回到 2.1 MB 而
+    # 一切照常工作 —— 没有任何一条判据会喊，用户只是每次多下 400 KB。
+    for page, name in (("index.html", "home-hwxd.js"),
+                       ("tw/index.html", "home-hwxd.js"),
+                       ("en/index.html", "home-hwxd-en.js")):
+        fp = os.path.join(ROOT, page)
+        if not os.path.exists(fp):
+            continue
+        t = open(fp, encoding="utf-8", errors="ignore").read()
+        if "var HWXD=" in t:
+            bad.append("%s 里的 HWXD 还是内联的（%d KB）—— 忘了跑 "
+                       "scripts/split_home_data.py，老用户每次多下几百 KB"
+                       % (page, len(t.encode()) // 1024))
+        elif name not in t:
+            bad.append("%s 既没有内联 HWXD，也没有引 %s —— 处境层会整个空掉"
+                       % (page, name))
+
     print("资源版本号：%d 页 · %d 处引用" % (n_page, n_ref))
     if bad:
         print("\n不合格：")

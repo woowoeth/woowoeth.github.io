@@ -578,6 +578,27 @@ def _parity_hole():
     return go
 
 
+def _home_inlined():
+    """把首页数据装回页面里 —— 也就是忘了跑拆分那一步。
+
+    页面回到 2.1 MB，而**一切照常工作**：渲染一样、链接一样、闸门一样绿。
+    唯一的差别是每个超过十分钟没来的读者要多下几百 KB，
+    而这件事没有任何一条判据会喊 —— 除非专门写一条。
+    """
+    def go():
+        import subprocess
+        p = os.path.join(ROOT, "index.html")
+        before = read(p)
+        subprocess.run([sys.executable, os.path.join(ROOT, "scripts",
+                        "split_home_data.py"), "--inline"],
+                       cwd=ROOT, stdout=subprocess.DEVNULL)
+        if read(p) == before:
+            return None
+        return p
+
+    return go
+
+
 ENTRYCSS = os.path.join(ROOT, "assets", "hw-entry.css")
 
 
@@ -919,6 +940,8 @@ CASES = [
     ("三语对应·英文少一条", "check_parity.py",
      os.path.join(ROOT, "en", "i", "bezos", "index.html"), _parity_hole(),
      "英文站缺"),
+    ("首页数据·忘了拆出去", "check_assets.py",
+     os.path.join(ROOT, "index.html"), _home_inlined(), "还是内联的"),
     ("资源版本·改了没盖章", "check_assets.py", ENTRYCSS, _asset_stale(),
      "老用户会一直拿到缓存里那份旧的"),
 ]
