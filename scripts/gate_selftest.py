@@ -559,6 +559,24 @@ def _en_cjk():
     return go
 
 
+ENTRYCSS = os.path.join(ROOT, "assets", "hw-entry.css")
+
+
+def _asset_stale():
+    """改了样式表但**不重新盖章** —— 页面上的版本号就对不上文件内容了。
+
+    这正是用户拿手机截图报上来的那次：服务器上是新样式，他的浏览器一直
+    用缓存里那份旧的，输入框整个没有样式。最难查的地方在于
+    **新访客一切正常，只有老用户坏**，而开发机通常是新访客。
+    """
+    def go():
+        t = read(ENTRYCSS)
+        write(ENTRYCSS, t + "\n/* injected: changed but not re-stamped */\n")
+        return ENTRYCSS
+
+    return go
+
+
 CHATJS = os.path.join(ROOT, "assets", "hw-chat.js")
 
 
@@ -879,6 +897,8 @@ CASES = [
     ("导语·没裁过",       "check_dek.py", ENPAGE, _dek_untrimmed(), "导语"),
     ("版块·英文塌成一片", "check_dek.py", ENPAGE, _en_blocks_flat(), "缺这几类版块"),
     ("GEO·英文漏了章节", "check_geo_sync.py", ENLLMS, _geo_drop_chapters(), "章节"),
+    ("资源版本·改了没盖章", "check_assets.py", ENTRYCSS, _asset_stale(),
+     "老用户会一直拿到缓存里那份旧的"),
 ]
 
 

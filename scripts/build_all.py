@@ -48,6 +48,9 @@ CHAIN = [
     # 三个语言站共用的静态资源，build_tw 只转 tw/ 下的文件、转不到它。
     ("聊天挂件繁体文案", "scripts/gen_chat_tw.py"),
     ("繁体站", "scripts/build_tw.py"),
+    # 盖章必须在**所有**站都构建完之后：它扫的是最终产物，
+    # 中英繁三个站里任何一处的 /assets/ 引用都要盖到。
+    ("资源版本号盖章", "scripts/stamp_assets.py"),
 ]
 
 
