@@ -559,8 +559,29 @@ def _en_cjk():
     return go
 
 
+ENCHAP = os.path.join(ROOT, "en", "i", "bezos", "day-one", "index.html")
 ENCSS = os.path.join(ROOT, "assets", "hw-en.css")
 CHAPCSS = os.path.join(ROOT, "assets", "hw-chapter.css")
+
+
+def _en_closing():
+    """把英文章节页读完之后那一块整个摘掉。
+
+    真事，而且是三种语言里唯独英文缺：中文 376/377、繁体 376/377、
+    英文 0/377。生成它的函数把路径写死成了 `i/`，只跑中文站，而英文站是
+    另一条构建链。页面照样渲染、构建照样通过，只是英文读者读完一篇之后
+    直接跳到「上一篇 / 下一篇」—— 那是这本书的目录，不是他的处境。
+    """
+    def go():
+        import re as _re
+        t = read(ENCHAP)
+        m = _re.search(r'<section class="hw-same">.*?</section>', t, _re.S)
+        if not m:
+            return None
+        write(ENCHAP, t[:m.start()] + t[m.end():])
+        return ENCHAP
+
+    return go
 
 
 def _en_card_voice():
@@ -827,6 +848,8 @@ CASES = [
      "不是一个声音"),
     ("英文站·卡片署名黏在一起", "check_en.py", ENHOME, _en_name_glue(),
      "黏在一起"),
+    ("英文站·读完之后那块没了", "check_en.py", ENCHAP, _en_closing(),
+     "还有人这么问"),
     ("窄屏·横向撑开",     "check_mobile.py", CHAPCSS, _mobile_blowout(), "横向撑开"),
     ("挂件繁体·没跟上",   "check_chat_tw.py", CHATJS, _chat_tw_stale(), "不同步"),
     ("导语·没裁过",       "check_dek.py", ENPAGE, _dek_untrimmed(), "导语"),

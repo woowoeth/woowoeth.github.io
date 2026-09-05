@@ -684,6 +684,37 @@ def main():
     for _c in _batch_conflicts(base_scenes=[t for t, _g, _q in _S.SCENES]):
         bad.append("批次之间打架：%s" % _c)
 
+    # ⑯ 英文章节页读完之后那一块不许缺。
+    #    「同一件事，还有人这么问」+ 那句收束是这个站做共情的地方：先让读者
+    #    看见还有别人在问同一件事，再谈转发。中文 376/377 页有、繁体
+    #    376/377 页有（它从简体页转过去，顺带带上了），英文一度是 **0/377**
+    #    —— 因为生成它的函数把路径写死成了 `i/`，只跑中文站。
+    #    结果是英文读者拿到了「转给别人」，没拿到「你不是唯一这么问的人」，
+    #    顺序正好反了；而页面不报错、不溢出、不 404。
+    en_i = os.path.join(ROOT, "en", "i")
+    if os.path.isdir(en_i):
+        n_ch_page = miss_same = miss_outro = 0
+        first = []
+        for dp, _dn, fn in os.walk(en_i):
+            if "index.html" not in fn or os.path.dirname(dp) == en_i:
+                continue
+            n_ch_page += 1
+            t = open(os.path.join(dp, "index.html"),
+                     encoding="utf-8", errors="ignore").read()
+            rel = os.path.relpath(dp, ROOT)
+            if 'class="hw-same"' not in t:
+                miss_same += 1
+                if len(first) < 3:
+                    first.append(rel)
+            if 'class="hw-outro"' not in t:
+                miss_outro += 1
+        if n_ch_page and miss_same:
+            bad.append("英文章节页有 %d/%d 页没有「还有人这么问」那一块（例：%s）"
+                       % (miss_same, n_ch_page, "、".join(first)))
+        if n_ch_page and miss_outro:
+            bad.append("英文章节页有 %d/%d 页没有读完之后的收束块"
+                       % (miss_outro, n_ch_page))
+
     # ⑮ 信息流四种卡的标题必须是同一个字体、同一个字号
     cv = card_headline_voice()
     if cv is None:

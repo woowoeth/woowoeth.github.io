@@ -685,6 +685,98 @@ def write_home(items):
     return 1
 
 
+EN_OUTRO_CSS = (
+    '<style id="hw-outro-en">'
+    '.hw-outro{margin:38px 0 8px;padding:22px 20px;border-radius:16px;'
+    'background:var(--surface-2,#f2ece0);text-align:center}'
+    '.hw-outro p{font-family:var(--display);font-size:17px;line-height:1.55;'
+    'margin:0 0 6px;color:var(--ink);letter-spacing:-.008em}'
+    '.hw-outro small{display:block;font-size:13px;color:var(--muted);'
+    'line-height:1.7;margin-bottom:14px}'
+    '.hw-outro .acts{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}'
+    '.hw-outro .acts button{border:1px solid var(--ink);background:var(--ink);'
+    'color:var(--paper,#f7f4ec);border-radius:999px;padding:6px 18px;cursor:pointer;'
+    'font-family:var(--sans);font-size:13px;line-height:1.6}'
+    '.hw-outro .acts button:active{transform:scale(.97)}'
+    '</style>'
+)
+
+
+def add_en_closing():
+    """英文章节页的收尾：「同一件事，还有人这么问」+ 那句收束 + 分享。
+
+    中文 376/377 页有，繁体 376/377 页有（它是从简体页转过去的，顺带就带上了），
+    **英文 0/377**。原因是 force_chapter_ui.patch_chapter_scene() 和
+    outro_html() 把路径写死成了 `i/` —— 一个只跑中文站的函数，而英文站是
+    另一条构建链。三种语言里唯独英文读者读完一篇之后，页面直接跳到
+    「上一篇 / 下一篇」：那是书目顺序，是这本书的目录，不是他的处境。
+
+    这一块是这个站做共情的地方：先让他看见还有别人在问同一件事，再谈转发。
+    英文站把「转给别人」给了，却没给「你不是唯一这么问的人」—— 顺序正好反了。
+
+    （又是第 25 / 31 条那个形状：一个功能照着中文站的路径写死，另外两种
+    语言静默地没有，而且不报错、不溢出、不 404。）
+    """
+    import html as _h
+    import hwx_scenes_en
+    by_ch = {}
+    for t, _g, qs in hwx_scenes_en.SCENES:
+        for qtext, refs in qs:
+            for sl, kk in refs:
+                by_ch.setdefault((sl, kk), set()).add(t)
+    qs_of = {t: q for t, _g, q in hwx_scenes_en.SCENES}
+    n = 0
+    for (sl, kk), scenes in sorted(by_ch.items()):
+        page = os.path.join(OUT, "i", sl, kk, "index.html")
+        if not os.path.exists(page):
+            continue
+        s = open(page, encoding="utf-8").read()
+        if 'class="hw-same"' in s or "</article>" not in s:
+            continue
+        sc = sorted(scenes)[0]
+        rows = []
+        for qtext, refs in qs_of.get(sc, []):
+            if not refs:
+                continue
+            # 只换链接，不整条剔掉：把「答案里含本篇」的问题滤走，同处境里
+            # 最贴的几条会全被滤没，出现过一页一条不剩。问题本身不一样，
+            # 值得列出来。（简体那边同一处的教训。）
+            alt = [r for r in refs if r != (sl, kk)] or list(refs)
+            rows.append((qtext, "/en/i/%s/%s/" % alt[0]))
+            if len(rows) >= 4:
+                break
+        if not rows:
+            continue
+        title = ""
+        m = re.search(r"<title>([^<]*)</title>", s)
+        if m:
+            title = _h.escape(_h.unescape(m.group(1)).split(" — ")[0], quote=True)
+        url = "https://ourword.ai/en/i/%s/%s/" % (sl, kk)
+        blk = ('<section class="hw-same">'
+               '<p class="ph">Other people are asking the same thing</p>'
+               + "".join('<a href="%s">%s</a>' % (u, _h.escape(q))
+                         for q, u in rows)
+               + '<a class="more" href="/en/#hwx-tabs2">%s · all %d questions'
+                 ' \u2192</a></section>'
+                 % (_h.escape(sc), len(qs_of.get(sc, []))))
+        outro = ('<div class="hw-outro">'
+                 '<p>If this one named what you are going through,</p>'
+                 '<small>send it to someone who needs it, or keep it '
+                 'somewhere you will find it again.</small>'
+                 '<div class="acts">'
+                 '<button type="button" data-share data-share-title="%s"'
+                 ' data-share-url="%s" data-share-text="%s">Send to a '
+                 'friend</button>' % (title, url, title)
+                 + '</div></div>')
+        s = s.replace("</article>", blk + outro + "</article>", 1)
+        if 'id="hw-outro-en"' not in s:
+            s = s.replace("</head>", EN_OUTRO_CSS + "</head>", 1)
+        open(page, "w", encoding="utf-8").write(s)
+        n += 1
+    print("English closing block: %d chapter pages" % n)
+    return n
+
+
 def main():
     os.environ["HW_CHAPTERS"] = "chapters_en"
     os.environ["HW_SCENES"] = "hwx_scenes_en"
@@ -788,6 +880,10 @@ def main():
             rel = "/" + (rel[:-len("index.html")] if rel.endswith("index.html") else rel)
             open(p, "w", encoding="utf-8").write(finish(s, rel))
             n_fix += 1
+
+    # 收尾块要在 finish()（本地化 + 改写链接）之后加：它本来就是英文的，
+    # 再过一遍界面串表只会把 "Send to a friend" 这类词撞进别的规则里。
+    add_en_closing()
 
     # 去重必须在**本地化之后**：llms.txt 开头是「英文自述 + 中文自述」两段，
     # 翻译之前它们一中一英、不重复；翻完才变成一字不差的两段。放在翻译前跑
