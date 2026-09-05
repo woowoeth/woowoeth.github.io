@@ -43,10 +43,12 @@ html[lang="en"] blockquote{font-family:var(--quote)}
    写任何页面级的加工，先问一句：这个函数跑不跑 en/？） */
 @media (max-width:900px){
   html[lang="en"] aside.side{display:none!important}
-  /* minmax(0,1fr)，不是 1fr —— 1fr 的下限是 min-content，
-     一条 nowrap 的横滚条会把整列撑出屏幕。 */
-  html[lang="en"] .layout{grid-template-columns:minmax(0,1fr)!important}
 }
+/* 这里**不要**再补一条 `.layout{grid-template-columns:minmax(0,1fr)}`。
+   防横向撑开的那条住在 assets/hw-chapter.css，三种语言共用；在这里再写一份
+   权重更高的，等于给英文页加了第二层保护 —— 听起来更稳，实际后果是
+   `gate_selftest` 里「窄屏·横向撑开」那条反向注入**再也撑不开页面**，
+   变成一条永远绿的死闸。多一层冗余保护换掉一条能报警的判据，不划算。 */
 
 /* ── Playfair 只做大标题 ─────────────────────────────────
    FONT 表是按**字体族**整批替换的，于是原来那个中文宋体用在哪里，

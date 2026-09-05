@@ -731,6 +731,151 @@ def _en_font():
     return go
 
 
+ENCSS_MOB = os.path.join(ROOT, "assets", "hw-en.css")
+
+
+def _mobile_side_shown():
+    """让英文窄屏重新显示侧栏 —— 那排 01/02 章内目录又会冒出来。
+
+    这条注入原来打的是 `assets/hw-chapter.css` 里的
+    `.layout{grid-template-columns:minmax(0,1fr)}`（1fr 的下限是 min-content，
+    一条 nowrap 的横滚目录会把网格轨道顶到 2000px 开外，整页横着滚）。
+
+    2026-09-06 起它变成了一条**死闸**：真正的病根被修掉了 —— 中文站一直有
+    `@media(max-width:900px){aside.side{display:none}}`，而注入它的函数只走
+    `i/`，英文站一页都没拿到；补齐之后侧栏在窄屏上根本不渲染，那条横滚带
+    也就撑不动任何东西，改不改网格规则都没有区别。
+
+    修好了病根，原来的注入就没有主语了。所以注入换成打**现在这道防线**：
+    把英文的收起规则去掉，判据落在「窄屏上有没有露出章内目录」上。
+    （网格那条留着当第二层，但不再由它当判据 —— 一条永远绿的分支比没有更糟，
+    它会让人以为这块有人看着。）
+    """
+    def go():
+        t = read(ENCSS_MOB)
+        a = 'html[lang="en"] aside.side{display:none!important}'
+        if a not in t:
+            return None
+        write(ENCSS_MOB, t.replace(a, 'html[lang="en"] aside.side{display:block}', 1))
+        return ENCSS_MOB
+
+    return go
+
+
+CHATJS = os.path.join(ROOT, "assets", "hw-chat.js")
+
+
+def _yours_gone():
+    """把章节页读完之后那个输入框拆掉 —— 读者又没法说话了。
+
+    它是 hw-chat.js 运行时生成的，静态扫不到：页面照样渲染、HTML 一个字
+    没变、构建照样通过，只是那一块又退回成「四条别人的问句 + 转发」，
+    读者从头到尾没有一次开口的机会。所以注入落在**脚本**上，
+    判据只能在浏览器里。
+    """
+    def go():
+        t = read(CHATJS)
+        a = "same.appendChild(row);"
+        if a not in t:
+            return None
+        write(CHATJS, t.replace(a, "/* injected: */ void row;", 1))
+        return CHATJS
+
+    return go
+
+
+ENCHAP = os.path.join(ROOT, "en", "i", "bezos", "day-one", "index.html")
+ENCSS = os.path.join(ROOT, "assets", "hw-en.css")
+CHAPCSS = os.path.join(ROOT, "assets", "hw-chapter.css")
+
+
+def _en_closing():
+    """把英文章节页读完之后那一块整个摘掉。
+
+    真事，而且是三种语言里唯独英文缺：中文 376/377、繁体 376/377、
+    英文 0/377。生成它的函数把路径写死成了 `i/`，只跑中文站，而英文站是
+    另一条构建链。页面照样渲染、构建照样通过，只是英文读者读完一篇之后
+    直接跳到「上一篇 / 下一篇」—— 那是这本书的目录，不是他的处境。
+    """
+    def go():
+        import re as _re
+        t = read(ENCHAP)
+        m = _re.search(r'<section class="hw-same">.*?</section>', t, _re.S)
+        if not m:
+            return None
+        write(ENCHAP, t[:m.start()] + t[m.end():])
+        return ENCHAP
+
+    return go
+
+
+def _en_card_voice():
+    """把金句卡和问题卡的标题拨回「正文字体 + 汉字的字号」——
+    这正是用户在手机上看出来的那一版。
+
+    值得注意的是它**没有任何机器信号**：不报错、不溢出、不 404，
+    HTML 和 CSS 都合法，四种卡各自看都是对的。只有把四张卡摆在一屏里
+    才看得出同一个角色分到了两种字体。所以注入也得落在这个形状上 ——
+    只动其中两种卡，另外两种保持原样。
+    """
+    def go():
+        if not os.path.exists(ENCSS):
+            return None
+        t = read(ENCSS)
+        if "#hwx .qc .v" not in t:
+            return None
+        write(ENCSS, t + '\nhtml[lang="en"] #hwx .qc .v,'
+                          'html[lang="en"] #hwx .kc .t'
+                          '{font-family:var(--read);font-size:16.5px}\n')
+        return ENCSS
+
+    return go
+
+
+def _en_name_glue():
+    """把卡片署名里那个前导空格拿掉 —— 「Li Ka-shingasked」。
+
+    中文「李嘉诚问过」不需要空格，界面串表是逐条盲替换的，
+    照搬过来就黏在一起。静态检查看不见：这一行是首页 JS 运行时拼的。
+    """
+    def go():
+        t = read(ENHOME)
+        a = "esc(k.r[0].who)+' asked"
+        if a not in t:
+            return None
+        # 全部替换，不是只改第一处：真事故是界面串表里**一条规则**没带
+        # 前导空格，凡是用到它的地方一起黏。只改一处的话，注入就可能落在
+        # 闸门没走到的那个 tab 上，看起来「闸是死的」，其实是注入不像真事故。
+        write(ENHOME, t.replace(a, "esc(k.r[0].who)+'asked"))
+        return ENHOME
+
+    return go
+
+
+def _en_font():
+    """把英文站的标题字体换成别的 —— 模拟英文覆盖丢失。
+
+    真事，而且丢过两次：那段 html[lang="en"] 的变量覆盖从来没进过仓库，
+    英文页一直拿别的字体排拉丁字母，而 ①-⑫ 全绿 —— 它们只看有没有
+    中文**字**，看不见用什么**字体**去排英文。
+    """
+    def go():
+        if not os.path.exists(ENCSS):
+            return None
+        t = read(ENCSS)
+        a = "--display:"
+        if a not in t:
+            return None
+        i = t.index(a)
+        j = t.index(";", i)
+        # 换成一个**不是**英文站那一套的字体栈就行 —— 闸门比的是
+        # 「解出来的等不等于 build_en 打算给的」，不是某个字体名的黑名单。
+        write(ENCSS, t[:i] + "--display:Verdana,sans-serif" + t[j:])
+        return ENCSS
+
+    return go
+
+
 def _mobile_blowout():
     """把 minmax(0,1fr) 改回 1fr —— 模拟移动端横向撑开。
 
@@ -930,7 +1075,8 @@ CASES = [
      "黏在一起"),
     ("英文站·读完之后那块没了", "check_en.py", ENCHAP, _en_closing(),
      "还有人这么问"),
-    ("窄屏·横向撑开",     "check_mobile.py", CHAPCSS, _mobile_blowout(), "横向撑开"),
+    ("窄屏·侧栏没收起来", "check_mobile.py", ENCSS_MOB, _mobile_side_shown(),
+     "露出了章内目录"),
     ("窄屏·读者说不了话", "check_mobile.py", CHATJS, _yours_gone(),
      "没有让读者说一句的输入框"),
     ("挂件繁体·没跟上",   "check_chat_tw.py", CHATJS, _chat_tw_stale(), "不同步"),
