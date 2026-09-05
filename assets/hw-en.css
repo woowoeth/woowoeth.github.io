@@ -46,8 +46,22 @@ html[lang="en"] blockquote{font-family:var(--quote)}
 html[lang="en"] #hwx .qc .v,
 html[lang="en"] #hwx .kc .t,
 html[lang="en"] #hwx .qzq,
-html[lang="en"] #hwx .kc b,
 html[lang="en"] #hwx .scline b{font-family:var(--read)}
+/* ── 卡片上的「名字」统一用展示体，并且要大到看得出是它 ──────
+   两件事一起修：
+   一、人物卡的名字是 Playfair 19px、问题卡的名字是 Source Serif 4 13.5px
+      —— 同样是「这张卡讲谁」，两种卡各说各的，扫读时没有节奏。
+   二、19px 的 Playfair 认不出来。它是高对比的 Didone，靠字干粗细反差和
+      发丝般的衬线立住，而这两样在 19px 上几乎看不见，读出来就是一个普通
+      的粗衬线 —— 声明是对的、渲染也是对的（实测宽度和强制 Playfair 完全
+      一致），只是尺寸没给到它能说话的地方。
+   中文那边 19px 的宋体没有这个问题：宋体在小字号上本来就是正文字体。
+   又是同一个形状 —— 尺寸参数是照汉字定的。 */
+html[lang="en"] #hwx .pc b{font-family:var(--display);font-size:21px;
+  letter-spacing:-.012em;line-height:1.25}
+html[lang="en"] #hwx .kc b{font-family:var(--display);font-size:15px;
+  letter-spacing:-.008em}
+
 html[lang="en"] #hwx .said,
 html[lang="en"] #hwx .scg,
 html[lang="en"] #hwx .tabs2 button,
