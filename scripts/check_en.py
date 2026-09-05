@@ -61,6 +61,11 @@ hochschild rat-park vygotsky thomas-gordon cs-lewis churchill perel jung sapolsk
 dweck john-ratey gottman montessori boyd
 sun-tzu tao-te-ching buffett munger
 jobs musk bezos thiel paul-graham naval""".split()
+# 批次包里的人自动进 PILOT —— 每加一批就得手改一次名单的话，
+# 迟早有一批忘了改，而它的表现是「写了但不在计划里」，看着像内容错。
+sys.path.insert(0, os.path.join(ROOT, "seo"))
+from en_batches import slugs as _batch_slugs           # noqa: E402
+PILOT = PILOT + [s for s in _batch_slugs() if s not in PILOT]
 
 def load_en():
     """已经写好的英文章节。

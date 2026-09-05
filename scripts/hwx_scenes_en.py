@@ -779,3 +779,13 @@ SCENES = [
      [("su-shi", "no-wind-no-rain")]),
 ]),
 ]
+
+
+# 批次包里的处境：同名的并进上面已有的那条，新的追加在末尾。
+# （见 seo/en_batches/__init__.py）
+import os as _os
+import sys as _sys
+_sys.path.insert(0, _os.path.join(
+    _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), "seo"))
+from en_batches import merge_scenes as _merge          # noqa: E402
+SCENES = _merge(SCENES)

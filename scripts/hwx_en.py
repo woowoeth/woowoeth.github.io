@@ -382,6 +382,7 @@ CAT_COLOR = {
     "Family and relationships": "#a35f6e",
     "How the world works": "#6b5b73",
     "Starting and building": "#c26b3f",
+    "Reading people": "#5f7355",
 }
 
 
@@ -597,3 +598,14 @@ def payload():
          "CTD": {k: tint(v, 0.16) for k, v in CAT_COLOR.items()},
          "NC": NC},
         ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
+
+
+# 批次包：介绍句、预填句、处境短名（见 seo/en_batches/__init__.py）
+import os as _os
+import sys as _sys
+_sys.path.insert(0, _os.path.join(
+    _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), "seo"))
+from en_batches import collect as _collect             # noqa: E402
+INTROS.update(_collect("INTROS", {}))
+SC_BOX.update(_collect("SC_BOX", {}))
+SC_SHORT.update(_collect("SC_SHORT", {}))

@@ -2540,3 +2540,13 @@ ENTRIES = [
         ],
     },
 ]
+
+
+# ── 批次包 ────────────────────────────────────────────────────
+# 补齐 159 个人是并行的活。每批只写 seo/en_batches/bNN.py 和自己那几个
+# chapters_en/<slug>.py，谁都不动这个文件 —— 见 en_batches/__init__.py。
+import os as _os
+import sys as _sys
+_sys.path.insert(0, _os.path.dirname(_os.path.abspath(__file__)))
+from en_batches import collect as _collect             # noqa: E402
+ENTRIES = ENTRIES + _collect("ENTRIES", [])

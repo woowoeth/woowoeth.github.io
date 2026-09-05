@@ -203,3 +203,11 @@ QUOTE_ASKS_EN.update({
     'naval/productize-yourself':
         'Anything I can be trained to do, something else can now do too.',
 })
+
+
+import os as _os
+import sys as _sys
+_sys.path.insert(0, _os.path.join(
+    _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), "seo"))
+from en_batches import collect as _collect             # noqa: E402
+QUOTE_ASKS_EN.update(_collect("ASKS", {}))
