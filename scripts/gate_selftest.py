@@ -579,22 +579,31 @@ def _parity_hole():
 
 
 def _home_inlined():
-    """把首页数据装回页面里 —— 也就是忘了跑拆分那一步。
+    """把**简体首页**的数据装回页面里 —— 也就是忘了跑拆分那一步。
 
-    页面回到 2.1 MB，而**一切照常工作**：渲染一样、链接一样、闸门一样绿。
+    页面回到 2.1 MB，而一切照常工作：渲染一样、链接一样、别的闸一样绿。
     唯一的差别是每个超过十分钟没来的读者要多下几百 KB，
     而这件事没有任何一条判据会喊 —— 除非专门写一条。
+
+    **只动 index.html。** 第一版图省事直接跑
+    `split_home_data.py --inline`，那个命令一次改三个页面（简体/繁体/英文），
+    而这里只报得回一个路径去还原 —— 剩下两个留在工作区里，
+    后面每一条分支都报「工作区本来就是脏的」，而且指向的是别人的文件。
+    （账本里已经有一模一样的一条：注入顺手重建了 119 页，还原只覆盖了一个。）
     """
     def go():
-        import subprocess
-        p = os.path.join(ROOT, "index.html")
-        before = read(p)
-        subprocess.run([sys.executable, os.path.join(ROOT, "scripts",
-                        "split_home_data.py"), "--inline"],
-                       cwd=ROOT, stdout=subprocess.DEVNULL)
-        if read(p) == before:
+        page = os.path.join(ROOT, "index.html")
+        data = os.path.join(ROOT, "assets", "home-hwxd.js")
+        if not os.path.exists(data):
             return None
-        return p
+        t = read(page)
+        m = re.search(r'<script src="/assets/home-hwxd\.js(\?v=[A-Za-z0-9.]*)?">'
+                      r'</script>', t)
+        if not m:
+            return None
+        body = read(data).strip()
+        write(page, t[:m.start()] + "<script>" + body + "</script>" + t[m.end():])
+        return page
 
     return go
 
