@@ -326,7 +326,7 @@ UI += [
     ("收起", "Collapse"),
     ("关闭", "Close"),
     ("还有", "and "),
-    ("问过", "asked"),
+    ("问过", " asked"),
 ]
 UI = sorted(UI, key=lambda p: -len(p[0]))
 

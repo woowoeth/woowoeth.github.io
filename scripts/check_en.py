@@ -397,6 +397,114 @@ def rendered_flaws(port=8933):
     return out
 
 
+# 信息流上四种卡（人物 / 新章 / 金句 / 问题）各自的标题。
+# 它们是同一个角色 —— 「这张卡讲的是什么」，扫读时眼睛只落在这一行。
+CARD_HEADLINE = {
+    "人物卡": "#hwx .pc b",
+    "新章卡": "#hwx .nc b",
+    "金句卡": "#hwx .qc .v",
+    "问题卡": "#hwx .kc .t",
+}
+
+
+def card_headline_voice(port=8934):
+    """信息流上四种卡的标题必须是同一个字体、同一个字号。
+
+    为什么要有这条闸：英文站的字体分工原来是按**字号**判的
+    （「≥20px 归展示体」），而那些字号全是照汉字定的 —— 汉字 16.5px
+    撑得住一行标题，拉丁字母撑不住。于是 16.5px 的金句卡和问题卡被判成
+    「正文」，19px 的人物卡和新章卡被判成「标题」，同一屏里四张卡的同一个
+    角色分到了两种字体。中文那边四种卡都是同一套宋体，一个声音。
+
+    这种不齐没有报错、没有溢出、没有 404，只有人眼扫过去觉得「不整齐但说
+    不出哪不整齐」。所以判据必须是**渲染出来的字体和字号**，而且必须跨卡
+    比对 —— 单看任何一张卡都是对的。
+
+    顺带查一条同源的事故：卡上的署名是「名字+问过」拼的，中文不需要空格，
+    英文需要，漏了就是「Li Ka-shingasked」。
+    """
+    try:
+        from playwright.sync_api import sync_playwright
+    except Exception:
+        return None
+    import subprocess
+    import time
+    srv = subprocess.Popen([sys.executable, "-m", "http.server", str(port)],
+                           cwd=ROOT, stdout=subprocess.DEVNULL,
+                           stderr=subprocess.DEVNULL)
+    time.sleep(2.0)
+    out = []
+    try:
+        with sync_playwright() as pw:
+            b = pw.chromium.launch()
+            pg = b.new_page(locale="en-US", viewport={"width": 390, "height": 844})
+            pg.goto("http://localhost:%d/en/" % port, timeout=30000)
+            pg.wait_for_timeout(2200)
+            # 每个 tab 都要走一遍。信息流是切到 tab 之后才铺的，而三个 tab
+            # 铺的是**不同的**几段代码（ncCells / fullCells / scCells）——
+            # 只看一个 tab 的话，另外两段里的同类毛病照样过。
+            ntab = pg.evaluate("() => document.querySelectorAll("
+                               "'#hwx-tabs2 button').length") or 1
+            got = {}
+            for ti in range(ntab):
+                pg.evaluate("(i) => {const b=document.querySelectorAll("
+                            "'#hwx-tabs2 button')[i]; if(b)b.click()}", ti)
+                pg.wait_for_timeout(1400)
+                # 这段 JS 用 r"""，不是 """：里面的 /\b/ 是**给 JS 的**
+                # 正则边界符。写成普通字符串的话，Python 先把 \b 解释成
+                # 退格符（0x08）再交给浏览器，JS 拿到的是 /…asked\x08/，
+                # 永远匹配不上 —— 闸门返回空数组，看起来一切正常。
+                # （同一个形状咬过两次：\201C 被当成八进制、\u 被当成
+                #   转义。凡是「Python 字符串里装另一门语言的源码」，
+                #   一律用 r"""。）
+                one = pg.evaluate(r"""(sels) => {
+              const vis = e => e.offsetParent !== null &&
+                               e.getBoundingClientRect().height > 0;
+              const key = e => {const c = getComputedStyle(e);
+                return c.fontFamily.split(',')[0].replace(/["']/g,'').trim()
+                       + ' ' + c.fontSize;};
+              const out = {};
+              for (const k in sels) {
+                const a = [...document.querySelectorAll(sels[k])].filter(vis);
+                out[k] = {n: a.length, faces: [...new Set(a.map(key))]};
+              }
+              out._glued = [...document.querySelectorAll('#hwx .said')]
+                .map(x => x.textContent)
+                .filter(t => /[a-z](?:asked|said)\b/.test(t)).slice(0, 3);
+              return out;
+            }""", CARD_HEADLINE)
+                for k, v in one.items():
+                    if k == "_glued":
+                        got.setdefault(k, [])
+                        got[k] += [x for x in v if x not in got[k]]
+                        continue
+                    g = got.setdefault(k, {"n": 0, "faces": []})
+                    g["n"] += v["n"]
+                    g["faces"] += [x for x in v["faces"] if x not in g["faces"]]
+            b.close()
+    finally:
+        srv.terminate()
+
+    glued = got.pop("_glued", [])
+    for t in glued:
+        out.append("卡上的署名黏在一起了：「%s」—— 中文「名字+问过」不用空格，"
+                   "英文要" % t)
+    seen = {}
+    for k in CARD_HEADLINE:
+        g = got.get(k) or {"n": 0, "faces": []}
+        if not g["n"]:
+            out.append("信息流上一张%s都没有 —— 选择器过期了，这条闸等于没跑" % k)
+            continue
+        if len(g["faces"]) > 1:
+            out.append("%s自己就有 %d 种写法：%s"
+                       % (k, len(g["faces"]), " / ".join(g["faces"])))
+        seen[k] = g["faces"][0]
+    if len(set(seen.values())) > 1:
+        out.append("四种卡的标题不是一个声音：" +
+                   "；".join("%s=%s" % (k, v) for k, v in sorted(seen.items())))
+    return out
+
+
 def main():
     real = {(c["parent_slug"], c["k"]) for c in H.CHAPTERS}
     bad, seen_q, seen_s = [], {}, {}
@@ -557,6 +665,14 @@ def main():
     else:
         for x in fl[:6]:
             bad.append("英文页排版：%s" % x)
+
+    # ⑮ 信息流四种卡的标题必须是同一个字体、同一个字号
+    cv = card_headline_voice()
+    if cv is None:
+        print("（没装 playwright，跳过卡片标题一致性检查）")
+    else:
+        for x in cv[:6]:
+            bad.append("信息流卡片：%s" % x)
 
     # ⑫ 渲染之后的首页正文里也不许有中文
     r = rendered_cjk()

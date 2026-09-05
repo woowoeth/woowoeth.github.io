@@ -563,6 +563,49 @@ ENCSS = os.path.join(ROOT, "assets", "hw-en.css")
 CHAPCSS = os.path.join(ROOT, "assets", "hw-chapter.css")
 
 
+def _en_card_voice():
+    """把金句卡和问题卡的标题拨回「正文字体 + 汉字的字号」——
+    这正是用户在手机上看出来的那一版。
+
+    值得注意的是它**没有任何机器信号**：不报错、不溢出、不 404，
+    HTML 和 CSS 都合法，四种卡各自看都是对的。只有把四张卡摆在一屏里
+    才看得出同一个角色分到了两种字体。所以注入也得落在这个形状上 ——
+    只动其中两种卡，另外两种保持原样。
+    """
+    def go():
+        if not os.path.exists(ENCSS):
+            return None
+        t = read(ENCSS)
+        if "#hwx .qc .v" not in t:
+            return None
+        write(ENCSS, t + '\nhtml[lang="en"] #hwx .qc .v,'
+                          'html[lang="en"] #hwx .kc .t'
+                          '{font-family:var(--read);font-size:16.5px}\n')
+        return ENCSS
+
+    return go
+
+
+def _en_name_glue():
+    """把卡片署名里那个前导空格拿掉 —— 「Li Ka-shingasked」。
+
+    中文「李嘉诚问过」不需要空格，界面串表是逐条盲替换的，
+    照搬过来就黏在一起。静态检查看不见：这一行是首页 JS 运行时拼的。
+    """
+    def go():
+        t = read(ENHOME)
+        a = "esc(k.r[0].who)+' asked"
+        if a not in t:
+            return None
+        # 全部替换，不是只改第一处：真事故是界面串表里**一条规则**没带
+        # 前导空格，凡是用到它的地方一起黏。只改一处的话，注入就可能落在
+        # 闸门没走到的那个 tab 上，看起来「闸是死的」，其实是注入不像真事故。
+        write(ENHOME, t.replace(a, "esc(k.r[0].who)+'asked"))
+        return ENHOME
+
+    return go
+
+
 def _en_font():
     """把英文站的标题字体换成别的 —— 模拟英文覆盖丢失。
 
@@ -780,6 +823,10 @@ CASES = [
     ("英文站·界面漏译",   "check_en.py", ENPAGE, _en_cjk(), "still has Chinese"),
     ("英文站·脚本被截断", "check_en_js.py", ENHOME, _en_js(), "SyntaxError"),
     ("英文站·字体覆盖丢失", "check_en.py", ENCSS, _en_font(), "不是英文站的"),
+    ("英文站·卡片标题不是一个声音", "check_en.py", ENCSS, _en_card_voice(),
+     "不是一个声音"),
+    ("英文站·卡片署名黏在一起", "check_en.py", ENHOME, _en_name_glue(),
+     "黏在一起"),
     ("窄屏·横向撑开",     "check_mobile.py", CHAPCSS, _mobile_blowout(), "横向撑开"),
     ("挂件繁体·没跟上",   "check_chat_tw.py", CHATJS, _chat_tw_stale(), "不同步"),
     ("导语·没裁过",       "check_dek.py", ENPAGE, _dek_untrimmed(), "导语"),
