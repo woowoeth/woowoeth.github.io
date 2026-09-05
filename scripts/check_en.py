@@ -65,6 +65,7 @@ jobs musk bezos thiel paul-graham naval""".split()
 # 迟早有一批忘了改，而它的表现是「写了但不在计划里」，看着像内容错。
 sys.path.insert(0, os.path.join(ROOT, "seo"))
 from en_batches import slugs as _batch_slugs           # noqa: E402
+from en_batches import broken as _batch_broken         # noqa: E402
 PILOT = PILOT + [s for s in _batch_slugs() if s not in PILOT]
 
 def load_en():
@@ -671,6 +672,12 @@ def main():
     else:
         for x in fl[:6]:
             bad.append("英文页排版：%s" % x)
+
+    # 批次文件导不进来 = 那一批的人整批消失，而其余判据全绿：
+    # 少了的人不会被任何一条判据点名，因为没人知道他们本该在。
+    # 批次包为了让十几个人能同时写而容忍导入失败，真门禁这里必须不容忍。
+    for _m, _why in sorted(_batch_broken().items()):
+        bad.append("批次 %s 导不进来，整批的人会静默消失：%s" % (_m, _why))
 
     # ⑮ 信息流四种卡的标题必须是同一个字体、同一个字号
     cv = card_headline_voice()

@@ -27,10 +27,33 @@ import pkgutil
 _HERE = os.path.dirname(os.path.abspath(__file__))
 
 
+BROKEN = {}
+
+
 def _mods():
+    """能导入的批次。导不进来的记在 BROKEN 里，**不中断**。
+
+    为什么要容忍：补齐 159 条是十几个人同时在写，各写各的 bNN.py。
+    严格模式下，任何一个人写到一半（文件存了、语法还不全）都会让**其他
+    所有人**的自检当场崩掉，而错误信息指向的是别人的文件 —— 谁都不知道
+    自己该改什么。
+
+    容忍不等于放过：scripts/check_en.py（真门禁）会因为 BROKEN 非空而
+    整体失败。快的那一道往前走，慢的那一道守住底线。
+    """
+    BROKEN.clear()
     for m in sorted(x.name for x in pkgutil.iter_modules([_HERE])):
-        if m.startswith("b"):
+        if not m.startswith("b"):
+            continue
+        try:
             yield importlib.import_module("%s.%s" % (__name__, m))
+        except Exception as e:                       # noqa: BLE001
+            BROKEN[m] = "%s: %s" % (type(e).__name__, e)
+
+
+def broken():
+    list(_mods())
+    return dict(BROKEN)
 
 
 def collect(name, empty):

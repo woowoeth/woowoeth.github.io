@@ -159,6 +159,11 @@ def main(name):
             if k not in items:
                 bad.append("%s：PARENT.items 里没有 %s" % (e["slug"], k))
 
+    from en_batches import broken as _broken
+    others = {k: v for k, v in _broken().items() if k != name}
+    if others:
+        print("（别的批次现在导不进来，不是你的问题，先不用管：%s）"
+              % "、".join(sorted(others)))
     print("批次 %s：%d 个条目 · %d 个处境 · %d 句今日一句"
           % (name, len(entries), len(scenes), len(asks)))
     if bad:
