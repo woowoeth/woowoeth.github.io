@@ -559,6 +559,25 @@ def _en_cjk():
     return go
 
 
+def _parity_hole():
+    """把一个英文条目页藏起来 —— 中文有、英文没有。
+
+    这一条要防的是一个**空洞**，不是一处写错：站里所有中英比对的判据都写成
+    「两边都有这一页时，比它们的内容」，中文有而英文没有的从那个 continue
+    静默溜走。英文站一度只有 40 条而中文 159 条，十六道闸全绿 ——
+    那 119 条不是写坏了，是从来没有任何一条判据要求过它们存在。
+    """
+    def go():
+        import shutil
+        p = os.path.join(ROOT, "en", "i", "bezos", "index.html")
+        if not os.path.exists(p):
+            return None
+        shutil.move(p, p + ".hidden")
+        return p + ".hidden"
+
+    return go
+
+
 ENTRYCSS = os.path.join(ROOT, "assets", "hw-entry.css")
 
 
@@ -897,6 +916,9 @@ CASES = [
     ("导语·没裁过",       "check_dek.py", ENPAGE, _dek_untrimmed(), "导语"),
     ("版块·英文塌成一片", "check_dek.py", ENPAGE, _en_blocks_flat(), "缺这几类版块"),
     ("GEO·英文漏了章节", "check_geo_sync.py", ENLLMS, _geo_drop_chapters(), "章节"),
+    ("三语对应·英文少一条", "check_parity.py",
+     os.path.join(ROOT, "en", "i", "bezos", "index.html"), _parity_hole(),
+     "英文站缺"),
     ("资源版本·改了没盖章", "check_assets.py", ENTRYCSS, _asset_stale(),
      "老用户会一直拿到缓存里那份旧的"),
 ]
