@@ -567,7 +567,15 @@ paintQuote(true);
 document.getElementById('hwx-next').onclick=function(){
   qIdx=Math.floor(Math.random()*D.QP.length); paintQuote(false);
 };
-var p1=D.E[(day*7)%D.E.length];
+/* 「Today's read」= **最新加进来的那一条**，不是轮播。
+   原来是 D.E[(day*7)%D.E.length] —— 一个纯轮播，和「Today新加了谁」毫无
+   关系：站里每天真加一个人，而这张写着「今日」的卡指向的是一百六十条里
+   随机的某一条，新加的那个要等轮到才出现。改成每天一条之后，这张卡是
+   新内容唯一的正门。
+   D.E 的顺序就是 D[] 的顺序，新条目追加在末尾，所以取最后一条。
+   （Line of the day仍然轮播：它是引文，变化本身是价值；两张卡都指同一个人，
+   首屏会很单调。） */
+var p1=D.E[D.E.length-1];
 var tpEl=document.getElementById('hwx-tp');
 tpEl.href='/en/i/'+p1.s+'/';tpEl.setAttribute('data-h',p1.n);
 tpEl.innerHTML='<b>'+p1.n+' — '+p1.w+'</b><span class="hint">'+p1.it+'</span>'

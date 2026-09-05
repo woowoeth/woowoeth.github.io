@@ -498,7 +498,7 @@ header.hd{margin-bottom:12px!important}
 .hid{display:none!important}</style>
 <section id="hwx">
 <button id="hwx-theme" type="button" aria-label="切換日夜模式"></button>
-<div class="hist" id="hwx-hist"><span class="hl">最近看過</span><span class="hchips" id="hwx-hchips"></span><button id="hwx-hclr">清空</button></div><div class="askhero" id="hwx-askhero"><div class="ahead"><span class="lb">今日一問</span></div><div class="q" id="hwx-aq"></div><div id="hwx-asc-tag"></div><div class="go" id="hwx-ago"></div><div class="amine" id="hwx-amine"><div class="arow"><textarea id="hwx-ain" rows="1"></textarea><button type="button" id="hwx-ago2">問</button></div></div></div><button class="scline" id="hwx-scline" type="button"><b>你遇到的是別的事？</b><span id="hwx-sccount"></span><i>挑你自己那一件 →</i></button><div class="today today-foot"><div class="tq"><div class="dt" id="hwx-dt"></div><div class="tgl" id="hwx-tgl"></div><div class="q" id="hwx-tq"></div><div class="src" id="hwx-tqs"></div><div class="acts"><button id="hwx-next">換一換</button><button class="bs" id="hwx-save">保存卡片</button><button id="hwx-share">分享</button></div></div><div class="tcol"><div class="tbox tbox-s"><div class="lb">今日一篇</div><a id="hwx-tp"></a></div></div></div><div class="sc" id="hwx-sc" style="display:none"><button class="scmore" id="hwx-scmore" type="button"></button></div><div class="res" id="hwx-res" style="display:none"></div><div class="qbar"><input id="q" placeholder="搜你遇到的事：被裁了、睡不著…" aria-label="搜索"></div><div style="display:flex;align-items:baseline;justify-content:space-between;margin-top:14px"><div class="tabs2" id="hwx-tabs2"><button data-t="新">最新</button><button data-t="全">全部</button><button data-t="境" class="on">處境</button></div><span class="ct" id="hwx-ct" style="font-size:12px;color:var(--muted);white-space:nowrap;flex:0 0 auto"></span></div><div class="cats" id="hwx-cats" style="display:none"></div><div class="scpick" id="hwx-scpick" style="display:none" role="group" aria-label="按處境篩選"></div><div class="nc-feed" id="hwx-ncfeed"></div><div class="feed" id="hwx-feed" style="display:none"></div><div class="nc-feed" id="hwx-scfeed" style="display:none"></div><script src="/tw/assets/home-hwxd.js?v=ace2da1a"></script><script>(function(){
+<div class="hist" id="hwx-hist"><span class="hl">最近看過</span><span class="hchips" id="hwx-hchips"></span><button id="hwx-hclr">清空</button></div><div class="askhero" id="hwx-askhero"><div class="ahead"><span class="lb">今日一問</span></div><div class="q" id="hwx-aq"></div><div id="hwx-asc-tag"></div><div class="go" id="hwx-ago"></div><div class="amine" id="hwx-amine"><div class="arow"><textarea id="hwx-ain" rows="1"></textarea><button type="button" id="hwx-ago2">問</button></div></div></div><button class="scline" id="hwx-scline" type="button"><b>你遇到的是別的事？</b><span id="hwx-sccount"></span><i>挑你自己那一件 →</i></button><div class="today today-foot"><div class="tq"><div class="dt" id="hwx-dt"></div><div class="tgl" id="hwx-tgl"></div><div class="q" id="hwx-tq"></div><div class="src" id="hwx-tqs"></div><div class="acts"><button id="hwx-next">換一換</button><button class="bs" id="hwx-save">保存卡片</button><button id="hwx-share">分享</button></div></div><div class="tcol"><div class="tbox tbox-s"><div class="lb">今日一篇</div><a id="hwx-tp"></a></div></div></div><div class="sc" id="hwx-sc" style="display:none"><button class="scmore" id="hwx-scmore" type="button"></button></div><div class="res" id="hwx-res" style="display:none"></div><div class="qbar"><input id="q" placeholder="搜你遇到的事：被裁了、睡不著…" aria-label="搜索"></div><div style="display:flex;align-items:baseline;justify-content:space-between;margin-top:14px"><div class="tabs2" id="hwx-tabs2"><button data-t="新">最新</button><button data-t="全">全部</button><button data-t="境" class="on">處境</button></div><span class="ct" id="hwx-ct" style="font-size:12px;color:var(--muted);white-space:nowrap;flex:0 0 auto"></span></div><div class="cats" id="hwx-cats" style="display:none"></div><div class="scpick" id="hwx-scpick" style="display:none" role="group" aria-label="按處境篩選"></div><div class="nc-feed" id="hwx-ncfeed"></div><div class="feed" id="hwx-feed" style="display:none"></div><div class="nc-feed" id="hwx-scfeed" style="display:none"></div><script src="/tw/assets/home-hwxd.js?v=53294f85"></script><script>(function(){
 var D=HWXD;
 /* 日夜模式：默認跟隨系統，點擊在 跟隨/日間/夜間 之間循環並記住 */
 (function(){
@@ -567,7 +567,15 @@ paintQuote(true);
 document.getElementById('hwx-next').onclick=function(){
   qIdx=Math.floor(Math.random()*D.QP.length); paintQuote(false);
 };
-var p1=D.E[(day*7)%D.E.length];
+/* 「今日一篇」= **最新加進來的那一條**，不是輪播。
+   原來是 D.E[(day*7)%D.E.length] —— 一個純輪播，和「今天新加了誰」毫無
+   關係：站裡每天真加一個人，而這張寫著「今日」的卡指向的是一百六十條裡
+   隨機的某一條，新加的那個要等輪到才出現。改成每天一條之後，這張卡是
+   新內容唯一的正門。
+   D.E 的順序就是 D[] 的順序，新條目追加在末尾，所以取最後一條。
+   （今日一句仍然輪播：它是引文，變化本身是價值；兩張卡都指同一個人，
+   首屏會很單調。） */
+var p1=D.E[D.E.length-1];
 var tpEl=document.getElementById('hwx-tp');
 tpEl.href='/tw/i/'+p1.s+'/';tpEl.setAttribute('data-h',p1.n);
 tpEl.innerHTML='<b>'+p1.n+' — '+p1.w+'</b><span class="hint">'+p1.it+'</span>'

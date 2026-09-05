@@ -628,7 +628,7 @@ def _hwx_payload():
     # 和 fail/lesson 是同一种病的反面——那个是写了没人渲染，这个是发了没人读。
 
     # NC: 40 最新章节（按章节 py 文件 git 首次 commit 时间降序）
-    import os, subprocess
+    import os, subprocess, time
     ch_times = {}
     for ch in C.CHAPTERS:
         slug = hw_slugs.slug_for(ch["parent"])
@@ -639,7 +639,13 @@ def _hwx_payload():
                     r = subprocess.run(["git","log","--follow","--format=%at","--",cand],
                                        capture_output=True, text=True)
                     ts = [x for x in r.stdout.strip().split("\n") if x]
-                    ch_times[(ch["parent"], ch["k"])] = int(ts[-1]) if ts else 0
+                    # 还没进 git 的文件 = **今天刚写的**，时间戳按现在算。
+                    # 原来的 `else 0` 有个致命的先后问题：构建发生在提交
+                    # 之前，新章节那时还没 commit，git log 返回空 → 排到
+                    # 最后 → **新加的人永远进不了「最新」**。
+                    # 改成每天一条之后，这个 bug 每天都会咬一次。
+                    ch_times[(ch["parent"], ch["k"])] = (
+                        int(ts[-1]) if ts else int(time.time()))
                 except: ch_times[(ch["parent"], ch["k"])] = 0
                 break
     cat_by = {e["n"]: e["c"] for e in build_seo.load_array()}
@@ -1028,7 +1034,15 @@ paintQuote(true);
 document.getElementById('hwx-next').onclick=function(){
   qIdx=Math.floor(Math.random()*D.QP.length); paintQuote(false);
 };
-var p1=D.E[(day*7)%D.E.length];
+/* 「今日一篇」= **最新加进来的那一条**，不是轮播。
+   原来是 D.E[(day*7)%D.E.length] —— 一个纯轮播，和「今天新加了谁」毫无
+   关系：站里每天真加一个人，而这张写着「今日」的卡指向的是一百六十条里
+   随机的某一条，新加的那个要等轮到才出现。改成每天一条之后，这张卡是
+   新内容唯一的正门。
+   D.E 的顺序就是 D[] 的顺序，新条目追加在末尾，所以取最后一条。
+   （今日一句仍然轮播：它是引文，变化本身是价值；两张卡都指同一个人，
+   首屏会很单调。） */
+var p1=D.E[D.E.length-1];
 var tpEl=document.getElementById('hwx-tp');
 tpEl.href='/i/'+p1.s+'/';tpEl.setAttribute('data-h',p1.n);
 tpEl.innerHTML='<b>'+p1.n+' — '+p1.w+'</b><span class="hint">'+p1.it+'</span>'

@@ -69,6 +69,37 @@ for e in entries:
     if slug not in intros:
         bad("条目无手写介绍", "%s (%s)" % (e["n"], slug))
 
+# 2.5) 「最新」里必须真的是最新的那一批。
+#      NC 按章节文件的 git **首次提交时间**排序，而构建发生在提交之前 ——
+#      新写的章节那时还没进 git，git log 返回空，时间戳算成 0，排到最后：
+#      **新加的人永远进不了「最新」**。页面照常渲染、链接照常通、别的闸照常绿，
+#      只有那一格永远看不到今天加的东西。改成每天一条之后，这条会每天咬一次。
+#      判据：最近一次提交里新增的章节文件，它的章必须出现在 NC 里。
+import subprocess as _sp
+try:
+    _new = _sp.run(["git", "diff", "--name-only", "--diff-filter=A", "HEAD~1", "HEAD",
+                    "--", "seo/chapters/"], capture_output=True, text=True).stdout.split()
+except Exception:
+    _new = []
+if _new:
+    _home = open("index.html", encoding="utf-8", errors="ignore").read()
+    _i = _home.find('"NC":[')
+    _nc = _home[_i:_i + 6000] if _i > 0 else ""
+    for _f in _new:
+        _slug = os.path.basename(_f)[:-3].replace("_", "-")
+        if _slug and ('"s":"%s"' % _slug) not in _nc:
+            bad("新章节没进「最新」",
+                "%s —— 构建跑在提交之前时 git log 是空的，时间戳算成 0" % _slug)
+
+# 2.6) 「今日一篇」必须指向**最新那一条**，不能退回轮播。
+#      站里每天真加一个人，而这张写着「今日」的卡原来是
+#      `D.E[(day*7)%D.E.length]` —— 一个纯轮播，和今天加了谁毫无关系。
+#      它是新内容唯一的正门；退回轮播不报错、不溢出，只是每天新写的东西
+#      在首屏上没有任何位置。
+if "var p1=D.E[D.E.length-1];" not in open(
+        "index.html", encoding="utf-8", errors="ignore").read():
+    bad("今日一篇不是最新那条", "首页又变回轮播了（找不到 D.E[D.E.length-1]）")
+
 # 3) 每篇章节有专属分享图
 for ch in C.CHAPTERS:
     png = os.path.join("i", hw_slugs.slug_for(ch["parent"]), ch["k"], "og.png")
