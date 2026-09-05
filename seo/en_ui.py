@@ -391,6 +391,16 @@ UI += [
     ("」'\n      +(_more", "”'\n      +(_more"),   # 「这一问来自「X」」的收尾
     ("」值得先看", "” is the one to read first"),
 ]
+# 「后来怎么了？」这一段中文站上 26 个条目写了（他留下的方法，在他自己
+# 身上是怎么失效的），渲染器一直支持，但标题写死在 build_seo.py 里 ——
+# 界面串表里从来没有它，所以英文条目一旦带上 fail/lesson，页面上会冒出
+# 一行中文。补进来，这一段才有可能走到 /en/。
+UI += [
+    ("### Q\uff1a\u540e\u6765\u600e\u4e48\u4e86\uff1f",
+     "### Q: What happened afterwards?"),
+    ("\u540e\u6765\u600e\u4e48\u4e86\uff1f", "What happened afterwards?"),
+    ("\u540e\u6765\u600e\u4e48\u4e86", "What happened afterwards"),
+]
 UI = sorted(UI, key=lambda p: -len(p[0]))
 
 

@@ -28,6 +28,37 @@ def words(x):
     return len((x or "").split())
 
 
+def hwx_scenes_all():
+    """合并之后的全部处境（已有 84 个 + 所有批次）。"""
+    import hwx_scenes_en
+    return hwx_scenes_en.SCENES
+
+
+def zh_path(slug):
+    """中文原文的文件路径 —— 按 **PARENT.slug** 找，不按文件名猜。
+
+    文件名多数等于 slug（`-` 换 `_`），但有六个不是：hot-metal.py 用连字符、
+    strategies_warring_states.py 是简写。假设文件名等于 slug 的下场是
+    报「在 seo/chapters/ 下没有中文原文」，而写手为了让校验器闭嘴，
+    会去**改中文源文件的名字** —— 有人已经这么干了两次。
+    判据落在文件里写的 slug 上，猜不出来的事就别猜。
+    """
+    d = os.path.join(ROOT, "seo", "chapters")
+    guess = os.path.join(d, slug.replace("-", "_") + ".py")
+    if os.path.exists(guess):
+        return guess
+    for f in sorted(os.listdir(d)):
+        if not f.endswith(".py") or f.startswith("_"):
+            continue
+        try:
+            m = load(os.path.join(d, f), "zhscan_" + f[:-3])
+        except Exception:                                    # noqa: BLE001
+            continue
+        if (getattr(m, "PARENT", {}) or {}).get("slug") == slug:
+            return os.path.join(d, f)
+    return None
+
+
 def load(path, name):
     """按**文件路径**加载。
 
@@ -99,7 +130,7 @@ def main(name):
     for e in entries:
         py = e["slug"].replace("-", "_")
         p_en = os.path.join(ROOT, "seo", "chapters_en", py + ".py")
-        p_zh = os.path.join(ROOT, "seo", "chapters", py + ".py")
+        p_zh = zh_path(e["slug"])
         if not os.path.exists(p_en):
             bad.append("%s 没有 seo/chapters_en/%s.py" % (e["slug"], py))
             continue
@@ -107,7 +138,7 @@ def main(name):
         keys_en = [c["k"] for c in m_en.CHAPTERS]
         # 章节 key 必须和中文那边一样：门禁拿中文当「这一版的计划」，
         # key 对不上的英文章会被报成「写了但不在计划里」。
-        if os.path.exists(p_zh):
+        if p_zh:
             keys_zh = [c["k"] for c in load(p_zh, py + "_zh").CHAPTERS]
             extra = [k for k in keys_en if k not in keys_zh]
             missing = [k for k in keys_zh if k not in keys_en]
@@ -164,6 +195,41 @@ def main(name):
     if others:
         print("（别的批次现在导不进来，不是你的问题，先不用管：%s）"
               % "、".join(sorted(others)))
+    # 预填句不许复读卡片上的问句 —— 这是 hwx_en.py 里的一条**硬断言**，
+    # 撞上了整站构建直接抛异常。而它必须在**合并之后**的全集上算：
+    # 你的预填句可能和别人批次里的问句撞，也可能和已有 84 个处境里的撞。
+    # 判据照抄 hwx_en 的口径：四个词的片段，出现在三个以上处境的算英语
+    # 绕不开的连接语、不算回声。
+    try:
+        import hwx_en as _H
+
+        def _g4(t, n=4):
+            w = (t or "").split()
+            return {" ".join(w[i:i + n]) for i in range(len(w) - n + 1)}
+
+        all_sc = {t: [] for t in sc_box}
+        for t, _g, qs in hwx_scenes_all():
+            all_sc.setdefault(t, []).extend(q for q, _r in qs)
+        df = {}
+        for t, qs in all_sc.items():
+            seen = _g4(sc_box.get(t, ""))
+            for q in qs:
+                seen |= _g4(q)
+            for gm in seen:
+                df[gm] = df.get(gm, 0) + 1
+        mine = {t for t, _g, _q in scenes}
+        for t, qs in all_sc.items():
+            if t not in mine and t not in getattr(mod, "SC_BOX", {}):
+                continue
+            for q in qs:
+                hit = sorted(g for g in _g4(q) & _g4(sc_box.get(t, ""))
+                             if df.get(g, 0) < 3)
+                if hit:
+                    bad.append("处境「%s」的预填句在复读问句 %r —— 重的片段：%s"
+                               "（构建时是硬断言，会直接抛异常）" % (t, q, hit))
+    except Exception as _e:                                  # noqa: BLE001
+        print("（预填句复读检查跑不起来：%s）" % _e)
+
     print("批次 %s：%d 个条目 · %d 个处境 · %d 句今日一句"
           % (name, len(entries), len(scenes), len(asks)))
     if bad:
