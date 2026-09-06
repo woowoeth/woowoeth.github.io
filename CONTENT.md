@@ -74,20 +74,29 @@ python3 scripts/check_batch.py bNN
 
 ---
 
-## 四、跑完这三条再提交
+## 四、跑完这四条再提交，**次序不能换**
 
 ```bash
+python3 scripts/gen_og.py         # 分享图，必须在 build_all 之前
 python3 scripts/build_all.py      # 十步，末尾会给资源盖内容哈希
 python3 scripts/gate.py           # 十八道闸
 python3 scripts/gate_selftest.py  # 反向验：注入缺陷必须被拦下
 ```
 
-分享图**不在**构建链里，加了新人之后要单独跑一次（不跑的话「语言站链接」
-那道闸会报 og.png 不存在）：
+**`gen_og.py` 必须排在 `build_all.py` 前面。** 分享图不在构建链里，
+所以直觉上它「什么时候补都行」—— 不行。`build_tw.py` 是**从简体站复制**
+二进制文件来铺繁体站的，跑到它的时候 `i/<slug>/<章>/og.png` 还不存在，
+它就什么都不复制；简体站和英文站都正常，只有繁体站那几页的 og.png 缺，
+「语言站链接」那道闸报的是：
 
-```bash
-python3 scripts/gen_og.py     # 已存在的会跳过，只画新的
 ```
+x /tw/i/<slug>/<章>/ → /tw/i/<slug>/<章>/og.png 这个页面不存在
+```
+
+看起来像分享图没生成（其实生成了），实际是生成得太晚。
+补救办法是把 `gen_og.py` 跑一遍再**重跑一次** `build_all.py`。
+
+（2026-09-06 薇依那次踩到：照旧文档的次序跑，十八道闸红了三道。）
 
 ---
 

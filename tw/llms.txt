@@ -1,11 +1,11 @@
 # OurWord (人類世界生存法則)
 
-> 160 people and books on how the world actually works, across 2,600 years
+> 161 people and books on how the world actually works, across 2,600 years
 > 遇到事了，看看以前的人怎麼處理
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 160 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 161 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
-一個關於「世界到底怎麼運轉」的知識庫：戰略、財富、權力、人性、創業，取自 160 位人物與典籍，跨越 2600 年。每一條都寫清楚這個人真正留下的那一個想法、背後的故事、拆開的分則與例子，以及今天怎麼用。
+一個關於「世界到底怎麼運轉」的知識庫：戰略、財富、權力、人性、創業，取自 161 位人物與典籍，跨越 2600 年。每一條都寫清楚這個人真正留下的那一個想法、背後的故事、拆開的分則與例子，以及今天怎麼用。
 
 ## Read it
 
@@ -19,9 +19,9 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 ## Topics
 
 - [現代](https://ourword.ai/tw/t/modern/) — 58
-- [工業時代](https://ourword.ai/tw/t/industrial-age/) — 46
+- [工業時代](https://ourword.ai/tw/t/industrial-age/) — 47
+- [心智與情緒](https://ourword.ai/tw/t/mind/) — 21
 - [先秦與古典時代](https://ourword.ai/tw/t/classical-era/) — 20
-- [心智與情緒](https://ourword.ai/tw/t/mind/) — 20
 - [權力與組織](https://ourword.ai/tw/t/power/) — 20
 - [創業與產品](https://ourword.ai/tw/t/startups/) — 19
 - [謀略與競爭](https://ourword.ai/tw/t/strategy/) — 17
@@ -390,6 +390,9 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [王陽明 · 破心中賊](https://ourword.ai/tw/i/wang-yangming/bandits-in-the-heart/): 王陽明 · 破心中賊——最難打的那一仗在裡面。他一生打仗沒輸過。這一篇要回答的是：為什麼他說那些仗都是容易的。
 - [國富論 · 晚餐不來自恩惠](https://ourword.ai/tw/i/wealth-of-nations/not-benevolence/): 國富論 · 晚餐不來自恩惠——對準利益說話。全書最著名的一句話講的是晚餐。這一篇要回答的是：它給出的其實是一條溝通協議。
 - [國富論 · 釦針工廠](https://ourword.ai/tw/i/wealth-of-nations/pin-factory/): 國富論 · 釦針工廠——分工的賬。全書從一家小工廠開始。這一篇要回答的是：那筆四萬八千倍的賬是怎麼算出來的，以及它的上限在哪。
+- [西蒙娜·薇依 · 注意力是騰空，不是使勁](https://ourword.ai/tw/i/weil/attention-is-emptying/): 西蒙娜·薇依 · 注意力是騰空，不是使勁——你以為的專心，其實是在用力。人人都說注意力要靠自律去攥住。這一篇要回答的是：她為什麼說攥住的那個動作恰好是反的。
+- [西蒙娜·薇依 · 她去工廠做了一年工](https://ourword.ai/tw/i/weil/the-factory-year/): 西蒙娜·薇依 · 她去工廠做了一年工——要知道一份活兒把人怎麼了，只能自己去做。關於血汗工廠的調查報告已經很多。這一篇要回答的是：她為什麼認為那些報告一定拿不到她要的那個數。
+- [西蒙娜·薇依 · 力量把兩邊都變成物](https://ourword.ai/tw/i/weil/force-makes-things/): 西蒙娜·薇依 · 力量把兩邊都變成物——握著它的那一方也在被它改造。讀戰爭一般會挑一邊站。這一篇要回答的是：她為什麼說這首詩真正的主角兩邊都不是。
 - [國家為什麼會失敗 · 一牆之隔的諾加萊斯](https://ourword.ai/tw/i/why-nations-fail/two-nogales/): 國家為什麼會失敗 · 一牆之隔的諾加萊斯——控制變量的天然實驗。一道柵欄把一座城分成兩半，收入差三倍。這一篇要回答的是：這個案例排除掉了哪些流行解釋。
 - [國家為什麼會失敗 · 精英為什麼攔著進步](https://ourword.ai/tw/i/why-nations-fail/fear-of-creative-destruction/): 國家為什麼會失敗 · 精英為什麼攔著進步——不是蠢，是怕。沙皇拒修鐵路，奧匈皇帝拒建工廠。這一篇要回答的是：攔住技術的人往往最清楚技術的威力。
 - [諾伯特·維納 · 他先去找了工會](https://ourword.ai/tw/i/wiener/wrote-to-the-union/): 諾伯特·維納 · 他先去找了工會——在自動化落地之前。被技術沖掉之前有沒有先手。這一篇要回答的是：一個親手推動自動化的人，為什麼去找了會被它沖掉的那批人。
@@ -436,7 +439,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [AI Bubble Monitor / AI 泡沫檢測儀](https://ourword.ai/ai/)
 - [Zouni / 走你](https://ourword.ai/zouni/)
 
-## Index (160 entrys)
+## Index (161 entrys)
 
 - [BJ·福格](https://ourword.ai/tw/i/bj-fogg/): BJ·福格（2019年·斯坦福行為設計實驗室）——小到不會失敗。斯坦福行為設計實驗室創始人，研究行為如何被設計出來。他給出一個公式：行為發生需要動機、能力、提示三者同時到位。多數人失敗在只調動機——靠決心和自我激勵——而動機天然起伏，靠它維持的習慣必然崩。他的主張相反：把行為縮到小得不需要動機，然後掛在一個已有的動作後面。
 - [C.S.劉易斯](https://ourword.ai/tw/i/cs-lewis/): C.S.劉易斯（1898-1963年·英國牛津）——妻子死後幾個月的日記。作家，牛津和劍橋的教授，寫過《納尼亞傳奇》和大量勸人信仰的書。五十八歲結婚，妻子喬伊四年後因癌症去世。之後幾個月他在四本練習簿上記自己的狀態，後來用筆名出版，就是《卿卿如晤》。收他是因為「重要的人走了」那六個問題，原來靠弗蘭克爾和蘇軾在答——一個是集中營的倖存者，一個是被貶的官員
@@ -573,6 +576,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [蒲松齡](https://ourword.ai/tw/i/pu-songling/): 蒲松齡（1640-1715年·山東淄川）——主線沒成，副業成了。十九歲應童子試，縣、府、道三試第一，一時名動鄉里。然後他考了一輩子舉人，從二十多歲考到六十多歲，一次沒中，靠在縉紳家坐館教書養活一家人，七十一歲才援例補了個歲貢生。這個庫裡絕大多數人是最終成了的人——連敗局也是通往成功路上的敗局；蒲松齡不是。他這一生的正事從頭到尾沒成，而順手做的
 - [薄伽梵歌](https://ourword.ai/tw/i/bhagavad-gita/): 薄伽梵歌（約前2世紀-公元2世紀·印度）——你有權做事，無權要結果。印度史詩《摩訶婆羅多》中的一部分，七百頌十八章，成書年代學界一般定在公元前二世紀至公元二世紀之間。全篇是開戰前阿周那與御者克里希那的對話：阿周那看見對面陣中是自己的親族與師長，扔下弓不肯打。第二章第四十七頌的通行漢譯大意是「你只有做事的權利，沒有對結果的權利」，甘地稱這本書是自己
 - [褚時健](https://ourword.ai/tw/i/chu-shijian/): 褚時健（1928-2019年·雲南）——七十四歲上山種橙。雲南人。五十一歲起管玉溪捲菸廠，把紅塔山做成全國第一的品牌，出名的是把每個環節的標準定死、把每個人的收入和質量綁在一起。七十四歲那年原來的一切都沒了——位置、名聲、積蓄大半也沒了，身體也不好。他和妻子跑到哀牢山，承包兩千四百畝荒山種冰糖橙，橙樹四五年才結果，真正大賣是十年後，他八
+- [西蒙娜·薇依](https://ourword.ai/tw/i/weil/): 西蒙娜·薇依（法國·1909-1943）——注意。法國哲學家，二十二歲考取哲學教師資格。此後十年，她不斷把自己放進想弄懂的處境裡：去工廠當女工，去西班牙上前線，去農田收葡萄。她一生的題目只有一個——注意力。她說注意不是使勁，是把自己騰空到能讓對象進來，這既是學習的全部，也是一個人能給別人的最稀有的東西。反過來，她用同一把尺子看人
 - [論語](https://ourword.ai/tw/i/analects/): 論語（春秋·前551-前479）——仁。孔子和弟子的對話錄，中國兩千年來讀書人的基本教材。但論語被後代統治者包裝成了「聽話」的哲學，實際上孔子說的很多話和這個方向相反：他辭官、周遊列國、不停批評當權者。論語的核心不是禮教，是「仁」——對人真實的關懷。孔子本人是個失敗的政治家，卻是最成功的教育家：三千弟子，七十二賢人，他
 - [諸葛亮](https://ourword.ai/tw/i/zhuge-liang/): 諸葛亮（三國·181-234）——隆中對。「運籌帷幄」的代名詞，「鞠躬盡瘁」的化身。他未出茅廬時就規劃了三分天下的格局，輔佐劉備建立蜀漢，治蜀二十年法治清明，六出祁山以攻代守。
 - [諾伯特·維納](https://ourword.ai/tw/i/wiener/): 諾伯特·維納（1894-1964年·美國）——技術還沒落地就去提醒人。控制論的提出者，1948 年《控制論》出版，1950 年《人有人的用處》。他的位置在這個庫裡比較特殊：他既是把機器控制這套東西推出來的人，也是最早公開說它會大規模頂替流水線工人的人。1949 年他寫信給美國汽車工人聯合會的領袖魯瑟，說自己不願意這件事在毫無準備的情況下發生，希望工

@@ -164,6 +164,8 @@ SCENES = [
      [("napoleon", "sublime-to-ridiculous"), ("li-ka-shing", "knowing-when-to-stop")]),
     ("顺风顺水这么久，我心里发毛。",
      [("taleb", "turkey-problem"), ("buffett", "swimming-naked")]),
+    ("赢了之后，我有点不认识自己了。",
+     [("weil", "force-makes-things")]),
 ]),
 
 # ── 钱 ──
@@ -328,6 +330,8 @@ SCENES = [
      [("machiavelli", "feared-not-hated"), ("bismarck", "iron-and-blood")]),
     ("该罚的是我最看重的那个人。",
      [("zhuge-liang", "executing-ma-su"), ("shang-yang", "law-above-rank")]),
+    ("我手里有权，可我下不去手。",
+     [("weil", "force-makes-things")]),
 ]),
 ("团队没劲", "带人", [
     ("我说了很多遍，团队还是没劲。",
@@ -538,6 +542,8 @@ SCENES = [
      [("vygotsky", "zpd"), ("vygotsky", "scaffolding")]),
     ("我学的东西太死板了。",
      [("bruce-lee", "be-water"), ("huineng", "in-the-world")]),
+    ("我盯着书看了半天，一个字没进去。",
+     [("weil", "attention-is-emptying")]),
 ]),
 ("忙到没自己", "自己的状态", [
     ("我想留一块只属于自己的地方。",
@@ -550,6 +556,8 @@ SCENES = [
      [("hochschild", "emotional-labor"), ("cal-newport", "attention-residue")]),
     ("拼了这几年，朋友一个个断了。",
      [("harvard-study", "relationships-predict-health"), ("harvard-study", "social-fitness")]),
+    ("我天天在干活，却不觉得那是我。",
+     [("weil", "the-factory-year")]),
 ]),
 ("被比下去", "自己的状态", [
     ("身边人一好，我就不舒服。",
@@ -690,6 +698,8 @@ SCENES = [
      [("kasparov", "process-beats-both"), ("feynman", "teach-to-understand")]),
     ("能交给它的我都交了，剩下的也是碎活。",
      [("wiener", "human-use"), ("drucker", "right-things-first")]),
+    ("活儿都替我安排好了，我只管做。",
+     [("weil", "the-factory-year")]),
 ]),
 ("出得多了人却空了", "AI 来了", [
     ("它当初明明省事，我现在说不清了。",
@@ -698,6 +708,8 @@ SCENES = [
      [("drucker", "right-things-first"), ("zhuangzi", "use-of-uselessness")]),
     ("效率高了，做的还是没用的事。",
      [("drucker", "right-things-first"), ("csikszentmihalyi", "flow-channel")]),
+    ("忙完一整天，我没记住任何一件事。",
+     [("weil", "attention-is-emptying")]),
 ]),
 ("人人都在喊风口", "AI 来了", [
     ("所有人都说这是风口，我慌。",

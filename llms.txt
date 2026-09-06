@@ -1,11 +1,11 @@
 # OurWord (人类世界生存法则)
 
-> 160 people and books on how the world actually works, across 2,600 years
+> 161 people and books on how the world actually works, across 2,600 years
 > 遇到事了，看看以前的人怎么处理
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 160 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 161 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
-一个关于「世界到底怎么运转」的知识库：战略、财富、权力、人性、创业，取自 160 位人物与典籍，跨越 2600 年。每一条都写清楚这个人真正留下的那一个想法、背后的故事、拆开的分则与例子，以及今天怎么用。
+一个关于「世界到底怎么运转」的知识库：战略、财富、权力、人性、创业，取自 161 位人物与典籍，跨越 2600 年。每一条都写清楚这个人真正留下的那一个想法、背后的故事、拆开的分则与例子，以及今天怎么用。
 
 ## Read it
 
@@ -19,9 +19,9 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 ## Topics
 
 - [现代](https://ourword.ai/t/modern/) — 58
-- [工业时代](https://ourword.ai/t/industrial-age/) — 46
+- [工业时代](https://ourword.ai/t/industrial-age/) — 47
+- [心智与情绪](https://ourword.ai/t/mind/) — 21
 - [先秦与古典时代](https://ourword.ai/t/classical-era/) — 20
-- [心智与情绪](https://ourword.ai/t/mind/) — 20
 - [权力与组织](https://ourword.ai/t/power/) — 20
 - [创业与产品](https://ourword.ai/t/startups/) — 19
 - [谋略与竞争](https://ourword.ai/t/strategy/) — 17
@@ -390,6 +390,9 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [王阳明 · 破心中贼](https://ourword.ai/i/wang-yangming/bandits-in-the-heart/): 王阳明 · 破心中贼——最难打的那一仗在里面。他一生打仗没输过。这一篇要回答的是：为什么他说那些仗都是容易的。
 - [国富论 · 晚餐不来自恩惠](https://ourword.ai/i/wealth-of-nations/not-benevolence/): 国富论 · 晚餐不来自恩惠——对准利益说话。全书最著名的一句话讲的是晚餐。这一篇要回答的是：它给出的其实是一条沟通协议。
 - [国富论 · 扣针工厂](https://ourword.ai/i/wealth-of-nations/pin-factory/): 国富论 · 扣针工厂——分工的账。全书从一家小工厂开始。这一篇要回答的是：那笔四万八千倍的账是怎么算出来的，以及它的上限在哪。
+- [西蒙娜·薇依 · 注意力是腾空，不是使劲](https://ourword.ai/i/weil/attention-is-emptying/): 西蒙娜·薇依 · 注意力是腾空，不是使劲——你以为的专心，其实是在用力。人人都说注意力要靠自律去攥住。这一篇要回答的是：她为什么说攥住的那个动作恰好是反的。
+- [西蒙娜·薇依 · 她去工厂做了一年工](https://ourword.ai/i/weil/the-factory-year/): 西蒙娜·薇依 · 她去工厂做了一年工——要知道一份活儿把人怎么了，只能自己去做。关于血汗工厂的调查报告已经很多。这一篇要回答的是：她为什么认为那些报告一定拿不到她要的那个数。
+- [西蒙娜·薇依 · 力量把两边都变成物](https://ourword.ai/i/weil/force-makes-things/): 西蒙娜·薇依 · 力量把两边都变成物——握着它的那一方也在被它改造。读战争一般会挑一边站。这一篇要回答的是：她为什么说这首诗真正的主角两边都不是。
 - [国家为什么会失败 · 一墙之隔的诺加莱斯](https://ourword.ai/i/why-nations-fail/two-nogales/): 国家为什么会失败 · 一墙之隔的诺加莱斯——控制变量的天然实验。一道栅栏把一座城分成两半，收入差三倍。这一篇要回答的是：这个案例排除掉了哪些流行解释。
 - [国家为什么会失败 · 精英为什么拦着进步](https://ourword.ai/i/why-nations-fail/fear-of-creative-destruction/): 国家为什么会失败 · 精英为什么拦着进步——不是蠢，是怕。沙皇拒修铁路，奥匈皇帝拒建工厂。这一篇要回答的是：拦住技术的人往往最清楚技术的威力。
 - [诺伯特·维纳 · 他先去找了工会](https://ourword.ai/i/wiener/wrote-to-the-union/): 诺伯特·维纳 · 他先去找了工会——在自动化落地之前。被技术冲掉之前有没有先手。这一篇要回答的是：一个亲手推动自动化的人，为什么去找了会被它冲掉的那批人。
@@ -436,7 +439,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [AI Bubble Monitor / AI 泡沫检测仪](https://ourword.ai/ai/)
 - [Zouni / 走你](https://ourword.ai/zouni/)
 
-## Index (160 entrys)
+## Index (161 entrys)
 
 - [BJ·福格](https://ourword.ai/i/bj-fogg/): BJ·福格（2019年·斯坦福行为设计实验室）——小到不会失败。斯坦福行为设计实验室创始人，研究行为如何被设计出来。他给出一个公式：行为发生需要动机、能力、提示三者同时到位。多数人失败在只调动机——靠决心和自我激励——而动机天然起伏，靠它维持的习惯必然崩。他的主张相反：把行为缩到小得不需要动机，然后挂在一个已有的动作后面。
 - [C.S.刘易斯](https://ourword.ai/i/cs-lewis/): C.S.刘易斯（1898-1963年·英国牛津）——妻子死后几个月的日记。作家，牛津和剑桥的教授，写过《纳尼亚传奇》和大量劝人信仰的书。五十八岁结婚，妻子乔伊四年后因癌症去世。之后几个月他在四本练习簿上记自己的状态，后来用笔名出版，就是《卿卿如晤》。收他是因为「重要的人走了」那六个问题，原来靠弗兰克尔和苏轼在答——一个是集中营的幸存者，一个是被贬的官员
@@ -573,6 +576,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [蒲松龄](https://ourword.ai/i/pu-songling/): 蒲松龄（1640-1715年·山东淄川）——主线没成，副业成了。十九岁应童子试，县、府、道三试第一，一时名动乡里。然后他考了一辈子举人，从二十多岁考到六十多岁，一次没中，靠在缙绅家坐馆教书养活一家人，七十一岁才援例补了个岁贡生。这个库里绝大多数人是最终成了的人——连败局也是通往成功路上的败局；蒲松龄不是。他这一生的正事从头到尾没成，而顺手做的
 - [薄伽梵歌](https://ourword.ai/i/bhagavad-gita/): 薄伽梵歌（约前2世纪-公元2世纪·印度）——你有权做事，无权要结果。印度史诗《摩诃婆罗多》中的一部分，七百颂十八章，成书年代学界一般定在公元前二世纪至公元二世纪之间。全篇是开战前阿周那与御者克里希那的对话：阿周那看见对面阵中是自己的亲族与师长，扔下弓不肯打。第二章第四十七颂的通行汉译大意是「你只有做事的权利，没有对结果的权利」，甘地称这本书是自己
 - [褚时健](https://ourword.ai/i/chu-shijian/): 褚时健（1928-2019年·云南）——七十四岁上山种橙。云南人。五十一岁起管玉溪卷烟厂，把红塔山做成全国第一的品牌，出名的是把每个环节的标准定死、把每个人的收入和质量绑在一起。七十四岁那年原来的一切都没了——位置、名声、积蓄大半也没了，身体也不好。他和妻子跑到哀牢山，承包两千四百亩荒山种冰糖橙，橙树四五年才结果，真正大卖是十年后，他八
+- [西蒙娜·薇依](https://ourword.ai/i/weil/): 西蒙娜·薇依（法国·1909-1943）——注意。法国哲学家，二十二岁考取哲学教师资格。此后十年，她不断把自己放进想弄懂的处境里：去工厂当女工，去西班牙上前线，去农田收葡萄。她一生的题目只有一个——注意力。她说注意不是使劲，是把自己腾空到能让对象进来，这既是学习的全部，也是一个人能给别人的最稀有的东西。反过来，她用同一把尺子看人
 - [论语](https://ourword.ai/i/analects/): 论语（春秋·前551-前479）——仁。孔子和弟子的对话录，中国两千年来读书人的基本教材。但论语被后代统治者包装成了「听话」的哲学，实际上孔子说的很多话和这个方向相反：他辞官、周游列国、不停批评当权者。论语的核心不是礼教，是「仁」——对人真实的关怀。孔子本人是个失败的政治家，却是最成功的教育家：三千弟子，七十二贤人，他
 - [诸葛亮](https://ourword.ai/i/zhuge-liang/): 诸葛亮（三国·181-234）——隆中对。「运筹帷幄」的代名词，「鞠躬尽瘁」的化身。他未出茅庐时就规划了三分天下的格局，辅佐刘备建立蜀汉，治蜀二十年法治清明，六出祁山以攻代守。
 - [诺伯特·维纳](https://ourword.ai/i/wiener/): 诺伯特·维纳（1894-1964年·美国）——技术还没落地就去提醒人。控制论的提出者，1948 年《控制论》出版，1950 年《人有人的用处》。他的位置在这个库里比较特殊：他既是把机器控制这套东西推出来的人，也是最早公开说它会大规模顶替流水线工人的人。1949 年他写信给美国汽车工人联合会的领袖鲁瑟，说自己不愿意这件事在毫无准备的情况下发生，希望工

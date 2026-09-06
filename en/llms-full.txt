@@ -1,7 +1,7 @@
-# OurWord — 160 people and books on how the world actually works, across 2,600 years
+# OurWord — 161 people and books on how the world actually works, across 2,600 years
 # OurWord — See how people before you handled it.
 # https://ourword.ai/en/
-# Full corpus, plain text. 160 entrys.
+# Full corpus, plain text. 161 entrys.
 
 ========================================================================
 ## Albert Einstein
@@ -621,7 +621,7 @@ Deep work is becoming rare exactly as it becomes valuable. A gap never appears b
 Atomic Habits — Both work by design rather than by will: Clear edits the environment to lower the cost of starting, Newport edits the diary to protect the block. Anders Ericsson — Deliberate practice requires intense concentration, and Newport sets out why that concentration has become so hard to get hold of today. Mihaly Csikszentmihalyi — One sets out the internal conditions for concentration, the other the external ones, the diary and the environment that protect it. Scarcity — Both keep an account of attention: Newport counts what switching costs, Scarcity counts what how far short am I occupies all day.
 
 ### Further
-Atomic Habits Anders Ericsson John Ratey Benjamin Franklin Haruki Murakami BJ Fogg Mihaly Csikszentmihalyi Scarcity Ivan Illich
+Atomic Habits Anders Ericsson John Ratey Benjamin Franklin Haruki Murakami BJ Fogg Mihaly Csikszentmihalyi Scarcity Ivan Illich Simone Weil
 
 ========================================================================
 ## Cao Cao
@@ -1750,7 +1750,7 @@ Not done out of wickedness. Done without ever having thought. The crowd is large
 Han Feizi — Han Feizi asks how to build a system that works without relying on goodness; Arendt asks where obedience inside such a system ends up. One writes from the designer's chair, one from the operator's. Garry Kasparov — Both answer the tool did my thinking for me. Kasparov puts the human back where the machines disagree; Arendt says handing over judgement is a state in itself, whoever takes it.
 
 ### Further
-Han Feizi Machiavelli Garry Kasparov The Analects
+Han Feizi Machiavelli Garry Kasparov The Analects Simone Weil
 
 ========================================================================
 ## Haruki Murakami
@@ -2049,7 +2049,7 @@ Past the second watershed a tool produces what it was meant to remove. Illness p
 Kevin Kelly — Both read where technology is heading: one asks what it will grow into, the other asks where it starts eating people. Peter Drucker — Both ask what comes after efficiency — do the right things, or put a ceiling on the tool.
 
 ### Further
-Zhuangzi Peter Drucker Cal Newport Thinking in Systems Finite and Infinite Games
+Zhuangzi Peter Drucker Cal Newport Thinking in Systems Finite and Infinite Games Simone Weil
 
 ========================================================================
 ## Jeff Bezos
@@ -3144,7 +3144,7 @@ Enjoyment appears at the boundary between boredom and anxiety. The best moments 
 Anders Ericsson — Both keep you at the edge of your ability: Ericsson on how to practise so the ability grows, Csikszentmihalyi on why that position is the one that absorbs you. Cal Newport — One sets out the internal conditions for concentration, the other the external ones, the diary and the environment that protect it.
 
 ### Further
-Anders Ericsson Cal Newport Atomic Habits Viktor Frankl BJ Fogg
+Anders Ericsson Cal Newport Atomic Habits Viktor Frankl BJ Fogg Simone Weil
 
 ========================================================================
 ## Miyamoto Musashi
@@ -3360,7 +3360,7 @@ Ask which part of your work could be written once and used many times — code, 
 Wealth is assets that earn while you sleep. If your income is measured in hours you will never truly be wealthy. Code and media are the permissionless leverage of this era.
 
 ### Q: What should I read alongside?
-Tao Te Ching — Both end at enough; one arrives through leverage, the other by never picking the load up. Kevin Kelly — Both are about earning without an employer: Naval gives you specific knowledge times leverage, Kelly gives you a sum you can run backwards into a product. Benjamin Franklin — The same algorithm two hundred and fifty years apart: compounding, leverage, reputation, and the pursuit of knowledge once money stops being the question.
+Tao Te Ching — Both end at enough; one arrives through leverage, the other by never picking the load up. Kevin Kelly — Both are about earning without an employer: Naval gives you specific knowledge times leverage, Kelly gives you a sum you can run backwards into a product. Benjamin Franklin — The same algorithm two hundred and fifty years apart: compounding, leverage, reputation, and the pursuit of knowledge once money stops being the question. Simone Weil — Both ask where a person should put themselves: one wants leverage that works without you present, the other says being present is the one thing you cannot outsource.
 
 ### Further
 Peter Thiel Tao Te Ching Warren Buffett Paul Graham Kevin Kelly Nietzsche Benjamin Franklin The Last Hot-Metal Edition Finite and Infinite Games Nassim Taleb The Sovereign Individual The Wealth of Nations
@@ -4242,6 +4242,46 @@ Zhuge Liang — The sharpest pairing on the site: one attacked to defend and spe
 Fan Li Li Bi Zhuge Liang Sun Tzu Cao Cao Feng Dao Guo Ziyi Huo Qubing Wang Jian Machiavelli
 
 ========================================================================
+## Simone Weil
+URL: https://ourword.ai/en/i/weil/
+Tags: Mind and feeling, The industrial age, Attention
+
+Simone Weil (France · 1909-1943) — Attention. A French philosopher who qualified to teach philosophy at twenty-two and then spent a decade putting herself inside the situations she wanted to understand: a year as a…
+
+### Q: What did this one leave behind?
+A French philosopher who qualified to teach philosophy at twenty-two and then spent a decade putting herself inside the situations she wanted to understand: a year as a factory hand, a spell at the front in Spain, a grape harvest in the south. She had one subject, attention. Attention is not straining, she said; it is emptying yourself until the thing can enter — which is the whole of learning and the rarest thing one person can give another. She then turned the same measure on how people get destroyed: work that never needs you to think, and force that turns a person into a thing, both take the same faculty away. She died in England in 1943, aged thirty-four.
+
+### Q: What actually happened?
+In 1936 she went to the front in the Spanish Civil War and joined an anarchist column. She was severely short-sighted and barely a soldier; the story is that she fired once, at an aircraft. What struck her was not the fighting. Two years later she wrote to the novelist Georges Bernanos describing the atmosphere she had found: one in which killing had become something nobody needed to justify — a captured fifteen-year-old who would not change sides was shot — and in which nobody present was a bad man. She left because she stepped into a pan of boiling oil while cooking and was badly burned. Spain did not change which side she was on. It changed her test, from which side is right to what has force made of the people here.
+
+### The parts · Attention is emptying, not straining
+Told to concentrate, people clench, as if closing a hand around something. She says that is muscular effort and the opposite of attention, which asks you to admit you do not yet understand and stay there so the thing can enter. e.g. Handed a report you cannot read, the first move is to fit a familiar model over it. From then on the report cannot say anything of its own.
+
+### The parts · The time that produced nothing was not wasted
+Effort that fails still grows something, provided the attention holds and you do not run. What grows is next time's discrimination. Only leaving actually voids the hour, which is why she thought the subject studied barely mattered. e.g. You shipped nothing in the two hours you were stuck, and you will see faster where the next one is jammed.
+
+### The parts · She went and worked in the factories
+In 1934 she took leave, hired on under her own name at piece rates and lived on the wages. What shook her was not exhaustion but finding she had stopped being able to think: the machine set the pace, the method came with the job, and no thought of hers could get in. e.g. To learn how bad a process is, run it end to end yourself and forbid yourself from asking anyone inside for a shortcut.
+
+### The parts · What gets removed is judgement, not strength
+Judgement unused decays, and past a point people being ground down stop protesting and concede the fault is their own. So the damage is invisible from outside: the room is quiet, and the quiet is the evidence it has finished. e.g. Nobody objecting in the meeting rarely means nobody objects. It means they no longer believe objecting counts.
+
+### The parts · Force turns both sides into things
+Reading the Iliad she said its true subject is force. The struck side becomes a thing first, but the side holding it changes too: the winner takes force for a property of himself and can no longer picture the day it comes round to him. e.g. The party with all the leverage signs the contract the other side cannot perform, having stopped assuming the relationship continues next year.
+
+### Q: How do I use it today?
+Take twenty minutes today on something you cannot yet do, and forbid yourself from reaching for a ready-made framework partway through. When the timer stops, ask two things: did I run? Can I now say exactly which step it is jammed at? If you can, the twenty minutes were not wasted, whatever you produced. Then turn the same measure on your work: which step of today was waiting on your judgement?
+
+### Lines to keep
+What you call concentrating is straining. Attention is emptying yourself. The half hour you failed to solve it is where learning happened. Attention is the rarest and purest form of generosity. What empties you is not fatigue. It is work that needs no thought. The winner loses not his conscience but his idea of tomorrow.
+
+### Q: What should I read alongside?
+Naval Ravikant — Both ask where a person should put themselves: one wants leverage that works without you present, the other says being present is the one thing you cannot outsource. Taiichi Ohno — Both stared at the same assembly line: one rebuilt it so the worker's thinking is required, the other recorded what the line that needs no thinking does to a person.
+
+### Further
+Hannah Arendt Ivan Illich Cal Newport Viktor Frankl Mihaly Csikszentmihalyi
+
+========================================================================
 ## Socrates
 URL: https://ourword.ai/en/i/socrates/
 Tags: Learning and growth, Pre-Qin and classical, Knowing you do not know
@@ -4486,7 +4526,7 @@ Take one problem that has come back three times. Write the incident at the top o
 Repeat why five times and the real cause shows itself. The man who replaces the fuse will be back next week. When the water is high, all the rocks are underneath it.
 
 ### Q: What should I read alongside?
-Peter Drucker — Drucker decides which thing to do; Ohno decides how a step is kept from going wrong. One sets the direction at a desk, the other sets the standard on the floor. Elon Musk — Both attack cost by refusing the answer they are given. Musk goes down to the physics of the materials; Ohno goes down the chain of causes on a stopped machine.
+Peter Drucker — Drucker decides which thing to do; Ohno decides how a step is kept from going wrong. One sets the direction at a desk, the other sets the standard on the floor. Elon Musk — Both attack cost by refusing the answer they are given. Musk goes down to the physics of the materials; Ohno goes down the chain of causes on a stopped machine. Simone Weil — Both stared at the same assembly line: one rebuilt it so the worker's thinking is required, the other recorded what the line that needs no thinking does to a person.
 
 ### Further
 Peter Drucker Kazuo Inamori Chu Shijian
@@ -5226,7 +5266,7 @@ Everything can be taken from a man but one thing: the last of the human freedoms
 Nelson Mandela — Two answers to extreme adversity: Frankl found meaning inside the camp, Mandela turned twenty-seven years in prison into a political transformation — one worked on the inner position, the other on the outer one. Su Shi — Creation under punishment: Su Shi wrote his best work in exile, Frankl finished logotherapy in the camps — both took the worst stretch of a life and made it the productive one. Marcus Aurelius — Two tests of the inner citadel: Marcus holds it voluntarily at the top of power, Frankl has it tested with everything else taken away. Epictetus — The same finding eighteen centuries apart: Frankl said in the camps that the last human freedom is the choice of one's attitude, which is the dichotomy of control tested at the floor of human experience. Nietzsche — He who has a why to live can bear almost any how is Nietzsche's line, and Frankl carried it into Auschwitz and tested it: one man worked it out in a study, the other verified it where verification cost everything. Arthur Kleinman — Both answer what to do when a situation cannot be changed: Frankl points to the freedom of attitude in an extreme, Kleinman to the ordinary long grind where care is still available every day. Shi Tiesheng — Both answer what holds when a situation leaves no choice: Frankl says meaning, Shi Tiesheng answers much smaller, with one place he went every day and the gaps between dialysis sessions.
 
 ### Further
-Marcus Aurelius Epictetus Nietzsche Socrates Kazuo Inamori Wang Yangming Gandhi Nelson Mandela The Bhagavad Gita Sima Qian Seneca Brené Brown Kristin Neff Records of the Grand Historian Arthur Kleinman Shi Tiesheng Tao Yuanming Mihaly Csikszentmihalyi Alfred Adler
+Marcus Aurelius Epictetus Nietzsche Socrates Kazuo Inamori Wang Yangming Gandhi Nelson Mandela The Bhagavad Gita Sima Qian Seneca Brené Brown Kristin Neff Records of the Grand Historian Arthur Kleinman Shi Tiesheng Tao Yuanming Mihaly Csikszentmihalyi Alfred Adler Simone Weil
 
 ========================================================================
 ## Virginia Satir
@@ -17272,6 +17312,105 @@ Where it goes wrong: splitting before the volume is there, so every station sits
 The greatest improvement in the productive powers of labour was the division of labour.
 Ten persons could make among them upwards of forty-eight thousand pins.
 The division of labour is limited by the extent of the market.
+
+========================================================================
+## Simone Weil · Attention is emptying, not straining
+URL: https://ourword.ai/en/i/weil/attention-is-emptying/
+Source: Reflections on the Right Use of School Studies with a View to the Love of God (1942)
+Tags: Deep read, Simone Weil, What you call concentrating is the opposite of it
+
+Everyone treats attention as a muscle to be gripped harder. What is worth reading is why she says gripping is the wrong move.
+
+### Q: What actually happened?
+We have concentration backwards, she argued. Told to pay attention, a person frowns, clenches, holds their breath, as though closing a hand around something. That is muscular effort, and it is the opposite of attention. Real attention is emptying yourself so the thing can enter. Her example is a pupil failing at a geometry problem. Most people write off the half hour that produced no answer. She says that half hour is where the learning actually happened — not because anything was solved, but because someone stayed open in front of a thing they did not understand and did not run.
+
+### The parts · Straining grips, attention waits
+Gripping requires a shape to grip with, so the strained mind pushes the object into a frame it already owns. Attention asks you to admit you do not yet understand and to stay there. One produces I knew this already. Only the other produces anything new.
+e.g. Handed a report you cannot read, the first move is usually to fit a familiar model over it. From that moment the report can no longer say anything of its own.
+
+### The parts · The time that produced nothing was not wasted
+This is her least intuitive claim: effort that fails, provided the attention holds, is still growing something, even if the problem is never solved. What grows is next time's discrimination. Only running away actually voids the hour.
+e.g. You shipped nothing in the two hours you were stuck, but you will see faster where the next problem of that kind is jammed.
+
+### The parts · Attention is a thing you can give someone
+She called it the rarest and purest form of generosity. Almost nobody can ask what are you going through and then wait. Most listeners are already converting the situation into a case they have seen before, halfway through the second sentence.
+e.g. A colleague finishes describing the trouble and you produce a fix. The fix may be right; what you just did was swap their situation for your problem.
+
+### Q: How do I use it today?
+Where you are: your day was full and productive and you cannot name one thing that stayed with you.
+Ask first: was there any stretch today I spent inside not understanding, without running? When did I last hear someone out without converting it into a case I know?
+Where it goes wrong: reading emptying as relaxing. She describes an exhausting state — the exhaustion is in staying open, not in clenching.
+
+### Lines to keep
+What you call concentrating is straining. Attention is emptying yourself.
+The half hour you failed to solve it is where learning happened.
+Attention is the rarest and purest form of generosity.
+
+========================================================================
+## Simone Weil · The year she worked the factory floor
+URL: https://ourword.ai/en/i/weil/the-factory-year/
+Source: Factory Journal, in La Condition ouvriere (1951); letters of 1934-1935
+Tags: Deep read, Simone Weil, To know what a job does to people, do the job
+
+There is no shortage of surveys of industrial work. What is worth reading is why she thought no survey could reach the number she wanted.
+
+### Q: What actually happened?
+In December 1934 a twenty-five-year-old philosophy teacher took a year's leave, and under her own name hired on as an unskilled hand at the Alsthom electrical works in Paris, then at Carnaud and Renault. Piece rates, and she lived on the wages. What shook her was not the exhaustion. It was finding that she had stopped being able to think. The machine set the pace and the method came with the job, so across a whole day no thought of hers could get in. Months later she wrote that she no longer felt she had any claim on anything.
+
+### The parts · She did not want to understand it, she wanted to undergo it
+A survey gets hours, wages, injury rates. It cannot get what a person becomes after a year inside, because that figure is only generated in whoever is carrying it. She gave up the salary and the status so that she had no exit, and that is how she got it.
+e.g. To learn how bad a process is, do not read the complaint log. Run it end to end yourself, and forbid yourself from asking anyone inside for a shortcut.
+
+### The parts · What is removed is judgement, not strength
+What hollows people out is not the physical cost. It is that the structure of the work has no slot that needs them to think: the pace belongs to the machine, the method to the foreman, the verdict to the piece count. Judgement unused decays.
+e.g. If your view never changes what happens next, the job is not only taking your hours. It is quietly taking your judgement.
+
+### The parts · The mark of humiliation is no longer feeling entitled
+Her sharpest finding: past a point, people who are being ground down do not protest. They first concede that the fault is their own. So the damage is nearly invisible from outside — the room is quiet, and the quiet is the evidence that it has finished.
+e.g. Nobody objecting in the meeting rarely means nobody objects. It means they no longer believe objecting counts.
+
+### Q: How do I use it today?
+Where you are: you work at it every day and it feels less and less like you doing it.
+Ask first: which step in this job is waiting on my judgement? When did something I said last change how the next thing was done?
+Where it goes wrong: reading it as manual work harms and desk work does not. Her test is whether the work needs you to think, not whether it tires you. A desk job that needs no thought scores identically.
+
+### Lines to keep
+What empties you is not fatigue. It is work that needs no thought.
+Past a point, the ground down first concede the fault is theirs.
+To know what a job does to people, go and do it.
+
+========================================================================
+## Simone Weil · Force turns both sides into things
+URL: https://ourword.ai/en/i/weil/force-makes-things/
+Source: The Iliad, or the Poem of Force (1939)
+Tags: Deep read, Simone Weil, The side holding it is being altered too
+
+Reading a war usually means picking a side. What is worth reading is why she says the poem's real subject is neither of them.
+
+### Q: What actually happened?
+She reread the Iliad and said its true hero is not Achilles and not Hector but force — the thing that turns a person into a thing. The struck side goes first: corpse, captive, prize to be traded. Her real finding is that the side holding it changes too. The winner takes the force in his hands for a property of himself, and can no longer picture the day it comes round to him. Hector, killing, does not know tomorrow is his. Achilles, dragging a body round the walls, does not know how near his own death is.
+
+### The parts · Force acts at both ends
+Common sense sees damage only where the pressure lands. Her claim is harder: whoever holds force is being remade by it, because force persuades its holder that it is part of him rather than something briefly in his hands.
+e.g. Give someone a veto and they soon feel their opinions were always the better ones. Their judgement has not improved; they have stopped receiving contradiction.
+
+### The parts · The winner's blind spot is tomorrow
+Every man in Homer who kills in a frenzy is dead a few hundred lines later. Force takes not a man's conscience but his sense of time — it swaps I am stronger now for it will always be like this, and he makes decisions that hold only in a world that never turns.
+e.g. The party with all the leverage signs the contract the other side cannot perform, because it has stopped assuming the relationship continues next year.
+
+### The parts · The antidote is still being able to imagine the other as a person
+The most famous scene in the poem is Priam entering Achilles' tent at night to ask for his son's body, and the two of them weeping together. She says that is the moment force pauses — not because anyone turned kind, but because someone saw a person again.
+e.g. Facing an opponent who has already lost, there is one check on your own condition: can I still say what he is afraid of right now? If not, force is working on me.
+
+### Q: How do I use it today?
+Where you are: you now hold power over someone, or someone holds it over you.
+Ask first: if the positions reverse next year, does today's decision still stand? Can I still say what the other side is afraid of?
+Where it goes wrong: reading it as therefore never use force. She is not against using it; she offers a self-check — whether you can still imagine the other side as a person. The moment you cannot, you are the one being altered.
+
+### Lines to keep
+Force is what turns a person into a thing, at both ends.
+The winner loses not his conscience but his idea of tomorrow.
+Priam and Achilles wept together, and force stopped for a moment.
 
 ========================================================================
 ## Why Nations Fail · The two Nogaleses

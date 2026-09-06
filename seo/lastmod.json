@@ -32,8 +32,8 @@
   "h": "9c6e809b429d07e7"
  },
  "i/arendt/": {
-  "d": "2026-09-02",
-  "h": "4e327a35dbc5988d"
+  "d": "2026-09-06",
+  "h": "478a01a04ef4bd74"
  },
  "i/arendt/banality-of-evil/": {
   "d": "2026-09-02",
@@ -269,7 +269,7 @@
  },
  "i/cal-newport/": {
   "d": "2026-09-06",
-  "h": "31262c64eb9a7b43"
+  "h": "643e0e4ad40e538c"
  },
  "i/cal-newport/attention-residue/": {
   "d": "2026-08-30",
@@ -392,8 +392,8 @@
   "h": "af4459e0576f5467"
  },
  "i/csikszentmihalyi/": {
-  "d": "2026-09-01",
-  "h": "beaefd6ad6f9922d"
+  "d": "2026-09-06",
+  "h": "699bbb4cef606fb1"
  },
  "i/csikszentmihalyi/flow-channel/": {
   "d": "2026-08-31",
@@ -580,8 +580,8 @@
   "h": "61b68fde47c7899e"
  },
  "i/frankl/": {
-  "d": "2026-09-03",
-  "h": "df10e8f5dfe9ce93"
+  "d": "2026-09-06",
+  "h": "650c937c426ba889"
  },
  "i/frankl/happiness-ensues/": {
   "d": "2026-08-29",
@@ -901,7 +901,7 @@
  },
  "i/illich/": {
   "d": "2026-09-06",
-  "h": "bedc5d732a5de557"
+  "h": "e68cb016375c3e08"
  },
  "i/illich/effective-speed/": {
   "d": "2026-09-06",
@@ -1376,8 +1376,8 @@
   "h": "8ec28e7fe06f53df"
  },
  "i/naval/": {
-  "d": "2026-09-02",
-  "h": "948c0590c9cb37ba"
+  "d": "2026-09-06",
+  "h": "5ea3193069ff1563"
  },
  "i/naval/assets-while-you-sleep/": {
   "d": "2026-08-29",
@@ -1412,8 +1412,8 @@
   "h": "0549b4b9d46b3a26"
  },
  "i/ohno/": {
-  "d": "2026-09-02",
-  "h": "d5093ebf9a2d50ac"
+  "d": "2026-09-06",
+  "h": "b47e3f828f05375a"
  },
  "i/ohno/five-whys/": {
   "d": "2026-09-02",
@@ -1970,6 +1970,22 @@
  "i/wealth-of-nations/pin-factory/": {
   "d": "2026-08-29",
   "h": "0daa3f7081bfb870"
+ },
+ "i/weil/": {
+  "d": "2026-09-06",
+  "h": "2e141e26d3732426"
+ },
+ "i/weil/attention-is-emptying/": {
+  "d": "2026-09-06",
+  "h": "27d420c1fdc28278"
+ },
+ "i/weil/force-makes-things/": {
+  "d": "2026-09-06",
+  "h": "110587751234e7a5"
+ },
+ "i/weil/the-factory-year/": {
+  "d": "2026-09-06",
+  "h": "9ab4eafee505ff4c"
  },
  "i/why-nations-fail/": {
   "d": "2026-08-29",

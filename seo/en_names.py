@@ -137,6 +137,7 @@ NAMES = {
     "guns-germs-steel": ("Guns, Germs, and Steel", "How the world works"),
     "hayek": ("Friedrich Hayek", "How the world works"),
     "illich": ("Ivan Illich", "How the world works"),
+    "weil": ("Simone Weil", "Mind and feeling"),
     "old-regime": ("The Old Regime and the Revolution", "How the world works"),
     "records-of-the-grand-historian":
         ("Records of the Grand Historian", "How the world works"),

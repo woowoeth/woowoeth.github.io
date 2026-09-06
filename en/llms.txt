@@ -1,9 +1,9 @@
 # OurWord (OurWord)
 
-> 160 people and books on how the world actually works, across 2,600 years
+> 161 people and books on how the world actually works, across 2,600 years
 > See how people before you handled it.
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 160 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 161 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
 ## Read it
 
@@ -17,10 +17,10 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 ## Topics
 
 - [Modern](https://ourword.ai/en/t/modern/) — 61
-- [The industrial age](https://ourword.ai/en/t/the-industrial-age/) — 43
+- [The industrial age](https://ourword.ai/en/t/the-industrial-age/) — 44
+- [Mind and feeling](https://ourword.ai/en/t/mind-and-feeling/) — 20
 - [Power and organisation](https://ourword.ai/en/t/power-and-organisation/) — 20
 - [Pre-Qin and classical](https://ourword.ai/en/t/pre-qin-and-classical/) — 20
-- [Mind and feeling](https://ourword.ai/en/t/mind-and-feeling/) — 19
 - [Starting and building](https://ourword.ai/en/t/starting-and-building/) — 19
 - [Strategy and competition](https://ourword.ai/en/t/strategy-and-competition/) — 17
 - [Learning and growth](https://ourword.ai/en/t/learning-and-growth/) — 16
@@ -384,6 +384,9 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [Wang Yangming · The bandits inside](https://ourword.ai/en/i/wang-yangming/bandits-in-the-heart/): Wang Yangming · The bandits inside — The hardest battle is the interior one. He never lost a campaign. Why he said all of those were the easy ones.
 - [The Wealth of Nations · Not from benevolence](https://ourword.ai/en/i/wealth-of-nations/not-benevolence/): The Wealth of Nations · Not from benevolence — Aim at their interest. The most quoted sentence in economics is about dinner. Read closely, what it hands you is a protocol for asking.
 - [The Wealth of Nations · The pin factory](https://ourword.ai/en/i/wealth-of-nations/pin-factory/): The Wealth of Nations · The pin factory — What division of labour costs. The book opens in a small workshop. This is how the forty-eight thousand were counted, and what the same author says they cost.
+- [Simone Weil · Attention is emptying, not straining](https://ourword.ai/en/i/weil/attention-is-emptying/): Simone Weil · Attention is emptying, not straining — What you call concentrating is the opposite of it. Everyone treats attention as a muscle to be gripped harder. What is worth reading is why she says gripping is the wrong move.
+- [Simone Weil · The year she worked the factory floor](https://ourword.ai/en/i/weil/the-factory-year/): Simone Weil · The year she worked the factory floor — To know what a job does to people, do the job. There is no shortage of surveys of industrial work. What is worth reading is why she thought no survey could reach the number she wanted.
+- [Simone Weil · Force turns both sides into things](https://ourword.ai/en/i/weil/force-makes-things/): Simone Weil · Force turns both sides into things — The side holding it is being altered too. Reading a war usually means picking a side. What is worth reading is why she says the poem's real subject is neither of them.
 - [Why Nations Fail · The two Nogaleses](https://ourword.ai/en/i/why-nations-fail/two-nogales/): Why Nations Fail · The two Nogaleses — A natural controlled experiment. A fence cuts one city in two and income differs threefold. This is what that single case rules out.
 - [Why Nations Fail · Why elites block progress](https://ourword.ai/en/i/why-nations-fail/fear-of-creative-destruction/): Why Nations Fail · Why elites block progress — Not stupid, afraid. A tsar refused railways; an emperor refused factories. This is why the people blocking a technology are the ones who understand it.
 - [Norbert Wiener · He wrote to the union first](https://ourword.ai/en/i/wiener/wrote-to-the-union/): Norbert Wiener · He wrote to the union first — Before automation landed. Is there a move to make before a technology reaches you? What the man who built it did first.
@@ -430,7 +433,7 @@ Cite the individual page URL, not the homepage — each entry page is stable and
 - [AI Bubble Monitor](https://ourword.ai/ai/)
 - [Zouni](https://ourword.ai/zouni/)
 
-## Index (160 entrys)
+## Index (161 entrys)
 
 - [Albert Einstein](https://ourword.ai/en/i/einstein/): Albert Einstein (Germany · 1879–1955) — Imagination. The physicist, and the father of relativity — but the legacy that travels furthest is not a formula, it is a way of working.
 - [Alfred Adler](https://ourword.ai/en/i/adler/): Alfred Adler (1870–1937 · Austria) — Whose task is this. The founder of individual psychology, an early colleague of Freud's who broke with him over a disagreement about direction.
@@ -548,6 +551,7 @@ Cite the individual page URL, not the homepage — each entry page is stable and
 - [Shi Tiesheng](https://ourword.ai/en/i/shi-tiesheng/): Shi Tiesheng (1951–2010 · Beijing) — Illness is the job, writing the sideline. A writer. His legs stopped working at twenty-one, and for fifteen years after that he wheeled himself almost daily to…
 - [Sima Qian](https://ourword.ai/en/i/sima-qian/): Sima Qian (Han · c. 145–86 BC) — Disgraced, and finished the book. Court historian to Emperor Wu of Han, and the author of the Records of the Grand Historian, the founding work of Chinese history…
 - [Sima Yi](https://ourword.ai/en/i/sima-yi/): Sima Yi (Three Kingdoms · 179–251) — Patience. He outlasted four rulers of Wei and at seventy took control of the state in a single morning.
+- [Simone Weil](https://ourword.ai/en/i/weil/): Simone Weil (France · 1909-1943) — Attention. A French philosopher who qualified to teach philosophy at twenty-two and then spent a decade putting herself inside the situations she wanted to…
 - [Socrates](https://ourword.ai/en/i/socrates/): Socrates (Athens · 470–399 BC) — Knowing you do not know. He wrote nothing. Everything we have comes through other people's dialogues. He charged no fees, which made him the poorest professional…
 - [Steve Jobs](https://ourword.ai/en/i/jobs/): Steve Jobs (Contemporary · 1955–2011) — Subtract. Co-founded Apple, was pushed out of it, spent twelve years at NeXT and Pixar, came back and turned a company weeks from insolvency into the most…
 - [Strategies of the Warring States](https://ourword.ai/en/i/strategies-of-the-warring-states/): Strategies of the Warring States (Warring States · 453–221 BC) — Persuasion. A collection of the persuasions that travelling strategists used on the rulers of the warring kingdoms, recorded close to…
