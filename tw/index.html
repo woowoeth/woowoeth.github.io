@@ -534,7 +534,16 @@ function esc(s){return(s||'').replace(/&/g,'&amp;').replace(/"/g,'&quot;')}
 var _n=new Date(),WD='日一二三四五六';
 var day=Math.floor((_n.getTime()-_n.getTimezoneOffset()*60000)/864e5);
 /* ── 今日三樣 ── */
-var qIdx=day%D.QP.length, q1=D.QP[qIdx];
+/* 「今日一句」先給**最新入庫的那個人**的話，點「換一換」再進輪播。
+   原來開局是 day%D.QP.length，一個純輪播 —— 站裡每天真加一個人，而首頁
+   兩張寫著「今日」的卡都指向三百多條裡隨機的某一條，新加的那個要等輪到。
+   現在兩張卡都先給新內容，而「換一換」把變化留著 —— 想看別的按一下就有。
+   找不到（新條目還沒配上金句）就退回原來的輪播，不留空。 */
+var qIdx=(function(){
+  var newest=(D.E&&D.E.length)?D.E[D.E.length-1].n:'';
+  for(var i=0;i<D.QP.length;i++){ if(D.QP[i].who===newest) return i; }
+  return day%D.QP.length;
+})(), q1=D.QP[qIdx];
 function paintQuote(first){
   q1=D.QP[qIdx];
   /* 頁面上不顯示日期——它對讀者沒有用，只是讓卡片更花。

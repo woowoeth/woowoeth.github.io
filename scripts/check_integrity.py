@@ -96,9 +96,13 @@ if _new:
 #      `D.E[(day*7)%D.E.length]` —— 一个纯轮播，和今天加了谁毫无关系。
 #      它是新内容唯一的正门；退回轮播不报错、不溢出，只是每天新写的东西
 #      在首屏上没有任何位置。
-if "var p1=D.E[D.E.length-1];" not in open(
-        "index.html", encoding="utf-8", errors="ignore").read():
+_home_js = open("index.html", encoding="utf-8", errors="ignore").read()
+if "var p1=D.E[D.E.length-1];" not in _home_js:
     bad("今日一篇不是最新那条", "首页又变回轮播了（找不到 D.E[D.E.length-1]）")
+# 「今日一句」开局也要落在最新那个人身上（点「换一换」之后才进轮播）。
+# 退回 day%D.QP.length 不报错、不溢出，只是每天新写的东西在首屏又没了位置。
+if "if(D.QP[i].who===newest) return i;" not in _home_js:
+    bad("今日一句开局不是最新那条", "首页又变回纯轮播了")
 
 # 3) 每篇章节有专属分享图
 for ch in C.CHAPTERS:

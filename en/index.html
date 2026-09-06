@@ -534,7 +534,16 @@ function esc(s){return(s||'').replace(/&/g,'&amp;').replace(/"/g,'&quot;')}
 var _n=new Date(),WD='SMTWTFS';
 var day=Math.floor((_n.getTime()-_n.getTimezoneOffset()*60000)/864e5);
 /* ── 今日三样 ── */
-var qIdx=day%D.QP.length, q1=D.QP[qIdx];
+/* 「Line of the day」先给**最新入库的那个人**的话，点「Show another」再进轮播。
+   原来开局是 day%D.QP.length，一个纯轮播 —— 站里每天真加一个人，而Home
+   两张写着「今日」的卡都指向三百多条里随机的某一条，新加的那个要等轮到。
+   现在两张卡都先给新内容，而「Show another」把变化留着 —— 想看别的按一下就有。
+   找不到（新条目还没配上Lines to keep）就退回原来的轮播，不留空。 */
+var qIdx=(function(){
+  var newest=(D.E&&D.E.length)?D.E[D.E.length-1].n:'';
+  for(var i=0;i<D.QP.length;i++){ if(D.QP[i].who===newest) return i; }
+  return day%D.QP.length;
+})(), q1=D.QP[qIdx];
 function paintQuote(first){
   q1=D.QP[qIdx];
   /* 页面上不显示日期——它对读者没有用，只是让卡片更花。
