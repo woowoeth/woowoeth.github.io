@@ -84,6 +84,12 @@ except Exception:
 if _new:
     _home = open("index.html", encoding="utf-8", errors="ignore").read()
     _i = _home.find('"NC":[')
+    # HWXD（含 NC）自 2026-09-06 起外置到 assets/home-hwxd.js（首页瘦身），
+    # 首页里只剩一个 <script src>。这条判据第一版只看 index.html，
+    # 于是在数据外置之后对每一条新章节都报「没进最新」—— 自己的两处改动撞车了。
+    if _i < 0 and os.path.exists("assets/home-hwxd.js"):
+        _home = open("assets/home-hwxd.js", encoding="utf-8", errors="ignore").read()
+        _i = _home.find('"NC":[')
     _nc = _home[_i:_i + 6000] if _i > 0 else ""
     for _f in _new:
         _slug = os.path.basename(_f)[:-3].replace("_", "-")

@@ -684,6 +684,27 @@ def main():
     for _c in _batch_conflicts(base_scenes=[t for t, _g, _q in _S.SCENES]):
         bad.append("批次之间打架：%s" % _c)
 
+    # ⑰ 每一页英文条目/章节页的分享图必须是它自己的那一张。
+    #    此前英文 555 页全部共用站根 og.png —— 任何一页转发出去都长得一样。
+    #    页面正常、链接正常，只有转发出去才看得见：没有读者的那一层坏了没人报。
+    #    判据落在页面里写的 og:image 上：既不能是站根那张，文件也得真在。
+    en_i = os.path.join(ROOT, "en", "i")
+    if os.path.isdir(en_i):
+        n_pg = 0; bad_og = []
+        for dp, _dn, fn in os.walk(en_i):
+            if "index.html" not in fn:
+                continue
+            n_pg += 1
+            t = open(os.path.join(dp, "index.html"), encoding="utf-8", errors="ignore").read()
+            m = re.search(r'<meta property="og:image" content="([^"]*)"', t)
+            rel = os.path.relpath(dp, ROOT)
+            want = "https://ourword.ai/%s/og.png" % rel.replace(os.sep, "/")
+            if not m or m.group(1) != want or not os.path.exists(os.path.join(dp, "og.png")):
+                bad_og.append("%s → %s" % (rel, (m.group(1) if m else "(无 og:image)")[-46:]))
+        if bad_og:
+            bad.append("英文页分享图不是自己的：%d/%d 页（例：%s）—— 转发出去长得一样；"
+                       "先跑 scripts/gen_og_en.py 再 build" % (len(bad_og), n_pg, "；".join(bad_og[:2])))
+
     # ⑯ 英文章节页读完之后那一块不许缺。
     #    「同一件事，还有人这么问」+ 那句收束是这个站做共情的地方：先让读者
     #    看见还有别人在问同一件事，再谈转发。中文 376/377 页有、繁体

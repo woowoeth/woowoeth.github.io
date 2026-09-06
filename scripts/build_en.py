@@ -796,6 +796,52 @@ def add_en_closing():
     return n
 
 
+def patch_en_og():
+    """英文条目页 / 章节页的 og:image 指向各自的分享图。
+
+    中文那边靠 force_chapter_ui.patch_chapter_og / patch_entry_og 事后改写 ——
+    而那两个函数只走 `i/`。于是英文 555 页全部共用站根那一张 og.png：任何一页转发
+    出去都长得一样，读者在聊天窗里分不清转的是哪一篇。页面正常、链接正常、
+    只有转发出去才看得见（FAILURES 第 27、30 条的形状）。
+
+    今天第三次撞见「照着中文站的路径写死」这个形状（前两次：读完之后那一块、
+    窄屏收起侧栏）。写任何页面级的加工，先问一句：这个函数跑不跑 en/？
+
+    分享图由 scripts/gen_og_en.py 生成（静态资产，和 gen_og 一样不进构建链）；
+    这里只把**存在 og.png 的页**改过去，没有的仍回落站根图，不开天窗。
+    """
+    import re as _re
+    n = 0
+    base = os.path.join(OUT, "i")
+    if not os.path.isdir(base):
+        return 0
+    for slug in os.listdir(base):
+        d1 = os.path.join(base, slug)
+        if not os.path.isdir(d1):
+            continue
+        pages = [(os.path.join(d1, "index.html"), os.path.join(d1, "og.png"),
+                  "https://ourword.ai/en/i/%s/og.png" % slug)]
+        for k in os.listdir(d1):
+            d2 = os.path.join(d1, k)
+            if os.path.isdir(d2):
+                pages.append((os.path.join(d2, "index.html"), os.path.join(d2, "og.png"),
+                              "https://ourword.ai/en/i/%s/%s/og.png" % (slug, k)))
+        for page, png, url in pages:
+            if not (os.path.exists(page) and os.path.exists(png)):
+                continue
+            t = open(page, encoding="utf-8").read()
+            m = _re.search(r"<title>([^<|\u2014]+)", t)
+            alt = (m.group(1).strip() if m else "OurWord").replace("\\", "")
+            t2 = _re.sub(r'(<meta property="og:image" content=")[^"]*(")', lambda mm: mm.group(1) + url + mm.group(2), t)
+            t2 = _re.sub(r'(<meta property="og:image:alt" content=")[^"]*(")', lambda mm: mm.group(1) + alt + mm.group(2), t2)
+            t2 = _re.sub(r'(<meta name="twitter:image" content=")[^"]*(")', lambda mm: mm.group(1) + url + mm.group(2), t2)
+            if t2 != t:
+                open(page, "w", encoding="utf-8").write(t2)
+                n += 1
+    print("English og:image rewired: %d pages" % n)
+    return n
+
+
 def main():
     os.environ["HW_CHAPTERS"] = "chapters_en"
     os.environ["HW_SCENES"] = "hwx_scenes_en"
@@ -903,6 +949,14 @@ def main():
     # 收尾块要在 finish()（本地化 + 改写链接）之后加：它本来就是英文的，
     # 再过一遍界面串表只会把 "Send to a friend" 这类词撞进别的规则里。
     add_en_closing()
+    # 英文分享图在**这里**生成，不像中文那样在构建前单独跑：main() 开头的
+    # shutil.rmtree(OUT) 会把整个 en/ 清掉 —— 构建前画好的 544 张图全被删，
+    # patch_en_og 找不到文件、一页都没改（第一版就是这么"改写了 0 页"）。
+    # 放在页面渲染之后、改写 og:image 之前，每次构建自己出图，没有顺序可以错。
+    import subprocess as _sp
+    _sp.run([sys.executable, os.path.join(HERE, "gen_og_en.py")], check=False)
+    # 分享图指向各自那张 —— 要在 finish() 之后：finish 会改写链接，别让它把这里的绝对地址再改一遍。
+    patch_en_og()
 
     # 去重必须在**本地化之后**：llms.txt 开头是「英文自述 + 中文自述」两段，
     # 翻译之前它们一中一英、不重复；翻完才变成一字不差的两段。放在翻译前跑

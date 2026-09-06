@@ -649,6 +649,24 @@ def _yours_gone():
 
 
 ENCHAP = os.path.join(ROOT, "en", "i", "bezos", "day-one", "index.html")
+def _en_og_default():
+    """把一页英文章节页的 og:image 改回站根那张 —— 转发出去和别的页长得一样。
+
+    页面照常渲染、链接照常通，只有转发出去才看得见。这条闸的判据落在
+    页面里写的 og:image 上，所以注入也落在那里。
+    """
+    def go():
+        import re as _re
+        t = read(ENCHAP)
+        if 'og:image" content="https://ourword.ai/en/i/' not in t:
+            return None
+        write(ENCHAP, _re.sub(r'(<meta property="og:image" content=")[^"]*(")',
+                              r'\g<1>https://ourword.ai/og.png\g<2>', t, count=1))
+        return ENCHAP
+
+    return go
+
+
 ENCSS = os.path.join(ROOT, "assets", "hw-en.css")
 CHAPCSS = os.path.join(ROOT, "assets", "hw-chapter.css")
 
@@ -1088,6 +1106,8 @@ CASES = [
      "黏在一起"),
     ("英文站·读完之后那块没了", "check_en.py", ENCHAP, _en_closing(),
      "还有人这么问"),
+    ("英文站·分享图不是自己的", "check_en.py", ENCHAP, _en_og_default(),
+     "分享图不是自己的"),
     ("窄屏·侧栏没收起来", "check_mobile.py", ENCSS_MOB, _mobile_side_shown(),
      "露出了章内目录"),
     ("窄屏·读者说不了话", "check_mobile.py", CHATJS, _yours_gone(),

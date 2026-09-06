@@ -78,6 +78,7 @@ python3 scripts/check_batch.py bNN
 
 ```bash
 python3 scripts/gen_og.py         # 分享图，必须在 build_all 之前
+# 英文分享图不用单独跑：build_en 会在清空并重建 en/ 之后自己出图（scripts/gen_og_en.py），check_en ⑰ 守着
 python3 scripts/build_all.py      # 十步，末尾会给资源盖内容哈希
 python3 scripts/gate.py           # 十八道闸
 python3 scripts/gate_selftest.py  # 反向验：注入缺陷必须被拦下
