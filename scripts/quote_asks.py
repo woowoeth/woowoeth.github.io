@@ -398,6 +398,11 @@ QUOTE_ASKS = {
     "zhu-yuanzhang/delay-the-title": "别人都在抢先，我要不要慢一步。",
     "zhuge-liang/executing-ma-su": "该罚的是我最看重的那个人。",
     "zhuge-liang/longzhong-plan": "我看不出下一步棋该往哪走。",
+    # 尼尔·波斯曼
+    "postman/ecological-change":
+        "我只是多装了一个工具，怎么全变了。",
+    "postman/faustian-bargain":
+        "这工具省了谁的事，我说不清。",
     # 伊万·伊里奇
     "illich/two-watersheds":
         "\u5b83\u5f53\u521d\u660e\u660e\u7701\u4e8b\uff0c\u6211\u73b0\u5728\u8bf4\u4e0d\u6e05\u4e86\u3002",

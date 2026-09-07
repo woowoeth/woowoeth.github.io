@@ -6,6 +6,7 @@ import unicodedata
 SLUGS = {
     "孙子兵法": "sun-tzu",
     "伊万·伊里奇": "illich",
+    "尼尔·波斯曼": "postman",
     "西蒙娜·薇依": "weil",
     "玛丽亚·康妮科娃": "konnikova",
     "格兰诺维特": "granovetter",

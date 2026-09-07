@@ -1,11 +1,11 @@
 # OurWord (人类世界生存法则)
 
-> 161 people and books on how the world actually works, across 2,600 years
+> 162 people and books on how the world actually works, across 2,600 years
 > 遇到事了，看看以前的人怎么处理
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 161 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 162 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
-一个关于「世界到底怎么运转」的知识库：战略、财富、权力、人性、创业，取自 161 位人物与典籍，跨越 2600 年。每一条都写清楚这个人真正留下的那一个想法、背后的故事、拆开的分则与例子，以及今天怎么用。
+一个关于「世界到底怎么运转」的知识库：战略、财富、权力、人性、创业，取自 162 位人物与典籍，跨越 2600 年。每一条都写清楚这个人真正留下的那一个想法、背后的故事、拆开的分则与例子，以及今天怎么用。
 
 ## Read it
 
@@ -19,7 +19,7 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 ## Topics
 
 - [现代](https://ourword.ai/t/modern/) — 58
-- [工业时代](https://ourword.ai/t/industrial-age/) — 47
+- [工业时代](https://ourword.ai/t/industrial-age/) — 48
 - [心智与情绪](https://ourword.ai/t/mind/) — 21
 - [先秦与古典时代](https://ourword.ai/t/classical-era/) — 20
 - [权力与组织](https://ourword.ai/t/power/) — 20
@@ -28,9 +28,9 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 - [财富与风险](https://ourword.ai/t/wealth/) — 16
 - [学习与成长](https://ourword.ai/t/learning/) — 15
 - [识人与相处](https://ourword.ai/t/people/) — 14
+- [世界如何运转](https://ourword.ai/t/world/) — 14
 - [家庭与关系](https://ourword.ai/t/family/) — 13
 - [身心与生活](https://ourword.ai/t/living/) — 13
-- [世界如何运转](https://ourword.ai/t/world/) — 13
 - [近世](https://ourword.ai/t/early-modern/) — 12
 - [秦汉至魏晋](https://ourword.ai/t/han-wei/) — 12
 - [中古](https://ourword.ai/t/medieval/) — 12
@@ -305,6 +305,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [埃丝特·佩雷尔 · 不是次数少，是没在场](https://ourword.ai/i/perel/quality-not-frequency/): 埃丝特·佩雷尔 · 不是次数少，是没在场——人在，注意力不在。都住在一起，为什么还是像异地。这一篇要回答的是：佩雷尔说要数的不是时间。
 - [卡尔·波普尔 · 能不能被推翻](https://ourword.ai/i/popper/falsifiability/): 卡尔·波普尔 · 能不能被推翻——解释一切等于没解释。占星术和物理学都能解释现象。这一篇要回答的是：凭什么说后者才是科学。
 - [卡尔·波普尔 · 去找反例，别再找支持](https://ourword.ai/i/popper/seek-refutation/): 卡尔·波普尔 · 去找反例，别再找支持——一个反例胜过一百个例证。再多的白天鹅也证明不了天鹅都是白的。这一篇要回答的是：那该收集什么。
+- [尼尔·波斯曼 · 不是加了一样东西](https://ourword.ai/i/postman/ecological-change/): 尼尔·波斯曼 · 不是加了一样东西——新技术换掉的是整个环境。都说这只是多了一件工具，用不用随你。这一篇要回答的是：他为什么说没有「只是」。
+- [尼尔·波斯曼 · 浮士德的交易](https://ourword.ai/i/postman/faustian-bargain/): 尼尔·波斯曼 · 浮士德的交易——给的和拿走的不落在同一批人身上。一样新工具摆在面前，问题不是「它好不好」。这一篇要回答的是：该问的两句话是什么。
 - [蒲松龄 · 考了四十年](https://ourword.ai/i/pu-songling/forty-years-of-failing/): 蒲松龄 · 考了四十年——一直没成，也没有转折点。有一种失败没有决定性的一仗。这一篇要回答的是：这种日子怎么过下去。
 - [蒲松龄 · 没成的是主业，成的是副业](https://ourword.ai/i/pu-songling/the-side-thing/): 蒲松龄 · 没成的是主业，成的是副业——而他自己不知道。他一辈子想成的没成，顺手做的成了。这一篇要回答的是：这件事能不能安排。
 - [蒲松龄 · 在路边收故事](https://ourword.ai/i/pu-songling/collecting-at-the-roadside/): 蒲松龄 · 在路边收故事——把没人管的时间用起来。四十年坐馆的碎时间，他拿来做什么。这一篇要回答的是：素材是怎么攒出来的。
@@ -439,7 +441,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [AI Bubble Monitor / AI 泡沫检测仪](https://ourword.ai/ai/)
 - [Zouni / 走你](https://ourword.ai/zouni/)
 
-## Index (161 entrys)
+## Index (162 entrys)
 
 - [BJ·福格](https://ourword.ai/i/bj-fogg/): BJ·福格（2019年·斯坦福行为设计实验室）——小到不会失败。斯坦福行为设计实验室创始人，研究行为如何被设计出来。他给出一个公式：行为发生需要动机、能力、提示三者同时到位。多数人失败在只调动机——靠决心和自我激励——而动机天然起伏，靠它维持的习惯必然崩。他的主张相反：把行为缩到小得不需要动机，然后挂在一个已有的动作后面。
 - [C.S.刘易斯](https://ourword.ai/i/cs-lewis/): C.S.刘易斯（1898-1963年·英国牛津）——妻子死后几个月的日记。作家，牛津和剑桥的教授，写过《纳尼亚传奇》和大量劝人信仰的书。五十八岁结婚，妻子乔伊四年后因癌症去世。之后几个月他在四本练习簿上记自己的状态，后来用笔名出版，就是《卿卿如晤》。收他是因为「重要的人走了」那六个问题，原来靠弗兰克尔和苏轼在答——一个是集中营的幸存者，一个是被贬的官员
@@ -492,6 +494,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [安迪·格鲁夫](https://ourword.ai/i/grove/): 安迪·格鲁夫（美国·1936-2016）——战略转折点。英特尔第三号员工、第四任 CEO。接手时英特尔是一家被日本人打到墙角的内存公司，卸任时是全球最大的芯片公司，市值增长约 30 倍。他真正的贡献不是造芯片，是把「一家已经赢了的公司如何不死」写成了方法论——《只有偏执狂才能生存》讲战略转折点，《高产出管理》是今天所有 OKR 与一对
 - [宫本武藏](https://ourword.ai/i/musashi/): 宫本武藏（日本·1584-1645）——无二。日本历史上最著名的剑客，一生参与超过60场决斗，从无败绩。13岁第一次决斗，60岁写下《五轮书》。他不只是武艺高超，而是把剑道升华为一套完整的人生哲学——「兵法之道，即万事万物之道」。他影响了日本此后四百年的武士文化、商业哲学和管理思想，被称为「剑圣」。他和李小龙跨越三百年，说的
 - [富兰克林](https://ourword.ai/i/franklin/): 富兰克林（美·1706-1790年）——十三美德·复利人生。本杰明·富兰克林，人类历史上罕见的「全栈人生」：印刷工出身，17岁身无分文闯费城，42岁靠印刷生意实现财务自由后退休，转身成为科学家（电学）、发明家（避雷针、双焦眼镜）、作家（《穷理查年鉴》）、外交家（促成法国援美）、开国元勋（唯一在独立宣言、美法同盟、巴黎和约、宪法四大文件上都
+- [尼尔·波斯曼](https://ourword.ai/i/postman/): 尼尔·波斯曼（美国·1931-2003）——代价。美国媒介批评家，纽约大学教授，1985年的《娱乐至死》和1992年的《技术垄断》是他最硬的两本。他一辈子只反对一件事：把技术当成中性的工具——用不用随你，好坏看怎么用。他管技术叫浮士德式的交易：给你一样东西的同时拿走一样东西，而给和拿从不落在同一批人身上；并且它从不只是被加进世界
 - [尼采](https://ourword.ai/i/nietzsche/): 尼采（德国·1844-1900）——超越。最被误读的哲学家。纳粹用他的「超人」理论为种族主义背书——但他本人极度厌恶反犹太主义，和姐姐决裂正是因为这个原因。他真正说的是：人能够超越「群众道德」成为「创造自己价值的人」。他10岁丧父，身体极度虚弱，几乎一生在病痛中度过，最终44岁精神崩溃——却在此之前写下了西方哲学史上最有
 - [巴菲特](https://ourword.ai/i/buffett/): 巴菲特（当代·1930-）——护城河。奥马哈的神奇老人，用60年把10000美元变成了一个千亿美元帝国。他的方法：找到有护城河的好公司，以合理价格买入，然后长期持有。他最大的竞争优势不是选股技能，而是情绪控制。
 - [布琳·布朗](https://ourword.ai/i/brene-brown/): 布琳·布朗（2010年·休斯顿大学）——羞耻与内疚。社会工作研究者，花二十年做一件别人不愿碰的事：把「羞耻」变成可以研究的对象，几千份访谈。她最有用的贡献不是鼓励，是一个区分——内疚是「我做了一件坏事」，羞耻是「我是个坏人」。前者指向行为，后者指向人本身；同一件错事，两种说法带来相反的后果。（注意：她关于羞耻与成瘾、抑郁、攻击相关

@@ -1,9 +1,11 @@
 # OurWord (OurWord)
 
-> 161 people and books on how the world actually works, across 2,600 years
+> 162 people and books on how the world actually works, across 2,600 years
 > See how people before you handled it.
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 161 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 162 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 162 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
 ## Read it
 
@@ -17,15 +19,15 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 ## Topics
 
 - [Modern](https://ourword.ai/en/t/modern/) — 61
-- [The industrial age](https://ourword.ai/en/t/the-industrial-age/) — 44
+- [The industrial age](https://ourword.ai/en/t/the-industrial-age/) — 45
 - [Mind and feeling](https://ourword.ai/en/t/mind-and-feeling/) — 20
 - [Power and organisation](https://ourword.ai/en/t/power-and-organisation/) — 20
 - [Pre-Qin and classical](https://ourword.ai/en/t/pre-qin-and-classical/) — 20
 - [Starting and building](https://ourword.ai/en/t/starting-and-building/) — 19
 - [Strategy and competition](https://ourword.ai/en/t/strategy-and-competition/) — 17
 - [Learning and growth](https://ourword.ai/en/t/learning-and-growth/) — 16
+- [How the world works](https://ourword.ai/en/t/how-the-world-works/) — 15
 - [Money and risk](https://ourword.ai/en/t/money-and-risk/) — 15
-- [How the world works](https://ourword.ai/en/t/how-the-world-works/) — 14
 - [Qin, Han and the Six Dynasties](https://ourword.ai/en/t/qin-han-and-the-six-dynasties/) — 14
 - [Reading people](https://ourword.ai/en/t/reading-people/) — 14
 - [Body and daily life](https://ourword.ai/en/t/body-and-daily-life/) — 13
@@ -299,6 +301,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [Esther Perel · It isn't how often. It's not being there](https://ourword.ai/en/i/perel/quality-not-frequency/): Esther Perel · It isn't how often. It's not being there — Present in the room, absent in attention. You live in the same place. So why does it feel like long distance? What she says to count instead.
 - [Karl Popper · Can it be shown wrong](https://ourword.ai/en/i/popper/falsifiability/): Karl Popper · Can it be shown wrong — A theory that explains everything explains nothing. Astrology explains events and so does physics. This page is about the line Popper drew between them.
 - [Karl Popper · Go looking for the counter-example](https://ourword.ai/en/i/popper/seek-refutation/): Karl Popper · Go looking for the counter-example — One black swan beats a hundred white ones. No number of white swans settles the question. This page is about what you should be collecting instead.
+- [Neil Postman · It does not get added](https://ourword.ai/en/i/postman/ecological-change/): Neil Postman · It does not get added — A new technology replaces the environment. Everyone says it is one more tool and using it is up to you. Why he says there is no such thing as one more.
+- [Neil Postman · The Faustian bargain](https://ourword.ai/en/i/postman/faustian-bargain/): Neil Postman · The Faustian bargain — What it gives and what it takes land on different people. A new tool is in front of you. The question is not whether it is good, but which two questions to ask about it.
 - [Pu Songling · Forty years of sitting the exam](https://ourword.ai/en/i/pu-songling/forty-years-of-failing/): Pu Songling · Forty years of sitting the exam — Never passing, and never a turning point. There's a kind of failure with no decisive battle in it. How you get through that kind of life.
 - [Pu Songling · The main thing failed. The side thing didn't](https://ourword.ai/en/i/pu-songling/the-side-thing/): Pu Songling · The main thing failed. The side thing didn't — And he never knew. What he spent his life trying to do never happened. What he did on the side did. Can that be arranged?
 - [Pu Songling · Collecting stories by the road](https://ourword.ai/en/i/pu-songling/collecting-at-the-roadside/): Pu Songling · Collecting stories by the road — Using the hours nobody wants. Forty years of a tutor's scattered hours. What he did with them, and how the material accumulated.
@@ -433,7 +437,7 @@ Cite the individual page URL, not the homepage — each entry page is stable and
 - [AI Bubble Monitor](https://ourword.ai/ai/)
 - [Zouni](https://ourword.ai/zouni/)
 
-## Index (161 entrys)
+## Index (162 entrys)
 
 - [Albert Einstein](https://ourword.ai/en/i/einstein/): Albert Einstein (Germany · 1879–1955) — Imagination. The physicist, and the father of relativity — but the legacy that travels furthest is not a formula, it is a way of working.
 - [Alfred Adler](https://ourword.ai/en/i/adler/): Alfred Adler (1870–1937 · Austria) — Whose task is this. The founder of individual psychology, an early colleague of Freud's who broke with him over a disagreement about direction.
@@ -527,6 +531,7 @@ Cite the individual page URL, not the homepage — each entry page is stable and
 - [Napoleon](https://ourword.ai/en/i/napoleon/): Napoleon (France · 1769–1821) — Concentration. A poor Corsican who at twenty was not even a Frenchman by birth, emperor ten years later, and dead alone on Saint Helena ten years after that at…
 - [Nassim Taleb](https://ourword.ai/en/i/taleb/): Nassim Taleb (1960– · Lebanon and New York) — Antifragile. Lebanese, an options trader before he was a theorist of risk. He watched the Lebanese civil war, the 1987 crash and the 2008 crisis at close…
 - [Naval Ravikant](https://ourword.ai/en/i/naval/): Naval Ravikant (Contemporary · 1974–) — Leverage. Co-founder of AngelList and an early investor in Twitter, Uber and Notion. In 2018 he posted a numbered thread called how to get rich without getting…
+- [Neil Postman](https://ourword.ai/en/i/postman/): Neil Postman (United States · 1931-2003) — Cost. An American media critic who taught at New York University; Amusing Ourselves to Death (1985) and Technopoly (1992) are the two hard ones.
 - [Nelson Mandela](https://ourword.ai/en/i/mandela/): Nelson Mandela (South Africa · 1918–2013) — Reconciliation. Twenty-seven years in prison, and no revenge on the way out. He chose reconciliation and built the rainbow nation instead, which is the…
 - [Nietzsche](https://ourword.ai/en/i/nietzsche/): Nietzsche (1844–1900 · Germany) — Overcoming. The most misread philosopher there is. The Nazis used his overman to underwrite racism, while he himself loathed antisemitism and broke with his own…
 - [Nonviolent Communication](https://ourword.ai/en/i/nonviolent-communication/): Nonviolent Communication (1999 · Marshall Rosenberg) — Observation first. Rosenberg was a clinical psychologist who spent his working life mediating in race conflicts, divorces, prisons and war zones.

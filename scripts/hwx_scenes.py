@@ -702,6 +702,8 @@ SCENES = [
      [("weil", "the-factory-year")]),
 ]),
 ("出得多了人却空了", "AI 来了", [
+    ("东西没少做，标准又涨了。",
+     [("postman", "ecological-change"), ("excellent-sheep", "hurdles")]),
     ("它当初明明省事，我现在说不清了。",
      [("illich", "two-watersheds")]),
     ("东西出得比以前多，我却更空。",
@@ -720,6 +722,8 @@ SCENES = [
      [("technological-revolutions", "bubble-in-the-script"), ("crowd", "assert-repeat-contaminate")]),
 ]),
 ("要不要现在跳进去", "AI 来了", [
+    ("大家都在上这个，我要不要跟。",
+     [("postman", "faustian-bargain"), ("duan-yongping", "dare-to-be-last")]),
     ("我该现在冲，还是再等等。",
      [("duan-yongping", "dare-to-be-last"), ("fan-li", "stock-the-opposite")]),
     ("这块现在太小，我进不进。",
@@ -730,6 +734,10 @@ SCENES = [
 ("日子被工具占满", "AI 来了", [
     ("装了一堆省时间的工具，日子反而更满。",
      [("illich", "effective-speed")]),
+    ("我只是多装了一个工具，怎么全变了。",
+     [("postman", "ecological-change"), ("illich", "two-watersheds")]),
+    ("这工具省了谁的事，我说不清。",
+     [("postman", "faustian-bargain"), ("illich", "effective-speed")]),
     ("我一天被消息切得七零八落。",
      [("cal-newport", "attention-residue"), ("finite-and-infinite-games", "two-kinds")]),
     ("我停不下来，怕一停就落后。",

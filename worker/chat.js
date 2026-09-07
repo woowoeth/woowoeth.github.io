@@ -29,6 +29,13 @@ const MODEL = 'deepseek-ai/DeepSeek-V3.2';
 const UPSTREAM = 'https://api.siliconflow.cn/v1/chat/completions';
 
 // 与本地代理逐字一致。改一处就要改两处。
+/* 部署指纹。改了这个文件就把日期往后挪一格。
+   为什么要有：这个 Worker 不在 CI 里，靠人去 Cloudflare 后台粘贴部署 ——
+   仓库里改好、线上没换，页面一切正常，只有答案不对。2026-09-04 写好的
+   英文提示词在线上躺了三天没生效，就是这么发现不了的（英文站一直用中文答）。
+   GET ?build 把它吐出来，scripts/check_chat_lang.py 拿它跟仓库比对。 */
+const BUILD = '2026-09-07';
+
 const SYSTEM = `你是「人类世界生存法则」这个知识库的问答助手。读者会描述自己此刻遇到的事。
 
 铁规矩：
@@ -121,6 +128,9 @@ const SYSTEM_EN = `You answer questions for Human World Rules, a library of what
 people before us worked out. Readers describe the thing they are in right now.
 
 Hard rules:
+
+0. **Write in English.** The reader is on the English site. Even if some of the
+   material I give you is in Chinese, your answer is in English.
 
 1. Answer only from the material I give you. If it isn't there, say so. Don't
    invent, and don't bring in people, books or numbers from outside it.
@@ -385,6 +395,9 @@ export default {
        不从页面上调，所以不该被白名单挡住；改由 HW_LOG_KEY 把门。 */
     if (request.method === 'GET') {
       const u = new URL(request.url);
+      if (u.searchParams.has('build')) {
+        return json({ build: BUILD }, 200, null);      // 谁都能查，只吐一个日期
+      }
       if (u.searchParams.has('log')) {
         if (!env.HW_LOG_KEY || u.searchParams.get('key') !== env.HW_LOG_KEY) {
           return json({ error: 'Forbidden' }, 403, null);
