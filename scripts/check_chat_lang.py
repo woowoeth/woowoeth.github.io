@@ -71,13 +71,20 @@ def main():
                    " Edit code 重贴 worker/chat.js 再 Deploy" % (got, want))
     if "--live" in sys.argv and not bad:
         try:
-            a = str(post(ep, {"q": "My manager keeps changing priorities and I feel exhausted. What should I do?",
-                              "ctx": [], "cid": "hw-check", "pass": 0, "lang": "en"}).get("a") or "")
+            r = post(ep, {"q": "My manager keeps changing priorities and I feel exhausted. What should I do?",
+                          "ctx": [], "cid": "hw-check", "pass": 0, "lang": "en"})
+            # 字段名是 answer。第一版写成 .get("a") —— 永远读到空串、永远数出 0 个汉字、
+            # 永远报绿。**空答案和英文答案在那个判据眼里一模一样**，
+            # 这是「量了代理指标，没量结果」的老毛病（FAILURES 第 23、29 条）。
+            a = str(r.get("answer") or r.get("a") or "")
         except Exception as e:
             a = ""
             bad.append("英文实测请求失败：%s" % e)
+        else:
+            if len(a.strip()) < 40:
+                bad.append("英文站答了个空（%d 字）—— 不是语言的问题，是根本没答上来：%r" % (len(a), a[:80]))
         zh = sum(1 for c in a if "一" <= c <= "鿿")
-        if a and zh > 5:
+        if len(a.strip()) >= 40 and zh > 5:
             bad.append("英文站的答案里有 %d 个汉字 —— 读者问英文、拿到中文。前 60 字：%s" % (zh, a[:60]))
     if bad:
         print("\n问答有问题 %d 处：" % len(bad))

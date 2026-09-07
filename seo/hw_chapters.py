@@ -375,14 +375,21 @@ def _chapter_page(ch, idx):
     )
     share = hw_theme._share_btn(title, page_url, "%s\n\n%s\n\n%s" % (ch["n"], ch["dek"], page_url))
     prev_html, next_html = _sib(ch, idx)
+    # 头部那个 .mast-links 是空的：里面原来有两颗药丸「回<书名>」「首页」，
+    # 2026-09-07 删了（店主：「不觉得太啰嗦、太占地方了么」）。
+    # 它们和正下方那行面包屑「首页 / <书名> / <章节名>」一字不差，链接也是同两个。
+    # 中文那排是五个字加两个字，不显眼；英文变成 Back to The Art of Worldly
+    # Wisdom，33 个字符，把语言切换和夜间模式挤到边上 —— **又一次照汉字定的尺寸**
+    # （CONTENT.md 第五节第 ③ 条）。证据是现成的：600px 以下这排本来就
+    # display:none，手机上一直只有面包屑，没人因此找不着路。
+    # 容器留着不删 —— 语言切换和月亮挂在它上面（hwx_lang.py 的 host 候选第一个）。
+    # 说明只能写在这儿，不能写进下面那段 HTML：注释也会随页面发出去，
+    # 英文站「不许有中文」那道闸会当场抓住 345 页。
     body = """
 <header class="mast wrap">
   <div class="mast-top">
     %s
-    <div class="mast-links">
-      <a class="pill" href="%s">回%s</a>
-      <a class="pill" href="%s/">首页</a>
-    </div>
+    <div class="mast-links"></div>
   </div>
 </header>
 <div class="wrap">
@@ -414,7 +421,7 @@ def _chapter_page(ch, idx):
 </div>
 """ % (
         hw_theme.brand_html(SITE + "/", SLOGAN),
-        esc(parent_url), esc(parent), esc(SITE),
+        # 药丸那两个链接的参数（parent_url / parent / SITE）跟着模板一起删了
         esc(SITE), esc(parent_url), esc(parent), esc(ch["n"]),
         esc(parent), esc(ch["n"]), esc(ch["w"]), esc(ch["src"]), rich(ch["dek"]),
         esc(parent), esc(ch["w"]), share,

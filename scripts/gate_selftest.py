@@ -1053,6 +1053,30 @@ def _en_js():
     return go
 
 
+WORKERJS = os.path.join(ROOT, "worker", "chat.js")
+
+
+def _worker_stale():
+    """把 worker/chat.js 的 BUILD 往前挪一天 —— 等价于「仓库改了、线上没重贴」。
+
+    这一条和别的注入不一样：它注入的是**仓库**，而闸比对的是**线上**。
+    改完 BUILD，本地这份就和线上跑的那份对不上了，闸必须当场说出来 ——
+    这正是 2026-09-04 到 09-07 那三天的处境（FAILURES #33）。
+    没网时闸自己跳过、返回 0，这条注入也就抓不到；那不是漏，
+    是那道闸在没网时本来就不该说话。
+    """
+    def go():
+        import re as _re
+        t = read(WORKERJS)
+        m = _re.search(r"const BUILD = '([^']+)'", t)
+        if not m:
+            return None
+        write(WORKERJS, t.replace(m.group(0), "const BUILD = '1970-01-01'", 1))
+        return WORKERJS
+
+    return go
+
+
 CASES = [
     # (分支名, 门禁命令, 被改的文件, 注入函数, 必须报出的理由)
     ("章节·dek 过短",   "check_chapters.py", CHAP, _sub_field("dek", _short(3)),  "dek"),
@@ -1123,6 +1147,8 @@ CASES = [
      os.path.join(ROOT, "index.html"), _home_inlined(), "还是内联的"),
     ("资源版本·改了没盖章", "check_assets.py", ENTRYCSS, _asset_stale(),
      "老用户会一直拿到缓存里那份旧的"),
+    ("问答·线上跑的是旧那份", "check_chat_lang.py", WORKERJS, _worker_stale(),
+     "不是仓库里这份"),
 ]
 
 
