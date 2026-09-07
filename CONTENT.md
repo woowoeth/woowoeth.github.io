@@ -77,14 +77,34 @@ python3 scripts/check_batch.py bNN
 ## 四、跑完这四条再提交，**次序不能换**
 
 ```bash
-python3 scripts/gen_og.py         # 分享图，必须在 build_all 之前
+python3 scripts/build_all.py      # 第一遍：把新条目的页面目录建出来
+python3 scripts/gen_og.py         # 分享图，必须在**最后一遍** build_all 之前
 # 英文分享图不用单独跑：build_en 会在清空并重建 en/ 之后自己出图（scripts/gen_og_en.py），check_en ⑰ 守着
-python3 scripts/build_all.py      # 十步，末尾会给资源盖内容哈希
+python3 scripts/build_all.py      # 第二遍：build_tw 这次才复制得到 og.png
 python3 scripts/gate.py           # 十八道闸
 python3 scripts/gate_selftest.py  # 反向验：注入缺陷必须被拦下
 ```
 
-**`gen_og.py` 必须排在 `build_all.py` 前面。** 分享图不在构建链里，
+**加新人的时候 `build_all.py` 要跑两遍，`gen_og.py` 夹在中间。**
+原来这里写的是「`gen_og.py` 必须排在 `build_all.py` 前面」，对老条目成立，
+对**新条目一定不成立**：`gen_og.py` 只给已经存在的页面目录出图，而
+`i/<新 slug>/<章>/` 是第一遍构建才建出来的。所以照旧次序跑，第一句话
+打印的是
+
+```
+跳过（页面目录不存在）: …/i/<slug>/<章>
+```
+
+三张图一张都没出，而它 exit 0，看着像跑成功了。
+（2026-09-07 波斯曼这一条踩到：`gen_og.py` 排在前面，三张图全跳过。
+日更每天都是新 slug，所以这不是特例，是每天的正常次序。）
+
+第二遍**不必跑整条链**：og.png 只影响 `build_tw`（它从简体站复制二进制），
+所以第二遍跑 `scripts/build_tw.py` + `scripts/stamp_assets.py` 就够。
+整条链一遍约 15 分钟，两遍半小时；这样能省掉十几分钟。
+（`stamp_assets.py` 不能省 —— 它扫的是最终产物，繁体站重转之后要重新盖章。）
+
+**为什么最后一遍 `build_all.py` 之前必须有图。** 分享图不在构建链里，
 所以直觉上它「什么时候补都行」—— 不行。`build_tw.py` 是**从简体站复制**
 二进制文件来铺繁体站的，跑到它的时候 `i/<slug>/<章>/og.png` 还不存在，
 它就什么都不复制；简体站和英文站都正常，只有繁体站那几页的 og.png 缺，

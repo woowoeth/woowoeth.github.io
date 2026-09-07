@@ -58,8 +58,14 @@ def main():
     bad = []
     try:
         got = (get(ep + "/?build") or {}).get("build", "")
+    except urllib.error.HTTPError as e:
+        # 404/405 = 线上那份还不认识 ?build，也就是旧版 —— 这是要报的
+        got = "旧版（?build 打不开：%s）" % e.code
     except Exception as e:
-        got = "?(%s)" % type(e).__name__
+        # 断网、DNS、超时：闸门不该因为没网就红。说一句，跳过。
+        print("！问答那道闸跳过了：连不上 %s（%s）—— 有网时再跑一次"
+              % (ep, type(e).__name__))
+        return 0
     if got != want:
         bad.append("线上跑的不是仓库里这份 chat.js：线上 %r，仓库 %r —— 去 Cloudflare 后台"
                    " Edit code 重贴 worker/chat.js 再 Deploy" % (got, want))

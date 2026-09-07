@@ -42,6 +42,12 @@ CHECKS = [
     ("GEO 同步", "check_geo_sync.py", "章节都进了各语言的 llms/feed"),
     ("三语对应", "check_parity.py", "中文有的条目和章节，英文繁体都要有"),
     ("资源版本", "check_assets.py", "版本号等于文件内容哈希，老用户不吃缓存"),
+    # 唯一一道要联网的闸。它只做一次 GET（不花 API）：比对线上 Worker 的部署指纹
+    # 和 worker/chat.js 里的 BUILD。断网时它自己跳过 —— 闸门必须能离线跑完。
+    # 为什么值得占一道闸：这段代码不在构建链里、不在 CI 里，靠人去 Cloudflare 后台
+    # 粘贴部署。2026-09-04 写好的英文提示词在线上躺了三天没生效，英文站的读者
+    # 问英文、拿到中文答案，而站里十八道闸全绿（FAILURES #33）。
+    ("问答部署", "check_chat_lang.py", "线上 Worker 跑的是不是仓库里这份 chat.js"),
 ]
 
 
