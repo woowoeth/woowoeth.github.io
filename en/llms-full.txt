@@ -1,7 +1,7 @@
-# OurWord — 162 people and books on how the world actually works, across 2,600 years
+# OurWord — 163 people and books on how the world actually works, across 2,600 years
 # OurWord — See how people before you handled it.
 # https://ourword.ai/en/
-# Full corpus, plain text. 162 entrys.
+# Full corpus, plain text. 163 entrys.
 
 ========================================================================
 ## Albert Einstein
@@ -39,6 +39,46 @@ Richard Feynman — Both refuse to fool themselves; one starts from a picture in
 
 ### Further
 Elon Musk Bruce Lee Charlie Munger Socrates Peter Thiel Richard Feynman Karl Popper
+
+========================================================================
+## Albert O. Hirschman
+URL: https://ourword.ai/en/i/hirschman/
+Tags: Power and organisation, The industrial age, Voice
+
+Albert O. Hirschman (United States · 1915-2012) — Voice. A German-born American economist. He left Berlin in 1933, fought in Spain in 1936, spent 1940 in Marseille forging papers and finding mountain routes for refugees, went…
+
+### Q: What did this one leave behind?
+A German-born American economist. He left Berlin in 1933, fought in Spain in 1936, spent 1940 in Marseille forging papers and finding mountain routes for refugees, went to Colombia as an economic adviser in 1952, and ended at the Institute for Advanced Study in Princeton. One thing annoyed him for a lifetime: reducing a tangled situation to a tidy law. Exit, Voice, and Loyalty (1970) is the famous one. Faced with something getting worse, people can do two things — walk out, or speak up. Economics studies only the first, while the second is what most people are actually doing, and the easiest for an institution to lose without noticing. The Rhetoric of Reaction (1991) does something else: rather than argue with what objectors say, it counts the shapes their sentences take, and finds three. He called himself a possibilist — not predicting what must happen, only insisting that things have more room in them than a theory allows.
+
+### Q: What actually happened?
+Marseille, summer 1940. Hirschman is twenty-five, working out of hotel rooms on forged papers, mountain routes and black-market francs. Varian Fry, an American, has arrived in France with a rescue list; Hirschman is the one who runs the errands, scouts the passes and changes the money, and Fry gives him the code name Beamish. Hannah Arendt and Marc Chagall got out along that line. By the end of the year he crossed the Pyrenees himself and reached the United States by way of Spain and Portugal. Thirty years later, when he wrote down the word exit, he knew what it weighed.
+
+### The parts · Dissatisfaction has two ways out
+Something is getting worse and you can do one of two things. Exit: switch, resign, stop buying. Voice: stay and say what is wrong. Economics studies the first, politics the second, and you meet both in one week. e.g. The food got worse. You can find another place, or call the owner over. Most people quietly find another place.
+
+### The parts · The easier the exit, the fewer the complaints
+The two doors compete for the same people, and the first to leave are the fussiest. Once they are gone nobody left behind complains, and the thing declining has lost its one signal that it is declining. e.g. Your most demanding customers stop renewing and stop complaining. On the report it is a few missing names.
+
+### The parts · Loyalty buys the time voice needs
+Loyalty is not obedience. It raises the cost of leaving so you stay while there is still time to change something. Where you cannot leave and nobody listens, what is left is not loyalty but capture. e.g. Whoever has been there eight years is least willing to go and most likely to speak, if speaking is taken seriously.
+
+### The parts · A no comes in three shapes
+The Rhetoric of Reaction counts them: perversity, your remedy will worsen the very thing; futility, nothing will shift either way; jeopardy, the cost is something we already hold. The first two contradict each other and one mouth says both. e.g. When a plan is refused, name the shape first, then ask how much. Two of the three stop there.
+
+### The parts · The hiding hand
+Watching development projects in 1967 he saw two errors cancelling: people underrate the difficulties and equally underrate the solutions they will later invent. Not seeing how hard it was is what let the thing get started at all. e.g. The job you had no idea would be that hard is the one you finished. The one whose costs you knew fully has not begun.
+
+### Q: How do I use it today?
+Take something you are weighing up as stay or go and put the leaving sum aside. Write three lines: the one time you genuinely raised it, who you raised it with, and what came back. If any line is blank, the choice in front of you is not exit against voice, it is exit against putting up with it. Then add a fourth line — if I said it tomorrow, what is the worst that happens — and make it concrete. Written out, it is usually smaller than it was in your head.
+
+### Lines to keep
+The easier a place is to leave, the less anyone says. The first to go are the ones who would have complained. The case against a change comes back in only three shapes. Creativity always comes as a surprise to us.
+
+### Q: What should I read alongside?
+Friedrich Hayek — Hayek argues a reform endangers a freedom we already hold, which is the third shape Hirschman names; Hirschman does not dispute it, he asks for a quantity someone can check. Andy Grove — Both ask how bad news travels upward: Grove wants the people sounding alarms brought into the room, Hirschman asks whether they resigned some time ago.
+
+### Further
+Hannah Arendt Andy Grove Peter Drucker Thinking in Systems The Old Regime and the Revolution
 
 ========================================================================
 ## Alfred Adler
@@ -146,10 +186,10 @@ Once a quarter, run the new chief executive test on yourself. If somebody landed
 Only the paranoid survive. If we got kicked out, what would a new chief executive do? Let bad news travel faster than good news. Snow melts first at the periphery. A strategic inflection point looks at first like a bad quarter.
 
 ### Q: What should I read alongside?
-Steve Jobs — Jobs disrupted other people on instinct and taste; Grove disrupted himself on process and data. The same act performed by two temperaments. Jensen Huang — Both walked out of the business that was making the money. Grove left memory under fire; Huang left mobile chips while they were still growing. Peter Drucker — Grove solves execution, Drucker solves choice. One asks how a thing gets through the organisation, the other asks whether it is worth doing at all.
+Steve Jobs — Jobs disrupted other people on instinct and taste; Grove disrupted himself on process and data. The same act performed by two temperaments. Jensen Huang — Both walked out of the business that was making the money. Grove left memory under fire; Huang left mobile chips while they were still growing. Peter Drucker — Grove solves execution, Drucker solves choice. One asks how a thing gets through the organisation, the other asks whether it is worth doing at all. Albert O. Hirschman — Both ask how bad news travels upward: Grove wants the people sounding alarms brought into the room, Hirschman asks whether they resigned some time ago.
 
 ### Further
-Jensen Huang Peter Drucker Steve Jobs Jeff Bezos Duan Yongping Xunzi The Innovator's Dilemma Konosuke Matsushita
+Jensen Huang Peter Drucker Steve Jobs Jeff Bezos Duan Yongping Xunzi The Innovator's Dilemma Konosuke Matsushita Albert O. Hirschman
 
 ========================================================================
 ## Arlie Hochschild
@@ -1303,7 +1343,7 @@ Before you write the annual plan, ask what share of the knowledge it depends on 
 The curious task of economics is to demonstrate how little men really know. The price system is a mechanism for communicating information. Nobody holds all the knowledge that making the plan would require.
 
 ### Q: What should I read alongside?
-The Wealth of Nations — Smith explains how the division of labour makes brute effort rich; Hayek explains how the information gets back afterwards. Nassim Taleb — Taleb is about not being able to foresee the shock, Hayek about not being able to centralise the knowledge — one handles randomness, the other handles the pretence of knowing.
+The Wealth of Nations — Smith explains how the division of labour makes brute effort rich; Hayek explains how the information gets back afterwards. Nassim Taleb — Taleb is about not being able to foresee the shock, Hayek about not being able to centralise the knowledge — one handles randomness, the other handles the pretence of knowing. Albert O. Hirschman — Hayek argues a reform endangers a freedom we already hold, which is the third shape Hirschman names; Hirschman does not dispute it, he asks for a quantity someone can check.
 
 ### Further
 The Wealth of Nations Nassim Taleb Zhang Yiming Ray Dalio
@@ -1750,7 +1790,7 @@ Not done out of wickedness. Done without ever having thought. The crowd is large
 Han Feizi — Han Feizi asks how to build a system that works without relying on goodness; Arendt asks where obedience inside such a system ends up. One writes from the designer's chair, one from the operator's. Garry Kasparov — Both answer the tool did my thinking for me. Kasparov puts the human back where the machines disagree; Arendt says handing over judgement is a state in itself, whoever takes it.
 
 ### Further
-Han Feizi Machiavelli Garry Kasparov The Analects Simone Weil
+Han Feizi Machiavelli Garry Kasparov The Analects Simone Weil Albert O. Hirschman
 
 ========================================================================
 ## Haruki Murakami
@@ -3699,7 +3739,7 @@ There is only one valid definition of business purpose: to create a customer. No
 Andy Grove — Grove solves execution, Drucker solves choice. One asks how a thing gets through the organisation, the other asks whether it is worth doing at all. Paul Graham — Graham writes about the first hundred users and doing things that do not scale; Drucker writes about what happens after scale, when the activity outlives the reason for it. Taiichi Ohno — Drucker decides which thing to do; Ohno decides how a step is kept from going wrong. One sets the direction at a desk, the other sets the standard on the floor. Ivan Illich — Both ask what comes after efficiency — do the right things, or put a ceiling on the tool.
 
 ### Further
-Andy Grove Jeff Bezos Taiichi Ohno Paul Graham Ivan Illich
+Andy Grove Jeff Bezos Taiichi Ohno Paul Graham Ivan Illich Albert O. Hirschman
 
 ========================================================================
 ## Peter Lynch
@@ -5047,7 +5087,7 @@ The most dangerous moment for a bad government is when it begins to reform. The 
 Zhang Juzheng — Two ways for a reformer to die: Zhang Juzheng touched interests and was settled with after his death; Tocqueville describes the quieter one, where the reform itself manufactures the force that overturns it. The Crowd — Le Bon explains why a crowd loses control once the revolution is under way; Tocqueville explains why it starts at the moment it least should — one is mechanism, the other timing. Why Nations Fail — Tocqueville recorded one extractive order collapsing in detail; this book supplies the model of why it had to.
 
 ### Further
-The Comprehensive Mirror Zhang Juzheng Shang Yang The Crowd Sapiens Guns, Germs, and Steel Why Nations Fail
+The Comprehensive Mirror Zhang Juzheng Shang Yang The Crowd Sapiens Guns, Germs, and Steel Why Nations Fail Albert O. Hirschman
 
 ========================================================================
 ## The Sovereign Individual
@@ -5161,7 +5201,7 @@ A system's behaviour cannot be read off its parts. People find the leverage poin
 The Innovator's Dilemma — Two accounts of good people producing bad outcomes: Christensen gives one mechanism in detail, Meadows gives the whole catalogue. A case study against a pathology. Thinking, Fast and Slow — Kahneman repairs the individual head, Meadows repairs the surrounding structure. The same bad decision, charged to two different accounts. Guns, Germs, and Steel — Axes, diffusion, density, feedback — Diamond is writing a system-dynamics case study that runs for thirteen thousand years.
 
 ### Further
-The Innovator's Dilemma Thinking, Fast and Slow Charlie Munger Norbert Wiener Ray Dalio Finite and Infinite Games Guns, Germs, and Steel Technological Revolutions The Wealth of Nations Ivan Illich
+The Innovator's Dilemma Thinking, Fast and Slow Charlie Munger Norbert Wiener Ray Dalio Finite and Infinite Games Guns, Germs, and Steel Technological Revolutions The Wealth of Nations Ivan Illich Albert O. Hirschman
 
 ========================================================================
 ## Thinking, Fast and Slow
@@ -10588,6 +10628,80 @@ Where it goes wrong: using orders grow, they are not made to block every reform 
 The curious task of economics is to demonstrate how little men really know.
 How little they know about what they imagine they can design.
 The extended order our civilisation rests on was designed by nobody.
+
+========================================================================
+## Albert O. Hirschman · Walk out, or speak up
+URL: https://ourword.ai/en/i/hirschman/exit-voice-loyalty/
+Source: Exit, Voice, and Loyalty (Harvard University Press, 1970)
+Tags: Deep read, Albert O. Hirschman, The easier the exit, the fewer the complaints
+
+Unhappy with something, people count two options: leave, or put up with it. Where the third one went.
+
+### Q: What actually happened?
+Hirschman watched the railways in Nigeria. They were slow and they lost freight, and lorries took the traffic away. The textbook says competition of that kind forces the railway to improve. What happened was the reverse: the shippers who cared most about arriving on time left first, and they were exactly the people who would have complained, made noise and forced the railway to fix itself. The deficit was covered from public funds, so departures cost nothing, and the railway went quietly on declining.
+
+### The parts · Dissatisfaction has two ways out
+Faced with something getting worse, people do one of two things. Exit: switch supplier, resign, stop buying. Voice: stay put, say what is wrong, try to get it changed. Economics studies the first, politics the second, and you meet both in one week.
+e.g. The food got worse. You can find another place, or call the owner over. Most people quietly find another place.
+
+### The parts · An easy exit kills voice first
+The two doors compete for the same people. The better the exit, the less anyone bothers with voice, and the first to go are the fussiest, so nobody left behind complains. The thing declining loses its one signal that it is declining.
+e.g. Your most demanding customers stop renewing and stop complaining. On the report it is a few missing names.
+
+### The parts · One kind of monopoly needs you to leave
+He called it the lazy monopolist. It does not fear a competitor, it wants one: the difficult customers are taken off its hands and it keeps the quiet ones, so life is easier than it was with no competition at all.
+e.g. A private school opens nearby, the parents who care most move their children, and the state school gets peaceful.
+
+### The parts · Loyalty holds you there long enough to speak
+Loyalty is not obedience. It raises the cost of leaving, so you stay while there is still time to change something, which is what makes voice worth using. Its dark side: where you cannot leave and nobody listens, what is left is capture.
+e.g. Whoever has been there eight years is least willing to go and most likely to speak, provided speaking is taken seriously.
+
+### Q: How do I use it today?
+Where you are: a place that disappoints you, and the only sum you keep redoing is stay or go.
+Ask first: have I actually used voice? If nobody would listen, what is the case for staying?
+Where it goes wrong: read as an argument never to leave. He wanted both tools available, not voice ranked above exit.
+
+### Lines to keep
+The easier a place is to leave, the less anyone says.
+The first to go are the ones who would have complained.
+Competition does not always improve things. It can remove the complaints.
+
+========================================================================
+## Albert O. Hirschman · The three sentences that turn you down
+URL: https://ourword.ai/en/i/hirschman/rhetoric-of-reaction/
+Source: The Rhetoric of Reaction: Perversity, Futility, Jeopardy (Harvard University Press, 1991)
+Tags: Deep read, Albert O. Hirschman, Perversity, futility, jeopardy
+
+Your plan was refused and all you heard was a no. That no arrives in only three shapes.
+
+### Q: What actually happened?
+Writing The Rhetoric of Reaction, Hirschman was looking at one thing. For two hundred years, every time somebody proposed widening something — personal rights in the eighteenth century, the vote in the nineteenth, social provision in the twentieth — the objectors changed, the countries changed, the subject changed, and the arguments did not. So he stopped arguing with the content and started counting the shapes: the case against a change comes back as perversity, futility or jeopardy, and almost never as anything else.
+
+### The parts · Perversity
+The first shape: the very thing you want to improve is what your remedy will damage. Its force sits in that word very — not a side effect, an outright reversal. It sounds profound because it claims to understand causation better than you do.
+e.g. Adding a review step will only make people less willing to propose things. Possibly true, possibly just clever-sounding.
+
+### The parts · Futility
+The second shape: change it or leave it, the result is the same, because whatever drives this sits deeper. It contradicts the first — one says your remedy has drastic consequences, the other that it has none — and the same person often uses both.
+e.g. A new process will not help, the people are the same people. Notice it never says what would help.
+
+### The parts · Jeopardy
+The third shape: what you want may well be good, but the cost is something we already hold. This one is hardest to answer because it is often true. The word endanger, though, is usually stretched, and arrives without a quantity anyone can check.
+e.g. This will hurt our existing customers. How many, which ones, and how long before it is earned back, goes unsaid.
+
+### The parts · He turned on his own side too
+Near the end he sets out the reforming side's three mechanical sentences: the danger is imminent, do this and the rest improves alongside it, history is with us. He was not handing anyone a weapon. He wanted both sides using fewer ready-made lines.
+e.g. It will be too late if we wait, and it will only make things worse, are one laziness pointing two ways.
+
+### Q: How do I use it today?
+Where you are: the plan was refused, you heard one no, and you know neither what to change nor whether to raise it again.
+Ask first: which of the three shapes was that? Will the person saying it give a number anyone can check?
+Where it goes wrong: used to label whoever disagrees. Naming the shape is for pulling the talk back to specifics, not for refusing to listen.
+
+### Lines to keep
+The case against a change comes back in only three shapes.
+Perversity and futility contradict each other. One mouth says both.
+Ask how much, and two of the three shapes stop.
 
 ========================================================================
 ## Arlie Hochschild · The second shift

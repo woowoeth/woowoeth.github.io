@@ -667,7 +667,13 @@ def write_home(items):
                   "const D=" + json.dumps(D, ensure_ascii=False) + ";", "const D")
     s = _sub_once(s, r"var HWXD=\{.*?\};",
                   "var HWXD=" + hwx_en.payload() + ";", "HWXD")
-    s = _sub_once(s, r"const ERAS=\[.*?\n\];", EN_ERAS, "ERAS")
+    # 终止符不能假定成 `\n];`。2026-09-11 去掉「品味」入口那一笔顺手把
+    # ERAS 末行和 `];` 并成了一行（`…max:2100}];`），于是 `.*?\n\];`
+    # 一路吃到下一个换行加中括号的地方 —— 也就是 DQ_DROP 的结尾，
+    # 把中间的 HW_SLUGS / DQX 一起吞掉，下一步替换 HW_SLUGS 找不到，
+    # 整条链停在第 6 步。数组里不会出现分号，所以判据落在分号上，
+    # 不落在别人随时会改的换行上。
+    s = _sub_once(s, r"const ERAS=\[[^;]*\];", EN_ERAS, "ERAS")
 
     # 名字 → slug。中文站那份按中文名做键，英文页一个也对不上，
     # 而它是「延伸/对照着读」里的名字变成链接的唯一途径。

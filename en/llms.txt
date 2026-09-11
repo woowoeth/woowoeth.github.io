@@ -1,9 +1,9 @@
 # OurWord (OurWord)
 
-> 162 people and books on how the world actually works, across 2,600 years
+> 163 people and books on how the world actually works, across 2,600 years
 > See how people before you handled it.
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 162 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 163 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
 ## Read it
 
@@ -17,9 +17,9 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 ## Topics
 
 - [Modern](https://ourword.ai/en/t/modern/) — 61
-- [The industrial age](https://ourword.ai/en/t/the-industrial-age/) — 45
+- [The industrial age](https://ourword.ai/en/t/the-industrial-age/) — 46
+- [Power and organisation](https://ourword.ai/en/t/power-and-organisation/) — 21
 - [Mind and feeling](https://ourword.ai/en/t/mind-and-feeling/) — 20
-- [Power and organisation](https://ourword.ai/en/t/power-and-organisation/) — 20
 - [Pre-Qin and classical](https://ourword.ai/en/t/pre-qin-and-classical/) — 20
 - [Starting and building](https://ourword.ai/en/t/starting-and-building/) — 19
 - [Strategy and competition](https://ourword.ai/en/t/strategy-and-competition/) — 17
@@ -179,6 +179,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [Harvard Study of Adult Development · Who can you call at 2am](https://ourword.ai/en/i/harvard-study/someone-to-count-on/): Harvard Study of Adult Development · Who can you call at 2am — The count doesn't matter, the catch does. The shortest way to measure your relationships. Why this question is so hard to fool.
 - [Friedrich Hayek · Knowledge is dispersed](https://ourword.ai/en/i/hayek/knowledge-is-dispersed/): Friedrich Hayek · Knowledge is dispersed — Nobody can hold the whole picture. A paper of a dozen pages, later voted one of the century's most important in economics. What assumption it destroyed.
 - [Friedrich Hayek · The fatal conceit](https://ourword.ai/en/i/hayek/fatal-conceit/): Friedrich Hayek · The fatal conceit — The curious task of economics. He defined his own discipline's task as pouring cold water, not forecasting. Why the cleverest people need that water most.
+- [Albert O. Hirschman · Walk out, or speak up](https://ourword.ai/en/i/hirschman/exit-voice-loyalty/): Albert O. Hirschman · Walk out, or speak up — The easier the exit, the fewer the complaints. Unhappy with something, people count two options: leave, or put up with it. Where the third one went.
+- [Albert O. Hirschman · The three sentences that turn you down](https://ourword.ai/en/i/hirschman/rhetoric-of-reaction/): Albert O. Hirschman · The three sentences that turn you down — Perversity, futility, jeopardy. Your plan was refused and all you heard was a no. That no arrives in only three shapes.
 - [Arlie Hochschild · The second shift](https://ourword.ai/en/i/hochschild/second-shift/): Arlie Hochschild · The second shift — The shift that starts when work ends. Housework and care have never appeared on a timesheet. Who ends up paying when nobody counts them.
 - [Arlie Hochschild · Emotional labour](https://ourword.ai/en/i/hochschild/emotional-labor/): Arlie Hochschild · Emotional labour — That smile isn't hers. Some jobs ask you not only to do the work but to feel the right thing. What that requirement costs.
 - [The Last Hot-Metal Edition · A craft that ended in one night](https://ourword.ai/en/i/hot-metal/one-night/): The Last Hot-Metal Edition · A craft that ended in one night — 1 July 1978. What it looks like when an entire trade disappears at once. What happened to the compositors the morning after.
@@ -434,9 +436,10 @@ Cite the individual page URL, not the homepage — each entry page is stable and
 - [AI Bubble Monitor](https://ourword.ai/ai/)
 - [Zouni](https://ourword.ai/zouni/)
 
-## Index (162 entrys)
+## Index (163 entrys)
 
 - [Albert Einstein](https://ourword.ai/en/i/einstein/): Albert Einstein (Germany · 1879–1955) — Imagination. The physicist, and the father of relativity — but the legacy that travels furthest is not a formula, it is a way of working.
+- [Albert O. Hirschman](https://ourword.ai/en/i/hirschman/): Albert O. Hirschman (United States · 1915-2012) — Voice. A German-born American economist. He left Berlin in 1933, fought in Spain in 1936, spent 1940 in Marseille forging papers and finding mountain…
 - [Alfred Adler](https://ourword.ai/en/i/adler/): Alfred Adler (1870–1937 · Austria) — Whose task is this. The founder of individual psychology, an early colleague of Freud's who broke with him over a disagreement about direction.
 - [Anders Ericsson](https://ourword.ai/en/i/ericsson/): Anders Ericsson (1993 · the violin study) — Method over hours. A psychologist who spent a career on how the best in any field actually got there. His best-known research reached the public as the…
 - [Andy Grove](https://ourword.ai/en/i/grove/): Andy Grove (1936–2016 · Budapest to Intel) — Strategic inflection point. Intel's third employee and its fourth chief executive. He took over a memory company that Japanese competitors had driven into…

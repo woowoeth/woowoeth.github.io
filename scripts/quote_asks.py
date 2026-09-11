@@ -398,6 +398,11 @@ QUOTE_ASKS = {
     "zhu-yuanzhang/delay-the-title": "别人都在抢先，我要不要慢一步。",
     "zhuge-liang/executing-ma-su": "该罚的是我最看重的那个人。",
     "zhuge-liang/longzhong-plan": "我看不出下一步棋该往哪走。",
+    # 阿尔伯特·赫希曼
+    "hirschman/exit-voice-loyalty":
+        "我不满意，可我只会走人。",
+    "hirschman/rhetoric-of-reaction":
+        "他说了不，我听不出理由。",
     # 尼尔·波斯曼
     "postman/ecological-change":
         "我只是多装了一个工具，怎么全变了。",

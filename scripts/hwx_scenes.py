@@ -96,6 +96,8 @@ SCENES = [
      [("boyd", "to-be-or-to-do"), ("thiel", "the-contrarian-question")]),
     ("我的方案被否了，还要不要争。",
      [("su-yu", "daring-to-state"), ("li-shimin", "the-first-debate")]),
+    ("他说了不，我听不出理由。",
+     [("hirschman", "rhetoric-of-reaction")]),
 ]),
 ("全票通过", "要做决定", [
     ("大家都这么做，这就算理由了吗。",
@@ -364,6 +366,8 @@ SCENES = [
      [("chris-voss", "thats-right"), ("liu-bang", "changing-mid-sentence")]),
     ("身边人说的都是我爱听的。",
      [("strategies-of-the-warring-states", "three-mirrors"), ("li-shimin", "boat-and-water")]),
+    ("能提意见的那几个，都走了。",
+     [("hirschman", "exit-voice-loyalty")]),
 ]),
 ("队伍出不了活", "带人", [
     ("中间就没有一个人能喊停。",
@@ -877,6 +881,8 @@ SCENES = [
      [("naval", "productize-yourself"), ("buffett", "circle-of-competence")]),
     ("平台给我流量，可人不是我的。",
      [("kevin-kelly", "direct-relationship"), ("naval", "assets-while-you-sleep")]),
+    ("我不满意，可我只会走人。",
+     [("hirschman", "exit-voice-loyalty")]),
 ]),
 ("信错了人", "跟人打交道", [
     ("我信错了人，现在不敢再信谁。",
@@ -1341,6 +1347,8 @@ SCENES = [
      [("tao-te-ching", "wu-wei"), ("frankl", "happiness-ensues")]),
     ("起点就不一样，我使劲有用吗？",
      [("xunzi", "constant-heaven"), ("mandela", "rivonia")]),
+    ("他们说改了也没用，我就不提了。",
+     [("hirschman", "rhetoric-of-reaction")]),
 ]),
 ("一直没成", "使不上劲", [
     ("说了好几年，还是没人听。",

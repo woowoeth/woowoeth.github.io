@@ -442,8 +442,10 @@ def main():
                       "https://ourword.ai/tw/sitemap.xml",
                       "https://ourword.ai/podcast/sitemap.xml",
                       "https://ourword.ai/podcast/tw/sitemap.xml",
-                      "https://ourword.ai/skill/sitemap.xml",
-                      "https://ourword.ai/skill/tw/sitemap.xml",
+                      # /skill/（品味）2026-09-11 关停，入口全部撤掉。
+                      # 提交 5b703d76f 手改掉了 robots.txt 里那两行，但**没改这里** ——
+                      # 下一次构建（当天的日更）原样把它们写了回去。产物是生成的，
+                      # 改产物不算数：判据在写它的那个脚本上。
                   ],
                   extra_urls=hw_chapters.chapter_urls())
     rep["chapters"] = hw_chapters.write_chapters()

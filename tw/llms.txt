@@ -1,11 +1,11 @@
 # OurWord (人類世界生存法則)
 
-> 162 people and books on how the world actually works, across 2,600 years
+> 163 people and books on how the world actually works, across 2,600 years
 > 遇到事了，看看以前的人怎麼處理
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 162 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 163 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
-一個關於「世界到底怎麼運轉」的知識庫：戰略、財富、權力、人性、創業，取自 162 位人物與典籍，跨越 2600 年。每一條都寫清楚這個人真正留下的那一個想法、背後的故事、拆開的分則與例子，以及今天怎麼用。
+一個關於「世界到底怎麼運轉」的知識庫：戰略、財富、權力、人性、創業，取自 163 位人物與典籍，跨越 2600 年。每一條都寫清楚這個人真正留下的那一個想法、背後的故事、拆開的分則與例子，以及今天怎麼用。
 
 ## Read it
 
@@ -19,10 +19,10 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 ## Topics
 
 - [現代](https://ourword.ai/tw/t/modern/) — 58
-- [工業時代](https://ourword.ai/tw/t/industrial-age/) — 48
+- [工業時代](https://ourword.ai/tw/t/industrial-age/) — 49
 - [心智與情緒](https://ourword.ai/tw/t/mind/) — 21
+- [權力與組織](https://ourword.ai/tw/t/power/) — 21
 - [先秦與古典時代](https://ourword.ai/tw/t/classical-era/) — 20
-- [權力與組織](https://ourword.ai/tw/t/power/) — 20
 - [創業與產品](https://ourword.ai/tw/t/startups/) — 19
 - [謀略與競爭](https://ourword.ai/tw/t/strategy/) — 17
 - [財富與風險](https://ourword.ai/tw/t/wealth/) — 16
@@ -185,6 +185,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [哈佛成人發展研究 · 半夜兩點能打給誰](https://ourword.ai/tw/i/harvard-study/someone-to-count-on/): 哈佛成人發展研究 · 半夜兩點能打給誰——數量不算，托底的算。衡量一個人的關係狀況，最短的問法是哪一句。這一篇要回答的是：它為什麼騙不了人。
 - [哈耶克 · 知識是分散的](https://ourword.ai/tw/i/hayek/knowledge-is-dispersed/): 哈耶克 · 知識是分散的——沒人拿得到全圖。一篇十幾頁的論文，後來被評為百年最重要的經濟學文章之一。這一篇要回答的是：它到底推翻了什麼假設。
 - [哈耶克 · 致命的自負](https://ourword.ai/tw/i/hayek/fatal-conceit/): 哈耶克 · 致命的自負——經濟學的奇特任務。他給自己學科定的任務不是預測，是潑冷水。這一篇要回答的是：為什麼越聰明的人越需要這盆水。
+- [阿爾伯特·赫希曼 · 走人，還是開口](https://ourword.ai/tw/i/hirschman/exit-voice-loyalty/): 阿爾伯特·赫希曼 · 走人，還是開口——退出的門越好走，開口的人越少。不滿意的時候，人只數得出兩個選項：走，或者忍。這一篇要回答的是，第三個選項去哪了。
+- [阿爾伯特·赫希曼 · 否決你的那三句話](https://ourword.ai/tw/i/hirschman/rhetoric-of-reaction/): 阿爾伯特·赫希曼 · 否決你的那三句話——適得其反、無濟於事、危及既有。方案被斃了，你只聽見一個「不」。這一篇要回答的是，那個「不」其實只有三種形狀。
 - [阿莉·霍克希爾德 · 第二班](https://ourword.ai/tw/i/hochschild/second-shift/): 阿莉·霍克希爾德 · 第二班——下班之後還有一班。家務和照料從來不進工時表。這一篇要回答的是：不記賬會記到誰身上。
 - [阿莉·霍克希爾德 · 情感勞動](https://ourword.ai/tw/i/hochschild/emotional-labor/): 阿莉·霍克希爾德 · 情感勞動——那個笑不是你的笑。有些工作要求你不只做事，還要感覺對。這一篇要回答的是：那份要求要收什麼代價。
 - [最後一版 · 一門手藝在一夜之間結束](https://ourword.ai/tw/i/hot-metal/one-night/): 最後一版 · 一門手藝在一夜之間結束——1978 年 7 月 1 日。一門手藝整體消失時是什麼樣子。這一篇要回答的是：紐約時報那一夜之後，排字工人身上發生了什麼。
@@ -440,7 +442,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [AI Bubble Monitor / AI 泡沫檢測儀](https://ourword.ai/ai/)
 - [Zouni / 走你](https://ourword.ai/zouni/)
 
-## Index (162 entrys)
+## Index (163 entrys)
 
 - [BJ·福格](https://ourword.ai/tw/i/bj-fogg/): BJ·福格（2019年·斯坦福行為設計實驗室）——小到不會失敗。斯坦福行為設計實驗室創始人，研究行為如何被設計出來。他給出一個公式：行為發生需要動機、能力、提示三者同時到位。多數人失敗在只調動機——靠決心和自我激勵——而動機天然起伏，靠它維持的習慣必然崩。他的主張相反：把行為縮到小得不需要動機，然後掛在一個已有的動作後面。
 - [C.S.劉易斯](https://ourword.ai/tw/i/cs-lewis/): C.S.劉易斯（1898-1963年·英國牛津）——妻子死後幾個月的日記。作家，牛津和劍橋的教授，寫過《納尼亞傳奇》和大量勸人信仰的書。五十八歲結婚，妻子喬伊四年後因癌症去世。之後幾個月他在四本練習簿上記自己的狀態，後來用筆名出版，就是《卿卿如晤》。收他是因為「重要的人走了」那六個問題，原來靠弗蘭克爾和蘇軾在答——一個是集中營的倖存者，一個是被貶的官員
@@ -589,6 +591,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [道德經](https://ourword.ai/tw/i/tao-te-ching/): 道德經（春秋·前500年前後）——損。老子五千言，是中國哲學的減法源頭。與儒家「為學日益」相對，老子說「為道日損」——不斷減掉，直到無為，然後無不為。道德經在西方被翻譯次數僅次於聖經。
 - [郭嘉](https://ourword.ai/tw/i/guo-jia/): 郭嘉（三國·170-207）——奇。曹操最倚重的謀士，被曹操稱為「吾之奇佐」。他27歲投奔曹操，此後11年，幾乎每一個關鍵決策背後都有他的身影。官渡之戰前的「十勝十敗論」、袁紹死後的「急攻不如緩圖」、北征烏桓時的「虛國遠征」……他的判斷每次都精準到令人驚歎。唯一的遺憾：38歲病逝，沒有活到赤壁之戰。曹操在赤壁大敗後
 - [郭子儀](https://ourword.ai/tw/i/guo-ziyi/): 郭子儀（唐·697-781年）——功高不震主。唐代名將，平安史之亂、退吐蕃、撫回紇，兩次收復長安，史稱「再造王室」。但他真正的傳奇不在戰場：歷玄宗、肅宗、代宗、德宗四朝，功蓋天下而主不疑，位極人臣而眾不嫉，富貴壽考八十五歲善終，子孫滿堂。《舊唐書》的這句評語，兩千年裡幾乎找不到第二個人配得上。韓信、岳飛、年羹堯都倒在「功高震
+- [阿爾伯特·赫希曼](https://ourword.ai/tw/i/hirschman/): 阿爾伯特·赫希曼（美國·1915-2012）——開口。德裔美國經濟學家。1933年離開柏林，1936年在西班牙打過仗，1940年在馬賽給逃亡者辦證件找路線，1952年去哥倫比亞做經濟顧問，晚年在普林斯頓高等研究院。他一輩子跟一件事過不去：把複雜的局面化約成一條整齊的定律。最有名的是1970年的《退出、呼籲與忠誠》——面對一樣正在變壞
 - [阿德勒](https://ourword.ai/tw/i/adler/): 阿德勒（1870-1937年·奧地利）——課題分離。個體心理學的創立者，弗洛伊德早期的同事，後來因為根本分歧決裂。弗洛伊德說人被過去決定，阿德勒說人被目的牽引——同一段童年，有人拿它當傷疤，有人拿它當藉口，有人拿它當燃料，差別不在經歷本身，在這個人想用它達成什麼。他還給出了人際關係裡最鋒利的一把刀：分清這件事的後果最終由誰承擔，就
 - [阿莉·霍克希爾德](https://ourword.ai/tw/i/hochschild/): 阿莉·霍克希爾德（1983年·加州大學伯克利）——看不見的勞動。社會學家，兩次給一件看不見的勞動起了名字。1983年《被管理的心》提出「情感勞動」：有些工作不只要求你做對，還要求你顯示出規定的情緒——空乘要熱情，催收員要冷硬；她的觀察是異化，那個笑不是「她的」笑，久了連自己真正的感受也認不出。1989年《第二班》提出：有工作的女性下班後還有一
 - [陶淵明](https://ourword.ai/tw/i/tao-yuanming/): 陶淵明（365-427年·潯陽）——辭官八十天，窮一輩子。詩人。四十一歲當彭澤縣令，幹了八十多天，郡裡派督郵下來要他穿戴整齊去迎，他說「吾不能為五斗米折腰向鄉里小人」，當天解印走了，之後再沒出來做官。辭官後是真窮：四十四歲家裡失火房子燒光，有一年斷了糧出門去討，回來寫了一首《乞食》。收他是因為「人生轉彎」那一組蘇軾一人答了十個——庫裡缺

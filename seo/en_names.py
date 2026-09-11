@@ -32,6 +32,7 @@ NAMES = {
     "cao-cao": ("Cao Cao", "Power and organisation"),
     "feng-dao": ("Feng Dao", "Power and organisation"),
     "guan-zhong": ("Guan Zhong", "Power and organisation"),
+    "hirschman": ("Albert O. Hirschman", "Power and organisation"),
     "guo-ziyi": ("Guo Ziyi", "Power and organisation"),
     "lee-kuan-yew": ("Lee Kuan Yew", "Power and organisation"),
     "li-bi": ("Li Bi", "Power and organisation"),

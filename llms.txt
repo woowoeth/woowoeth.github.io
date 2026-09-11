@@ -1,11 +1,11 @@
 # OurWord (人类世界生存法则)
 
-> 162 people and books on how the world actually works, across 2,600 years
+> 163 people and books on how the world actually works, across 2,600 years
 > 遇到事了，看看以前的人怎么处理
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 162 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 163 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
-一个关于「世界到底怎么运转」的知识库：战略、财富、权力、人性、创业，取自 162 位人物与典籍，跨越 2600 年。每一条都写清楚这个人真正留下的那一个想法、背后的故事、拆开的分则与例子，以及今天怎么用。
+一个关于「世界到底怎么运转」的知识库：战略、财富、权力、人性、创业，取自 163 位人物与典籍，跨越 2600 年。每一条都写清楚这个人真正留下的那一个想法、背后的故事、拆开的分则与例子，以及今天怎么用。
 
 ## Read it
 
@@ -19,10 +19,10 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 ## Topics
 
 - [现代](https://ourword.ai/t/modern/) — 58
-- [工业时代](https://ourword.ai/t/industrial-age/) — 48
+- [工业时代](https://ourword.ai/t/industrial-age/) — 49
 - [心智与情绪](https://ourword.ai/t/mind/) — 21
+- [权力与组织](https://ourword.ai/t/power/) — 21
 - [先秦与古典时代](https://ourword.ai/t/classical-era/) — 20
-- [权力与组织](https://ourword.ai/t/power/) — 20
 - [创业与产品](https://ourword.ai/t/startups/) — 19
 - [谋略与竞争](https://ourword.ai/t/strategy/) — 17
 - [财富与风险](https://ourword.ai/t/wealth/) — 16
@@ -185,6 +185,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [哈佛成人发展研究 · 半夜两点能打给谁](https://ourword.ai/i/harvard-study/someone-to-count-on/): 哈佛成人发展研究 · 半夜两点能打给谁——数量不算，托底的算。衡量一个人的关系状况，最短的问法是哪一句。这一篇要回答的是：它为什么骗不了人。
 - [哈耶克 · 知识是分散的](https://ourword.ai/i/hayek/knowledge-is-dispersed/): 哈耶克 · 知识是分散的——没人拿得到全图。一篇十几页的论文，后来被评为百年最重要的经济学文章之一。这一篇要回答的是：它到底推翻了什么假设。
 - [哈耶克 · 致命的自负](https://ourword.ai/i/hayek/fatal-conceit/): 哈耶克 · 致命的自负——经济学的奇特任务。他给自己学科定的任务不是预测，是泼冷水。这一篇要回答的是：为什么越聪明的人越需要这盆水。
+- [阿尔伯特·赫希曼 · 走人，还是开口](https://ourword.ai/i/hirschman/exit-voice-loyalty/): 阿尔伯特·赫希曼 · 走人，还是开口——退出的门越好走，开口的人越少。不满意的时候，人只数得出两个选项：走，或者忍。这一篇要回答的是，第三个选项去哪了。
+- [阿尔伯特·赫希曼 · 否决你的那三句话](https://ourword.ai/i/hirschman/rhetoric-of-reaction/): 阿尔伯特·赫希曼 · 否决你的那三句话——适得其反、无济于事、危及既有。方案被毙了，你只听见一个「不」。这一篇要回答的是，那个「不」其实只有三种形状。
 - [阿莉·霍克希尔德 · 第二班](https://ourword.ai/i/hochschild/second-shift/): 阿莉·霍克希尔德 · 第二班——下班之后还有一班。家务和照料从来不进工时表。这一篇要回答的是：不记账会记到谁身上。
 - [阿莉·霍克希尔德 · 情感劳动](https://ourword.ai/i/hochschild/emotional-labor/): 阿莉·霍克希尔德 · 情感劳动——那个笑不是你的笑。有些工作要求你不只做事，还要感觉对。这一篇要回答的是：那份要求要收什么代价。
 - [最后一版 · 一门手艺在一夜之间结束](https://ourword.ai/i/hot-metal/one-night/): 最后一版 · 一门手艺在一夜之间结束——1978 年 7 月 1 日。一门手艺整体消失时是什么样子。这一篇要回答的是：纽约时报那一夜之后，排字工人身上发生了什么。
@@ -440,7 +442,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [AI Bubble Monitor / AI 泡沫检测仪](https://ourword.ai/ai/)
 - [Zouni / 走你](https://ourword.ai/zouni/)
 
-## Index (162 entrys)
+## Index (163 entrys)
 
 - [BJ·福格](https://ourword.ai/i/bj-fogg/): BJ·福格（2019年·斯坦福行为设计实验室）——小到不会失败。斯坦福行为设计实验室创始人，研究行为如何被设计出来。他给出一个公式：行为发生需要动机、能力、提示三者同时到位。多数人失败在只调动机——靠决心和自我激励——而动机天然起伏，靠它维持的习惯必然崩。他的主张相反：把行为缩到小得不需要动机，然后挂在一个已有的动作后面。
 - [C.S.刘易斯](https://ourword.ai/i/cs-lewis/): C.S.刘易斯（1898-1963年·英国牛津）——妻子死后几个月的日记。作家，牛津和剑桥的教授，写过《纳尼亚传奇》和大量劝人信仰的书。五十八岁结婚，妻子乔伊四年后因癌症去世。之后几个月他在四本练习簿上记自己的状态，后来用笔名出版，就是《卿卿如晤》。收他是因为「重要的人走了」那六个问题，原来靠弗兰克尔和苏轼在答——一个是集中营的幸存者，一个是被贬的官员
@@ -589,6 +591,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [道德经](https://ourword.ai/i/tao-te-ching/): 道德经（春秋·前500年前后）——损。老子五千言，是中国哲学的减法源头。与儒家「为学日益」相对，老子说「为道日损」——不断减掉，直到无为，然后无不为。道德经在西方被翻译次数仅次于圣经。
 - [郭嘉](https://ourword.ai/i/guo-jia/): 郭嘉（三国·170-207）——奇。曹操最倚重的谋士，被曹操称为「吾之奇佐」。他27岁投奔曹操，此后11年，几乎每一个关键决策背后都有他的身影。官渡之战前的「十胜十败论」、袁绍死后的「急攻不如缓图」、北征乌桓时的「虚国远征」……他的判断每次都精准到令人惊叹。唯一的遗憾：38岁病逝，没有活到赤壁之战。曹操在赤壁大败后
 - [郭子仪](https://ourword.ai/i/guo-ziyi/): 郭子仪（唐·697-781年）——功高不震主。唐代名将，平安史之乱、退吐蕃、抚回纥，两次收复长安，史称「再造王室」。但他真正的传奇不在战场：历玄宗、肃宗、代宗、德宗四朝，功盖天下而主不疑，位极人臣而众不嫉，富贵寿考八十五岁善终，子孙满堂。《旧唐书》的这句评语，两千年里几乎找不到第二个人配得上。韩信、岳飞、年羹尧都倒在「功高震
+- [阿尔伯特·赫希曼](https://ourword.ai/i/hirschman/): 阿尔伯特·赫希曼（美国·1915-2012）——开口。德裔美国经济学家。1933年离开柏林，1936年在西班牙打过仗，1940年在马赛给逃亡者办证件找路线，1952年去哥伦比亚做经济顾问，晚年在普林斯顿高等研究院。他一辈子跟一件事过不去：把复杂的局面化约成一条整齐的定律。最有名的是1970年的《退出、呼吁与忠诚》——面对一样正在变坏
 - [阿德勒](https://ourword.ai/i/adler/): 阿德勒（1870-1937年·奥地利）——课题分离。个体心理学的创立者，弗洛伊德早期的同事，后来因为根本分歧决裂。弗洛伊德说人被过去决定，阿德勒说人被目的牵引——同一段童年，有人拿它当伤疤，有人拿它当借口，有人拿它当燃料，差别不在经历本身，在这个人想用它达成什么。他还给出了人际关系里最锋利的一把刀：分清这件事的后果最终由谁承担，就
 - [阿莉·霍克希尔德](https://ourword.ai/i/hochschild/): 阿莉·霍克希尔德（1983年·加州大学伯克利）——看不见的劳动。社会学家，两次给一件看不见的劳动起了名字。1983年《被管理的心》提出「情感劳动」：有些工作不只要求你做对，还要求你显示出规定的情绪——空乘要热情，催收员要冷硬；她的观察是异化，那个笑不是「她的」笑，久了连自己真正的感受也认不出。1989年《第二班》提出：有工作的女性下班后还有一
 - [陶渊明](https://ourword.ai/i/tao-yuanming/): 陶渊明（365-427年·浔阳）——辞官八十天，穷一辈子。诗人。四十一岁当彭泽县令，干了八十多天，郡里派督邮下来要他穿戴整齐去迎，他说「吾不能为五斗米折腰向乡里小人」，当天解印走了，之后再没出来做官。辞官后是真穷：四十四岁家里失火房子烧光，有一年断了粮出门去讨，回来写了一首《乞食》。收他是因为「人生转弯」那一组苏轼一人答了十个——库里缺
