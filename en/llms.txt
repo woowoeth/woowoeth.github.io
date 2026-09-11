@@ -431,7 +431,6 @@ Cite the individual page URL, not the homepage — each entry page is stable and
 ## The rest of OurWord AI
 
 - [OurWord AI](https://ourword.ai/site/)
-- [Taste](https://ourword.ai/skill/?lang=en)
 - [AI Bubble Monitor](https://ourword.ai/ai/)
 - [Zouni](https://ourword.ai/zouni/)
 

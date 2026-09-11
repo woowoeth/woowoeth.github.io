@@ -37,10 +37,10 @@ SITE = "https://ourword.ai"
 # 只保留确实可访问的兄弟站。原组织被停用时这里删掉了一批取不到的站点；
 # idea 与 ai-bubble（泡沫检测仪，迁址后的新路径）已恢复，加回。
 # 仍不可访问、故不列入：ai-jobs-20yr-report、portfolio-tracker。
+# 2026-09-11 店主关停「品味」（/skill/），从 SITES 去掉：页脚、sameAs、llms.txt 都不再链它。
 SITES = [
     ("", "Human World", "人类世界生存法则"),
     ("site", "OurWord AI", "OurWord AI 导航"),
-    ("skill", "Skill Store", "Skill 商店"),
     ("ai", "AI Bubble Monitor", "AI 泡沫检测仪"),
     ("zouni", "Zouni", "走你"),
 ]
@@ -394,9 +394,8 @@ def _inject_body(src, block):
 def sibling_links(site, zh=False):
     return (
         '<a href="%s">人类世界生存法则</a> · '
-        '<a href="%s">原声</a> · '
-        '<a href="%s">品味</a>'
-        % (esc(SITE + "/"), esc(SITE + "/podcast/"), esc(SITE + "/skill/"))
+        '<a href="%s">原声</a>'
+        % (esc(SITE + "/"), esc(SITE + "/podcast/"))   # 2026-09-11 店主关停「品味」，页脚不再链它
     )
 
 

@@ -60,9 +60,8 @@ if TRIO_MARK not in s:
             'def sibling_links(site, zh=False):\n'
             '    return (\n'
             '        \'<a href="%s">人类生存法则</a> · \'\n'
-            '        \'<a href="%s">原声播客</a> · \'\n'
-            '        \'<a href="%s">品位 Skill</a>\'\n'
-            '        % (esc(SITE + "/"), esc(SITE + "/podcast/"), esc(SITE + "/skill/"))\n'
+            '        \'<a href="%s">原声播客</a>\'\n'
+            '        % (esc(SITE + "/"), esc(SITE + "/podcast/"))\n'
             '    )\n'
         ),
         s,
@@ -76,7 +75,8 @@ if TRIO_MARK not in s:
 # /idea/ and /pixel/ are 404. Advertising them in llms.txt teaches answer
 # engines that our URLs are unreliable; drop them until those repos ship.
 for _dead in ('    ("idea", "Idea", "\u7075\u611f\u770b\u677f"),\n',
-              '    ("pixel", "PixelPad", "\u50cf\u7d20\u677f"),\n'):
+              '    ("pixel", "PixelPad", "\u50cf\u7d20\u677f"),\n',
+              '    ("skill", "Skill Store", "Skill \u5546\u5e97"),\n'):   # 2026-09-11 店主关停品味
     if _dead in s:
         s = s.replace(_dead, "")
         print("dropped dead SITES entry")

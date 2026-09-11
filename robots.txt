@@ -106,5 +106,3 @@ Sitemap: https://ourword.ai/sitemap.xml
 Sitemap: https://ourword.ai/tw/sitemap.xml
 Sitemap: https://ourword.ai/podcast/sitemap.xml
 Sitemap: https://ourword.ai/podcast/tw/sitemap.xml
-Sitemap: https://ourword.ai/skill/sitemap.xml
-Sitemap: https://ourword.ai/skill/tw/sitemap.xml
