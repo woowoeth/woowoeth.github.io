@@ -111,6 +111,7 @@ NAMES = {
     "dalio": ("Ray Dalio", "Money and risk"),
     "graham": ("Benjamin Graham", "Money and risk"),
     "hu-xueyan": ("Hu Xueyan", "Money and risk"),
+    "kindleberger": ("Charles P. Kindleberger", "Money and risk"),
     "livermore": ("Jesse Livermore", "Money and risk"),
     "lynch": ("Peter Lynch", "Money and risk"),
     "marks": ("Howard Marks", "Money and risk"),

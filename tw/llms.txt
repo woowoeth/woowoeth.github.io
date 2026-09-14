@@ -1,11 +1,11 @@
 # OurWord (人類世界生存法則)
 
-> 163 people and books on how the world actually works, across 2,600 years
+> 164 people and books on how the world actually works, across 2,600 years
 > 遇到事了，看看以前的人怎麼處理
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 163 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 164 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
-一個關於「世界到底怎麼運轉」的知識庫：戰略、財富、權力、人性、創業，取自 163 位人物與典籍，跨越 2600 年。每一條都寫清楚這個人真正留下的那一個想法、背後的故事、拆開的分則與例子，以及今天怎麼用。
+一個關於「世界到底怎麼運轉」的知識庫：戰略、財富、權力、人性、創業，取自 164 位人物與典籍，跨越 2600 年。每一條都寫清楚這個人真正留下的那一個想法、背後的故事、拆開的分則與例子，以及今天怎麼用。
 
 ## Read it
 
@@ -19,13 +19,13 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 ## Topics
 
 - [現代](https://ourword.ai/tw/t/modern/) — 58
-- [工業時代](https://ourword.ai/tw/t/industrial-age/) — 49
+- [工業時代](https://ourword.ai/tw/t/industrial-age/) — 50
 - [心智與情緒](https://ourword.ai/tw/t/mind/) — 21
 - [權力與組織](https://ourword.ai/tw/t/power/) — 21
 - [先秦與古典時代](https://ourword.ai/tw/t/classical-era/) — 20
 - [創業與產品](https://ourword.ai/tw/t/startups/) — 19
 - [謀略與競爭](https://ourword.ai/tw/t/strategy/) — 17
-- [財富與風險](https://ourword.ai/tw/t/wealth/) — 16
+- [財富與風險](https://ourword.ai/tw/t/wealth/) — 17
 - [學習與成長](https://ourword.ai/tw/t/learning/) — 15
 - [識人與相處](https://ourword.ai/tw/t/people/) — 14
 - [世界如何運轉](https://ourword.ai/tw/t/world/) — 14
@@ -223,6 +223,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [卡斯帕羅夫 · 他先花了很多年爭「那場不算」](https://ourword.ai/tw/i/kasparov/excuses-cost-years/): 卡斯帕羅夫 · 他先花了很多年爭「那場不算」——認賬比申辯省時間。被取代之後第一年通常在幹什麼。這一篇要回答的是：卡斯帕羅夫輸掉之後先做了什麼，二十年後又怎麼說。
 - [凱文·凱利 · 一千個鐵桿粉絲](https://ourword.ai/tw/i/kevin-kelly/thousand-true-fans/): 凱文·凱利 · 一千個鐵桿粉絲——不用紅，要夠深。做創作的人默認要先出名。這一篇要回答的是：那個前提是不是必要的。
 - [凱文·凱利 · 中間不能有人](https://ourword.ai/tw/i/kevin-kelly/direct-relationship/): 凱文·凱利 · 中間不能有人——錢要直接到你手上。這道算術有個前提常被跳過。這一篇要回答的是：跳過它之後為什麼算不成。
+- [查爾斯·金德爾伯格 · 燃料是信貸](https://ourword.ai/tw/i/kindleberger/credit-is-the-fuel/): 查爾斯·金德爾伯格 · 燃料是信貸——真事天天有，為什麼只有幾次滾成瘋狂。每一次泡沫都從一件真事開始。這一篇要回答的是：真事天天有，為什麼只有極少數滾成瘋狂。
+- [查爾斯·金德爾伯格 · 看見朋友發財](https://ourword.ai/tw/i/kindleberger/a-friend-gets-rich/): 查爾斯·金德爾伯格 · 看見朋友發財——讓你失常的是身邊那個人。你以為自己在判斷行情。這一篇要回答的是：真正讓你坐不住的，是身邊那個賺到錢的人。
 - [凱博文 · 醫生看到的病，和你過的日子](https://ourword.ai/tw/i/kleinman/disease-and-illness/): 凱博文 · 醫生看到的病，和你過的日子——這是兩樣東西。醫生說沒什麼大事，你卻覺得日子塌了。這一篇要回答的是：凱博文為什麼說這是兩件事。
 - [凱博文 · 解釋模型八問](https://ourword.ai/tw/i/kleinman/eight-questions/): 凱博文 · 解釋模型八問——最後一問是你最怕什麼。看病時該問什麼、又該被問什麼。這一篇要回答的是：凱博文那八個問題為什麼是這八個。
 - [凱博文 · 治不好，還照護得了](https://ourword.ai/tw/i/kleinman/caring-when-curing-fails/): 凱博文 · 治不好，還照護得了——他照顧妻子十年才明白。有些病治不好，那還能做什麼。這一篇要回答的是：凱博文照顧妻子十年之後給的答案。
@@ -442,7 +444,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [AI Bubble Monitor / AI 泡沫檢測儀](https://ourword.ai/ai/)
 - [Zouni / 走你](https://ourword.ai/zouni/)
 
-## Index (163 entrys)
+## Index (164 entrys)
 
 - [BJ·福格](https://ourword.ai/tw/i/bj-fogg/): BJ·福格（2019年·斯坦福行為設計實驗室）——小到不會失敗。斯坦福行為設計實驗室創始人，研究行為如何被設計出來。他給出一個公式：行為發生需要動機、能力、提示三者同時到位。多數人失敗在只調動機——靠決心和自我激勵——而動機天然起伏，靠它維持的習慣必然崩。他的主張相反：把行為縮到小得不需要動機，然後掛在一個已有的動作後面。
 - [C.S.劉易斯](https://ourword.ai/tw/i/cs-lewis/): C.S.劉易斯（1898-1963年·英國牛津）——妻子死後幾個月的日記。作家，牛津和劍橋的教授，寫過《納尼亞傳奇》和大量勸人信仰的書。五十八歲結婚，妻子喬伊四年後因癌症去世。之後幾個月他在四本練習簿上記自己的狀態，後來用筆名出版，就是《卿卿如晤》。收他是因為「重要的人走了」那六個問題，原來靠弗蘭克爾和蘇軾在答——一個是集中營的倖存者，一個是被貶的官員
@@ -535,6 +537,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [杜甫](https://ourword.ai/tw/i/du-fu/): 杜甫（712-770年·河南鞏縣）——四十八歲棄官入蜀。詩人。三十五歲到長安求官，一待十年，考過、獻過賦、四處投詩，沒有一個像樣的位置，四十四歲才得了個看管兵器庫的小官，安史之亂隨即爆發。755 年冬他回奉先縣家裡，小兒子餓死了。759 年辭掉華州的小官帶著家人一路往西南走，幾乎斷糧，760 年到成都靳朋友接濟搭了一間草堂。他一生最好
 - [松下幸之助](https://ourword.ai/tw/i/matsushita/): 松下幸之助（日本·1894—1989年）——自來水哲學。9 歲輟學做學徒，23 歲帶著兩個人在自家做雙燈用插座，最後做出松下電器，被日本人稱為「經營之神」。他的價值不在於把公司做多大，而在於他是第一個把「企業為什麼存在」當成經營技術來回答的人：使命定得對，組織和產品會自己長出來；使命定不對，效率越高越危險。今天講的使命願景、事業部制、
 - [槍炮、病菌與鋼鐵](https://ourword.ai/tw/i/guns-germs-steel/): 槍炮、病菌與鋼鐵（1997年）——環境而非人種。賈雷德·戴蒙德 1997 年的著作，次年獲普利策獎。它回答一個幾乎所有人都想過、但很少有人敢直接問的問題：為什麼是歐洲人帶著槍炮、病菌和鋼鐵去征服美洲和大洋洲，而不是反過來。戴蒙德的答案是環境，不是人——各大陸在可馴化物種和地理軸線上的差距，經由糧食生產這個中間變量，被放大成一萬
+- [查爾斯·金德爾伯格](https://ourword.ai/tw/i/kindleberger/): 查爾斯·金德爾伯格（美國·1910-2003）——信貸。美國經濟學家，1910年生於紐約，1948年起在麻省理工學院執教半個世紀，寫過三十多本書。二戰之後他在國務院任職，1947到1948年做歐洲復興計劃的顧問，馬歇爾計劃的文件從他手上過。他一輩子看不上把人假設成一臺算得很準的機器的那種經濟學，寧可去翻三百年的舊賬。1973年的《19
 - [查理·芒格](https://ourword.ai/tw/i/munger/): 查理·芒格（當代·1924-2023）——逆向。巴菲特的合夥人，伯克希爾·哈撒韋副主席，99歲去世。他最重要的貢獻：把巴菲特從「撿菸蒂」進化到「以合理價格買優秀公司」。他的思維工具箱：多元思維模型+認知偏差清單。
 - [格蘭諾維特](https://ourword.ai/tw/i/granovetter/): 格蘭諾維特（1973年·美國社會學雜誌）——弱連接。社會學家，1973年發表《弱連接的力量》，一篇被引用了幾萬次的論文。他調查282個人怎麼找到工作，發現靠人際關係拿到工作的那批人裡，56%說自己只是「偶爾」見到那位幫上忙的人，28%說「極少」——真正起作用的是關係不深的那些人。原因不在意願，在信息結構：你和好友的圈子高度重疊，他
 - [格雷厄姆](https://ourword.ai/tw/i/graham/): 格雷厄姆（美·1894-1976年）——安全邊際·市場先生。本傑明·格雷厄姆，「證券分析之父」「華爾街教父」，價值投資體系的開創者。《證券分析》和《聰明的投資者》至今仍是投資界的聖經。他在哥倫比亞大學教出的學生裡走出了巴菲特——巴菲特說自己血管裡流的血液「85%來自格雷厄姆」。格雷厄姆的偉大在於：在一個把股票當賭博籌碼的年代，他第一個證明

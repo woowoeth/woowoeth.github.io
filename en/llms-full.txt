@@ -1,7 +1,7 @@
-# OurWord — 163 people and books on how the world actually works, across 2,600 years
+# OurWord — 164 people and books on how the world actually works, across 2,600 years
 # OurWord — See how people before you handled it.
 # https://ourword.ai/en/
-# Full corpus, plain text. 163 entrys.
+# Full corpus, plain text. 164 entrys.
 
 ========================================================================
 ## Albert Einstein
@@ -806,6 +806,46 @@ Lev Vygotsky — Both about where learning happens. He locates it in the task's 
 Lev Vygotsky Excellent Sheep Kristin Neff Anders Ericsson
 
 ========================================================================
+## Charles P. Kindleberger
+URL: https://ourword.ai/en/i/kindleberger/
+Tags: Money and risk, The industrial age, Credit
+
+Charles P. Kindleberger (United States · 1910-2003) — Credit. An American economist, born in New York in 1910, on the faculty at MIT from 1948 for half a century, author of more than thirty books.
+
+### Q: What did this one leave behind?
+An American economist, born in New York in 1910, on the faculty at MIT from 1948 for half a century, author of more than thirty books. After the war he served at the State Department and spent 1947 and 1948 as counselor for the European Recovery Program - the Marshall Plan crossed his desk. He had no patience for economics that modelled people as accurate calculating machines, and preferred to work through three hundred years of ledgers. The World in Depression, 1929-1939 (1973) argued that the slump ran so deep and so long not because nobody knew what to do, but because no country was willing to hold the thing up. Manias, Panics, and Crashes (1978) laid every mania side by side and found one shape: something real begins it, credit inflates it, then euphoria, distress, revulsion. The most quoted line in that book is not about money at all. It is about the person sitting next to you.
+
+### Q: What actually happened?
+Washington, 1947. Kindleberger is thirty-seven, advising on the European Recovery Program at the State Department, and the work is concrete: how much coal this country is short of, how much grain, how many dollars. One thing from fifteen years earlier never left him. After 1929 no country would step forward and hold the world up - Britain could no longer, America would not yet - and a panic stretched into a decade. In 1973 he wrote that explanation into a book. His subject was never equilibrium. It was plumbing: which pipe the money runs through, and the day it stops.
+
+### The parts · A mania runs to a timetable
+Displacement, credit expansion, euphoria, distress, revulsion. He fitted three centuries of collapse into those five and the order held. Knowing the order will not tell you where the top is. It tells you roughly which step you are standing on. e.g. When you hear this time is different, ask where in the sequence that sentence usually turns up.
+
+### The parts · The real thing is the starting point, not the case
+Every mania opens with something genuinely good: a new technology, a new market, a new route. So the fundamentals are real can never prove the price is sane. It is the standard opening of every bubble ever recorded. e.g. Railways were real. The internet was real. Both were real, and both collapsed once anyway.
+
+### The parts · Credit is the accelerant
+He shared Minsky's judgment: prices leave the ground on borrowed money, not on mood. Mood only makes the talk bigger; borrowing makes the position bigger. Tighten the money and the finest story will not hold it up. e.g. The same hot sector bought with cash and bought on margin are two entirely different things.
+
+### The parts · What breaks you is the person next to you
+The line he polished for decades says that what disturbs judgment is not the market but seeing a friend get rich. That is not a flourish. It is his mechanism for why euphoria accelerates: comparison bites harder than greed. e.g. A stranger's windfall leaves you cold. One screenshot in the class group chat keeps you up.
+
+### The parts · The lender of last resort
+How deep the wreck goes depends on whether anyone both able and willing steps in. His point was that nothing here is automatic: who acts, when, and how far are decided by people, every single time. e.g. Whether a crisis lasts weeks or ten years often forks in the first few days, on a handful of decisions.
+
+### Q: How do I use it today?
+Next time you feel the pull, put the chart away and write three lines. One: what is the real thing here, specific enough to name who is actually earning more because of it. Two: where is the new money coming from, their own or borrowed. Three: who is the person making you restless today. Most people find the third line is the real question - not is this worth it, but am I going to lose to them. The two questions often have opposite answers.
+
+### Lines to keep
+What turns something real into a mania is credit, not optimism. Every mania opens with something genuinely real. That is the trap. Prices leave the ground on borrowed money, not on mood. How long a crisis lasts depends on who is willing.
+
+### Q: What should I read alongside?
+Howard Marks — Both take the market's temperature: Marks reads where sentiment sits on the pendulum, Kindleberger counts how much of the money in the room was borrowed. Technological Revolutions — Both say bubbles follow a script. Perez times hers by the installation phase of a technology, Kindleberger times his by the looseness of credit - one mania, two rulers.
+
+### Further
+George Soros Howard Marks Technological Revolutions The Crowd Jesse Livermore
+
+========================================================================
 ## Charlie Munger
 URL: https://ourword.ai/en/i/munger/
 Tags: Learning and growth, The industrial age, Invert
@@ -1491,7 +1531,7 @@ I'm only rich because I know when I'm wrong. Market prices always distort the un
 Warren Buffett — Two poles of investment philosophy: Buffett trusts that the market gets there in the end, Soros treats it as permanently wrong. Nassim Taleb — Two bets on uncertainty: Soros finds the market's error and pushes on it, Taleb builds a structure that pays when the error finally breaks. The Crowd — Reflexivity is the financial version of this book: the crowd's mistaken belief moves the price and the price confirms the belief. Le Bon describes the pathology, Soros priced it. Benjamin Graham — Graham assumes price returns to value; Soros trades the stretch where price drives value away from itself. Jim Simons — Soros uses reflexivity to understand the market, Simons gave up understanding entirely — and the money comes out of the same place.
 
 ### Further
-Ray Dalio Warren Buffett Nassim Taleb Charlie Munger The Crowd Jesse Livermore Howard Marks Jim Simons Thinking, Fast and Slow
+Ray Dalio Warren Buffett Nassim Taleb Charlie Munger The Crowd Jesse Livermore Howard Marks Jim Simons Thinking, Fast and Slow Charles P. Kindleberger
 
 ========================================================================
 ## Guan Zhong
@@ -1898,10 +1938,10 @@ Write a market temperature note once a quarter, answering only observable questi
 We may never know where we're going, but we'd better have a good idea where we are. Investment success doesn't come from buying good things, but from buying things well. You can't do the same things others do and expect to outperform. Being too far ahead of your time is indistinguishable from being wrong.
 
 ### Q: What should I read alongside?
-Benjamin Graham — Graham answers what a thing is worth, Marks answers whether now is the moment to act — two separate skills, and most people have only trained the first. Jesse Livermore — Both accept that the cycle is real: Livermore surfs the pendulum and is eventually swallowed by it, Marks moves only when it reaches an extreme. Nassim Taleb — Same premise, that the future is unknowable, and two routes out: Taleb builds a structure that survives it, Marks takes the temperature of the present.
+Benjamin Graham — Graham answers what a thing is worth, Marks answers whether now is the moment to act — two separate skills, and most people have only trained the first. Jesse Livermore — Both accept that the cycle is real: Livermore surfs the pendulum and is eventually swallowed by it, Marks moves only when it reaches an extreme. Nassim Taleb — Same premise, that the future is unknowable, and two routes out: Taleb builds a structure that survives it, Marks takes the temperature of the present. Charles P. Kindleberger — Both take the market's temperature: Marks reads where sentiment sits on the pendulum, Kindleberger counts how much of the money in the room was borrowed.
 
 ### Further
-Warren Buffett Benjamin Graham Ray Dalio Nassim Taleb George Soros Jim Simons
+Warren Buffett Benjamin Graham Ray Dalio Nassim Taleb George Soros Jim Simons Charles P. Kindleberger
 
 ========================================================================
 ## Hu Xueyan
@@ -2200,7 +2240,7 @@ There is nothing new in Wall Street. Speculation is as old as the hills. It neve
 Warren Buffett — Speculation against investment: Livermore took the price movement and rose and fell four times, Buffett took the business and compounded. Fan Li — Both understood exits. Fan Li left at every summit; Livermore never once got up from the table. Howard Marks — Both accept that the cycle is real: Livermore surfs the pendulum and is eventually swallowed by it, Marks moves only when it reaches an extreme.
 
 ### Further
-George Soros Nassim Taleb Warren Buffett Fan Li
+George Soros Nassim Taleb Warren Buffett Fan Li Charles P. Kindleberger
 
 ========================================================================
 ## Jim Simons
@@ -4714,10 +4754,10 @@ Stop asking whether this is a bubble and ask three more useful questions. First,
 Every technological revolution has an installation period and a deployment period. The frenzy builds infrastructure that rational capital would never have funded. Golden ages begin after the crash, on infrastructure the frenzy paid for. The crisis is not the end. It is the turning point.
 
 ### Q: What should I read alongside?
-The Innovator's Dilemma — Christensen watches one firm get disrupted, Perez watches a whole society absorb the disruption — the same event under a microscope and a wide lens. Ray Dalio — Two clocks: Dalio times the debt cycle on the financial side, Perez the technology cycle on the production side. Overlay them to know the hour. Sapiens — Harari explains why people come to believe shared fictions, Perez shows that belief turning into actual rail and fibre.
+The Innovator's Dilemma — Christensen watches one firm get disrupted, Perez watches a whole society absorb the disruption — the same event under a microscope and a wide lens. Ray Dalio — Two clocks: Dalio times the debt cycle on the financial side, Perez the technology cycle on the production side. Overlay them to know the hour. Sapiens — Harari explains why people come to believe shared fictions, Perez shows that belief turning into actual rail and fibre. Charles P. Kindleberger — Both say bubbles follow a script. Perez times hers by the installation phase of a technology, Kindleberger times his by the looseness of credit - one mania, two rulers.
 
 ### Further
-Ray Dalio Nassim Taleb The Innovator's Dilemma Thinking in Systems Peter Thiel Why Nations Fail
+Ray Dalio Nassim Taleb The Innovator's Dilemma Thinking in Systems Peter Thiel Why Nations Fail Charles P. Kindleberger
 
 ========================================================================
 ## Tending the Roots of Wisdom
@@ -4939,7 +4979,7 @@ In crowds it is stupidity and not mother wit that is accumulated. Isolated, he m
 Influence — Micro and macro of the same subject: Cialdini works on the switches that persuade one person, Le Bon on what happens to judgement when many are in a room together. George Soros — Reflexivity is the financial version of this book: the crowd's mistaken belief moves the price and the price confirms the belief. Le Bon describes the pathology, Soros priced it. The Old Regime and the Revolution — Le Bon explains why a crowd loses control once the revolution is under way; Tocqueville explains why it starts at the moment it least should — one is mechanism, the other timing.
 
 ### Further
-Influence George Soros Machiavelli Thinking, Fast and Slow Maria Konnikova The Old Regime and the Revolution
+Influence George Soros Machiavelli Thinking, Fast and Slow Maria Konnikova The Old Regime and the Revolution Charles P. Kindleberger
 
 ========================================================================
 ## The I Ching
@@ -11890,6 +11930,80 @@ Where it goes wrong: making the experience awkward in order to own the list, her
 You must have a direct relationship with your fans; they must pay you directly.
 The platform gives you chart positions. It never gives you an address.
 Fans you cannot reach without permission were never really yours.
+
+========================================================================
+## Charles P. Kindleberger · Credit is the fuel
+URL: https://ourword.ai/en/i/kindleberger/credit-is-the-fuel/
+Source: Manias, Panics, and Crashes (1978), chapter 2, Anatomy of a Typical Crisis
+Tags: Deep read, Charles P. Kindleberger, Real opportunities are common. Manias are rare
+
+Every bubble starts with something real. This chapter asks why only a few of those real things ever run away.
+
+### Q: What actually happened?
+In 1978 Kindleberger, then sixty-eight, laid three centuries of collapse out in one table: the South Sea Company in 1720, Vienna in 1873, Wall Street in 1929. No column opens with greed. Each opens with something real - a new trade route, a new railway, a war just ended. His question was why real opportunities, which arrive every year, only rarely run away. The answer sat in the next column: what turns something real into a mania is never optimism, it is credit. Optimism makes the talk bigger. Credit makes the money bigger.
+
+### The parts · It always starts with something real
+Borrowing Minsky's term, he called it a displacement: a new technology, a new route, a war ending, genuinely opening profits that were not there before. So this time is different is always half true. The hard half is the other one.
+e.g. In every technology boom the technology does work. That is not where the real and the ruinous part company.
+
+### The parts · Borrowed money is what makes it run
+Good opportunities arrive every year; manias arrive a few times a century. The difference is how easy it is to borrow. Banks lend, brokers extend, new leverage appears, and the price now needs fresh money just to stand still.
+e.g. Before you judge the story, ask whose money is arriving. Their own, or the bank's?
+
+### The parts · The stages come in order
+Displacement, credit expansion, euphoria, distress, revulsion. The useful one is the fourth. What cracks first is usually not the price but an institution that cannot fund itself, or a fraud that surfaces while prices are still high.
+e.g. Most crashes are preceded by a single blow-up that everyone agreed at the time was a one-off.
+
+### The parts · How long it lasts is a choice somebody makes
+Whether the fall is a panic of weeks or a decade depends on whether anyone able is willing to stand behind it. That is the argument of The World in Depression: Britain could no longer, America would not yet, so nobody did.
+e.g. When a firm fails, the question is not only whether it deserves rescue but whether anyone is both able and willing.
+
+### Q: How do I use it today?
+Where you are: something is climbing fast, everyone around you is talking about it, and you are starting to want in.
+Ask first: where is the new money coming from - their own, or borrowed and levered?
+Where it goes wrong: reading this as a reason to be permanently bearish. He never called tops. He only told you which fuel is burning.
+
+### Lines to keep
+What turns something real into a mania is credit, not optimism.
+What cracks first is an institution, not the price.
+How long a crisis lasts depends on who will stand behind it.
+
+========================================================================
+## Charles P. Kindleberger · A friend gets rich
+URL: https://ourword.ai/en/i/kindleberger/a-friend-gets-rich/
+Source: Manias, Panics, and Crashes (1978), on the euphoria stage
+Tags: Deep read, Charles P. Kindleberger, What breaks your judgment is the person next to you
+
+You think you are judging the market. This chapter says what actually moves you is the person beside you getting rich.
+
+### Q: What actually happened?
+Over decades of lectures Kindleberger polished one line, and he noted what it did: it always drew a nervous laugh. There is nothing so disturbing to one's well-being and judgment as to see a friend get rich. He put it in the section on euphoria. By that stage buyers have stopped pricing the trade at all. They are chasing a particular person - the one who last week was much like them and this week is not.
+
+### The parts · You are comparing, not forecasting
+A stranger's windfall is mildly interesting. A colleague's, a classmate's, a neighbour's, and you cannot sit still. The question is not whether the trade is good. A line between you and that person has just moved.
+e.g. The same news lands differently from a financial page and from your school group chat.
+
+### The parts · The laugh is nervous because everyone recognises it
+It got a laugh because the rooms were full of professionals, and professionals are no different. He spent a career refusing to model people as accurate calculating machines. In a mania, losing your head is what normal people do.
+e.g. The last buyers in are often not the least informed. They are the ones who watched a peer outperform them for three years.
+
+### The parts · Change what you measure yourself against
+The feeling does not yield to argument, but the benchmark can be swapped. Measure against the line you wrote in advance, not against the person. The line was written before; the person appeared after.
+e.g. Write down in advance what you would buy, how much of it, and what would tell you that you were wrong.
+
+### The parts · You only ever see the ones who won
+Friends who made money make sure you hear about it. The ones who lost go quiet. You think you are watching a population of outcomes, and you are watching the half that still speaks.
+e.g. In the same group the winning screenshots arrive daily. The losers simply stop posting.
+
+### Q: How do I use it today?
+Where you are: someone close to you made money on this, you say you are pleased for them, and you cannot sit still.
+Ask first: if a stranger had made that money instead, would I still want in today?
+Where it goes wrong: turning this into so I should never follow. It only takes the envy out of the decision. You still have to decide.
+
+### Lines to keep
+What breaks your judgment is a friend getting rich.
+The last ones in are usually the ones who watched.
+Measure against the line you wrote, not the person who appeared.
 
 ========================================================================
 ## Arthur Kleinman · The Disease and the Illness

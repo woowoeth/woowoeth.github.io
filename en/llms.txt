@@ -1,9 +1,9 @@
 # OurWord (OurWord)
 
-> 163 people and books on how the world actually works, across 2,600 years
+> 164 people and books on how the world actually works, across 2,600 years
 > See how people before you handled it.
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 163 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 164 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
 ## Read it
 
@@ -17,15 +17,15 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 ## Topics
 
 - [Modern](https://ourword.ai/en/t/modern/) — 61
-- [The industrial age](https://ourword.ai/en/t/the-industrial-age/) — 46
+- [The industrial age](https://ourword.ai/en/t/the-industrial-age/) — 47
 - [Power and organisation](https://ourword.ai/en/t/power-and-organisation/) — 21
 - [Mind and feeling](https://ourword.ai/en/t/mind-and-feeling/) — 20
 - [Pre-Qin and classical](https://ourword.ai/en/t/pre-qin-and-classical/) — 20
 - [Starting and building](https://ourword.ai/en/t/starting-and-building/) — 19
 - [Strategy and competition](https://ourword.ai/en/t/strategy-and-competition/) — 17
 - [Learning and growth](https://ourword.ai/en/t/learning-and-growth/) — 16
+- [Money and risk](https://ourword.ai/en/t/money-and-risk/) — 16
 - [How the world works](https://ourword.ai/en/t/how-the-world-works/) — 15
-- [Money and risk](https://ourword.ai/en/t/money-and-risk/) — 15
 - [Qin, Han and the Six Dynasties](https://ourword.ai/en/t/qin-han-and-the-six-dynasties/) — 14
 - [Reading people](https://ourword.ai/en/t/reading-people/) — 14
 - [Body and daily life](https://ourword.ai/en/t/body-and-daily-life/) — 13
@@ -217,6 +217,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [Garry Kasparov · He spent years arguing the match didn't count](https://ourword.ai/en/i/kasparov/excuses-cost-years/): Garry Kasparov · He spent years arguing the match didn't count — Conceding is cheaper than appealing. What the first year after being replaced usually looks like. What he did, and what he said twenty years later.
 - [Kevin Kelly · A thousand true fans](https://ourword.ai/en/i/kevin-kelly/thousand-true-fans/): Kevin Kelly · A thousand true fans — Not famous, but deep enough. Creators assume fame has to come first. This asks whether that assumption is necessary at all, and what replaces it.
 - [Kevin Kelly · Nobody in the middle](https://ourword.ai/en/i/kevin-kelly/direct-relationship/): Kevin Kelly · Nobody in the middle — The money has to reach you directly. The sum carries a second condition almost everyone skips. This is what happens to the arithmetic once you skip it.
+- [Charles P. Kindleberger · Credit is the fuel](https://ourword.ai/en/i/kindleberger/credit-is-the-fuel/): Charles P. Kindleberger · Credit is the fuel — Real opportunities are common. Manias are rare. Every bubble starts with something real. This chapter asks why only a few of those real things ever run away.
+- [Charles P. Kindleberger · A friend gets rich](https://ourword.ai/en/i/kindleberger/a-friend-gets-rich/): Charles P. Kindleberger · A friend gets rich — What breaks your judgment is the person next to you. You think you are judging the market. This chapter says what actually moves you is the person beside you getting rich.
 - [Arthur Kleinman · The Disease and the Illness](https://ourword.ai/en/i/kleinman/disease-and-illness/): Arthur Kleinman · The Disease and the Illness — Two different things. The doctor says it is manageable and your life has caved in. Why Kleinman insists these are two separate things.
 - [Arthur Kleinman · The Eight Questions](https://ourword.ai/en/i/kleinman/eight-questions/): Arthur Kleinman · The Eight Questions — The last one asks what you are afraid of. What to ask, and what to be asked, in a consultation. Why Kleinman's list has these eight questions on it.
 - [Arthur Kleinman · When Curing Fails, Care Does Not](https://ourword.ai/en/i/kleinman/caring-when-curing-fails/): Arthur Kleinman · When Curing Fails, Care Does Not — Ten years looking after his wife taught him this. Some illnesses cannot be cured. What is left to do. The answer Kleinman reached after ten years of caring for his wife.
@@ -436,7 +438,7 @@ Cite the individual page URL, not the homepage — each entry page is stable and
 - [AI Bubble Monitor](https://ourword.ai/ai/)
 - [Zouni](https://ourword.ai/zouni/)
 
-## Index (163 entrys)
+## Index (164 entrys)
 
 - [Albert Einstein](https://ourword.ai/en/i/einstein/): Albert Einstein (Germany · 1879–1955) — Imagination. The physicist, and the father of relativity — but the legacy that travels furthest is not a formula, it is a way of working.
 - [Albert O. Hirschman](https://ourword.ai/en/i/hirschman/): Albert O. Hirschman (United States · 1915-2012) — Voice. A German-born American economist. He left Berlin in 1933, fought in Spain in 1936, spent 1940 in Marseille forging papers and finding mountain…
@@ -460,6 +462,7 @@ Cite the individual page URL, not the homepage — each entry page is stable and
 - [Carl Jung](https://ourword.ai/en/i/jung/): Carl Jung (1875–1961 · Zurich) — The afternoon has its own programme. The founder of analytical psychology, Freud's most valued student and his most famous defector.
 - [Carl Rogers](https://ourword.ai/en/i/carl-rogers/): Carl Rogers (1902–1987 · United States) — Held first. The founder of humanistic psychology, and the first person to record whole courses of therapy and hand them over to be studied — before that…
 - [Carol Dweck](https://ourword.ai/en/i/dweck/): Carol Dweck (2006 · Stanford) — Ability can grow. The Stanford psychologist behind the distinction between fixed and growth mindsets: whether you believe ability is a fixed quantity or something that…
+- [Charles P. Kindleberger](https://ourword.ai/en/i/kindleberger/): Charles P. Kindleberger (United States · 1910-2003) — Credit. An American economist, born in New York in 1910, on the faculty at MIT from 1948 for half a century, author of more than thirty books.
 - [Charlie Munger](https://ourword.ai/en/i/munger/): Charlie Munger (Contemporary · 1924–2023) — Invert. Buffett's partner for more than half a century, and the reason Berkshire stopped buying cheap broken companies and started buying good ones at fair…
 - [Chris Voss](https://ourword.ai/en/i/chris-voss/): Chris Voss (2016 · Never Split the Difference) — Label it first. A former lead international kidnapping negotiator for the FBI, with a career spent on sieges, abductions and hostage-takings.
 - [Christina Maslach](https://ourword.ai/en/i/maslach/): Christina Maslach (1946– · UC Berkeley) — Burnout is the job. Burnout became measurable largely because of her work. Her 1981 inventory split it into three components — emotional exhaustion…

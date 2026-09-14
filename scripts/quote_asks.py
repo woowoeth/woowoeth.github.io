@@ -398,6 +398,11 @@ QUOTE_ASKS = {
     "zhu-yuanzhang/delay-the-title": "别人都在抢先，我要不要慢一步。",
     "zhuge-liang/executing-ma-su": "该罚的是我最看重的那个人。",
     "zhuge-liang/longzhong-plan": "我看不出下一步棋该往哪走。",
+    # 查尔斯·金德尔伯格
+    "kindleberger/credit-is-the-fuel":
+        "我想跟，可这些钱都是借的。",
+    "kindleberger/a-friend-gets-rich":
+        "他发财了，我心里不是滋味。",
     # 阿尔伯特·赫希曼
     "hirschman/exit-voice-loyalty":
         "我不满意，可我只会走人。",

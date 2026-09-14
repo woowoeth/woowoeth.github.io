@@ -297,6 +297,7 @@ SC_SHORT = {
 }
 
 HWX_INTROS = {
+    "kindleberger": "把三百年的金融疯狂排成一张表的经济学家，他说燃料从来是信贷，不是乐观",
     "hirschman": "提出「退出与呼吁」的经济学家，1940 年在马赛帮人翻比利牛斯山逃出欧洲",
     "postman": "写《娱乐至死》的人，主张每一样技术都是一笔要签字的交易",
     "illich": "\u795e\u7236\u51fa\u8eab\uff0c\u5199\u4e0b\u300c\u533b\u7597\u5728\u5236\u9020\u75c5\u4eba\u300d\uff0c\u665a\u5e74\u62d2\u7edd\u4e86\u81ea\u5df1\u90a3\u4e2a\u7624\u7684\u624b\u672f",

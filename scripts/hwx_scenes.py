@@ -204,6 +204,8 @@ SCENES = [
      [("technological-revolutions", "bubble-in-the-script"), ("marks", "second-level-thinking")]),
     ("所有人都在冲，我怕自己踏空。",
      [("soros", "reflexivity"), ("influence", "reciprocity")]),
+    ("他发财了，我心里不是滋味。",
+     [("kindleberger", "a-friend-gets-rich"), ("crowd", "assert-repeat-contaminate")]),
 ]),
 ("让钱生钱", "钱的事", [
     ("钱放着不动，我心里发慌。",
@@ -724,6 +726,10 @@ SCENES = [
      [("soros", "reflexivity"), ("technological-revolutions", "bubble-in-the-script")]),
     ("这轮是真的，还是又一次。",
      [("technological-revolutions", "bubble-in-the-script"), ("crowd", "assert-repeat-contaminate")]),
+    ("我想跟，可这些钱都是借的。",
+     [("kindleberger", "credit-is-the-fuel"), ("technological-revolutions", "bubble-in-the-script")]),
+    ("这轮的钱，是借来的还是自己的。",
+     [("kindleberger", "credit-is-the-fuel"), ("marks", "second-level-thinking")]),
 ]),
 ("要不要现在跳进去", "AI 来了", [
     ("大家都在上这个，我要不要跟。",

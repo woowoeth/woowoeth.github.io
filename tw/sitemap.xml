@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://ourword.ai/tw/</loc><lastmod>2026-09-11</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://ourword.ai/tw/all/</loc><lastmod>2026-09-11</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://ourword.ai/tw/t/modern/</loc><lastmod>2026-09-11</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://ourword.ai/tw/t/industrial-age/</loc><lastmod>2026-09-11</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ourword.ai/tw/</loc><lastmod>2026-09-14</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://ourword.ai/tw/all/</loc><lastmod>2026-09-14</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ourword.ai/tw/t/modern/</loc><lastmod>2026-09-14</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ourword.ai/tw/t/industrial-age/</loc><lastmod>2026-09-14</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://ourword.ai/tw/t/mind/</loc><lastmod>2026-09-06</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://ourword.ai/tw/t/power/</loc><lastmod>2026-09-11</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://ourword.ai/tw/t/classical-era/</loc><lastmod>2026-09-06</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://ourword.ai/tw/t/startups/</loc><lastmod>2026-09-11</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://ourword.ai/tw/t/strategy/</loc><lastmod>2026-09-02</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://ourword.ai/tw/t/wealth/</loc><lastmod>2026-09-02</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ourword.ai/tw/t/wealth/</loc><lastmod>2026-09-14</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://ourword.ai/tw/t/learning/</loc><lastmod>2026-09-03</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://ourword.ai/tw/t/people/</loc><lastmod>2026-09-03</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ourword.ai/tw/t/people/</loc><lastmod>2026-09-14</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://ourword.ai/tw/t/world/</loc><lastmod>2026-09-11</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://ourword.ai/tw/t/family/</loc><lastmod>2026-09-03</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://ourword.ai/tw/t/living/</loc><lastmod>2026-09-07</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -197,6 +197,8 @@
   <url><loc>https://ourword.ai/tw/i/kasparov/excuses-cost-years/</loc><lastmod>2026-09-02</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://ourword.ai/tw/i/kevin-kelly/thousand-true-fans/</loc><lastmod>2026-09-01</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://ourword.ai/tw/i/kevin-kelly/direct-relationship/</loc><lastmod>2026-09-01</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://ourword.ai/tw/i/kindleberger/credit-is-the-fuel/</loc><lastmod>2026-09-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://ourword.ai/tw/i/kindleberger/a-friend-gets-rich/</loc><lastmod>2026-09-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://ourword.ai/tw/i/kleinman/disease-and-illness/</loc><lastmod>2026-09-01</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://ourword.ai/tw/i/kleinman/eight-questions/</loc><lastmod>2026-09-01</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://ourword.ai/tw/i/kleinman/caring-when-curing-fails/</loc><lastmod>2026-09-01</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
@@ -408,7 +410,7 @@
   <url><loc>https://ourword.ai/tw/i/cs-lewis/</loc><lastmod>2026-09-03</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://ourword.ai/tw/i/churchill/</loc><lastmod>2026-09-03</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://ourword.ai/tw/i/sovereign-individual/</loc><lastmod>2026-09-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://ourword.ai/tw/i/crowd/</loc><lastmod>2026-09-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ourword.ai/tw/i/crowd/</loc><lastmod>2026-09-14</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://ourword.ai/tw/i/jobs/</loc><lastmod>2026-08-31</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://ourword.ai/tw/i/sapiens/</loc><lastmod>2026-08-28</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://ourword.ai/tw/i/ren-zhengfei/</loc><lastmod>2026-08-28</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
@@ -428,7 +430,7 @@
   <url><loc>https://ourword.ai/tw/i/kevin-kelly/</loc><lastmod>2026-09-07</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://ourword.ai/tw/i/liu-bang/</loc><lastmod>2026-08-31</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://ourword.ai/tw/i/innovators-dilemma/</loc><lastmod>2026-09-02</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://ourword.ai/tw/i/livermore/</loc><lastmod>2026-08-31</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ourword.ai/tw/i/livermore/</loc><lastmod>2026-09-14</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://ourword.ai/tw/i/popper/</loc><lastmod>2026-08-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://ourword.ai/tw/i/cal-newport/</loc><lastmod>2026-09-07</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://ourword.ai/tw/i/carl-rogers/</loc><lastmod>2026-09-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
@@ -474,7 +476,7 @@
   <url><loc>https://ourword.ai/tw/i/strategies-of-the-warring-states/</loc><lastmod>2026-08-28</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://ourword.ai/tw/i/thomas-gordon/</loc><lastmod>2026-09-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://ourword.ai/tw/i/schelling/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://ourword.ai/tw/i/technological-revolutions/</loc><lastmod>2026-08-28</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ourword.ai/tw/i/technological-revolutions/</loc><lastmod>2026-09-14</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://ourword.ai/tw/i/la-rochefoucauld/</loc><lastmod>2026-09-03</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://ourword.ai/tw/i/napoleon/</loc><lastmod>2026-08-31</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://ourword.ai/tw/i/old-regime/</loc><lastmod>2026-09-11</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
@@ -495,6 +497,7 @@
   <url><loc>https://ourword.ai/tw/i/du-fu/</loc><lastmod>2026-09-02</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://ourword.ai/tw/i/matsushita/</loc><lastmod>2026-09-02</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://ourword.ai/tw/i/guns-germs-steel/</loc><lastmod>2026-08-28</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ourword.ai/tw/i/kindleberger/</loc><lastmod>2026-09-14</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://ourword.ai/tw/i/munger/</loc><lastmod>2026-08-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://ourword.ai/tw/i/granovetter/</loc><lastmod>2026-09-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://ourword.ai/tw/i/graham/</loc><lastmod>2026-09-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
@@ -517,7 +520,7 @@
   <url><loc>https://ourword.ai/tw/i/guan-zhong/</loc><lastmod>2026-08-28</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://ourword.ai/tw/i/su-yu/</loc><lastmod>2026-08-28</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://ourword.ai/tw/i/thinking-in-systems/</loc><lastmod>2026-09-11</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://ourword.ai/tw/i/soros/</loc><lastmod>2026-08-28</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ourword.ai/tw/i/soros/</loc><lastmod>2026-09-14</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://ourword.ai/tw/i/boyd/</loc><lastmod>2026-08-28</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://ourword.ai/tw/i/cacioppo/</loc><lastmod>2026-09-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://ourword.ai/tw/i/gottman/</loc><lastmod>2026-09-02</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
@@ -555,7 +558,7 @@
   <url><loc>https://ourword.ai/tw/i/adler/</loc><lastmod>2026-09-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://ourword.ai/tw/i/hochschild/</loc><lastmod>2026-09-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://ourword.ai/tw/i/tao-yuanming/</loc><lastmod>2026-09-02</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://ourword.ai/tw/i/marks/</loc><lastmod>2026-08-28</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ourword.ai/tw/i/marks/</loc><lastmod>2026-09-14</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://ourword.ai/tw/i/huo-qubing/</loc><lastmod>2026-09-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://ourword.ai/tw/i/nonviolent-communication/</loc><lastmod>2026-08-31</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://ourword.ai/tw/i/han-xin/</loc><lastmod>2026-08-31</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
