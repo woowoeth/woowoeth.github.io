@@ -398,6 +398,11 @@ QUOTE_ASKS = {
     "zhu-yuanzhang/delay-the-title": "别人都在抢先，我要不要慢一步。",
     "zhuge-liang/executing-ma-su": "该罚的是我最看重的那个人。",
     "zhuge-liang/longzhong-plan": "我看不出下一步棋该往哪走。",
+    # 诺斯古德·帕金森
+    "parkinson/work-expands":
+        "我给它多久，它就正好用掉多久。",
+    "parkinson/officials-make-work":
+        "我加了人，事情反而更多了。",
     # 查尔斯·金德尔伯格
     "kindleberger/credit-is-the-fuel":
         "我想跟，可这些钱都是借的。",

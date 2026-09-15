@@ -32,6 +32,8 @@ SCENES = [
      [("wang-xing", "escape-from-thinking"), ("drucker", "right-things-first")]),
     ("事情堆在一起，我不知道先动哪个。",
      [("mao", "on-contradiction"), ("influence", "social-proof")]),
+    ("留出的时间越多，我反而拖得越久。",
+     [("parkinson", "work-expands"), ("drucker", "right-things-first")]),
 ]),
 ("起了冲突", "要做决定", [
     ("窄路上两个人，我不想先让。",
@@ -358,6 +360,8 @@ SCENES = [
      [("cao-cao", "talent-only"), ("guiguzi", "sound-out")]),
     ("我提的人不行，换还是再等等。",
      [("wu-zetian", "promote-and-drop"), ("zhuge-liang", "close-the-worthy")]),
+    ("我加了人，事情反而更多了。",
+     [("parkinson", "officials-make-work"), ("xunzi", "division-makes-groups")]),
 ]),
 ("听不到实话", "带人", [
     ("汇报都很好，我却总觉得不对。",
@@ -442,6 +446,8 @@ SCENES = [
      [("matsushita", "tap-water"), ("wealth-of-nations", "pin-factory")]),
     ("这个成本压不下去，我卡住了。",
      [("musk", "first-principles"), ("xunzi", "borrow-from-things")]),
+    ("小钱我抠到底，大钱几分钟就批。",
+     [("parkinson", "officials-make-work"), ("musk", "idiot-index")]),
 ]),
 ("顺境里发慌", "把事做成", [
     ("顺到这个份上了，翻转从哪儿开始。",
@@ -1129,6 +1135,8 @@ SCENES = [
      [("franklin", "one-virtue-a-week"), ("atomic-habits", "systems-over-goals")]),
     ("家里的活，我好像永远做不完。",
      [("hochschild", "second-shift"), ("cal-newport", "schedule-the-depth")]),
+    ("我给它多久，它就正好用掉多久。",
+     [("parkinson", "work-expands"), ("seneca", "on-shortness-of-life")]),
 ]),
 ("病了", "身体与精力", [
     ("为什么偏偏是我。",

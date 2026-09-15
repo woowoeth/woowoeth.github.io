@@ -1,11 +1,11 @@
 # OurWord (人類世界生存法則)
 
-> 164 people and books on how the world actually works, across 2,600 years
+> 165 people and books on how the world actually works, across 2,600 years
 > 遇到事了，看看以前的人怎麼處理
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 164 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 165 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
-一個關於「世界到底怎麼運轉」的知識庫：戰略、財富、權力、人性、創業，取自 164 位人物與典籍，跨越 2600 年。每一條都寫清楚這個人真正留下的那一個想法、背後的故事、拆開的分則與例子，以及今天怎麼用。
+一個關於「世界到底怎麼運轉」的知識庫：戰略、財富、權力、人性、創業，取自 165 位人物與典籍，跨越 2600 年。每一條都寫清楚這個人真正留下的那一個想法、背後的故事、拆開的分則與例子，以及今天怎麼用。
 
 ## Read it
 
@@ -19,9 +19,9 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 ## Topics
 
 - [現代](https://ourword.ai/tw/t/modern/) — 58
-- [工業時代](https://ourword.ai/tw/t/industrial-age/) — 50
+- [工業時代](https://ourword.ai/tw/t/industrial-age/) — 51
+- [權力與組織](https://ourword.ai/tw/t/power/) — 22
 - [心智與情緒](https://ourword.ai/tw/t/mind/) — 21
-- [權力與組織](https://ourword.ai/tw/t/power/) — 21
 - [先秦與古典時代](https://ourword.ai/tw/t/classical-era/) — 20
 - [創業與產品](https://ourword.ai/tw/t/startups/) — 19
 - [謀略與競爭](https://ourword.ai/tw/t/strategy/) — 17
@@ -302,6 +302,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [舊制度與大革命 · 穿過革命的集權](https://ourword.ai/tw/i/old-regime/centralization-survived/): 舊制度與大革命 · 穿過革命的集權——推翻一切，繼承內核。大革命自稱與過去徹底決裂。這一篇要回答的是：托克維爾挖出的那條完整穿過革命的暗線。
 - [戰爭論 · 政治的繼續](https://ourword.ai/tw/i/on-war/continuation-of-politics/): 戰爭論 · 政治的繼續——打是為了談。全書最有名的一句常被當成犬儒的斷言。這一篇要回答的是：它其實是一條約束條款。
 - [戰爭論 · 摩擦](https://ourword.ai/tw/i/on-war/friction/): 戰爭論 · 摩擦——最簡單的事也是困難的。他為戰爭學發明了一個物理詞。這一篇要回答的是：摩擦從哪裡來，以及為什麼它不可消除、只可折算。
+- [諾斯古德·帕金森 · 工作會脹滿時間](https://ourword.ai/tw/i/parkinson/work-expands/): 諾斯古德·帕金森 · 工作會脹滿時間——你不是不會安排，是容器太大。你覺得時間不夠用。這一篇要回答的是：事情有多少，其實是被你給它的那段時間定下來的。
+- [諾斯古德·帕金森 · 人越加越忙](https://ourword.ai/tw/i/parkinson/officials-make-work/): 諾斯古德·帕金森 · 人越加越忙——機構的膨脹和事情的多少無關。隊伍天天喊忙，你準備再招兩個人。這一篇要回答的是：加進來的人，會不會自己造出新的忙。
 - [保羅·格雷厄姆 · 做不能規模化的事](https://ourword.ai/tw/i/paul-graham/dont-scale/): 保羅·格雷厄姆 · 做不能規模化的事——早期要手工。創業者滿腦子都是規模化，他勸的是反方向。這一篇要回答的是：手工階段買到的是什麼。
 - [保羅·格雷厄姆 · 默認活著還是默認死去](https://ourword.ai/tw/i/paul-graham/default-alive/): 保羅·格雷厄姆 · 默認活著還是默認死去——先算這道題。他和創業者聊天必先問一道題，多數創始人答不上來。這一篇要回答的是：這道題為什麼排在一切討論之前。
 - [埃絲特·佩雷爾 · 安全感和慾望要的東西相反](https://ourword.ai/tw/i/perel/security-and-desire/): 埃絲特·佩雷爾 · 安全感和慾望要的東西相反——所以過得越好越平淡。日子過得越安穩，感覺越淡，很多人以為是自己變了。這一篇要回答的是：佩雷爾說這是結構決定的。
@@ -444,7 +446,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [AI Bubble Monitor / AI 泡沫檢測儀](https://ourword.ai/ai/)
 - [Zouni / 走你](https://ourword.ai/zouni/)
 
-## Index (164 entrys)
+## Index (165 entrys)
 
 - [BJ·福格](https://ourword.ai/tw/i/bj-fogg/): BJ·福格（2019年·斯坦福行為設計實驗室）——小到不會失敗。斯坦福行為設計實驗室創始人，研究行為如何被設計出來。他給出一個公式：行為發生需要動機、能力、提示三者同時到位。多數人失敗在只調動機——靠決心和自我激勵——而動機天然起伏，靠它維持的習慣必然崩。他的主張相反：把行為縮到小得不需要動機，然後掛在一個已有的動作後面。
 - [C.S.劉易斯](https://ourword.ai/tw/i/cs-lewis/): C.S.劉易斯（1898-1963年·英國牛津）——妻子死後幾個月的日記。作家，牛津和劍橋的教授，寫過《納尼亞傳奇》和大量勸人信仰的書。五十八歲結婚，妻子喬伊四年後因癌症去世。之後幾個月他在四本練習簿上記自己的狀態，後來用筆名出版，就是《卿卿如晤》。收他是因為「重要的人走了」那六個問題，原來靠弗蘭克爾和蘇軾在答——一個是集中營的倖存者，一個是被貶的官員
@@ -587,6 +589,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [論語](https://ourword.ai/tw/i/analects/): 論語（春秋·前551-前479）——仁。孔子和弟子的對話錄，中國兩千年來讀書人的基本教材。但論語被後代統治者包裝成了「聽話」的哲學，實際上孔子說的很多話和這個方向相反：他辭官、周遊列國、不停批評當權者。論語的核心不是禮教，是「仁」——對人真實的關懷。孔子本人是個失敗的政治家，卻是最成功的教育家：三千弟子，七十二賢人，他
 - [諸葛亮](https://ourword.ai/tw/i/zhuge-liang/): 諸葛亮（三國·181-234）——隆中對。「運籌帷幄」的代名詞，「鞠躬盡瘁」的化身。他未出茅廬時就規劃了三分天下的格局，輔佐劉備建立蜀漢，治蜀二十年法治清明，六出祁山以攻代守。
 - [諾伯特·維納](https://ourword.ai/tw/i/wiener/): 諾伯特·維納（1894-1964年·美國）——技術還沒落地就去提醒人。控制論的提出者，1948 年《控制論》出版，1950 年《人有人的用處》。他的位置在這個庫裡比較特殊：他既是把機器控制這套東西推出來的人，也是最早公開說它會大規模頂替流水線工人的人。1949 年他寫信給美國汽車工人聯合會的領袖魯瑟，說自己不願意這件事在毫無準備的情況下發生，希望工
+- [諾斯古德·帕金森](https://ourword.ai/tw/i/parkinson/): 諾斯古德·帕金森（英國·1909-1993）——膨脹。英國歷史學家，1909年生，專業是英國海軍史，1950年起在新加坡的馬來亞大學當歷史教授。1955年11月19日，《經濟學人》登出一篇不署名的短文，第一句就是後來人人都會引的那條定律——工作會一直脹大，把你給它的時間全部佔掉，那是他寫的。兩年後他把這篇短文連同一批同樣刻薄的觀察結
 - [貝索斯](https://ourword.ai/tw/i/bezos/): 貝索斯（美·1964年-）——飛輪效應·Day 1。傑夫·貝索斯，亞馬遜創始人。1994年放棄華爾街對沖基金高薪，在車庫創辦網上書店，把它做成橫跨電商、雲計算（AWS）、物流、硬件的兩萬億美元帝國。他是長期主義最極端的實踐者：亞馬遜連續二十年微利甚至虧損，把所有現金流砸進飛輪，被華爾街嘲諷二十年，然後贏了二十年。他的方法論——飛輪
 - [費曼](https://ourword.ai/tw/i/feynman/): 費曼（1918-1988年·美國）——不騙自己。諾貝爾物理獎得主，參與過曼哈頓計劃，調查過挑戰者號事故。他留給非物理學家的東西比留給物理學家的更多——一套關於「怎麼知道自己是不是真懂」的判據。他的標準苛刻到近乎冒犯：如果你不能把一個概念講到大一新生聽懂，說明你自己沒懂。他也把這條用在整個科學界身上：科學的第一原則是不要騙自己，
 - [資治通鑑](https://ourword.ai/tw/i/zizhi-tongjian/): 資治通鑑（北宋·1065-1084）——鑑。司馬光用19年主持編寫，294卷，記錄前403年到959年共1362年歷史。書名由宋神宗題：「鑑於往事，有資於治道」。它是給統治者看的歷史教科書，核心問題只有一個：政權為什麼興，政權為什麼亡。186篇「臣光曰」是司馬光的判斷，精華在這裡。與史記的「寫人」不同，資治通鑑寫的是「權力

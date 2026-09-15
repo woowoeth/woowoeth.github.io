@@ -72,6 +72,17 @@ python3 scripts/gen_tw_allow.py     # 看一眼对不对，对就登记
 
 漏了 → 闸「繁体站」拦（「歧义字上下文没登记过 N 处」）。
 
+**这道闸会报两类红，处置完全相反，别混。**
+
+| 报的话 | 意思 | 怎么办 |
+|---|---|---|
+| 歧义字上下文没登记过 N 处 | 转对了，只是这个上下文头一次出现 | 看一眼确实对，`gen_tw_allow.py` 登记 |
+| 切错：X 里出现「AB」 | **转错了** | 别登记，去 `scripts/tw_convert.py` 的 `FIX` 表补 |
+
+（2026-09-15 帕金森这一条同时报了两类：4 处该登记的，5 页是
+「英国历史学家」被转成「英國曆史學家」。修 `FIX` 表时注意别把前文抄进判据 ——
+原来那条写的是 `("年曆史","年歷史")`，换个前文就又漏一次。见 FAILURES 第 34 条。）
+
 ## 三、英文（独立的一条构建链，不是翻译）
 
 | # | 改哪里 | 写什么 |
@@ -100,7 +111,7 @@ python3 scripts/build_all.py      # 第一遍：把新条目的页面目录建�
 python3 scripts/gen_og.py         # 分享图，必须在**最后一遍** build_all 之前
 # 英文分享图不用单独跑：build_en 会在清空并重建 en/ 之后自己出图（scripts/gen_og_en.py），check_en ⑰ 守着
 python3 scripts/build_all.py      # 第二遍：build_tw 这次才复制得到 og.png
-python3 scripts/gate.py           # 十八道闸
+python3 scripts/gate.py           # 十九道闸
 python3 scripts/gate_selftest.py  # 反向验：注入缺陷必须被拦下
 ```
 

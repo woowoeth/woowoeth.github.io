@@ -1,7 +1,7 @@
-# OurWord — 164 people and books on how the world actually works, across 2,600 years
+# OurWord — 165 people and books on how the world actually works, across 2,600 years
 # OurWord — See how people before you handled it.
 # https://ourword.ai/en/
-# Full corpus, plain text. 164 entrys.
+# Full corpus, plain text. 165 entrys.
 
 ========================================================================
 ## Albert Einstein
@@ -189,7 +189,7 @@ Only the paranoid survive. If we got kicked out, what would a new chief executiv
 Steve Jobs — Jobs disrupted other people on instinct and taste; Grove disrupted himself on process and data. The same act performed by two temperaments. Jensen Huang — Both walked out of the business that was making the money. Grove left memory under fire; Huang left mobile chips while they were still growing. Peter Drucker — Grove solves execution, Drucker solves choice. One asks how a thing gets through the organisation, the other asks whether it is worth doing at all. Albert O. Hirschman — Both ask how bad news travels upward: Grove wants the people sounding alarms brought into the room, Hirschman asks whether they resigned some time ago.
 
 ### Further
-Jensen Huang Peter Drucker Steve Jobs Jeff Bezos Duan Yongping Xunzi The Innovator's Dilemma Konosuke Matsushita Albert O. Hirschman
+Jensen Huang Peter Drucker Steve Jobs Jeff Bezos Duan Yongping Xunzi The Innovator's Dilemma Konosuke Matsushita Albert O. Hirschman C. Northcote Parkinson
 
 ========================================================================
 ## Arlie Hochschild
@@ -593,6 +593,46 @@ Anders Ericsson — One counts the repetitions, the other refuses the fixed form
 Wang Yangming Tao Te Ching Socrates Charlie Munger Miyamoto Musashi Fukuzawa Yukichi Haruki Murakami Atomic Habits Anders Ericsson Albert Einstein
 
 ========================================================================
+## C. Northcote Parkinson
+URL: https://ourword.ai/en/i/parkinson/
+Tags: Power and organisation, The industrial age, Expansion
+
+C. Northcote Parkinson (United Kingdom · 1909-1993) — Expansion. A British historian, born in 1909, a specialist in British naval history who held the Raffles Chair of History at the University of Malaya in Singapore from 1950.
+
+### Q: What did this one leave behind?
+A British historian, born in 1909, a specialist in British naval history who held the Raffles Chair of History at the University of Malaya in Singapore from 1950. On 19 November 1955 The Economist ran an unsigned article whose first sentence became the most quoted line in management writing: work keeps swelling until it has taken every hour you gave it. Two years later he collected that piece with a set of equally dry observations as Parkinson's Law, which sold in the millions. His evidence was not theory but ledgers: Admiralty establishment tables, Colonial Office headcounts, committee minutes. Out of them came a second and less comfortable finding: an organisation grows at its own steady rate, unrelated to how much work it actually has. He called all of it satire to the end of his life. Anyone who has worked inside a large institution reads it as reporting.
+
+### Q: What actually happened?
+Singapore, 1955. Parkinson is forty-six and his working material is stacks of old establishment tables: how many ships in a given year, how many officers, how many men behind desks. To a historian they are sources. To him they read as a joke - fewer ships every year, more administrators every year, and the increase suspiciously regular. He posted under two thousand sardonic words to The Economist, unsigned. Two years later it was a book selling in the millions, and he spent the rest of his life insisting it had been a joke.
+
+### The parts · A task takes the time you give it
+His famous line is not a claim that people are lazy. It is a claim that the duration of a job is not a fixed quantity: it grows to the size of the container. So saving time starts with the container, not with hurrying. e.g. The same document, due tonight or due next Wednesday, comes back at two completely different thicknesses.
+
+### The parts · An office grows on its own schedule
+Between 1914 and 1928 the Royal Navy's capital ships fell from sixty-two to twenty while Admiralty officials rose from two thousand to 3,569. His conclusion was awkward: the growth rate is steady and has nothing to do with the workload. e.g. Cut a product line and the standing meeting built around it often survives it.
+
+### The parts · Subordinates, not rivals
+The mechanism is two sentences: an official wants to multiply subordinates, not rivals, and those subordinates then make work for one another. An overloaded manager almost never asks for a peer to take half. He asks for two people of his own. e.g. A new role's first month of output is mostly process and reporting aimed inward.
+
+### The parts · The smallest number gets the longest debate
+In one committee a ten-million-pound reactor went through in two and a half minutes, a bicycle shed costing three hundred and fifty took forty-five, and twenty-one pounds of refreshments took longer again and was deferred. Nobody feels competent about the large number. e.g. Look at the largest sum on the agenda. It will probably be waved through first.
+
+### The parts · He wrote satire and was read as doctrine
+The book is a joke throughout and the formulas are half serious. It has lasted seventy years because its target has not moved: wherever people prove their worth by managing others rather than by producing anything, both laws still run. e.g. Judge a new process by asking whether it adds output, or adds things that must be managed.
+
+### Q: How do I use it today?
+Take one thing you have been busy with all week and cannot say what moved on. Do two things. First, resize it: if it were due at three tomorrow, which steps would you cut? Write them down, then ask of each who originally required it - half will have no answer. Second, recall your last meeting and pair each item with the money it involved and the minutes it took. If those two run opposite, you have just watched the law of triviality happen in front of you.
+
+### Lines to keep
+Work expands so as to fill the time available for its completion. Headcount climbs every year whatever the work happens to be. What he wants is subordinates, never a rival. The smaller the sum, the longer the meeting.
+
+### Q: What should I read alongside?
+Cal Newport — Two places to cut into the same problem: Newport puts deep work into the calendar, Parkinson says the block you booked will swell to fill itself unless you make it smaller. Taiichi Ohno — Both say slack fills itself in: Ohno watches inventory hide the problem, Parkinson watches time and headcount hide it.
+
+### Further
+Peter Drucker Andy Grove Taiichi Ohno Cal Newport Seneca
+
+========================================================================
 ## C.S. Lewis
 URL: https://ourword.ai/en/i/cs-lewis/
 Tags: Family and relationships, Modern, The notebooks after she died
@@ -658,10 +698,10 @@ Look back at yesterday and find whether there was a single stretch over ninety m
 Deep work is becoming rare exactly as it becomes valuable. A gap never appears by itself. You have to schedule it. Four fifteen-minute pieces do not make an hour.
 
 ### Q: What should I read alongside?
-Atomic Habits — Both work by design rather than by will: Clear edits the environment to lower the cost of starting, Newport edits the diary to protect the block. Anders Ericsson — Deliberate practice requires intense concentration, and Newport sets out why that concentration has become so hard to get hold of today. Mihaly Csikszentmihalyi — One sets out the internal conditions for concentration, the other the external ones, the diary and the environment that protect it. Scarcity — Both keep an account of attention: Newport counts what switching costs, Scarcity counts what how far short am I occupies all day.
+Atomic Habits — Both work by design rather than by will: Clear edits the environment to lower the cost of starting, Newport edits the diary to protect the block. Anders Ericsson — Deliberate practice requires intense concentration, and Newport sets out why that concentration has become so hard to get hold of today. Mihaly Csikszentmihalyi — One sets out the internal conditions for concentration, the other the external ones, the diary and the environment that protect it. Scarcity — Both keep an account of attention: Newport counts what switching costs, Scarcity counts what how far short am I occupies all day. C. Northcote Parkinson — Two places to cut into the same problem: Newport puts deep work into the calendar, Parkinson says the block you booked will swell to fill itself unless you make it smaller.
 
 ### Further
-Atomic Habits Anders Ericsson John Ratey Benjamin Franklin Haruki Murakami BJ Fogg Mihaly Csikszentmihalyi Scarcity Ivan Illich Simone Weil Neil Postman
+Atomic Habits Anders Ericsson John Ratey Benjamin Franklin Haruki Murakami BJ Fogg Mihaly Csikszentmihalyi Scarcity Ivan Illich Simone Weil Neil Postman C. Northcote Parkinson
 
 ========================================================================
 ## Cao Cao
@@ -3779,7 +3819,7 @@ There is only one valid definition of business purpose: to create a customer. No
 Andy Grove — Grove solves execution, Drucker solves choice. One asks how a thing gets through the organisation, the other asks whether it is worth doing at all. Paul Graham — Graham writes about the first hundred users and doing things that do not scale; Drucker writes about what happens after scale, when the activity outlives the reason for it. Taiichi Ohno — Drucker decides which thing to do; Ohno decides how a step is kept from going wrong. One sets the direction at a desk, the other sets the standard on the floor. Ivan Illich — Both ask what comes after efficiency — do the right things, or put a ceiling on the tool.
 
 ### Further
-Andy Grove Jeff Bezos Taiichi Ohno Paul Graham Ivan Illich Albert O. Hirschman
+Andy Grove Jeff Bezos Taiichi Ohno Paul Graham Ivan Illich Albert O. Hirschman C. Northcote Parkinson
 
 ========================================================================
 ## Peter Lynch
@@ -4217,7 +4257,7 @@ It is not that we have a short time to live, but that we waste a lot of it. Life
 Marcus Aurelius — Two Stoics in opposite seats: the emperor writing a private notebook to himself, the courtier writing public letters to other people — one turns inward, the other stays practical. Su Shi — Two ways of writing out of adversity: Seneca writes about restraint from inside the machinery of power, Su Shi writes about lightness on the road into exile, and both had been tested before either wrote a line. Montaigne — Both on learning to die. Seneca instructs from above; Montaigne writes outward from the afternoon he was thrown off a horse.
 
 ### Further
-Marcus Aurelius Epictetus Su Shi Viktor Frankl Montaigne
+Marcus Aurelius Epictetus Su Shi Viktor Frankl Montaigne C. Northcote Parkinson
 
 ========================================================================
 ## Shang Yang
@@ -4646,10 +4686,10 @@ Take one problem that has come back three times. Write the incident at the top o
 Repeat why five times and the real cause shows itself. The man who replaces the fuse will be back next week. When the water is high, all the rocks are underneath it.
 
 ### Q: What should I read alongside?
-Peter Drucker — Drucker decides which thing to do; Ohno decides how a step is kept from going wrong. One sets the direction at a desk, the other sets the standard on the floor. Elon Musk — Both attack cost by refusing the answer they are given. Musk goes down to the physics of the materials; Ohno goes down the chain of causes on a stopped machine. Simone Weil — Both stared at the same assembly line: one rebuilt it so the worker's thinking is required, the other recorded what the line that needs no thinking does to a person.
+Peter Drucker — Drucker decides which thing to do; Ohno decides how a step is kept from going wrong. One sets the direction at a desk, the other sets the standard on the floor. Elon Musk — Both attack cost by refusing the answer they are given. Musk goes down to the physics of the materials; Ohno goes down the chain of causes on a stopped machine. Simone Weil — Both stared at the same assembly line: one rebuilt it so the worker's thinking is required, the other recorded what the line that needs no thinking does to a person. C. Northcote Parkinson — Both say slack fills itself in: Ohno watches inventory hide the problem, Parkinson watches time and headcount hide it.
 
 ### Further
-Peter Drucker Kazuo Inamori Chu Shijian
+Peter Drucker Kazuo Inamori Chu Shijian C. Northcote Parkinson
 
 ========================================================================
 ## Tao Te Ching
@@ -14546,6 +14586,80 @@ Where it goes wrong: treating friction as an excuse and refusing every claim of 
 Everything in war is very simple, but the simplest thing is difficult.
 Friction is what distinguishes real war from war on paper.
 Three quarters of the factors in war lie in a fog.
+
+========================================================================
+## C. Northcote Parkinson · Work expands to fill the time
+URL: https://ourword.ai/en/i/parkinson/work-expands/
+Source: Parkinson's Law (1957), chapter 1, first published in The Economist, 19 November 1955
+Tags: Deep read, C. Northcote Parkinson, You are not disorganised. The container is too big
+
+You think you are short of time. This chapter argues the amount of work is set by the time you give it.
+
+### Q: What actually happened?
+In November 1955 The Economist ran an unsigned piece by a naval historian teaching in Singapore. Its opening sentence finished the argument: work expands so as to fill the time available for its completion. His example is an elderly lady with nothing else to do, who spends an entire day sending one postcard to her niece in Bognor Regis: finding the card, finding her glasses, hunting for the address, drafting the sentence, wondering whether to take an umbrella. A busy man posts the same card in three minutes.
+
+### The parts · The amount of work is not given
+Most advice about time assumes the workload is fixed and the only variable is your speed. Parkinson turns that over. Work behaves like a gas: it expands to whatever container you hand it, and the hand is yours.
+e.g. The same weekly report is a forty-minute job tonight and a whole afternoon if it is due on Friday.
+
+### The parts · Change the container, not your willpower
+If the expansion is automatic, working faster buys nothing - the same task eats the saved hours back. What works is a smaller container: an earlier deadline, a twenty-five minute meeting, a headcount fixed before the work starts.
+e.g. Move a deadline from two weeks to three days and what arrives is usually no worse.
+
+### The parts · The emptiest diary complains loudest
+What swells is not only the hours but the weight of the thing. Someone with a single task will brood over it, over-prepare it, revise it six times, and be genuinely exhausted by evening. Busyness tracks load far more weakly than people assume.
+e.g. The person juggling five things is often the one who answers you fastest.
+
+### The parts · This is not an argument for a full diary
+Booking every slot is the law doing its work for you: once booked, each task swells to fill its slot. He is talking about sizing the job, not about the density of the calendar. White space is the only place you can hold expansion down.
+e.g. After your most tightly booked week, you cannot name the one thing that actually moved.
+
+### Q: How do I use it today?
+Where you are: the day ends and none of it was yours, so you blame the shortage of hours.
+Ask first: if this were due at three this afternoon, which steps would I cut - and who asked for those steps?
+Where it goes wrong: using it to squeeze somebody else's deadline. A smaller container only works if you also cut what is inside it; shrink the date alone and the expansion moves into their evening.
+
+### Lines to keep
+Work expands so as to fill the time available for its completion.
+Give a task an afternoon and it takes an afternoon.
+White space is not waste. It is the only brake.
+
+========================================================================
+## C. Northcote Parkinson · Officials make work for each other
+URL: https://ourword.ai/en/i/parkinson/officials-make-work/
+Source: Parkinson's Law (1957), chapter 1, on the Admiralty establishment tables; the bicycle shed is from the chapter on high finance
+Tags: Deep read, C. Northcote Parkinson, An office grows whatever the work
+
+Your team is drowning and you are about to hire two more. This chapter asks whether the new people make new work.
+
+### Q: What actually happened?
+Parkinson read the old Admiralty establishment tables. Between 1914 and 1928 the Royal Navy's capital ships fell from sixty-two to twenty and its sailors were cut as well, while Admiralty officials rose from two thousand to 3,569, close to eighty per cent more. Two-thirds fewer ships; eighty per cent more men administering them. He found the same curve at the Colonial Office: less territory to govern each year, a larger office each year. An organisation grows at a rate unrelated to the work it has to do.
+
+### The parts · Two nearly instinctive rules
+He reduced the bloat to two lines: an official wants to multiply subordinates, not rivals; and officials make work for each other. The first explains why an overloaded manager never asks for a peer. The second explains why the new hires really are busy.
+e.g. The two new people need a weekly report, an alignment meeting and a review. None of it existed before they arrived.
+
+### The parts · The growth rate holds whatever the workload
+He measured the curve: staff climbed by roughly five to six per cent a year whether the work grew or shrank. The sting sits in the second half. It is not that more work brought more people. The two are simply unhooked.
+e.g. Cut a product line and the meeting built around it often keeps circulating minutes.
+
+### The parts · The smaller the sum, the longer the debate
+One committee waved a ten-million-pound reactor through in two and a half minutes, argued for forty-five over a bicycle shed costing three hundred and fifty, and spent longer still on twenty-one pounds of refreshments without settling it. Nobody feels competent about the large number.
+e.g. The loudest item in a budget meeting is usually the one everybody in the room can picture.
+
+### The parts · Before hiring, separate two kinds of hire
+You really are short-handed, and new people really do generate new work. Both hold at once. What decides it is whether the person does the job or manages the people doing the job. The second kind grows the busyness straight back.
+e.g. Three months in, count how much of the new role's output ever leaves the building.
+
+### Q: How do I use it today?
+Where you are: the team says it is drowning and two new headcount are already approved.
+Ask first: once they arrive, who assigns their work and who reads their output - and how many hours does that take from those people?
+Where it goes wrong: reading it as never hire. He measured an office that grew with no work to do; he never claimed you always have enough hands.
+
+### Lines to keep
+An official wants to multiply subordinates, not rivals.
+Officials make work for each other.
+The smaller the sum, the longer the meeting.
 
 ========================================================================
 ## Paul Graham · Do things that do not scale

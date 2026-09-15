@@ -1,9 +1,9 @@
 # OurWord (OurWord)
 
-> 164 people and books on how the world actually works, across 2,600 years
+> 165 people and books on how the world actually works, across 2,600 years
 > See how people before you handled it.
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 164 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 165 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
 ## Read it
 
@@ -17,8 +17,8 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 ## Topics
 
 - [Modern](https://ourword.ai/en/t/modern/) — 61
-- [The industrial age](https://ourword.ai/en/t/the-industrial-age/) — 47
-- [Power and organisation](https://ourword.ai/en/t/power-and-organisation/) — 21
+- [The industrial age](https://ourword.ai/en/t/the-industrial-age/) — 48
+- [Power and organisation](https://ourword.ai/en/t/power-and-organisation/) — 22
 - [Mind and feeling](https://ourword.ai/en/t/mind-and-feeling/) — 20
 - [Pre-Qin and classical](https://ourword.ai/en/t/pre-qin-and-classical/) — 20
 - [Starting and building](https://ourword.ai/en/t/starting-and-building/) — 19
@@ -296,6 +296,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [The Old Regime and the Revolution · The centralisation that survived](https://ourword.ai/en/i/old-regime/centralization-survived/): The Old Regime and the Revolution · The centralisation that survived — Overturn everything, inherit the core. The Revolution claimed a clean break with the past. The unbroken line Tocqueville dug out of the provincial archives.
 - [On War · The continuation of policy](https://ourword.ai/en/i/on-war/continuation-of-politics/): On War · The continuation of policy — You fight in order to settle. The most famous line in the book gets read as a cynical observation. It is in fact a restraining clause.
 - [On War · Friction](https://ourword.ai/en/i/on-war/friction/): On War · Friction — Even the simplest thing is difficult. He borrowed a word from physics for the study of war. This is where friction comes from and why it can only be budgeted for.
+- [C. Northcote Parkinson · Work expands to fill the time](https://ourword.ai/en/i/parkinson/work-expands/): C. Northcote Parkinson · Work expands to fill the time — You are not disorganised. The container is too big. You think you are short of time. This chapter argues the amount of work is set by the time you give it.
+- [C. Northcote Parkinson · Officials make work for each other](https://ourword.ai/en/i/parkinson/officials-make-work/): C. Northcote Parkinson · Officials make work for each other — An office grows whatever the work. Your team is drowning and you are about to hire two more. This chapter asks whether the new people make new work.
 - [Paul Graham · Do things that do not scale](https://ourword.ai/en/i/paul-graham/dont-scale/): Paul Graham · Do things that do not scale — The early work is meant to be handmade. Founders think about scale constantly. He argues for the opposite direction — and is specific about what the handmade phase actually buys.
 - [Paul Graham · Default alive or default dead](https://ourword.ai/en/i/paul-graham/default-alive/): Paul Graham · Default alive or default dead — Run this number before anything else. He asks founders one question first, and most of them cannot answer it. Why it comes before every other conversation.
 - [Esther Perel · Security and desire want opposite things](https://ourword.ai/en/i/perel/security-and-desire/): Esther Perel · Security and desire want opposite things — Which is why the better it gets, the flatter. The steadier life gets, the less you feel, and most people assume they changed. Perel says the structure did it.
@@ -438,7 +440,7 @@ Cite the individual page URL, not the homepage — each entry page is stable and
 - [AI Bubble Monitor](https://ourword.ai/ai/)
 - [Zouni](https://ourword.ai/zouni/)
 
-## Index (164 entrys)
+## Index (165 entrys)
 
 - [Albert Einstein](https://ourword.ai/en/i/einstein/): Albert Einstein (Germany · 1879–1955) — Imagination. The physicist, and the father of relativity — but the legacy that travels furthest is not a formula, it is a way of working.
 - [Albert O. Hirschman](https://ourword.ai/en/i/hirschman/): Albert O. Hirschman (United States · 1915-2012) — Voice. A German-born American economist. He left Berlin in 1933, fought in Spain in 1936, spent 1940 in Marseille forging papers and finding mountain…
@@ -456,6 +458,7 @@ Cite the individual page URL, not the homepage — each entry page is stable and
 - [Benjamin Graham](https://ourword.ai/en/i/graham/): Benjamin Graham (United States · 1894–1976) — Margin of safety. The father of security analysis, author of Security Analysis and The Intelligent Investor.
 - [Brené Brown](https://ourword.ai/en/i/brene-brown/): Brené Brown (2010 · University of Houston) — Shame and guilt. A social work researcher who spent twenty years on the thing most people will not touch: making shame into an object that can be studied…
 - [Bruce Lee](https://ourword.ai/en/i/bruce-lee/): Bruce Lee (Contemporary · 1940–1973) — Formless. The film star is the outermost label. He was a martial artist, a writer, a film-maker and a philosophy student, and in thirty-three years he left a…
+- [C. Northcote Parkinson](https://ourword.ai/en/i/parkinson/): C. Northcote Parkinson (United Kingdom · 1909-1993) — Expansion. A British historian, born in 1909, a specialist in British naval history who held the Raffles Chair of History at the University of…
 - [C.S. Lewis](https://ourword.ai/en/i/cs-lewis/): C.S. Lewis (1898–1963 · Oxford) — The notebooks after she died. A writer and professor at Oxford and Cambridge, author of Narnia and of many books arguing people into belief.
 - [Cal Newport](https://ourword.ai/en/i/cal-newport/): Cal Newport (2016 · Georgetown University) — Concentration is scarce. A computer science professor who also writes about how knowledge work actually gets done. He sets two things against each other.
 - [Cao Cao](https://ourword.ai/en/i/cao-cao/): Cao Cao (Late Han · 155–220) — Ability only. The novel made him the archetypal villain. The historical record shows the earliest systematic meritocrat in China: three orders seeking talent, each one…
