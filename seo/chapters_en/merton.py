@@ -116,9 +116,9 @@ CHAPTERS = [
             {"n": "The forty-first chair",
              "d": "The French Academy seats forty. Merton used the forty-first "
                   "chair for those who plainly deserved a seat and never got "
-                  "one - Descartes, Pascal, Moliere, Rousseau, Diderot, "
-                  "Stendhal, Flaubert, Zola, Proust. What excluded them was the "
-                  "count, not the quality.",
+                  "one - Descartes, Pascal, Moliere, Bayle, Rousseau, Saint-Simon, "
+                  "Diderot, Stendhal, Flaubert, Zola, Proust. What excluded them "
+                  "was the count, not the quality.",
              "eg": "Three awards exist. The gap between fourth and third is a "
                    "different kind of gap from fourth to tenth."},
             {"n": "A small lead grows itself",

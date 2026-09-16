@@ -13,7 +13,7 @@ harder.
 
 All four English situations already exist, so there is no SC_BOX here.
 Quoted lines are his own or the ones he quotes (the Thomas theorem, Matthew
-13:12), with spelling left as printed - "behavior" inside the quotation marks
+25:29), with spelling left as printed - "behavior" inside the quotation marks
 against the site's British spelling outside them.
 
 Three stories, no overlap: the entry is the boy who renamed himself Merlin,
