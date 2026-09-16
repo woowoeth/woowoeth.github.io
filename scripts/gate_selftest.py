@@ -1077,6 +1077,28 @@ def _worker_stale():
     return go
 
 
+ENTOPIC = os.path.join(ROOT, "en", "t", "mind-and-feeling", "index.html")
+
+
+def _hreflang_dead():
+    """给一页加一条指向不存在页面的 hreflang —— 2026-09-16 那 16 页就是这样。
+
+    判据从前整类跳过 hreflang（「它本来就指向别处」），造出一整类盲区：
+    指向 404 的 hreflang 比没有更糟，搜索引擎会把整组语言判废。
+    """
+    def go():
+        t = read(ENTOPIC)
+        i = t.find('<link rel="alternate" hreflang=')
+        if i < 0:
+            return None
+        seg = ('<link rel="alternate" hreflang="zh-Hans" '
+               'href="https://ourword.ai/t/mind-and-feeling/">')
+        write(ENTOPIC, t[:i] + seg + t[i:])
+        return ENTOPIC
+
+    return go
+
+
 CASES = [
     # (分支名, 门禁命令, 被改的文件, 注入函数, 必须报出的理由)
     ("章节·dek 过短",   "check_chapters.py", CHAP, _sub_field("dek", _short(3)),  "dek"),
@@ -1147,6 +1169,8 @@ CASES = [
      os.path.join(ROOT, "index.html"), _home_inlined(), "还是内联的"),
     ("资源版本·改了没盖章", "check_assets.py", ENTRYCSS, _asset_stale(),
      "老用户会一直拿到缓存里那份旧的"),
+    ("多语言·指向不存在的页", "check_links.py", ENTOPIC, _hreflang_dead(),
+     "hreflang 指向不存在的页"),
     ("问答·线上跑的是旧那份", "check_chat_lang.py", WORKERJS, _worker_stale(),
      "不是仓库里这份"),
 ]

@@ -186,6 +186,10 @@ def main():
         if not os.path.exists(p_):
             continue
         t = open(p_, encoding="utf-8").read()
+        # sitemap 里的 <xhtml:link rel="alternate" hreflang=...> 是**多语言标注**，
+        # 它天生指向别的语言版本（2026-09-16 加的）。拿「都该是 /tw/」去量它是错的 ——
+        # 它的目标存不存在由 check_links 那条判据管。先摘掉再量剩下的。
+        t = re.sub(r'<xhtml:link rel="alternate"[^>]*>', "", t)
         # 「应全部是 /tw/」这个说法不对：同域下有几个路径**不属于这个仓库**
         # （/podcast/ /skill/ /ai/ /zouni/ /site/，各归独立仓库），
         # 它们没有主站的语言目录，加了前缀就是不存在的地址。

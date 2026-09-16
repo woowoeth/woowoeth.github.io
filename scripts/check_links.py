@@ -23,7 +23,10 @@
   · 本站页面     → 必须在构建产物里真有这个文件
   · 资源文件     → 英文站按设计不加前缀（用主站那一份），所以只查存在性
   · 姊妹站路径   → 必须在 lang_urls.SISTER 声明的落地地址里
-  · hreflang     → 跳过。它描述的是别的语言版本，本来就指向别处
+  · hreflang     → **不再整类跳过**。它指向的仍然是本站的地址，指到 404 上
+                    比没有更糟（搜索引擎会把整组语言判废）。2026-09-16 就是这么
+                    漏掉 14 页的：英文话题页的 hreflang 指着 /t/<英文 slug>/，
+                    而中文站那个 slug 不存在。现在只跳过站外地址。
   · 简体站本来就坏的 → 跳过并单独计数。这道闸只管**翻译造成的**断链；
                       简体站 llms.txt 里 /i/、/ai/、/zouni/ 三条早就是死链，
                       混进来只会淹掉真问题。要治它们是另一件事。
@@ -39,7 +42,12 @@ sys.path.insert(0, HERE)
 from lang_urls import SISTER, sister, is_page  # noqa: E402
 
 SITE = "https://ourword.ai"
-ALT = re.compile(r'<link rel="alternate"[^>]*>')
+HREF = re.compile(r'href="([^"]+)"')
+# 两种「多语言标注」：页面 <head> 里的 <link rel=alternate hreflang>，
+# 和 sitemap 里的 <xhtml:link rel=alternate hreflang>。两者都**天生指向别的语言**，
+# 所以不能拿「/en/ 里的地址必须带 /en 前缀」那条去量它们；但它们指的仍是本站地址，
+# 目标必须真存在 —— 下面先查存在性，再把它们摘掉。
+ALT = re.compile(r'<(?:xhtml:)?link rel="alternate"[^>]*>')
 # 不要把 llms.txt 里那句 URL 模式说明当成链接：它写的是
 # "https://ourword.ai/i/<slug>/"，正则会在 < 处截断，报出一个不存在的 /i/。
 URL = re.compile(r'https://ourword\.ai(/[^\s"\'<>)]*)(?![^\s"\'<>)]*<)')
@@ -115,7 +123,19 @@ def check(lang, assets):
             rel = os.path.relpath(p, ROOT).replace(os.sep, "/")
             own = "/" + (rel[:-len("index.html")] if rel.endswith("index.html") else rel)
             s = open(p, encoding="utf-8", errors="ignore").read()
-            s = ALT.sub("", s)              # hreflang 指向别的语言版本，跳过
+            # hreflang 不再整类跳过：它指的是本站地址，指到 404 上比没有更糟。
+            for m in ALT.finditer(s):
+                mu = HREF.search(m.group(0))
+                if not mu:
+                    continue
+                hu = mu.group(1)
+                if not hu.startswith(SITE + "/"):
+                    continue                # 站外（姊妹站）由 sister_ok 那条管
+                loc = os.path.join(ROOT, hu[len(SITE) + 1:])
+                if not os.path.exists(os.path.join(loc, "index.html")) \
+                        and not os.path.isfile(loc):
+                    bad.append("%s → hreflang 指向不存在的页 %s" % (own, hu))
+            s = ALT.sub("", s)              # 查过之后再摘掉，下面按普通链接查剩下的
             s = IDENTITY.sub("", s)         # sameAs 是组织身份，跳过
             for u in set(URL.findall(s)):
                 n += 1

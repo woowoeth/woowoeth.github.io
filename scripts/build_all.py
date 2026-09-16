@@ -54,6 +54,7 @@ CHAIN = [
     ("繁体站", "scripts/build_tw.py"),
     # 拆首页数据必须在 build_tw **之后**：繁体页是从简体页转出来的，
     # 先拆的话 tw/index.html 会指向 assets/ 下那份简体数据，繁体站当场变简体。
+    ("多语言互链", "scripts/lang_links.py"),
     ("首页数据外置", "scripts/split_home_data.py"),
     # 盖章必须在**所有**站都构建完之后：它扫的是最终产物，
     # 中英繁三个站里任何一处的 /assets/ 引用都要盖到。
