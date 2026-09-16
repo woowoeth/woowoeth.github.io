@@ -1099,6 +1099,23 @@ def _hreflang_dead():
     return go
 
 
+def _pair_broken():
+    """把英文话题页里指向中文版的那条摘掉 —— 少写一条不会死链，只是悄悄没了。
+
+    「目标存不存在」那条判据抓不到这种，所以才要「必须互指」这一条。
+    """
+    def go():
+        t = read(ENTOPIC)
+        i = t.find('<link rel="alternate" hreflang="zh-Hans"')
+        if i < 0:
+            return None
+        j = t.find(">", i) + 1
+        write(ENTOPIC, t[:i] + t[j:])
+        return ENTOPIC
+
+    return go
+
+
 CASES = [
     # (分支名, 门禁命令, 被改的文件, 注入函数, 必须报出的理由)
     ("章节·dek 过短",   "check_chapters.py", CHAP, _sub_field("dek", _short(3)),  "dek"),
@@ -1171,6 +1188,8 @@ CASES = [
      "老用户会一直拿到缓存里那份旧的"),
     ("多语言·指向不存在的页", "check_links.py", ENTOPIC, _hreflang_dead(),
      "hreflang 指向不存在的页"),
+    ("话题互指·少了中文那条", "check_lang_pairs.py", ENTOPIC, _pair_broken(),
+     "应为"),
     ("问答·线上跑的是旧那份", "check_chat_lang.py", WORKERJS, _worker_stale(),
      "不是仓库里这份"),
 ]

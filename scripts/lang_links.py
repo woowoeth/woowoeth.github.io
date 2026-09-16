@@ -24,6 +24,11 @@ import re
 import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.join(ROOT, "seo"))
+import topic_pairs                                    # noqa: E402  唯一的话题对应表
+
+ZH2EN = topic_pairs.pairs()                           # {中文 slug: 英文 slug}
+EN2ZH = dict((v, k) for k, v in ZH2EN.items())
 SITE = "https://ourword.ai"
 NS = "http://www.w3.org/1999/xhtml"
 # 语言 → (sitemap 文件, URL 前缀, 本地目录前缀)
@@ -41,23 +46,50 @@ def rest_of(loc, prefix):
     return loc[len(head):]
 
 
+TOPIC = re.compile(r"^t/([^/]+)/$")
+
+
+def to_lang(rest, src, dst):
+    """把一种语言下的相对路径换成另一种语言的。话题页要换 slug，别的原样。
+
+    三语的话题 slug 不同（/t/mind/ ↔ /en/t/mind-and-feeling/），
+    以前这里是原样套前缀，于是英文话题页的 hreflang 指向 /t/<英文 slug>/ —— 404。
+    """
+    m = TOPIC.match(rest)
+    if not m:
+        return rest                                   # 章节页、条目页三语同 slug
+    slug = m.group(1)
+    if src == "en" and dst != "en":
+        slug = EN2ZH.get(slug, slug)
+    elif src != "en" and dst == "en":
+        slug = ZH2EN.get(slug, slug)
+    return "t/%s/" % slug
+
+
 def exists(prefix, rest):
     """本地真有这一页吗。rest 形如 'i/postman/' 或 ''。"""
     rel = os.path.join(ROOT, prefix, rest)
     return os.path.exists(os.path.join(rel, "index.html")) or os.path.isfile(rel)
 
 
-def alt_block(rest, indent="    "):
+LANG_OF = {"": "zh", "en/": "en", "tw/": "zh"}       # slug 口径：繁体跟简体一致
+
+
+def alt_block(rest, src_prefix, indent="    "):
+    src = LANG_OF[src_prefix]
     out = []
     for lang, _f, prefix, dirp in LANGS:
-        if not exists(dirp, rest):
+        r = to_lang(rest, src, LANG_OF[prefix])
+        if not exists(dirp, r):
             continue
         out.append('%s<xhtml:link rel="alternate" hreflang="%s" href="%s/%s%s"/>'
-                   % (indent, lang, SITE, prefix, rest))
-    if out and exists(dict((l[0], l[3]) for l in LANGS)[XDEFAULT], rest):
-        pre = dict((l[0], l[2]) for l in LANGS)[XDEFAULT]
+                   % (indent, lang, SITE, prefix, r))
+    xd_dir = dict((l[0], l[3]) for l in LANGS)[XDEFAULT]
+    xd_pre = dict((l[0], l[2]) for l in LANGS)[XDEFAULT]
+    r = to_lang(rest, src, LANG_OF[xd_pre])
+    if out and exists(xd_dir, r):
         out.append('%s<xhtml:link rel="alternate" hreflang="x-default" href="%s/%s%s"/>'
-                   % (indent, SITE, pre, rest))
+                   % (indent, SITE, xd_pre, r))
     return out
 
 
@@ -66,8 +98,10 @@ def do(path, prefix):
     if not os.path.exists(p):
         return 0, 0, "没有 %s" % path
     t = io.open(p, encoding="utf-8").read()
-    if "xhtml:link" in t:                      # 幂等：已经加过
-        return 0, t.count("<url>"), "已有标注，跳过"
+    # 幂等做法：先把旧标注全摘掉再重建。原来是「有就跳过」，结果对应表改了之后
+    # sitemap 永远停在旧答案上 —— 话题页那 16 条一直缺 en。
+    t = re.sub(r"\n\s*<xhtml:link rel=\"alternate\"[^>]*/>", "", t)
+    t = re.sub(r"\n\s*\n(\s*</url>)", r"\n\1", t)      # 摘干净，别留空行
     t = t.replace('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
                   '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"'
                   ' xmlns:xhtml="%s">' % NS, 1)
@@ -78,7 +112,7 @@ def do(path, prefix):
         rest = rest_of(loc, prefix)
         if rest is None:
             return whole
-        alts = alt_block(rest)
+        alts = alt_block(rest, prefix)
         if len(alts) < 3:                      # 只有自己 + x-default 时不写，没有信息量
             return whole
         done[0] += 1
@@ -98,6 +132,52 @@ def local_of(url):
     if not url.startswith(SITE + "/"):
         return None
     return os.path.join(ROOT, url[len(SITE) + 1:])
+
+
+def fix_topic_hreflang():
+    """把三语话题页的 hreflang 改成真正互指 —— 治本的那一步。
+
+    以前每页的 hreflang 是「同一个 rest 套三个前缀」，章节页对（三语同 slug），
+    话题页错（三语 slug 不同）。现在按 seo/topic_pairs.py 这张唯一的对应表写。
+    """
+    fixed = 0
+    for lang_dir, src in (("", "zh"), ("en", "en"), ("tw", "zh")):
+        base = os.path.join(ROOT, lang_dir, "t") if lang_dir else os.path.join(ROOT, "t")
+        if not os.path.isdir(base):
+            continue
+        for slug in sorted(os.listdir(base)):
+            p = os.path.join(base, slug, "index.html")
+            if not os.path.isfile(p):
+                continue
+            rest = "t/%s/" % slug
+            lines = []
+            for lang, _f, prefix, dirp in LANGS:
+                r = to_lang(rest, src, LANG_OF[prefix])
+                if exists(dirp, r):
+                    lines.append('<link rel="alternate" hreflang="%s" href="%s/%s%s">'
+                                 % (lang, SITE, prefix, r))
+            xd_pre = dict((l[0], l[2]) for l in LANGS)[XDEFAULT]
+            xd_dir = dict((l[0], l[3]) for l in LANGS)[XDEFAULT]
+            r = to_lang(rest, src, LANG_OF[xd_pre])
+            if len(lines) >= 2 and exists(xd_dir, r):
+                lines.append('<link rel="alternate" hreflang="x-default" href="%s/%s%s">'
+                             % (SITE, xd_pre, r))
+            t = io.open(p, encoding="utf-8").read()
+            old = ALT_RE.findall(t)
+            if not old and not lines:
+                continue
+            new_block = "".join(lines)
+            t2 = ALT_RE.sub("", t, count=len(old)) if old else t
+            if lines:
+                i = t2.find('<link rel="canonical"')
+                if i < 0:
+                    i = t2.find("</head>")
+                j = t2.find(">", i) + 1 if t2[i:i + 20].startswith("<link rel=\"canon") else i
+                t2 = t2[:j] + new_block + t2[j:]
+            if t2 != t:
+                io.open(p, "w", encoding="utf-8").write(t2)
+                fixed += 1
+    return fixed
 
 
 def prune_dead_hreflang():
@@ -147,8 +227,14 @@ def main():
         print("  %-16s %4d/%-4d 条加了多语言标注 %s" % (f, n, total, note))
         if note.startswith("没有"):
             rc = 1
+    n = fix_topic_hreflang()
+    print("  话题页：%d 页的 hreflang 按对应表重写（三语真正互指）" % n)
     fixed, pages = prune_dead_hreflang()
-    print("  hreflang：%d/%d 页摘掉了指向不存在页面的那几行" % (fixed, pages))
+    print("  兜底：%d/%d 页摘掉了指向不存在页面的那几行" % (fixed, pages))
+    left_en, left_zh = topic_pairs.missing(ROOT)
+    if left_en:
+        print("  ！英文话题没有对应关系：%s" % left_en)
+        rc = 1
     return rc
 
 
