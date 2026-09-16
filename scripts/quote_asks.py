@@ -398,6 +398,11 @@ QUOTE_ASKS = {
     "zhu-yuanzhang/delay-the-title": "别人都在抢先，我要不要慢一步。",
     "zhuge-liang/executing-ma-su": "该罚的是我最看重的那个人。",
     "zhuge-liang/longzhong-plan": "我看不出下一步棋该往哪走。",
+    # 罗伯特·K·默顿
+    "merton/self-fulfilling-prophecy":
+        "怀疑一起来，我做什么都像证据。",
+    "merton/matthew-effect":
+        "一样的活，我没名气就吃亏。",
     # 诺斯古德·帕金森
     "parkinson/work-expands":
         "我给它多久，它就正好用掉多久。",

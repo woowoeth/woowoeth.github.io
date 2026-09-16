@@ -1,9 +1,9 @@
 # OurWord (OurWord)
 
-> 165 people and books on how the world actually works, across 2,600 years
+> 166 people and books on how the world actually works, across 2,600 years
 > See how people before you handled it.
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 165 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 166 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
 ## Read it
 
@@ -17,15 +17,15 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 ## Topics
 
 - [Modern](https://ourword.ai/en/t/modern/) — 61
-- [The industrial age](https://ourword.ai/en/t/the-industrial-age/) — 48
+- [The industrial age](https://ourword.ai/en/t/the-industrial-age/) — 49
 - [Power and organisation](https://ourword.ai/en/t/power-and-organisation/) — 22
 - [Mind and feeling](https://ourword.ai/en/t/mind-and-feeling/) — 20
 - [Pre-Qin and classical](https://ourword.ai/en/t/pre-qin-and-classical/) — 20
 - [Starting and building](https://ourword.ai/en/t/starting-and-building/) — 19
 - [Strategy and competition](https://ourword.ai/en/t/strategy-and-competition/) — 17
+- [How the world works](https://ourword.ai/en/t/how-the-world-works/) — 16
 - [Learning and growth](https://ourword.ai/en/t/learning-and-growth/) — 16
 - [Money and risk](https://ourword.ai/en/t/money-and-risk/) — 16
-- [How the world works](https://ourword.ai/en/t/how-the-world-works/) — 15
 - [Qin, Han and the Six Dynasties](https://ourword.ai/en/t/qin-han-and-the-six-dynasties/) — 14
 - [Reading people](https://ourword.ai/en/t/reading-people/) — 14
 - [Body and daily life](https://ourword.ai/en/t/body-and-daily-life/) — 13
@@ -267,6 +267,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [Mencius · The people come first](https://ourword.ai/en/i/mencius/people-first/): Mencius · The people come first — Where the ground under power actually is. Read for two thousand years as ancient humanism. It reads better as a technical claim about where a government's power comes from.
 - [Mencius · Two different ways of being obeyed](https://ourword.ai/en/i/mencius/force-vs-virtue/): Mencius · Two different ways of being obeyed — Compliance and conviction look identical. Two people are doing what you asked, and the two cases have nothing in common. This is how to tell which one you have.
 - [Mencius · The flood-like breath](https://ourword.ai/en/i/mencius/flood-like-qi/): Mencius · The flood-like breath — It accumulates, and it cannot be hurried. Asked what the flood-like breath was, he said it is hard to put into words. Here is where it comes from, and how it leaks away.
+- [Robert K. Merton · How a false story makes itself true](https://ourword.ai/en/i/merton/self-fulfilling-prophecy/): Robert K. Merton · How a false story makes itself true — Suspicion manufactures the evidence for itself. People have begun guarding themselves against you and explaining makes it worse. How the loop closes, and where it can be cut.
+- [Robert K. Merton · To every one that hath](https://ourword.ai/en/i/merton/matthew-effect/): Robert K. Merton · To every one that hath — Credit is paid on reputation, not on effort. You did the work and another name is the one people kept. Why this is usually allocation rather than theft.
 - [Montaigne · To philosophise is to learn to die](https://ourword.ai/en/i/montaigne/learning-to-die/): Montaigne · To philosophise is to learn to die — After he was thrown from the horse. He tells you to think about death daily, which sounds morbid. Then he reports having very nearly done it.
 - [Montaigne · What do I know?](https://ourword.ai/en/i/montaigne/what-do-i-know/): Montaigne · What do I know? — Put your own weaknesses on the table first. He wrote down his cowardice, his bad memory, his dithering. Not as confession. As a position that cannot be attacked.
 - [Montaigne · At thirty-eight he moved into the tower](https://ourword.ai/en/i/montaigne/the-tower/): Montaigne · At thirty-eight he moved into the tower — He fenced off a piece for himself. The famous retirement was not a retirement. What he actually did is smaller, repeatable, and the reason the book exists.
@@ -440,7 +442,7 @@ Cite the individual page URL, not the homepage — each entry page is stable and
 - [AI Bubble Monitor](https://ourword.ai/ai/)
 - [Zouni](https://ourword.ai/zouni/)
 
-## Index (165 entrys)
+## Index (166 entrys)
 
 - [Albert Einstein](https://ourword.ai/en/i/einstein/): Albert Einstein (Germany · 1879–1955) — Imagination. The physicist, and the father of relativity — but the legacy that travels furthest is not a formula, it is a way of working.
 - [Albert O. Hirschman](https://ourword.ai/en/i/hirschman/): Albert O. Hirschman (United States · 1915-2012) — Voice. A German-born American economist. He left Berlin in 1933, fought in Spain in 1936, spent 1940 in Marseille forging papers and finding mountain…
@@ -554,6 +556,7 @@ Cite the individual page URL, not the homepage — each entry page is stable and
 - [Records of the Grand Historian](https://ourword.ai/en/i/records-of-the-grand-historian/): Records of the Grand Historian (Western Han · 104–91 BC) — A record with a verdict. One hundred and thirty chapters, about half a million characters, covering some three thousand years from the…
 - [Ren Zhengfei](https://ourword.ai/en/i/ren-zhengfei/): Ren Zhengfei (Contemporary · 1944–) — Endurance. In 1987, at forty-three, he put twenty thousand yuan into a Shenzhen company reselling other people's telephone switches.
 - [Richard Feynman](https://ourword.ai/en/i/feynman/): Richard Feynman (1918–1988 · United States) — Do not fool yourself. Nobel physicist, Manhattan Project, and the member of the Challenger commission who insisted his own dissenting appendix be printed…
+- [Robert K. Merton](https://ourword.ai/en/i/merton/): Robert K. Merton (United States · 1910-2003) — Self-confirming. An American sociologist, born in a poor quarter of Philadelphia in 1910 to immigrant parents, who taught at Columbia from 1941 until he…
 - [Robert Sapolsky](https://ourword.ai/en/i/sapolsky/): Robert Sapolsky (1994 · Stanford) — Stress is a mismatch. A neuroendocrinologist who spent thirty years with a troop of wild baboons in East Africa while studying human stress physiology.
 - [Sapiens](https://ourword.ai/en/i/sapiens/): Sapiens (2011 · Yuval Noah Harari) — Fictions. An Israeli historian's account of sixty thousand years, with an argument short enough to hold in one hand.
 - [Scarcity](https://ourword.ai/en/i/scarcity/): Scarcity (2013 · Mullainathan and Shafir) — Bandwidth. A behavioural economist and a psychologist, writing not about how to make money but about what happens once there is not enough.

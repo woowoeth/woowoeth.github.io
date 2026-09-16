@@ -1,11 +1,11 @@
 # OurWord (人類世界生存法則)
 
-> 165 people and books on how the world actually works, across 2,600 years
+> 166 people and books on how the world actually works, across 2,600 years
 > 遇到事了，看看以前的人怎麼處理
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 165 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 166 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
-一個關於「世界到底怎麼運轉」的知識庫：戰略、財富、權力、人性、創業，取自 165 位人物與典籍，跨越 2600 年。每一條都寫清楚這個人真正留下的那一個想法、背後的故事、拆開的分則與例子，以及今天怎麼用。
+一個關於「世界到底怎麼運轉」的知識庫：戰略、財富、權力、人性、創業，取自 166 位人物與典籍，跨越 2600 年。每一條都寫清楚這個人真正留下的那一個想法、背後的故事、拆開的分則與例子，以及今天怎麼用。
 
 ## Read it
 
@@ -19,7 +19,7 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 ## Topics
 
 - [現代](https://ourword.ai/tw/t/modern/) — 58
-- [工業時代](https://ourword.ai/tw/t/industrial-age/) — 51
+- [工業時代](https://ourword.ai/tw/t/industrial-age/) — 52
 - [權力與組織](https://ourword.ai/tw/t/power/) — 22
 - [心智與情緒](https://ourword.ai/tw/t/mind/) — 21
 - [先秦與古典時代](https://ourword.ai/tw/t/classical-era/) — 20
@@ -27,8 +27,8 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 - [謀略與競爭](https://ourword.ai/tw/t/strategy/) — 17
 - [財富與風險](https://ourword.ai/tw/t/wealth/) — 17
 - [學習與成長](https://ourword.ai/tw/t/learning/) — 15
+- [世界如何運轉](https://ourword.ai/tw/t/world/) — 15
 - [識人與相處](https://ourword.ai/tw/t/people/) — 14
-- [世界如何運轉](https://ourword.ai/tw/t/world/) — 14
 - [家庭與關係](https://ourword.ai/tw/t/family/) — 13
 - [身心與生活](https://ourword.ai/tw/t/living/) — 13
 - [近世](https://ourword.ai/tw/t/early-modern/) — 12
@@ -273,6 +273,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [孟子 · 民為貴](https://ourword.ai/tw/i/mencius/people-first/): 孟子 · 民為貴——權力的地基在最下面。這句話被當成兩千年前的民本情懷。這一篇要回答的是：它其實是一句關於權力從哪來的技術判斷。
 - [孟子 · 以力服人與以德服人](https://ourword.ai/tw/i/mencius/force-vs-virtue/): 孟子 · 以力服人與以德服人——順從和心服的區別。同樣是聽你的，有兩種完全不同的聽。這一篇要回答的是：怎麼分辨你手上的是哪一種。
 - [孟子 · 養浩然之氣](https://ourword.ai/tw/i/mencius/flood-like-qi/): 孟子 · 養浩然之氣——頂得住壓力的那口氣。公孫丑問什麼是浩然之氣，孟子說難言也。這一篇要回答的是：這口氣到底怎麼來的，以及怎麼弄丟。
+- [羅伯特·K·默頓 · 假話怎麼變成真事](https://ourword.ai/tw/i/merton/self-fulfilling-prophecy/): 羅伯特·K·默頓 · 假話怎麼變成真事——懷疑會替自己造出證據。有人開始防著你，你越澄清越像心虛。這一篇要回答的是：這個圈是怎麼合上的，又只能從哪裡斷開。
+- [羅伯特·K·默頓 · 凡有的還要加給他](https://ourword.ai/tw/i/merton/matthew-effect/): 羅伯特·K·默頓 · 凡有的還要加給他——功勞按名氣分，不按出力分。活是你幹的，記住的卻是另一個名字。這一篇要回答的是：這件事多半不是有人搶，是系統按名氣發錢。
 - [蒙田 · 哲學就是學習死亡](https://ourword.ai/tw/i/montaigne/learning-to-die/): 蒙田 · 哲學就是學習死亡——他從馬上摔下來之後。夜裡想到死就睜著眼的人，能拿它怎麼辦。這一篇要回答的是：蒙田為什麼說要天天想死，而且他真的死過一回。
 - [蒙田 · 我知道什麼？](https://ourword.ai/tw/i/montaigne/what-do-i-know/): 蒙田 · 我知道什麼？——把自己的短處先寫出來。怕被人看穿自己其實不行，怎麼辦。這一篇要回答的是：蒙田為什麼把自己的怯懦、健忘、優柔寡斷全寫進書裡。
 - [蒙田 · 三十八歲退進塔樓](https://ourword.ai/tw/i/montaigne/the-tower/): 蒙田 · 三十八歲退進塔樓——他給自己劃了一塊地方。日子被別人的事佔滿，想給自己留一塊，怎麼做。這一篇要回答的是：蒙田三十八歲那年做了什麼，為什麼之後二十年都在那間房裡。
@@ -358,7 +360,7 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [蘇軾 · 也無風雨也無晴](https://ourword.ai/tw/i/su-shi/no-wind-no-rain/): 蘇軾 · 也無風雨也無晴——把評價系統關掉。同行的人都狼狽不堪，他不覺得。這一篇要回答的是：那一刻他關掉的是什麼。
 - [蘇軾 · 黃州惠州儋州](https://ourword.ai/tw/i/su-shi/three-exiles/): 蘇軾 · 黃州惠州儋州——在被貶的地方幹實事。他晚年自評一生功業，列的是三個貶所。這一篇要回答的是：為什麼不是他做過的那些高官。
 - [蘇軾 · 眼前見天下無一個不好人](https://ourword.ai/tw/i/su-shi/no-bad-people/): 蘇軾 · 眼前見天下無一個不好人——把人當人處理。一個被政敵整到差點喪命的人，說眼前沒有一個壞人。這一篇要回答的是：這句話不是天真。
-- [蘇軾 · 先把地開出來](https://ourword.ai/tw/i/su-shi/east-slope/): 蘇軾 · 先把地開出來——斷了俸祿之後的第一件事。被貶到黃州，俸祿基本沒了。這一篇要回答的是：他第一件乾的事不是寫詩。
+- [蘇軾 · 先把地開出來](https://ourword.ai/tw/i/su-shi/east-slope/): 蘇軾 · 先把地開出來——斷了俸祿之後的第一件事。被貶到黃州，俸祿基本沒了。這一篇要回答的是：他第一件幹的事不是寫詩。
 - [蘇軾 · 挖出來的泥往哪兒放](https://ourword.ai/tw/i/su-shi/silt-into-a-causeway/): 蘇軾 · 挖出來的泥往哪兒放——把副產品變成正事。疏浚一個湖，最後手裡剩下的是泥。這一篇要回答的是：他拿這些泥做了什麼。
 - [蘇軾 · 不敢作文字](https://ourword.ai/tw/i/su-shi/no-more-writing/): 蘇軾 · 不敢作文字——停止辯解是個決定。被人拿文字構陷之後還寫不寫。這一篇要回答的是：他停掉的到底是哪一類。
 - [粟裕 · 斗膽直陳](https://ourword.ai/tw/i/su-yu/daring-to-state/): 粟裕 · 斗膽直陳——推翻上級部署的姿態。中央已定的戰略是他率三個縱隊渡江南進。這一篇要回答的是：一個下級怎麼把既定部署翻了過來。
@@ -446,7 +448,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [AI Bubble Monitor / AI 泡沫檢測儀](https://ourword.ai/ai/)
 - [Zouni / 走你](https://ourword.ai/zouni/)
 
-## Index (165 entrys)
+## Index (166 entrys)
 
 - [BJ·福格](https://ourword.ai/tw/i/bj-fogg/): BJ·福格（2019年·斯坦福行為設計實驗室）——小到不會失敗。斯坦福行為設計實驗室創始人，研究行為如何被設計出來。他給出一個公式：行為發生需要動機、能力、提示三者同時到位。多數人失敗在只調動機——靠決心和自我激勵——而動機天然起伏，靠它維持的習慣必然崩。他的主張相反：把行為縮到小得不需要動機，然後掛在一個已有的動作後面。
 - [C.S.劉易斯](https://ourword.ai/tw/i/cs-lewis/): C.S.劉易斯（1898-1963年·英國牛津）——妻子死後幾個月的日記。作家，牛津和劍橋的教授，寫過《納尼亞傳奇》和大量勸人信仰的書。五十八歲結婚，妻子喬伊四年後因癌症去世。之後幾個月他在四本練習簿上記自己的狀態，後來用筆名出版，就是《卿卿如晤》。收他是因為「重要的人走了」那六個問題，原來靠弗蘭克爾和蘇軾在答——一個是集中營的倖存者，一個是被貶的官員
@@ -569,6 +571,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [約翰·瑞迪](https://ourword.ai/tw/i/john-ratey/): 約翰·瑞迪（2008年·哈佛醫學院）——先動再想。哈佛醫學院精神科教授。他把運動重新定義了一遍：運動的首要收益不是身材，是大腦。運動會促使大腦分泌一類支持神經元生長與連接的蛋白，他稱之為「大腦的肥料」，直接影響學習效率、情緒調節和抗壓能力。他的主張是，把運動當成健身房裡的事，等於把最便宜的認知與情緒藥物放著不用。
 - [納瓦爾](https://ourword.ai/tw/i/naval/): 納瓦爾（當代·1974-）——槓桿。AngelList聯合創始人，早期投資了Twitter、Uber、Notion等公司。2018年他在Twitter上發了一個推文串「如何在不出賣靈魂的情況下致富」，在全球傳播超過數百萬次。他不是財務顧問，是一個在數字時代找到了「個人主權」路徑的思考者。
 - [維果茨基](https://ourword.ai/tw/i/vygotsky/): 維果茨基（1934年·蘇聯心理學家）——再高一點。蘇聯心理學家，三十七歲去世，留下的概念卻影響了整個教育學。他最重要的貢獻是「最近發展區」——一個人能力有兩條線：自己能做到的，和在他人幫助下能做到的。兩條線之間那段空隙，才是學習真正發生的地方。低於它是重複，高於它是挫敗。他還強調思維是從社會互動內化來的：先是和別人一起做，然後才
+- [羅伯特·K·默頓](https://ourword.ai/tw/i/merton/): 羅伯特·K·默頓（美國·1910-2003）——自證。美國社會學家，1910年生於費城的貧民區，父母是東歐移民，1941年起在哥倫比亞大學任教直到退休。他一輩子不做宏大體系，只做一件事：把人們隱約感覺到、卻叫不出名字的社會機制拎出來，起一個準確的名字，再證明它怎麼運轉。今天到處在用的幾個詞都是他起的——自證預言、角色榜樣、非預期後果
 - [老鼠公園](https://ourword.ai/tw/i/rat-park/): 老鼠公園（1978年·西蒙菲莎大學）——成癮要看籠子。七十年代末的一組實驗，加上一場沒人設計的自然實驗，合起來動搖了關於成癮的一個常識。標準做法是把老鼠單獨關在空籠子裡，給一瓶摻嗎啡的水，它會喝到死——結論看著很硬：一沾就完。布魯斯·亞歷山大問了另一個問題：如果籠子不是空的呢。他造了一個有同伴、有輪子、有隧道的大圍欄，同樣兩瓶水，那
 - [胡雪巖](https://ourword.ai/tw/i/hu-xueyan/): 胡雪巖（清·1823-1885）——靠山。晚清最著名的商人，白手起家做到大清首富，官至布政使銜、賞穿黃馬褂、戴二品紅頂子——「紅頂商人」這個詞就是為他造的。他也是中國近代第一個和外商正面打商戰的人，並且輸得乾乾淨淨：從巔峰到抄家，只用了兩年。他的成功和失敗，用的是同一套邏輯。（注意：坊間流傳的大量「胡雪巖語錄」出自高陽的
 - [艾利克森](https://ourword.ai/tw/i/ericsson/): 艾利克森（1993年·刻意練習研究）——練法比時長重要。心理學家，專門研究各領域頂尖高手是怎麼練出來的。他最廣為人知的研究被流行文化簡化成了「一萬小時定律」，而這恰恰是他反覆澄清過的誤讀——決定水平的不是時長，是練法。重複做已經會的事，做十年也不會變強；只有持續在能力邊緣、帶著明確目標和即時反饋的練習，才產生進步。他把這種練法叫「刻意

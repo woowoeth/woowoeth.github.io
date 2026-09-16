@@ -226,6 +226,8 @@ SCENES = [
      [("graham", "margin-of-safety"), ("kevin-kelly", "thousand-true-fans")]),
     ("我一直在等活找上门。",
      [("paul-graham", "dont-scale"), ("kevin-kelly", "direct-relationship")]),
+    ("没人找我，是因为还没人找过我。",
+     [("merton", "matthew-effect"), ("kevin-kelly", "thousand-true-fans")]),
 ]),
 ("钱不够", "钱的事", [
     ("选了自己要的路，钱就一直紧。",
@@ -308,6 +310,8 @@ SCENES = [
      [("fan-li", "leave-at-the-top"), ("han-xin", "neither-nor")]),
     ("我越做越好，上面反而防着我。",
      [("wang-jian", "asking-for-fields"), ("han-xin", "neither-nor")]),
+    ("怀疑一起来，我做什么都像证据。",
+     [("merton", "self-fulfilling-prophecy"), ("guo-ziyi", "open-gates")]),
 ]),
 
 # ── 团队 ──
@@ -326,6 +330,8 @@ SCENES = [
      [("thinking-in-systems", "structure-drives-behavior"), ("han-feizi", "not-counting-on-goodness")]),
     ("我布置下去的事，没人当回事。",
      [("zhang-juzheng", "kaocheng"), ("mao", "methods-of-work")]),
+    ("我认定他不行之后，他就真的不行了。",
+     [("merton", "self-fulfilling-prophecy"), ("dweck", "praise-the-process")]),
 ]),
 ("下不了手", "带人", [
     ("该罚的是跟我最久的人。",
@@ -825,6 +831,8 @@ SCENES = [
      [("zhang-liang", "asking-for-less"), ("guo-ziyi", "open-gates")]),
     ("活是我干的，功劳记在别人头上。",
      [("la-rochefoucauld", "memory-vs-judgment"), ("art-of-worldly-wisdom", "do-and-be-seen")]),
+    ("一样的活，我没名气就吃亏。",
+     [("merton", "matthew-effect"), ("art-of-worldly-wisdom", "do-and-be-seen")]),
 ]),
 ("该不该妥协", "跟人打交道", [
     ("退这一步，是务实还是没底线？",

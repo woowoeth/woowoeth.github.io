@@ -1,7 +1,7 @@
-# OurWord — 165 people and books on how the world actually works, across 2,600 years
+# OurWord — 166 people and books on how the world actually works, across 2,600 years
 # OurWord — See how people before you handled it.
 # https://ourword.ai/en/
-# Full corpus, plain text. 165 entrys.
+# Full corpus, plain text. 166 entrys.
 
 ========================================================================
 ## Albert Einstein
@@ -1568,10 +1568,10 @@ On the next decision that matters, write down your core assumption first, then i
 I'm only rich because I know when I'm wrong. Market prices always distort the underlying fundamentals. There is no shame in being wrong, only in failing to correct our mistakes. Markets can influence the events that they anticipate.
 
 ### Q: What should I read alongside?
-Warren Buffett — Two poles of investment philosophy: Buffett trusts that the market gets there in the end, Soros treats it as permanently wrong. Nassim Taleb — Two bets on uncertainty: Soros finds the market's error and pushes on it, Taleb builds a structure that pays when the error finally breaks. The Crowd — Reflexivity is the financial version of this book: the crowd's mistaken belief moves the price and the price confirms the belief. Le Bon describes the pathology, Soros priced it. Benjamin Graham — Graham assumes price returns to value; Soros trades the stretch where price drives value away from itself. Jim Simons — Soros uses reflexivity to understand the market, Simons gave up understanding entirely — and the money comes out of the same place.
+Warren Buffett — Two poles of investment philosophy: Buffett trusts that the market gets there in the end, Soros treats it as permanently wrong. Nassim Taleb — Two bets on uncertainty: Soros finds the market's error and pushes on it, Taleb builds a structure that pays when the error finally breaks. The Crowd — Reflexivity is the financial version of this book: the crowd's mistaken belief moves the price and the price confirms the belief. Le Bon describes the pathology, Soros priced it. Benjamin Graham — Graham assumes price returns to value; Soros trades the stretch where price drives value away from itself. Jim Simons — Soros uses reflexivity to understand the market, Simons gave up understanding entirely — and the money comes out of the same place. Robert K. Merton — Both say belief rewrites fact: Soros watches price and fundamentals push each other in markets, Merton watches suspicion and reputation confirm themselves in a room.
 
 ### Further
-Ray Dalio Warren Buffett Nassim Taleb Charlie Munger The Crowd Jesse Livermore Howard Marks Jim Simons Thinking, Fast and Slow Charles P. Kindleberger
+Ray Dalio Warren Buffett Nassim Taleb Charlie Munger The Crowd Jesse Livermore Howard Marks Jim Simons Thinking, Fast and Slow Charles P. Kindleberger Robert K. Merton
 
 ========================================================================
 ## Guan Zhong
@@ -2721,7 +2721,7 @@ We all have strength enough to bear the misfortunes of others. Refusing praise i
 The Art of Worldly Wisdom — Two books of maxims with different jobs: Gracián teaches you how to get through this world, La Rochefoucauld only undertakes to stop you deceiving yourself. One supplies method, the other removes illusion. Benjamin Franklin — Franklin believed virtue could be drilled in with a chart. La Rochefoucauld thought what gets drilled in is the appearance of virtue. Read the two together for a year. The Analects — Confucius holds that self-cultivation leads to benevolence. La Rochefoucauld suspects self-cultivation is only the most sophisticated form self-love has found so far.
 
 ### Further
-The Art of Worldly Wisdom Machiavelli Influence Nietzsche Thinking, Fast and Slow Tending the Roots of Wisdom
+The Art of Worldly Wisdom Machiavelli Influence Nietzsche Thinking, Fast and Slow Tending the Roots of Wisdom Robert K. Merton
 
 ========================================================================
 ## Lee Kuan Yew
@@ -3190,7 +3190,7 @@ Of people who found work through a contact, 56% saw them only occasionally. No s
 John Cacioppo — Both about the shape of a network: Granovetter on what it brings you, Cacioppo on what its absence does to you.
 
 ### Further
-Harvard Study of Adult Development John Cacioppo
+Harvard Study of Adult Development John Cacioppo Robert K. Merton
 
 ========================================================================
 ## Mencius
@@ -4115,6 +4115,46 @@ Albert Einstein — Two physicists' habits: Einstein restated the problem until 
 Albert Einstein Socrates Charlie Munger Karl Popper The Last Hot-Metal Edition
 
 ========================================================================
+## Robert K. Merton
+URL: https://ourword.ai/en/i/merton/
+Tags: How the world works, The industrial age, Self-confirming
+
+Robert K. Merton (United States · 1910-2003) — Self-confirming. An American sociologist, born in a poor quarter of Philadelphia in 1910 to immigrant parents, who taught at Columbia from 1941 until he retired.
+
+### Q: What did this one leave behind?
+An American sociologist, born in a poor quarter of Philadelphia in 1910 to immigrant parents, who taught at Columbia from 1941 until he retired. He never built a grand system. He did one thing: take a mechanism people could feel but could not name, give it an exact name, and then show how it runs. Several words now in ordinary use are his - self-fulfilling prophecy, role model, unintended consequences, the Matthew effect. They lasted because each one has a mechanism behind it that can be retold, not just a clever phrase. In 1994 he received the National Medal of Science, the first sociologist to do so.
+
+### Q: What actually happened?
+He was not born Merton. Meyer Robert Schkolnick arrived in South Philadelphia in 1910, the son of Eastern European Jewish immigrants. As a boy he earned money doing magic and took a stage name: Merlin, after the magician at Arthur's court. A friend told him it was a cliche, so he changed it to something that sounded English, Merton, and kept it for the rest of his life. Decades later the boy who had chosen his own name wrote the paper on how differently the world remembers the same contribution depending on whose name is attached.
+
+### The parts · His work was naming mechanisms
+Self-fulfilling prophecy, role model, unintended consequences, the Matthew effect: all his. He picked things everyone could sense and nobody could name, because only a named thing can be pointed at, argued about and guarded against. e.g. The thing that keeps happening on your team changes character the moment it finally has an exact name.
+
+### The parts · A false definition can produce a true result
+In 1948 he set out the self-fulfilling prophecy: a wrong reading of a situation prompts behaviour that turns the situation into what was read. His case is the bank run - the rumour says it is failing, depositors withdraw, it fails. e.g. Enough people call the project doomed, the strong ones transfer out, and the project is duly doomed.
+
+### The parts · Afterwards the prophet looks vindicated
+The cruelty is in the aftermath. Whoever said it points to what happened as proof, and the thing happened precisely because they said it. His phrase for this state of affairs is a reign of error kept alive by a specious validity. e.g. The person certain she was never up to it is often the person who stopped handing her anything.
+
+### The parts · Recognition is paid on reputation held
+In 1968 he named a second mechanism in Science. Work by someone of standing draws extra recognition; identical work by an unknown has it withheld. The name comes from Matthew's gospel: to every one that hath shall be given. e.g. The same memo is decisive under one signature and premature under another.
+
+### The parts · He was caught by his own finding
+That paper stands on his student Zuckerman's interviews and carries only his name. Twenty years on he published the correction: it should have been joint. Nobody had to act badly for the effect to work, which is the strongest evidence for it. e.g. When you last said the team did it, did people remember the team or the person saying it?
+
+### Q: How do I use it today?
+Take one thing you are being misread on, or misreading someone else on, and do two things. First, write the judgement out as a full sentence - he is not really trying, they are guarding themselves against me - then ask which pieces of your evidence existed before that sentence did. Usually none; the rest accumulated afterwards. Second, if you are the one being guarded against, stop working on the explanation. Look for an arrangement where neither side has to trust the other: shared numbers, shared access, a written scope. Explaining keeps you inside the loop.
+
+### Lines to keep
+The false judgement comes first and then produces its own evidence. Whoever said it will cite the outcome as proof they knew. The extra portion is paid on reputation, not on contribution. Nobody has to act badly for either mechanism to run.
+
+### Q: What should I read alongside?
+The Art of Worldly Wisdom — Two places to cut into the same problem: Gracian tells you to make sure the finished work is seen, Merton says whether it is seen depends first on where your name already stands. George Soros — Both say belief rewrites fact: Soros watches price and fundamentals push each other in markets, Merton watches suspicion and reputation confirm themselves in a room.
+
+### Further
+Thinking in Systems George Soros Mark Granovetter The Art of Worldly Wisdom La Rochefoucauld
+
+========================================================================
 ## Robert Sapolsky
 URL: https://ourword.ai/en/i/sapolsky/
 Tags: Body and daily life, Modern, Stress is a mismatch
@@ -4908,10 +4948,10 @@ Take the maxim that annoys you most and use that one first: do not spend your wh
 Leave your luck while winning. All the best players do so. Things do not pass for what they are but for what they seem. What is not seen is as if it did not exist.
 
 ### Q: What should I read alongside?
-Machiavelli — The same century's problem at two altitudes: Machiavelli instructs a prince on handling a state, Gracián instructs a man with no power on surviving among people who have it. La Rochefoucauld — Two books of maxims with opposite jobs: Gracián hands you a method for getting through the world, La Rochefoucauld only takes away the illusions you were using instead. Influence — One subject, three hundred years apart: Gracián found the handles by watching people, Cialdini turned the same material into six principles you can test. The I Ching — One says leave while your luck is still good, which is a conclusion. The I Ching says there is one more position above the good luck and it is called repentance, which is a scale. Tending the Roots of Wisdom — Two collections of maxims on showing and hiding, written a generation apart at opposite ends of the world: Gracián teaches how to be seen well, this one how not to need to be seen.
+Machiavelli — The same century's problem at two altitudes: Machiavelli instructs a prince on handling a state, Gracián instructs a man with no power on surviving among people who have it. La Rochefoucauld — Two books of maxims with opposite jobs: Gracián hands you a method for getting through the world, La Rochefoucauld only takes away the illusions you were using instead. Influence — One subject, three hundred years apart: Gracián found the handles by watching people, Cialdini turned the same material into six principles you can test. The I Ching — One says leave while your luck is still good, which is a conclusion. The I Ching says there is one more position above the good luck and it is called repentance, which is a scale. Tending the Roots of Wisdom — Two collections of maxims on showing and hiding, written a generation apart at opposite ends of the world: Gracián teaches how to be seen well, this one how not to need to be seen. Robert K. Merton — Two places to cut into the same problem: Gracian tells you to make sure the finished work is seen, Merton says whether it is seen depends first on where your name already stands.
 
 ### Further
-Machiavelli Zeng Guofan Influence Fan Li Feng Dao Tending the Roots of Wisdom Guiguzi La Rochefoucauld
+Machiavelli Zeng Guofan Influence Fan Li Feng Dao Tending the Roots of Wisdom Guiguzi La Rochefoucauld Robert K. Merton
 
 ========================================================================
 ## The Bhagavad Gita
@@ -5281,7 +5321,7 @@ A system's behaviour cannot be read off its parts. People find the leverage poin
 The Innovator's Dilemma — Two accounts of good people producing bad outcomes: Christensen gives one mechanism in detail, Meadows gives the whole catalogue. A case study against a pathology. Thinking, Fast and Slow — Kahneman repairs the individual head, Meadows repairs the surrounding structure. The same bad decision, charged to two different accounts. Guns, Germs, and Steel — Axes, diffusion, density, feedback — Diamond is writing a system-dynamics case study that runs for thirteen thousand years.
 
 ### Further
-The Innovator's Dilemma Thinking, Fast and Slow Charlie Munger Norbert Wiener Ray Dalio Finite and Infinite Games Guns, Germs, and Steel Technological Revolutions The Wealth of Nations Ivan Illich Albert O. Hirschman
+The Innovator's Dilemma Thinking, Fast and Slow Charlie Munger Norbert Wiener Ray Dalio Finite and Infinite Games Guns, Germs, and Steel Technological Revolutions The Wealth of Nations Ivan Illich Albert O. Hirschman Robert K. Merton
 
 ========================================================================
 ## Thinking, Fast and Slow
@@ -13628,6 +13668,86 @@ Where it goes wrong: substituting encouragement and slogans for real completed w
 It is produced by accumulated rightness, not seized by one act from outside.
 Do a thing your heart cannot approve, and the breath starves.
 Keep the work in hand. Do not forget it. Do not help it grow.
+
+========================================================================
+## Robert K. Merton · How a false story makes itself true
+URL: https://ourword.ai/en/i/merton/self-fulfilling-prophecy/
+Source: 'The Self-Fulfilling Prophecy', The Antioch Review, Summer 1948; collected in Social Theory and Social Structure
+Tags: Deep read, Robert K. Merton, Suspicion manufactures the evidence for itself
+
+People have begun guarding themselves against you and explaining makes it worse. How the loop closes, and where it can be cut.
+
+### Q: What actually happened?
+Merton invents a bank. It is Wednesday afternoon and the Last National Bank is sound: not much cash on hand, but every loan it holds is good. Then the lobby fills. Somebody says the word insolvent. The rumour travels, depositors queue to withdraw what they are owed, and by closing time a bank that could have paid everyone has failed. The statement was false when it was made and the actions it provoked made it true. His own sentence for this: a false definition of the situation evoking a new behavior which makes the original false conception come true.
+
+### The parts · The definition arrives before the fact
+He opens with the Thomas theorem: if men define situations as real, they are real in their consequences. A false reading does not stay in anyone's head. It issues instructions, and what people then do is entirely real.
+e.g. A rumour of redundancies, and the people with options leave first, which is what finally sinks the place.
+
+### The parts · Once the loop closes, the prophet is always right
+Afterwards the person who said it points at the wreckage as proof of foresight, and the pointing is hard to argue with, because the wreckage is there. What nobody can see is that the saying came first.
+e.g. The man who says he always knew she would fail is usually the one who stopped giving her anything to do.
+
+### The parts · Every move you have is already spoken for
+The suspected person holds the worst position in the loop. Working normally reads as cover, explaining reads as guilt, silence reads as admission. The definition has assigned a meaning to every action available to you in advance.
+e.g. Copying four people into every email to prove you are open just looks like building a paper trail.
+
+### The parts · What cuts it is not effort but a new definition
+His conclusion is institutional, not personal: the loop runs where nobody has deliberately built controls against it. Bank runs did not end because depositors grew calm. They ended when deposit insurance changed what queueing was worth.
+e.g. Rather than explaining again, put the numbers and the access rights somewhere neither side has to trust the other.
+
+### Q: How do I use it today?
+Where you are: a colleague is keeping something back from you, and you have not done the thing they are guarding against.
+Ask first: who said the sentence that put me here, and when - am I arguing with the sentence, or with the pile of reactions it produced?
+Where it goes wrong: using it to prove every suspicion of you is invented. He shows that false definitions can come true, not that all definitions are false.
+
+### Lines to keep
+If men define situations as real, they are real in their consequences.
+The specious validity of the self-fulfilling prophecy perpetuates a reign of error.
+The false definition comes first. The facts that confirm it arrive later.
+What breaks the loop is a new definition, not a better explanation.
+
+========================================================================
+## Robert K. Merton · To every one that hath
+URL: https://ourword.ai/en/i/merton/matthew-effect/
+Source: 'The Matthew Effect in Science', Science, 5 January 1968; the sequel in Isis, 1988
+Tags: Deep read, Robert K. Merton, Credit is paid on reputation, not on effort
+
+You did the work and another name is the one people kept. Why this is usually allocation rather than theft.
+
+### Q: What actually happened?
+In the 1960s Merton's student Harriet Zuckerman interviewed American Nobel laureates one by one. They kept returning, uncomfortably, to the same thing: co-author a paper with someone obscure and almost all the credit lands on the famous name, even when the obscure one did more of the work. Merton gave the pattern a name from Matthew's gospel - for unto every one that hath shall be given. The extra portion is paid out on reputation, not on contribution.
+
+### The parts · The same contribution, two different names
+His definition is cool about it: contributions by scientists of standing collect extra recognition, and the same work by someone who has not yet made a name has that recognition withheld. The difference sits in the byline, not the work.
+e.g. One proposal is clear thinking under the director's name and worth another pass under the new hire's.
+
+### The parts · The forty-first chair
+The French Academy seats forty. Merton used the forty-first chair for those who plainly deserved a seat and never got one - Descartes, Pascal, Moliere, Rousseau, Diderot, Stendhal, Flaubert, Zola, Proust. What excluded them was the count, not the quality.
+e.g. Three awards exist. The gap between fourth and third is a different kind of gap from fourth to tenth.
+
+### The parts · A small lead grows itself
+He later called it cumulative advantage. An early edge buys better resources, better collaborators and more chances to be seen, so the distance widens each round. Outsiders see only the final distance and read all of it as talent.
+e.g. The first customer makes the second one easy. The first one is the only hard one.
+
+### The parts · He walked into it himself
+The 1968 paper rests entirely on Zuckerman's interviews and carries his name alone. Twenty years later, in the sequel, he wrote the correction: it should have appeared under joint authorship. The effect runs without anyone intending harm, which is the point.
+e.g. Last time you said the team did it, did the room remember the team or the person standing in front of it?
+
+### The parts · What you can change is where your name sits
+If recognition is allocated on standing, the move is not to fight over one instance of credit. It is to attach your name early to a piece of work only you could have done, so that people can reach you rather than the box you sit in.
+e.g. Write up the one debugging trail nobody else has, publish it, and the next person with that problem finds you.
+
+### Q: How do I use it today?
+Where you are: you did most of the work and the name that travelled out of the room was somebody else's.
+Ask first: do I want this instance of credit back, or do I want the next piece of work to arrive at me directly - because those are two different sets of moves.
+Where it goes wrong: reading it as proof that effort is pointless because fame decides everything. He measured how recognition is distributed, not whether the work was worth doing.
+
+### Lines to keep
+For unto every one that hath shall be given, and he shall have abundance
+The extra portion is paid on reputation, not on contribution.
+The forty-first chair is not occupied by people who fell short.
+An early lead compounds; outsiders see only the final distance.
 
 ========================================================================
 ## Montaigne · To philosophise is to learn to die

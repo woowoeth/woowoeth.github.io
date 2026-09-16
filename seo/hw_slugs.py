@@ -4,6 +4,7 @@ import re
 import unicodedata
 
 SLUGS = {
+    "罗伯特·K·默顿": "merton",
     "诺斯古德·帕金森": "parkinson",
     "查尔斯·金德尔伯格": "kindleberger",
     "孙子兵法": "sun-tzu",
