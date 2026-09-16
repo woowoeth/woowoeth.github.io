@@ -104,5 +104,7 @@ Allow: /
 
 Sitemap: https://ourword.ai/sitemap.xml
 Sitemap: https://ourword.ai/tw/sitemap.xml
+Sitemap: https://ourword.ai/en/sitemap.xml
 Sitemap: https://ourword.ai/podcast/sitemap.xml
 Sitemap: https://ourword.ai/podcast/tw/sitemap.xml
+Sitemap: https://ourword.ai/podcast/en/sitemap.xml

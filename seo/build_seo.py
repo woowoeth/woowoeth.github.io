@@ -440,8 +440,14 @@ def main():
                   # 没有被主动提交过地图，只能等爬虫自己撞见。
                   extra_sitemaps=[
                       "https://ourword.ai/tw/sitemap.xml",
+                      # 两份英文站地图原来漏在外面：/en/ 576 条、
+                      # /podcast/en/ 659 条，合计 1235 条 URL 从来没有被主动
+                      # 提交过地图，只能等爬虫自己撞见。六份都在、都健康，
+                      # 只是这里少写了两行。
+                      "https://ourword.ai/en/sitemap.xml",
                       "https://ourword.ai/podcast/sitemap.xml",
                       "https://ourword.ai/podcast/tw/sitemap.xml",
+                      "https://ourword.ai/podcast/en/sitemap.xml",
                       # /skill/（品味）2026-09-11 关停，入口全部撤掉。
                       # 提交 5b703d76f 手改掉了 robots.txt 里那两行，但**没改这里** ——
                       # 下一次构建（当天的日更）原样把它们写了回去。产物是生成的，
