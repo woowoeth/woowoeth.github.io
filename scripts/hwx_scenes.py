@@ -606,6 +606,8 @@ SCENES = [
      [("frankl", "happiness-ensues"), ("wang-xing", "escape-from-thinking")]),
     ("光靠拼命，我拼不过他们。",
      [("xunzi", "borrow-from-things"), ("naval", "productize-yourself")]),
+    ("我想慢下来，又怕没了位置。",
+     [("bai-juyi", "middle-hiding"), ("zhuangzi", "use-of-uselessness")]),
 ]),
 
 # ── 位置 ──
@@ -634,6 +636,8 @@ SCENES = [
      [("feng-dao", "the-long-happy-old-man"), ("hayek", "fatal-conceit")]),
     ("该收手了，可我停不下来。",
      [("lee-kuan-yew", "from-my-sickbed"), ("feng-dao", "only-you-can-save")]),
+    ("除了硬扛和走人，我没有第三条路。",
+     [("bai-juyi", "middle-hiding"), ("feng-dao", "the-long-happy-old-man")]),
 ]),
 ("要立规矩", "进退取舍", [
     ("新规矩定了，没人当回事。",
@@ -1379,6 +1383,8 @@ SCENES = [
      [("xunzi", "constant-heaven"), ("mandela", "rivonia")]),
     ("他们说改了也没用，我就不提了。",
      [("hirschman", "rhetoric-of-reaction")]),
+    ("我改不动局面，还要不要接着说。",
+     [("bai-juyi", "what-i-rank-low"), ("xunzi", "constant-heaven")]),
 ]),
 ("一直没成", "使不上劲", [
     ("说了好几年，还是没人听。",
@@ -1405,6 +1411,8 @@ SCENES = [
      [("pu-songling", "the-side-thing"), ("jobs", "connecting-the-dots")]),
     ("只有碎时间，我也不敢辞职。",
      [("pu-songling", "collecting-at-the-roadside"), ("murakami", "focus-and-endurance")]),
+    ("世人爱的，不是我最用力的。",
+     [("bai-juyi", "what-i-rank-low"), ("pu-songling", "the-side-thing")]),
 ]),
 ("被晾在一边", "使不上劲", [
     ("没人再找我商量了。",

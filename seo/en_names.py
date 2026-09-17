@@ -141,6 +141,7 @@ NAMES = {
     "hayek": ("Friedrich Hayek", "How the world works"),
     "illich": ("Ivan Illich", "How the world works"),
     "axelrod": ("Robert Axelrod", "How the world works"),
+    "bai-juyi": ("Bai Juyi", "Body and daily life"),
     "merton": ("Robert K. Merton", "How the world works"),
     "postman": ("Neil Postman", "How the world works"),
     "weil": ("Simone Weil", "Mind and feeling"),

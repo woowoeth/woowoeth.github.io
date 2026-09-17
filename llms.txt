@@ -1,11 +1,11 @@
 # OurWord (人类世界生存法则)
 
-> 167 people and books on how the world actually works, across 2,600 years
+> 168 people and books on how the world actually works, across 2,600 years
 > 遇到事了，看看以前的人怎么处理
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 167 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 168 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
-一个关于「世界到底怎么运转」的知识库：战略、财富、权力、人性、创业，取自 167 位人物与典籍，跨越 2600 年。每一条都写清楚这个人真正留下的那一个想法、背后的故事、拆开的分则与例子，以及今天怎么用。
+一个关于「世界到底怎么运转」的知识库：战略、财富、权力、人性、创业，取自 168 位人物与典籍，跨越 2600 年。每一条都写清楚这个人真正留下的那一个想法、背后的故事、拆开的分则与例子，以及今天怎么用。
 
 ## Read it
 
@@ -28,12 +28,12 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 - [财富与风险](https://ourword.ai/t/wealth/) — 17
 - [世界如何运转](https://ourword.ai/t/world/) — 16
 - [学习与成长](https://ourword.ai/t/learning/) — 15
+- [身心与生活](https://ourword.ai/t/living/) — 14
 - [识人与相处](https://ourword.ai/t/people/) — 14
 - [家庭与关系](https://ourword.ai/t/family/) — 13
-- [身心与生活](https://ourword.ai/t/living/) — 13
+- [中古](https://ourword.ai/t/medieval/) — 13
 - [近世](https://ourword.ai/t/early-modern/) — 12
 - [秦汉至魏晋](https://ourword.ai/t/han-wei/) — 12
-- [中古](https://ourword.ai/t/medieval/) — 12
 
 ## How it is built
 
@@ -66,6 +66,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [罗伯特·阿克塞尔罗德 · 让他守信的不是人品](https://ourword.ai/i/axelrod/shadow-of-the-future/): 罗伯特·阿克塞尔罗德 · 让他守信的不是人品——是你们之间还剩多少次交手。他答应的事到底作不作数。这一篇要回答的是：决定它的多半不是人品，是你们之间还剩多少次交手。
 - [白圭 · 人弃我取](https://ourword.ai/i/bai-gui/take-what-others-drop/): 白圭 · 人弃我取——在丰年买，在歉年卖。低买高卖人人都懂。这一篇要回答的是：白圭是怎么让这件事变成可执行的。
 - [白圭 · 智勇仁强](https://ourword.ai/i/bai-gui/four-qualifications/): 白圭 · 智勇仁强——四样缺一样就别做。他把经商说成和用兵、变法一个等级的事。这一篇要回答的是：他为此开出的四条准入条件。
+- [白居易 · 不卷和退出之间，还有一档](https://ourword.ai/i/bai-juyi/middle-hiding/): 白居易 · 不卷和退出之间，还有一档——他给这一档要来了俸禄和名分。不想再熬，可真放手又不敢。这一篇要回答的是：这两个选项中间，还有没有一个待得住的位置。
+- [白居易 · 世人收下的，不是你最用力的](https://ourword.ai/i/bai-juyi/what-i-rank-low/): 白居易 · 世人收下的，不是你最用力的——他活着的时候就知道了，也没改排序。你最花力气的那部分没人要，随手的那部分传遍了。这一篇要回答的是：知道了之后怎么办。
 - [贝索斯 · 永远是第一天](https://ourword.ai/i/bezos/day-one/): 贝索斯 · 永远是第一天——第二天是什么样。有员工问：第二天会怎样？这一篇要回答的是：他的答案，和他为拦住第二天装的四个零件。
 - [贝索斯 · 押注不变的东西](https://ourword.ai/i/bezos/what-wont-change/): 贝索斯 · 押注不变的东西——十年后什么还成立。所有人都问他未来十年会变什么。这一篇要回答的是：他说更重要的是没人问的那个问题。
 - [薄伽梵歌 · 你有权做事，无权要结果](https://ourword.ai/i/bhagavad-gita/right-to-the-act/): 薄伽梵歌 · 你有权做事，无权要结果——第二章第四十七颂。做了很久没有回报，还要不要接着做。这一篇要回答的是：薄伽梵歌把权利划在了哪一边。
@@ -450,7 +452,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [AI Bubble Monitor / AI 泡沫检测仪](https://ourword.ai/ai/)
 - [Zouni / 走你](https://ourword.ai/zouni/)
 
-## Index (167 entrys)
+## Index (168 entrys)
 
 - [BJ·福格](https://ourword.ai/i/bj-fogg/): BJ·福格（2019年·斯坦福行为设计实验室）——小到不会失败。斯坦福行为设计实验室创始人，研究行为如何被设计出来。他给出一个公式：行为发生需要动机、能力、提示三者同时到位。多数人失败在只调动机——靠决心和自我激励——而动机天然起伏，靠它维持的习惯必然崩。他的主张相反：把行为缩到小得不需要动机，然后挂在一个已有的动作后面。
 - [C.S.刘易斯](https://ourword.ai/i/cs-lewis/): C.S.刘易斯（1898-1963年·英国牛津）——妻子死后几个月的日记。作家，牛津和剑桥的教授，写过《纳尼亚传奇》和大量劝人信仰的书。五十八岁结婚，妻子乔伊四年后因癌症去世。之后几个月他在四本练习簿上记自己的状态，后来用笔名出版，就是《卿卿如晤》。收他是因为「重要的人走了」那六个问题，原来靠弗兰克尔和苏轼在答——一个是集中营的幸存者，一个是被贬的官员
@@ -560,6 +562,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [玛丽亚·康妮科娃](https://ourword.ai/i/konnikova/): 玛丽亚·康妮科娃（2016年·《骗局》）——为什么会上当。心理学背景的作家，研究骗局。她的结论把问题整个掉了个方向：被骗的关键不在智力，在你当时正缺什么。骗子并不制造信任，他识别并利用你已经有的需要——他要回答的只有三句：这个人是谁，他想要什么，我怎么顺着那个欲望拿到我要的。所以真正被利用的是那份渴望，不是你的判断力，这也解释了为什么高
 - [甘地](https://ourword.ai/i/gandhi/): 甘地（印度·1869-1948）——非暴力。从一个在南非被赶下火车的印度律师，到让大英帝国不战而退的精神领袖。他证明了一件事：在特定条件下，道德感染力和意志的坚韧，可以打败军事力量。他的工具不是枪炮，是盐、纺车、绝食和游行。他和毛泽东面对相似的殖民压迫，选择了完全相反的路径，都成功了——这个对照本身就是人类智慧的奇迹。
 - [白圭](https://ourword.ai/i/bai-gui/): 白圭（战国·前370-前300）——人弃我取。名丹，战国魏国人，与孟子、惠施同时，做过魏惠王的官，据说主持过治水，后来游历齐、秦。他做的是农产品的跨季节跨品类交易——不是囤积居奇，而是靠农业周期的错位对冲。《史记·货殖列传》给他的定语是「盖天下言治生祖白圭」：天下讲经营之道的人，都尊他为祖。《汉书》持同样看法。更关键的是他自
+- [白居易](https://ourword.ai/i/bai-juyi/): 白居易（772-846年·唐）——中隐。唐代诗人，字乐天，贞元十六年进士。他的诗在当时就传得极广，而他自己最看重的不是传得最广的那些。四十四岁贬江州司马，五十八岁主动要了一个有品级、有俸禄、几乎没有公事的闲职，搬到洛阳履道里住了十八年，直到去世。他留下的不只是诗：他把「不想再熬，可又不敢彻底退出」这件事写成了一个具体的
 - [福泽谕吉](https://ourword.ai/i/fukuzawa/): 福泽谕吉（1835-1901年·日本大阪）——看见招牌那天重学。日本明治时期的教育家，庆应义塾的创办人。二十岁出头在大阪学荷兰语学得极好，1859 年去刚开港的横滨，看到街上的招牌一个字都不认识——全是英文。他没有回去继续钻荷兰语，第二天开始找英文教材从头学。后来他写《劝学篇》，第一句是「天不在人上造人，不在人下造人」，卖了三百多万册，读者多
 - [稀缺](https://ourword.ai/i/scarcity/): 稀缺（2013年·穆来纳森与沙菲尔）——带宽。行为经济学家穆来纳森与心理学家沙菲尔合著，回答的不是「怎么赚钱」，是「已经不够了会发生什么」。核心主张是：稀缺本身会占用认知带宽——缺钱的人不是不理性，是脑子被「还差多少」持续占着，剩下的判断力就少了。他们最有名的证据是印度甘蔗农研究：同一批人，收成前手头紧时与收成后钱到手时各测
 - [稻盛和夫](https://ourword.ai/i/inamori/): 稻盛和夫（当代·1932-2022）——敬天爱人。27岁创立京瓷，52岁创立KDDI（两家都是世界500强），78岁临危受命重建破产的日本航空，1年扭亏为盈，2年重新上市。他的思想核心是「利他」：不是道德选择，是最优的长期商业策略。

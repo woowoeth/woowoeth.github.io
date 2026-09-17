@@ -1,7 +1,7 @@
-# OurWord — 167 people and books on how the world actually works, across 2,600 years
+# OurWord — 168 people and books on how the world actually works, across 2,600 years
 # OurWord — See how people before you handled it.
 # https://ourword.ai/en/
-# Full corpus, plain text. 167 entrys.
+# Full corpus, plain text. 168 entrys.
 
 ========================================================================
 ## Albert Einstein
@@ -443,6 +443,46 @@ Fan Li — Two ancient fortunes: Fan Li teaches how to get out intact, Bai Gui t
 
 ### Further
 Fan Li Benjamin Graham Warren Buffett Records of the Grand Historian Shang Yang
+
+========================================================================
+## Bai Juyi
+URL: https://ourword.ai/en/i/bai-juyi/
+Tags: Body and daily life, Medieval, The middle setting
+
+Bai Juyi (Tang · 772-846) — The middle setting. A Tang poet whose work circulated more widely in his own lifetime than almost anyone's - and who did not rate most highly the poems that travelled.
+
+### Q: What did this one leave behind?
+A Tang poet whose work circulated more widely in his own lifetime than almost anyone's - and who did not rate most highly the poems that travelled. He passed the civil examinations at twenty-eight, was demoted to a provincial post at forty-four, governed Hangzhou and Suzhou, and at fifty-eight asked for an office that carried rank and salary and almost no duties. He moved to Luoyang and stayed eighteen years. What he left is not only poems: he turned the problem of not being able to continue and not daring to stop into a concrete arrangement, and he wrote down, while in disgrace, that what readers keep is never quite what the writer worked hardest on.
+
+### Q: What actually happened?
+He wrote about his own house like a man doing his accounts: ten mu of grounds, five of garden, one pool of water, a thousand stems of bamboo. This was Luoyang, where he lived from fifty-eight onwards. There was a small tower by the pool and a boat below it. He did not attend court, had almost no official business, and drew his salary every month. A man who had passed the examinations young, governed two of the richest cities in the empire and seen his poems copied everywhere had settled himself in neither the hills nor the court, but between them.
+
+### The parts · He picked a third way of living
+His poem sorts people in three: the great recluse hides in the marketplace, the lesser in the hills. Both are refused - too loud, too bleak - and he takes the middle, hiding inside a post that has standing and pay but no daily grind. e.g. All in or hand in your notice: most people are stuck because those are the only two options they can see.
+
+### The parts · He says what the setting runs on
+The lines are blunt about money: no toil of mind or body, no hunger or cold, no business all year, a salary every month. The middle setting is not a mood. It is rank and income that other people recognise, and without both it collapses. e.g. Before taking on less, check the year still balances without that income; if it does not, you will be pulled back in.
+
+### The parts · He never called it the ideal
+The poem closes by putting him between hardship and success, between plenty and want. He is not offering the best answer but one that can be occupied for years. Read as transcendence, it loses the word he wrote: between. e.g. Accepting a few years of neither excelling nor falling behind costs less than swinging between the two.
+
+### The parts · He knew in his lifetime what readers preferred
+Demoted to Jiangzhou, he wrote to his friend Yuan Zhen sorting his poems into four kinds. He rated the satires on ordinary hardship highest; readers wanted the long narrative poem. His conclusion: what the age values is what I rank low. e.g. The proposal you were proudest of goes unmentioned; a diagram you knocked out is forwarded everywhere.
+
+### The parts · Knowing it, he left his own order alone
+He neither stopped writing satires to suit the audience nor argued that they were better. The same letter gives his resolution: the ambition is to serve everyone, the practice is to keep oneself in order - two different sizes, kept apart. e.g. If you still rate the work nobody applauded, do not strike it off your own list because nobody applauded.
+
+### Q: How do I use it today?
+If you are stuck between cannot go on and dare not leave, stop choosing a side and write down what the third setting would need: where the income comes from, what it is called, and who recognises it. His post had rank and pay, and he could only reach it after a career as a senior governor; without those the middle setting is idleness with no money. Then do the second thing: keep two lists, the order of what the world takes and the order in your own head. That the work you laboured over went unwanted is not a reason to strike it off your own list. He did exactly this, and he did it in the year he was demoted.
+
+### Lines to keep
+The hills are too bleak and the marketplace too loud. It resembles serving and it resembles withdrawing. Rank and salary hold the setting up, not a state of mind. What the age values is what I rank low.
+
+### Q: What should I read alongside?
+Tao Yuanming — One problem, two answers: Tao Yuanming would not bend for five pecks of rice and resigned the same day, while Bai Juyi kept the rice and cut the bending down to the minimum. Pu Songling — Both got the wrong success: Pu Songling died believing the examinations were the real work and the tales were a sideline, while Bai Juyi laid both lists out in his own lifetime and said which one was his.
+
+### Further
+Tao Yuanming Su Shi Feng Dao Pu Songling Zhuangzi
 
 ========================================================================
 ## Benjamin Franklin
@@ -1346,7 +1386,7 @@ Not deceiving the earth below, nor men between, nor heaven above. The Buddha cou
 Guo Ziyi — Two first-rate survivors of disorder, but Guo Ziyi stayed loyal inside one dynasty while Feng Dao crossed four. Where the boundary of loyalty sits, they answer differently. Machiavelli — Machiavelli argued in a book that outcomes outrank motives; Feng Dao spent a life doing it. Theory and specimen, both abused for centuries. Zeng Guofan — Zeng Guofan held an army and cut back his own wings to keep his name; Feng Dao had neither troops nor money and sought only to keep people alive.
 
 ### Further
-Sima Yi Guo Ziyi Zeng Guofan Machiavelli Su Shi Tending the Roots of Wisdom The Art of Worldly Wisdom
+Sima Yi Guo Ziyi Zeng Guofan Machiavelli Su Shi Tending the Roots of Wisdom The Art of Worldly Wisdom Bai Juyi
 
 ========================================================================
 ## Finite and Infinite Games
@@ -3924,10 +3964,10 @@ When something you've worked at for years hasn't happened and you can't say when
 Almost everyone here eventually made it. He didn't. He called it an idle book until he died. It is why he is remembered. He didn't quit the job to write. He wrote on the job.
 
 ### Q: What should I read alongside?
-Excellent Sheep — Two ways of having no scoreboard: they were never given one, he had one and it never once said yes. Winston Churchill — Both spent decades unrecognised. His day came; Pu Songling's never did, and the advice has to work either way. Sima Qian — Two kinds of it never worked. Pu Songling came close for forty years with no turning point; Sima Qian has one catastrophe and a life visibly divided by it. Tao Yuanming — Both were poor for life: Pu Songling kept sitting the exam and never passed, Tao Yuanming stopped sitting it on purpose. One had no choice, the other chose.
+Excellent Sheep — Two ways of having no scoreboard: they were never given one, he had one and it never once said yes. Winston Churchill — Both spent decades unrecognised. His day came; Pu Songling's never did, and the advice has to work either way. Sima Qian — Two kinds of it never worked. Pu Songling came close for forty years with no turning point; Sima Qian has one catastrophe and a life visibly divided by it. Tao Yuanming — Both were poor for life: Pu Songling kept sitting the exam and never passed, Tao Yuanming stopped sitting it on purpose. One had no choice, the other chose. Bai Juyi — Both got the wrong success: Pu Songling died believing the examinations were the real work and the tales were a sideline, while Bai Juyi laid both lists out in his own lifetime and said which one was his.
 
 ### Further
-Excellent Sheep Fan Li Winston Churchill Du Fu Tao Yuanming
+Excellent Sheep Fan Li Winston Churchill Du Fu Tao Yuanming Bai Juyi
 
 ========================================================================
 ## Rat Park
@@ -4658,7 +4698,7 @@ A bamboo stick and straw sandals beat a horse. Who's afraid? Looking back at tha
 Zhuangzi — Two ways of not being owned: Zhuangzi refuses the post, Su Shi takes it and refuses to be defined by losing it. C.S. Lewis — Both wrote through the worst of it. Lewis to find out what he actually believed, Su Shi to find out what was still enjoyable. Chu Shijian — Both began with one small concrete job after losing the position: Su Shi broke ground at Huangzhou, Chu Shijian built the irrigation first. Neither waited to be recognised again. Seneca — Two ways of writing out of adversity: Seneca writes about restraint from inside the machinery of power, Su Shi writes about lightness on the road into exile, and both had been tested before either wrote a line. Viktor Frankl — Creation under punishment: Su Shi wrote his best work in exile, Frankl finished logotherapy in the camps — both took the worst stretch of a life and made it the productive one. Du Fu — Both rebuilt after forty: Su Shi broke ground at Huangzhou, Du Fu put up a roof at Chengdu, and both took what a life runs on before any position. Su Shi went back; Du Fu never did. Tao Yuanming — Two ways out of office: Su Shi was exiled and moved by other people, Tao Yuanming walked out himself on the day. One is about living well inside an arrangement, the other about making the decision.
 
 ### Further
-Wang Yangming Fan Li Zhuangzi Tao Te Ching Huineng Winston Churchill Feng Dao Nelson Mandela Sima Qian Seneca Du Fu Shi Tiesheng Tao Yuanming
+Wang Yangming Fan Li Zhuangzi Tao Te Ching Huineng Winston Churchill Feng Dao Nelson Mandela Sima Qian Seneca Du Fu Shi Tiesheng Tao Yuanming Bai Juyi
 
 ========================================================================
 ## Su Yu
@@ -4831,10 +4871,10 @@ If you know this is not it and keep waiting for a better moment, work out how fa
 He left at forty-one and never went back in twenty-odd years. Own the price of the road and there is nothing to resent. Cross off the no first and the road narrows by itself.
 
 ### Q: What should I read alongside?
-Su Shi — Two ways out of office: Su Shi was exiled and moved by other people, Tao Yuanming walked out himself on the day. One is about living well inside an arrangement, the other about making the decision. Pu Songling — Both were poor for life: Pu Songling kept sitting the exam and never passed, Tao Yuanming stopped sitting it on purpose. One had no choice, the other chose. Du Fu — One walked, one had no choice: Tao Yuanming knew where he was going the day he resigned, while Du Fu left office and searched the whole way southwest before stopping at Chengdu.
+Su Shi — Two ways out of office: Su Shi was exiled and moved by other people, Tao Yuanming walked out himself on the day. One is about living well inside an arrangement, the other about making the decision. Pu Songling — Both were poor for life: Pu Songling kept sitting the exam and never passed, Tao Yuanming stopped sitting it on purpose. One had no choice, the other chose. Du Fu — One walked, one had no choice: Tao Yuanming knew where he was going the day he resigned, while Du Fu left office and searched the whole way southwest before stopping at Chengdu. Bai Juyi — One problem, two answers: Tao Yuanming would not bend for five pecks of rice and resigned the same day, while Bai Juyi kept the rice and cut the bending down to the minimum.
 
 ### Further
-Su Shi Pu Songling Du Fu Viktor Frankl
+Su Shi Pu Songling Du Fu Viktor Frankl Bai Juyi
 
 ========================================================================
 ## Technological Revolutions
@@ -6092,7 +6132,7 @@ Everyone knows the use of the useful. Nobody knows the use of the useless. A fro
 Han Feizi — The same century, opposite conclusions: Han Feizi builds the machine of state, Zhuangzi declines to be a part in it. Tao Te Ching — Same tradition, different address: Laozi writes for whoever has to govern, Zhuangzi for whoever wants out. Su Shi — Two ways of not being owned: Zhuangzi refuses the post, Su Shi takes it and refuses to be defined by losing it. Finite and Infinite Games — The use of the useless runs the same way as the infinite game: not winning inside the given rules, but keeping room to change them.
 
 ### Further
-Su Shi Huineng Wang Yangming Tao Te Ching Carl Jung The I Ching The Bhagavad Gita Epictetus Finite and Infinite Games Ivan Illich
+Su Shi Huineng Wang Yangming Tao Te Ching Carl Jung The I Ching The Bhagavad Gita Epictetus Finite and Infinite Games Ivan Illich Bai Juyi
 
 ========================================================================
 ## Zhuge Liang
@@ -6870,6 +6910,90 @@ Where it goes wrong: scoring only the first, and assuming the missing one can be
 Wit to adapt, courage to decide, humanity to give, strength to hold.
 If any of the four is missing, I will not teach him.
 All who speak of making a living take him as their founder.
+
+========================================================================
+## Bai Juyi · There is a setting between all-in and out
+URL: https://ourword.ai/en/i/bai-juyi/middle-hiding/
+Source: 'Middle Hiding', from his collected works; the sinecure at Luoyang taken in 829
+Tags: Deep read, Bai Juyi, He arranged a salary and a title for that setting
+
+You cannot keep going like this and cannot afford to stop. Whether a liveable third position exists between them.
+
+### Q: What actually happened?
+In 829, at fifty-eight, Bai Juyi asked for a post called Adviser to the Heir Apparent, attached to the secondary capital. It carried rank and a monthly salary, required no court attendance and almost no work. He moved to Luoyang and stayed eighteen years, until he died. He wrote a poem for the arrangement, sorting people into three kinds: the great recluse hides in the marketplace, the lesser one in the hills. The hills are too bleak and the market too loud, so he took the middle kind and hid inside an office.
+
+### The parts · Both extremes are refused first
+The opening rejects each side on its own terms: the hills are too desolate, the court too noisy. He does not make retreat noble or office corrupt. Only once both are admitted to be unliveable does a third option have a reason to exist.
+e.g. Go flat out or hand in your notice - most people are stuck because those are the only two they can see.
+
+### The parts · Neither quite in nor quite out
+His description is a run of negatives: it resembles serving and also withdrawing, is neither busy nor idle. That is not vagueness. The whole value is that it belongs fully to neither side, so neither side's price is charged in full.
+e.g. A role with no promotion track and nobody calling at midnight; you cannot say if it is a step up or down.
+
+### The parts · He states what holds the setting up
+The next lines are blunt about the economics: no toil of mind or body, no hunger or cold, no official business all year, and a salary every month. This is not a frame of mind. It is rank and money that other people recognise.
+e.g. Before taking on less work, check whether the year still works without that income. If it does not, you will be pulled back.
+
+### The parts · He calls it a compromise, never an ideal
+The poem ends by placing him between hardship and success, between plenty and want. He is not offering the best answer, he is offering one that can be occupied for years. Read as transcendence, it loses the word he actually wrote: between.
+e.g. Accepting that these few years will be neither outstanding nor falling behind costs less than swinging between the two.
+
+### The parts · He did not reason his way there first
+The poem was written in Luoyang, and by then he had been demoted to Jiangzhou, moved to Zhongzhou and governed both Hangzhou and Suzhou. The middle position is where he landed after all of that, not an insight he had while young.
+e.g. People who have stopped competing have usually competed first, and lost, which is how they learned which slot they want.
+
+### Q: How do I use it today?
+Where you are: you cannot keep going at this pace, and stopping altogether frightens you.
+Ask first: am I looking for a break or for a different setting - because if it is the second, where does the money for that setting come from, and who recognises the title?
+Where it goes wrong: using it as a licence to coast. His post had rank, salary and standing, and he could only reach it after a career as a senior governor. Without those, the middle position is just idleness with no income.
+
+### Lines to keep
+The hills are too bleak and the marketplace too loud.
+It resembles serving and it resembles withdrawing.
+Neither busy nor idle, and that is the whole point.
+Rank and salary hold the setting up, not a state of mind.
+
+========================================================================
+## Bai Juyi · What the world keeps is not what you worked hardest on
+URL: https://ourword.ai/en/i/bai-juyi/what-i-rank-low/
+Source: 'Letter to Yuan Zhen', written in 815 while demoted to Jiangzhou
+Tags: Deep read, Bai Juyi, He knew it in his lifetime and did not reorder his list
+
+The work you laboured over goes unread and the offhand piece travels. What to do once you know that.
+
+### Q: What actually happened?
+In 815 Bai Juyi was demoted and sent to Jiangzhou. That year he wrote a long letter to his friend Yuan Zhen, sorting his own poems into four kinds. The ones he ranked highest were the satirical poems, written about ordinary people's hardship. The ones readers actually loved were his long narrative poem and his occasional verse. What the age values, he wrote, is what I rank low. Then he gave the reason: the satires are urgent in feeling and plain in language, and plainness is not what people warm to.
+
+### The parts · He knew it at the time, not in hindsight
+Usually this only becomes visible decades later. He had it written down in his thirties: what they love and what I rate are not the same set. He even diagnosed why - that kind of poem speaks bluntly and runs hot, which is unpleasant.
+e.g. The proposal you were proudest of goes unmentioned while a diagram you knocked out gets forwarded everywhere.
+
+### The parts · Knowing it, he still did not reorder the list
+The harder part is what comes next. He neither stopped writing satires to suit his readers nor spent his life proving they were better. He simply kept them first in his own ranking. The order of the takings and the order in your head can differ.
+e.g. If you still rate the thing nobody applauded, do not strike it off your own list because nobody applauded.
+
+### The parts · Aim wide, act narrow
+In the same letter he sets out his own resolution: the ambition is to serve everyone, the practice is to keep himself in order. That is not retreat. It separates two sizes, so falling short of the ambition stops counting as abandoning it.
+e.g. You cannot fix the whole industry, but you can make your own corner of it into something others can copy.
+
+### The parts · The part they kept is also yours
+He rated the long narrative poem low, but he wrote it. What the world picked out came off the same bench as everything else; it simply is not top of his own list. Granting that, you need not disown the thing that did land.
+e.g. The work people remember may not be your favourite, and it is still yours. Both can hold at once.
+
+### The parts · He wrote it from the lowest point he reached
+The letter dates from the year of his disgrace, not from a comfortable retrospective. When least recognised, people tend either to write themselves off or to write the world off. He did neither. He totted up the account and went on writing.
+e.g. The judgement you record right after being turned down is often worth more than the one you record on a good day.
+
+### Q: How do I use it today?
+Where you are: the work you laboured over goes unwanted while something you tossed off is passed around.
+Ask first: is the ranking in my head still mine, or has the reception quietly rewritten it - because those two lists are allowed to differ.
+Where it goes wrong: using it to prove that whatever gets applause is shallow. He never says the public's taste is wrong. He says there are two lists, and that he knows which one is his.
+
+### Lines to keep
+What the age values is what I rank low.
+The ambition is to serve everyone; the practice is to keep oneself in order.
+The order of the takings need not be the order in your head.
+He wrote it in the year he was demoted, not in a good one.
 
 ========================================================================
 ## Jeff Bezos · Always Day 1

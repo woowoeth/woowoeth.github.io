@@ -1,9 +1,9 @@
 # OurWord (OurWord)
 
-> 167 people and books on how the world actually works, across 2,600 years
+> 168 people and books on how the world actually works, across 2,600 years
 > See how people before you handled it.
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 167 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 168 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
 ## Read it
 
@@ -26,12 +26,12 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 - [Strategy and competition](https://ourword.ai/en/t/strategy-and-competition/) — 17
 - [Learning and growth](https://ourword.ai/en/t/learning-and-growth/) — 16
 - [Money and risk](https://ourword.ai/en/t/money-and-risk/) — 16
+- [Body and daily life](https://ourword.ai/en/t/body-and-daily-life/) — 14
 - [Qin, Han and the Six Dynasties](https://ourword.ai/en/t/qin-han-and-the-six-dynasties/) — 14
 - [Reading people](https://ourword.ai/en/t/reading-people/) — 14
-- [Body and daily life](https://ourword.ai/en/t/body-and-daily-life/) — 13
 - [Family and relationships](https://ourword.ai/en/t/family-and-relationships/) — 13
 - [Early modern](https://ourword.ai/en/t/early-modern/) — 12
-- [Medieval](https://ourword.ai/en/t/medieval/) — 10
+- [Medieval](https://ourword.ai/en/t/medieval/) — 11
 
 <!-- chapters:begin -->
 ## Deep reads
@@ -60,6 +60,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [Robert Axelrod · What keeps his word is not his character](https://ourword.ai/en/i/axelrod/shadow-of-the-future/): Robert Axelrod · What keeps his word is not his character — It is how many rounds the two of you have left. You cannot tell whether his promise will hold. What decides it is usually not character but how many rounds remain.
 - [Bai Gui · Take what the others drop](https://ourword.ai/en/i/bai-gui/take-what-others-drop/): Bai Gui · Take what the others drop — Buy in the good year, sell in the lean one. Everyone knows buy low, sell high. What is missing is the part that makes it something a person can actually execute.
 - [Bai Gui · Four things, and no waivers](https://ourword.ai/en/i/bai-gui/four-qualifications/): Bai Gui · Four things, and no waivers — Missing one and the other three stop paying. He put trade on a level with statecraft and war, and then set an entrance requirement that most applicants would fail.
+- [Bai Juyi · There is a setting between all-in and out](https://ourword.ai/en/i/bai-juyi/middle-hiding/): Bai Juyi · There is a setting between all-in and out — He arranged a salary and a title for that setting. You cannot keep going like this and cannot afford to stop. Whether a liveable third position exists between them.
+- [Bai Juyi · What the world keeps is not what you worked hardest on](https://ourword.ai/en/i/bai-juyi/what-i-rank-low/): Bai Juyi · What the world keeps is not what you worked hardest on — He knew it in his lifetime and did not reorder his list. The work you laboured over goes unread and the offhand piece travels. What to do once you know that.
 - [Jeff Bezos · Always Day 1](https://ourword.ai/en/i/bezos/day-one/): Jeff Bezos · Always Day 1 — What Day 2 looks like. Someone asked what Day 2 would look like. The answer, and the four parts he installed to keep it away.
 - [Jeff Bezos · Bet on what will not change](https://ourword.ai/en/i/bezos/what-wont-change/): Jeff Bezos · Bet on what will not change — The question almost nobody asks. Everyone asks him what the next ten years will change. He says the more useful question is the one he almost never gets.
 - [The Bhagavad Gita · A right to the action, never to the fruit](https://ourword.ai/en/i/bhagavad-gita/right-to-the-act/): The Bhagavad Gita · A right to the action, never to the fruit — Chapter two, verse forty-seven. Two thousand years of quotation have made it sound like detachment. In place it is a boundary line drawn under pressure.
@@ -444,7 +446,7 @@ Cite the individual page URL, not the homepage — each entry page is stable and
 - [AI Bubble Monitor](https://ourword.ai/ai/)
 - [Zouni](https://ourword.ai/zouni/)
 
-## Index (167 entrys)
+## Index (168 entrys)
 
 - [Albert Einstein](https://ourword.ai/en/i/einstein/): Albert Einstein (Germany · 1879–1955) — Imagination. The physicist, and the father of relativity — but the legacy that travels furthest is not a formula, it is a way of working.
 - [Albert O. Hirschman](https://ourword.ai/en/i/hirschman/): Albert O. Hirschman (United States · 1915-2012) — Voice. A German-born American economist. He left Berlin in 1933, fought in Spain in 1936, spent 1940 in Marseille forging papers and finding mountain…
@@ -458,6 +460,7 @@ Cite the individual page URL, not the homepage — each entry page is stable and
 - [Augustine](https://ourword.ai/en/i/augustine/): Augustine (354–430 · Hippo, North Africa) — Grant me chastity, but not yet. A bishop in Roman North Africa, and the author of the Confessions, which he wrote in his forties about the first half of…
 - [BJ Fogg](https://ourword.ai/en/i/bj-fogg/): BJ Fogg (2019 · Stanford Behavior Design Lab) — Too small to fail. Founder of the Behavior Design Lab at Stanford, working on how behaviour gets designed rather than willed.
 - [Bai Gui](https://ourword.ai/en/i/bai-gui/): Bai Gui (Warring States · 370–300 BC) — Against the crowd. The earliest contrarian in the written record, twenty-two centuries before Graham. He traded farm goods across seasons and across crops, and…
+- [Bai Juyi](https://ourword.ai/en/i/bai-juyi/): Bai Juyi (Tang · 772-846) — The middle setting. A Tang poet whose work circulated more widely in his own lifetime than almost anyone's - and who did not rate most highly the poems that travelled.
 - [Benjamin Franklin](https://ourword.ai/en/i/franklin/): Benjamin Franklin (1706–1790 · Boston and Philadelphia) — Thirteen virtues, compounded. A rare full-stack life. A printer by trade, he arrived in Philadelphia at seventeen with nothing, was…
 - [Benjamin Graham](https://ourword.ai/en/i/graham/): Benjamin Graham (United States · 1894–1976) — Margin of safety. The father of security analysis, author of Security Analysis and The Intelligent Investor.
 - [Brené Brown](https://ourword.ai/en/i/brene-brown/): Brené Brown (2010 · University of Houston) — Shame and guilt. A social work researcher who spent twenty years on the thing most people will not touch: making shame into an object that can be studied…
