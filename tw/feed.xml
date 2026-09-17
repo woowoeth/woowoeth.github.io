@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>OurWord — 166 people and books on how the world actually works, across 2,600 years</title>
+    <title>OurWord — 167 people and books on how the world actually works, across 2,600 years</title>
     <link>https://ourword.ai/tw/</link>
     <atom:link href="https://ourword.ai/tw/feed.xml" rel="self" type="application/rss+xml"/>
-    <description>A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 166 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.</description>
+    <description>A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 167 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.</description>
     <language>zh-tw</language>
-    <lastBuildDate>Wed, 16 Sep 2026 08:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 17 Sep 2026 08:00:00 +0800</lastBuildDate>
 <!-- chapters:begin -->
     <item><title>阿德勒 · 課題分離</title><link>https://ourword.ai/tw/i/adler/separation-of-tasks/</link><guid isPermaLink="true">https://ourword.ai/tw/i/adler/separation-of-tasks/</guid><description>阿德勒 · 課題分離——先分清這是誰的事。人際關係的痛苦大半來自越界。這一篇要回答的是：邊界到底畫在哪。</description><pubDate>Tue, 01 Sep 2026 08:00:00 +0800</pubDate></item>
     <item><title>阿德勒 · 不是因為，是為了</title><link>https://ourword.ai/tw/i/adler/teleology/</link><guid isPermaLink="true">https://ourword.ai/tw/i/adler/teleology/</guid><description>阿德勒 · 不是因為，是為了——把原因換成目的。弗洛伊德問你經歷過什麼，阿德勒問你想用它做什麼。這一篇要回答的是：這個換問法為什麼能解凍。</description><pubDate>Sun, 30 Aug 2026 08:00:00 +0800</pubDate></item>
@@ -26,6 +26,8 @@
     <item><title>奧古斯丁 · 賜我貞潔，但不是現在</title><link>https://ourword.ai/tw/i/augustine/not-yet/</link><guid isPermaLink="true">https://ourword.ai/tw/i/augustine/not-yet/</guid><description>奧古斯丁 · 賜我貞潔，但不是現在——拖延的那句原話。知道該開始、也想要那個結果，就是不動，怎麼回事。這一篇要回答的是：奧古斯丁年輕時那句禱告為什麼成了拖延的標準句式。</description><pubDate>Wed, 02 Sep 2026 08:00:00 +0800</pubDate></item>
     <item><title>奧古斯丁 · 偷梨</title><link>https://ourword.ai/tw/i/augustine/the-pear-tree/</link><guid isPermaLink="true">https://ourword.ai/tw/i/augustine/the-pear-tree/</guid><description>奧古斯丁 · 偷梨——不為吃，就為偷。做了一件自己都說不出為什麼的錯事，過不去，怎麼辦。這一篇要回答的是：奧古斯丁幾十年後為什麼還在寫十六歲偷的那幾個梨。</description><pubDate>Wed, 02 Sep 2026 08:00:00 +0800</pubDate></item>
     <item><title>奧古斯丁 · 心命令身體就聽，命令自己就不聽</title><link>https://ourword.ai/tw/i/augustine/the-mind-commands/</link><guid isPermaLink="true">https://ourword.ai/tw/i/augustine/the-mind-commands/</guid><description>奧古斯丁 · 心命令身體就聽，命令自己就不聽——不是沒有意志，是有兩個。道理全懂，就是動不了，問題在哪。這一篇要回答的是：奧古斯丁在花園裡那個下午拆出來的機制。</description><pubDate>Wed, 02 Sep 2026 08:00:00 +0800</pubDate></item>
+    <item><title>羅伯特·阿克塞爾羅德 · 回敬一次，然後立刻回來</title><link>https://ourword.ai/tw/i/axelrod/tit-for-tat/</link><guid isPermaLink="true">https://ourword.ai/tw/i/axelrod/tit-for-tat/</guid><description>羅伯特·阿克塞爾羅德 · 回敬一次，然後立刻回來——贏的不是最狠的，是恢復合作最快的。被人坑了一次，到底該不該還回去、還幾次。這一篇要回答的是：這個問題被人用一場比賽算出過答案。</description><pubDate>Thu, 17 Sep 2026 08:00:00 +0800</pubDate></item>
+    <item><title>羅伯特·阿克塞爾羅德 · 讓他守信的不是人品</title><link>https://ourword.ai/tw/i/axelrod/shadow-of-the-future/</link><guid isPermaLink="true">https://ourword.ai/tw/i/axelrod/shadow-of-the-future/</guid><description>羅伯特·阿克塞爾羅德 · 讓他守信的不是人品——是你們之間還剩多少次交手。他答應的事到底作不作數。這一篇要回答的是：決定它的多半不是人品，是你們之間還剩多少次交手。</description><pubDate>Thu, 17 Sep 2026 08:00:00 +0800</pubDate></item>
     <item><title>白圭 · 人棄我取</title><link>https://ourword.ai/tw/i/bai-gui/take-what-others-drop/</link><guid isPermaLink="true">https://ourword.ai/tw/i/bai-gui/take-what-others-drop/</guid><description>白圭 · 人棄我取——在豐年買，在歉年賣。低買高賣人人都懂。這一篇要回答的是：白圭是怎麼讓這件事變成可執行的。</description><pubDate>Sat, 29 Aug 2026 08:00:00 +0800</pubDate></item>
     <item><title>白圭 · 智勇仁強</title><link>https://ourword.ai/tw/i/bai-gui/four-qualifications/</link><guid isPermaLink="true">https://ourword.ai/tw/i/bai-gui/four-qualifications/</guid><description>白圭 · 智勇仁強——四樣缺一樣就別做。他把經商說成和用兵、變法一個等級的事。這一篇要回答的是：他為此開出的四條准入條件。</description><pubDate>Sat, 29 Aug 2026 08:00:00 +0800</pubDate></item>
     <item><title>貝索斯 · 永遠是第一天</title><link>https://ourword.ai/tw/i/bezos/day-one/</link><guid isPermaLink="true">https://ourword.ai/tw/i/bezos/day-one/</guid><description>貝索斯 · 永遠是第一天——第二天是什麼樣。有員工問：第二天會怎樣？這一篇要回答的是：他的答案，和他為攔住第二天裝的四個零件。</description><pubDate>Sat, 29 Aug 2026 08:00:00 +0800</pubDate></item>

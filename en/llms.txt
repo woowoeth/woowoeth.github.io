@@ -1,9 +1,9 @@
 # OurWord (OurWord)
 
-> 166 people and books on how the world actually works, across 2,600 years
+> 167 people and books on how the world actually works, across 2,600 years
 > See how people before you handled it.
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 166 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 167 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
 ## Read it
 
@@ -17,13 +17,13 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 ## Topics
 
 - [Modern](https://ourword.ai/en/t/modern/) — 61
-- [The industrial age](https://ourword.ai/en/t/the-industrial-age/) — 49
+- [The industrial age](https://ourword.ai/en/t/the-industrial-age/) — 50
 - [Power and organisation](https://ourword.ai/en/t/power-and-organisation/) — 22
 - [Mind and feeling](https://ourword.ai/en/t/mind-and-feeling/) — 20
 - [Pre-Qin and classical](https://ourword.ai/en/t/pre-qin-and-classical/) — 20
 - [Starting and building](https://ourword.ai/en/t/starting-and-building/) — 19
+- [How the world works](https://ourword.ai/en/t/how-the-world-works/) — 17
 - [Strategy and competition](https://ourword.ai/en/t/strategy-and-competition/) — 17
-- [How the world works](https://ourword.ai/en/t/how-the-world-works/) — 16
 - [Learning and growth](https://ourword.ai/en/t/learning-and-growth/) — 16
 - [Money and risk](https://ourword.ai/en/t/money-and-risk/) — 16
 - [Qin, Han and the Six Dynasties](https://ourword.ai/en/t/qin-han-and-the-six-dynasties/) — 14
@@ -56,6 +56,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [Augustine · Grant me chastity, but not yet](https://ourword.ai/en/i/augustine/not-yet/): Augustine · Grant me chastity, but not yet — The oldest sentence about putting it off. Everyone quotes the prayer as a joke. Read it in place and it is an exact account of how postponement works.
 - [Augustine · The pears](https://ourword.ai/en/i/augustine/the-pear-tree/): Augustine · The pears — Not for the fruit, for the theft. A man in his forties spends pages on a boyhood theft of fruit he did not even eat. The question is why.
 - [Augustine · The mind commands itself and is resisted](https://ourword.ai/en/i/augustine/the-mind-commands/): Augustine · The mind commands itself and is resisted — Not a weak will, two of them. He notices something strange in the garden: the body obeys instantly and the will does not. His explanation is a mechanism, not a scolding.
+- [Robert Axelrod · Hit back once, then come straight back](https://ourword.ai/en/i/axelrod/tit-for-tat/): Robert Axelrod · Hit back once, then come straight back — The winner was not the meanest, it was the quickest to resume. Someone has crossed you and you are deciding whether to hit back, and how often. A tournament worked the answer out.
+- [Robert Axelrod · What keeps his word is not his character](https://ourword.ai/en/i/axelrod/shadow-of-the-future/): Robert Axelrod · What keeps his word is not his character — It is how many rounds the two of you have left. You cannot tell whether his promise will hold. What decides it is usually not character but how many rounds remain.
 - [Bai Gui · Take what the others drop](https://ourword.ai/en/i/bai-gui/take-what-others-drop/): Bai Gui · Take what the others drop — Buy in the good year, sell in the lean one. Everyone knows buy low, sell high. What is missing is the part that makes it something a person can actually execute.
 - [Bai Gui · Four things, and no waivers](https://ourword.ai/en/i/bai-gui/four-qualifications/): Bai Gui · Four things, and no waivers — Missing one and the other three stop paying. He put trade on a level with statecraft and war, and then set an entrance requirement that most applicants would fail.
 - [Jeff Bezos · Always Day 1](https://ourword.ai/en/i/bezos/day-one/): Jeff Bezos · Always Day 1 — What Day 2 looks like. Someone asked what Day 2 would look like. The answer, and the four parts he installed to keep it away.
@@ -442,7 +444,7 @@ Cite the individual page URL, not the homepage — each entry page is stable and
 - [AI Bubble Monitor](https://ourword.ai/ai/)
 - [Zouni](https://ourword.ai/zouni/)
 
-## Index (166 entrys)
+## Index (167 entrys)
 
 - [Albert Einstein](https://ourword.ai/en/i/einstein/): Albert Einstein (Germany · 1879–1955) — Imagination. The physicist, and the father of relativity — but the legacy that travels furthest is not a formula, it is a way of working.
 - [Albert O. Hirschman](https://ourword.ai/en/i/hirschman/): Albert O. Hirschman (United States · 1915-2012) — Voice. A German-born American economist. He left Berlin in 1933, fought in Spain in 1936, spent 1940 in Marseille forging papers and finding mountain…
@@ -556,6 +558,7 @@ Cite the individual page URL, not the homepage — each entry page is stable and
 - [Records of the Grand Historian](https://ourword.ai/en/i/records-of-the-grand-historian/): Records of the Grand Historian (Western Han · 104–91 BC) — A record with a verdict. One hundred and thirty chapters, about half a million characters, covering some three thousand years from the…
 - [Ren Zhengfei](https://ourword.ai/en/i/ren-zhengfei/): Ren Zhengfei (Contemporary · 1944–) — Endurance. In 1987, at forty-three, he put twenty thousand yuan into a Shenzhen company reselling other people's telephone switches.
 - [Richard Feynman](https://ourword.ai/en/i/feynman/): Richard Feynman (1918–1988 · United States) — Do not fool yourself. Nobel physicist, Manhattan Project, and the member of the Challenger commission who insisted his own dissenting appendix be printed…
+- [Robert Axelrod](https://ourword.ai/en/i/axelrod/): Robert Axelrod (United States · born 1943) — Reciprocity. An American political scientist, born in 1943, who spent his career at the University of Michigan chasing one question: how can two sides who…
 - [Robert K. Merton](https://ourword.ai/en/i/merton/): Robert K. Merton (United States · 1910-2003) — Self-confirming. An American sociologist, born in a poor quarter of Philadelphia in 1910 to immigrant parents, who taught at Columbia from 1941 until he…
 - [Robert Sapolsky](https://ourword.ai/en/i/sapolsky/): Robert Sapolsky (1994 · Stanford) — Stress is a mismatch. A neuroendocrinologist who spent thirty years with a troop of wild baboons in East Africa while studying human stress physiology.
 - [Sapiens](https://ourword.ai/en/i/sapiens/): Sapiens (2011 · Yuval Noah Harari) — Fictions. An Israeli historian's account of sixty thousand years, with an argument short enough to hold in one hand.

@@ -1,11 +1,11 @@
 # OurWord (人類世界生存法則)
 
-> 166 people and books on how the world actually works, across 2,600 years
+> 167 people and books on how the world actually works, across 2,600 years
 > 遇到事了，看看以前的人怎麼處理
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 166 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 167 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
-一個關於「世界到底怎麼運轉」的知識庫：戰略、財富、權力、人性、創業，取自 166 位人物與典籍，跨越 2600 年。每一條都寫清楚這個人真正留下的那一個想法、背後的故事、拆開的分則與例子，以及今天怎麼用。
+一個關於「世界到底怎麼運轉」的知識庫：戰略、財富、權力、人性、創業，取自 167 位人物與典籍，跨越 2600 年。每一條都寫清楚這個人真正留下的那一個想法、背後的故事、拆開的分則與例子，以及今天怎麼用。
 
 ## Read it
 
@@ -19,15 +19,15 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 ## Topics
 
 - [現代](https://ourword.ai/tw/t/modern/) — 58
-- [工業時代](https://ourword.ai/tw/t/industrial-age/) — 52
+- [工業時代](https://ourword.ai/tw/t/industrial-age/) — 53
 - [權力與組織](https://ourword.ai/tw/t/power/) — 22
 - [心智與情緒](https://ourword.ai/tw/t/mind/) — 21
 - [先秦與古典時代](https://ourword.ai/tw/t/classical-era/) — 20
 - [創業與產品](https://ourword.ai/tw/t/startups/) — 19
 - [謀略與競爭](https://ourword.ai/tw/t/strategy/) — 17
 - [財富與風險](https://ourword.ai/tw/t/wealth/) — 17
+- [世界如何運轉](https://ourword.ai/tw/t/world/) — 16
 - [學習與成長](https://ourword.ai/tw/t/learning/) — 15
-- [世界如何運轉](https://ourword.ai/tw/t/world/) — 15
 - [識人與相處](https://ourword.ai/tw/t/people/) — 14
 - [家庭與關係](https://ourword.ai/tw/t/family/) — 13
 - [身心與生活](https://ourword.ai/tw/t/living/) — 13
@@ -62,6 +62,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [奧古斯丁 · 賜我貞潔，但不是現在](https://ourword.ai/tw/i/augustine/not-yet/): 奧古斯丁 · 賜我貞潔，但不是現在——拖延的那句原話。知道該開始、也想要那個結果，就是不動，怎麼回事。這一篇要回答的是：奧古斯丁年輕時那句禱告為什麼成了拖延的標準句式。
 - [奧古斯丁 · 偷梨](https://ourword.ai/tw/i/augustine/the-pear-tree/): 奧古斯丁 · 偷梨——不為吃，就為偷。做了一件自己都說不出為什麼的錯事，過不去，怎麼辦。這一篇要回答的是：奧古斯丁幾十年後為什麼還在寫十六歲偷的那幾個梨。
 - [奧古斯丁 · 心命令身體就聽，命令自己就不聽](https://ourword.ai/tw/i/augustine/the-mind-commands/): 奧古斯丁 · 心命令身體就聽，命令自己就不聽——不是沒有意志，是有兩個。道理全懂，就是動不了，問題在哪。這一篇要回答的是：奧古斯丁在花園裡那個下午拆出來的機制。
+- [羅伯特·阿克塞爾羅德 · 回敬一次，然後立刻回來](https://ourword.ai/tw/i/axelrod/tit-for-tat/): 羅伯特·阿克塞爾羅德 · 回敬一次，然後立刻回來——贏的不是最狠的，是恢復合作最快的。被人坑了一次，到底該不該還回去、還幾次。這一篇要回答的是：這個問題被人用一場比賽算出過答案。
+- [羅伯特·阿克塞爾羅德 · 讓他守信的不是人品](https://ourword.ai/tw/i/axelrod/shadow-of-the-future/): 羅伯特·阿克塞爾羅德 · 讓他守信的不是人品——是你們之間還剩多少次交手。他答應的事到底作不作數。這一篇要回答的是：決定它的多半不是人品，是你們之間還剩多少次交手。
 - [白圭 · 人棄我取](https://ourword.ai/tw/i/bai-gui/take-what-others-drop/): 白圭 · 人棄我取——在豐年買，在歉年賣。低買高賣人人都懂。這一篇要回答的是：白圭是怎麼讓這件事變成可執行的。
 - [白圭 · 智勇仁強](https://ourword.ai/tw/i/bai-gui/four-qualifications/): 白圭 · 智勇仁強——四樣缺一樣就別做。他把經商說成和用兵、變法一個等級的事。這一篇要回答的是：他為此開出的四條准入條件。
 - [貝索斯 · 永遠是第一天](https://ourword.ai/tw/i/bezos/day-one/): 貝索斯 · 永遠是第一天——第二天是什麼樣。有員工問：第二天會怎樣？這一篇要回答的是：他的答案，和他為攔住第二天裝的四個零件。
@@ -448,7 +450,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [AI Bubble Monitor / AI 泡沫檢測儀](https://ourword.ai/ai/)
 - [Zouni / 走你](https://ourword.ai/zouni/)
 
-## Index (166 entrys)
+## Index (167 entrys)
 
 - [BJ·福格](https://ourword.ai/tw/i/bj-fogg/): BJ·福格（2019年·斯坦福行為設計實驗室）——小到不會失敗。斯坦福行為設計實驗室創始人，研究行為如何被設計出來。他給出一個公式：行為發生需要動機、能力、提示三者同時到位。多數人失敗在只調動機——靠決心和自我激勵——而動機天然起伏，靠它維持的習慣必然崩。他的主張相反：把行為縮到小得不需要動機，然後掛在一個已有的動作後面。
 - [C.S.劉易斯](https://ourword.ai/tw/i/cs-lewis/): C.S.劉易斯（1898-1963年·英國牛津）——妻子死後幾個月的日記。作家，牛津和劍橋的教授，寫過《納尼亞傳奇》和大量勸人信仰的書。五十八歲結婚，妻子喬伊四年後因癌症去世。之後幾個月他在四本練習簿上記自己的狀態，後來用筆名出版，就是《卿卿如晤》。收他是因為「重要的人走了」那六個問題，原來靠弗蘭克爾和蘇軾在答——一個是集中營的倖存者，一個是被貶的官員
@@ -572,6 +574,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [納瓦爾](https://ourword.ai/tw/i/naval/): 納瓦爾（當代·1974-）——槓桿。AngelList聯合創始人，早期投資了Twitter、Uber、Notion等公司。2018年他在Twitter上發了一個推文串「如何在不出賣靈魂的情況下致富」，在全球傳播超過數百萬次。他不是財務顧問，是一個在數字時代找到了「個人主權」路徑的思考者。
 - [維果茨基](https://ourword.ai/tw/i/vygotsky/): 維果茨基（1934年·蘇聯心理學家）——再高一點。蘇聯心理學家，三十七歲去世，留下的概念卻影響了整個教育學。他最重要的貢獻是「最近發展區」——一個人能力有兩條線：自己能做到的，和在他人幫助下能做到的。兩條線之間那段空隙，才是學習真正發生的地方。低於它是重複，高於它是挫敗。他還強調思維是從社會互動內化來的：先是和別人一起做，然後才
 - [羅伯特·K·默頓](https://ourword.ai/tw/i/merton/): 羅伯特·K·默頓（美國·1910-2003）——自證。美國社會學家，1910年生於費城的貧民區，父母是東歐移民，1941年起在哥倫比亞大學任教直到退休。他一輩子不做宏大體系，只做一件事：把人們隱約感覺到、卻叫不出名字的社會機制拎出來，起一個準確的名字，再證明它怎麼運轉。今天到處在用的幾個詞都是他起的——自證預言、角色榜樣、非預期後果
+- [羅伯特·阿克塞爾羅德](https://ourword.ai/tw/i/axelrod/): 羅伯特·阿克塞爾羅德（美國·1943-）——互惠。美國政治學家，1943年生，長期任教於密歇根大學。他一輩子追著同一個問題：兩個互不信任、頭頂又沒有裁判的對手，憑什麼可能合作。1980年他做了一件當時沒人做過的事——不去論證什麼策略最優，而是向各國學者徵集策略程序，讓它們在計算機裡打一場循環賽，誰得分高誰說了算。冠軍是所有程序裡
 - [老鼠公園](https://ourword.ai/tw/i/rat-park/): 老鼠公園（1978年·西蒙菲莎大學）——成癮要看籠子。七十年代末的一組實驗，加上一場沒人設計的自然實驗，合起來動搖了關於成癮的一個常識。標準做法是把老鼠單獨關在空籠子裡，給一瓶摻嗎啡的水，它會喝到死——結論看著很硬：一沾就完。布魯斯·亞歷山大問了另一個問題：如果籠子不是空的呢。他造了一個有同伴、有輪子、有隧道的大圍欄，同樣兩瓶水，那
 - [胡雪巖](https://ourword.ai/tw/i/hu-xueyan/): 胡雪巖（清·1823-1885）——靠山。晚清最著名的商人，白手起家做到大清首富，官至布政使銜、賞穿黃馬褂、戴二品紅頂子——「紅頂商人」這個詞就是為他造的。他也是中國近代第一個和外商正面打商戰的人，並且輸得乾乾淨淨：從巔峰到抄家，只用了兩年。他的成功和失敗，用的是同一套邏輯。（注意：坊間流傳的大量「胡雪巖語錄」出自高陽的
 - [艾利克森](https://ourword.ai/tw/i/ericsson/): 艾利克森（1993年·刻意練習研究）——練法比時長重要。心理學家，專門研究各領域頂尖高手是怎麼練出來的。他最廣為人知的研究被流行文化簡化成了「一萬小時定律」，而這恰恰是他反覆澄清過的誤讀——決定水平的不是時長，是練法。重複做已經會的事，做十年也不會變強；只有持續在能力邊緣、帶著明確目標和即時反饋的練習，才產生進步。他把這種練法叫「刻意

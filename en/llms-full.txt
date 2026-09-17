@@ -1,7 +1,7 @@
-# OurWord — 166 people and books on how the world actually works, across 2,600 years
+# OurWord — 167 people and books on how the world actually works, across 2,600 years
 # OurWord — See how people before you handled it.
 # https://ourword.ai/en/
-# Full corpus, plain text. 166 entrys.
+# Full corpus, plain text. 167 entrys.
 
 ========================================================================
 ## Albert Einstein
@@ -1793,10 +1793,10 @@ When designing incentives for a team, ask what this system will make people do, 
 The ruler controls by two handles: punishment and favour. The difficulty of persuasion is knowing the listener's mind. A thousand-mile dyke collapses from an ant hole.
 
 ### Q: What should I read alongside?
-Zhuangzi — Same era, opposite answers: Han Feizi designs the machine, Zhuangzi declines to be a component. Thomas Gordon — Two theories of getting compliance: rules and consequences, or naming the effect on you. Both work, on different things. John Boyd — Two theories of an organisation that works: rules and consequences, or shared intent and delegated authority. Xunzi — The student pushed the teacher's training argument into a theory of control. Xunzi kept the rites; Han Feizi kept only the handles. Hannah Arendt — Han Feizi asks how to build a system that works without relying on goodness; Arendt asks where obedience inside such a system ends up. One writes from the designer's chair, one from the operator's. Cao Cao — The theory and its practitioner. Han Feizi wrote the system down; cutting his hair in place of his head is that system demonstrated on the man at the top. Mencius — Both are writing about how to govern. Han Feizi trusts reward and punishment; Mencius asks whether people are still willing to follow you at all. Shang Yang — Theory and practice of the same school: Han Feizi wrote the system down, Shang Yang ran it, and both were killed by the thing they had built. Machiavelli — The two closest political realists East and West, seventeen centuries apart: both studied how power actually works, and both were destroyed by the power they studied. Influence — Two systems for moving people: Han Feizi designed law, technique and position two thousand years earlier, Cialdini found six triggers. Both are asking how to make people act as you want.
+Zhuangzi — Same era, opposite answers: Han Feizi designs the machine, Zhuangzi declines to be a component. Thomas Gordon — Two theories of getting compliance: rules and consequences, or naming the effect on you. Both work, on different things. John Boyd — Two theories of an organisation that works: rules and consequences, or shared intent and delegated authority. Xunzi — The student pushed the teacher's training argument into a theory of control. Xunzi kept the rites; Han Feizi kept only the handles. Hannah Arendt — Han Feizi asks how to build a system that works without relying on goodness; Arendt asks where obedience inside such a system ends up. One writes from the designer's chair, one from the operator's. Cao Cao — The theory and its practitioner. Han Feizi wrote the system down; cutting his hair in place of his head is that system demonstrated on the man at the top. Mencius — Both are writing about how to govern. Han Feizi trusts reward and punishment; Mencius asks whether people are still willing to follow you at all. Shang Yang — Theory and practice of the same school: Han Feizi wrote the system down, Shang Yang ran it, and both were killed by the thing they had built. Machiavelli — The two closest political realists East and West, seventeen centuries apart: both studied how power actually works, and both were destroyed by the power they studied. Influence — Two systems for moving people: Han Feizi designed law, technique and position two thousand years earlier, Cialdini found six triggers. Both are asking how to make people act as you want. Robert Axelrod — Neither trusts human nature: Han Feizi holds reward and punishment himself so that nobody dares defect, Axelrod lengthens the relationship until nobody needs to - one runs on power, the other on repetition.
 
 ### Further
-Fan Li Sun Tzu Charlie Munger John Boyd Xunzi Hannah Arendt Cao Cao Guan Zhong Mencius Shang Yang Wu Zetian Zhang Juzheng Zhu Yuanzhang Guo Jia Thomas Schelling Strategies of the Warring States Guiguzi Machiavelli Influence
+Fan Li Sun Tzu Charlie Munger John Boyd Xunzi Hannah Arendt Cao Cao Guan Zhong Mencius Shang Yang Wu Zetian Zhang Juzheng Zhu Yuanzhang Guo Jia Thomas Schelling Strategies of the Warring States Guiguzi Machiavelli Influence Robert Axelrod
 
 ========================================================================
 ## Han Xin
@@ -2422,7 +2422,7 @@ The strongest single predictor of divorce is contempt. Criticism targets the per
 Esther Perel — Two different illnesses: he treats the wound, she treats the emptiness, and the moves point opposite ways. Attachment Theory — Attachment says where the pattern came from; Gottman measures how it is running in the room today. Crucial Conversations — Gottman tells you which signals in a fight predict the end; this tells you what to do in the next three minutes.
 
 ### Further
-Esther Perel Harvard Study of Adult Development C.S. Lewis Attachment Theory Murray Bowen Crucial Conversations
+Esther Perel Harvard Study of Adult Development C.S. Lewis Attachment Theory Murray Bowen Crucial Conversations Robert Axelrod
 
 ========================================================================
 ## John Ratey
@@ -3088,7 +3088,7 @@ The con artist does not build trust. He uses the need you already have. What get
 Influence — Cialdini explains how the six devices work, Konnikova explains why the same devices work so well on certain people at certain moments. One studies the weapon, the other the target. Scarcity — Both replace how could they be so stupid with what were they short of: Scarcity is about bandwidth being taken, the con is about wanting being used.
 
 ### Further
-Influence The Crowd Scarcity Zeng Guofan
+Influence The Crowd Scarcity Zeng Guofan Robert Axelrod
 
 ========================================================================
 ## Maria Montessori
@@ -4115,6 +4115,43 @@ Albert Einstein — Two physicists' habits: Einstein restated the problem until 
 Albert Einstein Socrates Charlie Munger Karl Popper The Last Hot-Metal Edition
 
 ========================================================================
+## Robert Axelrod
+URL: https://ourword.ai/en/i/axelrod/
+Tags: How the world works, The industrial age, Reciprocity
+
+Robert Axelrod (United States · born 1943) — Reciprocity. An American political scientist, born in 1943, who spent his career at the University of Michigan chasing one question: how can two sides who distrust each other, with…
+
+### Q: What did this one leave behind?
+An American political scientist, born in 1943, who spent his career at the University of Michigan chasing one question: how can two sides who distrust each other, with no referee above them, ever cooperate. In 1980 he did something nobody had tried. Instead of proving which strategy was best, he invited game theorists everywhere to submit their best one as a computer program and ran a round robin, letting the scores decide. The winner was the shortest entry, TIT FOR TAT: cooperate first, then copy the other side's last move. In 1981, with the evolutionary biologist W. D. Hamilton, he carried the same logic into biology; in 1984 it became The Evolution of Cooperation.
+
+### Q: What actually happened?
+What he was actually trying to solve was nuclear war. Born in 1943, a mathematics degree from Chicago and a doctorate in political science from Yale, he kept returning to the question of his era: two states aimed at each other, trusting nothing, unable to fire, and somehow not fighting. Others worked on the negotiating table, on deterrence, on morality. He took a stranger route. He compressed the whole thing into a game with two moves, cooperate or defect, played over and over, and then refused to solve it himself. He posted the problem and asked the world to send programs.
+
+### The parts · He ran a tournament instead of proving a theorem
+The usual answer to which strategy is best is a model and a proof. He published the rules, asked researchers to submit their best rule as code, played every pair and let the totals rank them. The answer was played out, not thought up. e.g. Rather than arguing in the meeting over which plan is better, run both for a month and read the numbers.
+
+### The parts · The shortest entry won
+TIT FOR TAT is four lines: cooperate on the first move, then copy the other side's last one. The second tournament drew sixty-two programs whose authors all knew it had won and knew its weaknesses. None of them beat it. e.g. The rule everyone can read, and everyone can predict, usually outlasts the one with something hidden in it.
+
+### The parts · The dividing line was moving first
+No program near the top ever defected first. They let every chance to take advantage go past and still scored highest. The ones that took those chances collected early and spent the rest of the tournament against opponents they had made. e.g. The two points squeezed out of this contract are usually drawn in advance from the next one.
+
+### The parts · Cooperation needs no friendship, only a next time
+He pushes the claim to its floor. In the trenches of the Western Front the two sides had never met, were ordered to shoot each other and had no authority between them, and a tacit truce grew anyway, because the same men faced each other daily. e.g. Two firms in the same building settle a dispute far more easily than two on different continents.
+
+### Q: How do I use it today?
+To get something honoured, stop auditing the other person's character and count the rounds instead. Turn a single payment into monthly ones, split delivery into three stages, put the two of you somewhere you both have to keep showing up - once tomorrow holds the same two people, their arithmetic changes on its own. Then fix your own rule of response: never move first; if you are genuinely crossed, answer once, and only once; the moment they cooperate again, cooperate on your very next move, with no arrears and no ledger. Half of that rule on its own is either an invitation or a permanent feud.
+
+### Lines to keep
+None of the leading programs was ever the first to defect. Hit back once, then come straight back. No ledger. It never outscored a single opponent and still finished first. A promise holds because of tomorrow's meeting, not his character.
+
+### Q: What should I read alongside?
+Han Feizi — Neither trusts human nature: Han Feizi holds reward and punishment himself so that nobody dares defect, Axelrod lengthens the relationship until nobody needs to - one runs on power, the other on repetition. Thomas Schelling — Both answer why should I believe you: Schelling has you burn your own way out so the promise is credible right now, Axelrod says credibility depends on how many rounds are still to come.
+
+### Further
+Thomas Schelling Han Feizi Maria Konnikova Robert K. Merton John Gottman
+
+========================================================================
 ## Robert K. Merton
 URL: https://ourword.ai/en/i/merton/
 Tags: How the world works, The industrial age, Self-confirming
@@ -4152,7 +4189,7 @@ The false judgement comes first and then produces its own evidence. Whoever said
 The Art of Worldly Wisdom — Two places to cut into the same problem: Gracian tells you to make sure the finished work is seen, Merton says whether it is seen depends first on where your name already stands. George Soros — Both say belief rewrites fact: Soros watches price and fundamentals push each other in markets, Merton watches suspicion and reputation confirm themselves in a room.
 
 ### Further
-Thinking in Systems George Soros Mark Granovetter The Art of Worldly Wisdom La Rochefoucauld
+Thinking in Systems George Soros Mark Granovetter The Art of Worldly Wisdom La Rochefoucauld Robert Axelrod
 
 ========================================================================
 ## Robert Sapolsky
@@ -5426,10 +5463,10 @@ Next time you are stuck, do not raise the threat. Ask why they believe you will 
 The power to constrain an adversary may depend on the power to bind oneself. In bargaining, weakness is often strength. A promise that costs nothing carries no information.
 
 ### Q: What should I read alongside?
-Strategies of the Warring States — Two arts of negotiation: the persuaders change what the other side believes, Schelling changes what the other side can choose. Nassim Taleb — Skin in the game and credible commitment are one coin: Taleb uses cost to decide whose word to trust, Schelling to make his own word land. Chris Voss — The two halves of bargaining: Schelling works on structural commitments and threats, Voss on the language in the room. One alters the payoff matrix, the other alters the person.
+Strategies of the Warring States — Two arts of negotiation: the persuaders change what the other side believes, Schelling changes what the other side can choose. Nassim Taleb — Skin in the game and credible commitment are one coin: Taleb uses cost to decide whose word to trust, Schelling to make his own word land. Chris Voss — The two halves of bargaining: Schelling works on structural commitments and threats, Voss on the language in the room. One alters the payoff matrix, the other alters the person. Robert Axelrod — Both answer why should I believe you: Schelling has you burn your own way out so the promise is credible right now, Axelrod says credibility depends on how many rounds are still to come.
 
 ### Further
-Strategies of the Warring States Han Feizi Peter Thiel Nassim Taleb Sun Tzu Otto von Bismarck Chris Voss
+Strategies of the Warring States Han Feizi Peter Thiel Nassim Taleb Sun Tzu Otto von Bismarck Chris Voss Robert Axelrod
 
 ========================================================================
 ## Viktor Frankl
@@ -6688,6 +6725,85 @@ Where it goes wrong: concluding that will is useless and drifting — he did cha
 The mind commands the body and is instantly obeyed.
 The mind commands itself and is resisted.
 Two wills, one old and one new. Both are yours.
+
+========================================================================
+## Robert Axelrod · Hit back once, then come straight back
+URL: https://ourword.ai/en/i/axelrod/tit-for-tat/
+Source: The Evolution of Cooperation, 1984, chapters 2-3: the two computer tournaments
+Tags: Deep read, Robert Axelrod, The winner was not the meanest, it was the quickest to resume
+
+Someone has crossed you and you are deciding whether to hit back, and how often. A tournament worked the answer out.
+
+### Q: What actually happened?
+In 1980 Axelrod wrote to game theorists around the world: send your best strategy as a program and I will play them all against each other over two hundred rounds. Fourteen arrived, some hundreds of lines long, modelling the opponent and probing for weakness. The winner was the shortest program submitted - TIT FOR TAT, four lines, from Anatol Rapoport in Toronto. Cooperate on the first move, then copy whatever the other side just did. The second tournament drew sixty-two programs whose authors all knew it would win, and not one of them could beat it.
+
+### The parts · None of the leaders moved first
+Rank the first tournament and the clean dividing line is not sophistication, it is whether a program ever defected first. The top eight never did. They passed up every chance to take advantage and still scored highest.
+e.g. The colleague who wins every small negotiation is usually the one with the fewest people left to call.
+
+### The parts · Retaliate at once, once only, then return
+It answers a defection on the very next move, and the moment the other side cooperates again it cooperates again too - no arrears, no ledger. Programs that punished forever scored badly. They turned one accident into a permanent deadlock.
+e.g. He missed one commitment, you went cold for six months, and the six months cost more than the commitment did.
+
+### The parts · It never won a single match
+TIT FOR TAT cannot outscore anyone head to head. It always defects a move later and takes one hit more, so a draw is its ceiling. Its total was still the highest, because of what it drew out of the other side.
+e.g. Keep score against your colleague and the thing the two of you could have built goes unbuilt.
+
+### The parts · Don't be too clever
+The elaborate programs that modelled their opponent and hunted for a quiet advantage all lost. The problem was not accuracy. A player whose behaviour shows no pattern is indistinguishable from noise, and nobody cooperates with noise.
+e.g. When your standard changes every time, people stop reading you and default to the most cautious thing available.
+
+### The parts · Its real weakness is misunderstanding
+Add noise and the rule breaks: one misread move sends two TIT FOR TAT players into endless recrimination. Axelrod and Dion returned to this in Science in 1988 - where errors are certain, the rule needs room to let one go.
+e.g. An unanswered message is not always a snub, and strict reciprocity will run you both off the road.
+
+### Q: How do I use it today?
+Where you are: someone has taken a piece out of you, and you are choosing between letting it go and never dealing with them again.
+Ask first: after I answer this, is there a clear route back to working together - because without one I have not answered once, I have set the relationship permanently to retaliation.
+Where it goes wrong: reading it as a warrant for grudges. The same rule forbids you to move first and requires you to stop the instant they do; neither half stands without the other.
+
+### Lines to keep
+None of the leading programs was ever the first to defect.
+Hit back once, then come straight back. No ledger.
+It never outscored a single opponent and still finished first.
+Don't be envious, and don't be the first to defect.
+
+========================================================================
+## Robert Axelrod · What keeps his word is not his character
+URL: https://ourword.ai/en/i/axelrod/shadow-of-the-future/
+Source: The Evolution of Cooperation, 1984, chapter 4, drawing on Tony Ashworth's study of trench warfare
+Tags: Deep read, Robert Axelrod, It is how many rounds the two of you have left
+
+You cannot tell whether his promise will hold. What decides it is usually not character but how many rounds remain.
+
+### Q: What actually happened?
+A truce grew by itself in the trenches of the Western Front. The men on either side had never met, were under orders to shoot each other, and had no referee between them. Working from diaries and regimental histories, Tony Ashworth found artillery shelling the same patch of ground at the same hour each day, so the other side knew when to be elsewhere. Headquarters broke the habit with compulsory raids, which had to produce prisoners or bodies and so could not be faked. What held them was not goodwill but knowing the same men would face each other again tomorrow.
+
+### The parts · The shadow of the future
+His name for it. Played once, defection always pays; played many times with the next round weighing enough, the gain is clawed back later. Cooperation is not the nobler choice, it is the better arithmetic.
+e.g. The stall selling to tourists once shorts the weight. The one serving the same street does not.
+
+### The parts · No friendship, no enforcer required
+He keeps lowering the bar: cooperation needs no friendship, no central authority to punish, not even foresight or rationality in the players. The trenches are the extreme proof, because nothing else was there.
+e.g. Two firms in the same building settle a dispute far more easily than two on different continents.
+
+### The parts · So change the structure, not the person
+To get something honoured, stop auditing the other person's character and make the thing repeat: split it into instalments, leave a record both sides can see, put the two of you inside a circle you both have to stay in.
+e.g. Turn one payment into monthly ones and the other side's manner usually changes by the second month.
+
+### The parts · Remove the future and cooperation goes with it
+Headquarters understood this exactly. It did not break the trench truce by lecturing. It rotated units constantly and ordered raids that had to show results. Once tomorrow no longer holds the same two people, yesterday's understanding expires.
+e.g. Reorganise the team every quarter and nobody owes anybody anything six months out.
+
+### Q: How do I use it today?
+Where you are: the promise sounded fine and you still cannot decide whether to hand the thing over.
+Ask first: once this is done, do the two of us have a next time - because if not, what needs changing is the shape of the deal, not my method for reading people.
+Where it goes wrong: taking it to mean that people you know well are safe. He is measuring how much the next meeting weighs, not how familiar you are; two people who see each other daily and want nothing further are under no constraint at all.
+
+### Lines to keep
+Credibility rests on the rounds still to come, not on character.
+Neither side in the trench truce trusted the other.
+To get cooperation, turn a one-off into something that repeats.
 
 ========================================================================
 ## Bai Gui · Take what the others drop

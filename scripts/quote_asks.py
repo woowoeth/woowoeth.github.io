@@ -398,6 +398,11 @@ QUOTE_ASKS = {
     "zhu-yuanzhang/delay-the-title": "别人都在抢先，我要不要慢一步。",
     "zhuge-liang/executing-ma-su": "该罚的是我最看重的那个人。",
     "zhuge-liang/longzhong-plan": "我看不出下一步棋该往哪走。",
+    # 罗伯特·阿克塞尔罗德
+    "axelrod/tit-for-tat":
+        "他坑了我一次，我要不要还回去。",
+    "axelrod/shadow-of-the-future":
+        "他这次答应了，下次还算数吗。",
     # 罗伯特·K·默顿
     "merton/self-fulfilling-prophecy":
         "怀疑一起来，我做什么都像证据。",

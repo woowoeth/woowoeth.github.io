@@ -144,10 +144,27 @@ python3 scripts/gate_selftest.py  # 反向验：注入缺陷必须被拦下
 （2026-09-07 波斯曼这一条踩到：`gen_og.py` 排在前面，三张图全跳过。
 日更每天都是新 slug，所以这不是特例，是每天的正常次序。）
 
-第二遍**不必跑整条链**：og.png 只影响 `build_tw`（它从简体站复制二进制），
-所以第二遍跑 `scripts/build_tw.py` + `scripts/stamp_assets.py` 就够。
-整条链一遍约 15 分钟，两遍半小时；这样能省掉十几分钟。
-（`stamp_assets.py` 不能省 —— 它扫的是最终产物，繁体站重转之后要重新盖章。）
+第二遍**跑整条链**，别抄近路。原来这里写的是「第二遍跑 `build_tw.py` +
+`stamp_assets.py` 就够」，那是 sitemap 还没有 hreflang 之前写的，现在会红。
+
+`build_tw.py` 开头 `rmtree(tw/)`，从简体站整个重转；它对 sitemap/feed/llms
+有一条特殊规则，把文件里所有 `https://ourword.ai/...` 裸地址改指 `/tw/`。
+而 `seo/build_seo.py`（第 4 步）现在会往根 sitemap.xml 里写 hreflang 备选地址，
+其中一条是 `/en/i/<slug>/` —— build_tw 照样给它加前缀，变成 `/tw/en/i/<slug>/`，
+一个不存在的地址。整条链里替它擦屁股的是**第 11 步 `scripts/lang_links.py`**：
+它在 build_tw 之后重写三份 sitemap 的 hreflang 块。抄近路正好跳过这一步，
+于是 tw/sitemap.xml 停在 build_tw 的半成品上，「语言站链接」那道闸报：
+
+```
+x /tw/sitemap.xml → hreflang 指向不存在的页 https://ourword.ai/tw/en/i/bezos/
+```
+
+报的是二十几个**跟你今天写的人毫无关系**的 slug，最容易被当成别人留下的旧账。
+（2026-09-17 阿克塞尔罗德这一条踩到。）
+
+真要省时间，第二遍最少要跑 `build_tw.py` + `lang_links.py` + `stamp_assets.py`
+这**三个**，次序不能换。`stamp_assets.py` 一定在最后 —— 它扫的是最终产物，
+前面任何一步重写过文件都要重新盖章。整条链一遍约 15 分钟。
 
 **为什么最后一遍 `build_all.py` 之前必须有图。** 分享图不在构建链里，
 所以直觉上它「什么时候补都行」—— 不行。`build_tw.py` 是**从简体站复制**

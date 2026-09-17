@@ -1,11 +1,11 @@
 # OurWord (人类世界生存法则)
 
-> 166 people and books on how the world actually works, across 2,600 years
+> 167 people and books on how the world actually works, across 2,600 years
 > 遇到事了，看看以前的人怎么处理
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 166 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 167 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
-一个关于「世界到底怎么运转」的知识库：战略、财富、权力、人性、创业，取自 166 位人物与典籍，跨越 2600 年。每一条都写清楚这个人真正留下的那一个想法、背后的故事、拆开的分则与例子，以及今天怎么用。
+一个关于「世界到底怎么运转」的知识库：战略、财富、权力、人性、创业，取自 167 位人物与典籍，跨越 2600 年。每一条都写清楚这个人真正留下的那一个想法、背后的故事、拆开的分则与例子，以及今天怎么用。
 
 ## Read it
 
@@ -19,15 +19,15 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 ## Topics
 
 - [现代](https://ourword.ai/t/modern/) — 58
-- [工业时代](https://ourword.ai/t/industrial-age/) — 52
+- [工业时代](https://ourword.ai/t/industrial-age/) — 53
 - [权力与组织](https://ourword.ai/t/power/) — 22
 - [心智与情绪](https://ourword.ai/t/mind/) — 21
 - [先秦与古典时代](https://ourword.ai/t/classical-era/) — 20
 - [创业与产品](https://ourword.ai/t/startups/) — 19
 - [谋略与竞争](https://ourword.ai/t/strategy/) — 17
 - [财富与风险](https://ourword.ai/t/wealth/) — 17
+- [世界如何运转](https://ourword.ai/t/world/) — 16
 - [学习与成长](https://ourword.ai/t/learning/) — 15
-- [世界如何运转](https://ourword.ai/t/world/) — 15
 - [识人与相处](https://ourword.ai/t/people/) — 14
 - [家庭与关系](https://ourword.ai/t/family/) — 13
 - [身心与生活](https://ourword.ai/t/living/) — 13
@@ -62,6 +62,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [奥古斯丁 · 赐我贞洁，但不是现在](https://ourword.ai/i/augustine/not-yet/): 奥古斯丁 · 赐我贞洁，但不是现在——拖延的那句原话。知道该开始、也想要那个结果，就是不动，怎么回事。这一篇要回答的是：奥古斯丁年轻时那句祷告为什么成了拖延的标准句式。
 - [奥古斯丁 · 偷梨](https://ourword.ai/i/augustine/the-pear-tree/): 奥古斯丁 · 偷梨——不为吃，就为偷。做了一件自己都说不出为什么的错事，过不去，怎么办。这一篇要回答的是：奥古斯丁几十年后为什么还在写十六岁偷的那几个梨。
 - [奥古斯丁 · 心命令身体就听，命令自己就不听](https://ourword.ai/i/augustine/the-mind-commands/): 奥古斯丁 · 心命令身体就听，命令自己就不听——不是没有意志，是有两个。道理全懂，就是动不了，问题在哪。这一篇要回答的是：奥古斯丁在花园里那个下午拆出来的机制。
+- [罗伯特·阿克塞尔罗德 · 回敬一次，然后立刻回来](https://ourword.ai/i/axelrod/tit-for-tat/): 罗伯特·阿克塞尔罗德 · 回敬一次，然后立刻回来——赢的不是最狠的，是恢复合作最快的。被人坑了一次，到底该不该还回去、还几次。这一篇要回答的是：这个问题被人用一场比赛算出过答案。
+- [罗伯特·阿克塞尔罗德 · 让他守信的不是人品](https://ourword.ai/i/axelrod/shadow-of-the-future/): 罗伯特·阿克塞尔罗德 · 让他守信的不是人品——是你们之间还剩多少次交手。他答应的事到底作不作数。这一篇要回答的是：决定它的多半不是人品，是你们之间还剩多少次交手。
 - [白圭 · 人弃我取](https://ourword.ai/i/bai-gui/take-what-others-drop/): 白圭 · 人弃我取——在丰年买，在歉年卖。低买高卖人人都懂。这一篇要回答的是：白圭是怎么让这件事变成可执行的。
 - [白圭 · 智勇仁强](https://ourword.ai/i/bai-gui/four-qualifications/): 白圭 · 智勇仁强——四样缺一样就别做。他把经商说成和用兵、变法一个等级的事。这一篇要回答的是：他为此开出的四条准入条件。
 - [贝索斯 · 永远是第一天](https://ourword.ai/i/bezos/day-one/): 贝索斯 · 永远是第一天——第二天是什么样。有员工问：第二天会怎样？这一篇要回答的是：他的答案，和他为拦住第二天装的四个零件。
@@ -448,7 +450,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [AI Bubble Monitor / AI 泡沫检测仪](https://ourword.ai/ai/)
 - [Zouni / 走你](https://ourword.ai/zouni/)
 
-## Index (166 entrys)
+## Index (167 entrys)
 
 - [BJ·福格](https://ourword.ai/i/bj-fogg/): BJ·福格（2019年·斯坦福行为设计实验室）——小到不会失败。斯坦福行为设计实验室创始人，研究行为如何被设计出来。他给出一个公式：行为发生需要动机、能力、提示三者同时到位。多数人失败在只调动机——靠决心和自我激励——而动机天然起伏，靠它维持的习惯必然崩。他的主张相反：把行为缩到小得不需要动机，然后挂在一个已有的动作后面。
 - [C.S.刘易斯](https://ourword.ai/i/cs-lewis/): C.S.刘易斯（1898-1963年·英国牛津）——妻子死后几个月的日记。作家，牛津和剑桥的教授，写过《纳尼亚传奇》和大量劝人信仰的书。五十八岁结婚，妻子乔伊四年后因癌症去世。之后几个月他在四本练习簿上记自己的状态，后来用笔名出版，就是《卿卿如晤》。收他是因为「重要的人走了」那六个问题，原来靠弗兰克尔和苏轼在答——一个是集中营的幸存者，一个是被贬的官员
@@ -572,6 +574,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [纳瓦尔](https://ourword.ai/i/naval/): 纳瓦尔（当代·1974-）——杠杆。AngelList联合创始人，早期投资了Twitter、Uber、Notion等公司。2018年他在Twitter上发了一个推文串「如何在不出卖灵魂的情况下致富」，在全球传播超过数百万次。他不是财务顾问，是一个在数字时代找到了「个人主权」路径的思考者。
 - [维果茨基](https://ourword.ai/i/vygotsky/): 维果茨基（1934年·苏联心理学家）——再高一点。苏联心理学家，三十七岁去世，留下的概念却影响了整个教育学。他最重要的贡献是「最近发展区」——一个人能力有两条线：自己能做到的，和在他人帮助下能做到的。两条线之间那段空隙，才是学习真正发生的地方。低于它是重复，高于它是挫败。他还强调思维是从社会互动内化来的：先是和别人一起做，然后才
 - [罗伯特·K·默顿](https://ourword.ai/i/merton/): 罗伯特·K·默顿（美国·1910-2003）——自证。美国社会学家，1910年生于费城的贫民区，父母是东欧移民，1941年起在哥伦比亚大学任教直到退休。他一辈子不做宏大体系，只做一件事：把人们隐约感觉到、却叫不出名字的社会机制拎出来，起一个准确的名字，再证明它怎么运转。今天到处在用的几个词都是他起的——自证预言、角色榜样、非预期后果
+- [罗伯特·阿克塞尔罗德](https://ourword.ai/i/axelrod/): 罗伯特·阿克塞尔罗德（美国·1943-）——互惠。美国政治学家，1943年生，长期任教于密歇根大学。他一辈子追着同一个问题：两个互不信任、头顶又没有裁判的对手，凭什么可能合作。1980年他做了一件当时没人做过的事——不去论证什么策略最优，而是向各国学者征集策略程序，让它们在计算机里打一场循环赛，谁得分高谁说了算。冠军是所有程序里
 - [老鼠公园](https://ourword.ai/i/rat-park/): 老鼠公园（1978年·西蒙菲莎大学）——成瘾要看笼子。七十年代末的一组实验，加上一场没人设计的自然实验，合起来动摇了关于成瘾的一个常识。标准做法是把老鼠单独关在空笼子里，给一瓶掺吗啡的水，它会喝到死——结论看着很硬：一沾就完。布鲁斯·亚历山大问了另一个问题：如果笼子不是空的呢。他造了一个有同伴、有轮子、有隧道的大围栏，同样两瓶水，那
 - [胡雪岩](https://ourword.ai/i/hu-xueyan/): 胡雪岩（清·1823-1885）——靠山。晚清最著名的商人，白手起家做到大清首富，官至布政使衔、赏穿黄马褂、戴二品红顶子——「红顶商人」这个词就是为他造的。他也是中国近代第一个和外商正面打商战的人，并且输得干干净净：从巅峰到抄家，只用了两年。他的成功和失败，用的是同一套逻辑。（注意：坊间流传的大量「胡雪岩语录」出自高阳的
 - [艾利克森](https://ourword.ai/i/ericsson/): 艾利克森（1993年·刻意练习研究）——练法比时长重要。心理学家，专门研究各领域顶尖高手是怎么练出来的。他最广为人知的研究被流行文化简化成了「一万小时定律」，而这恰恰是他反复澄清过的误读——决定水平的不是时长，是练法。重复做已经会的事，做十年也不会变强；只有持续在能力边缘、带着明确目标和即时反馈的练习，才产生进步。他把这种练法叫「刻意

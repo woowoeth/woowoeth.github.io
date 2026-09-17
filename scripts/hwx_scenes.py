@@ -268,6 +268,8 @@ SCENES = [
      [("han-feizi", "form-and-name"), ("analects", "see-how")]),
     ("简历很好看，可我还是拿不准。",
      [("zeng-guofan", "recruit-and-test"), ("zizhi-tongjian", "talent-and-virtue")]),
+    ("我要不要先信他一次。",
+     [("axelrod", "tit-for-tat"), ("han-feizi", "not-counting-on-goodness")]),
 ]),
 ("上面说的话不能信", "跟人打交道", [
     ("画的饼我已经不信了。",
@@ -276,6 +278,8 @@ SCENES = [
      [("han-feizi", "form-and-name"), ("schelling", "binding-yourself")]),
     ("我还要不要接着信他。",
      [("analects", "see-how"), ("konnikova", "not-manufacturing-trust")]),
+    ("他这次答应了，下次还算数吗。",
+     [("axelrod", "shadow-of-the-future"), ("schelling", "binding-yourself")]),
 ]),
 ("要说服人", "跟人打交道", [
     ("我说了不算，得让他自己想到。",
@@ -877,6 +881,8 @@ SCENES = [
      [("han-feizi", "form-and-name"), ("liu-bang", "three-articles")]),
     ("我想散伙，可事还得做下去。",
      [("li-ka-shing", "knowing-when-to-stop"), ("han-xin", "neither-nor")]),
+    ("闹成这样，我们还能合作下去吗。",
+     [("axelrod", "shadow-of-the-future"), ("cao-cao", "burning-the-letters")]),
 ]),
 ("觉得没意义", "跟人打交道", [
     ("没有回报的话，我还做不做。",
@@ -1035,6 +1041,8 @@ SCENES = [
      [("gottman", "repair-attempts"), ("epictetus", "judgments-not-things")]),
     ("还要不要继续，我拿不定。",
      [("han-xin", "neither-nor"), ("li-ka-shing", "knowing-when-to-stop")]),
+    ("他坑了我一次，我要不要还回去。",
+     [("axelrod", "tit-for-tat"), ("gottman", "repair-attempts")]),
 ]),
 ("在一起久了没感觉", "家里的事", [
     ("在一起很多年，没感觉了。",
