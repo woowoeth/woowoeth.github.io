@@ -398,6 +398,11 @@ QUOTE_ASKS = {
     "zhu-yuanzhang/delay-the-title": "别人都在抢先，我要不要慢一步。",
     "zhuge-liang/executing-ma-su": "该罚的是我最看重的那个人。",
     "zhuge-liang/longzhong-plan": "我看不出下一步棋该往哪走。",
+    # 刘晏
+    "liu-yan/money-flows-on-the-ground":
+        "钱在我手里转得太慢了。",
+    "liu-yan/rank-outweighs-profit":
+        "我换了人，位子还是烂。",
     # 白居易
     "bai-juyi/middle-hiding":
         "我想慢下来，又怕没了位置。",

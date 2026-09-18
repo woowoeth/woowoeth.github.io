@@ -1,11 +1,11 @@
 # OurWord (人類世界生存法則)
 
-> 168 people and books on how the world actually works, across 2,600 years
+> 169 people and books on how the world actually works, across 2,600 years
 > 遇到事了，看看以前的人怎麼處理
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 168 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 169 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
-一個關於「世界到底怎麼運轉」的知識庫：戰略、財富、權力、人性、創業，取自 168 位人物與典籍，跨越 2600 年。每一條都寫清楚這個人真正留下的那一個想法、背後的故事、拆開的分則與例子，以及今天怎麼用。
+一個關於「世界到底怎麼運轉」的知識庫：戰略、財富、權力、人性、創業，取自 169 位人物與典籍，跨越 2600 年。每一條都寫清楚這個人真正留下的那一個想法、背後的故事、拆開的分則與例子，以及今天怎麼用。
 
 ## Read it
 
@@ -24,14 +24,14 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 - [心智與情緒](https://ourword.ai/tw/t/mind/) — 21
 - [先秦與古典時代](https://ourword.ai/tw/t/classical-era/) — 20
 - [創業與產品](https://ourword.ai/tw/t/startups/) — 19
+- [財富與風險](https://ourword.ai/tw/t/wealth/) — 18
 - [謀略與競爭](https://ourword.ai/tw/t/strategy/) — 17
-- [財富與風險](https://ourword.ai/tw/t/wealth/) — 17
 - [世界如何運轉](https://ourword.ai/tw/t/world/) — 16
 - [學習與成長](https://ourword.ai/tw/t/learning/) — 15
 - [身心與生活](https://ourword.ai/tw/t/living/) — 14
+- [中古](https://ourword.ai/tw/t/medieval/) — 14
 - [識人與相處](https://ourword.ai/tw/t/people/) — 14
 - [家庭與關係](https://ourword.ai/tw/t/family/) — 13
-- [中古](https://ourword.ai/tw/t/medieval/) — 13
 - [近世](https://ourword.ai/tw/t/early-modern/) — 12
 - [秦漢至魏晉](https://ourword.ai/tw/t/han-wei/) — 12
 
@@ -250,6 +250,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [劉邦 · 三個不如](https://ourword.ai/tw/i/liu-bang/three-i-cannot/): 劉邦 · 三個不如——承認別人比你強。開國慶功宴上他問了一個問題，然後自己給了答案。這一篇要回答的是：那個答案為什麼是一種權力，而不是謙虛。
 - [劉邦 · 約法三章](https://ourword.ai/tw/i/liu-bang/three-articles/): 劉邦 · 約法三章——先給一份能記住的規則。剛進入一個陌生地盤，第一件事做什麼？這一篇要回答的是：他為什麼把整部秦法換成了三句話。
 - [劉邦 · 當場改口](https://ourword.ai/tw/i/liu-bang/changing-mid-sentence/): 劉邦 · 當場改口——被踩一腳就換答案。話已經說出口一半，發現說錯了怎麼辦？這一篇要回答的是：劉邦的做法難看，但每一次都對。
+- [劉晏 · 錢是轉出來的，不是攢出來的](https://ourword.ai/tw/i/liu-yan/money-flows-on-the-ground/): 劉晏 · 錢是轉出來的，不是攢出來的——而轉得多快，取決於你比別人早幾天知道。錢攢住了，可它不長；東西壓在手上，轉不動。這一篇要回答的是：讓它轉起來，第一筆錢該花在哪。
+- [劉晏 · 先讓那個位子有前程](https://ourword.ai/tw/i/liu-yan/rank-outweighs-profit/): 劉晏 · 先讓那個位子有前程——他不去挑清廉的人，他改的是位子。位子上的人換過一輪，事照樣出。這一篇要回答的是：該換的到底是人，還是那個位子。
 - [利弗莫爾 · 坐功](https://ourword.ai/tw/i/livermore/sitting-tight/): 利弗莫爾 · 坐功——對了就別動。一個以進出神速聞名的投機客，把功勞記在了不動上。這一篇要回答的是：坐著為什麼比判斷難。
 - [利弗莫爾 · 把希望和恐懼對調](https://ourword.ai/tw/i/livermore/hope-and-fear-inverted/): 利弗莫爾 · 把希望和恐懼對調——本能用反了方向。他四起四落，破產過多次。這一篇要回答的是：他從自己的血裡提煉出的那條對調法則。
 - [彼得·林奇 · 商場裡的十倍股](https://ourword.ai/tw/i/lynch/tenbagger-at-the-mall/): 彼得·林奇 · 商場裡的十倍股——發現只是起點。「投資你瞭解的東西」是他被引用最多也被誤用最多的話。這一篇要回答的是：被刪掉的後半句。
@@ -452,7 +454,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [AI Bubble Monitor / AI 泡沫檢測儀](https://ourword.ai/ai/)
 - [Zouni / 走你](https://ourword.ai/zouni/)
 
-## Index (168 entrys)
+## Index (169 entrys)
 
 - [BJ·福格](https://ourword.ai/tw/i/bj-fogg/): BJ·福格（2019年·斯坦福行為設計實驗室）——小到不會失敗。斯坦福行為設計實驗室創始人，研究行為如何被設計出來。他給出一個公式：行為發生需要動機、能力、提示三者同時到位。多數人失敗在只調動機——靠決心和自我激勵——而動機天然起伏，靠它維持的習慣必然崩。他的主張相反：把行為縮到小得不需要動機，然後掛在一個已有的動作後面。
 - [C.S.劉易斯](https://ourword.ai/tw/i/cs-lewis/): C.S.劉易斯（1898-1963年·英國牛津）——妻子死後幾個月的日記。作家，牛津和劍橋的教授，寫過《納尼亞傳奇》和大量勸人信仰的書。五十八歲結婚，妻子喬伊四年後因癌症去世。之後幾個月他在四本練習簿上記自己的狀態，後來用筆名出版，就是《卿卿如晤》。收他是因為「重要的人走了」那六個問題，原來靠弗蘭克爾和蘇軾在答——一個是集中營的倖存者，一個是被貶的官員
@@ -476,6 +478,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [凱博文](https://ourword.ai/tw/i/kleinman/): 凱博文（1941-·哈佛大學·醫學人類學）——治不好，還照護得了。哈佛的醫學人類學家，也是精神科醫生，在中國做過多年田野。他一輩子在做同一件事：把「病」拆成兩半。一半是醫生看到的——檢查單上的指標、器官裡的病變；另一半是病人過的那段日子——疼、怕、幹不成事、在家裡變成另一個角色。現代醫學幾乎全部力氣都花在前一半上，而人真正在受的是後一半。201
 - [凱撒](https://ourword.ai/tw/i/caesar/): 凱撒（羅馬·前100-前44）——渡河。羅馬最著名的將軍與獨裁者，「骰子已經擲出」是他最著名的一句話。從一個負債累累的貴族子弟，到征服高盧、贏得內戰、成為羅馬終身獨裁官——他用二十年走完了這條路。他死於元老院，被他以為信任的人刺殺。他是拿破崙的精神前輩，西方歷史上「權力崛起與崩潰」最完整的弧線之一。
 - [凱文·凱利](https://ourword.ai/tw/i/kevin-kelly/): 凱文·凱利（2008年·《連線》創刊主編）——鐵桿粉絲。《連線》雜誌創刊主編，2008年寫了一篇短文，把獨立創作者的生存問題變成一道算術：一千個鐵桿粉絲，每人每年為你花一百美元，就是十萬美元，夠一個人活下去。他給鐵桿粉絲的定義很硬——會買你做的一切，願意開兩百英里去看你演出。這道題真正的價值是把「成名」從必要條件裡拿掉：你不需要一百萬
+- [劉晏](https://ourword.ai/tw/i/liu-yan/): 劉晏（716-780年·唐）——錢流地上。唐代理財家，字士安，曹州南華人。安史之亂把唐朝的財政打空了，他從代宗廣德年間起領轉運、鹽鐵、常平諸使近二十年，重修漕運、改鹽法、辦常平，把關中的糧價和鹽價按住，而《新唐書》給他的評語是斂不及民而用度足——錢多出來了，稅沒有加到百姓頭上。他留下的不是一條生財的門道，是兩件更具體的事
 - [劉邦](https://ourword.ai/tw/i/liu-bang/): 劉邦（漢·前256-前195）——用人。歷史上最著名的「草根逆襲」案例。起點：一個基層官吏。終點：漢朝開國皇帝。他的唯一技能是「用人」——不是最聰明的，不是最能打的，但最擅長讓比他強的人為他效力。
 - [創新者的窘境](https://ourword.ai/tw/i/innovators-dilemma/): 創新者的窘境（1997年·克里斯坦森）——顛覆。克萊頓·克里斯坦森提出了商業史上最重要的問題之一：為什麼優秀的公司會失敗？不是因為懶惰或愚蠢，而是因為它們做了所有「正確」的事——聽取最好客戶的意見，投資利潤最高的產品，專注於最大的市場。恰恰是這些「正確決策」，讓它們對破壞性技術視而不見。
 - [利弗莫爾](https://ourword.ai/tw/i/livermore/): 利弗莫爾（美·1877-1940年）——趨勢為友·敗於人性。傑西·利弗莫爾，史上最傳奇的投機客，《股票作手回憶錄》的原型。14歲在對賭行起家，一生四次破產、四次東山再起：1907年做空大賺，摩根親自請他停止打壓市場；1929年大崩盤中做空賺一億美元（相當於今天數十億），成為全世界最富有的人之一。他發明的趨勢跟蹤、關鍵點交易、金字塔加碼，至

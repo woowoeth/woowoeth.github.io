@@ -114,6 +114,7 @@ NAMES = {
     "hu-xueyan": ("Hu Xueyan", "Money and risk"),
     "kindleberger": ("Charles P. Kindleberger", "Money and risk"),
     "livermore": ("Jesse Livermore", "Money and risk"),
+    "liu-yan": ("Liu Yan", "Money and risk"),
     "lynch": ("Peter Lynch", "Money and risk"),
     "marks": ("Howard Marks", "Money and risk"),
     "scarcity": ("Scarcity", "Money and risk"),

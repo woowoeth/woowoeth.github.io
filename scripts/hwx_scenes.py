@@ -216,6 +216,8 @@ SCENES = [
      [("naval", "productize-yourself"), ("wealth-of-nations", "pin-factory")]),
     ("我只会攒钱，不会让钱干活。",
      [("bai-gui", "four-qualifications"), ("inamori", "the-multiplier")]),
+    ("钱在我手里转得太慢了。",
+     [("liu-yan", "money-flows-on-the-ground")]),
 ]),
 ("接不到活", "钱的事", [
     ("这个月没有单子，我开始慌了。",
@@ -372,6 +374,9 @@ SCENES = [
      [("wu-zetian", "promote-and-drop"), ("zhuge-liang", "close-the-worthy")]),
     ("我加了人，事情反而更多了。",
      [("parkinson", "officials-make-work"), ("xunzi", "division-makes-groups")]),
+    ("我换了人，位子还是烂。",
+     [("liu-yan", "rank-outweighs-profit"),
+      ("han-feizi", "not-counting-on-goodness")]),
 ]),
 ("听不到实话", "带人", [
     ("汇报都很好，我却总觉得不对。",

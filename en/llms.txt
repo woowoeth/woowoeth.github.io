@@ -1,9 +1,9 @@
 # OurWord (OurWord)
 
-> 168 people and books on how the world actually works, across 2,600 years
+> 169 people and books on how the world actually works, across 2,600 years
 > See how people before you handled it.
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 168 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 169 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
 ## Read it
 
@@ -23,15 +23,15 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 - [Pre-Qin and classical](https://ourword.ai/en/t/pre-qin-and-classical/) — 20
 - [Starting and building](https://ourword.ai/en/t/starting-and-building/) — 19
 - [How the world works](https://ourword.ai/en/t/how-the-world-works/) — 17
+- [Money and risk](https://ourword.ai/en/t/money-and-risk/) — 17
 - [Strategy and competition](https://ourword.ai/en/t/strategy-and-competition/) — 17
 - [Learning and growth](https://ourword.ai/en/t/learning-and-growth/) — 16
-- [Money and risk](https://ourword.ai/en/t/money-and-risk/) — 16
 - [Body and daily life](https://ourword.ai/en/t/body-and-daily-life/) — 14
 - [Qin, Han and the Six Dynasties](https://ourword.ai/en/t/qin-han-and-the-six-dynasties/) — 14
 - [Reading people](https://ourword.ai/en/t/reading-people/) — 14
 - [Family and relationships](https://ourword.ai/en/t/family-and-relationships/) — 13
 - [Early modern](https://ourword.ai/en/t/early-modern/) — 12
-- [Medieval](https://ourword.ai/en/t/medieval/) — 11
+- [Medieval](https://ourword.ai/en/t/medieval/) — 12
 
 <!-- chapters:begin -->
 ## Deep reads
@@ -244,6 +244,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [Liu Bang · The three men he was not the equal of](https://ourword.ai/en/i/liu-bang/three-i-cannot/): Liu Bang · The three men he was not the equal of — Saying out loud who is better than you. At the victory banquet he asked why he had won, then answered himself. The answer is not modesty. It is an exercise of power.
 - [Liu Bang · Three clauses, and the rest repealed](https://ourword.ai/en/i/liu-bang/three-articles/): Liu Bang · Three clauses, and the rest repealed — A rule nobody can recite is not a rule. He reached the capital first and held the entire legal code of an empire. He replaced it with three sentences.
 - [Liu Bang · Turning the sentence around](https://ourword.ai/en/i/liu-bang/changing-mid-sentence/): Liu Bang · Turning the sentence around — A foot under the table, and a new answer. Half the sentence is out of your mouth before you see it is wrong. What he did next looks bad, and was right every time.
+- [Liu Yan · Money grows by turning, not by sitting](https://ourword.ai/en/i/liu-yan/money-flows-on-the-ground/): Liu Yan · Money grows by turning, not by sitting — and how fast it turns depends on how early you know. Your savings hold but they will not grow. Where should the first money go to make the rest of it move?
+- [Liu Yan · Give the post a future first](https://ourword.ai/en/i/liu-yan/rank-outweighs-profit/): Liu Yan · Give the post a future first — he did not hunt for honest men, he changed the post. You replaced the person and it went wrong again. Is what needs replacing the person, or the post they sat in?
 - [Jesse Livermore · Sitting tight](https://ourword.ai/en/i/livermore/sitting-tight/): Jesse Livermore · Sitting tight — Being right was never the hard part. A speculator famous for speed put the credit somewhere unexpected. The chapter explains why sitting is harder than being right.
 - [Jesse Livermore · Hope and fear, the wrong way round](https://ourword.ai/en/i/livermore/hope-and-fear-inverted/): Jesse Livermore · Hope and fear, the wrong way round — The instinct points in the wrong direction. Four fortunes and several bankruptcies, distilled into one rule about two emotions pointing the wrong way.
 - [Peter Lynch · The tenbagger at the mall](https://ourword.ai/en/i/lynch/tenbagger-at-the-mall/): Peter Lynch · The tenbagger at the mall — Noticing is only the first step. Invest in what you know is his most quoted line and his most misused. The half that gets dropped is the work.
@@ -446,7 +448,7 @@ Cite the individual page URL, not the homepage — each entry page is stable and
 - [AI Bubble Monitor](https://ourword.ai/ai/)
 - [Zouni](https://ourword.ai/zouni/)
 
-## Index (168 entrys)
+## Index (169 entrys)
 
 - [Albert Einstein](https://ourword.ai/en/i/einstein/): Albert Einstein (Germany · 1879–1955) — Imagination. The physicist, and the father of relativity — but the legacy that travels furthest is not a formula, it is a way of working.
 - [Albert O. Hirschman](https://ourword.ai/en/i/hirschman/): Albert O. Hirschman (United States · 1915-2012) — Voice. A German-born American economist. He left Berlin in 1933, fought in Spain in 1936, spent 1940 in Marseille forging papers and finding mountain…
@@ -529,6 +531,7 @@ Cite the individual page URL, not the homepage — each entry page is stable and
 - [Li Ka-shing](https://ourword.ai/en/i/li-ka-shing/): Li Ka-shing (Contemporary · 1928–) — Cycles. From a plastic flower workshop to a group spanning property, ports, telecoms, retail and energy.
 - [Li Shimin](https://ourword.ai/en/i/li-shimin/): Li Shimin (Tang · 598–649) — Taking counsel. The emperor most associated with actually listening, and the author of the Zhenguan period.
 - [Liu Bang](https://ourword.ai/en/i/liu-bang/): Liu Bang (Han · 256–195 BC) — Using people. The most famous rise from nothing in Chinese history. He began as a minor local officer in charge of a post station and finished as founding emperor of the…
+- [Liu Yan](https://ourword.ai/en/i/liu-yan/): Liu Yan (Tang · 716-780) — Money flowing on the ground. The financial administrator who rebuilt the revenue of the Tang after the An Lushan rebellion had emptied it.
 - [Machiavelli](https://ourword.ai/en/i/machiavelli/): Machiavelli (Florence · 1469–1527) — What is done. A Florentine diplomat, secretary of the republic's second chancery, and the author of The Prince.
 - [Mao Zedong](https://ourword.ai/en/i/mao/): Mao Zedong (Modern · 1893–1976) — Concentrate. Between 1936 and 1949 he wrote a set of essays that survive as method rather than as history: On Contradiction, On Practice, On Protracted War, and the…
 - [Marcus Aurelius](https://ourword.ai/en/i/marcus-aurelius/): Marcus Aurelius (121–180 · Rome) — Restraint. Roman emperor from 161 to 180, and the most quoted of the Stoics, largely on the strength of a notebook he never intended anyone to read.

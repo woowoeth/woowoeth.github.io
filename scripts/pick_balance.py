@@ -46,7 +46,8 @@ CN = {
     "tao-te-ching", "tao-yuanming", "wang-jian", "wang-xing", "wang-yangming",
     "wu-zetian", "xiang-yu", "xunzi", "zeng-guofan", "zhang-juzheng",
     "zhang-liang", "zhang-yiming", "zhu-yuanzhang", "zhuangzi", "zhuge-liang",
-    "zizhi-tongjian", "bai-juyi", "lee-kuan-yew", "duan-yongping", "huang",
+    "zizhi-tongjian", "bai-juyi", "liu-yan", "lee-kuan-yew",
+    "duan-yongping", "huang",
 }
 FO = {
     "bhagavad-gita", "churchill", "curie", "illich", "weil", "postman",
