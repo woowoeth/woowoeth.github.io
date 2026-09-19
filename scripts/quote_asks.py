@@ -398,6 +398,11 @@ QUOTE_ASKS = {
     "zhu-yuanzhang/delay-the-title": "别人都在抢先，我要不要慢一步。",
     "zhuge-liang/executing-ma-su": "该罚的是我最看重的那个人。",
     "zhuge-liang/longzhong-plan": "我看不出下一步棋该往哪走。",
+    # 加里·贝克尔
+    "becker/you-are-the-capital":
+        "我一直在给钱找出路，没给自己找。",
+    "becker/general-and-specific":
+        "我这身本事，出了这家门还值钱吗。",
     # 刘晏
     "liu-yan/money-flows-on-the-ground":
         "钱在我手里转得太慢了。",

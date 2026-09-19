@@ -1,11 +1,11 @@
 # OurWord (人類世界生存法則)
 
-> 169 people and books on how the world actually works, across 2,600 years
+> 170 people and books on how the world actually works, across 2,600 years
 > 遇到事了，看看以前的人怎麼處理
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 169 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 170 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
-一個關於「世界到底怎麼運轉」的知識庫：戰略、財富、權力、人性、創業，取自 169 位人物與典籍，跨越 2600 年。每一條都寫清楚這個人真正留下的那一個想法、背後的故事、拆開的分則與例子，以及今天怎麼用。
+一個關於「世界到底怎麼運轉」的知識庫：戰略、財富、權力、人性、創業，取自 170 位人物與典籍，跨越 2600 年。每一條都寫清楚這個人真正留下的那一個想法、背後的故事、拆開的分則與例子，以及今天怎麼用。
 
 ## Read it
 
@@ -18,13 +18,13 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 
 ## Topics
 
-- [現代](https://ourword.ai/tw/t/modern/) — 58
+- [現代](https://ourword.ai/tw/t/modern/) — 59
 - [工業時代](https://ourword.ai/tw/t/industrial-age/) — 53
 - [權力與組織](https://ourword.ai/tw/t/power/) — 22
 - [心智與情緒](https://ourword.ai/tw/t/mind/) — 21
 - [先秦與古典時代](https://ourword.ai/tw/t/classical-era/) — 20
 - [創業與產品](https://ourword.ai/tw/t/startups/) — 19
-- [財富與風險](https://ourword.ai/tw/t/wealth/) — 18
+- [財富與風險](https://ourword.ai/tw/t/wealth/) — 19
 - [謀略與競爭](https://ourword.ai/tw/t/strategy/) — 17
 - [世界如何運轉](https://ourword.ai/tw/t/world/) — 16
 - [學習與成長](https://ourword.ai/tw/t/learning/) — 15
@@ -68,6 +68,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [白圭 · 智勇仁強](https://ourword.ai/tw/i/bai-gui/four-qualifications/): 白圭 · 智勇仁強——四樣缺一樣就別做。他把經商說成和用兵、變法一個等級的事。這一篇要回答的是：他為此開出的四條准入條件。
 - [白居易 · 不卷和退出之間，還有一檔](https://ourword.ai/tw/i/bai-juyi/middle-hiding/): 白居易 · 不卷和退出之間，還有一檔——他給這一檔要來了俸祿和名分。不想再熬，可真放手又不敢。這一篇要回答的是：這兩個選項中間，還有沒有一個待得住的位置。
 - [白居易 · 世人收下的，不是你最用力的](https://ourword.ai/tw/i/bai-juyi/what-i-rank-low/): 白居易 · 世人收下的，不是你最用力的——他活著的時候就知道了，也沒改排序。你最花力氣的那部分沒人要，隨手的那部分傳遍了。這一篇要回答的是：知道了之後怎麼辦。
+- [加里·貝克爾 · 最大的那筆本金，你沒算進去過](https://ourword.ai/tw/i/becker/you-are-the-capital/): 加里·貝克爾 · 最大的那筆本金，你沒算進去過——你自己就是資本，而它的價錢不是學費。我一直在給錢找出路，沒給自己找。這一篇要回答的是：你自己就是最大的那筆本金，而它的價錢多半被你算錯了。
+- [加里·貝克爾 · 公司肯出錢教你的，多半是你帶不走的](https://ourword.ai/tw/i/becker/general-and-specific/): 加里·貝克爾 · 公司肯出錢教你的，多半是你帶不走的——分界線落在你離職那天。我這身本事，出了這家門還值錢嗎。這一篇要回答的是：這個問題有個能算的答案，答案藏在誰替你付了學費裡。
 - [貝索斯 · 永遠是第一天](https://ourword.ai/tw/i/bezos/day-one/): 貝索斯 · 永遠是第一天——第二天是什麼樣。有員工問：第二天會怎樣？這一篇要回答的是：他的答案，和他為攔住第二天裝的四個零件。
 - [貝索斯 · 押注不變的東西](https://ourword.ai/tw/i/bezos/what-wont-change/): 貝索斯 · 押注不變的東西——十年後什麼還成立。所有人都問他未來十年會變什麼。這一篇要回答的是：他說更重要的是沒人問的那個問題。
 - [薄伽梵歌 · 你有權做事，無權要結果](https://ourword.ai/tw/i/bhagavad-gita/right-to-the-act/): 薄伽梵歌 · 你有權做事，無權要結果——第二章第四十七頌。做了很久沒有回報，還要不要接著做。這一篇要回答的是：薄伽梵歌把權利劃在了哪一邊。
@@ -454,7 +456,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [AI Bubble Monitor / AI 泡沫檢測儀](https://ourword.ai/ai/)
 - [Zouni / 走你](https://ourword.ai/zouni/)
 
-## Index (169 entrys)
+## Index (170 entrys)
 
 - [BJ·福格](https://ourword.ai/tw/i/bj-fogg/): BJ·福格（2019年·斯坦福行為設計實驗室）——小到不會失敗。斯坦福行為設計實驗室創始人，研究行為如何被設計出來。他給出一個公式：行為發生需要動機、能力、提示三者同時到位。多數人失敗在只調動機——靠決心和自我激勵——而動機天然起伏，靠它維持的習慣必然崩。他的主張相反：把行為縮到小得不需要動機，然後掛在一個已有的動作後面。
 - [C.S.劉易斯](https://ourword.ai/tw/i/cs-lewis/): C.S.劉易斯（1898-1963年·英國牛津）——妻子死後幾個月的日記。作家，牛津和劍橋的教授，寫過《納尼亞傳奇》和大量勸人信仰的書。五十八歲結婚，妻子喬伊四年後因癌症去世。之後幾個月他在四本練習簿上記自己的狀態，後來用筆名出版，就是《卿卿如晤》。收他是因為「重要的人走了」那六個問題，原來靠弗蘭克爾和蘇軾在答——一個是集中營的倖存者，一個是被貶的官員
@@ -482,6 +484,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [劉邦](https://ourword.ai/tw/i/liu-bang/): 劉邦（漢·前256-前195）——用人。歷史上最著名的「草根逆襲」案例。起點：一個基層官吏。終點：漢朝開國皇帝。他的唯一技能是「用人」——不是最聰明的，不是最能打的，但最擅長讓比他強的人為他效力。
 - [創新者的窘境](https://ourword.ai/tw/i/innovators-dilemma/): 創新者的窘境（1997年·克里斯坦森）——顛覆。克萊頓·克里斯坦森提出了商業史上最重要的問題之一：為什麼優秀的公司會失敗？不是因為懶惰或愚蠢，而是因為它們做了所有「正確」的事——聽取最好客戶的意見，投資利潤最高的產品，專注於最大的市場。恰恰是這些「正確決策」，讓它們對破壞性技術視而不見。
 - [利弗莫爾](https://ourword.ai/tw/i/livermore/): 利弗莫爾（美·1877-1940年）——趨勢為友·敗於人性。傑西·利弗莫爾，史上最傳奇的投機客，《股票作手回憶錄》的原型。14歲在對賭行起家，一生四次破產、四次東山再起：1907年做空大賺，摩根親自請他停止打壓市場；1929年大崩盤中做空賺一億美元（相當於今天數十億），成為全世界最富有的人之一。他發明的趨勢跟蹤、關鍵點交易、金字塔加碼，至
+- [加里·貝克爾](https://ourword.ai/tw/i/becker/): 加里·貝克爾（美國·1930-2014）——人力資本。美國經濟學家，1930年生，芝加哥大學博士，此後長期在芝加哥大學教書，1992年獲諾貝爾經濟學獎。他一輩子在做同一個動作：把一件大家認為不該算賬的事拿來算一筆賬——歧視、犯罪、婚姻、生幾個孩子、上不上大學。最有名的是1964年的《人力資本》。在那之前資本指機器、廠房、土地，他把人
 - [卡爾·波普爾](https://ourword.ai/tw/i/popper/): 卡爾·波普爾（1902-1994年·奧地利）——能被證偽。科學哲學家。他要解決的問題是：占星術和物理學都能解釋現象，憑什麼說後者是科學？他的答案改變了整個科學觀——區別不在能不能解釋，而在能不能被推翻。一個理論如果任何觀察都不能與之矛盾，那它不是強大，是空洞。這條判據同樣適用於日常判斷：一個說什麼都對的說法，等於什麼都沒說。
 - [卡爾·紐波特](https://ourword.ai/tw/i/cal-newport/): 卡爾·紐波特（2016年·喬治城大學）——專注是稀缺品。計算機科學教授，同時研究知識工作者的生產方式。他提出一組對立概念：深度工作是在無干擾狀態下的專注思考，能創造新價值、難以複製；浮淺工作是瑣碎的事務性動作，容易複製、不產生新能力。他的論斷是，隨著協作工具讓人隨時可被打斷，深度工作正在變得稀有，而恰恰因為稀有，它成了少數還能拉開差距
 - [卡爾·羅傑斯](https://ourword.ai/tw/i/carl-rogers/): 卡爾·羅傑斯（1902-1987年·美國）——先被接住。人本主義心理學的創立者，第一個把心理治療過程全程錄音、拿出來做研究的人——在此之前治療室裡發生什麼全憑治療師轉述。他的核心主張與當時主流相反：治療師不該是解讀者和指導者，而應提供三個條件——真誠、無條件積極關注、共情性理解——人在這三樣齊備的環境裡會自己往好的方向長。
@@ -523,7 +526,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [彼得·蒂爾](https://ourword.ai/tw/i/thiel/): 彼得·蒂爾（當代·1967-）——從0到1。PayPal聯合創始人，Facebook第一個外部投資人，硅谷最重要的反共識思想者。他的核心命題：競爭是意識形態陷阱，真正能創造價值的是壟斷而非競爭。
 - [德韋克](https://ourword.ai/tw/i/dweck/): 德韋克（2006年·斯坦福大學）——能力可長。斯坦福心理學家，提出固定型思維與成長型思維的區分：前者認為能力是天生定量的，後者認為能力可以通過努力和方法生長。兩種信念帶來完全不同的行為——認為能力固定的人會迴避可能失敗的挑戰，因為失敗等於證明自己不行；認為能力可長的人把失敗當作信息。這個概念影響極大，也因此被大量簡化和濫用，
 - [思考，快與慢](https://ourword.ai/tw/i/thinking-fast-and-slow/): 思考，快與慢（美·2011年）——系統1與系統2。丹尼爾·卡尼曼著，行為經濟學的奠基之作。卡尼曼是史上唯一以心理學家身份獲諾貝爾經濟學獎的人（2002年），這本書是他與阿莫斯·特沃斯基四十年研究的總結。核心發現足以顛覆你對自己的信任：人腦有兩套系統——系統1快速、自動、情緒化，系統2緩慢、費力、講邏輯；你以為自己在用系統2理性決
-- [戰爭論](https://ourword.ai/tw/i/on-war/): 戰爭論（普魯士·1832）——摩擦。克勞塞維茨（1780-1831）12歲參軍，親歷耶拿會戰的慘敗和拿破崙徵俄的潰退，一輩子在打敗仗和研究敗仗。他51歲死於霍亂，書沒寫完，由遺孀整理出版。《孫子兵法》教你如何取勝，《戰爭論》告訴你為什麼你的計劃一定會走樣——這是孫子完全沒有提供的那一半。
+- [戰爭論](https://ourword.ai/tw/i/on-war/): 戰爭論（普魯士·1832）——摩擦。克勞塞維茨（1780-1831）12歲參軍，親歷耶拿會戰的慘敗和拿破崙征俄的潰退，一輩子在打敗仗和研究敗仗。他51歲死於霍亂，書沒寫完，由遺孀整理出版。《孫子兵法》教你如何取勝，《戰爭論》告訴你為什麼你的計劃一定會走樣——這是孫子完全沒有提供的那一半。
 - [戰國策](https://ourword.ai/tw/i/strategies-of-the-warring-states/): 戰國策（戰國·前453-前221年）——勢。記錄戰國時期各國謀士縱橫捭闔的策略文集，是中國最刺激的歷史文獻之一。和史記的「評價」不同，戰國策更像是真實的策略備忘錄：蘇秦如何說服六國合縱，張儀如何各個擊破，馮諼如何為孟嘗君「狡兔三窟」。它不講道德，只講結果。兩千年來，但凡真正懂政治和商戰的人，都在私下裡讀它。
 - [托馬斯·戈登](https://ourword.ai/tw/i/thomas-gordon/): 托馬斯·戈登（1962年·父母效能訓練）——我信息。羅傑斯的學生，把人本主義心理學做成了普通父母能學的課程——父母效能訓練（P.E.T.）。他的兩個核心工具比後來流行的溝通方法更早也更具體：一是「我信息」，用描述自己而非評判對方的方式表達不滿；二是「問題歸屬」，先分清這件事困擾的是誰，因為歸屬不同，該用的方法完全不同。
 - [托馬斯·謝林](https://ourword.ai/tw/i/schelling/): 托馬斯·謝林（美國·1921-2016）——自縛其手。冷戰最危險的年代裡，最有影響力的戰略思想家不是將軍，是一個經濟學家。謝林用博弈論重新定義了「威懾」，2005年因此與奧曼共獲諾貝爾經濟學獎。他最反直覺的發現是：在談判和對抗中，主動削掉自己的選項、讓自己無路可退，反而是增強議價能力最有效的方式。燒掉退路不是悲壯，是戰術。

@@ -1,11 +1,11 @@
 # OurWord (人类世界生存法则)
 
-> 169 people and books on how the world actually works, across 2,600 years
+> 170 people and books on how the world actually works, across 2,600 years
 > 遇到事了，看看以前的人怎么处理
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 169 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 170 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
-一个关于「世界到底怎么运转」的知识库：战略、财富、权力、人性、创业，取自 169 位人物与典籍，跨越 2600 年。每一条都写清楚这个人真正留下的那一个想法、背后的故事、拆开的分则与例子，以及今天怎么用。
+一个关于「世界到底怎么运转」的知识库：战略、财富、权力、人性、创业，取自 170 位人物与典籍，跨越 2600 年。每一条都写清楚这个人真正留下的那一个想法、背后的故事、拆开的分则与例子，以及今天怎么用。
 
 ## Read it
 
@@ -18,13 +18,13 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 
 ## Topics
 
-- [现代](https://ourword.ai/t/modern/) — 58
+- [现代](https://ourword.ai/t/modern/) — 59
 - [工业时代](https://ourword.ai/t/industrial-age/) — 53
 - [权力与组织](https://ourword.ai/t/power/) — 22
 - [心智与情绪](https://ourword.ai/t/mind/) — 21
 - [先秦与古典时代](https://ourword.ai/t/classical-era/) — 20
 - [创业与产品](https://ourword.ai/t/startups/) — 19
-- [财富与风险](https://ourword.ai/t/wealth/) — 18
+- [财富与风险](https://ourword.ai/t/wealth/) — 19
 - [谋略与竞争](https://ourword.ai/t/strategy/) — 17
 - [世界如何运转](https://ourword.ai/t/world/) — 16
 - [学习与成长](https://ourword.ai/t/learning/) — 15
@@ -68,6 +68,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [白圭 · 智勇仁强](https://ourword.ai/i/bai-gui/four-qualifications/): 白圭 · 智勇仁强——四样缺一样就别做。他把经商说成和用兵、变法一个等级的事。这一篇要回答的是：他为此开出的四条准入条件。
 - [白居易 · 不卷和退出之间，还有一档](https://ourword.ai/i/bai-juyi/middle-hiding/): 白居易 · 不卷和退出之间，还有一档——他给这一档要来了俸禄和名分。不想再熬，可真放手又不敢。这一篇要回答的是：这两个选项中间，还有没有一个待得住的位置。
 - [白居易 · 世人收下的，不是你最用力的](https://ourword.ai/i/bai-juyi/what-i-rank-low/): 白居易 · 世人收下的，不是你最用力的——他活着的时候就知道了，也没改排序。你最花力气的那部分没人要，随手的那部分传遍了。这一篇要回答的是：知道了之后怎么办。
+- [加里·贝克尔 · 最大的那笔本金，你没算进去过](https://ourword.ai/i/becker/you-are-the-capital/): 加里·贝克尔 · 最大的那笔本金，你没算进去过——你自己就是资本，而它的价钱不是学费。我一直在给钱找出路，没给自己找。这一篇要回答的是：你自己就是最大的那笔本金，而它的价钱多半被你算错了。
+- [加里·贝克尔 · 公司肯出钱教你的，多半是你带不走的](https://ourword.ai/i/becker/general-and-specific/): 加里·贝克尔 · 公司肯出钱教你的，多半是你带不走的——分界线落在你离职那天。我这身本事，出了这家门还值钱吗。这一篇要回答的是：这个问题有个能算的答案，答案藏在谁替你付了学费里。
 - [贝索斯 · 永远是第一天](https://ourword.ai/i/bezos/day-one/): 贝索斯 · 永远是第一天——第二天是什么样。有员工问：第二天会怎样？这一篇要回答的是：他的答案，和他为拦住第二天装的四个零件。
 - [贝索斯 · 押注不变的东西](https://ourword.ai/i/bezos/what-wont-change/): 贝索斯 · 押注不变的东西——十年后什么还成立。所有人都问他未来十年会变什么。这一篇要回答的是：他说更重要的是没人问的那个问题。
 - [薄伽梵歌 · 你有权做事，无权要结果](https://ourword.ai/i/bhagavad-gita/right-to-the-act/): 薄伽梵歌 · 你有权做事，无权要结果——第二章第四十七颂。做了很久没有回报，还要不要接着做。这一篇要回答的是：薄伽梵歌把权利划在了哪一边。
@@ -454,7 +456,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [AI Bubble Monitor / AI 泡沫检测仪](https://ourword.ai/ai/)
 - [Zouni / 走你](https://ourword.ai/zouni/)
 
-## Index (169 entrys)
+## Index (170 entrys)
 
 - [BJ·福格](https://ourword.ai/i/bj-fogg/): BJ·福格（2019年·斯坦福行为设计实验室）——小到不会失败。斯坦福行为设计实验室创始人，研究行为如何被设计出来。他给出一个公式：行为发生需要动机、能力、提示三者同时到位。多数人失败在只调动机——靠决心和自我激励——而动机天然起伏，靠它维持的习惯必然崩。他的主张相反：把行为缩到小得不需要动机，然后挂在一个已有的动作后面。
 - [C.S.刘易斯](https://ourword.ai/i/cs-lewis/): C.S.刘易斯（1898-1963年·英国牛津）——妻子死后几个月的日记。作家，牛津和剑桥的教授，写过《纳尼亚传奇》和大量劝人信仰的书。五十八岁结婚，妻子乔伊四年后因癌症去世。之后几个月他在四本练习簿上记自己的状态，后来用笔名出版，就是《卿卿如晤》。收他是因为「重要的人走了」那六个问题，原来靠弗兰克尔和苏轼在答——一个是集中营的幸存者，一个是被贬的官员
@@ -482,6 +484,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [刘邦](https://ourword.ai/i/liu-bang/): 刘邦（汉·前256-前195）——用人。历史上最著名的「草根逆袭」案例。起点：一个基层官吏。终点：汉朝开国皇帝。他的唯一技能是「用人」——不是最聪明的，不是最能打的，但最擅长让比他强的人为他效力。
 - [创新者的窘境](https://ourword.ai/i/innovators-dilemma/): 创新者的窘境（1997年·克里斯坦森）——颠覆。克莱顿·克里斯坦森提出了商业史上最重要的问题之一：为什么优秀的公司会失败？不是因为懒惰或愚蠢，而是因为它们做了所有「正确」的事——听取最好客户的意见，投资利润最高的产品，专注于最大的市场。恰恰是这些「正确决策」，让它们对破坏性技术视而不见。
 - [利弗莫尔](https://ourword.ai/i/livermore/): 利弗莫尔（美·1877-1940年）——趋势为友·败于人性。杰西·利弗莫尔，史上最传奇的投机客，《股票作手回忆录》的原型。14岁在对赌行起家，一生四次破产、四次东山再起：1907年做空大赚，摩根亲自请他停止打压市场；1929年大崩盘中做空赚一亿美元（相当于今天数十亿），成为全世界最富有的人之一。他发明的趋势跟踪、关键点交易、金字塔加码，至
+- [加里·贝克尔](https://ourword.ai/i/becker/): 加里·贝克尔（美国·1930-2014）——人力资本。美国经济学家，1930年生，芝加哥大学博士，此后长期在芝加哥大学教书，1992年获诺贝尔经济学奖。他一辈子在做同一个动作：把一件大家认为不该算账的事拿来算一笔账——歧视、犯罪、婚姻、生几个孩子、上不上大学。最有名的是1964年的《人力资本》。在那之前资本指机器、厂房、土地，他把人
 - [卡尔·波普尔](https://ourword.ai/i/popper/): 卡尔·波普尔（1902-1994年·奥地利）——能被证伪。科学哲学家。他要解决的问题是：占星术和物理学都能解释现象，凭什么说后者是科学？他的答案改变了整个科学观——区别不在能不能解释，而在能不能被推翻。一个理论如果任何观察都不能与之矛盾，那它不是强大，是空洞。这条判据同样适用于日常判断：一个说什么都对的说法，等于什么都没说。
 - [卡尔·纽波特](https://ourword.ai/i/cal-newport/): 卡尔·纽波特（2016年·乔治城大学）——专注是稀缺品。计算机科学教授，同时研究知识工作者的生产方式。他提出一组对立概念：深度工作是在无干扰状态下的专注思考，能创造新价值、难以复制；浮浅工作是琐碎的事务性动作，容易复制、不产生新能力。他的论断是，随着协作工具让人随时可被打断，深度工作正在变得稀有，而恰恰因为稀有，它成了少数还能拉开差距
 - [卡尔·罗杰斯](https://ourword.ai/i/carl-rogers/): 卡尔·罗杰斯（1902-1987年·美国）——先被接住。人本主义心理学的创立者，第一个把心理治疗过程全程录音、拿出来做研究的人——在此之前治疗室里发生什么全凭治疗师转述。他的核心主张与当时主流相反：治疗师不该是解读者和指导者，而应提供三个条件——真诚、无条件积极关注、共情性理解——人在这三样齐备的环境里会自己往好的方向长。

@@ -218,6 +218,8 @@ SCENES = [
      [("bai-gui", "four-qualifications"), ("inamori", "the-multiplier")]),
     ("钱在我手里转得太慢了。",
      [("liu-yan", "money-flows-on-the-ground")]),
+    ("我一直在给钱找出路，没给自己找。",
+     [("becker", "you-are-the-capital")]),
 ]),
 ("接不到活", "钱的事", [
     ("这个月没有单子，我开始慌了。",
@@ -918,6 +920,8 @@ SCENES = [
      [("kevin-kelly", "direct-relationship"), ("naval", "assets-while-you-sleep")]),
     ("我不满意，可我只会走人。",
      [("hirschman", "exit-voice-loyalty")]),
+    ("我这身本事，出了这家门还值钱吗。",
+     [("becker", "general-and-specific")]),
 ]),
 ("信错了人", "跟人打交道", [
     ("我信错了人，现在不敢再信谁。",

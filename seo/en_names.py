@@ -109,6 +109,7 @@ NAMES = {
     "sima-qian": ("Sima Qian", "Mind and feeling"),
     # ── Money and risk ──
     "bai-gui": ("Bai Gui", "Money and risk"),
+    "becker": ("Gary Becker", "Money and risk"),
     "dalio": ("Ray Dalio", "Money and risk"),
     "graham": ("Benjamin Graham", "Money and risk"),
     "hu-xueyan": ("Hu Xueyan", "Money and risk"),

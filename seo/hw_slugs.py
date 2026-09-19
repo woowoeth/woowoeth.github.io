@@ -4,6 +4,7 @@ import re
 import unicodedata
 
 SLUGS = {
+    "加里·贝克尔": "becker",
     "刘晏": "liu-yan",
     "白居易": "bai-juyi",
     "罗伯特·阿克塞尔罗德": "axelrod",

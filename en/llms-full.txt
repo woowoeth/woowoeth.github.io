@@ -1,7 +1,7 @@
-# OurWord — 169 people and books on how the world actually works, across 2,600 years
+# OurWord — 170 people and books on how the world actually works, across 2,600 years
 # OurWord — See how people before you handled it.
 # https://ourword.ai/en/
-# Full corpus, plain text. 169 entrys.
+# Full corpus, plain text. 170 entrys.
 
 ========================================================================
 ## Albert Einstein
@@ -75,10 +75,10 @@ Take something you are weighing up as stay or go and put the leaving sum aside. 
 The easier a place is to leave, the less anyone says. The first to go are the ones who would have complained. The case against a change comes back in only three shapes. Creativity always comes as a surprise to us.
 
 ### Q: What should I read alongside?
-Friedrich Hayek — Hayek argues a reform endangers a freedom we already hold, which is the third shape Hirschman names; Hirschman does not dispute it, he asks for a quantity someone can check. Andy Grove — Both ask how bad news travels upward: Grove wants the people sounding alarms brought into the room, Hirschman asks whether they resigned some time ago.
+Friedrich Hayek — Hayek argues a reform endangers a freedom we already hold, which is the third shape Hirschman names; Hirschman does not dispute it, he asks for a quantity someone can check. Andy Grove — Both ask how bad news travels upward: Grove wants the people sounding alarms brought into the room, Hirschman asks whether they resigned some time ago. Gary Becker — Both answer whether to go: Hirschman gives the choice set of exit, voice and loyalty, while Becker gives the number - how much of your present pay disappears on the day you walk out.
 
 ### Further
-Hannah Arendt Andy Grove Peter Drucker Thinking in Systems The Old Regime and the Revolution
+Hannah Arendt Andy Grove Peter Drucker Thinking in Systems The Old Regime and the Revolution Gary Becker
 
 ========================================================================
 ## Alfred Adler
@@ -1466,7 +1466,7 @@ The curious task of economics is to demonstrate how little men really know. The 
 The Wealth of Nations — Smith explains how the division of labour makes brute effort rich; Hayek explains how the information gets back afterwards. Nassim Taleb — Taleb is about not being able to foresee the shock, Hayek about not being able to centralise the knowledge — one handles randomness, the other handles the pretence of knowing. Albert O. Hirschman — Hayek argues a reform endangers a freedom we already hold, which is the third shape Hirschman names; Hirschman does not dispute it, he asks for a quantity someone can check.
 
 ### Further
-The Wealth of Nations Nassim Taleb Zhang Yiming Ray Dalio
+The Wealth of Nations Nassim Taleb Zhang Yiming Ray Dalio Gary Becker
 
 ========================================================================
 ## Fukuzawa Yukichi
@@ -1572,6 +1572,46 @@ Norbert Wiener — One built the thing and warned the people it would displace; 
 
 ### Further
 Norbert Wiener John Boyd Hannah Arendt Fukuzawa Yukichi The Last Hot-Metal Edition
+
+========================================================================
+## Gary Becker
+URL: https://ourword.ai/en/i/becker/
+Tags: Money and risk, Modern, Human capital
+
+Gary Becker (United States · 1930-2014) — Human capital. The economist who spent a career doing one thing: taking a subject everyone agreed was not about money and putting a price on it - discrimination, crime, marriage…
+
+### Q: What did this one leave behind?
+The economist who spent a career doing one thing: taking a subject everyone agreed was not about money and putting a price on it - discrimination, crime, marriage, family size, whether to finish school. Chicago PhD, Chicago professor, Nobel in 1992. The best known result is Human Capital in 1964. Until then capital meant plant and machinery; counting a person's schooling, skills and health as capital was attacked as treating people like machines. Two things from that book are still usable this afternoon: the real price of anything is what you gave up earning for it, not what you handed over; and what an employer rushes to pay to teach you is usually the part you cannot take with you.
+
+### Q: What actually happened?
+The dissertation he wrote in his twenties had an odd title for an economist: racial discrimination, costed. At the time this belonged to sociology and psychology and had nothing to do with prices. His move was to treat not wanting to deal with certain people as a preference like any other, then ask what the preference costs. An employer who passes over the cheaper and abler candidate has paid the difference for his own taste, and the competitor who does not share it collects. The book appeared in 1957 and was met with near silence for years. Everything afterwards was the same move again.
+
+### The parts · He prices the thing being argued about
+Faced with a subject that looks unrelated to money, the usual approach is to discuss motives and attitudes. He asks instead what the person doing it gave up. Once the price is visible, an argument nobody could settle becomes an account somebody can check. e.g. Rather than argue which plan is right, write down what each one requires you to give up.
+
+### The parts · The largest principal is people
+His claim in 1964 was that most of the capital in a modern economy is not in buildings but in people - schooling, skills, health, habits. If you are trying to make money work, half your capital has never appeared on your balance sheet. e.g. People who total their savings every December rarely total what they learned that year.
+
+### The parts · The real cost is what you did not earn
+His accounts for the 1939 college cohort came out at seventy-four per cent foregone earnings, seventeen per cent tuition and fees, the rest books and extra living costs. Abolishing tuition removes the smallest item on the bill. e.g. Before signing up for a course, price the hours it takes at what those hours currently earn.
+
+### The parts · What they fund and what you keep
+He cuts on-the-job training in two. General training is worth the same at any employer, so a competitive firm will not fund it and you pay through lower wages while learning. Specific training the firm funds, and the premium it buys does not follow you out. e.g. When an employer offers to pay for something, ask first whether it still counts somewhere else.
+
+### The parts · Worth depends on the years left to use it
+The same outlay can carry the same rate of return at every age; what changes is how long you collect. The young invest more in themselves not because they learn faster or carry less, but because the collecting period is longer. e.g. Deciding whether to learn something at forty, start by counting the years you will use it.
+
+### Q: How do I use it today?
+If you are working out where to put your savings, draw up the other statement as well: how much went into you over the last twelve months. Do not stop at fees - convert the earnings you gave up in order to learn it into a number, because that is usually the larger half. Then do the second thing: split your current pay into the part the market pays and the part only this employer pays. Most of what they have funded you to learn in the past two years sits in the second part. That is not a bad thing; it is the source of the premium you draw here. But it does not travel, so it belongs among your reasons to stay rather than in your market price. If you want the price itself to move, invest in the parts that still count elsewhere - and nobody funds those for you.
+
+### Lines to keep
+The real price is what you gave up earning for it. What they fund you to learn is what you cannot carry out. The years left to use it matter as much as the rate. A taste for discrimination costs money, and rivals collect it.
+
+### Q: What should I read alongside?
+Naval Ravikant — Both say you are the asset: Naval wants you to build something that earns while you sleep and get off the hourly clock, while Becker says the asset is already there unpriced, and splits it into the part you can carry and the part you cannot. Albert O. Hirschman — Both answer whether to go: Hirschman gives the choice set of exit, voice and loyalty, while Becker gives the number - how much of your present pay disappears on the day you walk out.
+
+### Further
+The Wealth of Nations Naval Ravikant Friedrich Hayek Peter Drucker Albert O. Hirschman
 
 ========================================================================
 ## George Soros
@@ -3560,10 +3600,10 @@ Ask which part of your work could be written once and used many times — code, 
 Wealth is assets that earn while you sleep. If your income is measured in hours you will never truly be wealthy. Code and media are the permissionless leverage of this era.
 
 ### Q: What should I read alongside?
-Tao Te Ching — Both end at enough; one arrives through leverage, the other by never picking the load up. Kevin Kelly — Both are about earning without an employer: Naval gives you specific knowledge times leverage, Kelly gives you a sum you can run backwards into a product. Benjamin Franklin — The same algorithm two hundred and fifty years apart: compounding, leverage, reputation, and the pursuit of knowledge once money stops being the question. Simone Weil — Both ask where a person should put themselves: one wants leverage that works without you present, the other says being present is the one thing you cannot outsource.
+Tao Te Ching — Both end at enough; one arrives through leverage, the other by never picking the load up. Kevin Kelly — Both are about earning without an employer: Naval gives you specific knowledge times leverage, Kelly gives you a sum you can run backwards into a product. Benjamin Franklin — The same algorithm two hundred and fifty years apart: compounding, leverage, reputation, and the pursuit of knowledge once money stops being the question. Simone Weil — Both ask where a person should put themselves: one wants leverage that works without you present, the other says being present is the one thing you cannot outsource. Gary Becker — Both say you are the asset: Naval wants you to build something that earns while you sleep and get off the hourly clock, while Becker says the asset is already there unpriced, and splits it into the part you can carry and the part you cannot.
 
 ### Further
-Peter Thiel Tao Te Ching Warren Buffett Paul Graham Kevin Kelly Nietzsche Benjamin Franklin The Last Hot-Metal Edition Finite and Infinite Games Nassim Taleb The Sovereign Individual The Wealth of Nations
+Peter Thiel Tao Te Ching Warren Buffett Paul Graham Kevin Kelly Nietzsche Benjamin Franklin The Last Hot-Metal Edition Finite and Infinite Games Nassim Taleb The Sovereign Individual The Wealth of Nations Gary Becker
 
 ========================================================================
 ## Neil Postman
@@ -3899,7 +3939,7 @@ There is only one valid definition of business purpose: to create a customer. No
 Andy Grove — Grove solves execution, Drucker solves choice. One asks how a thing gets through the organisation, the other asks whether it is worth doing at all. Paul Graham — Graham writes about the first hundred users and doing things that do not scale; Drucker writes about what happens after scale, when the activity outlives the reason for it. Taiichi Ohno — Drucker decides which thing to do; Ohno decides how a step is kept from going wrong. One sets the direction at a desk, the other sets the standard on the floor. Ivan Illich — Both ask what comes after efficiency — do the right things, or put a ceiling on the tool.
 
 ### Further
-Andy Grove Jeff Bezos Taiichi Ohno Paul Graham Ivan Illich Albert O. Hirschman C. Northcote Parkinson
+Andy Grove Jeff Bezos Taiichi Ohno Paul Graham Ivan Illich Albert O. Hirschman C. Northcote Parkinson Gary Becker
 
 ========================================================================
 ## Peter Lynch
@@ -5401,7 +5441,7 @@ It is not from the benevolence of the butcher, the brewer, or the baker. The inv
 Guan Zhong — Two origins for the idea of national wealth: Guan Zhong steers prices and money from the centre, Smith lets price discover itself. The argument has not moved in twenty-five centuries. Shang Yang — Both are designing a route to a strong state. Shang Yang binds people to the land and suppresses trade, Smith credits division and exchange. Both routes work, at wildly different prices. Friedrich Hayek — Smith explains how the division of labour makes brute effort rich; Hayek explains how the information gets back afterwards. Why Nations Fail — Smith says the market runs itself; this book says somebody has to build the institutions that hold the market up. The missing half, supplied two centuries later.
 
 ### Further
-Guan Zhong Shang Yang Thinking in Systems Li Ka-shing Naval Ravikant Guns, Germs, and Steel Friedrich Hayek Why Nations Fail
+Guan Zhong Shang Yang Thinking in Systems Li Ka-shing Naval Ravikant Guns, Germs, and Steel Friedrich Hayek Why Nations Fail Gary Becker
 
 ========================================================================
 ## Thinking in Systems
@@ -7034,6 +7074,88 @@ What the age values is what I rank low.
 The ambition is to serve everyone; the practice is to keep oneself in order.
 The order of the takings need not be the order in your head.
 He wrote it in the year he was demoted, not in a good one.
+
+========================================================================
+## Gary Becker · The principal you never counted
+URL: https://ourword.ai/en/i/becker/you-are-the-capital/
+Source: Human Capital, 1964 — chapter IV on the 1939 college cohort, chapter III on the incentive to invest
+Tags: Deep read, Gary Becker, You are the asset, and its price is not the tuition
+
+You keep looking for somewhere to put the money. The largest principal you hold has never been priced.
+
+### Q: What actually happened?
+In 1939 an urban white American man going to college paid about $112 a year in tuition and fees, and under $175 once books and extra living costs were added. Becker went after the other figure: what he would have earned between eighteen and twenty-two and a half, had he not been in a lecture hall. Put the two together and foregone earnings came to seventy-four per cent of the whole, tuition and fees to seventeen. Which is why, he wrote, free colleges are not really very free after all.
+
+### The parts · The objection was to the phrase, not the finding
+Until 1964 capital meant plant, machinery and land. Counting a person's schooling as capital struck readers as treating people like machines or like slaves. He returned to the reception in a later introduction, by then mainly to note how completely the objection had faded.
+e.g. Most people can list the projects they ran and not one of them can say what those projects made them worth.
+
+### The parts · The tuition line is the small line
+He split the cost in two: money handed over, and money not earned because you were studying instead. On the 1939 accounts the second was almost three-quarters of the total. Abolishing tuition removes the smallest item on the bill.
+e.g. A weekend course costs you the fee plus the two days of work that did not happen.
+
+### The parts · This asset cannot be sold or pledged
+He is blunt about the defect. Human capital is extremely illiquid: it cannot be sold, and it makes poor collateral on a loan. You cannot slice off part of your future earnings and sell it, so there is one way to pay - earn less for a while.
+e.g. What stops most career changes is not the fee, it is the six months of income nobody replaces.
+
+### The parts · Twenty-five and fifty differ in years, not in rate
+He separates the two deliberately. The rate of return on the same outlay may be identical at every age; what differs is how many years you get to collect it. Younger people invest more not because they learn better or carry less, but because they collect longer.
+e.g. Before deciding whether to learn something at forty, count the years you will use it, then look at the fee.
+
+### The parts · A footnote from a children's book
+Making the point about remaining years, he adds a note from an animal book he read to his children: training a working elephant takes about ten years and nearly five thousand dollars, but the animal usually lives past sixty, so the outlay is not thought excessive.
+e.g. A skill good for twenty more years and one obsolete in three are not the same purchase at the same price.
+
+### Q: How do I use it today?
+Where you are: you have some money set aside and are deciding where to put it, while privately feeling you have not got much better at anything lately.
+Ask first: over the last twelve months, how much did I put into myself - not the fees, but the earnings I gave up to learn it, written down as a number and set beside what I invested.
+Where it goes wrong: reading it as stop investing, take a course. He is computing a rate of return, not recommending an attitude. A course is worth it if what it adds to future earnings beats what you gave up, multiplied by the years you will still use it.
+
+### Lines to keep
+Tuition was seventeen per cent. The four years were the rest.
+This asset cannot be sold, and makes poor collateral.
+The young invest more because they collect for longer.
+
+========================================================================
+## Gary Becker · What they pay to teach you is what you cannot take
+URL: https://ourword.ai/en/i/becker/general-and-specific/
+Source: Human Capital, 1964 — chapter II, on-the-job training: general and specific
+Tags: Deep read, Gary Becker, The line falls on the day you leave
+
+Is what I am good at worth anything elsewhere. There is a computable answer, and it is in who paid.
+
+### Q: What actually happened?
+In the 1960s the American military had a recruiting problem: first enlistments were easy, re-enlistments were not. Becker used it as his example. Much of what the services teach is usable in civilian life - machinists, navigators, pilots - and the figures ran backwards: the more civilian-type skill a man had been given, the less likely he was to sign on again. The services are the conspicuous exception, which is exactly why they show the rule so clearly.
+
+### The parts · He cuts training in two
+General training is useful in many firms besides the one providing it: a machinist trained in the army is worth the same to steel and aircraft firms, a doctor interning at one hospital to any other. Specific training raises productivity only here - his examples are astronauts, fighter pilots, missile men.
+e.g. Writing code is the first kind. Knowing which internal service in this company must never be touched is the second.
+
+### The parts · Nobody pays for the half you can carry
+In a competitive labour market general training lifts what other firms will pay you by the same amount, so the firm providing it captures none of the return and will not fund it. You fund it, through wages below what you were already worth while training.
+e.g. We invest in your growth often means the salary is held down, and the gap is the tuition.
+
+### The parts · Part of your current price holds only here
+Specific training the firm will fund, but it fears you leaving, so it pays above your outside offer and shares the return. Cost and return are split, and what holds you is arithmetic. In a footnote he quotes Marshall on the head clerk worth several times his salary here and half of it anywhere else.
+e.g. Before weighing an offer, split your pay: the part the market pays, and the part only this employer pays.
+
+### The parts · Teach it broadly and they leave sooner
+The military numbers run the wrong way round: more civilian-usable skill, fewer re-enlistments. It pays for general training and then cannot match outside wages, so it loses at both ends. First terms fill easily; second terms do not, because by then the outside price has risen.
+e.g. A firm funding portable certifications either has another hold on people or is training the competition.
+
+### The parts · They are not the first out in a downturn
+It follows that quit rates and layoff rates both fall as specific training rises. When demand drops, the untrained and the generally trained go first, because their product merely equalled their wage; the specifically trained started above it and are still above it.
+e.g. Whoever survived the last round may not be the ablest, only the hardest to replace.
+
+### Q: How do I use it today?
+Where you are: you are weighing whether to go, and the sentence in your head is whether you would still be worth this somewhere else.
+Ask first: of my current pay, how much does the market pay and how much does only this employer pay - and of what they have spent on training me these two years, how much can I carry out of the door.
+Where it goes wrong: reading it as none of their training is worth having, so leave. He never says specific training is worthless; it is the source of the premium you draw here. He says it does not travel, so it belongs among your reasons to stay, not in your market price.
+
+### Lines to keep
+What they rush to pay for is what you cannot take.
+Teach it broadly and people leave sooner.
+What holds you is not loyalty but the unmatchable part.
 
 ========================================================================
 ## Jeff Bezos · Always Day 1
