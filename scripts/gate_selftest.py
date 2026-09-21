@@ -1155,6 +1155,35 @@ def _pair_broken():
     return go
 
 
+MANIFEST = os.path.join(ROOT, "site.webmanifest")
+ENPAGE_PWA = os.path.join(ROOT, "en", "i", "postman", "index.html")
+
+
+def _manifest_stale():
+    """把描述里的数字改回写死的旧值 —— 原来就是这么过期的（「75位」对 171）。"""
+    def go():
+        import json as _j
+        t = read(MANIFEST)
+        m = _j.loads(t)
+        m["description"] = "75位古今中外顶级人物的核心智慧，跨越2600年，7大生存主题。"
+        write(MANIFEST, _j.dumps(m, ensure_ascii=False, indent=2) + "\n")
+        return MANIFEST
+
+    return go
+
+
+def _manifest_relative():
+    """把某一页的 manifest 改回相对路径 —— /en/ 下会解析成不存在的地址。"""
+    def go():
+        t = read(ENPAGE_PWA)
+        if '/en/site.webmanifest' not in t:
+            return None
+        write(ENPAGE_PWA, t.replace('href="/en/site.webmanifest"', 'href="site.webmanifest"', 1))
+        return ENPAGE_PWA
+
+    return go
+
+
 CASES = [
     # (分支名, 门禁命令, 被改的文件, 注入函数, 必须报出的理由)
     ("章节·dek 过短",   "check_chapters.py", CHAP, _sub_field("dek", _short(3)),  "dek"),
@@ -1231,6 +1260,10 @@ CASES = [
      "hreflang 指向不存在的页"),
     ("话题互指·少了中文那条", "check_lang_pairs.py", ENTOPIC, _pair_broken(),
      "应为"),
+    ("PWA·描述的数字过期了", "check_pwa.py", MANIFEST, _manifest_stale(),
+     "数字写死了就会过期"),
+    ("PWA·manifest 又写成相对路径", "check_pwa.py", ENPAGE_PWA, _manifest_relative(),
+     "相对路径在子语言下会 404"),
     ("问答·线上跑的是旧那份", "check_chat_lang.py", WORKERJS, _worker_stale(),
      "不是仓库里这份"),
 ]
