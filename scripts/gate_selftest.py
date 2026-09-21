@@ -1191,6 +1191,44 @@ def _manifest_relative():
     return go
 
 
+PYPROJ = os.path.join(ROOT, "tools", "mcp", "pyproject.toml")
+SKILLEN = os.path.join(ROOT, "tools", "skill", "ourword-en", "SKILL.md")
+
+
+def _version_drift():
+    """把 pyproject 的版本号改掉 —— 等价于「改了模块忘了改包」。
+
+    三处版本号（模块 / pyproject / server.json）任何一处飘了，发出去的包
+    就和 registry 上登记的、和 User-Agent 报的对不上号，出事没人知道看哪份代码。
+    """
+    def go():
+        t = read(PYPROJ)
+        if 'version = "' not in t:
+            return None
+        import re as _re
+        write(PYPROJ, _re.sub(r'^version = "[^"]+"', 'version = "9.9.9"', t, count=1,
+                              flags=_re.M))
+        return PYPROJ
+
+    return go
+
+
+def _en_skill_translated():
+    """往英文 SKILL.md 里混进汉字 —— 等价于「把中文那份直译了提交上去」。
+
+    英文 Skill 自己最后一条边界写着「English is its own library, not a
+    translation」，直译提交等于违反它自己写的规矩，而第一个装它的英文用户就会发现。
+    """
+    def go():
+        t = read(SKILLEN)
+        if "## How" not in t:
+            return None
+        write(SKILLEN, t.replace("## How", "## How（怎么做）", 1))
+        return SKILLEN
+
+    return go
+
+
 SITEMAP = os.path.join(ROOT, "sitemap.xml")
 STUB = os.path.join(ROOT, "t", "\u4e2d\u53e4", "index.html")
 
@@ -1374,6 +1412,10 @@ CASES = [
      "不是站内绝对地址"),
     ("MCP·英文侧随行说明还是中文", "check_tools.py", MCPPY, _en_guidance_zh(),
      "英文侧的随行说明没跟着换"),
+    ("打包·三处版本号飘了", "check_tools.py", PYPROJ, _version_drift(),
+     "对不上"),
+    ("英文 Skill·被直译了", "check_tools.py", SKILLEN, _en_skill_translated(),
+     "不是中文那份的译文"),
     ("Skill·边界段被人精简掉了", "check_tools.py", SKILLMD, _skill_boundary_gone(),
      "这条边界被删了"),
 ]

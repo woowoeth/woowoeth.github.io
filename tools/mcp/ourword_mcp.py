@@ -24,10 +24,23 @@ import time
 import urllib.request
 
 SITE = "https://ourword.ai"
+# 取数走 jsDelivr，**不是为了快，是为了能数出「还有多少人在用」**。
+#
+# 试过的两条路都不行：GitHub Pages 不给访问日志，那个精心埋的 User-Agent 指着一堵墙；
+# 自己往 Worker 打一次 ping 能拿到数，但那是**静默遥测** —— 一个 10KB、宣称零依赖、
+# 把「不编、每条带 URL」写死在工具描述里的东西，自己身上装一个关不掉的回传，
+# 会正好打掉它唯一的差异化。有人逐行读它，而这个矛盾抓起来不要钱。
+#
+# jsDelivr 的 /v1/stats 是公开的，站上的聊天走相对路径不经它（assets/hw-chat.js:560），
+# 所以那条统计里每一次命中都是 MCP 取数，归因干净。加上本地缓存一天，
+# 每日 hits ≈ 每日还在用的安装数。代价：@main 约 12 小时缓存（本地缓存本来 24 小时，
+# 在噪声里）、只有按日总数没有 UA/IP 维度、数字公开谁都看得见。
+# 取不到就回落站点 —— **它不在数据通路上，挂了没有一个用户受影响。**
+CDN = "https://cdn.jsdelivr.net/gh/woowoeth/woowoeth.github.io@main/assets"
 CACHE = os.path.join(os.path.expanduser("~"), ".cache", "ourword-mcp")
 TTL = 24 * 3600
 NAME = "ourword"
-VERSION = "0.1.0"
+VERSION = "0.2.0"
 
 BOUNDARY = ("只返回库里真有的内容；检索不到就说没有，不要编。每条都带 URL，"
             "答案要能指回原文。这里给的是「以前的人在同一处境里怎么处理」，"
@@ -57,10 +70,18 @@ def _fetch(lang):
     p = os.path.join(CACHE, name)
     if os.path.exists(p) and time.time() - os.path.getmtime(p) < TTL:
         return json.load(open(p, encoding="utf-8"))
-    req = urllib.request.Request("%s/assets/%s" % (SITE, name),
-                                 headers={"User-Agent": "ourword-mcp/%s" % VERSION})
-    with urllib.request.urlopen(req, timeout=30) as r:
-        body = r.read().decode("utf-8")
+    body = None
+    for url in ("%s/%s" % (CDN, name), "%s/assets/%s" % (SITE, name)):
+        try:
+            req = urllib.request.Request(
+                url, headers={"User-Agent": "ourword-mcp/%s" % VERSION})
+            with urllib.request.urlopen(req, timeout=30) as r:
+                body = r.read().decode("utf-8")
+            break
+        except Exception:
+            continue                                 # CDN 挂了就走站点，用的人无感
+    if body is None:
+        raise IOError("取不到索引：%s 和 %s 都没通" % (CDN, SITE))
     open(p, "w", encoding="utf-8").write(body)
     return json.loads(body)
 

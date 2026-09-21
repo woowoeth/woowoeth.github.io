@@ -1,0 +1,48 @@
+name: mcp-release
+# 打 tag `mcp-v*` 就发布：先 PyPI，再官方 MCP registry。
+#
+# 两处都走 OIDC，**仓库里不存任何密钥**（站主的规矩：密钥不进聊天和明文仓库）。
+# PyPI 那边需要站主在 pypi.org 上一次性建一个 Trusted Publisher：
+#   owner=woowoeth · repo=woowoeth.github.io · workflow=mcp-release.yml · 无 environment
+# 建完之后每次发版都不用人再碰凭据。
+on:
+  push:
+    tags: ["mcp-v*"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  id-token: write          # PyPI Trusted Publishing 和 registry OIDC 都靠它
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # 版本号只有一个真源：ourword_mcp.py 里的 VERSION。
+      # 三处（模块 / pyproject / server.json）对不上就停，别发一个自己都对不上号的包。
+      - name: 三处版本号必须一致
+        run: python3 scripts/check_tools.py
+
+      - name: 打包
+        working-directory: tools/mcp
+        run: |
+          python3 -m pip install --upgrade build
+          python3 -m build
+          ls -la dist/
+
+      - name: 发 PyPI（Trusted Publishing，无 token）
+        uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          packages-dir: tools/mcp/dist
+
+      - name: 发官方 MCP registry（GitHub OIDC，无 token）
+        run: |
+          curl -fsSL "https://github.com/modelcontextprotocol/registry/releases/latest/download/mcp-publisher_$(uname -s | tr '[:upper:]' '[:lower:]')_amd64.tar.gz" \
+            | tar xz mcp-publisher
+          ./mcp-publisher login github-oidc
+          ./mcp-publisher publish --file tools/mcp/server.json

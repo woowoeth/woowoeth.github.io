@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ourword-mcp"
+version = "0.2.0"
+description = "403 deep reads on 171 figures and classics, indexed by the situation you're actually in — an MCP server with no search."
+readme = "README.md"
+requires-python = ">=3.8"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "ourword.ai" }]
+keywords = ["mcp", "model-context-protocol", "claude", "situations", "classics"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "Programming Language :: Python :: 3",
+  "Topic :: Text Processing :: Indexing",
+]
+
+[project.urls]
+Homepage = "https://ourword.ai"
+Source = "https://github.com/woowoeth/woowoeth.github.io/tree/main/tools/mcp"
+
+[project.scripts]
+ourword-mcp = "ourword_mcp:main"
+
+[tool.setuptools]
+# 一个文件，零依赖。装的人不需要克隆仓库 —— 数据从线上取。
+py-modules = ["ourword_mcp"]

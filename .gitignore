@@ -1,3 +1,8 @@
 __pycache__/
 *.pyc
 _chat-demo.html
+
+# MCP 包的构建产物，不进仓
+tools/mcp/dist/
+tools/mcp/build/
+tools/mcp/*.egg-info/

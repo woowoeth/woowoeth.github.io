@@ -26,9 +26,18 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 MCP = os.path.join(ROOT, "tools", "mcp", "ourword_mcp.py")
 SKILL = os.path.join(ROOT, "tools", "skill", "ourword", "SKILL.md")
+SKILL_EN = os.path.join(ROOT, "tools", "skill", "ourword-en", "SKILL.md")
+PYPROJ = os.path.join(ROOT, "tools", "mcp", "pyproject.toml")
+SERVERJSON = os.path.join(ROOT, "tools", "mcp", "server.json")
 SITE = "https://ourword.ai"
 # 这几句删了这件东西就变质，所以盯着它们（品味标准的第一个信号：肯拦住自己）
 HARD = ["只用库里真有的", "指回原文", "不做医疗、法律、金融的个人建议", "紧急求助"]
+# 英文那份不是中文这份的译文（SKILL.md 自己最后一条边界就写着不许直译），
+# 所以它有自己的四句。最硬的一条是「里面一个汉字都不许有」——
+# 直译提交是这类东西最常见的坏法，而它一眼可查。
+HARD_EN = ["Only what is in the library", "point back to a source",
+           "No personal medical, legal or financial advice",
+           "English is its own library"]
 
 
 def online():
@@ -128,6 +137,32 @@ def check_mcp(bad):
                    % (u, len(o3.get("正文", ""))))
 
 
+def check_version(bad):
+    """模块 / pyproject / server.json 三处版本号必须一致。
+
+    发一个自己都对不上号的包，比不发更糟：registry 上写 0.2.0、PyPI 上是 0.1.0、
+    User-Agent 报第三个数，出了事没人知道该看哪一份代码。
+    真源只有一个 —— ourword_mcp.py 里的 VERSION，另外两处跟着它。
+    """
+    m = re.search(r'^VERSION = "([^"]+)"', open(MCP, encoding="utf-8").read(), re.M)
+    if not m:
+        bad.append("ourword_mcp.py 里找不到 VERSION")
+        return
+    v = m.group(1)
+    for path, pat, what in ((PYPROJ, r'^version = "([^"]+)"', "pyproject.toml"),
+                            (SERVERJSON, r'"version":\s*"([^"]+)"', "server.json")):
+        if not os.path.isfile(path):
+            bad.append("没有 tools/mcp/%s —— 没有它就发不了包，也登记不进 registry"
+                       % os.path.basename(path))
+            continue
+        got = re.findall(pat, open(path, encoding="utf-8").read(), re.M)
+        if not got:
+            bad.append("%s 里没写版本号" % what)
+        elif any(g != v for g in got):
+            bad.append("%s 的版本号 %s 和 ourword_mcp.py 的 %s 对不上"
+                       % (what, "/".join(sorted(set(got))), v))
+
+
 def check_skill(bad):
     if not os.path.isfile(SKILL):
         bad.append("没有 tools/skill/ourword/SKILL.md")
@@ -148,6 +183,22 @@ def check_skill(bad):
         if h not in t:
             bad.append("SKILL.md 里「%s」这条边界被删了 —— 删掉它这件东西就变质" % h)
 
+    if not os.path.isfile(SKILL_EN):
+        bad.append("没有 tools/skill/ourword-en/SKILL.md —— 英文那份必须单独写")
+        return
+    te = open(SKILL_EN, encoding="utf-8").read()
+    me = re.match(r"^---\n(.*?)\n---\n", te, re.S)
+    ne = re.search(r"^name:\s*(\S+)", me.group(1), re.M) if me else None
+    if not ne or ne.group(1) != "ourword-en":
+        bad.append("英文 SKILL.md 的 name 必须等于目录名 ourword-en")
+    han = re.findall(r"[\u4e00-\u9fff]", te)
+    if han:
+        bad.append("英文 SKILL.md 里有 %d 个汉字（如 %s）—— 它不是中文那份的译文，"
+                   "直译提交违反它自己写的最后一条边界" % (len(han), "".join(han[:6])))
+    for h in HARD_EN:
+        if h not in te:
+            bad.append("英文 SKILL.md 里「%s」这条边界被删了" % h)
+
 
 def main():
     bad = []
@@ -159,6 +210,7 @@ def main():
         if net:
             check_mcp(bad)
     check_skill(bad)
+    check_version(bad)
     if bad:
         print("\n  MCP / Skill 有问题 %d 处：" % len(bad))
         for b in bad[:8]:
@@ -166,10 +218,11 @@ def main():
         return 1
     if not net:
         print("  断网：MCP 那半边跳过（它的数据在 ourword.ai 上）；"
-              "Skill 的 name 和四条硬边界都在")
+              "中英两份 Skill 的 name、硬边界都在，英文那份没有汉字；三处版本号一致")
         return 0
     print("  MCP：browse 列组 → 进组拿章节 → 照它给的 url 读到正文，"
-          "地址都指回站内；Skill 的 name 和四条硬边界都在")
+          "地址都指回站内；中英两份 Skill 的 name 和硬边界都在、英文那份没有汉字；"
+          "模块/pyproject/server.json 三处版本号一致")
     return 0
 
 
