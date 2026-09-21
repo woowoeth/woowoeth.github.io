@@ -1191,6 +1191,42 @@ def _manifest_relative():
     return go
 
 
+SITEMAP = os.path.join(ROOT, "sitemap.xml")
+STUB = os.path.join(ROOT, "t", "\u4e2d\u53e4", "index.html")
+
+
+def _topic_orphaned():
+    """把一个话题页从 sitemap 里摘掉 —— 等价于「这个标签掉到 hub_min 以下了」。
+
+    页面还在磁盘上、还 200、还自指 canonical，只是没人再列它、没人再链它。
+    查死链的闸抓不到：没有人链接它，正是问题本身。
+    """
+    def go():
+        t = read(SITEMAP)
+        import re as _re
+        m = _re.search(r"\s*<url><loc>https://ourword\.ai/t/[^/<]+/</loc>.*?</url>", t, _re.S)
+        if not m:
+            return None
+        write(SITEMAP, t[:m.start()] + t[m.end():])
+        return SITEMAP
+
+    return go
+
+
+def _topic_stub_dangling():
+    """把一个跳转桩的目的地改成不存在的 slug —— 旧地址从此跳进 404。"""
+    def go():
+        if not os.path.isfile(STUB):
+            return None
+        t = read(STUB)
+        if "/t/medieval/" not in t:
+            return None
+        write(STUB, t.replace("/t/medieval/", "/t/medieval-gone/"))
+        return STUB
+
+    return go
+
+
 MCPPY = os.path.join(ROOT, "tools", "mcp", "ourword_mcp.py")
 SKILLMD = os.path.join(ROOT, "tools", "skill", "ourword", "SKILL.md")
 
@@ -1312,6 +1348,10 @@ CASES = [
      "不是仓库里这份"),
     # 前一条在没网时抓不到（那半边闸会自己跳过，和 check_chat_lang 同一条规矩）；
     # 后一条只读本地文件，断网照样要红 —— 断网时两条一起哑才是出了问题。
+    ("话题页·成了孤儿", "check_integrity.py", SITEMAP, _topic_orphaned(),
+     "整页留在磁盘上，却不在 sitemap 里"),
+    ("话题桩·跳进 404", "check_integrity.py", STUB, _topic_stub_dangling(),
+     "跳转桩指向已经不存在的"),
     ("MCP·章节地址指不回原文", "check_tools.py", MCPPY, _mcp_relative_url(),
      "不是站内绝对地址"),
     ("Skill·边界段被人精简掉了", "check_tools.py", SKILLMD, _skill_boundary_gone(),

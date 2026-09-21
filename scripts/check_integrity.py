@@ -15,6 +15,8 @@
   9. 三条金句全与正文重复 —— 被 hw_theme 丢光，整个「金句」段不渲染
  10. 新条目没在 hw_kind 里归类过 —— 默认当成人，书被 schema.org 标成 Person
  11. 典籍没在 hw_omit 里被问过「不取哪一部分」—— 漏了不报，读者替你发现
+ 12. 标签掉到 hub_min 以下，话题页不再生成，但磁盘上那一页没人删 ——
+     它继续 200、继续自指 canonical，只是从此不在任何 sitemap、任何导航里
 
 每一条都曾经是「我以为做完了」。现在改成构建失败。
 """
@@ -300,6 +302,49 @@ for n in _omit_miss:
     bad("典籍没问过不取哪部分", "%s —— 去 seo/hw_omit.py 写一句，或写 None" % n)
 for n in _omit_extra:
     bad("hw_omit 里多了一条", "%s 不在 hw_kind.WORKS 里，该删" % n)
+
+# 12) /t/ 下不许有孤儿话题页。
+#     话题页是按标签出的：某个标签的条目掉到 hub_min 以下、或掉出前 40，
+#     构建就不再出它 —— 但**已经写在磁盘上的那一页不会被删**，它继续 200，
+#     继续自指 canonical，只是从此不在任何 sitemap、不在任何导航里。
+#     /t/classics/ 和 /t/human-nature/（中文站和繁体站各一份，约 20KB）
+#     就是这么留下的：没有任何条目还挂着「典籍·洞见」「处世·人性」这两个标签，
+#     而两个跳转桩还在往里指。查链接的闸抓不到 —— 没有人链接它，正是问题本身。
+#     判据：/t/ 下每个目录，要么它的 slug 在本语言的 sitemap 里（当前话题页），
+#     要么它是一个跳转桩、且目的地在 sitemap 里。
+def _topic_orphans():
+    out = []
+    for base, smap, pref in (("t", "sitemap.xml", "/t/"),
+                             ("en/t", "en/sitemap.xml", "/en/t/"),
+                             ("tw/t", "tw/sitemap.xml", "/tw/t/")):
+        if not os.path.isdir(base) or not os.path.isfile(smap):
+            continue
+        sm = open(smap, encoding="utf-8").read()
+        # 只认 <loc>：sitemap 里还有 xhtml:link 语言标注，它们会把别的语言的
+        # 地址也带进来，拿那个当「在不在 sitemap 里」会把孤儿放过去。
+        live = set(re.findall(r"<loc>" + re.escape("https://ourword.ai" + pref)
+                              + r"([^/\"<]+)/</loc>", sm))
+        if not live:
+            continue
+        for d in sorted(os.listdir(base)):
+            f = os.path.join(base, d, "index.html")
+            if not os.path.isfile(f):
+                continue
+            if d in live:
+                continue
+            t = open(f, encoding="utf-8").read()
+            m = re.search(r'http-equiv="refresh"[^>]*url=([^"\']+)', t)
+            if not m:
+                out.append((os.path.join(base, d), "整页留在磁盘上，却不在 sitemap 里"))
+                continue
+            dest = m.group(1).rstrip("/").rsplit("/", 1)[-1]
+            if dest not in live:
+                out.append((os.path.join(base, d), "跳转桩指向已经不存在的 /%s/" % dest))
+    return out
+
+
+for _p, _why in _topic_orphans():
+    bad("话题页成了孤儿", "%s —— %s" % (_p, _why))
 
 # 8) 二维码必须仍可解码
 try:
