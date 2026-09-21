@@ -611,8 +611,12 @@ def _parity_hole():
         p = os.path.join(ROOT, "en", "i", "bezos", "index.html")
         if not os.path.exists(p):
             return None
-        shutil.move(p, p + ".hidden")
-        return p + ".hidden"
+        # 挪到仓库**外面**。第一版挪成同目录的 `.hidden`，还原只管把 index.html
+        # 写回来、不管那份残留 —— 它在 2026-09-07 被 `git add` 扫进提交，
+        # 线上 /en/i/bezos/index.html.hidden 因此 200 服务了一份两周前的旧页。
+        # arm() 已经先备份过，被 kill 也还得回来。
+        shutil.move(p, os.path.join(BAK, "parity_hidden.html"))
+        return p
 
     return go
 
@@ -1155,7 +1159,10 @@ def _pair_broken():
     return go
 
 
-MANIFEST = os.path.join(ROOT, "site.webmanifest")
+# 不能叫 MANIFEST —— 第 47 行的 MANIFEST 是自检自己的备份清单。撞车之后
+# arm() 把待还原路径写进了 site.webmanifest、disarm() 又把它删掉，自检每跑一次
+# 就毁掉一次网站的 manifest，而报出来的只是一句「工作区本来就是脏的」。
+WEBMANIFEST = os.path.join(ROOT, "site.webmanifest")
 ENPAGE_PWA = os.path.join(ROOT, "en", "i", "postman", "index.html")
 
 
@@ -1163,11 +1170,11 @@ def _manifest_stale():
     """把描述里的数字改回写死的旧值 —— 原来就是这么过期的（「75位」对 171）。"""
     def go():
         import json as _j
-        t = read(MANIFEST)
+        t = read(WEBMANIFEST)
         m = _j.loads(t)
         m["description"] = "75位古今中外顶级人物的核心智慧，跨越2600年，7大生存主题。"
-        write(MANIFEST, _j.dumps(m, ensure_ascii=False, indent=2) + "\n")
-        return MANIFEST
+        write(WEBMANIFEST, _j.dumps(m, ensure_ascii=False, indent=2) + "\n")
+        return WEBMANIFEST
 
     return go
 
@@ -1180,6 +1187,43 @@ def _manifest_relative():
             return None
         write(ENPAGE_PWA, t.replace('href="/en/site.webmanifest"', 'href="site.webmanifest"', 1))
         return ENPAGE_PWA
+
+    return go
+
+
+MCPPY = os.path.join(ROOT, "tools", "mcp", "ourword_mcp.py")
+SKILLMD = os.path.join(ROOT, "tools", "skill", "ourword", "SKILL.md")
+
+
+def _mcp_relative_url():
+    """把 MCP 返回的章节地址改成相对路径 —— 装在别人机器上的模型点不开。
+
+    这是这道闸存在的理由：文件在、进程起得来、JSON 也合法，坏的只有「指回原文」
+    这一件事，而那恰恰是这个 server 唯一的价值。查文件在不在的闸抓不到它。
+    """
+    def go():
+        t = read(MCPPY)
+        if 'SITE = "https://ourword.ai"' not in t:
+            return None
+        write(MCPPY, t.replace('SITE = "https://ourword.ai"', 'SITE = ""', 1))
+        return MCPPY
+
+    return go
+
+
+def _skill_boundary_gone():
+    """删掉 SKILL.md 里「不做医疗、法律、金融的个人建议」那条。
+
+    一件 skill 的边界段最容易在后人「精简一下」时被删掉，删完它照样能跑、
+    照样有人装 —— 但它已经不是我们要发的那件东西了（品味站六个信号第一条）。
+    """
+    def go():
+        t = read(SKILLMD)
+        hit = [ln for ln in t.splitlines() if "不做医疗、法律、金融的个人建议" in ln]
+        if not hit:
+            return None
+        write(SKILLMD, t.replace(hit[0] + "\n", "", 1))
+        return SKILLMD
 
     return go
 
@@ -1260,12 +1304,18 @@ CASES = [
      "hreflang 指向不存在的页"),
     ("话题互指·少了中文那条", "check_lang_pairs.py", ENTOPIC, _pair_broken(),
      "应为"),
-    ("PWA·描述的数字过期了", "check_pwa.py", MANIFEST, _manifest_stale(),
+    ("PWA·描述的数字过期了", "check_pwa.py", WEBMANIFEST, _manifest_stale(),
      "数字写死了就会过期"),
     ("PWA·manifest 又写成相对路径", "check_pwa.py", ENPAGE_PWA, _manifest_relative(),
      "相对路径在子语言下会 404"),
     ("问答·线上跑的是旧那份", "check_chat_lang.py", WORKERJS, _worker_stale(),
      "不是仓库里这份"),
+    # 前一条在没网时抓不到（那半边闸会自己跳过，和 check_chat_lang 同一条规矩）；
+    # 后一条只读本地文件，断网照样要红 —— 断网时两条一起哑才是出了问题。
+    ("MCP·章节地址指不回原文", "check_tools.py", MCPPY, _mcp_relative_url(),
+     "不是站内绝对地址"),
+    ("Skill·边界段被人精简掉了", "check_tools.py", SKILLMD, _skill_boundary_gone(),
+     "这条边界被删了"),
 ]
 
 
@@ -1292,12 +1342,28 @@ def run_gate(cmd):
     return r.returncode, r.stdout + r.stderr
 
 
+def worktree():
+    """工作区快照。自检收尾要拿它和开跑前比 —— 「文件已还原」不能只是一句话。
+
+    原来最后一行印的是「文件已还原」，没有任何东西验过。实际上两处没还原：
+    `MANIFEST` 名字撞车让每跑一次就删掉一次 site.webmanifest；藏页注入把
+    `index.html.hidden` 留在原地，最后被提交进仓、线上 200 服务了两周
+    （FAILURES #35）。两处都在这一步一眼可见。
+    """
+    r = subprocess.run(["git", "status", "--porcelain"], cwd=ROOT,
+                       capture_output=True, text=True)
+    if r.returncode != 0:
+        return None
+    return set(l for l in r.stdout.splitlines() if l.strip())
+
+
 def main():
     recover_pending()
     if not preflight():
         print("✗ preflight 失败：崩溃恢复机制本身不工作，后面的结果都不可信")
         return 1
 
+    before = worktree()
     print("门禁自检 · 每条失败分支注入一次，核对**报出的理由**而非仅退出码")
     print("（preflight ✓ 崩溃恢复已自验：模拟被 kill，残留会被还原）\n")
 
@@ -1346,11 +1412,23 @@ def main():
     else:
         print("覆盖反查 ✓ gate.py 上的 %d 道闸都至少有一条反向注入" % len(set(listed)))
 
+    # ---- 收尾反查：自检自己有没有把现场还原干净 ----
+    after = worktree()
+    if before is not None and after is not None and after != before:
+        left = sorted((after - before) | (before - after))
+        print("收尾反查 ✗ 自检自己改了工作区，这 %d 处没还原：" % len(left))
+        for l in left[:10]:
+            print("     ", l)
+        fails.append("收尾反查：自检留下了 %d 处未还原" % len(left))
+    elif before is not None:
+        print("收尾反查 ✓ 工作区和开跑前一模一样")
+
     if fails:
         print("不合格：" + "、".join(fails))
         print("（注入后必须返回 1，且必须报出这条分支自己的理由）")
         return 1
-    print("✓ %d 条失败分支都验证过：注入缺陷会被拦下，理由对得上，文件已还原" % len(CASES))
+    print("✓ %d 条失败分支都验证过：注入会被拦下、理由对得上、工作区已还原（比对过）"
+          % len(CASES))
     return 0
 
 
