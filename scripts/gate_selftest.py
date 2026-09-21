@@ -1247,6 +1247,24 @@ def _mcp_relative_url():
     return go
 
 
+def _en_guidance_zh():
+    """让 _t() 永远返回中文 —— 等价于「英文侧的随行说明忘了跟着换」。
+
+    这个仓第五次栽在同一形状上：处境和章节都换英文了，随行那几句还是中文。
+    前四次是页面文案，这次是 MCP 的返回。
+    """
+    def go():
+        t = read(MCPPY)
+        old = ('def _t(lang, zh, en):\n'
+               '    return en if str(lang).lower().startswith("en") else zh')
+        if old not in t:
+            return None
+        write(MCPPY, t.replace(old, 'def _t(lang, zh, en):\n    return zh'))
+        return MCPPY
+
+    return go
+
+
 def _skill_boundary_gone():
     """删掉 SKILL.md 里「不做医疗、法律、金融的个人建议」那条。
 
@@ -1354,6 +1372,8 @@ CASES = [
      "跳转桩指向已经不存在的"),
     ("MCP·章节地址指不回原文", "check_tools.py", MCPPY, _mcp_relative_url(),
      "不是站内绝对地址"),
+    ("MCP·英文侧随行说明还是中文", "check_tools.py", MCPPY, _en_guidance_zh(),
+     "英文侧的随行说明没跟着换"),
     ("Skill·边界段被人精简掉了", "check_tools.py", SKILLMD, _skill_boundary_gone(),
      "这条边界被删了"),
 ]

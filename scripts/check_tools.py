@@ -101,6 +101,20 @@ def check_mcp(bad):
         bad.append("browse 返回的章节里 %d 条 url 不是站内绝对地址（如 %r）"
                    " —— 答案就指不回原文了" % (len(off), off[0].get("url", "")))
 
+    # 英文侧随行的那几句话不许是中文。这是这个仓第五次栽在同一形状上
+    # （FAILURES #33 前后那几条：英文站照着中文站的路径/文案写死）——
+    # 处境和章节都换成英文了，"怎么用""边界"却还是中文，本地试装时才看见。
+    r4, _ = ask([call("browse", {"lang": "en"}, 5)])
+    try:
+        oe = payload(r4[5])
+        han = [k for k in ("怎么用", "边界")
+               if re.search(r"[\u4e00-\u9fff]", oe.get(k, ""))]
+        if han:
+            bad.append("browse(lang=en) 的 %s 还是中文 —— 英文侧的随行说明没跟着换"
+                       % "、".join(han))
+    except Exception as e:
+        bad.append("browse(lang=en) 失败：%s" % e)
+
     # 照它自己给的地址读正文：模型下一步一定这么做
     u = chs[0]["url"]
     r3, _ = ask([call("read_chapter", {"url": u}, 4)])

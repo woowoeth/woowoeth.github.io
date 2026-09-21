@@ -32,6 +32,23 @@ VERSION = "0.1.0"
 BOUNDARY = ("只返回库里真有的内容；检索不到就说没有，不要编。每条都带 URL，"
             "答案要能指回原文。这里给的是「以前的人在同一处境里怎么处理」，"
             "不是医疗、法律或金融的个人建议。")
+# 本地试装时发现的：lang="en" 时处境和章节都是英文，随行的这几句却还是中文。
+# 调用方模型读得懂，但它要照着这几句给英文用户作答，夹一段中文只会让它犹豫。
+BOUNDARY_EN = ("Only what is actually in the library; if nothing matches, say so — "
+               "do not invent. Every item carries a URL and the answer must point "
+               "back to it. This is how people before you handled the same situation, "
+               "not personal medical, legal or financial advice.")
+HOWTO = ("从这些处境里挑最像用户此刻的那一个（可以挑 1–3 个），"
+         "再用 group 参数取那一组下面的具体说法。挑不出来就说库里没有，别硬套。")
+HOWTO_EN = ("Pick the one (or up to three) that most resembles what the user is in "
+            "right now, then call again with `group` to see the specific wordings "
+            "under it. If none fits, say the library does not have it — do not force one.")
+LANG_DESC = ("库的语言：zh 中文站，en 英文站。用户说英文就传 en —— "
+             "两边的处境不是互译，是各自长出来的（中文有社保、考研，英文另有别的）。")
+
+
+def _t(lang, zh, en):
+    return en if str(lang).lower().startswith("en") else zh
 
 
 def _fetch(lang):
@@ -99,9 +116,9 @@ def browse(lang="zh", group=None):
             g = r[1] if len(r) > 1 else ""
             if g and g not in seen:
                 seen.append(g)
-        return {"怎么用": "从这些处境里挑最像用户此刻的那一个（可以挑 1–3 个），"
-                          "再用 group 参数取那一组下面的具体说法。挑不出来就说库里没有，别硬套。",
-                "共": len(seen), "处境归类": seen, "边界": BOUNDARY}
+        return {"怎么用": _t(lang, HOWTO, HOWTO_EN),
+                "共": len(seen), "处境归类": seen,
+                "边界": _t(lang, BOUNDARY, BOUNDARY_EN)}
     out = []
     for r in rows:
         if (r[1] if len(r) > 1 else "") != group:
@@ -111,8 +128,11 @@ def browse(lang="zh", group=None):
                     "以前的人怎么处理": [_brief(chs[i]) for i in ids
                                           if isinstance(i, int) and 0 <= i < len(chs)]})
     if not out:
-        return {"错": "没有这一组：%r。先不带 group 调一次看有哪些。" % group}
-    return {"归类": group, "条数": len(out), "处境": out, "边界": BOUNDARY}
+        return {"错": _t(lang, "没有这一组：%r。先不带 group 调一次看有哪些。" % group,
+                                "No such group: %r. Call browse once without `group` "
+                                "to see what exists." % group)}
+    return {"归类": group, "条数": len(out), "处境": out,
+            "边界": _t(lang, BOUNDARY, BOUNDARY_EN)}
 
 
 def search(query, lang="zh", limit=5):
@@ -141,7 +161,7 @@ def search(query, lang="zh", limit=5):
     if not out:
         return {"找到": 0, "说明": "字面没对上。**别编** —— 改用 browse 让你自己按语义挑，"
                                   "还是挑不出就直说库里没有。"}
-    return {"找到": len(out), "结果": out, "边界": BOUNDARY}
+    return {"找到": len(out), "结果": out, "边界": _t(lang, BOUNDARY, BOUNDARY_EN)}
 
 
 def read_chapter(url, lang="zh"):
@@ -155,8 +175,10 @@ def read_chapter(url, lang="zh"):
         if ch.get("u") == u:
             return {"人物或典籍": ch.get("p", ""), "章节": ch.get("n", ""),
                     "一句话": ch.get("w", ""), "导语": ch.get("dek", ""),
-                    "正文": ch.get("txt", ""), "url": SITE + u, "边界": BOUNDARY}
-    return {"错": "库里没有这一页：%s。别猜，回去用 browse。" % u}
+                    "正文": ch.get("txt", ""), "url": SITE + u,
+                    "边界": _t(lang, BOUNDARY, BOUNDARY_EN)}
+    return {"错": _t(lang, "库里没有这一页：%s。别猜，回去用 browse。" % u,
+                            "Not in the library: %s. Do not guess — go back to browse." % u)}
 
 
 TOOLS = [
@@ -167,18 +189,21 @@ TOOLS = [
                     "字面往往对不上（用户说「领导总改优先级」，库里那条是「全都重要，我砍哪个都疼」）。"
                     + BOUNDARY,
      "inputSchema": {"type": "object", "properties": {
-         "lang": {"type": "string", "enum": ["zh", "en"], "default": "zh"},
+         "lang": {"type": "string", "enum": ["zh", "en"], "default": "zh",
+         "description": LANG_DESC},
          "group": {"type": "string", "description": "处境归类，从不带参数的那次结果里挑"}}}},
     {"name": "read_chapter",
      "description": "取某一篇的完整正文。url 用 browse / search 返回的那个，不要自己拼。",
      "inputSchema": {"type": "object", "required": ["url"], "properties": {
          "url": {"type": "string"},
-         "lang": {"type": "string", "enum": ["zh", "en"], "default": "zh"}}}},
+         "lang": {"type": "string", "enum": ["zh", "en"], "default": "zh",
+         "description": LANG_DESC}}}},
     {"name": "search",
      "description": "兜底的字面检索，只在 browse 挑不出来时用。处境是语义的，字面常常对不上。",
      "inputSchema": {"type": "object", "required": ["query"], "properties": {
          "query": {"type": "string"},
-         "lang": {"type": "string", "enum": ["zh", "en"], "default": "zh"},
+         "lang": {"type": "string", "enum": ["zh", "en"], "default": "zh",
+         "description": LANG_DESC},
          "limit": {"type": "integer", "default": 5, "maximum": 10}}}},
 ]
 FN = {"browse": browse, "read_chapter": read_chapter, "search": search}
