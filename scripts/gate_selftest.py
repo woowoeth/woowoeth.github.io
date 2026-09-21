@@ -1222,11 +1222,14 @@ def _mirror_stale():
     """
     def go():
         t = read(CHECKTOOLS)
-        old = '"%s/%s/SKILL.md" % (MIRROR, d)'
+        # 锚点跟着闸走：2026-09-21 把取数从 raw 改成 API（FAILURES #43），
+        # 这个锚点当场失效，自检报的是「用例失效（挑不到注入点）」而不是
+        # 「这条分支是死的」—— 两种情况必须分得清，否则改一次闸就会误判一次。
+        old = '"%s/%s/SKILL.md" % (MIRROR_API, d)'
         if old not in t:
             return None
         write(CHECKTOOLS, t.replace(
-            old, '"%s/%s/SKILL.md" % (MIRROR, "ourword" if d == "ourword-en"'
+            old, '"%s/%s/SKILL.md" % (MIRROR_API, "ourword" if d == "ourword-en"'
                  ' else "ourword-en")'))
         return CHECKTOOLS
 

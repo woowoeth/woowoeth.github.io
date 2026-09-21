@@ -34,7 +34,10 @@ SITE = "https://ourword.ai"
 # woowoeth/ourword-skills，按小时从这里拉。真源永远是这里。
 # 这道判据防的是「改好了 ≠ 在跑」：主仓改了、镜像没跟上，对外那份就是旧的，
 # 而任何本地检查都看不见 —— 又是 FAILURES #33 那个形状。
-MIRROR = "https://raw.githubusercontent.com/woowoeth/ourword-skills/main"
+# 走 API 不走 raw：raw.githubusercontent.com 有 CDN 缓存（约五分钟），
+# 刚推完去读会读到旧的那一份 —— 判据于是报「镜像没跟上」，而镜像其实是对的。
+# 2026-09-21 第一次跑这道闸就撞上了。**一个读缓存的判据，量的是缓存，不是那个东西。**
+MIRROR_API = "https://api.github.com/repos/woowoeth/ourword-skills/contents"
 # 这几句删了这件东西就变质，所以盯着它们（品味标准的第一个信号：肯拦住自己）
 HARD = ["只用库里真有的", "指回原文", "不做医疗、法律、金融的个人建议", "紧急求助"]
 # 英文那份不是中文这份的译文（SKILL.md 自己最后一条边界就写着不许直译），
@@ -174,8 +177,17 @@ def check_mirror(bad):
         if pushed != local:
             continue                           # 本地有没推的改动，不是镜像的问题
         try:
-            got = urllib.request.urlopen("%s/%s/SKILL.md" % (MIRROR, d),
-                                         timeout=20).read().decode("utf-8")
+            req = urllib.request.Request(
+                "%s/%s/SKILL.md" % (MIRROR_API, d),
+                headers={"Accept": "application/vnd.github.raw",
+                         "User-Agent": "ourword-gate"})
+            got = urllib.request.urlopen(req, timeout=20).read().decode("utf-8")
+        except urllib.error.HTTPError as e:
+            if e.code in (403, 429):                 # 匿名调用被限流，不是镜像的错
+                print("  （GitHub API 限流，镜像那条跳过）")
+                return
+            bad.append("镜像仓取不到 %s/SKILL.md：%s" % (d, e))
+            continue
         except Exception as e:
             bad.append("镜像仓取不到 %s/SKILL.md：%s" % (d, e))
             continue
