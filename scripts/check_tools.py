@@ -30,11 +30,28 @@ SKILL_EN = os.path.join(ROOT, "tools", "skill", "ourword-en", "SKILL.md")
 PYPROJ = os.path.join(ROOT, "tools", "mcp", "pyproject.toml")
 SERVERJSON = os.path.join(ROOT, "tools", "mcp", "server.json")
 SITE = "https://ourword.ai"
+# 目录站收录的单位是「一个仓库」，所以两份 skill 另有一个镜像仓
+# woowoeth/ourword-skills，按小时从这里拉。真源永远是这里。
+# 这道判据防的是「改好了 ≠ 在跑」：主仓改了、镜像没跟上，对外那份就是旧的，
+# 而任何本地检查都看不见 —— 又是 FAILURES #33 那个形状。
+MIRROR = "https://raw.githubusercontent.com/woowoeth/ourword-skills/main"
 # 这几句删了这件东西就变质，所以盯着它们（品味标准的第一个信号：肯拦住自己）
 HARD = ["只用库里真有的", "指回原文", "不做医疗、法律、金融的个人建议", "紧急求助"]
 # 英文那份不是中文这份的译文（SKILL.md 自己最后一条边界就写着不许直译），
 # 所以它有自己的四句。最硬的一条是「里面一个汉字都不许有」——
 # 直译提交是这类东西最常见的坏法，而它一眼可查。
+# 说出去被人点一下就穿的话，写死在这里当黑名单。
+# 这一句 2026-09-21 一天之内在四个地方各写了一遍：中文长版、Show HN 正文、
+# 目录站的 Description、镜像仓 README。四次都是人再看一眼才发现的，没有任何判据拦得住。
+# 站上有 171 个人物页和 37 个主题页，「不按人名/主题索引」就是假的；
+# 真话是两层都有、处境层是主入口，而这句真话一点不弱。
+FORBIDDEN = [
+    ("not by topic or author", "站上有人物页和主题页，这句是假的"),
+    ("rather than by topic", "同上"),
+    ("rather than topic or author", "同上"),
+    ("不按人名索引", "同上"),
+    ("而不是按人名", "同上"),
+]
 HARD_EN = ["Only what is in the library", "point back to a source",
            "No personal medical, legal or financial advice",
            "English is its own library"]
@@ -137,6 +154,59 @@ def check_mcp(bad):
                    % (u, len(o3.get("正文", ""))))
 
 
+def check_mirror(bad):
+    """镜像仓里的两份 SKILL.md，必须等于**已经推上去的**那一版。
+
+    比的是 origin/main 上的那一份，不是工作区 —— 本地改了还没推的时候，
+    镜像当然对不上，那不是镜像的错。这样这道闸量的才是「对外那份是不是最新的」。
+    """
+    for d in ("ourword", "ourword-en"):
+        rel = "tools/skill/%s/SKILL.md" % d
+        local = open(os.path.join(ROOT, rel), encoding="utf-8").read()
+        try:
+            pushed = subprocess.run(["git", "show", "origin/main:" + rel], cwd=ROOT,
+                                    capture_output=True, text=True, timeout=60)
+            if pushed.returncode != 0:
+                continue                       # 还没推过这个文件，没得比
+            pushed = pushed.stdout
+        except Exception:
+            continue
+        if pushed != local:
+            continue                           # 本地有没推的改动，不是镜像的问题
+        try:
+            got = urllib.request.urlopen("%s/%s/SKILL.md" % (MIRROR, d),
+                                         timeout=20).read().decode("utf-8")
+        except Exception as e:
+            bad.append("镜像仓取不到 %s/SKILL.md：%s" % (d, e))
+            continue
+        if got != pushed:
+            bad.append("镜像仓的 %s/SKILL.md 和主仓 origin/main 对不上 —— 对外那份是旧的。"
+                       "跑一句 `gh workflow run sync.yml -R woowoeth/ourword-skills`" % d)
+
+
+def check_claims(bad):
+    """对外文案里不许出现已经被证伪的说法。
+
+    判的不是「写得好不好」——那只能靠眼睛。判的是「这一句我们已经查过、它是假的」，
+    而假话会被人复制到下一个地方去。黑名单只放证伪过的原句，不放风格偏好。
+    """
+    for base, _dirs, files in os.walk(os.path.join(ROOT, "tools")):
+        for f in files:
+            if not f.endswith((".md", ".json", ".toml", ".py")):
+                continue
+            path = os.path.join(base, f)
+            try:
+                t = open(path, encoding="utf-8").read()
+            except Exception:
+                continue
+            if os.path.abspath(path) == os.path.abspath(__file__):
+                continue
+            for phrase, why in FORBIDDEN:
+                if phrase in t:
+                    bad.append("%s 里写着「%s」—— %s"
+                               % (os.path.relpath(path, ROOT), phrase, why))
+
+
 def check_version(bad):
     """模块 / pyproject / server.json 三处版本号必须一致。
 
@@ -209,8 +279,10 @@ def main():
         net = online()
         if net:
             check_mcp(bad)
+            check_mirror(bad)
     check_skill(bad)
     check_version(bad)
+    check_claims(bad)
     if bad:
         print("\n  MCP / Skill 有问题 %d 处：" % len(bad))
         for b in bad[:8]:
@@ -222,7 +294,7 @@ def main():
         return 0
     print("  MCP：browse 列组 → 进组拿章节 → 照它给的 url 读到正文，"
           "地址都指回站内；中英两份 Skill 的 name 和硬边界都在、英文那份没有汉字；"
-          "模块/pyproject/server.json 三处版本号一致")
+          "模块/pyproject/server.json 三处版本号一致；镜像仓和主仓同步；对外文案里没有证伪过的说法")
     return 0
 
 

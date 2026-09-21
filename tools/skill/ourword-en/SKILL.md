@@ -1,6 +1,6 @@
 ---
 name: ourword-en
-description: Use when someone is describing a specific thing they are stuck in right now — a boss who keeps changing priorities, a kid who stopped talking to them, a habit they cannot drop, a job that ended, a fight they regret — to find on ourword.ai how people before them handled the same situation, and give two or three sourced moves plus the one way it is commonly used wrong. Do not use it for general questions, research, summaries or writing tasks, and do not trigger it on small talk or requests for facts.
+description: Finds how people before you handled the exact situation you are in now, from 403 sourced deep reads on ourword.ai, and gives two or three moves plus the one way each is commonly used wrong. Use when someone describes something they are stuck in right now: a boss who keeps changing priorities, a kid who stopped talking to them, a habit they cannot drop, a job that ended, a fight they regret. Do not use it for general questions, research, summaries or writing tasks, and do not trigger it on small talk or requests for facts.
 ---
 
 # Someone before you was in this. Here is what they did.

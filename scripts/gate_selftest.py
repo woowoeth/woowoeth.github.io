@@ -1191,6 +1191,48 @@ def _manifest_relative():
     return go
 
 
+MCPREADME = os.path.join(ROOT, "tools", "mcp", "README.md")
+
+
+def _false_claim():
+    """把那句已经证伪的话写回英文 README。
+
+    「不按人名/主题索引」这一句 2026-09-21 一天之内在四个地方各写了一遍，
+    四次都是人再看一眼才发现的。黑名单只放查过是假的原句，不放风格偏好。
+    """
+    def go():
+        t = read(MCPREADME)
+        if "indexed by the" not in t:
+            return None
+        write(MCPREADME, t.replace(
+            "indexed by the", "indexed by the situation, not by topic or author, the", 1))
+        return MCPREADME
+
+    return go
+
+
+CHECKTOOLS = os.path.join(HERE, "check_tools.py")
+
+
+def _mirror_stale():
+    """让镜像判据去取另一份文件 —— 等价于「主仓改了、镜像仓没跟上」。
+
+    真的把镜像仓改脏来注入是不行的：那是另一个仓、是对外的，
+    自检不该动仓外的东西。改判据取数的那一端，测的是同一条分支。
+    """
+    def go():
+        t = read(CHECKTOOLS)
+        old = '"%s/%s/SKILL.md" % (MIRROR, d)'
+        if old not in t:
+            return None
+        write(CHECKTOOLS, t.replace(
+            old, '"%s/%s/SKILL.md" % (MIRROR, "ourword" if d == "ourword-en"'
+                 ' else "ourword-en")'))
+        return CHECKTOOLS
+
+    return go
+
+
 PYPROJ = os.path.join(ROOT, "tools", "mcp", "pyproject.toml")
 SKILLEN = os.path.join(ROOT, "tools", "skill", "ourword-en", "SKILL.md")
 
@@ -1412,6 +1454,10 @@ CASES = [
      "不是站内绝对地址"),
     ("MCP·英文侧随行说明还是中文", "check_tools.py", MCPPY, _en_guidance_zh(),
      "英文侧的随行说明没跟着换"),
+    ("文案·写了句证伪过的话", "check_tools.py", MCPREADME, _false_claim(),
+     "站上有人物页和主题页，这句是假的"),
+    ("镜像仓·没跟上主仓", "check_tools.py", CHECKTOOLS, _mirror_stale(),
+     "对外那份是旧的"),
     ("打包·三处版本号飘了", "check_tools.py", PYPROJ, _version_drift(),
      "对不上"),
     ("英文 Skill·被直译了", "check_tools.py", SKILLEN, _en_skill_translated(),
