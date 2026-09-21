@@ -377,6 +377,45 @@ def _drop_og():
     return go
 
 
+OMITTAB = os.path.join(ROOT, "seo", "hw_omit.py")
+
+
+def _drop_omit():
+    """把 hw_omit 里的一条键删掉 —— 模拟「新收了一部典籍，忘了问这一句」。"""
+    def go():
+        t = read(OMITTAB)
+        i = t.find('    "\u5b59\u5b50\u5175\u6cd5": None,')
+        if i < 0:
+            return None
+        j = t.find("\n", i) + 1
+        write(OMITTAB, t[:i] + t[j:])
+        return OMITTAB
+
+    return go
+
+
+KINDTAB = os.path.join(ROOT, "seo", "hw_kind.py")
+
+
+def _unclassify():
+    """把 PEOPLE 里的一个名字摘掉 —— 模拟「加了条目但忘了归类」。
+
+    这是这道判据存在的全部理由：原来是「WORKS + 默认是人」，忘了归类不报错，
+    只是悄悄按人处理。所以注入的不是「归类错了」，是「压根没归类」。
+    """
+    def go():
+        t = read(KINDTAB)
+        i = t.find('PEOPLE = {')
+        if i < 0:
+            return None
+        j = t.find('"', i)
+        k = t.find('",', j) + 2
+        write(KINDTAB, t[:j] + t[k:])
+        return KINDTAB
+
+    return go
+
+
 def _bad_ref():
     """把 hwx_scenes 里第一个 (parent, k) 引用的 k 改成不存在的。"""
     def go():
@@ -1141,6 +1180,8 @@ CASES = [
     ("问题·过长",       "check_questions.py", SCENES, _q_sub("我每天都在想这件事情到底该怎么办才好呢真的很累"), "过长"),
     ("覆盖·坏引用",     "check_coverage.py",  SCENES, _bad_ref(),           "引用指向不存在的章节"),
     ("完整·缺分享图",   "check_integrity.py", OGPNG,  _drop_og(),           "章节无分享图"),
+    ("完整·条目没归类", "check_integrity.py", KINDTAB, _unclassify(),      "条目没有归类"),
+    ("完整·典籍没问不取", "check_integrity.py", OMITTAB, _drop_omit(), "典籍没问过不取哪部分"),
     ("重复·同页重块",   "check_repetition.py", PAGE,  _html_ins(PAGE, "<p>%s</p>" % MARK, 2), MARK),
     ("加重·同页重复",   "check_pullquotes.py", PAGE,
      _html_ins(PAGE, '<b class="key">%s</b><p>%s</p>' % (MARK, MARK)),      MARK),

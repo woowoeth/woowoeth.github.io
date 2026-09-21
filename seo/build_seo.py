@@ -14,6 +14,7 @@ import hw_theme
 hw_theme.install(G)
 import hw_slugs
 import hw_kind
+import hw_omit
 import hw_chapters
 import strip_cite
 
@@ -184,6 +185,13 @@ def load_items():
                 fb = (fb + "\n" + flat(e["lesson"])).strip("\n")
             if fb:
                 blocks.append(("Q\uff1a\u540e\u6765\u600e\u4e48\u4e86\uff1f", fb))
+        # 「哪一部分我们没有取」：只有典籍/研究有（seo/hw_omit.py，键钉死在
+        # hw_kind.WORKS 上）。位置在「今天怎么用」之前 —— 先说清我们取的是
+        # 哪一半，再说怎么用；反过来就成了用完再补一句免责。
+        _omit = hw_omit.zh(name)
+        if _omit:
+            blocks.append(("Q\uff1a\u54ea\u4e00\u90e8\u5206\u6211\u4eec"
+                           "\u6ca1\u6709\u53d6\uff1f", _omit))
         if e.get("apply"):
             blocks.append(("Q\uff1a\u4eca\u5929\u600e\u4e48\u7528\uff1f", flat(e["apply"])))
         if e.get("q"):

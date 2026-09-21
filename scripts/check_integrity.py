@@ -13,6 +13,8 @@
   7. 二维码被换坏 —— 页脚和分享卡的码扫不出来
   8. 写了 fail/lesson 却没有任何渲染器读它 —— 4525 字内容在页面上不存在
   9. 三条金句全与正文重复 —— 被 hw_theme 丢光，整个「金句」段不渲染
+ 10. 新条目没在 hw_kind 里归类过 —— 默认当成人，书被 schema.org 标成 Person
+ 11. 典籍没在 hw_omit 里被问过「不取哪一部分」—— 漏了不报，读者替你发现
 
 每一条都曾经是「我以为做完了」。现在改成构建失败。
 """
@@ -28,6 +30,8 @@ sys.path.insert(0, "scripts")
 
 import build_seo          # noqa: E402
 import hw_chapters as C   # noqa: E402
+import hw_kind            # noqa: E402
+import hw_omit            # noqa: E402
 import hw_slugs           # noqa: E402
 
 problems = []
@@ -275,6 +279,27 @@ for _f in ("index.html", "all/index.html"):
 _open, _close = home.count("<div"), home.count("</div>")
 if _open != _close:
     bad("首页 div 不配平", "开 %d 闭 %d，差 %+d" % (_open, _close, _close - _open))
+
+# 10) 每个条目都要在 hw_kind 里被判过一次：是人，还是作品
+#     判的是「有没有做过这个判断」，不是「判得对不对」——对不对只能靠眼睛。
+#     原来是「WORKS + 默认是人」，默认值替人做了决定又不吭声：《易经》
+#     《菜根谭》《薄伽梵歌》《最后一版》四条被 schema.org 标成 Person，
+#     从收进来那天起，二十道闸一条都没响（hw_kind.py 文件头记了这件事）。
+_miss, _both = hw_kind.unclassified(sorted(names))
+for n in _miss:
+    bad("条目没有归类", "%s —— 去 seo/hw_kind.py 落进 WORKS 或 PEOPLE" % n)
+for n in _both:
+    bad("条目归类自相矛盾", "%s 同时在 WORKS 和 PEOPLE 里" % n)
+
+# 11) 每一部典籍都要被问过「哪一部分我们不取」。写 None 是合法答案，
+#     这条判的是「问过没有」，不是「有没有免责声明」。
+#     键钉死在 WORKS 上：少一条是新收的书没问，多一条是从 WORKS 挪走了
+#     却忘了在这边删 —— 后一种更隐蔽，所以两个方向都报。
+_omit_miss, _omit_extra = hw_omit.mismatch(hw_kind.WORKS)
+for n in _omit_miss:
+    bad("典籍没问过不取哪部分", "%s —— 去 seo/hw_omit.py 写一句，或写 None" % n)
+for n in _omit_extra:
+    bad("hw_omit 里多了一条", "%s 不在 hw_kind.WORKS 里，该删" % n)
 
 # 8) 二维码必须仍可解码
 try:

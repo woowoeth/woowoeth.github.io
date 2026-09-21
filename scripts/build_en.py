@@ -558,6 +558,7 @@ def en_items():
     """把 seo/en_entries.py 变成 geo_kit 的 Item 列表。"""
     import geo_kit as G
     import hw_kind
+    import hw_omit
     from en_entries import ENTRIES
 
     names = {e["n"] for e in ENTRIES}
@@ -585,6 +586,12 @@ def en_items():
             if f.get("eg"):
                 body += "\ne.g. " + f["eg"]
             blocks.append(("The parts \u00b7 %s" % f.get("n", ""), body))
+        # 和中文同一条体例：典籍/研究要说清我们不取哪一部分，位置在
+        # 「今天怎么用」之前。文案在 seo/hw_omit.py 里中英成对放，
+        # 分开放两个文件的下场是一边改了另一边不知道。
+        _omit = hw_omit.en_by_slug(e["slug"])
+        if _omit:
+            blocks.append(("Q: What part do we leave out?", _omit))
         if e.get("apply"):
             blocks.append(("Q: How do I use it today?", e["apply"]))
         if e.get("q"):

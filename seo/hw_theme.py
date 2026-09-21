@@ -347,6 +347,15 @@ def _is_after(h):
     return "\u540e\u6765" in h or "actually happened" in h
 
 
+def _is_omit(h):
+    """「哪一部分我们没有取」那一段。
+
+    它必须跟着 apply / after 一起排除在就地加重之外：从一段「我们不取 X」
+    里抽金句，抽出来的正好是我们刚声明不取的那句话，还给它标了红。
+    """
+    return "\u6ca1\u6709\u53d6" in h or "leave out" in h
+
+
 def _eg_body(p):
     """是不是「例」那一行；是就返回例子本身，不是就返回 None。"""
     for mark in ("\u4f8b\uff1a", "\u4f8b:", "e.g. ", "e.g.: "):
@@ -490,7 +499,8 @@ def _render_blocks(it, zh):
         # 「后来怎么了？」整段本来就是提炼过的短句（fail 一段 + 教训三条），
         # 从一个全是金句的段落里再抽金句，抽出来的是把三条教训连成的一串，
         # 紧跟在它们下面重念一遍。和「今天怎么用」同理，排除。
-        if klass == "sec" and not _is_apply(h) and not _is_after(h):
+        if klass == "sec" and not _is_apply(h) and not _is_after(h) \
+                and not _is_omit(h):
             si = len(slots)
             slots.append(len(html))
             whole = "".join(paras)
