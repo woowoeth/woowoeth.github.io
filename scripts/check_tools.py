@@ -37,7 +37,16 @@ SITE = "https://ourword.ai"
 # 走 API 不走 raw：raw.githubusercontent.com 有 CDN 缓存（约五分钟），
 # 刚推完去读会读到旧的那一份 —— 判据于是报「镜像没跟上」，而镜像其实是对的。
 # 2026-09-21 第一次跑这道闸就撞上了。**一个读缓存的判据，量的是缓存，不是那个东西。**
-MIRROR_API = "https://api.github.com/repos/woowoeth/ourword-skills/contents"
+# 两个镜像仓：目录站和爬虫收录的单位是「一个仓库」，而这两样都埋在
+# 一个 230 MB 网站仓的子目录里，它们认不出来。真源永远是这里。
+# (镜像仓, 镜像里的路径, 主仓里的路径)
+MIRRORS = (
+    [("woowoeth/ourword-skills", "%s/SKILL.md" % d, "tools/skill/%s/SKILL.md" % d)
+     for d in ("ourword", "ourword-en")]
+    + [("woowoeth/ourword-mcp", f, "tools/mcp/%s" % f)
+       for f in ("ourword_mcp.py", "pyproject.toml", "README.md",
+                 "LICENSE", "Dockerfile", "server.json")]
+)
 # 这几句删了这件东西就变质，所以盯着它们（品味标准的第一个信号：肯拦住自己）
 HARD = ["只用库里真有的", "指回原文", "不做医疗、法律、金融的个人建议", "紧急求助"]
 # 英文那份不是中文这份的译文（SKILL.md 自己最后一条边界就写着不许直译），
@@ -158,42 +167,70 @@ def check_mcp(bad):
 
 
 def check_mirror(bad):
-    """镜像仓里的两份 SKILL.md，必须等于**已经推上去的**那一版。
+    """两个镜像仓里的每个文件，必须等于**已经推上去的**那一版。
 
-    比的是 origin/main 上的那一份，不是工作区 —— 本地改了还没推的时候，
-    镜像当然对不上，那不是镜像的错。这样这道闸量的才是「对外那份是不是最新的」。
+    比的是 git blob SHA，不是文件内容：GitHub 的 trees API 一次返回整个仓所有
+    文件的 blob SHA，`git rev-parse origin/main:<路径>` 给出本地同一个算法的 SHA，
+    两边直接对。**一个镜像仓一次调用**，八个文件也是一次 —— 第一版逐个文件取内容，
+    匿名 API 每小时 60 次的限额跑几轮自检就见底，闸于是靠「跳过」变绿。
+
+    比 origin/main 不比工作区：本地改了还没推的时候镜像当然对不上，那不是镜像的错。
+    走 API 不走 raw：raw 有约五分钟 CDN 缓存，刚推完读到旧的，判据会误报（#43）。
     """
-    for d in ("ourword", "ourword-en"):
-        rel = "tools/skill/%s/SKILL.md" % d
-        local = open(os.path.join(ROOT, rel), encoding="utf-8").read()
+    by_repo = {}
+    for repo, mpath, rel in MIRRORS:
+        by_repo.setdefault(repo, []).append((mpath, rel))
+    for repo, files in by_repo.items():
+        want = {}
+        for mpath, rel in files:
+            local = open(os.path.join(ROOT, rel), "rb").read()
+            r = subprocess.run(["git", "rev-parse", "origin/main:" + rel], cwd=ROOT,
+                               capture_output=True, text=True, timeout=60)
+            if r.returncode != 0:
+                continue                       # 还没推过，没得比
+            pushed_sha = r.stdout.strip()
+            local_sha = subprocess.run(["git", "hash-object", "--stdin"], cwd=ROOT,
+                                       input=local, capture_output=True,
+                                       timeout=60).stdout.decode().strip()
+            if local_sha != pushed_sha:
+                continue                       # 本地有没推的改动
+            want[mpath] = pushed_sha
+        if not want:
+            continue
+        path = "repos/%s/git/trees/main?recursive=1" % repo
+        tree = None
+        # 有 gh 就走 gh：匿名额度只有 60 次/小时，跑两轮自检就见底，
+        # 闸于是靠「跳过」变绿 —— 一道大部分时候在跳过的闸不算闸。
+        # 登录后是 5000 次/小时。没有 gh 时退回匿名，限流就明说跳过。
         try:
-            pushed = subprocess.run(["git", "show", "origin/main:" + rel], cwd=ROOT,
-                                    capture_output=True, text=True, timeout=60)
-            if pushed.returncode != 0:
-                continue                       # 还没推过这个文件，没得比
-            pushed = pushed.stdout
+            r = subprocess.run(["gh", "api", path], cwd=ROOT, capture_output=True,
+                               text=True, timeout=60)
+            if r.returncode == 0:
+                tree = json.loads(r.stdout)
         except Exception:
-            continue
-        if pushed != local:
-            continue                           # 本地有没推的改动，不是镜像的问题
-        try:
-            req = urllib.request.Request(
-                "%s/%s/SKILL.md" % (MIRROR_API, d),
-                headers={"Accept": "application/vnd.github.raw",
-                         "User-Agent": "ourword-gate"})
-            got = urllib.request.urlopen(req, timeout=20).read().decode("utf-8")
-        except urllib.error.HTTPError as e:
-            if e.code in (403, 429):                 # 匿名调用被限流，不是镜像的错
-                print("  （GitHub API 限流，镜像那条跳过）")
-                return
-            bad.append("镜像仓取不到 %s/SKILL.md：%s" % (d, e))
-            continue
-        except Exception as e:
-            bad.append("镜像仓取不到 %s/SKILL.md：%s" % (d, e))
-            continue
-        if got != pushed:
-            bad.append("镜像仓的 %s/SKILL.md 和主仓 origin/main 对不上 —— 对外那份是旧的。"
-                       "跑一句 `gh workflow run sync.yml -R woowoeth/ourword-skills`" % d)
+            pass
+        if tree is None:
+            try:
+                req = urllib.request.Request(
+                    "https://api.github.com/" + path,
+                    headers={"Accept": "application/vnd.github+json",
+                             "User-Agent": "ourword-gate"})
+                tree = json.loads(urllib.request.urlopen(req, timeout=20).read().decode())
+            except urllib.error.HTTPError as e:
+                if e.code in (403, 429):       # 匿名被限流，不是镜像的错
+                    print("  （GitHub API 限流且没有 gh 可用，镜像那几条跳过）")
+                    return
+                bad.append("镜像仓 %s 读不到文件列表：%s" % (repo, e))
+                continue
+            except Exception as e:
+                bad.append("镜像仓 %s 读不到文件列表：%s" % (repo, e))
+                continue
+        got = dict((x["path"], x.get("sha")) for x in tree.get("tree", []))
+        off = [m for m, sha in want.items() if got.get(m) != sha]
+        if off:
+            bad.append("镜像仓 %s 有 %d 个文件和主仓 origin/main 对不上（%s）"
+                       " —— 对外那份是旧的。跑一句 `gh workflow run sync.yml -R %s`"
+                       % (repo, len(off), "、".join(sorted(off)[:3]), repo))
 
 
 def check_claims(bad):

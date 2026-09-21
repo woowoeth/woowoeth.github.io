@@ -3,9 +3,8 @@
   "name": "io.github.woowoeth/ourword-mcp",
   "description": "403 deep reads on 171 figures and classics across 2,600 years, indexed by the situation you're actually in. Two-level browse instead of keyword search.",
   "repository": {
-    "url": "https://github.com/woowoeth/woowoeth.github.io.git",
-    "source": "github",
-    "subfolder": "tools/mcp"
+    "url": "https://github.com/woowoeth/ourword-mcp.git",
+    "source": "github"
   },
   "version": "0.2.0",
   "packages": [
@@ -14,7 +13,9 @@
       "identifier": "ourword-mcp",
       "version": "0.2.0",
       "runtimeHint": "python",
-      "transport": { "type": "stdio" }
+      "transport": {
+        "type": "stdio"
+      }
     }
   ]
 }

@@ -1212,33 +1212,26 @@ def _false_claim():
 
 
 CHECKTOOLS = os.path.join(HERE, "check_tools.py")
-
-
-def _mirror_stale():
-    """让镜像判据去取另一份文件 —— 等价于「主仓改了、镜像仓没跟上」。
-
-    真的把镜像仓改脏来注入是不行的：那是另一个仓、是对外的，
-    自检不该动仓外的东西。改判据取数的那一端，测的是同一条分支。
-    """
-    def go():
-        t = read(CHECKTOOLS)
-        # 锚点跟着闸走：2026-09-21 把取数从 raw 改成 API（FAILURES #43），
-        # 这个锚点当场失效，自检报的是「用例失效（挑不到注入点）」而不是
-        # 「这条分支是死的」—— 两种情况必须分得清，否则改一次闸就会误判一次。
-        old = '"%s/%s/SKILL.md" % (MIRROR_API, d)'
-        if old not in t:
-            return None
-        write(CHECKTOOLS, t.replace(
-            old, '"%s/%s/SKILL.md" % (MIRROR_API, "ourword" if d == "ourword-en"'
-                 ' else "ourword-en")'))
-        return CHECKTOOLS
-
-    return go
-
-
 PYPROJ = os.path.join(ROOT, "tools", "mcp", "pyproject.toml")
 SKILLEN = os.path.join(ROOT, "tools", "skill", "ourword-en", "SKILL.md")
 
+
+def _mirror_stale():
+    """让判据读回来的内容和主仓差一个字 —— 等价于「镜像没跟上」。
+
+    锚点选在「读回来之后」而不是「怎么拼 URL」：URL 那一处两天之内被改了两次
+    （raw → API，单仓 → 双仓），每次这条注入都当场失效，自检报「用例失效
+    （挑不到注入点）」。**注入点要挂在这道闸的语义上，不是它的实现细节上。**
+    """
+    def go():
+        t = read(CHECKTOOLS)
+        old = 'x.get("sha")'
+        if old not in t:
+            return None
+        write(CHECKTOOLS, t.replace(old, '((x.get("sha") or "") + "drift")', 1))
+        return CHECKTOOLS
+
+    return go
 
 def _version_drift():
     """把 pyproject 的版本号改掉 —— 等价于「改了模块忘了改包」。

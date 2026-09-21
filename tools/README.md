@@ -19,9 +19,11 @@
 
 ```bash
 claude mcp add ourword -- uvx ourword-mcp
-claude mcp add ourword -- uvx --from "git+https://github.com/woowoeth/woowoeth.github.io#subdirectory=tools/mcp" ourword-mcp
+claude mcp add ourword -- uvx --from git+https://github.com/woowoeth/ourword-mcp ourword-mcp
 claude mcp add ourword -- python3 /绝对路径/tools/mcp/ourword_mcp.py
 ```
+
+第二行走的是镜像仓 `woowoeth/ourword-mcp`（实测 7 秒装完）。
 
 ```jsonc
 // Claude Desktop 的 claude_desktop_config.json
@@ -78,6 +80,28 @@ printf '%s\n' \
 curl -s "https://data.jsdelivr.com/v1/stats/packages/gh/woowoeth/woowoeth.github.io?period=month"
 ```
 
+## 两个镜像仓
+
+目录站和爬虫（Glama、PulseMCP、skill 的几家目录）收录的单位是**一个仓库**。
+埋在这个 230 MB 网站仓子目录里的东西，它们认不出来，用户点进去看到的也是网站源码。
+所以各开一个小仓，只放该放的：
+
+| 镜像仓 | 放什么 |
+|---|---|
+| [woowoeth/ourword-mcp](https://github.com/woowoeth/ourword-mcp) | `tools/mcp/` 的六个文件 |
+| [woowoeth/ourword-skills](https://github.com/woowoeth/ourword-skills) | 两份 `SKILL.md` |
+
+**真源永远是这里。** 两个小仓各有一个 workflow 按小时来拉，
+走 GitHub API 不走 raw（raw 有约五分钟 CDN 缓存，主仓刚推完就跑会把旧那份
+当成新的提交上来**并且显示成功** —— FAILURES #43）。
+
+`check_tools` 会逐个文件比对镜像和主仓 `origin/main`，不一样就红并告诉你跑哪句：
+
+```bash
+gh workflow run sync.yml -R woowoeth/ourword-mcp
+gh workflow run sync.yml -R woowoeth/ourword-skills
+```
+
 ## 发版
 
 打 tag `mcp-v*`，`.github/workflows/mcp-release.yml` 自动发 PyPI + 官方 MCP registry。
@@ -90,8 +114,12 @@ Trusted Publisher（owner=woowoeth · repo=woowoeth.github.io · workflow=mcp-re
 
 ## Skill
 
-拷到 `~/.claude/skills/ourword/`（用户级）或项目的 `.claude/skills/ourword/`。
-**目录名必须等于 frontmatter 里的 `name`。**
+```bash
+npx skills add https://github.com/woowoeth/ourword-skills/tree/main/ourword-en
+```
+
+或者手拷到 `~/.claude/skills/ourword/`（用户级）或项目的 `.claude/skills/ourword/`。
+手拷的话，**目录名必须等于 frontmatter 里的 `name`**。
 
 它写死了几条边界，这几条比用法重要：只用库里真有的、每条都要能指回原文、
 检索不到就说没有（**不要用常识补一段**）、不做医疗法律金融的个人建议、

@@ -35,6 +35,12 @@ documented as a fallback, in the tool description the model reads.
 claude mcp add ourword -- uvx ourword-mcp
 ```
 
+Before that lands on PyPI, straight from the repo — same one line:
+
+```bash
+claude mcp add ourword -- uvx --from git+https://github.com/woowoeth/ourword-mcp ourword-mcp
+```
+
 Or from source, no packaging involved — it is one file and the standard library:
 
 ```bash
