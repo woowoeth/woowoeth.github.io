@@ -1,9 +1,9 @@
 # OurWord (OurWord)
 
-> 170 people and books on how the world actually works, across 2,600 years
+> 171 people and books on how the world actually works, across 2,600 years
 > See how people before you handled it.
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 170 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 171 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
 ## Read it
 
@@ -27,11 +27,11 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 - [Strategy and competition](https://ourword.ai/en/t/strategy-and-competition/) — 17
 - [Learning and growth](https://ourword.ai/en/t/learning-and-growth/) — 16
 - [Body and daily life](https://ourword.ai/en/t/body-and-daily-life/) — 14
+- [Family and relationships](https://ourword.ai/en/t/family-and-relationships/) — 14
 - [Qin, Han and the Six Dynasties](https://ourword.ai/en/t/qin-han-and-the-six-dynasties/) — 14
 - [Reading people](https://ourword.ai/en/t/reading-people/) — 14
-- [Family and relationships](https://ourword.ai/en/t/family-and-relationships/) — 13
+- [Medieval](https://ourword.ai/en/t/medieval/) — 13
 - [Early modern](https://ourword.ai/en/t/early-modern/) — 12
-- [Medieval](https://ourword.ai/en/t/medieval/) — 12
 
 <!-- chapters:begin -->
 ## Deep reads
@@ -418,6 +418,9 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [Xunzi · Borrow the horse, don't grow legs](https://ourword.ai/en/i/xunzi/borrow-from-things/): Xunzi · Borrow the horse, don't grow legs — Leverage beats effort. Two people of equal ability, and one of them gets much further. He says the difference is not in the person.
 - [Xunzi · A group is a set of clear lines](https://ourword.ai/en/i/xunzi/division-makes-groups/): Xunzi · A group is a set of clear lines — Headcount without division is a crowd. Slower than an ox and weaker than a tiger, people use both. The one-word answer he gives, and what follows from it.
 - [Xunzi · Heaven runs to its own schedule](https://ourword.ai/en/i/xunzi/constant-heaven/): Xunzi · Heaven runs to its own schedule — Sort the fixed from the movable. Bad year, bad market, bad luck. He closed this exit two thousand years ago, and not by denying the conditions.
+- [Family Instructions for the Yan Clan · They stopped telling you the truth at your end](https://ourword.ai/en/i/yanshi-jiaxun/wind-blows-down/): Family Instructions for the Yan Clan · They stopped telling you the truth at your end — Custom runs downward, and the inch you can move is upstream. Nobody at home tells you anything straight. This chapter says the switch is not on their end of the line.
+- [Family Instructions for the Yan Clan · Love without teaching buries the trouble for later](https://ourword.ai/en/i/yanshi-jiaxun/teach-before-it-sets/): Family Instructions for the Yan Clan · Love without teaching buries the trouble for later — Set the rule while the relationship is still new. You have said it a hundred times and nothing moves. This chapter says the bill was set the time you laughed instead.
+- [Family Instructions for the Yan Clan · Brothers drift apart on their own, and nobody turned bad](https://ourword.ai/en/i/yanshi-jiaxun/brothers-drift-apart/): Family Instructions for the Yan Clan · Brothers drift apart on their own, and nobody turned bad — Once each has his own wife and children, feeling will not hold it. You were raised by the same parents, so how did it get here. This chapter says the decay is structural.
 - [Zeng Guofan · Solid camp, dull fight](https://ourword.ai/en/i/zeng-guofan/solid-camp-dull-fight/): Zeng Guofan · Solid camp, dull fight — A clumsy method that removes the uncertainty. He fought almost no brilliant battles and finished with the army still standing. This asks why the dullest method is the hardest to break.
 - [Zeng Guofan · Watched when nobody is watching](https://ourword.ai/en/i/zeng-guofan/self-watch/): Zeng Guofan · Watched when nobody is watching — The stretch of the day with no observer. He set himself twelve daily disciplines and kept the record for thirty years. This asks why changing yourself is the one item available daily.
 - [Zeng Guofan · Take in widely, employ carefully](https://ourword.ai/en/i/zeng-guofan/recruit-and-test/): Zeng Guofan · Take in widely, employ carefully — Judge people inside real work. A great many provincial governors came out of his staff. This asks how he judged a man before the man had anything to show.
@@ -450,7 +453,7 @@ Cite the individual page URL, not the homepage — each entry page is stable and
 - [AI Bubble Monitor](https://ourword.ai/ai/)
 - [Zouni](https://ourword.ai/zouni/)
 
-## Index (170 entrys)
+## Index (171 entrys)
 
 - [Albert Einstein](https://ourword.ai/en/i/einstein/): Albert Einstein (Germany · 1879–1955) — Imagination. The physicist, and the father of relativity — but the legacy that travels furthest is not a formula, it is a way of working.
 - [Albert O. Hirschman](https://ourword.ai/en/i/hirschman/): Albert O. Hirschman (United States · 1915-2012) — Voice. A German-born American economist. He left Berlin in 1933, fought in Spain in 1936, spent 1940 in Marseille forging papers and finding mountain…
@@ -488,6 +491,7 @@ Cite the individual page URL, not the homepage — each entry page is stable and
 - [Epictetus](https://ourword.ai/en/i/epictetus/): Epictetus (c. AD 55–135 · Rome and Nicopolis) — What is yours, what is not. Born a slave; his owner was Epaphroditus, a secretary to Nero. One leg was lame and stayed lame.
 - [Esther Perel](https://ourword.ai/en/i/perel/): Esther Perel (1958– · Belgium and New York) — Flat isn't broken. Thirty years of couples therapy, nine languages, and a caseload across many cultures. She doesn't work on how to argue — Gottman…
 - [Excellent Sheep](https://ourword.ai/en/i/excellent-sheep/): Excellent Sheep (2014 · William Deresiewicz) — Can clear, can't choose. A critique of elite education by someone who taught at Yale for ten years and sat on admissions.
+- [Family Instructions for the Yan Clan](https://ourword.ai/en/i/yanshi-jiaxun/): Family Instructions for the Yan Clan (China · late sixth century) — Running a household. A manual of household instruction in twenty sections, written for his own sons by Yan Zhitui late in the sixth…
 - [Fan Li](https://ourword.ai/en/i/fan-li/): Fan Li (Spring and Autumn · 536–448 BC) — When to go. The most successful exit in Chinese history. He spent more than twenty years helping the king of Yue climb from hostage to hegemon, and walked…
 - [Feng Dao](https://ourword.ai/en/i/feng-dao/): Feng Dao (Five Dynasties · 882–954) — Serving ten emperors. The hardest man in Chinese history to grade. He held office through the Later Tang, Later Jin, Later Han and Later Zhou, served ten…
 - [Finite and Infinite Games](https://ourword.ai/en/i/finite-and-infinite-games/): Finite and Infinite Games (1986 · James P. Carse) — Win, or keep playing. A slim book by a professor of religious history at New York University: 101 short sections, no argument, only statements.

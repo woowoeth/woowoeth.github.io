@@ -398,6 +398,13 @@ QUOTE_ASKS = {
     "zhu-yuanzhang/delay-the-title": "别人都在抢先，我要不要慢一步。",
     "zhuge-liang/executing-ma-su": "该罚的是我最看重的那个人。",
     "zhuge-liang/longzhong-plan": "我看不出下一步棋该往哪走。",
+    # 颜氏家训
+    "yanshi-jiaxun/wind-blows-down":
+        "家里没人说真话，是从我起的吗。",
+    "yanshi-jiaxun/teach-before-it-sets":
+        "小时候我笑了，现在他不听了。",
+    "yanshi-jiaxun/brothers-drift-apart":
+        "我对外人客气，对家里人最没耐心。",
     # 加里·贝克尔
     "becker/you-are-the-capital":
         "我一直在给钱找出路，没给自己找。",

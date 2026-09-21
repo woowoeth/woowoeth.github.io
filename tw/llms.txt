@@ -1,11 +1,11 @@
 # OurWord (人類世界生存法則)
 
-> 170 people and books on how the world actually works, across 2,600 years
+> 171 people and books on how the world actually works, across 2,600 years
 > 遇到事了，看看以前的人怎麼處理
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 170 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 171 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
-一個關於「世界到底怎麼運轉」的知識庫：戰略、財富、權力、人性、創業，取自 170 位人物與典籍，跨越 2600 年。每一條都寫清楚這個人真正留下的那一個想法、背後的故事、拆開的分則與例子，以及今天怎麼用。
+一個關於「世界到底怎麼運轉」的知識庫：戰略、財富、權力、人性、創業，取自 171 位人物與典籍，跨越 2600 年。每一條都寫清楚這個人真正留下的那一個想法、背後的故事、拆開的分則與例子，以及今天怎麼用。
 
 ## Read it
 
@@ -28,10 +28,10 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 - [謀略與競爭](https://ourword.ai/tw/t/strategy/) — 17
 - [世界如何運轉](https://ourword.ai/tw/t/world/) — 16
 - [學習與成長](https://ourword.ai/tw/t/learning/) — 15
+- [中古](https://ourword.ai/tw/t/medieval/) — 15
+- [家庭與關係](https://ourword.ai/tw/t/family/) — 14
 - [身心與生活](https://ourword.ai/tw/t/living/) — 14
-- [中古](https://ourword.ai/tw/t/medieval/) — 14
 - [識人與相處](https://ourword.ai/tw/t/people/) — 14
-- [家庭與關係](https://ourword.ai/tw/t/family/) — 13
 - [近世](https://ourword.ai/tw/t/early-modern/) — 12
 - [秦漢至魏晉](https://ourword.ai/tw/t/han-wei/) — 12
 
@@ -424,6 +424,9 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [荀子 · 善假於物](https://ourword.ai/tw/i/xunzi/borrow-from-things/): 荀子 · 善假於物——別練身體，去找槓桿。同樣的人，為什麼有的能走很遠？這一篇要回答的是：荀子說答案不在那個人身上。
 - [荀子 · 明分使群](https://ourword.ai/tw/i/xunzi/division-makes-groups/): 荀子 · 明分使群——人靠分工才結得成群。人比牛慢、比虎弱，為什麼反過來能用它們？這一篇要回答的是：荀子給的那個單字答案。
 - [荀子 · 天行有常](https://ourword.ai/tw/i/xunzi/constant-heaven/): 荀子 · 天行有常——分開不可控與可控。生意不好怪大環境，這是常態。這一篇要回答的是：荀子兩千年前就把這條路堵死了。
+- [顏氏家訓 · 他們不說真話，是從你這一頭起的](https://ourword.ai/tw/i/yanshi-jiaxun/wind-blows-down/): 顏氏家訓 · 他們不說真話，是從你這一頭起的——風化自上而行，能改的那一寸在上游。家裡沒人跟我說實話，我該換個什麼問法。這一篇要回答的是：這件事的開關不在他們那一頭。
+- [顏氏家訓 · 有愛沒有教，是替他把將來的禍埋好](https://ourword.ai/tw/i/yanshi-jiaxun/teach-before-it-sets/): 顏氏家訓 · 有愛沒有教，是替他把將來的禍埋好——規矩要趁關係還新的時候立。同一件事我說過多少遍了，他還是不動。這一篇要回答的是：不是你管得太多，是某一次該板臉的時候你笑了。
+- [顏氏家訓 · 親兄弟會自己變遠，這不是誰變壞了](https://ourword.ai/tw/i/yanshi-jiaxun/brothers-drift-apart/): 顏氏家訓 · 親兄弟會自己變遠，這不是誰變壞了——各妻其妻、各子其子之後，靠感情是靠不住的。都是一個爹媽生的，怎麼就走到今天這樣。這一篇要回答的是：這層關係本來就會衰減，得當成安排來辦。
 - [曾國藩 · 結硬寨，打呆仗](https://ourword.ai/tw/i/zeng-guofan/solid-camp-dull-fight/): 曾國藩 · 結硬寨，打呆仗——用笨辦法消滅不確定。他一生沒打過幾場漂亮仗，卻把一支臨時拼起來的團練帶到了最後。這一篇要回答的是：為什麼最笨的打法反而最難被擊敗。
 - [曾國藩 · 慎獨與日課](https://ourword.ai/tw/i/zeng-guofan/self-watch/): 曾國藩 · 慎獨與日課——沒人看著時的那一段。他給自己定了十二條日課，一天不落地記了三十年。這一篇要回答的是：為什麼改自己是唯一一件天天都能做的事。
 - [曾國藩 · 廣收慎用](https://ourword.ai/tw/i/zeng-guofan/recruit-and-test/): 曾國藩 · 廣收慎用——在真事裡看人。他的幕府出過一大批督撫。這一篇要回答的是：怎麼在一個人還沒做出成績之前判斷他能不能用。
@@ -456,7 +459,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [AI Bubble Monitor / AI 泡沫檢測儀](https://ourword.ai/ai/)
 - [Zouni / 走你](https://ourword.ai/zouni/)
 
-## Index (170 entrys)
+## Index (171 entrys)
 
 - [BJ·福格](https://ourword.ai/tw/i/bj-fogg/): BJ·福格（2019年·斯坦福行為設計實驗室）——小到不會失敗。斯坦福行為設計實驗室創始人，研究行為如何被設計出來。他給出一個公式：行為發生需要動機、能力、提示三者同時到位。多數人失敗在只調動機——靠決心和自我激勵——而動機天然起伏，靠它維持的習慣必然崩。他的主張相反：把行為縮到小得不需要動機，然後掛在一個已有的動作後面。
 - [C.S.劉易斯](https://ourword.ai/tw/i/cs-lewis/): C.S.劉易斯（1898-1963年·英國牛津）——妻子死後幾個月的日記。作家，牛津和劍橋的教授，寫過《納尼亞傳奇》和大量勸人信仰的書。五十八歲結婚，妻子喬伊四年後因癌症去世。之後幾個月他在四本練習簿上記自己的狀態，後來用筆名出版，就是《卿卿如晤》。收他是因為「重要的人走了」那六個問題，原來靠弗蘭克爾和蘇軾在答——一個是集中營的倖存者，一個是被貶的官員
@@ -622,6 +625,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [韓信](https://ourword.ai/tw/i/han-xin/): 韓信（漢·前231-前196）——復盤。中國歷史上最天才的軍事家。胯下之辱，背水一戰，十面埋伏——每一個都是教科書。但他的故事有兩面：軍事天才的崛起，和政治白痴的毀滅。
 - [韓非子](https://ourword.ai/tw/i/han-feizi/): 韓非子（戰國·前280-前233）——法術勢。法家集大成者，把商鞅的「法」、申不害的「術」、慎到的「勢」整合為一套完整的權力理論。他是中國歷史上最清醒的現實主義者——不談應該怎樣，只談實際上怎樣。他的理論直接為秦始皇統一中國提供了思想基礎。最大的諷刺：他知道所有權術，卻死於同學李斯的讒言。
 - [項羽](https://ourword.ai/tw/i/xiang-yu/): 項羽（楚·前232-前202）——剛。中國歷史上最完美的失敗者。力拔山兮氣蓋世，以一己之力推翻了秦朝——這件事劉邦做不到。但他最終輸給了一個資質普通的沛縣亭長。他的失敗不是能力的失敗，是認知的失敗：他以為戰爭是強者對弱者的碾壓，卻不知道劉邦打的是另一種遊戲——用人的遊戲。
+- [顏氏家訓](https://ourword.ai/tw/i/yanshi-jiaxun/): 顏氏家訓（六世紀末·顏之推）——風化自上而行。南北朝末年顏之推寫給子孫的一部家訓，二十篇，從教子、兄弟、後娶、治家一直寫到讀書、處世、養生。顏之推生於531年，一輩子仕歷梁、北齊、北周、隋：554年西魏破江陵，他二十三歲被俘往關中，後來趕上河水暴漲，弄到一條船帶著妻兒順流逃奔北齊，路上遇險。他的家跟著幾個朝代一起搬過、散過，
 - [馬可·奧勒留](https://ourword.ai/tw/i/marcus-aurelius/): 馬可·奧勒留（羅馬·121-180）——剋制。羅馬皇帝，斯多葛哲學的最高實踐者。他是人類歷史上權力最大的人之一——羅馬帝國皇帝，管轄六千萬人，坐擁無限財富。但他每天寫的筆記，是提醒自己「不要被權力腐化」的私人日記，從未打算出版。這本筆記後來叫《沉思錄》，成為歷史上最多領導人隨身攜帶的書。一個手握一切的人，把全部精力用來管控自
 - [馬基雅維利](https://ourword.ai/tw/i/machiavelli/): 馬基雅維利（意大利·1469-1527）——現實。文藝復興時期佛羅倫薩的外交官，《君主論》作者。他不是在教人變壞，他是第一個把政治從道德裡剝離出來、單獨研究的人。「馬基雅維利主義」成了「不擇手段」的代名詞，但他的原意更復雜：他研究的是權力的真實運作規律，不管你喜不喜歡這些規律，它們都在運作。他的洞察和韓非子跨越兩千年高度吻合——
 - [馬斯克](https://ourword.ai/tw/i/musk/): 馬斯克（當代·1971-）——第一性原理。PayPal聯合創始人，特斯拉、SpaceX、Neuralink、X聯合創始人或創始人。他的方法論只有一個：回到物理原點，重新推演一切。別人覺得不可能的事，他先問：物理定律允許嗎？如果允許，那「不可能」只是工程問題。

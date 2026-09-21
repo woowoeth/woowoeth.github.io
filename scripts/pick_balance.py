@@ -36,6 +36,7 @@ STREAK = 3        # 连续几条同一侧就算偏
 # 《薄伽梵歌》《枪炮病菌与钢铁》都归「外」，日本、印度、阿拉伯也归「外」：
 # 这张表分的是「中文读者自己的传统」和「别人的传统」，两侧都该有人。
 CN = {
+    "yanshi-jiaxun",
     "analects", "bai-gui", "caigentan", "cao-cao",
     "chu-shijian", "du-fu", "fan-li", "feng-dao", "guan-zhong", "guiguzi",
     "guo-jia", "guo-ziyi", "han-feizi", "han-xin", "hu-xueyan", "huineng",

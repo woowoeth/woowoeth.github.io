@@ -980,6 +980,8 @@ SCENES = [
      [("xunzi", "borrow-from-things"), ("montessori", "prepared-environment")]),
     ("孩子在学校被人欺负了。",
      [("thomas-gordon", "problem-ownership"), ("montessori", "prepared-environment")]),
+    ("小时候我笑了，现在他不听了。",
+     [("yanshi-jiaxun", "teach-before-it-sets")]),
 ]),
 ("孩子不说话", "家里的事", [
     ("他什么都不跟我讲了。",
@@ -990,6 +992,8 @@ SCENES = [
      [("thomas-gordon", "problem-ownership"), ("satir", "iceberg")]),
     ("我一开口，他就把门关上了。",
      [("nonviolent-communication", "observation-not-evaluation"), ("carl-rogers", "reflective-listening")]),
+    ("我要他坦白，自己却从不认错。",
+     [("yanshi-jiaxun", "wind-blows-down")]),
 ]),
 ("被家人的情绪裹着", "家里的事", [
     ("家里一有事，我整个人就乱了。",
@@ -1000,6 +1004,8 @@ SCENES = [
      [("bowen", "differentiation"), ("satir", "coping-stances")]),
     ("一到家里，我就变成另一个人。",
      [("satir", "coping-stances"), ("attachment-theory", "secure-base")]),
+    ("我对外人客气，对家里人最没耐心。",
+     [("yanshi-jiaxun", "brothers-drift-apart")]),
 ]),
 ("父母催得紧", "家里的事", [
     ("我每次回家都要吵一轮。",
@@ -1022,6 +1028,8 @@ SCENES = [
      [("crucial-conversations", "safety-first"), ("strategies-of-the-warring-states", "three-mirrors")]),
     ("我问了，他们还是说没事。",
      [("carl-rogers", "reflective-listening"), ("socrates", "midwifery")]),
+    ("家里没人说真话，是从我起的吗。",
+     [("yanshi-jiaxun", "wind-blows-down")]),
 ]),
 ("家里的活没人算", "家里的事", [
     ("我做的这些，好像不算数。",
@@ -1046,6 +1054,8 @@ SCENES = [
      [("kleinman", "caring-when-curing-fails"), ("frankl", "the-last-freedom")]),
     ("照顾了两年，我自己先垮了。",
      [("kleinman", "caring-when-curing-fails"), ("hochschild", "emotional-labor")]),
+    ("爸妈的事，兄弟几个我叫不动。",
+     [("yanshi-jiaxun", "brothers-drift-apart")]),
 ]),
 ("被背叛了", "家里的事", [
     ("他背着我做了那件事。",

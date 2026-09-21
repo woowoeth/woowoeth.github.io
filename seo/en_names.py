@@ -69,6 +69,7 @@ NAMES = {
     "analects": ("The Analects", "Reading people"),
     "art-of-worldly-wisdom": ("The Art of Worldly Wisdom", "Reading people"),
     "caigentan": ("Tending the Roots of Wisdom", "Reading people"),
+    "yanshi-jiaxun": ("Family Instructions for the Yan Clan", "Family and relationships"),
     "chris-voss": ("Chris Voss", "Reading people"),
     "crowd": ("The Crowd", "Reading people"),
     "gandhi": ("Gandhi", "Reading people"),

@@ -1,7 +1,7 @@
-# OurWord — 170 people and books on how the world actually works, across 2,600 years
+# OurWord — 171 people and books on how the world actually works, across 2,600 years
 # OurWord — See how people before you handled it.
 # https://ourword.ai/en/
-# Full corpus, plain text. 170 entrys.
+# Full corpus, plain text. 171 entrys.
 
 ========================================================================
 ## Albert Einstein
@@ -112,10 +112,10 @@ The next time a relationship is hurting, run the separation first: who finally p
 Whoever finally pays for the outcome owns the task. What other people think of you is their task, not yours. We are not determined by our experiences, but by the meanings we give them.
 
 ### Q: What should I read alongside?
-Thomas Gordon — Two ways of asking whose problem this is: Gordon's answer picks the method, Adler's decides whether it is yours to touch at all. Epictetus — The same cut two thousand years apart — what is up to me and what is not, against my task and your task. Brené Brown — Both are working on what other people think of me: Adler says it is their task and not yours, Brown says it is a mechanism that can be taken apart — one draws a boundary, the other dismantles a structure. Attachment Theory — Two routes into the same trouble: Adler asks what you are using it for, attachment asks how the template got built. Murray Bowen — Two knives for drawing a line: Adler asks whose task this is, Bowen asks whether their feeling has already got inside you.
+Thomas Gordon — Two ways of asking whose problem this is: Gordon's answer picks the method, Adler's decides whether it is yours to touch at all. Epictetus — The same cut two thousand years apart — what is up to me and what is not, against my task and your task. Brené Brown — Both are working on what other people think of me: Adler says it is their task and not yours, Brown says it is a mechanism that can be taken apart — one draws a boundary, the other dismantles a structure. Attachment Theory — Two routes into the same trouble: Adler asks what you are using it for, attachment asks how the template got built. Murray Bowen — Two knives for drawing a line: Adler asks whose task this is, Bowen asks whether their feeling has already got inside you. Family Instructions for the Yan Clan — Both draw a boundary: Adler says it is his task, stay out of it and get on with your own life, while Yan Zhitui says an unkind father gets an unfilial son, so the upstream half is permanently in your name and you fill in that column before discussing anyone else.
 
 ### Further
-Attachment Theory Carl Rogers Viktor Frankl Epictetus Nonviolent Communication Brené Brown Kristin Neff Murray Bowen
+Attachment Theory Carl Rogers Viktor Frankl Epictetus Nonviolent Communication Brené Brown Kristin Neff Murray Bowen Family Instructions for the Yan Clan
 
 ========================================================================
 ## Anders Ericsson
@@ -846,7 +846,7 @@ To get the truth out of someone, first make sure that telling it cannot cost the
 When I accept myself just as I am, then I can change. If I can listen to what he tells me, I can help him. What I am is good enough if I would only be it openly.
 
 ### Q: What should I read alongside?
-Thomas Gordon — Teacher and student: Rogers set the condition, Gordon turned it into three sentences an ordinary parent could say. Socrates — Two ways of making somebody find their own answer: Socrates presses with questions, Rogers removes the conditions. Brené Brown — Rogers supplies the environmental condition, unconditional positive regard; Brown supplies the move the person in the chair can make for themselves. Arthur Kleinman — Both start by understanding the other person's world: Rogers gets there by reflecting back until they nod, Kleinman by eight specific questions.
+Thomas Gordon — Teacher and student: Rogers set the condition, Gordon turned it into three sentences an ordinary parent could say. Socrates — Two ways of making somebody find their own answer: Socrates presses with questions, Rogers removes the conditions. Brené Brown — Rogers supplies the environmental condition, unconditional positive regard; Brown supplies the move the person in the chair can make for themselves. Arthur Kleinman — Both start by understanding the other person's world: Rogers gets there by reflecting back until they nod, Kleinman by eight specific questions. Family Instructions for the Yan Clan — Both answer why nobody speaks: Rogers works inside the conversation, receiving the person without conditions so that it becomes safe to talk, while Yan Zhitui says the silence was set earlier and higher up, and points at the standing pattern rather than this exchange.
 
 ### Further
 Thomas Gordon Nonviolent Communication Alfred Adler Virginia Satir Brené Brown Arthur Kleinman Attachment Theory Crucial Conversations
@@ -1313,6 +1313,46 @@ Pu Songling — Two ways of having no scoreboard: they were never given one, he 
 
 ### Further
 Pu Songling Carol Dweck Carl Jung Fukuzawa Yukichi
+
+========================================================================
+## Family Instructions for the Yan Clan
+URL: https://ourword.ai/en/i/yanshi-jiaxun/
+Tags: Family and relationships, Medieval, Running a household
+
+Family Instructions for the Yan Clan (China · late sixth century) — Running a household. A manual of household instruction in twenty sections, written for his own sons by Yan Zhitui late in the sixth century: teaching children, brothers, remarriage, running…
+
+### Q: What did this one leave behind?
+A manual of household instruction in twenty sections, written for his own sons by Yan Zhitui late in the sixth century: teaching children, brothers, remarriage, running a house, study, conduct, health. Born in 531, he served Liang, Northern Qi, Northern Zhou and Sui. When Western Wei took Jiangling in 554 he was twenty-three and was carried off to Guanzhong; later, on a sudden flood, he got hold of a boat and ran his wife and children downriver to Northern Qi. His own household moved and broke up with each fallen dynasty, so the book argues nothing grand. It asks how a household keeps from collapsing: where the rules start, how long it stays cheap to set one, and why brothers drift apart by themselves. What makes it unusual is that it treats a family as something to be governed rather than something feeling runs on its own.
+
+### Q: What actually happened?
+The preface says plainly why the book exists. Sincerity, filial duty, guarding your speech, making a name - the sages set all of it down long ago, and the writers since have only built a house under a house and a bed on top of a bed. He writes it again for one reason: the same words are believed according to who says them, and the same instruction is followed according to whom the hearer already respects. To stop a child's wild play, a tutor's warning is worth less than the nurse's word. So the book never rises above the floor it is standing on. It is specific enough to act on: how to return a borrowed book, how tight the household money should be, at what age a child can no longer be left to please himself.
+
+### The parts · He did not want to write another book of sages
+The preface concedes the ground is covered and that writing it again is a house built under a house. His reason is not the content but the relation: the same advice is refused from a stranger and taken from someone already respected. He is after his own gate, not the world. e.g. The same suggestion moves nobody from a colleague and moves the room from you.
+
+### The parts · Custom travels downward
+The household chapter opens on direction rather than rules: custom runs from those above to those below and from the earlier to the later, so an unkind father gets an unfilial son. The reverse clause matters as much - once the senior side has done its part, instruction is no longer the tool. e.g. Before asking why no bad news reaches you, recall your face the last time some did.
+
+### The parts · Teach the wife on arrival, the child in infancy
+He had seen too many houses with affection and no instruction: what should be warned is rewarded, what should be rebuked is laughed at. Return once arrogance has set and force buys nothing. What he wants is severity and kindness in the same hand. e.g. What you laughed off when the child was three becomes a hard fight at thirteen.
+
+### The parts · Brothers cool on their own
+Sharing a table and handing clothes down, they could not fail to love each other; with a wife and children each, they could not fail to cool. He treats this as structure and not as character, so his remedy is not a lament but settling things early. e.g. While your parents are alive, put who pays and who turns up on the table.
+
+### The parts · Frugal yes, mean no
+He draws a line inside thrift: to be frugal is to economise according to propriety, to be mean is to withhold from someone in urgent need. Give without extravagance and save without meanness. The same money splits into being hard on yourself and hard on others. e.g. The house that counts every coin is often first to be unavailable when a friend needs one.
+
+### Q: How do I use it today?
+If nobody at home or on your team has told you anything unwelcome for a long time, do not start by changing your question. Recall the last time someone did, and what your face did in the first three seconds. He puts the direction upstream, and the inch you can move is at your end. Then take the children: list two things you laughed off in the past month and decide whether each was harmless or whether you were writing a bill for later. His variable is timing rather than force - one sentence does it while the window is open and nothing does it afterwards. Then take the brothers and sisters: while your parents are still alive, get who pays, who turns up and where the old people will live onto the table. On his account the warmth cools by itself once each of you has a household, which is nobody turning bad, and is exactly why feeling cannot be left to hold it.
+
+### Lines to keep
+Custom runs downward, and downstream fixes spring back. The time you laughed instead is the bill that arrives later. Once each has a household, cooling is the default. Frugal is hard on yourself; mean is hard on others in need.
+
+### Q: What should I read alongside?
+Alfred Adler — Both draw a boundary: Adler says it is his task, stay out of it and get on with your own life, while Yan Zhitui says an unkind father gets an unfilial son, so the upstream half is permanently in your name and you fill in that column before discussing anyone else. Carl Rogers — Both answer why nobody speaks: Rogers works inside the conversation, receiving the person without conditions so that it becomes safe to talk, while Yan Zhitui says the silence was set earlier and higher up, and points at the standing pattern rather than this exchange.
+
+### Further
+The Analects Mencius Zeng Guofan Virginia Satir Alfred Adler
 
 ========================================================================
 ## Fan Li
@@ -3347,7 +3387,7 @@ The people come first, the altars of the state next, the ruler last. He who has 
 Han Feizi — Both are writing about how to govern. Han Feizi trusts reward and punishment; Mencius asks whether people are still willing to follow you at all. The Analects — The Analects tells a gentleman how to conduct himself; Mencius tells a ruler what will remove him. Xunzi — One holds that people can be taught, the other that people can be shaped. Mencius cultivates; Xunzi processes.
 
 ### Further
-The Analects Han Feizi Shang Yang Li Shimin Lee Kuan Yew Xunzi
+The Analects Han Feizi Shang Yang Li Shimin Lee Kuan Yew Xunzi Family Instructions for the Yan Clan
 
 ========================================================================
 ## Mihaly Csikszentmihalyi
@@ -5071,7 +5111,7 @@ Knowing what you know and what you do not: that is knowledge. See what he does. 
 Tao Te Ching — The two main lines of Chinese thought: Confucius adds — cultivate, practise, take part — where Laozi subtracts. Neither is complete without the other. Socrates — Near contemporaries who both taught by asking rather than telling, and both paid for holding a position against the people in power. Mencius — The Analects tells a gentleman how to conduct himself; Mencius tells a ruler what will remove him. Strategies of the Warring States — Two faces of the same broken age: one on what a person ought to become, the other on how people behaved. Read only one and you end up naive or cynical. Guiguzi — Confucius asks whether a thing should be said at all; Guiguzi asks only how to say it so that it works. The avowed and the suppressed halves of the same tradition. La Rochefoucauld — Confucius holds that self-cultivation leads to benevolence. La Rochefoucauld suspects self-cultivation is only the most sophisticated form self-love has found so far.
 
 ### Further
-Wang Yangming Zeng Guofan Tao Te Ching Socrates Mencius Hannah Arendt
+Wang Yangming Zeng Guofan Tao Te Ching Socrates Mencius Hannah Arendt Family Instructions for the Yan Clan
 
 ========================================================================
 ## The Art of Worldly Wisdom
@@ -5660,7 +5700,7 @@ The problem is not the problem; coping is the problem. Under pressure people pla
 Murray Bowen — Two readings of one family: Bowen tracks differentiation down the generations, Satir works the stance being taken in the room right now. Esther Perel — Both look past the argument on the surface — Perel at what the relationship is missing, Satir at which layer the argument is really on.
 
 ### Further
-Murray Bowen Carl Rogers Attachment Theory Nonviolent Communication
+Murray Bowen Carl Rogers Attachment Theory Nonviolent Communication Family Instructions for the Yan Clan
 
 ========================================================================
 ## Wang Jian
@@ -6030,7 +6070,7 @@ Watchfulness when alone brings peace of mind. Fight without haste: first make it
 Marcus Aurelius — The closest pair East and West: both wrote themselves down every day, and both used the writing to hold themselves in check at the top of their own power. Wang Yangming — Doctrine and practice: Wang built the school of mind, Zeng spent a lifetime executing it. Reaching the insight against grinding it out daily. Li Shimin — Two ways to hold up a mirror. Li Shimin kept Wei Zheng in the room; Zeng Guofan used a journal nobody else read. Feng Dao — Zeng Guofan held an army and cut back his own wings to keep his name; Feng Dao had neither troops nor money and sought only to keep people alive. Ren Zhengfei — The same method a hundred and thirty years apart: build the solid camp and fight the slow fight, no shortcuts, no clever moves, never be beatable before you try to win. Benjamin Franklin — The matched pair of the two hemispheres: both of ordinary natural ability, both forging themselves with a daily ledger — between them the evidence that character is an engineering problem rather than a gift. Brené Brown — Zeng turned self-reproach into a daily discipline; Brown would ask whether that sentence is pointing at the behaviour or at the man writing it. Ray Dalio — The same instrument on two continents: thirty years of diaries and a decade of taped meetings, both aimed at self-deception. Atomic Habits — Both accumulate by small daily acts: Zeng Guofan by a written daily examination of himself, Clear by design that removes the need for one.
 
 ### Further
-Wang Yangming Kazuo Inamori Ray Dalio Zhuge Liang The Analects Li Shimin Feng Dao Guo Ziyi Zhang Juzheng Miyamoto Musashi The Art of Worldly Wisdom Maria Konnikova Ren Zhengfei Marcus Aurelius Benjamin Franklin Hu Xueyan Atomic Habits
+Wang Yangming Kazuo Inamori Ray Dalio Zhuge Liang The Analects Li Shimin Feng Dao Guo Ziyi Zhang Juzheng Miyamoto Musashi The Art of Worldly Wisdom Maria Konnikova Ren Zhengfei Marcus Aurelius Benjamin Franklin Hu Xueyan Atomic Habits Family Instructions for the Yan Clan
 
 ========================================================================
 ## Zhang Juzheng
@@ -18892,6 +18932,125 @@ Where it goes wrong: treating an external condition as an explanation rather tha
 Heaven's course did not persist for Yao nor vanish for Jie.
 Respond with order and it goes well; with disorder, badly.
 Rather than revering heaven, master its workings and use them.
+
+========================================================================
+## Family Instructions for the Yan Clan · They stopped telling you the truth at your end
+URL: https://ourword.ai/en/i/yanshi-jiaxun/wind-blows-down/
+Source: Family Instructions for the Yan Clan, late sixth century - 'Managing a Household', opening passage and the lines on correction lapsing
+Tags: Deep read, Family Instructions for the Yan Clan, Custom runs downward, and the inch you can move is upstream
+
+Nobody at home tells you anything straight. This chapter says the switch is not on their end of the line.
+
+### Q: What actually happened?
+The chapter on running a household does not open with rules. It opens with a direction: custom travels downward and forward, from those above to those below, from those who came first to those who follow. So an unkind father gets an unfilial son, an unfriendly elder brother a rude younger one. Having put the whole account on the senior party, Yan Zhitui at once adds the reverse. If the father was kind and the son is defiant anyway, that is a matter for punishment, not something teaching can move.
+
+### The parts · He turns the arrow round
+The usual question is why they will not speak. His question is who produced this end of it, and when. The opening of the household chapter fixes the order, so 'unkind father, unfilial son' is not a scolding but a causal claim.
+e.g. One honest remark batted down in public, and the next one gets weighed first.
+
+### The parts · He refuses to overstate it
+The reverse follows immediately. Where the senior side has done its part and the junior side is defiant anyway, that belongs to the law rather than to instruction. The clause turns a slogan back into a question you can actually answer.
+e.g. Fill in your own column first, then argue about whether they are impossible.
+
+### The parts · Where the measure lapses, faults show up first
+Another line from the same chapter: drop correction at home and a boy's faults appear at once, while correction applied badly leaves people with nowhere to put hand or foot. He weighs a household on the scale he weighs a state on. Too loose and too tight both fail.
+e.g. The things a household never takes seriously are usually the things that blow up.
+
+### The parts · Almost every tool in your hand is downstream
+Phrase it better, pick the moment, listen more. Those are downstream tools and they spring back. He is pointing upstream: your first reaction to bad news, the remark you shot down in front of other people last week.
+e.g. Same sentence, and your reaction last week decides whether it gets said this week.
+
+### Q: How do I use it today?
+Where you are: nobody at home, or on your team, brings you bad news, and by the time you hear it the thing has broken.
+Ask first: the last time someone told you an unwelcome truth, what did your face do in the first three seconds - not what you concluded afterwards.
+Where it goes wrong: reading it as 'it is all my fault'. The reverse clause exists to stop that. If your end is done and they still say nothing, the problem is not instruction, and what needs changing is the arrangement.
+
+### Lines to keep
+Wind blows down from above, so look at your own end first.
+He is quiet now because of what happened the last time.
+Downstream fixes spring back; the inch that moves is upstream.
+
+========================================================================
+## Family Instructions for the Yan Clan · Love without teaching buries the trouble for later
+URL: https://ourword.ai/en/i/yanshi-jiaxun/teach-before-it-sets/
+Source: Family Instructions for the Yan Clan - 'Teaching Children', on love without instruction, with the households of Lady Wei and the scholar under Emperor Yuan of Liang
+Tags: Deep read, Family Instructions for the Yan Clan, Set the rule while the relationship is still new
+
+You have said it a hundred times and nothing moves. This chapter says the bill was set the time you laughed instead.
+
+### Q: What actually happened?
+Yan Zhitui sets two households side by side. Wang Sengbian's mother, Lady Wei, was severe: her son commanded three thousand men at Pencheng and was past forty, and she beat him still when he fell short. He became a great general. In the other house a brilliant young scholar was indulged by his father. One apt remark and the father told everyone he met and praised it for a year; one wrong act and he covered it over, hoping the boy would mend it himself. By the time that son married and took office, careless speech got him killed.
+
+### The parts · He admits the book is for the middle
+The chapter opens by sorting people: the highest need no teaching, the lowest gain nothing from it, and the ordinary do not know unless taught. He is not writing for prodigies or for lost causes, and in the middle group teaching is the whole difference.
+e.g. 'He is bright, he will work it out' is true of very few people.
+
+### The parts · Love without teaching
+He says he has seen too many houses with affection and no instruction. What should be warned is rewarded, what should be rebuked is laughed at. By the time the child understands anything he assumes the rules always looked like this.
+e.g. What you find charming at three is what you will shout about at thirteen.
+
+### The parts · Once arrogance sets, force buys nothing
+Come back to it after the habit has formed and his verdict is blunt: beat him to death and you hold no authority, while anger and resentment rise together. The cost does not climb evenly. Past that stretch the same thing takes ten times the effort.
+e.g. The same 'no' takes three seconds at two and three months at sixteen.
+
+### The parts · Severity and warmth are one prescription
+His formula is that parents who are stern and also kind get children who are careful and grow up dutiful. Not harsh and not soft: a line that does not move, and a place to come when it hurts. A line alone is fear, a place alone is chaos.
+e.g. Say both on the day you set it: this one is fixed, and come to me when it stings.
+
+### The parts · Uneven love is the expensive kind
+He notes that few parents love their children equally and that it has always been so. The able attract affection, the dull deserve pity, and the parent who favours one means to do him good and does him harm instead.
+e.g. The favourite in the house is often the last to learn how refusal feels.
+
+### Q: How do I use it today?
+Where you are: you have said the same thing many times, he still does not do it, and you have begun to suspect you are simply nagging.
+Ask first: when did this first happen, and what did you do that time - did you close it off on the spot, or laugh and let it pass.
+Where it goes wrong: reading it as a case for hitting children. What he wants is the first half of the pair present, not force, and his variable is timing rather than strength. While the window is open one sentence will do; once it shuts, raising the pressure will not.
+
+### Lines to keep
+Affection without instruction buries the trouble for him to find later.
+Once the window shuts, more force only buys resentment.
+Stern and kind are one prescription; half a dose harms.
+
+========================================================================
+## Family Instructions for the Yan Clan · Brothers drift apart on their own, and nobody turned bad
+URL: https://ourword.ai/en/i/yanshi-jiaxun/brothers-drift-apart/
+Source: Family Instructions for the Yan Clan - 'Brothers', on those who share one form and one breath
+Tags: Deep read, Family Instructions for the Yan Clan, Once each has his own wife and children, feeling will not hold it
+
+You were raised by the same parents, so how did it get here. This chapter says the decay is structural.
+
+### Q: What actually happened?
+Yan Zhitui writes about brothers by starting with childhood: a parent leading one by each hand, one clutching the front of the robe and one the hem, the same table at meals, clothes handed down, lessons taken together, outings shared. Two people raised like that, he says, could not fail to love each other however bad their tempers. Then comes the second half. Once grown, each with his own wife and his own children, they could not fail to cool a little however decent their tempers.
+
+### The parts · Two impossibilities, pointing opposite ways
+Could not fail to love; could not fail to cool. He uses the same construction twice in opposite directions. Nobody turned bad in between; what changed is that each acquired a household. Blaming character finds the wrong cause and therefore the wrong remedy.
+e.g. Your last long conversation was years ago and you never had a row.
+
+### The parts · The people who arrive keep separate books
+Wives of brothers, he says, stand further apart than the brothers do; measuring a close bond by a distant one is a square base under a round lid and will never fit. The later it gets, the less any of it is about two people.
+e.g. An account two brothers settle in a sentence needs other arithmetic between two households.
+
+### The parts · When the parents go, so does the buffer
+Once both parents are dead, he writes, brothers looking at each other should be as form to shadow and sound to echo. That is not sentiment. While the parents lived they absorbed a great deal in the middle; afterwards the brothers settle up directly, and that is when it breaks.
+e.g. Settle what needs settling while the old people are still alive.
+
+### The parts · He follows the collapse all the way down
+Brothers at odds and their sons are not close; sons not close and the cousins grow distant; cousins distant and even the servants turn into enemies. Layer after layer goes, until strangers can walk over you and nobody comes.
+e.g. What one generation left unsaid, the next carries on as not speaking.
+
+### The parts · Gracious to the world, short with your brother
+He puts a question rather than an argument: a man keeps company with the finest people everywhere and is warm to all of them, yet fails in respect towards his own elder brother. How can he manage the many and not the few.
+e.g. The patience you spend on colleagues runs out in the last three steps home.
+
+### Q: How do I use it today?
+Where you are: there are several of you, your parents' care falls on you alone, the others cannot be moved, and you resent it and cannot say so.
+Ask first: how much of 'how did he become like this' is really 'he has a household of his own now' - take that part off the account before working out what is left to discuss.
+Where it goes wrong: reading it as permission to give up because cooling is natural. He argues the opposite. Precisely because it cools by itself, feeling cannot be left to hold it: settle things while the parents are alive, and put the visits in the calendar.
+
+### Lines to keep
+Once each has his own household, staying close is the surprise.
+A matter between brothers is never only between two people.
+The patience left over from strangers is what comes home.
 
 ========================================================================
 ## Zeng Guofan · Solid camp, dull fight

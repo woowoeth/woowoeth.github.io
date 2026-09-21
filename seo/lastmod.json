@@ -1,7 +1,7 @@
 {
  "i/adler/": {
-  "d": "2026-09-01",
-  "h": "b88b6f7946c5fdf6"
+  "d": "2026-09-21",
+  "h": "af7989832df4b61d"
  },
  "i/adler/separation-of-tasks/": {
   "d": "2026-09-01",
@@ -12,8 +12,8 @@
   "h": "831f4df629bf6734"
  },
  "i/analects/": {
-  "d": "2026-09-02",
-  "h": "9d2bc330a1eb5fe0"
+  "d": "2026-09-21",
+  "h": "48c2ee3d791e5d8b"
  },
  "i/analects/harmony-not-sameness/": {
   "d": "2026-08-28",
@@ -1340,8 +1340,8 @@
   "h": "67cb23ea08f9b02c"
  },
  "i/mencius/": {
-  "d": "2026-08-31",
-  "h": "5e8406e037fadbaa"
+  "d": "2026-09-21",
+  "h": "35dbf1b592a778f4"
  },
  "i/mencius/flood-like-qi/": {
   "d": "2026-08-28",
@@ -1384,8 +1384,8 @@
   "h": "377b6284c898b851"
  },
  "i/montessori/": {
-  "d": "2026-09-01",
-  "h": "f18734768de7b610"
+  "d": "2026-09-21",
+  "h": "135bd516f296a00f"
  },
  "i/montessori/help-me-do-it-myself/": {
   "d": "2026-08-30",
@@ -1680,8 +1680,8 @@
   "h": "3308ed8075fbd0bd"
  },
  "i/satir/": {
-  "d": "2026-09-01",
-  "h": "ffefe3d5426c7b18"
+  "d": "2026-09-21",
+  "h": "cb0b03b7b2f2a804"
  },
  "i/satir/coping-stances/": {
   "d": "2026-08-31",
@@ -2167,9 +2167,25 @@
   "d": "2026-08-28",
   "h": "0e60abbcf1f044ae"
  },
+ "i/yanshi-jiaxun/": {
+  "d": "2026-09-21",
+  "h": "21ff939eb35001a8"
+ },
+ "i/yanshi-jiaxun/brothers-drift-apart/": {
+  "d": "2026-09-21",
+  "h": "5fff4cf8aed100a3"
+ },
+ "i/yanshi-jiaxun/teach-before-it-sets/": {
+  "d": "2026-09-21",
+  "h": "d434c7ccd84740ea"
+ },
+ "i/yanshi-jiaxun/wind-blows-down/": {
+  "d": "2026-09-21",
+  "h": "33335ed418d4600a"
+ },
  "i/zeng-guofan/": {
-  "d": "2026-09-01",
-  "h": "4424b4baf040946a"
+  "d": "2026-09-21",
+  "h": "4826ea206fd9d340"
  },
  "i/zeng-guofan/recruit-and-test/": {
   "d": "2026-08-28",
