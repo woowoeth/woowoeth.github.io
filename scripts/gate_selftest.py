@@ -1191,6 +1191,40 @@ def _manifest_relative():
     return go
 
 
+SERVERJSON = os.path.join(ROOT, "tools", "mcp", "server.json")
+
+
+def _site_pointer_gone():
+    """拿掉 server.json 的 websiteUrl —— 收录页上就没有通往网站的那个链接。"""
+    def go():
+        import json as _j
+        d = _j.loads(read(SERVERJSON))
+        if "websiteUrl" not in d:
+            return None
+        d.pop("websiteUrl")
+        write(SERVERJSON, _j.dumps(d, ensure_ascii=False, indent=2) + "\n")
+        return SERVERJSON
+
+    return go
+
+
+def _handoff_gone():
+    """拿掉 read_chapter 的「站上还有」—— 模型会把这 600 字当成全部。
+
+    这是整套东西唯一能把人送到站上的一步，删掉它不会有任何别的地方报错：
+    页面照常在、链接照常给，只是没人再有理由点。
+    """
+    def go():
+        t = read(MCPPY)
+        old = '"\u7ad9\u4e0a\u8fd8\u6709": ON_SITE_MORE[_t(lang, "zh", "en")],'
+        if old not in t:
+            return None
+        write(MCPPY, t.replace(old, ""))
+        return MCPPY
+
+    return go
+
+
 MCPREADME = os.path.join(ROOT, "tools", "mcp", "README.md")
 
 
@@ -1450,6 +1484,10 @@ CASES = [
      "不是站内绝对地址"),
     ("MCP·英文侧随行说明还是中文", "check_tools.py", MCPPY, _en_guidance_zh(),
      "英文侧的随行说明没跟着换"),
+    ("通往网站·registry 上没了链接", "check_tools.py", SERVERJSON, _site_pointer_gone(),
+     "就没有通往网站的那个链接"),
+    ("通往网站·模型不知道页面上有什么", "check_tools.py", MCPPY, _handoff_gone(),
+     "链接就只是个脚注"),
     ("文案·写了句证伪过的话", "check_tools.py", MCPREADME, _false_claim(),
      "站上有人物页和主题页，这句是假的"),
     ("镜像仓·没跟上主仓", "check_tools.py", CHECKTOOLS, _mirror_stale(),

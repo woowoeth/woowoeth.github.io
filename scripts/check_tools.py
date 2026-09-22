@@ -161,6 +161,15 @@ def check_mcp(bad):
     except Exception as e:
         bad.append("read_chapter(%s) 失败：%s" % (u, e))
         return
+    # 通往网站的那条路：模型只看得到你给它的东西。少了「站上还有」，
+    # 它会把这 600 字当成全部，读者就没有理由点进来 —— 而这是这整套东西
+    # 唯一能把人送到站上的一步，删掉它不会有任何别的地方报错。
+    if not o3.get("站上还有"):
+        bad.append("read_chapter 没返回「站上还有」—— 模型不知道页面上有什么，"
+                   "链接就只是个脚注")
+    if not o3.get("原话"):
+        bad.append("read_chapter 没返回「原话」—— Skill 要求引语照抄不改写，"
+                   "不给它就只能凭正文转述")
     if len(o3.get("正文", "")) < 200:
         bad.append("read_chapter(%s) 取不到正文（%d 字）—— browse 给的地址它自己读不了"
                    % (u, len(o3.get("正文", ""))))
@@ -231,6 +240,24 @@ def check_mirror(bad):
             bad.append("镜像仓 %s 有 %d 个文件和主仓 origin/main 对不上（%s）"
                        " —— 对外那份是旧的。跑一句 `gh workflow run sync.yml -R %s`"
                        % (repo, len(off), "、".join(sorted(off)[:3]), repo))
+
+
+def check_site_pointer(bad):
+    """registry 上点进去要能到站。
+
+    `websiteUrl` 是目录站唯一会渲染成「访问网站」那个按钮的字段。
+    没有它，收录页上只有一个 GitHub 链接 —— 人到了目录站却到不了网站。
+    """
+    import json as _j
+    try:
+        d = _j.load(open(SERVERJSON, encoding="utf-8"))
+    except Exception as e:
+        bad.append("server.json 读不了：%s" % e)
+        return
+    if d.get("websiteUrl") != SITE:
+        bad.append("server.json 的 websiteUrl 不是 %s（现在是 %r）—— "
+                   "registry 收录页上就没有通往网站的那个链接"
+                   % (SITE, d.get("websiteUrl")))
 
 
 def check_claims(bad):
@@ -332,6 +359,7 @@ def main():
     check_skill(bad)
     check_version(bad)
     check_claims(bad)
+    check_site_pointer(bad)
     if bad:
         print("\n  MCP / Skill 有问题 %d 处：" % len(bad))
         for b in bad[:8]:
@@ -343,7 +371,8 @@ def main():
         return 0
     print("  MCP：browse 列组 → 进组拿章节 → 照它给的 url 读到正文，"
           "地址都指回站内；中英两份 Skill 的 name 和硬边界都在、英文那份没有汉字；"
-          "模块/pyproject/server.json 三处版本号一致；镜像仓和主仓同步；对外文案里没有证伪过的说法")
+          "模块/pyproject/server.json 三处版本号一致；镜像仓和主仓同步；\n"
+          "      对外文案里没有证伪过的说法；通往网站那条路还在（站上还有 / 原话 / websiteUrl）")
     return 0
 
 

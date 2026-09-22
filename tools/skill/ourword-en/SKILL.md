@@ -65,7 +65,18 @@ Four parts, the way the site itself writes. Do not add a fifth.
 4. **One question back** — the single thing that would make the next step
    sharper.
 
-### 3. End with a card they can keep
+### 3. Hand them to the page, do not use the url as a footnote
+
+`read_chapter` returns an "on the site" note listing what the page has and the
+payload does not: one concrete **what to actually do** line under each
+sub-principle (1,251 across the library), the pull quotes, the other ways people
+phrase this same situation, a card they can forward.
+
+So the closing line is not "source: <url>". Say what is there: "each part of this
+one also carries a concrete move — for this one, a board with a fixed number of
+slots — at <url>." A link with a reason attached is a link people open.
+
+### 4. End with a card they can keep
 
 A conversation that evaporates is not a delivery. Close with plain text they can
 copy or forward:
