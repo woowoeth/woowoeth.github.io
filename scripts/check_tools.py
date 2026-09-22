@@ -18,6 +18,7 @@ import json
 import os
 import re
 import subprocess
+import time
 import sys
 import urllib.error
 import urllib.request
@@ -237,9 +238,26 @@ def check_mirror(bad):
         got = dict((x["path"], x.get("sha")) for x in tree.get("tree", []))
         off = [m for m, sha in want.items() if got.get(m) != sha]
         if off:
-            bad.append("镜像仓 %s 有 %d 个文件和主仓 origin/main 对不上（%s）"
-                       " —— 对外那份是旧的。跑一句 `gh workflow run sync.yml -R %s`"
-                       % (repo, len(off), "、".join(sorted(off)[:3]), repo))
+            # 镜像是**按小时拉**的，所以「刚推完还没同步」不是故障，是契约之内。
+            # 宽限一小时零十分：超了才算真没跟上。
+            # 不给宽限的话，每次改完 tools/ 推上去，这道闸都必然红一小时 ——
+            # 而一道正常操作后必然红的闸，两周内会被学会忽略（FAILURES #43）。
+            newest = 0
+            for mpath, rel in files:
+                r = subprocess.run(["git", "log", "-1", "--format=%ct", "origin/main",
+                                    "--", rel], cwd=ROOT, capture_output=True,
+                                   text=True, timeout=60)
+                if r.returncode == 0 and r.stdout.strip():
+                    newest = max(newest, int(r.stdout.strip()))
+            age = time.time() - newest if newest else 1e9
+            msg = ("镜像仓 %s 有 %d 个文件和主仓 origin/main 对不上（%s）"
+                   % (repo, len(off), "、".join(sorted(off)[:3])))
+            if age < 70 * 60:
+                print("  （%s —— 主仓 %d 分钟前才推，镜像按小时拉，还在宽限内）"
+                      % (msg, age // 60))
+            else:
+                bad.append(msg + " —— 推上去已经 %d 分钟了，对外那份还是旧的。"
+                           "跑一句 `gh workflow run sync.yml -R %s`" % (age // 60, repo))
 
 
 def check_site_pointer(bad):

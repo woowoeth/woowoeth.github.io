@@ -43,11 +43,18 @@ OUT = os.path.join(ROOT, "tw")
 # build_tw 会把 en/ 整棵树当简体内容转一遍塞进 tw/en/ ——「繁体化」英文
 # 是空操作，但地址重写会把姊妹站链接改成 /tw/en/podcast/ 这种不存在的路径。
 SKIP_DIRS = {".git", ".github", "scripts", "seo", "worker", "tests", "node_modules",
-             "__pycache__", "tw", "en", "site", "HumanWorld"}
+             "__pycache__", "tw", "en", "site", "HumanWorld",
+             # tools/ 是给装这套东西的人看的（MCP server、两份 Skill、README），
+             # 不是站点内容。漏在这里的后果：/tw/tools/mcp/server.json 线上 200，
+             # 内容是一份不会再更新的旧 manifest（还写着 403 篇 171 人）。
+             "tools"}
 # 这些根文件不复制（内部文档 / 只对主站有意义的）
 # site.webmanifest 必须复制：页面里写的是相对路径 href="site.webmanifest"，
 # 不复制的话繁体页会去要 /tw/site.webmanifest —— 线上实测 404。
-SKIP_FILES = {"robots.txt", "CNAME"}
+SKIP_FILES = {"robots.txt", "CNAME",
+              # Service Worker 注册的是根上那个 /sw.js（scope 覆盖 /tw/），
+              # 复制一份到 /tw/ 没有任何人会去取，offline.html 同理。
+              "sw.js", "offline.html"}
 TEXT_EXT = {".html", ".js", ".json", ".txt", ".xml", ".css", ".svg", ".webmanifest"}
 # 派生产物里体积大又不带文字的，直接复制不转
 BIN_EXT = {".png", ".jpg", ".jpeg", ".ico", ".woff", ".woff2", ".ttf", ".gif", ".webp"}

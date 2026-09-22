@@ -346,6 +346,18 @@ def _topic_orphans():
 for _p, _why in _topic_orphans():
     bad("话题页成了孤儿", "%s —— %s" % (_p, _why))
 
+# 13) 语言站里不许出现 tools/ —— 那是给装这套东西的人看的开发者材料，不是站点内容。
+#     繁体构建是「把主站整棵树按排除表复制一遍」，排除表里漏一个目录，
+#     漏掉的那部分就会变成一份**永远不会再更新的副本**挂在线上。
+#     2026-09-22 实测 /tw/tools/mcp/server.json 200，里面还写着 403 篇 171 人。
+#     判的是「该不该在这儿」，不是「内容对不对」——内容对不对没人看得见。
+for _lang in ("tw", "en"):
+    _leak = os.path.join(_lang, "tools")
+    if os.path.isdir(_leak):
+        _n = sum(len(f) for _d, _s, f in os.walk(_leak))
+        bad("开发者材料漏进语言站", "%s/ 有 %d 个文件 —— 去 scripts/build_tw.py 的 "
+            "SKIP_DIRS 里加上它，并删掉已经复制出去的" % (_leak, _n))
+
 # 8) 二维码必须仍可解码
 try:
     from PIL import Image

@@ -62,10 +62,8 @@ def recover_pending(quiet=False):
     stale = [l for l in read(MANIFEST).split("\n") if l.strip()]
     done = []
     for path in stale:
-        b = os.path.join(BAK, os.path.basename(path))
-        if os.path.exists(b):
-            shutil.copy2(b, path)
-            done.append(path)
+        if _undo(path):
+            done.append(path[4:] if path.startswith("NEW:") else path)
     os.remove(MANIFEST)
     if done and not quiet:
         print("!! 上一次自检没跑完，%d 个文件还留着注入的缺陷，已还原：" % len(done))
@@ -75,16 +73,41 @@ def recover_pending(quiet=False):
 
 
 def arm(path):
-    """先备份、先写清单，再回来注入 —— 顺序不能反，反了就挡不住 kill。"""
+    """先备份、先写清单，再回来注入 —— 顺序不能反，反了就挡不住 kill。
+
+    有一类注入造的是**本来不存在的文件**（例如「开发者材料漏进繁体站」：
+    缺陷正是「这个文件存在」）。这种在清单里记成 `NEW:<路径>`，
+    还原时删掉它而不是拷回来 —— 原来的写法会在这里直接 FileNotFoundError。
+    """
     os.makedirs(BAK, exist_ok=True)
-    shutil.copy2(path, os.path.join(BAK, os.path.basename(path)))
-    write(MANIFEST, path + "\n")
+    if os.path.exists(path):
+        shutil.copy2(path, os.path.join(BAK, os.path.basename(path)))
+        write(MANIFEST, path + "\n")
+    else:
+        write(MANIFEST, "NEW:" + path + "\n")
+
+
+def _undo(line):
+    """还原一行清单。返回是否真的动了东西。"""
+    if line.startswith("NEW:"):
+        path = line[4:]
+        if os.path.exists(path):
+            os.remove(path)
+        d = os.path.dirname(path)                # 顺手收掉注入造出来的空目录
+        while d.startswith(ROOT) and d != ROOT and os.path.isdir(d) and not os.listdir(d):
+            os.rmdir(d)
+            d = os.path.dirname(d)
+        return True
+    b = os.path.join(BAK, os.path.basename(line))
+    if os.path.exists(b):
+        shutil.copy2(b, line)
+        return True
+    return False
 
 
 def disarm(path):
-    b = os.path.join(BAK, os.path.basename(path))
-    if os.path.exists(b):
-        shutil.copy2(b, path)
+    line = read(MANIFEST).strip() if os.path.exists(MANIFEST) else path
+    _undo(line if line else path)
     if os.path.exists(MANIFEST):
         os.remove(MANIFEST)
 
@@ -1191,6 +1214,26 @@ def _manifest_relative():
     return go
 
 
+TWLEAK = os.path.join(ROOT, "tw", "tools", "mcp", "server.json")
+
+
+def _dev_material_leak():
+    """把开发者材料复制进繁体站 —— 等价于「构建的排除表漏了一个目录」。
+
+    真实发生过：`tools/` 不在 build_tw 的 SKIP_DIRS 里，
+    /tw/tools/mcp/server.json 线上 200，内容是一份永远不会再更新的旧 manifest。
+    """
+    def go():
+        src = os.path.join(ROOT, "tools", "mcp", "server.json")
+        if not os.path.isfile(src):
+            return None
+        os.makedirs(os.path.dirname(TWLEAK), exist_ok=True)
+        shutil.copy2(src, TWLEAK)
+        return TWLEAK
+
+    return go
+
+
 SERVERJSON = os.path.join(ROOT, "tools", "mcp", "server.json")
 
 
@@ -1259,10 +1302,14 @@ def _mirror_stale():
     """
     def go():
         t = read(CHECKTOOLS)
-        old = 'x.get("sha")'
-        if old not in t:
+        # 两处一起改：内容对不上 **且** 宽限窗口关掉。
+        # 只改前者的话，刚推完那一小时里闸只会提示不会红（宽限之内是契约行为），
+        # 注入就被吞了 —— 这条注入要验的是「超过时限还没跟上」那条分支。
+        a, b = 'x.get("sha")', 'if age < 70 * 60:'
+        if a not in t or b not in t:
             return None
-        write(CHECKTOOLS, t.replace(old, '((x.get("sha") or "") + "drift")', 1))
+        t = t.replace(a, '((x.get("sha") or "") + "drift")', 1).replace(b, 'if age < 0:')
+        write(CHECKTOOLS, t)
         return CHECKTOOLS
 
     return go
@@ -1476,6 +1523,8 @@ CASES = [
      "不是仓库里这份"),
     # 前一条在没网时抓不到（那半边闸会自己跳过，和 check_chat_lang 同一条规矩）；
     # 后一条只读本地文件，断网照样要红 —— 断网时两条一起哑才是出了问题。
+    ("开发者材料·漏进繁体站", "check_integrity.py", TWLEAK, _dev_material_leak(),
+     "开发者材料漏进语言站"),
     ("话题页·成了孤儿", "check_integrity.py", SITEMAP, _topic_orphaned(),
      "整页留在磁盘上，却不在 sitemap 里"),
     ("话题桩·跳进 404", "check_integrity.py", STUB, _topic_stub_dangling(),
@@ -1491,7 +1540,7 @@ CASES = [
     ("文案·写了句证伪过的话", "check_tools.py", MCPREADME, _false_claim(),
      "站上有人物页和主题页，这句是假的"),
     ("镜像仓·没跟上主仓", "check_tools.py", CHECKTOOLS, _mirror_stale(),
-     "对外那份是旧的"),
+     "对外那份还是旧的"),
     ("打包·三处版本号飘了", "check_tools.py", PYPROJ, _version_drift(),
      "对不上"),
     ("英文 Skill·被直译了", "check_tools.py", SKILLEN, _en_skill_translated(),
