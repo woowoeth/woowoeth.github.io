@@ -327,21 +327,48 @@ def check_version(bad):
                        % (what, "/".join(sorted(set(got))), v))
 
 
+def _frontmatter_parses(path, bad, who):
+    """frontmatter 必须**真的能被 YAML 解析**，不是「有一行 description:」。
+
+    2026-09-22 英文那份栽在这里：description 里写了「stuck in right now: a boss…」，
+    YAML 里不带引号的标量含 `: ` 就是语法错。`npx skills add <owner>/<repo> --list`
+    只找到 1 个 skill，英文那份**对整个安装通路是隐形的** —— 而 skills.sh 的收录
+    正是靠 npx 的安装遥测。原来的判据用正则查「有没有 description 这一行」，
+    有，所以一直全绿：**量的是「写了没有」，不是「读得通没有」。**
+    """
+    t = open(path, encoding="utf-8").read()
+    m = re.match(r"^---\n(.*?)\n---\n", t, re.S)
+    if not m:
+        bad.append("%s 没有 frontmatter" % who)
+        return None
+    try:
+        import yaml
+    except ImportError:                              # 没装 PyYAML 时退回最常见的那种错
+        line = re.search(r"^description:\s*(.*)$", m.group(1), re.M)
+        v = (line.group(1) if line else "").strip()
+        if ": " in v and not (v[:1] in "\"'" and v[-1:] in "\"'"):
+            bad.append("%s 的 description 里有未加引号的「: 」—— YAML 解析不了"
+                       "（装上 PyYAML 可以直接验）" % who)
+        return None
+    try:
+        return yaml.safe_load(m.group(1)) or {}
+    except Exception as e:
+        bad.append("%s 的 frontmatter 解析不了：%s —— 装它的工具会跳过这份 skill"
+                   % (who, str(e).splitlines()[0]))
+        return None
+
+
 def check_skill(bad):
     if not os.path.isfile(SKILL):
         bad.append("没有 tools/skill/ourword/SKILL.md")
         return
     t = open(SKILL, encoding="utf-8").read()
-    m = re.match(r"^---\n(.*?)\n---\n", t, re.S)
-    if not m:
-        bad.append("SKILL.md 没有 frontmatter")
-    else:
-        fm = m.group(1)
-        nm = re.search(r"^name:\s*(\S+)", fm, re.M)
-        if not nm or nm.group(1) != "ourword":
-            bad.append("SKILL.md 的 name 必须等于目录名 ourword（现在是 %s）"
-                       % (nm.group(1) if nm else "没写"))
-        if not re.search(r"^description:\s*\S", fm, re.M):
+    fm = _frontmatter_parses(SKILL, bad, "SKILL.md")
+    if fm is not None:
+        if fm.get("name") != "ourword":
+            bad.append("SKILL.md 的 name 必须等于目录名 ourword（现在是 %r）"
+                       % fm.get("name"))
+        if not (fm.get("description") or "").strip():
             bad.append("SKILL.md 缺 description —— 没有它，模型不知道什么时候该用")
     for h in HARD:
         if h not in t:
@@ -351,10 +378,10 @@ def check_skill(bad):
         bad.append("没有 tools/skill/ourword-en/SKILL.md —— 英文那份必须单独写")
         return
     te = open(SKILL_EN, encoding="utf-8").read()
-    me = re.match(r"^---\n(.*?)\n---\n", te, re.S)
-    ne = re.search(r"^name:\s*(\S+)", me.group(1), re.M) if me else None
-    if not ne or ne.group(1) != "ourword-en":
-        bad.append("英文 SKILL.md 的 name 必须等于目录名 ourword-en")
+    fme = _frontmatter_parses(SKILL_EN, bad, "英文 SKILL.md")
+    if fme is not None and fme.get("name") != "ourword-en":
+        bad.append("英文 SKILL.md 的 name 必须等于目录名 ourword-en（现在是 %r）"
+                   % fme.get("name"))
     han = re.findall(r"[\u4e00-\u9fff]", te)
     if han:
         bad.append("英文 SKILL.md 里有 %d 个汉字（如 %s）—— 它不是中文那份的译文，"
