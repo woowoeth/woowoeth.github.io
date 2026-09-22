@@ -1,7 +1,7 @@
-# OurWord — 171 people and books on how the world actually works, across 2,600 years
+# OurWord — 172 people and books on how the world actually works, across 2,600 years
 # OurWord — See how people before you handled it.
 # https://ourword.ai/en/
-# Full corpus, plain text. 171 entrys.
+# Full corpus, plain text. 172 entrys.
 
 ========================================================================
 ## Albert Einstein
@@ -1771,7 +1771,7 @@ The mouth is the door of the heart. To hear him speak, be silent. To take, first
 Influence — The same set of human switches, approached from opposite ends: Cialdini runs experiments and teaches you to spot them being pulled, Guiguzi writes the operating manual. The Analects — Confucius asks whether a thing should be said at all; Guiguzi asks only how to say it so that it works. The avowed and the suppressed halves of the same tradition. Nonviolent Communication — Two opposite arts of persuasion: Guiguzi works out what the other side is holding before moving on them, Rosenberg puts both sides' needs on the table in the open.
 
 ### Further
-Strategies of the Warring States Han Feizi Influence The Art of Worldly Wisdom Zhang Liang Chris Voss Nonviolent Communication
+Strategies of the Warring States Han Feizi Influence The Art of Worldly Wisdom Zhang Liang Chris Voss Nonviolent Communication The Annals of Lu Buwei
 
 ========================================================================
 ## Guns, Germs, and Steel
@@ -1919,7 +1919,7 @@ The ruler controls by two handles: punishment and favour. The difficulty of pers
 Zhuangzi — Same era, opposite answers: Han Feizi designs the machine, Zhuangzi declines to be a component. Thomas Gordon — Two theories of getting compliance: rules and consequences, or naming the effect on you. Both work, on different things. John Boyd — Two theories of an organisation that works: rules and consequences, or shared intent and delegated authority. Xunzi — The student pushed the teacher's training argument into a theory of control. Xunzi kept the rites; Han Feizi kept only the handles. Hannah Arendt — Han Feizi asks how to build a system that works without relying on goodness; Arendt asks where obedience inside such a system ends up. One writes from the designer's chair, one from the operator's. Cao Cao — The theory and its practitioner. Han Feizi wrote the system down; cutting his hair in place of his head is that system demonstrated on the man at the top. Mencius — Both are writing about how to govern. Han Feizi trusts reward and punishment; Mencius asks whether people are still willing to follow you at all. Shang Yang — Theory and practice of the same school: Han Feizi wrote the system down, Shang Yang ran it, and both were killed by the thing they had built. Machiavelli — The two closest political realists East and West, seventeen centuries apart: both studied how power actually works, and both were destroyed by the power they studied. Influence — Two systems for moving people: Han Feizi designed law, technique and position two thousand years earlier, Cialdini found six triggers. Both are asking how to make people act as you want. Robert Axelrod — Neither trusts human nature: Han Feizi holds reward and punishment himself so that nobody dares defect, Axelrod lengthens the relationship until nobody needs to - one runs on power, the other on repetition. Liu Yan — Neither counts on people being good: Han Feizi says do not rely on their goodness and rely on law and position instead, while Liu Yan names the particular device - rank and a way up - that makes keeping the rules pay in that seat.
 
 ### Further
-Fan Li Sun Tzu Charlie Munger John Boyd Xunzi Hannah Arendt Cao Cao Guan Zhong Mencius Shang Yang Wu Zetian Zhang Juzheng Zhu Yuanzhang Guo Jia Thomas Schelling Strategies of the Warring States Guiguzi Machiavelli Influence Robert Axelrod Liu Yan
+Fan Li Sun Tzu Charlie Munger John Boyd Xunzi Hannah Arendt Cao Cao Guan Zhong Mencius Shang Yang Wu Zetian Zhang Juzheng Zhu Yuanzhang Guo Jia Thomas Schelling Strategies of the Warring States Guiguzi Machiavelli Influence Robert Axelrod Liu Yan The Annals of Lu Buwei
 
 ========================================================================
 ## Han Xin
@@ -3248,7 +3248,7 @@ When somebody hands you an offer that is hard to refuse and something feels wron
 The con artist does not build trust. He uses the need you already have. What gets used is the wanting, not your judgement. It turns not being conned from a personality into a calendar.
 
 ### Q: What should I read alongside?
-Influence — Cialdini explains how the six devices work, Konnikova explains why the same devices work so well on certain people at certain moments. One studies the weapon, the other the target. Scarcity — Both replace how could they be so stupid with what were they short of: Scarcity is about bandwidth being taken, the con is about wanting being used.
+Influence — Cialdini explains how the six devices work, Konnikova explains why the same devices work so well on certain people at certain moments. One studies the weapon, the other the target. Scarcity — Both replace how could they be so stupid with what were they short of: Scarcity is about bandwidth being taken, the con is about wanting being used. The Annals of Lu Buwei — Both answer why you believed the wrong thing: Konnikova puts the fault in your own moment, since the con artist picks people at a turning point, while the Annals does not discuss con artists at all and says that with nobody lying anywhere a sentence still turns false on the way to you.
 
 ### Further
 Influence The Crowd Scarcity Zeng Guofan Robert Axelrod
@@ -4790,7 +4790,7 @@ There is no tiger in the marketplace, and three men can make one. My wife favour
 Sun Tzu — One states principles that can be taught in public; the other records what was actually said to one man on one day to change his mind. The Analects — Two faces of the same broken age: one on what a person ought to become, the other on how people behaved. Read only one and you end up naive or cynical. Thomas Schelling — Two arts of negotiation: the persuaders change what the other side believes, Schelling changes what the other side can choose.
 
 ### Further
-Sun Tzu Fan Li Records of the Grand Historian Han Feizi Guiguzi Thomas Schelling
+Sun Tzu Fan Li Records of the Grand Historian Han Feizi Guiguzi Thomas Schelling The Annals of Lu Buwei
 
 ========================================================================
 ## Su Shi
@@ -5117,10 +5117,53 @@ Pick the last decision you made that landed on somebody who had no vote in it, a
 Knowing what you know and what you do not: that is knowledge. See what he does. Mark his motives. Examine where he rests. What you do not want done to yourself, do not do to others. The gentleman harmonises without conforming; the small man conforms without harmony.
 
 ### Q: What should I read alongside?
-Tao Te Ching — The two main lines of Chinese thought: Confucius adds — cultivate, practise, take part — where Laozi subtracts. Neither is complete without the other. Socrates — Near contemporaries who both taught by asking rather than telling, and both paid for holding a position against the people in power. Mencius — The Analects tells a gentleman how to conduct himself; Mencius tells a ruler what will remove him. Strategies of the Warring States — Two faces of the same broken age: one on what a person ought to become, the other on how people behaved. Read only one and you end up naive or cynical. Guiguzi — Confucius asks whether a thing should be said at all; Guiguzi asks only how to say it so that it works. The avowed and the suppressed halves of the same tradition. La Rochefoucauld — Confucius holds that self-cultivation leads to benevolence. La Rochefoucauld suspects self-cultivation is only the most sophisticated form self-love has found so far.
+Tao Te Ching — The two main lines of Chinese thought: Confucius adds — cultivate, practise, take part — where Laozi subtracts. Neither is complete without the other. Socrates — Near contemporaries who both taught by asking rather than telling, and both paid for holding a position against the people in power. Mencius — The Analects tells a gentleman how to conduct himself; Mencius tells a ruler what will remove him. Strategies of the Warring States — Two faces of the same broken age: one on what a person ought to become, the other on how people behaved. Read only one and you end up naive or cynical. Guiguzi — Confucius asks whether a thing should be said at all; Guiguzi asks only how to say it so that it works. The avowed and the suppressed halves of the same tradition. La Rochefoucauld — Confucius holds that self-cultivation leads to benevolence. La Rochefoucauld suspects self-cultivation is only the most sophisticated form self-love has found so far. The Annals of Lu Buwei — Both answer how to read a person: the Analects looks backward, at what he has already done, the path he took and what he rests easy in, while the Annals arranges the present, putting him through eight positions and six feelings and watching hardest at the moments when he has nothing to gain.
 
 ### Further
-Wang Yangming Zeng Guofan Tao Te Ching Socrates Mencius Hannah Arendt Family Instructions for the Yan Clan
+Wang Yangming Zeng Guofan Tao Te Ching Socrates Mencius Hannah Arendt Family Instructions for the Yan Clan The Annals of Lu Buwei
+
+========================================================================
+## The Annals of Lu Buwei
+URL: https://ourword.ai/en/i/lushi-chunqiu/
+Tags: Reading people, Pre-Qin and classical, Judging men
+
+The Annals of Lu Buwei (China · c. 239 BCE) — Judging men. A large compendium assembled around 239 BCE by the three thousand retainers of Lu Buwei, chancellor of Qin, in twelve almanacs, eight surveys and six discourses.
+
+### Q: What did this one leave behind?
+A large compendium assembled around 239 BCE by the three thousand retainers of Lu Buwei, chancellor of Qin, in twelve almanacs, eight surveys and six discourses. It is not the work of one school: Confucian, Mohist, Daoist, Legalist, agriculturalist and yin-yang material all sit inside it, which is why it has always been filed under the miscellaneous. The editing is not miscellaneous. The book keeps returning to one set of questions - can this man be used, can this sentence be believed, does this old rule still hold. We take three chapters. 'Judging Men' says to stop reading the impression and move him through eight positions and six feelings, watching above all what he refuses. 'Examining What Is Transmitted' says a sentence deforms as it is passed along, so that with no liar anywhere it still arrives false. 'Examining the Present' says the survey in your hand may have expired, and that expired information looks exactly like live information.
+
+### Q: What actually happened?
+When Lu Buwei became chancellor of Qin, the age was collecting retainers. Wei had the Lord of Xinling, Chu the Lord of Chunshen, Zhao the Lord of Pingyuan, Qi the Lord of Mengchang, and each took pride in the size of his household. Qin was the strongest state and he thought it shameful to be outdone at this, so he gathered three thousand retainers and kept them well. Persuaders were writing books and circulating them, so he had each man set down what he knew, and the pieces were collected into the surveys, discourses and almanacs, some two hundred thousand words, said to contain all matters of heaven, earth and antiquity. Then he hung it at the market gate of Xianyang with a thousand gold pieces on top, for any travelling scholar who could add or remove a single word.
+
+### The parts · The material is mixed; the questions are not
+Three thousand men each wrote what they knew, which is why the book is filed under the miscellaneous school. But the selection was somebody's. The volume keeps coming back to judging: a man, a report, a rule that has outlived its reason. e.g. Given a pile of advice that contradicts itself, ask what each piece answers.
+
+### The parts · Eight observations and six tests
+'Judging Men' gives not a knack but a list of positions: prosperous, watch whom he honours; rich, whom he keeps; poor, what he refuses; low, what he will not do. Then six feelings - delight, pleasure, anger, fear, grief, hardship - each used as a test. e.g. You have only met him in favourable weather, so you hold one sample.
+
+### The parts · Passed along, white turns black
+In 'Examining What Is Transmitted' there is not a liar in the examples. A Song household saying they got the use of one man from a new well becomes a man found down the well; a line about three pigs crossing a river turns out to be a date, misread by one graph. e.g. By the time a message reaches you it has passed through four people.
+
+### The parts · Wading by the old markers
+In 'Examining the Present', Jing marks the fords of the Yong by day, the river rises, and at night the army crosses by those markers and loses more than a thousand drowned. The failure is not missing homework. It is homework that expired while standing perfectly still. e.g. The customer research you ran last year is still what you are quoting.
+
+### The parts · Times shift, so laws should
+Without law a state falls into disorder, and keeping the law unchanged falls into perversity. Like a good doctor: the illness changes ten thousand times, so the medicine changes ten thousand times. Do not copy the law of former kings; ask why it was made. e.g. A rule written for one emergency outlives the emergency by years.
+
+### Q: What part do we leave out?
+We leave out the monthly ordinances and the calamities attached to them, which open each of the twelve Almanacs. 'If in the first month of spring the ordinances of summer are carried out, wind and rain come out of season, plants wither, and the state falls into fear' is a late Warring States cosmology. It neither supports nor is supported by the chapters on how to read a person, how to check something you were told, and how to notice that your own information has expired. Those are what we take.
+
+### Q: How do I use it today?
+If you misread somebody recently, do not start by tightening your standards. Run the subtraction instead: how many different kinds of occasion does your impression of him come from? If they are all one kind, that is not five pieces of evidence, it is one sample repeated five times. The two cheapest entries on the list are what he refuses when short of money and what he will not do from a low seat; neither waits for him to rise and neither costs you anything. Then take whatever report is on your desk: count the hands it passed through, and past two, stop asking who is hiding something and go get the original wording, then reason it against the nature of the thing and the nature of people. Then take the survey you are deciding on: find out when it was gathered and whether anything since would have moved it. Incomplete and out of date are different holes, and the out-of-date one is the one that makes you comfortable.
+
+### Lines to keep
+What he wants is easy to fake; what he refuses is not. A sentence needs no liar to arrive false, only hands. A blank makes you careful; an old file makes you comfortable. No rule fails loudly; an unchanged rule fails late.
+
+### Q: What should I read alongside?
+The Analects — Both answer how to read a person: the Analects looks backward, at what he has already done, the path he took and what he rests easy in, while the Annals arranges the present, putting him through eight positions and six feelings and watching hardest at the moments when he has nothing to gain. Maria Konnikova — Both answer why you believed the wrong thing: Konnikova puts the fault in your own moment, since the con artist picks people at a turning point, while the Annals does not discuss con artists at all and says that with nobody lying anywhere a sentence still turns false on the way to you.
+
+### Further
+The Analects Han Feizi Strategies of the Warring States Guiguzi Zeng Guofan
 
 ========================================================================
 ## The Art of Worldly Wisdom
@@ -6085,7 +6128,7 @@ Watchfulness when alone brings peace of mind. Fight without haste: first make it
 Marcus Aurelius — The closest pair East and West: both wrote themselves down every day, and both used the writing to hold themselves in check at the top of their own power. Wang Yangming — Doctrine and practice: Wang built the school of mind, Zeng spent a lifetime executing it. Reaching the insight against grinding it out daily. Li Shimin — Two ways to hold up a mirror. Li Shimin kept Wei Zheng in the room; Zeng Guofan used a journal nobody else read. Feng Dao — Zeng Guofan held an army and cut back his own wings to keep his name; Feng Dao had neither troops nor money and sought only to keep people alive. Ren Zhengfei — The same method a hundred and thirty years apart: build the solid camp and fight the slow fight, no shortcuts, no clever moves, never be beatable before you try to win. Benjamin Franklin — The matched pair of the two hemispheres: both of ordinary natural ability, both forging themselves with a daily ledger — between them the evidence that character is an engineering problem rather than a gift. Brené Brown — Zeng turned self-reproach into a daily discipline; Brown would ask whether that sentence is pointing at the behaviour or at the man writing it. Ray Dalio — The same instrument on two continents: thirty years of diaries and a decade of taped meetings, both aimed at self-deception. Atomic Habits — Both accumulate by small daily acts: Zeng Guofan by a written daily examination of himself, Clear by design that removes the need for one.
 
 ### Further
-Wang Yangming Kazuo Inamori Ray Dalio Zhuge Liang The Analects Li Shimin Feng Dao Guo Ziyi Zhang Juzheng Miyamoto Musashi The Art of Worldly Wisdom Maria Konnikova Ren Zhengfei Marcus Aurelius Benjamin Franklin Hu Xueyan Atomic Habits Family Instructions for the Yan Clan
+Wang Yangming Kazuo Inamori Ray Dalio Zhuge Liang The Analects Li Shimin Feng Dao Guo Ziyi Zhang Juzheng Miyamoto Musashi The Art of Worldly Wisdom Maria Konnikova Ren Zhengfei Marcus Aurelius Benjamin Franklin Hu Xueyan Atomic Habits Family Instructions for the Yan Clan The Annals of Lu Buwei
 
 ========================================================================
 ## Zhang Juzheng
@@ -13382,6 +13425,121 @@ Where it goes wrong: running it as blind momentum chasing, or knowing the rule a
 Instead of hoping he must fear; instead of fearing he must hope.
 He must fear that his loss may develop into a much bigger loss.
 There is nothing new in Wall Street. Speculation is as old as the hills.
+
+========================================================================
+## The Annals of Lu Buwei · Stop reading the impression; change his position
+URL: https://ourword.ai/en/i/lushi-chunqiu/eight-observations/
+Source: The Annals of Lu Buwei, 'Judging Men', in the almanac of the third month of spring
+Tags: Deep read, The Annals of Lu Buwei, Eight observations and six tests, and the cheap ones come last
+
+I keep misreading people and see the tells only afterwards. This chapter says an impression is not evidence.
+
+### Q: What actually happened?
+'Judging Men' offers no art of reading faces. It offers a list of positions. When a man is prosperous, watch whom he treats with ceremony; when honoured, whom he puts forward; when rich, whom he keeps; when listened to, what he does; at rest, what he enjoys; among intimates, what he says. All six wait until he has something to give. The cheap two come last: when he is poor, watch what he refuses; when he is low, watch what he will not do.
+
+### The parts · It asks about the position, not the character
+Not one clause in the list rates the man as good or bad. Each asks where he is standing right now and which face that position pulls out of him. Change the position and you change what is worth watching.
+e.g. His first six months after a promotion tell you more than his whole CV.
+
+### The parts · The two cheapest tests are the last two
+The first six wait for him to have something to give, to recommend, to keep, which is expensive to arrange. These two only watch what he turns down when money is tight and what he will not do from a low seat. They cost nothing and are hard to fake for long.
+e.g. Before the deal starts, see whether he will report a number that hurts him.
+
+### The parts · Six tests: feeling is the developer
+Delight tests what he holds to, pleasure what he leans towards, anger his restraint, fear his singularity, grief his humanity, hardship his resolve. Everyone is decent while calm. It does not ask you to provoke anyone, only not to miss the moments that arrive on their own.
+e.g. The week the project died, you saw the truest version of him.
+
+### The parts · Before the eight outside, ask the few inside
+The chapter adds six kin and four confidants: father, mother, brothers, wife, children, then friends, old acquaintances, neighbours and dependants. Nearest and furthest are used together, for a plain reason. The outer layer is the part that can be performed for you.
+e.g. What three years of colleagues say beats three hours of interview.
+
+### The parts · It assumes from the start that you will be wrong
+The premise is not that the method makes you infallible but that one look does not count. Eight positions and six feelings are fourteen samples that do not depend on each other. No single one is enough; what you want is agreement among them.
+e.g. You have only seen him with the wind behind him, so hold the verdict.
+
+### Q: How do I use it today?
+Where you are: someone burned you once, and now you hold something back from everybody, which is both tiring and costly.
+Ask first: how many different kinds of occasion does my read of him come from - if they are all one kind, that is one sample, not five.
+Where it goes wrong: read as a script for catching people out, aimed at the two clauses about poverty and low station. It describes watching, not staging. Manufacture a hardship to test someone and what you learn is about you.
+
+### Lines to keep
+What he wants is easy to fake; what he refuses is not.
+A face seen only in good weather is one sample.
+One correct read is luck; fourteen samples is a judgement.
+
+========================================================================
+## The Annals of Lu Buwei · Nobody lied and the sentence is still false
+URL: https://ourword.ai/en/i/lushi-chunqiu/hearing-must-be-checked/
+Source: The Annals of Lu Buwei, 'Examining What Is Transmitted', in the discourses on circumspect conduct
+Tags: Deep read, The Annals of Lu Buwei, Passed along, white turns black: the distortion rides on the telling
+
+Everything reported to me is true and something is still wrong. This chapter says sentences deform in transit.
+
+### Q: What actually happened?
+A Ding family in Song had no well and kept one person permanently outside fetching water. When they finally dug one, the head of the house said: we dug a well and got one man. A hearer passed it on as the Dings dug a well and found a man in it. The whole state repeated it until it reached the ruler, who sent to ask. The family answered: we got the use of one man, not a man out of the well. Nobody along that road lied.
+
+### The parts · The distortion rides on the telling
+What you are told must be examined, because passed along often enough white becomes black. The mechanism is given as a chain: a dog resembles a macaque, a macaque a monkey, a monkey a man, and a man is nothing like a dog.
+e.g. Four people later, only the most striking half of the sentence survives.
+
+### The parts · Unexamined, better not to have heard it
+Heard and examined it is a blessing; heard and unexamined, better unheard. Duke Huan of Qi and King Zhuang of Chu both checked the men recommended to them, and led their age. The King of Wu and Zhi Bo did not, and lost state and life.
+e.g. The thirty seconds before you forward it decide that message's whole later life.
+
+### The parts · Much of what is false is one character misread
+Zixia, passing through Wei, heard someone read out that the Jin army crossed the river with three pigs. He said it was the jihai day: the graphs for three and ji are close, and pig and hai are alike. In Jin they confirmed it. Nobody meant to deceive.
+e.g. That figure looks absurd, so go back and check the unit first.
+
+### The parts · How to check: against the thing, and against people
+The remedy is not to chase every claim back to its source. It is to reason from the nature of the thing and the nature of people. A man dug out of a well fits neither; one man's labour saved fits both.
+e.g. When a sentence sounds strange, ask first whether it is even possible.
+
+### Q: How do I use it today?
+Where you are: only good news comes up the line, you are always last to hear of trouble, and you cannot find who is hiding it.
+Ask first: how many people did this sentence pass through before me - past two, stop asking who lied and go get the original wording.
+Where it goes wrong: read as a rule that everything must be traced to its source. It asks for sorting, not for verifying everything: check what is strange, much handled, or convenient to somebody, and hear the rest as usual.
+
+### Lines to keep
+White becomes black with no liar anywhere, just hands.
+Heard and unexamined is worse than never hearing it.
+Reason it out first, then go looking for who said it.
+
+========================================================================
+## The Annals of Lu Buwei · What you know is last season's water level
+URL: https://ourword.ai/en/i/lushi-chunqiu/the-water-has-risen/
+Source: The Annals of Lu Buwei, 'Examining the Present', in the surveys on prudence in great matters
+Tags: Deep read, The Annals of Lu Buwei, Wading by old markers: the homework was done and it expired
+
+I never got the full picture and the deadline is here. This chapter says stale beats incomplete for danger.
+
+### Q: What actually happened?
+Jing meant to raid Song, so they sent men ahead to mark the fords of the Yong and measure where it could be crossed. Then the river rose suddenly and Jing did not know. At night they waded by the daytime markers and more than a thousand men drowned, the army breaking up as if a quarter of the capital had fallen in. The homework had been done. They set those markers themselves and the markers were right when set. What changed in between was the water, while the markers stood where they were, looking as reliable as ever.
+
+### The parts · Expired information looks exactly like live information
+With nothing in hand a person is careful; with one old survey in hand a person relaxes. The markers will not fall over to tell you the river has risen. They stand there looking identical to the day they were set, which is what makes them worse than a blank.
+e.g. You are still working from the customer research you did last year.
+
+### The parts · The notch was accurate; what it was cut into was not
+A man of Chu crossing the river dropped his sword and cut a notch in the boat where it went in. When the boat moored he went down from the notch to look. A judgement matters less by its own accuracy than by what it is attached to.
+e.g. Your expertise is bolted to an old employer's process and does not travel.
+
+### The parts · Keeping the law unchanged is its own disorder
+Without law a state falls into disorder; keeping the law and never changing it falls into perversity, and neither can hold a state. Times shift, so laws should. Having no rule and never revising one are two illnesses, and the second is the quieter.
+e.g. The rule set three years ago now needs a weekly exception.
+
+### The parts · It hands you the illness, not the prescription
+Like a good doctor: the illness changes ten thousand times, so the medicine changes ten thousand times. So the laws of former kings are not to be copied. Ask instead why that one was made, and whether the reason still holds.
+e.g. Before copying another firm's practice, ask what problem it solved for them.
+
+### Q: How do I use it today?
+Where you are: the deadline is on you, you never got the whole picture, and you have to decide on what is in front of you.
+Ask first: when was this gathered, and has anything happened since that would move it - incomplete and out of date are different holes and take different patches.
+Where it goes wrong: read as a demand to research everything again. It has no quarrel with old experience; it wants the reason behind it dug out. If the reason holds, use it. If it is gone, the most careful notch is still cut into a moving boat.
+
+### Lines to keep
+A blank makes you careful; an old file makes you comfortable.
+However exact the notch, look at what it is cut into.
+No rule fails loudly; an unchanged rule fails late.
 
 ========================================================================
 ## Peter Lynch · The tenbagger at the mall

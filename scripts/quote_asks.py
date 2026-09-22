@@ -398,6 +398,13 @@ QUOTE_ASKS = {
     "zhu-yuanzhang/delay-the-title": "别人都在抢先，我要不要慢一步。",
     "zhuge-liang/executing-ma-su": "该罚的是我最看重的那个人。",
     "zhuge-liang/longzhong-plan": "我看不出下一步棋该往哪走。",
+    # 吕氏春秋
+    "lushi-chunqiu/eight-observations":
+        "我只能凭感觉判断一个人。",
+    "lushi-chunqiu/hearing-must-be-checked":
+        "没人骗我，可话传到我这就变了。",
+    "lushi-chunqiu/the-water-has-risen":
+        "我摸的底，说不定早就变了。",
     # 颜氏家训
     "yanshi-jiaxun/wind-blows-down":
         "家里没人说真话，是从我起的吗。",

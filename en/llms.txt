@@ -1,9 +1,9 @@
 # OurWord (OurWord)
 
-> 171 people and books on how the world actually works, across 2,600 years
+> 172 people and books on how the world actually works, across 2,600 years
 > See how people before you handled it.
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 171 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 172 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
 ## Read it
 
@@ -19,17 +19,17 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 - [Modern](https://ourword.ai/en/t/modern/) — 62
 - [The industrial age](https://ourword.ai/en/t/the-industrial-age/) — 50
 - [Power and organisation](https://ourword.ai/en/t/power-and-organisation/) — 22
+- [Pre-Qin and classical](https://ourword.ai/en/t/pre-qin-and-classical/) — 21
 - [Mind and feeling](https://ourword.ai/en/t/mind-and-feeling/) — 20
-- [Pre-Qin and classical](https://ourword.ai/en/t/pre-qin-and-classical/) — 20
 - [Starting and building](https://ourword.ai/en/t/starting-and-building/) — 19
 - [Money and risk](https://ourword.ai/en/t/money-and-risk/) — 18
 - [How the world works](https://ourword.ai/en/t/how-the-world-works/) — 17
 - [Strategy and competition](https://ourword.ai/en/t/strategy-and-competition/) — 17
 - [Learning and growth](https://ourword.ai/en/t/learning-and-growth/) — 16
+- [Reading people](https://ourword.ai/en/t/reading-people/) — 15
 - [Body and daily life](https://ourword.ai/en/t/body-and-daily-life/) — 14
 - [Family and relationships](https://ourword.ai/en/t/family-and-relationships/) — 14
 - [Qin, Han and the Six Dynasties](https://ourword.ai/en/t/qin-han-and-the-six-dynasties/) — 14
-- [Reading people](https://ourword.ai/en/t/reading-people/) — 14
 - [Medieval](https://ourword.ai/en/t/medieval/) — 13
 - [Early modern](https://ourword.ai/en/t/early-modern/) — 12
 
@@ -250,6 +250,9 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [Liu Yan · Give the post a future first](https://ourword.ai/en/i/liu-yan/rank-outweighs-profit/): Liu Yan · Give the post a future first — he did not hunt for honest men, he changed the post. You replaced the person and it went wrong again. Is what needs replacing the person, or the post they sat in?
 - [Jesse Livermore · Sitting tight](https://ourword.ai/en/i/livermore/sitting-tight/): Jesse Livermore · Sitting tight — Being right was never the hard part. A speculator famous for speed put the credit somewhere unexpected. The chapter explains why sitting is harder than being right.
 - [Jesse Livermore · Hope and fear, the wrong way round](https://ourword.ai/en/i/livermore/hope-and-fear-inverted/): Jesse Livermore · Hope and fear, the wrong way round — The instinct points in the wrong direction. Four fortunes and several bankruptcies, distilled into one rule about two emotions pointing the wrong way.
+- [The Annals of Lu Buwei · Stop reading the impression; change his position](https://ourword.ai/en/i/lushi-chunqiu/eight-observations/): The Annals of Lu Buwei · Stop reading the impression; change his position — Eight observations and six tests, and the cheap ones come last. I keep misreading people and see the tells only afterwards. This chapter says an impression is not evidence.
+- [The Annals of Lu Buwei · Nobody lied and the sentence is still false](https://ourword.ai/en/i/lushi-chunqiu/hearing-must-be-checked/): The Annals of Lu Buwei · Nobody lied and the sentence is still false — Passed along, white turns black: the distortion rides on the telling. Everything reported to me is true and something is still wrong. This chapter says sentences deform in transit.
+- [The Annals of Lu Buwei · What you know is last season's water level](https://ourword.ai/en/i/lushi-chunqiu/the-water-has-risen/): The Annals of Lu Buwei · What you know is last season's water level — Wading by old markers: the homework was done and it expired. I never got the full picture and the deadline is here. This chapter says stale beats incomplete for danger.
 - [Peter Lynch · The tenbagger at the mall](https://ourword.ai/en/i/lynch/tenbagger-at-the-mall/): Peter Lynch · The tenbagger at the mall — Noticing is only the first step. Invest in what you know is his most quoted line and his most misused. The half that gets dropped is the work.
 - [Peter Lynch · The organ is the stomach](https://ourword.ai/en/i/lynch/stomach-not-brain/): Peter Lynch · The organ is the stomach — Holding is harder than choosing. His fund compounded at twenty-nine per cent for thirteen years, and most of the people in it did worse. The gap has an anatomy.
 - [Machiavelli · Start from what is done](https://ourword.ai/en/i/machiavelli/as-it-is/): Machiavelli · Start from what is done — How men live, not how they ought to live. He has been abused for five hundred years over one sentence. This asks what that sentence actually claims.
@@ -453,7 +456,7 @@ Cite the individual page URL, not the homepage — each entry page is stable and
 - [AI Bubble Monitor](https://ourword.ai/ai/)
 - [Zouni](https://ourword.ai/zouni/)
 
-## Index (171 entrys)
+## Index (172 entrys)
 
 - [Albert Einstein](https://ourword.ai/en/i/einstein/): Albert Einstein (Germany · 1879–1955) — Imagination. The physicist, and the father of relativity — but the legacy that travels furthest is not a formula, it is a way of working.
 - [Albert O. Hirschman](https://ourword.ai/en/i/hirschman/): Albert O. Hirschman (United States · 1915-2012) — Voice. A German-born American economist. He left Berlin in 1933, fought in Spain in 1936, spent 1940 in Marseille forging papers and finding mountain…
@@ -594,6 +597,7 @@ Cite the individual page URL, not the homepage — each entry page is stable and
 - [Technological Revolutions](https://ourword.ai/en/i/technological-revolutions/): Technological Revolutions (2002 · Carlota Perez) — The bubble pays for the build. Carlota Perez uses two hundred years and five technological revolutions to argue something counter-intuitive: the…
 - [Tending the Roots of Wisdom](https://ourword.ai/en/i/caigentan/): Tending the Roots of Wisdom (Ming · c. 1590s) — A method of ease. Three hundred-odd short entries by Hong Yingming, written in the Wanli years of the Ming, on how to live among other people.
 - [The Analects](https://ourword.ai/en/i/analects/): The Analects (Spring and Autumn · 551–479 BC) — The answer fits the asker. A record of a teacher answering particular students, compiled after his death. In English it usually arrives as loose…
+- [The Annals of Lu Buwei](https://ourword.ai/en/i/lushi-chunqiu/): The Annals of Lu Buwei (China · c. 239 BCE) — Judging men. A large compendium assembled around 239 BCE by the three thousand retainers of Lu Buwei, chancellor of Qin, in twelve almanacs, eight…
 - [The Art of Worldly Wisdom](https://ourword.ai/en/i/art-of-worldly-wisdom/): The Art of Worldly Wisdom (1647 · Baltasar Gracián) — Concealment. Three hundred maxims by a Spanish Jesuit, published in 1647 and in print ever since. Schopenhauer translated it into German himself…
 - [The Bhagavad Gita](https://ourword.ai/en/i/bhagavad-gita/): The Bhagavad Gita (India · c. 200 BC–200 AD) — A right to the act, not the fruit. Seven hundred verses in eighteen chapters, embedded in the Indian epic the Mahabharata, and dated by most scholars…
 - [The Comprehensive Mirror](https://ourword.ai/en/i/zizhi-tongjian/): The Comprehensive Mirror (Northern Song · 1065–1084) — Why regimes fall. Sima Guang directed the compilation for nineteen years: two hundred and ninety-four volumes covering the thirteen hundred and…

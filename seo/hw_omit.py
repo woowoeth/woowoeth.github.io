@@ -29,6 +29,19 @@
 
 OMIT = {
     # ── 有明确不取的部分 ──────────────────────────────────
+    "吕氏春秋": (
+        "不取十二纪每纪开头那几篇的月令与灾异。「孟春行夏令，则风雨不时，"
+        "草木旱槁，国乃有恐」这一类按月排政令、排错了就招天灾的对应，"
+        "是战国末年的一套宇宙论；它和这本书讲怎么看人、怎么核一句传来的话、"
+        "怎么发现自己那份情况已经过期的那几篇不互相支撑。我们取后者。",
+        "We leave out the monthly ordinances and the calamities attached to "
+        "them, which open each of the twelve Almanacs. 'If in the first month "
+        "of spring the ordinances of summer are carried out, wind and rain "
+        "come out of season, plants wither, and the state falls into fear' is "
+        "a late Warring States cosmology. It neither supports nor is "
+        "supported by the chapters on how to read a person, how to check "
+        "something you were told, and how to notice that your own "
+        "information has expired. Those are what we take."),
     "颜氏家训": (
         "不取它讲男女与门第的那一部分。《治家》篇里「妇主中馈」「国不可使预政，"
         "家不可使干蛊」是六世纪士族的家内秩序，和它讲因果、讲时机、讲兄弟为什么"

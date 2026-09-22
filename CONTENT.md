@@ -206,9 +206,25 @@ x /tw/sitemap.xml → hreflang 指向不存在的页 https://ourword.ai/tw/en/i/
 报的是二十几个**跟你今天写的人毫无关系**的 slug，最容易被当成别人留下的旧账。
 （2026-09-17 阿克塞尔罗德这一条踩到。）
 
-真要省时间，第二遍最少要跑 `build_tw.py` + `lang_links.py` + `stamp_assets.py`
-这**三个**，次序不能换。`stamp_assets.py` 一定在最后 —— 它扫的是最终产物，
-前面任何一步重写过文件都要重新盖章。整条链一遍约 15 分钟。
+真要省时间，第二遍最少要跑 `build_tw.py` + `gen_pwa.py` + `lang_links.py` +
+`stamp_assets.py` 这**四个**，次序不能换。`stamp_assets.py` 一定在最后 ——
+它扫的是最终产物，前面任何一步重写过文件都要重新盖章。整条链一遍约 15 分钟。
+
+**`gen_pwa.py` 是 2026-09-22 补进这份近路的**，原来写的是三个。它在整条链里排
+第 11 步，**正好夹在 `build_tw`（第 10）和 `lang_links`（第 12）中间**，抄近路
+一跳就把它跳过去了。后果很具体：`build_tw.py` 开头 `rmtree(tw/)`，然后从简体站
+整个复制重转，`/tw/site.webmanifest` 于是变成根 manifest 的转换副本 —— `lang` 是
+`zh-TW`、`scope` 和 `start_url` 还指着 `/`。真正把这三个值改成 `zh-Hant` 和 `/tw/`
+的是 `gen_pwa.py`。所以「PWA」那道闸会红成这样：
+
+```
+✗ /tw/site.webmanifest 的 scope/start_url 不是 /tw/
+✗ /tw/site.webmanifest 的 lang 是 'zh-TW'，应为 'zh-Hant'
+```
+
+这两行里没有一个字提到你今天写的那个人，也没提到 build_tw —— 看上去像 manifest
+本身写坏了，很容易跑去翻 `gen_pwa.py` 的模板。（2026-09-22 吕氏春秋这一条踩到：
+照三个脚本的近路跑，繁体站和 PWA 同时红；补跑整条 `build_all.py` 两道都绿。）
 
 **为什么最后一遍 `build_all.py` 之前必须有图。** 分享图不在构建链里，
 所以直觉上它「什么时候补都行」—— 不行。`build_tw.py` 是**从简体站复制**

@@ -88,6 +88,8 @@ SCENES = [
      [("records-of-the-grand-historian", "i-am-confused"), ("einstein", "formulating-the-problem")]),
     ("对手哪儿都比我强，怎么跟人打。",
      [("sun-tzu", "know-both"), ("guo-jia", "ten-victories")]),
+    ("我摸的底，说不定早就变了。",
+     [("lushi-chunqiu", "the-water-has-risen")]),
 ]),
 ("方案被否", "要做决定", [
     ("方案被毙了，还提第二次吗？",
@@ -391,6 +393,8 @@ SCENES = [
      [("strategies-of-the-warring-states", "three-mirrors"), ("li-shimin", "boat-and-water")]),
     ("能提意见的那几个，都走了。",
      [("hirschman", "exit-voice-loyalty")]),
+    ("没人骗我，可话传到我这就变了。",
+     [("lushi-chunqiu", "hearing-must-be-checked")]),
 ]),
 ("队伍出不了活", "带人", [
     ("中间就没有一个人能喊停。",
@@ -932,6 +936,8 @@ SCENES = [
      [("analects", "see-how"), ("han-feizi", "not-counting-on-goodness")]),
     ("我心软，一次次给他机会。",
      [("adler", "separation-of-tasks"), ("han-feizi", "two-handles")]),
+    ("我只能凭感觉判断一个人。",
+     [("lushi-chunqiu", "eight-observations")]),
 ]),
 ("一个能约的人都没有", "跟人打交道", [
     ("来了三年，我一个能约的人都没有。",
