@@ -176,6 +176,31 @@ def check_mcp(bad):
                    % (u, len(o3.get("正文", ""))))
 
 
+def _last_sync(repo):
+    """镜像仓最近一次**成功**同步开始的时间（unix 秒）；读不到返回 None。"""
+    path = "repos/%s/actions/workflows/sync.yml/runs?status=success&per_page=1" % repo
+    d = None
+    try:
+        r = subprocess.run(["gh", "api", path], cwd=ROOT, capture_output=True,
+                           text=True, timeout=60)
+        if r.returncode == 0:
+            d = json.loads(r.stdout)
+    except Exception:
+        pass
+    if d is None:
+        try:
+            req = urllib.request.Request("https://api.github.com/" + path,
+                                         headers={"User-Agent": "ourword-gate"})
+            d = json.loads(urllib.request.urlopen(req, timeout=20).read().decode())
+        except Exception:
+            return None
+    runs = d.get("workflow_runs") or []
+    if not runs:
+        return None
+    import calendar
+    return calendar.timegm(time.strptime(runs[0]["created_at"], "%Y-%m-%dT%H:%M:%SZ"))
+
+
 def check_mirror(bad):
     """两个镜像仓里的每个文件，必须等于**已经推上去的**那一版。
 
@@ -238,10 +263,12 @@ def check_mirror(bad):
         got = dict((x["path"], x.get("sha")) for x in tree.get("tree", []))
         off = [m for m, sha in want.items() if got.get(m) != sha]
         if off:
-            # 镜像是**按小时拉**的，所以「刚推完还没同步」不是故障，是契约之内。
-            # 宽限一小时零十分：超了才算真没跟上。
-            # 不给宽限的话，每次改完 tools/ 推上去，这道闸都必然红一小时 ——
-            # 而一道正常操作后必然红的闸，两周内会被学会忽略（FAILURES #43）。
+            # 问的不是「推上去多久了」，是「推上去之后，同步到底跑过没有」。
+            # 第一版照 cron（17 * * * *）给了 70 分钟宽限 —— 那是我**以为**的契约。
+            # 2026-09-23 量了一下实际：GitHub 的定时任务 3.5 到 5.5 小时才跑一次，
+            # 宽限一过，这道闸每次改完 tools/ 都要必然红上几个小时。
+            # 现在按真实发生的事判：同步跑过了镜像还是旧的 → 同步坏了；
+            # 还没跑过 → 契约之内；超过 12 小时一次都没跑 → 定时任务可能被停了。
             newest = 0
             for mpath, rel in files:
                 r = subprocess.run(["git", "log", "-1", "--format=%ct", "origin/main",
@@ -249,15 +276,22 @@ def check_mirror(bad):
                                    text=True, timeout=60)
                 if r.returncode == 0 and r.stdout.strip():
                     newest = max(newest, int(r.stdout.strip()))
-            age = time.time() - newest if newest else 1e9
+            last_sync = _last_sync(repo)
             msg = ("镜像仓 %s 有 %d 个文件和主仓 origin/main 对不上（%s）"
                    % (repo, len(off), "、".join(sorted(off)[:3])))
-            if age < 70 * 60:
-                print("  （%s —— 主仓 %d 分钟前才推，镜像按小时拉，还在宽限内）"
-                      % (msg, age // 60))
+            fix = "跑一句 `gh workflow run sync.yml -R %s`" % repo
+            now = time.time()
+            if last_sync is None:
+                print("  （%s —— 读不到它的同步记录，这条跳过）" % msg)
+            elif last_sync > newest:
+                bad.append(msg + " —— 主仓推上去之后同步已经跑过，还是旧的：同步本身坏了。"
+                           + fix)
+            elif now - last_sync > 12 * 3600:
+                bad.append(msg + " —— 它已经 %d 小时没同步过了，定时任务可能被停了。"
+                           % ((now - last_sync) // 3600) + fix)
             else:
-                bad.append(msg + " —— 推上去已经 %d 分钟了，对外那份还是旧的。"
-                           "跑一句 `gh workflow run sync.yml -R %s`" % (age // 60, repo))
+                print("  （%s —— 主仓推上去之后它还没轮到同步：GitHub 定时任务实测"
+                      " 3–6 小时一次，还在契约之内）" % msg)
 
 
 def check_site_pointer(bad):

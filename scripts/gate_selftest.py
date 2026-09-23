@@ -1214,6 +1214,42 @@ def _manifest_relative():
     return go
 
 
+SEOWF = os.path.join(ROOT, ".github", "workflows", "seo.yml")
+
+
+def _ci_hand_step():
+    """往 CI 里手抄一步构建 —— 手抄清单又长回来了。
+
+    手抄的那份八步清单跟不上 build_all.py 的十四步，CI 因此连续红了十九天没人发现。
+    """
+    def go():
+        t = read(SEOWF)
+        a = "          python scripts/build_all.py\n"
+        if a not in t:
+            return None
+        write(SEOWF, t.replace(a, a + "          python scripts/gen_pwa.py\n", 1))
+        return SEOWF
+
+    return go
+
+
+def _ci_no_build_all():
+    """CI 里不再真的调 build_all.py，但解释它的那段注释原样留着。
+
+    判据第一版查的是「这几个字出现过」，就被这段注释骗过去了。
+    """
+    def go():
+        import re as _re
+        t = read(SEOWF)
+        t2 = _re.sub(r"^(\s*)python scripts/build_all\.py", r"\1echo skipped", t, flags=_re.M)
+        if t2 == t:
+            return None
+        write(SEOWF, t2)
+        return SEOWF
+
+    return go
+
+
 ENTRYCSS_F = os.path.join(ROOT, "assets", "hw-entry.css")
 HOMEHTML = os.path.join(ROOT, "index.html")
 ENHOMEHTML = os.path.join(ROOT, "en", "index.html")
@@ -1351,21 +1387,20 @@ SKILLEN = os.path.join(ROOT, "tools", "skill", "ourword-en", "SKILL.md")
 
 
 def _mirror_stale():
-    """让判据读回来的内容和主仓差一个字 —— 等价于「镜像没跟上」。
+    """让镜像的内容和主仓差一点，**并且**让判据以为同步刚刚跑过 ——
+    等价于「同步跑了，却没把改动带过去」，也就是同步本身坏了。
 
-    锚点选在「读回来之后」而不是「怎么拼 URL」：URL 那一处两天之内被改了两次
-    （raw → API，单仓 → 双仓），每次这条注入都当场失效，自检报「用例失效
-    （挑不到注入点）」。**注入点要挂在这道闸的语义上，不是它的实现细节上。**
+    锚点挂在闸的语义上：「镜像报给我的 SHA」和「最近一次同步是什么时候」。
+    挂在实现上的那两版（URL 怎么拼、宽限窗口多长）各失效过一次。
     """
     def go():
         t = read(CHECKTOOLS)
-        # 两处一起改：内容对不上 **且** 宽限窗口关掉。
-        # 只改前者的话，刚推完那一小时里闸只会提示不会红（宽限之内是契约行为），
-        # 注入就被吞了 —— 这条注入要验的是「超过时限还没跟上」那条分支。
-        a, b = 'x.get("sha")', 'if age < 70 * 60:'
+        a = 'x.get("sha")'
+        b = ('return calendar.timegm(time.strptime(runs[0]["created_at"], '
+             '"%Y-%m-%dT%H:%M:%SZ"))')
         if a not in t or b not in t:
             return None
-        t = t.replace(a, '((x.get("sha") or "") + "drift")', 1).replace(b, 'if age < 0:')
+        t = t.replace(a, '((x.get("sha") or "") + "drift")', 1).replace(b, "return time.time()")
         write(CHECKTOOLS, t)
         return CHECKTOOLS
 
@@ -1580,6 +1615,10 @@ CASES = [
      "不是仓库里这份"),
     # 前一条在没网时抓不到（那半边闸会自己跳过，和 check_chat_lang 同一条规矩）；
     # 后一条只读本地文件，断网照样要红 —— 断网时两条一起哑才是出了问题。
+    ("CI·手抄了一步构建", "check_integrity.py", SEOWF, _ci_hand_step(),
+     "CI 手抄了构建步骤"),
+    ("CI·根本不调 build_all", "check_integrity.py", SEOWF, _ci_no_build_all(),
+     "CI 不走统一构建链"),
     ("窄屏·输入框字号小于 16px", "check_mobile.py", ENTRYCSS_F, _input_small_font(),
      "iOS 上一聚焦就把整页放大"),
     ("搜索落空·只让人换个说法", "check_mobile.py", HOMEHTML, _miss_without_ai(),
@@ -1603,7 +1642,7 @@ CASES = [
     ("文案·写了句证伪过的话", "check_tools.py", MCPREADME, _false_claim(),
      "站上有人物页和主题页，这句是假的"),
     ("镜像仓·没跟上主仓", "check_tools.py", CHECKTOOLS, _mirror_stale(),
-     "对外那份还是旧的"),
+     "同步本身坏了"),
     ("打包·三处版本号飘了", "check_tools.py", PYPROJ, _version_drift(),
      "对不上"),
     ("英文 Skill·被直译了", "check_tools.py", SKILLEN, _en_skill_translated(),

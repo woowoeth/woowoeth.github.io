@@ -358,6 +358,27 @@ for _lang in ("tw", "en"):
         bad("开发者材料漏进语言站", "%s/ 有 %d 个文件 —— 去 scripts/build_tw.py 的 "
             "SKIP_DIRS 里加上它，并删掉已经复制出去的" % (_leak, _n))
 
+# 14) CI 的构建只能调 scripts/build_all.py，不许手抄构建步骤。
+#     原来 seo.yml 里手抄了八步，build_all.py 后来长到十四步，手抄那份一步都没跟上：
+#     CI 从 2026-09-04 起连续红了十九天、四十次，没有任何人发现 ——
+#     Pages 直接从提交部署，CI 红不红都不拦上线。
+#     判据：workflow 里必须出现 build_all.py；build_all.py 链上的任何一个脚本
+#     都不许在 workflow 里被单独调用（那就是手抄又长回来了）。
+_wf_p = os.path.join(".github", "workflows", "seo.yml")
+if os.path.isfile(_wf_p):
+    _wf = open(_wf_p, encoding="utf-8").read()
+    _chain = re.findall(r'"((?:scripts|seo)/[a-z_]+\.py)', open(
+        os.path.join("scripts", "build_all.py"), encoding="utf-8").read())
+    # 查「真的调用了」，不查「这几个字出现过」—— 第一版就被 workflow 里自己那段
+    # 解释为什么要走 build_all.py 的注释骗过去了：注释里有这几个字，判据就当它调过了。
+    if not re.search(r"^\s*python3?\s+scripts/build_all\.py\b", _wf, re.M):
+        bad("CI 不走统一构建链", "seo.yml 里没有一行在调 python scripts/build_all.py")
+    _hand = sorted({c for c in _chain
+                    if re.search(r"python3?\s+" + re.escape(c) + r"\b", _wf)})
+    if _hand:
+        bad("CI 手抄了构建步骤", "seo.yml 里单独调了 %s —— 构建链只能有一份，"
+            "加步骤去改 scripts/build_all.py" % "、".join(_hand))
+
 # 8) 二维码必须仍可解码
 try:
     from PIL import Image

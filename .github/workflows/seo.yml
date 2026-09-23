@@ -39,33 +39,19 @@ jobs:
           else:
               print("geo_kit intact", len(t))
           PY
-      - name: Patch GEO extras
-        run: python scripts/patch_geo_seo.py
-      - name: Open entries as standalone pages
-        run: python scripts/apply_redesign.py
-      - name: Build SEO/GEO artefacts
-        run: python seo/build_seo.py
-      - name: Force chapter UI onto built HTML
-        run: python scripts/force_chapter_ui.py
-      - name: English site
-        # 排在第一遍 force_chapter_ui 之后：它要从一个已构建的简体页上把
-        # 夜间模式挂件整块搬过去。
-        run: python scripts/build_en.py
-      - name: Force chapter UI again
-        # 必须再跑一遍：hreflang 要知道「哪些页有英文版」，那个集合读的是
-        # 真实的 en/ 树，只有 build_en 跑完才准。少这一遍的后果实测过 ——
-        # 首页宣称有英文版而 /en/ 还不存在，英文语系的浏览器被弹到 404。
-        # 这个脚本是幂等的（重跑零改动），多跑一遍只花几秒。
-        run: python scripts/force_chapter_ui.py
-      - name: Chat retrieval index
-        # 内容一变检索索引必须跟着变，否则悬浮球问答会引用到不存在的章节。
-        run: python scripts/build_chat_index.py
-      - name: Traditional Chinese site
-        # 必须排在**所有**生成步骤之后：繁体站是拿构建好的简体树整树转出来的，
-        # 放在检索索引之前的话，/tw/assets/hw-chat-index.json 会是上一次的旧索引。
+      - name: Build — the one chain (scripts/build_all.py)
+        # 构建链只有一份，就是 scripts/build_all.py。
+        #
+        # 这里原来是手抄的八步。本地 build_all.py 后来长到十四步（首页数据装回 /
+        # 挂件繁体文案 / PWA / 多语言互链 / 首页数据外置 / 资源版本盖章），
+        # 这份手抄的一步都没跟上 —— CI 从 2026-09-04 起**连续红了十九天、四十次**，
+        # 而没有任何人发现：GitHub Pages 直接从提交部署，CI 红不红都不拦上线，
+        # 于是「CI 会兜底再跑一遍闸」和「CI 会通知搜索引擎」这两件事十九天都不存在。
+        # 干净 checkout 上跑 build_all.py 验过：产物和提交逐字节一致，站点闸全绿。
+        # 以后加构建步骤只改 build_all.py，这里不用动；check_integrity 盯着这一条。
         run: |
           pip install -q "opencc==1.4.2"
-          python scripts/build_tw.py
+          python scripts/build_all.py
       # 原来这里只跑三道（问题内容 / 处境覆盖 / 完整性），另外五道从没在 CI 上跑过，
       # 门禁自检更是一次都没跑。改成走统一入口，八道 + 自检一起。
       # --full 那一档是唯一能回答「这些闸还活着吗」的东西：
@@ -109,11 +95,7 @@ jobs:
               url = "https://raw.githubusercontent.com/woowoeth/woowoeth.github.io/7b7cb5101e57755ff2f173acd8688e9218cec9ad/seo/geo_kit.py"
               urllib.request.urlretrieve(url, p)
           PY
-              python scripts/patch_geo_seo.py
-              python scripts/apply_redesign.py
-              python seo/build_seo.py
-              python scripts/force_chapter_ui.py
-              python scripts/build_chat_index.py
+              python scripts/build_all.py
               git add -A
               git diff --cached --quiet && { echo "seo unchanged after rebuild"; exit 0; }
               git commit -m "seo: refresh crawlable layer (rebuilt on new upstream)"
