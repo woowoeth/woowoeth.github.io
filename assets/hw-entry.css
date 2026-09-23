@@ -162,7 +162,7 @@ h1{
 .hw-same .arow{display:flex; align-items:center; gap:6px; margin-top:14px;
   border:1px solid var(--rule); border-radius:14px; background:var(--paper); padding:0 8px 0 0}
 .hw-same .arow textarea{flex:1; border:0; background:transparent; resize:none; outline:none;
-  font:inherit; font-size:15px; line-height:1.8; padding:12px 13px; color:var(--ink);
+  font:inherit; font-size:16px; line-height:1.8; padding:12px 13px; color:var(--ink);
   overflow:hidden; height:46px}
 .hw-same .arow textarea::placeholder{color:var(--muted)}
 .hw-same .arow .go{flex:none; border:0; background:var(--ink); color:var(--paper);

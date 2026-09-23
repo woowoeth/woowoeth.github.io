@@ -244,6 +244,65 @@ def main():
                                    % (label, path, beh["before"],
                                       beh["after"], beh["barTop"]))
 
+                # ⑧ 输入框的字号 ≥ 16px。iOS 上字号小于 16px 的输入框，一聚焦
+                #    就把整页放大，放大后还不会自己缩回来 —— 读者正想说一句自己的事，
+                #    页面先把他甩到一个看不全的局部里。2026-09-23 实测首页那一问和
+                #    章节页「你呢？」都是 15px。量**渲染后的计算值**，不 grep CSS：
+                #    章节页那条的字号写在另一行，grep 当场漏了它。
+                #    隐藏的也算（聊天面板打开前是 display:none，打开后就是它）。
+                small = pg.evaluate("""() => [...document.querySelectorAll(
+                    'textarea, input:not([type]), input[type=text], input[type=search],'
+                    + 'input[type=email], input[type=url], input[type=tel]')]
+                  .map(e => ({n: e.tagName.toLowerCase() + (e.id ? '#' + e.id : '')
+                                + (e.className ? '.' + String(e.className).trim().split(/\\s+/)[0] : ''),
+                              fs: parseFloat(getComputedStyle(e).fontSize) || 0}))
+                  .filter(x => x.fs && x.fs < 16)""")
+                for x in small[:3]:
+                    bad.append("%s %s 的输入框 %s 字号 %gpx —— iOS 上一聚焦就把整页放大"
+                               % (label, path, x["n"], x["fs"]))
+
+                # ⑨ 搜索落空时，要把他的原话交给 AI，而不是只说「换个说法试试」。
+                #    字面搜索连不上同一件事的两种说法（「老板天天改需求」0 条，
+                #    库里对得上的是「全都重要，我砍哪个都疼」），语义的那一方连得上。
+                #    这一块**只在落空那一刻才渲染**，默认页面上根本没有 ——
+                #    check_en 就是因此没看见新加的三句中文漏进了英文站。
+                #    所以这里真去搜一次落空的词，量渲染出来的那一块。
+                if path in ("/", "/tw/", "/en/"):
+                    miss = pg.evaluate("""async () => {
+                      const q = document.getElementById('q');
+                      if (!q) return {noq: true};
+                      // 测试词要在三种语言里都「不是词」：
+                      //  · 不能有汉字 —— 空状态会回显原话，英文站那条「不许有中文」
+                      //    会被我们自己的测试词永远判红；
+                      //  · 不能有英文单词 —— 英文站按词检索，第一版用 nothing like this，
+                      //    like / this 到处都是，根本没落空，闸报成了「什么都不说」。
+                      q.value = 'qzxv wkpj';
+                      q.dispatchEvent(new Event('input', {bubbles: true}));
+                      await new Promise(r => setTimeout(r, 400));
+                      const n = document.getElementById('hwx-none');
+                      const out = {shown: !!(n && n.style.display !== 'none'),
+                                   ai: !!document.getElementById('hwx-none-ai'),
+                                   ask: typeof window.hwAsk,
+                                   text: n ? n.textContent : ''};
+                      q.value = '';
+                      q.dispatchEvent(new Event('input', {bubbles: true}));
+                      return out;
+                    }""")
+                    if miss.get("noq"):
+                        bad.append("%s %s 上没有搜索框 #q" % (label, path))
+                    elif not miss.get("shown"):
+                        bad.append("%s %s 搜索落空时什么都不说（整片空白，读者分不清"
+                                   "是搜不到还是页面坏了）" % (label, path))
+                    elif miss.get("ask") == "function" and not miss.get("ai"):
+                        bad.append("%s %s 搜索落空时没有「按意思找」—— 只让读者换个说法，"
+                                   "等于让一个卡住的人去猜我们的词汇表" % (label, path))
+                    if path == "/en/":
+                        import re as _re
+                        han = _re.findall(r"[\u4e00-\u9fff「」]", miss.get("text") or "")
+                        if han:
+                            bad.append("%s %s 搜索落空那一块里有中文：%s —— 新加的句子没进"
+                                       " seo/en_ui.py 的翻译表" % (label, path, "".join(han)[:20]))
+
                 # ⑤ 文字放不进框：被裁的内容读者永远看不到，而页面上
                 #    一点异常都看不出来 —— 它只是「短了一截」。
                 for x in (r.get("clipped") or [])[:3]:

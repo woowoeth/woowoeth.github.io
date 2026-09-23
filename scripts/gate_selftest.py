@@ -1214,6 +1214,63 @@ def _manifest_relative():
     return go
 
 
+ENTRYCSS_F = os.path.join(ROOT, "assets", "hw-entry.css")
+HOMEHTML = os.path.join(ROOT, "index.html")
+ENHOMEHTML = os.path.join(ROOT, "en", "index.html")
+
+
+def _input_small_font():
+    """把章节页「你呢？」那个框改回 15px —— iOS 上一聚焦就放大整页。
+
+    2026-09-23 实测首页那一问和这个框都是 15px。判据量的是渲染后的计算值，
+    所以注入落在样式表上、不重新构建也看得见。
+    """
+    def go():
+        t = read(ENTRYCSS_F)
+        i = t.find(".hw-same .arow textarea{")
+        if i < 0:
+            return None
+        j = t.find("}", i)
+        if "font-size:16px" not in t[i:j]:
+            return None
+        write(ENTRYCSS_F, t[:i] + t[i:j].replace("font-size:16px", "font-size:15px") + t[j:])
+        return ENTRYCSS_F
+
+    return go
+
+
+def _miss_without_ai():
+    """首页搜索落空时拿掉「按意思找」—— 退回只说「换个说法试试」。
+
+    字面搜索连不上同一件事的两种说法（「老板天天改需求」0 条），
+    把担子甩回给一个卡住的人，就是让他去猜我们的词汇表。
+    """
+    def go():
+        t = read(HOMEHTML)
+        if 'id="hwx-none-ai"' not in t:
+            return None
+        write(HOMEHTML, t.replace('id="hwx-none-ai"', 'id="hwx-none-xx"'))
+        return HOMEHTML
+
+    return go
+
+
+def _en_miss_chinese():
+    """英文首页落空那一块混进中文 —— 等价于「新句子没进 en_ui 的翻译表」。
+
+    这一块只在落空那一刻才渲染，默认页面上根本没有，check_en 因此看不见。
+    2026-09-23 新加的三句就是这么原样漏进英文站的。
+    """
+    def go():
+        t = read(ENHOMEHTML)
+        if "Find by meaning" not in t:
+            return None
+        write(ENHOMEHTML, t.replace("Find by meaning", "\u6309\u610f\u601d\u627e", 1))
+        return ENHOMEHTML
+
+    return go
+
+
 TWLEAK = os.path.join(ROOT, "tw", "tools", "mcp", "server.json")
 
 
@@ -1523,6 +1580,12 @@ CASES = [
      "不是仓库里这份"),
     # 前一条在没网时抓不到（那半边闸会自己跳过，和 check_chat_lang 同一条规矩）；
     # 后一条只读本地文件，断网照样要红 —— 断网时两条一起哑才是出了问题。
+    ("窄屏·输入框字号小于 16px", "check_mobile.py", ENTRYCSS_F, _input_small_font(),
+     "iOS 上一聚焦就把整页放大"),
+    ("搜索落空·只让人换个说法", "check_mobile.py", HOMEHTML, _miss_without_ai(),
+     "没有「按意思找」"),
+    ("英文站·落空那一块有中文", "check_mobile.py", ENHOMEHTML, _en_miss_chinese(),
+     "搜索落空那一块里有中文"),
     ("开发者材料·漏进繁体站", "check_integrity.py", TWLEAK, _dev_material_leak(),
      "开发者材料漏进语言站"),
     ("话题页·成了孤儿", "check_integrity.py", SITEMAP, _topic_orphaned(),

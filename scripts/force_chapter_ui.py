@@ -643,6 +643,12 @@ def _hwx_payload():
     # NC: 40 最新章节（按章节 py 文件 git 首次 commit 时间降序）
     import os, subprocess, time
     ch_times = {}
+    # 「现在」只取一次。原来是每篇没提交的章节各自取一次 time.time()：同一天加的
+    # 两篇只要恰好跨过一秒的边界，后处理的那篇时间戳大一秒、排到前面去 ——
+    # 同一份源码两次构建，「最新」里两篇的先后互换（2026-09-23 实测：考恩那两篇，
+    # 并发会话提交前构建一次、我提交后构建一次，home-hwxd.js 就多出一行无意义的 diff）。
+    # 取一次之后，同一批新章节时间相同，sorted 是稳定排序，保持源码里的先后。
+    _now = int(time.time())
     for ch in C.CHAPTERS:
         slug = hw_slugs.slug_for(ch["parent"])
         for cand in ["seo/chapters/%s.py" % slug.replace("-","_"),
@@ -658,7 +664,7 @@ def _hwx_payload():
                     # 最后 → **新加的人永远进不了「最新」**。
                     # 改成每天一条之后，这个 bug 每天都会咬一次。
                     ch_times[(ch["parent"], ch["k"])] = (
-                        int(ts[-1]) if ts else int(time.time()))
+                        int(ts[-1]) if ts else _now)
                 except: ch_times[(ch["parent"], ch["k"])] = 0
                 break
     cat_by = {e["n"]: e["c"] for e in build_seo.load_array()}
@@ -802,6 +808,7 @@ body{background:var(--paper);color:var(--ink)}
 #hwx #hwx-none b{display:block;font-family:"Noto Serif SC","Songti SC",serif;font-size:17px;line-height:1.7;color:var(--ink)}
 #hwx #hwx-none i{display:block;font-style:normal;font-size:13.5px;line-height:1.8;color:var(--muted);margin:6px 0 14px}
 #hwx #hwx-none button{border:1px solid var(--ink);background:var(--ink);color:var(--paper);border-radius:999px;padding:7px 18px;font-family:inherit;font-size:13.5px;cursor:pointer}
+#hwx #hwx-none button.alt{background:transparent;color:var(--ink);margin-left:8px}
 #hwx .askhero #hwx-asc-tag button{border:0;background:transparent;color:var(--muted);padding:0;font-family:inherit;font-size:12.5px;line-height:1.7;cursor:pointer;text-align:left}
 #hwx .askhero #hwx-asc-tag button:hover{color:var(--acc)}
 #hwx .amine{border-top:1px dashed var(--line);margin-top:14px;padding-top:12px}
@@ -809,7 +816,7 @@ body{background:var(--paper);color:var(--ink)}
    圆球就成了另一样东西；放进去之后它跟着框底走，单行时正好居中（6+30+6=42）。 */
 #hwx .amine .arow{display:flex;align-items:flex-end;gap:4px;border:1px solid var(--line);border-radius:14px;background:var(--paper);padding:0 6px 0 0}
 #hwx .amine .arow:focus-within{border-color:var(--acc)}
-#hwx .amine textarea{flex:1;min-width:0;display:block;resize:none;font-family:inherit;font-size:15px;line-height:1.6;color:var(--ink);background:transparent;border:none;border-radius:14px;padding:9px 13px;outline:none;max-height:96px}
+#hwx .amine textarea{flex:1;min-width:0;display:block;resize:none;font-family:inherit;font-size:16px;line-height:1.6;color:var(--ink);background:transparent;border:none;border-radius:14px;padding:9px 13px;outline:none;max-height:96px}
 #hwx .amine button{flex:0 0 auto;height:30px;margin:6px 0;border:none;border-radius:9px;background:var(--ink);color:var(--paper);font-family:inherit;font-size:14px;line-height:30px;padding:0 14px;cursor:pointer}
 #hwx .amine button:disabled{opacity:.4;cursor:default}
 
@@ -1135,7 +1142,11 @@ if(ain){
     /* 把卡片上那两篇和处境名一起带过去。这一问的答案首页已经知道，
        不该让聊天窗再用二元组检索猜一遍——猜出来的经常是别的篇。 */
     if(typeof window.hwAsk==='function'){
-      window.hwAsk(t,{pin:(a1.r||[]).slice(0,2).map(function(r){return r.u;}),scene:a1.s||''});
+      /* 只在没改过时钉住卡片那两篇。改过了，框里就是他自己的事 —— 还钉今天那两篇，
+         AI 会被拽回今天的处境。2026-09-23 实测：在「重要的人走了」那天的框里打
+         「老板天天改需求」，答案被钉成了控制二分法，而库里对得上的是「做不完」那一组。 */
+      var mine=(t!==(a1.bx||''));
+      window.hwAsk(t, mine ? {} : {pin:(a1.r||[]).slice(0,2).map(function(r){return r.u;}),scene:a1.s||''});
       setTimeout(paintLeft,1400);
     }
   };
@@ -1640,10 +1651,25 @@ function applyFeed(){
   var none=document.getElementById('hwx-none');
   if(!none){none=document.createElement('div');none.id='hwx-none';none.style.display='none';feed.parentNode.insertBefore(none,feed);}
   if(keep.length+hits.length===0){
+    /* 原来这里只有一句「换个说法试试」—— 把担子甩回给一个卡住的人，让他去猜
+       我们的词汇表。2026-09-23 用手机走站：「老板天天改需求」0 条，而同一句话
+       交给 AI，它当场对上「做不完 → 全都重要，我砍哪个都疼」。字面搜索连不上
+       同一件事的两种说法，语义的那一方连得上 —— 所以落空时把他的原话交过去。
+       今天的次数用完了（或挂件还没加载）才退回原来那句。 */
+    var canAsk=(typeof window.hwAsk==='function')&&(typeof window.hwLeft!=='function'||window.hwLeft()>0);
     none.innerHTML='<b>没找到「'+esc(v)+'」</b>'
-      +'<i>换个说法试试——或者到下面的处境里挑你自己那一件。</i>'
-      +'<button type="button" id="hwx-none-go">去挑处境 →</button>';
+      +(canAsk
+        ?'<i>这里的搜索只认字面。让 AI 按意思替你找：</i>'
+         +'<button type="button" id="hwx-none-ai">按意思找 →</button>'
+         +'<button type="button" class="alt" id="hwx-none-go">自己挑处境</button>'
+        :'<i>换个说法试试——或者到下面的处境里挑你自己那一件。</i>'
+         +'<button type="button" id="hwx-none-go">去挑处境 →</button>');
     none.style.display='';
+    var ai=document.getElementById('hwx-none-ai');
+    if(ai)ai.onclick=function(){
+      trk('search_miss_to_ai',{term:v.slice(0,40)});
+      window.hwAsk(v);   /* 不钉篇目：这一句就是他自己的事，让 AI 在全库里按意思挑 */
+    };
     var g=document.getElementById('hwx-none-go');
     if(g)g.onclick=function(){
       var qi=document.getElementById('q'); if(qi)qi.value='';

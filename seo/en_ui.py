@@ -428,5 +428,18 @@ UI = sorted(UI, key=lambda p: -len(p[0]))
 # 先被它吃掉；没空格的那种仍然走原来那条。
 #
 # 配套的闸：check_en.py ⑭（渲染之后的英文页里不许有连续两个空格）。
+# 搜索落空时把原话交给 AI（2026-09-23）。这三句是那一处新加的，
+# 不在表里就原样漏进英文站 —— 而它们只在「搜了没搜到」那一刻才渲染，
+# check_en 看的是默认页面，看不见。配套的闸在 check_mobile：真去搜一次落空的词，
+# 看渲染出来的那一块里有没有汉字。英文里不许有撇号（见文件头那条）。
+UI += [
+    ("这里的搜索只认字面。让 AI 按意思替你找：",
+     "Search here only matches words. Let the AI look by meaning:"),
+    ("按意思找 →", "Find by meaning →"),
+    ("自己挑处境", "Pick a situation yourself"),
+    # 旧 bug：左引号早就翻成了 “，右引号「」」一直没人配，英文站显示成
+    # Nothing found for “被裁了」。只在落空那一刻看得见，所以一直没人看见。
+    ("+'」</b>'", "+'”</b>'"),
+]
 UI += [(" " + a, b) for a, b in list(UI) if b[:1] == " " and not a.startswith(" ")]
 UI = sorted(UI, key=lambda p: -len(p[0]))

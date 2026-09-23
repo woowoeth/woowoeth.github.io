@@ -323,6 +323,7 @@ body{background:var(--paper);color:var(--ink)}
 #hwx #hwx-none b{display:block;font-family:"Noto Serif TC","Songti SC",serif;font-size:17px;line-height:1.7;color:var(--ink)}
 #hwx #hwx-none i{display:block;font-style:normal;font-size:13.5px;line-height:1.8;color:var(--muted);margin:6px 0 14px}
 #hwx #hwx-none button{border:1px solid var(--ink);background:var(--ink);color:var(--paper);border-radius:999px;padding:7px 18px;font-family:inherit;font-size:13.5px;cursor:pointer}
+#hwx #hwx-none button.alt{background:transparent;color:var(--ink);margin-left:8px}
 #hwx .askhero #hwx-asc-tag button{border:0;background:transparent;color:var(--muted);padding:0;font-family:inherit;font-size:12.5px;line-height:1.7;cursor:pointer;text-align:left}
 #hwx .askhero #hwx-asc-tag button:hover{color:var(--acc)}
 #hwx .amine{border-top:1px dashed var(--line);margin-top:14px;padding-top:12px}
@@ -330,7 +331,7 @@ body{background:var(--paper);color:var(--ink)}
    圓球就成了另一樣東西；放進去之後它跟著框底走，單行時正好居中（6+30+6=42）。 */
 #hwx .amine .arow{display:flex;align-items:flex-end;gap:4px;border:1px solid var(--line);border-radius:14px;background:var(--paper);padding:0 6px 0 0}
 #hwx .amine .arow:focus-within{border-color:var(--acc)}
-#hwx .amine textarea{flex:1;min-width:0;display:block;resize:none;font-family:inherit;font-size:15px;line-height:1.6;color:var(--ink);background:transparent;border:none;border-radius:14px;padding:9px 13px;outline:none;max-height:96px}
+#hwx .amine textarea{flex:1;min-width:0;display:block;resize:none;font-family:inherit;font-size:16px;line-height:1.6;color:var(--ink);background:transparent;border:none;border-radius:14px;padding:9px 13px;outline:none;max-height:96px}
 #hwx .amine button{flex:0 0 auto;height:30px;margin:6px 0;border:none;border-radius:9px;background:var(--ink);color:var(--paper);font-family:inherit;font-size:14px;line-height:30px;padding:0 14px;cursor:pointer}
 #hwx .amine button:disabled{opacity:.4;cursor:default}
 
@@ -498,7 +499,7 @@ header.hd{margin-bottom:12px!important}
 .hid{display:none!important}</style>
 <section id="hwx">
 <button id="hwx-theme" type="button" aria-label="切換日夜模式"></button>
-<div class="hist" id="hwx-hist"><span class="hl">最近看過</span><span class="hchips" id="hwx-hchips"></span><button id="hwx-hclr">清空</button></div><div class="askhero" id="hwx-askhero"><div class="ahead"><span class="lb">今日一問</span></div><div class="q" id="hwx-aq"></div><div id="hwx-asc-tag"></div><div class="go" id="hwx-ago"></div><div class="amine" id="hwx-amine"><div class="arow"><textarea id="hwx-ain" rows="1"></textarea><button type="button" id="hwx-ago2">問</button></div></div></div><button class="scline" id="hwx-scline" type="button"><b>你遇到的是別的事？</b><span id="hwx-sccount"></span><i>挑你自己那一件 →</i></button><div class="today today-foot"><div class="tq"><div class="dt" id="hwx-dt"></div><div class="tgl" id="hwx-tgl"></div><div class="q" id="hwx-tq"></div><div class="src" id="hwx-tqs"></div><div class="acts"><button id="hwx-next">換一換</button><button class="bs" id="hwx-save">保存卡片</button><button id="hwx-share">分享</button></div></div><div class="tcol"><div class="tbox tbox-s"><div class="lb">今日一篇</div><a id="hwx-tp"></a></div></div></div><div class="sc" id="hwx-sc" style="display:none"><button class="scmore" id="hwx-scmore" type="button"></button></div><div class="res" id="hwx-res" style="display:none"></div><div class="qbar"><input id="q" placeholder="搜你遇到的事：被裁了、睡不著…" aria-label="搜索"></div><div style="display:flex;align-items:baseline;justify-content:space-between;margin-top:14px"><div class="tabs2" id="hwx-tabs2"><button data-t="新">最新</button><button data-t="全">全部</button><button data-t="境" class="on">處境</button></div><span class="ct" id="hwx-ct" style="font-size:12px;color:var(--muted);white-space:nowrap;flex:0 0 auto"></span></div><div class="cats" id="hwx-cats" style="display:none"></div><div class="scpick" id="hwx-scpick" style="display:none" role="group" aria-label="按處境篩選"></div><div class="nc-feed" id="hwx-ncfeed"></div><div class="feed" id="hwx-feed" style="display:none"></div><div class="nc-feed" id="hwx-scfeed" style="display:none"></div><script src="/tw/assets/home-hwxd.js?v=fa7e8e48"></script><script>(function(){
+<div class="hist" id="hwx-hist"><span class="hl">最近看過</span><span class="hchips" id="hwx-hchips"></span><button id="hwx-hclr">清空</button></div><div class="askhero" id="hwx-askhero"><div class="ahead"><span class="lb">今日一問</span></div><div class="q" id="hwx-aq"></div><div id="hwx-asc-tag"></div><div class="go" id="hwx-ago"></div><div class="amine" id="hwx-amine"><div class="arow"><textarea id="hwx-ain" rows="1"></textarea><button type="button" id="hwx-ago2">問</button></div></div></div><button class="scline" id="hwx-scline" type="button"><b>你遇到的是別的事？</b><span id="hwx-sccount"></span><i>挑你自己那一件 →</i></button><div class="today today-foot"><div class="tq"><div class="dt" id="hwx-dt"></div><div class="tgl" id="hwx-tgl"></div><div class="q" id="hwx-tq"></div><div class="src" id="hwx-tqs"></div><div class="acts"><button id="hwx-next">換一換</button><button class="bs" id="hwx-save">保存卡片</button><button id="hwx-share">分享</button></div></div><div class="tcol"><div class="tbox tbox-s"><div class="lb">今日一篇</div><a id="hwx-tp"></a></div></div></div><div class="sc" id="hwx-sc" style="display:none"><button class="scmore" id="hwx-scmore" type="button"></button></div><div class="res" id="hwx-res" style="display:none"></div><div class="qbar"><input id="q" placeholder="搜你遇到的事：被裁了、睡不著…" aria-label="搜索"></div><div style="display:flex;align-items:baseline;justify-content:space-between;margin-top:14px"><div class="tabs2" id="hwx-tabs2"><button data-t="新">最新</button><button data-t="全">全部</button><button data-t="境" class="on">處境</button></div><span class="ct" id="hwx-ct" style="font-size:12px;color:var(--muted);white-space:nowrap;flex:0 0 auto"></span></div><div class="cats" id="hwx-cats" style="display:none"></div><div class="scpick" id="hwx-scpick" style="display:none" role="group" aria-label="按處境篩選"></div><div class="nc-feed" id="hwx-ncfeed"></div><div class="feed" id="hwx-feed" style="display:none"></div><div class="nc-feed" id="hwx-scfeed" style="display:none"></div><script src="/tw/assets/home-hwxd.js?v=ace07e98"></script><script>(function(){
 var D=HWXD;
 /* 日夜模式：默認跟隨系統，點擊在 跟隨/日間/夜間 之間循環並記住 */
 (function(){
@@ -655,7 +656,11 @@ if(ain){
     /* 把卡片上那兩篇和處境名一起帶過去。這一問的答案首頁已經知道，
        不該讓聊天窗再用二元組檢索猜一遍——猜出來的經常是別的篇。 */
     if(typeof window.hwAsk==='function'){
-      window.hwAsk(t,{pin:(a1.r||[]).slice(0,2).map(function(r){return r.u;}),scene:a1.s||''});
+      /* 只在沒改過時釘住卡片那兩篇。改過了，框裡就是他自己的事 —— 還釘今天那兩篇，
+         AI 會被拽回今天的處境。2026-09-23 實測：在「重要的人走了」那天的框裡打
+         「老闆天天改需求」，答案被釘成了控制二分法，而庫裡對得上的是「做不完」那一組。 */
+      var mine=(t!==(a1.bx||''));
+      window.hwAsk(t, mine ? {} : {pin:(a1.r||[]).slice(0,2).map(function(r){return r.u;}),scene:a1.s||''});
       setTimeout(paintLeft,1400);
     }
   };
@@ -1160,10 +1165,25 @@ function applyFeed(){
   var none=document.getElementById('hwx-none');
   if(!none){none=document.createElement('div');none.id='hwx-none';none.style.display='none';feed.parentNode.insertBefore(none,feed);}
   if(keep.length+hits.length===0){
+    /* 原來這裡只有一句「換個說法試試」—— 把擔子甩回給一個卡住的人，讓他去猜
+       我們的詞彙表。2026-09-23 用手機走站：「老闆天天改需求」0 條，而同一句話
+       交給 AI，它當場對上「做不完 → 全都重要，我砍哪個都疼」。字面搜索連不上
+       同一件事的兩種說法，語義的那一方連得上 —— 所以落空時把他的原話交過去。
+       今天的次數用完了（或掛件還沒加載）才退回原來那句。 */
+    var canAsk=(typeof window.hwAsk==='function')&&(typeof window.hwLeft!=='function'||window.hwLeft()>0);
     none.innerHTML='<b>沒找到「'+esc(v)+'」</b>'
-      +'<i>換個說法試試——或者到下面的處境裡挑你自己那一件。</i>'
-      +'<button type="button" id="hwx-none-go">去挑處境 →</button>';
+      +(canAsk
+        ?'<i>這裡的搜索只認字面。讓 AI 按意思替你找：</i>'
+         +'<button type="button" id="hwx-none-ai">按意思找 →</button>'
+         +'<button type="button" class="alt" id="hwx-none-go">自己挑處境</button>'
+        :'<i>換個說法試試——或者到下面的處境裡挑你自己那一件。</i>'
+         +'<button type="button" id="hwx-none-go">去挑處境 →</button>');
     none.style.display='';
+    var ai=document.getElementById('hwx-none-ai');
+    if(ai)ai.onclick=function(){
+      trk('search_miss_to_ai',{term:v.slice(0,40)});
+      window.hwAsk(v);   /* 不釘篇目：這一句就是他自己的事，讓 AI 在全庫裡按意思挑 */
+    };
     var g=document.getElementById('hwx-none-go');
     if(g)g.onclick=function(){
       var qi=document.getElementById('q'); if(qi)qi.value='';
