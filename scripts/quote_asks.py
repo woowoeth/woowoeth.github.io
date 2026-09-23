@@ -398,6 +398,11 @@ QUOTE_ASKS = {
     "zhu-yuanzhang/delay-the-title": "别人都在抢先，我要不要慢一步。",
     "zhuge-liang/executing-ma-su": "该罚的是我最看重的那个人。",
     "zhuge-liang/longzhong-plan": "我看不出下一步棋该往哪走。",
+    # 露丝·施瓦茨·考恩
+    "cowan/the-helpers-left":
+        "家里机器都买齐了，活还是全在我身上。",
+    "cowan/effort-saved-time-not":
+        "工具快了几倍，我的活一点没少。",
     # 吕氏春秋
     "lushi-chunqiu/eight-observations":
         "我只能凭感觉判断一个人。",

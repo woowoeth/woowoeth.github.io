@@ -4,6 +4,7 @@ import re
 import unicodedata
 
 SLUGS = {
+    "露丝·施瓦茨·考恩": "cowan",
     "吕氏春秋": "lushi-chunqiu",
     "颜氏家训": "yanshi-jiaxun",
     "加里·贝克尔": "becker",

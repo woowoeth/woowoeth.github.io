@@ -168,6 +168,7 @@ NAMES = {
     "shi-tiesheng": ("Shi Tiesheng", "Body and daily life"),
     "tao-yuanming": ("Tao Yuanming", "Body and daily life"),
     # ── Family and relationships ──
+    "cowan": ("Ruth Schwartz Cowan", "Family and relationships"),
     "adler": ("Alfred Adler", "Family and relationships"),
     "attachment-theory": ("Attachment Theory", "Family and relationships"),
     "bowen": ("Murray Bowen", "Family and relationships"),

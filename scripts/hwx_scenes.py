@@ -740,7 +740,9 @@ SCENES = [
 ]),
 ("出得多了人却空了", "AI 来了", [
     ("东西没少做，标准又涨了。",
-     [("postman", "ecological-change"), ("excellent-sheep", "hurdles")]),
+     [("postman", "ecological-change"), ("excellent-sheep", "hurdles"), ("cowan", "effort-saved-time-not")]),
+    ("工具快了几倍，我的活一点没少。",
+     [("cowan", "effort-saved-time-not")]),
     ("它当初明明省事，我现在说不清了。",
      [("illich", "two-watersheds")]),
     ("东西出得比以前多，我却更空。",
@@ -1046,6 +1048,8 @@ SCENES = [
      [("hochschild", "second-shift"), ("thomas-gordon", "i-message")]),
     ("我一提，就变成我在抱怨。",
      [("nonviolent-communication", "observation-not-evaluation"), ("satir", "iceberg")]),
+    ("家里机器都买齐了，活还是全在我身上。",
+     [("cowan", "the-helpers-left")]),
 ]),
 ("照顾老人", "家里的事", [
     ("爸妈老了，我不知道能做什么。",
@@ -1182,6 +1186,10 @@ SCENES = [
      [("hochschild", "second-shift"), ("cal-newport", "schedule-the-depth")]),
     ("我给它多久，它就正好用掉多久。",
      [("parkinson", "work-expands"), ("seneca", "on-shortness-of-life")]),
+    ("家电越来越多，我怎么一点没闲下来？",
+     [("cowan", "effort-saved-time-not")]),
+    ("以前送上门的，现在全要我开车去。",
+     [("cowan", "the-helpers-left")]),
 ]),
 ("病了", "身体与精力", [
     ("为什么偏偏是我。",

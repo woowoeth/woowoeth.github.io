@@ -1,7 +1,7 @@
-# OurWord — 172 people and books on how the world actually works, across 2,600 years
+# OurWord — 173 people and books on how the world actually works, across 2,600 years
 # OurWord — See how people before you handled it.
 # https://ourword.ai/en/
-# Full corpus, plain text. 172 entrys.
+# Full corpus, plain text. 173 entrys.
 
 ========================================================================
 ## Albert Einstein
@@ -220,10 +220,10 @@ When the work at home lands on one person and saying so hasn't changed it, don't
 That smile is not 'her' smile. The first shift is at work, the second at home. Only one pays. Labour nobody books gets billed to one person anyway.
 
 ### Q: What should I read alongside?
-Christina Maslach — Two kinds of uncounted work: the required feeling, and the six ways a job and a person fail to match. Arthur Kleinman — Both put a price on labour nobody counts: Hochschild on housework and emotional labour, Kleinman on long-term care, and both are assumed to fall on one person.
+Christina Maslach — Two kinds of uncounted work: the required feeling, and the six ways a job and a person fail to match. Arthur Kleinman — Both put a price on labour nobody counts: Hochschild on housework and emotional labour, Kleinman on long-term care, and both are assumed to fall on one person. Ruth Schwartz Cowan — Both keep the books on the unseen work at home: Hochschild counts who works the extra shift between two partners, while Cowan goes one step back and shows the ledger was already wrong between people and machines, when the helpers, the delivery man and the men's share left the house as the appliances came in.
 
 ### Further
-Thomas Gordon Christina Maslach Harvard Study of Adult Development Arthur Kleinman
+Thomas Gordon Christina Maslach Harvard Study of Adult Development Arthur Kleinman Ruth Schwartz Cowan
 
 ========================================================================
 ## Arthur Kleinman
@@ -670,7 +670,7 @@ Work expands so as to fill the time available for its completion. Headcount clim
 Cal Newport — Two places to cut into the same problem: Newport puts deep work into the calendar, Parkinson says the block you booked will swell to fill itself unless you make it smaller. Taiichi Ohno — Both say slack fills itself in: Ohno watches inventory hide the problem, Parkinson watches time and headcount hide it.
 
 ### Further
-Peter Drucker Andy Grove Taiichi Ohno Cal Newport Seneca
+Peter Drucker Andy Grove Taiichi Ohno Cal Newport Seneca Ruth Schwartz Cowan
 
 ========================================================================
 ## C.S. Lewis
@@ -2289,10 +2289,10 @@ Take the tool you lean on hardest and work out two numbers: the hours a week it 
 Past the second watershed a tool produces what it was meant to remove. Illness produced by the treatment itself I call iatrogenesis. A convivial tool is one you can master, repair, and do without.
 
 ### Q: What should I read alongside?
-Kevin Kelly — Both read where technology is heading: one asks what it will grow into, the other asks where it starts eating people. Peter Drucker — Both ask what comes after efficiency — do the right things, or put a ceiling on the tool. Neil Postman — Both keep a ledger on tools: one counts the hours you pay to keep it, the other counts how far it raised the line for what counts as enough.
+Kevin Kelly — Both read where technology is heading: one asks what it will grow into, the other asks where it starts eating people. Peter Drucker — Both ask what comes after efficiency — do the right things, or put a ceiling on the tool. Neil Postman — Both keep a ledger on tools: one counts the hours you pay to keep it, the other counts how far it raised the line for what counts as enough. Ruth Schwartz Cowan — Both say a labour-saving tool can end up occupying the person it served: Illich argues it from thresholds and the effective speed of the car, while Cowan follows the same car as it moves the shop's and the doctor's delivery work onto the housewife, and names who was occupied and for how many hours.
 
 ### Further
-Zhuangzi Peter Drucker Cal Newport Thinking in Systems Finite and Infinite Games Simone Weil Neil Postman
+Zhuangzi Peter Drucker Cal Newport Thinking in Systems Finite and Infinite Games Simone Weil Neil Postman Ruth Schwartz Cowan
 
 ========================================================================
 ## Jeff Bezos
@@ -3686,7 +3686,7 @@ All technological change is a trade-off. The advantages and disadvantages of new
 Kevin Kelly — Both watch where a technology is heading over decades: one asks what it wants to become, the other asks whose place it moved when it sat down. Ivan Illich — Both keep a ledger on tools: one counts the hours you pay to keep it, the other counts how far it raised the line for what counts as enough.
 
 ### Further
-Ivan Illich Cal Newport Norbert Wiener Kevin Kelly Finite and Infinite Games
+Ivan Illich Cal Newport Norbert Wiener Kevin Kelly Finite and Infinite Games Ruth Schwartz Cowan
 
 ========================================================================
 ## Nelson Mandela
@@ -4387,6 +4387,40 @@ John Ratey — Same system, two handles: Sapolsky on what keeps it switched on, 
 
 ### Further
 John Ratey Christina Maslach John Cacioppo Rat Park Arthur Kleinman
+
+========================================================================
+## Ruth Schwartz Cowan
+URL: https://ourword.ai/en/i/cowan/
+Tags: Family and relationships, Modern, Household technology
+
+Ruth Schwartz Cowan (United States · 1941-) — Household technology. American historian of technology, born in Brooklyn in 1941, who taught at SUNY Stony Brook from 1967 to 2002 and is now professor emerita at the University of…
+
+### Q: What did this one leave behind?
+American historian of technology, born in Brooklyn in 1941, who taught at SUNY Stony Brook from 1967 to 2002 and is now professor emerita at the University of Pennsylvania. Her 1983 book More Work for Mother won the Dexter Prize of the Society for the History of Technology the following year. It asks a question everyone assumes is settled: the house fills with machines, so why has the housework not shrunk? Her answer has two halves. The machines mostly replaced helpers - the men's and children's share, the maid, the laundress, the delivery man - and what was left fell to the wife alone. And whatever effort they did save was absorbed by rising standards. By the time studies she gathered, a full-time American housewife worked fifty to sixty hours a week at home from the early twentieth century to the 1980s.
+
+### Q: What actually happened?
+In 1987 she wrote an essay for American Heritage called 'Less Work for Mother?'. Partway through she recorded what happened while she was writing it. She was interrupted five times: to take a child to field hockey practice, then to bring her back, to pick up groceries at the supermarket, to retrieve her husband stranded at the train station, and for a trip to a doctor's office. Each time, she wrote, she was doing housework, and each time she had to use her car. We do not think of cars as household appliances. She argued that is exactly what they are.
+
+### The parts · Ask whose effort it saved
+Every labour-saving thing that enters a house deserves one question: before it came, who did this? Her answer kept repeating. The share removed was the husband's, the children's, the maid's, the delivery man's. The share left over did not shrink; it became one person's. e.g. The robot vacuum arrives, and the family that used to clean together on Saturdays goes back to their rooms.
+
+### The parts · Saved effort, eaten by standards
+The washing machine made laundry lighter, so laundry was done more often: whole shirts instead of detachable collars, both sheets changed, clean underwear daily. By the 1980s a housewife washed about ten times her mother's load by weight, in no less time. e.g. A slide takes five minutes instead of an hour, so every review now needs fifty of them.
+
+### The parts · The car is an appliance
+The iceman, the milkman, the grocer, the seamstress and the doctor used to come to the door. Once she drove, businesses and doctors found it paid not to, and her work gained a new line: chauffeur. The road became a full working day a week. e.g. 'Click and collect' and 'self-service online': the journey you no longer pay for is the one you now make.
+
+### Q: How do I use it today?
+If every machine is in your house and you are still the busiest person in it, do one thing today. List each labour-saving machine you own, and next to it write who did that job before it arrived. Some lines will name other people: a relative who used to help, a shop that used to deliver, someone who used to do the washing-up without being asked. Those lines are what the machines really replaced. Then add a second note to each line: who set today's standard for this job, and how much higher is it than ten years ago? With that list on the table the conversation is no longer 'could you help me more', but how many people this work was meant for, and whether the standard needs to be this high.
+
+### Lines to keep
+Drudgery had disappeared, but the laundry hadn't. The machine did not remove the work. It removed the helpers. Effort saved is not time saved. The delivery man is gone; the delivering is not.
+
+### Q: What should I read alongside?
+Arlie Hochschild — Both keep the books on the unseen work at home: Hochschild counts who works the extra shift between two partners, while Cowan goes one step back and shows the ledger was already wrong between people and machines, when the helpers, the delivery man and the men's share left the house as the appliances came in. Ivan Illich — Both say a labour-saving tool can end up occupying the person it served: Illich argues it from thresholds and the effective speed of the car, while Cowan follows the same car as it moves the shop's and the doctor's delivery work onto the housewife, and names who was occupied and for how many hours.
+
+### Further
+Arlie Hochschild Ivan Illich Neil Postman C. Northcote Parkinson
 
 ========================================================================
 ## Sapiens
@@ -8640,6 +8674,80 @@ Where it goes wrong: reading it as 'hold on and your day comes' — most people'
 Being prepared means having it when somebody else is in a hurry.
 Age is only the problem when your hands are empty.
 You can't know where it lands. You can make sure it's real.
+
+========================================================================
+## Ruth Schwartz Cowan · The machine came in, the helpers went out
+URL: https://ourword.ai/en/i/cowan/the-helpers-left/
+Source: More Work for Mother, 1983; figures from 'Less Work for Mother?', American Heritage 38:6, 1987
+Tags: Deep read, Ruth Schwartz Cowan, A labour-saving machine mostly saves someone else's labour
+
+Every appliance is in the house and the work is still all yours. Whose labour did the machines actually save?
+
+### Q: What actually happened?
+In 1918 General Electric advertised its vacuum cleaner as better than a maid: it doesn't quit, get drunk, or demand higher wages. The claim was accurate. Between 1910 and 1920 the number of Americans in household service fell from 1,851,000 to 1,411,000 while the number of households rose from 20.3 million to 24.4 million. "What Maggie had once done with a broom, Mrs. Smith was now doing with a vacuum cleaner."
+
+### The parts · It replaced the helper, not the chore
+The vacuum cleaner arrived in the same years the servant left. For households that could once afford help, that meant one thing: the woman of the house was doing more housework than ever, and the time studies show it as longer hours for Mrs. Smith.
+e.g. A new efficiency system goes in, and the entries an assistant used to key for everyone are now keyed by everyone.
+
+### The parts · The washer came in, the laundress went out
+Early in the century many homes hired a laundress or used a steam laundry, found by the 1920s in almost every urban neighbourhood. The home washer finished both: her labour was unpaid, so one machine looked cheaper than paying someone forever.
+e.g. The expenses software launches and finance stops processing receipts; you photograph and file every one yourself.
+
+### The parts · The car made her the delivery service
+The iceman, the milkman, the grocer, the seamstress and the doctor all used to come to the door. Once she could drive, businesses dropped delivery and doctors kept to their offices. Her job description gained a line: chauffeur.
+e.g. Every new 'self-service' option is a stretch of somebody else's work handed to you.
+
+### The parts · The men's share went first
+The book runs back to about 1700. Cooking used to take several people: the wife at the hearth, husband and sons cutting and hauling wood. Stoves, gas and electricity removed the men's and children's share first. Hers stayed, and became hers alone.
+e.g. The dishwasher arrives, and whoever used to help with the washing-up quietly stops coming into the kitchen.
+
+### Q: How do I use it today?
+Where you are: every machine is in the house, you are still the busiest person in it, and saying so sounds ungrateful.
+Ask first: before this machine arrived, how many people did this job, whose share did the machine remove, and whose share was left?
+Where it goes wrong: reading it as 'the machines are useless'. She says plainly that nobody wants the washboard back. The point is the other column of the ledger: the effort went, and the helpers went with it, so what needs discussing is how many people the remaining work was meant for.
+
+### Lines to keep
+The vacuum replaced the maid, not the sweeping.
+The delivery man is gone; the delivering is not.
+Each new self-service is a slice of someone's job, now yours.
+
+========================================================================
+## Ruth Schwartz Cowan · Effort saved, time not
+URL: https://ourword.ai/en/i/cowan/effort-saved-time-not/
+Source: More Work for Mother, 1983; figures from 'Less Work for Mother?', American Heritage 38:6, 1987
+Tags: Deep read, Ruth Schwartz Cowan, Make a task cheap and the standard rises to eat the saving
+
+The tools got several times faster and there is no less to do. Where did the saving go?
+
+### Q: What actually happened?
+Once the washing machine was in American homes, clothes were washed more often. Men stopped wearing detachable collars and cuffs, so whole shirts had to be washed and ironed. Housewives changed two sheets a week instead of one. Teenagers changed their underwear every day instead of every weekend. By the 1980s a housewife processed roughly ten times, by weight, the laundry her mother had. "Drudgery had disappeared, but the laundry hadn't." The weekly hours went from 5.8 in 1925 to 6.2 in 1964.
+
+### The parts · Labour has two halves
+She splits labour into energy spent and time spent, and the history of laundry shows one can be conserved while the other is not. The effort saved was real. Nobody who has washed a sheet by hand wants the washboard back.
+e.g. The weekly report drops from three days to one hour, and now five versions are expected.
+
+### The parts · Cheaper work, higher standards
+The vacuum often came with a bigger home and wall-to-wall carpet. Rugs once beaten twice a year were vacuumed weekly, in some homes daily. In economists' terms, productivity went up and the time spent by each worker did not significantly fall.
+e.g. Photo editing becomes effortless, so every picture is now retouched like a magazine cover.
+
+### The parts · Fifty to sixty hours, half a century apart
+The early time studies were small and inconsistent but agreed: a full-time American housewife did fifty to sixty hours of unpaid housework a week. Fifty years and dozens of motors later, the far better surveys found the same fifty to sixty.
+e.g. Before buying the next time-saver, count how many hours the last three actually took off your week.
+
+### The parts · The road not taken
+Steam laundries existed in America from the 1860s and by the 1920s were in almost every urban neighbourhood. Pooling the work and handing it to specialists was a different road. The home washer ended it: one machine per house, and one person per machine.
+e.g. Ten flats in one building, ten dishwashers, ten people each loading theirs at nine at night.
+
+### Q: How do I use it today?
+Where you are: the tools get faster every year, the work does not shrink, you are more tired, and you suspect it is you.
+Ask first: did this tool save effort or time, and after it arrived, did the standard quietly rise? Who raised it, and to where?
+Where it goes wrong: reading it as 'standards are fake, just lower them'. Cleaner clothes and larger homes are often real gains, and she says so. What she separates is that a rising standard is a choice, not something the machine brings with it, and it only becomes your choice once it is named.
+
+### Lines to keep
+Effort saved is not time saved.
+The washboard went; the laundry grew tenfold.
+Productivity went up; the hours did not come down.
 
 ========================================================================
 ## The Crowd · The person who walks into a crowd

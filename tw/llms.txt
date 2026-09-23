@@ -1,11 +1,11 @@
 # OurWord (人類世界生存法則)
 
-> 172 people and books on how the world actually works, across 2,600 years
+> 173 people and books on how the world actually works, across 2,600 years
 > 遇到事了，看看以前的人怎麼處理
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 172 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 173 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
-一個關於「世界到底怎麼運轉」的知識庫：戰略、財富、權力、人性、創業，取自 172 位人物與典籍，跨越 2600 年。每一條都寫清楚這個人真正留下的那一個想法、背後的故事、拆開的分則與例子，以及今天怎麼用。
+一個關於「世界到底怎麼運轉」的知識庫：戰略、財富、權力、人性、創業，取自 173 位人物與典籍，跨越 2600 年。每一條都寫清楚這個人真正留下的那一個想法、背後的故事、拆開的分則與例子，以及今天怎麼用。
 
 ## Read it
 
@@ -18,7 +18,7 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 
 ## Topics
 
-- [現代](https://ourword.ai/tw/t/modern/) — 59
+- [現代](https://ourword.ai/tw/t/modern/) — 60
 - [工業時代](https://ourword.ai/tw/t/industrial-age/) — 53
 - [權力與組織](https://ourword.ai/tw/t/power/) — 22
 - [先秦與古典時代](https://ourword.ai/tw/t/classical-era/) — 21
@@ -27,10 +27,10 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 - [財富與風險](https://ourword.ai/tw/t/wealth/) — 19
 - [謀略與競爭](https://ourword.ai/tw/t/strategy/) — 17
 - [世界如何運轉](https://ourword.ai/tw/t/world/) — 16
+- [家庭與關係](https://ourword.ai/tw/t/family/) — 15
 - [學習與成長](https://ourword.ai/tw/t/learning/) — 15
 - [中古](https://ourword.ai/tw/t/medieval/) — 15
 - [識人與相處](https://ourword.ai/tw/t/people/) — 15
-- [家庭與關係](https://ourword.ai/tw/t/family/) — 14
 - [身心與生活](https://ourword.ai/tw/t/living/) — 14
 - [近世](https://ourword.ai/tw/t/early-modern/) — 12
 - [秦漢至魏晉](https://ourword.ai/tw/t/han-wei/) — 12
@@ -112,6 +112,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [丘吉爾 · 荒野十年](https://ourword.ai/tw/i/churchill/wilderness-years/): 丘吉爾 · 荒野十年——沒人找他的那些年。被排除在外，沒人再找你，這段日子拿什麼填。這一篇要回答的是：丘吉爾被晾著的十年裡每天在幹什麼。
 - [丘吉爾 · 說了沒人聽](https://ourword.ai/tw/i/churchill/no-one-listened/): 丘吉爾 · 說了沒人聽——他把話說成可以核對的。你看見了別人還沒看見的事，說了沒人聽，還要不要繼續說。這一篇要回答的是：丘吉爾那幾年是怎麼說的。
 - [丘吉爾 · 六十五歲那年](https://ourword.ai/tw/i/churchill/sixty-five/): 丘吉爾 · 六十五歲那年——十年後電話來了。攢了很久的東西什麼時候派上用場，還趕得上嗎。這一篇要回答的是：丘吉爾等到的那一天是怎麼來的。
+- [露絲·施瓦茨·考恩 · 機器來了，幫手走了](https://ourword.ai/tw/i/cowan/the-helpers-left/): 露絲·施瓦茨·考恩 · 機器來了，幫手走了——省力的機器，省下的多半是別人那份力。家裡機器都買齊了，活還是全在我身上。這一篇要回答的是：機器省下的那份力，原來是誰在出。
+- [露絲·施瓦茨·考恩 · 力氣省了，時間沒省](https://ourword.ai/tw/i/cowan/effort-saved-time-not/): 露絲·施瓦茨·考恩 · 力氣省了，時間沒省——一件事變便宜了，標準就漲到把省下的吃掉。工具快了幾倍，我的活一點沒少。這一篇要回答的是：機器省下來的那部分，最後去了哪裡。
 - [烏合之眾 · 進入群體的人](https://ourword.ai/tw/i/crowd/descent-in-crowds/): 烏合之眾 · 進入群體的人——臺階往下走。為什麼一群體面人湊在一起會幹出格的事？這一篇要回答的是：勒龐給出的三個臺階。
 - [烏合之眾 · 斷言、重複、傳染](https://ourword.ai/tw/i/crowd/assert-repeat-contaminate/): 烏合之眾 · 斷言、重複、傳染——群體說服三件套。他把煽動家的手法拆成了三個動詞。這一篇要回答的是：這套配方為什麼有效，以及怎麼防。
 - [關鍵對話 · 先造安全感](https://ourword.ai/tw/i/crucial-conversations/safety-first/): 關鍵對話 · 先造安全感——不安全的人聽不進內容。你講的每一句都對，對方卻越退越遠。這一篇要回答的是：這時該停下什麼。
@@ -462,7 +464,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [AI Bubble Monitor / AI 泡沫檢測儀](https://ourword.ai/ai/)
 - [Zouni / 走你](https://ourword.ai/zouni/)
 
-## Index (172 entrys)
+## Index (173 entrys)
 
 - [BJ·福格](https://ourword.ai/tw/i/bj-fogg/): BJ·福格（2019年·斯坦福行為設計實驗室）——小到不會失敗。斯坦福行為設計實驗室創始人，研究行為如何被設計出來。他給出一個公式：行為發生需要動機、能力、提示三者同時到位。多數人失敗在只調動機——靠決心和自我激勵——而動機天然起伏，靠它維持的習慣必然崩。他的主張相反：把行為縮到小得不需要動機，然後掛在一個已有的動作後面。
 - [C.S.劉易斯](https://ourword.ai/tw/i/cs-lewis/): C.S.劉易斯（1898-1963年·英國牛津）——妻子死後幾個月的日記。作家，牛津和劍橋的教授，寫過《納尼亞傳奇》和大量勸人信仰的書。五十八歲結婚，妻子喬伊四年後因癌症去世。之後幾個月他在四本練習簿上記自己的狀態，後來用筆名出版，就是《卿卿如晤》。收他是因為「重要的人走了」那六個問題，原來靠弗蘭克爾和蘇軾在答——一個是集中營的倖存者，一個是被貶的官員
@@ -625,6 +627,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [陶淵明](https://ourword.ai/tw/i/tao-yuanming/): 陶淵明（365-427年·潯陽）——辭官八十天，窮一輩子。詩人。四十一歲當彭澤縣令，幹了八十多天，郡裡派督郵下來要他穿戴整齊去迎，他說「吾不能為五斗米折腰向鄉里小人」，當天解印走了，之後再沒出來做官。辭官後是真窮：四十四歲家裡失火房子燒光，有一年斷了糧出門去討，回來寫了一首《乞食》。收他是因為「人生轉彎」那一組蘇軾一人答了十個——庫裡缺
 - [霍華德·馬克斯](https://ourword.ai/tw/i/marks/): 霍華德·馬克斯（美國·1946-）——第二層思維。橡樹資本創始人，管理規模逾兩千億美元，主戰場是不良債權和高收益債——一門只在別人恐慌時才有生意的行當。他從 1990 年開始寫投資備忘錄，巴菲特說「我第一個打開來讀的郵件就是霍華德的備忘錄」。他的獨特之處在於公開放棄了預測：不猜宏觀、不猜利率、不猜明年，只做一件事——判斷我們現在
 - [霍去病](https://ourword.ai/tw/i/huo-qubing/): 霍去病（漢·前140-前117）——純粹。漢武帝外甥，17歲首戰率800騎兵深入敵後殲滅2028人，19歲兩次河西之戰殲滅4萬匈奴，22歲漠北之戰深入2000裡，封狼居胥山，飲馬瀚海。24歲病逝。他是歷史上最純粹的燃燒型天才——把全部能量給了一件事，然後熄滅。
+- [露絲·施瓦茨·考恩](https://ourword.ai/tw/i/cowan/): 露絲·施瓦茨·考恩（美國·1941-）——家務技術。美國技術史學家，1941年生於紐約布魯克林，巴納德學院動物學學士、約翰·霍普金斯大學科學史博士，1967到2002年在紐約州立大學石溪分校任教，後為賓夕法尼亞大學榮休教授。1983年出版《母親的活更多了》（More Work for Mother），次年獲美國技術史學會德克斯特獎
 - [非暴力溝通](https://ourword.ai/tw/i/nonviolent-communication/): 非暴力溝通（1999年·馬歇爾·盧森堡）——先說觀察。盧森堡是臨床心理學家，一生在種族衝突、離婚調解、監獄和戰區做溝通調停。他發現絕大多數爭吵的引爆點不是分歧本身，而是把評論說成了觀察——「你從來不管孩子」聽著像陳述事實，其實是判決。他給出一個四步結構：觀察、感受、需要、請求。這套東西看著簡單，難在第一步就幾乎沒人做得到。
 - [韓信](https://ourword.ai/tw/i/han-xin/): 韓信（漢·前231-前196）——復盤。中國歷史上最天才的軍事家。胯下之辱，背水一戰，十面埋伏——每一個都是教科書。但他的故事有兩面：軍事天才的崛起，和政治白痴的毀滅。
 - [韓非子](https://ourword.ai/tw/i/han-feizi/): 韓非子（戰國·前280-前233）——法術勢。法家集大成者，把商鞅的「法」、申不害的「術」、慎到的「勢」整合為一套完整的權力理論。他是中國歷史上最清醒的現實主義者——不談應該怎樣，只談實際上怎樣。他的理論直接為秦始皇統一中國提供了思想基礎。最大的諷刺：他知道所有權術，卻死於同學李斯的讒言。
