@@ -115,8 +115,14 @@ Trusted Publisher（owner=woowoeth · repo=woowoeth.github.io · workflow=mcp-re
 ## Skill
 
 ```bash
-npx skills add https://github.com/woowoeth/ourword-skills/tree/main/ourword-en
+npx skills add woowoeth/ourword-skills
 ```
+
+短地址就够了，不用写到具体那一份 —— CLI 会把仓里三层以内的 SKILL.md 都找出来。
+**skills.sh 没有提交入口**，目录是靠 `npx skills add` 的安装遥测填的
+（vercel-labs/skills issue #880 底下的官方答案）。所以这一行就是收录的唯一通路。
+发之前先自己验一遍：`npx skills add woowoeth/ourword-skills --list` ——
+它只克隆和列出、不安装，能当场看出 frontmatter 解析没解析得了。
 
 或者手拷到 `~/.claude/skills/ourword/`（用户级）或项目的 `.claude/skills/ourword/`。
 手拷的话，**目录名必须等于 frontmatter 里的 `name`**。

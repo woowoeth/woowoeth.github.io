@@ -83,7 +83,7 @@ so many words, not to make something up.
 
 ## Also available as an Agent Skill
 
-`tools/skill/ourword-en/` in the repo — for clients without MCP. It reads the
+`npx skills add woowoeth/ourword-skills` — for clients without MCP. It reads the
 same index over plain HTTP (`https://ourword.ai/en/llms.txt`), so it works with
 no configuration at all. MCP is for people who can wire up a server; the Skill
 is for everyone else.

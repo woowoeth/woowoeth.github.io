@@ -1059,3 +1059,33 @@ API 不经那层 CDN。判据这边匿名调用，撞到 403/429 限流就跳过
 新建一个顶层目录时要多问一句：有没有别的东西在按目录遍历这个仓？
 更一般地：黑名单式的排除表会随时间自动腐烂，而腐烂的方式是**悄悄多出东西**，
 不是少出东西 —— 少了会有人喊，多了没人看得见。
+
+## 45 · 英文 Skill 的 frontmatter 解析不了，对整个安装通路是隐形的
+
+**症状**：`npx skills add woowoeth/ourword-skills --list` 只找到 **1 个** skill，
+英文那份报 YAML 解析错。也就是说它**装不上**，而这件事在站内任何检查里都看不出来。
+
+**真因**：description 里写了 `…stuck in right now: a boss who keeps changing priorities…`。
+**YAML 里不带引号的标量含 `: ` 就是语法错。** 讽刺的是这个冒号是为了另一个正当理由加的
+（卡片截断时不要断在悬空的破折号上），改完没有人回头验一次「它还装得上吗」。
+
+**为什么闸没响**：判据写的是 `re.search(r"^description:\s*\S", fm)` ——
+「有没有 description 这一行」。有，所以一直全绿。
+**量的是「写了没有」，不是「读得通没有」。** 又一次代理指标（#41 的教训里第七次）。
+
+**为什么这一条特别贵**：vercel-labs/skills issue #880 底下有官方答案 ——
+**skills.sh 没有提交入口，目录是靠 `npx skills add` 的安装遥测填的。**
+所以「能被 npx 装上」不是锦上添花，它是那个渠道的**唯一**入口。
+一个解析不了的 frontmatter = 在那条渠道上完全不存在。
+
+**处置**：description 加双引号。判据改成**真的用 YAML 解析** frontmatter
+（没装 PyYAML 时退回查未加引号的 `: `），中英两份都走这条。
+反向注入验过：去掉引号当场报「mapping values are not allowed here」。
+装法也改对了：`npx skills add woowoeth/ourword-skills`（短地址，CLI 自己找三层以内的
+SKILL.md），README 里写明 `--list` 可以在发出去之前自己验一遍。
+
+**闸：** `scripts/check_tools.py` —— `_frontmatter_parses()`，中英两份都过。
+
+**教训**：**「格式对不对」这类判据，不要用正则近似，直接拿真的解析器跑一遍。**
+正则能证明「这行存在」，证明不了「这份文件读得通」，而下游工具用的是后者。
+更一般地：**凡是「别人的工具要来读我这份文件」，判据就该用别人那个工具，或者至少用同一个解析器。**
