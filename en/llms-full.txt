@@ -1,7 +1,7 @@
-# OurWord — 173 people and books on how the world actually works, across 2,600 years
+# OurWord — 174 people and books on how the world actually works, across 2,600 years
 # OurWord — See how people before you handled it.
 # https://ourword.ai/en/
-# Full corpus, plain text. 173 entrys.
+# Full corpus, plain text. 174 entrys.
 
 ========================================================================
 ## Albert Einstein
@@ -1577,10 +1577,10 @@ Next time you face someone stronger, add a dimension nobody in the room is count
 With this, I am shaking the foundations of the British Empire. The means may be likened to a seed, the end to a tree. Nonviolence is the weapon of the strong.
 
 ### Q: What should I read alongside?
-Nelson Mandela — The same idea one generation on: Mandela began with armed struggle and arrived at Gandhi's position after twenty-seven years in prison, which makes his version the tested one. Machiavelli — The two answers to whether the end justifies the means: Machiavelli says judge by the result, Gandhi says the result is already contained in the method.
+Nelson Mandela — The same idea one generation on: Mandela began with armed struggle and arrived at Gandhi's position after twenty-seven years in prison, which makes his version the tested one. Machiavelli — The two answers to whether the end justifies the means: Machiavelli says judge by the result, Gandhi says the result is already contained in the method. Lin Xiangru — Both face a stronger party that will not reason and neither relies on force: Gandhi puts the other side's violence in front of everyone until it loses its legitimacy, while Lin moves earlier, choosing before anyone acts the path on which a broken promise can only be theirs, and keeping something he can take back.
 
 ### Further
-Nelson Mandela Viktor Frankl Marcus Aurelius Socrates
+Nelson Mandela Viktor Frankl Marcus Aurelius Socrates Lin Xiangru
 
 ========================================================================
 ## Garry Kasparov
@@ -1885,7 +1885,7 @@ His merit covered the empire and his ruler did not suspect him. I deal with peop
 Han Xin — The same impossible position: Han Xin kept proving he was a threat and his clan was destroyed, Guo Ziyi kept proving he was harmless and died in bed. Zhang Liang — Two ways to survive success: Zhang Liang left the table, Guo Ziyi stayed at it with his cards face up, which is much the harder trick. Feng Dao — Two first-rate survivors of disorder, but Guo Ziyi stayed loyal inside one dynasty while Feng Dao crossed four. Where the boundary of loyalty sits, they answer differently.
 
 ### Further
-Han Xin Zhang Liang Zeng Guofan Sima Yi Wang Jian Feng Dao Li Bi
+Han Xin Zhang Liang Zeng Guofan Sima Yi Wang Jian Feng Dao Li Bi Lin Xiangru
 
 ========================================================================
 ## Han Feizi
@@ -3024,6 +3024,43 @@ Zhu Yuanzhang — Two theories of how an emperor handles talent: Li Shimin kept 
 
 ### Further
 Zeng Guofan Zhuge Liang Liu Bang The Comprehensive Mirror Xunzi Mencius Shang Yang
+
+========================================================================
+## Lin Xiangru
+URL: https://ourword.ai/en/i/lin-xiangru/
+Tags: Strategy and competition, Pre-Qin and classical, Putting the wrong on their side
+
+Lin Xiangru (Warring States · Zhao · dates unknown) — Putting the wrong on their side. Minister of the state of Zhao in the Warring States period, who began as a retainer in the household of the chief eunuch Miao Xian.
+
+### Q: What did this one leave behind?
+Minister of the state of Zhao in the Warring States period, who began as a retainer in the household of the chief eunuch Miao Xian. When the King of Qin offered fifteen cities for Zhao's jade disc, he took it to Qin and brought it back whole. At the meeting of the two kings at Mianchi he forced the King of Qin to make music for the King of Zhao, and was raised above the great general Lian Po, who swore to humiliate him. Lin kept out of his way until Lian Po came to apologise. Sima Qian wrote their lives as one. He left two ways of dealing with people: against a stronger party that will not play fair, arrange things so the wrong lands on their side; against a provocation from your own side, ask first whether what you hold together would survive the fight.
+
+### Q: What actually happened?
+The King of Qin invited the King of Zhao to meet at Mianchi. Well into the drinking he asked the King of Zhao to play the zither, and Qin's scribe wrote it down: on this day the King of Qin drank with the King of Zhao and ordered him to play. Lin Xiangru stepped forward and asked the King of Qin to beat time on an earthen pot. He refused. Within five paces, Lin said, I can spatter Your Majesty with the blood of my neck. The guards reached for their swords; he glared and they fell back. The king struck the pot once, and Lin had Zhao's scribe write that down too.
+
+### The parts · Let the wrong land on their side
+Offered cities for the jade, he did two sums: refuse, and Zhao is in the wrong; hand it over and get nothing, and Qin is. He chose to agree and push the risk of broken faith onto a stronger state that needed a pretext to march. e.g. Offered terms you don't believe, accept them with the delivery steps written down, and see whether they walk them.
+
+### The parts · Keep something you can take back
+His promise was that the jade would stay in Qin only if the cities came. When the king showed no sign of paying, Lin took the jade back on the pretext of pointing out a flaw, asked for five days of fasting, and sent it home by a back road. e.g. Send a sample and tie the final payment to acceptance, so they take the first step.
+
+### The parts · If they write it down, so do you
+At Mianchi Qin's scribe recorded that the King of Zhao played for the King of Qin. Lin forced the reverse and had Zhao's scribe record it. When someone uses the record to score a point, answer on the same page with an equal entry. e.g. If the minutes note your concession, make sure the same minutes note what they gave in return.
+
+### The parts · With your own side, put the steel away
+When Lian Po swore to disgrace him, he stayed home on court days and turned his carriage aside in the street. Qin held off, he said, only because both of them were there; two tigers fighting would leave one dead. e.g. In a clash with a colleague you work shoulder to shoulder with, ask who gains most if you two fall out in public.
+
+### Q: How do I use it today?
+If you are facing someone stronger who will not play fair, don't start by arguing with them, and don't refuse outright. Follow each path to its end and see where the wrong lands. Take the one that leaves it with them, but don't give anything away for free: make their delivery the condition for yours, and keep something you can take back. If the person picking the fight is on your own side, don't rush to prove you are not afraid. Ask what the two of you are holding together, and whether it survives the fight. Lin Xiangru threatened to smash the jade against a pillar in Qin's hall, then went out of his way to avoid Lian Po at home. The nerve and the restraint came from the same calculation.
+
+### Lines to keep
+Better to agree and leave the wrong with Qin. Within five paces, I can spatter Your Majesty with my blood. When two tigers fight, one of them does not survive. The state's emergency first, my private quarrel second.
+
+### Q: What should I read alongside?
+Gandhi — Both face a stronger party that will not reason and neither relies on force: Gandhi puts the other side's violence in front of everyone until it loses its legitimacy, while Lin moves earlier, choosing before anyone acts the path on which a broken promise can only be theirs, and keeping something he can take back. Zhang Liang — Both step back when they could press their claim: Zhang Liang turned down thirty thousand households for one small county, yielding to his ruler to disarm suspicion, while Lin yielded to a colleague to keep standing the one line of defence the two of them held together.
+
+### Further
+Guo Ziyi Zhang Liang Gandhi Su Shi
 
 ========================================================================
 ## Liu Bang
@@ -4858,7 +4895,7 @@ A bamboo stick and straw sandals beat a horse. Who's afraid? Looking back at tha
 Zhuangzi — Two ways of not being owned: Zhuangzi refuses the post, Su Shi takes it and refuses to be defined by losing it. C.S. Lewis — Both wrote through the worst of it. Lewis to find out what he actually believed, Su Shi to find out what was still enjoyable. Chu Shijian — Both began with one small concrete job after losing the position: Su Shi broke ground at Huangzhou, Chu Shijian built the irrigation first. Neither waited to be recognised again. Seneca — Two ways of writing out of adversity: Seneca writes about restraint from inside the machinery of power, Su Shi writes about lightness on the road into exile, and both had been tested before either wrote a line. Viktor Frankl — Creation under punishment: Su Shi wrote his best work in exile, Frankl finished logotherapy in the camps — both took the worst stretch of a life and made it the productive one. Du Fu — Both rebuilt after forty: Su Shi broke ground at Huangzhou, Du Fu put up a roof at Chengdu, and both took what a life runs on before any position. Su Shi went back; Du Fu never did. Tao Yuanming — Two ways out of office: Su Shi was exiled and moved by other people, Tao Yuanming walked out himself on the day. One is about living well inside an arrangement, the other about making the decision.
 
 ### Further
-Wang Yangming Fan Li Zhuangzi Tao Te Ching Huineng Winston Churchill Feng Dao Nelson Mandela Sima Qian Seneca Du Fu Shi Tiesheng Tao Yuanming Bai Juyi
+Wang Yangming Fan Li Zhuangzi Tao Te Ching Huineng Winston Churchill Feng Dao Nelson Mandela Sima Qian Seneca Du Fu Shi Tiesheng Tao Yuanming Bai Juyi Lin Xiangru
 
 ========================================================================
 ## Su Yu
@@ -6233,10 +6270,10 @@ Next time a promotion or a larger position is put in front of you, run the Liu c
 Enfeoff me at Liu and it is enough. I wish to drop the affairs of men and follow Master Red Pine. Withdraw when the work is done: that is the way of heaven.
 
 ### Q: What should I read alongside?
-Han Xin — Same founding, opposite endings: Zhang Liang withdrew completely and died old, Han Xin kept both his army and his ambitions and was killed. Fan Li — The two men who understood leaving. Fan Li left to trade, Zhang Liang left to study the way. Different exits, identical result. Guo Ziyi — Two ways to survive success: Zhang Liang left the table, Guo Ziyi stayed at it with his cards face up, which is much the harder trick. Li Bi — One reign or four: Zhang Liang withdrew for good once the founding was over, Li Bi came back and left four times and finished holding the top office.
+Han Xin — Same founding, opposite endings: Zhang Liang withdrew completely and died old, Han Xin kept both his army and his ambitions and was killed. Fan Li — The two men who understood leaving. Fan Li left to trade, Zhang Liang left to study the way. Different exits, identical result. Guo Ziyi — Two ways to survive success: Zhang Liang left the table, Guo Ziyi stayed at it with his cards face up, which is much the harder trick. Li Bi — One reign or four: Zhang Liang withdrew for good once the founding was over, Li Bi came back and left four times and finished holding the top office. Lin Xiangru — Both step back when they could press their claim: Zhang Liang turned down thirty thousand households for one small county, yielding to his ruler to disarm suspicion, while Lin yielded to a colleague to keep standing the one line of defence the two of them held together.
 
 ### Further
-Fan Li Li Bi Han Xin Tao Te Ching Liu Bang Guo Ziyi Wang Jian Guiguzi
+Fan Li Li Bi Han Xin Tao Te Ching Liu Bang Guo Ziyi Wang Jian Guiguzi Lin Xiangru
 
 ========================================================================
 ## Zhang Yiming
@@ -13286,6 +13323,72 @@ Where it goes wrong: mistaking a short cycle for realism; picking the long optio
 Traders camped in the open, and the jails stood empty.
 The side called realistic is often only the faster one.
 If character always declined, there would be nothing left to teach.
+
+========================================================================
+## Lin Xiangru · The jade came home whole
+URL: https://ourword.ai/en/i/lin-xiangru/crooked-on-qin/
+Source: Records of the Grand Historian, Lives of Lian Po and Lin Xiangru
+Tags: Deep read, Lin Xiangru, Let the wrong end up on their side
+
+You are fairly sure the other side will never pay. Do you hand it over or refuse? He argued for saying yes.
+
+### Q: What actually happened?
+The King of Qin wrote offering fifteen cities for Zhao's famous jade disc. Everyone at the Zhao court suspected a trick, but a flat refusal would give Qin its excuse for war. Lin Xiangru put it plainly: refuse, and Zhao is in the wrong; hand it over and get no cities, and Qin is. Better to agree and leave the wrong with Qin. In Qin's hall he watched the king pass the jade round his women and say nothing of cities. He took it back, claiming a flaw, and while the king fasted five days a servant in rough clothes carried it home by a back road.
+
+### The parts · Price the refusal first
+Refuse, and Qin only has to say Zhao would not deal; the war has its pretext. Hand it over and receive nothing, and everyone watching sees Qin break its word. He was not fighting over a piece of jade. He was fighting over whose ledger the affair would end up in.
+e.g. Turn down an offer you don't believe and you are the unreasonable one. Accept it with a delivery date, and the next move is theirs.
+
+### The parts · Agree, but keep it retrievable
+What he promised his own king was not a gift: if the cities come, the jade stays in Qin; if not, it comes back whole. Delivery was made to wait on their performance. When the king showed no sign of paying, he took the jade back into his own hands.
+e.g. Ship a sample and tie the final payment to acceptance, so they take the first real step while you still hold something you can pull back.
+
+### The parts · Turn their show into your time
+The king had officials trace fifteen cities on a map. Lin judged it theatre and asked for five days of fasting and a full court ceremony before the handover. He did not spend those days negotiating. He spent them getting the jade home.
+e.g. Pressed to sign a handsome letter of intent on the spot, ask for one reasonable procedural step, and use the days it buys to prepare your exit.
+
+### Q: How do I use it today?
+Where you are: someone stronger than you makes an offer you are fairly sure they will not honour.
+Ask first: if I refuse, whose fault is it? If I agree, can I make their delivery the condition for mine?
+Where it goes wrong: making 'put them in the wrong' the goal and leaving yourself nothing to take back; or facing someone who does not mind being seen in the wrong at all.
+
+### Lines to keep
+Better to agree and leave the wrong with Qin.
+If the cities come, the jade stays. If not, it comes home whole.
+Twenty-odd rulers of Qin, and not one kept a firm agreement.
+
+========================================================================
+## Lin Xiangru · He turned his carriage aside
+URL: https://ourword.ai/en/i/lin-xiangru/two-tigers/
+Source: Records of the Grand Historian, Lives of Lian Po and Lin Xiangru
+Tags: Deep read, Lin Xiangru, Giving way is not the same as being afraid
+
+Someone has said in public that he will humiliate you. You keep stepping aside and your own people call it cowardice. How do you tell the difference?
+
+### Q: What actually happened?
+Back from the meeting at Mianchi, Lin Xiangru was made senior minister, ranked above the general Lian Po. Lian Po said he had taken cities and won battles while Lin had only used his tongue, and was low-born besides; when they met, he would disgrace him. From then on Lin pleaded illness on court days, and when he saw Lian Po in the street he turned his carriage aside. His retainers threatened to leave. Is General Lian more fearsome than the King of Qin? he asked. Qin dares not attack Zhao only because the two of us are here.
+
+### The parts · Ask what the two of you hold
+What he weighed while hiding was one sentence: Qin leaves Zhao alone because both of us are here, and when two tigers fight, one does not survive. He did not ask whether his pride could take it. He asked whether what they held together would still stand afterwards.
+e.g. In an open clash with the colleague you carry the project with, ask first: once we tear into each other, who is happiest?
+
+### The parts · Fear or restraint: look elsewhere
+His retainers read retreat as fear. His answer was a fact: in Qin's hall he held the jade against a pillar, and at Mianchi he faced down the king himself. A man who has not backed down before a stronger enemy is not afraid when he yields to his own side.
+e.g. The negotiator who never budges with clients can give up a seat in an internal meeting and nobody calls it weakness. Someone who never held firm is just giving way.
+
+### The parts · Silence leaves him a road back
+Lin did not argue his case to Lian Po or strike back; he told only his retainers why. It reached Lian Po, who came to Lin's gate bare-backed, carrying thorns, to apologise, and the two became friends for life. One retort, and there would have been no way back.
+e.g. When someone makes a threat, don't take the bait and don't trash them behind their back. Explain yourself to the people who should hear it.
+
+### Q: How do I use it today?
+Where you are: someone in the same boat as you picks a public fight, you keep giving way, and people read it as weakness.
+Ask first: if we fight, does what the two of us hold together survive? And have I held firm anywhere else?
+Where it goes wrong: the other person wants your position, not an apology, and every step back invites the next push; or you give way everywhere, and this time too it is just fear.
+
+### Lines to keep
+When two tigers fight, one of them does not survive.
+The state's emergency first, my private quarrel second.
+Dull as I am, would I be afraid of General Lian?
 
 ========================================================================
 ## Liu Bang · The three men he was not the equal of

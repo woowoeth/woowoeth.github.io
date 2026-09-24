@@ -286,6 +286,8 @@ SCENES = [
      [("analects", "see-how"), ("konnikova", "not-manufacturing-trust")]),
     ("他这次答应了，下次还算数吗。",
      [("axelrod", "shadow-of-the-future"), ("schelling", "binding-yourself")]),
+    ("他许的好处，我要不要先把东西交出去？",
+     [("lin-xiangru", "crooked-on-qin")]),
 ]),
 ("要说服人", "跟人打交道", [
     ("我说了不算，得让他自己想到。",
@@ -844,6 +846,8 @@ SCENES = [
      [("gandhi", "salt-march"), ("machiavelli", "feared-not-hated")]),
     ("对方根本不跟我讲道理。",
      [("gandhi", "salt-march"), ("crowd", "descent-in-crowds")]),
+    ("他给的条件我不信，拒了又是我理亏。",
+     [("lin-xiangru", "crooked-on-qin")]),
 ]),
 ("功劳被抢", "跟人打交道", [
     ("事是我做的，功是别人的。",
@@ -864,6 +868,8 @@ SCENES = [
      [("taleb", "skin-in-the-game"), ("la-rochefoucauld", "vice-pays-tribute")]),
     ("道理站在我这边，可事办不成。",
      [("lee-kuan-yew", "does-it-work"), ("analects", "harmony-not-sameness")]),
+    ("我一直让着他，别人说我怂。",
+     [("lin-xiangru", "two-tigers")]),
 ]),
 ("总在讨好别人", "跟人打交道", [
     ("我一直在让，可越让越累。",
@@ -900,6 +906,8 @@ SCENES = [
      [("li-ka-shing", "knowing-when-to-stop"), ("han-xin", "neither-nor")]),
     ("闹成这样，我们还能合作下去吗。",
      [("axelrod", "shadow-of-the-future"), ("cao-cao", "burning-the-letters")]),
+    ("他放话要当众给我难堪，我躲不躲？",
+     [("lin-xiangru", "two-tigers")]),
 ]),
 ("觉得没意义", "跟人打交道", [
     ("没有回报的话，我还做不做。",

@@ -1,11 +1,11 @@
 # OurWord (人類世界生存法則)
 
-> 173 people and books on how the world actually works, across 2,600 years
+> 174 people and books on how the world actually works, across 2,600 years
 > 遇到事了，看看以前的人怎麼處理
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 173 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 174 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
-一個關於「世界到底怎麼運轉」的知識庫：戰略、財富、權力、人性、創業，取自 173 位人物與典籍，跨越 2600 年。每一條都寫清楚這個人真正留下的那一個想法、背後的故事、拆開的分則與例子，以及今天怎麼用。
+一個關於「世界到底怎麼運轉」的知識庫：戰略、財富、權力、人性、創業，取自 174 位人物與典籍，跨越 2600 年。每一條都寫清楚這個人真正留下的那一個想法、背後的故事、拆開的分則與例子，以及今天怎麼用。
 
 ## Read it
 
@@ -20,12 +20,12 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 
 - [現代](https://ourword.ai/tw/t/modern/) — 60
 - [工業時代](https://ourword.ai/tw/t/industrial-age/) — 53
+- [先秦與古典時代](https://ourword.ai/tw/t/classical-era/) — 22
 - [權力與組織](https://ourword.ai/tw/t/power/) — 22
-- [先秦與古典時代](https://ourword.ai/tw/t/classical-era/) — 21
 - [心智與情緒](https://ourword.ai/tw/t/mind/) — 21
 - [創業與產品](https://ourword.ai/tw/t/startups/) — 19
 - [財富與風險](https://ourword.ai/tw/t/wealth/) — 19
-- [謀略與競爭](https://ourword.ai/tw/t/strategy/) — 17
+- [謀略與競爭](https://ourword.ai/tw/t/strategy/) — 18
 - [世界如何運轉](https://ourword.ai/tw/t/world/) — 16
 - [家庭與關係](https://ourword.ai/tw/t/family/) — 15
 - [學習與成長](https://ourword.ai/tw/t/learning/) — 15
@@ -251,6 +251,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [李世民 · 兼聽則明](https://ourword.ai/tw/i/li-shimin/hearing-all-sides/): 李世民 · 兼聽則明——只聽一個人等於沒聽。皇帝問怎樣才算明君。這一篇要回答的是：魏徵給的答案是一套信息結構，不是一種品德。
 - [李世民 · 水能載舟](https://ourword.ai/tw/i/li-shimin/boat-and-water/): 李世民 · 水能載舟——權力的承載物會翻。這句話被唸了一千多年。這一篇要回答的是：它在貞觀年間是被當成一條工作紀律用的。
 - [李世民 · 貞觀初年的那場爭論](https://ourword.ai/tw/i/li-shimin/the-first-debate/): 李世民 · 貞觀初年的那場爭論——選一條更慢的路。剛接手一個爛攤子，是用重典還是用寬政？這一篇要回答的是：他選了所有人都說來不及的那條。
+- [藺相如 · 完璧歸趙](https://ourword.ai/tw/i/lin-xiangru/crooked-on-qin/): 藺相如 · 完璧歸趙——先讓理虧落到他那邊。明知對方多半會賴賬，東西給還是不給？這一篇要回答的是：藺相如為什麼主張先答應。
+- [藺相如 · 引車避匿](https://ourword.ai/tw/i/lin-xiangru/two-tigers/): 藺相如 · 引車避匿——讓一步，不是因為怕。有人當眾放話要羞辱你，你一再躲開，身邊的人都說你慫。這一篇要回答的是：讓的時候，怎麼知道自己不是怕。
 - [劉邦 · 三個不如](https://ourword.ai/tw/i/liu-bang/three-i-cannot/): 劉邦 · 三個不如——承認別人比你強。開國慶功宴上他問了一個問題，然後自己給了答案。這一篇要回答的是：那個答案為什麼是一種權力，而不是謙虛。
 - [劉邦 · 約法三章](https://ourword.ai/tw/i/liu-bang/three-articles/): 劉邦 · 約法三章——先給一份能記住的規則。剛進入一個陌生地盤，第一件事做什麼？這一篇要回答的是：他為什麼把整部秦法換成了三句話。
 - [劉邦 · 當場改口](https://ourword.ai/tw/i/liu-bang/changing-mid-sentence/): 劉邦 · 當場改口——被踩一腳就換答案。話已經說出口一半，發現說錯了怎麼辦？這一篇要回答的是：劉邦的做法難看，但每一次都對。
@@ -464,7 +466,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [AI Bubble Monitor / AI 泡沫檢測儀](https://ourword.ai/ai/)
 - [Zouni / 走你](https://ourword.ai/zouni/)
 
-## Index (173 entrys)
+## Index (174 entrys)
 
 - [BJ·福格](https://ourword.ai/tw/i/bj-fogg/): BJ·福格（2019年·斯坦福行為設計實驗室）——小到不會失敗。斯坦福行為設計實驗室創始人，研究行為如何被設計出來。他給出一個公式：行為發生需要動機、能力、提示三者同時到位。多數人失敗在只調動機——靠決心和自我激勵——而動機天然起伏，靠它維持的習慣必然崩。他的主張相反：把行為縮到小得不需要動機，然後掛在一個已有的動作後面。
 - [C.S.劉易斯](https://ourword.ai/tw/i/cs-lewis/): C.S.劉易斯（1898-1963年·英國牛津）——妻子死後幾個月的日記。作家，牛津和劍橋的教授，寫過《納尼亞傳奇》和大量勸人信仰的書。五十八歲結婚，妻子喬伊四年後因癌症去世。之後幾個月他在四本練習簿上記自己的狀態，後來用筆名出版，就是《卿卿如晤》。收他是因為「重要的人走了」那六個問題，原來靠弗蘭克爾和蘇軾在答——一個是集中營的倖存者，一個是被貶的官員
@@ -607,6 +609,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [蒙臺梭利](https://ourword.ai/tw/i/montessori/): 蒙臺梭利（1907年·羅馬兒童之家）——環境替代管教。意大利第一批女醫生之一，從研究智力障礙兒童起步，後來把方法用在正常兒童身上，創辦了羅馬「兒童之家」。她的核心發現是：兒童不需要被塑造，需要一個被準備好的環境——把工具做成兒童尺寸、把選擇權交給兒童、把成人從指揮者退成觀察者，此前被認為無法專注的孩子會自發進入長時間的專注狀態。
 - [蒙田](https://ourword.ai/tw/i/montaigne/): 蒙田（1533-1592年·法國波爾多）——把自己的短處先寫出來。法國作家，《隨筆集》的作者。三十八歲辭掉法官職位，退回自家城堡，把一座塔樓改成書房，之後二十年在那裡寫作，中間還當了兩任波爾多市長。他給自己鑄過一枚徽章，刻著「我知道什麼？」。整本《隨筆集》寫的都是他自己：怕疼、記性差、優柔寡斷、墜馬濱死、腎結石。收他是因為「說不出口」那一組——
 - [蒲松齡](https://ourword.ai/tw/i/pu-songling/): 蒲松齡（1640-1715年·山東淄川）——主線沒成，副業成了。十九歲應童子試，縣、府、道三試第一，一時名動鄉里。然後他考了一輩子舉人，從二十多歲考到六十多歲，一次沒中，靠在縉紳家坐館教書養活一家人，七十一歲才援例補了個歲貢生。這個庫裡絕大多數人是最終成了的人——連敗局也是通往成功路上的敗局；蒲松齡不是。他這一生的正事從頭到尾沒成，而順手做的
+- [藺相如](https://ourword.ai/tw/i/lin-xiangru/): 藺相如（戰國·趙·生卒年不詳）——曲直。戰國時趙國大臣，本是宦者令繆賢門下的舍人。趙惠文王得了和氏璧，秦昭王來信說願以十五城相換，他奉璧入秦、完璧歸趙，拜為上大夫；澠池之會上當面逼秦王為趙王擊缻，拜為上卿，位在名將廉頗之上。廉頗不服，揚言要當面羞辱他，他一路退讓，最後廉頗負荊請罪。《史記》把兩人合為一傳。他留下的是兩種
 - [薄伽梵歌](https://ourword.ai/tw/i/bhagavad-gita/): 薄伽梵歌（約前2世紀-公元2世紀·印度）——你有權做事，無權要結果。印度史詩《摩訶婆羅多》中的一部分，七百頌十八章，成書年代學界一般定在公元前二世紀至公元二世紀之間。全篇是開戰前阿周那與御者克里希那的對話：阿周那看見對面陣中是自己的親族與師長，扔下弓不肯打。第二章第四十七頌的通行漢譯大意是「你只有做事的權利，沒有對結果的權利」，甘地稱這本書是自己
 - [褚時健](https://ourword.ai/tw/i/chu-shijian/): 褚時健（1928-2019年·雲南）——七十四歲上山種橙。雲南人。五十一歲起管玉溪捲菸廠，把紅塔山做成全國第一的品牌，出名的是把每個環節的標準定死、把每個人的收入和質量綁在一起。七十四歲那年原來的一切都沒了——位置、名聲、積蓄大半也沒了，身體也不好。他和妻子跑到哀牢山，承包兩千四百畝荒山種冰糖橙，橙樹四五年才結果，真正大賣是十年後，他八
 - [西蒙娜·薇依](https://ourword.ai/tw/i/weil/): 西蒙娜·薇依（法國·1909-1943）——注意。法國哲學家，二十二歲考取哲學教師資格。此後十年，她不斷把自己放進想弄懂的處境裡：去工廠當女工，去西班牙上前線，去農田收葡萄。她一生的題目只有一個——注意力。她說注意不是使勁，是把自己騰空到能讓對象進來，這既是學習的全部，也是一個人能給別人的最稀有的東西。反過來，她用同一把尺子看人

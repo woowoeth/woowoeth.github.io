@@ -1,9 +1,9 @@
 # OurWord (OurWord)
 
-> 173 people and books on how the world actually works, across 2,600 years
+> 174 people and books on how the world actually works, across 2,600 years
 > See how people before you handled it.
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 173 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 174 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
 ## Read it
 
@@ -19,12 +19,12 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 - [Modern](https://ourword.ai/en/t/modern/) — 63
 - [The industrial age](https://ourword.ai/en/t/the-industrial-age/) — 50
 - [Power and organisation](https://ourword.ai/en/t/power-and-organisation/) — 22
-- [Pre-Qin and classical](https://ourword.ai/en/t/pre-qin-and-classical/) — 21
+- [Pre-Qin and classical](https://ourword.ai/en/t/pre-qin-and-classical/) — 22
 - [Mind and feeling](https://ourword.ai/en/t/mind-and-feeling/) — 20
 - [Starting and building](https://ourword.ai/en/t/starting-and-building/) — 19
 - [Money and risk](https://ourword.ai/en/t/money-and-risk/) — 18
+- [Strategy and competition](https://ourword.ai/en/t/strategy-and-competition/) — 18
 - [How the world works](https://ourword.ai/en/t/how-the-world-works/) — 17
-- [Strategy and competition](https://ourword.ai/en/t/strategy-and-competition/) — 17
 - [Learning and growth](https://ourword.ai/en/t/learning-and-growth/) — 16
 - [Family and relationships](https://ourword.ai/en/t/family-and-relationships/) — 15
 - [Reading people](https://ourword.ai/en/t/reading-people/) — 15
@@ -245,6 +245,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [Li Shimin · Listen to all sides](https://ourword.ai/en/i/li-shimin/hearing-all-sides/): Li Shimin · Listen to all sides — One source is not listening. The emperor asked what makes a ruler clear-sighted. The answer he got describes an information structure, not a virtue.
 - [Li Shimin · Water carries the boat](https://ourword.ai/en/i/li-shimin/boat-and-water/): Li Shimin · Water carries the boat — What holds you up can turn you over. The line has been recited for over a thousand years. Under Taizong it was a piece of daily working discipline.
 - [Li Shimin · The argument at the start of Zhenguan](https://ourword.ai/en/i/li-shimin/the-first-debate/): Li Shimin · The argument at the start of Zhenguan — He took the slower road. You inherit a wreck. Harsh law, or lenient rule? He picked the option everyone told him there was no time for.
+- [Lin Xiangru · The jade came home whole](https://ourword.ai/en/i/lin-xiangru/crooked-on-qin/): Lin Xiangru · The jade came home whole — Let the wrong end up on their side. You are fairly sure the other side will never pay. Do you hand it over or refuse? He argued for saying yes.
+- [Lin Xiangru · He turned his carriage aside](https://ourword.ai/en/i/lin-xiangru/two-tigers/): Lin Xiangru · He turned his carriage aside — Giving way is not the same as being afraid. Someone has said in public that he will humiliate you. You keep stepping aside and your own people call it cowardice. How do you tell the difference?
 - [Liu Bang · The three men he was not the equal of](https://ourword.ai/en/i/liu-bang/three-i-cannot/): Liu Bang · The three men he was not the equal of — Saying out loud who is better than you. At the victory banquet he asked why he had won, then answered himself. The answer is not modesty. It is an exercise of power.
 - [Liu Bang · Three clauses, and the rest repealed](https://ourword.ai/en/i/liu-bang/three-articles/): Liu Bang · Three clauses, and the rest repealed — A rule nobody can recite is not a rule. He reached the capital first and held the entire legal code of an empire. He replaced it with three sentences.
 - [Liu Bang · Turning the sentence around](https://ourword.ai/en/i/liu-bang/changing-mid-sentence/): Liu Bang · Turning the sentence around — A foot under the table, and a new answer. Half the sentence is out of your mouth before you see it is wrong. What he did next looks bad, and was right every time.
@@ -458,7 +460,7 @@ Cite the individual page URL, not the homepage — each entry page is stable and
 - [AI Bubble Monitor](https://ourword.ai/ai/)
 - [Zouni](https://ourword.ai/zouni/)
 
-## Index (173 entrys)
+## Index (174 entrys)
 
 - [Albert Einstein](https://ourword.ai/en/i/einstein/): Albert Einstein (Germany · 1879–1955) — Imagination. The physicist, and the father of relativity — but the legacy that travels furthest is not a formula, it is a way of working.
 - [Albert O. Hirschman](https://ourword.ai/en/i/hirschman/): Albert O. Hirschman (United States · 1915-2012) — Voice. A German-born American economist. He left Berlin in 1933, fought in Spain in 1936, spent 1940 in Marseille forging papers and finding mountain…
@@ -542,6 +544,7 @@ Cite the individual page URL, not the homepage — each entry page is stable and
 - [Li Bi](https://ourword.ai/en/i/li-bi/): Li Bi (Tang · 722–789) — Close in, never held. The most skilled survivor in the whole tradition of Chinese advisers. He served four emperors, walked out of the court three times of his own accord…
 - [Li Ka-shing](https://ourword.ai/en/i/li-ka-shing/): Li Ka-shing (Contemporary · 1928–) — Cycles. From a plastic flower workshop to a group spanning property, ports, telecoms, retail and energy.
 - [Li Shimin](https://ourword.ai/en/i/li-shimin/): Li Shimin (Tang · 598–649) — Taking counsel. The emperor most associated with actually listening, and the author of the Zhenguan period.
+- [Lin Xiangru](https://ourword.ai/en/i/lin-xiangru/): Lin Xiangru (Warring States · Zhao · dates unknown) — Putting the wrong on their side. Minister of the state of Zhao in the Warring States period, who began as a retainer in the household of the…
 - [Liu Bang](https://ourword.ai/en/i/liu-bang/): Liu Bang (Han · 256–195 BC) — Using people. The most famous rise from nothing in Chinese history. He began as a minor local officer in charge of a post station and finished as founding emperor of the…
 - [Liu Yan](https://ourword.ai/en/i/liu-yan/): Liu Yan (Tang · 716-780) — Money flowing on the ground. The financial administrator who rebuilt the revenue of the Tang after the An Lushan rebellion had emptied it.
 - [Machiavelli](https://ourword.ai/en/i/machiavelli/): Machiavelli (Florence · 1469–1527) — What is done. A Florentine diplomat, secretary of the republic's second chancery, and the author of The Prince.

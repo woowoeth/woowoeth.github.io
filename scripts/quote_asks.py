@@ -398,6 +398,11 @@ QUOTE_ASKS = {
     "zhu-yuanzhang/delay-the-title": "别人都在抢先，我要不要慢一步。",
     "zhuge-liang/executing-ma-su": "该罚的是我最看重的那个人。",
     "zhuge-liang/longzhong-plan": "我看不出下一步棋该往哪走。",
+    # 蔺相如
+    "lin-xiangru/crooked-on-qin":
+        "他给的条件我不信，拒了又是我理亏。",
+    "lin-xiangru/two-tigers":
+        "我一直让着他，别人说我怂。",
     # 露丝·施瓦茨·考恩
     "cowan/the-helpers-left":
         "家里机器都买齐了，活还是全在我身上。",

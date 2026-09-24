@@ -216,6 +216,17 @@ x /tw/sitemap.xml → hreflang 指向不存在的页 https://ourword.ai/tw/en/i/
 `stamp_assets.py` 这**四个**，次序不能换。`stamp_assets.py` 一定在最后 ——
 它扫的是最终产物，前面任何一步重写过文件都要重新盖章。整条链一遍约 15 分钟。
 
+**这份近路现在又漏了一步，没验过会不会红 —— 默认跑整条链。**
+2026-09-24 蔺相如这一条对着 `build_all.py` 的步骤表数了一遍：现在是 14 步，
+第 13 步 `scripts/split_home_data.py` 正好夹在 `lang_links`（12）和
+`stamp_assets`（14）中间，上面那四个脚本里没有它。它的文件头写着
+**「必须在 build_tw 之后跑」**：它把 `tw/index.html` 里的首页数据拆到
+`tw/assets/` 下；而 `build_tw` 开头 `rmtree(tw/)` 从简体页整个重转，抄近路
+就跳过了重新拆那一步。这一次两遍都跑的整条链，所以**没亲眼看过**近路红不红、
+红在哪道闸上 —— 但 `gen_pwa` 那次也是这样被漏掉的（见上一段）。
+凡是整条链在 `build_tw` 之后的步骤，近路都得全带上；与其每次对表，
+不如第二遍直接 `python3 scripts/build_all.py`，只多花十几分钟。
+
 **`gen_pwa.py` 是 2026-09-22 补进这份近路的**，原来写的是三个。它在整条链里排
 第 11 步，**正好夹在 `build_tw`（第 10）和 `lang_links`（第 12）中间**，抄近路
 一跳就把它跳过去了。后果很具体：`build_tw.py` 开头 `rmtree(tw/)`，然后从简体站

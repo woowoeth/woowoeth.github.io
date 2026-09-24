@@ -169,6 +169,7 @@ NAMES = {
     "tao-yuanming": ("Tao Yuanming", "Body and daily life"),
     # ── Family and relationships ──
     "cowan": ("Ruth Schwartz Cowan", "Family and relationships"),
+    "lin-xiangru": ("Lin Xiangru", "Strategy and competition"),
     "adler": ("Alfred Adler", "Family and relationships"),
     "attachment-theory": ("Attachment Theory", "Family and relationships"),
     "bowen": ("Murray Bowen", "Family and relationships"),
