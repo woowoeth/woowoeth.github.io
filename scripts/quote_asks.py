@@ -408,6 +408,13 @@ QUOTE_ASKS = {
         "家里机器都买齐了，活还是全在我身上。",
     "cowan/effort-saved-time-not":
         "工具快了几倍，我的活一点没少。",
+    # 礼记
+    "liji/one-tension-one-release":
+        "我一放松下来就有罪恶感。",
+    "liji/come-and-eat":
+        "他都道歉了，我还端着不肯下来。",
+    "liji/open-not-arrive":
+        "我忍不住把答案直接告诉他。",
     # 吕氏春秋
     "lushi-chunqiu/eight-observations":
         "我只能凭感觉判断一个人。",

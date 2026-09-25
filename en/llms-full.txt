@@ -1,7 +1,7 @@
-# OurWord — 174 people and books on how the world actually works, across 2,600 years
+# OurWord — 175 people and books on how the world actually works, across 2,600 years
 # OurWord — See how people before you handled it.
 # https://ourword.ai/en/
-# Full corpus, plain text. 174 entrys.
+# Full corpus, plain text. 175 entrys.
 
 ========================================================================
 ## Albert Einstein
@@ -1355,7 +1355,7 @@ Custom runs downward, and downstream fixes spring back. The time you laughed ins
 Alfred Adler — Both draw a boundary: Adler says it is his task, stay out of it and get on with your own life, while Yan Zhitui says an unkind father gets an unfilial son, so the upstream half is permanently in your name and you fill in that column before discussing anyone else. Carl Rogers — Both answer why nobody speaks: Rogers works inside the conversation, receiving the person without conditions so that it becomes safe to talk, while Yan Zhitui says the silence was set earlier and higher up, and points at the standing pattern rather than this exchange.
 
 ### Further
-The Analects Mencius Zeng Guofan Virginia Satir Alfred Adler
+The Analects Mencius Zeng Guofan Virginia Satir Alfred Adler The Book of Rites
 
 ========================================================================
 ## Fan Li
@@ -3427,7 +3427,7 @@ The people come first, the altars of the state next, the ruler last. He who has 
 Han Feizi — Both are writing about how to govern. Han Feizi trusts reward and punishment; Mencius asks whether people are still willing to follow you at all. The Analects — The Analects tells a gentleman how to conduct himself; Mencius tells a ruler what will remove him. Xunzi — One holds that people can be taught, the other that people can be shaped. Mencius cultivates; Xunzi processes.
 
 ### Further
-The Analects Han Feizi Shang Yang Li Shimin Lee Kuan Yew Xunzi Family Instructions for the Yan Clan
+The Analects Han Feizi Shang Yang Li Shimin Lee Kuan Yew Xunzi Family Instructions for the Yan Clan The Book of Rites
 
 ========================================================================
 ## Mihaly Csikszentmihalyi
@@ -4420,10 +4420,10 @@ If you've been tense a long time with nothing specific wrong, ask when this syst
 Zebras don't get ulcers because the response runs for minutes. What makes people ill is the response that won't switch off. People adapt to a certain bad. They don't adapt to hanging.
 
 ### Q: What should I read alongside?
-John Ratey — Same system, two handles: Sapolsky on what keeps it switched on, Ratey on how to switch it off today. Christina Maslach — Same conclusion from two directions: she measures the job, he measures the hormone, and both land on control.
+John Ratey — Same system, two handles: Sapolsky on what keeps it switched on, Ratey on how to switch it off today. Christina Maslach — Same conclusion from two directions: she measures the job, he measures the hormone, and both land on control. The Book of Rites — Both explain why staying tense wears you down. Sapolsky is talking about the body: the zebra's stress ends when the lion leaves, while ours stays switched on for things that haven't happened. The Book of Rites is talking about the calendar: release is not something you patch in once the body gives out, but a day fixed in advance and shared, like the year-end festival.
 
 ### Further
-John Ratey Christina Maslach John Cacioppo Rat Park Arthur Kleinman
+John Ratey Christina Maslach John Cacioppo Rat Park Arthur Kleinman The Book of Rites
 
 ========================================================================
 ## Ruth Schwartz Cowan
@@ -5188,10 +5188,10 @@ Pick the last decision you made that landed on somebody who had no vote in it, a
 Knowing what you know and what you do not: that is knowledge. See what he does. Mark his motives. Examine where he rests. What you do not want done to yourself, do not do to others. The gentleman harmonises without conforming; the small man conforms without harmony.
 
 ### Q: What should I read alongside?
-Tao Te Ching — The two main lines of Chinese thought: Confucius adds — cultivate, practise, take part — where Laozi subtracts. Neither is complete without the other. Socrates — Near contemporaries who both taught by asking rather than telling, and both paid for holding a position against the people in power. Mencius — The Analects tells a gentleman how to conduct himself; Mencius tells a ruler what will remove him. Strategies of the Warring States — Two faces of the same broken age: one on what a person ought to become, the other on how people behaved. Read only one and you end up naive or cynical. Guiguzi — Confucius asks whether a thing should be said at all; Guiguzi asks only how to say it so that it works. The avowed and the suppressed halves of the same tradition. La Rochefoucauld — Confucius holds that self-cultivation leads to benevolence. La Rochefoucauld suspects self-cultivation is only the most sophisticated form self-love has found so far. The Annals of Lu Buwei — Both answer how to read a person: the Analects looks backward, at what he has already done, the path he took and what he rests easy in, while the Annals arranges the present, putting him through eight positions and six feelings and watching hardest at the moments when he has nothing to gain.
+Tao Te Ching — The two main lines of Chinese thought: Confucius adds — cultivate, practise, take part — where Laozi subtracts. Neither is complete without the other. Socrates — Near contemporaries who both taught by asking rather than telling, and both paid for holding a position against the people in power. Mencius — The Analects tells a gentleman how to conduct himself; Mencius tells a ruler what will remove him. Strategies of the Warring States — Two faces of the same broken age: one on what a person ought to become, the other on how people behaved. Read only one and you end up naive or cynical. Guiguzi — Confucius asks whether a thing should be said at all; Guiguzi asks only how to say it so that it works. The avowed and the suppressed halves of the same tradition. La Rochefoucauld — Confucius holds that self-cultivation leads to benevolence. La Rochefoucauld suspects self-cultivation is only the most sophisticated form self-love has found so far. The Annals of Lu Buwei — Both answer how to read a person: the Analects looks backward, at what he has already done, the path he took and what he rests easy in, while the Annals arranges the present, putting him through eight positions and six feelings and watching hardest at the moments when he has nothing to gain. The Book of Rites — Both record how Confucius taught. In the Analects he will not open up a student who is not yet straining to understand, which is about when to speak. The 'Record of Learning' goes a step further: even once you speak, open the way and stop, and leave the last steps to the learner.
 
 ### Further
-Wang Yangming Zeng Guofan Tao Te Ching Socrates Mencius Hannah Arendt Family Instructions for the Yan Clan The Annals of Lu Buwei
+Wang Yangming Zeng Guofan Tao Te Ching Socrates Mencius Hannah Arendt Family Instructions for the Yan Clan The Annals of Lu Buwei The Book of Rites
 
 ========================================================================
 ## The Annals of Lu Buwei
@@ -5309,6 +5309,46 @@ Epictetus — The same border drawn in two places. Epictetus draws it between wh
 
 ### Further
 Epictetus Viktor Frankl Zhuangzi Marcus Aurelius
+
+========================================================================
+## The Book of Rites
+URL: https://ourword.ai/en/i/liji/
+Tags: Body and daily life, Qin, Han and the Six Dynasties, One tension, one release
+
+The Book of Rites (Western Han · compiled by Dai Sheng · 49 chapters) — One tension, one release. A collection of Confucian writings on ritual, fixed at 49 chapters by Dai Sheng in the Western Han.
+
+### Q: What did this one leave behind?
+A collection of Confucian writings on ritual, fixed at 49 chapters by Dai Sheng in the Western Han. Zheng Xuan wrote its standard commentary in the Eastern Han; the Tang counted it among the Five Classics, and Zhu Xi in the Song lifted out two of its chapters, the Great Learning and the Doctrine of the Mean, for the Four Books. Most of it records procedure: sacrifice, mourning, capping, marriage, daily conduct. Set among the procedures are passages asking how people manage to live. We take three: on easing off, on climbing down, and on leaving the last steps to the learner.
+
+### Q: What actually happened?
+Confucius was passing the foot of Mount Tai when he heard a woman weeping bitterly at a grave. He leaned on the rail of his carriage and listened, then sent a disciple to ask. You weep as if grief had come more than once, the disciple said. It has, she answered. A tiger killed my husband's father, then my husband, and now my son. Then why not leave? There is no harsh government here. Confucius turned to his disciples: remember this. Harsh government is fiercer than a tiger.
+
+### The parts · Among the rules, room for the year
+It records rule upon rule, and beside them it often sets a line that loosens them. In a bad year, Confucius says in 'Miscellaneous Records', ride a poor horse and sacrifice a lesser animal. The rule follows the harvest, not the other way round. e.g. Money is short this year and the party is still planned at last year's scale.
+
+### The parts · Not even the sage kings could stay strung
+Zigong came back from the year-end festival saying the whole state had gone mad. Confucius spoke of a bow: kept strung and never unstrung, it was beyond the kings Wen and Wu; kept unstrung and never strung, they would not do it. Easing off is not a failure of will. e.g. Six months without a day off messages, and you call it building strength.
+
+### The parts · At the shout you may leave; after the apology you may eat
+In a famine Qian Ao offered food with a 'hey, come and eat'. The starving man refused, Qian Ao apologised, and he still refused and died. Zengzi's verdict: the shout was reason to leave, the apology reason to eat. Dignity guards a moment, not every moment after. e.g. He admitted fault in private and you still won't pick the talks back up.
+
+### The parts · Open the way, don't walk it to the end
+The 'Record of Learning' says good teaching guides without dragging, urges without pressing down, and opens the way without taking the student to the end. Of those dragged through, it says: though they finish the course, they drop it quickly. e.g. Someone asks you what to do. Ask first where they think they're stuck.
+
+### Q: What part do we leave out?
+We leave out the separation and ranking of men and women that runs through 'Summary of the Rules', 'Pattern of the Family' and 'Single Victim at the Border Sacrifices'. 'A wife follows others: when young she follows her father and elder brothers, when married her husband, when he dies her son' is a household order of the Zhou and Han; the same 'Miscellaneous Records' we take the bowstring passage from also rules that in mourning a sister-in-law may not lay hands on her husband's brother's body, nor he on hers. We also leave out the mourning and sacrificial procedures that fill most of the book. What we take are three passages set among them about knowing when to ease off, when to climb down, and when to let someone finish the thought.
+
+### Q: How do I use it today?
+If you haven't truly stopped in a long time, don't start by planning a long holiday. Open next month's calendar and cross out one day now, agreed with your family or your team: that day nobody contacts anybody. The release should be like the year-end festival, set in advance and shared, not sleep caught up alone after a collapse. Keep a second question for the quarrel you're still nursing: if they have already come to you and admitted fault, are you refusing the shout, or the bowl they held out afterwards? And the next time someone asks you what to do, don't give the answer first. Ask where they're stuck, open the door a crack, and let them walk the last steps.
+
+### Lines to keep
+Not even the sage kings could stay strung. At the shout you may leave; after the apology you may eat. Open the way. Don't walk it to the end for him. In a bad year, ride a poor horse.
+
+### Q: What should I read alongside?
+Robert Sapolsky — Both explain why staying tense wears you down. Sapolsky is talking about the body: the zebra's stress ends when the lion leaves, while ours stays switched on for things that haven't happened. The Book of Rites is talking about the calendar: release is not something you patch in once the body gives out, but a day fixed in advance and shared, like the year-end festival. The Analects — Both record how Confucius taught. In the Analects he will not open up a student who is not yet straining to understand, which is about when to speak. The 'Record of Learning' goes a step further: even once you speak, open the way and stop, and leave the last steps to the learner.
+
+### Further
+The Analects Mencius Xunzi Family Instructions for the Yan Clan Robert Sapolsky
 
 ========================================================================
 ## The Comprehensive Mirror
@@ -6159,7 +6199,7 @@ Human nature is bad; what is good in people is deliberate effort. Blue is taken 
 Mencius — One holds that people can be taught, the other that people can be shaped. Mencius cultivates; Xunzi processes. Han Feizi — The student pushed the teacher's training argument into a theory of control. Xunzi kept the rites; Han Feizi kept only the handles.
 
 ### Further
-Mencius Han Feizi Wang Yangming Andy Grove Benjamin Franklin Li Shimin
+Mencius Han Feizi Wang Yangming Andy Grove Benjamin Franklin Li Shimin The Book of Rites
 
 ========================================================================
 ## Zeng Guofan
@@ -13323,6 +13363,117 @@ Where it goes wrong: mistaking a short cycle for realism; picking the long optio
 Traders camped in the open, and the jails stood empty.
 The side called realistic is often only the faster one.
 If character always declined, there would be nothing left to teach.
+
+========================================================================
+## The Book of Rites · Not even the sage kings could stay strung
+URL: https://ourword.ai/en/i/liji/one-tension-one-release/
+Source: The Book of Rites, 'Miscellaneous Records, Part Two', Zigong at the year-end festival
+Tags: Deep read, The Book of Rites, One tension, one release: rest is scheduled, not squeezed out
+
+The moment I stop, I feel I'm slacking. This chapter says easing off is not a failure of will: the string was never meant to stay taut.
+
+### Q: What actually happened?
+Zigong came back from watching the year-end harvest festival. Confucius asked whether he had enjoyed it. The whole state has gone mad, Zigong said. I don't see what there is to enjoy. Confucius answered: a hundred days of toil, one day of grace. That is beyond you. Then he spoke of the bow. To keep it strung and never unstring it, Wen and Wu could not do; to keep it unstrung and never string it, they would not do.
+
+### The parts · It is a bow
+The two words are archery words: stringing a bow and unstringing it. A bow left strung loses its spring and will not draw when you need it. The point is not that you lack effort. No bow, however good, stays strung.
+e.g. Three months without a single day off messages, and you tell yourself you are building up strength.
+
+### The parts · 'Could not' and 'would not' are different words
+Never unstringing is something even the founding kings could not do. Never stringing is something they would not do. The lines are built as a pair and the verbs are chosen on purpose. This is not a licence to drift; each end has its own way of going wrong.
+e.g. You take a month off and by the second week you are restless. That is the other end.
+
+### The parts · The release is put on the calendar
+The festival fell on a fixed day, set for everyone, not left to each person to find. That is the part people miss. When everyone eases off together, nobody has to feel it is their own laziness. Rest squeezed out by willpower rarely arrives, and arrives with guilt.
+e.g. The team agrees nobody sends messages on Saturday. That beats you alone not answering.
+
+### The parts · Zigong's eye is often our own
+Zigong saw a city behaving like madmen and could not see the one day in the year it was allowed to let go. We read other people's rest as disorder, and our own the same way. The guilt that comes the moment we stop is Zigong standing at our shoulder.
+e.g. A colleague leaves on time and you think he doesn't care. Then you can't leave either.
+
+### Q: How do I use it today?
+Where you are: you haven't really stopped in a long time, and when you do you feel you're slacking, so you find something to do.
+Ask first: is there a fixed day in my life, agreed with other people, when I ease off - not sleep caught up after a collapse, but a day set in advance?
+Where it goes wrong: reading it as 'rest whenever you're tired, for as long as you like'. The two lines are a pair. The rhythm is the point, not only the release.
+
+### Lines to keep
+Staying strung is not strength. Even the sage kings couldn't.
+Rest goes on the calendar. It is not squeezed out.
+Never easing off is impossible; never tightening is a choice.
+
+========================================================================
+## The Book of Rites · He apologised. You may eat now
+URL: https://ourword.ai/en/i/liji/come-and-eat/
+Source: The Book of Rites, 'Tan Gong, Part Two', the famine in Qi and Zengzi's comment
+Tags: Deep read, The Book of Rites, Food given with a 'hey': dignity guards a moment, not a posture
+
+He admitted he was wrong and I still can't let it go. This chapter asks what you are defending once the moment to be hard has passed.
+
+### Q: What actually happened?
+There was a great famine in Qi. Qian Ao set out food by the road for the starving. A man came, his face hidden in his sleeve, dragging his shoes. Qian Ao held out food in his left hand and drink in his right. Hey! Come and eat. The man looked up. It is because I would not eat food given with a 'hey' that I have come to this. Qian Ao went after him and apologised. He still would not eat, and died. Zengzi said: at the 'hey' he could leave; after the apology he could eat.
+
+### The parts · Zengzi does not say he was wrong to walk away
+The shout treated him like a beggar, and turning away was right. The story is usually retold as 'a man of spirit does not eat'. But the first half of Zengzi's comment grants the spirit: at the moment of contempt, refusing is correct.
+e.g. He mocks you in front of everyone and you don't take the line he offers. That is fine.
+
+### The parts · The apology changes the situation
+Once Qian Ao ran after him and said sorry, the reason for refusing was gone. Refusing now defended not his dignity but the stance he had just taken. The same bowl of food, two moments, two different right answers.
+e.g. He tells you privately he went too far, and you still don't reply.
+
+### The parts · The cost of holding out lands on you
+Qian Ao lost nothing; he had apologised. The one who died was the hungry man. That is what a grudge usually looks like: the other side has stepped back, you stay where you are, and it looks like a reckoning with him while only you pay.
+e.g. The supplier owned the error and fixed it, and you gave the order elsewhere to save face.
+
+### The parts · Tell the insult from the help
+What makes it hard is that both came in one bowl. Qian Ao was being condescending and he was also saving lives. Zengzi splits it into two moments: during the shout, judge the manner; after the apology, judge what is in the bowl.
+e.g. Your manager's tone was harsh, and the gap he pointed out is real.
+
+### Q: How do I use it today?
+Where you are: after the row, the other person came to you and admitted fault. You know it's time to climb down and you can't make yourself.
+Ask first: what am I refusing now - the shout, or the bowl he handed me afterwards? The shout is over. The bowl is still here.
+Where it goes wrong: reading it as 'once they apologise you must forgive, or you're petty'. Zengzi says you may eat, not that you must, and he grants the leaving first. It is a way down, not an order.
+
+### Lines to keep
+At the 'hey' you may leave. After the apology you may eat.
+Dignity guards a moment, not a posture.
+Once they step back, holding out only costs you.
+
+========================================================================
+## The Book of Rites · Open the way; don't walk it for him
+URL: https://ourword.ai/en/i/liji/open-not-arrive/
+Source: The Book of Rites, 'Record of Learning', the passages on bad teaching, on guiding, and on when to tell
+Tags: Deep read, The Book of Rites, Guide without dragging: what is dragged through is soon dropped
+
+I've explained it over and over, he still can't do it, and in the end I do it myself. This chapter asks why handing over the answer fails to teach.
+
+### Q: What actually happened?
+The 'Record of Learning' paints the classrooms of its day. Teachers drone over their bamboo slips, fire off question after question and push on regardless of whether anyone is keeping up. They do not draw on the student's sincerity or bring out his gifts. It records the result as well: students hide what they have learned, resent the teacher, feel only the difficulty and see no use in it. Though they finish the course, they drop it quickly.
+
+### The parts · Guide, don't drag
+Show him where the road is, but don't pull him along it by the hand. Someone dragged along moves his feet because you move yours, and his mind stays behind. The relationship sours too: what he remembers is the pulling, not the road.
+e.g. His homework is slow, so you sit beside him and read out every question.
+
+### The parts · Urge, don't press down
+You can push and raise the bar. Don't hold him down or leave him feeling that whatever he does is wrong. What you press down turns into dread of the thing itself, which is where 'feeling only the difficulty and seeing no use' comes from.
+e.g. You cover a new hire's first draft in red, and there is no second draft.
+
+### The parts · Open the way, don't walk it to the end
+Push the door open a crack and leave the last steps to him. Finishing the answer for him saves time today. The moment he gets there himself is the part of the lesson that actually stays with him.
+e.g. Someone asks you what to do. First ask where they think they're stuck.
+
+### The parts · When he can't even ask, then tell him
+Wait until he has tried and cannot even frame the question; then explain. If he still doesn't get it, you may leave it for now. Learners fail in opposite directions, too: some take on too much, some too little, some too lightly, some stop. The same advice must be turned around for each.
+e.g. Your child is stuck. Wait for him to ask instead of explaining the moment he frowns.
+
+### Q: How do I use it today?
+Where you are: you've explained it many times, he still gets it wrong, and you lose patience and do it yourself or hand him the answer. Next time he comes back to you.
+Ask first: did I hand over a road this time, or a destination? Did he walk the last few steps himself?
+Where it goes wrong: reading it as 'say nothing, let him work it out'. The text never says don't teach. It says guide, urge and open first, and tell him plainly once he can't even ask. Letting go comes after you have opened the door.
+
+### Lines to keep
+Open the way. Don't walk it to the end for him.
+When he can't even ask, then tell him.
+What someone is dragged through, they soon drop.
 
 ========================================================================
 ## Lin Xiangru · The jade came home whole

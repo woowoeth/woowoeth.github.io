@@ -29,6 +29,23 @@
 
 OMIT = {
     # ── 有明确不取的部分 ──────────────────────────────────
+    "礼记": (
+        "不取《曲礼》《内则》《郊特牲》等篇里的男女尊卑之别："
+        "「妇人，从人者也；幼从父兄，嫁从夫，夫死从子」（《郊特牲》）是周汉之际的家内等级，"
+        "我们取一张一弛的《杂记下》同一篇里也写着「嫂不抚叔，叔不抚嫂」。"
+        "占了全书大半的丧服、祭祀仪节也不取，我们取的是夹在仪节中间讲分寸的那三段。",
+        "We leave out the separation and ranking of men and women that runs "
+        "through 'Summary of the Rules', 'Pattern of the Family' and 'Single "
+        "Victim at the Border Sacrifices'. 'A wife follows others: when young "
+        "she follows her father and elder brothers, when married her husband, "
+        "when he dies her son' is a household order of the Zhou and Han; the "
+        "same 'Miscellaneous Records' we take the bowstring passage from also "
+        "rules that in mourning a sister-in-law may not lay hands on her "
+        "husband's brother's body, nor he on hers. We "
+        "also leave out the mourning and sacrificial procedures that fill "
+        "most of the book. What we take are three passages set among them "
+        "about knowing when to ease off, when to climb down, and when to let "
+        "someone finish the thought."),
     "吕氏春秋": (
         "不取十二纪每纪开头那几篇的月令与灾异。「孟春行夏令，则风雨不时，"
         "草木旱槁，国乃有恐」这一类按月排政令、排错了就招天灾的对应，"

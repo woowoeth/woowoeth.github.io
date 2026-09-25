@@ -1,11 +1,11 @@
 # OurWord (人類世界生存法則)
 
-> 174 people and books on how the world actually works, across 2,600 years
+> 175 people and books on how the world actually works, across 2,600 years
 > 遇到事了，看看以前的人怎麼處理
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 174 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 175 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
-一個關於「世界到底怎麼運轉」的知識庫：戰略、財富、權力、人性、創業，取自 174 位人物與典籍，跨越 2600 年。每一條都寫清楚這個人真正留下的那一個想法、背後的故事、拆開的分則與例子，以及今天怎麼用。
+一個關於「世界到底怎麼運轉」的知識庫：戰略、財富、權力、人性、創業，取自 175 位人物與典籍，跨越 2600 年。每一條都寫清楚這個人真正留下的那一個想法、背後的故事、拆開的分則與例子，以及今天怎麼用。
 
 ## Read it
 
@@ -29,11 +29,11 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 - [世界如何運轉](https://ourword.ai/tw/t/world/) — 16
 - [家庭與關係](https://ourword.ai/tw/t/family/) — 15
 - [學習與成長](https://ourword.ai/tw/t/learning/) — 15
+- [身心與生活](https://ourword.ai/tw/t/living/) — 15
 - [中古](https://ourword.ai/tw/t/medieval/) — 15
 - [識人與相處](https://ourword.ai/tw/t/people/) — 15
-- [身心與生活](https://ourword.ai/tw/t/living/) — 14
+- [秦漢至魏晉](https://ourword.ai/tw/t/han-wei/) — 13
 - [近世](https://ourword.ai/tw/t/early-modern/) — 12
-- [秦漢至魏晉](https://ourword.ai/tw/t/han-wei/) — 12
 
 ## How it is built
 
@@ -251,6 +251,9 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [李世民 · 兼聽則明](https://ourword.ai/tw/i/li-shimin/hearing-all-sides/): 李世民 · 兼聽則明——只聽一個人等於沒聽。皇帝問怎樣才算明君。這一篇要回答的是：魏徵給的答案是一套信息結構，不是一種品德。
 - [李世民 · 水能載舟](https://ourword.ai/tw/i/li-shimin/boat-and-water/): 李世民 · 水能載舟——權力的承載物會翻。這句話被唸了一千多年。這一篇要回答的是：它在貞觀年間是被當成一條工作紀律用的。
 - [李世民 · 貞觀初年的那場爭論](https://ourword.ai/tw/i/li-shimin/the-first-debate/): 李世民 · 貞觀初年的那場爭論——選一條更慢的路。剛接手一個爛攤子，是用重典還是用寬政？這一篇要回答的是：他選了所有人都說來不及的那條。
+- [禮記 · 一直繃著，連文王武王都做不到](https://ourword.ai/tw/i/liji/one-tension-one-release/): 禮記 · 一直繃著，連文王武王都做不到——一張一弛：松是安排出來的，不是擠出來的。我一停下來就心慌，總覺得在偷懶。這一篇要回答的是：松不是意志力輸了，是那根弦本來就不能一直上著。
+- [禮記 · 他道了歉，你可以吃了](https://ourword.ai/tw/i/liji/come-and-eat/): 禮記 · 他道了歉，你可以吃了——嗟來之食：該硬的那一刻過去了，就可以下來了。他認了錯，我卻還是放不下這口氣。這一篇要回答的是：該硬的那一刻過去之後，再硬下去守的是什麼。
+- [禮記 · 開個頭，別替他走到底](https://ourword.ai/tw/i/liji/open-not-arrive/): 禮記 · 開個頭，別替他走到底——道而弗牽，開而弗達：指路，推一把，開個頭。我講了很多遍，他還是不會，最後我只好自己上。這一篇要回答的是：把答案遞過去，為什麼反而教不會。
 - [藺相如 · 完璧歸趙](https://ourword.ai/tw/i/lin-xiangru/crooked-on-qin/): 藺相如 · 完璧歸趙——先讓理虧落到他那邊。明知對方多半會賴賬，東西給還是不給？這一篇要回答的是：藺相如為什麼主張先答應。
 - [藺相如 · 引車避匿](https://ourword.ai/tw/i/lin-xiangru/two-tigers/): 藺相如 · 引車避匿——讓一步，不是因為怕。有人當眾放話要羞辱你，你一再躲開，身邊的人都說你慫。這一篇要回答的是：讓的時候，怎麼知道自己不是怕。
 - [劉邦 · 三個不如](https://ourword.ai/tw/i/liu-bang/three-i-cannot/): 劉邦 · 三個不如——承認別人比你強。開國慶功宴上他問了一個問題，然後自己給了答案。這一篇要回答的是：那個答案為什麼是一種權力，而不是謙虛。
@@ -466,7 +469,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [AI Bubble Monitor / AI 泡沫檢測儀](https://ourword.ai/ai/)
 - [Zouni / 走你](https://ourword.ai/zouni/)
 
-## Index (174 entrys)
+## Index (175 entrys)
 
 - [BJ·福格](https://ourword.ai/tw/i/bj-fogg/): BJ·福格（2019年·斯坦福行為設計實驗室）——小到不會失敗。斯坦福行為設計實驗室創始人，研究行為如何被設計出來。他給出一個公式：行為發生需要動機、能力、提示三者同時到位。多數人失敗在只調動機——靠決心和自我激勵——而動機天然起伏，靠它維持的習慣必然崩。他的主張相反：把行為縮到小得不需要動機，然後掛在一個已有的動作後面。
 - [C.S.劉易斯](https://ourword.ai/tw/i/cs-lewis/): C.S.劉易斯（1898-1963年·英國牛津）——妻子死後幾個月的日記。作家，牛津和劍橋的教授，寫過《納尼亞傳奇》和大量勸人信仰的書。五十八歲結婚，妻子喬伊四年後因癌症去世。之後幾個月他在四本練習簿上記自己的狀態，後來用筆名出版，就是《卿卿如晤》。收他是因為「重要的人走了」那六個問題，原來靠弗蘭克爾和蘇軾在答——一個是集中營的倖存者，一個是被貶的官員
@@ -580,6 +583,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [甘地](https://ourword.ai/tw/i/gandhi/): 甘地（印度·1869-1948）——非暴力。從一個在南非被趕下火車的印度律師，到讓大英帝國不戰而退的精神領袖。他證明了一件事：在特定條件下，道德感染力和意志的堅韌，可以打敗軍事力量。他的工具不是槍炮，是鹽、紡車、絕食和遊行。他和毛澤東面對相似的殖民壓迫，選擇了完全相反的路徑，都成功了——這個對照本身就是人類智慧的奇蹟。
 - [白圭](https://ourword.ai/tw/i/bai-gui/): 白圭（戰國·前370-前300）——人棄我取。名丹，戰國魏國人，與孟子、惠施同時，做過魏惠王的官，據說主持過治水，後來遊歷齊、秦。他做的是農產品的跨季節跨品類交易——不是囤積居奇，而是靠農業週期的錯位對沖。《史記·貨殖列傳》給他的定語是「蓋天下言治生祖白圭」：天下講經營之道的人，都尊他為祖。《漢書》持同樣看法。更關鍵的是他自
 - [白居易](https://ourword.ai/tw/i/bai-juyi/): 白居易（772-846年·唐）——中隱。唐代詩人，字樂天，貞元十六年進士。他的詩在當時就傳得極廣，而他自己最看重的不是傳得最廣的那些。四十四歲貶江州司馬，五十八歲主動要了一個有品級、有俸祿、幾乎沒有公事的閒職，搬到洛陽履道里住了十八年，直到去世。他留下的不只是詩：他把「不想再熬，可又不敢徹底退出」這件事寫成了一個具體的
+- [禮記](https://ourword.ai/tw/i/liji/): 禮記（西漢·戴聖編·四十九篇）——一張一弛。儒家講禮的文章彙編，西漢戴聖編定四十九篇，通稱《小戴禮記》；東漢鄭玄作注，唐代列為五經之一，宋代朱熹又從裡面抽出《大學》《中庸》兩篇編進四書。它大半篇幅在記禮的儀節——祭祀、喪服、冠婚、起居——可夾在儀節中間的，是一段段在問人的日子怎麼過得下去的話。我們從裡面取三處。《雜記下》子
 - [福澤諭吉](https://ourword.ai/tw/i/fukuzawa/): 福澤諭吉（1835-1901年·日本大阪）——看見招牌那天重學。日本明治時期的教育家，慶應義塾的創辦人。二十歲出頭在大阪學荷蘭語學得極好，1859 年去剛開港的橫濱，看到街上的招牌一個字都不認識——全是英文。他沒有回去繼續鑽荷蘭語，第二天開始找英文教材從頭學。後來他寫《勸學篇》，第一句是「天不在人上造人，不在人下造人」，賣了三百多萬冊，讀者多
 - [稀缺](https://ourword.ai/tw/i/scarcity/): 稀缺（2013年·穆來納森與沙菲爾）——帶寬。行為經濟學家穆來納森與心理學家沙菲爾合著，回答的不是「怎麼賺錢」，是「已經不夠了會發生什麼」。核心主張是：稀缺本身會佔用認知帶寬——缺錢的人不是不理性，是腦子被「還差多少」持續佔著，剩下的判斷力就少了。他們最有名的證據是印度甘蔗農研究：同一批人，收成前手頭緊時與收成後錢到手時各測
 - [稻盛和夫](https://ourword.ai/tw/i/inamori/): 稻盛和夫（當代·1932-2022）——敬天愛人。27歲創立京瓷，52歲創立KDDI（兩家都是世界500強），78歲臨危受命重建破產的日本航空，1年扭虧為盈，2年重新上市。他的思想核心是「利他」：不是道德選擇，是最優的長期商業策略。

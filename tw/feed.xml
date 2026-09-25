@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>OurWord — 174 people and books on how the world actually works, across 2,600 years</title>
+    <title>OurWord — 175 people and books on how the world actually works, across 2,600 years</title>
     <link>https://ourword.ai/tw/</link>
     <atom:link href="https://ourword.ai/tw/feed.xml" rel="self" type="application/rss+xml"/>
-    <description>A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 174 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.</description>
+    <description>A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 175 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.</description>
     <language>zh-tw</language>
-    <lastBuildDate>Thu, 24 Sep 2026 08:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 25 Sep 2026 08:00:00 +0800</lastBuildDate>
 <!-- chapters:begin -->
     <item><title>阿德勒 · 課題分離</title><link>https://ourword.ai/tw/i/adler/separation-of-tasks/</link><guid isPermaLink="true">https://ourword.ai/tw/i/adler/separation-of-tasks/</guid><description>阿德勒 · 課題分離——先分清這是誰的事。人際關係的痛苦大半來自越界。這一篇要回答的是：邊界到底畫在哪。</description><pubDate>Tue, 01 Sep 2026 08:00:00 +0800</pubDate></item>
     <item><title>阿德勒 · 不是因為，是為了</title><link>https://ourword.ai/tw/i/adler/teleology/</link><guid isPermaLink="true">https://ourword.ai/tw/i/adler/teleology/</guid><description>阿德勒 · 不是因為，是為了——把原因換成目的。弗洛伊德問你經歷過什麼，阿德勒問你想用它做什麼。這一篇要回答的是：這個換問法為什麼能解凍。</description><pubDate>Sun, 30 Aug 2026 08:00:00 +0800</pubDate></item>
@@ -215,6 +215,9 @@
     <item><title>李世民 · 兼聽則明</title><link>https://ourword.ai/tw/i/li-shimin/hearing-all-sides/</link><guid isPermaLink="true">https://ourword.ai/tw/i/li-shimin/hearing-all-sides/</guid><description>李世民 · 兼聽則明——只聽一個人等於沒聽。皇帝問怎樣才算明君。這一篇要回答的是：魏徵給的答案是一套信息結構，不是一種品德。</description><pubDate>Sat, 29 Aug 2026 08:00:00 +0800</pubDate></item>
     <item><title>李世民 · 水能載舟</title><link>https://ourword.ai/tw/i/li-shimin/boat-and-water/</link><guid isPermaLink="true">https://ourword.ai/tw/i/li-shimin/boat-and-water/</guid><description>李世民 · 水能載舟——權力的承載物會翻。這句話被唸了一千多年。這一篇要回答的是：它在貞觀年間是被當成一條工作紀律用的。</description><pubDate>Sat, 29 Aug 2026 08:00:00 +0800</pubDate></item>
     <item><title>李世民 · 貞觀初年的那場爭論</title><link>https://ourword.ai/tw/i/li-shimin/the-first-debate/</link><guid isPermaLink="true">https://ourword.ai/tw/i/li-shimin/the-first-debate/</guid><description>李世民 · 貞觀初年的那場爭論——選一條更慢的路。剛接手一個爛攤子，是用重典還是用寬政？這一篇要回答的是：他選了所有人都說來不及的那條。</description><pubDate>Sat, 29 Aug 2026 08:00:00 +0800</pubDate></item>
+    <item><title>禮記 · 一直繃著，連文王武王都做不到</title><link>https://ourword.ai/tw/i/liji/one-tension-one-release/</link><guid isPermaLink="true">https://ourword.ai/tw/i/liji/one-tension-one-release/</guid><description>禮記 · 一直繃著，連文王武王都做不到——一張一弛：松是安排出來的，不是擠出來的。我一停下來就心慌，總覺得在偷懶。這一篇要回答的是：松不是意志力輸了，是那根弦本來就不能一直上著。</description><pubDate>Fri, 25 Sep 2026 08:00:00 +0800</pubDate></item>
+    <item><title>禮記 · 他道了歉，你可以吃了</title><link>https://ourword.ai/tw/i/liji/come-and-eat/</link><guid isPermaLink="true">https://ourword.ai/tw/i/liji/come-and-eat/</guid><description>禮記 · 他道了歉，你可以吃了——嗟來之食：該硬的那一刻過去了，就可以下來了。他認了錯，我卻還是放不下這口氣。這一篇要回答的是：該硬的那一刻過去之後，再硬下去守的是什麼。</description><pubDate>Fri, 25 Sep 2026 08:00:00 +0800</pubDate></item>
+    <item><title>禮記 · 開個頭，別替他走到底</title><link>https://ourword.ai/tw/i/liji/open-not-arrive/</link><guid isPermaLink="true">https://ourword.ai/tw/i/liji/open-not-arrive/</guid><description>禮記 · 開個頭，別替他走到底——道而弗牽，開而弗達：指路，推一把，開個頭。我講了很多遍，他還是不會，最後我只好自己上。這一篇要回答的是：把答案遞過去，為什麼反而教不會。</description><pubDate>Fri, 25 Sep 2026 08:00:00 +0800</pubDate></item>
     <item><title>藺相如 · 完璧歸趙</title><link>https://ourword.ai/tw/i/lin-xiangru/crooked-on-qin/</link><guid isPermaLink="true">https://ourword.ai/tw/i/lin-xiangru/crooked-on-qin/</guid><description>藺相如 · 完璧歸趙——先讓理虧落到他那邊。明知對方多半會賴賬，東西給還是不給？這一篇要回答的是：藺相如為什麼主張先答應。</description><pubDate>Thu, 24 Sep 2026 08:00:00 +0800</pubDate></item>
     <item><title>藺相如 · 引車避匿</title><link>https://ourword.ai/tw/i/lin-xiangru/two-tigers/</link><guid isPermaLink="true">https://ourword.ai/tw/i/lin-xiangru/two-tigers/</guid><description>藺相如 · 引車避匿——讓一步，不是因為怕。有人當眾放話要羞辱你，你一再躲開，身邊的人都說你慫。這一篇要回答的是：讓的時候，怎麼知道自己不是怕。</description><pubDate>Thu, 24 Sep 2026 08:00:00 +0800</pubDate></item>
     <item><title>劉邦 · 三個不如</title><link>https://ourword.ai/tw/i/liu-bang/three-i-cannot/</link><guid isPermaLink="true">https://ourword.ai/tw/i/liu-bang/three-i-cannot/</guid><description>劉邦 · 三個不如——承認別人比你強。開國慶功宴上他問了一個問題，然後自己給了答案。這一篇要回答的是：那個答案為什麼是一種權力，而不是謙虛。</description><pubDate>Fri, 28 Aug 2026 08:00:00 +0800</pubDate></item>

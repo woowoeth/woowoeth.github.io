@@ -159,6 +159,7 @@ NAMES = {
     "why-nations-fail": ("Why Nations Fail", "How the world works"),
     # ── Body and daily life ──
     "atomic-habits": ("Atomic Habits", "Body and daily life"),
+    "liji": ("The Book of Rites", "Body and daily life"),
     "bj-fogg": ("BJ Fogg", "Body and daily life"),
     "cal-newport": ("Cal Newport", "Body and daily life"),
     "csikszentmihalyi":

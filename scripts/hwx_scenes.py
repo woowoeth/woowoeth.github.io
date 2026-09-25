@@ -46,6 +46,8 @@ SCENES = [
      [("analects", "reciprocity"), ("chris-voss", "thats-right")]),
     ("他给我难堪，我忍了这一次。",
      [("zhang-liang", "picking-up-the-shoe"), ("caesar", "clementia")]),
+    ("他认了错，我还是咽不下这口气。",
+     [("liji", "come-and-eat")]),
 ]),
 ("拖着不开始", "要做决定", [
     ("道理我都懂，就是动不了。",
@@ -368,6 +370,8 @@ SCENES = [
      [("vygotsky", "scaffolding"), ("dweck", "praise-the-process")]),
     ("我的人吃不饱，谈什么理想。",
      [("guan-zhong", "granaries-first"), ("cao-cao", "military-farming")]),
+    ("答案都是我给的，他们只会照做。",
+     [("liji", "open-not-arrive")]),
 ]),
 ("招人换人", "带人", [
     ("招个比我强的，我压得住吗？",
@@ -870,6 +874,8 @@ SCENES = [
      [("lee-kuan-yew", "does-it-work"), ("analects", "harmony-not-sameness")]),
     ("我一直让着他，别人说我怂。",
      [("lin-xiangru", "two-tigers")]),
+    ("他都道歉了，我还端着不肯下来。",
+     [("liji", "come-and-eat")]),
 ]),
 ("总在讨好别人", "跟人打交道", [
     ("我一直在让，可越让越累。",
@@ -998,6 +1004,8 @@ SCENES = [
      [("thomas-gordon", "problem-ownership"), ("montessori", "prepared-environment")]),
     ("小时候我笑了，现在他不听了。",
      [("yanshi-jiaxun", "teach-before-it-sets")]),
+    ("我忍不住把答案直接告诉他。",
+     [("liji", "open-not-arrive")]),
 ]),
 ("孩子不说话", "家里的事", [
     ("他什么都不跟我讲了。",
@@ -1120,6 +1128,8 @@ SCENES = [
      [("csikszentmihalyi", "leisure-paradox"), ("sapolsky", "stress-mismatch")]),
     ("我拿身体换事业，值不值。",
      [("harvard-study", "relationships-predict-health"), ("li-ka-shing", "knowing-when-to-stop")]),
+    ("我一口气冲了半年，没停过。",
+     [("liji", "one-tension-one-release")]),
 ]),
 ("坐不住", "身体与精力", [
     ("我一会儿就想去看手机。",
@@ -1154,6 +1164,8 @@ SCENES = [
      [("sapolsky", "stress-mismatch"), ("sapolsky", "predictability")]),
     ("压力不算大，我却一直绷着。",
      [("sapolsky", "predictability"), ("nietzsche", "gazing-into-abyss")]),
+    ("我一放松下来就有罪恶感。",
+     [("liji", "one-tension-one-release")]),
 ]),
 ("想戒又戒不掉", "身体与精力", [
     ("「等这阵过了」我说了几次了。",

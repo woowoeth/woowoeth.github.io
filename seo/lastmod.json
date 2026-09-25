@@ -12,8 +12,8 @@
   "h": "831f4df629bf6734"
  },
  "i/analects/": {
-  "d": "2026-09-22",
-  "h": "649ab61fc73b82cc"
+  "d": "2026-09-25",
+  "h": "229dfdf77860edb6"
  },
  "i/analects/harmony-not-sameness/": {
   "d": "2026-08-28",
@@ -1191,6 +1191,22 @@
   "d": "2026-08-29",
   "h": "c584a9f04533f824"
  },
+ "i/liji/": {
+  "d": "2026-09-25",
+  "h": "e542f04237b5b225"
+ },
+ "i/liji/come-and-eat/": {
+  "d": "2026-09-25",
+  "h": "60e6f8efd5b25607"
+ },
+ "i/liji/one-tension-one-release/": {
+  "d": "2026-09-25",
+  "h": "a19c0ca2dbd85f49"
+ },
+ "i/liji/open-not-arrive/": {
+  "d": "2026-09-25",
+  "h": "a8b7f7553e7312ad"
+ },
  "i/lin-xiangru/": {
   "d": "2026-09-24",
   "h": "6860f2a6a9df6f71"
@@ -1380,8 +1396,8 @@
   "h": "67cb23ea08f9b02c"
  },
  "i/mencius/": {
-  "d": "2026-09-21",
-  "h": "35dbf1b592a778f4"
+  "d": "2026-09-25",
+  "h": "ed205ca8177dc07f"
  },
  "i/mencius/flood-like-qi/": {
   "d": "2026-08-28",
@@ -1424,8 +1440,8 @@
   "h": "377b6284c898b851"
  },
  "i/montessori/": {
-  "d": "2026-09-21",
-  "h": "135bd516f296a00f"
+  "d": "2026-09-25",
+  "h": "db351a8c9dda6f75"
  },
  "i/montessori/help-me-do-it-myself/": {
   "d": "2026-08-30",
@@ -1708,8 +1724,8 @@
   "h": "b6ba2b089e742cd2"
  },
  "i/sapolsky/": {
-  "d": "2026-09-01",
-  "h": "99419f81fb4edd35"
+  "d": "2026-09-25",
+  "h": "bf6000b4ae64b028"
  },
  "i/sapolsky/predictability/": {
   "d": "2026-08-31",
@@ -2188,8 +2204,8 @@
   "h": "47d353e9cf59cbff"
  },
  "i/xunzi/": {
-  "d": "2026-09-01",
-  "h": "fecd46539503de35"
+  "d": "2026-09-25",
+  "h": "2cbe7ce2fb1ac1cb"
  },
  "i/xunzi/borrow-from-things/": {
   "d": "2026-08-28",
@@ -2208,8 +2224,8 @@
   "h": "0e60abbcf1f044ae"
  },
  "i/yanshi-jiaxun/": {
-  "d": "2026-09-21",
-  "h": "3bf111576511d749"
+  "d": "2026-09-25",
+  "h": "955ee7ffbe8f676d"
  },
  "i/yanshi-jiaxun/brothers-drift-apart/": {
   "d": "2026-09-21",
