@@ -130,6 +130,7 @@ NAMES = {
     "bruce-lee": ("Bruce Lee", "Learning and growth"),
     "einstein": ("Albert Einstein", "Learning and growth"),
     "ericsson": ("Anders Ericsson", "Learning and growth"),
+    "herbert-simon": ("Herbert Simon", "Learning and growth"),
     "feynman": ("Richard Feynman", "Learning and growth"),
     "fukuzawa": ("Fukuzawa Yukichi", "Learning and growth"),
     "hot-metal": ("The Last Hot-Metal Edition", "Learning and growth"),

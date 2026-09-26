@@ -1,9 +1,9 @@
 # OurWord (OurWord)
 
-> 175 people and books on how the world actually works, across 2,600 years
+> 176 people and books on how the world actually works, across 2,600 years
 > See how people before you handled it.
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 175 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 176 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
 ## Read it
 
@@ -16,7 +16,7 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 
 ## Topics
 
-- [Modern](https://ourword.ai/en/t/modern/) — 63
+- [Modern](https://ourword.ai/en/t/modern/) — 64
 - [The industrial age](https://ourword.ai/en/t/the-industrial-age/) — 50
 - [Power and organisation](https://ourword.ai/en/t/power-and-organisation/) — 22
 - [Pre-Qin and classical](https://ourword.ai/en/t/pre-qin-and-classical/) — 22
@@ -25,7 +25,7 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 - [Money and risk](https://ourword.ai/en/t/money-and-risk/) — 18
 - [Strategy and competition](https://ourword.ai/en/t/strategy-and-competition/) — 18
 - [How the world works](https://ourword.ai/en/t/how-the-world-works/) — 17
-- [Learning and growth](https://ourword.ai/en/t/learning-and-growth/) — 16
+- [Learning and growth](https://ourword.ai/en/t/learning-and-growth/) — 17
 - [Body and daily life](https://ourword.ai/en/t/body-and-daily-life/) — 15
 - [Family and relationships](https://ourword.ai/en/t/family-and-relationships/) — 15
 - [Qin, Han and the Six Dynasties](https://ourword.ai/en/t/qin-han-and-the-six-dynasties/) — 15
@@ -187,6 +187,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [Harvard Study of Adult Development · Who can you call at 2am](https://ourword.ai/en/i/harvard-study/someone-to-count-on/): Harvard Study of Adult Development · Who can you call at 2am — The count doesn't matter, the catch does. The shortest way to measure your relationships. Why this question is so hard to fool.
 - [Friedrich Hayek · Knowledge is dispersed](https://ourword.ai/en/i/hayek/knowledge-is-dispersed/): Friedrich Hayek · Knowledge is dispersed — Nobody can hold the whole picture. A paper of a dozen pages, later voted one of the century's most important in economics. What assumption it destroyed.
 - [Friedrich Hayek · The fatal conceit](https://ourword.ai/en/i/hayek/fatal-conceit/): Friedrich Hayek · The fatal conceit — The curious task of economics. He defined his own discipline's task as pouring cold water, not forecasting. Why the cleverest people need that water most.
+- [Herbert Simon · The best one was never going to arrive](https://ourword.ai/en/i/herbert-simon/good-enough/): Herbert Simon · The best one was never going to arrive — Buyers come one at a time, never all at once. Both options are fine, I have compared them for weeks, and I am still waiting for a better one. When do you stop looking?
+- [Herbert Simon · The more information, the poorer you are](https://ourword.ai/en/i/herbert-simon/poverty-of-attention/): Herbert Simon · The more information, the poorer you are — What runs short is never the news, it is the reader. I am afraid of missing anything new, so I try to read all of it. Why does more reading leave me more scattered?
 - [Albert O. Hirschman · Walk out, or speak up](https://ourword.ai/en/i/hirschman/exit-voice-loyalty/): Albert O. Hirschman · Walk out, or speak up — The easier the exit, the fewer the complaints. Unhappy with something, people count two options: leave, or put up with it. Where the third one went.
 - [Albert O. Hirschman · The three sentences that turn you down](https://ourword.ai/en/i/hirschman/rhetoric-of-reaction/): Albert O. Hirschman · The three sentences that turn you down — Perversity, futility, jeopardy. Your plan was refused and all you heard was a no. That no arrives in only three shapes.
 - [Arlie Hochschild · The second shift](https://ourword.ai/en/i/hochschild/second-shift/): Arlie Hochschild · The second shift — The shift that starts when work ends. Housework and care have never appeared on a timesheet. Who ends up paying when nobody counts them.
@@ -463,7 +465,7 @@ Cite the individual page URL, not the homepage — each entry page is stable and
 - [AI Bubble Monitor](https://ourword.ai/ai/)
 - [Zouni](https://ourword.ai/zouni/)
 
-## Index (175 entrys)
+## Index (176 entrys)
 
 - [Albert Einstein](https://ourword.ai/en/i/einstein/): Albert Einstein (Germany · 1879–1955) — Imagination. The physicist, and the father of relativity — but the legacy that travels furthest is not a formula, it is a way of working.
 - [Albert O. Hirschman](https://ourword.ai/en/i/hirschman/): Albert O. Hirschman (United States · 1915-2012) — Voice. A German-born American economist. He left Berlin in 1933, fought in Spain in 1936, spent 1940 in Marseille forging papers and finding mountain…
@@ -521,6 +523,7 @@ Cite the individual page URL, not the homepage — each entry page is stable and
 - [Hannah Arendt](https://ourword.ai/en/i/arendt/): Hannah Arendt (1906–1975 · Germany to America) — Not thinking. Political thinker. In 1961 she went to Jerusalem to sit through a trial expecting a monster, and found a mediocre man: all stock…
 - [Haruki Murakami](https://ourword.ai/en/i/murakami/): Haruki Murakami (Japan · 1949–) — Writing as physical work. He ran a jazz bar into his early thirties, decided at a baseball game in 1978 that he could write a novel, and in 1981 closed the bar to…
 - [Harvard Study of Adult Development](https://ourword.ai/en/i/harvard-study/): Harvard Study of Adult Development (1938–present · Harvard Medical School) — Relationships predict the end. The longest study of adult life ever run. It began in 1938 with 268 Harvard sophomores…
+- [Herbert Simon](https://ourword.ai/en/i/herbert-simon/): Herbert Simon (United States · 1916-2001) — Bounded rationality. American social scientist, born in Milwaukee in 1916, with a doctorate in political science from Chicago.
 - [Howard Marks](https://ourword.ai/en/i/marks/): Howard Marks (United States · 1946–) — Second-level thinking. Founder of Oaktree Capital, more than two hundred billion dollars under management, working in distressed debt and high yield — a trade…
 - [Hu Xueyan](https://ourword.ai/en/i/hu-xueyan/): Hu Xueyan (Qing · 1823–1885) — The patron. The most famous merchant of the late Qing, self-made, for a time the richest man in China, decorated with an official rank and the yellow riding jacket.
 - [Huineng](https://ourword.ai/en/i/huineng/): Huineng (Tang · 638–713) — Already complete. An illiterate woodcutter from the far south who became the sixth patriarch of Chan Buddhism.

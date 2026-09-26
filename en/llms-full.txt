@@ -1,7 +1,7 @@
-# OurWord — 175 people and books on how the world actually works, across 2,600 years
+# OurWord — 176 people and books on how the world actually works, across 2,600 years
 # OurWord — See how people before you handled it.
 # https://ourword.ai/en/
-# Full corpus, plain text. 175 entrys.
+# Full corpus, plain text. 176 entrys.
 
 ========================================================================
 ## Albert Einstein
@@ -738,10 +738,10 @@ Look back at yesterday and find whether there was a single stretch over ninety m
 Deep work is becoming rare exactly as it becomes valuable. A gap never appears by itself. You have to schedule it. Four fifteen-minute pieces do not make an hour.
 
 ### Q: What should I read alongside?
-Atomic Habits — Both work by design rather than by will: Clear edits the environment to lower the cost of starting, Newport edits the diary to protect the block. Anders Ericsson — Deliberate practice requires intense concentration, and Newport sets out why that concentration has become so hard to get hold of today. Mihaly Csikszentmihalyi — One sets out the internal conditions for concentration, the other the external ones, the diary and the environment that protect it. Scarcity — Both keep an account of attention: Newport counts what switching costs, Scarcity counts what how far short am I occupies all day. C. Northcote Parkinson — Two places to cut into the same problem: Newport puts deep work into the calendar, Parkinson says the block you booked will swell to fill itself unless you make it smaller.
+Atomic Habits — Both work by design rather than by will: Clear edits the environment to lower the cost of starting, Newport edits the diary to protect the block. Anders Ericsson — Deliberate practice requires intense concentration, and Newport sets out why that concentration has become so hard to get hold of today. Mihaly Csikszentmihalyi — One sets out the internal conditions for concentration, the other the external ones, the diary and the environment that protect it. Scarcity — Both keep an account of attention: Newport counts what switching costs, Scarcity counts what how far short am I occupies all day. C. Northcote Parkinson — Two places to cut into the same problem: Newport puts deep work into the calendar, Parkinson says the block you booked will swell to fill itself unless you make it smaller. Herbert Simon — Both say attention is being chopped up. Newport is talking about you, and how to protect a stretch of time nobody interrupts. Simon is talking about design: a new tool or a new department must keep out more than it lets in, or it is one more source you have to read.
 
 ### Further
-Atomic Habits Anders Ericsson John Ratey Benjamin Franklin Haruki Murakami BJ Fogg Mihaly Csikszentmihalyi Scarcity Ivan Illich Simone Weil Neil Postman C. Northcote Parkinson
+Atomic Habits Anders Ericsson John Ratey Benjamin Franklin Haruki Murakami BJ Fogg Mihaly Csikszentmihalyi Scarcity Ivan Illich Simone Weil Neil Postman C. Northcote Parkinson Herbert Simon
 
 ========================================================================
 ## Cao Cao
@@ -957,7 +957,7 @@ It is remarkable how much long-term advantage we have got by trying to be consis
 Warren Buffett — Same desk for fifty years: Buffett holds the temperament, Munger supplies the checklist of ways to be wrong. Elon Musk — Reduce to physics, or carry many borrowed models at once — two opposite cures for the same blindness. Kazuo Inamori — Two versions of character as a business input. Munger treats reliability as a way of not being stupid; Inamori puts it in the formula as the one factor that can turn the answer negative.
 
 ### Further
-Warren Buffett Han Feizi John Boyd Elon Musk Influence Benjamin Franklin Ray Dalio Benjamin Graham Peter Lynch Jim Simons George Soros Richard Feynman Socrates Thinking, Fast and Slow Thinking in Systems Bruce Lee Albert Einstein
+Warren Buffett Han Feizi John Boyd Elon Musk Influence Benjamin Franklin Ray Dalio Benjamin Graham Peter Lynch Jim Simons George Soros Richard Feynman Socrates Thinking, Fast and Slow Thinking in Systems Bruce Lee Albert Einstein Herbert Simon
 
 ========================================================================
 ## Chris Voss
@@ -2067,6 +2067,46 @@ John Cacioppo — The same finding from opposite ends: he measures what the abse
 Mark Granovetter John Cacioppo Arlie Hochschild John Gottman Esther Perel Attachment Theory
 
 ========================================================================
+## Herbert Simon
+URL: https://ourword.ai/en/i/herbert-simon/
+Tags: Learning and growth, Modern, Bounded rationality
+
+Herbert Simon (United States · 1916-2001) — Bounded rationality. American social scientist, born in Milwaukee in 1916, with a doctorate in political science from Chicago.
+
+### Q: What did this one leave behind?
+American social scientist, born in Milwaukee in 1916, with a doctorate in political science from Chicago. From 1949 he taught at the Carnegie Institute of Technology, later Carnegie Mellon, for over fifty years. Administrative Behavior (1947) became a classic of management; he shared the 1975 Turing Award with Allen Newell and won the 1978 Nobel prize in economics. All of it answers one question: how do people actually decide? His answer retired the all-knowing rational man. People try to reason, but lack the information and the computing power, so they do not pick the best option. They take the first one that is good enough.
+
+### Q: What actually happened?
+In 1935, still an undergraduate at Chicago, he went home to Milwaukee to study how the city's public recreation programme divided its budget. The money had to be split between keeping up the playgrounds and paying the leaders who ran activities for children. The textbook said to split it until the last dollar did equal good on either side. Nobody he met thought that way. The people who looked after the grounds wanted more for the grounds; the people who ran activities wanted more leaders. Neither side was confused. Each saw the problem from inside its own patch. He later traced his whole subject back to that study.
+
+### The parts · He replaced the rational man
+Economics assumed a chooser who knows every option, can work out every consequence, and picks the best. Simon's people have incomplete information, limited computing power and limited time, so their reasoning works inside those bounds. He called it bounded rationality: reasoning has a cost. e.g. A plan that three hours of meetings cannot settle is rarely stuck because somebody is being unreasonable.
+
+### The parts · Good enough, then stop
+Since the best cannot be computed, people do something else. They set an acceptable line, look at options one at a time, take the first that clears it, and raise or lower the line as the search proves easy or hard. He called it satisficing. e.g. Choosing a builder, the first one whose price and references both clear the line spares you meeting a sixth.
+
+### The parts · Where you stand is what you see
+Milwaukee left him a second idea. A person deciding inside an organisation takes the angle of the unit he belongs to. Administrative Behavior gives this identification its own treatment: it spares people from weighing everything afresh, and hides whatever lies outside their patch. e.g. When sales and engineering fight over the budget, neither side is usually playing games.
+
+### The parts · A wealth of information, a poverty of attention
+In 1971 he wrote the lines quoted ever since: information consumes the attention of its recipients, so a wealth of information creates a poverty of attention. The question for any new system is not how much it tells you, but how much it keeps away. e.g. Someone getting hundreds of group messages a day gains more by muting them than by learning to skim.
+
+### The parts · He tested thinking on a computer
+In 1955 and 1956 he, Newell and Cliff Shaw wrote a program called the Logic Theorist and set it to prove theorems from Principia Mathematica. It did not try every path, only the few that looked promising. People think the same way, he held: by selective search, not by exhausting the options. e.g. An experienced engineer chasing a fault checks the two likeliest places first, not line one onwards.
+
+### Q: How do I use it today?
+If you are stuck between two or three decent options, don't go looking for a fourth today. Write down the three things you cannot do without, check each option against them, and take the first that clears all three. If none does, the line is too high: move it and check again. Keep a second job for your reading: go back over what you read this week, count the items that actually changed a decision, and drop half of the sources that supplied the rest. He used one test for both: your computing power and your attention are finite, so don't spend them on the chance that something better is still coming.
+
+### Lines to keep
+You are not looking for the best. You want the first good enough. Reasoning costs computing power, and nobody has much. More information makes attention the thing that runs short. Where you stand is what you see.
+
+### Q: What should I read alongside?
+Steve Jobs — Both answer what to do when you want two things. Jobs says to say no to a hundred good ideas and cut down to the best one. Simon says the best one was never going to be found: set a line and stop at the first option that clears it. One cuts; the other stops. Cal Newport — Both say attention is being chopped up. Newport is talking about you, and how to protect a stretch of time nobody interrupts. Simon is talking about design: a new tool or a new department must keep out more than it lets in, or it is one more source you have to read.
+
+### Further
+Thinking, Fast and Slow Charlie Munger Steve Jobs Cal Newport John Boyd
+
+========================================================================
 ## Howard Marks
 URL: https://ourword.ai/en/i/marks/
 Tags: Money and risk, Modern, Second-level thinking
@@ -2477,7 +2517,7 @@ Observe, orient, decide, act. One road: promotion and medals. The other: doing w
 Han Feizi — Two theories of an organisation that works: rules and consequences, or shared intent and delegated authority. Sun Tzu — Both put the decision before the clash. Sun Tzu settles it in preparation, Boyd in speed of turning.
 
 ### Further
-Garry Kasparov Han Feizi Sun Tzu Charlie Munger Norbert Wiener On War Su Yu
+Garry Kasparov Han Feizi Sun Tzu Charlie Munger Norbert Wiener On War Su Yu Herbert Simon
 
 ========================================================================
 ## John Cacioppo
@@ -4818,10 +4858,10 @@ List everything you are currently working on and ask which half you would keep i
 Simple can be harder than complex; you have to work to get your thinking clean. Focus means saying no to the hundred other good ideas that there are. Design is not just how it looks. Design is how it works.
 
 ### Q: What should I read alongside?
-Jeff Bezos — Cut to four products; the other man expanded into everything and won too. Andy Grove — Jobs disrupted other people on instinct and taste; Grove disrupted himself on process and data. The same act performed by two temperaments.
+Jeff Bezos — Cut to four products; the other man expanded into everything and won too. Andy Grove — Jobs disrupted other people on instinct and taste; Grove disrupted himself on process and data. The same act performed by two temperaments. Herbert Simon — Both answer what to do when you want two things. Jobs says to say no to a hundred good ideas and cut down to the best one. Simon says the best one was never going to be found: set a line and stop at the first option that clears it. One cuts; the other stops.
 
 ### Further
-Peter Thiel Jeff Bezos Paul Graham Huo Qubing Andy Grove Ren Zhengfei
+Peter Thiel Jeff Bezos Paul Graham Huo Qubing Andy Grove Ren Zhengfei Herbert Simon
 
 ========================================================================
 ## Strategies of the Warring States
@@ -5724,7 +5764,7 @@ We can be blind to the obvious, and we are also blind to our blindness. Nothing 
 Influence — Two sides of one thing: Cialdini shows how the gaps get used on you, Kahneman shows why the gaps are there. Sun Tzu — Reckoning in the temple is a forced start-up of the slow system: settle the count before deciding whether to fight at all. Karl Popper — Popper says what a careful mind should do; Kahneman measures how far an ordinary one departs from it. Thinking in Systems — Kahneman repairs the individual head, Meadows repairs the surrounding structure. The same bad decision, charged to two different accounts.
 
 ### Further
-Influence Charlie Munger Nassim Taleb George Soros The Crowd La Rochefoucauld Karl Popper Thinking in Systems
+Influence Charlie Munger Nassim Taleb George Soros The Crowd La Rochefoucauld Karl Popper Thinking in Systems Herbert Simon
 
 ========================================================================
 ## Thomas Gordon
@@ -11433,6 +11473,80 @@ Where it goes wrong: using orders grow, they are not made to block every reform 
 The curious task of economics is to demonstrate how little men really know.
 How little they know about what they imagine they can design.
 The extended order our civilisation rests on was designed by nobody.
+
+========================================================================
+## Herbert Simon · The best one was never going to arrive
+URL: https://ourword.ai/en/i/herbert-simon/good-enough/
+Source: "A Behavioral Model of Rational Choice", Quarterly Journal of Economics, 1955; "Rational Choice and the Structure of the Environment", Psychological Review, 1956
+Tags: Deep read, Herbert Simon, Buyers come one at a time, never all at once
+
+Both options are fine, I have compared them for weeks, and I am still waiting for a better one. When do you stop looking?
+
+### Q: What actually happened?
+In 1955 Simon used the sale of a house to make his point. The rational man of the textbooks lines up every possible buyer and every possible offer, then takes the highest. A real seller cannot wait for every buyer: they arrive one at a time, and the one turned away today may be gone tomorrow. So the seller fixes a price he will accept and takes the first offer that reaches it; if none does for a while, he lowers the price a little. That is not laziness. It is the only kind of rationality a limited mind can finish computing.
+
+### The parts · Optimising needs three things you never have
+To pick the best you must know every alternative, every consequence of each, and how to rank those consequences. Simon's point was that real people have none of the three in full. He called it bounded rationality: people are not unreasonable, reasoning just costs more than they have.
+e.g. You have seen twenty flats and want to see one more. The first good one has already been let.
+
+### The parts · He gave the habit a name
+In the 1956 paper he modelled a small animal hunting for food and able to see only a short way ahead, and showed that a very simple rule kept it alive without any optimising. He called the rule satisficing: clear the line, then stop.
+e.g. Write down three hard requirements for the hire and make an offer to the first candidate who meets all three.
+
+### The parts · The line moves by itself
+The line is not fixed. When satisfactory options turn up easily, aspiration rises; when they will not turn up at all, it falls. Good enough is not a number you bring to the search. It is the number the search and the world agree on.
+e.g. Thirty applications and not a single reply means the line should move, not that you should send thirty more.
+
+### The parts · A pair of scissors
+In 1990 he put it another way: human rational behaviour is shaped by "a scissors whose two blades are the structure of task environments and the computational capabilities of the actor." When you cannot choose, stop sharpening your own blade and work on the other.
+e.g. Eight plans are too many to compare. Set a rule that cuts five, then compare the three left.
+
+### Q: How do I use it today?
+Where you are: two good options, two weeks of comparing, and a quiet hope that a third will turn up.
+Ask first: which few things do I actually need - written down, with the ones I cannot do without marked - and has one of the options in front of me already cleared all of them.
+Where it goes wrong: reading it as settle for whatever. He never says the line should be low. It should be set first, written down, and moved with how hard the search proves to be - and the less reversible the choice, the higher it sits and the longer you look.
+
+### Lines to keep
+Draw the line first. Then see who clears it.
+Easy to find, raise the line. Hard to find, lower it.
+When you cannot compare them all, change the problem.
+
+========================================================================
+## Herbert Simon · The more information, the poorer you are
+URL: https://ourword.ai/en/i/herbert-simon/poverty-of-attention/
+Source: "Designing Organizations for an Information-Rich World", in Computers, Communications, and the Public Interest, 1971; The Sciences of the Artificial, 1969
+Tags: Deep read, Herbert Simon, What runs short is never the news, it is the reader
+
+I am afraid of missing anything new, so I try to read all of it. Why does more reading leave me more scattered?
+
+### Q: What actually happened?
+By the late 1960s computers were moving into offices and government departments, and the talk was mostly of getting more information to the people who made decisions. Simon, writing about how organisations should be designed, turned the question round. Information consumes something: the attention of whoever receives it. So plenty of information means attention has become scarce. By that reckoning, a new system is worth installing only if it keeps more away from you than it hands you.
+
+### The parts · Information has an appetite
+His words: what information consumes "is rather obvious: it consumes the attention of its recipients. Hence a wealth of information creates a poverty of attention", and with it the need to decide where that attention goes.
+e.g. Three hundred messages read in a day, and by evening not one of them comes back to you.
+
+### The parts · Judge it by what it absorbs
+He pushed the point into design. A new processing unit, whether a computer or a new department, saves the rest of the organisation attention only if it absorbs more information than it produces. If it adds a stack of reports every day, it is one more thing to read.
+e.g. A tool that summarises your feed and then sends you ten extra items a day is a tap, not a filter.
+
+### The parts · Decide first what not to read
+If attention is the scarce thing, the task is not to get a little more information but to ration attention: which sources may claim it, and which get not even a glance. The answer is cutting, not speed reading, and not another aggregator.
+e.g. Someone subscribed to twenty channels gains more by leaving fifteen than by learning to skim.
+
+### The parts · The ant is simple, the beach is not
+In The Sciences of the Artificial he describes an ant crossing a beach on a winding path. The ant is simple: "The apparent complexity of its behavior over time is largely a reflection of the complexity of the environment in which it finds itself."
+e.g. On a day with every notification switched on, the path you walk is bound to come out in pieces.
+
+### Q: How do I use it today?
+Where you are: something new appears every day, you are afraid of missing it, you chase each one, and nothing stays.
+Ask first: of what I read this week, which items actually changed a decision I made - and how many hours did the rest take.
+Where it goes wrong: reading it as ignore anything new. He is describing a filter, and the test of a filter is that it keeps out more than it lets in. Reading less is not the goal; keeping attention for the few decisions that need it is.
+
+### Lines to keep
+Information eats something, and what it eats is attention.
+A filter must keep out more than it lets in.
+A scattered day may be the ground, not you.
 
 ========================================================================
 ## Albert O. Hirschman · Walk out, or speak up

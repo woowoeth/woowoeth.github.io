@@ -713,6 +713,8 @@ SCENES = [
      [("bruce-lee", "one-kick"), ("feynman", "teach-to-understand")]),
     ("太难我慌，太简单又没长进。",
      [("csikszentmihalyi", "flow-channel"), ("bruce-lee", "one-kick")]),
+    ("每天冒出来的新东西，我都怕漏看。",
+     [("herbert-simon", "poverty-of-attention")]),
 ]),
 ("手艺不值钱了", "AI 来了", [
     ("我这身本事，眼下用不上。",
@@ -791,6 +793,8 @@ SCENES = [
      [("cal-newport", "attention-residue"), ("finite-and-infinite-games", "two-kinds")]),
     ("我停不下来，怕一停就落后。",
      [("finite-and-infinite-games", "two-kinds"), ("cal-newport", "attention-residue")]),
+    ("订阅了一大堆，我一篇都没读完。",
+     [("herbert-simon", "poverty-of-attention")]),
 ]),
 ("不知道该练什么了", "AI 来了", [
     ("我解释工作时全是套话。",
@@ -818,6 +822,8 @@ SCENES = [
      [("on-war", "continuation-of-politics"), ("sun-tzu", "win-before-fighting")]),
     ("砍掉的那个也是好主意，我舍不得。",
      [("jobs", "focus-is-saying-no"), ("jobs", "connecting-the-dots")]),
+    ("我一直在比，哪个都定不下来。",
+     [("herbert-simon", "good-enough")]),
 ]),
 ("信不信直觉", "跟人打交道", [
     ("直觉和数据打架，我听哪个？",
@@ -1604,6 +1610,8 @@ SCENES = [
      [("excellent-sheep", "no-scoreboard"), ("frankl", "happiness-ensues")]),
     ("做了这么多，我反而更迷茫了。",
      [("excellent-sheep", "hurdles"), ("huineng", "originally-not-a-thing")]),
+    ("我总觉得后面还有更好的。",
+     [("herbert-simon", "good-enough")]),
 ]),
 ("要不要现在转向", "回头与往前", [
     ("走错了，但好像还没走远。",

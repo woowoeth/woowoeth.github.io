@@ -1,11 +1,11 @@
 # OurWord (人类世界生存法则)
 
-> 175 people and books on how the world actually works, across 2,600 years
+> 176 people and books on how the world actually works, across 2,600 years
 > 遇到事了，看看以前的人怎么处理
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 175 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 176 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
-一个关于「世界到底怎么运转」的知识库：战略、财富、权力、人性、创业，取自 175 位人物与典籍，跨越 2600 年。每一条都写清楚这个人真正留下的那一个想法、背后的故事、拆开的分则与例子，以及今天怎么用。
+一个关于「世界到底怎么运转」的知识库：战略、财富、权力、人性、创业，取自 176 位人物与典籍，跨越 2600 年。每一条都写清楚这个人真正留下的那一个想法、背后的故事、拆开的分则与例子，以及今天怎么用。
 
 ## Read it
 
@@ -19,16 +19,16 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 ## Topics
 
 - [现代](https://ourword.ai/t/modern/) — 60
-- [工业时代](https://ourword.ai/t/industrial-age/) — 53
+- [工业时代](https://ourword.ai/t/industrial-age/) — 54
 - [先秦与古典时代](https://ourword.ai/t/classical-era/) — 22
 - [权力与组织](https://ourword.ai/t/power/) — 22
 - [心智与情绪](https://ourword.ai/t/mind/) — 21
 - [创业与产品](https://ourword.ai/t/startups/) — 19
 - [财富与风险](https://ourword.ai/t/wealth/) — 19
 - [谋略与竞争](https://ourword.ai/t/strategy/) — 18
+- [学习与成长](https://ourword.ai/t/learning/) — 16
 - [世界如何运转](https://ourword.ai/t/world/) — 16
 - [家庭与关系](https://ourword.ai/t/family/) — 15
-- [学习与成长](https://ourword.ai/t/learning/) — 15
 - [身心与生活](https://ourword.ai/t/living/) — 15
 - [中古](https://ourword.ai/t/medieval/) — 15
 - [识人与相处](https://ourword.ai/t/people/) — 15
@@ -193,6 +193,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [哈佛成人发展研究 · 半夜两点能打给谁](https://ourword.ai/i/harvard-study/someone-to-count-on/): 哈佛成人发展研究 · 半夜两点能打给谁——数量不算，托底的算。衡量一个人的关系状况，最短的问法是哪一句。这一篇要回答的是：它为什么骗不了人。
 - [哈耶克 · 知识是分散的](https://ourword.ai/i/hayek/knowledge-is-dispersed/): 哈耶克 · 知识是分散的——没人拿得到全图。一篇十几页的论文，后来被评为百年最重要的经济学文章之一。这一篇要回答的是：它到底推翻了什么假设。
 - [哈耶克 · 致命的自负](https://ourword.ai/i/hayek/fatal-conceit/): 哈耶克 · 致命的自负——经济学的奇特任务。他给自己学科定的任务不是预测，是泼冷水。这一篇要回答的是：为什么越聪明的人越需要这盆水。
+- [赫伯特·西蒙 · 最好的那个，你本来就等不到](https://ourword.ai/i/herbert-simon/good-enough/): 赫伯特·西蒙 · 最好的那个，你本来就等不到——买主是一个一个来的，不会一起到齐。两个都不错，我已经比了很久，还在等更好的那个。这一篇要回答的是：什么时候该停下来不比了。
+- [赫伯特·西蒙 · 信息越多，你越穷](https://ourword.ai/i/herbert-simon/poverty-of-attention/): 赫伯特·西蒙 · 信息越多，你越穷——缺的从来不是消息，是读消息的那个人。每天冒出来的新东西，我都怕漏看。这一篇要回答的是：为什么看得越多越乱，该从哪一头下手。
 - [阿尔伯特·赫希曼 · 走人，还是开口](https://ourword.ai/i/hirschman/exit-voice-loyalty/): 阿尔伯特·赫希曼 · 走人，还是开口——退出的门越好走，开口的人越少。不满意的时候，人只数得出两个选项：走，或者忍。这一篇要回答的是，第三个选项去哪了。
 - [阿尔伯特·赫希曼 · 否决你的那三句话](https://ourword.ai/i/hirschman/rhetoric-of-reaction/): 阿尔伯特·赫希曼 · 否决你的那三句话——适得其反、无济于事、危及既有。方案被毙了，你只听见一个「不」。这一篇要回答的是，那个「不」其实只有三种形状。
 - [阿莉·霍克希尔德 · 第二班](https://ourword.ai/i/hochschild/second-shift/): 阿莉·霍克希尔德 · 第二班——下班之后还有一班。家务和照料从来不进工时表。这一篇要回答的是：不记账会记到谁身上。
@@ -469,7 +471,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [AI Bubble Monitor / AI 泡沫检测仪](https://ourword.ai/ai/)
 - [Zouni / 走你](https://ourword.ai/zouni/)
 
-## Index (175 entrys)
+## Index (176 entrys)
 
 - [BJ·福格](https://ourword.ai/i/bj-fogg/): BJ·福格（2019年·斯坦福行为设计实验室）——小到不会失败。斯坦福行为设计实验室创始人，研究行为如何被设计出来。他给出一个公式：行为发生需要动机、能力、提示三者同时到位。多数人失败在只调动机——靠决心和自我激励——而动机天然起伏，靠它维持的习惯必然崩。他的主张相反：把行为缩到小得不需要动机，然后挂在一个已有的动作后面。
 - [C.S.刘易斯](https://ourword.ai/i/cs-lewis/): C.S.刘易斯（1898-1963年·英国牛津）——妻子死后几个月的日记。作家，牛津和剑桥的教授，写过《纳尼亚传奇》和大量劝人信仰的书。五十八岁结婚，妻子乔伊四年后因癌症去世。之后几个月他在四本练习簿上记自己的状态，后来用笔名出版，就是《卿卿如晤》。收他是因为「重要的人走了」那六个问题，原来靠弗兰克尔和苏轼在答——一个是集中营的幸存者，一个是被贬的官员
@@ -624,6 +626,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [贝索斯](https://ourword.ai/i/bezos/): 贝索斯（美·1964年-）——飞轮效应·Day 1。杰夫·贝索斯，亚马逊创始人。1994年放弃华尔街对冲基金高薪，在车库创办网上书店，把它做成横跨电商、云计算（AWS）、物流、硬件的两万亿美元帝国。他是长期主义最极端的实践者：亚马逊连续二十年微利甚至亏损，把所有现金流砸进飞轮，被华尔街嘲讽二十年，然后赢了二十年。他的方法论——飞轮
 - [费曼](https://ourword.ai/i/feynman/): 费曼（1918-1988年·美国）——不骗自己。诺贝尔物理奖得主，参与过曼哈顿计划，调查过挑战者号事故。他留给非物理学家的东西比留给物理学家的更多——一套关于「怎么知道自己是不是真懂」的判据。他的标准苛刻到近乎冒犯：如果你不能把一个概念讲到大一新生听懂，说明你自己没懂。他也把这条用在整个科学界身上：科学的第一原则是不要骗自己，
 - [资治通鉴](https://ourword.ai/i/zizhi-tongjian/): 资治通鉴（北宋·1065-1084）——鉴。司马光用19年主持编写，294卷，记录前403年到959年共1362年历史。书名由宋神宗题：「鉴于往事，有资于治道」。它是给统治者看的历史教科书，核心问题只有一个：政权为什么兴，政权为什么亡。186篇「臣光曰」是司马光的判断，精华在这里。与史记的「写人」不同，资治通鉴写的是「权力
+- [赫伯特·西蒙](https://ourword.ai/i/herbert-simon/): 赫伯特·西蒙（美国·1916-2001）——有限理性。美国学者，1916年生于密尔沃基，芝加哥大学政治学博士，1949年起在卡内基理工学院（后来的卡内基梅隆大学）教书，一待五十多年，2001年在匹兹堡去世。他没有固定在一门学科里：1947年的《管理行为》成了管理学的经典，1975年他和艾伦·纽厄尔一起得了图灵奖，1978年又得了诺贝
 - [达里奥](https://ourword.ai/i/dalio/): 达里奥（当代·1949-）——原则。桥水基金创始人，《原则》作者，全球规模最大的对冲基金。他在华尔街工作40年，经历了无数市场崩溃，总结出一套可复制的决策框架。他最重要的信念：所有事情都有原则，原则可以被总结，总结后可以被系统化，系统化后可以被复制。
 - [道德经](https://ourword.ai/i/tao-te-ching/): 道德经（春秋·前500年前后）——损。老子五千言，是中国哲学的减法源头。与儒家「为学日益」相对，老子说「为道日损」——不断减掉，直到无为，然后无不为。道德经在西方被翻译次数仅次于圣经。
 - [郭嘉](https://ourword.ai/i/guo-jia/): 郭嘉（三国·170-207）——奇。曹操最倚重的谋士，被曹操称为「吾之奇佐」。他27岁投奔曹操，此后11年，几乎每一个关键决策背后都有他的身影。官渡之战前的「十胜十败论」、袁绍死后的「急攻不如缓图」、北征乌桓时的「虚国远征」……他的判断每次都精准到令人惊叹。唯一的遗憾：38岁病逝，没有活到赤壁之战。曹操在赤壁大败后

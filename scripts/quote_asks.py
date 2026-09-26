@@ -408,6 +408,11 @@ QUOTE_ASKS = {
         "家里机器都买齐了，活还是全在我身上。",
     "cowan/effort-saved-time-not":
         "工具快了几倍，我的活一点没少。",
+    # 赫伯特·西蒙
+    "herbert-simon/good-enough":
+        "我总觉得后面还有更好的。",
+    "herbert-simon/poverty-of-attention":
+        "每天冒出来的新东西，我都怕漏看。",
     # 礼记
     "liji/one-tension-one-release":
         "我一放松下来就有罪恶感。",
