@@ -4,6 +4,7 @@ import re
 import unicodedata
 
 SLUGS = {
+    "冯异": "feng-yi",
     "礼记": "liji",
     "赫伯特·西蒙": "herbert-simon",
     "蔺相如": "lin-xiangru",

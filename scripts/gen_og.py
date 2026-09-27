@@ -47,11 +47,22 @@ def F(kind, size):
 ICON = Image.open(ROOT / "icon-512.png").convert("RGBA")
 
 
-def wrap(d, text, font, maxw):
+# 不许出现在行首的标点（2026-09-27 冯异那张卡的「。」独占了一行，全站 75 张同病）。
+# 两种处置：hang=True 把标点挂在行尾——只用在留了余量的底部金句（maxw = TW-26，
+# 一个 26 号标点挂出去仍在 TW 以内）；否则把上一行末字一起推到下一行。
+# 底部金句不用「推」：推会多出一行，撞上 clip 的行数上限就被截成「…」（博伊德那张）。
+NO_LINE_START = "，。、；：？！）」』》”’…"
+
+
+def wrap(d, text, font, maxw, hang=False):
     lines, cur = [], ""
     for ch in text:
         if d.textlength(cur + ch, font=font) <= maxw:
             cur += ch
+        elif ch in NO_LINE_START and cur and hang:
+            cur += ch
+        elif ch in NO_LINE_START and len(cur) > 1:
+            lines.append(cur[:-1]); cur = cur[-1] + ch
         else:
             lines.append(cur); cur = ch
     if cur:
@@ -98,7 +109,7 @@ def headline(d, text, y, max_lines=3):
 
 def bottom_quote(d, text, size=26, lines=2, fill=INK2):
     fq = F("l", size)
-    ql = clip(wrap(d, text, fq, TW - 26), lines)
+    ql = clip(wrap(d, text, fq, TW - 26, hang=True), lines)
     lh = int(size * 1.6)
     qh = lh * len(ql)
     qy = H - 70 - qh

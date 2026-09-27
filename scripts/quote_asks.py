@@ -398,6 +398,13 @@ QUOTE_ASKS = {
     "zhu-yuanzhang/delay-the-title": "别人都在抢先，我要不要慢一步。",
     "zhuge-liang/executing-ma-su": "该罚的是我最看重的那个人。",
     "zhuge-liang/longzhong-plan": "我看不出下一步棋该往哪走。",
+    # 冯异
+    "feng-yi/big-tree":
+        "别人抢着报功，我不想去挤。",
+    "feng-yi/why-the-fear":
+        "有人背后告我的状，我怎么回？",
+    "feng-yi/lost-at-dawn":
+        "没听我的，果然出事了，我还管吗？",
     # 蔺相如
     "lin-xiangru/crooked-on-qin":
         "他给的条件我不信，拒了又是我理亏。",

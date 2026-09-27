@@ -66,6 +66,7 @@ NAMES = {
     "wang-jian": ("Wang Jian", "Strategy and competition"),
     "xiang-yu": ("Xiang Yu", "Strategy and competition"),
     # ── Reading people ──
+    "feng-yi": ("Feng Yi", "Reading people"),
     "analects": ("The Analects", "Reading people"),
     "art-of-worldly-wisdom": ("The Art of Worldly Wisdom", "Reading people"),
     "caigentan": ("Tending the Roots of Wisdom", "Reading people"),

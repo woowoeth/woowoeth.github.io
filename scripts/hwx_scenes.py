@@ -104,6 +104,8 @@ SCENES = [
      [("su-yu", "daring-to-state"), ("li-shimin", "the-first-debate")]),
     ("他说了不，我听不出理由。",
      [("hirschman", "rhetoric-of-reaction")]),
+    ("没听我的，果然出事了，我还管吗？",
+     [("feng-yi", "lost-at-dawn")]),
 ]),
 ("全票通过", "要做决定", [
     ("大家都这么做，这就算理由了吗。",
@@ -278,6 +280,8 @@ SCENES = [
      [("zeng-guofan", "recruit-and-test"), ("zizhi-tongjian", "talent-and-virtue")]),
     ("我要不要先信他一次。",
      [("axelrod", "tit-for-tat"), ("han-feizi", "not-counting-on-goodness")]),
+    ("有人告他的状，我要不要让他知道？",
+     [("feng-yi", "why-the-fear")]),
 ]),
 ("上面说的话不能信", "跟人打交道", [
     ("画的饼我已经不信了。",
@@ -326,6 +330,8 @@ SCENES = [
      [("wang-jian", "asking-for-fields"), ("han-xin", "neither-nor")]),
     ("怀疑一起来，我做什么都像证据。",
      [("merton", "self-fulfilling-prophecy"), ("guo-ziyi", "open-gates")]),
+    ("有人背后告我的状，我怎么回？",
+     [("feng-yi", "why-the-fear")]),
 ]),
 
 # ── 团队 ──
@@ -868,6 +874,8 @@ SCENES = [
      [("la-rochefoucauld", "memory-vs-judgment"), ("art-of-worldly-wisdom", "do-and-be-seen")]),
     ("一样的活，我没名气就吃亏。",
      [("merton", "matthew-effect"), ("art-of-worldly-wisdom", "do-and-be-seen")]),
+    ("别人抢着报功，我不想去挤。",
+     [("feng-yi", "big-tree")]),
 ]),
 ("该不该妥协", "跟人打交道", [
     ("退这一步，是务实还是没底线？",

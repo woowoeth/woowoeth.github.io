@@ -1,7 +1,7 @@
-# OurWord — 176 people and books on how the world actually works, across 2,600 years
+# OurWord — 177 people and books on how the world actually works, across 2,600 years
 # OurWord — See how people before you handled it.
 # https://ourword.ai/en/
-# Full corpus, plain text. 176 entrys.
+# Full corpus, plain text. 177 entrys.
 
 ========================================================================
 ## Albert Einstein
@@ -1432,6 +1432,43 @@ Guo Ziyi — Two first-rate survivors of disorder, but Guo Ziyi stayed loyal ins
 Sima Yi Guo Ziyi Zeng Guofan Machiavelli Su Shi Tending the Roots of Wisdom The Art of Worldly Wisdom Bai Juyi
 
 ========================================================================
+## Feng Yi
+URL: https://ourword.ai/en/i/feng-yi/
+Tags: Reading people, Qin, Han and the Six Dynasties, Not boasting
+
+Feng Yi (Eastern Han · died 34 CE) — Not boasting. A founding general of the Eastern Han, from Fucheng in Yingchuan, who read the Zuo Commentary and Sun Tzu.
+
+### Q: What did this one leave behind?
+A founding general of the Eastern Han, from Fucheng in Yingchuan, who read the Zuo Commentary and Sun Tzu. He first held a town for Wang Mang, then joined Liu Xiu as his secretary and followed him through the northern campaigns. Sent west in 26 CE, he broke the Red Eyebrows the next year, pacified the region around the old capital and rose to General Who Conquers the West. He died in camp in 34. What he left is a way of standing with a boss and with colleagues: out of the credit argument, plain in his reports, open under suspicion.
+
+### Q: What actually happened?
+When Wang Lang rose in the north, Liu Xiu fled south-east from Ji, riding day and night and sleeping in sheds. At Wulou pavilion it was bitterly cold and everyone was starving, and Feng Yi brought him a bowl of bean porridge. Next morning Liu Xiu told his generals that the porridge had cured both hunger and cold. Years later, when Feng Yi came to court, the emperor loaded him with gifts, and the edict said: the bean porridge at Wulou and the barley rice by the Hutuo river, a kindness long unrepaid.
+
+### The parts · When they argue merit, stand under the tree
+Whenever the army camped, the generals sat down to argue over merit and Feng Yi went to stand under a tree. When the troops were reassigned, the soldiers all asked for the big-tree general. He was absent from the argument; the men who had fought with him kept the record. e.g. A colleague claims the project in the meeting. Let it go there, and watch who asks to work with you next.
+
+### The parts · Report what happened, not what you deserve
+After his victory at Xunyi he wrote only the course of the battle and did not presume to boast. When other generals wanted a share, Liu Xiu wrote to them himself on Feng Yi's behalf. A plain report gave his defender something to hold up. e.g. Write what broke, on which day, and who decided what. That is harder to take from you than 'I led the team'.
+
+### The parts · Under suspicion, answer in the open
+Accused of ruling the west like a king, he was shown the memorial and replied formally, with no back-channel lobbying. He had already asked to come home, saying he felt uneasy holding so much for so long. e.g. Someone told your boss you act alone. Write one email explaining how those decisions were made.
+
+### The parts · Overruled and beaten, still clean up
+Two commanders ignored his plan and were routed. He went to their rescue, walked back to camp after the defeat, gathered the stragglers and won the next battle with an ambush. The emperor wrote: lost at sunrise, recovered at sunset. e.g. The release you argued against failed. Help fix it now; keep your objection for the review.
+
+### Q: How do I use it today?
+If you're somewhere everyone scrambles for credit, don't start shouting for your share, and don't go silent either. Write down what you did as a sequence of events: which day, what problem, who decided, what happened. Hand it in without adjectives, then notice who wants to work with you when the next job is shared out. If someone is making a case against you behind your back, don't send friends to find out what was said; put your answer where everyone can see it. And if a plan you argued against has failed, help clean up first and keep your reasoning for the review.
+
+### Lines to keep
+The generals sat down to argue merit. Feng Yi stood under a tree. Lost at sunrise, recovered at sunset. What is there to suspect? Why the fear? Let the state not forget the troubles north of the river.
+
+### Q: What should I read alongside?
+Zhang Liang — Both stepped back from reward. Zhang Liang turned down thirty thousand households and asked for one small county, stepping back from the ruler's gift. Feng Yi kept his rewards and simply stayed out of the argument about merit, filing plain reports and letting the soldiers and the emperor keep the account. Wang Jian — Both commanded huge armies far from court and knew they would be suspected. Wang Jian sent back again and again asking for land and houses, playing a man who wanted only property. Feng Yi didn't act a part. He wrote that he felt uneasy and asked to come home, and when accused he answered formally: one made himself look small, the other put everything on the table.
+
+### Further
+Zhang Liang Wang Jian Guo Ziyi Han Xin
+
+========================================================================
 ## Finite and Infinite Games
 URL: https://ourword.ai/en/i/finite-and-infinite-games/
 Tags: How the world works, Modern, Win, or keep playing
@@ -1885,7 +1922,7 @@ His merit covered the empire and his ruler did not suspect him. I deal with peop
 Han Xin — The same impossible position: Han Xin kept proving he was a threat and his clan was destroyed, Guo Ziyi kept proving he was harmless and died in bed. Zhang Liang — Two ways to survive success: Zhang Liang left the table, Guo Ziyi stayed at it with his cards face up, which is much the harder trick. Feng Dao — Two first-rate survivors of disorder, but Guo Ziyi stayed loyal inside one dynasty while Feng Dao crossed four. Where the boundary of loyalty sits, they answer differently.
 
 ### Further
-Han Xin Zhang Liang Zeng Guofan Sima Yi Wang Jian Feng Dao Li Bi Lin Xiangru
+Han Xin Zhang Liang Zeng Guofan Sima Yi Wang Jian Feng Dao Li Bi Lin Xiangru Feng Yi
 
 ========================================================================
 ## Han Feizi
@@ -1956,7 +1993,7 @@ Throw them onto dead ground and they will live. He whose valour overawes his lor
 Zhang Liang — The same court, the same victory, opposite endings: Zhang Liang stepped all the way out and died old, Han Xin kept the power and the loyalty both and lost everything. Huo Qubing — Two kinds of military genius. Han Xin wins by arrangement and misjudges his own position; Huo Qubing wins by pure speed and never lives long enough for the position to matter. Guo Ziyi — The same impossible position: Han Xin kept proving he was a threat and his clan was destroyed, Guo Ziyi kept proving he was harmless and died in bed. Su Yu — Two commanders who made a habit of winning outnumbered: Han Xin by putting his own men where retreat was impossible, Su Yu by choosing what the enemy had to come and save. Wang Jian — Identical achievements, opposite endings: Wang Jian made himself look greedy and died in bed, Han Xin held on to his standing and did not.
 
 ### Further
-Liu Bang Sun Tzu Xiang Yu Zhang Liang Guo Ziyi Mao Zedong Huo Qubing Su Yu Wang Jian Records of the Grand Historian
+Liu Bang Sun Tzu Xiang Yu Zhang Liang Guo Ziyi Mao Zedong Huo Qubing Su Yu Wang Jian Records of the Grand Historian Feng Yi
 
 ========================================================================
 ## Hannah Arendt
@@ -5943,10 +5980,10 @@ Next time you name a number, name the one you believe, and then hold it through 
 It cannot be done with fewer than six hundred thousand men. The king is suspicious and trusts nobody. Revise the number after a refusal and you have proved it was padding.
 
 ### Q: What should I read alongside?
-Han Xin — Identical achievements, opposite endings: Wang Jian made himself look greedy and died in bed, Han Xin held on to his standing and did not. Fan Li — Two ways of leaving at the top: Fan Li vanished and became a merchant, Wang Jian resigned and went home to his fields.
+Han Xin — Identical achievements, opposite endings: Wang Jian made himself look greedy and died in bed, Han Xin held on to his standing and did not. Fan Li — Two ways of leaving at the top: Fan Li vanished and became a merchant, Wang Jian resigned and went home to his fields. Feng Yi — Both commanded huge armies far from court and knew they would be suspected. Wang Jian sent back again and again asking for land and houses, playing a man who wanted only property. Feng Yi didn't act a part. He wrote that he felt uneasy and asked to come home, and when accused he answered formally: one made himself look small, the other put everything on the table.
 
 ### Further
-Zhang Liang Han Xin Sima Yi Fan Li Guo Ziyi
+Zhang Liang Han Xin Sima Yi Fan Li Guo Ziyi Feng Yi
 
 ========================================================================
 ## Wang Xing
@@ -6350,10 +6387,10 @@ Next time a promotion or a larger position is put in front of you, run the Liu c
 Enfeoff me at Liu and it is enough. I wish to drop the affairs of men and follow Master Red Pine. Withdraw when the work is done: that is the way of heaven.
 
 ### Q: What should I read alongside?
-Han Xin — Same founding, opposite endings: Zhang Liang withdrew completely and died old, Han Xin kept both his army and his ambitions and was killed. Fan Li — The two men who understood leaving. Fan Li left to trade, Zhang Liang left to study the way. Different exits, identical result. Guo Ziyi — Two ways to survive success: Zhang Liang left the table, Guo Ziyi stayed at it with his cards face up, which is much the harder trick. Li Bi — One reign or four: Zhang Liang withdrew for good once the founding was over, Li Bi came back and left four times and finished holding the top office. Lin Xiangru — Both step back when they could press their claim: Zhang Liang turned down thirty thousand households for one small county, yielding to his ruler to disarm suspicion, while Lin yielded to a colleague to keep standing the one line of defence the two of them held together.
+Han Xin — Same founding, opposite endings: Zhang Liang withdrew completely and died old, Han Xin kept both his army and his ambitions and was killed. Fan Li — The two men who understood leaving. Fan Li left to trade, Zhang Liang left to study the way. Different exits, identical result. Guo Ziyi — Two ways to survive success: Zhang Liang left the table, Guo Ziyi stayed at it with his cards face up, which is much the harder trick. Li Bi — One reign or four: Zhang Liang withdrew for good once the founding was over, Li Bi came back and left four times and finished holding the top office. Lin Xiangru — Both step back when they could press their claim: Zhang Liang turned down thirty thousand households for one small county, yielding to his ruler to disarm suspicion, while Lin yielded to a colleague to keep standing the one line of defence the two of them held together. Feng Yi — Both stepped back from reward. Zhang Liang turned down thirty thousand households and asked for one small county, stepping back from the ruler's gift. Feng Yi kept his rewards and simply stayed out of the argument about merit, filing plain reports and letting the soldiers and the emperor keep the account.
 
 ### Further
-Fan Li Li Bi Han Xin Tao Te Ching Liu Bang Guo Ziyi Wang Jian Guiguzi Lin Xiangru
+Fan Li Li Bi Han Xin Tao Te Ching Liu Bang Guo Ziyi Wang Jian Guiguzi Lin Xiangru Feng Yi
 
 ========================================================================
 ## Zhang Yiming
@@ -10020,6 +10057,105 @@ Where it goes wrong: judging choices made inside a collapse by the standards of 
 Thinking over beginnings and ends, I understand the way of heaven better.
 Ouyang Xiu called him shameless. Sima Guang called him the worst of traitors.
 Five dynasties, eight surnames, watched the way an innkeeper watches guests.
+
+========================================================================
+## Feng Yi · The General Under the Tree
+URL: https://ourword.ai/en/i/feng-yi/big-tree/
+Source: History of the Later Han, Biography of Feng Yi
+Tags: Deep read, Feng Yi, Report what happened, not what you deserve
+
+Everyone else is racing to claim the credit. You don't want to join in, and you're afraid that if you don't, nobody will remember.
+
+### Q: What actually happened?
+Feng Yi followed Liu Xiu through the campaigns north of the Yellow River. Whenever the army made camp, the generals sat down together and argued over who had done what. Feng Yi would walk off alone and stand under a tree, and the army took to calling him the General Under the Big Tree. On the road he pulled his carriage aside for other commanders. After Handan fell, Liu Xiu redistributed the troops, and the soldiers all asked to serve under the big-tree general.
+
+### The parts · The ledger is kept by the people who worked with you
+At the table where merit is argued, the loudest claim wins. When troops are reassigned, the soldiers choose for themselves. Feng Yi was absent from the first and first choice in the second. The record that mattered sat with the men who had fought beside him.
+e.g. A colleague presents the project as theirs in the weekly meeting. Don't grab the microphone. Watch who asks to work with you next time.
+
+### The parts · Report the sequence, not the verdict
+Years later, at Xunyi, he slipped into the town first, lowered his banners and silenced his drums, then burst out when the enemy arrived. His report to the throne gave the course of the battle and, the history says, did not presume to boast.
+e.g. A project report that says what broke on which day and who decided what is harder to take from you than 'I led the team through it'.
+
+### The parts · Give your defender something to hold up
+After Xunyi some generals wanted a share of his credit. Liu Xiu sent them all a sealed letter: his merit was like a mountain and he still thought it not enough. Feng Yi did not argue. His emperor argued for him, using a report with no praise in it.
+e.g. If you want your manager to speak up for you in the room, first hand them a document nobody there can knock down.
+
+### Q: How do I use it today?
+Where you are: you did the work, others are claiming it, and you'd rather not scramble for it but fear being forgotten.
+Ask first: who actually needs to remember this, the people arguing in the meeting or the people who'll work with me next? Is what I've written down a sequence of events or a verdict about myself?
+Where it goes wrong: not claiming credit turns into leaving no record at all, and then the credit really is gone. And in a place where nobody reads the record and only volume counts, you need another approach, or another place.
+
+### Lines to keep
+The generals sat down to argue merit. Feng Yi stood under a tree.
+The soldiers all asked to serve under the big-tree general.
+His merit is like a mountain, and he thinks it not enough.
+
+========================================================================
+## Feng Yi · Why the Fear?
+URL: https://ourword.ai/en/i/feng-yi/why-the-fear/
+Source: History of the Later Han, Biography of Feng Yi
+Tags: Deep read, Feng Yi, Put the suspicion on the table and there is one thing left to answer
+
+Someone has been complaining about you behind your back. Do you explain yourself, or act as if you haven't heard? And if you're the boss holding the complaint?
+
+### Q: What actually happened?
+Feng Yi had spent three years pacifying the region around the old capital. Then a memorial reached the emperor: he ruled the area as his own, had executed the magistrate of Chang'an, held too much power, and people called him the King of Xianyang. Liu Xiu did not open an inquiry. He had the memorial sent to Feng Yi. Feng Yi, alarmed, wrote back in apology. The reply came: in duty we are lord and subject, in feeling like father and son. What is there to suspect? Why the fear?
+
+### The parts · Say the unease out loud first
+Before any accusation arrived, Feng Yi had already written asking to come home: he had been away too long and did not feel easy. The request was refused. It was not a plea. It showed he knew how much he held. Suspicion feeds on a man who seems not to notice.
+e.g. Your budget and headcount have grown enough that other teams are staring. Ask your manager for a review before anyone else does.
+
+### The parts · Answer in writing, in the open
+Shown the memorial, he did not send friends to sound out the court or smooth things over. He wrote formally: fighting under orders, things went as planned; deciding on his own, he had often regretted it. An open answer leaves no room for a second suspicion.
+e.g. You hear someone told your boss you act alone. Skip the back-channel questions and write one email setting out how those decisions were made.
+
+### The parts · If you're the boss, show them the letter
+Liu Xiu could have buried the memorial and let doubt grow between them, or investigated quietly until Feng Yi found out. He took a third way and handed it to the man it accused. Suspicion on the table is one question with an answer, not a hundred without.
+e.g. Someone comes to you with a complaint about a member of your team. Before checking quietly, tell that person exactly what was said and hear the answer.
+
+### Q: How do I use it today?
+Where you are: someone is making a case against you behind your back, or you are the one who has been handed the complaint.
+Ask first: is this suspicion easier to answer in the open or in the dark? Am I defending my motives, or setting out the facts?
+Where it goes wrong: Liu Xiu could show Feng Yi the memorial because he already trusted him. If the people above have decided to move against you, one letter will not save you. And a boss who passes on a complaint should first ask whether the person who made it will be punished for it.
+
+### Lines to keep
+In duty lord and subject; in feeling, father and son.
+What is there to suspect? Why the fear?
+Fighting under orders, it went as planned. On my own, I regretted it.
+
+========================================================================
+## Feng Yi · Lost at Sunrise
+URL: https://ourword.ai/en/i/feng-yi/lost-at-dawn/
+Source: History of the Later Han, Biography of Feng Yi
+Tags: Deep read, Feng Yi, They overruled me, we lost, and I still go and clean up
+
+Your plan was rejected, the other plan went ahead, and it failed exactly as you feared. Why did Feng Yi never once say I told you so?
+
+### Q: What actually happened?
+In 27 CE Feng Yi had held the Red Eyebrows at Huayin for sixty days. Deng Yu and Deng Hong passed by and wanted a joint attack. Feng Yi urged winning men over first, then striking from both sides; they refused. Deng Hong chased a feigned retreat and was routed. Feng Yi came to his rescue; Deng Yu insisted on fighting again and they were crushed. Feng Yi climbed the Huixi slope on foot. Then he regrouped, dressed picked men as Red Eyebrows and hid them by the road, and took eighty thousand prisoners.
+
+### The parts · Overruled, and still the first to help
+Deng Hong ignored his advice and was lured into a trap by baggage carts left as bait. Feng Yi's first move was to bring his troops to the rescue, not to watch him lose and be proved right. Losing the argument is your pride. Losing the army is everyone's.
+e.g. The release you argued against has failed in production. Help restore it first. Your original objection can wait for the review.
+
+### The parts · After a defeat, gather the stragglers
+Back in camp from the slope, he did three things: fortified the walls, collected the scattered troops, and called in the fortified camps nearby, until he had tens of thousands again. What costs most after a loss is not blame. It is the people still drifting away.
+e.g. The project has collapsed. Keep the people willing to stay and the work still usable before anyone talks about fault.
+
+### The parts · Change the tactics, not the opponent
+In the next battle he sent only a small force at first, looking weak, until the enemy committed everything. Late in the day, when they tired, the ambush rose, dressed like them, and nobody could tell friend from foe. Same general, same enemy, different way of fighting.
+e.g. Your first version was rejected by the market. Before switching markets, work out whether it was the approach or the direction that failed.
+
+### Q: How do I use it today?
+Where you are: your plan was turned down, someone else's went ahead, and it has gone wrong.
+Ask first: what matters now, proving I was right, or saving what can still be saved? Next time, do I change the tactics or the goal?
+Where it goes wrong: taking on blame that isn't yours means the next decision still won't listen to you. Set out your original reasoning in the review, just not while the fire is still burning.
+
+### Lines to keep
+Wings drooping at Huixi, wings beating at Mianchi.
+Lost at sunrise, recovered at sunset.
+Win them over slowly. They cannot be broken in one blow.
 
 ========================================================================
 ## Richard Feynman · The first person not to fool is you
