@@ -1,9 +1,9 @@
 # OurWord (OurWord)
 
-> 177 people and books on how the world actually works, across 2,600 years
+> 178 people and books on how the world actually works, across 2,600 years
 > See how people before you handled it.
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 177 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 178 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
 ## Read it
 
@@ -18,8 +18,8 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 
 - [Modern](https://ourword.ai/en/t/modern/) — 64
 - [The industrial age](https://ourword.ai/en/t/the-industrial-age/) — 50
-- [Power and organisation](https://ourword.ai/en/t/power-and-organisation/) — 22
-- [Pre-Qin and classical](https://ourword.ai/en/t/pre-qin-and-classical/) — 22
+- [Power and organisation](https://ourword.ai/en/t/power-and-organisation/) — 23
+- [Pre-Qin and classical](https://ourword.ai/en/t/pre-qin-and-classical/) — 23
 - [Mind and feeling](https://ourword.ai/en/t/mind-and-feeling/) — 20
 - [Starting and building](https://ourword.ai/en/t/starting-and-building/) — 19
 - [Money and risk](https://ourword.ai/en/t/money-and-risk/) — 18
@@ -218,6 +218,9 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [Influence · Social proof](https://ourword.ai/en/i/influence/social-proof/): Influence · Social proof — When unsure, we watch each other. Everyone hates canned laughter and everyone laughs more with it. This is about the conditions that make the principle strongest.
 - [The Innovator's Dilemma · Beaten by good management](https://ourword.ai/en/i/innovators-dilemma/good-management-fails/): The Innovator's Dilemma · Beaten by good management — The textbook moves that put you out. Every generation of disk-drive leaders was killed by the next. Why the autopsy keeps reading: cause of death, good management.
 - [The Innovator's Dilemma · Small markets cannot save big companies](https://ourword.ai/en/i/innovators-dilemma/small-markets/): The Innovator's Dilemma · Small markets cannot save big companies — A mismatch of growth needs. Big firms do not fail to see the new market; they decline it. Why the refusal is arithmetic, and the remedy he proposes.
+- [Duke Wen of Jin · Longing and Ease](https://ourword.ai/en/i/jin-wengong/ease-ruins-a-name/): Duke Wen of Jin · Longing and Ease — The place you least want to leave deserves the most suspicion. It's comfortable here, so comfortable it has started to worry you, and you can't say whether you should go. Why was it Chong'er's wife who sent him away?
+- [Duke Wen of Jin · The Cut Sleeve](https://ourword.ai/en/i/jin-wengong/the-cut-sleeve/): Duke Wen of Jin · The Cut Sleeve — When someone who hurt you knocks, hear him out first. Someone who once hurt you is back and asking to see you. Why did the duke shut the door on the man who had hunted him, then open it?
+- [Duke Wen of Jin · Three Stages Back](https://ourword.ai/en/i/jin-wengong/three-stages-back/): Duke Wen of Jin · Three Stages Back — Pay the debt first, then see whether they keep coming. You are about to fall out with someone you owe, and you want to give ground first. Is backing off the same as losing?
 - [Steve Jobs · Focus is what you say no to](https://ourword.ai/en/i/jobs/focus-is-saying-no/): Steve Jobs · Focus is what you say no to — The things you cut are the good ones. Everyone says they are focused. What makes his definition worth reading is that it points the opposite way from the instinct.
 - [Steve Jobs · The dots only connect backwards](https://ourword.ai/en/i/jobs/connecting-the-dots/): Steve Jobs · The dots only connect backwards — Collect first, connect later. A dropout sat in on a class with no use whatsoever. The famous line about it is usually run in the wrong direction.
 - [John Ratey · Exercise is for the brain](https://ourword.ai/en/i/john-ratey/exercise-for-the-brain/): John Ratey · Exercise is for the brain — You can feel the return the same day. Filing exercise under the gym leaves the cheapest medicine unused. What it's actually changing.
@@ -468,7 +471,7 @@ Cite the individual page URL, not the homepage — each entry page is stable and
 - [AI Bubble Monitor](https://ourword.ai/ai/)
 - [Zouni](https://ourword.ai/zouni/)
 
-## Index (177 entrys)
+## Index (178 entrys)
 
 - [Albert Einstein](https://ourword.ai/en/i/einstein/): Albert Einstein (Germany · 1879–1955) — Imagination. The physicist, and the father of relativity — but the legacy that travels furthest is not a formula, it is a way of working.
 - [Albert O. Hirschman](https://ourword.ai/en/i/hirschman/): Albert O. Hirschman (United States · 1915-2012) — Voice. A German-born American economist. He left Berlin in 1933, fought in Spain in 1936, spent 1940 in Marseille forging papers and finding mountain…
@@ -502,6 +505,7 @@ Cite the individual page URL, not the homepage — each entry page is stable and
 - [Crucial Conversations](https://ourword.ai/en/i/crucial-conversations/): Crucial Conversations (2002 · Patterson, Grenny, McMillan and Switzler) — Safety first. Four authors studied more than twenty thousand people across a thousand organisations to answer one question…
 - [Du Fu](https://ourword.ai/en/i/du-fu/): Du Fu (Tang · 712–770) — Left office at forty-eight. A poet, ranked in China beside Li Bai and read for twelve centuries. He arrived in the capital at thirty-five to find a post and spent ten years…
 - [Duan Yongping](https://ourword.ai/en/i/duan-yongping/): Duan Yongping (Contemporary · 1961–) — The stop-doing list. Founder of BBK, and the source of the culture behind OPPO and vivo, two of the largest phone brands on earth, neither of which invented…
+- [Duke Wen of Jin](https://ourword.ai/en/i/jin-wengong/): Duke Wen of Jin (Spring and Autumn · died 628 BCE) — Taking advice. Ruler of the state of Jin, born Chong'er, a son of Duke Xian. Driven out in a palace feud, he fled in 655 BCE and spent nineteen…
 - [Elon Musk](https://ourword.ai/en/i/musk/): Elon Musk (Contemporary · 1971–) — First principles. Co-founder of PayPal, Tesla, SpaceX and Neuralink. The method is a single move repeated: go back to what is physically true and re-derive…
 - [Epictetus](https://ourword.ai/en/i/epictetus/): Epictetus (c. AD 55–135 · Rome and Nicopolis) — What is yours, what is not. Born a slave; his owner was Epaphroditus, a secretary to Nero. One leg was lame and stayed lame.
 - [Esther Perel](https://ourword.ai/en/i/perel/): Esther Perel (1958– · Belgium and New York) — Flat isn't broken. Thirty years of couples therapy, nine languages, and a caseload across many cultures. She doesn't work on how to argue — Gottman…

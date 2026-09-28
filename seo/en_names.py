@@ -28,6 +28,7 @@ CATEGORY = {
 NAMES = {
     # ── Power and organisation ──
     "arendt": ("Hannah Arendt", "Power and organisation"),
+    "jin-wengong": ("Duke Wen of Jin", "Power and organisation"),
     "bismarck": ("Otto von Bismarck", "Power and organisation"),
     "cao-cao": ("Cao Cao", "Power and organisation"),
     "feng-dao": ("Feng Dao", "Power and organisation"),

@@ -48,6 +48,8 @@ SCENES = [
      [("zhang-liang", "picking-up-the-shoe"), ("caesar", "clementia")]),
     ("他认了错，我还是咽不下这口气。",
      [("liji", "come-and-eat")]),
+    ("要跟他翻脸了，可我欠过他的情。",
+     [("jin-wengong", "three-stages-back")]),
 ]),
 ("拖着不开始", "要做决定", [
     ("道理我都懂，就是动不了。",
@@ -890,6 +892,8 @@ SCENES = [
      [("lin-xiangru", "two-tigers")]),
     ("他都道歉了，我还端着不肯下来。",
      [("liji", "come-and-eat")]),
+    ("我主动往后撤，算不算认输？",
+     [("jin-wengong", "three-stages-back")]),
 ]),
 ("总在讨好别人", "跟人打交道", [
     ("我一直在让，可越让越累。",
@@ -956,6 +960,8 @@ SCENES = [
      [("hirschman", "exit-voice-loyalty")]),
     ("我这身本事，出了这家门还值钱吗。",
      [("becker", "general-and-specific")]),
+    ("这儿太舒服了，舒服得我有点怕。",
+     [("jin-wengong", "ease-ruins-a-name")]),
 ]),
 ("信错了人", "跟人打交道", [
     ("我信错了人，现在不敢再信谁。",
@@ -968,6 +974,8 @@ SCENES = [
      [("adler", "separation-of-tasks"), ("han-feizi", "two-handles")]),
     ("我只能凭感觉判断一个人。",
      [("lushi-chunqiu", "eight-observations")]),
+    ("他坑过我，现在说是来帮我的。",
+     [("jin-wengong", "the-cut-sleeve")]),
 ]),
 ("一个能约的人都没有", "跟人打交道", [
     ("来了三年，我一个能约的人都没有。",
@@ -1106,6 +1114,8 @@ SCENES = [
      [("han-xin", "neither-nor"), ("li-ka-shing", "knowing-when-to-stop")]),
     ("他坑了我一次，我要不要还回去。",
      [("axelrod", "tit-for-tat"), ("gottman", "repair-attempts")]),
+    ("害过我的人，回来找我了。",
+     [("jin-wengong", "the-cut-sleeve")]),
 ]),
 ("在一起久了没感觉", "家里的事", [
     ("在一起很多年，没感觉了。",
@@ -1632,6 +1642,8 @@ SCENES = [
      [("innovators-dilemma", "good-management-fails"), ("grove", "revolving-door")]),
     ("现在做得好好的，我该转吗。",
      [("grove", "inflection-and-cassandras"), ("grove", "revolving-door")]),
+    ("日子挺好过，可我知道不该停在这儿。",
+     [("jin-wengong", "ease-ruins-a-name")]),
 ]),
 
 ]

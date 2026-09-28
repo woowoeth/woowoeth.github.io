@@ -398,6 +398,13 @@ QUOTE_ASKS = {
     "zhu-yuanzhang/delay-the-title": "别人都在抢先，我要不要慢一步。",
     "zhuge-liang/executing-ma-su": "该罚的是我最看重的那个人。",
     "zhuge-liang/longzhong-plan": "我看不出下一步棋该往哪走。",
+    # 晋文公
+    "jin-wengong/ease-ruins-a-name":
+        "这儿太舒服了，舒服得我有点怕。",
+    "jin-wengong/the-cut-sleeve":
+        "害过我的人，回来找我了。",
+    "jin-wengong/three-stages-back":
+        "我主动往后撤，算不算认输？",
     # 冯异
     "feng-yi/big-tree":
         "别人抢着报功，我不想去挤。",
