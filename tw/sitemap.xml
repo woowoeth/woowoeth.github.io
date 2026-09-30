@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  <url><loc>https://ourword.ai/tw/</loc><lastmod>2026-09-28</lastmod><changefreq>weekly</changefreq><priority>1.0</priority>
+  <url><loc>https://ourword.ai/tw/</loc><lastmod>2026-09-29</lastmod><changefreq>weekly</changefreq><priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://ourword.ai/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://ourword.ai/en/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://ourword.ai/tw/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ourword.ai/"/>
   </url>
-  <url><loc>https://ourword.ai/tw/all/</loc><lastmod>2026-09-28</lastmod><changefreq>weekly</changefreq><priority>0.6</priority>
+  <url><loc>https://ourword.ai/tw/all/</loc><lastmod>2026-09-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://ourword.ai/all/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://ourword.ai/en/all/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://ourword.ai/tw/all/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ourword.ai/all/"/>
   </url>
-  <url><loc>https://ourword.ai/tw/t/modern/</loc><lastmod>2026-09-26</lastmod><changefreq>weekly</changefreq><priority>0.6</priority>
+  <url><loc>https://ourword.ai/tw/t/modern/</loc><lastmod>2026-09-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://ourword.ai/t/modern/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://ourword.ai/en/t/modern/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://ourword.ai/tw/t/modern/"/>
@@ -24,13 +24,13 @@
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://ourword.ai/tw/t/industrial-age/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ourword.ai/t/industrial-age/"/>
   </url>
-  <url><loc>https://ourword.ai/tw/t/classical-era/</loc><lastmod>2026-09-28</lastmod><changefreq>weekly</changefreq><priority>0.6</priority>
+  <url><loc>https://ourword.ai/tw/t/classical-era/</loc><lastmod>2026-09-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://ourword.ai/t/classical-era/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://ourword.ai/en/t/pre-qin-and-classical/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://ourword.ai/tw/t/classical-era/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ourword.ai/t/classical-era/"/>
   </url>
-  <url><loc>https://ourword.ai/tw/t/power/</loc><lastmod>2026-09-28</lastmod><changefreq>weekly</changefreq><priority>0.6</priority>
+  <url><loc>https://ourword.ai/tw/t/power/</loc><lastmod>2026-09-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://ourword.ai/t/power/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://ourword.ai/en/t/power-and-organisation/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://ourword.ai/tw/t/power/"/>
@@ -60,7 +60,7 @@
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://ourword.ai/tw/t/strategy/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ourword.ai/t/strategy/"/>
   </url>
-  <url><loc>https://ourword.ai/tw/t/learning/</loc><lastmod>2026-09-26</lastmod><changefreq>weekly</changefreq><priority>0.6</priority>
+  <url><loc>https://ourword.ai/tw/t/learning/</loc><lastmod>2026-09-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://ourword.ai/t/learning/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://ourword.ai/en/t/learning-and-growth/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://ourword.ai/tw/t/learning/"/>
@@ -84,7 +84,7 @@
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://ourword.ai/tw/t/family/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ourword.ai/t/family/"/>
   </url>
-  <url><loc>https://ourword.ai/tw/t/living/</loc><lastmod>2026-09-26</lastmod><changefreq>weekly</changefreq><priority>0.6</priority>
+  <url><loc>https://ourword.ai/tw/t/living/</loc><lastmod>2026-09-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://ourword.ai/t/living/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://ourword.ai/en/t/body-and-daily-life/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://ourword.ai/tw/t/living/"/>
@@ -611,6 +611,18 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://ourword.ai/en/i/dalio/believability/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://ourword.ai/tw/i/dalio/believability/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ourword.ai/i/dalio/believability/"/>
+  </url>
+  <url><loc>https://ourword.ai/tw/i/deci/paid-to-play/</loc><lastmod>2026-09-29</lastmod><changefreq>weekly</changefreq><priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://ourword.ai/i/deci/paid-to-play/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ourword.ai/en/i/deci/paid-to-play/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://ourword.ai/tw/i/deci/paid-to-play/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ourword.ai/i/deci/paid-to-play/"/>
+  </url>
+  <url><loc>https://ourword.ai/tw/i/deci/conditions-not-carrots/</loc><lastmod>2026-09-29</lastmod><changefreq>weekly</changefreq><priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://ourword.ai/i/deci/conditions-not-carrots/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ourword.ai/en/i/deci/conditions-not-carrots/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://ourword.ai/tw/i/deci/conditions-not-carrots/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ourword.ai/i/deci/conditions-not-carrots/"/>
   </url>
   <url><loc>https://ourword.ai/tw/i/drucker/create-a-customer/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://ourword.ai/i/drucker/create-a-customer/"/>
@@ -2688,7 +2700,7 @@
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://ourword.ai/tw/i/illich/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ourword.ai/i/illich/"/>
   </url>
-  <url><loc>https://ourword.ai/tw/i/excellent-sheep/</loc><lastmod>2026-09-02</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+  <url><loc>https://ourword.ai/tw/i/excellent-sheep/</loc><lastmod>2026-09-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://ourword.ai/i/excellent-sheep/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://ourword.ai/en/i/excellent-sheep/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://ourword.ai/tw/i/excellent-sheep/"/>
@@ -2922,7 +2934,7 @@
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://ourword.ai/tw/i/ohno/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ourword.ai/i/ohno/"/>
   </url>
-  <url><loc>https://ourword.ai/tw/i/csikszentmihalyi/</loc><lastmod>2026-09-06</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+  <url><loc>https://ourword.ai/tw/i/csikszentmihalyi/</loc><lastmod>2026-09-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://ourword.ai/i/csikszentmihalyi/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://ourword.ai/en/i/csikszentmihalyi/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://ourword.ai/tw/i/csikszentmihalyi/"/>
@@ -3042,7 +3054,7 @@
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://ourword.ai/tw/i/thiel/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ourword.ai/i/thiel/"/>
   </url>
-  <url><loc>https://ourword.ai/tw/i/dweck/</loc><lastmod>2026-09-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+  <url><loc>https://ourword.ai/tw/i/dweck/</loc><lastmod>2026-09-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://ourword.ai/i/dweck/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://ourword.ai/en/i/dweck/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://ourword.ai/tw/i/dweck/"/>
@@ -3263,6 +3275,12 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://ourword.ai/en/i/einstein/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://ourword.ai/tw/i/einstein/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ourword.ai/i/einstein/"/>
+  </url>
+  <url><loc>https://ourword.ai/tw/i/deci/</loc><lastmod>2026-09-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://ourword.ai/i/deci/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ourword.ai/en/i/deci/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://ourword.ai/tw/i/deci/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ourword.ai/i/deci/"/>
   </url>
   <url><loc>https://ourword.ai/tw/i/epictetus/</loc><lastmod>2026-09-03</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://ourword.ai/i/epictetus/"/>
@@ -3648,7 +3666,7 @@
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://ourword.ai/tw/i/han-xin/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ourword.ai/i/han-xin/"/>
   </url>
-  <url><loc>https://ourword.ai/tw/i/han-feizi/</loc><lastmod>2026-09-22</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+  <url><loc>https://ourword.ai/tw/i/han-feizi/</loc><lastmod>2026-09-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://ourword.ai/i/han-feizi/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://ourword.ai/en/i/han-feizi/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://ourword.ai/tw/i/han-feizi/"/>

@@ -380,6 +380,8 @@ SCENES = [
      [("guan-zhong", "granaries-first"), ("cao-cao", "military-farming")]),
     ("答案都是我给的，他们只会照做。",
      [("liji", "open-not-arrive")]),
+    ("我怎么才能让他们自己想干？",
+     [("deci", "conditions-not-carrots")]),
 ]),
 ("招人换人", "带人", [
     ("招个比我强的，我压得住吗？",
@@ -1028,6 +1030,8 @@ SCENES = [
      [("yanshi-jiaxun", "teach-before-it-sets")]),
     ("我忍不住把答案直接告诉他。",
      [("liji", "open-not-arrive")]),
+    ("他考好了我就给钱，这样对吗？",
+     [("deci", "paid-to-play")]),
 ]),
 ("孩子不说话", "家里的事", [
     ("他什么都不跟我讲了。",
@@ -1269,6 +1273,8 @@ SCENES = [
      [("excellent-sheep", "no-scoreboard"), ("socrates", "midwifery")]),
     ("我做的每件事都是为了给人看。",
      [("excellent-sheep", "no-scoreboard"), ("frankl", "happiness-ensues")]),
+    ("没人夸我，我就提不起劲。",
+     [("deci", "paid-to-play")]),
 ]),
 ("第一份工作", "刚起步", [
     ("先练明天就要用的那三样。",

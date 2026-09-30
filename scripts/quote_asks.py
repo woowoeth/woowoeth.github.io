@@ -422,6 +422,11 @@ QUOTE_ASKS = {
         "家里机器都买齐了，活还是全在我身上。",
     "cowan/effort-saved-time-not":
         "工具快了几倍，我的活一点没少。",
+    # 爱德华·德西
+    "deci/paid-to-play":
+        "没人夸我，我就提不起劲。",
+    "deci/conditions-not-carrots":
+        "我怎么才能让他们自己想干？",
     # 赫伯特·西蒙
     "herbert-simon/good-enough":
         "我总觉得后面还有更好的。",

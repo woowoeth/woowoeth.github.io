@@ -1,11 +1,11 @@
 # OurWord (人类世界生存法则)
 
-> 178 people and books on how the world actually works, across 2,600 years
+> 179 people and books on how the world actually works, across 2,600 years
 > 遇到事了，看看以前的人怎么处理
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 178 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 179 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
-一个关于「世界到底怎么运转」的知识库：战略、财富、权力、人性、创业，取自 178 位人物与典籍，跨越 2600 年。每一条都写清楚这个人真正留下的那一个想法、背后的故事、拆开的分则与例子，以及今天怎么用。
+一个关于「世界到底怎么运转」的知识库：战略、财富、权力、人性、创业，取自 179 位人物与典籍，跨越 2600 年。每一条都写清楚这个人真正留下的那一个想法、背后的故事、拆开的分则与例子，以及今天怎么用。
 
 ## Read it
 
@@ -18,7 +18,7 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 
 ## Topics
 
-- [现代](https://ourword.ai/t/modern/) — 60
+- [现代](https://ourword.ai/t/modern/) — 61
 - [工业时代](https://ourword.ai/t/industrial-age/) — 54
 - [先秦与古典时代](https://ourword.ai/t/classical-era/) — 23
 - [权力与组织](https://ourword.ai/t/power/) — 23
@@ -26,7 +26,7 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 - [创业与产品](https://ourword.ai/t/startups/) — 19
 - [财富与风险](https://ourword.ai/t/wealth/) — 19
 - [谋略与竞争](https://ourword.ai/t/strategy/) — 18
-- [学习与成长](https://ourword.ai/t/learning/) — 16
+- [学习与成长](https://ourword.ai/t/learning/) — 17
 - [识人与相处](https://ourword.ai/t/people/) — 16
 - [世界如何运转](https://ourword.ai/t/world/) — 16
 - [家庭与关系](https://ourword.ai/t/family/) — 15
@@ -128,6 +128,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [玛丽·居里 · 小居里](https://ourword.ai/i/curie/the-little-curies/): 玛丽·居里 · 小居里——把本事用到眼前。手上的本事和眼前的事对不上，先干哪个。这一篇要回答的是：战时的居里把自己的手艺放到了哪儿。
 - [达里奥 · 痛苦加反思等于进步](https://ourword.ai/i/dalio/pain-plus-reflection/): 达里奥 · 痛苦加反思等于进步——1982年那次破产。他把公司做没了，后来称那是此生最好的事。这一篇要回答的是：中间那道工序是什么。
 - [达里奥 · 可信度加权](https://ourword.ai/i/dalio/believability/): 达里奥 · 可信度加权——既不民主也不独裁。一人一票和一人拍板他都不用。这一篇要回答的是：桥水那套「按战绩称重」的意见系统怎么运转。
+- [爱德华·德西 · 给了钱，他就不玩了](https://ourword.ai/i/deci/paid-to-play/): 爱德华·德西 · 给了钱，他就不玩了——拿钱去换一件本来喜欢的事，喜欢就被换走了。没人夸我、没人给钱，我就提不起劲。这一篇要回答的是：那股劲是什么时候被换走的。
+- [爱德华·德西 · 别问怎么激励他](https://ourword.ai/i/deci/conditions-not-carrots/): 爱德华·德西 · 别问怎么激励他——能改的不是他，是他做事的那个地方。交代下去的事他们都照做，可没有一个人主动。这一篇要回答的是：想让人自己想干，能动的是哪几样。
 - [彼得·德鲁克 · 企业的目的是创造顾客](https://ourword.ai/i/drucker/create-a-customer/): 彼得·德鲁克 · 企业的目的是创造顾客——由外往里定义业务。问企业为什么存在，多数人答赚钱。这一篇要回答的是：德鲁克为什么说这个答案不但错，而且有害。
 - [彼得·德鲁克 · 高效地做不该做的事](https://ourword.ai/i/drucker/right-things-first/): 彼得·德鲁克 · 高效地做不该做的事——效果先于效率。他把两个常被混用的词拆开了。这一篇要回答的是：为什么效率的提升会掩盖方向的错误。
 - [杜甫 · 长安十年](https://ourword.ai/i/du-fu/ten-years-in-changan/): 杜甫 · 长安十年——朝扣富儿门，暮随肥马尘。一件事做了很多年一直没成，怎么过。这一篇要回答的是：杜甫在长安求官的那十年是什么样子，他怎么记的。
@@ -477,7 +479,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [AI Bubble Monitor / AI 泡沫检测仪](https://ourword.ai/ai/)
 - [Zouni / 走你](https://ourword.ai/zouni/)
 
-## Index (178 entrys)
+## Index (179 entrys)
 
 - [BJ·福格](https://ourword.ai/i/bj-fogg/): BJ·福格（2019年·斯坦福行为设计实验室）——小到不会失败。斯坦福行为设计实验室创始人，研究行为如何被设计出来。他给出一个公式：行为发生需要动机、能力、提示三者同时到位。多数人失败在只调动机——靠决心和自我激励——而动机天然起伏，靠它维持的习惯必然崩。他的主张相反：把行为缩到小得不需要动机，然后挂在一个已有的动作后面。
 - [C.S.刘易斯](https://ourword.ai/i/cs-lewis/): C.S.刘易斯（1898-1963年·英国牛津）——妻子死后几个月的日记。作家，牛津和剑桥的教授，写过《纳尼亚传奇》和大量劝人信仰的书。五十八岁结婚，妻子乔伊四年后因癌症去世。之后几个月他在四本练习簿上记自己的状态，后来用笔名出版，就是《卿卿如晤》。收他是因为「重要的人走了」那六个问题，原来靠弗兰克尔和苏轼在答——一个是集中营的幸存者，一个是被贬的官员
@@ -584,6 +586,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [毛泽东](https://ourword.ai/i/mao/): 毛泽东（近代·1893-1976）——集中优势。从师范生到建立新中国，毛泽东一生最重要的能力是：在最混乱的局面里找到主要矛盾，然后把全部力量压上去。《矛盾论》《实践论》《论持久战》，是他把军事实践升华为哲学的三件代表作。
 - [汉娜·阿伦特](https://ourword.ai/i/arendt/): 汉娜·阿伦特（1906-1975年·德国→美国）——不思考是一种状态。政治思想家。1961 年她去耶路撒冷旁听一场审判，原以为会看到一个恶魔，结果看到的是一个平庸的人：满嘴套话，讲不出一句自己的话，反复说自己只是执行命令。她给这个现象起了个名字，平庸之恶——不是因为坏才做的，是因为根本没想过。她自己的经历是另一条线：1933 年在柏林被捕后流亡，1
 - [爱因斯坦](https://ourword.ai/i/einstein/): 爱因斯坦（德国·1879-1955）——想象。物理学家，相对论之父，但他最重要的遗产不是某个具体的公式，而是一种思考方式——思想实验。「如果我骑在一束光上，我会看到什么？」这个问题，他16岁时就开始想，想了十年，最终推导出狭义相对论。他证明了：在物理学实验室无法进行的实验，可以在脑子里完成。他把「想象力」从艺术领域带进了科学
+- [爱德华·德西](https://ourword.ai/i/deci/): 爱德华·德西（美国·1942-）——内在动机。美国心理学家，1942年生，1970年在卡内基梅隆大学拿到心理学博士，此后长期在罗切斯特大学任教。1971年他发表了一个当时的行为主义者很难接受的实验：花钱让人去做一件他本来爱做的事，钱一停，他比从没拿过钱的时候做得还少。此后他和理查德·瑞安一起，把这条线索做成了自我决定理论：人
 - [爱比克泰德](https://ourword.ai/i/epictetus/): 爱比克泰德（古罗马·约55-135）——控制二分法。生下来就是奴隶，主人埃帕弗罗狄图斯是尼禄的秘书。他一条腿瘸，终身未愈。获释后在罗马讲学，公元93年图密善把所有哲学家赶出意大利，他迁到希腊西北的尼科波利斯办学，一直讲到死。他一个字都没写过——现存的《论说集》和《手册》全是学生阿里安记的课堂笔记，语气直白，时常带着训人的口吻，因为
 - [王兴](https://ourword.ai/i/wang-xing/): 王兴（当代·1979-）——九败一胜。美团创始人，清华大学毕业。在创立美团之前，他已经失败了八次：做过中国版Facebook（校内网），卖掉了；做过中国版Twitter（饭否），被关掉了。第十次创业，他押注团购，赢得了史上竞争最激烈的互联网大战「千团大战」，把2000家对手打垮，最终把美团做成了一个管吃、管住、管出行
 - [王翦](https://ourword.ai/i/wang-jian/): 王翦（秦·前280-前220）——自保。秦国第一名将，灭赵、灭燕、灭楚，参与灭五国，是秦始皇统一六国的最核心执行者。但更重要的是：他是知识库里在「功高震主」这个问题上处理得最好的人。与他同时代的白起（同等才华，被赐死），形成了最清晰的对比。
