@@ -45,6 +45,7 @@ import io
 import os
 import re
 import sys
+from gate_env import skip  # noqa: E402  跳过的统一出口：CI 上跳过即红
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
@@ -661,7 +662,7 @@ def main():
     #    **下载**思源宋体那一类为配汉字设计的西文。见上面 ⓐ 的说明。
     r = rendered_fonts()
     if r is None:
-        print("（没装 playwright，跳过英文字体检查）")
+        skip("（没装 playwright，跳过英文字体检查）")
     else:
         for x in r:
             bad.append("英文页字体不对：%s" % x)
@@ -669,7 +670,7 @@ def main():
     # ⑭ 渲染之后的英文页上不许有排版硬伤（双空格 / 标点前空格 / 中文标点）
     fl = rendered_flaws()
     if fl is None:
-        print("（没装 playwright，跳过渲染后的排版检查）")
+        skip("（没装 playwright，跳过渲染后的排版检查）")
     else:
         for x in fl[:6]:
             bad.append("英文页排版：%s" % x)
@@ -739,7 +740,7 @@ def main():
     # ⑮ 信息流四种卡的标题必须是同一个字体、同一个字号
     cv = card_headline_voice()
     if cv is None:
-        print("（没装 playwright，跳过卡片标题一致性检查）")
+        skip("（没装 playwright，跳过卡片标题一致性检查）")
     else:
         for x in cv[:6]:
             bad.append("信息流卡片：%s" % x)
@@ -747,7 +748,7 @@ def main():
     # ⑫ 渲染之后的首页正文里也不许有中文
     r = rendered_cjk()
     if r is None:
-        print("（没装 playwright，跳过渲染后的中文检查）")
+        skip("（没装 playwright，跳过渲染后的中文检查）")
     elif r:
         for x in r[:4]:
             bad.append("英文首页渲染后仍有中文：%s" % x)

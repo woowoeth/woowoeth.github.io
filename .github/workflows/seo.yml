@@ -1,5 +1,6 @@
 name: seo
-# Rebuilds static item pages + sitemap/llms, then pings search indexes.
+# 在干净 checkout 上把构建链跑一遍、把闸和门禁自检跑一遍，验「产物和提交逐字节一致」，
+# 然后通知搜索引擎。CI 只验，不提交 —— 提交只在本地、构建完之后（FAILURES #49）。
 on:
   push:
     branches: [main]
@@ -10,7 +11,7 @@ concurrency:
   group: seo-${{ github.ref }}
   cancel-in-progress: false
 permissions:
-  contents: write
+  contents: read
 jobs:
   seo:
     runs-on: ubuntu-latest
@@ -39,6 +40,17 @@ jobs:
           else:
               print("geo_kit intact", len(t))
           PY
+      - name: Toolchain — everything the build and the gates need
+        # 构建和闸要的东西在**构建之前**一次装齐，装不上就红。
+        # 原来 pillow 装在「跑闸」那一步（构建之后），后面还跟着 `2>/dev/null || true`；
+        # playwright 从来没装过 —— 窄屏和英文站的四项渲染检查在 CI 上一直「跳过」显示绿，
+        # 是门禁自检报「这条分支是死的」才露出来（FAILURES #49）。
+        # fonts-noto-cjk：没有中文字体，渲染检查量到的是豆腐块的宽度，不是读者看到的页面。
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq libzbar0 fonts-noto-cjk
+          pip install -q "opencc==1.4.2" pillow pyzbar "playwright==1.58.0"
+          python -m playwright install --with-deps chromium
       - name: Build — the one chain (scripts/build_all.py)
         # 构建链只有一份，就是 scripts/build_all.py。
         #
@@ -50,7 +62,6 @@ jobs:
         # 干净 checkout 上跑 build_all.py 验过：产物和提交逐字节一致，站点闸全绿。
         # 以后加构建步骤只改 build_all.py，这里不用动；check_integrity 盯着这一条。
         run: |
-          pip install -q "opencc==1.4.2"
           python scripts/build_all.py
       # 原来这里只跑三道（问题内容 / 处境覆盖 / 完整性），另外五道从没在 CI 上跑过，
       # 门禁自检更是一次都没跑。改成走统一入口，八道 + 自检一起。
@@ -58,9 +69,14 @@ jobs:
       # 它给每条失败分支注入一个该被抓到的缺陷，注入后必须返回 1，
       # 而且必须报出这条分支自己的理由。见 FAILURES.md。
       - name: Gates + selftest
+        env:
+          # CI 是专门装齐了环境来跑闸的地方：在这里还「跳过」，就是 CI 自己配坏了。
+          # 各道闸的跳过都走 scripts/gate_env.py，这个变量让它们在 CI 上直接红。
+          HW_GATE_STRICT: "1"
+          # 镜像判据走 gh api（登录后 5000 次/小时）；不给 token 就退回匿名 60 次/小时，
+          # 跑一轮自检就见底，闸靠「跳过」变绿。
+          GH_TOKEN: ${{ github.token }}
         run: |
-          pip install -q pillow pyzbar 2>/dev/null || true
-          sudo apt-get install -y -qq libzbar0 2>/dev/null || true
           python scripts/gate.py --full
       - name: Refuse to publish a broken page
         run: |
@@ -72,37 +88,22 @@ jobs:
             if [ "$n" -gt 1 ]; then echo "::error::$f has $n canonical tags"; exit 1; fi
           done
           echo "html looks sane"
-      - name: Commit if anything changed
+      - name: The build must reproduce the commit
+        # 原来这一步是「有改动就提交并推上 main」：CI 于是成了第二个写入者，而且推的是
+        # **CI 环境构建出来的**东西 —— 2026-10-02 这一版构建在 Ubuntu 上画不出英文分享图，
+        # 要不是闸先红了，它会把 606 张图从线上删掉。现在提交只在本地、构建完之后；
+        # CI 只验产物和提交逐字节一致：不一致就红，并列出是哪些文件 ——
+        # 要么有人提交前没跑 build_all.py，要么构建对环境敏感，两样都该当场知道。
         run: |
-          git config user.name "ourword-ai"
-          git config user.email "ops@ourword.ai"
-          git add -A
-          if git diff --cached --quiet; then echo "seo unchanged"; exit 0; fi
-          git commit -m "seo: refresh crawlable layer"
-          for i in $(seq 1 6); do
-            git fetch -q origin "${GITHUB_REF_NAME}"
-            if git rebase "origin/${GITHUB_REF_NAME}"; then
-              if git push; then echo pushed; exit 0; fi
-            else
-              git rebase --abort || true
-              git reset --hard "origin/${GITHUB_REF_NAME}"
-              python - <<'PY'
-          from pathlib import Path
-          import urllib.request
-          p = Path("seo/geo_kit.py")
-          t = p.read_text(encoding="utf-8") if p.exists() else ""
-          if "def build(" not in t or "def item_page(" not in t:
-              url = "https://raw.githubusercontent.com/woowoeth/woowoeth.github.io/7b7cb5101e57755ff2f173acd8688e9218cec9ad/seo/geo_kit.py"
-              urllib.request.urlretrieve(url, p)
-          PY
-              python scripts/build_all.py
-              git add -A
-              git diff --cached --quiet && { echo "seo unchanged after rebuild"; exit 0; }
-              git commit -m "seo: refresh crawlable layer (rebuilt on new upstream)"
-            fi
-            echo "retry $i"; sleep $(( (RANDOM % 5) + 3 ))
-          done
-          echo "::error::seo push failed"; exit 1
+          if [ -n "$(git status --porcelain)" ]; then
+            echo "::error::构建产物和提交不一致：要么提交前没跑 build_all.py，要么构建对环境敏感"
+            git status --porcelain | awk '{print $2}' | cut -d/ -f1 | sort | uniq -c | sort -rn | head -20
+            git status --porcelain | head -40
+            git diff --stat | tail -3
+            exit 1
+          fi
+          echo "产物和提交逐字节一致"
       - name: Ping search indexes
-        if: success()
+        # 只在 main 上通知：从分支手动跑一遍 CI（workflow_dispatch）不该对外发任何东西。
+        if: success() && github.ref == 'refs/heads/main'
         run: python scripts/ping_index.py

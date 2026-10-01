@@ -23,6 +23,8 @@ import sys
 import urllib.error
 import urllib.request
 
+from gate_env import skip
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 MCP = os.path.join(ROOT, "tools", "mcp", "ourword_mcp.py")
@@ -70,12 +72,25 @@ HARD_EN = ["Only what is in the library", "point back to a source",
            "English is its own library"]
 
 
+OFFLINE_WHY = []
+
+
 def online():
+    # 必须带 UA。Python 默认的 "Python-urllib/3.x" 会被 ourword.ai 前面那层 Cloudflare
+    # 直接 403（error code 1010，浏览器完整性检查）—— 这道探测于是在 CI 上一直说「断网」，
+    # MCP 那半边一直在跳过，而同一次运行里别的闸明明连得上网（2026-10-02，FAILURES #49）。
+    # 本机看不出来：/etc/hosts 把 ourword.ai 钉在 GitHub Pages 的 IP 上，绕过了 Cloudflare。
+    # 失败原因记下来，跳过的那句话里要说出来 —— 一句不带原因的「断网」就是这样骗了十几天。
+    req = urllib.request.Request(SITE + "/assets/hw-chat-index.json",
+                                 headers={"User-Agent": "ourword-gate"})
     try:
-        urllib.request.urlopen(SITE + "/assets/hw-chat-index.json", timeout=15).read(1)
+        urllib.request.urlopen(req, timeout=15).read(1)
         return True
-    except Exception:
-        return False
+    except urllib.error.HTTPError as e:
+        OFFLINE_WHY.append("HTTP %s" % e.code)
+    except Exception as e:
+        OFFLINE_WHY.append(type(e).__name__)
+    return False
 
 
 def ask(reqs):
@@ -253,7 +268,7 @@ def check_mirror(bad):
                 tree = json.loads(urllib.request.urlopen(req, timeout=20).read().decode())
             except urllib.error.HTTPError as e:
                 if e.code in (403, 429):       # 匿名被限流，不是镜像的错
-                    print("  （GitHub API 限流且没有 gh 可用，镜像那几条跳过）")
+                    skip("  （GitHub API 限流且没有 gh 可用，镜像那几条跳过）")
                     return
                 bad.append("镜像仓 %s 读不到文件列表：%s" % (repo, e))
                 continue
@@ -282,7 +297,7 @@ def check_mirror(bad):
             fix = "跑一句 `gh workflow run sync.yml -R %s`" % repo
             now = time.time()
             if last_sync is None:
-                print("  （%s —— 读不到它的同步记录，这条跳过）" % msg)
+                skip("  （%s —— 读不到它的同步记录，这条跳过）" % msg)
             elif last_sync > newest:
                 bad.append(msg + " —— 主仓推上去之后同步已经跑过，还是旧的：同步本身坏了。"
                            + fix)
@@ -445,8 +460,9 @@ def main():
             print("    ✗ " + b)
         return 1
     if not net:
-        print("  断网：MCP 那半边跳过（它的数据在 ourword.ai 上）；"
-              "中英两份 Skill 的 name、硬边界都在，英文那份没有汉字；三处版本号一致")
+        skip("  连不上 ourword.ai（%s）：MCP 那半边跳过（它的数据在站上）；"
+             "中英两份 Skill 的 name、硬边界都在，英文那份没有汉字；三处版本号一致"
+             % ("、".join(OFFLINE_WHY) or "没有 server 文件"))
         return 0
     print("  MCP：browse 列组 → 进组拿章节 → 照它给的 url 读到正文，"
           "地址都指回站内；中英两份 Skill 的 name 和硬边界都在、英文那份没有汉字；"

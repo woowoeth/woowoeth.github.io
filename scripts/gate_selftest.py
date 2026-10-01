@@ -1250,6 +1250,57 @@ def _ci_no_build_all():
     return go
 
 
+def _ci_no_strict():
+    """跑闸那一步的 HW_GATE_STRICT 被删了 —— CI 上闸又能「跳过」显示绿。
+
+    CI 从来没装过 playwright，四项渲染检查在那里一直跳过；联网探测被 Cloudflare 403
+    也自称断网跳过。是这一行让它们在 CI 上变红（FAILURES #49）。
+    """
+    def go():
+        import re as _re
+        t = read(SEOWF)
+        t2 = _re.sub(r'^\s*HW_GATE_STRICT:\s*"1"\s*\n', "", t, count=1, flags=_re.M)
+        if t2 == t:
+            return None
+        write(SEOWF, t2)
+        return SEOWF
+
+    return go
+
+
+def _ci_pushes():
+    """CI 又自己提交、推上 main —— 第二个写入者，推的还是 CI 环境构建出来的东西。"""
+    def go():
+        t = read(SEOWF)
+        a = "          python scripts/build_all.py\n"
+        if a not in t:
+            return None
+        write(SEOWF, t.replace(a, a + '          git commit -am "seo: refresh" && git push\n', 1))
+        return SEOWF
+
+    return go
+
+
+CHECKMOBILE = os.path.join(HERE, "check_mobile.py")
+
+
+def _mobile_no_playwright():
+    """假装 CI 上没装 playwright：窄屏检查走「跳过」那条路，严格模式下必须红。
+
+    锚点是 check_mobile 自己 import playwright 那一行 —— 它挪了地方，这条会报
+    「挑不到注入点」，不会悄悄放过。命令带 --strict（自检跑闸时设不了环境变量）。
+    """
+    def go():
+        t = read(CHECKMOBILE)
+        a = "from playwright.sync_api import sync_playwright"
+        if a not in t:
+            return None
+        write(CHECKMOBILE, t.replace(a, 'raise ImportError("selftest：假装没装 playwright")', 1))
+        return CHECKMOBILE
+
+    return go
+
+
 ENTRYCSS_F = os.path.join(ROOT, "assets", "hw-entry.css")
 HOMEHTML = os.path.join(ROOT, "index.html")
 ENHOMEHTML = os.path.join(ROOT, "en", "index.html")
@@ -1619,6 +1670,12 @@ CASES = [
      "CI 手抄了构建步骤"),
     ("CI·根本不调 build_all", "check_integrity.py", SEOWF, _ci_no_build_all(),
      "CI 不走统一构建链"),
+    ("CI·闸又能悄悄跳过", "check_integrity.py", SEOWF, _ci_no_strict(),
+     "CI 上闸可以跳过"),
+    ("CI·又自己往 main 推", "check_integrity.py", SEOWF, _ci_pushes(),
+     "CI 成了第二个写入者"),
+    ("CI·缺依赖跳过仍是绿", "check_mobile.py --strict", CHECKMOBILE, _mobile_no_playwright(),
+     "CI 上不许跳过"),
     ("窄屏·输入框字号小于 16px", "check_mobile.py", ENTRYCSS_F, _input_small_font(),
      "iOS 上一聚焦就把整页放大"),
     ("搜索落空·只让人换个说法", "check_mobile.py", HOMEHTML, _miss_without_ai(),
