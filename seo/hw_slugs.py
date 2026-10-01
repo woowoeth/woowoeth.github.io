@@ -4,6 +4,7 @@ import re
 import unicodedata
 
 SLUGS = {
+    "罗纳德·科斯": "coase",
     "爱德华·德西": "deci",
     "晋文公": "jin-wengong",
     "冯异": "feng-yi",

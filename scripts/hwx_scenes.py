@@ -50,6 +50,8 @@ SCENES = [
      [("liji", "come-and-eat")]),
     ("要跟他翻脸了，可我欠过他的情。",
      [("jin-wengong", "three-stages-back")]),
+    ("他碍着我了，我就该让他停？",
+     [("coase", "harm-goes-both-ways")]),
 ]),
 ("拖着不开始", "要做决定", [
     ("道理我都懂，就是动不了。",
@@ -473,6 +475,8 @@ SCENES = [
      [("cao-cao", "military-farming"), ("guo-jia", "leave-the-baggage")]),
     ("这块太小了，值得我进吗？",
      [("innovators-dilemma", "small-markets"), ("huang", "zero-billion-markets")]),
+    ("这块我自己养人做，还是外包？",
+     [("coase", "price-has-a-cost")]),
 ]),
 ("成本降不动", "把事做成", [
     ("我哪个环节总留着余量。",
@@ -485,6 +489,8 @@ SCENES = [
      [("musk", "first-principles"), ("xunzi", "borrow-from-things")]),
     ("小钱我抠到底，大钱几分钟就批。",
      [("parkinson", "officials-make-work"), ("musk", "idiot-index")]),
+    ("外包看着省钱，我怎么算？",
+     [("coase", "price-has-a-cost")]),
 ]),
 ("顺境里发慌", "把事做成", [
     ("顺到这个份上了，翻转从哪儿开始。",

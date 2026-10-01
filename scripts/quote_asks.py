@@ -422,6 +422,11 @@ QUOTE_ASKS = {
         "家里机器都买齐了，活还是全在我身上。",
     "cowan/effort-saved-time-not":
         "工具快了几倍，我的活一点没少。",
+    # 罗纳德·科斯
+    "coase/price-has-a-cost":
+        "这块我自己养人做，还是外包？",
+    "coase/harm-goes-both-ways":
+        "他碍着我了，我就该让他停？",
     # 爱德华·德西
     "deci/paid-to-play":
         "没人夸我，我就提不起劲。",

@@ -1,7 +1,7 @@
-# OurWord — 179 people and books on how the world actually works, across 2,600 years
+# OurWord — 180 people and books on how the world actually works, across 2,600 years
 # OurWord — See how people before you handled it.
 # https://ourword.ai/en/
-# Full corpus, plain text. 179 entrys.
+# Full corpus, plain text. 180 entrys.
 
 ========================================================================
 ## Albert Einstein
@@ -667,10 +667,10 @@ Take one thing you have been busy with all week and cannot say what moved on. Do
 Work expands so as to fill the time available for its completion. Headcount climbs every year whatever the work happens to be. What he wants is subordinates, never a rival. The smaller the sum, the longer the meeting.
 
 ### Q: What should I read alongside?
-Cal Newport — Two places to cut into the same problem: Newport puts deep work into the calendar, Parkinson says the block you booked will swell to fill itself unless you make it smaller. Taiichi Ohno — Both say slack fills itself in: Ohno watches inventory hide the problem, Parkinson watches time and headcount hide it.
+Cal Newport — Two places to cut into the same problem: Newport puts deep work into the calendar, Parkinson says the block you booked will swell to fill itself unless you make it smaller. Taiichi Ohno — Both say slack fills itself in: Ohno watches inventory hide the problem, Parkinson watches time and headcount hide it. Ronald Coase — Both are about organisations getting bigger. Parkinson says a bureaucracy grows whatever the work, filled with people making work for each other. Coase says a firm should stop growing where managing one more thing inside costs more than buying it outside. One asks why organisations will not stop; the other asks where they should.
 
 ### Further
-Peter Drucker Andy Grove Taiichi Ohno Cal Newport Seneca Ruth Schwartz Cowan
+Peter Drucker Andy Grove Taiichi Ohno Cal Newport Seneca Ruth Schwartz Cowan Ronald Coase
 
 ========================================================================
 ## C.S. Lewis
@@ -1620,10 +1620,10 @@ Before you write the annual plan, ask what share of the knowledge it depends on 
 The curious task of economics is to demonstrate how little men really know. The price system is a mechanism for communicating information. Nobody holds all the knowledge that making the plan would require.
 
 ### Q: What should I read alongside?
-The Wealth of Nations — Smith explains how the division of labour makes brute effort rich; Hayek explains how the information gets back afterwards. Nassim Taleb — Taleb is about not being able to foresee the shock, Hayek about not being able to centralise the knowledge — one handles randomness, the other handles the pretence of knowing. Albert O. Hirschman — Hayek argues a reform endangers a freedom we already hold, which is the third shape Hirschman names; Hirschman does not dispute it, he asks for a quantity someone can check.
+The Wealth of Nations — Smith explains how the division of labour makes brute effort rich; Hayek explains how the information gets back afterwards. Nassim Taleb — Taleb is about not being able to foresee the shock, Hayek about not being able to centralise the knowledge — one handles randomness, the other handles the pretence of knowing. Albert O. Hirschman — Hayek argues a reform endangers a freedom we already hold, which is the third shape Hirschman names; Hirschman does not dispute it, he asks for a quantity someone can check. Ronald Coase — Both are about prices. Hayek says the price system carries knowledge scattered across millions of heads, and nothing coordinates better. Coase asks why, if prices are that good, people inside a firm do what the manager says instead. One is about what prices can do; the other is about what using them costs.
 
 ### Further
-The Wealth of Nations Nassim Taleb Zhang Yiming Ray Dalio Gary Becker
+The Wealth of Nations Nassim Taleb Zhang Yiming Ray Dalio Gary Becker Ronald Coase
 
 ========================================================================
 ## Fukuzawa Yukichi
@@ -4580,6 +4580,43 @@ John Ratey — Same system, two handles: Sapolsky on what keeps it switched on, 
 John Ratey Christina Maslach John Cacioppo Rat Park Arthur Kleinman The Book of Rites
 
 ========================================================================
+## Ronald Coase
+URL: https://ourword.ai/en/i/coase/
+Tags: How the world works, The industrial age, Transaction costs
+
+Ronald Coase (Britain · 1910–2013) — Transaction costs. British economist, born in London in 1910, who moved to the United States, taught at the University of Chicago until he retired in 1982, won the Nobel Prize in Economics…
+
+### Q: What did this one leave behind?
+British economist, born in London in 1910, who moved to the United States, taught at the University of Chicago until he retired in 1982, won the Nobel Prize in Economics in 1991 and died in 2013 aged 102. Most of his fame rests on two papers, one from 1937 when he was twenty-six and one from 1960. Each asked something other economists thought needed no asking: if prices coordinate everything, why is there a firm? when one person's activity gets in another's way, is he really the one to restrain? The answer to both was the same: buying and selling through the market is not free.
+
+### Q: What actually happened?
+By Coase's own later account, in 1960 he sat in Aaron Director's house in Chicago with a roomful of economists pressing him on the paper he had just written about social cost. By the standard teaching of the day, if a person's activity harms others, you restrain him or tax him; it was close to common sense. Coase took the objections one at a time. By the end of the evening, he recalled, nobody in the room was still arguing.
+
+### The parts · Dealing is not free
+The price is only the part of the cost that shows. Finding the seller, asking prices, agreeing terms, writing the contract and checking delivery all cost something. He called it the cost of using the price mechanism; it was later named transaction cost. e.g. A photographer quoted at five hundred pounds: three days comparing, two rounds of briefing, and chasing the files at the end.
+
+### The parts · A firm stops where the two costs meet
+He explained why firms exist: directing people inside is cheaper than bargaining outside. A firm grows until organising one more thing inside costs as much as doing it on the open market. e.g. A support team grows from three to thirty; rotas and training get dearer until outsourcing becomes the cheaper line.
+
+### The parts · The harm is made by two parties
+In 1960 he argued that to spare B you must harm A. The confectioner's mortar harmed no one until the doctor built his room. What has to be weighed is which loss is the heavier. e.g. A food stall keeps the neighbours awake; closing it takes the owner's living.
+
+### The parts · Bargaining must be affordable first
+In a world where bargaining is free, the two sides settle on their own. In the real world finding each other, haggling and enforcing the deal all cost money, which is why who holds the right at the start matters. e.g. Two households can settle a shared lane. A hundred on one street cannot, and need a rule first.
+
+### Q: How do I use it today?
+Pick something you are weighing: build it yourself or buy it in. On a sheet, write on the left what the outside route costs you in finding, haggling and checking, and on the right what each extra person adds in meetings, coordination and waiting for approval. Do not stop at the quote and the salary; both are already written down. If you are stuck in a dispute where two things get in each other's way, make two columns as well: what it costs him if he stops, what it costs me if I carry on, and whether there is an arrangement that leaves both better off.
+
+### Lines to keep
+Buying through the market is not free. A firm grows until managing one more thing costs more than buying it. We are dealing with a problem of a reciprocal nature. The problem is to avoid the more serious harm.
+
+### Q: What should I read alongside?
+Friedrich Hayek — Both are about prices. Hayek says the price system carries knowledge scattered across millions of heads, and nothing coordinates better. Coase asks why, if prices are that good, people inside a firm do what the manager says instead. One is about what prices can do; the other is about what using them costs. C. Northcote Parkinson — Both are about organisations getting bigger. Parkinson says a bureaucracy grows whatever the work, filled with people making work for each other. Coase says a firm should stop growing where managing one more thing inside costs more than buying it outside. One asks why organisations will not stop; the other asks where they should.
+
+### Further
+The Wealth of Nations Friedrich Hayek C. Northcote Parkinson Wang Xing
+
+========================================================================
 ## Ruth Schwartz Cowan
 URL: https://ourword.ai/en/i/cowan/
 Tags: Family and relationships, Modern, Household technology
@@ -5804,7 +5841,7 @@ It is not from the benevolence of the butcher, the brewer, or the baker. The inv
 Guan Zhong — Two origins for the idea of national wealth: Guan Zhong steers prices and money from the centre, Smith lets price discover itself. The argument has not moved in twenty-five centuries. Shang Yang — Both are designing a route to a strong state. Shang Yang binds people to the land and suppresses trade, Smith credits division and exchange. Both routes work, at wildly different prices. Friedrich Hayek — Smith explains how the division of labour makes brute effort rich; Hayek explains how the information gets back afterwards. Why Nations Fail — Smith says the market runs itself; this book says somebody has to build the institutions that hold the market up. The missing half, supplied two centuries later.
 
 ### Further
-Guan Zhong Shang Yang Thinking in Systems Li Ka-shing Naval Ravikant Guns, Germs, and Steel Friedrich Hayek Why Nations Fail Gary Becker
+Guan Zhong Shang Yang Thinking in Systems Li Ka-shing Naval Ravikant Guns, Germs, and Steel Friedrich Hayek Why Nations Fail Gary Becker Ronald Coase
 
 ========================================================================
 ## Thinking in Systems
@@ -6100,7 +6137,7 @@ Most people will do anything rather than face real thinking. Choose the right th
 Zhang Yiming — Two philosophies from the same generation: Wang Xing's nine losses and one win runs on endurance, Zhang Yiming's delayed gratification runs on arithmetic — two different kinds of slow. Warren Buffett — Two shapes of the long view: Buffett will not own something for ten minutes he would not own for ten years, Wang Xing asks whether the thing will still matter in ten years.
 
 ### Further
-Zhang Yiming Peter Thiel Warren Buffett Ren Zhengfei The Innovator's Dilemma Finite and Infinite Games
+Zhang Yiming Peter Thiel Warren Buffett Ren Zhengfei The Innovator's Dilemma Finite and Infinite Games Ronald Coase
 
 ========================================================================
 ## Wang Yangming
@@ -8905,6 +8942,76 @@ Where it goes wrong: reading it as 'hold on and your day comes' — most people'
 Being prepared means having it when somebody else is in a hurry.
 Age is only the problem when your hands are empty.
 You can't know where it lands. You can make sure it's real.
+
+========================================================================
+## Ronald Coase · Buying is not free
+URL: https://ourword.ai/en/i/coase/price-has-a-cost/
+Source: "The Nature of the Firm", Economica, 1937
+Tags: Deep read, Ronald Coase, A firm ends where doing it yourself costs the same as buying it
+
+Do I build this myself or hand it to someone outside? This page is about the line that is easiest to leave out of that sum.
+
+### Q: What actually happened?
+In 1937 Ronald Coase, then twenty-six, published a paper in Economica that asked what economists thought needed no asking. The textbooks said prices coordinate everything. Yet walk into a factory and nobody haggles: people do what the manager says. If prices work so well, why is there a firm at all? His answer was plain. Buying through the market costs something too: finding who sells, asking prices, settling terms, writing the contract, checking delivery.
+
+### The parts · The quote has more in it than the price
+He put it plainly: it is profitable to set up a firm because "there is a cost of using the price mechanism." The price on the quote is only the part that shows. Finding the seller, agreeing terms and chasing delivery all take time, and none of it is in the price.
+e.g. A photographer quotes five hundred pounds. Comparing three, briefing, two rounds of edits and chasing the files are not in it.
+
+### The parts · A firm turns many deals into one instruction
+Rather than negotiate every time, you hire someone and buy, through one employment contract, the right to tell them what to do for a while. A firm exists because directing people inside is cheaper than bargaining outside, task by task.
+e.g. A standing photographer needs only "Friday, you're on." The re-briefing and re-pricing disappear.
+
+### The parts · The edge sits where the two costs meet
+Inside has costs too: the larger the operation, the harder it is for whoever runs it to know what each part needs, and the more gets misallocated. So the firm grows, he said, until the cost of organising one more transaction inside it equals the cost of doing it on the open market.
+e.g. A support team goes from three people to thirty. Rotas, training and management get dearer every month, until buying the service looks cheaper.
+
+### The parts · The line moves
+He pointed out that the telephone and the telegraph cut the cost of managing at a distance, and so change how big firms get. There is no standing answer to in-house or outside. There are two costs, and what each is today.
+e.g. With remote tools you can hire a remote employee or buy a remote service, and both are cheaper than a decade ago.
+
+### Q: How do I use it today?
+Where you are: Deciding whether to build a function yourself, hire for it, or buy it in.
+Ask first: Outside, how much effort will I spend finding, haggling and checking delivery? Inside, what does each extra head cost in meetings, coordination and waiting for sign-off? Write both columns.
+Where it goes wrong: Comparing only the quote with the salary. The inside costs are on no payslip and the outside costs are on no quote, so you are comparing two numbers neither of which has been written down.
+
+### Lines to keep
+Buying through the market is not free.
+A firm grows until managing one more thing costs more than buying it.
+The costliest line is the one the quote leaves out.
+
+========================================================================
+## Ronald Coase · Who is really harming whom?
+URL: https://ourword.ai/en/i/coase/harm-goes-both-ways/
+Source: "The Problem of Social Cost", Journal of Law and Economics, 1960
+Tags: Deep read, Ronald Coase, He gets in your way and you get in his; weigh which loss is heavier
+
+His way of working gets in my way; should I make him stop? This page is about the half of that question people leave out.
+
+### Q: What actually happened?
+In 1879 an English court heard a case. A confectioner had pounded ingredients with a mortar and pestle for more than twenty years and no one had complained. Then the doctor next door built a consulting room against the confectioner's wall, and the thumping drowned out his stethoscope. The court ordered the confectioner to stop. Eighty years on, Coase looked at the case and saw that without the doctor's new room the mortar harms no one. The trouble comes from two uses side by side.
+
+### The parts · The harm is made by two parties
+People assume A harmed B, so A is what needs managing. But to spare B you have to harm A. Without the doctor the mortar is harmless, and without the mortar the room is quiet. The trouble is two uses of the same place.
+e.g. A late-night food stall keeps the flat upstairs awake. Close the stall, and the owner loses their living.
+
+### The parts · Weigh the heavier loss
+The real question, he said, is whether A should be allowed to harm B or B to harm A. His test is to avoid the more serious harm. That means putting both losses on one table instead of first deciding who is the culprit.
+e.g. Stopping the confectioner costs a twenty-year trade. Not building the room costs one room. Which is heavier has to be worked out.
+
+### The parts · Talking only settles it when talking is cheap
+In a world where bargaining costs nothing, he argued, the two sides would settle on an arrangement that suits both, and who holds the right only decides who pays whom. He added at once that in the real world bargaining costs money, which is why who holds the right at the start matters.
+e.g. Two households can settle a shared lane themselves. A hundred on one street cannot, and need a rule first.
+
+### Q: How do I use it today?
+Where you are: Someone's way of doing things is getting in your way and you want them to stop, or you have been told to stop.
+Ask first: If he stops, what does it cost him? If I carry on, what does it cost me? Is there an arrangement that leaves both better off: another time, another place, a payment?
+Where it goes wrong: Reading this as "money settles everything". He said himself that bargaining is not free, and some harms cannot be priced. The chapter asks you to lay out both sides' accounts, not to name a price.
+
+### Lines to keep
+We are dealing with a problem of a reciprocal nature.
+The problem is to avoid the more serious harm.
+Without the new room, the mortar harms no one.
 
 ========================================================================
 ## Ruth Schwartz Cowan · The machine came in, the helpers went out
