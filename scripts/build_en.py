@@ -855,9 +855,53 @@ def patch_en_og():
     return n
 
 
+def _stash_og():
+    """清 en/ 之前，把提交里的分享图收起来（相对路径 → 字节）。
+
+    en/ 每次构建整个重建，606 张 og.png 原来全靠 gen_og_en.py 当场重画。可它要 PIL
+    和 macOS 自带的 Georgia —— CI（Ubuntu）上两样都没有，脚本一崩、check=False 吞掉，
+    英文页全部回落站根那张图（2026-10-02 CI 日志：rewired 0 pages）。更险的是 CI 末尾
+    原来有一步「有改动就提交」：闸要是绿的，它会把 606 张图从线上删掉。
+    """
+    keep = {}
+    for dp, _, fs in os.walk(OUT):
+        if "og.png" in fs:
+            p = os.path.join(dp, "og.png")
+            keep[os.path.relpath(p, OUT)] = open(p, "rb").read()
+    return keep
+
+
+def _restore_og(keep):
+    n = 0
+    for rel, data in keep.items():
+        p = os.path.join(OUT, rel)
+        if os.path.isdir(os.path.dirname(p)):     # 页还在才放回去；删掉的页不复活
+            open(p, "wb").write(data)
+            n += 1
+    return n
+
+
+def _newest_content_date():
+    """英文站 sitemap 的日期：取内容账本 seo/lastmod.json（build_seo 刚按内容哈希写过）里最新那天。
+
+    原来写的是构建当天：en/sitemap.xml 623 条 URL 天天都说「今天改过」—— 正是 geo_kit 自己说
+    搜索引擎会学着忽略的信号；而且同一份源码隔一天再构建，产物就和提交不一样，CI 没法拿
+    「产物和提交逐字节一致」当判据。英文页和中文页同 slug，账本里最新那天就是全站内容最后
+    一次真改的那天。账本读不到才退回今天（那样 CI 的复现判据会红，不会悄悄过去）。
+    """
+    import datetime
+    import json
+    try:
+        db = json.load(open(os.path.join(ROOT, "seo", "lastmod.json"), encoding="utf-8"))
+        return max(v["d"] for v in db.values() if v.get("d"))
+    except Exception:
+        return datetime.date.today().isoformat()
+
+
 def main():
     os.environ["HW_CHAPTERS"] = "chapters_en"
     os.environ["HW_SCENES"] = "hwx_scenes_en"
+    og_keep = _stash_og() if os.path.isdir(OUT) else {}
     if os.path.isdir(OUT):
         shutil.rmtree(OUT)
     write_en_css()
@@ -884,7 +928,7 @@ def main():
         # 横向浏览的出口，而中文版有。geo_kit 里 hub 页的英文文案本来就写好了。
         rep = G.build(SITE, items, root=OUT, item_pages=True, robots=False,
                       sitemap=True, hubs=True,
-                      today=__import__("datetime").date.today().isoformat(),
+                      today=_newest_content_date(),
                       extra_urls=[u.replace("https://ourword.ai/",
                                             "https://ourword.ai/en/")
                                   for u in hw_chapters.chapter_urls()])
@@ -966,8 +1010,14 @@ def main():
     # shutil.rmtree(OUT) 会把整个 en/ 清掉 —— 构建前画好的 544 张图全被删，
     # patch_en_og 找不到文件、一页都没改（第一版就是这么"改写了 0 页"）。
     # 放在页面渲染之后、改写 og:image 之前，每次构建自己出图，没有顺序可以错。
+    # 先把清目录前收起来的那份放回去：画得了就整套重画覆盖它，画不了（CI 上没有
+    # PIL / Georgia）就用提交里那份 —— 那份是本地上次构建画的，和源码对得上。
+    n_back = _restore_og(og_keep)
     import subprocess as _sp
-    _sp.run([sys.executable, os.path.join(HERE, "gen_og_en.py")], check=False)
+    r = _sp.run([sys.executable, os.path.join(HERE, "gen_og_en.py")])
+    if r.returncode:
+        print("！英文分享图这次没重画（gen_og_en.py 退出码 %d，多半是缺 PIL 或 Georgia）——"
+              "沿用提交里的 %d 张；新页没有图会回落站根图，check_en 会拦下" % (r.returncode, n_back))
     # 分享图指向各自那张 —— 要在 finish() 之后：finish 会改写链接，别让它把这里的绝对地址再改一遍。
     patch_en_og()
 
