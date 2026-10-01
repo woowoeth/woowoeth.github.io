@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>测测你的历史分身 · 32 种历史人格 — 人类世界生存法则</title>
+<meta name="description" content="20 道遇事题，2 分钟，测出 2600 年里和你是同一种人的那位：项羽、张良、苏轼、居里、乔布斯……32 种历史人格，每一种都链到他当年的真事。">
+<meta name="robots" content="noindex">
+<meta property="og:title" content="测测你的历史分身">
+<meta property="og:description" content="20 道遇事题，测出 2600 年里和你是同一种人的那位。">
+<meta property="og:image" content="https://ourword.ai/og.png">
+<link rel="canonical" href="https://ourword.ai/ce/">
+<style>
+:root{--paper:#f5f1e8;--paper2:#eee8da;--card:#faf7f0;--ink:#1f1c17;--muted:#8a8377;--line:#d8d2c6;--acc:#a33b2e;--fam:#a33b2e}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--paper:#171410;--paper2:#201c15;--card:#1d1913;--ink:#eae3d4;--muted:#9a917f;--line:#3a342a;--acc:#c65f4f}}
+:root[data-theme=dark]{--paper:#171410;--paper2:#201c15;--card:#1d1913;--ink:#eae3d4;--muted:#9a917f;--line:#3a342a;--acc:#c65f4f}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--paper);color:var(--ink)}
+body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;line-height:1.7;-webkit-font-smoothing:antialiased}
+.serif{font-family:"Noto Serif SC","Songti SC","STSong","SimSun",serif}
+.wrap{max-width:520px;margin:0 auto;padding:22px 20px 64px}
+a{color:inherit}
+.top{display:flex;align-items:center;justify-content:space-between;font-size:13px;color:var(--muted)}
+.top a{text-decoration:none}
+.seal{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:5px;background:var(--acc);color:#fff;font-family:"Noto Serif SC","Songti SC",serif;font-size:16px;margin-right:8px}
+.eyebrow{font-size:11px;letter-spacing:.32em;color:var(--fam);text-transform:uppercase;text-align:center;font-weight:600}
+.btn{display:block;width:100%;border:1px solid var(--ink);background:var(--ink);color:var(--paper);border-radius:999px;padding:14px 18px;font-size:16px;font-family:inherit;cursor:pointer;text-align:center;text-decoration:none}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn+.btn{margin-top:10px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 18px}
+.card+.card{margin-top:14px}
+.sec{margin-top:18px}
+.lab{font-size:12px;letter-spacing:.18em;color:var(--fam);font-weight:600;margin-bottom:12px;display:flex;align-items:center;gap:10px}
+.lab:after{content:"";flex:1;height:1px;background:var(--line)}
+.muted{color:var(--muted)}
+/* 开始页 */
+#start h1{font-size:34px;line-height:1.35;margin:34px 0 6px;letter-spacing:.02em}
+#start .sub{font-size:15px;color:var(--muted);margin:0 0 22px}
+#start .hook{font-size:17px;margin:0 0 26px}
+.from{border:1px dashed var(--acc);border-radius:14px;padding:14px 16px;margin:0 0 20px;font-size:15px}
+.from b{color:var(--acc)}
+.faces{display:flex;flex-wrap:wrap;gap:6px;margin:26px 0 8px}
+.faces span{font-size:13px;border:1px solid var(--line);border-radius:999px;padding:3px 10px;color:var(--muted)}
+/* 答题 */
+#quiz{display:none}
+.prog{height:4px;background:var(--line);border-radius:4px;overflow:hidden;margin:18px 0 6px}
+.prog i{display:block;height:100%;background:var(--acc);width:0;transition:width .25s}
+.pn{font-size:12px;color:var(--muted);display:flex;justify-content:space-between}
+.qq{font-size:21px;line-height:1.6;margin:26px 0 22px;min-height:68px}
+.opt{border:1px solid var(--line);border-radius:14px;padding:14px 16px;font-size:16px;background:var(--card)}
+.opt small{display:block;font-size:11px;letter-spacing:.2em;color:var(--muted);margin-bottom:2px}
+.dots{display:flex;justify-content:space-between;align-items:center;margin:16px 4px}
+.dots button{border:2px solid var(--line);background:transparent;border-radius:50%;cursor:pointer;padding:0;transition:transform .12s,background .12s,border-color .12s}
+.dots button:nth-child(1),.dots button:nth-child(5){width:46px;height:46px}
+.dots button:nth-child(2),.dots button:nth-child(4){width:36px;height:36px}
+.dots button:nth-child(3){width:26px;height:26px}
+.dots button:nth-child(1),.dots button:nth-child(2){border-color:#3d5a6c}
+.dots button:nth-child(4),.dots button:nth-child(5){border-color:var(--acc)}
+.dots button.on:nth-child(1),.dots button.on:nth-child(2){background:#3d5a6c}
+.dots button.on:nth-child(4),.dots button.on:nth-child(5){background:var(--acc)}
+.dots button.on:nth-child(3){background:var(--muted);border-color:var(--muted)}
+.dots button:active{transform:scale(.92)}
+.dotlab{display:flex;justify-content:space-between;font-size:12px;color:var(--muted);margin:-6px 0 14px}
+.back{border:0;background:transparent;color:var(--muted);font-size:14px;margin-top:20px;cursor:pointer;padding:6px 0}
+/* 结果 */
+#result{display:none}
+.hero{text-align:center;padding:26px 6px 6px}
+.pill{display:inline-flex;align-items:center;gap:10px;border:1px solid var(--fam);border-radius:999px;padding:8px 18px;margin:16px 0 8px;font-size:14px;letter-spacing:.08em;color:var(--fam)}
+.pill b{font-size:17px}
+.name{font-size:62px;line-height:1.15;margin:14px 0 4px;letter-spacing:.06em}
+.name.long{font-size:46px}
+.rule{display:flex;align-items:center;justify-content:center;gap:12px;margin:2px 0 10px}
+.rule i{width:54px;height:2px;background:var(--fam);opacity:.75}
+.rule b{width:8px;height:8px;border-radius:50%;background:var(--fam)}
+.title{font-size:22px;letter-spacing:.12em;margin:0}
+.chips{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin:14px 0 4px}
+.chip{font-size:13px;border-radius:999px;padding:4px 12px;border:1px solid var(--fam);color:var(--fam)}
+.chip.solid{background:var(--fam);color:#fff;border-color:var(--fam)}
+.quote{font-size:18px;font-style:italic;line-height:1.75;margin:22px 4px 4px;position:relative;padding:0 22px}
+.quote:before,.quote:after{position:absolute;font-size:34px;color:var(--fam);opacity:.45;font-style:normal;line-height:1}
+.quote:before{content:"“";left:0;top:-4px}.quote:after{content:"”";right:0;bottom:-14px}
+.qsrc{font-size:12px;color:var(--muted);text-align:center;margin:6px 0 0}
+.stats{display:grid;grid-template-columns:1fr 1.15fr 1fr;gap:10px;margin:24px 0 4px;align-items:center}
+.stat{border:1px solid var(--line);background:var(--card);border-radius:14px;padding:14px 6px;text-align:center}
+.stat b{display:block;font-size:26px;line-height:1.2;font-family:"Noto Serif SC","Songti SC",serif}
+.stat span{display:block;font-size:13px;color:var(--muted);margin-top:2px}
+.stat em{display:block;font-size:11px;font-style:normal;color:var(--muted);letter-spacing:.1em;margin-top:4px}
+.stat.mid{background:var(--fam);border-color:var(--fam);color:#fff;padding:20px 6px}
+.stat.mid b{font-size:32px}.stat.mid span,.stat.mid em{color:rgba(255,255,255,.88)}
+.axis{margin:12px 0}
+.axis .row{display:flex;justify-content:space-between;font-size:14px;margin-bottom:5px}
+.axis .row b{color:var(--fam)}
+.bar{height:10px;border-radius:10px;background:var(--paper2);position:relative;overflow:hidden;border:1px solid var(--line)}
+.bar i{position:absolute;top:0;bottom:0;background:var(--fam);opacity:.85}
+.radar{display:block;margin:0 auto;max-width:340px;width:100%}
+.legend{display:flex;justify-content:center;gap:20px;font-size:13px;color:var(--muted);margin-top:6px}
+.legend i{display:inline-block;width:12px;height:12px;border-radius:50%;margin-right:6px;vertical-align:-1px}
+.dim{display:flex;align-items:center;gap:12px;padding:9px 0}
+.dim .rk{width:26px;height:26px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;background:var(--paper2);color:var(--muted);flex:0 0 auto}
+.dim.top .rk{background:var(--fam);color:#fff}
+.dim .dn{width:44px;font-size:15px;flex:0 0 auto}
+.dim .db{flex:1;height:8px;border-radius:8px;background:var(--paper2);overflow:hidden}
+.dim .db i{display:block;height:100%;background:var(--fam);opacity:.55;border-radius:8px}
+.dim.top .db i{opacity:.95}
+.dim .dv{width:34px;text-align:right;font-size:17px;font-family:"Noto Serif SC","Songti SC",serif;flex:0 0 auto}
+.dim.top .dv{color:var(--fam)}
+.desc{font-size:17px;line-height:1.95}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.two .card+.card{margin-top:0}
+.two h4{margin:0 0 6px;font-size:13px;color:var(--muted);font-weight:500;letter-spacing:.1em}
+.two p{margin:0;font-size:15px;line-height:1.7}
+.story a{display:block;text-decoration:none}
+.story .st{font-size:19px;margin:2px 0 4px}
+.story .go{color:var(--acc);font-size:14px}
+.kin{display:flex;flex-wrap:wrap;gap:8px}
+.kin a{font-size:14px;text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:5px 12px;background:var(--card)}
+.rel{border:1px solid var(--acc);background:var(--card);border-radius:14px;padding:18px;text-align:center}
+.rel .pair{font-size:26px;margin:4px 0}
+.rel .rl{display:inline-block;background:var(--acc);color:#fff;border-radius:999px;padding:2px 12px;font-size:13px;margin:4px 0 10px}
+.rel p{margin:0;font-size:15px}
+.ask textarea{width:100%;border:1px solid var(--line);border-radius:12px;background:var(--paper);color:var(--ink);font:inherit;font-size:16px;padding:10px 12px;resize:none;min-height:70px}
+.ask .btn{margin-top:10px}
+.foot{margin-top:28px;text-align:center;font-size:12px;color:var(--muted);line-height:1.9}
+/* 全览 */
+#types{display:none}
+.fam{margin-top:22px}
+.fam h3{font-size:18px;margin:0 0 2px}
+.fam .ft{font-size:13px;color:var(--muted);margin:0 0 10px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.tile{border:1px solid var(--line);border-radius:14px;background:var(--card);padding:12px 12px 10px;text-decoration:none;display:block}
+.tile b{display:block;font-size:20px;font-family:"Noto Serif SC","Songti SC",serif}
+.tile span{display:block;font-size:13px;line-height:1.5;margin-top:2px}
+.tile em{display:block;font-style:normal;font-size:11px;letter-spacing:.12em;margin-top:6px}
+/* 分享卡浮层 */
+#shot{position:fixed;inset:0;background:rgba(0,0,0,.72);display:none;align-items:center;justify-content:center;flex-direction:column;z-index:60;padding:18px}
+#shot img{max-width:100%;max-height:78vh;border-radius:10px}
+#shot p{color:#fff;font-size:14px;margin:12px 0 8px}
+#shot .row{display:flex;gap:10px}
+#shot .row a,#shot .row button{color:#fff;border:1px solid rgba(255,255,255,.6);background:transparent;border-radius:999px;padding:8px 16px;font-size:14px;text-decoration:none;cursor:pointer;font-family:inherit}
+.toast{position:fixed;left:50%;bottom:36px;transform:translateX(-50%);background:var(--ink);color:var(--paper);padding:10px 18px;border-radius:999px;font-size:14px;opacity:0;transition:opacity .2s;pointer-events:none;z-index:70}
+.toast.on{opacity:1}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top"><a href="/"><span class="seal">人</span>人类世界生存法则</a><a href="#types" id="toTypes">32 型全览</a></div>
+
+  <section id="start">
+    <h1 class="serif">测测你的<br>历史分身</h1>
+    <p class="sub">20 道遇事题 · 2 分钟 · 32 种历史人格</p>
+    <div class="from" id="fromBox" style="display:none"></div>
+    <p class="hook">遇到事的时候，你是先冲，还是先等？<br>是硬刚，还是绕过去？<br>2600 年里，总有一个人和你是同一种人。</p>
+    <button class="btn" id="go">开始测试</button>
+    <div class="faces" id="faces"></div>
+    <p class="muted" style="font-size:13px">每一种结果，都链到那个人当年的真事。</p>
+  </section>
+
+  <section id="quiz">
+    <div class="prog"><i id="bar"></i></div>
+    <div class="pn"><span id="pn">1 / 20</span><span id="pax"></span></div>
+    <div class="qq serif" id="qq"></div>
+    <div class="opt"><small>A</small><span id="oa"></span></div>
+    <div class="dots" id="dots">
+      <button data-v="-2" aria-label="非常像 A"></button><button data-v="-1" aria-label="偏 A"></button><button data-v="0" aria-label="都有可能"></button><button data-v="1" aria-label="偏 B"></button><button data-v="2" aria-label="非常像 B"></button>
+    </div>
+    <div class="dotlab"><span>更像 A</span><span>都有可能</span><span>更像 B</span></div>
+    <div class="opt"><small>B</small><span id="ob"></span></div>
+    <button class="back" id="prev">← 上一题</button>
+  </section>
+
+  <section id="result"></section>
+  <section id="types"></section>
+
+  <div class="foot">人物、故事、原话，都来自 <a href="/">ourword.ai</a> 的人物库。<br>测着玩的。真遇到事了，去看他们当年是怎么处理的。</div>
+</div>
+<div id="shot"><img id="shotImg" alt="分享卡"><p>长按图片保存，或者</p><div class="row"><a id="shotDl" download="我的历史分身.png">下载</a><button id="shotX">关闭</button></div></div>
+<div class="toast" id="toast"></div>
+<script>window.CE={"axes":[["进","退","主动出击","以退为进"],["刚","柔","正面硬刚","以柔克刚"],["谋","真","深谋远虑","凭心而行"],["独","群","独自扛事","聚人成事"],["定","燃","心定神闲","心里有火"]],"dims":["胆识","谋略","定力","识人","变通","号召"],"fam":{"进谋":{"name":"操盘手","color":"#a33b2e","tag":"主动出击，算无遗策"},"进真":{"name":"开拓者","color":"#b5772b","tag":"想到就干，凭一股真气"},"退谋":{"name":"布局者","color":"#3d5a6c","tag":"不争一时，算的是一世"},"退真":{"name":"守心者","color":"#4f7a5a","tag":"外面再乱，心里不乱"}},"types":[{"code":"进刚谋独-定","who":"韩信","title":"忍得住的兵仙","quote":"兵法不曰陷之死地而后生，置之亡地而后存？","quote_src":"《史记·淮阴侯列传》","desc":"你能忍别人忍不了的——当年那一回胯下，你没吭声。平时不声不响，一到关键时刻，你会亲手把退路拿掉，逼自己和队伍拼出一条生路。","power":"把绝境变成主场","pit":"把断退路当成万能药，用在本来就能打的队伍上。","story":{"t":"背水一战","u":"/i/han-xin/back-to-the-river/"},"dims":[90,95,85,45,70,60],"slug":"han-xin"},{"code":"进刚谋独-燃","who":"拿破仑","title":"一步登顶的战争天才","quote":"在战争中，最大的危险来自迟疑不决。","quote_src":"拿破仑","desc":"你脑子里永远有一张地图，知道该在哪一点压上全部力量。你讨厌犹豫，宁可冒险也不愿错过；你的野心从来不藏着，也从不觉得需要藏。","power":"在决定的那一点上，永远比对手多一个人","pit":"把没输过当成不会输；用当下的顺利追加投入，把回程的资源也押上去。","story":{"t":"决定点上的多数","u":"/i/napoleon/decisive-point/"},"dims":[95,92,55,50,75,90],"slug":"napoleon"},{"code":"进刚谋群-定","who":"诸葛亮","title":"宁静致远的总设计师","quote":"非淡泊无以明志，非宁静无以致远。","quote_src":"诸葛亮《诫子书》","desc":"你是团队里画全局图的那个人。别人还在争今天，你已经想好三年后在哪、哪一块绝对不能碰。你扛事从不喊累——也最容易把所有事都揽到自己肩上。","power":"先说清楚哪一块不能碰","pit":"处理完执行者就结案；自我检讨停在「我也有责任」这种没有内容的说法上。","story":{"t":"隆中对","u":"/i/zhuge-liang/longzhong-plan/"},"dims":[60,98,92,70,65,85],"slug":"zhuge-liang"},{"code":"进刚谋群-燃","who":"凯撒","title":"敢过卢比孔河的人","quote":"骰子已被掷下。","quote_src":"凯撒渡过卢比孔河时","desc":"你不怕做回不了头的决定——想清楚了就过河，不回头。别人愿意跟你走，因为你赢了从不把胜利只留给自己，连对手你都能赦免。","power":"敢做那个回不了头的决定","pit":"把小决定也当成过卢比孔，处处悲壮；真过了河，还在河这边留一半心思。","story":{"t":"骰子已被掷下","u":"/i/caesar/the-rubicon/"},"dims":[96,85,60,75,70,98],"slug":"caesar"},{"code":"进柔谋独-定","who":"武则天","title":"立无字碑的女皇","quote":"宰相安得失此人？","quote_src":"读到骂她的檄文时","desc":"你不在乎别人怎么评价你——功过任人去说，就像那块无字碑。你看人极准，连骂你的人你都看得出是人才；你敢破格用人，也敢说撤就撤。","power":"连骂你的人，你都看得出他的才","pit":"只做破格、不做退出，队伍迅速失控。","story":{"t":"宰相安得失此人","u":"/i/wu-zetian/the-manifesto/"},"dims":[88,92,95,95,85,70],"slug":"wu-zetian"},{"code":"进柔谋独-燃","who":"郭嘉","title":"三秒看穿的鬼才军师","quote":"兵贵神速。","quote_src":"郭嘉劝曹操轻兵奔袭","desc":"别人想三天的事，你三秒就看穿了。你的点子总是出人意料，敢押冷门、敢走险路——而且常常押中。你活得像一把快刀，只是偶尔忘了给自己留点余地。","power":"别人想三天，你三秒看穿","pit":"把轻装当成没有代价；绕开团队最担心的那个风险不谈。","story":{"t":"留辎重，轻兵兼道","u":"/i/guo-jia/leave-the-baggage/"},"dims":[90,97,50,90,95,45],"slug":"guo-jia"},{"code":"进柔谋群-定","who":"李世民","title":"听得进逆耳话的天可汗","quote":"以人为镜，可以明得失。","quote_src":"李世民悼魏征","desc":"你身边总有一群能人，而且你是真的听得进他们的话——包括最难听的那几句。你不靠一个人单打独斗，你靠把对的人放到对的位置上。","power":"听得进最难听的那一句","pit":"把兼听理解成多问几个人，问的却都在同一个圈子里。","story":{"t":"兼听则明","u":"/i/li-shimin/hearing-all-sides/"},"dims":[85,88,85,92,80,95],"slug":"li-shimin"},{"code":"进柔谋群-燃","who":"曹操","title":"唯才是举的乱世枭雄","quote":"唯才是举，吾得而用之。","quote_src":"曹操《求贤令》","desc":"你野心大，手腕也活。用人只看本事、不问出身；输了能认，赢了能收。你心里那团火从来没灭过——这也是你最累的地方。","power":"只看本事，不问出身","pit":"放开了品行标准，却没立起行为边界。","story":{"t":"唯才是举","u":"/i/cao-cao/talent-only/"},"dims":[92,93,70,90,92,92],"slug":"cao-cao"},{"code":"进刚真独-定","who":"玛丽·居里","title":"沉得住气的拓荒者","quote":"生活中没有什么可怕的东西，只有需要理解的东西。","quote_src":"玛丽·居里","desc":"你能一个人守着一件事熬上好几年，只为弄清一个别人不信的答案。你不吵不闹，也不需要掌声——你认定的东西，会做到底。","power":"一个人，也能熬成一件大事","pit":"把埋头做事当成绕开难过的办法——它绕不过去。","story":{"t":"接过他的课","u":"/i/curie/the-lecture/"},"dims":[80,70,98,40,55,50],"slug":"curie"},{"code":"进刚真独-燃","who":"项羽","title":"力拔山兮的霸王","quote":"力拔山兮气盖世。","quote_src":"项羽《垓下歌》","desc":"你是那种一上头就能破釜沉舟的人——一次押上全部，绝不留后路。你真、你傲、你要面子，喜欢就是喜欢，看不上就是看不上。你身上有让所有人仰视的光，也有一点听不进劝。","power":"一次押上全部，绝不回头","pit":"把一次成功的打法当成永远正确；赢完之后不管怎么收场。","story":{"t":"破釜沉舟","u":"/i/xiang-yu/sinking-the-boats/"},"dims":[99,45,50,25,30,92],"slug":"xiang-yu"},{"code":"进刚真群-定","who":"王阳明","title":"知行合一的行动派","quote":"破山中贼易，破心中贼难。","quote_src":"王阳明","desc":"你信一件事，就立刻去做——在你看来，知道了不做，等于不知道。越是大事你越稳，身边总聚着一群愿意跟你一起干的人。","power":"越是大事，心越稳","pit":"把「我懂了」当成阶段性成果。","story":{"t":"知行合一","u":"/i/wang-yangming/unity-of-knowing-and-doing/"},"dims":[85,80,96,80,75,90],"slug":"wang-yangming"},{"code":"进刚真群-燃","who":"乔布斯","title":"改变世界的偏执狂","quote":"专注意味着对另外一百个好主意说不。","quote_src":"乔布斯，1997 年","desc":"你对「差不多」零容忍。你的直觉很强，认定的东西就想让全世界都看见；你会逼着团队做到他们以为做不到的程度——他们会恨你一阵子，然后感谢你一辈子。","power":"把一百个好主意砍到只剩一个","pit":"把说不做成对一切新事物的傲慢——格子是用来腾的，不是封死的。","story":{"t":"专注就是说不","u":"/i/jobs/focus-is-saying-no/"},"dims":[95,75,55,70,70,96],"slug":"jobs"},{"code":"进柔真独-定","who":"苏格拉底","title":"满街追问的哲学家","quote":"未经省察的人生是不值得过的。","quote_src":"苏格拉底","desc":"你永远有问不完的问题，而且不怕问倒别人——包括问倒你自己。你从不假装知道，这让你比装懂的人看得更清楚。别人吵架时你在追问，别人慌的时候你在想。","power":"一个问题，问到对方自己找到答案","pit":"把提问做成猜谜，答案其实早就锁死了。","story":{"t":"不自以为知道","u":"/i/socrates/knowing-not-knowing/"},"dims":[80,75,97,85,80,55],"slug":"socrates"},{"code":"进柔真独-燃","who":"爱因斯坦","title":"狂热好奇心","quote":"想象力比知识更重要。","quote_src":"爱因斯坦","desc":"你脑子里装的问题比答案多。你不爱守规矩，更爱推翻规矩——最好的点子，常常在你最闲、最边缘的时候冒出来。你对世界的好奇，像一团烧不完的火。","power":"把别人没问过的问题问出来","pit":"把边缘当成产出的保证，只享受自由，不上强度。","story":{"t":"专利局里的奇迹年","u":"/i/einstein/patent-office/"},"dims":[85,80,70,50,98,55],"slug":"einstein"},{"code":"进柔真群-定","who":"刘邦","title":"天生会用人的老大","quote":"吾能用之，此吾所以取天下也。","quote_src":"《史记·高祖本纪》","desc":"你可能不是团队里最能打的、也不是最聪明的，但你最会把能人聚到一起。你心大、不记仇、能屈能伸，被踩一脚能当场改口——这份松弛，是你最大的本事。","power":"承认别人比你强，然后把他请来","pit":"人请来了，决定还是自己拍。","story":{"t":"三个不如","u":"/i/liu-bang/three-i-cannot/"},"dims":[80,65,90,98,95,95],"slug":"liu-bang"},{"code":"进柔真群-燃","who":"李小龙","title":"像水一样的功夫之王","quote":"像水一样吧，朋友。","quote_src":"李小龙","desc":"你能柔能刚，像水一样——放进杯子就是杯子的形状，冲起来能把石头击穿。你会把一件事练到极致，再把它带给全世界。你身上那团火，所有人都看得见。","power":"一种踢法练一万次","pit":"没选对动作就开始堆次数，把错误练成本能。","story":{"t":"像水一样","u":"/i/bruce-lee/be-water/"},"dims":[92,65,75,60,96,90],"slug":"bruce-lee"},{"code":"退刚谋独-定","who":"司马懿","title":"最能忍的最后赢家","quote":"粥皆流出沾胸。","quote_src":"装病骗过曹爽那天，喝粥洒了一胸口","desc":"你最大的武器是耐心。你能装、能等，能忍到所有人都以为你不行了——然后在那个不会重来的时刻一击定局。你不急，因为你知道，最后赢的才算赢。","power":"忍到对方彻底松手","pit":"示弱只做一半，对方仍然盯着你；窗口出现时，还想先小规模试一下。","story":{"t":"等一个不会重来的时刻","u":"/i/sima-yi/waiting/"},"dims":[75,97,99,92,85,55],"slug":"sima-yi"},{"code":"退刚谋独-燃","who":"马基雅维利","title":"看透人性的现实派","quote":"被人畏惧比受人爱戴要安全得多。","quote_src":"马基雅维利《君主论》","desc":"你不吃鸡汤，只看人性本来的样子。别人在讲「应该」，你在算「实际」；你看得太透，所以常常显得不近人情。你被冷落过，但从没停止琢磨怎么赢回来。","power":"先看人怎么做，不看人该怎么做","pit":"把顺境里的成绩，全部记在自己账上。","story":{"t":"从实然出发","u":"/i/machiavelli/as-it-is/"},"dims":[70,96,75,95,80,40],"slug":"machiavelli"},{"code":"退刚谋群-定","who":"曾国藩","title":"结硬寨的笨功夫大师","quote":"打仗不慌不忙，先求稳当，次求变化。","quote_src":"曾国藩","desc":"你不信捷径，只信笨功夫。别人想一战成名，你在一寸一寸地扎营；你看人不看嘴，看他做成过什么真事。你可能起步慢，但你几乎从不翻车。","power":"用笨办法消灭不确定","pit":"目标全是形容词；所有的自省都只发生在自己心里，没有一个外人看得见。","story":{"t":"结硬寨，打呆仗","u":"/i/zeng-guofan/solid-camp-dull-fight/"},"dims":[60,88,97,92,60,88],"slug":"zeng-guofan"},{"code":"退刚谋群-燃","who":"朱元璋","title":"放牛娃出身的开国皇帝","quote":"高筑墙，广积粮，缓称王。","quote_src":"朱升献给朱元璋的九字","desc":"你吃过苦，所以比谁都清楚：先活下来，再谈名分。你能低调很多年，悄悄把墙筑高、把粮囤满；一旦出手，就是要彻底赢。你心里那团火，是从最低的地方烧起来的。","power":"先不要那个名分","pit":"把危机时期的重手段变成常态，而且没有退出的机制。","story":{"t":"缓称王","u":"/i/zhu-yuanzhang/delay-the-title/"},"dims":[90,90,85,80,70,90],"slug":"zhu-yuanzhang"},{"code":"退柔谋独-定","who":"鬼谷子","title":"深藏不露的世外高人","quote":"欲闻其声反默，欲张反敛，欲高反下，欲取反与。","quote_src":"《鬼谷子·反应》","desc":"你话不多，但每一句都在点上。你很少先开口，因为你知道：想让别人说，自己先别说。你看人心像看棋盘——大部分人都不知道，你早就看穿了。","power":"想让他说，你先别说","pit":"只拿它去算计别人，不拿它防自己。","story":{"t":"反听","u":"/i/guiguzi/listen-in-reverse/"},"dims":[60,97,95,98,90,40],"slug":"guiguzi"},{"code":"退柔谋独-燃","who":"范蠡","title":"三散三聚的商圣","quote":"可与共患难，不可与共乐。","quote_src":"范蠡写给文种的信，说的是越王勾践","desc":"你总在别人不要的时候下手，在别人最热闹的时候离场。你能帮人打下江山，也能在顶点转身去做生意——三次散尽家财，三次重新发家。你停不下来，因为你享受的从来不是钱，是判断对了的那一刻。","power":"在没人要的时候备货","pit":"把「散」当成姿态，实际一样也没放下。","story":{"t":"旱则资舟","u":"/i/fan-li/stock-the-opposite/"},"dims":[75,95,80,96,95,55],"slug":"fan-li"},{"code":"退柔谋群-定","who":"张良","title":"运筹帷幄的隐形操盘手","quote":"愿弃人间事，欲从赤松子游耳。","quote_src":"《史记·留侯世家》","desc":"你从不抢 C 位，却总是关键时刻让局面翻盘的那个人。你能忍、能低头，也能一眼拆穿一个听起来很好的方案。最难得的是：你知道什么时候该退场。","power":"一眼拆穿听起来很好的方案","pit":"把忍当成性格，处处退让。","story":{"t":"愿封留足矣","u":"/i/zhang-liang/asking-for-less/"},"dims":[65,98,95,95,92,60],"slug":"zhang-liang"},{"code":"退柔谋群-燃","who":"蔺相如","title":"完璧归赵的胆大谋士","quote":"两虎共斗，其势不俱生。","quote_src":"《史记·廉颇蔺相如列传》","desc":"你平时让人三分，可真到了要命的场合，你比谁都敢——能一个人捧着玉璧，跟一个大国对峙。你让步不是因为怕，是因为你分得清什么才真正重要。","power":"让一步，不是因为怕","pit":"你本来就处处都让，这一次也不过是怕。","story":{"t":"完璧归赵","u":"/i/lin-xiangru/crooked-on-qin/"},"dims":[92,88,85,85,85,70],"slug":"lin-xiangru"},{"code":"退刚真独-定","who":"陶渊明","title":"不为五斗米折腰","quote":"采菊东篱下，悠然见南山。","quote_src":"陶渊明《饮酒》","desc":"你很清楚自己不要什么——为了那一点点不愿意，你可以放下别人梦寐以求的东西。你不怕清苦，只怕违心。回到自己那块地上，日子过得慢，心却是满的。","power":"先知道自己不要什么","pit":"把「不要什么」当成终点——那只是把范围缩小，路还得自己走出来。","story":{"t":"彭泽令八十天","u":"/i/tao-yuanming/eighty-days/"},"dims":[70,50,96,55,50,35],"slug":"tao-yuanming"},{"code":"退刚真独-燃","who":"司马迁","title":"把屈辱写成史记的人","quote":"人固有一死，或重于泰山，或轻于鸿毛。","quote_src":"司马迁《报任安书》","desc":"你受过最深的委屈，但没让它决定你的结局。你心里有一件非做完不可的事，它撑着你熬过了最坏的日子。你不说漂亮话，只写真话——哪怕写的是帝王。","power":"把最坏的日子，熬成最好的作品","pit":"把苦难读成有益的鸡汤——最坏的时候也能做事，不等于最坏的时候最好。","story":{"t":"他为什么没有去死","u":"/i/sima-qian/letter-to-ren-an/"},"dims":[85,70,90,92,55,50],"slug":"sima-qian"},{"code":"退刚真群-定","who":"曼德拉","title":"二十七年不改初心","quote":"体育拥有改变世界的力量。","quote_src":"曼德拉","desc":"你能为一件事坚持几十年，而且坚持完之后不记仇。你原则硬得像石头，心却宽得能装下曾经的对手。你最擅长的，是把敌人变成队友。","power":"把对手变成队友","pit":"把和解做成表演——球衣穿上了，做法照旧。","story":{"t":"穿上对手的球衣","u":"/i/mandela/springbok-jersey/"},"dims":[90,80,99,90,80,96],"slug":"mandela"},{"code":"退刚真群-燃","who":"甘地","title":"一撮盐撼动帝国","quote":"我以这一撮盐，动摇大英帝国的根基。","quote_src":"甘地，食盐进军","desc":"你不打架，但你从不认输。你相信手段和目的一样重要——用什么方式赢，就会得到什么样的结果。你能用最简单的一件事，把成千上万的人带到同一条路上。","power":"选一个人人都懂的目标","pit":"把手段上的洁癖，变成永远不行动的理由。","story":{"t":"食盐进军","u":"/i/gandhi/salt-march/"},"dims":[92,75,92,85,70,98],"slug":"gandhi"},{"code":"退柔真独-定","who":"庄子","title":"逍遥游的自由人","quote":"人皆知有用之用，而莫知无用之用也。","quote_src":"《庄子·人间世》","desc":"你不想被任何标准绑住。别人拼命想变得「有用」，你却觉得没被征用的人才活得最自在。你看事情总能换个角度，所以很少真正被困住。","power":"顺着缝隙走，游刃有余","pit":"全程保持同一个速度，在最该警觉的地方也没慢下来。","story":{"t":"庖丁解牛","u":"/i/zhuangzi/ox-carving/"},"dims":[60,70,95,80,98,30],"slug":"zhuangzi"},{"code":"退柔真独-燃","who":"史铁生","title":"和命运较劲的人","quote":"死是一件不必急于求成的事，死是一个必然会降临的节日。","quote_src":"史铁生《我与地坛》","desc":"命运给你的牌也许不好，但你既没认输，也没假装看开。你把最难熬的日子，一行一行写成了能照亮别人的东西。你心里的火很安静，但从来没灭过。","power":"把每一道缝隙都用起来","pit":"把力气花在「为什么是我」这道没有答案的题上。","story":{"t":"出生了，就不再是一个可以辩论的问题","u":"/i/shi-tiesheng/not-a-question-to-debate/"},"dims":[75,60,90,85,75,45],"slug":"shi-tiesheng"},{"code":"退柔真群-定","who":"苏轼","title":"人间清醒乐天派","quote":"回首向来萧瑟处，归去，也无风雨也无晴。","quote_src":"苏轼《定风波》","desc":"你被生活按在地上摩擦过好几回，每次都能爬起来，还顺手发明一道菜。你走到哪都有朋友，「上可陪玉皇大帝，下可陪卑田院乞儿」。你的豁达不是看开了，是你真的会过日子。","power":"在被贬的地方，也能干成实事","pit":"把豁达当成不去处理问题。","story":{"t":"也无风雨也无晴","u":"/i/su-shi/no-wind-no-rain/"},"dims":[70,65,95,85,96,88],"slug":"su-shi"},{"code":"退柔真群-燃","who":"杜甫","title":"心里装着天下的诗圣","quote":"安得广厦千万间，大庇天下寒士俱欢颜。","quote_src":"杜甫《茅屋为秋风所破歌》","desc":"你自己过得不容易，心里却总装着别人。你不回避最难面对的事，会老老实实把它写下来、认下来。你的热，不是为了自己出头，是想让更多人好过一点。","power":"先说那件你最不想提的","pit":"把「坚持十年总会成」当成唯一的路——记下来、看看旁边，比硬熬重要。","story":{"t":"四十八岁，成都草堂","u":"/i/du-fu/the-thatched-hut/"},"dims":[60,55,75,92,60,70],"slug":"du-fu"}],"kin":{"进刚谋独":[{"n":"王翦","u":"/i/wang-jian/"},{"n":"俾斯麦","u":"/i/bismarck/"}],"进刚谋群":[{"n":"管仲","u":"/i/guan-zhong/"},{"n":"张居正","u":"/i/zhang-juzheng/"}],"进柔谋独":[{"n":"宫本武藏","u":"/i/musashi/"},{"n":"利弗莫尔","u":"/i/livermore/"}],"进柔谋群":[{"n":"胡雪岩","u":"/i/hu-xueyan/"},{"n":"松下幸之助","u":"/i/matsushita/"}],"进刚真独":[{"n":"霍去病","u":"/i/huo-qubing/"},{"n":"尼采","u":"/i/nietzsche/"}],"进刚真群":[{"n":"丘吉尔","u":"/i/churchill/"},{"n":"黄仁勋","u":"/i/huang/"}],"进柔真独":[{"n":"费曼","u":"/i/feynman/"},{"n":"村上春树","u":"/i/murakami/"}],"进柔真群":[{"n":"稻盛和夫","u":"/i/inamori/"},{"n":"富兰克林","u":"/i/franklin/"}],"退刚谋独":[{"n":"韩非子","u":"/i/han-feizi/"}],"退刚谋群":[{"n":"郭子仪","u":"/i/guo-ziyi/"},{"n":"李光耀","u":"/i/lee-kuan-yew/"}],"退柔谋独":[{"n":"巴菲特","u":"/i/buffett/"},{"n":"查理·芒格","u":"/i/munger/"}],"退柔谋群":[{"n":"晋文公","u":"/i/jin-wengong/"},{"n":"李泌","u":"/i/li-bi/"}],"退刚真独":[{"n":"弗兰克尔","u":"/i/frankl/"}],"退刚真群":[{"n":"马可·奥勒留","u":"/i/marcus-aurelius/"},{"n":"塞涅卡","u":"/i/seneca/"}],"退柔真独":[{"n":"蒲松龄","u":"/i/pu-songling/"},{"n":"蒙田","u":"/i/montaigne/"}],"退柔真群":[{"n":"白居易","u":"/i/bai-juyi/"},{"n":"六祖慧能","u":"/i/huineng/"}]},"qs":[{"axis":0,"q":"你盯了很久的机会突然来了，可准备还没做足。","a":"先冲进去，边干边补","b":"再等等，准备好了再出手","da":{"胆识":2,"变通":1},"db":{"定力":2,"谋略":1}},{"axis":0,"q":"项目大获成功，老板要给你升职、让你全权负责。","a":"接！趁热把盘子做大","b":"先要一小块，见好就收","da":{"胆识":1,"号召":2},"db":{"定力":1,"识人":2}},{"axis":0,"q":"竞争对手明显比你强，正面撞上了。","a":"硬碰硬，置之死地而后生","b":"先避开锋芒，悄悄攒实力","da":{"胆识":2,"号召":1},"db":{"谋略":2,"定力":1}},{"axis":0,"q":"你的方案在会上被当众否了。","a":"当场据理力争","b":"先认下，会后再找机会","da":{"胆识":2},"db":{"定力":2,"变通":1}},{"axis":1,"q":"朋友借了你一笔钱，拖了半年还没还。","a":"直接摊开说，约个还款日","b":"先不提，找机会旁敲侧击","da":{"胆识":1,"号召":1},"db":{"识人":2,"变通":1}},{"axis":1,"q":"刚到一个新团队，有个老员工处处不服管。","a":"立规矩，第一次违规就严办","b":"先请他吃顿饭，摸清他要什么","da":{"号召":2,"谋略":1},"db":{"识人":2,"变通":1}},{"axis":1,"q":"和对象吵架，这一回你明明有理。","a":"有理就要说清楚，不能每次都让","b":"先退一步，讲理留到明天","da":{"胆识":1,"号召":1},"db":{"定力":1,"识人":2}},{"axis":1,"q":"有人当着大家的面挖苦了你一句。","a":"当场怼回去","b":"一笑带过，不接这一招","da":{"胆识":2},"db":{"定力":2,"变通":1}},{"axis":2,"q":"要做一个人生大决定——换城市，或者换工作。","a":"列清单、算账、推演三种结局","b":"跟着第一反应走，心里早有答案","da":{"谋略":3},"db":{"胆识":1,"变通":1}},{"axis":2,"q":"第一次去见一群很厉害的人。","a":"提前研究每个人，想好聊什么","b":"做自己，聊得来就聊","da":{"谋略":2,"识人":1},"db":{"号召":1,"变通":1}},{"axis":2,"q":"你发现有人在背后说你坏话。","a":"不动声色，先看他想干什么","b":"直接找他问清楚","da":{"谋略":1,"识人":2,"定力":1},"db":{"胆识":2}},{"axis":2,"q":"好朋友兴冲冲来问你他的创业点子，你觉得不太靠谱。","a":"不直接否，问几个问题让他自己想明白","b":"实话实说：我觉得这事不行","da":{"识人":2,"谋略":1},"db":{"胆识":2}},{"axis":3,"q":"接到一个很难的任务，时间还特别紧。","a":"自己闷头啃下来，最放心","b":"先拉上对的人，一起干","da":{"定力":2,"胆识":1},"db":{"号召":2,"识人":1}},{"axis":3,"q":"难得的周末，你更想：","a":"一个人待着，看书、发呆、做自己的事","b":"约一桌朋友，热热闹闹","da":{"定力":1},"db":{"号召":1,"识人":1}},{"axis":3,"q":"团队里来了个比你还厉害的人。","a":"默默加练，迟早超过他","b":"想办法把他变成自己人","da":{"胆识":1,"定力":1},"db":{"识人":2,"号召":1}},{"axis":3,"q":"一起做成了一件大事，功劳怎么分？","a":"谁出力多谁拿，这才公平","b":"多分给大家，下次还一起干","da":{"谋略":1},"db":{"号召":2,"识人":1}},{"axis":4,"q":"所有人都说你这件事做不成。","a":"无所谓，我知道自己在做什么","b":"憋一口气，做出来给他们看","da":{"定力":2},"db":{"胆识":2}},{"axis":4,"q":"同一件事，连着失败了好几次。","a":"认了，调整节奏慢慢来","b":"越败越想赢，就不信这个邪","da":{"定力":2,"变通":1},"db":{"胆识":2}},{"axis":4,"q":"半夜了，事情还差一点没做完。","a":"到点就睡，明天的我会搞定","b":"不做完，根本睡不着","da":{"定力":2},"db":{"胆识":1}},{"axis":4,"q":"哪一句更像你？","a":"「也无风雨也无晴」","b":"「不疯魔，不成活」","da":{"定力":2,"变通":1},"db":{"胆识":2}}],"rel":[["刘邦","张良","君臣","运筹帷幄之中，决胜千里之外——刘邦亲口说，这件事他不如张良。"],["刘邦","韩信","君臣","刘邦问韩信能带多少兵，韩信说：多多益善。"],["刘邦","项羽","宿敌","楚汉相争四年，最后在垓下分出胜负。"],["项羽","韩信","旧主","韩信先投的是项羽，没被重用，才转身去了刘邦那边。"],["张良","韩信","同僚","汉初三杰里的两位，一个运筹，一个领兵。"],["曹操","郭嘉","知己","赤壁大败之后，曹操叹：郭奉孝在，不使孤至此。"],["诸葛亮","司马懿","宿敌","五丈原对峙，一个求战，一个死守不出。"],["曹操","司马懿","用而防之","曹操用他，也一直防着他。"],["曹操","诸葛亮","对手","赤壁一战，诸葛亮站在了曹操的对面。"],["李世民","武则天","君与才人","她十四岁入宫，当过他的才人。"],["苏轼","陶渊明","隔代知己","苏轼在惠州、儋州那几年，前后写了一百多首「和陶诗」。"],["苏轼","杜甫","隔代知己","苏轼说：古今诗人众矣，而杜子美为首。"],["玛丽·居里","爱因斯坦","朋友","1913 年夏天，居里带着女儿、爱因斯坦带着儿子，一起去阿尔卑斯徒步。"],["爱因斯坦","甘地","仰慕者","爱因斯坦说：后世的子孙也许很难相信，历史上竟有过这样一个人。"],["曼德拉","甘地","同一片土地","两人都在南非坐过牢——甘地的非暴力抗争，就是从南非开始的。"],["拿破仑","凯撒","隔代崇拜","拿破仑在圣赫勒拿岛上，口述了一部凯撒战争史。"],["朱元璋","刘邦","同路人","历史上仅有的两个布衣出身、打下大一统王朝的开国皇帝。"],["司马迁","项羽","史官与传主","司马迁把项羽写进了《史记》。"],["司马迁","刘邦","史官与传主","司马迁把刘邦写进了《史记》。"],["司马迁","张良","史官与传主","司马迁把张良写进了《史记》。"],["司马迁","韩信","史官与传主","司马迁把韩信写进了《史记》。"],["司马迁","范蠡","史官与传主","司马迁把范蠡写进了《史记》。"],["司马迁","蔺相如","史官与传主","司马迁把蔺相如写进了《史记》。"]],"reld":{"0":["同型异温","你们是同一种人，一个心定，一个心热——吵架的时候最像照镜子。"],"1":["最佳拍档","只差一个维度，彼此都看得懂对方，又能补上对方缺的那一块。"],"2":["互补搭子","一半像一半不像，一起做事的时候，刚好能把对方的盲区填上。"],"3":["欢喜冤家","大部分时候都想不到一块去，可每次吵完，都发现对方说得也有道理。"],"4":["宿命对手","四个维度全反——你们要么是最强的对手，要么是最好的搭档。"]}};</script>
+<script>
+(function(){
+var D=window.CE, A=D.axes, DIMS=D.dims, T=D.types, Q=D.qs;
+var $=function(id){return document.getElementById(id)};
+var ans=new Array(Q.length), cur=0;
+var qs=new URLSearchParams(location.search);
+var fromIdx=qs.has('f')?parseInt(qs.get('f'),10):-1; if(!(fromIdx>=0&&fromIdx<T.length))fromIdx=-1;
+function trk(n,p){try{if(window.gtag)gtag('event',n,p||{})}catch(e){}}
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+function fam(t){return D.fam[t.code[0]+t.code[2]]}
+function toast(m){var e=$('toast');e.textContent=m;e.classList.add('on');setTimeout(function(){e.classList.remove('on')},1800)}
+function show(id){['start','quiz','result','types'].forEach(function(s){$(s).style.display=(s===id)?'block':'none'});window.scrollTo(0,0)}
+
+/* ── 开始页 ── */
+(function(){
+  var f=$('faces'), pick=[9,23,30,11,4,26,13,15,16,2,22,8];
+  f.innerHTML=pick.map(function(i){return '<span>'+esc(T[i].who)+'</span>'}).join('')+'<span>……</span>';
+  if(fromIdx>=0){var t=T[fromIdx];
+    $('fromBox').style.display='block';
+    $('fromBox').innerHTML='你的朋友测出来是 <b>'+esc(t.who)+'</b>（'+esc(t.title)+'）。<br>测完看看，你们俩在历史上是什么关系。';
+    trk('ce_from_open',{from:t.who});}
+})();
+$('go').onclick=function(){cur=0;show('quiz');paintQ();trk('ce_start',{from:fromIdx>=0?T[fromIdx].who:''})};
+
+/* ── 答题 ── */
+function paintQ(){
+  var q=Q[cur];
+  $('bar').style.width=(cur/Q.length*100)+'%';
+  $('pn').textContent=(cur+1)+' / '+Q.length;
+  $('qq').textContent=q.q; $('oa').textContent=q.a; $('ob').textContent=q.b;
+  [].forEach.call($('dots').children,function(b){b.classList.toggle('on',ans[cur]!==undefined&&+b.dataset.v===ans[cur])});
+  $('prev').style.visibility=cur?'visible':'hidden';
+}
+[].forEach.call($('dots').children,function(b){b.onclick=function(){
+  ans[cur]=+b.dataset.v; paintQ();
+  setTimeout(function(){ if(cur<Q.length-1){cur++;paintQ()} else finish(); },180);
+}});
+$('prev').onclick=function(){if(cur>0){cur--;paintQ()}};
+
+/*SCORE-BEGIN*/
+/* 打分：全部按答题现算。这一段是纯函数（只读 D 和 ans），
+   scripts/check_ce.py 会把它原样抠出来放进 node 里，模拟两万个人答题，
+   看 32 型是不是都抽得到、分布匀不匀 —— 判据跑的就是页面上这份代码，不是另抄一份。 */
+function scoreOf(D,ans){
+  var A=D.axes,Q=D.qs,DIMS=D.dims,T=D.types;
+  var sum=A.map(function(){return 0}), first=A.map(function(){return 0}), tot=0;
+  var raw={},mx={}; DIMS.forEach(function(d){raw[d]=0;mx[d]=0});
+  Q.forEach(function(q,i){
+    var v=ans[i]||0; sum[q.axis]+=v; tot+=v; if(v&&!first[q.axis])first[q.axis]=v;
+    DIMS.forEach(function(d){
+      var a=q.da[d]||0,b=q.db[d]||0; mx[d]+=Math.max(a,b);
+      raw[d]+= v<0 ? a*(-v/2) : v>0 ? b*(v/2) : (a+b)*0.25;
+    });
+  });
+  var pct=sum.map(function(s){return Math.round(50-s/8*50)});      // 左极占比
+  /* 平局：看这一维里第一道没选中间的题。第一版是「最用力那一题，没有就取左极」——
+     真人爱选中间，平局多，左极于是白捡：模拟出来韩信 4.5%、杜甫 2.1%，差一倍。 */
+  var pole=pct.map(function(p,i){
+    if(p!==50)return p>50?A[i][0]:A[i][1];
+    var k=first[i]||tot; return k>0?A[i][1]:A[i][0];
+  });
+  /* 显示刻度 10–98：照样按答题现算，只是不让它出 0 和满分 ——
+     第一版极端答法测出「胆识 0」「识人 100」，0 像程序坏了，100 像假的。 */
+  var dims=DIMS.map(function(d){return mx[d]?Math.round(10+88*raw[d]/mx[d]):10});
+  var code=pole.slice(0,4).join('')+'-'+pole[4];
+  var idx=-1; for(var n=0;n<T.length;n++)if(T[n].code===code){idx=n;break}
+  return {pct:pct,pole:pole,dims:dims,code:code,idx:idx};
+}
+/*SCORE-END*/
+function score(){return scoreOf(D,ans)}
+function match(s,t){
+  var dot=0,na=0,nb=0; s.dims.forEach(function(x,i){dot+=x*t.dims[i];na+=x*x;nb+=t.dims[i]*t.dims[i]});
+  var cos=(na&&nb)?dot/Math.sqrt(na*nb):0;
+  var lean=0; t.code.replace('-','').split('').forEach(function(ch,i){lean+= (A[i][0]===ch?s.pct[i]:100-s.pct[i])});
+  lean/=5;
+  return Math.round(100*(0.5*cos+0.5*lean/100));
+}
+
+/* ── 雷达 ── */
+function radar(me,base,who){
+  var W=340,H=320,cx=170,cy=165,R=112,n=DIMS.length,col=getComputedStyle(document.documentElement).getPropertyValue('--fam')||'#a33b2e';
+  function pt(i,v){var a=-Math.PI/2+i*2*Math.PI/n;return [cx+Math.cos(a)*R*v/100, cy+Math.sin(a)*R*v/100]}
+  var g='';
+  [20,40,60,80,100].forEach(function(r){g+='<polygon points="'+DIMS.map(function(_,i){return pt(i,r).join(',')}).join(' ')+'" fill="none" stroke="var(--line)" stroke-width="1"/>'});
+  DIMS.forEach(function(_,i){var p=pt(i,100);g+='<line x1="'+cx+'" y1="'+cy+'" x2="'+p[0]+'" y2="'+p[1]+'" stroke="var(--line)"/>'});
+  if(base)g+='<polygon points="'+base.map(function(v,i){return pt(i,v).join(',')}).join(' ')+'" fill="none" stroke="#c9a27e" stroke-width="2" stroke-dasharray="6 5"/>';
+  if(me){g+='<polygon points="'+me.map(function(v,i){return pt(i,v).join(',')}).join(' ')+'" fill="'+col+'" fill-opacity=".16" stroke="'+col+'" stroke-width="2.5"/>';
+    me.forEach(function(v,i){var p=pt(i,v);g+='<circle cx="'+p[0]+'" cy="'+p[1]+'" r="4" fill="'+col+'"/>'});}
+  DIMS.forEach(function(d,i){var p=pt(i,128);g+='<text x="'+p[0]+'" y="'+(p[1]+5)+'" text-anchor="middle" font-size="14" fill="var(--ink)">'+d+'</text>'});
+  return '<svg class="radar" viewBox="0 0 '+W+' '+H+'">'+g+'</svg>'
+    +'<div class="legend">'+(me?'<span><i style="background:'+col+'"></i>你的特征</span>':'')+'<span><i style="background:#c9a27e"></i>'+esc(who)+'基准</span></div>';
+}
+
+/* ── 关系 ── */
+function relation(a,b){
+  if(a.who===b.who)return {l:'灵魂双胞胎',t:'你们测出了同一个人——不用解释，对方就懂。'};
+  for(var i=0;i<D.rel.length;i++){var r=D.rel[i];
+    if((r[0]===a.who&&r[1]===b.who)||(r[0]===b.who&&r[1]===a.who))return {l:r[2],t:r[3],real:1};}
+  var d=0; for(var k=0;k<4;k++)if(a.code[k]!==b.code[k])d++;
+  var x=D.reld[String(d)]; return {l:x[0],t:x[1]};
+}
+
+/* ── 结果页（me 为空 = 只看这一型的介绍）── */
+function isDark(){var a=document.documentElement.getAttribute('data-theme');if(a)return a==='dark';
+  return window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches}
+/* 家族色在深色底上要提亮：布局者的蓝灰在 #171410 上几乎看不见。混 45% 的米白进去。 */
+function famCol(f){if(!isDark())return f.color;var h=f.color.slice(1),n=parseInt(h,16),
+  r=n>>16,g=n>>8&255,b=n&255,mix=function(c){return Math.round(c+(234-c)*.45)};
+  return 'rgb('+mix(r)+','+mix(g)+','+mix(b)+')'}
+function renderType(t,me){
+  var f=fam(t); document.documentElement.style.setProperty('--fam',famCol(f));
+  var h='';
+  var m=me?match(me,t):null;
+  h+='<div class="hero"><div class="eyebrow">Your Historical Twin · 你的历史分身</div>';
+  if(me)h+='<div class="pill">◆ 你的历史分身契合度 <b>'+m+'%</b> ◆</div>';
+  else h+='<div class="pill">◆ 32 型之一 · '+esc(f.name)+' ◆</div>';
+  h+='<div class="name serif'+(t.who.length>3?' long':'')+'">'+esc(t.who)+'</div><div class="rule"><i></i><b></b><i></i></div>';
+  h+='<p class="title serif">'+esc(t.title)+'</p>';
+  h+='<div class="chips"><span class="chip solid">'+esc(t.code)+'</span><span class="chip">'+esc(f.name)+' · '+esc(f.tag)+'</span></div>';
+  h+='<div class="quote serif">'+esc(t.quote)+'</div><div class="qsrc">—— '+esc(t.quote_src)+'</div></div>';
+
+  if(me){
+    var order=DIMS.map(function(d,i){return [d,me.dims[i]]}).sort(function(x,y){return y[1]-x[1]});
+    h+='<div class="stats"><div class="stat"><b>'+order[0][1]+'</b><span>'+order[0][0]+'</span><em>最高维度</em></div>'
+      +'<div class="stat mid"><b>'+m+'%</b><span>分身契合度</span><em>'+esc(t.who)+'</em></div>'
+      +'<div class="stat"><b>'+order[5][1]+'</b><span>'+order[5][0]+'</span><em>待提升</em></div></div>';
+    h+='<div class="card sec"><div class="lab">五维倾向 · TRAITS</div>';
+    A.forEach(function(ax,i){var L=me.pct[i],mine=me.pole[i];
+      h+='<div class="axis"><div class="row"><span>'+(mine===ax[0]?'<b>'+ax[0]+' · '+ax[2]+' '+L+'%</b>':ax[0]+' · '+ax[2]+' '+L+'%')+'</span><span>'+(mine===ax[1]?'<b>'+(100-L)+'% '+ax[3]+' · '+ax[1]+'</b>':(100-L)+'% '+ax[3]+' · '+ax[1])+'</span></div>'
+        +'<div class="bar"><i style="'+(mine===ax[0]?'left:0;width:'+L+'%':'right:0;width:'+(100-L)+'%')+'"></i></div></div>';
+    });
+    h+='</div>';
+  }
+  h+='<div class="card sec"><div class="lab">六维特征图谱 · RADAR PROFILE</div>'+radar(me?me.dims:null,t.dims,t.who)+'</div>';
+  if(me){
+    h+='<div class="card sec"><div class="lab">维度得分 · DIMENSION SCORES</div>';
+    var rk={}; order.forEach(function(x,i){rk[x[0]]=i+1});
+    DIMS.forEach(function(d,i){var r=rk[d];
+      h+='<div class="dim'+(r<=2?' top':'')+'"><span class="rk">'+r+'</span><span class="dn">'+d+'</span><span class="db"><i style="width:'+me.dims[i]+'%"></i></span><span class="dv">'+me.dims[i]+'</span></div>';});
+    h+='</div>';
+  }
+  h+='<div class="card sec"><div class="lab">你是这样的人 · PORTRAIT</div><div class="desc serif">'+esc(t.desc)+'</div></div>';
+  h+='<div class="two sec"><div class="card"><h4>你的超能力</h4><p>'+esc(t.power)+'</p></div><div class="card"><h4>你最容易栽在</h4><p>'+esc(t.pit)+'</p></div></div>';
+  h+='<div class="card sec story"><div class="lab">他当年那件事 · THE STORY</div><a href="'+t.story.u+'" data-trk="ce_to_chapter"><div class="st serif">'+esc(t.story.t)+'</div><div class="go">读'+esc(t.who)+'当年是怎么做的 →</div></a></div>';
+  var kin=D.kin[t.code.split('-')[0]]||[];
+  if(kin.length)h+='<div class="card sec"><div class="lab">同型名人 · ALSO THIS TYPE</div><div class="kin">'+kin.map(function(k){return '<a href="'+k.u+'">'+esc(k.n)+'</a>'}).join('')+'<a href="/i/'+t.slug+'/">'+esc(t.who)+'的全部篇章 →</a></div></div>';
+
+  if(me&&fromIdx>=0){var fr=T[fromIdx],rel=relation(t,fr);
+    h+='<div class="rel sec"><div class="eyebrow" style="color:var(--acc)">你和朋友在历史上是</div><div class="pair serif">'+esc(t.who)+' × '+esc(fr.who)+'</div><span class="rl">'+esc(rel.l)+'</span><p>'+esc(rel.t)+'</p></div>';
+    trk('ce_pair',{me:t.who,friend:fr.who,rel:rel.l});
+  }
+  if(me){
+    h+='<div class="card sec ask"><div class="lab">问问'+esc(t.who)+' · ASK</div><p class="muted" style="margin:0 0 10px;font-size:14px">说说你最近遇到的一件事，看看'+esc(t.who)+'会怎么处理。</p><textarea id="askIn" placeholder="比如：老板天天改需求，我手上三件事都做不完"></textarea><button class="btn" id="askGo">问'+esc(t.who)+'</button></div>';
+    h+='<div class="sec"><button class="btn" id="shareCard">生成我的分享卡</button><button class="btn ghost" id="invite">叫朋友来测，看你们是什么关系</button><button class="btn ghost" id="again">重新测一次</button></div>';
+  }else{
+    h+='<div class="sec"><button class="btn" id="tryIt">测测你是不是'+esc(t.who)+'</button><a class="btn ghost" href="#types">看全部 32 型</a></div>';
+  }
+  $('result').innerHTML=h; show('result');
+  [].forEach.call(document.querySelectorAll('[data-trk]'),function(a){a.onclick=function(){trk(a.dataset.trk,{who:t.who})}});
+  if(me){
+    $('again').onclick=function(){ans=new Array(Q.length);cur=0;show('quiz');paintQ()};
+    $('askGo').onclick=function(){var v=($('askIn').value||'').trim()||'我最近遇到一件事，不知道怎么办';
+      trk('ce_ask',{who:t.who});
+      if(typeof window.hwAsk==='function')window.hwAsk(v+'（我测出来是'+t.who+'那一型，想听听'+t.who+'会怎么处理）',{pin:[t.story.u],scene:''});
+      else location.href=t.story.u;};
+    $('shareCard').onclick=function(){trk('ce_share_card',{who:t.who});card(t,me,m)};
+    $('invite').onclick=function(){
+      var url=location.origin+location.pathname+'?f='+T.indexOf(t);
+      var txt='我测出来是'+t.who+'（'+t.title+'）。你遇事像历史上的谁？测完看看我们俩是什么关系：';
+      trk('ce_invite',{who:t.who});
+      if(navigator.share){navigator.share({title:'测测你的历史分身',text:txt,url:url}).catch(function(){})}
+      else if(navigator.clipboard){navigator.clipboard.writeText(txt+' '+url).then(function(){toast('链接已复制，发给朋友吧')})}
+      else prompt('复制这个链接发给朋友：',url);
+    };
+  }else{ $('tryIt').onclick=function(){fromIdx=-1;ans=new Array(Q.length);cur=0;show('quiz');paintQ()}; }
+}
+function finish(){
+  var s=score(); if(s.idx<0){s.idx=0}
+  var t=T[s.idx];
+  try{history.replaceState(null,'',location.pathname+(fromIdx>=0?'?f='+fromIdx:''))}catch(e){}
+  trk('ce_done',{who:t.who,code:t.code});
+  renderType(t,s);
+}
+
+/* ── 分享卡：3:4，给小红书用。图上只放名字、原型、金句和三个数 ── */
+function card(t,me,m){
+  var c=document.createElement('canvas'),W=1080,H=1440; c.width=W;c.height=H;
+  var x=c.getContext('2d'), f=fam(t), dark=false;
+  var P='#f5f1e8',CARD='#faf7f0',INK='#1f1c17',MUT='#8a8377',LINE='#d8d2c6',SERIF='"Noto Serif SC","Songti SC","STSong",serif',SANS='-apple-system,"PingFang SC","Microsoft YaHei",sans-serif';
+  x.fillStyle=P;x.fillRect(0,0,W,H);
+  x.strokeStyle=LINE;x.lineWidth=3;x.strokeRect(36,36,W-72,H-72);
+  function txt(s,y,font,col,al,ls){x.font=font;x.fillStyle=col;x.textAlign=al||'center';
+    if(ls){var w=0,ch=s.split('');ch.forEach(function(k){w+=x.measureText(k).width+ls});var sx=W/2-w/2;x.textAlign='left';ch.forEach(function(k){x.fillText(k,sx,y);sx+=x.measureText(k).width+ls})}
+    else x.fillText(s,W/2,y)}
+  function wrap(s,y,font,col,maxw,lh){x.font=font;x.fillStyle=col;x.textAlign='center';var line='',lines=[];
+    s.split('').forEach(function(ch){if(x.measureText(line+ch).width>maxw){lines.push(line);line=ch}else line+=ch});lines.push(line);
+    lines.forEach(function(l,i){x.fillText(l,W/2,y+i*lh)});return y+lines.length*lh}
+  txt('YOUR HISTORICAL TWIN',138,'600 26px '+SANS,f.color,'center',10);
+  x.strokeStyle=f.color;x.lineWidth=3;var pw=560,ph=78,px=(W-pw)/2,py=180;x.beginPath();x.moveTo(px+ph/2,py);x.arcTo(px+pw,py,px+pw,py+ph,ph/2);x.arcTo(px+pw,py+ph,px,py+ph,ph/2);x.arcTo(px,py+ph,px,py,ph/2);x.arcTo(px,py,px+pw,py,ph/2);x.stroke();
+  txt('你的历史分身契合度  '+m+'%',py+51,'500 34px '+SANS,f.color);
+  txt(t.who,t.who.length>3?470:500,'700 '+(t.who.length>3?150:190)+'px '+SERIF,INK);
+  x.fillStyle=f.color;x.fillRect(W/2-170,548,120,5);x.fillRect(W/2+50,548,120,5);x.beginPath();x.arc(W/2,550,10,0,7);x.fill();
+  txt(t.title,640,'600 54px '+SERIF,INK);
+  txt(t.code+'  ·  '+f.name,712,'500 34px '+SANS,f.color);
+  var y=wrap('“'+t.quote+'”',812,'italic 44px '+SERIF,INK,820,68);
+  txt('—— '+t.quote_src,y+6,'28px '+SANS,MUT);
+  var order=DIMS.map(function(d,i){return [d,me.dims[i]]}).sort(function(a,b){return b[1]-a[1]});
+  var bx=[[100,'最高维度',order[0][0],String(order[0][1])],[400,'分身契合度',t.who,m+'%'],[700,'待提升',order[5][0],String(order[5][1])]];
+  bx.forEach(function(b,i){var bw=280,bh=210,by=1010,mid=i===1;x.fillStyle=mid?f.color:CARD;x.strokeStyle=mid?f.color:LINE;x.lineWidth=3;
+    x.beginPath();x.moveTo(b[0]+24,by);x.arcTo(b[0]+bw,by,b[0]+bw,by+bh,24);x.arcTo(b[0]+bw,by+bh,b[0],by+bh,24);x.arcTo(b[0],by+bh,b[0],by,24);x.arcTo(b[0],by,b[0]+bw,by,24);x.closePath();x.fill();x.stroke();
+    x.textAlign='center';x.fillStyle=mid?'#fff':INK;x.font='700 72px '+SERIF;x.fillText(b[3],b[0]+bw/2,by+100);
+    x.font='34px '+SANS;x.fillStyle=mid?'rgba(255,255,255,.9)':MUT;x.fillText(b[2],b[0]+bw/2,by+150);x.font='26px '+SANS;x.fillText(b[1],b[0]+bw/2,by+190)});
+  x.fillStyle='#a33b2e';x.fillRect(110,1290,74,74);x.fillStyle='#fff';x.font='700 48px '+SERIF;x.textAlign='center';x.fillText('人',147,1345);
+  x.textAlign='left';x.fillStyle=INK;x.font='600 36px '+SANS;x.fillText('测测你的历史分身',212,1322);
+  x.fillStyle=MUT;x.font='28px '+SANS;x.fillText('ourword.ai/ce · 32 种历史人格',212,1362);
+  var url=c.toDataURL('image/png'); $('shotImg').src=url; $('shotDl').href=url; $('shot').style.display='flex';
+}
+$('shotX').onclick=function(){$('shot').style.display='none'};
+
+/* ── 32 型全览 ── */
+function renderTypes(){
+  var order=[['进','谋'],['进','真'],['退','谋'],['退','真']], h='<h1 class="serif" style="font-size:30px;margin:26px 0 4px">32 种历史人格</h1><p class="muted" style="margin:0">四个家族，十六个基础型，每型分「定」和「燃」两种。</p>';
+  order.forEach(function(k){var f=D.fam[k[0]+k[1]];
+    h+='<div class="fam"><h3 class="serif" style="color:'+f.color+'">'+f.name+'</h3><p class="ft">'+k[0]+' · '+k[1]+' —— '+f.tag+'</p><div class="grid">';
+    T.forEach(function(t,i){if(t.code[0]===k[0]&&t.code[2]===k[1])
+      h+='<a class="tile" href="?r='+i+'" style="border-color:'+f.color+'33"><b>'+esc(t.who)+'</b><span>'+esc(t.title)+'</span><em style="color:'+f.color+'">'+esc(t.code)+'</em></a>'});
+    h+='</div></div>';});
+  h+='<div class="sec"><button class="btn" id="tGo">开始测试</button></div>';
+  $('types').innerHTML=h; show('types'); $('tGo').onclick=function(){cur=0;show('quiz');paintQ()};
+}
+
+/* ── 路由 ── */
+function route(){
+  if(location.hash==='#types'){renderTypes();return}
+  if(qs.has('r')){var r=parseInt(qs.get('r'),10);if(r>=0&&r<T.length){renderType(T[r],null);return}}
+  show('start');
+}
+window.addEventListener('hashchange',route); route();
+})();
+</script>
+<script src="/assets/hw-chat.js" defer></script>
+</body>
+</html>
