@@ -45,8 +45,8 @@ def payload():
 
 CSS = r"""
 :root{--paper:#f5f1e8;--paper2:#eee8da;--card:#faf7f0;--ink:#1f1c17;--muted:#8a8377;--line:#d8d2c6;--acc:#a33b2e;--fam:#a33b2e}
-@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--paper:#171410;--paper2:#201c15;--card:#1d1913;--ink:#eae3d4;--muted:#9a917f;--line:#3a342a;--acc:#c65f4f}}
-:root[data-theme=dark]{--paper:#171410;--paper2:#201c15;--card:#1d1913;--ink:#eae3d4;--muted:#9a917f;--line:#3a342a;--acc:#c65f4f}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--paper:#171410;--paper2:#201c15;--card:#1d1913;--ink:#eae3d4;--muted:#9a917f;--line:#3a342a;--acc:#c65f4f;color-scheme:dark}}
+:root[data-theme=dark]{--paper:#171410;--paper2:#201c15;--card:#1d1913;--ink:#eae3d4;--muted:#9a917f;--line:#3a342a;--acc:#c65f4f;color-scheme:dark}
 *{box-sizing:border-box}
 html,body{margin:0;background:var(--paper);color:var(--ink)}
 body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;line-height:1.7;-webkit-font-smoothing:antialiased}
