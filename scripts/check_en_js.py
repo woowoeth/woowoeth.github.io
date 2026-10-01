@@ -21,6 +21,7 @@ import os
 import re
 import subprocess
 import sys
+from gate_env import skip  # noqa: E402  跳过的统一出口：CI 上跳过即红
 import tempfile
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -57,7 +58,7 @@ def check(path):
 
 def main():
     if subprocess.run(["node", "--version"], capture_output=True).returncode:
-        print("没有 node，跳过（CI 上有）")
+        skip("没有 node，跳过（CI 上有）")
         return 0
     if not os.path.isdir(OUT):
         print("✗ 没有 en/ —— 先跑 python3 scripts/build_en.py")

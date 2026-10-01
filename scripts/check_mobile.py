@@ -38,6 +38,7 @@
 import os
 import subprocess
 import sys
+from gate_env import skip  # noqa: E402  跳过的统一出口：CI 上跳过即红
 import threading
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -82,7 +83,7 @@ def main():
     try:
         from playwright.sync_api import sync_playwright
     except ImportError:
-        print("（没装 playwright，跳过窄屏检查）")
+        skip("（没装 playwright，跳过窄屏检查）")
         return 0
 
     srv = serve()
