@@ -164,6 +164,12 @@ SCENES = [
      [("thiel", "competition-is-for-losers"), ("naval", "assets-while-you-sleep")]),
     ("对手自己乱起来了，我要不要插一手。",
      [("guo-jia", "waiting-out-liaodong"), ("sima-yi", "waiting")]),
+    ("同行都做得更好，我利润反而薄了。",
+     [("porter", "better-is-not-different")]),
+    ("我学着最好的那家做，为什么赢不了？",
+     [("porter", "better-is-not-different")]),
+    ("同行有的我也得有，对吗？",
+     [("porter", "what-not-to-do")]),
 ]),
 ("赢了之后", "有对手", [
     ("我到顶了吗，还是上面还有一格。",
@@ -862,6 +868,8 @@ SCENES = [
      [("kevin-kelly", "thousand-true-fans"), ("naval", "productize-yourself")]),
     ("我按工时收，越做越不值钱。",
      [("naval", "productize-yourself"), ("naval", "assets-while-you-sleep")]),
+    ("我想又便宜又高端，价怎么定？",
+     [("porter", "what-not-to-do")]),
 ]),
 ("遇上不讲理", "跟人打交道", [
     ("我跟他讲道理，完全没用。",

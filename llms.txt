@@ -1,11 +1,11 @@
 # OurWord (人类世界生存法则)
 
-> 180 people and books on how the world actually works, across 2,600 years
+> 181 people and books on how the world actually works, across 2,600 years
 > 遇到事了，看看以前的人怎么处理
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 180 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 181 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
-一个关于「世界到底怎么运转」的知识库：战略、财富、权力、人性、创业，取自 180 位人物与典籍，跨越 2600 年。每一条都写清楚这个人真正留下的那一个想法、背后的故事、拆开的分则与例子，以及今天怎么用。
+一个关于「世界到底怎么运转」的知识库：战略、财富、权力、人性、创业，取自 181 位人物与典籍，跨越 2600 年。每一条都写清楚这个人真正留下的那一个想法、背后的故事、拆开的分则与例子，以及今天怎么用。
 
 ## Read it
 
@@ -18,12 +18,12 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 
 ## Topics
 
-- [现代](https://ourword.ai/t/modern/) — 61
+- [现代](https://ourword.ai/t/modern/) — 62
 - [工业时代](https://ourword.ai/t/industrial-age/) — 55
 - [先秦与古典时代](https://ourword.ai/t/classical-era/) — 23
 - [权力与组织](https://ourword.ai/t/power/) — 23
 - [心智与情绪](https://ourword.ai/t/mind/) — 21
-- [创业与产品](https://ourword.ai/t/startups/) — 19
+- [创业与产品](https://ourword.ai/t/startups/) — 20
 - [财富与风险](https://ourword.ai/t/wealth/) — 19
 - [谋略与竞争](https://ourword.ai/t/strategy/) — 18
 - [学习与成长](https://ourword.ai/t/learning/) — 17
@@ -343,6 +343,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [埃丝特·佩雷尔 · 不是次数少，是没在场](https://ourword.ai/i/perel/quality-not-frequency/): 埃丝特·佩雷尔 · 不是次数少，是没在场——人在，注意力不在。都住在一起，为什么还是像异地。这一篇要回答的是：佩雷尔说要数的不是时间。
 - [卡尔·波普尔 · 能不能被推翻](https://ourword.ai/i/popper/falsifiability/): 卡尔·波普尔 · 能不能被推翻——解释一切等于没解释。占星术和物理学都能解释现象。这一篇要回答的是：凭什么说后者才是科学。
 - [卡尔·波普尔 · 去找反例，别再找支持](https://ourword.ai/i/popper/seek-refutation/): 卡尔·波普尔 · 去找反例，别再找支持——一个反例胜过一百个例证。再多的白天鹅也证明不了天鹅都是白的。这一篇要回答的是：那该收集什么。
+- [迈克尔·波特 · 都做得更好，不等于有了自己的路](https://ourword.ai/i/porter/better-is-not-different/): 迈克尔·波特 · 都做得更好，不等于有了自己的路——同行互相学最好的做法，最后长得一模一样，利润一起被磨掉。同行都在提速降本，我也在做，利润为什么还是薄？这一篇要回答的是：「做得更好」和「做得不一样」差在哪。
+- [迈克尔·波特 · 战略，是决定不做什么](https://ourword.ai/i/porter/what-not-to-do/): 迈克尔·波特 · 战略，是决定不做什么——每多答应一样，就少一块让人记住你的地方。同行有的我也得有吗？这一篇要回答的是：为什么什么都想要的，最后哪样都不突出。
 - [尼尔·波斯曼 · 不是加了一样东西](https://ourword.ai/i/postman/ecological-change/): 尼尔·波斯曼 · 不是加了一样东西——新技术换掉的是整个环境。都说这只是多了一件工具，用不用随你。这一篇要回答的是：他为什么说没有「只是」。
 - [尼尔·波斯曼 · 浮士德的交易](https://ourword.ai/i/postman/faustian-bargain/): 尼尔·波斯曼 · 浮士德的交易——给的和拿走的不落在同一批人身上。一样新工具摆在面前，问题不是「它好不好」。这一篇要回答的是：该问的两句话是什么。
 - [蒲松龄 · 考了四十年](https://ourword.ai/i/pu-songling/forty-years-of-failing/): 蒲松龄 · 考了四十年——一直没成，也没有转折点。有一种失败没有决定性的一仗。这一篇要回答的是：这种日子怎么过下去。
@@ -481,7 +483,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [AI Bubble Monitor / AI 泡沫检测仪](https://ourword.ai/ai/)
 - [Zouni / 走你](https://ourword.ai/zouni/)
 
-## Index (180 entrys)
+## Index (181 entrys)
 
 - [BJ·福格](https://ourword.ai/i/bj-fogg/): BJ·福格（2019年·斯坦福行为设计实验室）——小到不会失败。斯坦福行为设计实验室创始人，研究行为如何被设计出来。他给出一个公式：行为发生需要动机、能力、提示三者同时到位。多数人失败在只调动机——靠决心和自我激励——而动机天然起伏，靠它维持的习惯必然崩。他的主张相反：把行为缩到小得不需要动机，然后挂在一个已有的动作后面。
 - [C.S.刘易斯](https://ourword.ai/i/cs-lewis/): C.S.刘易斯（1898-1963年·英国牛津）——妻子死后几个月的日记。作家，牛津和剑桥的教授，写过《纳尼亚传奇》和大量劝人信仰的书。五十八岁结婚，妻子乔伊四年后因癌症去世。之后几个月他在四本练习簿上记自己的状态，后来用笔名出版，就是《卿卿如晤》。收他是因为「重要的人走了」那六个问题，原来靠弗兰克尔和苏轼在答——一个是集中营的幸存者，一个是被贬的官员
@@ -642,6 +644,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [资治通鉴](https://ourword.ai/i/zizhi-tongjian/): 资治通鉴（北宋·1065-1084）——鉴。司马光用19年主持编写，294卷，记录前403年到959年共1362年历史。书名由宋神宗题：「鉴于往事，有资于治道」。它是给统治者看的历史教科书，核心问题只有一个：政权为什么兴，政权为什么亡。186篇「臣光曰」是司马光的判断，精华在这里。与史记的「写人」不同，资治通鉴写的是「权力
 - [赫伯特·西蒙](https://ourword.ai/i/herbert-simon/): 赫伯特·西蒙（美国·1916-2001）——有限理性。美国学者，1916年生于密尔沃基，芝加哥大学政治学博士，1949年起在卡内基理工学院（后来的卡内基梅隆大学）教书，一待五十多年，2001年在匹兹堡去世。他没有固定在一门学科里：1947年的《管理行为》成了管理学的经典，1975年他和艾伦·纽厄尔一起得了图灵奖，1978年又得了诺贝
 - [达里奥](https://ourword.ai/i/dalio/): 达里奥（当代·1949-）——原则。桥水基金创始人，《原则》作者，全球规模最大的对冲基金。他在华尔街工作40年，经历了无数市场崩溃，总结出一套可复制的决策框架。他最重要的信念：所有事情都有原则，原则可以被总结，总结后可以被系统化，系统化后可以被复制。
+- [迈克尔·波特](https://ourword.ai/i/porter/): 迈克尔·波特（美国·1947-）——竞争战略。美国学者，1947年生，哈佛商学院教授，经济学博士出身，被普遍视为竞争战略这门学问的奠基人。1979年他在《哈佛商业评论》提出「五种力量」，1980年出版《竞争战略》，1996年又写了《What Is Strategy?》。他反复问的是同一件事：同一个行业里，有的公司利润总是高，
 - [道德经](https://ourword.ai/i/tao-te-ching/): 道德经（春秋·前500年前后）——损。老子五千言，是中国哲学的减法源头。与儒家「为学日益」相对，老子说「为道日损」——不断减掉，直到无为，然后无不为。道德经在西方被翻译次数仅次于圣经。
 - [郭嘉](https://ourword.ai/i/guo-jia/): 郭嘉（三国·170-207）——奇。曹操最倚重的谋士，被曹操称为「吾之奇佐」。他27岁投奔曹操，此后11年，几乎每一个关键决策背后都有他的身影。官渡之战前的「十胜十败论」、袁绍死后的「急攻不如缓图」、北征乌桓时的「虚国远征」……他的判断每次都精准到令人惊叹。唯一的遗憾：38岁病逝，没有活到赤壁之战。曹操在赤壁大败后
 - [郭子仪](https://ourword.ai/i/guo-ziyi/): 郭子仪（唐·697-781年）——功高不震主。唐代名将，平安史之乱、退吐蕃、抚回纥，两次收复长安，史称「再造王室」。但他真正的传奇不在战场：历玄宗、肃宗、代宗、德宗四朝，功盖天下而主不疑，位极人臣而众不嫉，富贵寿考八十五岁善终，子孙满堂。《旧唐书》的这句评语，两千年里几乎找不到第二个人配得上。韩信、岳飞、年羹尧都倒在「功高震

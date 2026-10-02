@@ -427,6 +427,11 @@ QUOTE_ASKS = {
         "这块我自己养人做，还是外包？",
     "coase/harm-goes-both-ways":
         "他碍着我了，我就该让他停？",
+    # 迈克尔·波特
+    "porter/better-is-not-different":
+        "同行都做得更好，我利润反而薄了。",
+    "porter/what-not-to-do":
+        "同行有的我也得有，对吗？",
     # 爱德华·德西
     "deci/paid-to-play":
         "没人夸我，我就提不起劲。",

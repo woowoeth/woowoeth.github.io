@@ -1,7 +1,7 @@
-# OurWord — 180 people and books on how the world actually works, across 2,600 years
+# OurWord — 181 people and books on how the world actually works, across 2,600 years
 # OurWord — See how people before you handled it.
 # https://ourword.ai/en/
-# Full corpus, plain text. 180 entrys.
+# Full corpus, plain text. 181 entrys.
 
 ========================================================================
 ## Albert Einstein
@@ -1170,10 +1170,10 @@ This week find one thing you know is wrong and are still doing, and stop it. You
 Do the right thing, and then do the thing right. However large the cost of stopping today, it is the smallest one. Dare to be last, then come first from behind. I know a great many things not to do.
 
 ### Q: What should I read alongside?
-Warren Buffett — Duan Yongping is Buffett's most serious Chinese student, but he moved the moat from investing to operating: Buffett buys the company that has one, Duan builds one by entering last and building better. Peter Thiel — Thiel says be first into a category nobody believes in; Duan says be last into one somebody else has already proved. Both are refusals to fight in a crowd, from opposite ends. Jensen Huang — Opposite entries into a new category. Huang goes in before it exists and pays for a decade; Duan waits until somebody else has proved it and then builds the better version.
+Warren Buffett — Duan Yongping is Buffett's most serious Chinese student, but he moved the moat from investing to operating: Buffett buys the company that has one, Duan builds one by entering last and building better. Peter Thiel — Thiel says be first into a category nobody believes in; Duan says be last into one somebody else has already proved. Both are refusals to fight in a crowd, from opposite ends. Jensen Huang — Opposite entries into a new category. Huang goes in before it exists and pays for a decade; Duan waits until somebody else has proved it and then builds the better version. Michael Porter — Both are about whether to learn from others. Duan says dare to be last: let others test the road, then do it well. Porter says that if everyone studies the same best practice they end up alike and the profit thins together. One is about turning what you learn into your own; the other is about why learning is not enough.
 
 ### Further
-Warren Buffett Kazuo Inamori Jensen Huang Chu Shijian Andy Grove Kevin Kelly Konosuke Matsushita Zhang Yiming Peter Lynch
+Warren Buffett Kazuo Inamori Jensen Huang Chu Shijian Andy Grove Kevin Kelly Konosuke Matsushita Zhang Yiming Peter Lynch Michael Porter
 
 ========================================================================
 ## Duke Wen of Jin
@@ -3584,6 +3584,43 @@ Han Feizi — Both are writing about how to govern. Han Feizi trusts reward and 
 The Analects Han Feizi Shang Yang Li Shimin Lee Kuan Yew Xunzi Family Instructions for the Yan Clan The Book of Rites
 
 ========================================================================
+## Michael Porter
+URL: https://ourword.ai/en/i/porter/
+Tags: Starting and building, Modern, Competitive strategy
+
+Michael Porter (United States · 1947–) — Competitive strategy. American scholar, born in 1947, trained as an economist and long a professor at Harvard Business School, widely regarded as the founder of the modern study of…
+
+### Q: What did this one leave behind?
+American scholar, born in 1947, trained as an economist and long a professor at Harvard Business School, widely regarded as the founder of the modern study of competitive strategy. In 1979 he put the five forces in the Harvard Business Review, in 1980 he published Competitive Strategy, and in 1996 he wrote "What Is Strategy?". He kept asking one question: in the same industry, some firms always earn well and others never do, so where is the difference? His answer was not effort or good management but choosing a different set of things to do.
+
+### Q: What actually happened?
+In 1979 Harvard Business School professor Michael Porter published an article in the Harvard Business Review titled "How Competitive Forces Shape Strategy". Whether an industry makes money, he said, does not depend on how fashionable it looks. It depends on five forces: rivalry among existing competitors, the threat of new entrants, the threat of substitutes, the bargaining power of buyers and the bargaining power of suppliers. He had moved the question from how well a company is run to whether the industry can pay anyone at all.
+
+### The parts · Look at the industry before the firm
+The same effort can earn very different returns in different industries. The five forces work as a check-up: how fierce the rivals are, how easy it is to enter, whether substitutes exist, and how much bargaining power buyers and suppliers hold. e.g. The same coffee shop at the foot of an office block and in a residential street faces two different sets of rivals, customers and landlords.
+
+### The parts · Better is not the same as different
+In 1996 he pointed out that quality programmes, benchmarking and outsourcing are learned and used by everyone. Firms converge on the same best practice, grow alike, and the profit thins out together. Efficiency is the price of entry, not the way to win. e.g. Five hotpot places on one street all offer a sauce bar and a birthday cake; diners pick whoever has a discount today.
+
+### The parts · A strategy is a set of activities that fit together
+His example was Southwest Airlines: short point-to-point routes, no meals, no assigned seats, one aircraft type. Each thing it left out lets another work, so a rival copying a single piece gets nothing like the same result. e.g. A barber who only visits homes, with no shop and no loyalty card, spends all the saved time on the road and on the haircut.
+
+### The parts · What you refuse is what draws your outline
+His line: the essence of strategy is choosing what not to do. Continental wanted Southwest's low fares and its own full service in one airline, and the same planes and staff were pulled two ways. Wanting everything leaves you standing out in nothing. e.g. A restaurant that wants a cheap quick lunch and a pricey banquet menu tears its kitchen in half.
+
+### Q: How do I use it today?
+Pick a place where you are competing hard with rivals. On a sheet, write on the left the things you do that rivals do not, or do not do in the same way. On the right, write what you added in the last six months only because rivals had it. If the left stays empty, you are competing on efficiency. If the right is full, rivals are leading you around. Then write a "what I won't do" list of at least three. His test is one question: do not ask how to do it better than the others, ask how to do it differently from them.
+
+### Lines to keep
+Operational effectiveness is not strategy. The essence of strategy is choosing what not to do. Competitive strategy is about being different. Each extra yes makes you harder to remember.
+
+### Q: What should I read alongside?
+Peter Thiel — Both are about not being ground down by competition. Thiel says build something ten times better and aim for a monopoly, because competition is for losers. Porter says that inside one industry you can choose a different set of activities and hold a different position. One tells you to leave the fight; the other tells you how to live differently inside it. Duan Yongping — Both are about whether to learn from others. Duan says dare to be last: let others test the road, then do it well. Porter says that if everyone studies the same best practice they end up alike and the profit thins together. One is about turning what you learn into your own; the other is about why learning is not enough.
+
+### Further
+Peter Thiel Peter Drucker Duan Yongping The Wealth of Nations
+
+========================================================================
 ## Mihaly Csikszentmihalyi
 URL: https://ourword.ai/en/i/csikszentmihalyi/
 Tags: Body and daily life, Modern, Flow
@@ -4173,7 +4210,7 @@ There is only one valid definition of business purpose: to create a customer. No
 Andy Grove — Grove solves execution, Drucker solves choice. One asks how a thing gets through the organisation, the other asks whether it is worth doing at all. Paul Graham — Graham writes about the first hundred users and doing things that do not scale; Drucker writes about what happens after scale, when the activity outlives the reason for it. Taiichi Ohno — Drucker decides which thing to do; Ohno decides how a step is kept from going wrong. One sets the direction at a desk, the other sets the standard on the floor. Ivan Illich — Both ask what comes after efficiency — do the right things, or put a ceiling on the tool.
 
 ### Further
-Andy Grove Jeff Bezos Taiichi Ohno Paul Graham Ivan Illich Albert O. Hirschman C. Northcote Parkinson Gary Becker
+Andy Grove Jeff Bezos Taiichi Ohno Paul Graham Ivan Illich Albert O. Hirschman C. Northcote Parkinson Gary Becker Michael Porter
 
 ========================================================================
 ## Peter Lynch
@@ -4244,10 +4281,10 @@ Run the question on yourself: what important thing do you believe that most peop
 Competition is for losers. The best businesses are the ones that do not compete. What important truth do very few people agree with you on?
 
 ### Q: What should I read alongside?
-Paul Graham — One starts from the structure of the market, the other from the hundred people in front of you. Duan Yongping — Thiel says be first into a category nobody believes in; Duan says be last into one somebody else has already proved. Both are refusals to fight in a crowd, from opposite ends. Jensen Huang — Thiel asks what important truth very few people agree with you on. Building CUDA in 2006, when the industry was certain a graphics chip was for drawing pictures, is a live specimen of the answer. The Innovator's Dilemma — Two sides of one event: the dilemma explains why a good company loses, Thiel tells you how to be the thing that makes it lose. Kevin Kelly — Thiel wants a monopoly on a large market, Kelly wants depth with a thousand people — both routes avoid competition, one by scale, one by relationship. Finite and Infinite Games — Thiel's monopoly is a finite game won completely, and Carse would point out that the moment you have won, that game is over.
+Paul Graham — One starts from the structure of the market, the other from the hundred people in front of you. Duan Yongping — Thiel says be first into a category nobody believes in; Duan says be last into one somebody else has already proved. Both are refusals to fight in a crowd, from opposite ends. Jensen Huang — Thiel asks what important truth very few people agree with you on. Building CUDA in 2006, when the industry was certain a graphics chip was for drawing pictures, is a live specimen of the answer. The Innovator's Dilemma — Two sides of one event: the dilemma explains why a good company loses, Thiel tells you how to be the thing that makes it lose. Kevin Kelly — Thiel wants a monopoly on a large market, Kelly wants depth with a thousand people — both routes avoid competition, one by scale, one by relationship. Finite and Infinite Games — Thiel's monopoly is a finite game won completely, and Carse would point out that the moment you have won, that game is over. Michael Porter — Both are about not being ground down by competition. Thiel says build something ten times better and aim for a monopoly, because competition is for losers. Porter says that inside one industry you can choose a different set of activities and hold a different position. One tells you to leave the fight; the other tells you how to live differently inside it.
 
 ### Further
-Steve Jobs Sun Tzu Warren Buffett Elon Musk Paul Graham Naval Ravikant Thomas Schelling Jensen Huang The Innovator's Dilemma Wang Xing Technological Revolutions The Sovereign Individual Albert Einstein
+Steve Jobs Sun Tzu Warren Buffett Elon Musk Paul Graham Naval Ravikant Thomas Schelling Jensen Huang The Innovator's Dilemma Wang Xing Technological Revolutions The Sovereign Individual Albert Einstein Michael Porter
 
 ========================================================================
 ## Pu Songling
@@ -5841,7 +5878,7 @@ It is not from the benevolence of the butcher, the brewer, or the baker. The inv
 Guan Zhong — Two origins for the idea of national wealth: Guan Zhong steers prices and money from the centre, Smith lets price discover itself. The argument has not moved in twenty-five centuries. Shang Yang — Both are designing a route to a strong state. Shang Yang binds people to the land and suppresses trade, Smith credits division and exchange. Both routes work, at wildly different prices. Friedrich Hayek — Smith explains how the division of labour makes brute effort rich; Hayek explains how the information gets back afterwards. Why Nations Fail — Smith says the market runs itself; this book says somebody has to build the institutions that hold the market up. The missing half, supplied two centuries later.
 
 ### Further
-Guan Zhong Shang Yang Thinking in Systems Li Ka-shing Naval Ravikant Guns, Germs, and Steel Friedrich Hayek Why Nations Fail Gary Becker Ronald Coase
+Guan Zhong Shang Yang Thinking in Systems Li Ka-shing Naval Ravikant Guns, Germs, and Steel Friedrich Hayek Why Nations Fail Gary Becker Ronald Coase Michael Porter
 
 ========================================================================
 ## Thinking in Systems
@@ -16669,6 +16706,80 @@ Where it goes wrong: making refutation a way of never deciding — the point is 
 No number of white swans establishes that all swans are white.
 One black swan is enough to settle it.
 It is easy to obtain confirmations for nearly every theory, if we look.
+
+========================================================================
+## Michael Porter · Everyone getting better is not a strategy
+URL: https://ourword.ai/en/i/porter/better-is-not-different/
+Source: "What Is Strategy?", Harvard Business Review, 1996
+Tags: Deep read, Michael Porter, Rivals copy the best practice until they all look the same, and the profit is competed away
+
+My rivals and I are all faster and cheaper, and my margin is still thin. This page is about the difference between doing things better and doing different things.
+
+### Q: What actually happened?
+In 1996 Harvard professor Michael Porter wrote an essay about an odd pattern. Management had never had so many good ideas: total quality, benchmarking, outsourcing, change programmes. Everyone learned them and everyone used them, yet in many industries profits kept thinning. His explanation: whatever you can learn, your rivals can learn too. Everyone moves toward the same best practice and starts to look alike, and the one thing a customer can still compare is price.
+
+### The parts · Better and different are two separate things
+He called the first operational effectiveness: doing similar things better than rivals do. Strategy is something else, doing different things, or the same things in a different way. He says both are essential to performance, but they work in very different ways.
+e.g. Two tea shops both cut service to three minutes. That is efficiency. One sells only freshly brewed tea and the other only delivers: that is choosing a road.
+
+### The parts · A good practice spreads fast and the lead does not last
+Once a practice is shown to work, rivals pick it up and consultants carry it round the industry. The lead it gave you is closed within a short time, and the savings end up with the customers.
+e.g. A shop installs a new queue system and customers praise it for six months. The shop next door buys the same one and has it running in a month.
+
+### The parts · Running in the same direction is a war of attrition
+He called it competitive convergence. When every firm races along the same best-practice line, the only thing left to compare is price. That kind of competition wears everyone down, and it only stops when someone changes what they compete on.
+e.g. Five hotpot restaurants on one street all offer a free sauce bar and a birthday cake. Diners choose by whoever has a discount today.
+
+### The parts · Efficiency is not optional, only insufficient
+He is not telling anyone to ignore efficiency. A firm that falls behind best practice will struggle to stay in the game at all. His point is that efficiency alone gets you to the line, and the line is where everyone else already stands.
+e.g. A shop with slow service and wrong orders should fix those first. After that, it still needs a reason that only it can give.
+
+### Q: How do I use it today?
+Where you are: You are in a crowded industry, doing the same thing faster and cheaper every year, and the price is still being pushed down.
+Ask first: Which things do I do that my rivals do not, or do not do in this way? Write them down. If you can name them, that is your road. If you cannot, you have been competing on efficiency and not on direction.
+Where it goes wrong: Reading it as "ignore efficiency". He says both are essential. Catch up first, then ask what the different part is.
+
+### Lines to keep
+Operational effectiveness is not strategy.
+Competitive strategy is about being different.
+On the best-practice line, everyone stands in the same place.
+
+========================================================================
+## Michael Porter · Strategy is deciding what not to do
+URL: https://ourword.ai/en/i/porter/what-not-to-do/
+Source: "What Is Strategy?", Harvard Business Review, 1996
+Tags: Deep read, Michael Porter, Every extra thing you say yes to blurs what people remember you for
+
+Do I need what my rivals have? This page is about why a company that wants everything ends up standing out in nothing.
+
+### Q: What actually happened?
+Southwest Airlines flew short routes point to point. No meals, no assigned seats, no baggage transfers to other airlines, and a fleet of nothing but Boeing 737s. Porter used it as his example of a firm in which every missing thing is what lets another thing work: no meals and no transfers let planes turn round quickly at the gate, and one aircraft type keeps maintenance and scheduling simple. Continental, by contrast, launched Continental Lite to chase low fares while keeping its full-service business running.
+
+### The parts · Each "no" is paid for by a "yes"
+Strategy, he says, is not one good position but a set of activities that reinforce each other. Southwest's choices prop each other up, so a rival who copies one of them does not get the same effect.
+e.g. A barber who only visits homes, with no shop and no loyalty card, spends all the saved time on the road and on the haircut.
+
+### The parts · Want both ends and you carry both costs
+Continental Lite tried to match Southwest's low fares, but Continental was still a full-service airline: same planes, same booking systems, same staff, pulled two ways at once. That is a trade-off: more of one thing means less of another.
+e.g. A restaurant wants a cheap quick lunch and a pricey banquet menu. The kitchen and waiters are torn in half.
+
+### The parts · "My rivals have it, so I need it" is the easy excuse
+Each addition looks reasonable: customers ask, rivals offer it. He says managers widen the product line, copy rivals' features and enter new markets this way, and together the additions rub away what made the firm different.
+e.g. A solid repair shop hears that rivals added car valeting and copies them. Its best mechanic now spends afternoons on the wash bay.
+
+### The parts · What you refuse is what draws your outline
+In his words, the essence of strategy is choosing what not to do. Choose a different set of activities on purpose, and customers can say "for this, go to them". Do a little of everything and they cannot say anything.
+e.g. "Fast repairs, nothing else" is easier to remember than a price list with twenty services.
+
+### Q: How do I use it today?
+Where you are: A rival has added a feature or a price tier and you wonder whether to follow, or your own price sits in the middle, neither cheap nor premium, and sells so-so.
+Ask first: Would this make the one thing I am best known for easier to do, or harder? What would it push out? Write a "what I won't do" list of at least three, then look at the new item again.
+Where it goes wrong: Reading it as "never add anything". A trade-off is worth making when a whole set of activities fits together around it. Without that set, what you give up is just opportunity.
+
+### Lines to keep
+The essence of strategy is choosing what not to do.
+Competitive strategy is about being different.
+Each extra yes makes you harder to remember.
 
 ========================================================================
 ## Neil Postman · It does not get added

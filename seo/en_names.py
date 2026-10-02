@@ -135,6 +135,7 @@ NAMES = {
     "herbert-simon": ("Herbert Simon", "Learning and growth"),
     "deci": ("Edward Deci", "Learning and growth"),
     "coase": ("Ronald Coase", "How the world works"),
+    "porter": ("Michael Porter", "Starting and building"),
     "feynman": ("Richard Feynman", "Learning and growth"),
     "fukuzawa": ("Fukuzawa Yukichi", "Learning and growth"),
     "hot-metal": ("The Last Hot-Metal Edition", "Learning and growth"),
