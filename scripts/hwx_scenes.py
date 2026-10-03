@@ -224,6 +224,8 @@ SCENES = [
      [("soros", "reflexivity"), ("influence", "reciprocity")]),
     ("他发财了，我心里不是滋味。",
      [("kindleberger", "a-friend-gets-rich"), ("crowd", "assert-repeat-contaminate")]),
+    ("人人都在抢，我该先拿什么？",
+     [("xiao-he", "take-the-records")]),
 ]),
 ("让钱生钱", "钱的事", [
     ("钱放着不动，我心里发慌。",
@@ -390,6 +392,8 @@ SCENES = [
      [("liji", "open-not-arrive")]),
     ("我怎么才能让他们自己想干？",
      [("deci", "conditions-not-carrots")]),
+    ("前线嫌后方没战功，我怎么论赏？",
+     [("xiao-he", "hunter-and-hounds")]),
 ]),
 ("招人换人", "带人", [
     ("招个比我强的，我压得住吗？",
@@ -483,6 +487,8 @@ SCENES = [
      [("innovators-dilemma", "small-markets"), ("huang", "zero-billion-markets")]),
     ("这块我自己养人做，还是外包？",
      [("coase", "price-has-a-cost")]),
+    ("机会一来，我该先抓哪一样？",
+     [("xiao-he", "take-the-records")]),
 ]),
 ("成本降不动", "把事做成", [
     ("我哪个环节总留着余量。",
@@ -894,6 +900,8 @@ SCENES = [
      [("merton", "matthew-effect"), ("art-of-worldly-wisdom", "do-and-be-seen")]),
     ("别人抢着报功，我不想去挤。",
      [("feng-yi", "big-tree")]),
+    ("我干的是后方的活，没人算我功劳。",
+     [("xiao-he", "hunter-and-hounds")]),
 ]),
 ("该不该妥协", "跟人打交道", [
     ("退这一步，是务实还是没底线？",

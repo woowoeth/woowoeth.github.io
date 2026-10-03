@@ -1,7 +1,7 @@
-# OurWord — 181 people and books on how the world actually works, across 2,600 years
+# OurWord — 182 people and books on how the world actually works, across 2,600 years
 # OurWord — See how people before you handled it.
 # https://ourword.ai/en/
-# Full corpus, plain text. 181 entrys.
+# Full corpus, plain text. 182 entrys.
 
 ========================================================================
 ## Albert Einstein
@@ -1540,10 +1540,10 @@ If you're somewhere everyone scrambles for credit, don't start shouting for your
 The generals sat down to argue merit. Feng Yi stood under a tree. Lost at sunrise, recovered at sunset. What is there to suspect? Why the fear? Let the state not forget the troubles north of the river.
 
 ### Q: What should I read alongside?
-Zhang Liang — Both stepped back from reward. Zhang Liang turned down thirty thousand households and asked for one small county, stepping back from the ruler's gift. Feng Yi kept his rewards and simply stayed out of the argument about merit, filing plain reports and letting the soldiers and the emperor keep the account. Wang Jian — Both commanded huge armies far from court and knew they would be suspected. Wang Jian sent back again and again asking for land and houses, playing a man who wanted only property. Feng Yi didn't act a part. He wrote that he felt uneasy and asked to come home, and when accused he answered formally: one made himself look small, the other put everything on the table.
+Zhang Liang — Both stepped back from reward. Zhang Liang turned down thirty thousand households and asked for one small county, stepping back from the ruler's gift. Feng Yi kept his rewards and simply stayed out of the argument about merit, filing plain reports and letting the soldiers and the emperor keep the account. Wang Jian — Both commanded huge armies far from court and knew they would be suspected. Wang Jian sent back again and again asking for land and houses, playing a man who wanted only property. Feng Yi didn't act a part. He wrote that he felt uneasy and asked to come home, and when accused he answered formally: one made himself look small, the other put everything on the table. Xiao He — Both stayed out of the scramble for credit. Feng Yi walked away from the table where merit was argued and let the soldiers and the emperor keep his account. Xiao He had no battle record, and his emperor named his merit aloud in front of every general. One was credited by silence, the other by being spoken for.
 
 ### Further
-Zhang Liang Wang Jian Guo Ziyi Han Xin Duke Wen of Jin
+Zhang Liang Wang Jian Guo Ziyi Han Xin Duke Wen of Jin Xiao He
 
 ========================================================================
 ## Finite and Infinite Games
@@ -2067,10 +2067,10 @@ Find the one place where you hold something other people depend on and cannot re
 Throw them onto dead ground and they will live. He whose valour overawes his lord stands in danger. The hares dead, the hounds are cooked; the birds gone, the bow stored. For me, the more the better.
 
 ### Q: What should I read alongside?
-Zhang Liang — The same court, the same victory, opposite endings: Zhang Liang stepped all the way out and died old, Han Xin kept the power and the loyalty both and lost everything. Huo Qubing — Two kinds of military genius. Han Xin wins by arrangement and misjudges his own position; Huo Qubing wins by pure speed and never lives long enough for the position to matter. Guo Ziyi — The same impossible position: Han Xin kept proving he was a threat and his clan was destroyed, Guo Ziyi kept proving he was harmless and died in bed. Su Yu — Two commanders who made a habit of winning outnumbered: Han Xin by putting his own men where retreat was impossible, Su Yu by choosing what the enemy had to come and save. Wang Jian — Identical achievements, opposite endings: Wang Jian made himself look greedy and died in bed, Han Xin held on to his standing and did not.
+Zhang Liang — The same court, the same victory, opposite endings: Zhang Liang stepped all the way out and died old, Han Xin kept the power and the loyalty both and lost everything. Huo Qubing — Two kinds of military genius. Han Xin wins by arrangement and misjudges his own position; Huo Qubing wins by pure speed and never lives long enough for the position to matter. Guo Ziyi — The same impossible position: Han Xin kept proving he was a threat and his clan was destroyed, Guo Ziyi kept proving he was harmless and died in bed. Su Yu — Two commanders who made a habit of winning outnumbered: Han Xin by putting his own men where retreat was impossible, Su Yu by choosing what the enemy had to come and save. Wang Jian — Identical achievements, opposite endings: Wang Jian made himself look greedy and died in bed, Han Xin held on to his standing and did not. Xiao He — Both were among the Han founders. Han Xin's merit lay on the battlefield, counted in battles won and cities taken. Xiao He's was in what made those battles possible, and cannot be counted. Liu Bang ranked the second above the first. And Han Xin was the man Xiao He had gone after.
 
 ### Further
-Liu Bang Sun Tzu Xiang Yu Zhang Liang Guo Ziyi Mao Zedong Huo Qubing Su Yu Wang Jian Records of the Grand Historian Feng Yi
+Liu Bang Sun Tzu Xiang Yu Zhang Liang Guo Ziyi Mao Zedong Huo Qubing Su Yu Wang Jian Records of the Grand Historian Feng Yi Xiao He
 
 ========================================================================
 ## Hannah Arendt
@@ -3251,7 +3251,7 @@ In the tent, settling a victory a thousand miles off, Zhang Liang beats me. Thes
 Xiang Yu — Both came out of the same collapse. Liu Bang gave things away and won the empire; Xiang Yu held on to everything and won the legend. Cao Cao — Two masters of using people, working from opposite ends: Liu Bang through generosity, Cao Cao through system. Zhu Yuanzhang — Two emperors from the bottom, opposite policies on the men who got them there: Liu Bang scattered wealth to hold them, Zhu Yuanzhang killed them to be safe.
 
 ### Further
-Han Xin Zhang Liang Cao Cao Li Shimin Wu Zetian Zhu Yuanzhang Mao Zedong Julius Caesar Xiang Yu Machiavelli Records of the Grand Historian
+Han Xin Zhang Liang Cao Cao Li Shimin Wu Zetian Zhu Yuanzhang Mao Zedong Julius Caesar Xiang Yu Machiavelli Records of the Grand Historian Xiao He
 
 ========================================================================
 ## Liu Yan
@@ -6393,6 +6393,40 @@ Liu Bang — The perfect loser against the imperfect winner: the ceiling of one 
 Liu Bang Han Xin Sun Tzu Fan Li On War Hu Xueyan Duke Wen of Jin
 
 ========================================================================
+## Xiao He
+URL: https://ourword.ai/en/i/xiao-he/
+Tags: Power and organisation, Qin, Han and the Six Dynasties, The back office
+
+Xiao He (Western Han · died 193 BC) — The back office. Chancellor to the first Han emperor, from Pei, who was a county clerk under the Qin and joined Liu Bang's rising from the start.
+
+### Q: What did this one leave behind?
+Chancellor to the first Han emperor, from Pei, who was a county clerk under the Qin and joined Liu Bang's rising from the start. His work was the managing: gathering records, recommending people, holding the rear, feeding the army. When Liu Bang became King of Han he was chancellor, and during the war he held the heartland and kept men and grain flowing to the front. In 202 BC, ranking the founders, Liu Bang put him first. He left one method: when others grab what is in front of them, take what will be needed next; when others count battles, ask whether the fighting could have happened without him.
+
+### Q: What actually happened?
+Han Xin, who had been given little responsibility in Hanzhong, slipped away one night. Xiao He heard of it and did not wait to report; he rode out after him. Someone told Liu Bang the chancellor had run. Liu Bang felt he had lost both hands. Two or three days later Xiao He came back, and Liu Bang swore at him: why did you run? I did not run, said Xiao He, I went after someone who did. Who? Han Xin. Dozens of generals have deserted, said Liu Bang, and you chased none. Generals are easy to find, said Xiao He. A man like Han Xin is one of a kind. If you only want to be king of Hanzhong, you do not need him. If you want the realm, nobody else will do.
+
+### The parts · He took the records, not the gold
+When the army entered the Qin capital, the generals ran for the treasury. Xiao He alone went first to the chancellor's office and sealed away the laws and maps. Later Liu Bang knew every pass and census figure because of that. Others took what was valuable now; he took what would be used. e.g. When a new project starts and everyone fights for titles and budget, the person who has tidied the history and the rules is steadiest three months on.
+
+### The parts · He asked first what made the fighting possible
+In 202 BC the generals said they had fought a hundred battles and Xiao He none. Liu Bang answered with the hunt: the hound runs down the hare, the hunter says where it is. He ranked those who made the battles possible above those who won them. e.g. When a project succeeds, thank the coders. Then also the one who won the brief, the budget and the rota.
+
+### The parts · He treated keeping the right person as his job
+When Han Xin left, Xiao He rode after him himself, and the reason he gave was no kindness but this: if you want the realm, nobody else will do. For him the rear meant grain, and also not losing the person the plan needs. e.g. When your strongest colleague is about to leave, your first thought should be to go after them, not to say the road is theirs to choose.
+
+### Q: How do I use it today?
+If you are the one doing the supporting work, so that others can charge ahead, do not just complain that nobody sees it. Write on a sheet: if my part were gone, which things would stop this month? Put each as a fact someone can check and hand it to whoever decides the rewards. If you are the one ranking, do not rank by the numbers. Ask who made each success possible. His three acts, taking the records, chasing Han Xin and holding the heartland, were one judgment: find the thing without which the whole job fails.
+
+### Lines to keep
+The hound runs down the hare; the hunter points out where. Generals are easy to find. A man like Han Xin is one of a kind. He held the rear, soothed the people and kept the army fed.
+
+### Q: What should I read alongside?
+Han Xin — Both were among the Han founders. Han Xin's merit lay on the battlefield, counted in battles won and cities taken. Xiao He's was in what made those battles possible, and cannot be counted. Liu Bang ranked the second above the first. And Han Xin was the man Xiao He had gone after. Feng Yi — Both stayed out of the scramble for credit. Feng Yi walked away from the table where merit was argued and let the soldiers and the emperor keep his account. Xiao He had no battle record, and his emperor named his merit aloud in front of every general. One was credited by silence, the other by being spoken for.
+
+### Further
+Liu Bang Zhang Liang Han Xin Feng Yi
+
+========================================================================
 ## Xunzi
 URL: https://ourword.ai/en/i/xunzi/
 Tags: Power and organisation, Pre-Qin and classical, Shaped, not born
@@ -6541,7 +6575,7 @@ Enfeoff me at Liu and it is enough. I wish to drop the affairs of men and follow
 Han Xin — Same founding, opposite endings: Zhang Liang withdrew completely and died old, Han Xin kept both his army and his ambitions and was killed. Fan Li — The two men who understood leaving. Fan Li left to trade, Zhang Liang left to study the way. Different exits, identical result. Guo Ziyi — Two ways to survive success: Zhang Liang left the table, Guo Ziyi stayed at it with his cards face up, which is much the harder trick. Li Bi — One reign or four: Zhang Liang withdrew for good once the founding was over, Li Bi came back and left four times and finished holding the top office. Lin Xiangru — Both step back when they could press their claim: Zhang Liang turned down thirty thousand households for one small county, yielding to his ruler to disarm suspicion, while Lin yielded to a colleague to keep standing the one line of defence the two of them held together. Feng Yi — Both stepped back from reward. Zhang Liang turned down thirty thousand households and asked for one small county, stepping back from the ruler's gift. Feng Yi kept his rewards and simply stayed out of the argument about merit, filing plain reports and letting the soldiers and the emperor keep the account.
 
 ### Further
-Fan Li Li Bi Han Xin Tao Te Ching Liu Bang Guo Ziyi Wang Jian Guiguzi Lin Xiangru Feng Yi
+Fan Li Li Bi Han Xin Tao Te Ching Liu Bang Guo Ziyi Wang Jian Guiguzi Lin Xiangru Feng Yi Xiao He
 
 ========================================================================
 ## Zhang Yiming
@@ -20045,6 +20079,72 @@ Where it goes wrong: dressing the wish to be recognised up as a strategic reason
 To be rich and not go home is to wear brocade at night.
 They said the men of Chu were monkeys in caps, and it was true.
 Channels do not close gradually. They close in a single act.
+
+========================================================================
+## Xiao He · Take the Records First
+URL: https://ourword.ai/en/i/xiao-he/take-the-records/
+Source: Records of the Grand Historian, Biography of the Chancellor Xiao
+Tags: Deep read, Xiao He, While everyone grabs the gold, take the ledgers
+
+Everyone around you is rushing for the most visible prize. What did Xiao He walk off with instead, and why did it matter later?
+
+### Q: What actually happened?
+When Liu Bang's army took the Qin capital, Xianyang, his generals ran for the treasuries to divide the gold and silk. Xiao He did not go. He walked alone into the offices of the chancellor and the censor, and gathered the laws, household registers, maps and documents of the fallen state, and sealed them away. In the war that followed, Liu Bang knew every pass and stronghold, how many people lived where, who was strong and who was weak, and what the common people suffered. That knowledge came from the papers Xiao He took that day.
+
+### The parts · What everyone grabs, you get one share of
+The treasury was packed. What you took, the person next to you also took, so the one who got there first and the one who got there last ended up much the same. The records had no queue. Whoever took them held what nobody else did.
+e.g. A new wave arrives and everyone fights for followers and slots. The person who quietly sorts out the data, the customer list and the rules knows where to go next.
+
+### The parts · Take what you will need next, not what is worth most now
+Liu Bang was the head of a rebel army about to face a rival and govern territory. For that, household counts, terrain and decrees matter and gold does not. Xiao He did not ask what here is worth most. He asked what we will need.
+e.g. Taking over a new team, ask first for the old accounts, the complaint log and the hand-over notes. Those decide whether your first three months go right.
+
+### The parts · Taking is not enough; someone has to read it
+The history says Liu Bang came to know the realm in detail. The papers counted only once he read and used them. Xiao He's gift was in collecting and sorting them and handing them to the one who decides. A ledger nobody opens is the same as one never taken.
+e.g. You wrote a thorough market study and nobody cites it in the meeting. Good material that never reaches the decision is just a folder.
+
+### Q: How do I use it today?
+Where you are: everyone around you is rushing for the brightest, most valuable thing, and you fear that if you are slow there will be nothing left.
+Ask first: what will I need for the next six months, and which of it does everyone else overlook?
+Where it goes wrong: treating whatever the crowd wants as vulgar. If your aim is a quick payday, the gold was right. The other way to get it wrong is to collect and never use: records nobody reads are only paper.
+
+### Lines to keep
+The generals all ran to divide the gold and silk.
+Only Xiao He went first to take the laws and records.
+Liu Bang knew the realm, and it was the papers that told him.
+
+========================================================================
+## Xiao He · The Hunter and the Hounds
+URL: https://ourword.ai/en/i/xiao-he/hunter-and-hounds/
+Source: Records of the Grand Historian, Biography of the Chancellor Xiao and Annals of Emperor Gaozu
+Tags: Deep read, Xiao He, Ask first whether the fight could have happened without him
+
+You do the unseen work behind the front line, and the front line says you never lifted a finger. How did Liu Bang rank a non-fighter first?
+
+### Q: What actually happened?
+After Liu Bang defeated his rival, ranking his followers took over a year of argument. He judged Xiao He's service the greatest and gave him the largest fief. The generals protested: we wore armour and carried blades, some of us fought a hundred battles, and Xiao He never sweated, he just wrote and talked; why is he above us? Liu Bang asked if they had ever hunted. The hound runs down the hare; the hunter points out where it is. You are the hounds. Xiao He is the hunter.
+
+### The parts · Count the thing that made the fighting possible
+The generals counted battles won and cities taken. Liu Bang asked who made those battles possible. Counting kills is easy; asking who was the hunter takes a second question. He ranked that second answer above the first.
+e.g. The product ships and the engineers are thanked. The person who negotiated the brief, won the budget and set the rota is on no one's thank-you slide.
+
+### The parts · The rear gets crowded out by the front
+When the rear fails, everyone sees it at once. When it holds, nobody sees anything, because holding is what good work looks like. Liu Bang later said himself that keeping the base secure and the army fed was something he could not match. Only the one who decides can say so.
+e.g. Support, finance, operations and admin barely appear in the monthly highlights. Their value shows up on the day something breaks.
+
+### The parts · Risk is also a contribution
+Liu Bang added a point: most generals had come alone, a few with two or three kinsmen. Xiao He brought dozens of his whole clan, all riding on the same outcome. Staking everything you have on the same venture is part of what you gave to it.
+e.g. An early employee who put in savings and a family's trust is not the same as one who put in hours.
+
+### Q: How do I use it today?
+Where you are: you do the supporting work, the part that lets others charge ahead, and the front line neither sees it nor counts it.
+Ask first: if my part were gone, which things would stop? Write those down as facts someone can check, and give them to whoever decides the rewards. If you are the one deciding, ask who made each success possible.
+Where it goes wrong: treating the rear as a reason to expect credit for free. And Liu Bang's word for the generals, hounds, met only silence: he could say it because he held the power, not because he had persuaded them. Don't copy that line if you do not hold his seat.
+
+### Lines to keep
+The hound chases the hare; the hunter shows where it is.
+You can only catch game, so you are the hounds.
+He brought dozens of his clan; that merit is not to be forgotten.
 
 ========================================================================
 ## Xunzi · Where the rules came from

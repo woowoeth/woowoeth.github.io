@@ -405,6 +405,11 @@ QUOTE_ASKS = {
         "害过我的人，回来找我了。",
     "jin-wengong/three-stages-back":
         "我主动往后撤，算不算认输？",
+    # 萧何
+    "xiao-he/take-the-records":
+        "人人都在抢，我该先拿什么？",
+    "xiao-he/hunter-and-hounds":
+        "我干的是后方的活，没人算我功劳。",
     # 冯异
     "feng-yi/big-tree":
         "别人抢着报功，我不想去挤。",

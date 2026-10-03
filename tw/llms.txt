@@ -1,11 +1,11 @@
 # OurWord (人類世界生存法則)
 
-> 181 people and books on how the world actually works, across 2,600 years
+> 182 people and books on how the world actually works, across 2,600 years
 > 遇到事了，看看以前的人怎麼處理
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 181 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 182 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
-一個關於「世界到底怎麼運轉」的知識庫：戰略、財富、權力、人性、創業，取自 181 位人物與典籍，跨越 2600 年。每一條都寫清楚這個人真正留下的那一個想法、背後的故事、拆開的分則與例子，以及今天怎麼用。
+一個關於「世界到底怎麼運轉」的知識庫：戰略、財富、權力、人性、創業，取自 182 位人物與典籍，跨越 2600 年。每一條都寫清楚這個人真正留下的那一個想法、背後的故事、拆開的分則與例子，以及今天怎麼用。
 
 ## Read it
 
@@ -20,8 +20,8 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 
 - [現代](https://ourword.ai/tw/t/modern/) — 62
 - [工業時代](https://ourword.ai/tw/t/industrial-age/) — 55
-- [先秦與古典時代](https://ourword.ai/tw/t/classical-era/) — 23
-- [權力與組織](https://ourword.ai/tw/t/power/) — 23
+- [先秦與古典時代](https://ourword.ai/tw/t/classical-era/) — 24
+- [權力與組織](https://ourword.ai/tw/t/power/) — 24
 - [心智與情緒](https://ourword.ai/tw/t/mind/) — 21
 - [創業與產品](https://ourword.ai/tw/t/startups/) — 20
 - [財富與風險](https://ourword.ai/tw/t/wealth/) — 19
@@ -444,6 +444,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [武則天 · 宰相安得失此人](https://ourword.ai/tw/i/wu-zetian/the-manifesto/): 武則天 · 宰相安得失此人——在罵你的檄文裡找人。一篇把你罵得體無完膚的文章送到面前。這一篇要回答的是：她讀到最狠的那句時說了什麼。
 - [項羽 · 破釜沉舟](https://ourword.ai/tw/i/xiang-yu/sinking-the-boats/): 項羽 · 破釜沉舟——一次性押上全部。鉅鹿之戰是他一生的頂點。這一篇要回答的是：讓他贏得那麼徹底的東西，為什麼後來一直沒變過。
 - [項羽 · 衣繡夜行](https://ourword.ai/tw/i/xiang-yu/brocade-at-night/): 項羽 · 衣繡夜行——為了被看見而做決定。有人勸他定都關中，他要回彭城。這一篇要回答的是：他給的理由暴露了什麼。
+- [蕭何 · 先收圖籍](https://ourword.ai/tw/i/xiao-he/take-the-records/): 蕭何 · 先收圖籍——人人搶金帛的時候，先把賬本拿走。機會來了，所有人都在搶眼前最值錢的東西。這一篇要回答的是：蕭何為什麼去拿了一堆沒人要的文書，後來它們換來了什麼。
+- [蕭何 · 功人功狗](https://ourword.ai/tw/i/xiao-he/hunter-and-hounds/): 蕭何 · 功人功狗——論功要先問：沒有他，這仗打得成嗎。你幹的是後方的活，前線嫌你沒出過力。這一篇要回答的是：劉邦怎麼把一個沒打過仗的人排在所有將軍前面。
 - [荀子 · 禮起於何也](https://ourword.ai/tw/i/xunzi/origin-of-rites/): 荀子 · 禮起於何也——制度是稀缺逼出來的。規矩是從哪來的？這一篇要回答的是：荀子給的答案裡沒有道德，只有一道資源分配題。
 - [荀子 · 善假於物](https://ourword.ai/tw/i/xunzi/borrow-from-things/): 荀子 · 善假於物——別練身體，去找槓桿。同樣的人，為什麼有的能走很遠？這一篇要回答的是：荀子說答案不在那個人身上。
 - [荀子 · 明分使群](https://ourword.ai/tw/i/xunzi/division-makes-groups/): 荀子 · 明分使群——人靠分工才結得成群。人比牛慢、比虎弱，為什麼反過來能用它們？這一篇要回答的是：荀子給的那個單字答案。
@@ -483,7 +485,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [AI Bubble Monitor / AI 泡沫檢測儀](https://ourword.ai/ai/)
 - [Zouni / 走你](https://ourword.ai/zouni/)
 
-## Index (181 entrys)
+## Index (182 entrys)
 
 - [BJ·福格](https://ourword.ai/tw/i/bj-fogg/): BJ·福格（2019年·斯坦福行為設計實驗室）——小到不會失敗。斯坦福行為設計實驗室創始人，研究行為如何被設計出來。他給出一個公式：行為發生需要動機、能力、提示三者同時到位。多數人失敗在只調動機——靠決心和自我激勵——而動機天然起伏，靠它維持的習慣必然崩。他的主張相反：把行為縮到小得不需要動機，然後掛在一個已有的動作後面。
 - [C.S.劉易斯](https://ourword.ai/tw/i/cs-lewis/): C.S.劉易斯（1898-1963年·英國牛津）——妻子死後幾個月的日記。作家，牛津和劍橋的教授，寫過《納尼亞傳奇》和大量勸人信仰的書。五十八歲結婚，妻子喬伊四年後因癌症去世。之後幾個月他在四本練習簿上記自己的狀態，後來用筆名出版，就是《卿卿如晤》。收他是因為「重要的人走了」那六個問題，原來靠弗蘭克爾和蘇軾在答——一個是集中營的倖存者，一個是被貶的官員
@@ -626,6 +628,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [荀子](https://ourword.ai/tw/i/xunzi/): 荀子（戰國·前313—前238）——化性起偽。孟子講人天然可好，荀子講人天然可塑。「偽」不是假，是人工：禮儀、法度、師傅、反覆訓練，把生出來亂的材料裝進可用的形狀。韓非出他門下，秦制從他這裡接過力。他是中國思想裡最早把組織設計當成第一問題的人。
 - [榮格](https://ourword.ai/tw/i/jung/): 榮格（1875-1961·蘇黎世）——人生下午的綱領不一樣。分析心理學的創立者，弗洛伊德最看重的學生，也是最著名的那個決裂者。他留下的東西裡有不少難以驗證的部分——集體無意識、原型、共時性——但另外三個概念被反覆用了近一百年，因為它們直接對著一個人怎麼過日子：把一生分成上午和下午，兩段的任務不同；把自己壓下去、又從別人身上跳出來的那部分叫
 - [菜根譚](https://ourword.ai/tw/i/caigentan/): 菜根譚（明代·約1590年代）——三百多條講人前人後怎麼過。明代洪應明著，約成書於萬曆年間，三百餘條語錄。「徑路窄處，留一步與人行」把讓一步說成讓自己好過的辦法，不是美德；「藏巧於拙，用晦而明」講的是一個人在人群裡的藏身之處，理由是藏身不是謙虛；「毋以己之長而形人之短，毋因己之拙而忌人之能」把急著顯強和見不得別人好說成同一件事的兩頭。書名
+- [蕭何](https://ourword.ai/tw/i/xiao-he/): 蕭何（西漢·卒於前193年）——後方。西漢開國丞相，沛縣人，秦時在沛縣當主吏掾，劉邦起兵時他就跟著，一直做的是管事的人：收文書、薦人、守後方、供軍糧。漢元年劉邦封漢王，他做丞相；楚漢相爭時他留守關中，立宗廟、定法令，把人和糧源源不斷送到前線。漢五年天下平定，論功行封，他位次第一，封酇侯。漢律的底子也是他參照秦法定下的
 - [薩提亞](https://ourword.ai/tw/i/satir/): 薩提亞（1964年·家庭治療先驅）——看冰山下面。家庭治療的開創者之一。她的轉折性主張是：一個人出問題，往往是整個家庭系統在維持某種平衡，把症狀放在了最脆弱的那個成員身上。所以治療對象不該只是那個人。她還給出一套辨識方法：人在壓力下會退回四種固定的應對姿態——討好、指責、超理智、打岔——而第五種「一致性」才是健康的表達。
 - [薩波爾斯基](https://ourword.ai/tw/i/sapolsky/): 薩波爾斯基（1994年·斯坦福大學）——壓力是錯配。神經內分泌學家，在東非觀察野生狒狒群三十年，同時研究人類的壓力生理。他那本書的標題就是全部論點：斑馬不得胃潰瘍，因為它的壓力反應只在獅子撲來的幾分鐘裡全開，跑掉之後立刻關閉。人的這套系統一模一樣，卻被用來應付房貸、上司和一封沒回的郵件——為幾十秒逃命設計的機制，被開成了幾十年的常
 - [蒙臺梭利](https://ourword.ai/tw/i/montessori/): 蒙臺梭利（1907年·羅馬兒童之家）——環境替代管教。意大利第一批女醫生之一，從研究智力障礙兒童起步，後來把方法用在正常兒童身上，創辦了羅馬「兒童之家」。她的核心發現是：兒童不需要被塑造，需要一個被準備好的環境——把工具做成兒童尺寸、把選擇權交給兒童、把成人從指揮者退成觀察者，此前被認為無法專注的孩子會自發進入長時間的專注狀態。

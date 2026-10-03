@@ -39,6 +39,7 @@ NAMES = {
     "li-bi": ("Li Bi", "Power and organisation"),
     "li-shimin": ("Li Shimin", "Power and organisation"),
     "liu-bang": ("Liu Bang", "Power and organisation"),
+    "xiao-he": ("Xiao He", "Power and organisation"),
     "mencius": ("Mencius", "Power and organisation"),
     "parkinson": ("C. Northcote Parkinson", "Power and organisation"),
     "shang-yang": ("Shang Yang", "Power and organisation"),

@@ -1,11 +1,11 @@
 # OurWord (人类世界生存法则)
 
-> 181 people and books on how the world actually works, across 2,600 years
+> 182 people and books on how the world actually works, across 2,600 years
 > 遇到事了，看看以前的人怎么处理
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 181 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 182 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
-一个关于「世界到底怎么运转」的知识库：战略、财富、权力、人性、创业，取自 181 位人物与典籍，跨越 2600 年。每一条都写清楚这个人真正留下的那一个想法、背后的故事、拆开的分则与例子，以及今天怎么用。
+一个关于「世界到底怎么运转」的知识库：战略、财富、权力、人性、创业，取自 182 位人物与典籍，跨越 2600 年。每一条都写清楚这个人真正留下的那一个想法、背后的故事、拆开的分则与例子，以及今天怎么用。
 
 ## Read it
 
@@ -20,8 +20,8 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 
 - [现代](https://ourword.ai/t/modern/) — 62
 - [工业时代](https://ourword.ai/t/industrial-age/) — 55
-- [先秦与古典时代](https://ourword.ai/t/classical-era/) — 23
-- [权力与组织](https://ourword.ai/t/power/) — 23
+- [先秦与古典时代](https://ourword.ai/t/classical-era/) — 24
+- [权力与组织](https://ourword.ai/t/power/) — 24
 - [心智与情绪](https://ourword.ai/t/mind/) — 21
 - [创业与产品](https://ourword.ai/t/startups/) — 20
 - [财富与风险](https://ourword.ai/t/wealth/) — 19
@@ -444,6 +444,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [武则天 · 宰相安得失此人](https://ourword.ai/i/wu-zetian/the-manifesto/): 武则天 · 宰相安得失此人——在骂你的檄文里找人。一篇把你骂得体无完肤的文章送到面前。这一篇要回答的是：她读到最狠的那句时说了什么。
 - [项羽 · 破釜沉舟](https://ourword.ai/i/xiang-yu/sinking-the-boats/): 项羽 · 破釜沉舟——一次性押上全部。巨鹿之战是他一生的顶点。这一篇要回答的是：让他赢得那么彻底的东西，为什么后来一直没变过。
 - [项羽 · 衣绣夜行](https://ourword.ai/i/xiang-yu/brocade-at-night/): 项羽 · 衣绣夜行——为了被看见而做决定。有人劝他定都关中，他要回彭城。这一篇要回答的是：他给的理由暴露了什么。
+- [萧何 · 先收图籍](https://ourword.ai/i/xiao-he/take-the-records/): 萧何 · 先收图籍——人人抢金帛的时候，先把账本拿走。机会来了，所有人都在抢眼前最值钱的东西。这一篇要回答的是：萧何为什么去拿了一堆没人要的文书，后来它们换来了什么。
+- [萧何 · 功人功狗](https://ourword.ai/i/xiao-he/hunter-and-hounds/): 萧何 · 功人功狗——论功要先问：没有他，这仗打得成吗。你干的是后方的活，前线嫌你没出过力。这一篇要回答的是：刘邦怎么把一个没打过仗的人排在所有将军前面。
 - [荀子 · 礼起于何也](https://ourword.ai/i/xunzi/origin-of-rites/): 荀子 · 礼起于何也——制度是稀缺逼出来的。规矩是从哪来的？这一篇要回答的是：荀子给的答案里没有道德，只有一道资源分配题。
 - [荀子 · 善假于物](https://ourword.ai/i/xunzi/borrow-from-things/): 荀子 · 善假于物——别练身体，去找杠杆。同样的人，为什么有的能走很远？这一篇要回答的是：荀子说答案不在那个人身上。
 - [荀子 · 明分使群](https://ourword.ai/i/xunzi/division-makes-groups/): 荀子 · 明分使群——人靠分工才结得成群。人比牛慢、比虎弱，为什么反过来能用它们？这一篇要回答的是：荀子给的那个单字答案。
@@ -483,7 +485,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [AI Bubble Monitor / AI 泡沫检测仪](https://ourword.ai/ai/)
 - [Zouni / 走你](https://ourword.ai/zouni/)
 
-## Index (181 entrys)
+## Index (182 entrys)
 
 - [BJ·福格](https://ourword.ai/i/bj-fogg/): BJ·福格（2019年·斯坦福行为设计实验室）——小到不会失败。斯坦福行为设计实验室创始人，研究行为如何被设计出来。他给出一个公式：行为发生需要动机、能力、提示三者同时到位。多数人失败在只调动机——靠决心和自我激励——而动机天然起伏，靠它维持的习惯必然崩。他的主张相反：把行为缩到小得不需要动机，然后挂在一个已有的动作后面。
 - [C.S.刘易斯](https://ourword.ai/i/cs-lewis/): C.S.刘易斯（1898-1963年·英国牛津）——妻子死后几个月的日记。作家，牛津和剑桥的教授，写过《纳尼亚传奇》和大量劝人信仰的书。五十八岁结婚，妻子乔伊四年后因癌症去世。之后几个月他在四本练习簿上记自己的状态，后来用笔名出版，就是《卿卿如晤》。收他是因为「重要的人走了」那六个问题，原来靠弗兰克尔和苏轼在答——一个是集中营的幸存者，一个是被贬的官员
@@ -626,6 +628,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [荀子](https://ourword.ai/i/xunzi/): 荀子（战国·前313—前238）——化性起伪。孟子讲人天然可好，荀子讲人天然可塑。「伪」不是假，是人工：礼仪、法度、师傅、反复训练，把生出来乱的材料装进可用的形状。韩非出他门下，秦制从他这里接过力。他是中国思想里最早把组织设计当成第一问题的人。
 - [荣格](https://ourword.ai/i/jung/): 荣格（1875-1961·苏黎世）——人生下午的纲领不一样。分析心理学的创立者，弗洛伊德最看重的学生，也是最著名的那个决裂者。他留下的东西里有不少难以验证的部分——集体无意识、原型、共时性——但另外三个概念被反复用了近一百年，因为它们直接对着一个人怎么过日子：把一生分成上午和下午，两段的任务不同；把自己压下去、又从别人身上跳出来的那部分叫
 - [菜根谭](https://ourword.ai/i/caigentan/): 菜根谭（明代·约1590年代）——三百多条讲人前人后怎么过。明代洪应明著，约成书于万历年间，三百余条语录。「径路窄处，留一步与人行」把让一步说成让自己好过的办法，不是美德；「藏巧于拙，用晦而明」讲的是一个人在人群里的藏身之处，理由是藏身不是谦虚；「毋以己之长而形人之短，毋因己之拙而忌人之能」把急着显强和见不得别人好说成同一件事的两头。书名
+- [萧何](https://ourword.ai/i/xiao-he/): 萧何（西汉·卒于前193年）——后方。西汉开国丞相，沛县人，秦时在沛县当主吏掾，刘邦起兵时他就跟着，一直做的是管事的人：收文书、荐人、守后方、供军粮。汉元年刘邦封汉王，他做丞相；楚汉相争时他留守关中，立宗庙、定法令，把人和粮源源不断送到前线。汉五年天下平定，论功行封，他位次第一，封酇侯。汉律的底子也是他参照秦法定下的
 - [萨提亚](https://ourword.ai/i/satir/): 萨提亚（1964年·家庭治疗先驱）——看冰山下面。家庭治疗的开创者之一。她的转折性主张是：一个人出问题，往往是整个家庭系统在维持某种平衡，把症状放在了最脆弱的那个成员身上。所以治疗对象不该只是那个人。她还给出一套辨识方法：人在压力下会退回四种固定的应对姿态——讨好、指责、超理智、打岔——而第五种「一致性」才是健康的表达。
 - [萨波尔斯基](https://ourword.ai/i/sapolsky/): 萨波尔斯基（1994年·斯坦福大学）——压力是错配。神经内分泌学家，在东非观察野生狒狒群三十年，同时研究人类的压力生理。他那本书的标题就是全部论点：斑马不得胃溃疡，因为它的压力反应只在狮子扑来的几分钟里全开，跑掉之后立刻关闭。人的这套系统一模一样，却被用来应付房贷、上司和一封没回的邮件——为几十秒逃命设计的机制，被开成了几十年的常
 - [蒙台梭利](https://ourword.ai/i/montessori/): 蒙台梭利（1907年·罗马儿童之家）——环境替代管教。意大利第一批女医生之一，从研究智力障碍儿童起步，后来把方法用在正常儿童身上，创办了罗马「儿童之家」。她的核心发现是：儿童不需要被塑造，需要一个被准备好的环境——把工具做成儿童尺寸、把选择权交给儿童、把成人从指挥者退成观察者，此前被认为无法专注的孩子会自发进入长时间的专注状态。
