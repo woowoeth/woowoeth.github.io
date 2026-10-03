@@ -24,6 +24,7 @@ import json
 import os
 import re
 import sys
+from gate_env import skip  # noqa: E402  跳过的统一出口：CI 上跳过即红
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 os.chdir(ROOT)
@@ -223,7 +224,7 @@ def check_feed_dupes():
     try:
         from playwright.sync_api import sync_playwright
     except ImportError:
-        print("（跳过信息流查重：无 playwright）")
+        skip("（跳过信息流查重：无 playwright）")
         return
     import subprocess, time
     srv = subprocess.Popen(["python3", "-m", "http.server", "8971"], cwd=ROOT,
@@ -378,6 +379,20 @@ if os.path.isfile(_wf_p):
     if _hand:
         bad("CI 手抄了构建步骤", "seo.yml 里单独调了 %s —— 构建链只能有一份，"
             "加步骤去改 scripts/build_all.py" % "、".join(_hand))
+    # 15) CI 上闸不许靠「跳过」变绿，CI 也不许自己往 main 推。
+    #     CI 从来没装过 playwright，四项渲染检查在那里一直「跳过」显示绿；联网探测被
+    #     Cloudflare 403 也自称断网跳过（FAILURES #49）。跳过统一走 scripts/gate_env.py，
+    #     HW_GATE_STRICT=1 让它在 CI 上直接红 —— 这一行被删，CI 就又能悄悄跳过了。
+    #     原来最后一步「有改动就提交并推上 main」：CI 成了第二个写入者，推的还是 CI 环境
+    #     构建出来的东西（这一版会把 606 张英文分享图删掉）。现在 CI 只验产物和提交一致。
+    _cmd = "\n".join(l for l in _wf.split("\n") if not l.lstrip().startswith("#"))
+    if not re.search(r'^\s*HW_GATE_STRICT:\s*"1"\s*$', _wf, re.M):
+        bad("CI 上闸可以跳过", "seo.yml 跑闸那一步没有设 HW_GATE_STRICT: \"1\" —— "
+            "缺了 playwright / 连不上网时闸会「跳过」显示绿")
+    _push = re.findall(r"^\s*(git\s+(?:push|commit)\b[^\n]*)", _cmd, re.M)
+    if _push:
+        bad("CI 成了第二个写入者", "seo.yml 里有 %s —— CI 只验，不提交；"
+            "产物和提交不一致就让它红" % _push[0].strip())
 
 # 8) 二维码必须仍可解码
 try:
@@ -389,7 +404,7 @@ try:
     elif "weixin.qq.com" not in got[0]:
         bad("二维码指向异常", got[0])
 except ImportError:
-    print("（跳过二维码检查：缺 pyzbar/PIL）")
+    skip("（跳过二维码检查：缺 pyzbar/PIL）")
 except Exception as exc:
     bad("二维码读取失败", exc)
 
