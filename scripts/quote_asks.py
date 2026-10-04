@@ -427,6 +427,13 @@ QUOTE_ASKS = {
         "家里机器都买齐了，活还是全在我身上。",
     "cowan/effort-saved-time-not":
         "工具快了几倍，我的活一点没少。",
+    # 凯恩斯
+    "keynes/we-simply-do-not-know":
+        "没人说得准的事，我凭什么下注？",
+    "keynes/fail-conventionally":
+        "我不是看好它，是怕只有我没跟。",
+    "keynes/know-what-you-hold":
+        "每样都买一点，我其实哪样都不懂。",
     # 罗纳德·科斯
     "coase/price-has-a-cost":
         "这块我自己养人做，还是外包？",

@@ -1,11 +1,11 @@
 # OurWord (人類世界生存法則)
 
-> 182 people and books on how the world actually works, across 2,600 years
+> 183 people and books on how the world actually works, across 2,600 years
 > 遇到事了，看看以前的人怎麼處理
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 182 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 183 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
-一個關於「世界到底怎麼運轉」的知識庫：戰略、財富、權力、人性、創業，取自 182 位人物與典籍，跨越 2600 年。每一條都寫清楚這個人真正留下的那一個想法、背後的故事、拆開的分則與例子，以及今天怎麼用。
+一個關於「世界到底怎麼運轉」的知識庫：戰略、財富、權力、人性、創業，取自 183 位人物與典籍，跨越 2600 年。每一條都寫清楚這個人真正留下的那一個想法、背後的故事、拆開的分則與例子，以及今天怎麼用。
 
 ## Read it
 
@@ -19,15 +19,15 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 ## Topics
 
 - [現代](https://ourword.ai/tw/t/modern/) — 62
-- [工業時代](https://ourword.ai/tw/t/industrial-age/) — 55
+- [工業時代](https://ourword.ai/tw/t/industrial-age/) — 56
 - [先秦與古典時代](https://ourword.ai/tw/t/classical-era/) — 24
 - [權力與組織](https://ourword.ai/tw/t/power/) — 24
 - [心智與情緒](https://ourword.ai/tw/t/mind/) — 21
 - [創業與產品](https://ourword.ai/tw/t/startups/) — 20
 - [財富與風險](https://ourword.ai/tw/t/wealth/) — 19
 - [謀略與競爭](https://ourword.ai/tw/t/strategy/) — 18
+- [世界如何運轉](https://ourword.ai/tw/t/world/) — 18
 - [學習與成長](https://ourword.ai/tw/t/learning/) — 17
-- [世界如何運轉](https://ourword.ai/tw/t/world/) — 17
 - [識人與相處](https://ourword.ai/tw/t/people/) — 16
 - [家庭與關係](https://ourword.ai/tw/t/family/) — 15
 - [身心與生活](https://ourword.ai/tw/t/living/) — 15
@@ -243,6 +243,9 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [卡斯帕羅夫 · 他先花了很多年爭「那場不算」](https://ourword.ai/tw/i/kasparov/excuses-cost-years/): 卡斯帕羅夫 · 他先花了很多年爭「那場不算」——認賬比申辯省時間。被取代之後第一年通常在幹什麼。這一篇要回答的是：卡斯帕羅夫輸掉之後先做了什麼，二十年後又怎麼說。
 - [凱文·凱利 · 一千個鐵桿粉絲](https://ourword.ai/tw/i/kevin-kelly/thousand-true-fans/): 凱文·凱利 · 一千個鐵桿粉絲——不用紅，要夠深。做創作的人默認要先出名。這一篇要回答的是：那個前提是不是必要的。
 - [凱文·凱利 · 中間不能有人](https://ourword.ai/tw/i/kevin-kelly/direct-relationship/): 凱文·凱利 · 中間不能有人——錢要直接到你手上。這道算術有個前提常被跳過。這一篇要回答的是：跳過它之後為什麼算不成。
+- [凱恩斯 · 我們根本不知道](https://ourword.ai/tw/i/keynes/we-simply-do-not-know/): 凱恩斯 · 我們根本不知道——有些事沒有概率可算，別假裝算得出。沒人說得準的事，我憑什麼下注？這一篇要回答的是：先分清哪些事算得出，哪些根本算不出。
+- [凱恩斯 · 失敗也要失敗得合群](https://ourword.ai/tw/i/keynes/fail-conventionally/): 凱恩斯 · 失敗也要失敗得合群——專業人士多半不是在判斷對錯，是在躲被怪。我不是看好它，是怕只有我沒跟。這一篇要回答的是：這份怕，是在判斷價值，還是在躲責怪。
+- [凱恩斯 · 買的得是你懂的](https://ourword.ai/tw/i/keynes/know-what-you-hold/): 凱恩斯 · 買的得是你懂的——分散得太開，只是把不知道攤勻了。每樣都買一點，我其實哪樣都不懂。這一篇要回答的是：分散到底是在降風險，還是在藏著不懂。
 - [查爾斯·金德爾伯格 · 燃料是信貸](https://ourword.ai/tw/i/kindleberger/credit-is-the-fuel/): 查爾斯·金德爾伯格 · 燃料是信貸——真事天天有，為什麼只有幾次滾成瘋狂。每一次泡沫都從一件真事開始。這一篇要回答的是：真事天天有，為什麼只有極少數滾成瘋狂。
 - [查爾斯·金德爾伯格 · 看見朋友發財](https://ourword.ai/tw/i/kindleberger/a-friend-gets-rich/): 查爾斯·金德爾伯格 · 看見朋友發財——讓你失常的是身邊那個人。你以為自己在判斷行情。這一篇要回答的是：真正讓你坐不住的，是身邊那個賺到錢的人。
 - [凱博文 · 醫生看到的病，和你過的日子](https://ourword.ai/tw/i/kleinman/disease-and-illness/): 凱博文 · 醫生看到的病，和你過的日子——這是兩樣東西。醫生說沒什麼大事，你卻覺得日子塌了。這一篇要回答的是：凱博文為什麼說這是兩件事。
@@ -485,7 +488,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [AI Bubble Monitor / AI 泡沫檢測儀](https://ourword.ai/ai/)
 - [Zouni / 走你](https://ourword.ai/zouni/)
 
-## Index (182 entrys)
+## Index (183 entrys)
 
 - [BJ·福格](https://ourword.ai/tw/i/bj-fogg/): BJ·福格（2019年·斯坦福行為設計實驗室）——小到不會失敗。斯坦福行為設計實驗室創始人，研究行為如何被設計出來。他給出一個公式：行為發生需要動機、能力、提示三者同時到位。多數人失敗在只調動機——靠決心和自我激勵——而動機天然起伏，靠它維持的習慣必然崩。他的主張相反：把行為縮到小得不需要動機，然後掛在一個已有的動作後面。
 - [C.S.劉易斯](https://ourword.ai/tw/i/cs-lewis/): C.S.劉易斯（1898-1963年·英國牛津）——妻子死後幾個月的日記。作家，牛津和劍橋的教授，寫過《納尼亞傳奇》和大量勸人信仰的書。五十八歲結婚，妻子喬伊四年後因癌症去世。之後幾個月他在四本練習簿上記自己的狀態，後來用筆名出版，就是《卿卿如晤》。收他是因為「重要的人走了」那六個問題，原來靠弗蘭克爾和蘇軾在答——一個是集中營的倖存者，一個是被貶的官員
@@ -508,6 +511,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [馮異](https://ourword.ai/tw/i/feng-yi/): 馮異（東漢·卒於34年）——不伐。東漢開國將領，字公孫，潁川父城人，好讀書，通《左氏春秋》和《孫子兵法》。他本在王莽手下守城，歸附劉秀後做主簿，隨他轉戰河北；建武二年受命西征，次年在崤底大破赤眉，此後平定關中，封陽夏侯，官至征西大將軍。建武十年在攻打落門的軍中病逝。他留下的是一種跟上級、同僚相處的辦法：諸將論功時
 - [馮道](https://ourword.ai/tw/i/feng-dao/): 馮道（五代·882-954）——十朝元老。中國歷史上最難評價的一個人。歷經後唐、後晉、後漢、後周四朝，服務過十位皇帝（包括入主中原的契丹皇帝耶律德光），幾乎每一朝都居宰相之位，每一次改朝換代都安然過渡，享年七十三，善終。歐陽修罵他「不知廉恥」，司馬光斥他「奸臣之尤」；但在他活著的時代，「當世之士無賢愚，皆仰道為元老，而喜
 - [凱博文](https://ourword.ai/tw/i/kleinman/): 凱博文（1941-·哈佛大學·醫學人類學）——治不好，還照護得了。哈佛的醫學人類學家，也是精神科醫生，在中國做過多年田野。他一輩子在做同一件事：把「病」拆成兩半。一半是醫生看到的——檢查單上的指標、器官裡的病變；另一半是病人過的那段日子——疼、怕、幹不成事、在家裡變成另一個角色。現代醫學幾乎全部力氣都花在前一半上，而人真正在受的是後一半。201
+- [凱恩斯](https://ourword.ai/tw/i/keynes/): 凱恩斯（英國·1883—1946）——不確定。英國經濟學家，1883年生於劍橋，1936年出版《就業、利息和貨幣通論》，被視為宏觀經濟學的開創者。他也是個親手管錢的人：替劍橋國王學院和幾家保險公司管基金，自己炒過外匯，虧過，也翻過身。他一輩子問的是同一件事：人在不知道未來的時候，怎麼做決定。他的答案有三層：先承認有些事根本算
 - [凱撒](https://ourword.ai/tw/i/caesar/): 凱撒（羅馬·前100-前44）——渡河。羅馬最著名的將軍與獨裁者，「骰子已經擲出」是他最著名的一句話。從一個負債累累的貴族子弟，到征服高盧、贏得內戰、成為羅馬終身獨裁官——他用二十年走完了這條路。他死於元老院，被他以為信任的人刺殺。他是拿破崙的精神前輩，西方歷史上「權力崛起與崩潰」最完整的弧線之一。
 - [凱文·凱利](https://ourword.ai/tw/i/kevin-kelly/): 凱文·凱利（2008年·《連線》創刊主編）——鐵桿粉絲。《連線》雜誌創刊主編，2008年寫了一篇短文，把獨立創作者的生存問題變成一道算術：一千個鐵桿粉絲，每人每年為你花一百美元，就是十萬美元，夠一個人活下去。他給鐵桿粉絲的定義很硬——會買你做的一切，願意開兩百英里去看你演出。這道題真正的價值是把「成名」從必要條件裡拿掉：你不需要一百萬
 - [劉晏](https://ourword.ai/tw/i/liu-yan/): 劉晏（716-780年·唐）——錢流地上。唐代理財家，字士安，曹州南華人。安史之亂把唐朝的財政打空了，他從代宗廣德年間起領轉運、鹽鐵、常平諸使近二十年，重修漕運、改鹽法、辦常平，把關中的糧價和鹽價按住，而《新唐書》給他的評語是斂不及民而用度足——錢多出來了，稅沒有加到百姓頭上。他留下的不是一條生財的門道，是兩件更具體的事

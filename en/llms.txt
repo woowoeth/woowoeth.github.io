@@ -1,9 +1,9 @@
 # OurWord (OurWord)
 
-> 182 people and books on how the world actually works, across 2,600 years
+> 183 people and books on how the world actually works, across 2,600 years
 > See how people before you handled it.
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 182 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 183 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
 ## Read it
 
@@ -17,12 +17,12 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 ## Topics
 
 - [Modern](https://ourword.ai/en/t/modern/) — 66
-- [The industrial age](https://ourword.ai/en/t/the-industrial-age/) — 51
+- [The industrial age](https://ourword.ai/en/t/the-industrial-age/) — 52
 - [Power and organisation](https://ourword.ai/en/t/power-and-organisation/) — 24
 - [Pre-Qin and classical](https://ourword.ai/en/t/pre-qin-and-classical/) — 23
 - [Mind and feeling](https://ourword.ai/en/t/mind-and-feeling/) — 20
 - [Starting and building](https://ourword.ai/en/t/starting-and-building/) — 20
-- [How the world works](https://ourword.ai/en/t/how-the-world-works/) — 18
+- [How the world works](https://ourword.ai/en/t/how-the-world-works/) — 19
 - [Learning and growth](https://ourword.ai/en/t/learning-and-growth/) — 18
 - [Money and risk](https://ourword.ai/en/t/money-and-risk/) — 18
 - [Strategy and competition](https://ourword.ai/en/t/strategy-and-competition/) — 18
@@ -237,6 +237,9 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [Garry Kasparov · He spent years arguing the match didn't count](https://ourword.ai/en/i/kasparov/excuses-cost-years/): Garry Kasparov · He spent years arguing the match didn't count — Conceding is cheaper than appealing. What the first year after being replaced usually looks like. What he did, and what he said twenty years later.
 - [Kevin Kelly · A thousand true fans](https://ourword.ai/en/i/kevin-kelly/thousand-true-fans/): Kevin Kelly · A thousand true fans — Not famous, but deep enough. Creators assume fame has to come first. This asks whether that assumption is necessary at all, and what replaces it.
 - [Kevin Kelly · Nobody in the middle](https://ourword.ai/en/i/kevin-kelly/direct-relationship/): Kevin Kelly · Nobody in the middle — The money has to reach you directly. The sum carries a second condition almost everyone skips. This is what happens to the arithmetic once you skip it.
+- [John Maynard Keynes · We simply do not know](https://ourword.ai/en/i/keynes/we-simply-do-not-know/): John Maynard Keynes · We simply do not know — Some things have no odds to calculate; don't pretend. Nobody can say how this plays out, so what am I betting on? This page is about sorting what you can calculate from what you cannot.
+- [John Maynard Keynes · Fail with the crowd](https://ourword.ai/en/i/keynes/fail-conventionally/): John Maynard Keynes · Fail with the crowd — Professionals are often dodging blame, not judging value. I'm not sold on it, I just can't be the only one who didn't buy. This page asks whether that fear is judging value or dodging blame.
+- [John Maynard Keynes · Own what you understand](https://ourword.ai/en/i/keynes/know-what-you-hold/): John Maynard Keynes · Own what you understand — Spread too thin, you have only spread your ignorance evenly. I own a little of everything and understand none of it. This page asks whether spreading out cuts risk, or only hides what you don't know.
 - [Charles P. Kindleberger · Credit is the fuel](https://ourword.ai/en/i/kindleberger/credit-is-the-fuel/): Charles P. Kindleberger · Credit is the fuel — Real opportunities are common. Manias are rare. Every bubble starts with something real. This chapter asks why only a few of those real things ever run away.
 - [Charles P. Kindleberger · A friend gets rich](https://ourword.ai/en/i/kindleberger/a-friend-gets-rich/): Charles P. Kindleberger · A friend gets rich — What breaks your judgment is the person next to you. You think you are judging the market. This chapter says what actually moves you is the person beside you getting rich.
 - [Arthur Kleinman · The Disease and the Illness](https://ourword.ai/en/i/kleinman/disease-and-illness/): Arthur Kleinman · The Disease and the Illness — Two different things. The doctor says it is manageable and your life has caved in. Why Kleinman insists these are two separate things.
@@ -479,7 +482,7 @@ Cite the individual page URL, not the homepage — each entry page is stable and
 - [AI Bubble Monitor](https://ourword.ai/ai/)
 - [Zouni](https://ourword.ai/zouni/)
 
-## Index (182 entrys)
+## Index (183 entrys)
 
 - [Albert Einstein](https://ourword.ai/en/i/einstein/): Albert Einstein (Germany · 1879–1955) — Imagination. The physicist, and the father of relativity — but the legacy that travels furthest is not a formula, it is a way of working.
 - [Albert O. Hirschman](https://ourword.ai/en/i/hirschman/): Albert O. Hirschman (United States · 1915-2012) — Voice. A German-born American economist. He left Berlin in 1933, fought in Spain in 1936, spent 1940 in Marseille forging papers and finding mountain…
@@ -554,6 +557,7 @@ Cite the individual page URL, not the homepage — each entry page is stable and
 - [John Boyd](https://ourword.ai/en/i/boyd/): John Boyd (United States · 1927–1997) — Tempo. A US Air Force colonel known as Forty-Second Boyd, from a standing bet: any pilot, he starts from the disadvantaged position, and if he isn't on their…
 - [John Cacioppo](https://ourword.ai/en/i/cacioppo/): John Cacioppo (1951–2018 · University of Chicago) — Loneliness is a signal. A founder of social neuroscience who spent a career on one question: what loneliness actually is in the body and the brain.
 - [John Gottman](https://ourword.ai/en/i/gottman/): John Gottman (1994 · University of Washington) — Four fatal signals. A psychologist who recorded thousands of couples in a laboratory, coding expression, tone and heart rate frame by frame, then…
+- [John Maynard Keynes](https://ourword.ai/en/i/keynes/): John Maynard Keynes (Britain · 1883–1946) — Not knowing. British economist, born in Cambridge in 1883, whose General Theory of 1936 founded macroeconomics.
 - [John Ratey](https://ourword.ai/en/i/john-ratey/): John Ratey (2008 · Harvard Medical School) — Move, then think. A professor of psychiatry at Harvard Medical School who redefined what exercise is for. The primary return, he argues, is not the body…
 - [Julius Caesar](https://ourword.ai/en/i/caesar/): Julius Caesar (Rome · 100–44 BC) — The crossing. Rome's most famous general and its dictator, and the source of the line about the die being cast.
 - [Karl Popper](https://ourword.ai/en/i/popper/): Karl Popper (1902–1994 · Vienna and London) — It has to be refutable. A philosopher of science whose opening question was ordinary and whose answer changed the subject. Astrology explains events and…

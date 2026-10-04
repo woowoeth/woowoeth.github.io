@@ -1,7 +1,7 @@
-# OurWord — 182 people and books on how the world actually works, across 2,600 years
+# OurWord — 183 people and books on how the world actually works, across 2,600 years
 # OurWord — See how people before you handled it.
 # https://ourword.ai/en/
-# Full corpus, plain text. 182 entrys.
+# Full corpus, plain text. 183 entrys.
 
 ========================================================================
 ## Albert Einstein
@@ -1620,10 +1620,10 @@ Before you write the annual plan, ask what share of the knowledge it depends on 
 The curious task of economics is to demonstrate how little men really know. The price system is a mechanism for communicating information. Nobody holds all the knowledge that making the plan would require.
 
 ### Q: What should I read alongside?
-The Wealth of Nations — Smith explains how the division of labour makes brute effort rich; Hayek explains how the information gets back afterwards. Nassim Taleb — Taleb is about not being able to foresee the shock, Hayek about not being able to centralise the knowledge — one handles randomness, the other handles the pretence of knowing. Albert O. Hirschman — Hayek argues a reform endangers a freedom we already hold, which is the third shape Hirschman names; Hirschman does not dispute it, he asks for a quantity someone can check. Ronald Coase — Both are about prices. Hayek says the price system carries knowledge scattered across millions of heads, and nothing coordinates better. Coase asks why, if prices are that good, people inside a firm do what the manager says instead. One is about what prices can do; the other is about what using them costs.
+The Wealth of Nations — Smith explains how the division of labour makes brute effort rich; Hayek explains how the information gets back afterwards. Nassim Taleb — Taleb is about not being able to foresee the shock, Hayek about not being able to centralise the knowledge — one handles randomness, the other handles the pretence of knowing. Albert O. Hirschman — Hayek argues a reform endangers a freedom we already hold, which is the third shape Hirschman names; Hirschman does not dispute it, he asks for a quantity someone can check. Ronald Coase — Both are about prices. Hayek says the price system carries knowledge scattered across millions of heads, and nothing coordinates better. Coase asks why, if prices are that good, people inside a firm do what the manager says instead. One is about what prices can do; the other is about what using them costs. John Maynard Keynes — Both accepted that no one can know everything. Hayek trusted prices as signals scattered through everyone's hands, so each person acts where they know. Keynes feared that expectations can lose their footing together, and wanted someone to steady demand when nobody can see. One gave the not-knowing to prices; the other to someone who would stand behind them.
 
 ### Further
-The Wealth of Nations Nassim Taleb Zhang Yiming Ray Dalio Gary Becker Ronald Coase
+The Wealth of Nations Nassim Taleb Zhang Yiming Ray Dalio Gary Becker Ronald Coase John Maynard Keynes
 
 ========================================================================
 ## Fukuzawa Yukichi
@@ -1805,10 +1805,10 @@ On the next decision that matters, write down your core assumption first, then i
 I'm only rich because I know when I'm wrong. Market prices always distort the underlying fundamentals. There is no shame in being wrong, only in failing to correct our mistakes. Markets can influence the events that they anticipate.
 
 ### Q: What should I read alongside?
-Warren Buffett — Two poles of investment philosophy: Buffett trusts that the market gets there in the end, Soros treats it as permanently wrong. Nassim Taleb — Two bets on uncertainty: Soros finds the market's error and pushes on it, Taleb builds a structure that pays when the error finally breaks. The Crowd — Reflexivity is the financial version of this book: the crowd's mistaken belief moves the price and the price confirms the belief. Le Bon describes the pathology, Soros priced it. Benjamin Graham — Graham assumes price returns to value; Soros trades the stretch where price drives value away from itself. Jim Simons — Soros uses reflexivity to understand the market, Simons gave up understanding entirely — and the money comes out of the same place. Robert K. Merton — Both say belief rewrites fact: Soros watches price and fundamentals push each other in markets, Merton watches suspicion and reputation confirm themselves in a room.
+Warren Buffett — Two poles of investment philosophy: Buffett trusts that the market gets there in the end, Soros treats it as permanently wrong. Nassim Taleb — Two bets on uncertainty: Soros finds the market's error and pushes on it, Taleb builds a structure that pays when the error finally breaks. The Crowd — Reflexivity is the financial version of this book: the crowd's mistaken belief moves the price and the price confirms the belief. Le Bon describes the pathology, Soros priced it. Benjamin Graham — Graham assumes price returns to value; Soros trades the stretch where price drives value away from itself. Jim Simons — Soros uses reflexivity to understand the market, Simons gave up understanding entirely — and the money comes out of the same place. Robert K. Merton — Both say belief rewrites fact: Soros watches price and fundamentals push each other in markets, Merton watches suspicion and reputation confirm themselves in a room. John Maynard Keynes — Both saw expectations pushing prices. Soros treated that loop as something to trade, riding it and leaving the moment he was wrong. Keynes treated it as something to be wary of, because the professionals were following the crowd to avoid blame, not because they had judged worth.
 
 ### Further
-Ray Dalio Warren Buffett Nassim Taleb Charlie Munger The Crowd Jesse Livermore Howard Marks Jim Simons Thinking, Fast and Slow Charles P. Kindleberger Robert K. Merton
+Ray Dalio Warren Buffett Nassim Taleb Charlie Munger The Crowd Jesse Livermore Howard Marks Jim Simons Thinking, Fast and Slow Charles P. Kindleberger Robert K. Merton John Maynard Keynes
 
 ========================================================================
 ## Guan Zhong
@@ -2258,7 +2258,7 @@ We may never know where we're going, but we'd better have a good idea where we a
 Benjamin Graham — Graham answers what a thing is worth, Marks answers whether now is the moment to act — two separate skills, and most people have only trained the first. Jesse Livermore — Both accept that the cycle is real: Livermore surfs the pendulum and is eventually swallowed by it, Marks moves only when it reaches an extreme. Nassim Taleb — Same premise, that the future is unknowable, and two routes out: Taleb builds a structure that survives it, Marks takes the temperature of the present. Charles P. Kindleberger — Both take the market's temperature: Marks reads where sentiment sits on the pendulum, Kindleberger counts how much of the money in the room was borrowed.
 
 ### Further
-Warren Buffett Benjamin Graham Ray Dalio Nassim Taleb George Soros Jim Simons Charles P. Kindleberger
+Warren Buffett Benjamin Graham Ray Dalio Nassim Taleb George Soros Jim Simons Charles P. Kindleberger John Maynard Keynes
 
 ========================================================================
 ## Hu Xueyan
@@ -2700,6 +2700,43 @@ Esther Perel — Two different illnesses: he treats the wound, she treats the em
 
 ### Further
 Esther Perel Harvard Study of Adult Development C.S. Lewis Attachment Theory Murray Bowen Crucial Conversations Robert Axelrod
+
+========================================================================
+## John Maynard Keynes
+URL: https://ourword.ai/en/i/keynes/
+Tags: How the world works, The industrial age, Not knowing
+
+John Maynard Keynes (Britain · 1883–1946) — Not knowing. British economist, born in Cambridge in 1883, whose General Theory of 1936 founded macroeconomics.
+
+### Q: What did this one leave behind?
+British economist, born in Cambridge in 1883, whose General Theory of 1936 founded macroeconomics. He also handled real money: he managed funds for a Cambridge college and for insurance companies, and speculated in currencies for himself, losing badly and recovering. He asked one question all his life: how do you decide when you cannot know the future? His answer had three layers. Some things have no calculable odds. Most people are guessing what others will guess, and leaning on the crowd. And the heavy bets belong where you truly understand.
+
+### Q: What actually happened?
+In 1920 Keynes took positions on several currencies on margin and within months lost almost all his capital; friends and a banker had to step in to carry him through. The man who would later write the General Theory was also a man who could be badly wrong. Afterwards, running money for institutions, he leaned more and more toward holdings he could see clearly and sit with.
+
+### The parts · What can be counted and what cannot
+He drew a line between roulette-type events, where odds can be worked out, and things like the price of copper twenty years on, where no scientific basis exists for a calculable probability. Treat the second as the first and the figure looks respectable but adds no certainty. e.g. Putting next year's industry growth at 8.3 per cent pretends you face a roulette wheel.
+
+### The parts · Guessing what others will guess
+He compared professional investing to a newspaper beauty contest: the winner is not the one who picks the prettiest face but the one closest to the average pick. At the third degree, the clever guess what the crowd expects the crowd to think. e.g. You don't rate a stock, but you're sure everyone expects everyone else to buy it, so you buy it too.
+
+### The parts · Failing with the crowd is safer
+He wrote that for reputation it is better to fail conventionally than to succeed unconventionally. Those who manage other people's money are judged in short windows, so they are more likely to dodge blame than to judge value. e.g. A fund manager who loses with the whole sector says the market fell. One who backs something unloved and loses explains himself for a year.
+
+### The parts · Own what you understand
+In 1934 he wrote that spreading money between enterprises one knows little about does not limit risk. He wanted large sums where he truly understood the business and trusted its managers. e.g. Ten funds in the account, and you can't say what any one of them holds.
+
+### Q: How do I use it today?
+Pick a bet you are tempted by. On a sheet, make three columns: what I can calculate (cost, term, the most I can lose); what I simply do not know; and whether I want to follow because I have priced it or because I am afraid of being the only one who didn't. Then count how many things in your account you could explain in three sentences, how they earn and why their managers deserve trust. He left one rule: don't write a guess like a calculation, don't treat company as judgment, and don't let a count stand in for understanding.
+
+### Lines to keep
+Of such matters we simply do not know. Failing conventionally beats succeeding unconventionally, for reputation. The clever guess what the crowd expects the crowd to think. Spread wide enough and you still can't spread out ignorance.
+
+### Q: What should I read alongside?
+Friedrich Hayek — Both accepted that no one can know everything. Hayek trusted prices as signals scattered through everyone's hands, so each person acts where they know. Keynes feared that expectations can lose their footing together, and wanted someone to steady demand when nobody can see. One gave the not-knowing to prices; the other to someone who would stand behind them. George Soros — Both saw expectations pushing prices. Soros treated that loop as something to trade, riding it and leaving the moment he was wrong. Keynes treated it as something to be wary of, because the professionals were following the crowd to avoid blame, not because they had judged worth.
+
+### Further
+Nassim Taleb George Soros Howard Marks Friedrich Hayek
 
 ========================================================================
 ## John Ratey
@@ -3840,7 +3877,7 @@ The opposite of fragile is not robust. It is antifragile. Wind extinguishes a ca
 George Soros — Two strategies for uncertainty: Soros hunts the market's error and acts on it, Taleb builds a structure that does not need to know what the error is. Ray Dalio — Two ways of handling what cannot be predicted: Dalio writes principles to hold the line against it, Taleb arranges to be paid by it. Thomas Schelling — Skin in the game and credible commitment are one coin: Taleb uses cost to decide whose word to trust, Schelling to make his own word land. Konosuke Matsushita — Dam management is antifragility in industrial form — redundancy is a cost in calm weather and the whole of your optionality when the shock lands. Friedrich Hayek — Taleb is about not being able to foresee the shock, Hayek about not being able to centralise the knowledge — one handles randomness, the other handles the pretence of knowing. Howard Marks — Same premise, that the future is unknowable, and two routes out: Taleb builds a structure that survives it, Marks takes the temperature of the present. Jim Simons — Two mathematicians on opposite ends of one market: Taleb is paid at the moment models break, Simons is paid all the while they hold.
 
 ### Further
-Tao Te Ching Naval Ravikant Fan Li Sun Tzu Ray Dalio Thomas Schelling Konosuke Matsushita Epictetus Benjamin Graham Hu Xueyan Jesse Livermore Friedrich Hayek Howard Marks Scarcity Jim Simons George Soros Technological Revolutions Thinking, Fast and Slow Sapiens The Sovereign Individual
+Tao Te Ching Naval Ravikant Fan Li Sun Tzu Ray Dalio Thomas Schelling Konosuke Matsushita Epictetus Benjamin Graham Hu Xueyan Jesse Livermore Friedrich Hayek Howard Marks Scarcity Jim Simons George Soros Technological Revolutions Thinking, Fast and Slow Sapiens The Sovereign Individual John Maynard Keynes
 
 ========================================================================
 ## Naval Ravikant
@@ -13365,6 +13402,105 @@ Where it goes wrong: making the experience awkward in order to own the list, her
 You must have a direct relationship with your fans; they must pay you directly.
 The platform gives you chart positions. It never gives you an address.
 Fans you cannot reach without permission were never really yours.
+
+========================================================================
+## John Maynard Keynes · We simply do not know
+URL: https://ourword.ai/en/i/keynes/we-simply-do-not-know/
+Source: "The General Theory of Employment", Quarterly Journal of Economics, 1937
+Tags: Deep read, John Maynard Keynes, Some things have no odds to calculate; don't pretend
+
+Nobody can say how this plays out, so what am I betting on? This page is about sorting what you can calculate from what you cannot.
+
+### Q: What actually happened?
+In 1937 Keynes wrote a paper for the Quarterly Journal of Economics to restore a layer of his book that readers had skipped. He split the world in two. Roulette and lotteries have odds you can work out. But the price of copper in twenty years, the rate of interest, even whether Europe will go to war again: of these he wrote "We simply do not know." Yet people still have to buy, sell and invest. What carries them?
+
+### The parts · Risk and not knowing are different things
+He separated events whose odds can be worked out from events where, as he put it, there is "no scientific basis" for a calculable probability. Treat the second kind like the first and the number you get only looks respectable. It adds no certainty.
+e.g. Writing next year's industry growth as 8.3 per cent pretends you are facing a roulette wheel.
+
+### The parts · Three habits carry us through
+People cannot simply wait, so they assume three things: that the present will continue, that today's prices already sum up what is known, and that, since their own judgment is worth little, they should follow the majority. He called these makeshifts, and warned they can give way suddenly.
+e.g. Prices rise for five years, so year six is assumed too, until the year it isn't and every assumption fails at once.
+
+### The parts · Holding cash is a stance
+He argued that possessing actual money "lulls our disquietude", and that what we demand to part with it measures how disquieted we are. The greater the unease, the higher the price. Sitting in cash is not always cowardice.
+e.g. Someone keeps six months of spending in a current account. They can manage money; they simply cannot see the next six months.
+
+### Q: How do I use it today?
+Where you are: You must bet on something nobody can call: a new industry, a rally, a choice that takes twenty years to show.
+Ask first: Which part can I calculate, such as the cost, the term and the most I can lose? Which part do I simply not know? Size the bet so that being wrong on the second part is survivable.
+Where it goes wrong: Reading it as "if you can't know, do nothing." He invested and advised for a living. His point was not to dress a guess up as a sum.
+
+### Lines to keep
+Nobody can put odds on copper in twenty years.
+If you don't know, don't write a guess like a calculation.
+Sometimes cash is just admitting you can't see.
+
+========================================================================
+## John Maynard Keynes · Fail with the crowd
+URL: https://ourword.ai/en/i/keynes/fail-conventionally/
+Source: The General Theory of Employment, Interest and Money, chapter 12, 1936
+Tags: Deep read, John Maynard Keynes, Professionals are often dodging blame, not judging value
+
+I'm not sold on it, I just can't be the only one who didn't buy. This page asks whether that fear is judging value or dodging blame.
+
+### Q: What actually happened?
+In chapter 12 of the General Theory, Keynes compared professional investing to a newspaper contest of the day: pick the six prettiest faces from a hundred photographs, and the prize goes to whoever comes closest to the average choice of all the entrants. The clever entrant does not pick the face he finds prettiest, nor even the one the crowd truly finds prettiest. He tries to guess what the crowd expects the crowd to think. That, Keynes said, is the game the professionals play.
+
+### The parts · You are guessing opinion, not value
+He said the contest reaches a third degree, where we devote our intelligence to "anticipating what average opinion expects the average opinion to be." Whether a price rises depends less on what a thing is worth than on what people think other people think.
+e.g. You don't rate a stock, but you're sure everyone expects everyone else to buy it, so you buy it too.
+
+### The parts · Failing together is safer than being right alone
+He wrote: "Worldly wisdom teaches that it is better for reputation to fail conventionally than to succeed unconventionally." If everyone is wrong together, nobody is singled out. A lone bet that fails can cost you your name.
+e.g. A fund manager who loses with the whole sector says the market fell. One who backs something unloved and loses explains himself for a year.
+
+### The parts · Before you follow, ask what they are dodging
+Those who manage other people's money are judged over short periods, he noted, which pushes them to avoid blame rather than judge worth. So when everyone seems to be buying, ask how many are measured quarterly. Their reason may not be yours.
+e.g. A share held by dozens of institutions may not be loved by each. Each may fear being the one who doesn't own it.
+
+### Q: How do I use it today?
+Where you are: Everyone is buying something, you haven't, and it nags at you.
+Ask first: Am I tempted because I have priced it, or because if it goes wrong with everyone else, I won't look foolish? If the second, treat the money as buying company, and cap it.
+Where it goes wrong: Reading it as "the crowd is always wrong." He did not say that. He said many in the crowd are guarding their reputations, not judging value.
+
+### Lines to keep
+Fail with the crowd and nobody blames you.
+The crowd is guessing at the crowd.
+Fear of standing alone is not a valuation.
+
+========================================================================
+## John Maynard Keynes · Own what you understand
+URL: https://ourword.ai/en/i/keynes/know-what-you-hold/
+Source: Letter to F. C. Scott, August 1934
+Tags: Deep read, John Maynard Keynes, Spread too thin, you have only spread your ignorance evenly
+
+I own a little of everything and understand none of it. This page asks whether spreading out cuts risk, or only hides what you don't know.
+
+### Q: What actually happened?
+In August 1934 Keynes, by then managing money for a Cambridge college and for insurance companies, wrote to a colleague about how to invest. He had come to think the usual advice ran backwards. "It is a mistake to think that one limits one's risk by spreading too much between enterprises about which one knows little and has no reason for special confidence." The right method, he said, was to put fairly large sums into businesses one thinks one knows something about, and whose management one thoroughly believes in.
+
+### The parts · More names is not less risk
+Scatter money across many companies you cannot judge and the risk has not shrunk. You merely cannot explain any single holding. The risk is still there, hidden in every position at once.
+e.g. Ten funds sit in the account, and you couldn't say what any one of them actually owns.
+
+### The parts · Understanding and trust, both
+The concentration he wanted was narrow: places where you truly grasp the business and truly trust the people running it. He added that at any one time there were seldom more than two or three such enterprises for him.
+e.g. Before adding to a holding, can you say how it earns, and why its managers deserve trust? If not, it is not on the list.
+
+### The parts · Ask whether you can explain it
+He did not say to own only one or two names. He said not to use numbers to make up for understanding. What you can explain in a few sentences deserves a larger position; what you cannot is just ignorance, spread evenly.
+e.g. Half the money in the two firms you really know, half plainly in an index fund, is clearer than a dozen you half understand.
+
+### Q: How do I use it today?
+Where you are: You own a little of everything, and when you open the account you cannot say why each thing is there.
+Ask first: Which holdings can I explain in three sentences, how it earns and why its managers are trustworthy? For the rest, is that a position I knowingly keep as "I don't know", or did I just buy it to be done?
+Where it goes wrong: Reading it as "put everything in one place." He said not to let a count stand in for understanding. He never said not to diversify.
+
+### Lines to keep
+Spread as wide as you like, you can't spread out what you don't know.
+Owning many is not seeing clearly.
+If you can't explain it, don't size it big.
 
 ========================================================================
 ## Charles P. Kindleberger · Credit is the fuel

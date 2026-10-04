@@ -1,11 +1,11 @@
 # OurWord (人类世界生存法则)
 
-> 182 people and books on how the world actually works, across 2,600 years
+> 183 people and books on how the world actually works, across 2,600 years
 > 遇到事了，看看以前的人怎么处理
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 182 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 183 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
-一个关于「世界到底怎么运转」的知识库：战略、财富、权力、人性、创业，取自 182 位人物与典籍，跨越 2600 年。每一条都写清楚这个人真正留下的那一个想法、背后的故事、拆开的分则与例子，以及今天怎么用。
+一个关于「世界到底怎么运转」的知识库：战略、财富、权力、人性、创业，取自 183 位人物与典籍，跨越 2600 年。每一条都写清楚这个人真正留下的那一个想法、背后的故事、拆开的分则与例子，以及今天怎么用。
 
 ## Read it
 
@@ -19,15 +19,15 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 ## Topics
 
 - [现代](https://ourword.ai/t/modern/) — 62
-- [工业时代](https://ourword.ai/t/industrial-age/) — 55
+- [工业时代](https://ourword.ai/t/industrial-age/) — 56
 - [先秦与古典时代](https://ourword.ai/t/classical-era/) — 24
 - [权力与组织](https://ourword.ai/t/power/) — 24
 - [心智与情绪](https://ourword.ai/t/mind/) — 21
 - [创业与产品](https://ourword.ai/t/startups/) — 20
 - [财富与风险](https://ourword.ai/t/wealth/) — 19
 - [谋略与竞争](https://ourword.ai/t/strategy/) — 18
+- [世界如何运转](https://ourword.ai/t/world/) — 18
 - [学习与成长](https://ourword.ai/t/learning/) — 17
-- [世界如何运转](https://ourword.ai/t/world/) — 17
 - [识人与相处](https://ourword.ai/t/people/) — 16
 - [家庭与关系](https://ourword.ai/t/family/) — 15
 - [身心与生活](https://ourword.ai/t/living/) — 15
@@ -243,6 +243,9 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [卡斯帕罗夫 · 他先花了很多年争「那场不算」](https://ourword.ai/i/kasparov/excuses-cost-years/): 卡斯帕罗夫 · 他先花了很多年争「那场不算」——认账比申辩省时间。被取代之后第一年通常在干什么。这一篇要回答的是：卡斯帕罗夫输掉之后先做了什么，二十年后又怎么说。
 - [凯文·凯利 · 一千个铁杆粉丝](https://ourword.ai/i/kevin-kelly/thousand-true-fans/): 凯文·凯利 · 一千个铁杆粉丝——不用红，要够深。做创作的人默认要先出名。这一篇要回答的是：那个前提是不是必要的。
 - [凯文·凯利 · 中间不能有人](https://ourword.ai/i/kevin-kelly/direct-relationship/): 凯文·凯利 · 中间不能有人——钱要直接到你手上。这道算术有个前提常被跳过。这一篇要回答的是：跳过它之后为什么算不成。
+- [凯恩斯 · 我们根本不知道](https://ourword.ai/i/keynes/we-simply-do-not-know/): 凯恩斯 · 我们根本不知道——有些事没有概率可算，别假装算得出。没人说得准的事，我凭什么下注？这一篇要回答的是：先分清哪些事算得出，哪些根本算不出。
+- [凯恩斯 · 失败也要失败得合群](https://ourword.ai/i/keynes/fail-conventionally/): 凯恩斯 · 失败也要失败得合群——专业人士多半不是在判断对错，是在躲被怪。我不是看好它，是怕只有我没跟。这一篇要回答的是：这份怕，是在判断价值，还是在躲责怪。
+- [凯恩斯 · 买的得是你懂的](https://ourword.ai/i/keynes/know-what-you-hold/): 凯恩斯 · 买的得是你懂的——分散得太开，只是把不知道摊匀了。每样都买一点，我其实哪样都不懂。这一篇要回答的是：分散到底是在降风险，还是在藏着不懂。
 - [查尔斯·金德尔伯格 · 燃料是信贷](https://ourword.ai/i/kindleberger/credit-is-the-fuel/): 查尔斯·金德尔伯格 · 燃料是信贷——真事天天有，为什么只有几次滚成疯狂。每一次泡沫都从一件真事开始。这一篇要回答的是：真事天天有，为什么只有极少数滚成疯狂。
 - [查尔斯·金德尔伯格 · 看见朋友发财](https://ourword.ai/i/kindleberger/a-friend-gets-rich/): 查尔斯·金德尔伯格 · 看见朋友发财——让你失常的是身边那个人。你以为自己在判断行情。这一篇要回答的是：真正让你坐不住的，是身边那个赚到钱的人。
 - [凯博文 · 医生看到的病，和你过的日子](https://ourword.ai/i/kleinman/disease-and-illness/): 凯博文 · 医生看到的病，和你过的日子——这是两样东西。医生说没什么大事，你却觉得日子塌了。这一篇要回答的是：凯博文为什么说这是两件事。
@@ -485,7 +488,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [AI Bubble Monitor / AI 泡沫检测仪](https://ourword.ai/ai/)
 - [Zouni / 走你](https://ourword.ai/zouni/)
 
-## Index (182 entrys)
+## Index (183 entrys)
 
 - [BJ·福格](https://ourword.ai/i/bj-fogg/): BJ·福格（2019年·斯坦福行为设计实验室）——小到不会失败。斯坦福行为设计实验室创始人，研究行为如何被设计出来。他给出一个公式：行为发生需要动机、能力、提示三者同时到位。多数人失败在只调动机——靠决心和自我激励——而动机天然起伏，靠它维持的习惯必然崩。他的主张相反：把行为缩到小得不需要动机，然后挂在一个已有的动作后面。
 - [C.S.刘易斯](https://ourword.ai/i/cs-lewis/): C.S.刘易斯（1898-1963年·英国牛津）——妻子死后几个月的日记。作家，牛津和剑桥的教授，写过《纳尼亚传奇》和大量劝人信仰的书。五十八岁结婚，妻子乔伊四年后因癌症去世。之后几个月他在四本练习簿上记自己的状态，后来用笔名出版，就是《卿卿如晤》。收他是因为「重要的人走了」那六个问题，原来靠弗兰克尔和苏轼在答——一个是集中营的幸存者，一个是被贬的官员
@@ -508,6 +511,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [冯异](https://ourword.ai/i/feng-yi/): 冯异（东汉·卒于34年）——不伐。东汉开国将领，字公孙，颍川父城人，好读书，通《左氏春秋》和《孙子兵法》。他本在王莽手下守城，归附刘秀后做主簿，随他转战河北；建武二年受命西征，次年在崤底大破赤眉，此后平定关中，封阳夏侯，官至征西大将军。建武十年在攻打落门的军中病逝。他留下的是一种跟上级、同僚相处的办法：诸将论功时
 - [冯道](https://ourword.ai/i/feng-dao/): 冯道（五代·882-954）——十朝元老。中国历史上最难评价的一个人。历经后唐、后晋、后汉、后周四朝，服务过十位皇帝（包括入主中原的契丹皇帝耶律德光），几乎每一朝都居宰相之位，每一次改朝换代都安然过渡，享年七十三，善终。欧阳修骂他「不知廉耻」，司马光斥他「奸臣之尤」；但在他活着的时代，「当世之士无贤愚，皆仰道为元老，而喜
 - [凯博文](https://ourword.ai/i/kleinman/): 凯博文（1941-·哈佛大学·医学人类学）——治不好，还照护得了。哈佛的医学人类学家，也是精神科医生，在中国做过多年田野。他一辈子在做同一件事：把「病」拆成两半。一半是医生看到的——检查单上的指标、器官里的病变；另一半是病人过的那段日子——疼、怕、干不成事、在家里变成另一个角色。现代医学几乎全部力气都花在前一半上，而人真正在受的是后一半。201
+- [凯恩斯](https://ourword.ai/i/keynes/): 凯恩斯（英国·1883—1946）——不确定。英国经济学家，1883年生于剑桥，1936年出版《就业、利息和货币通论》，被视为宏观经济学的开创者。他也是个亲手管钱的人：替剑桥国王学院和几家保险公司管基金，自己炒过外汇，亏过，也翻过身。他一辈子问的是同一件事：人在不知道未来的时候，怎么做决定。他的答案有三层：先承认有些事根本算
 - [凯撒](https://ourword.ai/i/caesar/): 凯撒（罗马·前100-前44）——渡河。罗马最著名的将军与独裁者，「骰子已经掷出」是他最著名的一句话。从一个负债累累的贵族子弟，到征服高卢、赢得内战、成为罗马终身独裁官——他用二十年走完了这条路。他死于元老院，被他以为信任的人刺杀。他是拿破仑的精神前辈，西方历史上「权力崛起与崩溃」最完整的弧线之一。
 - [凯文·凯利](https://ourword.ai/i/kevin-kelly/): 凯文·凯利（2008年·《连线》创刊主编）——铁杆粉丝。《连线》杂志创刊主编，2008年写了一篇短文，把独立创作者的生存问题变成一道算术：一千个铁杆粉丝，每人每年为你花一百美元，就是十万美元，够一个人活下去。他给铁杆粉丝的定义很硬——会买你做的一切，愿意开两百英里去看你演出。这道题真正的价值是把「成名」从必要条件里拿掉：你不需要一百万
 - [刘晏](https://ourword.ai/i/liu-yan/): 刘晏（716-780年·唐）——钱流地上。唐代理财家，字士安，曹州南华人。安史之乱把唐朝的财政打空了，他从代宗广德年间起领转运、盐铁、常平诸使近二十年，重修漕运、改盐法、办常平，把关中的粮价和盐价按住，而《新唐书》给他的评语是敛不及民而用度足——钱多出来了，税没有加到百姓头上。他留下的不是一条生财的门道，是两件更具体的事

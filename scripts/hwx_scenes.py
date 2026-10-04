@@ -226,6 +226,8 @@ SCENES = [
      [("kindleberger", "a-friend-gets-rich"), ("crowd", "assert-repeat-contaminate")]),
     ("人人都在抢，我该先拿什么？",
      [("xiao-he", "take-the-records")]),
+    ("我不是看好它，是怕只有我没跟。",
+     [("keynes", "fail-conventionally")]),
 ]),
 ("让钱生钱", "钱的事", [
     ("钱放着不动，我心里发慌。",
@@ -238,6 +240,10 @@ SCENES = [
      [("liu-yan", "money-flows-on-the-ground")]),
     ("我一直在给钱找出路，没给自己找。",
      [("becker", "you-are-the-capital")]),
+    ("留着现金不动，我是不是太怂了？",
+     [("keynes", "we-simply-do-not-know")]),
+    ("每样都买一点，我其实哪样都不懂。",
+     [("keynes", "know-what-you-hold")]),
 ]),
 ("接不到活", "钱的事", [
     ("这个月没有单子，我开始慌了。",
@@ -809,6 +815,8 @@ SCENES = [
      [("huang", "zero-billion-markets"), ("duan-yongping", "dare-to-be-last")]),
     ("别人都抢先了，我还来得及吗。",
      [("duan-yongping", "dare-to-be-last"), ("huang", "zero-billion-markets")]),
+    ("没人说得准的事，我凭什么下注？",
+     [("keynes", "we-simply-do-not-know")]),
 ]),
 ("日子被工具占满", "AI 来了", [
     ("装了一堆省时间的工具，日子反而更满。",
