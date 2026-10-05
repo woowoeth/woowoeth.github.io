@@ -405,6 +405,11 @@ QUOTE_ASKS = {
         "害过我的人，回来找我了。",
     "jin-wengong/three-stages-back":
         "我主动往后撤，算不算认输？",
+    # 赵武灵王
+    "zhao-wuling-wang/learn-from-the-lesser":
+        "我拉不下脸，向不如我的人学。",
+    "zhao-wuling-wang/go-to-the-uncle-first":
+        "他们都说老规矩不能改，我怎么推？",
     # 萧何
     "xiao-he/take-the-records":
         "人人都在抢，我该先拿什么？",

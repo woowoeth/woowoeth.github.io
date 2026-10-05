@@ -1,7 +1,7 @@
-# OurWord — 183 people and books on how the world actually works, across 2,600 years
+# OurWord — 184 people and books on how the world actually works, across 2,600 years
 # OurWord — See how people before you handled it.
 # https://ourword.ai/en/
-# Full corpus, plain text. 183 entrys.
+# Full corpus, plain text. 184 entrys.
 
 ========================================================================
 ## Albert Einstein
@@ -1210,7 +1210,7 @@ Longing and ease ruin a name. A ruler's command allows no second mind. When a ru
 Cao Cao — Both faced people who had wavered. After Guandu, Cao Cao found letters his own officers had sent the enemy and burned them unread, clearing a whole group at once. Duke Wen faced them one at a time at his door, the man who had hunted him and the servant who ran off with his stores. He shut the door first, and opened it once they had made their case. Xiang Yu — Both chose between comfort and the long road. Xiang Yu took the Qin capital, longed to go home to Chu, and would not hear the man who urged him to stay. Chong'er also wanted to stay in Qi, and was pushed into a carriage by his wife and his uncle. One had nobody able to stop him; the other had people who dared.
 
 ### Further
-Guan Zhong Cao Cao Xiang Yu Feng Yi
+Guan Zhong Cao Cao Xiang Yu Feng Yi King Wuling of Zhao
 
 ========================================================================
 ## Edward Deci
@@ -1654,10 +1654,10 @@ Write down the three things you will actually need at work tomorrow morning, and
 Heaven does not create one man above or below another man. Learn what you need tomorrow first. Once a year can wait. The gap was made after birth, so it can be closed.
 
 ### Q: What should I read alongside?
-Excellent Sheep — Excellent Sheep diagnoses what happens to someone who lived on scores and then has no scores; Fukuzawa hands a beginner an order of operations instead. Bruce Lee — Both say the inherited set of moves stops working, but Fukuzawa is the more literal of the two: change the content the day you see it, keep the method.
+Excellent Sheep — Excellent Sheep diagnoses what happens to someone who lived on scores and then has no scores; Fukuzawa hands a beginner an order of operations instead. Bruce Lee — Both say the inherited set of moves stops working, but Fukuzawa is the more literal of the two: change the content the day you see it, keep the method. King Wuling of Zhao — Both learned from the side their own people looked down on: Fukuzawa from the West, Wuling from the nomads. Fukuzawa wrote to change minds. Wuling put on the coat himself and knocked on his uncle's door.
 
 ### Further
-Anders Ericsson Excellent Sheep Kazuo Inamori Garry Kasparov Bruce Lee
+Anders Ericsson Excellent Sheep Kazuo Inamori Garry Kasparov Bruce Lee King Wuling of Zhao
 
 ========================================================================
 ## Gandhi
@@ -1845,7 +1845,7 @@ Full granaries, and the people know propriety. The way to govern a state must be
 Shang Yang — Two routes to a strong state: Guan Zhong enriches the people and the state follows, Shang Yang installs the law and the wealth follows. Zhuge Liang — Two first ministers serving an ambitious lord. Guan Zhong's man became hegemon; Zhuge Liang's cause never arrived. Lee Kuan Yew — Two operators building a small state from nothing, twenty-six centuries apart: Guan Zhong through trade and price control, Lee through institutions and balance. The Wealth of Nations — Two origins for the idea of national wealth: Guan Zhong steers prices and money from the centre, Smith lets price discover itself. The argument has not moved in twenty-five centuries.
 
 ### Further
-The Wealth of Nations Fan Li Sun Tzu Han Feizi Cao Cao Lee Kuan Yew Shang Yang Zhang Juzheng Liu Yan Duke Wen of Jin
+The Wealth of Nations Fan Li Sun Tzu Han Feizi Cao Cao Lee Kuan Yew Shang Yang Zhang Juzheng Liu Yan Duke Wen of Jin King Wuling of Zhao
 
 ========================================================================
 ## Guiguzi
@@ -2922,6 +2922,40 @@ Naval Ravikant — Both are about earning without an employer: Naval gives you s
 
 ### Further
 Naval Ravikant Paul Graham Jensen Huang Duan Yongping Haruki Murakami Neil Postman
+
+========================================================================
+## King Wuling of Zhao
+URL: https://ourword.ai/en/i/zhao-wuling-wang/
+Tags: Power and organisation, Pre-Qin and classical, Nomad dress
+
+King Wuling of Zhao (Warring States · Zhao · d. 295 BC) — Nomad dress. King of Zhao, one of the seven Warring States, from 325 BC. He handed the throne to his son in 299 and died in the Shaqiu coup in 295; this page takes only his reform…
+
+### Q: What did this one leave behind?
+King of Zhao, one of the seven Warring States, from 325 BC. He handed the throne to his son in 299 and died in the Shaqiu coup in 295; this page takes only his reform, not the succession. From 307 BC he ordered Zhao to adopt the nomads' short coat and to learn mounted archery, replacing chariots and foot soldiers with cavalry. It was hard on two sides: strong neighbours outside, and a court full of elders who held that ancestral ways must not change. He left two methods. If a thing works, do not care whom it came from. If you must change the rules, go first to the weightiest opponent.
+
+### Q: What actually happened?
+A few years after Wuling began the reform, Zhao had cavalry of its own. It beat the Linhu and Loufan peoples to the north, built a wall along the Yin Mountains and set up three commanderies there. The north had been the state's soft side and became the place it expanded from.
+
+### The parts · He learned what worked, not what looked proper
+He watched the nomads to the north: short coats, easy to ride and shoot in, coming and going like the wind. Zhao's troops wore long robes and relied on chariots and infantry, and could not catch them. His question was whether the dress worked, not whether it was dignified. e.g. A colleague finishes in half an hour what took you an afternoon. Learn how he sets the tool up before arguing whether that counts.
+
+### The parts · He did not take laughter as evidence
+He told his minister Yi that fools laugh and the wise look closer, and that even if the whole world laughed he would take the steppe lands. Laughter showed he was different, not mistaken. What he looked at was whether the thing could succeed. e.g. You use a method others scorn and get teased. Ask whether it solves the one thing you need this year.
+
+### The parts · He went to see the hardest man first
+His uncle, Prince Cheng, was the weightiest elder and pleaded illness. Wuling issued no decree and walked to his house, argued that ritual exists to get things done, and gave him the nomad coat. Next day the prince wore it to court. e.g. A new process is stuck. Skip the all-hands email and talk to the senior colleague everyone watches.
+
+### Q: How do I use it today?
+Take one thing you have been putting off learning because it comes from people you rate lower. Write two lines: what it would do for the one thing you must get done this year, and whether you are avoiding it because it is useless or because learning it would make you look behind. If you are the one changing a shared habit, go to the most senior opponent in person before you send anything.
+
+### Lines to keep
+Clothes are for use; ritual is for getting things done. Fools laugh at it; the wise take a closer look. An act you doubt achieves nothing.
+
+### Q: What should I read alongside?
+Shang Yang — Both rewrote a state's old rules. Shang Yang put down opposition with decrees and heavy penalties, building trust first and law second, and did not argue with opponents. Wuling walked to the opponent's door and argued to the point he cared about. Fukuzawa Yukichi — Both learned from the side their own people looked down on: Fukuzawa from the West, Wuling from the nomads. Fukuzawa wrote to change minds. Wuling put on the coat himself and knocked on his uncle's door.
+
+### Further
+Shang Yang Fukuzawa Yukichi Guan Zhong Duke Wen of Jin
 
 ========================================================================
 ## Konosuke Matsushita
@@ -4867,10 +4901,10 @@ Before you push any new rule, do one small thing that proves you deliver: a visi
 When the law is not carried out, it is those above who break it. A sage who can strengthen the state does not copy the past. Do not change the law for less than a hundredfold gain.
 
 ### Q: What should I read alongside?
-Zhang Juzheng — The same fate, opposite legacies: Shang Yang died and his system lived, Zhang Juzheng died and his was taken apart. The difference is who was left with a reason to defend it. Han Feizi — Theory and practice of the same school: Han Feizi wrote the system down, Shang Yang ran it, and both were killed by the thing they had built. Guan Zhong — Two routes to a strong state: Guan Zhong enriches the people and the state follows, Shang Yang installs the law and the wealth follows. Wu Zetian — Two people who broke a settled order: Shang Yang broke aristocratic privilege, she broke the bar on her sex, and both paid heavily for it. The Wealth of Nations — Both are designing a route to a strong state. Shang Yang binds people to the land and suppresses trade, Smith credits division and exchange. Both routes work, at wildly different prices.
+Zhang Juzheng — The same fate, opposite legacies: Shang Yang died and his system lived, Zhang Juzheng died and his was taken apart. The difference is who was left with a reason to defend it. Han Feizi — Theory and practice of the same school: Han Feizi wrote the system down, Shang Yang ran it, and both were killed by the thing they had built. Guan Zhong — Two routes to a strong state: Guan Zhong enriches the people and the state follows, Shang Yang installs the law and the wealth follows. Wu Zetian — Two people who broke a settled order: Shang Yang broke aristocratic privilege, she broke the bar on her sex, and both paid heavily for it. The Wealth of Nations — Both are designing a route to a strong state. Shang Yang binds people to the land and suppresses trade, Smith credits division and exchange. Both routes work, at wildly different prices. King Wuling of Zhao — Both rewrote a state's old rules. Shang Yang put down opposition with decrees and heavy penalties, building trust first and law second, and did not argue with opponents. Wuling walked to the opponent's door and argued to the point he cared about.
 
 ### Further
-Han Feizi Zhang Juzheng Guan Zhong Cao Cao Li Shimin The Wealth of Nations Mencius Lee Kuan Yew Napoleon Bai Gui The Old Regime and the Revolution Why Nations Fail
+Han Feizi Zhang Juzheng Guan Zhong Cao Cao Li Shimin The Wealth of Nations Mencius Lee Kuan Yew Napoleon Bai Gui The Old Regime and the Revolution Why Nations Fail King Wuling of Zhao
 
 ========================================================================
 ## Shi Tiesheng
@@ -20862,6 +20896,72 @@ Where it goes wrong: reading composure as refusing to fight the fights that have
 Keep an ordinary mind while doing extraordinary things.
 Watch your rival too closely and you end up being led.
 See the present as it is and judgement improves.
+
+========================================================================
+## King Wuling of Zhao · Learn From the Lesser
+URL: https://ourword.ai/en/i/zhao-wuling-wang/learn-from-the-lesser/
+Source: Records of the Grand Historian, Hereditary House of Zhao
+Tags: Deep read, King Wuling of Zhao, What blocks the new thing is often not difficulty but pride
+
+The thing you need to learn comes from people you have always looked down on. How did King Wuling of Zhao get past the shame of learning from barbarians?
+
+### Q: What actually happened?
+The nomads north of Zhao wore short, narrow-sleeved coats and shot from horseback, coming and going like the wind. Zhao's army wore long robes and wide sleeves and depended on chariots and infantry, so it could not catch them. King Wuling wanted to wear the nomad dress and learn mounted archery, but feared the world would say he had made himself a pupil of barbarians. He told his minister Yi. Yi said that an act you doubt achieves nothing. The king answered: let fools laugh; the wise will see what I see, and even if the whole world laughs, I will take the steppe lands.
+
+### The parts · Learn what works, not what looks proper
+The short coat with narrow sleeves was easy to ride in and easy to draw a bow in, and the nomads had used it for years. The king did not ask whether it was dignified. He asked whether it worked. It was not new in the world, only new to Zhao.
+e.g. A colleague uses a new tool and finishes in half an hour what took you an afternoon. Before you argue about whether that is real skill, learn how he sets it up.
+
+### The parts · What blocks you is often pride, not brains
+His opponents said the central states were where clever people lived and only barbarians dressed that way. They did not fail to see what archery was worth. They refused to learn from people they thought beneath them. The king put the question plainly: is clothing for use or for show?
+e.g. A new hire ten years younger knows the new tools best. You pretend you know them and never ask, and a year later that is the gap.
+
+### The parts · Being laughed at is not proof you are wrong
+Laughter shows only that you differ from the crowd, not that you are mistaken. Later Zhao trained cavalry, beat the northern tribes and set up three commanderies on the frontier. That came from a method people had laughed at.
+e.g. You use an approach your circle scorns and get teased for it. The question is whether it solves the thing you need solved this year.
+
+### Q: How do I use it today?
+Where you are: something new clearly works, but it comes from people or a field you have never rated, and you keep finding reasons to wait.
+Ask first: do I refuse it because it is useless, or because learning it would make me look behind? Would it solve the one thing I must solve this year?
+Where it goes wrong: treating every laughed-at idea as foresight. Wuling took up something the nomads had proved, saw it worked, and only then stopped caring who laughed. Check first, then ignore the laughter.
+
+### Lines to keep
+An act you doubt achieves nothing.
+Fools laugh at it; the wise take a closer look.
+Let the world laugh; I will have the steppe.
+
+========================================================================
+## King Wuling of Zhao · Go to the Uncle First
+URL: https://ourword.ai/en/i/zhao-wuling-wang/go-to-the-uncle-first/
+Source: Records of the Grand Historian, Hereditary House of Zhao
+Tags: Deep read, King Wuling of Zhao, Visit the hardest person yourself instead of issuing an order
+
+You want to change the rules, and the most senior elder says no first. How did King Wuling get his uncle into nomad dress by the next morning?
+
+### Q: What actually happened?
+King Wuling had settled on the new dress, but his uncle, Prince Cheng, the weightiest elder at court, pleaded illness and stayed home. The king issued no decree. He walked to the prince's house and said: in a state the people obey the ruler, in a family they obey their elders, and I fear the world will talk if you refuse. He added: clothes are for use, and ritual is for getting things done. The prince gave way. The king handed him the nomad dress on the spot, and next morning Prince Cheng came to court wearing it.
+
+### The parts · Go to the hardest person first
+The whole court was watching Prince Cheng. Once he pleaded illness, everyone who opposed the king had cover. Wuling did not send others to persuade him, nor wait for him to come round. He went to his door. Going yourself says this matters to you.
+e.g. A new process is stuck. Don't rush out an all-hands email. Go to the senior colleague everyone watches and say it to his face.
+
+### The parts · Begin with what they care about
+He did not press the point that new beats old. He talked about what ritual is for: to make things work, adjusted to local conditions. And he took up the prince's own worry, what the world would say, as concern for the state, not vanity.
+e.g. If the objection is who takes the blame when it fails, settle who is accountable before you praise the new way.
+
+### The parts · Hand it over, then see him wear it
+When the case was made, the king gave him the clothes there and then. A change of mind has to become something visible before it counts. When Prince Cheng wore it to court the next day, the other elders had no reason left to delay.
+e.g. To move a team to a new tool, use it in your own work first, then give the hands-on teaching to the person who trusts it least.
+
+### Q: How do I use it today?
+Where you are: you want to change a habit everyone shares, and the most senior person is the first to say no while the rest watch him.
+Ask first: have I gone to see him myself? Am I speaking to what he cares about or to what I want to say? Can I put something visible in his hands?
+Where it goes wrong: assuming a visit equals persuasion. Part of why Prince Cheng yielded was that the visitor was his king, and 'in a state, obey the ruler' carried weight. Without that seat, a visit is only the start: bring an answer to the thing he fears.
+
+### Lines to keep
+In a family you obey elders; in a state, the ruler.
+Clothes are for use; ritual is for getting things done.
+What serves the state need not copy the past.
 
 ========================================================================
 ## Zhu Yuanzhang · Be slow to take the title

@@ -749,6 +749,8 @@ SCENES = [
      [("csikszentmihalyi", "flow-channel"), ("bruce-lee", "one-kick")]),
     ("每天冒出来的新东西，我都怕漏看。",
      [("herbert-simon", "poverty-of-attention")]),
+    ("我拉不下脸，向不如我的人学。",
+     [("zhao-wuling-wang", "learn-from-the-lesser")]),
 ]),
 ("手艺不值钱了", "AI 来了", [
     ("我这身本事，眼下用不上。",
@@ -950,6 +952,8 @@ SCENES = [
      [("zhu-yuanzhang", "heavy-law"), ("guan-zhong", "follow-the-people")]),
     ("我一直在骂人，可事没变。",
      [("thinking-in-systems", "structure-drives-behavior"), ("thinking-in-systems", "leverage-points")]),
+    ("他们都说老规矩不能改，我怎么推？",
+     [("zhao-wuling-wang", "go-to-the-uncle-first")]),
 ]),
 ("合伙人闹掰", "跟人打交道", [
     ("分钱这事，我怕埋雷。",

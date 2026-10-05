@@ -1,11 +1,11 @@
 # OurWord (人類世界生存法則)
 
-> 183 people and books on how the world actually works, across 2,600 years
+> 184 people and books on how the world actually works, across 2,600 years
 > 遇到事了，看看以前的人怎麼處理
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 183 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 184 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
-一個關於「世界到底怎麼運轉」的知識庫：戰略、財富、權力、人性、創業，取自 183 位人物與典籍，跨越 2600 年。每一條都寫清楚這個人真正留下的那一個想法、背後的故事、拆開的分則與例子，以及今天怎麼用。
+一個關於「世界到底怎麼運轉」的知識庫：戰略、財富、權力、人性、創業，取自 184 位人物與典籍，跨越 2600 年。每一條都寫清楚這個人真正留下的那一個想法、背後的故事、拆開的分則與例子，以及今天怎麼用。
 
 ## Read it
 
@@ -20,8 +20,8 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 
 - [現代](https://ourword.ai/tw/t/modern/) — 62
 - [工業時代](https://ourword.ai/tw/t/industrial-age/) — 56
-- [先秦與古典時代](https://ourword.ai/tw/t/classical-era/) — 24
-- [權力與組織](https://ourword.ai/tw/t/power/) — 24
+- [先秦與古典時代](https://ourword.ai/tw/t/classical-era/) — 25
+- [權力與組織](https://ourword.ai/tw/t/power/) — 25
 - [心智與情緒](https://ourword.ai/tw/t/mind/) — 21
 - [創業與產品](https://ourword.ai/tw/t/startups/) — 20
 - [財富與風險](https://ourword.ai/tw/t/wealth/) — 19
@@ -466,6 +466,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [張良 · 願封留足矣](https://ourword.ai/tw/i/zhang-liang/asking-for-less/): 張良 · 願封留足矣——在頂點主動要小的。論功行賞時讓你自己挑，挑大的還是挑小的？這一篇要回答的是：張良為什麼挑了最小的那個。
 - [張一鳴 · 延遲滿足感](https://ourword.ai/tw/i/zhang-yiming/delayed-gratification/): 張一鳴 · 延遲滿足感——他最看重的特質。被問看重什麼品質，他反覆給同一個答案。這一篇要回答的是：這個詞在他那裡的具體用法。
 - [張一鳴 · 平常心做非常事](https://ourword.ai/tw/i/zhang-yiming/ordinary-mind/): 張一鳴 · 平常心做非常事——九週年演講。一家以兇猛著稱的公司，九週年講的是平常心。這一篇要回答的是：他點名的那幾種干擾。
+- [趙武靈王 · 向胡人學](https://ourword.ai/tw/i/zhao-wuling-wang/learn-from-the-lesser/): 趙武靈王 · 向胡人學——新東西擋在前面的，往往不是難，是拉不下臉。你要學的東西，來自一群你一向看不上的人。這一篇要回答的是：趙武靈王怎麼越過「向蠻夷學」這道臉面的坎。
+- [趙武靈王 · 先去敲叔叔的門](https://ourword.ai/tw/i/zhao-wuling-wang/go-to-the-uncle-first/): 趙武靈王 · 先去敲叔叔的門——最難推的那個人，親自登門，不發詔令。你要改規矩，最有分量的人先說了不。這一篇要回答的是：武靈王怎麼讓他的叔叔第二天就穿上胡服上朝。
 - [朱元璋 · 緩稱王](https://ourword.ai/tw/i/zhu-yuanzhang/delay-the-title/): 朱元璋 · 緩稱王——先不要那個名分。同時起兵的人都在稱王，只有他沒有。這一篇要回答的是：那三個字的策略值多少年。
 - [朱元璋 · 治吏用重典](https://ourword.ai/tw/i/zhu-yuanzhang/heavy-law/): 朱元璋 · 治吏用重典——亂世的刑要重。他殺了數以萬計的官員。這一篇要回答的是：他自己怎麼解釋這套做法的適用範圍。
 - [莊子 · 無用之用](https://ourword.ai/tw/i/zhuangzi/use-of-uselessness/): 莊子 · 無用之用——沒被徵用的才活得久。把自己變得有用是本能。這一篇要回答的是：有用同時意味著什麼代價。
@@ -488,7 +490,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [AI Bubble Monitor / AI 泡沫檢測儀](https://ourword.ai/ai/)
 - [Zouni / 走你](https://ourword.ai/zouni/)
 
-## Index (183 entrys)
+## Index (184 entrys)
 
 - [BJ·福格](https://ourword.ai/tw/i/bj-fogg/): BJ·福格（2019年·斯坦福行為設計實驗室）——小到不會失敗。斯坦福行為設計實驗室創始人，研究行為如何被設計出來。他給出一個公式：行為發生需要動機、能力、提示三者同時到位。多數人失敗在只調動機——靠決心和自我激勵——而動機天然起伏，靠它維持的習慣必然崩。他的主張相反：把行為縮到小得不需要動機，然後掛在一個已有的動作後面。
 - [C.S.劉易斯](https://ourword.ai/tw/i/cs-lewis/): C.S.劉易斯（1898-1963年·英國牛津）——妻子死後幾個月的日記。作家，牛津和劍橋的教授，寫過《納尼亞傳奇》和大量勸人信仰的書。五十八歲結婚，妻子喬伊四年後因癌症去世。之後幾個月他在四本練習簿上記自己的狀態，後來用筆名出版，就是《卿卿如晤》。收他是因為「重要的人走了」那六個問題，原來靠弗蘭克爾和蘇軾在答——一個是集中營的倖存者，一個是被貶的官員
@@ -650,6 +652,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [費曼](https://ourword.ai/tw/i/feynman/): 費曼（1918-1988年·美國）——不騙自己。諾貝爾物理獎得主，參與過曼哈頓計劃，調查過挑戰者號事故。他留給非物理學家的東西比留給物理學家的更多——一套關於「怎麼知道自己是不是真懂」的判據。他的標準苛刻到近乎冒犯：如果你不能把一個概念講到大一新生聽懂，說明你自己沒懂。他也把這條用在整個科學界身上：科學的第一原則是不要騙自己，
 - [資治通鑑](https://ourword.ai/tw/i/zizhi-tongjian/): 資治通鑑（北宋·1065-1084）——鑑。司馬光用19年主持編寫，294卷，記錄前403年到959年共1362年歷史。書名由宋神宗題：「鑑於往事，有資於治道」。它是給統治者看的歷史教科書，核心問題只有一個：政權為什麼興，政權為什麼亡。186篇「臣光曰」是司馬光的判斷，精華在這裡。與史記的「寫人」不同，資治通鑑寫的是「權力
 - [赫伯特·西蒙](https://ourword.ai/tw/i/herbert-simon/): 赫伯特·西蒙（美國·1916-2001）——有限理性。美國學者，1916年生於密爾沃基，芝加哥大學政治學博士，1949年起在卡內基理工學院（後來的卡內基梅隆大學）教書，一待五十多年，2001年在匹茲堡去世。他沒有固定在一門學科裡：1947年的《管理行為》成了管理學的經典，1975年他和艾倫·紐厄爾一起得了圖靈獎，1978年又得了諾貝
+- [趙武靈王](https://ourword.ai/tw/i/zhao-wuling-wang/): 趙武靈王（戰國·趙·前295年卒）——胡服。戰國時趙國國君，前325年即位，前299年傳位給兒子，自稱主父，前295年死於沙丘之亂——這一頁只取他改制的辦法，不論他晚年立嗣的事。他一生做成的主要是一件事：前307年起，下令趙國改穿胡人的短衣窄袖，學騎馬射箭，把靠戰車和步兵的舊打法換成騎兵。這件事難在兩頭：外面是鄰國的強敵，
 - [達里奧](https://ourword.ai/tw/i/dalio/): 達里奧（當代·1949-）——原則。橋水基金創始人，《原則》作者，全球規模最大的對沖基金。他在華爾街工作40年，經歷了無數市場崩潰，總結出一套可複製的決策框架。他最重要的信念：所有事情都有原則，原則可以被總結，總結後可以被系統化，系統化後可以被複製。
 - [邁克爾·波特](https://ourword.ai/tw/i/porter/): 邁克爾·波特（美國·1947-）——競爭戰略。美國學者，1947年生，哈佛商學院教授，經濟學博士出身，被普遍視為競爭戰略這門學問的奠基人。1979年他在《哈佛商業評論》提出「五種力量」，1980年出版《競爭戰略》，1996年又寫了《What Is Strategy?》。他反覆問的是同一件事：同一個行業裡，有的公司利潤總是高，
 - [道德經](https://ourword.ai/tw/i/tao-te-ching/): 道德經（春秋·前500年前後）——損。老子五千言，是中國哲學的減法源頭。與儒家「為學日益」相對，老子說「為道日損」——不斷減掉，直到無為，然後無不為。道德經在西方被翻譯次數僅次於聖經。
