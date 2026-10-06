@@ -41,6 +41,7 @@ NAMES = {
     "liu-bang": ("Liu Bang", "Power and organisation"),
     "xiao-he": ("Xiao He", "Power and organisation"),
     "zhao-wuling-wang": ("King Wuling of Zhao", "Power and organisation"),
+    "zhou-gong": ("The Duke of Zhou", "Power and organisation"),
     "mencius": ("Mencius", "Power and organisation"),
     "parkinson": ("C. Northcote Parkinson", "Power and organisation"),
     "shang-yang": ("Shang Yang", "Power and organisation"),

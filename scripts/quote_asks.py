@@ -405,6 +405,13 @@ QUOTE_ASKS = {
         "害过我的人，回来找我了。",
     "jin-wengong/three-stages-back":
         "我主动往后撤，算不算认输？",
+    # 周公
+    "zhou-gong/not-stepping-aside":
+        "流言起来了，我躲，还是不躲？",
+    "zhou-gong/one-wash-three-times":
+        "我位置越高，听到的越少。",
+    "zhou-gong/back-to-the-ministers-place":
+        "权交出去了，我该站在哪儿？",
     # 赵武灵王
     "zhao-wuling-wang/learn-from-the-lesser":
         "我拉不下脸，向不如我的人学。",

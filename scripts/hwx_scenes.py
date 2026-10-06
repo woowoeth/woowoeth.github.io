@@ -350,6 +350,8 @@ SCENES = [
      [("merton", "self-fulfilling-prophecy"), ("guo-ziyi", "open-gates")]),
     ("有人背后告我的状，我怎么回？",
      [("feng-yi", "why-the-fear")]),
+    ("流言起来了，我躲，还是不躲？",
+     [("zhou-gong", "not-stepping-aside")]),
 ]),
 
 # ── 团队 ──
@@ -429,6 +431,8 @@ SCENES = [
      [("hirschman", "exit-voice-loyalty")]),
     ("没人骗我，可话传到我这就变了。",
      [("lushi-chunqiu", "hearing-must-be-checked")]),
+    ("我位置越高，听到的越少。",
+     [("zhou-gong", "one-wash-three-times")]),
 ]),
 ("队伍出不了活", "带人", [
     ("中间就没有一个人能喊停。",
@@ -689,6 +693,8 @@ SCENES = [
      [("lee-kuan-yew", "from-my-sickbed"), ("feng-dao", "only-you-can-save")]),
     ("除了硬扛和走人，我没有第三条路。",
      [("bai-juyi", "middle-hiding"), ("feng-dao", "the-long-happy-old-man")]),
+    ("权交出去了，我该站在哪儿？",
+     [("zhou-gong", "back-to-the-ministers-place")]),
 ]),
 ("要立规矩", "进退取舍", [
     ("新规矩定了，没人当回事。",

@@ -1,11 +1,11 @@
 # OurWord (人類世界生存法則)
 
-> 184 people and books on how the world actually works, across 2,600 years
+> 185 people and books on how the world actually works, across 2,600 years
 > 遇到事了，看看以前的人怎麼處理
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 184 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 185 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
-一個關於「世界到底怎麼運轉」的知識庫：戰略、財富、權力、人性、創業，取自 184 位人物與典籍，跨越 2600 年。每一條都寫清楚這個人真正留下的那一個想法、背後的故事、拆開的分則與例子，以及今天怎麼用。
+一個關於「世界到底怎麼運轉」的知識庫：戰略、財富、權力、人性、創業，取自 185 位人物與典籍，跨越 2600 年。每一條都寫清楚這個人真正留下的那一個想法、背後的故事、拆開的分則與例子，以及今天怎麼用。
 
 ## Read it
 
@@ -20,8 +20,8 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 
 - [現代](https://ourword.ai/tw/t/modern/) — 62
 - [工業時代](https://ourword.ai/tw/t/industrial-age/) — 56
-- [先秦與古典時代](https://ourword.ai/tw/t/classical-era/) — 25
-- [權力與組織](https://ourword.ai/tw/t/power/) — 25
+- [先秦與古典時代](https://ourword.ai/tw/t/classical-era/) — 26
+- [權力與組織](https://ourword.ai/tw/t/power/) — 26
 - [心智與情緒](https://ourword.ai/tw/t/mind/) — 21
 - [創業與產品](https://ourword.ai/tw/t/startups/) — 20
 - [財富與風險](https://ourword.ai/tw/t/wealth/) — 19
@@ -468,6 +468,9 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [張一鳴 · 平常心做非常事](https://ourword.ai/tw/i/zhang-yiming/ordinary-mind/): 張一鳴 · 平常心做非常事——九週年演講。一家以兇猛著稱的公司，九週年講的是平常心。這一篇要回答的是：他點名的那幾種干擾。
 - [趙武靈王 · 向胡人學](https://ourword.ai/tw/i/zhao-wuling-wang/learn-from-the-lesser/): 趙武靈王 · 向胡人學——新東西擋在前面的，往往不是難，是拉不下臉。你要學的東西，來自一群你一向看不上的人。這一篇要回答的是：趙武靈王怎麼越過「向蠻夷學」這道臉面的坎。
 - [趙武靈王 · 先去敲叔叔的門](https://ourword.ai/tw/i/zhao-wuling-wang/go-to-the-uncle-first/): 趙武靈王 · 先去敲叔叔的門——最難推的那個人，親自登門，不發詔令。你要改規矩，最有分量的人先說了不。這一篇要回答的是：武靈王怎麼讓他的叔叔第二天就穿上胡服上朝。
+- [周公 · 流言起來，我不躲](https://ourword.ai/tw/i/zhou-gong/not-stepping-aside/): 周公 · 流言起來，我不躲——躲開最省事，可這攤事離了你就散。有人說你想奪位，可手裡的事，別人接不了。這一篇要回答的是：周公為什麼不躲，不躲之後怎麼做。
+- [周公 · 一沐三捉髮](https://ourword.ai/tw/i/zhou-gong/one-wash-three-times/): 周公 · 一沐三捉髮——位置越高，越要讓人進得來門。你的位置越來越高，來見你的人越來越客氣。這一篇要回答的是：周公怎麼讓比他低得多的人，還敢走到他面前。
+- [周公 · 站回臣子的位置](https://ourword.ai/tw/i/zhou-gong/back-to-the-ministers-place/): 周公 · 站回臣子的位置——放下權力那天，難的是怎麼站回原位。你替人扛了很久，到了該交的那一天。這一篇要回答的是：周公把權交回去之後，怎麼站。
 - [朱元璋 · 緩稱王](https://ourword.ai/tw/i/zhu-yuanzhang/delay-the-title/): 朱元璋 · 緩稱王——先不要那個名分。同時起兵的人都在稱王，只有他沒有。這一篇要回答的是：那三個字的策略值多少年。
 - [朱元璋 · 治吏用重典](https://ourword.ai/tw/i/zhu-yuanzhang/heavy-law/): 朱元璋 · 治吏用重典——亂世的刑要重。他殺了數以萬計的官員。這一篇要回答的是：他自己怎麼解釋這套做法的適用範圍。
 - [莊子 · 無用之用](https://ourword.ai/tw/i/zhuangzi/use-of-uselessness/): 莊子 · 無用之用——沒被徵用的才活得久。把自己變得有用是本能。這一篇要回答的是：有用同時意味著什麼代價。
@@ -490,7 +493,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [AI Bubble Monitor / AI 泡沫檢測儀](https://ourword.ai/ai/)
 - [Zouni / 走你](https://ourword.ai/zouni/)
 
-## Index (184 entrys)
+## Index (185 entrys)
 
 - [BJ·福格](https://ourword.ai/tw/i/bj-fogg/): BJ·福格（2019年·斯坦福行為設計實驗室）——小到不會失敗。斯坦福行為設計實驗室創始人，研究行為如何被設計出來。他給出一個公式：行為發生需要動機、能力、提示三者同時到位。多數人失敗在只調動機——靠決心和自我激勵——而動機天然起伏，靠它維持的習慣必然崩。他的主張相反：把行為縮到小得不需要動機，然後掛在一個已有的動作後面。
 - [C.S.劉易斯](https://ourword.ai/tw/i/cs-lewis/): C.S.劉易斯（1898-1963年·英國牛津）——妻子死後幾個月的日記。作家，牛津和劍橋的教授，寫過《納尼亞傳奇》和大量勸人信仰的書。五十八歲結婚，妻子喬伊四年後因癌症去世。之後幾個月他在四本練習簿上記自己的狀態，後來用筆名出版，就是《卿卿如晤》。收他是因為「重要的人走了」那六個問題，原來靠弗蘭克爾和蘇軾在答——一個是集中營的倖存者，一個是被貶的官員
@@ -532,6 +535,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [司馬遷](https://ourword.ai/tw/i/sima-qian/): 司馬遷（前145-約前86年·夏陽）——受辱之後把書寫完。太史令，《史記》的作者。天漢二年李陵兵敗投降，他替李陵說了幾句話，觸怒武帝下獄，第二年受腐刑。按當時士人的規矩，受這種刑體面的做法是自殺，他沒有。多年後給獄中的任安寫信，把這件事說透了：不是不知道該死，是書沒寫完。《史記》這部書早在庫裡，收他本人是因為他自己那件事——真受過辱、真
 - [吉姆·西蒙斯](https://ourword.ai/tw/i/simons/): 吉姆·西蒙斯（美國·1938-2024）——概率優勢。數學家出身——23歲拿到博士，在MIT和哈佛教書，為國防部破譯過冷戰密碼，與陳省身合作提出「陳-西蒙斯理論」，這是他在數學史上的位置，和投資毫無關係。他48歲才全職做投資，創立文藝復興科技。旗艦的大獎章基金1988年至今費前年化約66%，在收取5%管理費和44%業績提成之後仍有約
 - [呂氏春秋](https://ourword.ai/tw/i/lushi-chunqiu/): 呂氏春秋（戰國末·前239年·呂不韋門客）——論人與察傳。秦相呂不韋召集三千門客集體編成的一部大書，成於公元前239年前後，分十二紀、八覽、六論，二十餘萬言。它不是一家之言：儒、墨、道、法、農、陰陽各家的說法都收在裡面，編排上卻有自己的主意——全書反覆回到同一組問題：這個人可用嗎，這句話可信嗎，這條老規矩還成立嗎。我們從裡面取三篇。《論
+- [周公](https://ourword.ai/tw/i/zhou-gong/): 周公（西周·周初·約前11世紀）——攝政。周文王的兒子、周武王的弟弟，名旦，後來封在魯。武王去世後成王年幼，他代為執政，平定了管叔、武庚的叛亂；成王長大，他把政權交還。這一頁只取他怎麼對待流言、怎麼對待比自己低的人、怎麼交權這三件事，不論他制禮作樂的制度細節。他留下的是三個辦法：被猜忌時，先去說服和你一起扛事的人；位置越
 - [哈佛成人發展研究](https://ourword.ai/tw/i/harvard-study/): 哈佛成人發展研究（1938年至今·哈佛醫學院）——關係的質量決定晚年。人類史上最長的一項成年人追蹤研究。1938年從268名哈佛大二學生開始，後來併入波士頓貧民區的456個男孩，兩組人每兩年問一次近況、每五年做一次體檢，很多人被跟了一輩子，如今已經跟到他們的子女。第四任主任羅伯特·瓦爾丁格把八十多年的數據壓成一句話：讓人晚年健康又快活的，既不是財富
 - [哈耶克](https://ourword.ai/tw/i/hayek/): 哈耶克（奧—英·1899—1992）——分散知識。把「計劃為什麼會系統性算錯」寫成經濟學的人。不是因為計劃者懶，是因為做計劃所需的知識，散落在成千上萬個當事人頭裡。價格是這些知識的傳輸協議。他和凱恩斯辯了一輩子，勝的不是口才，是這一條知識論。
 - [商鞅](https://ourword.ai/tw/i/shang-yang/): 商鞅（戰國·前390-前338）——立信。秦國變法的設計者與執行者，中國歷史上最徹底的制度改革家。他用兩次變法把一個積貧積弱的邊陲小國，改造成了橫掃六合的戰爭機器。他的代價：車裂而死。但他定下的規矩，在他死後一百年仍然運行，最終幫助秦國統一了天下。「人死制度存」——這是改革者裡最好的結局，也是最悲壯的結局。

@@ -1,7 +1,7 @@
-# OurWord — 184 people and books on how the world actually works, across 2,600 years
+# OurWord — 185 people and books on how the world actually works, across 2,600 years
 # OurWord — See how people before you handled it.
 # https://ourword.ai/en/
-# Full corpus, plain text. 184 entrys.
+# Full corpus, plain text. 185 entrys.
 
 ========================================================================
 ## Albert Einstein
@@ -1996,10 +1996,10 @@ After a win, the safer position is being easy to see through, not being indispen
 His merit covered the empire and his ruler did not suspect him. I deal with people honestly, so what would I need defences for? Command is a borrowed thing: it comes when called and goes when waved away.
 
 ### Q: What should I read alongside?
-Han Xin — The same impossible position: Han Xin kept proving he was a threat and his clan was destroyed, Guo Ziyi kept proving he was harmless and died in bed. Zhang Liang — Two ways to survive success: Zhang Liang left the table, Guo Ziyi stayed at it with his cards face up, which is much the harder trick. Feng Dao — Two first-rate survivors of disorder, but Guo Ziyi stayed loyal inside one dynasty while Feng Dao crossed four. Where the boundary of loyalty sits, they answer differently.
+Han Xin — The same impossible position: Han Xin kept proving he was a threat and his clan was destroyed, Guo Ziyi kept proving he was harmless and died in bed. Zhang Liang — Two ways to survive success: Zhang Liang left the table, Guo Ziyi stayed at it with his cards face up, which is much the harder trick. Feng Dao — Two first-rate survivors of disorder, but Guo Ziyi stayed loyal inside one dynasty while Feng Dao crossed four. Where the boundary of loyalty sits, they answer differently. The Duke of Zhou — Both were suspected by their courts. Guo Ziyi made himself smaller: he opened his gates and let anyone walk in, showing he was harmless. The duke would not hide. He told those carrying the work with him, and let the finished work answer. One showed he was no threat, the other showed the work could not do without him.
 
 ### Further
-Han Xin Zhang Liang Zeng Guofan Sima Yi Wang Jian Feng Dao Li Bi Lin Xiangru Feng Yi
+Han Xin Zhang Liang Zeng Guofan Sima Yi Wang Jian Feng Dao Li Bi Lin Xiangru Feng Yi The Duke of Zhou
 
 ========================================================================
 ## Han Feizi
@@ -3245,10 +3245,10 @@ Ask whether there is anyone near you whose job is to tell you you are wrong and 
 With bronze as a mirror you straighten your dress. Water carries the boat, and water can capsize it. Listening to all sides makes you clear; one source, dark.
 
 ### Q: What should I read alongside?
-Zhu Yuanzhang — Two theories of how an emperor handles talent: Li Shimin kept the critics and got a golden age, Zhu Yuanzhang removed the founders and got a secure throne. Zeng Guofan — Two ways to hold up a mirror. Li Shimin kept Wei Zheng in the room; Zeng Guofan used a journal nobody else read.
+Zhu Yuanzhang — Two theories of how an emperor handles talent: Li Shimin kept the critics and got a golden age, Zhu Yuanzhang removed the founders and got a secure throne. Zeng Guofan — Two ways to hold up a mirror. Li Shimin kept Wei Zheng in the room; Zeng Guofan used a journal nobody else read. The Duke of Zhou — Both wanted to hear the uncomfortable thing. Li Shimin relied on ministers like Wei Zheng and tolerated being contradicted. The duke opened the door first and went out to meet people with his hair still wet. One relied on tolerance, the other on lowering the cost of reaching him.
 
 ### Further
-Zeng Guofan Zhuge Liang Liu Bang The Comprehensive Mirror Xunzi Mencius Shang Yang
+Zeng Guofan Zhuge Liang Liu Bang The Comprehensive Mirror Xunzi Mencius Shang Yang The Duke of Zhou
 
 ========================================================================
 ## Lin Xiangru
@@ -4904,7 +4904,7 @@ When the law is not carried out, it is those above who break it. A sage who can 
 Zhang Juzheng — The same fate, opposite legacies: Shang Yang died and his system lived, Zhang Juzheng died and his was taken apart. The difference is who was left with a reason to defend it. Han Feizi — Theory and practice of the same school: Han Feizi wrote the system down, Shang Yang ran it, and both were killed by the thing they had built. Guan Zhong — Two routes to a strong state: Guan Zhong enriches the people and the state follows, Shang Yang installs the law and the wealth follows. Wu Zetian — Two people who broke a settled order: Shang Yang broke aristocratic privilege, she broke the bar on her sex, and both paid heavily for it. The Wealth of Nations — Both are designing a route to a strong state. Shang Yang binds people to the land and suppresses trade, Smith credits division and exchange. Both routes work, at wildly different prices. King Wuling of Zhao — Both rewrote a state's old rules. Shang Yang put down opposition with decrees and heavy penalties, building trust first and law second, and did not argue with opponents. Wuling walked to the opponent's door and argued to the point he cared about.
 
 ### Further
-Han Feizi Zhang Juzheng Guan Zhong Cao Cao Li Shimin The Wealth of Nations Mencius Lee Kuan Yew Napoleon Bai Gui The Old Regime and the Revolution Why Nations Fail King Wuling of Zhao
+Han Feizi Zhang Juzheng Guan Zhong Cao Cao Li Shimin The Wealth of Nations Mencius Lee Kuan Yew Napoleon Bai Gui The Old Regime and the Revolution Why Nations Fail King Wuling of Zhao The Duke of Zhou
 
 ========================================================================
 ## Shi Tiesheng
@@ -5722,6 +5722,40 @@ Influence — Micro and macro of the same subject: Cialdini works on the switche
 
 ### Further
 Influence George Soros Machiavelli Thinking, Fast and Slow Maria Konnikova The Old Regime and the Revolution Charles P. Kindleberger
+
+========================================================================
+## The Duke of Zhou
+URL: https://ourword.ai/en/i/zhou-gong/
+Tags: Power and organisation, Pre-Qin and classical, Regency
+
+The Duke of Zhou (Early Zhou · c. 11th century BC) — Regency. Son of King Wen and brother of King Wu of Zhou, named Dan, later enfeoffed in the state of Lu.
+
+### Q: What did this one leave behind?
+Son of King Wen and brother of King Wu of Zhou, named Dan, later enfeoffed in the state of Lu. When King Wu died and the heir was a child, he ran the state in the boy's name, put down his brothers' revolt, and when the king came of age handed the rule back. This page takes only three things: how he met a rumour, how he treated people far below him, and how he handed over power. It does not discuss his rites and institutions. He left three methods. When you are suspected, first tell the people carrying the load with you. The higher your seat, the more you must keep the door open. Hand over clean, and let everyone see where you now stand.
+
+### Q: What actually happened?
+According to Sima Qian, when King Cheng was a child and gravely ill, the Duke of Zhou cut off his own fingernails and sank them in the river, praying that if any spirit was offended, it was he, Dan, and not the boy. He put the prayer away in the royal archive. Later, after the king took charge, someone slandered the duke and he left for the south. Cheng opened the archive, found the prayer, wept, and brought him back.
+
+### The parts · He did not hide, and did not defend himself first
+When it was said he meant to harm the king, he neither argued nor left. He went to the two elders carrying the work with him and explained why he could not step aside: if he did, the realm would turn against Zhou. e.g. People say you are after the project. Sit down with the two or three people who build it with you, then finish the job.
+
+### The parts · He kept his door open
+He told his son that in one bath he grabbed his hair three times to go out to a visitor, and in one meal he stood up three times. The higher you sit, the less people tell you, so push the cost of seeing you down yourself. e.g. Keep ninety minutes a week empty, and see whoever turns up.
+
+### The parts · He handed over, and stepped back to his place
+When the king grew up, the duke gave back the rule and moved from the seat facing south to stand among the ministers. Handing over meant giving up the decisions, and moving his place so everyone could see it. e.g. At the first meeting after a handover, leave the head of the table to the new lead.
+
+### Q: How do I use it today?
+Pick one matter where you are suspected and cannot walk away. Write three lines: if I step aside, does anyone pick it up; which two or three people carrying it with me should hear my reasons first; what will let the work speak for me. If your seat is already high, count how long it has been since someone said what I did not want to hear. His one judgement runs through all three: look at the work first, and at what people say second.
+
+### Lines to keep
+I do not step aside because I fear the realm will turn against Zhou. One bath, three times I seize my hair; one meal, three times I rise. Bury me at Chengzhou, to show I dare not leave King Cheng.
+
+### Q: What should I read alongside?
+Guo Ziyi — Both were suspected by their courts. Guo Ziyi made himself smaller: he opened his gates and let anyone walk in, showing he was harmless. The duke would not hide. He told those carrying the work with him, and let the finished work answer. One showed he was no threat, the other showed the work could not do without him. Li Shimin — Both wanted to hear the uncomfortable thing. Li Shimin relied on ministers like Wei Zheng and tolerated being contradicted. The duke opened the door first and went out to meet people with his hair still wet. One relied on tolerance, the other on lowering the cost of reaching him.
+
+### Further
+Guo Ziyi Li Shimin Zhang Liang Shang Yang
 
 ========================================================================
 ## The I Ching
@@ -6646,7 +6680,7 @@ Enfeoff me at Liu and it is enough. I wish to drop the affairs of men and follow
 Han Xin — Same founding, opposite endings: Zhang Liang withdrew completely and died old, Han Xin kept both his army and his ambitions and was killed. Fan Li — The two men who understood leaving. Fan Li left to trade, Zhang Liang left to study the way. Different exits, identical result. Guo Ziyi — Two ways to survive success: Zhang Liang left the table, Guo Ziyi stayed at it with his cards face up, which is much the harder trick. Li Bi — One reign or four: Zhang Liang withdrew for good once the founding was over, Li Bi came back and left four times and finished holding the top office. Lin Xiangru — Both step back when they could press their claim: Zhang Liang turned down thirty thousand households for one small county, yielding to his ruler to disarm suspicion, while Lin yielded to a colleague to keep standing the one line of defence the two of them held together. Feng Yi — Both stepped back from reward. Zhang Liang turned down thirty thousand households and asked for one small county, stepping back from the ruler's gift. Feng Yi kept his rewards and simply stayed out of the argument about merit, filing plain reports and letting the soldiers and the emperor keep the account.
 
 ### Further
-Fan Li Li Bi Han Xin Tao Te Ching Liu Bang Guo Ziyi Wang Jian Guiguzi Lin Xiangru Feng Yi Xiao He
+Fan Li Li Bi Han Xin Tao Te Ching Liu Bang Guo Ziyi Wang Jian Guiguzi Lin Xiangru Feng Yi Xiao He The Duke of Zhou
 
 ========================================================================
 ## Zhang Yiming
@@ -20962,6 +20996,105 @@ Where it goes wrong: assuming a visit equals persuasion. Part of why Prince Chen
 In a family you obey elders; in a state, the ruler.
 Clothes are for use; ritual is for getting things done.
 What serves the state need not copy the past.
+
+========================================================================
+## The Duke of Zhou · The Rumour, and Why He Stayed
+URL: https://ourword.ai/en/i/zhou-gong/not-stepping-aside/
+Source: Records of the Grand Historian, Hereditary House of the Duke of Zhou of Lu; Book of Documents, Metal-Bound Coffer
+Tags: Deep read, The Duke of Zhou, Stepping aside is easiest, but the work falls apart without you
+
+Someone says you want the seat, while you hold up a job nobody else can take. Why did the Duke of Zhou stay, and what did he do next?
+
+### Q: What actually happened?
+When King Wu died, his son King Cheng was still a boy, and the Duke of Zhou ran the state in his name. His brothers began to spread word that he meant to harm the young king. The duke did not rush to defend himself. He went to see Taigong Wang and Duke Shao, the two elders who shared the work, and told them: I will not step aside, because if I do the whole realm may turn against Zhou, and I would have no answer for the late kings. Then, at the king's command, he led the army that put down his brothers' revolt.
+
+### The parts · Tell the people carrying the load with you
+He did not argue first with the rumour-mongers or plead first with the king. He went to the two elders who held the court up beside him. A rumour first shakes your partners' trust in you, and if they stop trusting you, the work stops with them.
+e.g. People say you are after the project. Before you defend yourself in the group chat, sit down with the two colleagues you actually build it with.
+
+### The parts · Argue the job, not your innocence
+He did not say 'I have no such ambition.' He said: the king is dead, his heir is a child, and this has to be done. Leaving would have saved his name and lost the realm. The question is what happens to the work if you go, not what people think of you.
+e.g. You took the mess nobody wanted, and now someone says you are climbing. Ask whether anyone else would pick it up if you put it down.
+
+### The parts · Let finished work speak
+A suspected person cannot talk their way clear. The duke put the revolt down and did the next job, then the next. Years later, when the king opened the duke's old prayer, he found what the duke had always done, not what he had said in his own defence.
+e.g. In the quarter when people doubt you, deliver what you promised on time. It does more than telling them weekly that you can be trusted.
+
+### Q: How do I use it today?
+Where you are: someone says you have a hidden aim, while you are holding up work nobody else can take.
+Ask first: if I step aside, does anyone pick this up? Have I told the two or three people who carry it with me?
+Where it goes wrong: staying is not the same as ignoring suspicion. The duke had partners who vouched for him and a child king no one else could stand in for. With only your hurt feelings and no one vouching, digging in confirms the doubt.
+
+### Lines to keep
+I do not step aside because I fear the realm will turn against Zhou.
+King Wu died early, King Cheng is young; so I act as I do.
+I never knew how hard the duke worked for the royal house.
+
+========================================================================
+## The Duke of Zhou · Three Times Out of the Bath
+URL: https://ourword.ai/en/i/zhou-gong/one-wash-three-times/
+Source: Records of the Grand Historian, Hereditary House of the Duke of Zhou of Lu; Analects, Taibo
+Tags: Deep read, The Duke of Zhou, The higher your seat, the more you must keep the door open
+
+Your position keeps rising, and visitors grow more polite. How did the Duke of Zhou keep far humbler people willing to walk up to him?
+
+### Q: What actually happened?
+When the duke's son Boqin was sent to rule the state of Lu, his father warned him on the way out. I am King Wen's son, King Wu's brother and King Cheng's uncle, he said, and nobody counts me low. Yet in one bath I grab my hair three times to go and meet a visitor, and in one meal I spit out my food three times to rise and greet a scholar, for fear of losing a worthy person. When you get to Lu, do not look down on anyone because you hold a state.
+
+### The parts · When the seat is high, open the door yourself
+The higher you sit, the more visitors weigh whether it is safe to say a thing. The duke did not wait for them. Hair still wet, he went out; food still in his mouth, he stood up. He pushed the cost of seeing him as close to zero as he could.
+e.g. You became a manager and your team goes quiet in meetings. What needs to change is that seeing you takes an appointment and a three-page brief.
+
+### The parts · He feared missing someone, not being interrupted
+What worried him was missing a useful person or a useful word. If every interruption counts as a cost, the higher you rise the more you miss, and you are the last to find out.
+e.g. Your calendar is full and someone keeps hovering at your door. You say 'later.' Most of the time they will not come back later.
+
+### The parts · His parting word: do not use rank on people
+He said this to a man about to hold a state of his own. The biggest change that rank brings is not what you can do but what others dare to tell you. That gap does not close by itself; you have to close it.
+e.g. For your first three months after a promotion, keep ninety minutes a week empty. Whoever comes, you see.
+
+### Q: How do I use it today?
+Where you are: your seat is higher now, reports look better and better, and nobody says anything that makes you uncomfortable.
+Ask first: when did someone last say to my face what I did not want to hear? How hard is it for people below me to see me?
+Where it goes wrong: staging an open door. The duke actually put his meal down. If your door is open and your face is not, people try it once and do not come again.
+
+### Lines to keep
+One bath, three times I seize my hair; one meal, three times I rise.
+Even so, I fear losing the worthy people of the realm.
+Proud and mean, and the rest is not worth seeing.
+
+========================================================================
+## The Duke of Zhou · Back to a Minister's Place
+URL: https://ourword.ai/en/i/zhou-gong/back-to-the-ministers-place/
+Source: Records of the Grand Historian, Hereditary House of the Duke of Zhou of Lu
+Tags: Deep read, The Duke of Zhou, On the day you hand over power, the hard part is where to stand
+
+You carried the load for others for a long time, and now it is time to hand it over. This page asks where the Duke of Zhou stood afterwards.
+
+### Q: What actually happened?
+The Duke of Zhou ran the state for King Cheng for seven years. Then the king grew up and could govern alone, and the duke gave the rule back. While regent he had sat facing south to receive the lords; now he walked to the north side and took his place among the ministers, respectful, almost fearful in manner. In old age, ill, he said he must be buried at Chengzhou, to show he dared not leave the king.
+
+### The parts · Hand it over clean
+He did not give the power back on paper and keep running things. The king took the court himself, and the duke moved to a minister's seat. What handovers leave behind is an invisible tail: every decision, big or small, still comes to me.
+e.g. You pass a project to the new lead, and the group still tags you before every call.
+
+### The parts · Make the new place visible
+Regent, he faced south; afterwards he faced north. Where he stood changed, so everyone could see at a glance who was king and who was minister. A blurred seat invites fresh suspicion, of him and of the king.
+e.g. At the first meeting after you hand over, sit at the side and leave the head of the table to the new lead.
+
+### The parts · Each puts the other first
+The duke asked to be buried at Chengzhou, to show he would not leave the king. The king declined: he buried the duke at Bi, beside King Wen, to show he would not treat the duke as a subject. Each put the other's place ahead of his own.
+e.g. A retired boss reviews your key plan once. He gives opinions, makes no decisions, and sets up no second place to be heard.
+
+### Q: How do I use it today?
+Where you are: you carried this for someone for a long time, and the day to hand it over has come. You have never practised how to stand afterwards.
+Ask first: what am I handing over, the title or the decisions? Can everyone see at a glance that my place has changed?
+Where it goes wrong: assuming the further you retreat the better. The duke stayed at court and the king could still ask him; what you hand over is the decision, not all your care.
+
+### Lines to keep
+Bury me at Chengzhou, to show I dare not leave King Cheng.
+King Cheng declined: bury him at Bi, beside King Wen.
+So all know I dare not treat the duke as a subject.
 
 ========================================================================
 ## Zhu Yuanzhang · Be slow to take the title
