@@ -1,11 +1,11 @@
 # OurWord (人類世界生存法則)
 
-> 185 people and books on how the world actually works, across 2,600 years
+> 186 people and books on how the world actually works, across 2,600 years
 > 遇到事了，看看以前的人怎麼處理
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 185 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 186 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
-一個關於「世界到底怎麼運轉」的知識庫：戰略、財富、權力、人性、創業，取自 185 位人物與典籍，跨越 2600 年。每一條都寫清楚這個人真正留下的那一個想法、背後的故事、拆開的分則與例子，以及今天怎麼用。
+一個關於「世界到底怎麼運轉」的知識庫：戰略、財富、權力、人性、創業，取自 186 位人物與典籍，跨越 2600 年。每一條都寫清楚這個人真正留下的那一個想法、背後的故事、拆開的分則與例子，以及今天怎麼用。
 
 ## Read it
 
@@ -20,12 +20,12 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 
 - [現代](https://ourword.ai/tw/t/modern/) — 62
 - [工業時代](https://ourword.ai/tw/t/industrial-age/) — 56
-- [先秦與古典時代](https://ourword.ai/tw/t/classical-era/) — 26
+- [先秦與古典時代](https://ourword.ai/tw/t/classical-era/) — 27
 - [權力與組織](https://ourword.ai/tw/t/power/) — 26
 - [心智與情緒](https://ourword.ai/tw/t/mind/) — 21
 - [創業與產品](https://ourword.ai/tw/t/startups/) — 20
+- [謀略與競爭](https://ourword.ai/tw/t/strategy/) — 19
 - [財富與風險](https://ourword.ai/tw/t/wealth/) — 19
-- [謀略與競爭](https://ourword.ai/tw/t/strategy/) — 18
 - [世界如何運轉](https://ourword.ai/tw/t/world/) — 18
 - [學習與成長](https://ourword.ai/tw/t/learning/) — 17
 - [識人與相處](https://ourword.ai/tw/t/people/) — 16
@@ -423,6 +423,9 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [系統之美 · 槓桿點](https://ourword.ai/tw/i/thinking-in-systems/leverage-points/): 系統之美 · 槓桿點——位置找對了，方向常推反。她列了十二個介入系統的位置，從弱到強。這一篇要回答的是：為什麼最強的幾個幾乎沒人用。
 - [托馬斯·戈登 · 我信息](https://ourword.ai/tw/i/thomas-gordon/i-message/): 托馬斯·戈登 · 我信息——說影響，不說人品。同樣一件事，一種說法引發對抗，一種引發行動。這一篇要回答的是：結構差在哪。
 - [托馬斯·戈登 · 這問題是誰的](https://ourword.ai/tw/i/thomas-gordon/problem-ownership/): 托馬斯·戈登 · 這問題是誰的——歸屬不同，方法相反。孩子難受時你講道理，越講他越遠。這一篇要回答的是：那時候該做什麼。
+- [修昔底德 · 他只認實力，我還講不講理](https://ourword.ai/tw/i/thucydides/the-strong-do-what-they-can/): 修昔底德 · 他只認實力，我還講不講理——道理在你這邊，不等於有人替你出手。對面明說只講誰更強，不談誰有理。這一篇要回答的是：這時候你手裡有什麼，不該押什麼。
+- [修昔底德 · 第二天就後悔的決定](https://ourword.ai/tw/i/thucydides/the-morrow-brought-repentance/): 修昔底德 · 第二天就後悔的決定——氣頭上定的事，要留一個能收回的口子。你在火頭上做了一個決定，第二天睡醒就想收回。這一篇要回答的是：雅典人怎麼把一個已經發出去的死刑令追回來。
+- [修昔底德 · 不拿聽來的第一個說法當事實](https://ourword.ai/tw/i/thucydides/first-source-that-came-to-hand/): 修昔底德 · 不拿聽來的第一個說法當事實——連自己的印象，也要拿來驗。幾個人對同一件事的說法對不上，而你要靠它做決定。這一篇要回答的是：修昔底德是怎麼查的，查到對不上時他先問什麼。
 - [維果茨基 · 最近發展區](https://ourword.ai/tw/i/vygotsky/zpd/): 維果茨基 · 最近發展區——看第二條線。兩個人現在水平一樣，未來差別可能很大。這一篇要回答的是：差在哪個指標上。
 - [維果茨基 · 腳手架：給了要撤](https://ourword.ai/tw/i/vygotsky/scaffolding/): 維果茨基 · 腳手架：給了要撤——不撤就成了依賴。幫到什麼程度算幫對了。這一篇要回答的是：判據是撤得掉。
 - [王翦 · 非六十萬不可](https://ourword.ai/tw/i/wang-jian/sixty-thousand/): 王翦 · 非六十萬不可——報真實的數。老闆問要多少資源，報多了顯得無能，報少了拿不下。這一篇要回答的是：王翦為什麼堅持報那個嚇人的數。
@@ -493,7 +496,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [AI Bubble Monitor / AI 泡沫檢測儀](https://ourword.ai/ai/)
 - [Zouni / 走你](https://ourword.ai/zouni/)
 
-## Index (185 entrys)
+## Index (186 entrys)
 
 - [BJ·福格](https://ourword.ai/tw/i/bj-fogg/): BJ·福格（2019年·斯坦福行為設計實驗室）——小到不會失敗。斯坦福行為設計實驗室創始人，研究行為如何被設計出來。他給出一個公式：行為發生需要動機、能力、提示三者同時到位。多數人失敗在只調動機——靠決心和自我激勵——而動機天然起伏，靠它維持的習慣必然崩。他的主張相反：把行為縮到小得不需要動機，然後掛在一個已有的動作後面。
 - [C.S.劉易斯](https://ourword.ai/tw/i/cs-lewis/): C.S.劉易斯（1898-1963年·英國牛津）——妻子死後幾個月的日記。作家，牛津和劍橋的教授，寫過《納尼亞傳奇》和大量勸人信仰的書。五十八歲結婚，妻子喬伊四年後因癌症去世。之後幾個月他在四本練習簿上記自己的狀態，後來用筆名出版，就是《卿卿如晤》。收他是因為「重要的人走了」那六個問題，原來靠弗蘭克爾和蘇軾在答——一個是集中營的倖存者，一個是被貶的官員
@@ -507,6 +510,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [優秀的綿羊](https://ourword.ai/tw/i/excellent-sheep/): 優秀的綿羊（2014年·德雷謝維奇）——會考不會想。作者在耶魯任教十年、做過招生評審，寫下對精英教育的批評。他的觀察是：這套系統篩選出的年輕人極其擅長跨越一道道設定好的欄杆——成績、競賽、實習、簡歷——卻普遍說不出自己想要什麼。他稱他們為優秀的綿羊：能力很強，方向全靠外部給定，一旦沒有下一道欄杆就陷入茫然，且對失敗有超出常人的恐懼
 - [依戀理論](https://ourword.ai/tw/i/attachment-theory/): 依戀理論（1950-1970年代·鮑爾比與艾恩斯沃斯）——早期模板。鮑爾比研究戰後孤兒院的孩子，提出人對親近關係的需求是本能而非依賴；他的合作者艾恩斯沃斯設計了「陌生情境」實驗，把一歲嬰兒與照料者短暫分離再重聚，從重聚那一刻的反應裡，識別出幾種穩定的依戀模式。這套模式會成為一個人此後處理親密關係的默認模板——不是決定論，但確實是出廠設置。
 - [保羅·格雷厄姆](https://ourword.ai/tw/i/paul-graham/): 保羅·格雷厄姆（美國·1964年—）——做不可規模化的事。Lisp 黑客，1995 年做出 Viaweb——世界上第一個跑在瀏覽器裡的商用軟件，1998 年賣給雅虎。2005 年和幾個人辦了 Y Combinator，用「一次投一批、給小錢、給三個月」的方式重寫了早期投資的形態，Airbnb、Stripe、Dropbox 都從這裡出來。
+- [修昔底德](https://ourword.ai/tw/i/thucydides/): 修昔底德（古希臘·約前460—前400）——史學。雅典將軍，親歷伯羅奔尼撒戰爭，寫下《伯羅奔尼撒戰爭史》——被後人看作史學的開創者，也是政治現實主義的源頭。這一頁只取他書裡三件事：對面只認實力時怎麼看清局面，怒火上頭時的決定怎麼收回，聽到幾個對不上的說法時怎麼查。他留下的是三個辦法：先弄清對方認什麼、手裡真有什麼；不在火頭上定不
 - [俾斯麥](https://ourword.ai/tw/i/bismarck/): 俾斯麥（普魯士·1815—1898）——聯盟幾何。把歐洲當成一道幾何題來做的人。他不追求友誼，追求讓三方同時離不開你。打敗丹麥、奧地利、法國三場戰爭之後，他反而停下，用聯盟把德意志固住。拿破崙贏在打，他贏在停。
 - [克里斯·沃斯](https://ourword.ai/tw/i/chris-voss/): 克里斯·沃斯（2016年·FBI首席談判專家）——先標情緒。FBI前首席國際人質談判專家，處理過綁架、劫持、恐怖襲擊。他的方法和商學院教的談判術幾乎相反：不談利益交換，先處理情緒。他的核心發現是，人在情緒沒被承認之前根本聽不進條件——所以第一步不是報價，是把對方的情緒準確說出來，讓對方覺得「這人懂我在想什麼」。
 - [克里斯汀·內夫](https://ourword.ai/tw/i/kristin-neff/): 克里斯汀·內夫（2003年·得州大學）——自我關懷。心理學家，2003年把「自我關懷」從修行語彙變成可測量的心理學變量——她做的量表後來被大量研究採用。她的貢獻不是勸人對自己好一點，是給出了一個替代自尊的算法：自尊的定義裡含著「比別人強」，所以它靠比較供能，順利時最足、失手時最先撤走；而自我關懷不比較，它只問「我現在難受，需要什麼

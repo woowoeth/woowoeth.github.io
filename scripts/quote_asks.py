@@ -405,6 +405,13 @@ QUOTE_ASKS = {
         "害过我的人，回来找我了。",
     "jin-wengong/three-stages-back":
         "我主动往后撤，算不算认输？",
+    # 修昔底德
+    "thucydides/the-strong-do-what-they-can":
+        "他只认实力，我讲理有用吗？",
+    "thucydides/the-morrow-brought-repentance":
+        "我气头上定的事，还能收回吗？",
+    "thucydides/first-source-that-came-to-hand":
+        "几个人讲的版本对不上，我信哪个？",
     # 周公
     "zhou-gong/not-stepping-aside":
         "流言起来了，我躲，还是不躲？",

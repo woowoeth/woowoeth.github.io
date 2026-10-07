@@ -22,6 +22,8 @@ SCENES = [
      [("kristin-neff", "not-self-esteem"), ("kristin-neff", "three-parts")]),
     ("有些人我一见就烦，说不上为什么。",
      [("jung", "the-shadow"), ("adler", "separation-of-tasks")]),
+    ("我气头上定的事，还能收回吗？",
+     [("thucydides", "the-morrow-brought-repentance")]),
 ]),
 ("做不完", "要做决定", [
     ("全都重要，我砍哪个都疼。",
@@ -312,6 +314,8 @@ SCENES = [
      [("axelrod", "shadow-of-the-future"), ("schelling", "binding-yourself")]),
     ("他许的好处，我要不要先把东西交出去？",
      [("lin-xiangru", "crooked-on-qin")]),
+    ("几个人讲的版本对不上，我信哪个？",
+     [("thucydides", "first-source-that-came-to-hand")]),
 ]),
 ("要说服人", "跟人打交道", [
     ("我说了不算，得让他自己想到。",
@@ -904,6 +908,8 @@ SCENES = [
      [("gandhi", "salt-march"), ("crowd", "descent-in-crowds")]),
     ("他给的条件我不信，拒了又是我理亏。",
      [("lin-xiangru", "crooked-on-qin")]),
+    ("他只认实力，我讲理有用吗？",
+     [("thucydides", "the-strong-do-what-they-can")]),
 ]),
 ("功劳被抢", "跟人打交道", [
     ("事是我做的，功是别人的。",

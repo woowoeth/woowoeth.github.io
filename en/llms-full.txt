@@ -1,7 +1,7 @@
-# OurWord — 185 people and books on how the world actually works, across 2,600 years
+# OurWord — 186 people and books on how the world actually works, across 2,600 years
 # OurWord — See how people before you handled it.
 # https://ourword.ai/en/
-# Full corpus, plain text. 185 entrys.
+# Full corpus, plain text. 186 entrys.
 
 ========================================================================
 ## Albert Einstein
@@ -1694,7 +1694,7 @@ With this, I am shaking the foundations of the British Empire. The means may be 
 Nelson Mandela — The same idea one generation on: Mandela began with armed struggle and arrived at Gandhi's position after twenty-seven years in prison, which makes his version the tested one. Machiavelli — The two answers to whether the end justifies the means: Machiavelli says judge by the result, Gandhi says the result is already contained in the method. Lin Xiangru — Both face a stronger party that will not reason and neither relies on force: Gandhi puts the other side's violence in front of everyone until it loses its legitimacy, while Lin moves earlier, choosing before anyone acts the path on which a broken promise can only be theirs, and keeping something he can take back.
 
 ### Further
-Nelson Mandela Viktor Frankl Marcus Aurelius Socrates Lin Xiangru
+Nelson Mandela Viktor Frankl Marcus Aurelius Socrates Lin Xiangru Thucydides
 
 ========================================================================
 ## Garry Kasparov
@@ -3399,10 +3399,10 @@ Take one rule or incentive you are responsible for and re-read it as though ever
 How one lives is so far distant from how one ought to live. It is far safer to be feared than loved, if you cannot be both. Men forget the death of a father sooner than the loss of a patrimony. Fortune is the arbiter of half our actions; she leaves us the rest.
 
 ### Q: What should I read alongside?
-Han Feizi — The two closest political realists East and West, seventeen centuries apart: both studied how power actually works, and both were destroyed by the power they studied. Socrates — Opposite poles of political philosophy: Socrates died for a principle, Machiavelli spent his life on the question of how to stay alive inside power. Feng Dao — Machiavelli argued in a book that outcomes outrank motives; Feng Dao spent a life doing it. Theory and specimen, both abused for centuries. Wu Zetian — Political realism written and political realism lived: he set down what a prince must actually do, she had already done it eight centuries earlier. Julius Caesar — Machiavelli says an injured enemy must be either conciliated past all revenge or removed; Caesar pardoned and promoted his, which won the war and produced the men who killed him. The Art of Worldly Wisdom — The same century's problem at two altitudes: Machiavelli instructs a prince on handling a state, Gracián instructs a man with no power on surviving among people who have it. Gandhi — The two answers to whether the end justifies the means: Machiavelli says judge by the result, Gandhi says the result is already contained in the method.
+Han Feizi — The two closest political realists East and West, seventeen centuries apart: both studied how power actually works, and both were destroyed by the power they studied. Socrates — Opposite poles of political philosophy: Socrates died for a principle, Machiavelli spent his life on the question of how to stay alive inside power. Feng Dao — Machiavelli argued in a book that outcomes outrank motives; Feng Dao spent a life doing it. Theory and specimen, both abused for centuries. Wu Zetian — Political realism written and political realism lived: he set down what a prince must actually do, she had already done it eight centuries earlier. Julius Caesar — Machiavelli says an injured enemy must be either conciliated past all revenge or removed; Caesar pardoned and promoted his, which won the war and produced the men who killed him. The Art of Worldly Wisdom — The same century's problem at two altitudes: Machiavelli instructs a prince on handling a state, Gracián instructs a man with no power on surviving among people who have it. Gandhi — The two answers to whether the end justifies the means: Machiavelli says judge by the result, Gandhi says the result is already contained in the method. Thucydides — Both wrote about how the strong behave. Machiavelli teaches a prince how to use force. Thucydides sets down the Athenians' line, 'the strong do what they can', as they said it, and sets down what came of it. One teaches what to do, the other records what happened after it was done.
 
 ### Further
-Han Feizi Liu Bang Cao Cao Sima Yi Sun Tzu Hannah Arendt Feng Dao Lee Kuan Yew Wu Zetian The Art of Worldly Wisdom The Crowd La Rochefoucauld
+Han Feizi Liu Bang Cao Cao Sima Yi Sun Tzu Hannah Arendt Feng Dao Lee Kuan Yew Wu Zetian The Art of Worldly Wisdom The Crowd La Rochefoucauld Thucydides
 
 ========================================================================
 ## Mao Zedong
@@ -4167,7 +4167,7 @@ War is merely the continuation of policy by other means. Everything in war is ve
 Sun Tzu — The two halves of the subject: Sun Tzu on how to win, Clausewitz on why the plan deforms. One assumes the count can be completed, the other that it never is. Napoleon — The book was written against his career: it explains both the concentration that won and the culminating point he ran past. Su Yu — He kept enlarging plans mid-operation, which is exactly the risk Clausewitz names: every step past your culminating point weakens you.
 
 ### Further
-Sun Tzu Napoleon Su Yu Xiang Yu John Boyd
+Sun Tzu Napoleon Su Yu Xiang Yu John Boyd Thucydides
 
 ========================================================================
 ## Otto von Bismarck
@@ -4969,10 +4969,10 @@ After something you cannot say out loud, stop asking whether you still deserve t
 The shame was real and so was the work. He let the work speak. The books that lasted were mostly written in the worst years. Sometimes staying alive needs a debt left outstanding.
 
 ### Q: What should I read alongside?
-Brené Brown — Both on shame. She is the researcher and gives the mechanism; he is the subject and gives the sample of someone finishing the work while carrying it. Pu Songling — Two kinds of it never worked. Pu Songling came close for forty years with no turning point; Sima Qian has one catastrophe and a life visibly divided by it. Records of the Grand Historian — The same story from two sides: his page is about why a man chose to stay alive in order to finish it, this one is about the method the book itself laid down.
+Brené Brown — Both on shame. She is the researcher and gives the mechanism; he is the subject and gives the sample of someone finishing the work while carrying it. Pu Songling — Two kinds of it never worked. Pu Songling came close for forty years with no turning point; Sima Qian has one catastrophe and a life visibly divided by it. Records of the Grand Historian — The same story from two sides: his page is about why a man chose to stay alive in order to finish it, this one is about the method the book itself laid down. Thucydides — Both were historians who wanted the facts straight. Sima Qian travelled the country and questioned the people involved. Thucydides checked each eyewitness against the others, and asked why they differed. One relied on going and asking, the other on checking and asking why they do not match.
 
 ### Further
-Records of the Grand Historian Su Shi Viktor Frankl Brené Brown The Comprehensive Mirror Du Fu
+Records of the Grand Historian Su Shi Viktor Frankl Brené Brown The Comprehensive Mirror Du Fu Thucydides
 
 ========================================================================
 ## Sima Yi
@@ -6129,6 +6129,40 @@ Strategies of the Warring States — Two arts of negotiation: the persuaders cha
 
 ### Further
 Strategies of the Warring States Han Feizi Peter Thiel Nassim Taleb Sun Tzu Otto von Bismarck Chris Voss Robert Axelrod
+
+========================================================================
+## Thucydides
+URL: https://ourword.ai/en/i/thucydides/
+Tags: Strategy and competition, Pre-Qin and classical, History
+
+Thucydides (Ancient Greece · c. 460–400 BC) — History. An Athenian general who lived through the Peloponnesian War and wrote its history, regarded as the founder of critical history and a source of political realism.
+
+### Q: What did this one leave behind?
+An Athenian general who lived through the Peloponnesian War and wrote its history, regarded as the founder of critical history and a source of political realism. This page takes only three things from the book: how to read a situation when the other side counts only strength, how to take back a decision made in anger, and how to check when accounts do not agree. He left three methods. Find out what the other side counts and what you actually hold. Do not settle irreversible things in the heat. Do not take the first account as fact, and when they differ, ask why.
+
+### Q: What actually happened?
+In the second year of the war a plague broke out in Athens and killed thousands. Thucydides caught it and survived. Writing about it later, he did not say where it came from or why; he left that to others. He set down what it was like: heat in the head, red eyes, then bleeding in the throat and tongue, symptom after symptom in order. He did it, he said, so that if it ever broke out again, people would recognise it.
+
+### The parts · He did not treat hope as capital
+In the Melian Dialogue the Athenians tell the weaker side that hope comforts those with something to spare, and for the rest it means staking everything on what they cannot see. Count what you hold first. e.g. When someone says 'we will come and help', ask what exactly they have said.
+
+### The parts · He let a decision be reopened the next day
+In a rage the Athenians sentenced a city to death, regretted it by morning, and held the assembly again. A second ship caught the first. For anything that cannot be undone, leave a night. e.g. Before firing someone, finish the process; do not announce it in the group chat.
+
+### The parts · He asked why the accounts differed
+When eyewitnesses disagreed, he did not hurry to find who was lying. He asked whether it was memory or partiality, which tells you which part to discount. e.g. Two colleagues tell the same story in opposite ways: ask which side each was on, and how long ago it was.
+
+### Q: How do I use it today?
+Pick one thing you are stuck on and write three lines: what the other side counts and what I actually hold; whether this decision can wait one night before it goes out; which of my accounts is the first and which is a second, independent source. His one judgement runs through all three: see the facts clearly first, then decide whether to move.
+
+### Lines to keep
+right, as the world goes, is only in question between equals in power I think the two things most opposed to good counsel are haste and passion I did not even trust my own impressions
+
+### Q: What should I read alongside?
+Machiavelli — Both wrote about how the strong behave. Machiavelli teaches a prince how to use force. Thucydides sets down the Athenians' line, 'the strong do what they can', as they said it, and sets down what came of it. One teaches what to do, the other records what happened after it was done. Sima Qian — Both were historians who wanted the facts straight. Sima Qian travelled the country and questioned the people involved. Thucydides checked each eyewitness against the others, and asked why they differed. One relied on going and asking, the other on checking and asking why they do not match.
+
+### Further
+Machiavelli Gandhi Sima Qian On War
 
 ========================================================================
 ## Viktor Frankl
@@ -19491,6 +19525,105 @@ Where it goes wrong: using ownership as a way to hand things off. 'That's your p
 Work out whose problem this is before choosing a method.
 Conflict doesn't have to end with somebody winning.
 Advice moves them from solving their problem to handling you.
+
+========================================================================
+## Thucydides · When He Only Counts Strength
+URL: https://ourword.ai/en/i/thucydides/the-strong-do-what-they-can/
+Source: Thucydides, History of the Peloponnesian War, Book 5 (the Melian Dialogue)
+Tags: Deep read, Thucydides, Being right does not mean anyone will act for you
+
+The other side says outright that only strength counts, not who is right. What do you hold then, and what should you not bet on?
+
+### Q: What actually happened?
+In 416 BC an Athenian fleet anchored off the small island of Melos and demanded that it pay tribute and submit. The Melians wanted to stay neutral. At the table the Athenians set the terms first: right, as the world goes, is only in question between equals in power. The Melians answered that they trusted the gods, and trusted Sparta to come. Sparta never came. After a siege, with some treachery inside, Melos surrendered. The men were put to death, the women and children sold as slaves.
+
+### The parts · Find out what currency they deal in
+The Athenians did not pretend to argue about justice; they said at once that they counted only power. It is a rare candour. If the other side tells you what it counts, do not pay in a different coin. A pile of 'ought' will be heard as noise.
+e.g. The other company looks only at the contract and whether you can cut supply. You keep saying 'we have worked together for years.' That does not appear on their books.
+
+### The parts · Count what you hold, not what you hope will arrive
+The Melians held three things: the gods would favour them, Sparta would come, and luck would turn. None of them was in Melian hands. The Athenians put it harshly but accurately: hope comforts those with something to spare, and ruins those who put everything on it.
+e.g. 'Head office will surely rescue us.' 'If we hold on, clients will return.' Ask: has anyone actually promised you anything behind that sentence?
+
+### The parts · Settle what can be settled while you still choose
+The Athenians offered a way out: pay tribute and keep the city. The Melians thought that was surrendering first, and refused. But it was the Melians who were killed and sold, not the phrase 'we are free.' Which comes first, face or city, has to be decided while there is still a choice.
+e.g. The terms are galling, but they would save a dozen jobs on your team. Do not answer them with 'am I angry' alone.
+
+### Q: How do I use it today?
+Where you are: the other side has said that only strength counts, and you have kept making your case, with less and less effect.
+Ask first: what do they count? What do I actually hold? Has anyone I am waiting for told me they will come?
+Where it goes wrong: reading the Athenians' line as licence to bully. Thucydides wrote it for them shortly before their disaster in Sicily. He sets it down not to endorse it but to show where it leads. You read it to see the person across the table, not to copy him.
+
+### Lines to keep
+right, as the world goes, is only in question between equals in power
+the strong do what they can and the weak suffer what they must
+Hope, danger’s comforter, may be indulged in by those who have abundant resources
+
+========================================================================
+## Thucydides · The Vote He Regretted by Morning
+URL: https://ourword.ai/en/i/thucydides/the-morrow-brought-repentance/
+Source: Thucydides, History of the Peloponnesian War, Book 3 (the Mytilene debate)
+Tags: Deep read, Thucydides, Leave yourself a way to take back what you decide in anger
+
+You decided something in a rage and by morning wished you had not. How did Athens call back a death sentence it had already sent out?
+
+### Q: What actually happened?
+In 427 BC the city of Mytilene revolted from Athens and was taken. In the fury of the moment the Athenians voted to put to death every adult man in it and to enslave the women and children, and sent a galley to order the general to carry it out. The morrow brought repentance with it. The Mytilenian envoys and their friends asked for the question to be put again, and the assembly met a second time. The show of hands was almost equal, but mercy won. A second galley left at once, its crew eating as they rowed, and arrived just after the general read the first order.
+
+### The parts · At the height of your anger, do not decide
+Diodotus, arguing for mercy, said that haste and passion are what most oppose good counsel. Haste goes with folly, passion with narrowness. He did not appeal to pity. He only said that these two keep you from seeing what you want.
+e.g. A client has just shouted at you and you want to send 'we are done.' Write it, leave it in drafts, and look at it tomorrow.
+
+### The parts · What is sent out must be catchable
+The first galley had a day and a night's start, and the second caught it only by rowing twice as hard. Repenting after the order goes out costs the person who has to chase it. The steadier course is to build a way to reopen the question before you do something irreversible.
+e.g. Before you fire someone, finish the process and sleep on it. Do not announce it in the group chat tonight.
+
+### The parts · Reopening is not undoing, and not confessing
+After the second vote Mytilene itself was spared, but more than a thousand ringleaders were still put to death, its walls pulled down and its ships taken. The people who calmed down did not turn into saints. They took back only the excess, and the rest still had to be answered for.
+e.g. What you withdraw is 'dismiss the whole team on the spot.' It is not 'nobody was at fault in this incident.' The share that is yours, you still carry.
+
+### Q: How do I use it today?
+Where you are: in the heat you said something or settled something, and after a night's sleep it looks wrong.
+Ask first: can this still be taken back? Who can chase it for me? Next time, can I hold it overnight before it goes out?
+Where it goes wrong: turning 'sleep on it' into never deciding. The Athenians voted again the very next day, with the clock against them. A second look is meant to stop one irreversible step, not to defer responsibility for ever.
+
+### Lines to keep
+I think the two things most opposed to good counsel are haste and passion
+haste usually goes hand in hand with folly
+The morrow brought repentance with it
+
+========================================================================
+## Thucydides · Not the First Account You Hear
+URL: https://ourword.ai/en/i/thucydides/first-source-that-came-to-hand/
+Source: Thucydides, History of the Peloponnesian War, Book 1, chapter 22
+Tags: Deep read, Thucydides, Test even your own impressions
+
+Several people give different accounts of one event, and you must decide on them. How did Thucydides check, and what did he ask when they did not agree?
+
+### Q: What actually happened?
+Thucydides was an Athenian general. In 424 BC he reached Amphipolis half a day too late, and Athens exiled him for twenty years. Writing the history, he set out his method. For events he refused to derive it from the first source that came to hand, and did not even trust his own impressions. It rests partly on what he saw and partly on what others saw for him, each report tried by severe tests. When eyewitnesses differed, he did not call anyone a liar. He blamed imperfect memory, or partiality for one side.
+
+### The parts · What reaches you first is only first
+He did not use the first source, not because it was surely wrong, but because it was only the earliest. The version you hear first takes the room in your head, and later ones can only add to it. To check, you must keep that room empty while you hear the first.
+e.g. The message that was forwarded first in the group says it most confidently, and is usually the earliest. Do not answer yet; wait for a second, independent source.
+
+### The parts · Even what you saw needs testing
+He did not wholly trust even what he had seen himself, since being present is not seeing all of it. His method was part his own eyes and part other people's, set side by side. What you witnessed is one piece of evidence, not the conclusion.
+e.g. You think the boss looked grim in the meeting and conclude layoffs are coming. Ask one colleague who was there what he saw.
+
+### The parts · When they differ, ask why they differ
+When accounts did not match, his first thought was not 'who is lying' but memory or loyalty. Sorting a difference into those two sources shows which part to discount and which to keep.
+e.g. Two colleagues describe the same clash in opposite ways. Ask which side each was on and how long ago it was; that does more than arguing over who is lying.
+
+### Q: How do I use it today?
+Where you are: you hold several reports that do not match, and you have to decide on them.
+Ask first: is this the first source, or a second independent one? Which side was the teller on, and how long ago? Has anyone else looked at the part I saw myself?
+Where it goes wrong: turning 'check everything' into trusting nothing. He says the labour was heavy, and that a history without romance may please few. He checked so that he could act on it, not so that he would never have to.
+
+### Lines to keep
+derive it from the first source that came to hand
+I did not even trust my own impressions
+tried by the most severe and detailed tests possible
 
 ========================================================================
 ## Lev Vygotsky · The zone of proximal development
