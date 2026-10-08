@@ -52,9 +52,17 @@ a{color:inherit}
 #start .hook{font-size:17px;margin:0 0 26px}
 .from{border:1px dashed var(--acc);border-radius:14px;padding:14px 16px;margin:0 0 20px;font-size:15px}
 .from b{color:var(--acc)}
-.faces{display:flex;flex-wrap:wrap;gap:6px;margin:26px 0 8px}
-.faces span{font-size:13px;border:1px solid var(--line);border-radius:999px;padding:3px 10px;color:var(--muted)}
-.pairhook{font-size:14px;line-height:1.7;margin:18px 0 6px;padding-left:12px;border-left:3px solid var(--acc)}
+.peek{margin:0 0 26px}
+.peek .pl{font-size:13.5px;color:var(--muted);margin:0 0 4px}
+.peek ul{list-style:none;margin:0;padding:0}
+.peek li{padding:12px 0;border-bottom:1px solid var(--line);font-size:16px;line-height:1.65;cursor:pointer}
+.peek li em{display:none;font-style:normal;font-size:13px;color:var(--acc);margin-top:3px}
+.peek li.on em{display:block}
+.peek .re{border:0;background:transparent;color:var(--muted);font:inherit;font-size:13px;padding:10px 0 0;cursor:pointer}
+.pairhook{font-size:14px;line-height:1.7;margin:20px 0 6px}
+.moments .hit{display:inline-block;margin-left:8px;border:0;background:transparent;padding:0;font:inherit;font-size:12.5px;color:var(--muted);cursor:pointer;white-space:nowrap}
+.moments li.on .hit{color:var(--fam);font-weight:600}
+.moments + .hint{font-size:12.5px;color:var(--muted);margin:10px 0 0}
 .tile.mine{border-width:2px}.tile .me{float:right;font-size:11px;color:#fff;background:var(--acc);border-radius:4px;padding:0 6px;line-height:18px}
 /* 答題 */
 #quiz{display:none}
@@ -189,8 +197,8 @@ a{color:inherit}
     <p class="sub">24 道遇事題 · 3 分鐘 · 64 種歷史人格</p>
     <div class="from" id="fromBox" style="display:none"></div>
     <p class="hook">遇到事的時候，你是先衝，還是先等？<br>是硬剛，還是繞過去？<br>2600 年裡，總有一個人和你是同一種人。</p>
+    <div class="peek"><p class="pl">下面這幾句，有沒有一句說的就是你？點一下，看是誰。</p><ul id="peekList"></ul><button class="re" id="peekRe" type="button">換三句</button></div>
     <button class="btn" id="go">開始測試</button>
-    <div class="faces" id="faces"></div>
     <p class="pairhook">測完叫朋友也來測，看你們倆在歷史上是什麼關係：君臣、宿敵，還是隔代知己。</p>
     <p class="muted" style="font-size:13px">每一種結果，都鏈到那個人當年的真事。</p>
   </section>
@@ -258,8 +266,15 @@ var saved=load();
 
 /* ── 開始頁 ── */
 (function(){
-  var f=$('faces'), pick=[9,23,30,11,4,26,13,15,16,2,22,8];
-  f.innerHTML=pick.map(function(i){var c=famCol(fam(T[i]));return '<span style="color:'+c+';border-color:'+rgba(c,.45)+'">'+esc(T[i].who)+'</span>'}).join('')+'<span>……</span>';
+  /* 先讓人對號入座：隨手抽三型（三個不同家族）的「你一定幹過」各一句，不報名字；
+     點一下才露出是誰。被說中的那一下，比任何介紹都更讓人想測。 */
+  function peek(){var seen={},out=[],n=0;
+    while(out.length<3&&n++<300){var i=Math.floor(Math.random()*T.length),k=T[i].code[0]+T[i].code[2];if(seen[k])continue;seen[k]=1;out.push(i)}
+    $('peekList').innerHTML=out.map(function(i){var t=T[i],ms=t.moments;
+      return '<li data-i="'+i+'">'+esc(ms[Math.floor(Math.random()*ms.length)])+'<em>—— 這是'+esc(t.who)+'那一型。你是不是，測完才知道。</em></li>'}).join('');
+    [].forEach.call($('peekList').children,function(li){li.onclick=function(){li.classList.toggle('on');
+      if(li.classList.contains('on'))trk('ce_peek',{who:T[+li.dataset.i].who})}})}
+  peek(); $('peekRe').onclick=function(){peek();trk('ce_peek_more')};
   if(fromIdx>=0){var t=T[fromIdx];
     document.title='朋友測出來是'+t.who+'，你呢？測測你的歷史分身';
     $('fromBox').style.display='block';
@@ -396,7 +411,9 @@ function countUp(){
 }
 
 /* ── 結果頁（me 為空 = 只看這一型的介紹）── */
+var hitK=-1;   // 「說中了」點中的那一句；分享卡印這一句，沒點就印第一句
 function renderType(t,me){
+  hitK=-1;
   var f=fam(t); document.documentElement.style.setProperty('--fam',famCol(f));
   var h='', m=me?match(me,t):null, P=he(t), fr=(me&&fromIdx>=0)?T[fromIdx]:null;
   h+='<div class="hero"><div class="eyebrow">Your Historical Twin · 你的歷史分身</div>';
@@ -419,9 +436,15 @@ function renderType(t,me){
       +'<div class="stat"><b>'+order[5][1]+'</b><span>'+order[5][0]+'</span><em>待提升</em></div></div>';
   }
   h+='<div class="card sec"><div class="lab">'+(me?'你一定幹過這些事':'這一型的人，一定幹過這些事')+' · MOMENTS</div><ul class="moments">'
-    +t.moments.map(function(x){return '<li>'+esc(x)+'</li>'}).join('')+'</ul></div>';
+    +t.moments.map(function(x,i){return '<li>'+esc(x)+(me?'<button class="hit" type="button" data-k="'+i+'">說中了</button>':'')+'</li>'}).join('')+'</ul>'
+    +(me?'<p class="hint">哪句說中了你，點一下；分享卡上印的就是那一句。</p>':'')+'</div>';
+  h+='<div class="card sec"><div class="lab">你是這樣的人 · PORTRAIT</div><div class="desc serif">'+esc(t.desc)+'</div></div>';
+  h+='<div class="two sec"><div class="card"><h4>你的超能力</h4><p>'+esc(t.power)+'</p></div><div class="card"><h4>你最容易栽在</h4><p>'+esc(t.pit)+'</p></div></div>';
+  h+='<div class="card sec story"><div class="lab">'+P+'當年那件事 · THE STORY</div><a href="'+t.story.u+'" data-trk="ce_to_chapter"><div class="st serif">'+esc(t.story.t)+'</div><div class="go">讀'+esc(t.who)+'當年是怎麼做的 →</div></a></div>';
+  h+='<div class="card sec"><div class="lab">拍檔與宿敵 · ALLIES &amp; RIVALS</div>'+arRow('最佳拍檔',t.ally)+arRow('宿命對手',t.rival)
+    +(me?'<button class="btn ghost" id="invite2">叫朋友來測，看誰是你的'+esc(T[t.ally.i].who)+'</button>':'')+'</div>';
   if(me){
-    h+='<div class="card sec"><div class="lab">五維傾向 · TRAITS</div>';
+    h+='<div class="card sec"><div class="lab">你的遇事傾向 · TRAITS</div>';
     A.forEach(function(ax,i){var L=me.pct[i],mine=me.pole[i];
       h+='<div class="axis"><div class="row"><span>'+(mine===ax[0]?'<b>'+ax[0]+' · '+ax[2]+' '+L+'%</b>':ax[0]+' · '+ax[2]+' '+L+'%')+'</span><span>'+(mine===ax[1]?'<b>'+(100-L)+'% '+ax[3]+' · '+ax[1]+'</b>':(100-L)+'% '+ax[3]+' · '+ax[1])+'</span></div>'
         +'<div class="bar"><i style="'+(mine===ax[0]?'left:0;width:'+L+'%':'right:0;width:'+(100-L)+'%')+'"></i></div></div>';
@@ -436,11 +459,6 @@ function renderType(t,me){
       h+='<div class="dim'+(r<=2?' top':'')+'"><span class="rk">'+r+'</span><span class="dn">'+d+'</span><span class="db"><i style="width:'+me.dims[i]+'%"></i></span><span class="dv">'+me.dims[i]+'</span></div>';});
     h+='<div class="dimdesc">'+DIMS.map(function(d){return '<span><b>'+d+'</b>'+esc(D.dimdesc[d])+'</span>'}).join('')+'</div></div>';
   }
-  h+='<div class="card sec"><div class="lab">你是這樣的人 · PORTRAIT</div><div class="desc serif">'+esc(t.desc)+'</div></div>';
-  h+='<div class="two sec"><div class="card"><h4>你的超能力</h4><p>'+esc(t.power)+'</p></div><div class="card"><h4>你最容易栽在</h4><p>'+esc(t.pit)+'</p></div></div>';
-  h+='<div class="card sec story"><div class="lab">'+P+'當年那件事 · THE STORY</div><a href="'+t.story.u+'" data-trk="ce_to_chapter"><div class="st serif">'+esc(t.story.t)+'</div><div class="go">讀'+esc(t.who)+'當年是怎麼做的 →</div></a></div>';
-  h+='<div class="card sec"><div class="lab">拍檔與宿敵 · ALLIES &amp; RIVALS</div>'+arRow('最佳拍檔',t.ally)+arRow('宿命對手',t.rival)
-    +(me?'<button class="btn ghost" id="invite2">叫朋友來測，看誰是你的'+esc(T[t.ally.i].who)+'</button>':'')+'</div>';
   var kin=D.kin[t.code.split('-')[0]]||[];
   if(kin.length)h+='<div class="card sec"><div class="lab">同型名人 · ALSO THIS TYPE</div><div class="kin">'+kin.map(function(k){return '<a href="'+k.u+'">'+esc(k.n)+'</a>'}).join('')+'<a href="/tw/i/'+t.slug+'/">'+esc(t.who)+'的全部篇章 →</a></div></div>';
 
@@ -467,6 +485,10 @@ function renderType(t,me){
     $('shareCard').onclick=function(){trk('ce_share_card',{who:t.who});card(t,me,m)};
     if(fr)$('pairCard').onclick=function(){var rel=relation(t,fr);trk('ce_pair_card',{me:t.who,friend:fr.who});pairCard(t,fr,rel)};
     $('invite').onclick=function(){invite(t)}; $('invite2').onclick=function(){invite(t)};
+    [].forEach.call(document.querySelectorAll('.moments .hit'),function(b){b.onclick=function(){
+      var li=b.parentNode,on=!li.classList.contains('on'),k=+b.dataset.k;
+      [].forEach.call(document.querySelectorAll('.moments li'),function(x){x.classList.remove('on');x.querySelector('.hit').textContent='說中了'});
+      if(on){li.classList.add('on');b.textContent='✓ 說中了';hitK=k;trk('ce_moment_hit',{who:t.who,k:k})}else hitK=-1}});
     countUp();
   }else{
     $('tryIt').onclick=function(){fromIdx=-1;retake()};
@@ -536,8 +558,9 @@ function card(t,me,m){
   k.txt(t.code+'  ·  '+f.name,712,'500 34px '+SANS,f.color);
   var y=k.wrap('“'+t.quote+'”',800,'italic 42px '+SERIF,INK,820,62);
   k.txt('—— '+t.quote_src,y+2,'26px '+SANS,MUT);
-  /* 最容易讓人說「太準了」的那一句：三句「你一定幹過的事」裡的第一句 */
-  if(t.moments&&t.moments[0]&&y<930)k.wrap('你一定幹過：'+t.moments[0],y+62,'30px '+SANS,f.color,860,44);
+  /* 最容易讓人說「太準了」的那一句：讀者點了「說中了」就印那句，沒點就印第一句 */
+  var mo=t.moments&&t.moments[hitK>=0?hitK:0];
+  if(mo&&y<930)k.wrap('你一定幹過：'+mo,y+62,'30px '+SANS,f.color,860,44);
   var order=DIMS.map(function(d,i){return [d,me.dims[i]]}).sort(function(a,b){return b[1]-a[1]});
   var bx=[[100,'最高維度',order[0][0],String(order[0][1])],[400,'分身契合度',t.who,m+'%'],[700,'待提升',order[5][0],String(order[5][1])]];
   bx.forEach(function(b,i){var bw=280,bh=210,by=1040,mid=i===1;x.fillStyle=mid?f.color:CARD;x.strokeStyle=mid?f.color:LINE;x.lineWidth=3;
