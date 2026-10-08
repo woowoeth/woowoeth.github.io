@@ -1781,6 +1781,14 @@ switchTab('境');
         "<button id=\"hwx-theme\" type=\"button\" aria-label=\"切换日夜模式\"></button>\n"
         "<div class=\"hist\" id=\"hwx-hist\"><span class=\"hl\">最近看过</span>"
         "<span class=\"hchips\" id=\"hwx-hchips\"></span><button id=\"hwx-hclr\">清空</button></div>"
+        # 历史分身入口：放在「今日一问」上面，直接借它的卡片样式（askhero/lb/q/go），
+        # 不另起一套。必须在 #hwx 里面——那套样式都挂在 #hwx 下。
+        # 英文站没有这个测试，seo/en_ui.py 按 CE-ENTRY 注释整块删掉，注释别动。
+        "<!--CE-ENTRY--><div class=\"askhero\"><div class=\"ahead\"><span class=\"lb\">你是历史上的谁</span></div>"
+        "<div class=\"q\">测测你的历史分身</div><div class=\"go\"><a class=\"lead\" href=\"/ce/\" "
+        "onclick=\"try{gtag('event','ce_home_entry')}catch(e){}\">"
+        "<i>24 道遇事题，3 分钟，64 种历史人格：项羽、张良、苏轼、徐霞客、居里……每一种都链到他当年的真事</i>"
+        "<em>开始测试 →</em></a></div></div><!--/CE-ENTRY-->"
         "<div class=\"askhero\" id=\"hwx-askhero\">"
         "<div class=\"ahead\"><span class=\"lb\">今日一问</span></div>"
         "<div class=\"q\" id=\"hwx-aq\"></div>""<div id=\"hwx-asc-tag\"></div>""<div class=\"go\" id=\"hwx-ago\"></div>"
