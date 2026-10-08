@@ -819,7 +819,6 @@ ENTRIES = [
         "q": [
             "Breaking the bandits in the hills is easy. The ones inside "
             "aren't.",
-            "When this mind does not move, you can move with the moment.",
             "Without a settled aim, nothing in the world gets finished.",
         ],
         "l": ["Huineng", "Su Shi", "Zhuangzi"],

@@ -18,7 +18,7 @@
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://ourword.ai/tw/t/modern/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ourword.ai/t/modern/"/>
   </url>
-  <url><loc>https://ourword.ai/tw/t/industrial-age/</loc><lastmod>2026-10-07</lastmod><changefreq>weekly</changefreq><priority>0.6</priority>
+  <url><loc>https://ourword.ai/tw/t/industrial-age/</loc><lastmod>2026-10-08</lastmod><changefreq>weekly</changefreq><priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://ourword.ai/t/industrial-age/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://ourword.ai/en/t/the-industrial-age/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://ourword.ai/tw/t/industrial-age/"/>
@@ -1398,7 +1398,7 @@
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://ourword.ai/tw/i/lee-kuan-yew/from-my-sickbed/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ourword.ai/i/lee-kuan-yew/from-my-sickbed/"/>
   </url>
-  <url><loc>https://ourword.ai/tw/i/li-bi/strike-the-base/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.7</priority>
+  <url><loc>https://ourword.ai/tw/i/li-bi/strike-the-base/</loc><lastmod>2026-10-08</lastmod><changefreq>weekly</changefreq><priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://ourword.ai/i/li-bi/strike-the-base/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://ourword.ai/en/i/li-bi/strike-the-base/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://ourword.ai/tw/i/li-bi/strike-the-base/"/>
@@ -2454,7 +2454,7 @@
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://ourword.ai/tw/i/wang-yangming/innate-knowing/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ourword.ai/i/wang-yangming/innate-knowing/"/>
   </url>
-  <url><loc>https://ourword.ai/tw/i/wang-yangming/bandits-in-the-heart/</loc><lastmod>2026-08-28</lastmod><changefreq>weekly</changefreq><priority>0.7</priority>
+  <url><loc>https://ourword.ai/tw/i/wang-yangming/bandits-in-the-heart/</loc><lastmod>2026-10-08</lastmod><changefreq>weekly</changefreq><priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://ourword.ai/i/wang-yangming/bandits-in-the-heart/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://ourword.ai/en/i/wang-yangming/bandits-in-the-heart/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://ourword.ai/tw/i/wang-yangming/bandits-in-the-heart/"/>
@@ -2567,6 +2567,42 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://ourword.ai/en/i/xu-xiake/jingwens-bones/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://ourword.ai/tw/i/xu-xiake/jingwens-bones/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ourword.ai/i/xu-xiake/jingwens-bones/"/>
+  </url>
+  <url><loc>https://ourword.ai/tw/i/xu-xiake/the-crying-child/</loc><lastmod>2026-10-08</lastmod><changefreq>weekly</changefreq><priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://ourword.ai/i/xu-xiake/the-crying-child/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ourword.ai/en/i/xu-xiake/the-crying-child/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://ourword.ai/tw/i/xu-xiake/the-crying-child/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ourword.ai/i/xu-xiake/the-crying-child/"/>
+  </url>
+  <url><loc>https://ourword.ai/tw/i/xu-xiake/the-burned-books/</loc><lastmod>2026-10-08</lastmod><changefreq>weekly</changefreq><priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://ourword.ai/i/xu-xiake/the-burned-books/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ourword.ai/en/i/xu-xiake/the-burned-books/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://ourword.ai/tw/i/xu-xiake/the-burned-books/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ourword.ai/i/xu-xiake/the-burned-books/"/>
+  </url>
+  <url><loc>https://ourword.ai/tw/i/xu-xiake/the-night-we-waited/</loc><lastmod>2026-10-08</lastmod><changefreq>weekly</changefreq><priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://ourword.ai/i/xu-xiake/the-night-we-waited/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ourword.ai/en/i/xu-xiake/the-night-we-waited/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://ourword.ai/tw/i/xu-xiake/the-night-we-waited/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ourword.ai/i/xu-xiake/the-night-we-waited/"/>
+  </url>
+  <url><loc>https://ourword.ai/tw/i/xu-xiake/step-by-step-in-snow/</loc><lastmod>2026-10-08</lastmod><changefreq>weekly</changefreq><priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://ourword.ai/i/xu-xiake/step-by-step-in-snow/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ourword.ai/en/i/xu-xiake/step-by-step-in-snow/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://ourword.ai/tw/i/xu-xiake/step-by-step-in-snow/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ourword.ai/i/xu-xiake/step-by-step-in-snow/"/>
+  </url>
+  <url><loc>https://ourword.ai/tw/i/xu-xiake/the-gazetteer-was-wrong/</loc><lastmod>2026-10-08</lastmod><changefreq>weekly</changefreq><priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://ourword.ai/i/xu-xiake/the-gazetteer-was-wrong/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ourword.ai/en/i/xu-xiake/the-gazetteer-was-wrong/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://ourword.ai/tw/i/xu-xiake/the-gazetteer-was-wrong/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ourword.ai/i/xu-xiake/the-gazetteer-was-wrong/"/>
+  </url>
+  <url><loc>https://ourword.ai/tw/i/xu-xiake/beyond-the-guide/</loc><lastmod>2026-10-08</lastmod><changefreq>weekly</changefreq><priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://ourword.ai/i/xu-xiake/beyond-the-guide/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ourword.ai/en/i/xu-xiake/beyond-the-guide/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://ourword.ai/tw/i/xu-xiake/beyond-the-guide/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ourword.ai/i/xu-xiake/beyond-the-guide/"/>
   </url>
   <url><loc>https://ourword.ai/tw/i/xunzi/origin-of-rites/</loc><lastmod>2026-08-28</lastmod><changefreq>weekly</changefreq><priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://ourword.ai/i/xunzi/origin-of-rites/"/>
@@ -3300,7 +3336,7 @@
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://ourword.ai/tw/i/mandela/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ourword.ai/i/mandela/"/>
   </url>
-  <url><loc>https://ourword.ai/tw/i/zeng-guofan/</loc><lastmod>2026-09-22</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+  <url><loc>https://ourword.ai/tw/i/zeng-guofan/</loc><lastmod>2026-10-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://ourword.ai/i/zeng-guofan/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://ourword.ai/en/i/zeng-guofan/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://ourword.ai/tw/i/zeng-guofan/"/>
@@ -3456,7 +3492,7 @@
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://ourword.ai/tw/i/wang-jian/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ourword.ai/i/wang-jian/"/>
   </url>
-  <url><loc>https://ourword.ai/tw/i/wang-yangming/</loc><lastmod>2026-09-03</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
+  <url><loc>https://ourword.ai/tw/i/wang-yangming/</loc><lastmod>2026-10-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://ourword.ai/i/wang-yangming/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://ourword.ai/en/i/wang-yangming/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://ourword.ai/tw/i/wang-yangming/"/>

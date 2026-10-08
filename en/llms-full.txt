@@ -6341,7 +6341,7 @@ He never lost a battle, and wrote from the field that breaking the bandits in th
 When a team knows what to do and doesn't do it, the problem is usually not execution. Either they don't actually believe it matters, or the incentives point elsewhere. Fix what they believe before you talk about delivery.
 
 ### Lines to keep
-Breaking the bandits in the hills is easy. The ones inside aren't. When this mind does not move, you can move with the moment. Without a settled aim, nothing in the world gets finished.
+Breaking the bandits in the hills is easy. The ones inside aren't. Without a settled aim, nothing in the world gets finished.
 
 ### Q: What should I read alongside?
 Huineng — The same insight in two traditions: Huineng says what you seek is already complete in you, Wang Yangming says so and then goes and governs a province with it. Zeng Guofan — Doctrine and practice: Wang built the school of mind, Zeng spent a lifetime executing it. Reaching the insight against grinding it out daily. Augustine — Both on knowing and not doing. Wang says knowing without acting was never real knowing; Augustine says the knowing is real and two wills are fighting. The Bhagavad Gita — Both on understanding without moving. Wang puts the weight on the knowing; the Gita puts it on arguing the consequences all the way down before anyone moves. Socrates — Two thousand years apart and the same move: Socrates delivers what is already in you, Wang Yangming says the knowing was there all along and only obscured.
@@ -6573,7 +6573,7 @@ Tags: Learning and growth, Early modern, The long road
 Xu Xiake (Ming · Jiangyin · 1587-1641) — The long road. A Ming-dynasty traveller from Jiangyin who never took office. From his early twenties he set out on foot, and over thirty years crossed most of China, writing a dated…
 
 ### Q: What did this one leave behind?
-A Ming-dynasty traveller from Jiangyin who never took office. From his early twenties he set out on foot, and over thirty years crossed most of China, writing a dated diary of mountains, caves and rivers that became The Travel Diaries of Xu Xiake. This page leaves his geography aside and takes three judgements he made on the road: when disaster strikes halfway, ask whether you could ever leave again if you went home; when a companion falls, finish what he wanted, his way; and know which night to stop, so the road can be long.
+A Ming-dynasty traveller from Jiangyin who never took office. From his early twenties he set out on foot, and over thirty years crossed most of China, writing a dated diary of mountains, caves and rivers that became The Travel Diaries of Xu Xiake. This page leaves his geography aside and takes three judgements he made on the road: when disaster strikes halfway, ask whether you could ever leave again if you went home; when a companion falls, finish what he wanted, his way; and know which night to stop, so the road can be long. The surviving diary has no ending. It stops on an ordinary morning on Chicken Foot Mountain: cheese, pepper oil, plum vinegar, 'not lavish, but with a certain grace.'
 
 ### Q: What actually happened?
 His diary opens on the last day of the third month of 1613, leaving Ninghai by the west gate for Mount Tiantai: the clouds scattered, the sun was bright, and both the travellers and the hills looked glad. Thirty li on, at Lianghuang Mountain, he heard that tigers on the road were mauling dozens of people a month, so he stopped for the night. The next morning it rained, and he went on. That day is now China's National Tourism Day.
@@ -6675,10 +6675,10 @@ Guan Zhong Li Shimin Han Feizi The Analects
 URL: https://ourword.ai/en/i/zeng-guofan/
 Tags: Reading people, The industrial age, Dull and unbreakable
 
-Zeng Guofan (Qing · 1811–1872) — Dull and unbreakable. The most famous case in Chinese history of an ordinary man getting there by grinding. He was not gifted — he sat the examination seven times before passing — and he put…
+Zeng Guofan (Qing · 1811–1872) — Dull and unbreakable. The most famous case in Chinese history of an ordinary man getting there by grinding. He was not gifted — he sat the county examination seven times, by the usual…
 
 ### Q: What did this one leave behind?
-The most famous case in Chinese history of an ordinary man getting there by grinding. He was not gifted — he sat the examination seven times before passing — and he put down the Taiping Rebellion, the largest of the century, with a method he admitted was stupid: build a solid camp and fight a dull battle. He kept a diary auditing his own conduct for thirty years and circulated it to friends. He hired by handing people real work rather than by interviewing them. Nothing about his method requires talent, which is exactly why it is worth reading.
+The most famous case in Chinese history of an ordinary man getting there by grinding. He was not gifted — he sat the county examination seven times, by the usual account, before passing — and he put down the Taiping Rebellion, the largest of the century, with a method he admitted was stupid: build a solid camp and fight a dull battle. He kept a diary auditing his own conduct for thirty years and circulated it to friends. He hired by handing people real work rather than by interviewing them. Nothing about his method requires talent, which is exactly why it is worth reading.
 
 ### Q: What actually happened?
 In 1854, at Jinggang, the river force of the militia he had been ordered to raise met the rebels and was broken. His boats were scattered and his men ran. He went over the side into the river and was pulled out by his own staff. He was a civil official with no military training, humiliated in front of the province, and what he did afterwards is the whole of him: he stopped looking for a battle he could win. From then on the army dug before it fought, and the war became a matter of trenches, supply and time.
@@ -14118,7 +14118,7 @@ Tags: Deep read, Li Bi, The base camp or the capital
 In the middle of the An Lushan rebellion the emperor wanted his capitals back. This is about why Li Bi called that the worst move.
 
 ### Q: What actually happened?
-In 757 Emperor Suzong asked how to end the rebellion. Li Bi's plan: let Guo Ziyi and Li Guangbi pin the rebels down, running them back and forth between Guanzhong and Hebei until they were exhausted, then drive straight at Fanyang, An Lushan's home and base, where the families and the baggage were. Suzong wanted the two capitals first. He got them, the rebel core withdrew to Hebei, and the war ran six more years. Your Majesty wanted the capitals quickly, so the rebels grew strong again and we grew weak again.
+In 757 Emperor Suzong asked how to end the rebellion. Li Bi's plan: let Guo Ziyi and Li Guangbi pin the rebels down, running them back and forth between Guanzhong and Hebei until they were exhausted, then drive straight at Fanyang, An Lushan's home and base, where the families and the baggage were. Suzong wanted the two capitals first. Li Bi warned him on the spot: Your Majesty wants the capitals quickly, so the rebels will grow strong again and we will be worn down again. He got the capitals, the rebel core withdrew to Hebei, and the war ran six more years.
 
 ### The parts · The conspicuous target is rarely the decisive one
 The two capitals were the symbol, the legitimacy, the place everyone was watching. Fanyang was the supply, the families, the way home. Taking the first lets you announce a victory; taking the second ends the war. The return curves are not the same shape.
@@ -19999,7 +19999,7 @@ Tags: Deep read, Wang Yangming, The hardest battle is the interior one
 He never lost a campaign. Why he said all of those were the easy ones.
 
 ### Q: What actually happened?
-In 1518, while suppressing bandits in Jiangxi, Wang Yangming wrote to two students: to break the bandits in the hills is easy; to break the bandits in the heart is hard. He had just put down, with very few troops, an insurgency entrenched for decades — the thing everyone else considered impossible — and he called it easy. Bandits in the hills have a form: position, numbers, supply lines, all discoverable. The ones inside have none. They aren't out there. They are the one doing the judging.
+In early 1518, suppressing bandits in Jiangxi, Wang Yangming wrote to two students the day before the final assault: we go into their strongholds tomorrow, every column is in place, the bandits are bound to break. Then he quoted something he had written earlier in the campaign: to break the bandits in the hills is easy; to break the bandits in the heart is hard. The battle everyone thought hardest, he called a matter of clearing out petty thieves. Bandits in the hills have a form: position, numbers, supply lines, all discoverable. The ones inside have none. They aren't out there. They are the one doing the judging.
 
 ### The parts · Problems with a shape are always the easier ones
 A problem you can list is already half solved. What really holds a person is the stuff with no name: resentment, fear of being thought less of, a grudge against one particular person. None of it enters any list, and all of it quietly rewrites every decision.
@@ -20020,7 +20020,7 @@ Where it goes wrong: scheduling the interior work for after the job is finished;
 
 ### Lines to keep
 Breaking the bandits in the hills is easy. The ones inside aren't.
-When this mind does not move, you can move with the moment.
+Clearing out a few petty thieves: what is remarkable in that?
 The reasons change and the conclusion doesn't. That tells you something.
 
 ========================================================================
@@ -20614,6 +20614,200 @@ Where it goes wrong: finishing it for your own peace of mind, in your own prefer
 ### Lines to keep
 To plan to come back for his bones was not his wish.
 The monk led me to where the bones lay. I bowed and wept.
+
+========================================================================
+## Xu Xiake · The Crying on the Bank
+URL: https://ourword.ai/en/i/xu-xiake/the-crying-child/
+Source: The Travel Diaries of Xu Xiake, Chu diary
+Tags: Deep read, Xu Xiake, When something feels off, move first; guessing which trick it is can wait
+
+Something feels wrong at night, and you guard against the wrong danger. What Xu Xiake suspected on the Xiang river, and what he missed.
+
+### Q: What actually happened?
+On the night of 11 February 1637 the boat moored where no village stood. Crying came from the bank, like a child or a woman, for a long time. Every boat stayed silent. Xu lay awake, wrote a poem in pity, and suspected a con. Near midnight the monk Jingwen could not bear it, waded ashore and found a boy of fourteen who said he had fled a violent master. Jingwen urged him home and gave him something. Soon after Jingwen came back aboard, robbers stormed the boat.
+
+### The parts · Noticing is not the same as guarding
+He suspected a confidence trick: someone using the child to extort whoever took him in. He never thought of robbers. Guarding against one bad outcome is not guarding against all. When something feels off, moving matters more than guessing the trick.
+e.g. A stranger calls at midnight saying your family is in trouble. Do not analyse it. Hang up and call them yourself.
+
+### The parts · The place itself is the risk
+There was no village on that bank, only two grain boats. He let the experienced travellers aboard choose where to moor. Handing the judgement to people who know the road also hands them your risk.
+e.g. A colleague books your hotel somewhere remote and you feel uneasy but say nothing. Ask the one extra question.
+
+### The parts · Do not blame the soft-hearted one
+Jingwen went ashore. The next day it was also Jingwen who guarded what was saved, dived for a pot and wet rice, and fed everyone before eating himself. Blame the kind one first, and next time nobody goes ashore.
+e.g. A colleague shipped goods in good faith and the client vanished. Do not name him in the group chat; work out together how to recover it.
+
+### Q: How do I use it today?
+Where you are: something feels wrong, you cannot say what, and everyone around you is silent.
+Ask first: which bad outcome am I guarding against? If a different one comes, is where I am standing still safe?
+Where it goes wrong: stopping at the guess. Xu suspected a con and only wrote a poem. When something feels off, changing position matters more than naming the trick.
+
+### Lines to keep
+I worried only about a con, never that they were robbers.
+Every boat lay silent; nobody dared to ask.
+
+========================================================================
+## Xu Xiake · The Burned Books
+URL: https://ourword.ai/en/i/xu-xiake/the-burned-books/
+Source: The Travel Diaries of Xu Xiake, Chu diary
+Tags: Deep read, Xu Xiake, When something entrusted to you is destroyed, first say exactly what was lost
+
+Something entrusted to you was destroyed on your watch. What Xu Xiake lost on the Xiang river, and how he dealt with it.
+
+### Q: What actually happened?
+The night of the robbery, the thieves emptied his leather trunk: a preface and letters he was carrying from the writer Chen Meigong to the chief of Lijiang, dozens of letters, and a handwritten travel record by Zhang Zonglian that the family had treasured for two hundred years and he had begged to borrow. Ten volumes of his own collected travel writing burned with several gazetteers. Jingwen pleaded with the robbers, saved the sutras and gathered the scattered books. Xu wrote: it came into my hands and met this disaster; how can I not beat my chest?
+
+### The parts · Say exactly what was lost
+In his diary he listed it item by item: whose draft, letters to whom, which book, where it came from. When you lose something of someone else's, first establish what it was and who it matters to, before you start blaming yourself.
+e.g. A client's samples broke in the courier. List which items, their value and whether they can be remade, then make the call.
+
+### The parts · The hardest part is what is worthless to others
+He said the letters bound for Lijiang were useless to the robbers and irreplaceable to him. Money can be repaid; this cannot. That is exactly the part to mention first.
+e.g. You lost a friend's hard drive. You can pay for the drive, not the photos. Talk about the photos first.
+
+### The parts · If someone offers to chase it, let him
+His friend Liu Mingyu swore before a shrine: the money is gone, but the book I will get back for you. Xu protested that it was lost, then let him try. Help is not only money; it is someone carrying the problem for a while.
+e.g. You lost the team's files and a colleague offers to search the backups. Do not refuse; give him every clue you remember.
+
+### Q: How do I use it today?
+Where you are: something you were trusted to keep was destroyed in your hands. It was not your loss, and you cannot repay it.
+Ask first: what exactly was lost, and who does it matter to most? Which part can money cover, and which cannot?
+Where it goes wrong: drowning in guilt and never speaking. Xu wrote down every item. Delay out of shame, and the owner hears it from someone else.
+
+### Lines to keep
+It came into my hands and met this disaster.
+Useless to them, and impossible for me to find again.
+The money cannot be recovered. The book I will recover for you.
+
+========================================================================
+## Xu Xiake · The Night They Waited
+URL: https://ourword.ai/en/i/xu-xiake/the-night-we-waited/
+Source: The Travel Diaries of Xu Xiake, Chu diary
+Tags: Deep read, Xu Xiake, When you hold everyone up, the cost shows at once and the benefit only the next day
+
+Because of you, everyone is a step behind and everyone blames you. What one night of waiting for Xu Xiake turned out to mean.
+
+### Q: What actually happened?
+In the third month of 1637, back on the road after the robbery, Xu and Jingwen slogged a whole day through rain and mud to see off his friend Liu Mingyu, falling again and again, and reached his boat by fishing boat only late at night. The boat had waited for him, and its master was cursed by the other passengers for it. At dawn they passed two boats just robbed, one man killed and one dying. The people on the two boats travelling with them turned and thanked him: had we not waited for you, we would have been here.
+
+### The parts · The cost is immediate; the benefit comes later
+The boatman who waited was cursed by everyone, and nobody could see any good in it. Only the two robbed boats the next morning showed what that night's delay had avoided.
+e.g. You insisted on one more night of testing and were blamed for the delay. The next day a rival's identical bug made the news.
+
+### The parts · Whoever waited for you took the blame
+The curses landed on the boatman, not on Xu. When your business slows everyone down, the person who covers for you usually takes the heat. Afterwards, say clearly that it was you.
+e.g. A colleague delayed a submission waiting for your figures and was called out. At the next meeting, say it was your doing.
+
+### The parts · Thanks afterwards do not prove you were right
+They escaped through that night's delay and through luck. Xu recorded only what happened, never that he had foreseen it. One delay turning out well does not make every delay right.
+e.g. Last time your extra day avoided a trap. Before asking everyone to wait again, say exactly what you are waiting for.
+
+### Q: How do I use it today?
+Where you are: because of you everyone is a step behind, and right now they all blame you.
+Ask first: what does this delay avoid, and what does it cost? Who is taking the blame for me?
+Where it goes wrong: using a lucky escape to prove you were right. Had that night passed quietly, Xu would still have been the one who held everyone up.
+
+### Lines to keep
+Had we not waited for you, we would have met this too.
+The boatman, cursed for waiting, now looked rather pleased.
+
+========================================================================
+## Xu Xiake · Every Step a Fright
+URL: https://ourword.ai/en/i/xu-xiake/step-by-step-in-snow/
+Source: The Travel Diaries of Xu Xiake, Mount Huang diary
+Tags: Deep read, Xu Xiake, When every step feels hollow, take them one at a time
+
+The road is long and every step feels hollow under your feet. How Xu Xiake came down through the snow on Mount Huang.
+
+### Q: What actually happened?
+In the second month of 1616 Xu Xiake climbed Mount Huang. On the seventh day he went down from Jieyin Cliff through deep snow, peaks rising and falling around him as he passed. Each step showed something new, but the ravines were deep and the snow thick, and every step was a fright. A dozen li further on, at Songgu Hermitage, a scent drifted along the stream: a plum tree in full flower. The mountain is cold, he wrote, the snow lingers, and only here does it bloom.
+
+### The parts · Fear and wonder in the same step
+He wrote that every step brought a new marvel, and that every step was a fright. Fear was not a signal to stop; it was often the same thing as seeing something new.
+e.g. Your first project on your own makes every decision nerve-racking. The nervous spots are usually where you learn fastest.
+
+### The parts · Slow, but not stopped
+On that frightening path he still walked a dozen li down to the hermitage. The way to walk it was one firm step at a time, not waiting until he was no longer afraid.
+e.g. After knee surgery you add two hundred steps a day. That slow still counts as forward.
+
+### The parts · Write down the plum tree
+On a day of cold sweat he still recorded the flowering plum. Record only the dangers and the road grows more frightening; record what is blooming too, and you know it was not all fear.
+e.g. In a hard week, write down one thing that went right each night, even if it was only lunch.
+
+### Q: How do I use it today?
+Where you are: the road is long and you test every step. Tiredness does not scare you; empty ground under your foot does.
+Ask first: am I afraid of the road itself, or of walking it for the first time? Which step today can I plant firmly?
+Where it goes wrong: treating every-step-a-fright as a reason to stop. Xu was afraid and still reached the hermitage; wait until you are unafraid and you never see the plum tree.
+
+### Lines to keep
+The ravines deep, the snow thick: every step a fright.
+The mountain is cold, the snow lingers; only here does it bloom.
+
+========================================================================
+## Xu Xiake · The Gazetteer Was Wrong
+URL: https://ourword.ai/en/i/xu-xiake/the-gazetteer-was-wrong/
+Source: The Travel Diaries of Xu Xiake, Guangxi diary, part 2
+Tags: Deep read, Xu Xiake, To say an authority is wrong, lay out what you walked, then name the step it got wrong
+
+Everyone has written it this way for years, and it is not what you walked. How Xu Xiake pointed out the error in an official gazetteer.
+
+### Q: What actually happened?
+In the summer of 1637 Xu Xiake was travelling along the rivers of Guangxi, sorting out where each came from: the southern Pan river through Tianzhou to Hejiang west of Nanning, the northern Pan through Xincheng to Qingyuan. The official Yunnan gazetteer said the two Pan rivers ran apart for a thousand li and met at Hejiang. He wrote plainly that it had mistaken Nanning's left and right rivers for the two Pans, and that neither river ran the way it claimed.
+
+### The parts · First write down what you walked
+He did not open by saying the gazetteer was wrong. He first wrote out where each river came from, where it passed and where it joined. Before saying an authority erred, lay out what you saw so others can check it.
+e.g. To say an industry report's figures are off, first list your own sample, dates and method.
+
+### The parts · Name the step it got wrong
+He did not say the gazetteer was nonsense; he said it had mistaken two rivers for the two Pans. Naming the exact step is far more credible than saying everything is wrong, and leaves room to correct it.
+e.g. Not 'this plan won't work,' but 'step three assumes a conversion rate twice our real one last year.'
+
+### The parts · The authority comes from having been there
+He could write it because he had sailed and walked those rivers stretch by stretch. The standing to say an authority is wrong comes not from a confident tone but from having gone yourself.
+e.g. Veterans say this client will not renew. You spent two days at their office last week. Say what you saw.
+
+### Q: How do I use it today?
+Where you are: everyone has said it for years, what you saw is different, and you fear sounding arrogant.
+Ask first: exactly which things did I see myself? At which step does it part from what the book says?
+Where it goes wrong: one discrepancy becomes a reason to distrust the whole book. Xu named one specific error, and in Guilin he still used the maps and gazetteers to plan his walks.
+
+### Lines to keep
+It mistook the left and right rivers for the two Pans.
+I took out the maps and gazetteers to find what Guilin offered.
+
+========================================================================
+## Xu Xiake · Past Where the Guide Would Go
+URL: https://ourword.ai/en/i/xu-xiake/beyond-the-guide/
+Source: The Travel Diaries of Xu Xiake, Guangxi diary, part 1
+Tags: Deep read, Xu Xiake, Go in where others glance and leave, and decide beforehand where you will turn back
+
+Others glance and move on; you always want to go in. In the caves of Guilin Xu Xiake changed guides, went deep, and knew where to turn back.
+
+### Q: What actually happened?
+On the second day of the fifth month of 1637 Xu Xiake entered the Seven Star Cave in Guilin. His guide hurried him past the famous named rocks, the vase, the chess game, the eight immortals. He wrote: what I wanted to see was not here. Outside, he asked a man drawing water whether the stream could be followed inside, hired him on the spot, left his pack at a nearby temple with rice cooking for his return, and went back in. At a black pool the man refused: no one has ever gone further, and the water is high. Xu turned back.
+
+### The parts · The named places may not be what you want
+The guide showed the rocks with names that everyone looks at. Xu wanted to know where the cave went and what it led to. If you want to go in where others pass by, it is often because what you want is not on the list.
+e.g. Everyone copies the quotes from a bestseller; you want to trace where its key statistic came from.
+
+### The parts · Find someone who has been deep
+The first guide knew only the named rocks. Xu did not barge on alone; he asked a man who drew water there every day and hired him at once. To go deep, first find someone who has actually been deep.
+e.g. To understand an industry, skip the conference speakers and buy lunch for someone with ten years on the front line.
+
+### The parts · Being thorough needs a turning point
+At the black pool the new guide would go no further, and Xu turned back, noting that he had seen nearly everything both caves offered. Thoroughness is not recklessness; decide in advance where you will turn back.
+e.g. Digging into a technical problem in your spare time, decide now: no progress this weekend, and you set it aside.
+
+### Q: How do I use it today?
+Where you are: others glance and move on, you want to go all the way in, and you wonder whether being this thorough over something small is worth it.
+Ask first: is what I want simply not on the list? Who has actually been there? Where will I turn back?
+Where it goes wrong: thoroughness becomes recklessness. Xu wanted to go further, but when the guide said no one ever had and the water was high, he turned back, which is why he could go in again.
+
+### Lines to keep
+What I wanted to see was not here.
+No one has ever gone in, and the water is high.
+Of the two caves' wonders, almost nothing escaped me.
 
 ========================================================================
 ## Xunzi · Where the rules came from

@@ -38,10 +38,10 @@ CHAPTERS = [
             "them back and forth between Guanzhong and Hebei until they were "
             "exhausted, then drive straight at Fanyang, An Lushan's home and "
             "base, where the families and the baggage were. Suzong wanted the "
-            "two capitals first. He got them, the rebel core withdrew to "
-            "Hebei, and the war ran six more years. ==Your Majesty wanted the "
-            "capitals quickly, so the rebels grew strong again and we grew "
-            "weak again.==",
+            "two capitals first. Li Bi warned him on the spot: ==Your Majesty "
+            "wants the capitals quickly, so the rebels will grow strong again "
+            "and we will be worn down again.== He got the capitals, the rebel "
+            "core withdrew to Hebei, and the war ran six more years.",
         "f": [
             {"n": "The conspicuous target is rarely the decisive one",
              "d": "The two capitals were the symbol, the legitimacy, the place "

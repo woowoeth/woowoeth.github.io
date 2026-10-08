@@ -29,7 +29,10 @@ ENTRIES = [
              "three judgements he made on the road: when disaster strikes "
              "halfway, ask whether you could ever leave again if you went "
              "home; when a companion falls, finish what he wanted, his "
-             "way; and know which night to stop, so the road can be long.",
+             "way; and know which night to stop, so the road can be long. "
+             "The surviving diary has no ending. It stops on an ordinary "
+             "morning on Chicken Foot Mountain: cheese, pepper oil, plum "
+             "vinegar, 'not lavish, but with a certain grace.'",
         "story": "His diary opens on the last day of the third month of "
                  "1613, leaving Ninghai by the west gate for Mount "
                  "Tiantai: the clouds scattered, the sun was bright, and "
@@ -87,6 +90,30 @@ SCENES = [
         ("He's gone. Do I still finish the thing he was hoping for?",
          [("xu-xiake", "jingwens-bones")]),
     ]),
+    ("Do I trust my gut", "Dealing with people", [
+        ("Something felt off and I never said it out loud.",
+         [("xu-xiake", "the-crying-child")]),
+    ]),
+    ("I'm the one who did wrong", "Things you don't say out loud", [
+        ("Something I was trusted to look after got destroyed on my watch.",
+         [("xu-xiake", "the-burned-books")]),
+    ]),
+    ("They've started watching me", "Dealing with people", [
+        ("Everyone blamed me for holding them up.",
+         [("xu-xiake", "the-night-we-waited")]),
+    ]),
+    ("I overthink everything", "How you're doing", [
+        ("The road is long and I'm testing every single step.",
+         [("xu-xiake", "step-by-step-in-snow")]),
+    ]),
+    ("Everyone is saying the same thing", "Dealing with people", [
+        ("Everyone has said it for years, but it's not what I saw.",
+         [("xu-xiake", "the-gazetteer-was-wrong")]),
+    ]),
+    ("I'm building something nobody asked for", "Getting it done", [
+        ("Everyone else glances and moves on. I want to go all the way in.",
+         [("xu-xiake", "beyond-the-guide")]),
+    ]),
 ]
 
 ASKS = {
@@ -94,4 +121,10 @@ ASKS = {
         "Something went badly wrong halfway. Do I turn back or keep going?",
     "xu-xiake/jingwens-bones":
         "He's gone. Do I still finish the thing he was hoping for?",
+    "xu-xiake/the-crying-child": "Something felt off and I never said it out loud.",
+    "xu-xiake/the-burned-books": "Something I was trusted to look after got destroyed on my watch.",
+    "xu-xiake/the-night-we-waited": "Everyone blamed me for holding them up.",
+    "xu-xiake/step-by-step-in-snow": "The road is long and I'm testing every single step.",
+    "xu-xiake/the-gazetteer-was-wrong": "Everyone has said it for years, but it's not what I saw.",
+    "xu-xiake/beyond-the-guide": "Everyone else glances and moves on. I want to go all the way in.",
 }

@@ -408,6 +408,18 @@ QUOTE_ASKS = {
     # 徐霞客
     "xu-xiake/robbed-on-the-xiang":
         "半路出了大事，我该回头，还是接着走？",
+    "xu-xiake/the-crying-child":
+        "我心里打鼓，可一直没说出口。",
+    "xu-xiake/the-burned-books":
+        "别人托我保管的东西，毁在我手里了。",
+    "xu-xiake/the-night-we-waited":
+        "因为我，大家都慢了一步。",
+    "xu-xiake/step-by-step-in-snow":
+        "路还长，可我每一步都在试探。",
+    "xu-xiake/the-gazetteer-was-wrong":
+        "大家都这么说，可我看到的不是这样。",
+    "xu-xiake/beyond-the-guide":
+        "别人看一眼就走，我总想钻进去看。",
     "xu-xiake/jingwens-bones":
         "他没做完的事，我要替他做完吗？",
     # 晏婴

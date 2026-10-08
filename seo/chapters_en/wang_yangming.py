@@ -205,12 +205,14 @@ CHAPTERS = [
         "dek": "He never lost a campaign. Why he said all of those were the "
                "easy ones.",
         "story":
-            "In 1518, while suppressing bandits in Jiangxi, Wang Yangming "
-            "wrote to two students: ==to break the bandits in the hills is "
-            "easy; to break the bandits in the heart is hard==. He had just "
-            "put down, with very few troops, an insurgency entrenched for "
-            "decades — the thing everyone else considered impossible — and he "
-            "called it easy. Bandits in the hills have a form: position, "
+            "In early 1518, suppressing bandits in Jiangxi, Wang Yangming "
+            "wrote to two students the day before the final assault: we go "
+            "into their strongholds tomorrow, every column is in place, the "
+            "bandits are bound to break. Then he quoted something he had "
+            "written earlier in the campaign: ==to break the bandits in the "
+            "hills is easy; to break the bandits in the heart is hard==. The "
+            "battle everyone thought hardest, he called a matter of clearing "
+            "out petty thieves. Bandits in the hills have a form: position, "
             "numbers, supply lines, all discoverable. The ones inside have "
             "none. They aren't out there. They are the one doing the judging.",
         "f": [
@@ -254,7 +256,7 @@ CHAPTERS = [
         "q": [
             "Breaking the bandits in the hills is easy. The ones inside "
             "aren't.",
-            "When this mind does not move, you can move with the moment.",
+            "Clearing out a few petty thieves: what is remarkable in that?",
             "The reasons change and the conclusion doesn't. That tells you "
             "something.",
         ],

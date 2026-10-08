@@ -1244,8 +1244,8 @@
   "h": "fc1148b6b2d151c8"
  },
  "i/li-bi/strike-the-base/": {
-  "d": "2026-08-29",
-  "h": "55740a15e8cce375"
+  "d": "2026-10-08",
+  "h": "6c130bf5edfc5186"
  },
  "i/li-ka-shing/": {
   "d": "2026-09-02",
@@ -2216,12 +2216,12 @@
   "h": "4b846a22b33bfd71"
  },
  "i/wang-yangming/": {
-  "d": "2026-09-03",
-  "h": "1833248ced228929"
+  "d": "2026-10-08",
+  "h": "22a3b5c8f5f40c4d"
  },
  "i/wang-yangming/bandits-in-the-heart/": {
-  "d": "2026-08-28",
-  "h": "cffdd8ab70d5305b"
+  "d": "2026-10-08",
+  "h": "29b75904809ab78e"
  },
  "i/wang-yangming/innate-knowing/": {
   "d": "2026-08-28",
@@ -2329,7 +2329,11 @@
  },
  "i/xu-xiake/": {
   "d": "2026-10-08",
-  "h": "5e3f5bf88c5af92d"
+  "h": "12c777d031e53897"
+ },
+ "i/xu-xiake/beyond-the-guide/": {
+  "d": "2026-10-08",
+  "h": "21cc462ba1f90349"
  },
  "i/xu-xiake/jingwens-bones/": {
   "d": "2026-10-08",
@@ -2338,6 +2342,26 @@
  "i/xu-xiake/robbed-on-the-xiang/": {
   "d": "2026-10-08",
   "h": "397966a8705e3672"
+ },
+ "i/xu-xiake/step-by-step-in-snow/": {
+  "d": "2026-10-08",
+  "h": "7207f9a3248ba82e"
+ },
+ "i/xu-xiake/the-burned-books/": {
+  "d": "2026-10-08",
+  "h": "3245f6b61689a671"
+ },
+ "i/xu-xiake/the-crying-child/": {
+  "d": "2026-10-08",
+  "h": "7b8eb555ebd31af0"
+ },
+ "i/xu-xiake/the-gazetteer-was-wrong/": {
+  "d": "2026-10-08",
+  "h": "468cd31e5b2451de"
+ },
+ "i/xu-xiake/the-night-we-waited/": {
+  "d": "2026-10-08",
+  "h": "5df14d40a7c52e00"
  },
  "i/xunzi/": {
   "d": "2026-09-25",
@@ -2388,8 +2412,8 @@
   "h": "33335ed418d4600a"
  },
  "i/zeng-guofan/": {
-  "d": "2026-09-22",
-  "h": "957b53d282a68260"
+  "d": "2026-10-08",
+  "h": "10f3edbbdeb90312"
  },
  "i/zeng-guofan/recruit-and-test/": {
   "d": "2026-08-28",

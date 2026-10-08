@@ -389,7 +389,7 @@ ENTRIES = [
         "e": "Qing · 1811–1872", "w": "Dull and unbreakable", "y": 1811,
         "d": "The most famous case in Chinese history of an ordinary man "
              "getting there by grinding. He was not gifted — he sat the "
-             "examination seven times before passing — and he put down the "
+             "county examination seven times, by the usual account, before passing — and he put down the "
              "Taiping Rebellion, the largest of the century, with a method he "
              "admitted was stupid: build a solid camp and fight a dull "
              "battle. He kept a diary auditing his own conduct for thirty "
