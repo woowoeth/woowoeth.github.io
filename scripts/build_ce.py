@@ -264,11 +264,16 @@ HTML = r"""<!DOCTYPE html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>测测你的历史分身 · 32 种历史人格 — 人类世界生存法则</title>
-<meta name="description" content="20 道遇事题，2 分钟，测出 2600 年里和你是同一种人的那位：项羽、张良、苏轼、居里、乔布斯……32 种历史人格，每一种都链到他当年的真事。">
-<meta name="robots" content="noindex">
+<meta name="description" content="20 道遇事题，2 分钟，测出 2600 年里和你是同一种人的那位：项羽、张良、苏轼、徐霞客、居里、乔布斯……32 种历史人格，每一种都链到他当年的真事。">
 <meta property="og:title" content="测测你的历史分身">
 <meta property="og:description" content="20 道遇事题，测出 2600 年里和你是同一种人的那位。">
-<meta property="og:image" content="https://ourword.ai/og.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ourword.ai/ce/">
+<meta property="og:image" content="https://ourword.ai/ce/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ourword.ai/ce/og.png">
 <link rel="canonical" href="https://ourword.ai/ce/">
 <style>__CSS__</style>
 </head>

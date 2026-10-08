@@ -405,6 +405,11 @@ QUOTE_ASKS = {
         "害过我的人，回来找我了。",
     "jin-wengong/three-stages-back":
         "我主动往后撤，算不算认输？",
+    # 徐霞客
+    "xu-xiake/robbed-on-the-xiang":
+        "半路出了大事，我该回头，还是接着走？",
+    "xu-xiake/jingwens-bones":
+        "他没做完的事，我要替他做完吗？",
     # 晏婴
     "yan-ying/price-of-shoes":
         "我想劝老板，又不敢当面顶他。",

@@ -43,6 +43,7 @@ NAMES = {
     "zhao-wuling-wang": ("King Wuling of Zhao", "Power and organisation"),
     "zhou-gong": ("The Duke of Zhou", "Power and organisation"),
     "yan-ying": ("Yan Ying", "Power and organisation"),
+    "xu-xiake": ("Xu Xiake", "Learning and growth"),
     "thucydides": ("Thucydides", "Strategy and competition"),
     "mencius": ("Mencius", "Power and organisation"),
     "parkinson": ("C. Northcote Parkinson", "Power and organisation"),

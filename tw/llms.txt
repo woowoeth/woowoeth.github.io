@@ -1,11 +1,11 @@
 # OurWord (人類世界生存法則)
 
-> 187 people and books on how the world actually works, across 2,600 years
+> 188 people and books on how the world actually works, across 2,600 years
 > 遇到事了，看看以前的人怎麼處理
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 187 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 188 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
-一個關於「世界到底怎麼運轉」的知識庫：戰略、財富、權力、人性、創業，取自 187 位人物與典籍，跨越 2600 年。每一條都寫清楚這個人真正留下的那一個想法、背後的故事、拆開的分則與例子，以及今天怎麼用。
+一個關於「世界到底怎麼運轉」的知識庫：戰略、財富、權力、人性、創業，取自 188 位人物與典籍，跨越 2600 年。每一條都寫清楚這個人真正留下的那一個想法、背後的故事、拆開的分則與例子，以及今天怎麼用。
 
 ## Read it
 
@@ -26,14 +26,14 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 - [創業與產品](https://ourword.ai/tw/t/startups/) — 20
 - [謀略與競爭](https://ourword.ai/tw/t/strategy/) — 19
 - [財富與風險](https://ourword.ai/tw/t/wealth/) — 19
+- [學習與成長](https://ourword.ai/tw/t/learning/) — 18
 - [世界如何運轉](https://ourword.ai/tw/t/world/) — 18
-- [學習與成長](https://ourword.ai/tw/t/learning/) — 17
 - [識人與相處](https://ourword.ai/tw/t/people/) — 16
 - [家庭與關係](https://ourword.ai/tw/t/family/) — 15
 - [身心與生活](https://ourword.ai/tw/t/living/) — 15
 - [中古](https://ourword.ai/tw/t/medieval/) — 15
 - [秦漢至魏晉](https://ourword.ai/tw/t/han-wei/) — 14
-- [近世](https://ourword.ai/tw/t/early-modern/) — 12
+- [近世](https://ourword.ai/tw/t/early-modern/) — 13
 
 ## How it is built
 
@@ -452,6 +452,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [項羽 · 衣繡夜行](https://ourword.ai/tw/i/xiang-yu/brocade-at-night/): 項羽 · 衣繡夜行——為了被看見而做決定。有人勸他定都關中，他要回彭城。這一篇要回答的是：他給的理由暴露了什麼。
 - [蕭何 · 先收圖籍](https://ourword.ai/tw/i/xiao-he/take-the-records/): 蕭何 · 先收圖籍——人人搶金帛的時候，先把賬本拿走。機會來了，所有人都在搶眼前最值錢的東西。這一篇要回答的是：蕭何為什麼去拿了一堆沒人要的文書，後來它們換來了什麼。
 - [蕭何 · 功人功狗](https://ourword.ai/tw/i/xiao-he/hunter-and-hounds/): 蕭何 · 功人功狗——論功要先問：沒有他，這仗打得成嗎。你幹的是後方的活，前線嫌你沒出過力。這一篇要回答的是：劉邦怎麼把一個沒打過仗的人排在所有將軍前面。
+- [徐霞客 · 湘江遇盜](https://ourword.ai/tw/i/xu-xiake/robbed-on-the-xiang/): 徐霞客 · 湘江遇盜——半路出了大事，先算回去之後還出不出得來。走到半路，錢物一夜全沒了，人人都勸你先回去。這一篇要回答的是：徐霞客遇盜之後，為什麼沒有回家。
+- [徐霞客 · 把靜聞背到雞足山](https://ourword.ai/tw/i/xu-xiake/jingwens-bones/): 徐霞客 · 把靜聞背到雞足山——同行的人倒在半路，照他的心願把事做完。同行的人倒在半路，他想去的地方，你還替他去嗎？這一篇要回答的是：徐霞客怎麼對待同行和尚靜聞的遺願。
 - [荀子 · 禮起於何也](https://ourword.ai/tw/i/xunzi/origin-of-rites/): 荀子 · 禮起於何也——制度是稀缺逼出來的。規矩是從哪來的？這一篇要回答的是：荀子給的答案裡沒有道德，只有一道資源分配題。
 - [荀子 · 善假於物](https://ourword.ai/tw/i/xunzi/borrow-from-things/): 荀子 · 善假於物——別練身體，去找槓桿。同樣的人，為什麼有的能走很遠？這一篇要回答的是：荀子說答案不在那個人身上。
 - [荀子 · 明分使群](https://ourword.ai/tw/i/xunzi/division-makes-groups/): 荀子 · 明分使群——人靠分工才結得成群。人比牛慢、比虎弱，為什麼反過來能用它們？這一篇要回答的是：荀子給的那個單字答案。
@@ -498,7 +500,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [AI Bubble Monitor / AI 泡沫檢測儀](https://ourword.ai/ai/)
 - [Zouni / 走你](https://ourword.ai/zouni/)
 
-## Index (187 entrys)
+## Index (188 entrys)
 
 - [BJ·福格](https://ourword.ai/tw/i/bj-fogg/): BJ·福格（2019年·斯坦福行為設計實驗室）——小到不會失敗。斯坦福行為設計實驗室創始人，研究行為如何被設計出來。他給出一個公式：行為發生需要動機、能力、提示三者同時到位。多數人失敗在只調動機——靠決心和自我激勵——而動機天然起伏，靠它維持的習慣必然崩。他的主張相反：把行為縮到小得不需要動機，然後掛在一個已有的動作後面。
 - [C.S.劉易斯](https://ourword.ai/tw/i/cs-lewis/): C.S.劉易斯（1898-1963年·英國牛津）——妻子死後幾個月的日記。作家，牛津和劍橋的教授，寫過《納尼亞傳奇》和大量勸人信仰的書。五十八歲結婚，妻子喬伊四年後因癌症去世。之後幾個月他在四本練習簿上記自己的狀態，後來用筆名出版，就是《卿卿如晤》。收他是因為「重要的人走了」那六個問題，原來靠弗蘭克爾和蘇軾在答——一個是集中營的倖存者，一個是被貶的官員
@@ -571,6 +573,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [彼得·德魯克](https://ourword.ai/tw/i/drucker/): 彼得·德魯克（奧—美·1909—2005）——成果。把管理從「管人」改成「對成果負責」的人。他不寫職位說明書，寫的是：你被僱不是因為忙，是因為要產出一個別人用得上的結果。GM、日本企業、非營利都用過他的問題清單。核心只有一句：活動不算數，成果才算。
 - [彼得·林奇](https://ourword.ai/tw/i/lynch/): 彼得·林奇（美國·1944-）——翻石頭。富達麥哲倫基金經理13年（1977-1990），年化29%，管理資產從2000萬美元做到140億美元，累計回報27倍，同期標普500只有4.7倍。他46歲在業績巔峰主動退休，理由是不想錯過女兒長大。他的方法沒有任何秘密可言，恰恰因此最難複製：一年調研200到300家公司，辦公室裡
 - [彼得·蒂爾](https://ourword.ai/tw/i/thiel/): 彼得·蒂爾（當代·1967-）——從0到1。PayPal聯合創始人，Facebook第一個外部投資人，硅谷最重要的反共識思想者。他的核心命題：競爭是意識形態陷阱，真正能創造價值的是壟斷而非競爭。
+- [徐霞客](https://ourword.ai/tw/i/xu-xiake/): 徐霞客（明·江陰·1587-1641年）——遠行。明代的旅行家，江陰人，沒有做官，從二十出頭起出門遠遊，三十多年裡走過大半個中國，一路按日記下山水、巖洞和河流，後人編成《徐霞客遊記》。這一頁只取他走路時的三個判斷，不論他的地理考察：出了大事要不要回頭，先算回頭之後還出不出得來；同行的人倒下了，照他的心願把事做完；知道哪一晚該停下
 - [德韋克](https://ourword.ai/tw/i/dweck/): 德韋克（2006年·斯坦福大學）——能力可長。斯坦福心理學家，提出固定型思維與成長型思維的區分：前者認為能力是天生定量的，後者認為能力可以通過努力和方法生長。兩種信念帶來完全不同的行為——認為能力固定的人會迴避可能失敗的挑戰，因為失敗等於證明自己不行；認為能力可長的人把失敗當作信息。這個概念影響極大，也因此被大量簡化和濫用，
 - [思考，快與慢](https://ourword.ai/tw/i/thinking-fast-and-slow/): 思考，快與慢（美·2011年）——系統1與系統2。丹尼爾·卡尼曼著，行為經濟學的奠基之作。卡尼曼是史上唯一以心理學家身份獲諾貝爾經濟學獎的人（2002年），這本書是他與阿莫斯·特沃斯基四十年研究的總結。核心發現足以顛覆你對自己的信任：人腦有兩套系統——系統1快速、自動、情緒化，系統2緩慢、費力、講邏輯；你以為自己在用系統2理性決
 - [戰爭論](https://ourword.ai/tw/i/on-war/): 戰爭論（普魯士·1832）——摩擦。克勞塞維茨（1780-1831）12歲參軍，親歷耶拿會戰的慘敗和拿破崙征俄的潰退，一輩子在打敗仗和研究敗仗。他51歲死於霍亂，書沒寫完，由遺孀整理出版。《孫子兵法》教你如何取勝，《戰爭論》告訴你為什麼你的計劃一定會走樣——這是孫子完全沒有提供的那一半。

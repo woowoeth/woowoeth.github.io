@@ -1,7 +1,7 @@
-# OurWord — 187 people and books on how the world actually works, across 2,600 years
+# OurWord — 188 people and books on how the world actually works, across 2,600 years
 # OurWord — See how people before you handled it.
 # https://ourword.ai/en/
-# Full corpus, plain text. 187 entrys.
+# Full corpus, plain text. 188 entrys.
 
 ========================================================================
 ## Albert Einstein
@@ -4969,10 +4969,10 @@ After something you cannot say out loud, stop asking whether you still deserve t
 The shame was real and so was the work. He let the work speak. The books that lasted were mostly written in the worst years. Sometimes staying alive needs a debt left outstanding.
 
 ### Q: What should I read alongside?
-Brené Brown — Both on shame. She is the researcher and gives the mechanism; he is the subject and gives the sample of someone finishing the work while carrying it. Pu Songling — Two kinds of it never worked. Pu Songling came close for forty years with no turning point; Sima Qian has one catastrophe and a life visibly divided by it. Records of the Grand Historian — The same story from two sides: his page is about why a man chose to stay alive in order to finish it, this one is about the method the book itself laid down. Thucydides — Both were historians who wanted the facts straight. Sima Qian travelled the country and questioned the people involved. Thucydides checked each eyewitness against the others, and asked why they differed. One relied on going and asking, the other on checking and asking why they do not match.
+Brené Brown — Both on shame. She is the researcher and gives the mechanism; he is the subject and gives the sample of someone finishing the work while carrying it. Pu Songling — Two kinds of it never worked. Pu Songling came close for forty years with no turning point; Sima Qian has one catastrophe and a life visibly divided by it. Records of the Grand Historian — The same story from two sides: his page is about why a man chose to stay alive in order to finish it, this one is about the method the book itself laid down. Thucydides — Both were historians who wanted the facts straight. Sima Qian travelled the country and questioned the people involved. Thucydides checked each eyewitness against the others, and asked why they differed. One relied on going and asking, the other on checking and asking why they do not match. Xu Xiake — Both crossed much of China and both turned their worst years into a book. Sima Qian travelled widely from the age of twenty and finished his history after castration; Xu was robbed and lost his companion and kept writing day by day. One recorded people, the other mountains and rivers.
 
 ### Further
-Records of the Grand Historian Su Shi Viktor Frankl Brené Brown The Comprehensive Mirror Du Fu Thucydides
+Records of the Grand Historian Su Shi Viktor Frankl Brené Brown The Comprehensive Mirror Du Fu Thucydides Xu Xiake
 
 ========================================================================
 ## Sima Yi
@@ -5194,7 +5194,7 @@ A bamboo stick and straw sandals beat a horse. Who's afraid? Looking back at tha
 Zhuangzi — Two ways of not being owned: Zhuangzi refuses the post, Su Shi takes it and refuses to be defined by losing it. C.S. Lewis — Both wrote through the worst of it. Lewis to find out what he actually believed, Su Shi to find out what was still enjoyable. Chu Shijian — Both began with one small concrete job after losing the position: Su Shi broke ground at Huangzhou, Chu Shijian built the irrigation first. Neither waited to be recognised again. Seneca — Two ways of writing out of adversity: Seneca writes about restraint from inside the machinery of power, Su Shi writes about lightness on the road into exile, and both had been tested before either wrote a line. Viktor Frankl — Creation under punishment: Su Shi wrote his best work in exile, Frankl finished logotherapy in the camps — both took the worst stretch of a life and made it the productive one. Du Fu — Both rebuilt after forty: Su Shi broke ground at Huangzhou, Du Fu put up a roof at Chengdu, and both took what a life runs on before any position. Su Shi went back; Du Fu never did. Tao Yuanming — Two ways out of office: Su Shi was exiled and moved by other people, Tao Yuanming walked out himself on the day. One is about living well inside an arrangement, the other about making the decision.
 
 ### Further
-Wang Yangming Fan Li Zhuangzi Tao Te Ching Huineng Winston Churchill Feng Dao Nelson Mandela Sima Qian Seneca Du Fu Shi Tiesheng Tao Yuanming Bai Juyi Lin Xiangru
+Wang Yangming Fan Li Zhuangzi Tao Te Ching Huineng Winston Churchill Feng Dao Nelson Mandela Sima Qian Seneca Du Fu Shi Tiesheng Tao Yuanming Bai Juyi Lin Xiangru Xu Xiake
 
 ========================================================================
 ## Su Yu
@@ -5367,10 +5367,10 @@ If you know this is not it and keep waiting for a better moment, work out how fa
 He left at forty-one and never went back in twenty-odd years. Own the price of the road and there is nothing to resent. Cross off the no first and the road narrows by itself.
 
 ### Q: What should I read alongside?
-Su Shi — Two ways out of office: Su Shi was exiled and moved by other people, Tao Yuanming walked out himself on the day. One is about living well inside an arrangement, the other about making the decision. Pu Songling — Both were poor for life: Pu Songling kept sitting the exam and never passed, Tao Yuanming stopped sitting it on purpose. One had no choice, the other chose. Du Fu — One walked, one had no choice: Tao Yuanming knew where he was going the day he resigned, while Du Fu left office and searched the whole way southwest before stopping at Chengdu. Bai Juyi — One problem, two answers: Tao Yuanming would not bend for five pecks of rice and resigned the same day, while Bai Juyi kept the rice and cut the bending down to the minimum.
+Su Shi — Two ways out of office: Su Shi was exiled and moved by other people, Tao Yuanming walked out himself on the day. One is about living well inside an arrangement, the other about making the decision. Pu Songling — Both were poor for life: Pu Songling kept sitting the exam and never passed, Tao Yuanming stopped sitting it on purpose. One had no choice, the other chose. Du Fu — One walked, one had no choice: Tao Yuanming knew where he was going the day he resigned, while Du Fu left office and searched the whole way southwest before stopping at Chengdu. Bai Juyi — One problem, two answers: Tao Yuanming would not bend for five pecks of rice and resigned the same day, while Bai Juyi kept the rice and cut the bending down to the minimum. Xu Xiake — Neither took the road of office. Tao went back to his own fields so as not to live against his heart; Xu went outward so as to see with his own eyes. One turned inward, the other set out, and both began by knowing what they wanted.
 
 ### Further
-Su Shi Pu Songling Du Fu Viktor Frankl Bai Juyi
+Su Shi Pu Songling Du Fu Viktor Frankl Bai Juyi Xu Xiake
 
 ========================================================================
 ## Technological Revolutions
@@ -6566,6 +6566,40 @@ Han Xin — Both were among the Han founders. Han Xin's merit lay on the battlef
 Liu Bang Zhang Liang Han Xin Feng Yi
 
 ========================================================================
+## Xu Xiake
+URL: https://ourword.ai/en/i/xu-xiake/
+Tags: Learning and growth, Early modern, The long road
+
+Xu Xiake (Ming · Jiangyin · 1587-1641) — The long road. A Ming-dynasty traveller from Jiangyin who never took office. From his early twenties he set out on foot, and over thirty years crossed most of China, writing a dated…
+
+### Q: What did this one leave behind?
+A Ming-dynasty traveller from Jiangyin who never took office. From his early twenties he set out on foot, and over thirty years crossed most of China, writing a dated diary of mountains, caves and rivers that became The Travel Diaries of Xu Xiake. This page leaves his geography aside and takes three judgements he made on the road: when disaster strikes halfway, ask whether you could ever leave again if you went home; when a companion falls, finish what he wanted, his way; and know which night to stop, so the road can be long.
+
+### Q: What actually happened?
+His diary opens on the last day of the third month of 1613, leaving Ninghai by the west gate for Mount Tiantai: the clouds scattered, the sun was bright, and both the travellers and the hills looked glad. Thirty li on, at Lianghuang Mountain, he heard that tigers on the road were mauling dozens of people a month, so he stopped for the night. The next morning it rained, and he went on. That day is now China's National Tourism Day.
+
+### The parts · He asked whether he could leave again
+Robbed of everything on the Xiang river, he was told to go home and raise money. He reasoned that his family would never let him go again, borrowed in Hengzhou instead, and boarded another boat. e.g. Your project loses half its budget. Before pausing it, ask whether anyone will approve it again next year.
+
+### The parts · He finished what his companion wanted
+The monk Jingwen died in Nanning wishing to rest on Chicken Foot Mountain. Xu carried his bones for another year and buried them there, on the mountain Jingwen chose, not one on the way. e.g. Finishing a departed colleague's project, ship it to his design, not the version that is easier for you.
+
+### The parts · He knew which night to stop
+On the first day of a thirty-year journey he walked only thirty li and stopped because of tigers. Hold the direction firmly; let the pace stop whenever it must. e.g. A fever the night before your marathon? Pulling out costs one race, not the running.
+
+### Q: How do I use it today?
+Pick something you have long wanted to set out on and never started. Write three lines: how far the first day has to go to count; what would make me stop for a night, and what would make me turn back; and if I turned back, could I ever leave again. He used the same judgement every time: the direction rarely changes, the pace can stop at any time.
+
+### Lines to keep
+The clouds scattered, the sun was bright, the hills looked glad. If I go home now, my family will never let me leave again. To plan to come back for his bones was not his wish.
+
+### Q: What should I read alongside?
+Sima Qian — Both crossed much of China and both turned their worst years into a book. Sima Qian travelled widely from the age of twenty and finished his history after castration; Xu was robbed and lost his companion and kept writing day by day. One recorded people, the other mountains and rivers. Tao Yuanming — Neither took the road of office. Tao went back to his own fields so as not to live against his heart; Xu went outward so as to see with his own eyes. One turned inward, the other set out, and both began by knowing what they wanted.
+
+### Further
+Sima Qian Su Shi Zhuangzi Tao Yuanming
+
+========================================================================
 ## Xunzi
 URL: https://ourword.ai/en/i/xunzi/
 Tags: Power and organisation, Pre-Qin and classical, Shaped, not born
@@ -6856,7 +6890,7 @@ Everyone knows the use of the useful. Nobody knows the use of the useless. A fro
 Han Feizi — The same century, opposite conclusions: Han Feizi builds the machine of state, Zhuangzi declines to be a part in it. Tao Te Ching — Same tradition, different address: Laozi writes for whoever has to govern, Zhuangzi for whoever wants out. Su Shi — Two ways of not being owned: Zhuangzi refuses the post, Su Shi takes it and refuses to be defined by losing it. Finite and Infinite Games — The use of the useless runs the same way as the infinite game: not winning inside the given rules, but keeping room to change them.
 
 ### Further
-Su Shi Huineng Wang Yangming Tao Te Ching Carl Jung The I Ching The Bhagavad Gita Epictetus Finite and Infinite Games Ivan Illich Bai Juyi
+Su Shi Huineng Wang Yangming Tao Te Ching Carl Jung The I Ching The Bhagavad Gita Epictetus Finite and Infinite Games Ivan Illich Bai Juyi Xu Xiake
 
 ========================================================================
 ## Zhuge Liang
@@ -20516,6 +20550,70 @@ Where it goes wrong: treating the rear as a reason to expect credit for free. An
 The hound chases the hare; the hunter shows where it is.
 You can only catch game, so you are the hounds.
 He brought dozens of his clan; that merit is not to be forgotten.
+
+========================================================================
+## Xu Xiake · Robbed on the Xiang
+URL: https://ourword.ai/en/i/xu-xiake/robbed-on-the-xiang/
+Source: The Travel Diaries of Xu Xiake, Chu diary
+Tags: Deep read, Xu Xiake, When the trip falls apart halfway, ask whether you could ever leave again if you went home
+
+Halfway through, you lose your money and your things in one night, and everyone tells you to go home first. Why did Xu Xiake not go home?
+
+### Q: What actually happened?
+In the spring of 1637 Xu Xiake, just past fifty, was sailing west up the Xiang river with a monk named Jingwen and a servant. One night robbers stormed the boat with torches and swords. He threw his money box into the river, jumped into waist-deep water and climbed naked onto a neighbouring boat. A fellow passenger died. Back in Hengzhou, a friend suggested going home to raise money and coming back. He reasoned that if he went home now, his family would never let him leave again. He borrowed twenty taels, pledging his land rent, and set off west again.
+
+### The parts · Ask whether you could leave again
+His friend's plan was sensible: go home, raise money, return. Xu did not weigh what he had lost. He weighed what going home would do: his family, seeing him robbed, would never let him go. The loss was already gone either way.
+e.g. Your project loses half its budget and someone says pause until next year. Ask first: once paused, will anyone approve it next year?
+
+### The parts · Not turning back is not the same as not stopping
+He did not walk on barefoot. He stayed in Hengzhou for three weeks in borrowed clothes, borrowed money against his land, and only then boarded a boat. Keeping the direction did not mean refusing to rest.
+e.g. Laid off but set on your own project? Take a stopgap job to cover rent first, rather than burning every bridge at once.
+
+### The parts · Recover what can be recovered
+At first light he waded back into the river to look for the box he had thrown overboard. The money was gone, but the rubbings and local histories the monk had saved were still dry. Count what is left before deciding.
+e.g. Your laptop dies with the draft unsaved. Before rewriting, search the cloud, your email and your chats for what survives.
+
+### Q: How do I use it today?
+Where you are: something went badly wrong halfway, money and plans are gone, and everyone says go home first.
+Ask first: if I go back, will I ever get out again? Is this loss telling me the direction is wrong, or only that this stretch was unlucky?
+Where it goes wrong: treating 'not turning back' as 'not stopping'. Xu stopped in Hengzhou, borrowed, re-clothed and waited. Charge on empty-handed, and the next setback really will end the trip.
+
+### Lines to keep
+If I go home now, my family will never let me leave again.
+The money in the box is gone. The rubbings are still dry.
+
+========================================================================
+## Xu Xiake · Carrying Jingwen to Chicken Foot Mountain
+URL: https://ourword.ai/en/i/xu-xiake/jingwens-bones/
+Source: The Travel Diaries of Xu Xiake, Guangxi and Yunnan diaries
+Tags: Deep read, Xu Xiake, When a companion falls on the road, finish the thing he wanted, his way
+
+Someone who set out with you falls halfway. Do you still go where he wanted to go? How Xu Xiake treated the wish of the monk Jingwen.
+
+### Q: What actually happened?
+In the autumn of 1637 the monk Jingwen fell ill at a temple in Nanning. Xu had to move on, but Jingwen kept asking him for shoes and tea: he still meant to recover and reach Chicken Foot Mountain in Yunnan. Xu reasoned that to assume he would die, and plan to come back for his bones, was not what Jingwen wanted. So he left him the shoes and the tea, and said goodbye. Jingwen died the next day. Xu drew lots before a Buddha on whether to carry the remains, drew 'take them', and carried them for a year to the mountain.
+
+### The parts · Do not decide the ending for him
+Jingwen was gravely ill and Xu had to go. Staying to wait was not what Jingwen wanted, and neither was quietly preparing to collect his bones. Xu did what Jingwen asked for: shoes and tea, so he could still think about the road.
+e.g. An ill parent still talks about one more trip. You need not say it will never happen. Buy the walking shoes first.
+
+### The parts · See the cost before you say yes
+Carrying a dead man's bones across three provinces meant trouble at every turn. He hesitated, asked about the obstacles, and only then decided. A promise made after counting the cost is one you can carry for a year.
+e.g. Before agreeing to finish a departed colleague's project, ask how much is left and how many weekends it will take.
+
+### The parts · Do the version he wanted
+He went to Chicken Foot Mountain, the place Jingwen had wanted, not any mountain on the way. He hung the bones among the old plum trees of the temple, agreed a burial site with the monks, and later climbed up to pay respects.
+e.g. Sorting a late father's things, follow what he said he wanted, not what you think looks most proper.
+
+### Q: How do I use it today?
+Where you are: someone who set out with you has fallen, and nobody will ever check whether you finished what he hoped for.
+Ask first: is this what he wanted, or what I think should be done? What will finishing it cost me, and do I accept that?
+Where it goes wrong: finishing it for your own peace of mind, in your own preferred version. Xu went to the mountain Jingwen wanted, not to a convenient one on the way.
+
+### Lines to keep
+To plan to come back for his bones was not his wish.
+The monk led me to where the bones lay. I bowed and wept.
 
 ========================================================================
 ## Xunzi · Where the rules came from
