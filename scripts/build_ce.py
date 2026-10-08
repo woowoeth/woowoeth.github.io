@@ -28,6 +28,54 @@ import hw_slugs       # noqa: E402
 OUT = os.path.join(ROOT, "ce", "index.html")
 
 
+def questions():
+    """出题顺序：五维交错（每维第 1 道、再每维第 2 道……），不让同一维的四道题挨着 ——
+    挨着出，答到第二道就看得出「这几道在问同一件事」。对调的题标 flip（见 ce_data.FLIP）。"""
+    by_axis = [[q for q in D.QUESTIONS if q["axis"] == a] for a in range(len(D.AXES))]
+    out = []
+    for i in range(4):
+        for a in range(len(D.AXES)):
+            q = dict(by_axis[a][i])
+            q["flip"] = 1 if i in D.FLIP[a] else 0
+            out.append(q)
+    return out
+
+
+def partner(t, kind):
+    """拍档（ally）/ 宿敌（rival）：有史实就用史实（RELATIONS 里排在前面的那条），
+    没有就按五维推：拍档只差「独 / 群」一维、温度相反 —— 你扛不动的他找得来人，一个稳住
+    一个点火；宿敌四维全反、温度相反。推出来的会标「按五维推算」，不冒充史实。"""
+    idx = {x["who"]: i for i, x in enumerate(D.TYPES)}
+    for a, b, lab, txt, k in D.RELATIONS:
+        if k == kind and t["who"] in (a, b):
+            other = b if a == t["who"] else a
+            return {"i": idx[other], "l": lab, "t": txt, "real": 1}
+    AX = D.AXES
+    base, temp = t["code"].split("-")
+    other_temp = "燃" if temp == "定" else "定"
+    if kind == "ally":
+        nb = base[:3] + ("群" if base[3] == "独" else "独")
+    else:
+        nb = "".join(AX[i][1] if base[i] == AX[i][0] else AX[i][0] for i in range(4))
+    code = nb + "-" + other_temp
+    o = [x for x in D.TYPES if x["code"] == code][0]
+    p = "她" if o["who"] in D.FEMALE else "他"
+    if kind == "ally":
+        txt = ("你习惯独自扛事，%s擅长聚人成事——你扛不动的，%s找得来人。" % (p, p)
+               if base[3] == "独" else
+               "你擅长聚人成事，%s习惯独自扛事——你顾不过来的细活，%s一个人就能啃下来。" % (p, p))
+        txt += ("你心定，%s心里有火：一个稳住，一个点火。" % p if temp == "定"
+                else "你心里有火，%s心定：一个点火，一个稳住。" % p)
+        lab = "最佳拍档"
+    else:
+        def d(i, pole):
+            return AX[i][2] if pole == AX[i][0] else AX[i][3]
+        txt = "你%s，%s%s；你%s，%s%s——四个维度全反：要么是最强的对手，要么是最好的搭档。" % (
+            d(0, base[0]), p, d(0, nb[0]), d(1, base[1]), p, d(1, nb[1]))
+        lab = "宿命对手"
+    return {"i": D.TYPES.index(o), "l": lab, "t": txt, "real": 0}
+
+
 def payload():
     fam = {a + c: v for (a, c), v in D.FAMILIES.items()}
     types = []
@@ -35,11 +83,15 @@ def payload():
         x = dict(t)
         x["slug"] = hw_slugs.slug_for(t["who"])
         x["story"] = {"t": t["story"][0], "u": t["story"][1]}
+        x["moments"] = D.MOMENTS[t["who"]]
+        x["she"] = 1 if t["who"] in D.FEMALE else 0
+        x["ally"] = partner(t, "ally")
+        x["rival"] = partner(t, "rival")
         types.append(x)
     kin = {k: [{"n": n, "u": "/i/%s/" % hw_slugs.slug_for(n)} for n in v]
            for k, v in D.KIN.items()}
-    return {"axes": D.AXES, "dims": D.DIMS, "fam": fam, "types": types, "kin": kin,
-            "qs": D.QUESTIONS, "rel": D.RELATIONS,
+    return {"axes": D.AXES, "dims": D.DIMS, "dimdesc": D.DIM_DESC, "fam": fam,
+            "types": types, "kin": kin, "qs": questions(), "rel": D.RELATIONS,
             "reld": {str(k): v for k, v in D.REL_BY_DIST.items()}}
 
 
@@ -154,6 +206,30 @@ a{color:inherit}
 .ask textarea{width:100%;border:1px solid var(--line);border-radius:12px;background:var(--paper);color:var(--ink);font:inherit;font-size:16px;padding:10px 12px;resize:none;min-height:70px}
 .ask .btn{margin-top:10px}
 .foot{margin-top:28px;text-align:center;font-size:12px;color:var(--muted);line-height:1.9}
+.notice{border:1px dashed var(--fam);border-radius:14px;padding:12px 14px;font-size:14px;line-height:1.7;margin-top:18px}
+.notice button{border:0;background:transparent;color:var(--fam);font:inherit;font-size:14px;padding:0;margin-left:4px;cursor:pointer;text-decoration:underline}
+.moments{list-style:none;margin:0;padding:0}
+.moments li{position:relative;padding:11px 0 11px 18px;border-top:1px solid var(--line);font-size:16px;line-height:1.7}
+.moments li:first-child{border-top:0;padding-top:0}
+.moments li:before{content:"";position:absolute;left:2px;top:22px;width:6px;height:6px;border-radius:50%;background:var(--fam)}
+.moments li:first-child:before{top:11px}
+.ar{display:block;text-decoration:none;padding:14px 0 0;margin-top:14px;border-top:1px solid var(--line)}
+.ar:first-of-type{border-top:0;margin-top:0;padding-top:0}
+.arh{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.arl{font-size:12px;color:var(--muted);letter-spacing:.12em}
+.arn{font-size:21px}
+.art{font-size:12px;color:var(--fam);border:1px solid var(--fam);border-radius:999px;padding:0 8px;line-height:20px}
+.ar p{margin:6px 0 0;font-size:14px;line-height:1.75}
+.ar+.btn{margin-top:16px}
+.dimdesc{display:grid;grid-template-columns:1fr 1fr;gap:4px 14px;margin-top:10px;padding-top:12px;border-top:1px solid var(--line);font-size:12px;color:var(--muted);line-height:1.6}
+.dimdesc b{color:var(--ink);font-weight:500;margin-right:4px}
+/* 揭晓 */
+#reveal{display:none;text-align:center;padding:110px 0 90px}
+.rv-tip{font-size:14px;color:var(--muted);letter-spacing:.12em;margin:0}
+.rv-name{font-size:54px;line-height:1.3;margin:26px 0 10px;min-height:72px;transition:transform .35s,color .35s}
+.rv-name.land{color:var(--acc);transform:scale(1.14)}
+.rv-sub{font-size:13px;color:var(--muted);min-height:20px;margin:0}
+@media (prefers-reduced-motion:reduce){.rv-name,.prog i,.dots button{transition:none}}
 /* 全览 */
 #types{display:none}
 .fam{margin-top:22px}
@@ -215,6 +291,12 @@ HTML = r"""<!DOCTYPE html>
     <button class="back" id="prev">← 上一题</button>
   </section>
 
+  <section id="reveal" aria-live="polite">
+    <p class="rv-tip">正在 2600 年里，找和你同一种人……</p>
+    <div class="rv-name serif" id="rvName"></div>
+    <p class="rv-sub" id="rvSub"></p>
+  </section>
+
   <section id="result"></section>
   <section id="types"></section>
 
@@ -236,29 +318,53 @@ var $=function(id){return document.getElementById(id)};
 var ans=new Array(Q.length), cur=0;
 var qs=new URLSearchParams(location.search);
 var fromIdx=qs.has('f')?parseInt(qs.get('f'),10):-1; if(!(fromIdx>=0&&fromIdx<T.length))fromIdx=-1;
+var RM=!!(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches);
 function trk(n,p){try{if(window.gtag)gtag('event',n,p||{})}catch(e){}}
 function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
 function fam(t){return D.fam[t.code[0]+t.code[2]]}
+function he(t){return t.she?'她':'他'}
+function typeHref(i){return '?r='+i}
 function toast(m){var e=$('toast');e.textContent=m;e.classList.add('on');setTimeout(function(){e.classList.remove('on')},1800)}
-function show(id){['start','quiz','result','types'].forEach(function(s){$(s).style.display=(s===id)?'block':'none'});window.scrollTo(0,0)}
+function show(id){['start','quiz','reveal','result','types'].forEach(function(s){$(s).style.display=(s===id)?'block':'none'});window.scrollTo(0,0)}
+function isDark(){var a=document.documentElement.getAttribute('data-theme');if(a)return a==='dark';
+  return window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches}
+/* 家族色在深色底上要提亮：布局者的蓝灰在 #171410 上几乎看不见。混 45% 的米白进去。 */
+function famCol(f){if(!isDark())return f.color;var h=f.color.slice(1),n=parseInt(h,16),
+  r=n>>16,g=n>>8&255,b=n&255,mix=function(c){return Math.round(c+(234-c)*.45)};
+  return 'rgb('+mix(r)+','+mix(g)+','+mix(b)+')'}
+function rgba(c,a){if(c.charAt(0)==='#'){var n=parseInt(c.slice(1),16);return 'rgba('+(n>>16)+','+(n>>8&255)+','+(n&255)+','+a+')'}
+  return c.replace('rgb(','rgba(').replace(')',','+a+')')}
+/* 测完的答案存在本机（只存 20 个数）：点进别的人物再回来、或者打开朋友的链接，不用重测。 */
+var KEY='ce_ans_v2';
+function save(){try{localStorage.setItem(KEY,JSON.stringify(ans))}catch(e){}}
+function load(){try{var a=JSON.parse(localStorage.getItem(KEY)||'null');
+  if(a&&a.length===Q.length&&a.every(function(v){return v===-2||v===-1||v===0||v===1||v===2}))return a}catch(e){}return null}
+var saved=load();
 
 /* ── 开始页 ── */
 (function(){
   var f=$('faces'), pick=[9,23,30,11,4,26,13,15,16,2,22,8];
-  f.innerHTML=pick.map(function(i){return '<span>'+esc(T[i].who)+'</span>'}).join('')+'<span>……</span>';
+  f.innerHTML=pick.map(function(i){var c=famCol(fam(T[i]));return '<span style="color:'+c+';border-color:'+rgba(c,.45)+'">'+esc(T[i].who)+'</span>'}).join('')+'<span>……</span>';
   if(fromIdx>=0){var t=T[fromIdx];
     $('fromBox').style.display='block';
     $('fromBox').innerHTML='你的朋友测出来是 <b>'+esc(t.who)+'</b>（'+esc(t.title)+'）。<br>测完看看，你们俩在历史上是什么关系。';
     trk('ce_from_open',{from:t.who});}
+  if(saved){var s0=scoreOf(D,saved);if(s0.idx>=0){var t0=T[s0.idx],b=document.createElement('button');
+    b.className='btn ghost';b.id='seeMine';
+    b.textContent=fromIdx>=0?'你上次测出来是'+t0.who+'，直接看你们俩的关系':'上次测出来是'+t0.who+'，看我的结果';
+    $('go').insertAdjacentElement('afterend',b);
+    b.onclick=function(){ans=saved.slice();trk('ce_reopen',{who:t0.who});renderType(t0,scoreOf(D,ans))};}}
 })();
-$('go').onclick=function(){cur=0;show('quiz');paintQ();trk('ce_start',{from:fromIdx>=0?T[fromIdx].who:''})};
+$('go').onclick=function(){ans=new Array(Q.length);cur=0;show('quiz');paintQ();trk('ce_start',{from:fromIdx>=0?T[fromIdx].who:''})};
 
 /* ── 答题 ── */
 function paintQ(){
   var q=Q[cur];
   $('bar').style.width=(cur/Q.length*100)+'%';
   $('pn').textContent=(cur+1)+' / '+Q.length;
-  $('qq').textContent=q.q; $('oa').textContent=q.a; $('ob').textContent=q.b;
+  $('pax').textContent=cur>=Q.length-5?'还剩 '+(Q.length-cur)+' 道':cur>=Q.length/2?'过半了':'';
+  /* 对调的题：右极那一项放在 A 位。打分时在 scoreOf 里翻回来。 */
+  $('qq').textContent=q.q; $('oa').textContent=q.flip?q.b:q.a; $('ob').textContent=q.flip?q.a:q.b;
   [].forEach.call($('dots').children,function(b){b.classList.toggle('on',ans[cur]!==undefined&&+b.dataset.v===ans[cur])});
   $('prev').style.visibility=cur?'visible':'hidden';
 }
@@ -271,13 +377,14 @@ $('prev').onclick=function(){if(cur>0){cur--;paintQ()}};
 /*SCORE-BEGIN*/
 /* 打分：全部按答题现算。这一段是纯函数（只读 D 和 ans），
    scripts/check_ce.py 会把它原样抠出来放进 node 里，模拟两万个人答题，
-   看 32 型是不是都抽得到、分布匀不匀 —— 判据跑的就是页面上这份代码，不是另抄一份。 */
+   看 32 型是不是都抽得到、分布匀不匀 —— 判据跑的就是页面上这份代码，不是另抄一份。
+   ans 记的是点了哪个圈（负 = 更像 A）；对调过的题（flip）A 位放的是右极，所以先翻回来。 */
 function scoreOf(D,ans){
   var A=D.axes,Q=D.qs,DIMS=D.dims,T=D.types;
   var sum=A.map(function(){return 0}), first=A.map(function(){return 0}), tot=0;
   var raw={},mx={}; DIMS.forEach(function(d){raw[d]=0;mx[d]=0});
   Q.forEach(function(q,i){
-    var v=ans[i]||0; sum[q.axis]+=v; tot+=v; if(v&&!first[q.axis])first[q.axis]=v;
+    var v=(ans[i]||0)*(q.flip?-1:1); sum[q.axis]+=v; tot+=v; if(v&&!first[q.axis])first[q.axis]=v;
     DIMS.forEach(function(d){
       var a=q.da[d]||0,b=q.db[d]||0; mx[d]+=Math.max(a,b);
       raw[d]+= v<0 ? a*(-v/2) : v>0 ? b*(v/2) : (a+b)*0.25;
@@ -306,6 +413,14 @@ function match(s,t){
   lean/=5;
   return Math.round(100*(0.5*cos+0.5*lean/100));
 }
+/* 答得不像真答的时候，明说结果可能不准 —— 而不是装作很准。 */
+function notice(){
+  var zero=0,cnt={},mx=0;
+  ans.forEach(function(v){v=v||0;if(!v)zero++;cnt[v]=(cnt[v]||0)+1;if(cnt[v]>mx)mx=cnt[v]});
+  if(zero>=10)return '你有 '+zero+' 道题选了「都有可能」，结果可能没那么准。凭第一反应再测一次，会更像你。';
+  if(mx>=18)return '你几乎每道题都点在同一个位置。A 和 B 是会换边的，认真读一遍题再测，结果会更准。';
+  return '';
+}
 
 /* ── 雷达 ── */
 function radar(me,base,who){
@@ -330,20 +445,35 @@ function relation(a,b){
   var d=0; for(var k=0;k<4;k++)if(a.code[k]!==b.code[k])d++;
   var x=D.reld[String(d)]; return {l:x[0],t:x[1]};
 }
+function arRow(lab,x){var o=T[x.i];
+  return '<a class="ar" href="'+typeHref(x.i)+'" data-trk="ce_to_partner"><div class="arh"><span class="arl">'+lab+'</span><span class="arn serif">'+esc(o.who)+'</span><span class="art">'+(x.real?esc(x.l)+' · 史上真事':'按五维推算')+'</span></div><p>'+esc(x.t)+'</p></a>'}
+function invite(t){
+  var url=location.origin+location.pathname+'?f='+T.indexOf(t);
+  var txt='我测出来是'+t.who+'（'+t.title+'）。你遇事像历史上的谁？测完看看我们俩是什么关系：';
+  trk('ce_invite',{who:t.who});
+  if(navigator.share){navigator.share({title:'测测你的历史分身',text:txt,url:url}).catch(function(){})}
+  else if(navigator.clipboard){navigator.clipboard.writeText(txt+' '+url).then(function(){toast('链接已复制，发给朋友吧')})}
+  else prompt('复制这个链接发给朋友：',url);
+}
+function countUp(){
+  if(RM)return;
+  var els=[].slice.call(document.querySelectorAll('[data-count]')); if(!els.length)return;
+  var t0=0;
+  function step(ts){if(!t0)t0=ts;var k=Math.min(1,(ts-t0)/800),e=1-Math.pow(1-k,3);
+    els.forEach(function(el){el.textContent=Math.round(+el.dataset.count*e)+(el.dataset.suf||'')});
+    if(k<1)requestAnimationFrame(step)}
+  requestAnimationFrame(step);
+  /* 兜底：后台标签页、部分 App 内置浏览器会停掉动画帧，数字会卡在半路（实测截到过 14%）。
+     一秒后无论如何写上最终值；动画帧之后恢复，会从 0 再数一遍到同一个数。 */
+  setTimeout(function(){els.forEach(function(el){el.textContent=el.dataset.count+(el.dataset.suf||'')})},1000);
+}
 
 /* ── 结果页（me 为空 = 只看这一型的介绍）── */
-function isDark(){var a=document.documentElement.getAttribute('data-theme');if(a)return a==='dark';
-  return window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches}
-/* 家族色在深色底上要提亮：布局者的蓝灰在 #171410 上几乎看不见。混 45% 的米白进去。 */
-function famCol(f){if(!isDark())return f.color;var h=f.color.slice(1),n=parseInt(h,16),
-  r=n>>16,g=n>>8&255,b=n&255,mix=function(c){return Math.round(c+(234-c)*.45)};
-  return 'rgb('+mix(r)+','+mix(g)+','+mix(b)+')'}
 function renderType(t,me){
   var f=fam(t); document.documentElement.style.setProperty('--fam',famCol(f));
-  var h='';
-  var m=me?match(me,t):null;
+  var h='', m=me?match(me,t):null, P=he(t), fr=(me&&fromIdx>=0)?T[fromIdx]:null;
   h+='<div class="hero"><div class="eyebrow">Your Historical Twin · 你的历史分身</div>';
-  if(me)h+='<div class="pill">◆ 你的历史分身契合度 <b>'+m+'%</b> ◆</div>';
+  if(me)h+='<div class="pill">◆ 你的历史分身契合度 <b data-count="'+m+'" data-suf="%">'+m+'%</b> ◆</div>';
   else h+='<div class="pill">◆ 32 型之一 · '+esc(f.name)+' ◆</div>';
   h+='<div class="name serif'+(t.who.length>3?' long':'')+'">'+esc(t.who)+'</div><div class="rule"><i></i><b></b><i></i></div>';
   h+='<p class="title serif">'+esc(t.title)+'</p>';
@@ -351,10 +481,19 @@ function renderType(t,me){
   h+='<div class="quote serif">'+esc(t.quote)+'</div><div class="qsrc">—— '+esc(t.quote_src)+'</div></div>';
 
   if(me){
+    var nt=notice(); if(nt)h+='<div class="notice">'+esc(nt)+'<button id="redo">再测一次</button></div>';
+    /* 朋友带来的人，最想看的就是这一块，放在最上面 */
+    if(fr){var rel=relation(t,fr);
+      h+='<div class="rel sec"><div class="eyebrow" style="color:var(--acc)">你和朋友在历史上是</div><div class="pair serif">'+esc(t.who)+' × '+esc(fr.who)+'</div><span class="rl">'+esc(rel.l)+'</span><p>'+esc(rel.t)+'</p></div>';
+      trk('ce_pair',{me:t.who,friend:fr.who,rel:rel.l});}
     var order=DIMS.map(function(d,i){return [d,me.dims[i]]}).sort(function(x,y){return y[1]-x[1]});
     h+='<div class="stats"><div class="stat"><b>'+order[0][1]+'</b><span>'+order[0][0]+'</span><em>最高维度</em></div>'
-      +'<div class="stat mid"><b>'+m+'%</b><span>分身契合度</span><em>'+esc(t.who)+'</em></div>'
+      +'<div class="stat mid"><b data-count="'+m+'" data-suf="%">'+m+'%</b><span>分身契合度</span><em>'+esc(t.who)+'</em></div>'
       +'<div class="stat"><b>'+order[5][1]+'</b><span>'+order[5][0]+'</span><em>待提升</em></div></div>';
+  }
+  h+='<div class="card sec"><div class="lab">'+(me?'你一定干过这些事':'这一型的人，一定干过这些事')+' · MOMENTS</div><ul class="moments">'
+    +t.moments.map(function(x){return '<li>'+esc(x)+'</li>'}).join('')+'</ul></div>';
+  if(me){
     h+='<div class="card sec"><div class="lab">五维倾向 · TRAITS</div>';
     A.forEach(function(ax,i){var L=me.pct[i],mine=me.pole[i];
       h+='<div class="axis"><div class="row"><span>'+(mine===ax[0]?'<b>'+ax[0]+' · '+ax[2]+' '+L+'%</b>':ax[0]+' · '+ax[2]+' '+L+'%')+'</span><span>'+(mine===ax[1]?'<b>'+(100-L)+'% '+ax[3]+' · '+ax[1]+'</b>':(100-L)+'% '+ax[3]+' · '+ax[1])+'</span></div>'
@@ -368,83 +507,134 @@ function renderType(t,me){
     var rk={}; order.forEach(function(x,i){rk[x[0]]=i+1});
     DIMS.forEach(function(d,i){var r=rk[d];
       h+='<div class="dim'+(r<=2?' top':'')+'"><span class="rk">'+r+'</span><span class="dn">'+d+'</span><span class="db"><i style="width:'+me.dims[i]+'%"></i></span><span class="dv">'+me.dims[i]+'</span></div>';});
-    h+='</div>';
+    h+='<div class="dimdesc">'+DIMS.map(function(d){return '<span><b>'+d+'</b>'+esc(D.dimdesc[d])+'</span>'}).join('')+'</div></div>';
   }
   h+='<div class="card sec"><div class="lab">你是这样的人 · PORTRAIT</div><div class="desc serif">'+esc(t.desc)+'</div></div>';
   h+='<div class="two sec"><div class="card"><h4>你的超能力</h4><p>'+esc(t.power)+'</p></div><div class="card"><h4>你最容易栽在</h4><p>'+esc(t.pit)+'</p></div></div>';
-  h+='<div class="card sec story"><div class="lab">他当年那件事 · THE STORY</div><a href="'+t.story.u+'" data-trk="ce_to_chapter"><div class="st serif">'+esc(t.story.t)+'</div><div class="go">读'+esc(t.who)+'当年是怎么做的 →</div></a></div>';
+  h+='<div class="card sec story"><div class="lab">'+P+'当年那件事 · THE STORY</div><a href="'+t.story.u+'" data-trk="ce_to_chapter"><div class="st serif">'+esc(t.story.t)+'</div><div class="go">读'+esc(t.who)+'当年是怎么做的 →</div></a></div>';
+  h+='<div class="card sec"><div class="lab">拍档与宿敌 · ALLIES &amp; RIVALS</div>'+arRow('最佳拍档',t.ally)+arRow('宿命对手',t.rival)
+    +(me?'<button class="btn ghost" id="invite2">叫朋友来测，看谁是你的'+esc(T[t.ally.i].who)+'</button>':'')+'</div>';
   var kin=D.kin[t.code.split('-')[0]]||[];
   if(kin.length)h+='<div class="card sec"><div class="lab">同型名人 · ALSO THIS TYPE</div><div class="kin">'+kin.map(function(k){return '<a href="'+k.u+'">'+esc(k.n)+'</a>'}).join('')+'<a href="/i/'+t.slug+'/">'+esc(t.who)+'的全部篇章 →</a></div></div>';
 
-  if(me&&fromIdx>=0){var fr=T[fromIdx],rel=relation(t,fr);
-    h+='<div class="rel sec"><div class="eyebrow" style="color:var(--acc)">你和朋友在历史上是</div><div class="pair serif">'+esc(t.who)+' × '+esc(fr.who)+'</div><span class="rl">'+esc(rel.l)+'</span><p>'+esc(rel.t)+'</p></div>';
-    trk('ce_pair',{me:t.who,friend:fr.who,rel:rel.l});
-  }
   if(me){
     h+='<div class="card sec ask"><div class="lab">问问'+esc(t.who)+' · ASK</div><p class="muted" style="margin:0 0 10px;font-size:14px">说说你最近遇到的一件事，看看'+esc(t.who)+'会怎么处理。</p><textarea id="askIn" placeholder="比如：老板天天改需求，我手上三件事都做不完"></textarea><button class="btn" id="askGo">问'+esc(t.who)+'</button></div>';
-    h+='<div class="sec"><button class="btn" id="shareCard">生成我的分享卡</button><button class="btn ghost" id="invite">叫朋友来测，看你们是什么关系</button><button class="btn ghost" id="again">重新测一次</button></div>';
+    h+='<div class="sec">'+(fr?'<button class="btn" id="pairCard">生成我们俩的关系卡</button><button class="btn ghost" id="shareCard">生成我的分享卡</button>':'<button class="btn" id="shareCard">生成我的分享卡</button>')
+      +'<button class="btn ghost" id="invite">叫朋友来测，看你们是什么关系</button><button class="btn ghost" id="again">重新测一次</button></div>';
   }else{
-    h+='<div class="sec"><button class="btn" id="tryIt">测测你是不是'+esc(t.who)+'</button><a class="btn ghost" href="#types">看全部 32 型</a></div>';
+    var mine=saved?scoreOf(D,saved):null;
+    h+='<div class="sec"><button class="btn" id="tryIt">测测你是不是'+esc(t.who)+'</button>'
+      +(mine&&mine.idx>=0?'<button class="btn ghost" id="backMine">回到我的结果（'+esc(T[mine.idx].who)+'）</button>':'')
+      +'<a class="btn ghost" href="#types">看全部 32 型</a></div>';
   }
   $('result').innerHTML=h; show('result');
   [].forEach.call(document.querySelectorAll('[data-trk]'),function(a){a.onclick=function(){trk(a.dataset.trk,{who:t.who})}});
+  var retake=function(){ans=new Array(Q.length);cur=0;show('quiz');paintQ()};
   if(me){
-    $('again').onclick=function(){ans=new Array(Q.length);cur=0;show('quiz');paintQ()};
+    $('again').onclick=retake; if($('redo'))$('redo').onclick=retake;
     $('askGo').onclick=function(){var v=($('askIn').value||'').trim()||'我最近遇到一件事，不知道怎么办';
       trk('ce_ask',{who:t.who});
       if(typeof window.hwAsk==='function')window.hwAsk(v+'（我测出来是'+t.who+'那一型，想听听'+t.who+'会怎么处理）',{pin:[t.story.u],scene:''});
       else location.href=t.story.u;};
     $('shareCard').onclick=function(){trk('ce_share_card',{who:t.who});card(t,me,m)};
-    $('invite').onclick=function(){
-      var url=location.origin+location.pathname+'?f='+T.indexOf(t);
-      var txt='我测出来是'+t.who+'（'+t.title+'）。你遇事像历史上的谁？测完看看我们俩是什么关系：';
-      trk('ce_invite',{who:t.who});
-      if(navigator.share){navigator.share({title:'测测你的历史分身',text:txt,url:url}).catch(function(){})}
-      else if(navigator.clipboard){navigator.clipboard.writeText(txt+' '+url).then(function(){toast('链接已复制，发给朋友吧')})}
-      else prompt('复制这个链接发给朋友：',url);
-    };
-  }else{ $('tryIt').onclick=function(){fromIdx=-1;ans=new Array(Q.length);cur=0;show('quiz');paintQ()}; }
+    if(fr)$('pairCard').onclick=function(){var rel=relation(t,fr);trk('ce_pair_card',{me:t.who,friend:fr.who});pairCard(t,fr,rel)};
+    $('invite').onclick=function(){invite(t)}; $('invite2').onclick=function(){invite(t)};
+    countUp();
+  }else{
+    $('tryIt').onclick=function(){fromIdx=-1;retake()};
+    if($('backMine'))$('backMine').onclick=function(){ans=saved.slice();
+      try{history.replaceState(null,'',location.pathname)}catch(e){}
+      renderType(T[scoreOf(D,ans).idx],scoreOf(D,ans))};
+  }
 }
+
+/* ── 揭晓：名字翻过去，停在你那一位。系统要求少动画时直接出结果。 ── */
 function finish(){
   var s=score(); if(s.idx<0){s.idx=0}
   var t=T[s.idx];
+  save();
   try{history.replaceState(null,'',location.pathname+(fromIdx>=0?'?f='+fromIdx:''))}catch(e){}
   trk('ce_done',{who:t.who,code:t.code});
-  renderType(t,s);
+  if(RM){renderType(t,s);return}
+  show('reveal');
+  var el=$('rvName'), sub=$('rvSub'), n=0, N=14;
+  el.className='rv-name serif'; sub.textContent='';
+  (function tick(){
+    if(n<N){var o=T[(s.idx+5+n*11)%T.length]; if(o===t)o=T[(s.idx+1)%T.length];
+      el.textContent=o.who; n++; setTimeout(tick,40+n*n*0.9)}
+    else{el.textContent=t.who; el.className='rv-name serif land'; sub.textContent=t.title;
+      setTimeout(function(){renderType(t,s)},900)}
+  })();
 }
 
 /* ── 分享卡：3:4，给小红书用。图上只放名字、原型、金句和三个数 ── */
-function card(t,me,m){
+var SERIF='"Noto Serif SC","Songti SC","STSong",serif',SANS='-apple-system,"PingFang SC","Microsoft YaHei",sans-serif';
+var P0='#f5f1e8',CARD='#faf7f0',INK='#1f1c17',MUT='#8a8377',LINE='#d8d2c6',ACC='#a33b2e';
+function canvasKit(){
   var c=document.createElement('canvas'),W=1080,H=1440; c.width=W;c.height=H;
-  var x=c.getContext('2d'), f=fam(t), dark=false;
-  var P='#f5f1e8',CARD='#faf7f0',INK='#1f1c17',MUT='#8a8377',LINE='#d8d2c6',SERIF='"Noto Serif SC","Songti SC","STSong",serif',SANS='-apple-system,"PingFang SC","Microsoft YaHei",sans-serif';
-  x.fillStyle=P;x.fillRect(0,0,W,H);
+  var x=c.getContext('2d');
+  x.fillStyle=P0;x.fillRect(0,0,W,H);
   x.strokeStyle=LINE;x.lineWidth=3;x.strokeRect(36,36,W-72,H-72);
-  function txt(s,y,font,col,al,ls){x.font=font;x.fillStyle=col;x.textAlign=al||'center';
+  function txt(s,y,font,col,ls){x.font=font;x.fillStyle=col;x.textAlign='center';
     if(ls){var w=0,ch=s.split('');ch.forEach(function(k){w+=x.measureText(k).width+ls});var sx=W/2-w/2;x.textAlign='left';ch.forEach(function(k){x.fillText(k,sx,y);sx+=x.measureText(k).width+ls})}
     else x.fillText(s,W/2,y)}
+  /* 折行守避头尾：逗号句号这类不许落在行首（宁可上一行略超），引号括号的前半不许留在行尾。
+     第一版按宽度硬折，关系卡上折出了一行以「，」开头的字。 */
+  var NOHEAD='，。、；：？！」』）》〉”’…—·',NOTAIL='「『（《〈“‘';
   function wrap(s,y,font,col,maxw,lh){x.font=font;x.fillStyle=col;x.textAlign='center';var line='',lines=[];
-    s.split('').forEach(function(ch){if(x.measureText(line+ch).width>maxw){lines.push(line);line=ch}else line+=ch});lines.push(line);
+    s.split('').forEach(function(ch){
+      if(line&&x.measureText(line+ch).width>maxw&&NOHEAD.indexOf(ch)<0){
+        var carry='';while(line.length>1&&NOTAIL.indexOf(line.slice(-1))>=0){carry=line.slice(-1)+carry;line=line.slice(0,-1)}
+        lines.push(line);line=carry+ch}
+      else line+=ch});
+    lines.push(line);
     lines.forEach(function(l,i){x.fillText(l,W/2,y+i*lh)});return y+lines.length*lh}
-  txt('YOUR HISTORICAL TWIN',138,'600 26px '+SANS,f.color,'center',10);
-  x.strokeStyle=f.color;x.lineWidth=3;var pw=560,ph=78,px=(W-pw)/2,py=180;x.beginPath();x.moveTo(px+ph/2,py);x.arcTo(px+pw,py,px+pw,py+ph,ph/2);x.arcTo(px+pw,py+ph,px,py+ph,ph/2);x.arcTo(px,py+ph,px,py,ph/2);x.arcTo(px,py,px+pw,py,ph/2);x.stroke();
-  txt('你的历史分身契合度  '+m+'%',py+51,'500 34px '+SANS,f.color);
-  txt(t.who,t.who.length>3?470:500,'700 '+(t.who.length>3?150:190)+'px '+SERIF,INK);
+  function rrect(x0,y0,w,h,r){x.beginPath();x.moveTo(x0+r,y0);x.arcTo(x0+w,y0,x0+w,y0+h,r);x.arcTo(x0+w,y0+h,x0,y0+h,r);x.arcTo(x0,y0+h,x0,y0,r);x.arcTo(x0,y0,x0+w,y0,r);x.closePath()}
+  function foot(line1,line2){
+    x.fillStyle=ACC;x.fillRect(110,1290,74,74);x.fillStyle='#fff';x.font='700 48px '+SERIF;x.textAlign='center';x.fillText('人',147,1345);
+    x.textAlign='left';x.fillStyle=INK;x.font='600 36px '+SANS;x.fillText(line1,212,1322);
+    x.fillStyle=MUT;x.font='28px '+SANS;x.fillText(line2,212,1362)}
+  function done(){var url=c.toDataURL('image/png'); $('shotImg').src=url; $('shotDl').href=url; $('shot').style.display='flex'}
+  return {x:x,W:W,txt:txt,wrap:wrap,rrect:rrect,foot:foot,done:done};
+}
+function card(t,me,m){
+  var k=canvasKit(),x=k.x,W=k.W,f=fam(t);
+  k.txt('YOUR HISTORICAL TWIN',138,'600 26px '+SANS,f.color,10);
+  x.strokeStyle=f.color;x.lineWidth=3;var pw=560,ph=78,px=(W-pw)/2,py=180;k.rrect(px,py,pw,ph,ph/2);x.stroke();
+  k.txt('你的历史分身契合度  '+m+'%',py+51,'500 34px '+SANS,f.color);
+  k.txt(t.who,t.who.length>3?470:500,'700 '+(t.who.length>3?150:190)+'px '+SERIF,INK);
   x.fillStyle=f.color;x.fillRect(W/2-170,548,120,5);x.fillRect(W/2+50,548,120,5);x.beginPath();x.arc(W/2,550,10,0,7);x.fill();
-  txt(t.title,640,'600 54px '+SERIF,INK);
-  txt(t.code+'  ·  '+f.name,712,'500 34px '+SANS,f.color);
-  var y=wrap('“'+t.quote+'”',812,'italic 44px '+SERIF,INK,820,68);
-  txt('—— '+t.quote_src,y+6,'28px '+SANS,MUT);
+  k.txt(t.title,640,'600 54px '+SERIF,INK);
+  k.txt(t.code+'  ·  '+f.name,712,'500 34px '+SANS,f.color);
+  var y=k.wrap('“'+t.quote+'”',812,'italic 44px '+SERIF,INK,820,68);
+  k.txt('—— '+t.quote_src,y+6,'28px '+SANS,MUT);
   var order=DIMS.map(function(d,i){return [d,me.dims[i]]}).sort(function(a,b){return b[1]-a[1]});
   var bx=[[100,'最高维度',order[0][0],String(order[0][1])],[400,'分身契合度',t.who,m+'%'],[700,'待提升',order[5][0],String(order[5][1])]];
   bx.forEach(function(b,i){var bw=280,bh=210,by=1010,mid=i===1;x.fillStyle=mid?f.color:CARD;x.strokeStyle=mid?f.color:LINE;x.lineWidth=3;
-    x.beginPath();x.moveTo(b[0]+24,by);x.arcTo(b[0]+bw,by,b[0]+bw,by+bh,24);x.arcTo(b[0]+bw,by+bh,b[0],by+bh,24);x.arcTo(b[0],by+bh,b[0],by,24);x.arcTo(b[0],by,b[0]+bw,by,24);x.closePath();x.fill();x.stroke();
+    k.rrect(b[0],by,bw,bh,24);x.fill();x.stroke();
     x.textAlign='center';x.fillStyle=mid?'#fff':INK;x.font='700 72px '+SERIF;x.fillText(b[3],b[0]+bw/2,by+100);
     x.font='34px '+SANS;x.fillStyle=mid?'rgba(255,255,255,.9)':MUT;x.fillText(b[2],b[0]+bw/2,by+150);x.font='26px '+SANS;x.fillText(b[1],b[0]+bw/2,by+190)});
-  x.fillStyle='#a33b2e';x.fillRect(110,1290,74,74);x.fillStyle='#fff';x.font='700 48px '+SERIF;x.textAlign='center';x.fillText('人',147,1345);
-  x.textAlign='left';x.fillStyle=INK;x.font='600 36px '+SANS;x.fillText('测测你的历史分身',212,1322);
-  x.fillStyle=MUT;x.font='28px '+SANS;x.fillText('ourword.ai/ce · 32 种历史人格',212,1362);
-  var url=c.toDataURL('image/png'); $('shotImg').src=url; $('shotDl').href=url; $('shot').style.display='flex';
+  k.foot('测测你的历史分身','ourword.ai/ce · 32 种历史人格');
+  k.done();
+}
+/* 关系卡：两个人上下排（名字最长五个字，左右排放不下），中间一枚关系章 */
+function pairCard(a,b,rel){
+  var k=canvasKit(),x=k.x,W=k.W,fa=fam(a),fb=fam(b);
+  k.txt('WE, IN HISTORY',138,'600 26px '+SANS,ACC,10);
+  k.txt('我们俩在历史上是',200,'500 34px '+SANS,MUT);
+  function person(t,y,f){var big=t.who.length>3;
+    k.txt(t.who,y,'700 '+(big?118:140)+'px '+SERIF,INK); k.txt(t.title,y+62,'500 34px '+SERIF,f.color)}
+  person(a,370,fa);
+  k.txt('×',528,'300 64px '+SANS,ACC);
+  person(b,690,fb);
+  x.font='600 40px '+SANS; var lw=x.measureText(rel.l).width+96, lx=(W-lw)/2;
+  x.fillStyle=ACC;k.rrect(lx,800,lw,76,38);x.fill();
+  k.txt(rel.l,852,'600 40px '+SANS,'#fff');
+  var y=k.wrap(rel.t,960,'40px '+SERIF,INK,820,64);
+  x.fillStyle=LINE;x.fillRect(W/2-60,y+40,120,3);
+  k.txt('你和你的朋友，又是历史上的谁和谁？',y+120,'34px '+SANS,MUT);
+  k.foot('测测你和朋友在历史上是什么关系','ourword.ai/ce · 32 种历史人格');
+  k.done();
 }
 $('shotX').onclick=function(){$('shot').style.display='none'};
 
@@ -454,10 +644,10 @@ function renderTypes(){
   order.forEach(function(k){var f=D.fam[k[0]+k[1]];
     h+='<div class="fam"><h3 class="serif" style="color:'+f.color+'">'+f.name+'</h3><p class="ft">'+k[0]+' · '+k[1]+' —— '+f.tag+'</p><div class="grid">';
     T.forEach(function(t,i){if(t.code[0]===k[0]&&t.code[2]===k[1])
-      h+='<a class="tile" href="?r='+i+'" style="border-color:'+f.color+'33"><b>'+esc(t.who)+'</b><span>'+esc(t.title)+'</span><em style="color:'+f.color+'">'+esc(t.code)+'</em></a>'});
+      h+='<a class="tile" href="'+typeHref(i)+'" style="border-color:'+f.color+'33"><b>'+esc(t.who)+'</b><span>'+esc(t.title)+'</span><em style="color:'+f.color+'">'+esc(t.code)+'</em></a>'});
     h+='</div></div>';});
   h+='<div class="sec"><button class="btn" id="tGo">开始测试</button></div>';
-  $('types').innerHTML=h; show('types'); $('tGo').onclick=function(){cur=0;show('quiz');paintQ()};
+  $('types').innerHTML=h; show('types'); $('tGo').onclick=function(){ans=new Array(Q.length);cur=0;show('quiz');paintQ()};
 }
 
 /* ── 路由 ── */
