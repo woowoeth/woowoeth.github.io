@@ -405,6 +405,11 @@ QUOTE_ASKS = {
         "害过我的人，回来找我了。",
     "jin-wengong/three-stages-back":
         "我主动往后撤，算不算认输？",
+    # 晏婴
+    "yan-ying/price-of-shoes":
+        "我想劝老板，又不敢当面顶他。",
+    "yan-ying/the-man-he-ransomed":
+        "他当面说我无礼，我下不来台。",
     # 修昔底德
     "thucydides/the-strong-do-what-they-can":
         "他只认实力，我讲理有用吗？",

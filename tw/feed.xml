@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>OurWord — 186 people and books on how the world actually works, across 2,600 years</title>
+    <title>OurWord — 187 people and books on how the world actually works, across 2,600 years</title>
     <link>https://ourword.ai/tw/</link>
     <atom:link href="https://ourword.ai/tw/feed.xml" rel="self" type="application/rss+xml"/>
-    <description>A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 186 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.</description>
+    <description>A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 187 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.</description>
     <language>zh-tw</language>
-    <lastBuildDate>Wed, 07 Oct 2026 08:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 08 Oct 2026 08:00:00 +0800</lastBuildDate>
 <!-- chapters:begin -->
     <item><title>阿德勒 · 課題分離</title><link>https://ourword.ai/tw/i/adler/separation-of-tasks/</link><guid isPermaLink="true">https://ourword.ai/tw/i/adler/separation-of-tasks/</guid><description>阿德勒 · 課題分離——先分清這是誰的事。人際關係的痛苦大半來自越界。這一篇要回答的是：邊界到底畫在哪。</description><pubDate>Tue, 01 Sep 2026 08:00:00 +0800</pubDate></item>
     <item><title>阿德勒 · 不是因為，是為了</title><link>https://ourword.ai/tw/i/adler/teleology/</link><guid isPermaLink="true">https://ourword.ai/tw/i/adler/teleology/</guid><description>阿德勒 · 不是因為，是為了——把原因換成目的。弗洛伊德問你經歷過什麼，阿德勒問你想用它做什麼。這一篇要回答的是：這個換問法為什麼能解凍。</description><pubDate>Sun, 30 Aug 2026 08:00:00 +0800</pubDate></item>
@@ -420,6 +420,8 @@
     <item><title>荀子 · 善假於物</title><link>https://ourword.ai/tw/i/xunzi/borrow-from-things/</link><guid isPermaLink="true">https://ourword.ai/tw/i/xunzi/borrow-from-things/</guid><description>荀子 · 善假於物——別練身體，去找槓桿。同樣的人，為什麼有的能走很遠？這一篇要回答的是：荀子說答案不在那個人身上。</description><pubDate>Fri, 28 Aug 2026 08:00:00 +0800</pubDate></item>
     <item><title>荀子 · 明分使群</title><link>https://ourword.ai/tw/i/xunzi/division-makes-groups/</link><guid isPermaLink="true">https://ourword.ai/tw/i/xunzi/division-makes-groups/</guid><description>荀子 · 明分使群——人靠分工才結得成群。人比牛慢、比虎弱，為什麼反過來能用它們？這一篇要回答的是：荀子給的那個單字答案。</description><pubDate>Fri, 28 Aug 2026 08:00:00 +0800</pubDate></item>
     <item><title>荀子 · 天行有常</title><link>https://ourword.ai/tw/i/xunzi/constant-heaven/</link><guid isPermaLink="true">https://ourword.ai/tw/i/xunzi/constant-heaven/</guid><description>荀子 · 天行有常——分開不可控與可控。生意不好怪大環境，這是常態。這一篇要回答的是：荀子兩千年前就把這條路堵死了。</description><pubDate>Fri, 28 Aug 2026 08:00:00 +0800</pubDate></item>
+    <item><title>晏嬰 · 踴貴屨賤</title><link>https://ourword.ai/tw/i/yan-ying/price-of-shoes/</link><guid isPermaLink="true">https://ourword.ai/tw/i/yan-ying/price-of-shoes/</guid><description>晏嬰 · 踴貴屨賤——想讓上頭聽進去，先遞一個他自己能核對的數。你知道上頭的決定在傷人，當面說「不對」又會撞上。這一篇要回答的是：晏嬰怎麼只用一句市價，讓齊景公自己減了刑。</description><pubDate>Thu, 08 Oct 2026 08:00:00 +0800</pubDate></item>
+    <item><title>晏嬰 · 被救的人要絕交</title><link>https://ourword.ai/tw/i/yan-ying/the-man-he-ransomed/</link><guid isPermaLink="true">https://ourword.ai/tw/i/yan-ying/the-man-he-ransomed/</guid><description>晏嬰 · 被救的人要絕交——有人當面說你不對，先別算你的恩情。你幫過一個人，他卻當面說你無禮，還要走。這一篇要回答的是：晏嬰被人這樣說，第一反應是什麼，後來又做了什麼。</description><pubDate>Thu, 08 Oct 2026 08:00:00 +0800</pubDate></item>
     <item><title>顏氏家訓 · 他們不說真話，是從你這一頭起的</title><link>https://ourword.ai/tw/i/yanshi-jiaxun/wind-blows-down/</link><guid isPermaLink="true">https://ourword.ai/tw/i/yanshi-jiaxun/wind-blows-down/</guid><description>顏氏家訓 · 他們不說真話，是從你這一頭起的——風化自上而行，能改的那一寸在上游。家裡沒人跟我說實話，我該換個什麼問法。這一篇要回答的是：這件事的開關不在他們那一頭。</description><pubDate>Mon, 21 Sep 2026 08:00:00 +0800</pubDate></item>
     <item><title>顏氏家訓 · 有愛沒有教，是替他把將來的禍埋好</title><link>https://ourword.ai/tw/i/yanshi-jiaxun/teach-before-it-sets/</link><guid isPermaLink="true">https://ourword.ai/tw/i/yanshi-jiaxun/teach-before-it-sets/</guid><description>顏氏家訓 · 有愛沒有教，是替他把將來的禍埋好——規矩要趁關係還新的時候立。同一件事我說過多少遍了，他還是不動。這一篇要回答的是：不是你管得太多，是某一次該板臉的時候你笑了。</description><pubDate>Mon, 21 Sep 2026 08:00:00 +0800</pubDate></item>
     <item><title>顏氏家訓 · 親兄弟會自己變遠，這不是誰變壞了</title><link>https://ourword.ai/tw/i/yanshi-jiaxun/brothers-drift-apart/</link><guid isPermaLink="true">https://ourword.ai/tw/i/yanshi-jiaxun/brothers-drift-apart/</guid><description>顏氏家訓 · 親兄弟會自己變遠，這不是誰變壞了——各妻其妻、各子其子之後，靠感情是靠不住的。都是一個爹媽生的，怎麼就走到今天這樣。這一篇要回答的是：這層關係本來就會衰減，得當成安排來辦。</description><pubDate>Mon, 21 Sep 2026 08:00:00 +0800</pubDate></item>

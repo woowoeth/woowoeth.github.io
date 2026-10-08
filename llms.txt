@@ -1,11 +1,11 @@
 # OurWord (人类世界生存法则)
 
-> 186 people and books on how the world actually works, across 2,600 years
+> 187 people and books on how the world actually works, across 2,600 years
 > 遇到事了，看看以前的人怎么处理
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 186 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 187 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
-一个关于「世界到底怎么运转」的知识库：战略、财富、权力、人性、创业，取自 186 位人物与典籍，跨越 2600 年。每一条都写清楚这个人真正留下的那一个想法、背后的故事、拆开的分则与例子，以及今天怎么用。
+一个关于「世界到底怎么运转」的知识库：战略、财富、权力、人性、创业，取自 187 位人物与典籍，跨越 2600 年。每一条都写清楚这个人真正留下的那一个想法、背后的故事、拆开的分则与例子，以及今天怎么用。
 
 ## Read it
 
@@ -20,8 +20,8 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 
 - [现代](https://ourword.ai/t/modern/) — 62
 - [工业时代](https://ourword.ai/t/industrial-age/) — 56
-- [先秦与古典时代](https://ourword.ai/t/classical-era/) — 27
-- [权力与组织](https://ourword.ai/t/power/) — 26
+- [先秦与古典时代](https://ourword.ai/t/classical-era/) — 28
+- [权力与组织](https://ourword.ai/t/power/) — 27
 - [心智与情绪](https://ourword.ai/t/mind/) — 21
 - [创业与产品](https://ourword.ai/t/startups/) — 20
 - [谋略与竞争](https://ourword.ai/t/strategy/) — 19
@@ -456,6 +456,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [荀子 · 善假于物](https://ourword.ai/i/xunzi/borrow-from-things/): 荀子 · 善假于物——别练身体，去找杠杆。同样的人，为什么有的能走很远？这一篇要回答的是：荀子说答案不在那个人身上。
 - [荀子 · 明分使群](https://ourword.ai/i/xunzi/division-makes-groups/): 荀子 · 明分使群——人靠分工才结得成群。人比牛慢、比虎弱，为什么反过来能用它们？这一篇要回答的是：荀子给的那个单字答案。
 - [荀子 · 天行有常](https://ourword.ai/i/xunzi/constant-heaven/): 荀子 · 天行有常——分开不可控与可控。生意不好怪大环境，这是常态。这一篇要回答的是：荀子两千年前就把这条路堵死了。
+- [晏婴 · 踊贵屦贱](https://ourword.ai/i/yan-ying/price-of-shoes/): 晏婴 · 踊贵屦贱——想让上头听进去，先递一个他自己能核对的数。你知道上头的决定在伤人，当面说「不对」又会撞上。这一篇要回答的是：晏婴怎么只用一句市价，让齐景公自己减了刑。
+- [晏婴 · 被救的人要绝交](https://ourword.ai/i/yan-ying/the-man-he-ransomed/): 晏婴 · 被救的人要绝交——有人当面说你不对，先别算你的恩情。你帮过一个人，他却当面说你无礼，还要走。这一篇要回答的是：晏婴被人这样说，第一反应是什么，后来又做了什么。
 - [颜氏家训 · 他们不说真话，是从你这一头起的](https://ourword.ai/i/yanshi-jiaxun/wind-blows-down/): 颜氏家训 · 他们不说真话，是从你这一头起的——风化自上而行，能改的那一寸在上游。家里没人跟我说实话，我该换个什么问法。这一篇要回答的是：这件事的开关不在他们那一头。
 - [颜氏家训 · 有爱没有教，是替他把将来的祸埋好](https://ourword.ai/i/yanshi-jiaxun/teach-before-it-sets/): 颜氏家训 · 有爱没有教，是替他把将来的祸埋好——规矩要趁关系还新的时候立。同一件事我说过多少遍了，他还是不动。这一篇要回答的是：不是你管得太多，是某一次该板脸的时候你笑了。
 - [颜氏家训 · 亲兄弟会自己变远，这不是谁变坏了](https://ourword.ai/i/yanshi-jiaxun/brothers-drift-apart/): 颜氏家训 · 亲兄弟会自己变远，这不是谁变坏了——各妻其妻、各子其子之后，靠感情是靠不住的。都是一个爹妈生的，怎么就走到今天这样。这一篇要回答的是：这层关系本来就会衰减，得当成安排来办。
@@ -496,7 +498,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [AI Bubble Monitor / AI 泡沫检测仪](https://ourword.ai/ai/)
 - [Zouni / 走你](https://ourword.ai/zouni/)
 
-## Index (186 entrys)
+## Index (187 entrys)
 
 - [BJ·福格](https://ourword.ai/i/bj-fogg/): BJ·福格（2019年·斯坦福行为设计实验室）——小到不会失败。斯坦福行为设计实验室创始人，研究行为如何被设计出来。他给出一个公式：行为发生需要动机、能力、提示三者同时到位。多数人失败在只调动机——靠决心和自我激励——而动机天然起伏，靠它维持的习惯必然崩。他的主张相反：把行为缩到小得不需要动机，然后挂在一个已有的动作后面。
 - [C.S.刘易斯](https://ourword.ai/i/cs-lewis/): C.S.刘易斯（1898-1963年·英国牛津）——妻子死后几个月的日记。作家，牛津和剑桥的教授，写过《纳尼亚传奇》和大量劝人信仰的书。五十八岁结婚，妻子乔伊四年后因癌症去世。之后几个月他在四本练习簿上记自己的状态，后来用笔名出版，就是《卿卿如晤》。收他是因为「重要的人走了」那六个问题，原来靠弗兰克尔和苏轼在答——一个是集中营的幸存者，一个是被贬的官员
@@ -581,6 +583,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [旧制度与大革命](https://ourword.ai/i/old-regime/): 旧制度与大革命（法国·1856）——改善催生不满。托克维尔（1805-1859）出身法国旧贵族，家人在大革命中上了断头台。他一生在追问一件事：为什么革命偏偏发生在法国？答案颠覆了所有人的常识——革命不是被压迫压出来的，是被改善催出来的。这本书1856年出版，至今仍是对「改革为什么反而引爆危机」最锋利的解释。
 - [易经](https://ourword.ai/i/i-ching/): 易经（西周至战国·中国）——什么时候该动，什么时候该等。六十四卦，每卦六爻，讲的其实是同一件事：一个人在不同位置上该怎么做。乾卦最下面一格是「潜龙勿用」，最上面一格是「亢龙有悔」；泰卦和否卦紧挨着排；《系辞》把规律总结成「穷则变，变则通，通则久」。收它是因为「进退取舍」那一组二十一个问题，原来靠荀子、诸葛亮、冯道零散地拼，库里一直缺一
 - [晋文公](https://ourword.ai/i/jin-wengong/): 晋文公（春秋·晋·前628年卒）——听劝。春秋时晋国国君，名重耳，晋献公之子。骊姬之乱中他被迫出奔，前655年逃到狄，此后辗转卫、齐、曹、宋、郑、楚、秦，在外流亡十九年；前636年由秦穆公派兵护送回国即位。前632年他在城濮大败楚军，同年在践土会盟诸侯，成了继齐桓公之后的霸主，前628年去世。他并不以谋略见长，《左传》里
+- [晏婴](https://ourword.ai/i/yan-ying/): 晏婴（春秋·齐·前500年卒）——进言。春秋后期齐国的相，历仕灵公、庄公、景公三朝，《史记》与管仲合传。这一页只取他怎么把话对上头说进去、怎么被下面的人当面说不对、怎么对待自己的位置这三件事，不论他的节俭与外交辞令。他留下的是三个办法：想让上头听进去，先递一个他自己能核对的数；被人当面指摘，先听完，再让人看见你变了；位
 - [智慧书](https://ourword.ai/i/art-of-worldly-wisdom/): 智慧书（西班牙·1647年）——藏锋。西班牙耶稣会士巴尔塔沙·格拉西安写的300则处世箴言，1647年出版，四百年畅销不衰。叔本华亲手把它译成德文，说它是「一本随时都能用上的书，简言之，是一位终身伴侣」，并称其「绝对独一无二」；尼采说，关于精神上的高贵，欧洲从未写出过比它更精微的东西。它与《君主论》《孙子兵法》并称三
 - [曹操](https://ourword.ai/i/cao-cao/): 曹操（汉末·155-220）——唯才是举。被《三国演义》塑造成奸臣的曹操，历史上是中国最早的系统性能力主义者。他一生发布三道求贤令：不看出身，不看品行，只看能力。同时是军事家、政治家、诗人。
 - [曼德拉](https://ourword.ai/i/mandela/): 曼德拉（南非·1918-2013）——和解。坐了27年牢，出来后没有复仇，而是选择和解，建立了彩虹国家。他是人类历史上「放下仇恨」最有力的示范。他的独特性在于：他不是天生的圣人，他年轻时是武装斗争的支持者，亲手参与建立了武装组织。27年牢狱把他从「愤怒的革命者」变成了「有耐心的建设者」——逆境改变了他的策略，没有改变他的目

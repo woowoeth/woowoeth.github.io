@@ -1,7 +1,7 @@
-# OurWord — 186 people and books on how the world actually works, across 2,600 years
+# OurWord — 187 people and books on how the world actually works, across 2,600 years
 # OurWord — See how people before you handled it.
 # https://ourword.ai/en/
-# Full corpus, plain text. 186 entrys.
+# Full corpus, plain text. 187 entrys.
 
 ========================================================================
 ## Albert Einstein
@@ -1845,7 +1845,7 @@ Full granaries, and the people know propriety. The way to govern a state must be
 Shang Yang — Two routes to a strong state: Guan Zhong enriches the people and the state follows, Shang Yang installs the law and the wealth follows. Zhuge Liang — Two first ministers serving an ambitious lord. Guan Zhong's man became hegemon; Zhuge Liang's cause never arrived. Lee Kuan Yew — Two operators building a small state from nothing, twenty-six centuries apart: Guan Zhong through trade and price control, Lee through institutions and balance. The Wealth of Nations — Two origins for the idea of national wealth: Guan Zhong steers prices and money from the centre, Smith lets price discover itself. The argument has not moved in twenty-five centuries.
 
 ### Further
-The Wealth of Nations Fan Li Sun Tzu Han Feizi Cao Cao Lee Kuan Yew Shang Yang Zhang Juzheng Liu Yan Duke Wen of Jin King Wuling of Zhao
+The Wealth of Nations Fan Li Sun Tzu Han Feizi Cao Cao Lee Kuan Yew Shang Yang Zhang Juzheng Liu Yan Duke Wen of Jin King Wuling of Zhao Yan Ying
 
 ========================================================================
 ## Guiguzi
@@ -2030,10 +2030,10 @@ When designing incentives for a team, ask what this system will make people do, 
 The ruler controls by two handles: punishment and favour. The difficulty of persuasion is knowing the listener's mind. A thousand-mile dyke collapses from an ant hole.
 
 ### Q: What should I read alongside?
-Zhuangzi — Same era, opposite answers: Han Feizi designs the machine, Zhuangzi declines to be a component. Thomas Gordon — Two theories of getting compliance: rules and consequences, or naming the effect on you. Both work, on different things. John Boyd — Two theories of an organisation that works: rules and consequences, or shared intent and delegated authority. Xunzi — The student pushed the teacher's training argument into a theory of control. Xunzi kept the rites; Han Feizi kept only the handles. Hannah Arendt — Han Feizi asks how to build a system that works without relying on goodness; Arendt asks where obedience inside such a system ends up. One writes from the designer's chair, one from the operator's. Cao Cao — The theory and its practitioner. Han Feizi wrote the system down; cutting his hair in place of his head is that system demonstrated on the man at the top. Mencius — Both are writing about how to govern. Han Feizi trusts reward and punishment; Mencius asks whether people are still willing to follow you at all. Shang Yang — Theory and practice of the same school: Han Feizi wrote the system down, Shang Yang ran it, and both were killed by the thing they had built. Machiavelli — The two closest political realists East and West, seventeen centuries apart: both studied how power actually works, and both were destroyed by the power they studied. Influence — Two systems for moving people: Han Feizi designed law, technique and position two thousand years earlier, Cialdini found six triggers. Both are asking how to make people act as you want. Robert Axelrod — Neither trusts human nature: Han Feizi holds reward and punishment himself so that nobody dares defect, Axelrod lengthens the relationship until nobody needs to - one runs on power, the other on repetition. Liu Yan — Neither counts on people being good: Han Feizi says do not rely on their goodness and rely on law and position instead, while Liu Yan names the particular device - rank and a way up - that makes keeping the rules pay in that seat. Edward Deci — Both are about how reward and punishment move people. Han Feizi calls them the ruler's two handles: grip them and people move. Deci found that paying for something people already loved left them doing less once the pay stopped. One treats reward as the engine; the other asks what the reward replaced.
+Zhuangzi — Same era, opposite answers: Han Feizi designs the machine, Zhuangzi declines to be a component. Thomas Gordon — Two theories of getting compliance: rules and consequences, or naming the effect on you. Both work, on different things. John Boyd — Two theories of an organisation that works: rules and consequences, or shared intent and delegated authority. Xunzi — The student pushed the teacher's training argument into a theory of control. Xunzi kept the rites; Han Feizi kept only the handles. Hannah Arendt — Han Feizi asks how to build a system that works without relying on goodness; Arendt asks where obedience inside such a system ends up. One writes from the designer's chair, one from the operator's. Cao Cao — The theory and its practitioner. Han Feizi wrote the system down; cutting his hair in place of his head is that system demonstrated on the man at the top. Mencius — Both are writing about how to govern. Han Feizi trusts reward and punishment; Mencius asks whether people are still willing to follow you at all. Shang Yang — Theory and practice of the same school: Han Feizi wrote the system down, Shang Yang ran it, and both were killed by the thing they had built. Machiavelli — The two closest political realists East and West, seventeen centuries apart: both studied how power actually works, and both were destroyed by the power they studied. Influence — Two systems for moving people: Han Feizi designed law, technique and position two thousand years earlier, Cialdini found six triggers. Both are asking how to make people act as you want. Robert Axelrod — Neither trusts human nature: Han Feizi holds reward and punishment himself so that nobody dares defect, Axelrod lengthens the relationship until nobody needs to - one runs on power, the other on repetition. Liu Yan — Neither counts on people being good: Han Feizi says do not rely on their goodness and rely on law and position instead, while Liu Yan names the particular device - rank and a way up - that makes keeping the rules pay in that seat. Edward Deci — Both are about how reward and punishment move people. Han Feizi calls them the ruler's two handles: grip them and people move. Deci found that paying for something people already loved left them doing less once the pay stopped. One treats reward as the engine; the other asks what the reward replaced. Yan Ying — Both guard against being walled in by the people around you. Han Feizi relies on technique and audit, against ministers who hide things. Yan Ying relies on being someone people dare to tell, and on hearing the man out when he is told he was wrong. One closes the gaps from the system, the other opens up in himself first.
 
 ### Further
-Fan Li Sun Tzu Charlie Munger John Boyd Xunzi Hannah Arendt Cao Cao Guan Zhong Mencius Shang Yang Wu Zetian Zhang Juzheng Zhu Yuanzhang Guo Jia Thomas Schelling Strategies of the Warring States Guiguzi Machiavelli Influence Robert Axelrod Liu Yan The Annals of Lu Buwei Edward Deci
+Fan Li Sun Tzu Charlie Munger John Boyd Xunzi Hannah Arendt Cao Cao Guan Zhong Mencius Shang Yang Wu Zetian Zhang Juzheng Zhu Yuanzhang Guo Jia Thomas Schelling Strategies of the Warring States Guiguzi Machiavelli Influence Robert Axelrod Liu Yan The Annals of Lu Buwei Edward Deci Yan Ying
 
 ========================================================================
 ## Han Xin
@@ -3245,10 +3245,10 @@ Ask whether there is anyone near you whose job is to tell you you are wrong and 
 With bronze as a mirror you straighten your dress. Water carries the boat, and water can capsize it. Listening to all sides makes you clear; one source, dark.
 
 ### Q: What should I read alongside?
-Zhu Yuanzhang — Two theories of how an emperor handles talent: Li Shimin kept the critics and got a golden age, Zhu Yuanzhang removed the founders and got a secure throne. Zeng Guofan — Two ways to hold up a mirror. Li Shimin kept Wei Zheng in the room; Zeng Guofan used a journal nobody else read. The Duke of Zhou — Both wanted to hear the uncomfortable thing. Li Shimin relied on ministers like Wei Zheng and tolerated being contradicted. The duke opened the door first and went out to meet people with his hair still wet. One relied on tolerance, the other on lowering the cost of reaching him.
+Zhu Yuanzhang — Two theories of how an emperor handles talent: Li Shimin kept the critics and got a golden age, Zhu Yuanzhang removed the founders and got a secure throne. Zeng Guofan — Two ways to hold up a mirror. Li Shimin kept Wei Zheng in the room; Zeng Guofan used a journal nobody else read. The Duke of Zhou — Both wanted to hear the uncomfortable thing. Li Shimin relied on ministers like Wei Zheng and tolerated being contradicted. The duke opened the door first and went out to meet people with his hair still wet. One relied on tolerance, the other on lowering the cost of reaching him. Yan Ying — Both are about getting words across between above and below. Li Shimin sat above, and with ministers like Wei Zheng he could stand to be contradicted. Yan Ying stood below, did not contradict, and handed over a figure so the man above could see it for himself. One teaches how to listen, the other how to speak.
 
 ### Further
-Zeng Guofan Zhuge Liang Liu Bang The Comprehensive Mirror Xunzi Mencius Shang Yang The Duke of Zhou
+Zeng Guofan Zhuge Liang Liu Bang The Comprehensive Mirror Xunzi Mencius Shang Yang The Duke of Zhou Yan Ying
 
 ========================================================================
 ## Lin Xiangru
@@ -5490,7 +5490,7 @@ Knowing what you know and what you do not: that is knowledge. See what he does. 
 Tao Te Ching — The two main lines of Chinese thought: Confucius adds — cultivate, practise, take part — where Laozi subtracts. Neither is complete without the other. Socrates — Near contemporaries who both taught by asking rather than telling, and both paid for holding a position against the people in power. Mencius — The Analects tells a gentleman how to conduct himself; Mencius tells a ruler what will remove him. Strategies of the Warring States — Two faces of the same broken age: one on what a person ought to become, the other on how people behaved. Read only one and you end up naive or cynical. Guiguzi — Confucius asks whether a thing should be said at all; Guiguzi asks only how to say it so that it works. The avowed and the suppressed halves of the same tradition. La Rochefoucauld — Confucius holds that self-cultivation leads to benevolence. La Rochefoucauld suspects self-cultivation is only the most sophisticated form self-love has found so far. The Annals of Lu Buwei — Both answer how to read a person: the Analects looks backward, at what he has already done, the path he took and what he rests easy in, while the Annals arranges the present, putting him through eight positions and six feelings and watching hardest at the moments when he has nothing to gain. The Book of Rites — Both record how Confucius taught. In the Analects he will not open up a student who is not yet straining to understand, which is about when to speak. The 'Record of Learning' goes a step further: even once you speak, open the way and stop, and leave the last steps to the learner.
 
 ### Further
-Wang Yangming Zeng Guofan Tao Te Ching Socrates Mencius Hannah Arendt Family Instructions for the Yan Clan The Annals of Lu Buwei The Book of Rites
+Wang Yangming Zeng Guofan Tao Te Ching Socrates Mencius Hannah Arendt Family Instructions for the Yan Clan The Annals of Lu Buwei The Book of Rites Yan Ying
 
 ========================================================================
 ## The Annals of Lu Buwei
@@ -6601,6 +6601,40 @@ Mencius — One holds that people can be taught, the other that people can be sh
 
 ### Further
 Mencius Han Feizi Wang Yangming Andy Grove Benjamin Franklin Li Shimin The Book of Rites
+
+========================================================================
+## Yan Ying
+URL: https://ourword.ai/en/i/yan-ying/
+Tags: Power and organisation, Pre-Qin and classical, Remonstrance
+
+Yan Ying (Spring and Autumn · Qi · d. 500 BC) — Remonstrance. Chief minister of the state of Qi under three dukes, paired with Guan Zhong in Sima Qian's Biographies of Guan and Yan.
+
+### Q: What did this one leave behind?
+Chief minister of the state of Qi under three dukes, paired with Guan Zhong in Sima Qian's Biographies of Guan and Yan. This page takes only three things: how he got a truth across to the man above him, how he took being told to his face that he was wrong, and how he treated his own seat. It leaves out his frugality and his diplomatic wit. He left three methods. To be heard from below, hand over a figure the listener can check himself. When told you were wrong, listen to the end and then let the man see that you changed. The higher your seat, the more you need people who dare to hold up a mirror.
+
+### Q: What actually happened?
+According to Sima Qian, Yan Ying's charioteer drove four horses under a tall canopy, swaggering and pleased with himself. When he got home, his wife said she was leaving. Yan Ying, she said, is under six feet tall and chief minister of Qi, famous among the lords, yet when I saw him go out he looked like a man who thought he fell short. You are eight feet tall and a charioteer, and you seem satisfied. The man began to hold himself in. Yan Ying noticed, asked, and was told the truth. He recommended the charioteer for office.
+
+### The parts · He got a truth across with one figure
+Duke Jing's punishments were heavy. Yan Ying did not say so; he answered that the shoes for the maimed were dear and ordinary shoes cheap. Criticism makes people defend themselves; a price does not. e.g. Not 'you squeeze sales too hard,' but 'of the seven who left this quarter, five were in sales.'
+
+### The parts · He listened to the end when told he was wrong
+After he ransomed Yue Shifu, the man asked to break off the friendship. Yan Ying straightened his robes, apologised, heard him out and made him an honoured guest. People speak up when your position visibly moves afterwards. e.g. Someone says you gave him no face last time. Put his point on the next meeting's agenda and let him present it.
+
+### The parts · He used the people who could see him
+The charioteer's wife had watched the chief minister leave the house looking like he fell short. Yan Ying did not resent a charioteer's wife judging him; he used her eyes, and made her husband an officer. e.g. Someone says you talk too much in meetings. Ask him which meeting, and which sentence.
+
+### Q: How do I use it today?
+Pick one thing you want to tell someone above you and fear will not land. Write three lines: what figure can he check himself; whether it helps me finish the sentence or lets me walk around it; whether it points at the real wound. If you are the one in the high seat, count how many sentences you let someone finish the last time he said you were wrong. His one judgement runs through all three: say it so that it can be heard, and be someone it can be said to.
+
+### Lines to keep
+Shoes for the maimed are dear; ordinary shoes are cheap. To know me and show me no courtesy is worse than a cell. Were Yan Zi alive, I would gladly hold his whip.
+
+### Q: What should I read alongside?
+Li Shimin — Both are about getting words across between above and below. Li Shimin sat above, and with ministers like Wei Zheng he could stand to be contradicted. Yan Ying stood below, did not contradict, and handed over a figure so the man above could see it for himself. One teaches how to listen, the other how to speak. Han Feizi — Both guard against being walled in by the people around you. Han Feizi relies on technique and audit, against ministers who hide things. Yan Ying relies on being someone people dare to tell, and on hearing the man out when he is told he was wrong. One closes the gaps from the system, the other opens up in himself first.
+
+### Further
+Guan Zhong Li Shimin Han Feizi The Analects
 
 ========================================================================
 ## Zeng Guofan
@@ -20614,6 +20648,72 @@ Where it goes wrong: treating an external condition as an explanation rather tha
 Heaven's course did not persist for Yao nor vanish for Jie.
 Respond with order and it goes well; with disorder, badly.
 Rather than revering heaven, master its workings and use them.
+
+========================================================================
+## Yan Ying · The Price of Shoes
+URL: https://ourword.ai/en/i/yan-ying/price-of-shoes/
+Source: Zuo Commentary, Duke Zhao, year 3
+Tags: Deep read, Yan Ying, To be heard by someone above you, hand him a figure he can check himself
+
+Your boss's decision is hurting people, but 'that's wrong' will only bounce off. How did Yan Ying get a duke to ease his punishments with a remark about shoes?
+
+### Q: What actually happened?
+Duke Jing of Qi found Yan Ying's house cramped and noisy, right beside the market, and offered him a better one on higher ground. Yan Ying declined. The duke laughed and asked: living there, you must know what is dear and what is cheap? Those were the years of the duke's heaviest punishments, and the market sold special shoes for people whose feet had been cut off. Yan Ying did not say the punishments were too harsh. He said the shoes for the maimed were dear, and ordinary shoes were cheap. The duke understood, and eased his punishments.
+
+### The parts · Do not accuse; report a figure
+He did not say 'you punish too much,' and he did not lecture on mercy. He told the duke what was selling in the market. Criticism makes a person defend himself; a price does not, because he can go and check it, and the conclusion is his own.
+e.g. Do not say 'you are squeezing sales too hard.' Say 'of the seven who left this quarter, five were in sales.'
+
+### The parts · Choose the figure that points at the wound
+A market has hundreds of prices. He picked the shoes: they were dear because many wanted them, and many wanted them because many had lost their feet. Which number you pick decides whether the listener hears an argument or an insult.
+e.g. Not 'we cannot finish this,' but 'last time we had this schedule, we worked six weekends.'
+
+### The parts · The door has to be opened first
+The remark was possible because the duke opened it with an idle question, not an interrogation and not 'does anyone have concerns?' If you want the truth from below, open the door on something small, not on the big subject.
+e.g. Do not ask 'any comments on this plan?' Ask 'which problem did you hit last time that is related to this?'
+
+### Q: How do I use it today?
+Where you are: you can see that a decision above you is wrong, saying 'that's wrong' to his face would just collide, and keeping quiet eats at you.
+Ask first: is there one concrete fact or number that he can check himself and that finishes my sentence for me? Does it point at the real wound?
+Where it goes wrong: 'not saying it outright' becomes 'not saying it'. Yan Ying's figure pointed straight at the punishments and the duke got it at once. If your number takes three turns to reach the problem, he will not hear it.
+
+### Lines to keep
+You live by the market. What is dear, and what is cheap?
+Since I profit from it, how could I not know?
+Shoes for the maimed are dear; ordinary shoes are cheap.
+
+========================================================================
+## Yan Ying · The Man He Ransomed Wanted Out
+URL: https://ourword.ai/en/i/yan-ying/the-man-he-ransomed/
+Source: Records of the Grand Historian, Biographies of Guan and Yan
+Tags: Deep read, Yan Ying, When someone tells you to your face you were wrong, do not tally your favours
+
+You did someone a great favour, and he tells you to your face you were rude and wants out. How did Yan Ying react, and what did he do next?
+
+### Q: What actually happened?
+Yan Ying met Yue Shifu in custody, unhitched a horse from his own carriage, and bought his freedom. At home, Yan Ying said nothing and went straight inside. After a long while Yue Shifu asked to break off the friendship. Startled, Yan Ying straightened his robes and apologised: I may be no paragon, but I got you out of trouble. Why break with me so fast? Yue Shifu answered: in prison you did not know me. You bought me out, so you know me. But to know a man and show him no courtesy is worse than the cell. Yan Ying asked him in as an honoured guest.
+
+### The parts · His first reaction was to argue, too
+What he said first was 'I rescued you.' It is what you and I would say. The difference is in what followed: he did not keep tallying the favour. He stopped and listened for what the man was actually angry about.
+e.g. Someone says you gave him no face at the meeting. You want to say 'I fought for your budget.' Swallow that sentence.
+
+### The parts · It was about courtesy, not about the ledger
+Yue Shifu did not say 'you owe me.' He said: you treat a friend worse than a stranger. That is a complaint about how you treat him, and no size of favour offsets it.
+e.g. You gave a junior a great opportunity and never said a word to him face to face. He says you do not respect him. Pointing at the opportunity will not make him feel heard.
+
+### The parts · Listen, change, and let him see it
+Yan Ying did not explain, and he did not stop at 'I was wrong.' He asked the man in and made him an honoured guest on the spot. What makes people speak up is not your open-mindedness but that your position visibly moved after they spoke.
+e.g. After someone gives you critical feedback, put his point on the next meeting's agenda and let him present it, instead of thanking him in private.
+
+### Q: How do I use it today?
+Where you are: someone tells you to your face something you did not want to hear, and your first thought is 'after all I have done for you.'
+Ask first: can I get through what he says without answering a word? Is he saying something I did, or something I owe?
+Where it goes wrong: treating an instant apology and a seat of honour as a pose. Yan Ying changed after he had listened. If you only look generous, apologise on the spot and carry on as before, the next person will be even less willing to speak.
+
+### Lines to keep
+To know me and show me no courtesy is worse than a cell.
+I may be no paragon, but I freed you. Why leave so fast?
+Yan Ying then asked him in and made him an honoured guest.
 
 ========================================================================
 ## Family Instructions for the Yan Clan · They stopped telling you the truth at your end

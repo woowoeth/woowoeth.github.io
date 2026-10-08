@@ -330,6 +330,8 @@ SCENES = [
      [("guiguzi", "listen-in-reverse"), ("analects", "know-what-you-know")]),
     ("对面人多势众，我只有一张嘴。",
      [("guo-ziyi", "riding-out-alone"), ("wu-zetian", "the-manifesto")]),
+    ("我想劝老板，又不敢当面顶他。",
+     [("yan-ying", "price-of-shoes")]),
 ]),
 ("谈条件", "跟人打交道", [
     ("我说的话，他们好像不太当真。",
@@ -1126,6 +1128,10 @@ SCENES = [
      [("carl-rogers", "reflective-listening"), ("socrates", "midwifery")]),
     ("家里没人说真话，是从我起的吗。",
      [("yanshi-jiaxun", "wind-blows-down")]),
+    ("他们不是不知道，是不知道怎么跟我说。",
+     [("yan-ying", "price-of-shoes")]),
+    ("他当面说我无礼，我下不来台。",
+     [("yan-ying", "the-man-he-ransomed")]),
 ]),
 ("家里的活没人算", "家里的事", [
     ("我做的这些，好像不算数。",

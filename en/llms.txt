@@ -1,9 +1,9 @@
 # OurWord (OurWord)
 
-> 186 people and books on how the world actually works, across 2,600 years
+> 187 people and books on how the world actually works, across 2,600 years
 > See how people before you handled it.
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 186 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 187 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
 ## Read it
 
@@ -18,8 +18,8 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 
 - [Modern](https://ourword.ai/en/t/modern/) — 66
 - [The industrial age](https://ourword.ai/en/t/the-industrial-age/) — 52
-- [Power and organisation](https://ourword.ai/en/t/power-and-organisation/) — 26
-- [Pre-Qin and classical](https://ourword.ai/en/t/pre-qin-and-classical/) — 26
+- [Power and organisation](https://ourword.ai/en/t/power-and-organisation/) — 27
+- [Pre-Qin and classical](https://ourword.ai/en/t/pre-qin-and-classical/) — 27
 - [Mind and feeling](https://ourword.ai/en/t/mind-and-feeling/) — 20
 - [Starting and building](https://ourword.ai/en/t/starting-and-building/) — 20
 - [How the world works](https://ourword.ai/en/t/how-the-world-works/) — 19
@@ -450,6 +450,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [Xunzi · Borrow the horse, don't grow legs](https://ourword.ai/en/i/xunzi/borrow-from-things/): Xunzi · Borrow the horse, don't grow legs — Leverage beats effort. Two people of equal ability, and one of them gets much further. He says the difference is not in the person.
 - [Xunzi · A group is a set of clear lines](https://ourword.ai/en/i/xunzi/division-makes-groups/): Xunzi · A group is a set of clear lines — Headcount without division is a crowd. Slower than an ox and weaker than a tiger, people use both. The one-word answer he gives, and what follows from it.
 - [Xunzi · Heaven runs to its own schedule](https://ourword.ai/en/i/xunzi/constant-heaven/): Xunzi · Heaven runs to its own schedule — Sort the fixed from the movable. Bad year, bad market, bad luck. He closed this exit two thousand years ago, and not by denying the conditions.
+- [Yan Ying · The Price of Shoes](https://ourword.ai/en/i/yan-ying/price-of-shoes/): Yan Ying · The Price of Shoes — To be heard by someone above you, hand him a figure he can check himself. Your boss's decision is hurting people, but 'that's wrong' will only bounce off. How did Yan Ying get a duke to ease his punishments with a remark about shoes?
+- [Yan Ying · The Man He Ransomed Wanted Out](https://ourword.ai/en/i/yan-ying/the-man-he-ransomed/): Yan Ying · The Man He Ransomed Wanted Out — When someone tells you to your face you were wrong, do not tally your favours. You did someone a great favour, and he tells you to your face you were rude and wants out. How did Yan Ying react, and what did he do next?
 - [Family Instructions for the Yan Clan · They stopped telling you the truth at your end](https://ourword.ai/en/i/yanshi-jiaxun/wind-blows-down/): Family Instructions for the Yan Clan · They stopped telling you the truth at your end — Custom runs downward, and the inch you can move is upstream. Nobody at home tells you anything straight. This chapter says the switch is not on their end of the line.
 - [Family Instructions for the Yan Clan · Love without teaching buries the trouble for later](https://ourword.ai/en/i/yanshi-jiaxun/teach-before-it-sets/): Family Instructions for the Yan Clan · Love without teaching buries the trouble for later — Set the rule while the relationship is still new. You have said it a hundred times and nothing moves. This chapter says the bill was set the time you laughed instead.
 - [Family Instructions for the Yan Clan · Brothers drift apart on their own, and nobody turned bad](https://ourword.ai/en/i/yanshi-jiaxun/brothers-drift-apart/): Family Instructions for the Yan Clan · Brothers drift apart on their own, and nobody turned bad — Once each has his own wife and children, feeling will not hold it. You were raised by the same parents, so how did it get here. This chapter says the decay is structural.
@@ -490,7 +492,7 @@ Cite the individual page URL, not the homepage — each entry page is stable and
 - [AI Bubble Monitor](https://ourword.ai/ai/)
 - [Zouni](https://ourword.ai/zouni/)
 
-## Index (186 entrys)
+## Index (187 entrys)
 
 - [Albert Einstein](https://ourword.ai/en/i/einstein/): Albert Einstein (Germany · 1879–1955) — Imagination. The physicist, and the father of relativity — but the legacy that travels furthest is not a formula, it is a way of working.
 - [Albert O. Hirschman](https://ourword.ai/en/i/hirschman/): Albert O. Hirschman (United States · 1915-2012) — Voice. A German-born American economist. He left Berlin in 1933, fought in Spain in 1936, spent 1940 in Marseille forging papers and finding mountain…
@@ -671,6 +673,7 @@ Cite the individual page URL, not the homepage — each entry page is stable and
 - [Xiang Yu](https://ourword.ai/en/i/xiang-yu/): Xiang Yu (Chu · 232–202 BC) — Unbending. The most complete loser in Chinese history, which is why he is worth the time. He brought down the Qin almost single-handedly, something his rival could not…
 - [Xiao He](https://ourword.ai/en/i/xiao-he/): Xiao He (Western Han · died 193 BC) — The back office. Chancellor to the first Han emperor, from Pei, who was a county clerk under the Qin and joined Liu Bang's rising from the start.
 - [Xunzi](https://ourword.ai/en/i/xunzi/): Xunzi (Warring States · 313–238 BC) — Shaped, not born. Mencius said people are naturally good. Xunzi said people are naturally workable. The word usually rendered as artifice means made on purpose…
+- [Yan Ying](https://ourword.ai/en/i/yan-ying/): Yan Ying (Spring and Autumn · Qi · d. 500 BC) — Remonstrance. Chief minister of the state of Qi under three dukes, paired with Guan Zhong in Sima Qian's Biographies of Guan and Yan.
 - [Zeng Guofan](https://ourword.ai/en/i/zeng-guofan/): Zeng Guofan (Qing · 1811–1872) — Dull and unbreakable. The most famous case in Chinese history of an ordinary man getting there by grinding. He was not gifted — he sat the examination seven times…
 - [Zhang Juzheng](https://ourword.ai/en/i/zhang-juzheng/): Zhang Juzheng (Ming · 1525–1582) — Reform and the reckoning. In two hundred and seventy years of Ming rule he is the one chief minister who actually changed the state.
 - [Zhang Liang](https://ourword.ai/en/i/zhang-liang/): Zhang Liang (Han · c. 250–186 BC) — Asking for less. The cleverest of the three men credited with founding the Han, and the only one of them who died in his bed.
