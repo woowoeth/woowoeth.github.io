@@ -287,6 +287,8 @@ HTML = r"""<!DOCTYPE html>
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://ourword.ai/ce/og.png">
 <link rel="canonical" href="https://ourword.ai/ce/">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;600;700&display=swap">
 <style>__CSS__</style>
 </head>
 <body>
@@ -330,6 +332,7 @@ HTML = r"""<!DOCTYPE html>
 </div>
 <div id="shot"><img id="shotImg" alt="分享卡"><p>长按图片保存，或者</p><div class="row"><a id="shotDl" download="我的历史分身.png">下载</a><button id="shotX">关闭</button></div></div>
 <div class="toast" id="toast"></div>
+<script src="/assets/vendor/qrcode-generator-1.4.4.js" defer></script>
 <script>window.CE=__DATA__;</script>
 <script>__JS__</script>
 <script src="/assets/hw-chat.js" defer></script>
@@ -589,8 +592,8 @@ function renderType(t,me){
       trk('ce_ask',{who:t.who});
       if(typeof window.hwAsk==='function')window.hwAsk(v+'（我测出来是'+t.who+'那一型，想听听'+t.who+'会怎么处理）',{pin:[t.story.u],scene:''});
       else location.href=t.story.u;};
-    $('shareCard').onclick=function(){trk('ce_share_card',{who:t.who});card(t,me,m)};
-    if(fr)$('pairCard').onclick=function(){var rel=relation(t,fr);trk('ce_pair_card',{me:t.who,friend:fr.who});pairCard(t,fr,rel)};
+    $('shareCard').onclick=function(){trk('ce_share_card',{who:t.who});withFonts(t.who+t.title+t.quote+t.quote_src,function(){card(t,me,m)})};
+    if(fr)$('pairCard').onclick=function(){var rel=relation(t,fr);trk('ce_pair_card',{me:t.who,friend:fr.who});withFonts(t.who+t.title+fr.who+fr.title+rel.t,function(){pairCard(t,fr,rel)})};
     $('invite').onclick=function(){invite(t)}; $('invite2').onclick=function(){invite(t)};
     [].forEach.call(document.querySelectorAll('.moments .hit'),function(b){b.onclick=function(){
       var li=b.parentNode,on=!li.classList.contains('on'),k=+b.dataset.k;
@@ -627,6 +630,12 @@ function finish(){
 /* ── 分享卡：3:4，给小红书用。图上只放名字、原型、金句和三个数 ── */
 var SERIF='"Noto Serif SC","Songti SC","STSong",serif',SANS='-apple-system,"PingFang SC","Microsoft YaHei",sans-serif';
 var P0='#f5f1e8',CARD='#faf7f0',INK='#1f1c17',MUT='#8a8377',LINE='#d8d2c6',ACC='#a33b2e';
+/* 画卡前先把宋体里要用到的字取回来：网页字体按字分片下载，卡上的字页面上不一定出现过，
+   没取到就会退成黑体（手机上没有自带宋体，实测关系卡整张变黑体）。最多等 2.5 秒，取不到照画。 */
+function withFonts(s,fn){var ok=0,go=function(){if(!ok){ok=1;fn()}};
+  if(!(document.fonts&&document.fonts.load))return go();
+  Promise.all(['700 140px','600 54px','500 34px','40px','italic 42px'].map(function(f){return document.fonts.load(f+' "Noto Serif SC"',s)})).then(go,go);
+  setTimeout(go,2500)}
 function canvasKit(){
   var c=document.createElement('canvas'),W=1080,H=1440; c.width=W;c.height=H;
   var x=c.getContext('2d');
@@ -647,34 +656,45 @@ function canvasKit(){
     lines.push(line);
     lines.forEach(function(l,i){x.fillText(l,W/2,y+i*lh)});return y+lines.length*lh}
   function rrect(x0,y0,w,h,r){x.beginPath();x.moveTo(x0+r,y0);x.arcTo(x0+w,y0,x0+w,y0+h,r);x.arcTo(x0+w,y0+h,x0,y0+h,r);x.arcTo(x0,y0+h,x0,y0,r);x.arcTo(x0,y0,x0+w,y0,r);x.closePath()}
+  /* 右下角二维码：微信里长按图片就能识别。码里是「朋友邀请」链接（?f=这一型），
+     扫码的人测完直接看到两人的关系。白底 + 两格静区，模块取整像素，缩略图里也认得出。
+     库没加载到（离线、被拦）就不画码，卡照出。 */
+  function qr(url){if(typeof qrcode!=='function')return;
+    try{var q=qrcode(0,'M');q.addData(url);q.make();var n=q.getModuleCount(),m=4,box=(n+4)*m,x0=W-110-box,y0=1390-box;
+      x.fillStyle='#fff';x.fillRect(x0,y0,box,box);x.fillStyle='#1f1c17';
+      for(var r=0;r<n;r++)for(var c=0;c<n;c++)if(q.isDark(r,c))x.fillRect(x0+(c+2)*m,y0+(r+2)*m,m,m)}catch(e){}}
   function foot(line1,line2){
     x.fillStyle=ACC;x.fillRect(110,1290,74,74);x.fillStyle='#fff';x.font='700 48px '+SERIF;x.textAlign='center';x.fillText('人',147,1345);
     x.textAlign='left';x.fillStyle=INK;x.font='600 36px '+SANS;x.fillText(line1,212,1322);
     x.fillStyle=MUT;x.font='28px '+SANS;x.fillText(line2,212,1362)}
   function done(){var url=c.toDataURL('image/png'); $('shotImg').src=url; $('shotDl').href=url; $('shot').style.display='flex'}
-  return {x:x,W:W,txt:txt,wrap:wrap,rrect:rrect,foot:foot,done:done};
+  return {x:x,W:W,txt:txt,wrap:wrap,rrect:rrect,foot:foot,qr:qr,done:done};
 }
+function inviteUrl(t){return 'https://ourword.ai'+(location.pathname.indexOf('/tw/')===0?'/tw/ce/':'/ce/')+'?f='+T.indexOf(t)}
 function card(t,me,m){
   var k=canvasKit(),x=k.x,W=k.W,f=fam(t);
-  k.txt('YOUR HISTORICAL TWIN',138,'600 26px '+SANS,f.color,10);
-  x.strokeStyle=f.color;x.lineWidth=3;var pw=560,ph=78,px=(W-pw)/2,py=180;k.rrect(px,py,pw,ph,ph/2);x.stroke();
+  k.txt('YOUR HISTORICAL TWIN',128,'600 26px '+SANS,f.color,10);
+  x.strokeStyle=f.color;x.lineWidth=3;var pw=560,ph=78,px=(W-pw)/2,py=166;k.rrect(px,py,pw,ph,ph/2);x.stroke();
   k.txt('你的历史分身契合度  '+m+'%',py+51,'500 34px '+SANS,f.color);
-  k.txt(t.who,t.who.length>3?470:500,'700 '+(t.who.length>3?150:190)+'px '+SERIF,INK);
-  x.fillStyle=f.color;x.fillRect(W/2-170,548,120,5);x.fillRect(W/2+50,548,120,5);x.beginPath();x.arc(W/2,550,10,0,7);x.fill();
-  k.txt(t.title,640,'600 54px '+SERIF,INK);
-  k.txt(t.code+'  ·  '+f.name,712,'500 34px '+SANS,f.color);
-  var y=k.wrap('“'+t.quote+'”',800,'italic 42px '+SERIF,INK,820,62);
-  k.txt('—— '+t.quote_src,y+2,'26px '+SANS,MUT);
+  k.txt(t.who,t.who.length>3?450:478,'700 '+(t.who.length>3?150:190)+'px '+SERIF,INK);
+  x.fillStyle=f.color;x.fillRect(W/2-170,526,120,5);x.fillRect(W/2+50,526,120,5);x.beginPath();x.arc(W/2,528,10,0,7);x.fill();
+  k.txt(t.title,614,'600 54px '+SERIF,INK);
+  k.txt(t.code+'  ·  '+f.name,680,'500 34px '+SANS,f.color);
+  var y=k.wrap('“'+t.quote+'”',772,'italic 42px '+SERIF,INK,820,62);
+  k.txt('—— '+t.quote_src,y+6,'26px '+SANS,MUT);
   /* 最容易让人说「太准了」的那一句：读者点了「说中了」就印那句，没点就印第一句 */
   var mo=t.moments&&t.moments[hitK>=0?hitK:0];
-  if(mo&&y<930)k.wrap('你一定干过：'+mo,y+62,'30px '+SANS,f.color,860,44);
+  /* 尽量排成一行：一行放不下就把字缩到 26px；还放不下才折行（折行时下面的数字框会被顶到，所以先缩字） */
+  if(mo&&y<950){var ml='你一定干过：'+mo,fs=30;x.font=fs+'px '+SANS;
+    while(fs>26&&x.measureText(ml).width>860){fs--;x.font=fs+'px '+SANS}
+    k.wrap(ml,y+72,fs+'px '+SANS,f.color,860,42)}
   var order=DIMS.map(function(d,i){return [d,me.dims[i]]}).sort(function(a,b){return b[1]-a[1]});
   var bx=[[100,'最高维度',order[0][0],String(order[0][1])],[400,'分身契合度',t.who,m+'%'],[700,'待提升',order[5][0],String(order[5][1])]];
-  bx.forEach(function(b,i){var bw=280,bh=210,by=1040,mid=i===1;x.fillStyle=mid?f.color:CARD;x.strokeStyle=mid?f.color:LINE;x.lineWidth=3;
+  bx.forEach(function(b,i){var bw=280,bh=194,by=1028,mid=i===1;x.fillStyle=mid?f.color:CARD;x.strokeStyle=mid?f.color:LINE;x.lineWidth=3;
     k.rrect(b[0],by,bw,bh,24);x.fill();x.stroke();
-    x.textAlign='center';x.fillStyle=mid?'#fff':INK;x.font='700 72px '+SERIF;x.fillText(b[3],b[0]+bw/2,by+100);
-    x.font='34px '+SANS;x.fillStyle=mid?'rgba(255,255,255,.9)':MUT;x.fillText(b[2],b[0]+bw/2,by+150);x.font='26px '+SANS;x.fillText(b[1],b[0]+bw/2,by+190)});
-  k.foot('测测你的历史分身','ourword.ai/ce · 64 种历史人格');
+    x.textAlign='center';x.fillStyle=mid?'#fff':INK;x.font='700 72px '+SERIF;x.fillText(b[3],b[0]+bw/2,by+88);
+    x.font='34px '+SANS;x.fillStyle=mid?'rgba(255,255,255,.9)':MUT;x.fillText(b[2],b[0]+bw/2,by+138);x.font='26px '+SANS;x.fillText(b[1],b[0]+bw/2,by+174)});
+  k.foot('测测你的历史分身','长按识别二维码，看你是谁'); k.qr(inviteUrl(t));
   k.done();
 }
 /* 关系卡：两个人上下排（名字最长五个字，左右排放不下），中间一枚关系章 */
@@ -683,17 +703,17 @@ function pairCard(a,b,rel){
   k.txt('WE, IN HISTORY',138,'600 26px '+SANS,ACC,10);
   k.txt('我们俩在历史上是',200,'500 34px '+SANS,MUT);
   function person(t,y,f){var big=t.who.length>3;
-    k.txt(t.who,y,'700 '+(big?118:140)+'px '+SERIF,INK); k.txt(t.title,y+62,'500 34px '+SERIF,f.color)}
-  person(a,370,fa);
-  k.txt('×',528,'300 64px '+SANS,ACC);
-  person(b,690,fb);
-  x.font='600 40px '+SANS; var lw=x.measureText(rel.l).width+96, lx=(W-lw)/2;
-  x.fillStyle=ACC;k.rrect(lx,800,lw,76,38);x.fill();
-  k.txt(rel.l,852,'600 40px '+SANS,'#fff');
-  var y=k.wrap(rel.t,960,'40px '+SERIF,INK,820,64);
-  x.fillStyle=LINE;x.fillRect(W/2-60,y+40,120,3);
-  k.txt('你和你的朋友，又是历史上的谁和谁？',y+120,'34px '+SANS,MUT);
-  k.foot('测测你和朋友在历史上是什么关系','ourword.ai/ce · 64 种历史人格');
+    k.txt(t.who,y,'700 '+(big?118:140)+'px '+SERIF,INK); k.txt(t.title,y+84,'500 34px '+SERIF,f.color)}
+  /* 间距放宽：名字和称号之间、两个人之间、标签和正文之间都留足；
+     底下那句「你和你的朋友，又是谁和谁」跟页脚说的是一件事，删了，正文和页脚之间空出来 */
+  person(a,390,fa);
+  k.txt('×',580,'300 60px '+SANS,ACC);
+  person(b,740,fb);
+  x.font='600 38px '+SANS; var lw=x.measureText(rel.l).width+96, lx=(W-lw)/2;
+  x.fillStyle=ACC;k.rrect(lx,900,lw,72,36);x.fill();
+  k.txt(rel.l,950,'600 38px '+SANS,'#fff');
+  var lg=rel.t.length>63; k.wrap(rel.t,1066,(lg?'34px ':'38px ')+SERIF,INK,800,lg?58:66);
+  k.foot('测测你和朋友在历史上是什么关系','长按识别二维码，看我们俩'); k.qr(inviteUrl(a));
   k.done();
 }
 $('shotX').onclick=function(){$('shot').style.display='none'};

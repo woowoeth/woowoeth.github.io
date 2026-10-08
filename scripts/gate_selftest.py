@@ -1312,6 +1312,19 @@ def _ce_page_no_flip():
     return go
 
 
+def _ce_no_qr_lib():
+    """页面不再引二维码库 —— 分享卡照出，只是右下角没有码，肉眼不容易发现。"""
+    def go():
+        t = read(CEPAGE)
+        tag = '<script src="/assets/vendor/qrcode-generator-1.4.4.js" defer></script>'
+        if tag not in t:
+            return None
+        write(CEPAGE, t.replace(tag, "", 1))
+        return CEPAGE
+
+    return go
+
+
 def _ce_fake_real_partner():
     """把一个按五维推出来的拍档标成「史上真事」—— 冒充史实。"""
     def go():
@@ -1771,6 +1784,8 @@ CASES = [
      "RELATIONS 里却没有这一对"),
     ("历史分身·平局偏左", "check_ce.py", CEPAGE, _ce_tie_left(),
      "分布偏了"),
+    ("历史分身·分享卡没二维码", "check_ce.py", CEPAGE, _ce_no_qr_lib(),
+     "页面没引二维码库"),
 ]
 
 

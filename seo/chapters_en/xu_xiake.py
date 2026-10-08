@@ -78,7 +78,7 @@ CHAPTERS = [
              "d": "His friend's plan was sensible: go home, raise money, return. Xu did not weigh what he had lost. He weighed what going home would do: his family, seeing him robbed, would never let him go. The loss was already gone either way.",
              "eg": "Your project loses half its budget and someone says pause until next year. Ask first: once paused, will anyone approve it next year?"},
             {"n": "Not turning back is not the same as not stopping",
-             "d": "He did not walk on barefoot. In borrowed clothes he raised money in Hengzhou, took the donation he had called not his wish, and left Jingwen waiting for it while he made a side trip. Only then did he go west. Keeping the direction did not mean refusing to rest.",
+             "d": "Detour to Jingzhou to borrow money, or go on to Guangxi? He drew lots at a river temple: Guangxi, very auspicious. He borrowed twenty taels against twenty mu of land rent and took a donation he had not wanted. Only then did he go west. Keeping direction is not refusing to rest.",
              "eg": "Laid off but set on your own project? Take a stopgap job to cover rent first, rather than burning every bridge at once."},
             {"n": "Recover what can be recovered",
              "d": "At first light he waded back into the river to look for the box he had thrown overboard. The money was gone, but the rubbings and local histories the monk had saved were still dry. Count what is left before deciding.",

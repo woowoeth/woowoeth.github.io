@@ -35,6 +35,8 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 sys.path.insert(0, os.path.join(ROOT, "seo"))
 
+sys.path.insert(0, HERE)
+from gate_env import skip  # noqa: E402  跳过的统一出口：CI 上跳过即红
 import ce_data as D        # noqa: E402
 import hw_chapters as C    # noqa: E402
 import hw_kind             # noqa: E402
@@ -195,7 +197,7 @@ def main():
                 res = None
                 bad.append("模拟答题跑不起来：%s" % e)
             if res == "nonode":
-                print("  （没有 node，分布检查跳过）")
+                skip("  （没有 node，分布检查跳过）")
             elif res is None:
                 bad.append("模拟答题跑不起来：%s" % (out.stderr.strip()[:200] if out else ""))
             else:
@@ -226,6 +228,27 @@ def main():
                     if x.get("real") and (t["who"], data["types"][j]["who"], kind) not in pairs:
                         bad.append("%s 的%s %s 标了「史上真事」，RELATIONS 里却没有这一对"
                                    % (t["who"], "拍档" if kind == "ally" else "宿敌", data["types"][j]["who"]))
+
+            # ⑨ 分享卡右下角的二维码：库要在、页面要引它，最长的邀请链接画出来要放得进
+            #   留给它的那块（canvas 里 4px 一格、两格静区，留了 132px = 33 格 → 码本身最多 29 格）
+            lib = "/assets/vendor/qrcode-generator-1.4.4.js"
+            if lib not in html:
+                bad.append("页面没引二维码库 %s：分享卡上不会有码" % lib)
+            elif not os.path.exists(os.path.join(ROOT, lib.lstrip("/"))):
+                bad.append("二维码库文件不在：%s" % lib)
+            else:
+                longest = "https://ourword.ai/tw/ce/?f=%d" % (len(data["types"]) - 1)
+                js = ("var qrcode=require(%s);var q=qrcode(0,'M');q.addData(%s);q.make();"
+                      "console.log(q.getModuleCount())" % (json.dumps(os.path.join(ROOT, lib.lstrip("/"))), json.dumps(longest)))
+                try:
+                    o = subprocess.run(["node", "-e", js], capture_output=True, text=True, timeout=30)
+                    n = int(o.stdout.strip()) if o.returncode == 0 else -1
+                except FileNotFoundError:
+                    n = None
+                if n is None:
+                    skip("  （没有 node，二维码尺寸检查跳过）")
+                elif n < 0 or n > 29:
+                    bad.append("最长的邀请链接 %s 画成二维码是 %s 格，超出分享卡留的 29 格" % (longest, n))
 
     if bad:
         print("\n  历史分身测试的内容有 %d 处问题：" % len(bad))
