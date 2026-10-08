@@ -64,21 +64,21 @@ CHAPTERS = [
         "dek": "Halfway through, you lose your money and your things in one night, and everyone tells you to go home first. Why did Xu Xiake not go home?",
         "story":
             "In the spring of 1637 Xu Xiake, just past fifty, was sailing "
-            "west up the Xiang river with a monk named Jingwen and a "
-            "servant. One night robbers stormed the boat with torches and "
-            "swords. He threw his money box into the river, jumped into "
+            "west up the Xiang river with the monk Jingwen and a servant. "
+            "One night robbers stormed the boat. He threw his money box into the river, jumped into "
             "waist-deep water and climbed naked onto a neighbouring boat. "
             "A fellow passenger died. Back in Hengzhou, a friend suggested "
             "going home to raise money and coming back. ==He reasoned that "
             "if he went home now, his family would never let him leave "
-            "again.== He borrowed twenty taels, pledging his land rent, and "
-            "set off west again.",
+            "again.== He borrowed twenty taels against his land rent, took "
+            "fourteen more raised in a prince's household, and on 20 March "
+            "set off west in the rain.",
         "f": [
             {"n": "Ask whether you could leave again",
              "d": "His friend's plan was sensible: go home, raise money, return. Xu did not weigh what he had lost. He weighed what going home would do: his family, seeing him robbed, would never let him go. The loss was already gone either way.",
              "eg": "Your project loses half its budget and someone says pause until next year. Ask first: once paused, will anyone approve it next year?"},
             {"n": "Not turning back is not the same as not stopping",
-             "d": "He did not walk on barefoot. He stayed in Hengzhou for three weeks in borrowed clothes, borrowed money against his land, and only then boarded a boat. Keeping the direction did not mean refusing to rest.",
+             "d": "He did not walk on barefoot. In borrowed clothes he raised money in Hengzhou, took the donation he had called not his wish, and left Jingwen waiting for it while he made a side trip. Only then did he go west. Keeping the direction did not mean refusing to rest.",
              "eg": "Laid off but set on your own project? Take a stopgap job to cover rent first, rather than burning every bridge at once."},
             {"n": "Recover what can be recovered",
              "d": "At first light he waded back into the river to look for the box he had thrown overboard. The money was gone, but the rubbings and local histories the monk had saved were still dry. Count what is left before deciding.",
