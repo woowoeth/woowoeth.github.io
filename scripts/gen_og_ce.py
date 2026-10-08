@@ -34,7 +34,7 @@ h1{position:absolute;left:92px;top:130px;margin:0;font:700 112px/1.15 "Noto Seri
 .seal{width:58px;height:58px;background:#a33b2e;color:#fff;display:flex;align-items:center;justify-content:center;font:700 38px "Noto Serif SC","Songti SC",serif;border-radius:6px}
 </style></head><body><div class="f"></div>
 <div class="eb">YOUR HISTORICAL TWIN</div><h1>测测你的历史分身</h1>
-<div class="sub">20 道遇事题 · 2 分钟 · 32 种历史人格</div>
+<div class="sub">24 道遇事题 · 3 分钟 · 64 种历史人格</div>
 <div class="chips">%s</div>
 <div class="ft"><div class="seal">人</div>ourword.ai/ce · 每一种结果都链到他当年的真事</div>
 </body></html>""" % chips

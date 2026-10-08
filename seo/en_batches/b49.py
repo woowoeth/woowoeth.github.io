@@ -99,6 +99,8 @@ SCENES = [
          [("xu-xiake", "the-burned-books")]),
     ]),
     ("They've started watching me", "Dealing with people", [
+        ("I took the risk for everyone, and now they suspect me.",
+         [("xu-xiake", "jingwen-and-the-fire")]),
         ("Everyone blamed me for holding them up.",
          [("xu-xiake", "the-night-we-waited")]),
     ]),
@@ -126,5 +128,6 @@ ASKS = {
     "xu-xiake/the-night-we-waited": "Everyone blamed me for holding them up.",
     "xu-xiake/step-by-step-in-snow": "The road is long and I'm testing every single step.",
     "xu-xiake/the-gazetteer-was-wrong": "Everyone has said it for years, but it's not what I saw.",
+    "xu-xiake/jingwen-and-the-fire": "I took the risk for everyone, and now they suspect me.",
     "xu-xiake/beyond-the-guide": "Everyone else glances and moves on. I want to go all the way in.",
 }

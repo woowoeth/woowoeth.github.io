@@ -13,7 +13,7 @@
 
 三个入口参数：
   ?f=<n>  朋友分享来的：他测出第 n 型，你测完显示你们俩在历史上是什么关系
-  ?r=<n>  直接看第 n 型的介绍（「32 型全览」里点进来的就是这个）
+  ?r=<n>  直接看第 n 型的介绍（「64 型全览」里点进来的就是这个）
   #types  32 型全览
 """
 import io
@@ -56,24 +56,26 @@ def partner(t, kind):
     AX = D.AXES
     base, temp = t["code"].split("-")
     other_temp = "燃" if temp == "定" else "定"
+    nbase = len(AX) - 1                      # 不算最后那一维（定/燃）
     if kind == "ally":
-        nb = base[:3] + ("群" if base[3] == "独" else "独")
+        # 64 型：拍档在「独/群」「显/藏」上都互补 —— 一个扛、一个聚人，一个台前、一个幕后
+        nb = base[:3] + ("群" if base[3] == "独" else "独") + ("藏" if base[4] == "显" else "显")
     else:
-        nb = "".join(AX[i][1] if base[i] == AX[i][0] else AX[i][0] for i in range(4))
+        nb = "".join(AX[i][1] if base[i] == AX[i][0] else AX[i][0] for i in range(nbase))
     code = nb + "-" + other_temp
     o = [x for x in D.TYPES if x["code"] == code][0]
     p = "她" if o["who"] in D.FEMALE else "他"
     if kind == "ally":
-        txt = ("你习惯独自扛事，%s擅长聚人成事——你扛不动的，%s找得来人。" % (p, p)
-               if base[3] == "独" else
-               "你擅长聚人成事，%s习惯独自扛事——你顾不过来的细活，%s一个人就能啃下来。" % (p, p))
-        txt += ("你心定，%s心里有火：一个稳住，一个点火。" % p if temp == "定"
-                else "你心里有火，%s心定：一个点火，一个稳住。" % p)
+        a1 = ("你习惯独自扛事，%s擅长聚人成事" % p if base[3] == "独"
+              else "你擅长聚人成事，%s习惯独自扛事" % p)
+        a2 = ("你站在台前，%s藏在幕后" % p if base[4] == "显" else "你藏在幕后，%s站在台前" % p)
+        a3 = ("你心定，%s心里有火" % p if temp == "定" else "你心里有火，%s心定" % p)
+        txt = "%s；%s；%s——你缺的那一块，正好是%s的长处。" % (a1, a2, a3, p)
         lab = "最佳拍档"
     else:
         def d(i, pole):
             return AX[i][2] if pole == AX[i][0] else AX[i][3]
-        txt = "你%s，%s%s；你%s，%s%s——四个维度全反：要么是最强的对手，要么是最好的搭档。" % (
+        txt = "你%s，%s%s；你%s，%s%s——五个维度全反：要么是最强的对手，要么是最好的搭档。" % (
             d(0, base[0]), p, d(0, nb[0]), d(1, base[1]), p, d(1, nb[1]))
         lab = "宿命对手"
     return {"i": D.TYPES.index(o), "l": lab, "t": txt, "real": 0}
@@ -134,6 +136,8 @@ a{color:inherit}
 .from b{color:var(--acc)}
 .faces{display:flex;flex-wrap:wrap;gap:6px;margin:26px 0 8px}
 .faces span{font-size:13px;border:1px solid var(--line);border-radius:999px;padding:3px 10px;color:var(--muted)}
+.pairhook{font-size:14px;line-height:1.7;margin:18px 0 6px;padding-left:12px;border-left:3px solid var(--acc)}
+.tile.mine{border-width:2px}.tile .me{float:right;font-size:11px;color:#fff;background:var(--acc);border-radius:4px;padding:0 6px;line-height:18px}
 /* 答题 */
 #quiz{display:none}
 .prog{height:4px;background:var(--line);border-radius:4px;overflow:hidden;margin:18px 0 6px}
@@ -263,10 +267,10 @@ HTML = r"""<!DOCTYPE html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>测测你的历史分身 · 32 种历史人格 — 人类世界生存法则</title>
-<meta name="description" content="20 道遇事题，2 分钟，测出 2600 年里和你是同一种人的那位：项羽、张良、苏轼、徐霞客、居里、乔布斯……32 种历史人格，每一种都链到他当年的真事。">
+<title>测测你的历史分身 · 64 种历史人格 — 人类世界生存法则</title>
+<meta name="description" content="24 道遇事题，3 分钟，测出 2600 年里和你是同一种人的那位：项羽、张良、苏轼、徐霞客、居里、乔布斯……64 种历史人格，每一种都链到他当年的真事。">
 <meta property="og:title" content="测测你的历史分身">
-<meta property="og:description" content="20 道遇事题，测出 2600 年里和你是同一种人的那位。">
+<meta property="og:description" content="24 道遇事题，测出 2600 年里和你是同一种人的那位。64 种历史人格。">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://ourword.ai/ce/">
 <meta property="og:image" content="https://ourword.ai/ce/og.png">
@@ -279,15 +283,16 @@ HTML = r"""<!DOCTYPE html>
 </head>
 <body>
 <div class="wrap">
-  <div class="top mast-top"><a href="/"><span class="seal">人</span>人类世界生存法则</a><a href="#types" id="toTypes">32 型全览</a></div>
+  <div class="top mast-top"><a href="/"><span class="seal">人</span>人类世界生存法则</a><a href="#types" id="toTypes">64 型全览</a></div>
 
   <section id="start">
     <h1 class="serif">测测你的<br>历史分身</h1>
-    <p class="sub">20 道遇事题 · 2 分钟 · 32 种历史人格</p>
+    <p class="sub">24 道遇事题 · 3 分钟 · 64 种历史人格</p>
     <div class="from" id="fromBox" style="display:none"></div>
     <p class="hook">遇到事的时候，你是先冲，还是先等？<br>是硬刚，还是绕过去？<br>2600 年里，总有一个人和你是同一种人。</p>
     <button class="btn" id="go">开始测试</button>
     <div class="faces" id="faces"></div>
+    <p class="pairhook">测完叫朋友也来测，看你们俩在历史上是什么关系：君臣、宿敌，还是隔代知己。</p>
     <p class="muted" style="font-size:13px">每一种结果，都链到那个人当年的真事。</p>
   </section>
 
@@ -349,7 +354,11 @@ function rgba(c,a){if(c.charAt(0)==='#'){var n=parseInt(c.slice(1),16);return 'r
   return c.replace('rgb(','rgba(').replace(')',','+a+')')}
 /* 测完的答案存在本机（只存 20 个数）：点进别的人物再回来、或者打开朋友的链接，不用重测。 */
 var KEY='ce_ans_v2';
-function save(){saved=ans.slice();try{localStorage.setItem(KEY,JSON.stringify(ans))}catch(e){}}
+function save(){saved=ans.slice();try{localStorage.setItem(KEY,JSON.stringify(ans));localStorage.removeItem(KEY+'_wip')}catch(e){}}
+/* 答到一半离开（切去回个消息）回来能接着答，不用从头再来 */
+function saveWip(){try{localStorage.setItem(KEY+'_wip',JSON.stringify({a:ans,c:cur}))}catch(e){}}
+function loadWip(){try{var w=JSON.parse(localStorage.getItem(KEY+'_wip')||'null');
+  if(w&&w.a&&w.a.length===Q.length&&w.c>0&&w.c<Q.length)return w}catch(e){}return null}
 function load(){try{var a=JSON.parse(localStorage.getItem(KEY)||'null');
   if(a&&a.length===Q.length&&a.every(function(v){return v===-2||v===-1||v===0||v===1||v===2}))return a}catch(e){}return null}
 var saved=load();
@@ -359,6 +368,7 @@ var saved=load();
   var f=$('faces'), pick=[9,23,30,11,4,26,13,15,16,2,22,8];
   f.innerHTML=pick.map(function(i){var c=famCol(fam(T[i]));return '<span style="color:'+c+';border-color:'+rgba(c,.45)+'">'+esc(T[i].who)+'</span>'}).join('')+'<span>……</span>';
   if(fromIdx>=0){var t=T[fromIdx];
+    document.title='朋友测出来是'+t.who+'，你呢？测测你的历史分身';
     $('fromBox').style.display='block';
     $('fromBox').innerHTML='你的朋友测出来是 <b>'+esc(t.who)+'</b>（'+esc(t.title)+'）。<br>测完看看，你们俩在历史上是什么关系。';
     trk('ce_from_open',{from:t.who});}
@@ -369,6 +379,9 @@ var saved=load();
     b.onclick=function(){ans=saved.slice();trk('ce_reopen',{who:t0.who});renderType(t0,scoreOf(D,ans))};}}
 })();
 $('go').onclick=function(){ans=new Array(Q.length);cur=0;show('quiz');paintQ();trk('ce_start',{from:fromIdx>=0?T[fromIdx].who:''})};
+(function(){var w=loadWip();if(!w)return;var b=document.createElement('button');b.className='btn ghost';b.id='resume';
+  b.textContent='接着上次答（第 '+(w.c+1)+' / '+Q.length+' 题）';$('go').insertAdjacentElement('afterend',b);
+  b.onclick=function(){ans=w.a.map(function(v){return v===null?undefined:v});cur=w.c;show('quiz');paintQ();trk('ce_resume',{at:w.c})};})();
 
 /* ── 答题 ── */
 function paintQ(){
@@ -383,8 +396,12 @@ function paintQ(){
 }
 [].forEach.call($('dots').children,function(b){b.onclick=function(){
   ans[cur]=+b.dataset.v; paintQ();
-  setTimeout(function(){ if(cur<Q.length-1){cur++;paintQ()} else finish(); },180);
+  setTimeout(function(){ if(cur<Q.length-1){cur++;paintQ();saveWip();if(cur===Q.length/2)teaser()} else finish(); },180);
 }});
+/* 答到一半先透露一点：分身属于哪个家族（按已答的题现算）—— 让人想把剩下一半答完 */
+function teaser(){var s=scoreOf(D,ans),f=D.fam[s.pole[0]+s.pole[2]];
+  if(!f)return;var e=$('toast');e.textContent='过半了：你的历史分身来自「'+f.name+'」家族';e.classList.add('on');
+  setTimeout(function(){e.classList.remove('on')},2600);trk('ce_teaser',{fam:f.name})}
 $('prev').onclick=function(){if(cur>0){cur--;paintQ()}};
 
 /*SCORE-BEGIN*/
@@ -413,7 +430,7 @@ function scoreOf(D,ans){
   /* 显示刻度 10–98：照样按答题现算，只是不让它出 0 和满分 ——
      第一版极端答法测出「胆识 0」「识人 100」，0 像程序坏了，100 像假的。 */
   var dims=DIMS.map(function(d){return mx[d]?Math.round(10+88*raw[d]/mx[d]):10});
-  var code=pole.slice(0,4).join('')+'-'+pole[4];
+  var nb=A.length-1, code=pole.slice(0,nb).join('')+'-'+pole[nb];
   var idx=-1; for(var n=0;n<T.length;n++)if(T[n].code===code){idx=n;break}
   return {pct:pct,pole:pole,dims:dims,code:code,idx:idx};
 }
@@ -423,15 +440,15 @@ function match(s,t){
   var dot=0,na=0,nb=0; s.dims.forEach(function(x,i){dot+=x*t.dims[i];na+=x*x;nb+=t.dims[i]*t.dims[i]});
   var cos=(na&&nb)?dot/Math.sqrt(na*nb):0;
   var lean=0; t.code.replace('-','').split('').forEach(function(ch,i){lean+= (A[i][0]===ch?s.pct[i]:100-s.pct[i])});
-  lean/=5;
+  lean/=A.length;
   return Math.round(100*(0.5*cos+0.5*lean/100));
 }
 /* 答得不像真答的时候，明说结果可能不准 —— 而不是装作很准。 */
 function notice(){
   var zero=0,cnt={},mx=0;
   ans.forEach(function(v){v=v||0;if(!v)zero++;cnt[v]=(cnt[v]||0)+1;if(cnt[v]>mx)mx=cnt[v]});
-  if(zero>=10)return '你有 '+zero+' 道题选了「都有可能」，结果可能没那么准。凭第一反应再测一次，会更像你。';
-  if(mx>=18)return '你几乎每道题都点在同一个位置。A 和 B 是会换边的，认真读一遍题再测，结果会更准。';
+  if(zero>=Q.length/2)return '你有 '+zero+' 道题选了「都有可能」，结果可能没那么准。凭第一反应再测一次，会更像你。';
+  if(mx>=Q.length-2)return '你几乎每道题都点在同一个位置。A 和 B 是会换边的，认真读一遍题再测，结果会更准。';
   return '';
 }
 
@@ -455,11 +472,15 @@ function relation(a,b){
   if(a.who===b.who)return {l:'灵魂双胞胎',t:'你们测出了同一个人——不用解释，对方就懂。'};
   for(var i=0;i<D.rel.length;i++){var r=D.rel[i];
     if((r[0]===a.who&&r[1]===b.who)||(r[0]===b.who&&r[1]===a.who))return {l:r[2],t:r[3],real:1};}
-  var d=0; for(var k=0;k<4;k++)if(a.code[k]!==b.code[k])d++;
-  var x=D.reld[String(d)]; return {l:x[0],t:x[1]};
+  var d=0,diff=[]; for(var k=0;k<A.length-1;k++)if(a.code[k]!==b.code[k]){d++;diff.push(k)}
+  var x=D.reld[String(d)];
+  /* 推算出来的关系，说清在哪几维相反，比一句通用的话好认 */
+  function dsc(t,k){return t.code[k]===A[k][0]?A[k][2]:A[k][3]}
+  var sp=diff.slice(0,2).map(function(k){return a.who+dsc(a,k)+'，'+b.who+dsc(b,k)}).join('；');
+  return {l:x[0],t:(sp?sp+'。':'')+x[1]};
 }
 function arRow(lab,x){var o=T[x.i];
-  return '<a class="ar" href="'+typeHref(x.i)+'" data-trk="ce_to_partner"><div class="arh"><span class="arl">'+lab+'</span><span class="arn serif">'+esc(o.who)+'</span><span class="art">'+(x.real?esc(x.l)+' · 史上真事':'按五维推算')+'</span></div><p>'+esc(x.t)+'</p></a>'}
+  return '<a class="ar" href="'+typeHref(x.i)+'" data-trk="ce_to_partner"><div class="arh"><span class="arl">'+lab+'</span><span class="arn serif">'+esc(o.who)+'</span><span class="art">'+(x.real?esc(x.l)+' · 史上真事':'按六维推算')+'</span></div><p>'+esc(x.t)+'</p></a>'}
 function invite(t){
   var url=location.origin+location.pathname+'?f='+T.indexOf(t);
   var txt='我测出来是'+t.who+'（'+t.title+'）。你遇事像历史上的谁？测完看看我们俩是什么关系：';
@@ -487,7 +508,7 @@ function renderType(t,me){
   var h='', m=me?match(me,t):null, P=he(t), fr=(me&&fromIdx>=0)?T[fromIdx]:null;
   h+='<div class="hero"><div class="eyebrow">Your Historical Twin · 你的历史分身</div>';
   if(me)h+='<div class="pill">◆ 你的历史分身契合度 <b data-count="'+m+'" data-suf="%">'+m+'%</b> ◆</div>';
-  else h+='<div class="pill">◆ 32 型之一 · '+esc(f.name)+' ◆</div>';
+  else h+='<div class="pill">◆ 64 型之一 · '+esc(f.name)+' ◆</div>';
   h+='<div class="name serif'+(t.who.length>3?' long':'')+'">'+esc(t.who)+'</div><div class="rule"><i></i><b></b><i></i></div>';
   h+='<p class="title serif">'+esc(t.title)+'</p>';
   h+='<div class="chips"><span class="chip solid">'+esc(t.code)+'</span><span class="chip">'+esc(f.name)+' · '+esc(f.tag)+'</span></div>';
@@ -538,9 +559,10 @@ function renderType(t,me){
     var mine=saved?scoreOf(D,saved):null;
     h+='<div class="sec"><button class="btn" id="tryIt">测测你是不是'+esc(t.who)+'</button>'
       +(mine&&mine.idx>=0?'<button class="btn ghost" id="backMine">回到我的结果（'+esc(T[mine.idx].who)+'）</button>':'')
-      +'<a class="btn ghost" href="#types">看全部 32 型</a></div>';
+      +'<a class="btn ghost" href="#types">看全部 64 型</a></div>';
   }
   $('result').innerHTML=h; show('result');
+  if(me)document.title='我是'+t.who+' · '+t.title+'——测测你的历史分身';
   [].forEach.call(document.querySelectorAll('[data-trk]'),function(a){a.onclick=function(){trk(a.dataset.trk,{who:t.who})}});
   var retake=function(){ans=new Array(Q.length);cur=0;show('quiz');paintQ()};
   if(me){
@@ -619,15 +641,17 @@ function card(t,me,m){
   x.fillStyle=f.color;x.fillRect(W/2-170,548,120,5);x.fillRect(W/2+50,548,120,5);x.beginPath();x.arc(W/2,550,10,0,7);x.fill();
   k.txt(t.title,640,'600 54px '+SERIF,INK);
   k.txt(t.code+'  ·  '+f.name,712,'500 34px '+SANS,f.color);
-  var y=k.wrap('“'+t.quote+'”',812,'italic 44px '+SERIF,INK,820,68);
-  k.txt('—— '+t.quote_src,y+6,'28px '+SANS,MUT);
+  var y=k.wrap('“'+t.quote+'”',800,'italic 42px '+SERIF,INK,820,62);
+  k.txt('—— '+t.quote_src,y+2,'26px '+SANS,MUT);
+  /* 最容易让人说「太准了」的那一句：三句「你一定干过的事」里的第一句 */
+  if(t.moments&&t.moments[0]&&y<930)k.wrap('你一定干过：'+t.moments[0],y+62,'30px '+SANS,f.color,860,44);
   var order=DIMS.map(function(d,i){return [d,me.dims[i]]}).sort(function(a,b){return b[1]-a[1]});
   var bx=[[100,'最高维度',order[0][0],String(order[0][1])],[400,'分身契合度',t.who,m+'%'],[700,'待提升',order[5][0],String(order[5][1])]];
-  bx.forEach(function(b,i){var bw=280,bh=210,by=1010,mid=i===1;x.fillStyle=mid?f.color:CARD;x.strokeStyle=mid?f.color:LINE;x.lineWidth=3;
+  bx.forEach(function(b,i){var bw=280,bh=210,by=1040,mid=i===1;x.fillStyle=mid?f.color:CARD;x.strokeStyle=mid?f.color:LINE;x.lineWidth=3;
     k.rrect(b[0],by,bw,bh,24);x.fill();x.stroke();
     x.textAlign='center';x.fillStyle=mid?'#fff':INK;x.font='700 72px '+SERIF;x.fillText(b[3],b[0]+bw/2,by+100);
     x.font='34px '+SANS;x.fillStyle=mid?'rgba(255,255,255,.9)':MUT;x.fillText(b[2],b[0]+bw/2,by+150);x.font='26px '+SANS;x.fillText(b[1],b[0]+bw/2,by+190)});
-  k.foot('测测你的历史分身','ourword.ai/ce · 32 种历史人格');
+  k.foot('测测你的历史分身','ourword.ai/ce · 64 种历史人格');
   k.done();
 }
 /* 关系卡：两个人上下排（名字最长五个字，左右排放不下），中间一枚关系章 */
@@ -646,18 +670,19 @@ function pairCard(a,b,rel){
   var y=k.wrap(rel.t,960,'40px '+SERIF,INK,820,64);
   x.fillStyle=LINE;x.fillRect(W/2-60,y+40,120,3);
   k.txt('你和你的朋友，又是历史上的谁和谁？',y+120,'34px '+SANS,MUT);
-  k.foot('测测你和朋友在历史上是什么关系','ourword.ai/ce · 32 种历史人格');
+  k.foot('测测你和朋友在历史上是什么关系','ourword.ai/ce · 64 种历史人格');
   k.done();
 }
 $('shotX').onclick=function(){$('shot').style.display='none'};
 
 /* ── 32 型全览 ── */
 function renderTypes(){
-  var order=[['进','谋'],['进','真'],['退','谋'],['退','真']], h='<h1 class="serif" style="font-size:30px;margin:26px 0 4px">32 种历史人格</h1><p class="muted" style="margin:0">四个家族，十六个基础型，每型分「定」和「燃」两种。</p>';
+  var order=[['进','谋'],['进','真'],['退','谋'],['退','真']], h='<h1 class="serif" style="font-size:30px;margin:26px 0 4px">64 种历史人格</h1><p class="muted" style="margin:0">四个家族，三十二个基础型，每型再分「定」和「燃」两种。</p>';
   order.forEach(function(k){var f=D.fam[k[0]+k[1]];
     h+='<div class="fam"><h3 class="serif" style="color:'+f.color+'">'+f.name+'</h3><p class="ft">'+k[0]+' · '+k[1]+' —— '+f.tag+'</p><div class="grid">';
     T.forEach(function(t,i){if(t.code[0]===k[0]&&t.code[2]===k[1])
-      h+='<a class="tile" href="'+typeHref(i)+'" style="border-color:'+f.color+'33"><b>'+esc(t.who)+'</b><span>'+esc(t.title)+'</span><em style="color:'+f.color+'">'+esc(t.code)+'</em></a>'});
+      var mine=saved&&scoreOf(D,saved).idx===i;
+      h+='<a class="tile'+(mine?' mine':'')+'" href="'+typeHref(i)+'" style="border-color:'+(mine?f.color:f.color+'33')+'"><b>'+esc(t.who)+(mine?'<span class="me">你</span>':'')+'</b><span>'+esc(t.title)+'</span><em style="color:'+f.color+'">'+esc(t.code)+'</em></a>'});
     h+='</div></div>';});
   h+='<div class="sec"><button class="btn" id="tGo">开始测试</button></div>';
   $('types').innerHTML=h; show('types'); $('tGo').onclick=function(){ans=new Array(Q.length);cur=0;show('quiz');paintQ()};

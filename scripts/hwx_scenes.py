@@ -346,6 +346,8 @@ SCENES = [
      [("strategies-of-the-warring-states", "burning-the-debts"), ("guiguzi", "open-and-close")]),
 ]),
 ("被猜忌", "跟人打交道", [
+    ("我替大家扛了事，回头却被怀疑。",
+     [("xu-xiake", "jingwen-and-the-fire")]),
     ("因为我，大家都慢了一步。",
      [("xu-xiake", "the-night-we-waited")]),
     ("当时所有人都在怪我耽误事。",

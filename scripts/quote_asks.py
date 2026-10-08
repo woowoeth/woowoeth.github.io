@@ -418,6 +418,8 @@ QUOTE_ASKS = {
         "路还长，可我每一步都在试探。",
     "xu-xiake/the-gazetteer-was-wrong":
         "大家都这么说，可我看到的不是这样。",
+    "xu-xiake/jingwen-and-the-fire":
+        "我替大家扛了事，回头却被怀疑。",
     "xu-xiake/beyond-the-guide":
         "别人看一眼就走，我总想钻进去看。",
     "xu-xiake/jingwens-bones":

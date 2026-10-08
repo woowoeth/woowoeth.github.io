@@ -41,6 +41,8 @@ import hw_kind             # noqa: E402
 import hw_slugs            # noqa: E402
 
 BANNED = {"毛泽东", "粟裕"}
+# 模拟答题的人数：每型期望至少 600 人，0.75–1.3 倍的带宽才不会被抽样噪声撞红
+SIMS = 40000
 
 
 def grams(s):
@@ -55,10 +57,13 @@ def main():
     for c in idx["chapters"]:
         by_who.setdefault(c.get("p"), []).append(c)
 
-    # ① 32 型齐全
+    # ① 型齐全（2^维数）
     codes = [t["code"] for t in D.TYPES]
-    want = {a + b + c + d + "-" + e
-            for a in "进退" for b in "刚柔" for c in "谋真" for d in "独群" for e in "定燃"}
+    # 所有合法代号：前面几维各取一极，最后一维（定/燃）接在「-」后面。
+    # 2026-10-08 从五维 32 型扩到六维 64 型；这里按 AXES 现算，不写死几维。
+    import itertools
+    heads = ["".join(x) for x in itertools.product(*[(ax[0], ax[1]) for ax in D.AXES[:-1]])]
+    want = {h + "-" + e for h in heads for e in D.AXES[-1][:2]}
     if len(codes) != len(set(codes)):
         bad.append("有重复的类型代号：%s" % sorted({c for c in codes if codes.count(c) > 1}))
     for c in sorted(want - set(codes)):
@@ -175,12 +180,12 @@ def main():
         else:
             sim = ("var D=%s;\n%s\n"
                    "var seed=7;function rnd(){seed=(seed*1103515245+12345)%%2147483648;return seed/2147483648}\n"
-                   "var pool=[-2,-1,-1,0,0,1,1,2],N=20000,c={};\n"
+                   "var pool=[-2,-1,-1,0,0,1,1,2],N=%d,c={};\n"
                    "for(var k=0;k<N;k++){var a=D.qs.map(function(){return pool[Math.floor(rnd()*pool.length)]});"
                    "var r=scoreOf(D,a);c[r.code]=(c[r.code]||0)+1}\n"
                    "var allA=scoreOf(D,D.qs.map(function(){return -2})).code,"
                    "allB=scoreOf(D,D.qs.map(function(){return 2})).code;\n"
-                   "console.log(JSON.stringify({n:N,c:c,allA:allA,allB:allB}))" % (dm.group(1), m.group(1)))
+                   "console.log(JSON.stringify({n:N,c:c,allA:allA,allB:allB}))" % (dm.group(1), m.group(1), SIMS))
             try:
                 out = subprocess.run(["node", "-e", sim], capture_output=True, text=True, timeout=120)
                 res = json.loads(out.stdout) if out.returncode == 0 else None
@@ -194,17 +199,18 @@ def main():
             elif res is None:
                 bad.append("模拟答题跑不起来：%s" % (out.stderr.strip()[:200] if out else ""))
             else:
-                ideal = res["n"] / 32.0
+                ideal = res["n"] / float(len(want))
                 who = {t["code"]: t["who"] for t in D.TYPES}
                 for code in sorted(want):
                     r = res["c"].get(code, 0) / ideal
                     if r == 0:
-                        bad.append("%s（%s）在两万次模拟里一次都没抽到" % (who.get(code, code), code))
+                        bad.append("%s（%s）在 %d 次模拟里一次都没抽到" % (who.get(code, code), code, SIMS))
                     elif r < 0.75 or r > 1.3:
                         bad.append("%s（%s）抽中率是理想值的 %.2f 倍 —— 分布偏了"
                                    % (who.get(code, code), code, r))
                 for k, v in (("一路点 A", res.get("allA")), ("一路点 B", res.get("allB"))):
-                    if (v or "")[:4] in ("进刚谋独", "退柔真群"):
+                    nb = len(D.AXES) - 1
+                    if (v or "")[:nb] in ("".join(ax[0] for ax in D.AXES[:-1]), "".join(ax[1] for ax in D.AXES[:-1])):
                         bad.append("%s落在了极端型 %s（%s）—— A/B 没有对调，「全选 A」会被拿来晒"
                                    % (k, who.get(v, v), v))
             # ⑧ 拍档与宿敌（读页面数据 —— 用户看到的就是这一份）
@@ -226,10 +232,11 @@ def main():
         for b in bad[:12]:
             print("    ✗ " + b)
         return 1
-    print("  历史分身：32 型齐全、人都在库里、每一篇原文都在、短处都有出处、金句有来处、"
-          "20 道题每维 4 道对调 2 道；\n"
-          "      96 句「干过的事」不重复不带人名；拍档宿敌都是别人、标史实的都查得到；\n"
-          "      两万次模拟 32 型都抽得到、分布匀，一路点 A / 点 B 都不落极端（跑的是页面里那份打分代码）")
+    print("  历史分身：%d 型齐全、人都在库里、每一篇原文都在、短处都有出处、金句有来处、"
+          "%d 道题每维 4 道对调 2 道；\n"
+          "      %d 句「干过的事」不重复不带人名；拍档宿敌都是别人、标史实的都查得到；\n"
+          "      %d 次模拟每型都抽得到、分布匀，一路点 A / 点 B 都不落极端（跑的是页面里那份打分代码）"
+          % (len(want), len(D.QUESTIONS), sum(len(v) for v in D.MOMENTS.values()), SIMS))
     return 0
 
 

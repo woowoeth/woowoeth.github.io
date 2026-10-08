@@ -45,6 +45,10 @@ PARENT = {
          "w": "To say an authority is wrong, lay out what you walked, then name the step it got wrong",
          "ready": True,
          "line": "He walked the rivers one by one and wrote down exactly where the official gazetteer erred"},
+        {"k": "jingwen-and-the-fire", "n": "Jingwen and the Fire",
+         "w": "The thing you did for everyone becomes the reason they suspect you",
+         "ready": True,
+         "line": "He fought the robbers' fire and saved everyone's things, then was cursed as the one who let them in"},
         {"k": "beyond-the-guide", "n": "Past Where the Guide Would Go",
          "w": "Go in where others glance and leave, and decide beforehand where you will turn back",
          "ready": True,
@@ -331,6 +335,46 @@ CHAPTERS = [
             "distrust the whole book. Xu named one specific error, and in "
             "Guilin he still used the maps and gazetteers to plan his "
             "walks.",
+    },
+    {
+        "k": "jingwen-and-the-fire", "n": "Jingwen and the Fire",
+        "w": "The thing you did for everyone becomes the reason they suspect you",
+        "src": "The Travel Diaries of Xu Xiake, Chu diary",
+        "dek": "You took a risk for everyone and then found yourself suspected. What the monk Jingwen did on the night of the robbery, and what he was called for it.",
+        "story":
+            "On the night of the robbery Xu and the others jumped into the "
+            "river. Jingwen stayed aboard and begged the robbers for his "
+            "sutras, and they put them down. When they set the boat alight "
+            "and left, he fought the fire, dived for water, and was stabbed "
+            "twice by a robber who turned back. Using a fallen awning as a "
+            "raft he made three trips, carrying everyone's clothes, books "
+            "and rice to another boat. Then a fellow passenger claiming his "
+            "things turned on him: ==everyone suspects you went ashore to "
+            "bring the robbers==.",
+        "f": [
+            {"n": "Whoever steps up for everyone is suspected first",
+             "d": "Jingwen was the one who went ashore to the crying boy, and the one who fought the fire. Everyone saw the first, so it became the reason to suspect him; the second happened in the dark.",
+             "eg": "You volunteered to deal with the supplier that went wrong, and afterwards the first question is whether you caused it."},
+            {"n": "Those who saw must say it",
+             "d": "Xu wrote it down for him, item by item: he braved blades, cold, fire and water to guard the trunk for its owner, and was cursed instead of thanked. The wronged can rarely defend themselves; the witnesses have to speak.",
+             "eg": "A colleague is blamed and you saw what happened. Say it in the meeting, not just in private sympathy."},
+            {"n": "Feed everyone first",
+             "d": "Next morning, with every pot burned, Jingwen dived for an iron pot and some wet rice, cooked porridge for everyone who had suffered, and ate last himself. Do the most urgent thing first; who was right can wait.",
+             "eg": "The night the project blows up, order everyone dinner. Save the post-mortem for tomorrow."},
+        ],
+        "q": [
+            "Everyone suspects you went ashore to bring the robbers.",
+            "Even the robbers pitied the monk. This man was worse.",
+        ],
+        "apply":
+            "Where you are: you took a risk for everyone, and now you are "
+            "suspected of causing the trouble.\n"
+            "Ask first: did anyone actually see what happened? Who can say "
+            "it for me?\n"
+            "Where it goes wrong: never stepping up again so as not to be "
+            "suspected. Being wronged does not make the doer wrong; Xu "
+            "wrote down everything Jingwen did, which is what a witness "
+            "should do.",
     },
     {
         "k": "beyond-the-guide", "n": "Past Where the Guide Would Go",
