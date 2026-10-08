@@ -8,6 +8,9 @@
 页面是纯前端的：答题、打分、出结果、出分享卡、算两个人的关系，都在浏览器里，
 不收任何数据。计数走站上现成的 GA（window.gtag 在才发）。
 
+这一页也走全站的构建链（scripts/build_all.py 里「历史分身」那一步），之后的挂件、
+语言层、PWA、资源版本号会照样加上；繁体版 tw/ce/ 由 build_tw 自动转出来。
+
 三个入口参数：
   ?f=<n>  朋友分享来的：他测出第 n 型，你测完显示你们俩在历史上是什么关系
   ?r=<n>  直接看第 n 型的介绍（「32 型全览」里点进来的就是这个）
@@ -105,7 +108,12 @@ body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans G
 .serif{font-family:"Noto Serif SC","Songti SC","STSong","SimSun",serif}
 .wrap{max-width:520px;margin:0 auto;padding:22px 20px 64px}
 a{color:inherit}
-.top{display:flex;align-items:center;justify-content:space-between;font-size:13px;color:var(--muted)}
+/* 顶栏带 mast-top：站上的语言 / 夜间工具条（scripts/hwx_lang.py）认这一行，排成它的最后一项。
+   不带的话工具条退成浮在右上角，正好压住「32 型全览」（2026-10-08 跑完整条构建后实测）。
+   它自带 margin-left:auto，会和「32 型全览」平分空白，这里压掉，间距交给 gap。 */
+.top{display:flex;align-items:center;gap:12px;font-size:13px;color:var(--muted)}
+.top #toTypes{margin-left:auto}
+.top #hwx-tools.in-row{margin-left:0;align-self:center}
 .top a{text-decoration:none}
 .seal{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:5px;background:var(--acc);color:#fff;font-family:"Noto Serif SC","Songti SC",serif;font-size:16px;margin-right:8px}
 .eyebrow{font-size:11px;letter-spacing:.32em;color:var(--fam);text-transform:uppercase;text-align:center;font-weight:600}
@@ -266,7 +274,7 @@ HTML = r"""<!DOCTYPE html>
 </head>
 <body>
 <div class="wrap">
-  <div class="top"><a href="/"><span class="seal">人</span>人类世界生存法则</a><a href="#types" id="toTypes">32 型全览</a></div>
+  <div class="top mast-top"><a href="/"><span class="seal">人</span>人类世界生存法则</a><a href="#types" id="toTypes">32 型全览</a></div>
 
   <section id="start">
     <h1 class="serif">测测你的<br>历史分身</h1>

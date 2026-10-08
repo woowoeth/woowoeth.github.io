@@ -1250,6 +1250,63 @@ def _ci_no_build_all():
     return go
 
 
+CEDATA = os.path.join(ROOT, "seo", "ce_data.py")
+CEPAGE = os.path.join(ROOT, "ce", "index.html")
+
+
+def _ce_quote_unsourced():
+    """金句换成一句流传很广、找不到原始出处的话，出处只写人名 ——
+    第一版居里那句就是这样过的（判据当时只要求「出处非空」）。"""
+    def go():
+        t = read(CEDATA)
+        a = '"quote": "进步的路，既不快，也不容易。", "quote_src": "居里夫人《自传笔记》，1923 年"'
+        if a not in t:
+            return None
+        write(CEDATA, t.replace(a, '"quote": "生活中没有什么可怕的东西，只有需要理解的东西。", "quote_src": "玛丽·居里"', 1))
+        return CEDATA
+
+    return go
+
+
+def _ce_page_no_flip():
+    """页面里的题目全部不对调 —— 一路点 A 就落到「进刚谋独」，会被拿去晒。
+    改的是产物（用户拿到的那一页），不是数据：数据对、页面错，才是这条要抓的。"""
+    def go():
+        t = read(CEPAGE)
+        if '"flip":1' not in t:
+            return None
+        write(CEPAGE, t.replace('"flip":1', '"flip":0'))
+        return CEPAGE
+
+    return go
+
+
+def _ce_fake_real_partner():
+    """把一个按五维推出来的拍档标成「史上真事」—— 冒充史实。"""
+    def go():
+        t = read(CEPAGE)
+        if '"real":0' not in t:
+            return None
+        write(CEPAGE, t.replace('"real":0', '"real":1', 1))
+        return CEPAGE
+
+    return go
+
+
+def _ce_tie_left():
+    """平局一律取左极 —— 第一版就是这样，模拟出来韩信 4.5%、杜甫 2.1%。
+    改的是页面里那段真打分代码（判据把它原样抠出来跑）。"""
+    def go():
+        t = read(CEPAGE)
+        a = "var k=first[i]||tot; return k>0?A[i][1]:A[i][0];"
+        if a not in t:
+            return None
+        write(CEPAGE, t.replace(a, "return A[i][0];", 1))
+        return CEPAGE
+
+    return go
+
+
 ENTRYCSS_F = os.path.join(ROOT, "assets", "hw-entry.css")
 HOMEHTML = os.path.join(ROOT, "index.html")
 ENHOMEHTML = os.path.join(ROOT, "en", "index.html")
@@ -1649,6 +1706,14 @@ CASES = [
      "不是中文那份的译文"),
     ("Skill·边界段被人精简掉了", "check_tools.py", SKILLMD, _skill_boundary_gone(),
      "这条边界被删了"),
+    ("历史分身·金句没出处", "check_ce.py", CEDATA, _ce_quote_unsourced(),
+     "出处也没写明是哪部作品"),
+    ("历史分身·全选A出极端", "check_ce.py", CEPAGE, _ce_page_no_flip(),
+     "落在了极端型"),
+    ("历史分身·推算冒充史实", "check_ce.py", CEPAGE, _ce_fake_real_partner(),
+     "RELATIONS 里却没有这一对"),
+    ("历史分身·平局偏左", "check_ce.py", CEPAGE, _ce_tie_left(),
+     "分布偏了"),
 ]
 
 

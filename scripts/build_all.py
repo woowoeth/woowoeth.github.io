@@ -44,6 +44,9 @@ CHAIN = [
     ("GEO 附加项", "scripts/patch_geo_seo.py"),
     ("条目页独立成页", "scripts/apply_redesign.py"),
     ("SEO/GEO 产物", "seo/build_seo.py"),
+    # 「测测你的历史分身」是独立生成的一页：要排在挂件、语言层、繁体站、PWA、
+    # 盖章之前，后面这些步骤才会照样加到它身上、转出 tw/ce/。
+    ("历史分身", "scripts/build_ce.py"),
     ("简体挂件（第一遍）", "scripts/force_chapter_ui.py"),
     ("英文站", "scripts/build_en.py"),
     ("简体挂件（第二遍，此时才知道哪些页有英文版）", "scripts/force_chapter_ui.py"),
