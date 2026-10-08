@@ -231,7 +231,7 @@ function rgba(c,a){if(c.charAt(0)==='#'){var n=parseInt(c.slice(1),16);return 'r
   return c.replace('rgb(','rgba(').replace(')',','+a+')')}
 /* 测完的答案存在本机（只存 20 个数）：点进别的人物再回来、或者打开朋友的链接，不用重测。 */
 var KEY='ce_ans_v2';
-function save(){try{localStorage.setItem(KEY,JSON.stringify(ans))}catch(e){}}
+function save(){saved=ans.slice();try{localStorage.setItem(KEY,JSON.stringify(ans))}catch(e){}}
 function load(){try{var a=JSON.parse(localStorage.getItem(KEY)||'null');
   if(a&&a.length===Q.length&&a.every(function(v){return v===-2||v===-1||v===0||v===1||v===2}))return a}catch(e){}return null}
 var saved=load();
