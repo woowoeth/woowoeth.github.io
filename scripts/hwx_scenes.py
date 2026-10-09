@@ -58,6 +58,8 @@ SCENES = [
      [("coase", "harm-goes-both-ways")]),
 ]),
 ("拖着不开始", "要做决定", [
+    ("想了很多年的事，我就是迈不出第一步。",
+     [("lin-huiyin", "letter-from-shanxi")]),
     ("道理我都懂，就是动不了。",
      [("bhagavad-gita", "frozen-on-the-field"), ("wang-yangming", "unity-of-knowing-and-doing")]),
     ("我想要那个结果，可不想要今天。",
@@ -176,6 +178,8 @@ SCENES = [
      [("porter", "what-not-to-do")]),
 ]),
 ("赢了之后", "有对手", [
+    ("大家都在夸我，可事情还没做完。",
+     [("nightingale", "miss-smith")]),
     ("我到顶了吗，还是上面还有一格。",
      [("i-ching", "arrogant-dragon"), ("art-of-worldly-wisdom", "quit-while-winning")]),
     ("赢了，追下去还是收手？",
@@ -320,6 +324,8 @@ SCENES = [
      [("thucydides", "first-source-that-came-to-hand")]),
 ]),
 ("要说服人", "跟人打交道", [
+    ("数据我都有，可拍板的人就是不看。",
+     [("nightingale", "the-rose-diagram")]),
     ("我说了不算，得让他自己想到。",
      [("guiguzi", "listen-in-reverse"), ("socrates", "midwifery")]),
     ("道理都讲完了，还是没用。",
@@ -900,6 +906,8 @@ SCENES = [
      [("herbert-simon", "good-enough")]),
 ]),
 ("信不信直觉", "跟人打交道", [
+    ("只有我一个人看出来了，我信不信自己？",
+     [("lin-huiyin", "the-name-on-the-beam")]),
     ("我心里打鼓，可一直没说出口。",
      [("xu-xiake", "the-crying-child")]),
     ("直觉和数据打架，我听哪个？",
@@ -1178,6 +1186,8 @@ SCENES = [
      [("cowan", "the-helpers-left")]),
 ]),
 ("照顾老人", "家里的事", [
+    ("家里人病了，我该从哪下手？",
+     [("nightingale", "do-no-harm")]),
     ("爸妈老了，我不知道能做什么。",
      [("hochschild", "second-shift"), ("thomas-gordon", "problem-ownership")]),
     ("照顾他，把我自己也耗空了。",
@@ -1432,6 +1442,8 @@ SCENES = [
      [("su-shi", "east-slope"), ("su-shi", "three-exiles")]),
 ]),
 ("重要的人走了", "人生转弯", [
+    ("人人都说他走得光荣，我只想哭。",
+     [("lin-huiyin", "no-words-for-it")]),
     ("最后一面，我当时不知道是最后一面。",
      [("xu-xiake", "jingwens-bones")]),
     ("人不在了，答应他的还算数吗？",

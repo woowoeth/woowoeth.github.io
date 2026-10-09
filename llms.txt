@@ -1,11 +1,11 @@
 # OurWord (人类世界生存法则)
 
-> 190 people and books on how the world actually works, across 2,600 years
+> 192 people and books on how the world actually works, across 2,600 years
 > 遇到事了，看看以前的人怎么处理
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 190 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 192 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
-一个关于「世界到底怎么运转」的知识库：战略、财富、权力、人性、创业，取自 190 位人物与典籍，跨越 2600 年。每一条都写清楚这个人真正留下的那一个想法、背后的故事、拆开的分则与例子，以及今天怎么用。
+一个关于「世界到底怎么运转」的知识库：战略、财富、权力、人性、创业，取自 192 位人物与典籍，跨越 2600 年。每一条都写清楚这个人真正留下的那一个想法、背后的故事、拆开的分则与例子，以及今天怎么用。
 
 ## Read it
 
@@ -19,19 +19,19 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 ## Topics
 
 - [现代](https://ourword.ai/t/modern/) — 62
-- [工业时代](https://ourword.ai/t/industrial-age/) — 57
+- [工业时代](https://ourword.ai/t/industrial-age/) — 59
 - [先秦与古典时代](https://ourword.ai/t/classical-era/) — 28
 - [权力与组织](https://ourword.ai/t/power/) — 27
 - [心智与情绪](https://ourword.ai/t/mind/) — 22
 - [创业与产品](https://ourword.ai/t/startups/) — 20
+- [学习与成长](https://ourword.ai/t/learning/) — 19
 - [谋略与竞争](https://ourword.ai/t/strategy/) — 19
 - [财富与风险](https://ourword.ai/t/wealth/) — 19
-- [学习与成长](https://ourword.ai/t/learning/) — 18
 - [世界如何运转](https://ourword.ai/t/world/) — 18
 - [家庭与关系](https://ourword.ai/t/family/) — 16
+- [身心与生活](https://ourword.ai/t/living/) — 16
 - [中古](https://ourword.ai/t/medieval/) — 16
 - [识人与相处](https://ourword.ai/t/people/) — 16
-- [身心与生活](https://ourword.ai/t/living/) — 15
 - [秦汉至魏晋](https://ourword.ai/t/han-wei/) — 14
 - [近世](https://ourword.ai/t/early-modern/) — 13
 
@@ -272,6 +272,9 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [礼记 · 一直绷着，连文王武王都做不到](https://ourword.ai/i/liji/one-tension-one-release/): 礼记 · 一直绷着，连文王武王都做不到——一张一弛：松是安排出来的，不是挤出来的。我一停下来就心慌，总觉得在偷懒。这一篇要回答的是：松不是意志力输了，是那根弦本来就不能一直上着。
 - [礼记 · 他道了歉，你可以吃了](https://ourword.ai/i/liji/come-and-eat/): 礼记 · 他道了歉，你可以吃了——嗟来之食：该硬的那一刻过去了，就可以下来了。他认了错，我却还是放不下这口气。这一篇要回答的是：该硬的那一刻过去之后，再硬下去守的是什么。
 - [礼记 · 开个头，别替他走到底](https://ourword.ai/i/liji/open-not-arrive/): 礼记 · 开个头，别替他走到底——道而弗牵，开而弗达：指路，推一把，开个头。我讲了很多遍，他还是不会，最后我只好自己上。这一篇要回答的是：把答案递过去，为什么反而教不会。
+- [林徽因 · 梁下的名字](https://ourword.ai/i/lin-huiyin/the-name-on-the-beam/): 林徽因 · 梁下的名字——只有你一个人看见的东西，先怀疑自己，再去找第二个证据。大家都看不清，只有你看见了，你信不信自己？这一篇要回答的是：林徽因怎么确认佛光寺梁下那个名字。
+- [林徽因 · 哭三弟恒](https://ourword.ai/i/lin-huiyin/no-words-for-it/): 林徽因 · 哭三弟恒——最亲的人为大事死了，你说不出那些现成的漂亮话。最亲的人为一件大事死了，旁人都说光荣，你只想哭。这一篇要回答的是：林徽因怎么写死在空战里的弟弟。
+- [林徽因 · 山西通信](https://ourword.ai/i/lin-huiyin/letter-from-shanxi/): 林徽因 · 山西通信——迈不出门的时候，想想走出来之后是什么样。想了很久的事，就是迈不出第一步。这一篇要回答的是：林徽因第一次跟着去山西考察，路上看见了什么。
 - [蔺相如 · 完璧归赵](https://ourword.ai/i/lin-xiangru/crooked-on-qin/): 蔺相如 · 完璧归赵——先让理亏落到他那边。明知对方多半会赖账，东西给还是不给？这一篇要回答的是：蔺相如为什么主张先答应。
 - [蔺相如 · 引车避匿](https://ourword.ai/i/lin-xiangru/two-tigers/): 蔺相如 · 引车避匿——让一步，不是因为怕。有人当众放话要羞辱你，你一再躲开，身边的人都说你怂。这一篇要回答的是：让的时候，怎么知道自己不是怕。
 - [刘邦 · 三个不如](https://ourword.ai/i/liu-bang/three-i-cannot/): 刘邦 · 三个不如——承认别人比你强。开国庆功宴上他问了一个问题，然后自己给了答案。这一篇要回答的是：那个答案为什么是一种权力，而不是谦虚。
@@ -331,6 +334,9 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [纳瓦尔 · 把自己产品化](https://ourword.ai/i/naval/productize-yourself/): 纳瓦尔 · 把自己产品化——特定知识乘以杠杆。他把整套方法压成四个字。这一篇要回答的是：「自己」和「产品化」各指什么，以及新杠杆好在哪。
 - [尼采 · 杀不死我的](https://ourword.ai/i/nietzsche/what-does-not-kill/): 尼采 · 杀不死我的——这句话有使用条件。这可能是被引用最多也被用错最多的一句话。这一篇要回答的是：它在什么条件下才成立。
 - [尼采 · 凝视深渊](https://ourword.ai/i/nietzsche/gazing-into-abyss/): 尼采 · 凝视深渊——与怪物战斗的代价。这条箴言只有两句话，却是一整套职业风险提示。这一篇要回答的是：那个变化是怎么发生的。
+- [南丁格尔 · 先别让病人更糟](https://ourword.ai/i/nightingale/do-no-harm/): 南丁格尔 · 先别让病人更糟——照顾一个人，第一条是先拿掉让他变糟的东西。家里有人病了，你急着做点什么，可从哪里下手？这一篇要回答的是：南丁格尔到战地医院先做了什么。
+- [南丁格尔 · 画成玫瑰的死因](https://ourword.ai/i/nightingale/the-rose-diagram/): 南丁格尔 · 画成玫瑰的死因——数据要给不看表格的人看，先画成一眼看得懂的图。你手上有扎实的数据，可要说服的人根本不看表格。这一篇要回答的是：南丁格尔怎么让官员看懂士兵死在哪里。
+- [南丁格尔 · 化名史密斯小姐](https://ourword.ai/i/nightingale/miss-smith/): 南丁格尔 · 化名史密斯小姐——出了名以后，别让名声替你做事，把它换成能长久的东西。一件事让你出了名，人人都在夸你。这一篇要回答的是：南丁格尔回国之后，怎么处置她的名声。
 - [非暴力沟通 · 先说观察，别说评论](https://ourword.ai/i/nonviolent-communication/observation-not-evaluation/): 非暴力沟通 · 先说观察，别说评论——第一句就决定成败。多数争吵在开口那一秒就输了。这一篇要回答的是：输在哪一个字上。
 - [非暴力沟通 · 指责底下是需要](https://ourword.ai/i/nonviolent-communication/needs-behind-blame/): 非暴力沟通 · 指责底下是需要——听懂没说出口的那半句。对方在骂你，字面之下他在要什么。这一篇要回答的是：怎么把那半句翻出来。
 - [大野耐一 · 问五次为什么](https://ourword.ai/i/ohno/five-whys/): 大野耐一 · 问五次为什么——修的是保险丝还是滤网。同一个错反复出，复盘也写了，为什么还犯。这一篇要回答的是：大野耐一那个机器停机的例子，五个为什么各问出了什么。
@@ -513,7 +519,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [AI Bubble Monitor / AI 泡沫检测仪](https://ourword.ai/ai/)
 - [Zouni / 走你](https://ourword.ai/zouni/)
 
-## Index (190 entrys)
+## Index (192 entrys)
 
 - [BJ·福格](https://ourword.ai/i/bj-fogg/): BJ·福格（2019年·斯坦福行为设计实验室）——小到不会失败。斯坦福行为设计实验室创始人，研究行为如何被设计出来。他给出一个公式：行为发生需要动机、能力、提示三者同时到位。多数人失败在只调动机——靠决心和自我激励——而动机天然起伏，靠它维持的习惯必然崩。他的主张相反：把行为缩到小得不需要动机，然后挂在一个已有的动作后面。
 - [C.S.刘易斯](https://ourword.ai/i/cs-lewis/): C.S.刘易斯（1898-1963年·英国牛津）——妻子死后几个月的日记。作家，牛津和剑桥的教授，写过《纳尼亚传奇》和大量劝人信仰的书。五十八岁结婚，妻子乔伊四年后因癌症去世。之后几个月他在四本练习簿上记自己的状态，后来用笔名出版，就是《卿卿如晤》。收他是因为「重要的人走了」那六个问题，原来靠弗兰克尔和苏轼在答——一个是集中营的幸存者，一个是被贬的官员
@@ -545,6 +551,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [创新者的窘境](https://ourword.ai/i/innovators-dilemma/): 创新者的窘境（1997年·克里斯坦森）——颠覆。克莱顿·克里斯坦森提出了商业史上最重要的问题之一：为什么优秀的公司会失败？不是因为懒惰或愚蠢，而是因为它们做了所有「正确」的事——听取最好客户的意见，投资利润最高的产品，专注于最大的市场。恰恰是这些「正确决策」，让它们对破坏性技术视而不见。
 - [利弗莫尔](https://ourword.ai/i/livermore/): 利弗莫尔（美·1877-1940年）——趋势为友·败于人性。杰西·利弗莫尔，史上最传奇的投机客，《股票作手回忆录》的原型。14岁在对赌行起家，一生四次破产、四次东山再起：1907年做空大赚，摩根亲自请他停止打压市场；1929年大崩盘中做空赚一亿美元（相当于今天数十亿），成为全世界最富有的人之一。他发明的趋势跟踪、关键点交易、金字塔加码，至
 - [加里·贝克尔](https://ourword.ai/i/becker/): 加里·贝克尔（美国·1930-2014）——人力资本。美国经济学家，1930年生，芝加哥大学博士，此后长期在芝加哥大学教书，1992年获诺贝尔经济学奖。他一辈子在做同一个动作：把一件大家认为不该算账的事拿来算一笔账——歧视、犯罪、婚姻、生几个孩子、上不上大学。最有名的是1964年的《人力资本》。在那之前资本指机器、厂房、土地，他把人
+- [南丁格尔](https://ourword.ai/i/nightingale/): 南丁格尔（英国·1820-1910）——照护。现代护理的开创者。1854 年克里米亚战争时，她带护士到斯库塔里的英军医院，被称为提灯女士。回国后她常年病着，却用统计和报告推动军队卫生改革，画出有名的玫瑰图，又用公众捐的基金在圣托马斯医院办起护士学校。这一页取她的三个判断：照顾人，先拿掉让他变糟的东西；数据要给不看表的人看，先
 - [卡尔·波普尔](https://ourword.ai/i/popper/): 卡尔·波普尔（1902-1994年·奥地利）——能被证伪。科学哲学家。他要解决的问题是：占星术和物理学都能解释现象，凭什么说后者是科学？他的答案改变了整个科学观——区别不在能不能解释，而在能不能被推翻。一个理论如果任何观察都不能与之矛盾，那它不是强大，是空洞。这条判据同样适用于日常判断：一个说什么都对的说法，等于什么都没说。
 - [卡尔·纽波特](https://ourword.ai/i/cal-newport/): 卡尔·纽波特（2016年·乔治城大学）——专注是稀缺品。计算机科学教授，同时研究知识工作者的生产方式。他提出一组对立概念：深度工作是在无干扰状态下的专注思考，能创造新价值、难以复制；浮浅工作是琐碎的事务性动作，容易复制、不产生新能力。他的论断是，随着协作工具让人随时可被打断，深度工作正在变得稀有，而恰恰因为稀有，它成了少数还能拉开差距
 - [卡尔·罗杰斯](https://ourword.ai/i/carl-rogers/): 卡尔·罗杰斯（1902-1987年·美国）——先被接住。人本主义心理学的创立者，第一个把心理治疗过程全程录音、拿出来做研究的人——在此之前治疗室里发生什么全凭治疗师转述。他的核心主张与当时主流相反：治疗师不该是解读者和指导者，而应提供三个条件——真诚、无条件积极关注、共情性理解——人在这三样齐备的环境里会自己往好的方向长。
@@ -617,6 +624,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [村上春树](https://ourword.ai/i/murakami/): 村上春树（1949-·《当我谈跑步时我谈些什么》2007）——把创作变成体力活。三十岁前开着一家爵士酒吧，1978年在球场看棒球时忽然决定写小说，1981年关掉店专职写作，同时开始跑步——理由很实际：坐着写东西会发胖，烟也抽得太凶。此后三十多年，他跑完过三十多次全程马拉松和一次一百公里超马，写作与跑步用的是同一套办法。他这本谈跑步的书之所以被大量不跑步的人读
 - [杜甫](https://ourword.ai/i/du-fu/): 杜甫（712-770年·河南巩县）——四十八岁弃官入蜀。诗人。三十五岁到长安求官，一待十年，考过、献过赋、四处投诗，没有一个像样的位置，四十四岁才得了个看管兵器库的小官，安史之乱随即爆发。755 年冬他回奉先县家里，小儿子饿死了。759 年辞掉华州的小官带着家人一路往西南走，几乎断粮，760 年到成都靳朋友接济搭了一间草堂。他一生最好
 - [松下幸之助](https://ourword.ai/i/matsushita/): 松下幸之助（日本·1894—1989年）——自来水哲学。9 岁辍学做学徒，23 岁带着两个人在自家做双灯用插座，最后做出松下电器，被日本人称为「经营之神」。他的价值不在于把公司做多大，而在于他是第一个把「企业为什么存在」当成经营技术来回答的人：使命定得对，组织和产品会自己长出来；使命定不对，效率越高越危险。今天讲的使命愿景、事业部制、
+- [林徽因](https://ourword.ai/i/lin-huiyin/): 林徽因（民国·杭州·1904-1955年）——营造与诗。建筑学家、诗人，生在杭州。留学美国学建筑，回国后和丈夫梁思成在中国营造学社，跑遍华北乡野测绘古建筑，也写诗和小说。抗战时学社迁到四川李庄，她在病床上接着工作。这一页只取她的三个时刻：众人都看不清梁下的字，她独自认出名字，先怕看错、再去找第二个证据；弟弟死在空战里，她承认没有适合时
 - [枪炮、病菌与钢铁](https://ourword.ai/i/guns-germs-steel/): 枪炮、病菌与钢铁（1997年）——环境而非人种。贾雷德·戴蒙德 1997 年的著作，次年获普利策奖。它回答一个几乎所有人都想过、但很少有人敢直接问的问题：为什么是欧洲人带着枪炮、病菌和钢铁去征服美洲和大洋洲，而不是反过来。戴蒙德的答案是环境，不是人——各大陆在可驯化物种和地理轴线上的差距，经由粮食生产这个中间变量，被放大成一万
 - [查尔斯·金德尔伯格](https://ourword.ai/i/kindleberger/): 查尔斯·金德尔伯格（美国·1910-2003）——信贷。美国经济学家，1910年生于纽约，1948年起在麻省理工学院执教半个世纪，写过三十多本书。二战之后他在国务院任职，1947到1948年做欧洲复兴计划的顾问，马歇尔计划的文件从他手上过。他一辈子看不上把人假设成一台算得很准的机器的那种经济学，宁可去翻三百年的旧账。1973年的《19
 - [查理·芒格](https://ourword.ai/i/munger/): 查理·芒格（当代·1924-2023）——逆向。巴菲特的合伙人，伯克希尔·哈撒韦副主席，99岁去世。他最重要的贡献：把巴菲特从「捡烟蒂」进化到「以合理价格买优秀公司」。他的思维工具箱：多元思维模型+认知偏差清单。

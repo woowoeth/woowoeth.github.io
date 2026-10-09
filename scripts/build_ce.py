@@ -504,10 +504,12 @@ function match(s,t){
 }
 /* 稀有度：和你同一型、而且六维里「倾向鲜明」的维数也和你一样的人，在一批模拟答卷里占多少。
    模拟的人不是乱点：每人先有一套自己的倾向（每维一个偏向），再带着噪声答 24 题 —— 像真人那样前后大体一致。
-   只按「同一型」算，人人都是 1/64，没有高低；再按鲜明维数分格，倾向越鲜明越少见（中位数约 0.4%）。
+   只按「同一型」算，人人都是 1/64，没有高低；再按「倾向鲜明的维数」分三档（0–1 / 2–3 / 4–6）。
+   第一版按 0–6 维分七格：每题都点「非常」的人在模拟里一份都撞不上，人人「万里挑一」，站主一看就说太假。
+   分三档后：没人撞空，多数人 0.4%–0.9%，答得最极端的约 0.1%，最高不过 1/64。
    固定种子，同一份答卷每次算出同一个数。 */
 var SIM=null,SIMN=12000;
-function vivid(s){return s.pct.filter(function(p){return Math.abs(p-50)>=30}).length}
+function vivid(s){var v=s.pct.filter(function(p){return Math.abs(p-50)>=30}).length;return v<=1?0:v<=3?1:2}
 function sims(){if(SIM)return SIM;var sd=20261009,out=[];
   function r(){sd=(sd*1103515245+12345)%2147483648;return sd/2147483648}
   for(var k=0;k<SIMN;k++){var lean=A.map(function(){return (r()*2-1)*1.6});
@@ -603,7 +605,7 @@ function renderType(t,me){
     h+='<div class="stats"><div class="stat"><b>'+order[0][1]+'</b><span>'+order[0][0]+'</span><em>最高维度</em></div>'
       +'<div class="stat mid"><b data-count="'+m+'" data-suf="%">'+m+'%</b><span>分身契合度</span><em>'+esc(t.who)+'</em></div>'
       +'<div class="stat"><b id="rareV">…</b><span>稀有度</span><em id="rareE">正在算</em></div></div>'
-      +'<p class="rarenote">稀有度：按 '+SIMN+' 份模拟答卷算——和你同一型、六维里倾向鲜明的维数也和你一样的人，占多少。</p>';
+      +'<p class="rarenote">稀有度：按 '+SIMN+' 份模拟答卷算——和你同一型、倾向的鲜明程度也和你差不多的人，占多少。</p>';
   }
   h+='<div class="card sec"><div class="lab">'+(me?'你一定干过这些事':'这一型的人，一定干过这些事')+' · MOMENTS</div><ul class="moments">'
     +t.moments.map(function(x,i){return '<li>'+esc(x)+(me?'<button class="hit" type="button" data-k="'+i+'">说中了</button>':'')+'</li>'}).join('')+'</ul>'
@@ -662,7 +664,7 @@ function renderType(t,me){
     countUp();
     /* 稀有度要跑一万多份模拟答卷（手机上可能要一两秒），先把页面画出来再算 */
     setTimeout(function(){var rr=rarity(me,t);if(!$('rareV'))return;
-      $('rareV').textContent=rr.txt;$('rareE').textContent=rr.ev;
+      $('rareV').textContent=rr.txt;if(rr.txt.length>5)$('rareV').style.fontSize='21px';$('rareE').textContent=rr.ev;
       trk('ce_rarity',{who:t.who,p:Math.round(rr.p*10000)})},60);
   }else{
     $('tryIt').onclick=function(){fromIdx=-1;retake()};
@@ -756,7 +758,9 @@ function card(t,me,m){
   var bx=[[100,'最高维度',order[0][0],String(order[0][1])],[400,'分身契合度',t.who,m+'%'],[700,rr.ev,'稀有度',rr.txt]];
   bx.forEach(function(b,i){var bw=280,bh=194,by=1028,mid=i===1;x.fillStyle=mid?f.color:CARD;x.strokeStyle=mid?f.color:LINE;x.lineWidth=3;
     k.rrect(b[0],by,bw,bh,24);x.fill();x.stroke();
-    x.textAlign='center';x.fillStyle=mid?'#fff':INK;x.font='700 72px '+SERIF;x.fillText(b[3],b[0]+bw/2,by+88);
+    x.textAlign='center';x.fillStyle=mid?'#fff':INK;/* 字长（如「<0.01%」）按框宽缩字，别撑出框 */
+    var fz=72;x.font='700 '+fz+'px '+SERIF;while(fz>40&&x.measureText(b[3]).width>bw-36){fz-=4;x.font='700 '+fz+'px '+SERIF}
+    x.fillText(b[3],b[0]+bw/2,by+88);
     x.font='34px '+SANS;x.fillStyle=mid?'rgba(255,255,255,.9)':MUT;x.fillText(b[2],b[0]+bw/2,by+138);x.font='26px '+SANS;x.fillText(b[1],b[0]+bw/2,by+174)});
   k.foot('测测你的历史分身','长按识别二维码，看你是谁'); k.qr(inviteUrl(t));
   k.done();

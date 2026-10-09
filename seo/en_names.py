@@ -46,6 +46,8 @@ NAMES = {
     "winnicott": ("Donald Winnicott", "Family and relationships"),
     "xu-xiake": ("Xu Xiake", "Learning and growth"),
     "li-qingzhao": ("Li Qingzhao", "Mind and feeling"),
+    "lin-huiyin": ("Lin Huiyin", "Learning and growth"),
+    "nightingale": ("Florence Nightingale", "Body and daily life"),
     "thucydides": ("Thucydides", "Strategy and competition"),
     "mencius": ("Mencius", "Power and organisation"),
     "parkinson": ("C. Northcote Parkinson", "Power and organisation"),

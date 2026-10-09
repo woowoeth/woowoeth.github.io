@@ -412,6 +412,20 @@ QUOTE_ASKS = {
         "我说「都行」，其实心里不行。",
     "winnicott/alone-in-company":
         "我们各干各的，这算是凉了吗？",
+    # 林徽因
+    "lin-huiyin/the-name-on-the-beam":
+        "只有我一个人看出来了，我信不信自己？",
+    "lin-huiyin/no-words-for-it":
+        "人人都说他走得光荣，我只想哭。",
+    "lin-huiyin/letter-from-shanxi":
+        "想了很多年的事，我就是迈不出第一步。",
+    # 南丁格尔
+    "nightingale/do-no-harm":
+        "家里人病了，我该从哪下手？",
+    "nightingale/the-rose-diagram":
+        "数据我都有，可拍板的人就是不看。",
+    "nightingale/miss-smith":
+        "大家都在夸我，可事情还没做完。",
     # 李清照
     "li-qingzhao/fifteen-carts":
         "东西太多带不走，我先扔哪一样？",
