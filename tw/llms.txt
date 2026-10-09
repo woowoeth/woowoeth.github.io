@@ -1,11 +1,11 @@
 # OurWord (人類世界生存法則)
 
-> 188 people and books on how the world actually works, across 2,600 years
+> 189 people and books on how the world actually works, across 2,600 years
 > 遇到事了，看看以前的人怎麼處理
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 188 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 189 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
-一個關於「世界到底怎麼運轉」的知識庫：戰略、財富、權力、人性、創業，取自 188 位人物與典籍，跨越 2600 年。每一條都寫清楚這個人真正留下的那一個想法、背後的故事、拆開的分則與例子，以及今天怎麼用。
+一個關於「世界到底怎麼運轉」的知識庫：戰略、財富、權力、人性、創業，取自 189 位人物與典籍，跨越 2600 年。每一條都寫清楚這個人真正留下的那一個想法、背後的故事、拆開的分則與例子，以及今天怎麼用。
 
 ## Read it
 
@@ -19,7 +19,7 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 ## Topics
 
 - [現代](https://ourword.ai/tw/t/modern/) — 62
-- [工業時代](https://ourword.ai/tw/t/industrial-age/) — 56
+- [工業時代](https://ourword.ai/tw/t/industrial-age/) — 57
 - [先秦與古典時代](https://ourword.ai/tw/t/classical-era/) — 28
 - [權力與組織](https://ourword.ai/tw/t/power/) — 27
 - [心智與情緒](https://ourword.ai/tw/t/mind/) — 21
@@ -28,8 +28,8 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 - [財富與風險](https://ourword.ai/tw/t/wealth/) — 19
 - [學習與成長](https://ourword.ai/tw/t/learning/) — 18
 - [世界如何運轉](https://ourword.ai/tw/t/world/) — 18
+- [家庭與關係](https://ourword.ai/tw/t/family/) — 16
 - [識人與相處](https://ourword.ai/tw/t/people/) — 16
-- [家庭與關係](https://ourword.ai/tw/t/family/) — 15
 - [身心與生活](https://ourword.ai/tw/t/living/) — 15
 - [中古](https://ourword.ai/tw/t/medieval/) — 15
 - [秦漢至魏晉](https://ourword.ai/tw/t/han-wei/) — 14
@@ -446,6 +446,9 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [諾伯特·維納 · 他先去找了工會](https://ourword.ai/tw/i/wiener/wrote-to-the-union/): 諾伯特·維納 · 他先去找了工會——在自動化落地之前。被技術沖掉之前有沒有先手。這一篇要回答的是：一個親手推動自動化的人，為什麼去找了會被它沖掉的那批人。
 - [諾伯特·維納 · 機器能做的和該讓它做的](https://ourword.ai/tw/i/wiener/human-use/): 諾伯特·維納 · 機器能做的和該讓它做的——是兩個問題。什麼活該交給工具，什麼活不該。這一篇要回答的是：維納憑什麼說有些事機器做得到也不該讓它做。
 - [諾伯特·維納 · 控制靠迴路，不靠命令](https://ourword.ai/tw/i/wiener/feedback-not-command/): 諾伯特·維納 · 控制靠迴路，不靠命令——看結果比下指令重要。為什麼反覆交代還是走樣。這一篇要回答的是：維納把控制定義成什麼，以及這跟下命令差在哪。
+- [唐納德·溫尼科特 · 躲起來，是盼著被找](https://ourword.ai/tw/i/winnicott/joy-to-be-hidden/): 唐納德·溫尼科特 · 躲起來，是盼著被找——門關上了，他不是不要你。孩子關上房門，一個字也不肯說。這一篇要回答的是：這時候該推門進去，還是該走開。
+- [唐納德·溫尼科特 · 太聽話的那個我](https://ourword.ai/tw/i/winnicott/the-compliant-self/): 唐納德·溫尼科特 · 太聽話的那個我——最成功的假我，旁人幾乎看不出來。你樣樣做得好，也從不讓人為難，可心裡空空的。這一篇要回答的是：這個好說話的你，是誰。
+- [唐納德·溫尼科特 · 有人在場的獨處](https://ourword.ai/tw/i/winnicott/alone-in-company/): 唐納德·溫尼科特 · 有人在場的獨處——能自己待著，是被人好好陪過的結果。兩個人在一間屋裡，半天誰也沒說話。這一篇要回答的是：這是涼了，還是熟了。
 - [武則天 · 不次除官](https://ourword.ai/tw/i/wu-zetian/promote-and-drop/): 武則天 · 不次除官——破格進，也快速退。她提拔的人裡有大量後來被貶被殺的。這一篇要回答的是：這套看似混亂的用人法為什麼有效。
 - [武則天 · 宰相安得失此人](https://ourword.ai/tw/i/wu-zetian/the-manifesto/): 武則天 · 宰相安得失此人——在罵你的檄文裡找人。一篇把你罵得體無完膚的文章送到面前。這一篇要回答的是：她讀到最狠的那句時說了什麼。
 - [項羽 · 破釜沉舟](https://ourword.ai/tw/i/xiang-yu/sinking-the-boats/): 項羽 · 破釜沉舟——一次性押上全部。鉅鹿之戰是他一生的頂點。這一篇要回答的是：讓他贏得那麼徹底的東西，為什麼後來一直沒變過。
@@ -507,7 +510,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [AI Bubble Monitor / AI 泡沫檢測儀](https://ourword.ai/ai/)
 - [Zouni / 走你](https://ourword.ai/zouni/)
 
-## Index (188 entrys)
+## Index (189 entrys)
 
 - [BJ·福格](https://ourword.ai/tw/i/bj-fogg/): BJ·福格（2019年·斯坦福行為設計實驗室）——小到不會失敗。斯坦福行為設計實驗室創始人，研究行為如何被設計出來。他給出一個公式：行為發生需要動機、能力、提示三者同時到位。多數人失敗在只調動機——靠決心和自我激勵——而動機天然起伏，靠它維持的習慣必然崩。他的主張相反：把行為縮到小得不需要動機，然後掛在一個已有的動作後面。
 - [C.S.劉易斯](https://ourword.ai/tw/i/cs-lewis/): C.S.劉易斯（1898-1963年·英國牛津）——妻子死後幾個月的日記。作家，牛津和劍橋的教授，寫過《納尼亞傳奇》和大量勸人信仰的書。五十八歲結婚，妻子喬伊四年後因癌症去世。之後幾個月他在四本練習簿上記自己的狀態，後來用筆名出版，就是《卿卿如晤》。收他是因為「重要的人走了」那六個問題，原來靠弗蘭克爾和蘇軾在答——一個是集中營的倖存者，一個是被貶的官員
@@ -553,6 +556,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [周公](https://ourword.ai/tw/i/zhou-gong/): 周公（西周·周初·約前11世紀）——攝政。周文王的兒子、周武王的弟弟，名旦，後來封在魯。武王去世後成王年幼，他代為執政，平定了管叔、武庚的叛亂；成王長大，他把政權交還。這一頁只取他怎麼對待流言、怎麼對待比自己低的人、怎麼交權這三件事，不論他制禮作樂的制度細節。他留下的是三個辦法：被猜忌時，先去說服和你一起扛事的人；位置越
 - [哈佛成人發展研究](https://ourword.ai/tw/i/harvard-study/): 哈佛成人發展研究（1938年至今·哈佛醫學院）——關係的質量決定晚年。人類史上最長的一項成年人追蹤研究。1938年從268名哈佛大二學生開始，後來併入波士頓貧民區的456個男孩，兩組人每兩年問一次近況、每五年做一次體檢，很多人被跟了一輩子，如今已經跟到他們的子女。第四任主任羅伯特·瓦爾丁格把八十多年的數據壓成一句話：讓人晚年健康又快活的，既不是財富
 - [哈耶克](https://ourword.ai/tw/i/hayek/): 哈耶克（奧—英·1899—1992）——分散知識。把「計劃為什麼會系統性算錯」寫成經濟學的人。不是因為計劃者懶，是因為做計劃所需的知識，散落在成千上萬個當事人頭裡。價格是這些知識的傳輸協議。他和凱恩斯辯了一輩子，勝的不是口才，是這一條知識論。
+- [唐納德·溫尼科特](https://ourword.ai/tw/i/winnicott/): 唐納德·溫尼科特（英國·1896-1971）——夠好。英國兒科醫生出身的精神分析師。在倫敦一家兒童醫院做了四十年門診，一邊看孩子一邊聽母親講，二戰期間還在廣播裡對著普通母親說話。他留下的幾個詞——「足夠好的母親」「過渡性客體」「真自我與假自我」「獨處的能力」——都來自同一個觀察：孩子是在一個具體的、不完美的人身邊，長成他自己的。他有
 - [商鞅](https://ourword.ai/tw/i/shang-yang/): 商鞅（戰國·前390-前338）——立信。秦國變法的設計者與執行者，中國歷史上最徹底的制度改革家。他用兩次變法把一個積貧積弱的邊陲小國，改造成了橫掃六合的戰爭機器。他的代價：車裂而死。但他定下的規矩，在他死後一百年仍然運行，最終幫助秦國統一了天下。「人死制度存」——這是改革者裡最好的結局，也是最悲壯的結局。
 - [國家為什麼會失敗](https://ourword.ai/tw/i/why-nations-fail/): 國家為什麼會失敗（美國·2012年）——制度決定論。達龍·阿西莫格魯與詹姆斯·羅賓遜2012年出版。核心論點極其簡潔：國家的貧富不取決於地理、氣候、文化，也不取決於領導人聰不聰明，只取決於制度是「包容性」還是「攫取性」。2024年，兩位作者與西蒙·約翰遜因這一系列關於制度與繁榮的研究，獲得諾貝爾經濟學獎。這本書最大的價值不在結論，
 - [國富論](https://ourword.ai/tw/i/wealth-of-nations/): 國富論（英國·1776）——看不見的手。亞當·斯密（1723-1790）是格拉斯哥大學的道德哲學教授，不是經濟學家——那時還沒有這門學科。《國富論》1776年3月出版，和美國《獨立宣言》同一年，全名是《國民財富的性質和原因的研究》。他一生只寫了兩本書：1759年的《道德情操論》講人的同情心，十七年後的《國富論》講人的自

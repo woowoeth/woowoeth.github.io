@@ -1,7 +1,7 @@
-# OurWord — 188 people and books on how the world actually works, across 2,600 years
+# OurWord — 189 people and books on how the world actually works, across 2,600 years
 # OurWord — See how people before you handled it.
 # https://ourword.ai/en/
-# Full corpus, plain text. 188 entrys.
+# Full corpus, plain text. 189 entrys.
 
 ========================================================================
 ## Albert Einstein
@@ -115,7 +115,7 @@ Whoever finally pays for the outcome owns the task. What other people think of y
 Thomas Gordon — Two ways of asking whose problem this is: Gordon's answer picks the method, Adler's decides whether it is yours to touch at all. Epictetus — The same cut two thousand years apart — what is up to me and what is not, against my task and your task. Brené Brown — Both are working on what other people think of me: Adler says it is their task and not yours, Brown says it is a mechanism that can be taken apart — one draws a boundary, the other dismantles a structure. Attachment Theory — Two routes into the same trouble: Adler asks what you are using it for, attachment asks how the template got built. Murray Bowen — Two knives for drawing a line: Adler asks whose task this is, Bowen asks whether their feeling has already got inside you. Family Instructions for the Yan Clan — Both draw a boundary: Adler says it is his task, stay out of it and get on with your own life, while Yan Zhitui says an unkind father gets an unfilial son, so the upstream half is permanently in your name and you fill in that column before discussing anyone else.
 
 ### Further
-Attachment Theory Carl Rogers Viktor Frankl Epictetus Nonviolent Communication Brené Brown Kristin Neff Murray Bowen Family Instructions for the Yan Clan
+Attachment Theory Carl Rogers Viktor Frankl Epictetus Nonviolent Communication Brené Brown Kristin Neff Murray Bowen Family Instructions for the Yan Clan Donald Winnicott
 
 ========================================================================
 ## Anders Ericsson
@@ -331,10 +331,10 @@ To judge whether somebody in a relationship feels safe, do not watch how calm th
 The quiet child is not calm. He has learned not to show it. We are happiest when life is a series of excursions from a secure base. The early working model becomes the template for every later intimacy.
 
 ### Q: What should I read alongside?
-Alfred Adler — Two routes into the same trouble: Adler asks what you are using it for, attachment asks how the template got built. John Gottman — Attachment says where the pattern came from; Gottman measures how it is running in the room today.
+Alfred Adler — Two routes into the same trouble: Adler asks what you are using it for, attachment asks how the template got built. John Gottman — Attachment says where the pattern came from; Gottman measures how it is running in the room today. Donald Winnicott — Both are about having someone near in early life. Bowlby asks whether that person is reliable, so the child dares to go far; Winnicott asks whether, when she is there, she can leave him room to be alone for a while.
 
 ### Further
-Murray Bowen Carl Rogers John Gottman Harvard Study of Adult Development Alfred Adler Virginia Satir
+Murray Bowen Carl Rogers John Gottman Harvard Study of Adult Development Alfred Adler Virginia Satir Donald Winnicott
 
 ========================================================================
 ## Augustine
@@ -846,10 +846,10 @@ To get the truth out of someone, first make sure that telling it cannot cost the
 When I accept myself just as I am, then I can change. If I can listen to what he tells me, I can help him. What I am is good enough if I would only be it openly.
 
 ### Q: What should I read alongside?
-Thomas Gordon — Teacher and student: Rogers set the condition, Gordon turned it into three sentences an ordinary parent could say. Socrates — Two ways of making somebody find their own answer: Socrates presses with questions, Rogers removes the conditions. Brené Brown — Rogers supplies the environmental condition, unconditional positive regard; Brown supplies the move the person in the chair can make for themselves. Arthur Kleinman — Both start by understanding the other person's world: Rogers gets there by reflecting back until they nod, Kleinman by eight specific questions. Family Instructions for the Yan Clan — Both answer why nobody speaks: Rogers works inside the conversation, receiving the person without conditions so that it becomes safe to talk, while Yan Zhitui says the silence was set earlier and higher up, and points at the standing pattern rather than this exchange.
+Thomas Gordon — Teacher and student: Rogers set the condition, Gordon turned it into three sentences an ordinary parent could say. Socrates — Two ways of making somebody find their own answer: Socrates presses with questions, Rogers removes the conditions. Brené Brown — Rogers supplies the environmental condition, unconditional positive regard; Brown supplies the move the person in the chair can make for themselves. Arthur Kleinman — Both start by understanding the other person's world: Rogers gets there by reflecting back until they nod, Kleinman by eight specific questions. Family Instructions for the Yan Clan — Both answer why nobody speaks: Rogers works inside the conversation, receiving the person without conditions so that it becomes safe to talk, while Yan Zhitui says the silence was set earlier and higher up, and points at the standing pattern rather than this exchange. Donald Winnicott — Rogers teaches you to step toward the other person and say back what he feels, so he feels understood. Winnicott adds a line: sometimes the right thing is not to ask, but to let him know someone is outside the door and willing to wait until he comes out himself.
 
 ### Further
-Thomas Gordon Nonviolent Communication Alfred Adler Virginia Satir Brené Brown Arthur Kleinman Attachment Theory Crucial Conversations
+Thomas Gordon Nonviolent Communication Alfred Adler Virginia Satir Brené Brown Arthur Kleinman Attachment Theory Crucial Conversations Donald Winnicott
 
 ========================================================================
 ## Carol Dweck
@@ -1103,6 +1103,43 @@ Chris Voss — Both handle the feeling before the content: Voss labels it across
 
 ### Further
 John Gottman Carl Rogers Thomas Gordon Chris Voss
+
+========================================================================
+## Donald Winnicott
+URL: https://ourword.ai/en/i/winnicott/
+Tags: Family and relationships, The industrial age, Good enough
+
+Donald Winnicott (Britain · 1896–1971) — Good enough. A British paediatrician who became a psychoanalyst. He worked in a London children's hospital for forty years, listening to mothers as much as examining their children…
+
+### Q: What did this one leave behind?
+A British paediatrician who became a psychoanalyst. He worked in a London children's hospital for forty years, listening to mothers as much as examining their children, and during the war he spoke to ordinary mothers on the radio. His best-known terms, the good-enough mother, the transitional object, the true and false self, the capacity to be alone, all come from one observation: a child becomes himself next to a particular, imperfect person. He is often quoted as saying there is no such thing as a baby, meaning that wherever you find a baby you find someone caring for it. This page takes only his account of how a person becomes herself in someone else's company, and leaves out his clinical stages of infancy.
+
+### Q: What actually happened?
+In the clinic he saw one scene over and over: a two-year-old gripping a filthy, threadbare blanket and refusing to put it down even in the consulting room. The grown-ups wanted to wash it, and the child crumpled in tears. Winnicott called it a transitional object, the first possession that is neither me nor mother, and held that it carries the child across to being alone. His advice was plain: do not wash it, at least not before the child is ready. To you it is a rag. To the child it holds all of his sense of safety.
+
+### The parts · Good enough is not second best; it fails by degrees
+His good-enough mother starts out adapting almost completely to the baby, then fails a little at a time, within what the child can bear. Those small failures are how a child learns to wait, and learns that the world does not revolve around him. Perfect care would not raise someone who can face disappointment. e.g. Your child wants you to look at his drawing this second, and you are cooking. You say 'when I turn off the heat.' He waits a minute and learns that he matters and so does everything else.
+
+### The parts · The old blanket is a bridge
+The child chooses the transitional object, and nobody else can replace it. It is old and dirty because he never lets go of it, and washing out its smell cuts something in his experience. Your job is to recognise how much it matters and carry it along. e.g. Going on a long trip, pack the worn rabbit before any of the new toys.
+
+### The parts · Holding: take all of it and do not change your face
+He used 'holding' for a carer who takes everything the child does, the crying, the rage, the mess, steadily in her hands, without flinching or turning cold. A child who has been held dares to hand over the parts of himself that are not pretty, because it has not made anyone leave. e.g. He is so angry he throws a cup. Stop his hand, do not call him bad, and talk about the cup when he has calmed down.
+
+### The parts · Look at the people around him before the child
+'There is no such thing as a baby' means do not look at the child alone. How a child is doing is largely how he and his carer are doing together. Before changing him, ask whether the person looking after him is tired, whether she can bear it, and whether anyone is looking after her. e.g. The child has been unusually clingy for two weeks. Before correcting him, check whether someone at home has been worn out.
+
+### Q: How do I use it today?
+Pick something you have lately felt a child, partner or colleague was getting wrong. Write three lines: am I helping him bear this, or removing it for him; am I present in mind as well as in the room; have I walked into the small patch he has just marked out for himself because I could not stand not knowing. Then add one thing for today that is presence without interference, such as sitting beside him and asking nothing.
+
+### Lines to keep
+Perfect care does not raise someone who can face disappointment. The blanket a child clutches is a bridge to being alone. To change the child, first ask who is holding him up.
+
+### Q: What should I read alongside?
+Attachment Theory — Both are about having someone near in early life. Bowlby asks whether that person is reliable, so the child dares to go far; Winnicott asks whether, when she is there, she can leave him room to be alone for a while. Carl Rogers — Rogers teaches you to step toward the other person and say back what he feels, so he feels understood. Winnicott adds a line: sometimes the right thing is not to ask, but to let him know someone is outside the door and willing to wait until he comes out himself.
+
+### Further
+Attachment Theory Carl Rogers Virginia Satir Alfred Adler
 
 ========================================================================
 ## Du Fu
@@ -6236,7 +6273,7 @@ The problem is not the problem; coping is the problem. Under pressure people pla
 Murray Bowen — Two readings of one family: Bowen tracks differentiation down the generations, Satir works the stance being taken in the room right now. Esther Perel — Both look past the argument on the surface — Perel at what the relationship is missing, Satir at which layer the argument is really on.
 
 ### Further
-Murray Bowen Carl Rogers Attachment Theory Nonviolent Communication Family Instructions for the Yan Clan
+Murray Bowen Carl Rogers Attachment Theory Nonviolent Communication Family Instructions for the Yan Clan Donald Winnicott
 
 ========================================================================
 ## Wang Jian
@@ -20352,6 +20389,105 @@ Where it goes wrong: reading it as watch more closely — he means shorten the r
 Control isn't issuing an order. It's correcting from the result.
 It came back wrong because the loop was cut, not because nobody listened.
 Feedback later than the correctable window is no feedback.
+
+========================================================================
+## Donald Winnicott · A Joy to Be Hidden
+URL: https://ourword.ai/en/i/winnicott/joy-to-be-hidden/
+Source: Winnicott, 'Communicating and Not Communicating' (1963)
+Tags: Deep read, Donald Winnicott, The closed door is not a refusal of you
+
+Your child shuts the bedroom door and will not say a word. Do you go in, or leave him alone? Winnicott's answer is that the question has two halves.
+
+### Q: What actually happened?
+Think of hide-and-seek. A child squeezes into a cupboard, holds her breath, heart pounding, and it is a great pleasure. But if she stays hidden a long time and nobody comes, the pleasure sours into something else: a child alone in the dark. Winnicott treats the game as a picture of what older children do with closed doors. "It is a joy to be hidden, and disaster not to be found."
+
+### The parts · A closed door is often a place being made
+Growing up needs somewhere that belongs to you alone and is not inspected. Silence, a shut door, a phone held face down are mostly the building of that place, and that is healthy. The worry is not that he hides; it is that he hides and finds no one wanted to look.
+e.g. She goes straight to her room after school. Skip 'what happened?' Knock three times and say: 'Dinner's ready, and I'm here when you want to talk.'
+
+### The parts · To look is not to search
+He held that everyone has a core that does not communicate with anyone, and that it should not be broken into. Reading the diary or the messages, even from worry, teaches the child to hide better next time. Being found means being thought about, not being investigated.
+e.g. You read his phone, found nothing, and said nothing. From that day he talks less and you worry more.
+
+### The parts · Keep both ends: do not barge in, do not walk away
+The child wants two things at once, to hide and to be found. It is a bind with no solution, so the parent's job is to hold both ends: no pushing the door, no turning your back. Adults who shut themselves in are living the same bind.
+e.g. You tell a friend 'leave me alone,' then check your phone three times to see whether anyone wrote. That checking is waiting to be found.
+
+### Q: How do I use it today?
+Where you are: a child, or you, has shut the door, and you cannot tell whether to go in or step back.
+Ask first: is what I am about to do telling him someone is here, or checking whether he is all right?
+Where it goes wrong: turning 'do not intrude' into 'do not care.' The door can stay shut, but he has to know you are outside it and can wait.
+
+### Lines to keep
+Hiding is a pleasure. Never being found is a disaster.
+To be found is to be thought about, not searched.
+The person behind the closed door is listening for footsteps.
+
+========================================================================
+## Donald Winnicott · The Self That Says Yes
+URL: https://ourword.ai/en/i/winnicott/the-compliant-self/
+Source: Winnicott, 'Ego Distortion in Terms of True and False Self' (1960)
+Tags: Deep read, Donald Winnicott, The most successful false self is the one nobody can see
+
+You are good at everything and never any trouble, yet something feels empty. Winnicott asks who it is that is so easy to get along with.
+
+### Q: What actually happened?
+Picture a child who reaches for something and finds the adult busy, or distracted, or answering at her own pace. After a few times the child learns it is easier to read the adult's face and fall in line. Everyone calls it good behaviour. Winnicott saw the other side: a child who complies too early puts what he really wants out of sight, and a more acceptable self steps forward to deal with the world.
+
+### The parts · The false self is protection, not pretence
+He called the compliant outer shell the false self. It is not deliberate deceit. It began as protection: when real impulses were not met, the child put them away and sent forward a version that could be liked. What it protects is the one behind it.
+e.g. The person who always says 'anything's fine, you choose' often found out early that saying 'I want this' got no answer.
+
+### The parts · The best performance is the hardest to spot
+He observed that a false self can be very successful: well mannered, well schooled, easy to have around. Others cannot tell, and often neither can the person, until one day everything is going well and he feels unreal and the effort pointless.
+e.g. The straight-A student on graduation day, with no one left to grade her, cannot say what she likes.
+
+### The parts · Do not tear it down; let the real one out a little
+The false self still handles many occasions for you, so there is no need to dismiss it. Give the real self an exit that is safe: one small 'no,' one plain 'I want.' The real self comes out further only after it has been caught gently a few times.
+e.g. Next time someone makes a request, pause three seconds before you agree and write down what you wanted in those three seconds, even if only for yourself.
+
+### Q: How do I use it today?
+Where you are: you are praised for being easy and sensible, and you know less and less what you want.
+Ask first: when I say yes this time, is it because I am willing, or because saying no seems too hard?
+Where it goes wrong: treating this page as a slogan to rip off the mask and be yourself. The false self is shielding you from something; removing it all at once only leaves you less safe.
+
+### Lines to keep
+Comply too early and what you want goes out of sight.
+The one who is always easy may not have been asked.
+The real self comes out further each time it is caught gently.
+
+========================================================================
+## Donald Winnicott · Alone in the Room
+URL: https://ourword.ai/en/i/winnicott/alone-in-company/
+Source: Winnicott, 'The Capacity to Be Alone' (1958)
+Tags: Deep read, Donald Winnicott, Being able to be alone is what being well accompanied leaves behind
+
+Two people sit in one room all afternoon and neither speaks. Has it gone cold, or has it grown comfortable? Winnicott gives you a way to tell.
+
+### Q: What actually happened?
+A child lies on the floor building with blocks while his mother sits nearby reading. For half an hour neither speaks. He plays deeply, almost forgetting she is there. Winnicott counts this among the healthiest pictures there is: a person alone, who knows someone is in the room. The ability to be alone is not something we are born with; it is grown in exactly this way.
+
+### The parts · To be alone, you must know someone is there
+The child plays beside his mother, not interrupted and not left. In time that person is carried inside him, and being alone no longer frightens him. So the ability to be alone is not built by practising alone; it comes from early company that did not intrude.
+e.g. Sit beside your child while she does her homework with your own book open. Do not watch her page, and she will often concentrate better.
+
+### The parts · Doing your own things need not mean growing cold
+Two people in one room, each doing their own thing and neither obliged to please the other, can be closeness so settled it needs no talk. The difference is whether, when something real comes up, the other can turn round. Waiting for the other to speak first is the cold version.
+e.g. On a Saturday afternoon one mends a bicycle and one reads, they swap a few words and drift apart again. That is not the same as sitting in a room waiting to be approached.
+
+### The parts · Panic at silence often means never being well accompanied
+Some people cannot be alone without panic: they need noise, messages, someone replying. On his view this is rarely weakness. More often being accompanied was never reliable: someone there in body but not in mind, or someone there who always needed an answer.
+e.g. You reach for your phone the moment it goes quiet. Try ten minutes a day with it out of reach, and see what the panic is made of.
+
+### Q: How do I use it today?
+Where you are: you and the person beside you have grown quiet, and you cannot tell whether it is comfort or distance.
+Ask first: when I really need to talk, can he turn round? When I am alone, is my mind uneasy or loose?
+Where it goes wrong: using this page to excuse coldness. Being there does not mean being in the house; it means being there when you are needed.
+
+### Lines to keep
+Alone, yet knowing someone is there, is a skill that was taught.
+Doing your own things is fine. Being unable to turn round is not.
+Dread of being alone often means company was never steady.
 
 ========================================================================
 ## Wu Zetian · Promote out of turn, drop just as fast

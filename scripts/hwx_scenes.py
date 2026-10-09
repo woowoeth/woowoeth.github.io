@@ -589,6 +589,8 @@ SCENES = [
      [("kristin-neff", "not-self-esteem"), ("brene-brown", "guilt-not-shame")]),
     ("我谁也不想见，可又难受。",
      [("cacioppo", "loneliness-is-a-signal"), ("kristin-neff", "three-parts")]),
+    ("我说别管我，其实又盼着有人来敲门。",
+     [("winnicott", "joy-to-be-hidden")]),
 ]),
 ("想太多", "自己的状态", [
     ("路还长，可我每一步都在试探。",
@@ -976,6 +978,8 @@ SCENES = [
      [("satir", "coping-stances"), ("brene-brown", "guilt-not-shame")]),
     ("我想说不，可话到嘴边就软了。",
      [("jobs", "focus-is-saying-no"), ("satir", "iceberg")]),
+    ("我说「都行」，其实心里不行。",
+     [("winnicott", "the-compliant-self")]),
 ]),
 ("推不动别人", "跟人打交道", [
     ("别的部门就是不配合我。",
@@ -1114,6 +1118,10 @@ SCENES = [
      [("nonviolent-communication", "observation-not-evaluation"), ("carl-rogers", "reflective-listening")]),
     ("我要他坦白，自己却从不认错。",
      [("yanshi-jiaxun", "wind-blows-down")]),
+    ("他关上房门，是不要我了吗？",
+     [("winnicott", "joy-to-be-hidden")]),
+    ("他不说，我又不敢翻他的手机。",
+     [("winnicott", "joy-to-be-hidden")]),
 ]),
 ("被家人的情绪裹着", "家里的事", [
     ("家里一有事，我整个人就乱了。",
@@ -1206,6 +1214,10 @@ SCENES = [
      [("perel", "quality-not-frequency"), ("perel", "security-and-desire")]),
     ("要不要分，我一直定不下来。",
      [("perel", "not-a-problem-to-solve"), ("li-ka-shing", "knowing-when-to-stop")]),
+    ("我们各干各的，这算是凉了吗？",
+     [("winnicott", "alone-in-company")]),
+    ("他一个人待着，我就觉得被丢下了。",
+     [("winnicott", "alone-in-company")]),
 ]),
 
 # ── 身心与生活 ──
@@ -1349,6 +1361,8 @@ SCENES = [
      [("excellent-sheep", "no-scoreboard"), ("frankl", "happiness-ensues")]),
     ("没人夸我，我就提不起劲。",
      [("deci", "paid-to-play")]),
+    ("我样样做得好，就是不知道要什么。",
+     [("winnicott", "the-compliant-self")]),
 ]),
 ("第一份工作", "刚起步", [
     ("先练明天就要用的那三样。",
@@ -1658,6 +1672,8 @@ SCENES = [
      [("wang-yangming", "bandits-in-the-heart"), ("wang-yangming", "innate-knowing")]),
     ("我想争一个「你承认我没错」。",
      [("su-shi", "no-more-writing"), ("epictetus", "judgments-not-things")]),
+    ("我一直很得体，可那好像不是我。",
+     [("winnicott", "the-compliant-self")]),
 ]),
 ("放不下一个人", "说不出口", [
     ("有些话我只想说给他听。",

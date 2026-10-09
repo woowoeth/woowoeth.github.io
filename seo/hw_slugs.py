@@ -4,6 +4,7 @@ import re
 import unicodedata
 
 SLUGS = {
+    "唐纳德·温尼科特": "winnicott",
     "徐霞客": "xu-xiake",
     "晏婴": "yan-ying",
     "修昔底德": "thucydides",

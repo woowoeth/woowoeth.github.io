@@ -1,9 +1,9 @@
 # OurWord (OurWord)
 
-> 188 people and books on how the world actually works, across 2,600 years
+> 189 people and books on how the world actually works, across 2,600 years
 > See how people before you handled it.
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 188 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 189 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
 ## Read it
 
@@ -17,7 +17,7 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 ## Topics
 
 - [Modern](https://ourword.ai/en/t/modern/) — 66
-- [The industrial age](https://ourword.ai/en/t/the-industrial-age/) — 52
+- [The industrial age](https://ourword.ai/en/t/the-industrial-age/) — 53
 - [Power and organisation](https://ourword.ai/en/t/power-and-organisation/) — 27
 - [Pre-Qin and classical](https://ourword.ai/en/t/pre-qin-and-classical/) — 27
 - [Mind and feeling](https://ourword.ai/en/t/mind-and-feeling/) — 20
@@ -27,9 +27,9 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 - [Strategy and competition](https://ourword.ai/en/t/strategy-and-competition/) — 19
 - [Money and risk](https://ourword.ai/en/t/money-and-risk/) — 18
 - [Qin, Han and the Six Dynasties](https://ourword.ai/en/t/qin-han-and-the-six-dynasties/) — 17
+- [Family and relationships](https://ourword.ai/en/t/family-and-relationships/) — 16
 - [Reading people](https://ourword.ai/en/t/reading-people/) — 16
 - [Body and daily life](https://ourword.ai/en/t/body-and-daily-life/) — 15
-- [Family and relationships](https://ourword.ai/en/t/family-and-relationships/) — 15
 - [Early modern](https://ourword.ai/en/t/early-modern/) — 13
 - [Medieval](https://ourword.ai/en/t/medieval/) — 13
 
@@ -440,6 +440,9 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [Norbert Wiener · He wrote to the union first](https://ourword.ai/en/i/wiener/wrote-to-the-union/): Norbert Wiener · He wrote to the union first — Before automation landed. Is there a move to make before a technology reaches you? What the man who built it did first.
 - [Norbert Wiener · What a machine can do, and what to give it](https://ourword.ai/en/i/wiener/human-use/): Norbert Wiener · What a machine can do, and what to give it — Two separate questions. Which work belongs to a tool and which doesn't. Why Wiener said capability doesn't settle it.
 - [Norbert Wiener · Control is a loop, not an order](https://ourword.ai/en/i/wiener/feedback-not-command/): Norbert Wiener · Control is a loop, not an order — Seeing the result beats issuing instructions. Why the thing you carefully explained still comes back wrong. How Wiener defined control instead.
+- [Donald Winnicott · A Joy to Be Hidden](https://ourword.ai/en/i/winnicott/joy-to-be-hidden/): Donald Winnicott · A Joy to Be Hidden — The closed door is not a refusal of you. Your child shuts the bedroom door and will not say a word. Do you go in, or leave him alone? Winnicott's answer is that the question has two halves.
+- [Donald Winnicott · The Self That Says Yes](https://ourword.ai/en/i/winnicott/the-compliant-self/): Donald Winnicott · The Self That Says Yes — The most successful false self is the one nobody can see. You are good at everything and never any trouble, yet something feels empty. Winnicott asks who it is that is so easy to get along with.
+- [Donald Winnicott · Alone in the Room](https://ourword.ai/en/i/winnicott/alone-in-company/): Donald Winnicott · Alone in the Room — Being able to be alone is what being well accompanied leaves behind. Two people sit in one room all afternoon and neither speaks. Has it gone cold, or has it grown comfortable? Winnicott gives you a way to tell.
 - [Wu Zetian · Promote out of turn, drop just as fast](https://ourword.ai/en/i/wu-zetian/promote-and-drop/): Wu Zetian · Promote out of turn, drop just as fast — Fast in, and fast out. Many of the people she raised were later demoted or killed. This is about why a method that looks chaotic actually worked.
 - [Wu Zetian · How did the chancellor lose this man](https://ourword.ai/en/i/wu-zetian/the-manifesto/): Wu Zetian · How did the chancellor lose this man — Recruiting from the pamphlet attacking you. A document tearing you to pieces is put in front of you. This is about what she said at the cruellest line in it.
 - [Xiang Yu · Break the pots, sink the boats](https://ourword.ai/en/i/xiang-yu/sinking-the-boats/): Xiang Yu · Break the pots, sink the boats — Everything on one throw. Julu was the high point of his life. This is about why the thing that won it so completely never changed afterwards.
@@ -501,7 +504,7 @@ Cite the individual page URL, not the homepage — each entry page is stable and
 - [AI Bubble Monitor](https://ourword.ai/ai/)
 - [Zouni](https://ourword.ai/zouni/)
 
-## Index (188 entrys)
+## Index (189 entrys)
 
 - [Albert Einstein](https://ourword.ai/en/i/einstein/): Albert Einstein (Germany · 1879–1955) — Imagination. The physicist, and the father of relativity — but the legacy that travels furthest is not a formula, it is a way of working.
 - [Albert O. Hirschman](https://ourword.ai/en/i/hirschman/): Albert O. Hirschman (United States · 1915-2012) — Voice. A German-born American economist. He left Berlin in 1933, fought in Spain in 1936, spent 1940 in Marseille forging papers and finding mountain…
@@ -533,6 +536,7 @@ Cite the individual page URL, not the homepage — each entry page is stable and
 - [Christina Maslach](https://ourword.ai/en/i/maslach/): Christina Maslach (1946– · UC Berkeley) — Burnout is the job. Burnout became measurable largely because of her work. Her 1981 inventory split it into three components — emotional exhaustion…
 - [Chu Shijian](https://ourword.ai/en/i/chu-shijian/): Chu Shijian (1928–2019 · Yunnan) — Up the mountain at seventy-four. A man from Yunnan who ran a cigarette factory from the age of fifty-one and made Hongtashan the best-selling brand in China, known…
 - [Crucial Conversations](https://ourword.ai/en/i/crucial-conversations/): Crucial Conversations (2002 · Patterson, Grenny, McMillan and Switzler) — Safety first. Four authors studied more than twenty thousand people across a thousand organisations to answer one question…
+- [Donald Winnicott](https://ourword.ai/en/i/winnicott/): Donald Winnicott (Britain · 1896–1971) — Good enough. A British paediatrician who became a psychoanalyst. He worked in a London children's hospital for forty years, listening to mothers as much as…
 - [Du Fu](https://ourword.ai/en/i/du-fu/): Du Fu (Tang · 712–770) — Left office at forty-eight. A poet, ranked in China beside Li Bai and read for twelve centuries. He arrived in the capital at thirty-five to find a post and spent ten years…
 - [Duan Yongping](https://ourword.ai/en/i/duan-yongping/): Duan Yongping (Contemporary · 1961–) — The stop-doing list. Founder of BBK, and the source of the culture behind OPPO and vivo, two of the largest phone brands on earth, neither of which invented…
 - [Duke Wen of Jin](https://ourword.ai/en/i/jin-wengong/): Duke Wen of Jin (Spring and Autumn · died 628 BCE) — Taking advice. Ruler of the state of Jin, born Chong'er, a son of Duke Xian. Driven out in a palace feud, he fled in 655 BCE and spent nineteen…

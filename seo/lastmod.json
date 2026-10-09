@@ -1,7 +1,7 @@
 {
  "i/adler/": {
-  "d": "2026-09-21",
-  "h": "af7989832df4b61d"
+  "d": "2026-10-09",
+  "h": "c404218dcbdd18a9"
  },
  "i/adler/separation-of-tasks/": {
   "d": "2026-09-01",
@@ -72,8 +72,8 @@
   "h": "3f4d8cc58975b562"
  },
  "i/attachment-theory/": {
-  "d": "2026-09-01",
-  "h": "5c81edaa3827daa1"
+  "d": "2026-10-09",
+  "h": "92a7c6fa813ebb57"
  },
  "i/attachment-theory/secure-base/": {
   "d": "2026-08-30",
@@ -332,8 +332,8 @@
   "h": "f024ac16b7a0e2a2"
  },
  "i/carl-rogers/": {
-  "d": "2026-09-01",
-  "h": "2ce10788ce40f218"
+  "d": "2026-10-09",
+  "h": "55a09eba5fe3a635"
  },
  "i/carl-rogers/reflective-listening/": {
   "d": "2026-08-30",
@@ -1832,8 +1832,8 @@
   "h": "3308ed8075fbd0bd"
  },
  "i/satir/": {
-  "d": "2026-09-21",
-  "h": "cb0b03b7b2f2a804"
+  "d": "2026-10-09",
+  "h": "21db0b8bf79ba961"
  },
  "i/satir/coping-stances/": {
   "d": "2026-08-31",
@@ -2290,6 +2290,22 @@
  "i/wiener/wrote-to-the-union/": {
   "d": "2026-09-02",
   "h": "a0d08f4662e05582"
+ },
+ "i/winnicott/": {
+  "d": "2026-10-09",
+  "h": "451c555b44e82260"
+ },
+ "i/winnicott/alone-in-company/": {
+  "d": "2026-10-09",
+  "h": "a145024e3b382547"
+ },
+ "i/winnicott/joy-to-be-hidden/": {
+  "d": "2026-10-09",
+  "h": "7bab0a44c2091cff"
+ },
+ "i/winnicott/the-compliant-self/": {
+  "d": "2026-10-09",
+  "h": "9b7bb59b766cfab4"
  },
  "i/wu-zetian/": {
   "d": "2026-08-28",

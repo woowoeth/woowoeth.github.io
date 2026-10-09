@@ -405,6 +405,13 @@ QUOTE_ASKS = {
         "害过我的人，回来找我了。",
     "jin-wengong/three-stages-back":
         "我主动往后撤，算不算认输？",
+    # 温尼科特
+    "winnicott/joy-to-be-hidden":
+        "他关上房门，是不要我了吗？",
+    "winnicott/the-compliant-self":
+        "我说「都行」，其实心里不行。",
+    "winnicott/alone-in-company":
+        "我们各干各的，这算是凉了吗？",
     # 徐霞客
     "xu-xiake/robbed-on-the-xiang":
         "半路出了大事，我该回头，还是接着走？",
