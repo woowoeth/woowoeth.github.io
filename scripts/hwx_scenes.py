@@ -26,6 +26,8 @@ SCENES = [
      [("thucydides", "the-morrow-brought-repentance")]),
 ]),
 ("做不完", "要做决定", [
+    ("东西太多带不走，我先扔哪一样？",
+     [("li-qingzhao", "fifteen-carts")]),
     ("全都重要，我砍哪个都疼。",
      [("jobs", "focus-is-saying-no"), ("drucker", "right-things-first")]),
     ("我是不是在用忙掩盖不想面对的事？",
@@ -1204,6 +1206,8 @@ SCENES = [
      [("jin-wengong", "the-cut-sleeve")]),
 ]),
 ("在一起久了没感觉", "家里的事", [
+    ("日子过得紧，我们俩还能有什么乐子？",
+     [("li-qingzhao", "the-tea-wager")]),
     ("在一起很多年，没感觉了。",
      [("perel", "security-and-desire"), ("perel", "not-a-problem-to-solve")]),
     ("不吵也不亲，我不知道算什么。",
@@ -1648,12 +1652,14 @@ SCENES = [
      [("brene-brown", "secrecy-silence-judgment"), ("brene-brown", "guilt-not-shame")]),
 ]),
 ("怕被看穿", "说不出口", [
+    ("行内的大佬做得不对，我敢不敢点名？",
+     [("li-qingzhao", "a-separate-art")]),
     ("大家都这么说，可我看到的不是这样。",
      [("xu-xiake", "the-gazetteer-was-wrong")]),
     ("我凭什么说权威错了？",
      [("xu-xiake", "the-gazetteer-was-wrong")]),
     ("说出来，会不会显得我很狂？",
-     [("xu-xiake", "the-gazetteer-was-wrong")]),
+     [("xu-xiake", "the-gazetteer-was-wrong"), ("li-qingzhao", "a-separate-art")]),
     ("我怕人看出我没那么行。",
      [("caigentan", "hide-the-edge"), ("brene-brown", "secrecy-silence-judgment")]),
     ("出了那件丑事，我不知道还怎么见人。",

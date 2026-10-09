@@ -1,11 +1,11 @@
 # OurWord (人類世界生存法則)
 
-> 189 people and books on how the world actually works, across 2,600 years
+> 190 people and books on how the world actually works, across 2,600 years
 > 遇到事了，看看以前的人怎麼處理
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 189 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 190 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
-一個關於「世界到底怎麼運轉」的知識庫：戰略、財富、權力、人性、創業，取自 189 位人物與典籍，跨越 2600 年。每一條都寫清楚這個人真正留下的那一個想法、背後的故事、拆開的分則與例子，以及今天怎麼用。
+一個關於「世界到底怎麼運轉」的知識庫：戰略、財富、權力、人性、創業，取自 190 位人物與典籍，跨越 2600 年。每一條都寫清楚這個人真正留下的那一個想法、背後的故事、拆開的分則與例子，以及今天怎麼用。
 
 ## Read it
 
@@ -22,16 +22,16 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 - [工業時代](https://ourword.ai/tw/t/industrial-age/) — 57
 - [先秦與古典時代](https://ourword.ai/tw/t/classical-era/) — 28
 - [權力與組織](https://ourword.ai/tw/t/power/) — 27
-- [心智與情緒](https://ourword.ai/tw/t/mind/) — 21
+- [心智與情緒](https://ourword.ai/tw/t/mind/) — 22
 - [創業與產品](https://ourword.ai/tw/t/startups/) — 20
 - [謀略與競爭](https://ourword.ai/tw/t/strategy/) — 19
 - [財富與風險](https://ourword.ai/tw/t/wealth/) — 19
 - [學習與成長](https://ourword.ai/tw/t/learning/) — 18
 - [世界如何運轉](https://ourword.ai/tw/t/world/) — 18
 - [家庭與關係](https://ourword.ai/tw/t/family/) — 16
+- [中古](https://ourword.ai/tw/t/medieval/) — 16
 - [識人與相處](https://ourword.ai/tw/t/people/) — 16
 - [身心與生活](https://ourword.ai/tw/t/living/) — 15
-- [中古](https://ourword.ai/tw/t/medieval/) — 15
 - [秦漢至魏晉](https://ourword.ai/tw/t/han-wei/) — 14
 - [近世](https://ourword.ai/tw/t/early-modern/) — 13
 
@@ -263,6 +263,9 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [李泌 · 臣絕粒無家](https://ourword.ai/tw/i/li-bi/no-office/): 李泌 · 臣絕粒無家——不要職位，只要說話。他四次進入朝廷中樞，四次退回山裡。這一篇要回答的是：不受官職換來的是什麼。
 - [李嘉誠 · 九成時間想失敗](https://ourword.ai/tw/i/li-ka-shing/ninety-percent-failure/): 李嘉誠 · 九成時間想失敗——先想輸再想贏。華人首富自述的時間分配令人意外。這一篇要回答的是：想失敗到底在想什麼。
 - [李嘉誠 · 知止](https://ourword.ai/tw/i/li-ka-shing/knowing-when-to-stop/): 李嘉誠 · 知止——辦公室裡那兩個字。一個以擴張著稱的商人，抬頭看的是一幅勸停的字。這一篇要回答的是：知止和不敢不是一回事。
+- [李清照 · 尚載書十五車](https://ourword.ai/tw/i/li-qingzhao/fifteen-carts/): 李清照 · 尚載書十五車——東西帶不走了，先排好丟的順序。東西太多，路上帶不走，你先扔哪一樣？這一篇要回答的是：李清照南渡時，怎麼一層層減掉二十多年的收藏。
+- [李清照 · 賭書潑茶](https://ourword.ai/tw/i/li-qingzhao/the-tea-wager/): 李清照 · 賭書潑茶——日子清苦的時候，給兩個人設一個只屬於你們的遊戲。錢不多、日子緊，兩個人的樂趣從哪來？這一篇要回答的是：李清照和趙明誠怎麼把清苦日子過成一場遊戲。
+- [李清照 · 詞別是一家](https://ourword.ai/tw/i/li-qingzhao/a-separate-art/): 李清照 · 詞別是一家——要說前輩錯了，先把你的標準亮出來。行內公認的大家，你覺得他們做得不對，敢不敢說？這一篇要回答的是：李清照怎麼批評蘇軾、歐陽修這些前輩。
 - [李世民 · 兼聽則明](https://ourword.ai/tw/i/li-shimin/hearing-all-sides/): 李世民 · 兼聽則明——只聽一個人等於沒聽。皇帝問怎樣才算明君。這一篇要回答的是：魏徵給的答案是一套信息結構，不是一種品德。
 - [李世民 · 水能載舟](https://ourword.ai/tw/i/li-shimin/boat-and-water/): 李世民 · 水能載舟——權力的承載物會翻。這句話被唸了一千多年。這一篇要回答的是：它在貞觀年間是被當成一條工作紀律用的。
 - [李世民 · 貞觀初年的那場爭論](https://ourword.ai/tw/i/li-shimin/the-first-debate/): 李世民 · 貞觀初年的那場爭論——選一條更慢的路。剛接手一個爛攤子，是用重典還是用寬政？這一篇要回答的是：他選了所有人都說來不及的那條。
@@ -510,7 +513,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [AI Bubble Monitor / AI 泡沫檢測儀](https://ourword.ai/ai/)
 - [Zouni / 走你](https://ourword.ai/zouni/)
 
-## Index (189 entrys)
+## Index (190 entrys)
 
 - [BJ·福格](https://ourword.ai/tw/i/bj-fogg/): BJ·福格（2019年·斯坦福行為設計實驗室）——小到不會失敗。斯坦福行為設計實驗室創始人，研究行為如何被設計出來。他給出一個公式：行為發生需要動機、能力、提示三者同時到位。多數人失敗在只調動機——靠決心和自我激勵——而動機天然起伏，靠它維持的習慣必然崩。他的主張相反：把行為縮到小得不需要動機，然後掛在一個已有的動作後面。
 - [C.S.劉易斯](https://ourword.ai/tw/i/cs-lewis/): C.S.劉易斯（1898-1963年·英國牛津）——妻子死後幾個月的日記。作家，牛津和劍橋的教授，寫過《納尼亞傳奇》和大量勸人信仰的書。五十八歲結婚，妻子喬伊四年後因癌症去世。之後幾個月他在四本練習簿上記自己的狀態，後來用筆名出版，就是《卿卿如晤》。收他是因為「重要的人走了」那六個問題，原來靠弗蘭克爾和蘇軾在答——一個是集中營的倖存者，一個是被貶的官員
@@ -610,6 +613,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [李嘉誠](https://ourword.ai/tw/i/li-ka-shing/): 李嘉誠（當代·1928-）——週期。從塑料花小工廠到長和集團，李嘉誠用70年建立了橫跨地產、港口、電信、零售、能源的商業帝國。多次大危機（1967年暴動、1997年金融危機、2008年金融危機）都安然度過，靠的是「逆週期布局+永遠保持現金」兩個原則。
 - [李小龍](https://ourword.ai/tw/i/bruce-lee/): 李小龍（當代·1940-1973）——無形。功夫明星只是他最表面的標籤。他是哲學家、武術家、作家、電影人，用33年的生命留下了一套關於「自我解放」的完整思想體系。他創立截拳道，不是一種武術風格，而是一種反對風格本身的哲學——「吸收有用的，去除無用的，加入自己獨特的」。他在好萊塢打破種族天花板，在華人世界重塑了文化自信。他死
 - [李泌](https://ourword.ai/tw/i/li-bi/): 李泌（唐·722-789）——隱。中國歷史上最會生存的謀士，沒有之一。輔佐了唐玄宗、唐肅宗、唐代宗、唐德宗四代皇帝，三次主動退出朝堂，三次被重新召回，最終以宰相之位善終——73歲。在宦官橫行、政治險惡的環境裡，這是奇蹟。他比范蠡更難：范蠡退出後徹底消失，李泌是在權力旋渦裡穿行，退而不遠，隨時可用。
+- [李清照](https://ourword.ai/tw/i/li-qingzhao/): 李清照（兩宋·濟南·1084-約1155年）——詞人。兩宋之間的詞人，濟南人，號易安居士。前半生和丈夫趙明誠一起收書畫金石、寫詞唱和；四十多歲遇上靖康之變，南渡路上丈夫病死，收藏一路散失，她後來在《金石錄後序》裡一件件記下。這一頁不講她的詞好在哪，只取她的三個判斷：東西帶不走時，先排好丟的順序；日子清苦時，給兩個人設一個遊戲；要說前
 - [村上春樹](https://ourword.ai/tw/i/murakami/): 村上春樹（1949-·《當我談跑步時我談些什麼》2007）——把創作變成體力活。三十歲前開著一家爵士酒吧，1978年在球場看棒球時忽然決定寫小說，1981年關掉店專職寫作，同時開始跑步——理由很實際：坐著寫東西會發胖，煙也抽得太兇。此後三十多年，他跑完過三十多次全程馬拉松和一次一百公里超馬，寫作與跑步用的是同一套辦法。他這本談跑步的書之所以被大量不跑步的人讀
 - [杜甫](https://ourword.ai/tw/i/du-fu/): 杜甫（712-770年·河南鞏縣）——四十八歲棄官入蜀。詩人。三十五歲到長安求官，一待十年，考過、獻過賦、四處投詩，沒有一個像樣的位置，四十四歲才得了個看管兵器庫的小官，安史之亂隨即爆發。755 年冬他回奉先縣家裡，小兒子餓死了。759 年辭掉華州的小官帶著家人一路往西南走，幾乎斷糧，760 年到成都靳朋友接濟搭了一間草堂。他一生最好
 - [松下幸之助](https://ourword.ai/tw/i/matsushita/): 松下幸之助（日本·1894—1989年）——自來水哲學。9 歲輟學做學徒，23 歲帶著兩個人在自家做雙燈用插座，最後做出松下電器，被日本人稱為「經營之神」。他的價值不在於把公司做多大，而在於他是第一個把「企業為什麼存在」當成經營技術來回答的人：使命定得對，組織和產品會自己長出來；使命定不對，效率越高越危險。今天講的使命願景、事業部制、

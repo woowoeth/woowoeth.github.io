@@ -412,6 +412,13 @@ QUOTE_ASKS = {
         "我说「都行」，其实心里不行。",
     "winnicott/alone-in-company":
         "我们各干各的，这算是凉了吗？",
+    # 李清照
+    "li-qingzhao/fifteen-carts":
+        "东西太多带不走，我先扔哪一样？",
+    "li-qingzhao/the-tea-wager":
+        "日子过得紧，我们俩还能有什么乐子？",
+    "li-qingzhao/a-separate-art":
+        "行内的大佬做得不对，我敢不敢点名？",
     # 徐霞客
     "xu-xiake/robbed-on-the-xiang":
         "半路出了大事，我该回头，还是接着走？",

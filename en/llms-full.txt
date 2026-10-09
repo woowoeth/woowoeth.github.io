@@ -1,7 +1,7 @@
-# OurWord — 189 people and books on how the world actually works, across 2,600 years
+# OurWord — 190 people and books on how the world actually works, across 2,600 years
 # OurWord — See how people before you handled it.
 # https://ourword.ai/en/
-# Full corpus, plain text. 189 entrys.
+# Full corpus, plain text. 190 entrys.
 
 ========================================================================
 ## Albert Einstein
@@ -1170,10 +1170,10 @@ Take the years that are not working and write a page a month on them exactly as 
 Ten years came to nothing, and he kept the books year by year. He put the thing he least wanted to write at the front. The best of it was written in the hardest decade.
 
 ### Q: What should I read alongside?
-Su Shi — Both rebuilt after forty: Su Shi broke ground at Huangzhou, Du Fu put up a roof at Chengdu, and both took what a life runs on before any position. Su Shi went back; Du Fu never did. Tao Yuanming — One walked, one had no choice: Tao Yuanming knew where he was going the day he resigned, while Du Fu left office and searched the whole way southwest before stopping at Chengdu.
+Su Shi — Both rebuilt after forty: Su Shi broke ground at Huangzhou, Du Fu put up a roof at Chengdu, and both took what a life runs on before any position. Su Shi went back; Du Fu never did. Tao Yuanming — One walked, one had no choice: Tao Yuanming knew where he was going the day he resigned, while Du Fu left office and searched the whole way southwest before stopping at Chengdu. Li Qingzhao — Both were driven from home by invasion and both wrote one household's ruin more precisely than the history books wrote the war: Du Fu the family on the road, Li Qingzhao the library that scattered.
 
 ### Further
-Su Shi Pu Songling Tao Yuanming Sima Qian
+Su Shi Pu Songling Tao Yuanming Sima Qian Li Qingzhao
 
 ========================================================================
 ## Duan Yongping
@@ -3251,6 +3251,40 @@ Fan Li — Both left before the top. Fan Li left the whole game; Li Ka-shing lef
 Fan Li Warren Buffett Chu Shijian Hu Xueyan Scarcity The Wealth of Nations
 
 ========================================================================
+## Li Qingzhao
+URL: https://ourword.ai/en/i/li-qingzhao/
+Tags: Mind and feeling, Medieval, The lyric
+
+Li Qingzhao (Song · Jinan · 1084-c.1155) — The lyric. The greatest woman poet of classical China, from Jinan, who called herself the Lay Buddhist of Easy Peace.
+
+### Q: What did this one leave behind?
+The greatest woman poet of classical China, from Jinan, who called herself the Lay Buddhist of Easy Peace. For half her life she and her husband Zhao Mingcheng collected books, paintings and bronzes and wrote lyrics to each other. In her forties the Jin invasion drove them south; he died on the way and the collection scattered, and she later wrote it all down in the Postface to the Records on Metal and Stone. This page leaves her poems aside and takes three judgements: when you cannot carry it all, decide the order of what goes; when money is tight, invent a game for two; to say the masters are wrong, show your standard first.
+
+### Q: What actually happened?
+After the court fled south she wrote a four-line poem: 'In life, be a hero among men; in death, a hero among ghosts. To this day I think of Xiang Yu, who would not cross back east of the river.' Xiang Yu, beaten, refused to escape and save himself. Readers ever since have taken the poem as her verdict on a court that kept retreating.
+
+### The parts · Decide the order of what goes
+Fleeing south, she and her husband shed twenty years of collecting layer by layer: replaceable printed books first, unique pieces last. It still filled fifteen carts. e.g. Moving with one suitcase: give away what shops sell, keep the handwritten letters.
+
+### The parts · Make a game for two
+Poor in their first years, they pawned clothes for rubbings. Later, over tea, they bet on which book and page a passage was on; whoever was right drank first. e.g. Quiz each other on film lines at dinner; the winner picks next week's film.
+
+### The parts · Show the standard first
+In On Lyrics she named nearly every master, Su Shi included, but first said what a lyric must do that a poem need not. Disagree, and you must refute the standard. e.g. Before calling the boss's plan weak, write down the test you are using.
+
+### Q: How do I use it today?
+Pick one thing you are about to give up, criticise or put up with, and write one line each: what can be replaced and what cannot; what game the two of you could play with what you already have; what standard you are judging by. She did all three in prose, and it is why her losses are still remembered.
+
+### Lines to keep
+In life, be a hero among men; in death, a hero among ghosts. Whatever is gathered must scatter. That is the way of things. The lyric is an art of its own, and few understand it.
+
+### Q: What should I read alongside?
+Su Shi — Her father was Su Shi's student, and she still wrote that his lyrics often missed the music. Both lived through exile and loss: Su Shi wrote the hard years as breadth of mind, she wrote them as an exact list of what was lost. Du Fu — Both were driven from home by invasion and both wrote one household's ruin more precisely than the history books wrote the war: Du Fu the family on the road, Li Qingzhao the library that scattered.
+
+### Further
+Su Shi Du Fu Xiang Yu Tao Yuanming
+
+========================================================================
 ## Li Shimin
 URL: https://ourword.ai/en/i/li-shimin/
 Tags: Power and organisation, Medieval, Taking counsel
@@ -5228,10 +5262,10 @@ Next time you're overruled, shelved, or watching something fail, try treating th
 A bamboo stick and straw sandals beat a horse. Who's afraid? Looking back at that bleak road — no wind, no rain, no sun. Where the heart is at rest, that is my home.
 
 ### Q: What should I read alongside?
-Zhuangzi — Two ways of not being owned: Zhuangzi refuses the post, Su Shi takes it and refuses to be defined by losing it. C.S. Lewis — Both wrote through the worst of it. Lewis to find out what he actually believed, Su Shi to find out what was still enjoyable. Chu Shijian — Both began with one small concrete job after losing the position: Su Shi broke ground at Huangzhou, Chu Shijian built the irrigation first. Neither waited to be recognised again. Seneca — Two ways of writing out of adversity: Seneca writes about restraint from inside the machinery of power, Su Shi writes about lightness on the road into exile, and both had been tested before either wrote a line. Viktor Frankl — Creation under punishment: Su Shi wrote his best work in exile, Frankl finished logotherapy in the camps — both took the worst stretch of a life and made it the productive one. Du Fu — Both rebuilt after forty: Su Shi broke ground at Huangzhou, Du Fu put up a roof at Chengdu, and both took what a life runs on before any position. Su Shi went back; Du Fu never did. Tao Yuanming — Two ways out of office: Su Shi was exiled and moved by other people, Tao Yuanming walked out himself on the day. One is about living well inside an arrangement, the other about making the decision.
+Zhuangzi — Two ways of not being owned: Zhuangzi refuses the post, Su Shi takes it and refuses to be defined by losing it. C.S. Lewis — Both wrote through the worst of it. Lewis to find out what he actually believed, Su Shi to find out what was still enjoyable. Chu Shijian — Both began with one small concrete job after losing the position: Su Shi broke ground at Huangzhou, Chu Shijian built the irrigation first. Neither waited to be recognised again. Seneca — Two ways of writing out of adversity: Seneca writes about restraint from inside the machinery of power, Su Shi writes about lightness on the road into exile, and both had been tested before either wrote a line. Viktor Frankl — Creation under punishment: Su Shi wrote his best work in exile, Frankl finished logotherapy in the camps — both took the worst stretch of a life and made it the productive one. Du Fu — Both rebuilt after forty: Su Shi broke ground at Huangzhou, Du Fu put up a roof at Chengdu, and both took what a life runs on before any position. Su Shi went back; Du Fu never did. Tao Yuanming — Two ways out of office: Su Shi was exiled and moved by other people, Tao Yuanming walked out himself on the day. One is about living well inside an arrangement, the other about making the decision. Li Qingzhao — Her father was Su Shi's student, and she still wrote that his lyrics often missed the music. Both lived through exile and loss: Su Shi wrote the hard years as breadth of mind, she wrote them as an exact list of what was lost.
 
 ### Further
-Wang Yangming Fan Li Zhuangzi Tao Te Ching Huineng Winston Churchill Feng Dao Nelson Mandela Sima Qian Seneca Du Fu Shi Tiesheng Tao Yuanming Bai Juyi Lin Xiangru Xu Xiake
+Wang Yangming Fan Li Zhuangzi Tao Te Ching Huineng Winston Churchill Feng Dao Nelson Mandela Sima Qian Seneca Du Fu Shi Tiesheng Tao Yuanming Bai Juyi Lin Xiangru Xu Xiake Li Qingzhao
 
 ========================================================================
 ## Su Yu
@@ -5407,7 +5441,7 @@ He left at forty-one and never went back in twenty-odd years. Own the price of t
 Su Shi — Two ways out of office: Su Shi was exiled and moved by other people, Tao Yuanming walked out himself on the day. One is about living well inside an arrangement, the other about making the decision. Pu Songling — Both were poor for life: Pu Songling kept sitting the exam and never passed, Tao Yuanming stopped sitting it on purpose. One had no choice, the other chose. Du Fu — One walked, one had no choice: Tao Yuanming knew where he was going the day he resigned, while Du Fu left office and searched the whole way southwest before stopping at Chengdu. Bai Juyi — One problem, two answers: Tao Yuanming would not bend for five pecks of rice and resigned the same day, while Bai Juyi kept the rice and cut the bending down to the minimum. Xu Xiake — Neither took the road of office. Tao went back to his own fields so as not to live against his heart; Xu went outward so as to see with his own eyes. One turned inward, the other set out, and both began by knowing what they wanted.
 
 ### Further
-Su Shi Pu Songling Du Fu Viktor Frankl Bai Juyi Xu Xiake
+Su Shi Pu Songling Du Fu Viktor Frankl Bai Juyi Xu Xiake Li Qingzhao
 
 ========================================================================
 ## Technological Revolutions
@@ -6566,7 +6600,7 @@ To be rich and not go home is to wear brocade at night. Heaven is destroying me.
 Liu Bang — The perfect loser against the imperfect winner: the ceiling of one man's talent against the ceiling of what many people will do for you. Julius Caesar — Two tragic ends in two traditions: Caesar killed by the people he trusted, Xiang Yu by refusing to get into a boat. Duke Wen of Jin — Both chose between comfort and the long road. Xiang Yu took the Qin capital, longed to go home to Chu, and would not hear the man who urged him to stay. Chong'er also wanted to stay in Qi, and was pushed into a carriage by his wife and his uncle. One had nobody able to stop him; the other had people who dared.
 
 ### Further
-Liu Bang Han Xin Sun Tzu Fan Li On War Hu Xueyan Duke Wen of Jin
+Liu Bang Han Xin Sun Tzu Fan Li On War Hu Xueyan Duke Wen of Jin Li Qingzhao
 
 ========================================================================
 ## Xiao He
@@ -14277,6 +14311,102 @@ Where it goes wrong: using 'know where to stop' as cover for never acting; or wr
 Know where to stop, and then you can be settled.
 Never forget stability while growing; never forget growth while stable.
 What gets capped is the exposure, not the ambition.
+
+========================================================================
+## Li Qingzhao · Still Fifteen Carts of Books
+URL: https://ourword.ai/en/i/li-qingzhao/fifteen-carts/
+Source: Li Qingzhao, Postface to the Records on Metal and Stone
+Tags: Deep read, Li Qingzhao, When you cannot carry it all, decide the order of what goes first
+
+Too much to carry and no time to choose. What do you give up first? How did Li Qingzhao shed twenty years of collecting?
+
+### Q: What actually happened?
+In the spring of 1127, with the Jin armies coming south, her husband Zhao Mingcheng hurried south for his mother's funeral. Twenty years of books, paintings and bronzes could not go with them, so they cut layer by layer: first the bulky printed books, then the multi-scroll paintings, then the bronzes without inscriptions, then the common editions, the ordinary paintings, the heavy vessels. After several rounds it still filled fifteen carts. The ten rooms left locked in their old house in Qingzhou burned when the city fell that December.
+
+### The parts · Shed what can be replaced
+The first to go were bulky printed books, which could be bought again anywhere. Multi-scroll paintings and uninscribed bronzes went next. What stayed to the end was the unique: the rare editions, the inscribed vessels, the pieces they had written on.
+e.g. Moving with one suitcase: give away books any shop sells, and pack the handwritten notes and old family letters.
+
+### The parts · Set the order before the crisis
+Two years later, leaving for a post, he called his instructions across the water: baggage first, then bedding, then books and scrolls, then bronzes; the ritual vessels she should carry herself and never part from. In a panic there is no time to think, only to follow an order.
+e.g. Before cash runs short, write the list: which spending stops first, and which never stops.
+
+### The parts · What you keep will scatter too
+The fifteen carts reached Jiankang and still scattered: stolen, swindled, swapped by those keeping them. By the time she wrote, seven or eight parts in ten were gone. An order cannot save everything. It lets you know what you are losing.
+e.g. A project cut to one feature still failed. In the review, first ask whether the earlier cuts were the right ones.
+
+### Q: How do I use it today?
+Where you are: too much to carry, too little time, and you must give something up though you want to keep it all.
+Ask first: what could I buy or make again? What is gone for good if I lose it? Am I setting the order now, or choosing in the moment of panic?
+Where it goes wrong: treating an order as a way to save everything. She cut carefully and still lost most of it. The order decides what goes first, not whether anything goes.
+
+### Lines to keep
+After cutting again and again, there were still fifteen carts of books.
+Whatever is gathered must scatter. That is the way of things.
+
+========================================================================
+## Li Qingzhao · The Tea Wager
+URL: https://ourword.ai/en/i/li-qingzhao/the-tea-wager/
+Source: Li Qingzhao, Postface to the Records on Metal and Stone
+Tags: Deep read, Li Qingzhao, When money is tight, invent a game that belongs to the two of you
+
+Little money and long days. Where does the fun between two people come from? How did Li Qingzhao and her husband play?
+
+### Q: What actually happened?
+At eighteen she married Zhao Mingcheng, then a student at the imperial academy; both families were poor. On the first and fifteenth of each month he pawned clothes for five hundred cash, walked to the Xiangguo temple, and came home with rubbings and fruit to pore over and eat together. Years later, after dinner over tea, they quizzed each other on which book, chapter, page and line a passage was in. Whoever was right drank first, and often laughed so hard the tea spilled.
+
+### The parts · Turn a gift into a game
+She said she happened to have a strong memory. She did not use it to show off. She made it the stake at the tea table: name the book, chapter and page, and drink first. The quiz tested memory; the game was about the books they both loved.
+e.g. You both love films. At dinner, quiz each other on whose line that was; the winner picks next week's film.
+
+### The parts · Being poor is no reason to have no fun
+In the first years they had to pawn clothes to find five hundred cash. They did not wait to be rich. They spent it on rubbings and fruit and enjoyed them together. The fun came from looking at the same thing, not from the money.
+e.g. Money is tight in your first job. Skip the mall; hunt one book at a used stall and read it aloud at home.
+
+### The parts · Do not let rules crowd out the joy
+As the books multiplied they built a library: numbered, logged, a key to sign for, any smudge to be cleaned and corrected. She wrote that it was never as easy again; they sought comfort and found anxiety.
+e.g. Your sneaker collection grew until you will not wear them or let anyone touch them, though you bought them for fun.
+
+### Q: How do I use it today?
+Where you are: money is tight, or you have been together long enough that nothing feels new.
+Ask first: what do we both care about? Can we build a small game around it that only we understand? Are we enjoying it, or serving it?
+Where it goes wrong: turning the game into a contest or a regime. The tea wager was fun because losing only meant drinking later. Once the library had rules, the joy went first.
+
+### Lines to keep
+We laughed until the tea spilled in our laps, and no one drank.
+We sought comfort, and found anxiety instead.
+
+========================================================================
+## Li Qingzhao · A Separate Art
+URL: https://ourword.ai/en/i/li-qingzhao/a-separate-art/
+Source: Li Qingzhao, On Lyrics; Hu Zi, Tiaoxi Yuyin Conghua
+Tags: Deep read, Li Qingzhao, To say the masters got it wrong, show your standard first
+
+The acknowledged masters of your field are doing it wrong. Do you dare say so? How did Li Qingzhao criticise Su Shi and the rest?
+
+### Q: What actually happened?
+In a short essay, On Lyrics, Li Qingzhao went through nearly every celebrated lyricist of the Northern Song. Liu Yong kept the music but his words were vulgar. Yan Shu, Ouyang Xiu and Su Shi had vast learning, yet their lyrics were merely poems with broken lines and often off the music. Wang Anshi and Zeng Gong wrote prose like the Han, but their lyrics would make you fall over laughing. Her reason: poems mind only tones; a lyric must fit the notes, the modes and the pitches.
+
+### The parts · State the standard, then name names
+She did not simply say who wrote badly. She first said how a lyric differs from a poem: a poem minds level and oblique tones; a lyric must also fit notes, modes, and clear and muddy sounds. Then she measured each master against it. To disagree, you must first refute the ruler.
+e.g. You think the boss's plan is weak. Write down the test you are using first, then show which part fails it.
+
+### The parts · Judge the work, not the person
+Su Shi was her father's teacher and the most famous writer alive. She still said his lyrics often missed the music. She spoke of what the lyrics were, not of the man. Criticism aimed at the work is easier to voice and easier to accept.
+e.g. Reviewing a senior colleague's code, write what is wrong with this part and why, never 'you always do this'.
+
+### The parts · Accept the cost of naming names
+The critic Hu Zi, who preserved the essay, complained that she picked out every master's faults and spared no one, and said he would not accept her verdict. Name your elders, and expect to be measured by the same ruler.
+e.g. Point out the holes in your manager's plan in the group chat, and expect your next plan to be picked apart the same way.
+
+### Q: How do I use it today?
+Where you are: the acknowledged masters of your field are doing it wrong, and you want to say so without seeming arrogant.
+Ask first: what standard am I using, and can I state it? Am I criticising the work or the person? Could I stand being measured by the same ruler?
+Where it goes wrong: listing others' faults without showing your ruler. She could persuade because the standard came first; naming names without one is only abuse.
+
+### Lines to keep
+The lyric is an art of its own, and few understand it.
+For them, a little lyric was a gourd scooped from the sea.
 
 ========================================================================
 ## Li Shimin · Listen to all sides
