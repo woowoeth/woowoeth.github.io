@@ -1,7 +1,7 @@
-# OurWord — 192 people and books on how the world actually works, across 2,600 years
+# OurWord — 193 people and books on how the world actually works, across 2,600 years
 # OurWord — See how people before you handled it.
 # https://ourword.ai/en/
-# Full corpus, plain text. 192 entrys.
+# Full corpus, plain text. 193 entrys.
 
 ========================================================================
 ## Albert Einstein
@@ -2104,7 +2104,7 @@ The ruler controls by two handles: punishment and favour. The difficulty of pers
 Zhuangzi — Same era, opposite answers: Han Feizi designs the machine, Zhuangzi declines to be a component. Thomas Gordon — Two theories of getting compliance: rules and consequences, or naming the effect on you. Both work, on different things. John Boyd — Two theories of an organisation that works: rules and consequences, or shared intent and delegated authority. Xunzi — The student pushed the teacher's training argument into a theory of control. Xunzi kept the rites; Han Feizi kept only the handles. Hannah Arendt — Han Feizi asks how to build a system that works without relying on goodness; Arendt asks where obedience inside such a system ends up. One writes from the designer's chair, one from the operator's. Cao Cao — The theory and its practitioner. Han Feizi wrote the system down; cutting his hair in place of his head is that system demonstrated on the man at the top. Mencius — Both are writing about how to govern. Han Feizi trusts reward and punishment; Mencius asks whether people are still willing to follow you at all. Shang Yang — Theory and practice of the same school: Han Feizi wrote the system down, Shang Yang ran it, and both were killed by the thing they had built. Machiavelli — The two closest political realists East and West, seventeen centuries apart: both studied how power actually works, and both were destroyed by the power they studied. Influence — Two systems for moving people: Han Feizi designed law, technique and position two thousand years earlier, Cialdini found six triggers. Both are asking how to make people act as you want. Robert Axelrod — Neither trusts human nature: Han Feizi holds reward and punishment himself so that nobody dares defect, Axelrod lengthens the relationship until nobody needs to - one runs on power, the other on repetition. Liu Yan — Neither counts on people being good: Han Feizi says do not rely on their goodness and rely on law and position instead, while Liu Yan names the particular device - rank and a way up - that makes keeping the rules pay in that seat. Edward Deci — Both are about how reward and punishment move people. Han Feizi calls them the ruler's two handles: grip them and people move. Deci found that paying for something people already loved left them doing less once the pay stopped. One treats reward as the engine; the other asks what the reward replaced. Yan Ying — Both guard against being walled in by the people around you. Han Feizi relies on technique and audit, against ministers who hide things. Yan Ying relies on being someone people dare to tell, and on hearing the man out when he is told he was wrong. One closes the gaps from the system, the other opens up in himself first.
 
 ### Further
-Fan Li Sun Tzu Charlie Munger John Boyd Xunzi Hannah Arendt Cao Cao Guan Zhong Mencius Shang Yang Wu Zetian Zhang Juzheng Zhu Yuanzhang Guo Jia Thomas Schelling Strategies of the Warring States Guiguzi Machiavelli Influence Robert Axelrod Liu Yan The Annals of Lu Buwei Edward Deci Yan Ying
+Fan Li Sun Tzu Charlie Munger John Boyd Xunzi Hannah Arendt Cao Cao Guan Zhong Mencius Shang Yang Wu Zetian Zhang Juzheng Zhu Yuanzhang Guo Jia Thomas Schelling Strategies of the Warring States Guiguzi Machiavelli Influence Robert Axelrod Liu Yan The Annals of Lu Buwei Edward Deci Yan Ying Mozi
 
 ========================================================================
 ## Han Xin
@@ -3788,10 +3788,10 @@ Before the next decision that costs somebody else something, ask three questions
 The people come first, the altars of the state next, the ruler last. He who has the way has many helpers; he who loses it has few. Born in adversity, dead in comfort.
 
 ### Q: What should I read alongside?
-Han Feizi — Both are writing about how to govern. Han Feizi trusts reward and punishment; Mencius asks whether people are still willing to follow you at all. The Analects — The Analects tells a gentleman how to conduct himself; Mencius tells a ruler what will remove him. Xunzi — One holds that people can be taught, the other that people can be shaped. Mencius cultivates; Xunzi processes.
+Han Feizi — Both are writing about how to govern. Han Feizi trusts reward and punishment; Mencius asks whether people are still willing to follow you at all. The Analects — The Analects tells a gentleman how to conduct himself; Mencius tells a ruler what will remove him. Xunzi — One holds that people can be taught, the other that people can be shaped. Mencius cultivates; Xunzi processes. Mozi — Mencius condemned the Mohists for impartial care, saying it left a man with no father. Both lived by persuading rulers: Mencius first showed the ruler righteousness, Mozi first showed him the bill.
 
 ### Further
-The Analects Han Feizi Shang Yang Li Shimin Lee Kuan Yew Xunzi Family Instructions for the Yan Clan The Book of Rites
+The Analects Han Feizi Shang Yang Li Shimin Lee Kuan Yew Xunzi Family Instructions for the Yan Clan The Book of Rites Mozi
 
 ========================================================================
 ## Michael Porter
@@ -3937,6 +3937,40 @@ Brené Brown — Both take shame and fear apart. She has the laboratory findings
 
 ### Further
 Seneca Marcus Aurelius Brené Brown Shi Tiesheng
+
+========================================================================
+## Mozi
+URL: https://ourword.ai/en/i/mozi/
+Tags: Strategy and competition, Pre-Qin and classical, Against war
+
+Mozi (Spring and Autumn to Warring States · Lu · c.470–391 BC) — Against war. Philosopher at the turn of the Spring and Autumn and Warring States periods, founder of the Mohist school, from the state of Lu.
+
+### Q: What did this one leave behind?
+Philosopher at the turn of the Spring and Autumn and Warring States periods, founder of the Mohist school, from the state of Lu. He taught impartial care and opposed offensive war, and his disciples read books and also knew how to defend a city. Several stories in the Mozi are about one thing: how to get someone who does not want to listen to hear you. This page takes three of his methods: when he agrees with you and still will not stop, let him work out that he cannot win; when you are scolded hardest, ask what the scolder has handed you; and before believing a new claim, put it through three tests.
+
+### Q: What actually happened?
+On the way home from Chu, Mozi passed through Song in the rain and tried to shelter under the gate of a village lane. The gatekeeper would not let him in. No one in Song knew the city had just been saved by him. The book closes the story with a line: whoever works in the unseen, no one knows his credit; whoever fights in the open, everyone sees.
+
+### The parts · Let him do the sum
+The king of Chu said the argument was well put and still meant to attack. Mozi laid down his belt as a wall and had the engineer try nine attacks. After the ninth the king agreed to stop. e.g. Your boss nods and keeps the schedule. Put the rival's shipped features on the table and ask which ones we can beat.
+
+### The parts · Hard on you because the load is heavy
+A pupil he scolded asked if he was worse than the others. Mozi asked back: climbing a mountain, would you drive the horse or the sheep? The horse can bear it, so the horse is the one he drove. e.g. The person whose draft is cut hardest is often the one the editor wants on stage.
+
+### The parts · Three tests for a new claim
+When some said fate fixed everything and effort was pointless, he did not first argue right and wrong. He set three tests: where it comes from, what eyewitnesses say, what it does for people. e.g. A tool everyone praises: find the precedent, then someone who has used it three months, then try it small for two weeks.
+
+### Q: How do I use it today?
+Pick something you are arguing, being scolded for, or being pushed to believe, and write one line each: what I could lay in front of him so he does the sum himself; who gave the heaviest work to whom; and the origin, the eyewitnesses and the use of the claim. All three of his methods do the same thing: give the other person something he can check himself.
+
+### Lines to keep
+A claim needs three tests. And I thought you could bear it too. Whoever works in the unseen, no one knows his credit.
+
+### Q: What should I read alongside?
+Sun Tzu — Sun Tzu teaches how to win: work out the odds first, then move. Mozi teaches how to make the other side afraid to start: put the odds in front of him and ask him to work them out. Mencius — Mencius condemned the Mohists for impartial care, saying it left a man with no father. Both lived by persuading rulers: Mencius first showed the ruler righteousness, Mozi first showed him the bill.
+
+### Further
+Sun Tzu Mencius Han Feizi Xunzi
 
 ========================================================================
 ## Murray Bowen
@@ -5401,10 +5435,10 @@ Before the next thing you are about to launch, argue, or confront, write down wh
 The victorious army wins first and seeks battle afterwards. Winning a hundred battles is not the height of skill. Subduing the enemy without fighting is. Know the other side and know yourself, and you will not be in danger in a hundred battles.
 
 ### Q: What should I read alongside?
-John Boyd — Both put the decision before the clash. Sun Tzu settles it in preparation, Boyd in speed of turning. On War — The two halves of the subject: Sun Tzu on how to win, Clausewitz on why the plan deforms. One assumes the count can be completed, the other that it never is. Strategies of the Warring States — One states principles that can be taught in public; the other records what was actually said to one man on one day to change his mind. Finite and Infinite Games — Sun Tzu solves competition entirely as a finite game and every technique serves the win; Carse asks why you assumed this round had to end at all. Thinking, Fast and Slow — Reckoning in the temple is a forced start-up of the slow system: settle the count before deciding whether to fight at all.
+John Boyd — Both put the decision before the clash. Sun Tzu settles it in preparation, Boyd in speed of turning. On War — The two halves of the subject: Sun Tzu on how to win, Clausewitz on why the plan deforms. One assumes the count can be completed, the other that it never is. Strategies of the Warring States — One states principles that can be taught in public; the other records what was actually said to one man on one day to change his mind. Finite and Infinite Games — Sun Tzu solves competition entirely as a finite game and every technique serves the win; Carse asks why you assumed this round had to end at all. Thinking, Fast and Slow — Reckoning in the temple is a forced start-up of the slow system: settle the count before deciding whether to fight at all. Mozi — Sun Tzu teaches how to win: work out the odds first, then move. Mozi teaches how to make the other side afraid to start: put the odds in front of him and ask him to work them out.
 
 ### Further
-Han Feizi John Boyd Fan Li Peter Thiel Cao Cao Guan Zhong Zhuge Liang Mao Zedong Guo Jia The I Ching Han Xin Huo Qubing Miyamoto Musashi Napoleon On War Thomas Schelling Sima Yi Strategies of the Warring States Su Yu Xiang Yu Machiavelli Nassim Taleb Sapiens
+Han Feizi John Boyd Fan Li Peter Thiel Cao Cao Guan Zhong Zhuge Liang Mao Zedong Guo Jia The I Ching Han Xin Huo Qubing Miyamoto Musashi Napoleon On War Thomas Schelling Sima Yi Strategies of the Warring States Su Yu Xiang Yu Machiavelli Nassim Taleb Sapiens Mozi
 
 ========================================================================
 ## Taiichi Ohno
@@ -6773,7 +6807,7 @@ Human nature is bad; what is good in people is deliberate effort. Blue is taken 
 Mencius — One holds that people can be taught, the other that people can be shaped. Mencius cultivates; Xunzi processes. Han Feizi — The student pushed the teacher's training argument into a theory of control. Xunzi kept the rites; Han Feizi kept only the handles.
 
 ### Further
-Mencius Han Feizi Wang Yangming Andy Grove Benjamin Franklin Li Shimin The Book of Rites
+Mencius Han Feizi Wang Yangming Andy Grove Benjamin Franklin Li Shimin The Book of Rites Mozi
 
 ========================================================================
 ## Yan Ying
@@ -16279,6 +16313,105 @@ Where it goes wrong: turning 'let them do it' into no help at all. Repeated fail
 Help me to do it myself.
 Every unnecessary help is an obstacle to development.
 Ten extra minutes today buys years of not being involved.
+
+========================================================================
+## Mozi · A Belt for a City Wall
+URL: https://ourword.ai/en/i/mozi/belt-and-sticks/
+Source: Mozi, Gongshu (chapter 50)
+Tags: Deep read, Mozi, When he agrees you are right and still will not stop, let him work out that he cannot win
+
+You have made your case and he has nodded, yet he carries on as planned. How did Mozi get the king of Chu to say he would not attack Song?
+
+### Q: What actually happened?
+Chu had built scaling ladders and meant to attack the small state of Song. Mozi heard of it, and walked ten days and nights from Qi to the Chu capital. He talked the engineer, Gongshu Ban, into agreement, but the engineer said: I have already told the king. Mozi then put his case to the king, who said it was well put, and still meant to take Song. So he laid down his belt as a city wall and used wooden tablets as machines: nine times Gongshu Ban varied the assault, and nine times Mozi held.
+
+### The parts · Agreement is not the same as stopping
+Gongshu Ban had no reply to Mozi's questions, and the king called the comparison of a rich man stealing from a poor one well put. Both still returned to the old plan. They had already spoken in public; agreeing with an argument was one thing, backing down another.
+e.g. Your boss nods in the meeting and says you are right, then leaves the schedule as it was. The case was accepted; the promise and the pride are still where they were.
+
+### The parts · Stop arguing; let him do the sum
+Mozi did not go on about benevolence. He set up a rehearsal: belt for the walls, tablets for the machines. Nine attacks, nine defences, until the engineer's methods were spent and Mozi's had some left. The king was shown a result, not a sermon.
+e.g. Do not say 'this project will fail'. Lay out three features the rival has already shipped and ask which of them we can beat.
+
+### The parts · Have the reserve actually on the wall
+The engineer thought of killing Mozi. Mozi told the king that his disciple Qin Guli and three hundred others were already on Song's walls with his defensive equipment, waiting for Chu. Killing him would not end it. Then the king said he would not attack Song.
+e.g. At the negotiating table, do not just say 'I won't accept this'. Let him see that you have already agreed terms with another supplier.
+
+### Q: How do I use it today?
+Where you are: you have made the case, he has agreed, and he is still pushing ahead.
+Ask first: is he refusing because he doubts my reasoning, or because he has already said it aloud and cannot back down? Do I hold something I can lay in front of him so he does the sum himself?
+Where it goes wrong: showing a reserve you do not have. Mozi's three hundred were really on the wall. Bluff with nobody behind it and it collapses at the first push, and next time no one listens to the reasoning either.
+
+### Lines to keep
+I have already told the king.
+I know how you would stop me, and I will not say.
+Kill me and it still would not end.
+
+========================================================================
+## Mozi · I Thought You Could Bear It
+URL: https://ourword.ai/en/i/mozi/the-good-horse/
+Source: Mozi, Gengzhu (chapter 46)
+Tags: Deep read, Mozi, The one he scolds hardest is often the one he thinks can carry the most
+
+The teacher scolds you and no one else, and you wonder if he thinks less of you. What did Mozi say when his pupil asked exactly that?
+
+### Q: What actually happened?
+Gengzhu was one of Mozi's pupils. Once Mozi lost his temper and scolded him hard. Gengzhu protested: surely I am no worse than the others? Mozi did not answer directly. He asked: if I were going to climb the Taihang mountains, and had a fine horse and a sheep to harness, which would you drive? The horse, said Gengzhu. Why? Because the horse can bear it. Mozi said: and I thought you could bear it too.
+
+### The parts · The scolded man asks about rank
+Gengzhu's first words were not 'what did I get wrong' but 'am I not as good as the others'. Once criticism turns into a question of ranking it feels like humiliation, and the energy to put the fault right is the first thing to go.
+e.g. The director names you in the meeting and you think 'why me', not what exactly he pointed at.
+
+### The parts · Hard on you because the load is heavy
+Mozi used a cart. Climbing a mountain, you whip only the horse that can pull it; a sheep cannot, so you do not bother. The harsher scolding was not a lower opinion but a measure of who could take the whole load up the hill.
+e.g. The person whose draft is cut hardest is often the one the editor means to put on stage.
+
+### The parts · Say it to his face
+Mozi told Gengzhu directly. Without that, the scolded man can only guess. Once it is said, a rebuke becomes a trust.
+e.g. After a hard review, add 'I'm giving you this because you can take it'. It does more than ten consolations.
+
+### Q: How do I use it today?
+Where you are: someone above you keeps picking on you alone, and you start to doubt that he rates you.
+Ask first: is he scolding what I did, or comparing me with others? Is the heaviest work also coming to me?
+Where it goes wrong: reading every scolding as respect. This holds because Mozi said it to his face. If a person gives you no weight and no explanation and just keeps pressing, that is not the horse's treatment, and you owe him no excuses.
+
+### Lines to keep
+Climbing the mountain, horse or sheep: which do I drive?
+The horse can bear it.
+And I thought you could bear it too.
+
+========================================================================
+## Mozi · Three Tests for a Claim
+URL: https://ourword.ai/en/i/mozi/three-tests/
+Source: Mozi, Fei Ming I (chapter 35)
+Tags: Deep read, Mozi, Before you believe a new claim, ask three things: where it came from, who saw it, what it did
+
+Everyone says a thing works and you cannot test it yourself. What are the three tests Mozi set, and what does each ask?
+
+### Q: What actually happened?
+In Mozi's day some said that rule and ruin, wealth and poverty were fixed by fate and effort changed nothing. Mozi did not begin by arguing whether that was true. He first set a rule: a claim needs three tests. The first looks upward: have the ancient sage kings ever done this? The second looks downward: what have ordinary people actually heard and seen? The third puts it to work: does it help the state and its people?
+
+### The parts · Origin: where did it come from
+The first test looks back: has anyone ever really made this work? Many voices shouting does not count. You need a precedent, and the precedent must be the same thing the claim is about today.
+e.g. Someone says 'three people built a billion-dollar firm in a year'. First find who did it, and whether it was what he describes.
+
+### The parts · Witness: what the eyewitnesses say
+The second test looks down at what ordinary people have heard and seen. Not commentary, not retelling: what those who used it say for themselves.
+e.g. Before adopting a new tool, skip the launch event; ask someone who has used it three months which parts they still use and which they dropped.
+
+### The parts · Use: who benefits when it is put to work
+The third test is to try it and see whether people are better off. It is the one most often dropped: even when the first two pass, look at whether the time saved turned into anything.
+e.g. Trial it on a small scale for two weeks, then look at what you did with the time it saved.
+
+### Q: How do I use it today?
+Where you are: everyone around you says something new works, you cannot check it, and you fear missing out.
+Ask first: has anyone made the same thing work before? What do those who used it say? If I try a small piece, does it do me any actual good?
+Where it goes wrong: stopping at one test. The three go together: an origin with no eyewitness is hearsay, and an eyewitness with no use is a spectacle.
+
+### Lines to keep
+A claim needs three tests.
+Has it an origin, a source and a use?
+Look down to what ordinary people saw and heard.
 
 ========================================================================
 ## Charlie Munger · Invert, always invert

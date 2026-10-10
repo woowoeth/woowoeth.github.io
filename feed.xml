@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>OurWord — 192 people and books on how the world actually works, across 2,600 years</title>
+    <title>OurWord — 193 people and books on how the world actually works, across 2,600 years</title>
     <link>https://ourword.ai/</link>
     <atom:link href="https://ourword.ai/feed.xml" rel="self" type="application/rss+xml"/>
-    <description>A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 192 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.</description>
+    <description>A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 193 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.</description>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 09 Oct 2026 08:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 10 Oct 2026 08:00:00 +0800</lastBuildDate>
 <!-- chapters:begin -->
     <item><title>阿德勒 · 课题分离</title><link>https://ourword.ai/i/adler/separation-of-tasks/</link><guid isPermaLink="true">https://ourword.ai/i/adler/separation-of-tasks/</guid><description>阿德勒 · 课题分离——先分清这是谁的事。人际关系的痛苦大半来自越界。这一篇要回答的是：边界到底画在哪。</description><pubDate>Tue, 01 Sep 2026 08:00:00 +0800</pubDate></item>
     <item><title>阿德勒 · 不是因为，是为了</title><link>https://ourword.ai/i/adler/teleology/</link><guid isPermaLink="true">https://ourword.ai/i/adler/teleology/</guid><description>阿德勒 · 不是因为，是为了——把原因换成目的。弗洛伊德问你经历过什么，阿德勒问你想用它做什么。这一篇要回答的是：这个换问法为什么能解冻。</description><pubDate>Sun, 30 Aug 2026 08:00:00 +0800</pubDate></item>
@@ -283,6 +283,9 @@
     <item><title>蒙田 · 三十八岁退进塔楼</title><link>https://ourword.ai/i/montaigne/the-tower/</link><guid isPermaLink="true">https://ourword.ai/i/montaigne/the-tower/</guid><description>蒙田 · 三十八岁退进塔楼——他给自己划了一块地方。日子被别人的事占满，想给自己留一块，怎么做。这一篇要回答的是：蒙田三十八岁那年做了什么，为什么之后二十年都在那间房里。</description><pubDate>Wed, 02 Sep 2026 08:00:00 +0800</pubDate></item>
     <item><title>蒙台梭利 · 先改环境，再谈行为</title><link>https://ourword.ai/i/montessori/prepared-environment/</link><guid isPermaLink="true">https://ourword.ai/i/montessori/prepared-environment/</guid><description>蒙台梭利 · 先改环境，再谈行为——够不到才叫不听话。被视为无法管教的孩子，换了间屋子就变了。这一篇要回答的是：变的是什么。</description><pubDate>Sun, 30 Aug 2026 08:00:00 +0800</pubDate></item>
     <item><title>蒙台梭利 · 帮助我，让我自己做</title><link>https://ourword.ai/i/montessori/help-me-do-it-myself/</link><guid isPermaLink="true">https://ourword.ai/i/montessori/help-me-do-it-myself/</guid><description>蒙台梭利 · 帮助我，让我自己做——代劳省的是你的时间。替他做完只要两分钟。这一篇要回答的是：那两分钟买走了什么。</description><pubDate>Sun, 30 Aug 2026 08:00:00 +0800</pubDate></item>
+    <item><title>墨子 · 解带为城</title><link>https://ourword.ai/i/mozi/belt-and-sticks/</link><guid isPermaLink="true">https://ourword.ai/i/mozi/belt-and-sticks/</guid><description>墨子 · 解带为城——道理他认了还不收手，就让他自己算打不赢。你把理讲通了，对方也点了头，可他照旧不肯收手。这一篇要回答的是：墨子怎么让楚王自己说出「不攻宋了」。</description><pubDate>Sat, 10 Oct 2026 08:00:00 +0800</pubDate></item>
+    <item><title>墨子 · 我亦以子为足以责</title><link>https://ourword.ai/i/mozi/the-good-horse/</link><guid isPermaLink="true">https://ourword.ai/i/mozi/the-good-horse/</guid><description>墨子 · 我亦以子为足以责——骂得最重的那个，往往是他觉得担得起的那个。老师总骂你一个，不骂别人，你会想是不是被看低。这一篇要回答的是：耕柱子这样问墨子，墨子怎么答。</description><pubDate>Sat, 10 Oct 2026 08:00:00 +0800</pubDate></item>
+    <item><title>墨子 · 言有三表</title><link>https://ourword.ai/i/mozi/three-tests/</link><guid isPermaLink="true">https://ourword.ai/i/mozi/three-tests/</guid><description>墨子 · 言有三表——听到一个新说法，先过三道：来历、亲眼见、用处。身边人都说一样东西有用，你没法自己验。这一篇要回答的是：墨子立的三道检验，各问什么。</description><pubDate>Sat, 10 Oct 2026 08:00:00 +0800</pubDate></item>
     <item><title>查理·芒格 · 反过来想</title><link>https://ourword.ai/i/munger/invert/</link><guid isPermaLink="true">https://ourword.ai/i/munger/invert/</guid><description>查理·芒格 · 反过来想——先研究怎么死。他一生把一句数学家的话用到了所有领域。这一篇要回答的是：反过来想在操作上到底是哪几步。</description><pubDate>Sat, 29 Aug 2026 08:00:00 +0800</pubDate></item>
     <item><title>查理·芒格 · 格栅思维</title><link>https://ourword.ai/i/munger/latticework/</link><guid isPermaLink="true">https://ourword.ai/i/munger/latticework/</guid><description>查理·芒格 · 格栅思维——一把锤子不够用。他警告的不是无知，是单一学科的专业。这一篇要回答的是：为什么最危险的恰恰是最熟练的那把锤子。</description><pubDate>Sat, 29 Aug 2026 08:00:00 +0800</pubDate></item>
     <item><title>村上春树 · 正写得顺，停笔</title><link>https://ourword.ai/i/murakami/stop-while-it-flows/</link><guid isPermaLink="true">https://ourword.ai/i/murakami/stop-while-it-flows/</guid><description>村上春树 · 正写得顺，停笔——明天才接得上。写不下去是常态，那写得正顺的时候该怎么办。这一篇要回答的是：村上为什么偏偏在那时停笔。</description><pubDate>Tue, 01 Sep 2026 08:00:00 +0800</pubDate></item>

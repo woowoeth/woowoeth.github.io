@@ -146,6 +146,8 @@ SCENES = [
      [("musashi", "no-favorite-weapon"), ("huo-qubing", "no-old-manuals")]),
     ("对面比我强，我从哪里下手？",
      [("li-bi", "strike-the-base"), ("sima-yi", "eight-days")]),
+    ("我讲理他都认，可他就是不停手。",
+     [("mozi", "belt-and-sticks")]),
 ]),
 ("被牵着走", "有对手", [
     ("他每出一招，我都得接吗？",
@@ -687,6 +689,8 @@ SCENES = [
      [("brene-brown", "secrecy-silence-judgment"), ("socrates", "knowing-not-knowing")]),
     ("道理都懂，我就是对自己客气不起来。",
      [("kristin-neff", "three-parts"), ("carl-rogers", "unconditional-regard")]),
+    ("他就骂我一个，是不是看不上我？",
+     [("mozi", "the-good-horse")]),
 ]),
 ("不想卷但怕掉队", "自己的状态", [
     ("我不想卷，可又怕被落下。",
@@ -861,6 +865,8 @@ SCENES = [
      [("duan-yongping", "dare-to-be-last"), ("huang", "zero-billion-markets")]),
     ("没人说得准的事，我凭什么下注？",
      [("keynes", "we-simply-do-not-know")]),
+    ("大家都说有用，我拿什么验？",
+     [("mozi", "three-tests")]),
 ]),
 ("日子被工具占满", "AI 来了", [
     ("装了一堆省时间的工具，日子反而更满。",

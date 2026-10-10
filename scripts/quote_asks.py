@@ -433,6 +433,13 @@ QUOTE_ASKS = {
         "日子过得紧，我们俩还能有什么乐子？",
     "li-qingzhao/a-separate-art":
         "行内的大佬做得不对，我敢不敢点名？",
+    # 墨子
+    "mozi/belt-and-sticks":
+        "我讲理他都认，可他就是不停手。",
+    "mozi/the-good-horse":
+        "他就骂我一个，是不是看不上我？",
+    "mozi/three-tests":
+        "大家都说有用，我拿什么验？",
     # 徐霞客
     "xu-xiake/robbed-on-the-xiang":
         "半路出了大事，我该回头，还是接着走？",

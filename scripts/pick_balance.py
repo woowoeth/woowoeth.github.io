@@ -36,7 +36,7 @@ STREAK = 3        # 连续几条同一侧就算偏
 # 《薄伽梵歌》《枪炮病菌与钢铁》都归「外」，日本、印度、阿拉伯也归「外」：
 # 这张表分的是「中文读者自己的传统」和「别人的传统」，两侧都该有人。
 CN = {
-    "feng-yi", "xiao-he", "zhao-wuling-wang", "zhou-gong", "yan-ying", "xu-xiake", "li-qingzhao", "lin-huiyin", "jin-wengong", "liji", "lin-xiangru", "lushi-chunqiu", "yanshi-jiaxun",
+    "feng-yi", "xiao-he", "zhao-wuling-wang", "zhou-gong", "yan-ying", "xu-xiake", "mozi", "li-qingzhao", "lin-huiyin", "jin-wengong", "liji", "lin-xiangru", "lushi-chunqiu", "yanshi-jiaxun",
     "analects", "bai-gui", "caigentan", "cao-cao",
     "chu-shijian", "du-fu", "fan-li", "feng-dao", "guan-zhong", "guiguzi",
     "guo-jia", "guo-ziyi", "han-feizi", "han-xin", "hu-xueyan", "huineng",
@@ -53,7 +53,7 @@ CN = {
 FO = {
     "bhagavad-gita", "churchill", "curie", "illich", "weil", "postman",
     "hirschman", "winnicott", "kindleberger", "parkinson", "merton", "axelrod",
-    "becker", "cowan", "herbert-simon", "deci", "coase", "keynes", "porter", "thucydides",
+    "becker", "nightingale", "cowan", "herbert-simon", "deci", "coase", "keynes", "porter", "thucydides",
 }
 
 

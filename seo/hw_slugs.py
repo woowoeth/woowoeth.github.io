@@ -7,6 +7,7 @@ SLUGS = {
     "唐纳德·温尼科特": "winnicott",
     "徐霞客": "xu-xiake",
     "李清照": "li-qingzhao",
+    "墨子": "mozi",
     "林徽因": "lin-huiyin",
     "南丁格尔": "nightingale",
     "晏婴": "yan-ying",

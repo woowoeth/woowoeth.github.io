@@ -63,6 +63,7 @@ NAMES = {
     "caesar": ("Julius Caesar", "Strategy and competition"),
     "guo-jia": ("Guo Jia", "Strategy and competition"),
     "han-xin": ("Han Xin", "Strategy and competition"),
+    "mozi": ("Mozi", "Strategy and competition"),
     "huo-qubing": ("Huo Qubing", "Strategy and competition"),
     "i-ching": ("The I Ching", "Strategy and competition"),
     "mao": ("Mao Zedong", "Strategy and competition"),
