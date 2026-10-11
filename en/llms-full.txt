@@ -1,7 +1,7 @@
-# OurWord — 193 people and books on how the world actually works, across 2,600 years
+# OurWord — 194 people and books on how the world actually works, across 2,600 years
 # OurWord — See how people before you handled it.
 # https://ourword.ai/en/
-# Full corpus, plain text. 193 entrys.
+# Full corpus, plain text. 194 entrys.
 
 ========================================================================
 ## Albert Einstein
@@ -2841,7 +2841,7 @@ Exercise doesn't only shape the body. It shapes the brain. Anxiety is heavily ph
 Robert Sapolsky — Same system, two handles: Sapolsky on what keeps it switched on, Ratey on how to switch it off today.
 
 ### Further
-Robert Sapolsky Rat Park Cal Newport
+Robert Sapolsky Rat Park Cal Newport The Yellow Emperor's Inner Classic
 
 ========================================================================
 ## Julius Caesar
@@ -4855,10 +4855,10 @@ If you've been tense a long time with nothing specific wrong, ask when this syst
 Zebras don't get ulcers because the response runs for minutes. What makes people ill is the response that won't switch off. People adapt to a certain bad. They don't adapt to hanging.
 
 ### Q: What should I read alongside?
-John Ratey — Same system, two handles: Sapolsky on what keeps it switched on, Ratey on how to switch it off today. Christina Maslach — Same conclusion from two directions: she measures the job, he measures the hormone, and both land on control. The Book of Rites — Both explain why staying tense wears you down. Sapolsky is talking about the body: the zebra's stress ends when the lion leaves, while ours stays switched on for things that haven't happened. The Book of Rites is talking about the calendar: release is not something you patch in once the body gives out, but a day fixed in advance and shared, like the year-end festival.
+John Ratey — Same system, two handles: Sapolsky on what keeps it switched on, Ratey on how to switch it off today. Christina Maslach — Same conclusion from two directions: she measures the job, he measures the hormone, and both land on control. The Book of Rites — Both explain why staying tense wears you down. Sapolsky is talking about the body: the zebra's stress ends when the lion leaves, while ours stays switched on for things that haven't happened. The Book of Rites is talking about the calendar: release is not something you patch in once the body gives out, but a day fixed in advance and shared, like the year-end festival. The Yellow Emperor's Inner Classic — Both ask why staying tense wears you down. Sapolsky is about the stress response: the zebra's ends when the lion leaves, ours stays switched on for things that have not happened. The Inner Classic is about timing: don't wait until thirst to dig the well, act while it can still be adjusted.
 
 ### Further
-John Ratey Christina Maslach John Cacioppo Rat Park Arthur Kleinman The Book of Rites
+John Ratey Christina Maslach John Cacioppo Rat Park Arthur Kleinman The Book of Rites The Yellow Emperor's Inner Classic
 
 ========================================================================
 ## Ronald Coase
@@ -5037,10 +5037,10 @@ When anger rises, find the assent step and refuse to give it. Before a decision 
 It is not that we have a short time to live, but that we waste a lot of it. Life, if you know how to use it, is long. You live as if you were destined to live for ever. The greatest remedy for anger is delay.
 
 ### Q: What should I read alongside?
-Marcus Aurelius — Two Stoics in opposite seats: the emperor writing a private notebook to himself, the courtier writing public letters to other people — one turns inward, the other stays practical. Su Shi — Two ways of writing out of adversity: Seneca writes about restraint from inside the machinery of power, Su Shi writes about lightness on the road into exile, and both had been tested before either wrote a line. Montaigne — Both on learning to die. Seneca instructs from above; Montaigne writes outward from the afternoon he was thrown off a horse.
+Marcus Aurelius — Two Stoics in opposite seats: the emperor writing a private notebook to himself, the courtier writing public letters to other people — one turns inward, the other stays practical. Su Shi — Two ways of writing out of adversity: Seneca writes about restraint from inside the machinery of power, Su Shi writes about lightness on the road into exile, and both had been tested before either wrote a line. Montaigne — Both on learning to die. Seneca instructs from above; Montaigne writes outward from the afternoon he was thrown off a horse. The Yellow Emperor's Inner Classic — Both write about anger. Seneca is about how to stop it in the moment it rises; the Inner Classic is about where it goes when it can't be stopped: anger sends qi up, travels the body, and stays.
 
 ### Further
-Marcus Aurelius Epictetus Su Shi Viktor Frankl Montaigne C. Northcote Parkinson
+Marcus Aurelius Epictetus Su Shi Viktor Frankl Montaigne C. Northcote Parkinson The Yellow Emperor's Inner Classic
 
 ========================================================================
 ## Shang Yang
@@ -5820,7 +5820,7 @@ Not even the sage kings could stay strung. At the shout you may leave; after the
 Robert Sapolsky — Both explain why staying tense wears you down. Sapolsky is talking about the body: the zebra's stress ends when the lion leaves, while ours stays switched on for things that haven't happened. The Book of Rites is talking about the calendar: release is not something you patch in once the body gives out, but a day fixed in advance and shared, like the year-end festival. The Analects — Both record how Confucius taught. In the Analects he will not open up a student who is not yet straining to understand, which is about when to speak. The 'Record of Learning' goes a step further: even once you speak, open the way and stop, and leave the last steps to the learner.
 
 ### Further
-The Analects Mencius Xunzi Family Instructions for the Yan Clan Robert Sapolsky
+The Analects Mencius Xunzi Family Instructions for the Yan Clan Robert Sapolsky The Yellow Emperor's Inner Classic
 
 ========================================================================
 ## The Comprehensive Mirror
@@ -6157,6 +6157,46 @@ Guan Zhong — Two origins for the idea of national wealth: Guan Zhong steers pr
 
 ### Further
 Guan Zhong Shang Yang Thinking in Systems Li Ka-shing Naval Ravikant Guns, Germs, and Steel Friedrich Hayek Why Nations Fail Gary Becker Ronald Coase Michael Porter
+
+========================================================================
+## The Yellow Emperor's Inner Classic
+URL: https://ourword.ai/en/i/huangdi-neijing/
+Tags: Body and daily life, Qin, Han and the Six Dynasties, Treat what is not yet ill
+
+The Yellow Emperor's Inner Classic (Warring States to Western Han · attributed to the Yellow Emperor) — Treat what is not yet ill. A medical classic written as questions from the Yellow Emperor and answers from Qi Bo and others, put together between the Warring States and the Western Han.
+
+### Q: What did this one leave behind?
+A medical classic written as questions from the Yellow Emperor and answers from Qi Bo and others, put together between the Warring States and the Western Han. It survives in two parts, the Basic Questions and the Spirit Pivot, and after the Han it was treated as the root text of Chinese medicine. Most of it is about diagnosis, channels, needles and herbs. We leave all that out. A smaller part asks how people should live so that they do not fall ill, and from the Basic Questions we take three passages: act before illness comes, put routine before calm, and feeling travels through the body.
+
+### Q: What actually happened?
+The Yellow Emperor sat down and put a question to Qi Bo. I have heard that people of high antiquity passed a hundred years and their movements did not fail; people now fail at fifty. Has the age changed, or have people let something slip? The question opens the first chapter of the Basic Questions; what Qi Bo says next is a whole chapter on routine and the spirit.
+
+### The parts · The first question asks about people, not about the age
+The Emperor asks whether the age has changed or people have lost something. The first question of the whole book puts the weight on how people live, not on fate or luck. e.g. Your body isn't what it was. Before you blame age, ask what these two years have left out of your days.
+
+### The parts · Digging the well when you are thirsty
+The closing paragraph of 'Four Seasons' says medicine after illness is like digging a well once thirsty. Neither medicine nor repair is wrong. The sage acts before the illness, while it can still be adjusted. e.g. Hollow by mid-afternoon is the time to act, not to wait a bit longer.
+
+### The parts · Make the careless a habit, keep no routine
+Qi Bo's answer is not a great disaster but a way of living: wine for water, the random made the routine, no regular hours, so they fail at fifty. The people of antiquity kept measure and regular hours, and body and spirit stayed together. e.g. Every Friday to three a.m. for three months: once was a break, now it is a routine.
+
+### The parts · A hundred ills come from qi
+'On Pain' has the Emperor say that a hundred ills come from qi. Anger sends it up, joy slackens it, brooding ties it in a knot. Feeling does not stay in the heart; it travels the body, and joy is among the nine. e.g. After the row your neck stayed stiff for three days, and then you noticed it hadn't left.
+
+### Q: What part do we leave out?
+We leave out pulse-taking, acupuncture and prescriptions, and the scheme that matches the five organs, flavours and colours to the five phases, and we do not offer it as a substitute for seeing a doctor: pairings such as anger harming the liver are ancient medical theory, not a diagnosis today. What we take are three passages from the Basic Questions about how to live: act before illness comes, the order of daily routine and mind, and how feeling travels through the body.
+
+### Q: How do I use it today?
+Today, do one small thing. Think about the last three weeks and ask whether anything has been wearing you down that you keep calling bearable. Pick one and deal with it today: that is acting before thirst. Keep a second for the night you can't sleep: before you try to train calm, find the one thing you do on purpose that keeps you up, and drop it. Keep a third for after a row: don't tell yourself to stop thinking, first find where in the body the sentence still sits. If you have real symptoms, see a doctor; these passages are not a diagnosis.
+
+### Lines to keep
+Medicine after illness is a well dug in thirst. The random, made the routine, is why fifty fails. A hundred ills come from qi: feeling travels the body. Toil is fine. It is weariness that matters.
+
+### Q: What should I read alongside?
+Robert Sapolsky — Both ask why staying tense wears you down. Sapolsky is about the stress response: the zebra's ends when the lion leaves, ours stays switched on for things that have not happened. The Inner Classic is about timing: don't wait until thirst to dig the well, act while it can still be adjusted. Seneca — Both write about anger. Seneca is about how to stop it in the moment it rises; the Inner Classic is about where it goes when it can't be stopped: anger sends qi up, travels the body, and stays.
+
+### Further
+The Book of Rites Zhuangzi Robert Sapolsky Seneca John Ratey
 
 ========================================================================
 ## Thinking in Systems
@@ -7063,7 +7103,7 @@ Everyone knows the use of the useful. Nobody knows the use of the useless. A fro
 Han Feizi — The same century, opposite conclusions: Han Feizi builds the machine of state, Zhuangzi declines to be a part in it. Tao Te Ching — Same tradition, different address: Laozi writes for whoever has to govern, Zhuangzi for whoever wants out. Su Shi — Two ways of not being owned: Zhuangzi refuses the post, Su Shi takes it and refuses to be defined by losing it. Finite and Infinite Games — The use of the useless runs the same way as the infinite game: not winning inside the given rules, but keeping room to change them.
 
 ### Further
-Su Shi Huineng Wang Yangming Tao Te Ching Carl Jung The I Ching The Bhagavad Gita Epictetus Finite and Infinite Games Ivan Illich Bai Juyi Xu Xiake
+Su Shi Huineng Wang Yangming Tao Te Ching Carl Jung The I Ching The Bhagavad Gita Epictetus Finite and Infinite Games Ivan Illich Bai Juyi Xu Xiake The Yellow Emperor's Inner Classic
 
 ========================================================================
 ## Zhuge Liang
@@ -12755,6 +12795,105 @@ Where it goes wrong: reading strategic retreat as a pass to withdraw whenever th
 Retreat does not come easily to brilliant, successful people.
 Strategic retreat, sacrifice, deciding what to give up, is core to success.
 Run, don't walk.
+
+========================================================================
+## The Yellow Emperor's Inner Classic · Digging the well once you're thirsty is too late
+URL: https://ourword.ai/en/i/huangdi-neijing/water-before-thirst/
+Source: Basic Questions, 'Regulating the Spirit through the Four Seasons', closing paragraph
+Tags: Deep read, The Yellow Emperor's Inner Classic, Treat what is not yet ill: the time to act is before anything breaks
+
+I'm not ill yet, so is it too early to stop? This chapter asks whether there is a right moment to act before the body gives out.
+
+### Q: What actually happened?
+Most of this chapter goes season by season, saying how a person should rise and rest and tend the spirit in each. At the end the tone changes. The sage, it says, does not treat the illness that has come but the one that has not; not the disorder that has come but the one that has not. Why? To give medicine once the illness has formed, to set things right once disorder has formed, is like digging a well when you are thirsty, and it asks: is that not late?
+
+### The parts · The mistake is the order, not the medicine
+Medicine after illness, repair after disorder. Nothing in the passage says the medicine is wrong or the repair is pointless. A well is a good thing to dig. The fault lies in the timing: the water arrives after you needed it.
+e.g. You see a doctor only when you can't sleep, after six months without a single day off.
+
+### The parts · 'Not yet ill' is the stretch you can still adjust
+Not yet ill does not mean no signs at all. It means signs small enough to listen to advice. The word for disorder works the same way: anywhere order slips, in body, routine or household. That stretch is the shortest and the cheapest.
+e.g. Hollow by mid-afternoon, propped up by coffee: this is the part you can still adjust.
+
+### The parts · Adjust along the seasons
+The chapter's title means regulating the spirit through the four seasons: a rhythm that follows what is outside, set before anything needs patching. The rhythm of your days should not be set by mood or workload, but by something bigger than both.
+e.g. Dark by five in winter, and you still run the summer timetable on willpower.
+
+### Q: How do I use it today?
+Where you are: nothing has shown up on a test, but you are hollow by afternoon, struggle out of bed, and keep telling yourself you'll sort it out once this busy stretch ends.
+Ask first: am I thirsty yet? Not whether you are ill, but whether one small thing has repeated for three weeks while you called it bearable. Deal with that one today, nothing else yet.
+Where it goes wrong: reading it as 'watch for illness every day', which breeds anxiety, or as 'no need for a doctor if I live well'. It says do not wait until thirst, not do not dig the well. If symptoms have started, see a doctor.
+
+### Lines to keep
+Medicine after illness is a well dug in thirst.
+Not yet ill: the stretch you can still adjust.
+Dig the well before you are thirsty.
+
+========================================================================
+## The Yellow Emperor's Inner Classic · Failing at fifty: making the careless a habit
+URL: https://ourword.ai/en/i/huangdi-neijing/mind-kept-within/
+Source: Basic Questions, 'On the Primal Truth of High Antiquity', the opening exchange
+Tags: Deep read, The Yellow Emperor's Inner Classic, Keep a steady routine, keep the mind within: order the days first, then seek calm
+
+I lie down and my head won't stop. Which should come first, the body or the mind?
+
+### Q: What actually happened?
+The sage Qi Bo answered the Emperor with two pictures. In the first, people of high antiquity who knew how to live followed the yin and yang, ate and drank in measure, kept regular hours and did not toil at random, so body and spirit stayed together and they lived out their years. In the second, people now make wine their water and the random their routine, do not know how to keep a vessel full, and keep no regular hours, so they fail at fifty.
+
+### The parts · Body and spirit together: neither may drop
+The first picture ends with the body and the spirit staying together. The text lists routine first and the mind second, but it does not mean to tend only one. Enough sleep with the mind still hanging off a phone does not count as together.
+e.g. You slept eight hours, and your first act on waking is checking messages.
+
+### The parts · No great vice, only a run of small indulgences
+The list for people now is wine for water, the random made the routine, no keeping a vessel full, no timing for the spirit, chasing a quick heart. None of it is a great vice: each is a bit of quick pleasure, made daily. Random plus routine is where the failing comes from.
+e.g. A Friday night to three a.m. is a break. Every Friday for three months is a routine.
+
+### The parts · Dodge what is outside first, then keep the mind within
+The sages taught that a harmful wind should be avoided in its season; then, with a calm and empty mind, true qi follows; keep the spirit within and how can illness come? The order is outside first, then inside. After that: the body toils without growing weary.
+e.g. A day of hard work that leaves you settled differs from a day of idling that leaves you restless.
+
+### Q: How do I use it today?
+Where you are: you lie down, your head still turning over today's problem past midnight, and you push through the next day on nerve.
+Ask first: is there one thing tonight that I know will keep me awake, yet do every day? That is my 'random'. Remove it before you try to train a calm mind.
+Where it goes wrong: reading 'few desires' as 'don't want anything', or demanding that your mind turn to still water at once. The text puts avoiding the harmful wind before the calm and empty mind: do what can be avoided outside first, and the mind comes after.
+
+### Lines to keep
+The random, made the routine, is why fifty fails.
+Toil is fine. It is weariness that matters.
+Dodge what you can outside, then keep the mind within.
+
+========================================================================
+## The Yellow Emperor's Inner Classic · Anger sends it up, brooding ties it in a knot
+URL: https://ourword.ai/en/i/huangdi-neijing/nine-qi/
+Source: Basic Questions, 'On Pain', opening
+Tags: Deep read, The Yellow Emperor's Inner Classic, A hundred ills come from qi: feeling does not stay in the heart, it travels the body
+
+After a row at home my chest is tight for days. What does a feeling leave behind in the body once it has passed?
+
+### Q: What actually happened?
+The Emperor opens this chapter by setting a rule. One who speaks well of heaven must show it in people, one who speaks well of the past must show it fits today, one who speaks well of people must find it holds in himself. Then he says what he has concluded: a hundred ills come from qi. Anger sends it up, joy slackens it, grief wears it away, fear sinks it, shock scatters it, and brooding ties it in a knot.
+
+### The parts · It has to hold in you
+The Emperor states the test before the conclusion: one who speaks well of people must find it holds in himself. A line about people counts only if you can check it against yourself. Anger sends qi against its course, and in the worst case, the text says, blood is vomited.
+e.g. Reading 'anger sends it up', you recall your neck and shoulders stiff for days after the last row.
+
+### The parts · Of nine kinds, even joy is one
+Anger, grief and fear are on the list, but so are joy, cold, heat and toil. Of joy it says the qi eases and the spirit reaches its goal: good news, yet still a shift. Nine kinds go nine different ways; it is not only the bad feelings that cost you.
+e.g. A whole week of busy happy events, and you still collapse on Saturday.
+
+### The parts · Brooding ties it in a knot
+When the heart holds a thing, the spirit settles on it, and right qi lingers and does not move, so the qi is knotted. The one closest to daily life: not rage, not tears, but one sentence turned over again and again.
+e.g. You replay what was said in the afternoon thirty times at night; next morning your chest is still tight.
+
+### Q: How do I use it today?
+Where you are: a row at home is over, but you are not: chest tight, no appetite, awake at three.
+Ask first: where in my body does that sentence still sit? Name which of the nine it is, anger, grief or brooding, before telling yourself to stop thinking about it.
+Where it goes wrong: treating it as a diagnosis and writing yourself a prescription: 'my qi is knotted, so...'. The text says feeling and body are in traffic, not what to take for it. If you have real symptoms, see a doctor.
+
+### Lines to keep
+One who speaks of people must find it holds in himself.
+Brooding ties it in a knot: one sentence, turned over.
+Joy is among the nine, and it costs too.
 
 ========================================================================
 ## Huineng · There was never a thing there

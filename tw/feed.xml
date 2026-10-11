@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>OurWord — 193 people and books on how the world actually works, across 2,600 years</title>
+    <title>OurWord — 194 people and books on how the world actually works, across 2,600 years</title>
     <link>https://ourword.ai/tw/</link>
     <atom:link href="https://ourword.ai/tw/feed.xml" rel="self" type="application/rss+xml"/>
-    <description>A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 193 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.</description>
+    <description>A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 194 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.</description>
     <language>zh-tw</language>
-    <lastBuildDate>Sat, 10 Oct 2026 08:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 11 Oct 2026 08:00:00 +0800</lastBuildDate>
 <!-- chapters:begin -->
     <item><title>阿德勒 · 課題分離</title><link>https://ourword.ai/tw/i/adler/separation-of-tasks/</link><guid isPermaLink="true">https://ourword.ai/tw/i/adler/separation-of-tasks/</guid><description>阿德勒 · 課題分離——先分清這是誰的事。人際關係的痛苦大半來自越界。這一篇要回答的是：邊界到底畫在哪。</description><pubDate>Tue, 01 Sep 2026 08:00:00 +0800</pubDate></item>
     <item><title>阿德勒 · 不是因為，是為了</title><link>https://ourword.ai/tw/i/adler/teleology/</link><guid isPermaLink="true">https://ourword.ai/tw/i/adler/teleology/</guid><description>阿德勒 · 不是因為，是為了——把原因換成目的。弗洛伊德問你經歷過什麼，阿德勒問你想用它做什麼。這一篇要回答的是：這個換問法為什麼能解凍。</description><pubDate>Sun, 30 Aug 2026 08:00:00 +0800</pubDate></item>
@@ -177,6 +177,9 @@
     <item><title>胡雪巖 · 囤絲之敗</title><link>https://ourword.ai/tw/i/hu-xueyan/the-silk-corner/</link><guid isPermaLink="true">https://ourword.ai/tw/i/hu-xueyan/the-silk-corner/</guid><description>胡雪巖 · 囤絲之敗——一次押上全部的代價。他曾是大清最有錢的商人，兩年之間全部輸光。這一篇要回答的是：他判斷錯的到底是哪一步。</description><pubDate>Sat, 29 Aug 2026 08:00:00 +0800</pubDate></item>
     <item><title>黃仁勳 · 零億美元市場</title><link>https://ourword.ai/tw/i/huang/zero-billion-markets/</link><guid isPermaLink="true">https://ourword.ai/tw/i/huang/zero-billion-markets/</guid><description>黃仁勳 · 零億美元市場——在市場存在前入場。英偉達的打法他自己起過一個名字。這一篇要回答的是：怎麼在一個不存在的市場裡活到它出現。</description><pubDate>Sat, 29 Aug 2026 08:00:00 +0800</pubDate></item>
     <item><title>黃仁勳 · 有尊嚴地撤退</title><link>https://ourword.ai/tw/i/huang/strategic-retreat/</link><guid isPermaLink="true">https://ourword.ai/tw/i/huang/strategic-retreat/</guid><description>黃仁勳 · 有尊嚴地撤退——臺大演講的第二個故事。他給畢業生講的三個故事裡，有一個是認輸。這一篇要回答的是：為什麼他說撤退對最聰明的人最難。</description><pubDate>Sat, 29 Aug 2026 08:00:00 +0800</pubDate></item>
+    <item><title>黃帝內經 · 渴了再挖井，就晚了</title><link>https://ourword.ai/tw/i/huangdi-neijing/water-before-thirst/</link><guid isPermaLink="true">https://ourword.ai/tw/i/huangdi-neijing/water-before-thirst/</guid><description>黃帝內經 · 渴了再挖井，就晚了——治未病：還沒出事的時候，才是該動手的時候。我還沒病，現在就停下來，是不是太早了？這一篇要回答的是：身體出事之前，有沒有一個該動手的時間。</description><pubDate>Sun, 11 Oct 2026 08:00:00 +0800</pubDate></item>
+    <item><title>黃帝內經 · 半百而衰，是把「妄」過成了「常」</title><link>https://ourword.ai/tw/i/huangdi-neijing/mind-kept-within/</link><guid isPermaLink="true">https://ourword.ai/tw/i/huangdi-neijing/mind-kept-within/</guid><description>黃帝內經 · 半百而衰，是把「妄」過成了「常」——起居有常，精神內守：先把日子過規矩，再說心靜。躺下後腦子停不下來。這一篇要回答的是：身體和心神，到底哪一頭該先管。</description><pubDate>Sun, 11 Oct 2026 08:00:00 +0800</pubDate></item>
+    <item><title>黃帝內經 · 怒則氣上，思則氣結</title><link>https://ourword.ai/tw/i/huangdi-neijing/nine-qi/</link><guid isPermaLink="true">https://ourword.ai/tw/i/huangdi-neijing/nine-qi/</guid><description>黃帝內經 · 怒則氣上，思則氣結——百病生於氣：情緒不是只在心裡，它會走過身體。家裡一吵，我胸口就發悶，好幾天緩不過來。這一篇要回答的是：情緒過去之後，它在身上留下了什麼。</description><pubDate>Sun, 11 Oct 2026 08:00:00 +0800</pubDate></item>
     <item><title>六祖慧能 · 本來無一物</title><link>https://ourword.ai/tw/i/huineng/originally-not-a-thing/</link><guid isPermaLink="true">https://ourword.ai/tw/i/huineng/originally-not-a-thing/</guid><description>六祖慧能 · 本來無一物——減法比加法難。兩首偈子，一首人人稱好，一首讓一個不識字的人接了衣缽。這一篇要回答的是：差別在哪一層。</description><pubDate>Fri, 28 Aug 2026 08:00:00 +0800</pubDate></item>
     <item><title>六祖慧能 · 佛法在世間</title><link>https://ourword.ai/tw/i/huineng/in-the-world/</link><guid isPermaLink="true">https://ourword.ai/tw/i/huineng/in-the-world/</guid><description>六祖慧能 · 佛法在世間——修行不在別處。很多人等一個清淨的環境再開始。這一篇要回答的是：慧能為什麼說那個環境不存在。</description><pubDate>Fri, 28 Aug 2026 08:00:00 +0800</pubDate></item>
     <item><title>霍去病 · 顧方略何如耳</title><link>https://ourword.ai/tw/i/huo-qubing/no-old-manuals/</link><guid isPermaLink="true">https://ourword.ai/tw/i/huo-qubing/no-old-manuals/</guid><description>霍去病 · 顧方略何如耳——不背兵法，看局面。皇帝親自要教他兵法，他推掉了。這一篇要回答的是：這句回話是狂妄還是判斷。</description><pubDate>Sat, 29 Aug 2026 08:00:00 +0800</pubDate></item>

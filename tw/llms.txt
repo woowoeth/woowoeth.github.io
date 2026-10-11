@@ -1,11 +1,11 @@
 # OurWord (人類世界生存法則)
 
-> 193 people and books on how the world actually works, across 2,600 years
+> 194 people and books on how the world actually works, across 2,600 years
 > 遇到事了，看看以前的人怎麼處理
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 193 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 194 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
-一個關於「世界到底怎麼運轉」的知識庫：戰略、財富、權力、人性、創業，取自 193 位人物與典籍，跨越 2600 年。每一條都寫清楚這個人真正留下的那一個想法、背後的故事、拆開的分則與例子，以及今天怎麼用。
+一個關於「世界到底怎麼運轉」的知識庫：戰略、財富、權力、人性、創業，取自 194 位人物與典籍，跨越 2600 年。每一條都寫清楚這個人真正留下的那一個想法、背後的故事、拆開的分則與例子，以及今天怎麼用。
 
 ## Read it
 
@@ -28,11 +28,11 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 - [學習與成長](https://ourword.ai/tw/t/learning/) — 19
 - [財富與風險](https://ourword.ai/tw/t/wealth/) — 19
 - [世界如何運轉](https://ourword.ai/tw/t/world/) — 18
+- [身心與生活](https://ourword.ai/tw/t/living/) — 17
 - [家庭與關係](https://ourword.ai/tw/t/family/) — 16
-- [身心與生活](https://ourword.ai/tw/t/living/) — 16
 - [中古](https://ourword.ai/tw/t/medieval/) — 16
 - [識人與相處](https://ourword.ai/tw/t/people/) — 16
-- [秦漢至魏晉](https://ourword.ai/tw/t/han-wei/) — 14
+- [秦漢至魏晉](https://ourword.ai/tw/t/han-wei/) — 15
 - [近世](https://ourword.ai/tw/t/early-modern/) — 13
 
 ## How it is built
@@ -213,6 +213,9 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [胡雪巖 · 囤絲之敗](https://ourword.ai/tw/i/hu-xueyan/the-silk-corner/): 胡雪巖 · 囤絲之敗——一次押上全部的代價。他曾是大清最有錢的商人，兩年之間全部輸光。這一篇要回答的是：他判斷錯的到底是哪一步。
 - [黃仁勳 · 零億美元市場](https://ourword.ai/tw/i/huang/zero-billion-markets/): 黃仁勳 · 零億美元市場——在市場存在前入場。英偉達的打法他自己起過一個名字。這一篇要回答的是：怎麼在一個不存在的市場裡活到它出現。
 - [黃仁勳 · 有尊嚴地撤退](https://ourword.ai/tw/i/huang/strategic-retreat/): 黃仁勳 · 有尊嚴地撤退——臺大演講的第二個故事。他給畢業生講的三個故事裡，有一個是認輸。這一篇要回答的是：為什麼他說撤退對最聰明的人最難。
+- [黃帝內經 · 渴了再挖井，就晚了](https://ourword.ai/tw/i/huangdi-neijing/water-before-thirst/): 黃帝內經 · 渴了再挖井，就晚了——治未病：還沒出事的時候，才是該動手的時候。我還沒病，現在就停下來，是不是太早了？這一篇要回答的是：身體出事之前，有沒有一個該動手的時間。
+- [黃帝內經 · 半百而衰，是把「妄」過成了「常」](https://ourword.ai/tw/i/huangdi-neijing/mind-kept-within/): 黃帝內經 · 半百而衰，是把「妄」過成了「常」——起居有常，精神內守：先把日子過規矩，再說心靜。躺下後腦子停不下來。這一篇要回答的是：身體和心神，到底哪一頭該先管。
+- [黃帝內經 · 怒則氣上，思則氣結](https://ourword.ai/tw/i/huangdi-neijing/nine-qi/): 黃帝內經 · 怒則氣上，思則氣結——百病生於氣：情緒不是只在心裡，它會走過身體。家裡一吵，我胸口就發悶，好幾天緩不過來。這一篇要回答的是：情緒過去之後，它在身上留下了什麼。
 - [六祖慧能 · 本來無一物](https://ourword.ai/tw/i/huineng/originally-not-a-thing/): 六祖慧能 · 本來無一物——減法比加法難。兩首偈子，一首人人稱好，一首讓一個不識字的人接了衣缽。這一篇要回答的是：差別在哪一層。
 - [六祖慧能 · 佛法在世間](https://ourword.ai/tw/i/huineng/in-the-world/): 六祖慧能 · 佛法在世間——修行不在別處。很多人等一個清淨的環境再開始。這一篇要回答的是：慧能為什麼說那個環境不存在。
 - [霍去病 · 顧方略何如耳](https://ourword.ai/tw/i/huo-qubing/no-old-manuals/): 霍去病 · 顧方略何如耳——不背兵法，看局面。皇帝親自要教他兵法，他推掉了。這一篇要回答的是：這句回話是狂妄還是判斷。
@@ -522,7 +525,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [AI Bubble Monitor / AI 泡沫檢測儀](https://ourword.ai/ai/)
 - [Zouni / 走你](https://ourword.ai/zouni/)
 
-## Index (193 entrys)
+## Index (194 entrys)
 
 - [BJ·福格](https://ourword.ai/tw/i/bj-fogg/): BJ·福格（2019年·斯坦福行為設計實驗室）——小到不會失敗。斯坦福行為設計實驗室創始人，研究行為如何被設計出來。他給出一個公式：行為發生需要動機、能力、提示三者同時到位。多數人失敗在只調動機——靠決心和自我激勵——而動機天然起伏，靠它維持的習慣必然崩。他的主張相反：把行為縮到小得不需要動機，然後掛在一個已有的動作後面。
 - [C.S.劉易斯](https://ourword.ai/tw/i/cs-lewis/): C.S.劉易斯（1898-1963年·英國牛津）——妻子死後幾個月的日記。作家，牛津和劍橋的教授，寫過《納尼亞傳奇》和大量勸人信仰的書。五十八歲結婚，妻子喬伊四年後因癌症去世。之後幾個月他在四本練習簿上記自己的狀態，後來用筆名出版，就是《卿卿如晤》。收他是因為「重要的人走了」那六個問題，原來靠弗蘭克爾和蘇軾在答——一個是集中營的倖存者，一個是被貶的官員
@@ -717,3 +720,4 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [鬼谷子](https://ourword.ai/tw/i/guiguzi/): 鬼谷子（戰國·約前400—前320年）——捭闔之道。戰國縱橫家的祖師，隱於鬼谷，生平不可考，只留下一部《鬼谷子》。這是中國唯一一部系統講「如何說服一個具體的人」的典籍——不講道德該不該，只講話該怎麼開、怎麼合、怎麼試、怎麼鎖。歷代正統學者斥它為「小人之書」而不斷禁燬，它卻始終沒有失傳，因為凡是要靠說話推動別人做事的人，都繞不開它。
 - [鮑恩](https://ourword.ai/tw/i/bowen/): 鮑恩（1978年·家庭系統理論）——分化。精神科醫生，提出家庭系統理論。他關注的核心是「自我分化」——一個人在與親近的人保持連接的同時，能不能保有獨立的思考和情緒。分化低的人被家庭的情緒場裹挾：別人焦慮他就焦慮，為了平息衝突不惜放棄立場。他的另一個重要概念是三角關係：兩個人之間張力過大時，會自動拉進第三個人來分散，而這會
 - [黃仁勳](https://ourword.ai/tw/i/huang/): 黃仁勳（當代·1963-）——押注。英偉達創始人兼CEO，30年沒有被趕走。他在2006年做了一個當時看來「浪費資源」的決定：開發CUDA，讓GPU可以做通用計算。2023年，ChatGPT爆發，AI需要大量GPU算力，英偉達成為全球最重要的公司之一。他押注了一個能力，等了17年。
+- [黃帝內經](https://ourword.ai/tw/i/huangdi-neijing/): 黃帝內經（戰國至西漢·託名黃帝·《素問》《靈樞》）——治未病。託名黃帝與岐伯、雷公等人問答的醫學經典，戰國到西漢陸續寫成，傳世分《素問》《靈樞》兩部分，漢以後被奉為中醫的根本典籍。它大半在講診斷、經絡、針藥，也有一部分講人怎麼過日子才不出事。我們不取診脈方藥，不取五臟配五行，只取《素問》裡的三處。《四氣調神大論》篇末：聖人不治已病治未病，病

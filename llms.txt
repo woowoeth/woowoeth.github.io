@@ -1,11 +1,11 @@
 # OurWord (人类世界生存法则)
 
-> 193 people and books on how the world actually works, across 2,600 years
+> 194 people and books on how the world actually works, across 2,600 years
 > 遇到事了，看看以前的人怎么处理
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 193 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 194 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
-一个关于「世界到底怎么运转」的知识库：战略、财富、权力、人性、创业，取自 193 位人物与典籍，跨越 2600 年。每一条都写清楚这个人真正留下的那一个想法、背后的故事、拆开的分则与例子，以及今天怎么用。
+一个关于「世界到底怎么运转」的知识库：战略、财富、权力、人性、创业，取自 194 位人物与典籍，跨越 2600 年。每一条都写清楚这个人真正留下的那一个想法、背后的故事、拆开的分则与例子，以及今天怎么用。
 
 ## Read it
 
@@ -28,11 +28,11 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 - [学习与成长](https://ourword.ai/t/learning/) — 19
 - [财富与风险](https://ourword.ai/t/wealth/) — 19
 - [世界如何运转](https://ourword.ai/t/world/) — 18
+- [身心与生活](https://ourword.ai/t/living/) — 17
 - [家庭与关系](https://ourword.ai/t/family/) — 16
-- [身心与生活](https://ourword.ai/t/living/) — 16
 - [中古](https://ourword.ai/t/medieval/) — 16
 - [识人与相处](https://ourword.ai/t/people/) — 16
-- [秦汉至魏晋](https://ourword.ai/t/han-wei/) — 14
+- [秦汉至魏晋](https://ourword.ai/t/han-wei/) — 15
 - [近世](https://ourword.ai/t/early-modern/) — 13
 
 ## How it is built
@@ -213,6 +213,9 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [胡雪岩 · 囤丝之败](https://ourword.ai/i/hu-xueyan/the-silk-corner/): 胡雪岩 · 囤丝之败——一次押上全部的代价。他曾是大清最有钱的商人，两年之间全部输光。这一篇要回答的是：他判断错的到底是哪一步。
 - [黄仁勋 · 零亿美元市场](https://ourword.ai/i/huang/zero-billion-markets/): 黄仁勋 · 零亿美元市场——在市场存在前入场。英伟达的打法他自己起过一个名字。这一篇要回答的是：怎么在一个不存在的市场里活到它出现。
 - [黄仁勋 · 有尊严地撤退](https://ourword.ai/i/huang/strategic-retreat/): 黄仁勋 · 有尊严地撤退——台大演讲的第二个故事。他给毕业生讲的三个故事里，有一个是认输。这一篇要回答的是：为什么他说撤退对最聪明的人最难。
+- [黄帝内经 · 渴了再挖井，就晚了](https://ourword.ai/i/huangdi-neijing/water-before-thirst/): 黄帝内经 · 渴了再挖井，就晚了——治未病：还没出事的时候，才是该动手的时候。我还没病，现在就停下来，是不是太早了？这一篇要回答的是：身体出事之前，有没有一个该动手的时间。
+- [黄帝内经 · 半百而衰，是把「妄」过成了「常」](https://ourword.ai/i/huangdi-neijing/mind-kept-within/): 黄帝内经 · 半百而衰，是把「妄」过成了「常」——起居有常，精神内守：先把日子过规矩，再说心静。躺下后脑子停不下来。这一篇要回答的是：身体和心神，到底哪一头该先管。
+- [黄帝内经 · 怒则气上，思则气结](https://ourword.ai/i/huangdi-neijing/nine-qi/): 黄帝内经 · 怒则气上，思则气结——百病生于气：情绪不是只在心里，它会走过身体。家里一吵，我胸口就发闷，好几天缓不过来。这一篇要回答的是：情绪过去之后，它在身上留下了什么。
 - [六祖慧能 · 本来无一物](https://ourword.ai/i/huineng/originally-not-a-thing/): 六祖慧能 · 本来无一物——减法比加法难。两首偈子，一首人人称好，一首让一个不识字的人接了衣钵。这一篇要回答的是：差别在哪一层。
 - [六祖慧能 · 佛法在世间](https://ourword.ai/i/huineng/in-the-world/): 六祖慧能 · 佛法在世间——修行不在别处。很多人等一个清净的环境再开始。这一篇要回答的是：慧能为什么说那个环境不存在。
 - [霍去病 · 顾方略何如耳](https://ourword.ai/i/huo-qubing/no-old-manuals/): 霍去病 · 顾方略何如耳——不背兵法，看局面。皇帝亲自要教他兵法，他推掉了。这一篇要回答的是：这句回话是狂妄还是判断。
@@ -522,7 +525,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [AI Bubble Monitor / AI 泡沫检测仪](https://ourword.ai/ai/)
 - [Zouni / 走你](https://ourword.ai/zouni/)
 
-## Index (193 entrys)
+## Index (194 entrys)
 
 - [BJ·福格](https://ourword.ai/i/bj-fogg/): BJ·福格（2019年·斯坦福行为设计实验室）——小到不会失败。斯坦福行为设计实验室创始人，研究行为如何被设计出来。他给出一个公式：行为发生需要动机、能力、提示三者同时到位。多数人失败在只调动机——靠决心和自我激励——而动机天然起伏，靠它维持的习惯必然崩。他的主张相反：把行为缩到小得不需要动机，然后挂在一个已有的动作后面。
 - [C.S.刘易斯](https://ourword.ai/i/cs-lewis/): C.S.刘易斯（1898-1963年·英国牛津）——妻子死后几个月的日记。作家，牛津和剑桥的教授，写过《纳尼亚传奇》和大量劝人信仰的书。五十八岁结婚，妻子乔伊四年后因癌症去世。之后几个月他在四本练习簿上记自己的状态，后来用笔名出版，就是《卿卿如晤》。收他是因为「重要的人走了」那六个问题，原来靠弗兰克尔和苏轼在答——一个是集中营的幸存者，一个是被贬的官员
@@ -717,3 +720,4 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [鬼谷子](https://ourword.ai/i/guiguzi/): 鬼谷子（战国·约前400—前320年）——捭阖之道。战国纵横家的祖师，隐于鬼谷，生平不可考，只留下一部《鬼谷子》。这是中国唯一一部系统讲「如何说服一个具体的人」的典籍——不讲道德该不该，只讲话该怎么开、怎么合、怎么试、怎么锁。历代正统学者斥它为「小人之书」而不断禁毁，它却始终没有失传，因为凡是要靠说话推动别人做事的人，都绕不开它。
 - [鲍恩](https://ourword.ai/i/bowen/): 鲍恩（1978年·家庭系统理论）——分化。精神科医生，提出家庭系统理论。他关注的核心是「自我分化」——一个人在与亲近的人保持连接的同时，能不能保有独立的思考和情绪。分化低的人被家庭的情绪场裹挟：别人焦虑他就焦虑，为了平息冲突不惜放弃立场。他的另一个重要概念是三角关系：两个人之间张力过大时，会自动拉进第三个人来分散，而这会
 - [黄仁勋](https://ourword.ai/i/huang/): 黄仁勋（当代·1963-）——押注。英伟达创始人兼CEO，30年没有被赶走。他在2006年做了一个当时看来「浪费资源」的决定：开发CUDA，让GPU可以做通用计算。2023年，ChatGPT爆发，AI需要大量GPU算力，英伟达成为全球最重要的公司之一。他押注了一个能力，等了17年。
+- [黄帝内经](https://ourword.ai/i/huangdi-neijing/): 黄帝内经（战国至西汉·托名黄帝·《素问》《灵枢》）——治未病。托名黄帝与岐伯、雷公等人问答的医学经典，战国到西汉陆续写成，传世分《素问》《灵枢》两部分，汉以后被奉为中医的根本典籍。它大半在讲诊断、经络、针药，也有一部分讲人怎么过日子才不出事。我们不取诊脉方药，不取五脏配五行，只取《素问》里的三处。《四气调神大论》篇末：圣人不治已病治未病，病

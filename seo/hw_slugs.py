@@ -22,6 +22,7 @@ SLUGS = {
     "晋文公": "jin-wengong",
     "冯异": "feng-yi",
     "礼记": "liji",
+    "黄帝内经": "huangdi-neijing",
     "赫伯特·西蒙": "herbert-simon",
     "蔺相如": "lin-xiangru",
     "露丝·施瓦茨·考恩": "cowan",

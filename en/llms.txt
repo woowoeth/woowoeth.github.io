@@ -1,9 +1,9 @@
 # OurWord (OurWord)
 
-> 193 people and books on how the world actually works, across 2,600 years
+> 194 people and books on how the world actually works, across 2,600 years
 > See how people before you handled it.
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 193 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 194 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
 ## Read it
 
@@ -26,8 +26,8 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 - [Strategy and competition](https://ourword.ai/en/t/strategy-and-competition/) — 20
 - [How the world works](https://ourword.ai/en/t/how-the-world-works/) — 19
 - [Money and risk](https://ourword.ai/en/t/money-and-risk/) — 18
-- [Qin, Han and the Six Dynasties](https://ourword.ai/en/t/qin-han-and-the-six-dynasties/) — 17
-- [Body and daily life](https://ourword.ai/en/t/body-and-daily-life/) — 16
+- [Qin, Han and the Six Dynasties](https://ourword.ai/en/t/qin-han-and-the-six-dynasties/) — 18
+- [Body and daily life](https://ourword.ai/en/t/body-and-daily-life/) — 17
 - [Family and relationships](https://ourword.ai/en/t/family-and-relationships/) — 16
 - [Reading people](https://ourword.ai/en/t/reading-people/) — 16
 - [Medieval](https://ourword.ai/en/t/medieval/) — 14
@@ -207,6 +207,9 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [Hu Xueyan · The silk corner](https://ourword.ai/en/i/hu-xueyan/the-silk-corner/): Hu Xueyan · The silk corner — What it costs to bet everything once. The richest merchant in the empire lost everything inside two years. The interesting question is which step was the mistake.
 - [Jensen Huang · Zero-billion-dollar markets](https://ourword.ai/en/i/huang/zero-billion-markets/): Jensen Huang · Zero-billion-dollar markets — Entering before the market exists. He has his own name for how the company chooses. How to stay alive inside a market that does not exist yet.
 - [Jensen Huang · Retreating with dignity](https://ourword.ai/en/i/huang/strategic-retreat/): Jensen Huang · Retreating with dignity — The second story in the Taipei address. One of the three stories he told the graduates is about giving up. Why he says retreat is hardest for the ablest.
+- [The Yellow Emperor's Inner Classic · Digging the well once you're thirsty is too late](https://ourword.ai/en/i/huangdi-neijing/water-before-thirst/): The Yellow Emperor's Inner Classic · Digging the well once you're thirsty is too late — Treat what is not yet ill: the time to act is before anything breaks. I'm not ill yet, so is it too early to stop? This chapter asks whether there is a right moment to act before the body gives out.
+- [The Yellow Emperor's Inner Classic · Failing at fifty: making the careless a habit](https://ourword.ai/en/i/huangdi-neijing/mind-kept-within/): The Yellow Emperor's Inner Classic · Failing at fifty: making the careless a habit — Keep a steady routine, keep the mind within: order the days first, then seek calm. I lie down and my head won't stop. Which should come first, the body or the mind?
+- [The Yellow Emperor's Inner Classic · Anger sends it up, brooding ties it in a knot](https://ourword.ai/en/i/huangdi-neijing/nine-qi/): The Yellow Emperor's Inner Classic · Anger sends it up, brooding ties it in a knot — A hundred ills come from qi: feeling does not stay in the heart, it travels the body. After a row at home my chest is tight for days. What does a feeling leave behind in the body once it has passed?
 - [Huineng · There was never a thing there](https://ourword.ai/en/i/huineng/originally-not-a-thing/): Huineng · There was never a thing there — Subtraction is harder than addition. Two verses. Everyone admired one; the other went to an illiterate kitchen worker. What separates them.
 - [Huineng · The practice is here, not elsewhere](https://ourword.ai/en/i/huineng/in-the-world/): Huineng · The practice is here, not elsewhere — There is no better place to start. People wait for a quiet enough setting to begin. Why Huineng said that setting doesn't exist.
 - [Huo Qubing · Never mind the old manuals](https://ourword.ai/en/i/huo-qubing/no-old-manuals/): Huo Qubing · Never mind the old manuals — Read the ground, not the book. The emperor offered to teach him the classics of war and he declined. The question is whether that was arrogance or judgement.
@@ -516,7 +519,7 @@ Cite the individual page URL, not the homepage — each entry page is stable and
 - [AI Bubble Monitor](https://ourword.ai/ai/)
 - [Zouni](https://ourword.ai/zouni/)
 
-## Index (193 entrys)
+## Index (194 entrys)
 
 - [Albert Einstein](https://ourword.ai/en/i/einstein/): Albert Einstein (Germany · 1879–1955) — Imagination. The physicist, and the father of relativity — but the legacy that travels furthest is not a formula, it is a way of working.
 - [Albert O. Hirschman](https://ourword.ai/en/i/hirschman/): Albert O. Hirschman (United States · 1915-2012) — Voice. A German-born American economist. He left Berlin in 1933, fought in Spain in 1936, spent 1940 in Marseille forging papers and finding mountain…
@@ -685,6 +688,7 @@ Cite the individual page URL, not the homepage — each entry page is stable and
 - [The Old Regime and the Revolution](https://ourword.ai/en/i/old-regime/): The Old Regime and the Revolution (1856 · Alexis de Tocqueville) — Improvement breeds discontent. Tocqueville (1805–1859) came from the old French nobility and had family who went to the guillotine.
 - [The Sovereign Individual](https://ourword.ai/en/i/sovereign-individual/): The Sovereign Individual (1997 · Davidson and Rees-Mogg) — Exit. Published in 1997, eleven years before the Bitcoin paper. Two British authors explain the whole of human history with one variable…
 - [The Wealth of Nations](https://ourword.ai/en/i/wealth-of-nations/): The Wealth of Nations (1776 · Adam Smith) — The invisible hand. Adam Smith was professor of moral philosophy at Glasgow, not an economist, because the subject did not yet exist.
+- [The Yellow Emperor's Inner Classic](https://ourword.ai/en/i/huangdi-neijing/): The Yellow Emperor's Inner Classic (Warring States to Western Han · attributed to the Yellow Emperor) — Treat what is not yet ill. A medical classic written as questions from the Yellow Emperor and…
 - [Thinking in Systems](https://ourword.ai/en/i/thinking-in-systems/): Thinking in Systems (2008 · Donella Meadows) — Leverage. A book about why good people with good intentions produce bad results. Meadows was a lead author of The Limits to Growth and one of the…
 - [Thinking, Fast and Slow](https://ourword.ai/en/i/thinking-fast-and-slow/): Thinking, Fast and Slow (2011 · Daniel Kahneman) — Fast mind, slow mind. Daniel Kahneman's summary of forty years of work with Amos Tversky, and the founding text of behavioural economics.
 - [Thomas Gordon](https://ourword.ai/en/i/thomas-gordon/): Thomas Gordon (1962 · Parent Effectiveness Training) — The I-message. A student of Carl Rogers who turned humanistic psychology into a course ordinary parents could take.

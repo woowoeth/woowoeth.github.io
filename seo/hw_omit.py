@@ -46,6 +46,17 @@ OMIT = {
         "most of the book. What we take are three passages set among them "
         "about knowing when to ease off, when to climb down, and when to let "
         "someone finish the thought."),
+    "黄帝内经": (
+        "不取诊脉、针灸、方药，也不取把五脏、五味、五色按阴阳五行一一配对的那套对应，"
+        "更不拿它替代看医生：「怒伤肝，喜伤心」一类的配属是古代的医理，不是今天的诊断。"
+        "我们取的是《素问》里三处讲人怎么过日子的话：病没来之前动手，起居与心神的次序，情绪怎样走过身体。",
+        "We leave out pulse-taking, acupuncture and prescriptions, and the "
+        "scheme that matches the five organs, flavours and colours to the five "
+        "phases, and we do not offer it as a substitute for seeing a doctor: "
+        "pairings such as anger harming the liver are ancient medical theory, "
+        "not a diagnosis today. What we take are three passages from the Basic "
+        "Questions about how to live: act before illness comes, the order of "
+        "daily routine and mind, and how feeling travels through the body."),
     "吕氏春秋": (
         "不取十二纪每纪开头那几篇的月令与灾异。「孟春行夏令，则风雨不时，"
         "草木旱槁，国乃有恐」这一类按月排政令、排错了就招天灾的对应，"

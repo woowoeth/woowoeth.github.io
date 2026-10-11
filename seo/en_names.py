@@ -178,6 +178,7 @@ NAMES = {
     # ── Body and daily life ──
     "atomic-habits": ("Atomic Habits", "Body and daily life"),
     "liji": ("The Book of Rites", "Body and daily life"),
+    "huangdi-neijing": ("The Yellow Emperor's Inner Classic", "Body and daily life"),
     "bj-fogg": ("BJ Fogg", "Body and daily life"),
     "cal-newport": ("Cal Newport", "Body and daily life"),
     "csikszentmihalyi":
