@@ -1,7 +1,7 @@
-# OurWord — 194 people and books on how the world actually works, across 2,600 years
+# OurWord — 195 people and books on how the world actually works, across 2,600 years
 # OurWord — See how people before you handled it.
 # https://ourword.ai/en/
-# Full corpus, plain text. 194 entrys.
+# Full corpus, plain text. 195 entrys.
 
 ========================================================================
 ## Albert Einstein
@@ -1244,10 +1244,10 @@ If someone near you is saying what you don't want to hear, that you should leave
 Longing and ease ruin a name. A ruler's command allows no second mind. When a ruler bears a grudge against a commoner, many are afraid. We fall back three stages to repay them.
 
 ### Q: What should I read alongside?
-Cao Cao — Both faced people who had wavered. After Guandu, Cao Cao found letters his own officers had sent the enemy and burned them unread, clearing a whole group at once. Duke Wen faced them one at a time at his door, the man who had hunted him and the servant who ran off with his stores. He shut the door first, and opened it once they had made their case. Xiang Yu — Both chose between comfort and the long road. Xiang Yu took the Qin capital, longed to go home to Chu, and would not hear the man who urged him to stay. Chong'er also wanted to stay in Qi, and was pushed into a carriage by his wife and his uncle. One had nobody able to stop him; the other had people who dared.
+Cao Cao — Both faced people who had wavered. After Guandu, Cao Cao found letters his own officers had sent the enemy and burned them unread, clearing a whole group at once. Duke Wen faced them one at a time at his door, the man who had hunted him and the servant who ran off with his stores. He shut the door first, and opened it once they had made their case. Xiang Yu — Both chose between comfort and the long road. Xiang Yu took the Qin capital, longed to go home to Chu, and would not hear the man who urged him to stay. Chong'er also wanted to stay in Qi, and was pushed into a carriage by his wife and his uncle. One had nobody able to stop him; the other had people who dared. Wei Zheng — Duke Wen is the man whose old enemy comes knocking; Wei Zheng is the one who knocks, asked by Li Shimin about the past. The two pages look at the same meeting from either end.
 
 ### Further
-Guan Zhong Cao Cao Xiang Yu Feng Yi King Wuling of Zhao
+Guan Zhong Cao Cao Xiang Yu Feng Yi King Wuling of Zhao Wei Zheng
 
 ========================================================================
 ## Edward Deci
@@ -3353,7 +3353,7 @@ With bronze as a mirror you straighten your dress. Water carries the boat, and w
 Zhu Yuanzhang — Two theories of how an emperor handles talent: Li Shimin kept the critics and got a golden age, Zhu Yuanzhang removed the founders and got a secure throne. Zeng Guofan — Two ways to hold up a mirror. Li Shimin kept Wei Zheng in the room; Zeng Guofan used a journal nobody else read. The Duke of Zhou — Both wanted to hear the uncomfortable thing. Li Shimin relied on ministers like Wei Zheng and tolerated being contradicted. The duke opened the door first and went out to meet people with his hair still wet. One relied on tolerance, the other on lowering the cost of reaching him. Yan Ying — Both are about getting words across between above and below. Li Shimin sat above, and with ministers like Wei Zheng he could stand to be contradicted. Yan Ying stood below, did not contradict, and handed over a figure so the man above could see it for himself. One teaches how to listen, the other how to speak.
 
 ### Further
-Zeng Guofan Zhuge Liang Liu Bang The Comprehensive Mirror Xunzi Mencius Shang Yang The Duke of Zhou Yan Ying
+Zeng Guofan Zhuge Liang Liu Bang The Comprehensive Mirror Xunzi Mencius Shang Yang The Duke of Zhou Yan Ying Wei Zheng
 
 ========================================================================
 ## Lin Huiyin
@@ -6597,6 +6597,40 @@ Charlie Munger — The partner who moved him from cheap and broken to good and f
 Charlie Munger Li Ka-shing Fan Li Jeff Bezos Peter Thiel Naval Ravikant Duan Yongping Kazuo Inamori Wang Xing Benjamin Franklin Bai Gui Benjamin Graham Jesse Livermore Peter Lynch Howard Marks Jim Simons George Soros
 
 ========================================================================
+## Wei Zheng
+URL: https://ourword.ai/en/i/wei-zheng/
+Tags: Power and organisation, Qin, Han and the Six Dynasties, Plain speaking
+
+Wei Zheng (Tang · 580–643) — Plain speaking. A leading minister of the early Tang, with biographies in both Tang histories. He served Li Mi and Dou Jiande before ending up in the household of the Crown Prince…
+
+### Q: What did this one leave behind?
+A leading minister of the early Tang, with biographies in both Tang histories. He served Li Mi and Dou Jiande before ending up in the household of the Crown Prince Jiancheng, whom he urged to act early against Li Shimin. When Jiancheng fell, Li Shimin did not kill him but kept him as a censor, and over the years he made more than two hundred remonstrances. The Li Shimin page is about how a ruler listens; this one is about how Wei Zheng spoke: what to answer when an old position is held against you, what to do when a pardon is being broken below, and where people slacken first once things go well.
+
+### Q: What actually happened?
+At a banquet, with the wine going round, Li Shimin said to Zhangsun Wuji: when I will not take Wei Zheng's advice, he stops answering me. Why? Wei Zheng said: I speak because the thing is wrong; if I answered every time you ignored me, it would be taken as agreed and done. Li Shimin said: you could agree for now and raise it again later. Wei Zheng quoted Shun's charge to his ministers, not to nod in the court and complain afterwards. If I agreed to your face and then remonstrated, that is complaining afterwards. Li Shimin laughed. People say Wei Zheng is rough in manner, he said; I only find him charming.
+
+### The parts · Making a man dare to speak takes two people
+After that answer Wei Zheng added: it is because you draw me out that I dare to speak; if you did not accept it, how would I dare to touch the dragon's scales again and again? He credited half of his courage to the other man's willingness to hear it. e.g. If you want people below you to tell the truth, look at how you reacted the last time someone pushed back.
+
+### The parts · Say it to his face; do not just comply
+He would not agree on the spot and raise it later, because that is two speeches. His way was: if he disagreed, he did not answer on the spot, so the other man knew the matter was still open. e.g. If you disagree in a meeting, do not nod and then send an objection afterwards. Say so while the room is still there.
+
+### The parts · Use a precedent as a ladder
+When the princess Changle was to marry, Taizong meant her dowry to be double that of her aunt, Princess Yongjia. Wei Zheng did not say no; he cited Emperor Ming of Han, who had said his sons could not equal those of the founder. Taizong gave way, and Empress Zhangsun sent four hundred thousand coins and four hundred bolts of silk to Wei Zheng's house. e.g. To stop your boss going over budget, do not argue principle: show him the rule he set himself last year.
+
+### Q: How do I use it today?
+Pick one thing you recently disagreed with and nodded at. Go back and write down what you would have said out loud, not 'sure'. Then pick the last time someone told you no, and write down your first reaction; if you want him to do it again, that is the thing to change. Wei Zheng did both: not agreeing meant not answering, and when others disagreed he heard them out.
+
+### Lines to keep
+It is because you draw me out that I dare to speak. Do not nod to his face and complain behind his back. They say he is rough in manner; I only find him charming.
+
+### Q: What should I read alongside?
+Yan Ying — Both said unwelcome things to their lords. Yan Ying went round it: the market price of crutches against shoes, and the duke cut the punishments himself. Wei Zheng said it to his face, and could, because Taizong was willing to be pushed and let him go on. Duke Wen of Jin — Duke Wen is the man whose old enemy comes knocking; Wei Zheng is the one who knocks, asked by Li Shimin about the past. The two pages look at the same meeting from either end.
+
+### Further
+Li Shimin Yan Ying Duke Wen of Jin Xiao He
+
+========================================================================
 ## Why Nations Fail
 URL: https://ourword.ai/en/i/why-nations-fail/
 Tags: How the world works, Modern, Institutions
@@ -6776,7 +6810,7 @@ The hound runs down the hare; the hunter points out where. Generals are easy to 
 Han Xin — Both were among the Han founders. Han Xin's merit lay on the battlefield, counted in battles won and cities taken. Xiao He's was in what made those battles possible, and cannot be counted. Liu Bang ranked the second above the first. And Han Xin was the man Xiao He had gone after. Feng Yi — Both stayed out of the scramble for credit. Feng Yi walked away from the table where merit was argued and let the soldiers and the emperor keep his account. Xiao He had no battle record, and his emperor named his merit aloud in front of every general. One was credited by silence, the other by being spoken for.
 
 ### Further
-Liu Bang Zhang Liang Han Xin Feng Yi
+Liu Bang Zhang Liang Han Xin Feng Yi Wei Zheng
 
 ========================================================================
 ## Xu Xiake
@@ -6878,10 +6912,10 @@ Pick one thing you want to tell someone above you and fear will not land. Write 
 Shoes for the maimed are dear; ordinary shoes are cheap. To know me and show me no courtesy is worse than a cell. Were Yan Zi alive, I would gladly hold his whip.
 
 ### Q: What should I read alongside?
-Li Shimin — Both are about getting words across between above and below. Li Shimin sat above, and with ministers like Wei Zheng he could stand to be contradicted. Yan Ying stood below, did not contradict, and handed over a figure so the man above could see it for himself. One teaches how to listen, the other how to speak. Han Feizi — Both guard against being walled in by the people around you. Han Feizi relies on technique and audit, against ministers who hide things. Yan Ying relies on being someone people dare to tell, and on hearing the man out when he is told he was wrong. One closes the gaps from the system, the other opens up in himself first.
+Li Shimin — Both are about getting words across between above and below. Li Shimin sat above, and with ministers like Wei Zheng he could stand to be contradicted. Yan Ying stood below, did not contradict, and handed over a figure so the man above could see it for himself. One teaches how to listen, the other how to speak. Han Feizi — Both guard against being walled in by the people around you. Han Feizi relies on technique and audit, against ministers who hide things. Yan Ying relies on being someone people dare to tell, and on hearing the man out when he is told he was wrong. One closes the gaps from the system, the other opens up in himself first. Wei Zheng — Both said unwelcome things to their lords. Yan Ying went round it: the market price of crutches against shoes, and the duke cut the punishments himself. Wei Zheng said it to his face, and could, because Taizong was willing to be pushed and let him go on.
 
 ### Further
-Guan Zhong Li Shimin Han Feizi The Analects
+Guan Zhong Li Shimin Han Feizi The Analects Wei Zheng
 
 ========================================================================
 ## Zeng Guofan
@@ -20787,6 +20821,105 @@ Where it goes wrong: splitting before the volume is there, so every station sits
 The greatest improvement in the productive powers of labour was the division of labour.
 Ten persons could make among them upwards of forty-eight thousand pins.
 The division of labour is limited by the extent of the market.
+
+========================================================================
+## Wei Zheng · If the Crown Prince Had Listened
+URL: https://ourword.ai/en/i/wei-zheng/if-he-had-listened/
+Source: Old Book of Tang, Biography of Wei Zheng (juan 71)
+Tags: Deep read, Wei Zheng, When an old position is raised in your face, answer with what you actually said then, without retracting it or begging
+
+Your new boss was once your opponent, and his first question is about the past. What did Wei Zheng say when Li Shimin put it to him?
+
+### Q: What actually happened?
+Wei Zheng had served the Crown Prince Jiancheng, and seeing Li Shimin's achievements grow by the day he had urged the prince to act against him early. Jiancheng fell. Li Shimin summoned Wei Zheng and asked him to his face why he had set two brothers against each other. Wei Zheng answered that if the Crown Prince had listened to him, there would have been no disaster today. He did not deny it, did not plead, and did not bend his words to suit the new master.
+
+### The parts · He answered with the advice itself
+The history is plain that he had urged Jiancheng to act. Asked why, he gave the judgment he had held then: had it been followed, today's disaster would not have happened. He did not deny it, and did not add that he had really meant it for the good of the realm.
+e.g. An interviewer says your last firm kept taking our clients. Do not say it was not your idea; say what your judgment rested on.
+
+### The parts · A man who retracts is not believed later
+Li Shimin would need him as a censor, whose job was to say unwelcome things. A man who drops his old position the moment a new master asks leaves that master guessing whether anything he says later is flattery. The sentence that was not retracted is what gave his later two hundred remonstrances weight.
+e.g. A new hire spends week one running down the previous way of working, and you find you trust none of what he says next.
+
+### The parts · With the old account on the table, work can begin
+Li Shimin, who had always thought well of him, kept him close. At a banquet he told Zhangsun Wuji that Wei Zheng and Wang Gui had served the prince wholeheartedly and been truly hateful at the time, and that he had promoted them anyway. Neither pretended the past was not there.
+e.g. You end up working with a former rival. Setting out what happened once, plainly, costs less than two people walking round each other for a year.
+
+### Q: How do I use it today?
+Where you are: someone you are joining, or working beside, was on the other side before, and he has asked about it.
+Ask first: What was my judgment then, and does the reasoning still stand? Am I answering the question, or looking for a way out of it?
+Where it goes wrong: treating it as a challenge or a chance to reopen the case. Wei Zheng answered because he was asked, gave the reason, and did not turn it round to demand that the other man admit he should have listened.
+
+### Lines to keep
+Why did you set my brothers against each other?
+Wei Zheng had told Jiancheng to deal with Li Shimin early.
+Taizong had long thought well of him.
+
+========================================================================
+## Wei Zheng · The Prisoner at Cizhou
+URL: https://ourword.ai/en/i/wei-zheng/the-pardon-at-cizhou/
+Source: Old Book of Tang, Biography of Wei Zheng (juan 71)
+Tags: Deep read, Wei Zheng, When those above have promised no reprisals and someone below is still arresting people, make the promise true first
+
+Those above promised no old scores would be settled, yet someone is still being arrested. Why did Wei Zheng free a man at Cizhou on the spot?
+
+### Q: What actually happened?
+Soon after Li Shimin took the throne he sent Wei Zheng to calm the north, with the words: act as you see fit. At Cizhou Wei Zheng met two former officers of the old prince's household being taken to the capital in chains. He told his deputy that on the day they set out the pardon had been announced for everyone from the two courts. If another was sent in now, who would not doubt it? He freed the man there and then, and reported it afterwards.
+
+### The parts · Make the promise true before it is broken
+The old officers of the north were watching to see whether the pardon held. To take one man off in chains told all of them it did not, and no envoy could argue that away: a hair's breadth wrong at the start, a thousand miles off at the end.
+e.g. A firm announces that past mistakes will not be pursued, then one department digs out an old file and disciplines someone. From that day nobody believes the announcement.
+
+### The parts · Authority first, then use it fully, then say so
+He did not free the man on impulse: before he left he had been told he could act as he saw fit. After releasing him he wrote the report at once. Authority given beforehand and an account given afterwards are what separate using power from overstepping it.
+e.g. Your boss says use your judgment. You do, and that evening you send a note saying what you did, on which sentence of his, and what follows from it.
+
+### The parts · Weigh the matter, not your own safety
+He said that whatever served the public good had to be done, and better to think of oneself last than ruin a great plan of state. The ruler had treated him as one of the realm's best, and he would answer in kind. He counted the matter, not how to avoid blame.
+e.g. A shop broke a refund rule head office had promised. You follow head office's own words, and you have your account to your superior written before you are asked.
+
+### Q: How do I use it today?
+Where you are: those above have said no old scores will be settled, and someone below is still settling them, with you in between.
+Ask first: Do I hold an explicit grant of authority? Can I explain this step upward the same day I take it?
+Where it goes wrong: reading 'act as you see fit' as 'do whatever you like'. His grant was spoken aloud and his first act afterwards was to report. Without a grant, ask first; do not borrow someone else's words as your own warrant.
+
+### Lines to keep
+When we were appointed, the old households were all pardoned.
+Sending one more now: who among the rest will not doubt?
+He treats me as a man of the realm; I must answer as one.
+
+========================================================================
+## Wei Zheng · Begin Well, End Well
+URL: https://ourword.ai/en/i/wei-zheng/begin-well-end-well/
+Source: Old Book of Tang, Biography of Wei Zheng (juan 71): the memorial on ten things to bear in mind
+Tags: Deep read, Wei Zheng, Be as straight with people in good times as you were in hard ones: write it down before you are pleased with yourself
+
+You held on through the hard years and now slacken a little each month. Why did Wei Zheng list for the emperor the mistakes that follow success?
+
+### Q: What actually happened?
+Wei Zheng wrote to Taizong and did not open with principles of government. He opened with an awkward question: of all who have received the mandate, none has failed to speak most clearly in hardship, and once the work is done their virtue fades. Many begin well; few see it through. Is it, he asked, that winning is easy and keeping hard? He answered himself: they had won with a surplus, and now held with a shortfall. Why?
+
+### The parts · Sincere in hardship, arrogant in success
+His answer is short: in hardship a ruler gives all he has to those below him; once he has what he wanted, he indulges himself and looks down on others. In hard times you say what you think; when it goes well, meetings become routine. The difference is not ability but attitude quietly changing gear.
+e.g. In year one of a start-up you tell everyone everything. When the company is profitable, decisions get taken by three or four people.
+
+### The parts · Resentment is not measured by size
+He warns that what is to be feared is the person, not how large the grievance is. In good times we overlook the people we overrode with a casual word, who said nothing at the time and have not forgotten it.
+e.g. You brush off a veteran's point in a meeting; he nods, and from then on stops volunteering the things you most need to hear.
+
+### The parts · Pair every want with a question for yourself
+The ten thoughts pair up: seeing something you want, think of when you have enough; about to build, think of when to stop; fearing slackness, think of ending as carefully as you began. He does not say do not want things. He ties wanting to a question, a brake fitted while things go well.
+e.g. Before opening a fourth shop, write down how many you can truly keep running, then go and look at premises.
+
+### Q: How do I use it today?
+Where you are: things are better than when you started, and you cannot say where, but your edge is going.
+Ask first: Do I talk to the people around me now as I did in my worst year? Is there something I brushed aside that the other person did not argue with?
+Where it goes wrong: reading the ten thoughts as a list for daily self-reproach. They describe how people lose speed when pleased, and are meant to fit a brake in advance, not to be rehearsed every night.
+
+### Lines to keep
+Resentment is not about size; what is to be feared is people.
+In hardship he gives all; once successful, he looks down.
+Fear slackness, and think of ending as you began.
 
 ========================================================================
 ## Simone Weil · Attention is emptying, not straining

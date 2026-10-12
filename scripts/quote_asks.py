@@ -440,6 +440,13 @@ QUOTE_ASKS = {
         "我躺下了，脑子还停不下来。",
     "huangdi-neijing/nine-qi":
         "家里一吵，我胸口就发闷。",
+    # 魏征
+    "wei-zheng/if-he-had-listened":
+        "新东家问我，当年为什么跟他们作对。",
+    "wei-zheng/the-pardon-at-cizhou":
+        "上面说不追究，可我见他们又翻旧账。",
+    "wei-zheng/begin-well-end-well":
+        "当初我熬得住，如今日子好了反倒松了。",
     # 墨子
     "mozi/belt-and-sticks":
         "我讲理他都认，可他就是不停手。",

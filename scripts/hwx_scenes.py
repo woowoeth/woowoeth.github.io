@@ -312,6 +312,8 @@ SCENES = [
      [("feng-yi", "why-the-fear")]),
 ]),
 ("上面说的话不能信", "跟人打交道", [
+    ("上面说不追究，可我见他们又翻旧账。",
+     [("wei-zheng", "the-pardon-at-cizhou")]),
     ("画的饼我已经不信了。",
      [("han-feizi", "form-and-name"), ("hu-xueyan", "no-cheating")]),
     ("答应我的事，一次次落空。",
@@ -539,6 +541,8 @@ SCENES = [
      [("coase", "price-has-a-cost")]),
 ]),
 ("顺境里发慌", "把事做成", [
+    ("当初我熬得住，如今日子好了反倒松了。",
+     [("wei-zheng", "begin-well-end-well")]),
     ("顺到这个份上了，翻转从哪儿开始。",
      [("i-ching", "peace-and-stagnation"), ("ren-zhengfei", "huaweis-winter")]),
     ("日子正好，我该准备什么？",
@@ -1042,6 +1046,8 @@ SCENES = [
      [("maslach", "six-mismatches"), ("frankl", "happiness-ensues")]),
 ]),
 ("要不要跳槽", "跟人打交道", [
+    ("新东家问我，当年为什么跟他们作对。",
+     [("wei-zheng", "if-he-had-listened")]),
     ("还待得下去吗，我不确定。",
      [("boyd", "to-be-or-to-do"), ("zhang-yiming", "delayed-gratification")]),
     ("钱和成长，我该先要哪个？",

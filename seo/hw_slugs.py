@@ -8,6 +8,7 @@ SLUGS = {
     "徐霞客": "xu-xiake",
     "李清照": "li-qingzhao",
     "墨子": "mozi",
+    "魏征": "wei-zheng",
     "林徽因": "lin-huiyin",
     "南丁格尔": "nightingale",
     "晏婴": "yan-ying",
