@@ -908,8 +908,8 @@
   "h": "3e7d921dac6930df"
  },
  "i/hirschman/": {
-  "d": "2026-09-19",
-  "h": "3ba36c7910d02c3e"
+  "d": "2026-10-13",
+  "h": "750aa055a41f5219"
  },
  "i/hirschman/exit-voice-loyalty/": {
   "d": "2026-09-11",
@@ -1160,8 +1160,8 @@
   "h": "022338654353723f"
  },
  "i/keynes/": {
-  "d": "2026-10-04",
-  "h": "d0a049d3a638c2c0"
+  "d": "2026-10-13",
+  "h": "99a2fcad8c640e5b"
  },
  "i/keynes/fail-conventionally/": {
   "d": "2026-10-04",
@@ -1544,8 +1544,8 @@
   "h": "a6356aca438b4535"
  },
  "i/merton/": {
-  "d": "2026-09-17",
-  "h": "efa29a992c32fad6"
+  "d": "2026-10-13",
+  "h": "01fa7fef3112dbc2"
  },
  "i/merton/matthew-effect/": {
   "d": "2026-09-16",
@@ -2259,6 +2259,22 @@
   "d": "2026-10-07",
   "h": "9564e424aea6e4b0"
  },
+ "i/veblen/": {
+  "d": "2026-10-13",
+  "h": "9d6d5c5d03982442"
+ },
+ "i/veblen/conspicuous-consumption/": {
+  "d": "2026-10-13",
+  "h": "9f2b2d6369152f94"
+ },
+ "i/veblen/costliness-as-beauty/": {
+  "d": "2026-10-13",
+  "h": "dff9f129b8278517"
+ },
+ "i/veblen/ideal-just-out-of-reach/": {
+  "d": "2026-10-13",
+  "h": "2f19921068962dd3"
+ },
  "i/vygotsky/": {
   "d": "2026-08-31",
   "h": "2d73fe2a08d92d7e"
@@ -2316,8 +2332,8 @@
   "h": "37e42acf076f2f5c"
  },
  "i/wealth-of-nations/": {
-  "d": "2026-10-02",
-  "h": "07f308bdc9b69dd4"
+  "d": "2026-10-13",
+  "h": "ff7b3439f52402cf"
  },
  "i/wealth-of-nations/not-benevolence/": {
   "d": "2026-08-29",

@@ -9,6 +9,7 @@ SLUGS = {
     "李清照": "li-qingzhao",
     "墨子": "mozi",
     "魏征": "wei-zheng",
+    "托尔斯坦·凡勃伦": "veblen",
     "林徽因": "lin-huiyin",
     "南丁格尔": "nightingale",
     "晏婴": "yan-ying",

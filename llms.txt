@@ -1,11 +1,11 @@
 # OurWord (人类世界生存法则)
 
-> 195 people and books on how the world actually works, across 2,600 years
+> 196 people and books on how the world actually works, across 2,600 years
 > 遇到事了，看看以前的人怎么处理
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 195 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 196 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
-一个关于「世界到底怎么运转」的知识库：战略、财富、权力、人性、创业，取自 195 位人物与典籍，跨越 2600 年。每一条都写清楚这个人真正留下的那一个想法、背后的故事、拆开的分则与例子，以及今天怎么用。
+一个关于「世界到底怎么运转」的知识库：战略、财富、权力、人性、创业，取自 196 位人物与典籍，跨越 2600 年。每一条都写清楚这个人真正留下的那一个想法、背后的故事、拆开的分则与例子，以及今天怎么用。
 
 ## Read it
 
@@ -19,7 +19,7 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 ## Topics
 
 - [现代](https://ourword.ai/t/modern/) — 62
-- [工业时代](https://ourword.ai/t/industrial-age/) — 59
+- [工业时代](https://ourword.ai/t/industrial-age/) — 60
 - [先秦与古典时代](https://ourword.ai/t/classical-era/) — 29
 - [权力与组织](https://ourword.ai/t/power/) — 28
 - [心智与情绪](https://ourword.ai/t/mind/) — 22
@@ -27,7 +27,7 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 - [谋略与竞争](https://ourword.ai/t/strategy/) — 20
 - [学习与成长](https://ourword.ai/t/learning/) — 19
 - [财富与风险](https://ourword.ai/t/wealth/) — 19
-- [世界如何运转](https://ourword.ai/t/world/) — 18
+- [世界如何运转](https://ourword.ai/t/world/) — 19
 - [身心与生活](https://ourword.ai/t/living/) — 17
 - [中古](https://ourword.ai/t/medieval/) — 17
 - [家庭与关系](https://ourword.ai/t/family/) — 16
@@ -441,6 +441,9 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [修昔底德 · 他只认实力，我还讲不讲理](https://ourword.ai/i/thucydides/the-strong-do-what-they-can/): 修昔底德 · 他只认实力，我还讲不讲理——道理在你这边，不等于有人替你出手。对面明说只讲谁更强，不谈谁有理。这一篇要回答的是：这时候你手里有什么，不该押什么。
 - [修昔底德 · 第二天就后悔的决定](https://ourword.ai/i/thucydides/the-morrow-brought-repentance/): 修昔底德 · 第二天就后悔的决定——气头上定的事，要留一个能收回的口子。你在火头上做了一个决定，第二天睡醒就想收回。这一篇要回答的是：雅典人怎么把一个已经发出去的死刑令追回来。
 - [修昔底德 · 不拿听来的第一个说法当事实](https://ourword.ai/i/thucydides/first-source-that-came-to-hand/): 修昔底德 · 不拿听来的第一个说法当事实——连自己的印象，也要拿来验。几个人对同一件事的说法对不上，而你要靠它做决定。这一篇要回答的是：修昔底德是怎么查的，查到对不上时他先问什么。
+- [托尔斯坦·凡勃伦 · 买它，是给谁看的](https://ourword.ai/i/veblen/conspicuous-consumption/): 托尔斯坦·凡勃伦 · 买它，是给谁看的——有些东西买来不是为了用，是为了被看见。买的是东西，还是目光？这一篇要回答的是：怎么分辨一笔钱买的是功能，还是买的是被看见。
+- [托尔斯坦·凡勃伦 · 总是差一点够到](https://ourword.ai/i/veblen/ideal-just-out-of-reach/): 托尔斯坦·凡勃伦 · 总是差一点够到——「够了」那条线，是跟着你的收入一起搬的。挣得比以前多，缺口却原样还在。这一篇要回答的是：那条「够了」的线，是谁在往上拉。
+- [托尔斯坦·凡勃伦 · 贵本身就是卖点](https://ourword.ai/i/veblen/costliness-as-beauty/): 托尔斯坦·凡勃伦 · 贵本身就是卖点——有些东西，价钱就是它在说的话。降了价，问的人反而少了。这一篇要回答的是：什么时候，价钱本身就是商品的一部分。
 - [维果茨基 · 最近发展区](https://ourword.ai/i/vygotsky/zpd/): 维果茨基 · 最近发展区——看第二条线。两个人现在水平一样，未来差别可能很大。这一篇要回答的是：差在哪个指标上。
 - [维果茨基 · 脚手架：给了要撤](https://ourword.ai/i/vygotsky/scaffolding/): 维果茨基 · 脚手架：给了要撤——不撤就成了依赖。帮到什么程度算帮对了。这一篇要回答的是：判据是撤得掉。
 - [王翦 · 非六十万不可](https://ourword.ai/i/wang-jian/sixty-thousand/): 王翦 · 非六十万不可——报真实的数。老板问要多少资源，报多了显得无能，报少了拿不下。这一篇要回答的是：王翦为什么坚持报那个吓人的数。
@@ -528,7 +531,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [AI Bubble Monitor / AI 泡沫检测仪](https://ourword.ai/ai/)
 - [Zouni / 走你](https://ourword.ai/zouni/)
 
-## Index (195 entrys)
+## Index (196 entrys)
 
 - [BJ·福格](https://ourword.ai/i/bj-fogg/): BJ·福格（2019年·斯坦福行为设计实验室）——小到不会失败。斯坦福行为设计实验室创始人，研究行为如何被设计出来。他给出一个公式：行为发生需要动机、能力、提示三者同时到位。多数人失败在只调动机——靠决心和自我激励——而动机天然起伏，靠它维持的习惯必然崩。他的主张相反：把行为缩到小得不需要动机，然后挂在一个已有的动作后面。
 - [C.S.刘易斯](https://ourword.ai/i/cs-lewis/): C.S.刘易斯（1898-1963年·英国牛津）——妻子死后几个月的日记。作家，牛津和剑桥的教授，写过《纳尼亚传奇》和大量劝人信仰的书。五十八岁结婚，妻子乔伊四年后因癌症去世。之后几个月他在四本练习簿上记自己的状态，后来用笔名出版，就是《卿卿如晤》。收他是因为「重要的人走了」那六个问题，原来靠弗兰克尔和苏轼在答——一个是集中营的幸存者，一个是被贬的官员
@@ -609,6 +612,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [思考，快与慢](https://ourword.ai/i/thinking-fast-and-slow/): 思考，快与慢（美·2011年）——系统1与系统2。丹尼尔·卡尼曼著，行为经济学的奠基之作。卡尼曼是史上唯一以心理学家身份获诺贝尔经济学奖的人（2002年），这本书是他与阿莫斯·特沃斯基四十年研究的总结。核心发现足以颠覆你对自己的信任：人脑有两套系统——系统1快速、自动、情绪化，系统2缓慢、费力、讲逻辑；你以为自己在用系统2理性决
 - [战争论](https://ourword.ai/i/on-war/): 战争论（普鲁士·1832）——摩擦。克劳塞维茨（1780-1831）12岁参军，亲历耶拿会战的惨败和拿破仑征俄的溃退，一辈子在打败仗和研究败仗。他51岁死于霍乱，书没写完，由遗孀整理出版。《孙子兵法》教你如何取胜，《战争论》告诉你为什么你的计划一定会走样——这是孙子完全没有提供的那一半。
 - [战国策](https://ourword.ai/i/strategies-of-the-warring-states/): 战国策（战国·前453-前221年）——势。记录战国时期各国谋士纵横捭阖的策略文集，是中国最刺激的历史文献之一。和史记的「评价」不同，战国策更像是真实的策略备忘录：苏秦如何说服六国合纵，张仪如何各个击破，冯谖如何为孟尝君「狡兔三窟」。它不讲道德，只讲结果。两千年来，但凡真正懂政治和商战的人，都在私下里读它。
+- [托尔斯坦·凡勃伦](https://ourword.ai/i/veblen/): 托尔斯坦·凡勃伦（美国·1857-1929）——炫耀。美国经济学家，1857年生于威斯康星一个挪威移民农户，家里说挪威语。1884年在耶鲁拿到哲学博士，后来先后在芝加哥、斯坦福、密苏里和纽约的新社会研究学院教书。他是制度经济学的开创者：不信教科书里那个孤立的、只会算得失的人，认为人要什么、怎么花，是从习惯、制度和周围的人那里学来的。
 - [托马斯·戈登](https://ourword.ai/i/thomas-gordon/): 托马斯·戈登（1962年·父母效能训练）——我信息。罗杰斯的学生，把人本主义心理学做成了普通父母能学的课程——父母效能训练（P.E.T.）。他的两个核心工具比后来流行的沟通方法更早也更具体：一是「我信息」，用描述自己而非评判对方的方式表达不满；二是「问题归属」，先分清这件事困扰的是谁，因为归属不同，该用的方法完全不同。
 - [托马斯·谢林](https://ourword.ai/i/schelling/): 托马斯·谢林（美国·1921-2016）——自缚其手。冷战最危险的年代里，最有影响力的战略思想家不是将军，是一个经济学家。谢林用博弈论重新定义了「威慑」，2005年因此与奥曼共获诺贝尔经济学奖。他最反直觉的发现是：在谈判和对抗中，主动削掉自己的选项、让自己无路可退，反而是增强议价能力最有效的方式。烧掉退路不是悲壮，是战术。
 - [技术革命与金融资本](https://ourword.ai/i/technological-revolutions/): 技术革命与金融资本（佩蕾丝·2002）——泡沫是必要成本。卡萝塔·佩蕾丝（Carlota Perez）用两百年、五次技术革命的数据，论证了一件反直觉的事：金融泡沫不是技术革命的意外，是它的融资机制。从 1771 年的工业革命到 1971 年开始的信息革命，每一次都走同一条路——技术爆发、金融狂热、崩盘、制度重构，然后才轮到真正的黄金时代

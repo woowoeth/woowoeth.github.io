@@ -1,7 +1,7 @@
-# OurWord — 195 people and books on how the world actually works, across 2,600 years
+# OurWord — 196 people and books on how the world actually works, across 2,600 years
 # OurWord — See how people before you handled it.
 # https://ourword.ai/en/
-# Full corpus, plain text. 195 entrys.
+# Full corpus, plain text. 196 entrys.
 
 ========================================================================
 ## Albert Einstein
@@ -78,7 +78,7 @@ The easier a place is to leave, the less anyone says. The first to go are the on
 Friedrich Hayek — Hayek argues a reform endangers a freedom we already hold, which is the third shape Hirschman names; Hirschman does not dispute it, he asks for a quantity someone can check. Andy Grove — Both ask how bad news travels upward: Grove wants the people sounding alarms brought into the room, Hirschman asks whether they resigned some time ago. Gary Becker — Both answer whether to go: Hirschman gives the choice set of exit, voice and loyalty, while Becker gives the number - how much of your present pay disappears on the day you walk out.
 
 ### Further
-Hannah Arendt Andy Grove Peter Drucker Thinking in Systems The Old Regime and the Revolution Gary Becker
+Hannah Arendt Andy Grove Peter Drucker Thinking in Systems The Old Regime and the Revolution Gary Becker Thorstein Veblen
 
 ========================================================================
 ## Alfred Adler
@@ -2807,7 +2807,7 @@ Of such matters we simply do not know. Failing conventionally beats succeeding u
 Friedrich Hayek — Both accepted that no one can know everything. Hayek trusted prices as signals scattered through everyone's hands, so each person acts where they know. Keynes feared that expectations can lose their footing together, and wanted someone to steady demand when nobody can see. One gave the not-knowing to prices; the other to someone who would stand behind them. George Soros — Both saw expectations pushing prices. Soros treated that loop as something to trade, riding it and leaving the moment he was wrong. Keynes treated it as something to be wary of, because the professionals were following the crowd to avoid blame, not because they had judged worth.
 
 ### Further
-Nassim Taleb George Soros Howard Marks Friedrich Hayek
+Nassim Taleb George Soros Howard Marks Friedrich Hayek Thorstein Veblen
 
 ========================================================================
 ## John Ratey
@@ -4821,10 +4821,10 @@ Take one thing you are being misread on, or misreading someone else on, and do t
 The false judgement comes first and then produces its own evidence. Whoever said it will cite the outcome as proof they knew. The extra portion is paid on reputation, not on contribution. Nobody has to act badly for either mechanism to run.
 
 ### Q: What should I read alongside?
-The Art of Worldly Wisdom — Two places to cut into the same problem: Gracian tells you to make sure the finished work is seen, Merton says whether it is seen depends first on where your name already stands. George Soros — Both say belief rewrites fact: Soros watches price and fundamentals push each other in markets, Merton watches suspicion and reputation confirm themselves in a room.
+The Art of Worldly Wisdom — Two places to cut into the same problem: Gracian tells you to make sure the finished work is seen, Merton says whether it is seen depends first on where your name already stands. George Soros — Both say belief rewrites fact: Soros watches price and fundamentals push each other in markets, Merton watches suspicion and reputation confirm themselves in a room. Thorstein Veblen — Both ask who people measure themselves against. Merton gives the reference group; Veblen notices that most people use the rung just above them, so the yardstick moves up as they do.
 
 ### Further
-Thinking in Systems George Soros Mark Granovetter The Art of Worldly Wisdom La Rochefoucauld Robert Axelrod
+Thinking in Systems George Soros Mark Granovetter The Art of Worldly Wisdom La Rochefoucauld Robert Axelrod Thorstein Veblen
 
 ========================================================================
 ## Robert Sapolsky
@@ -6153,10 +6153,10 @@ Measure a week of your own against the pin factory. How many things are you maki
 It is not from the benevolence of the butcher, the brewer, or the baker. The invisible hand appears once in the book, and it is about home bias. The division of labour is limited by the extent of the market.
 
 ### Q: What should I read alongside?
-Guan Zhong — Two origins for the idea of national wealth: Guan Zhong steers prices and money from the centre, Smith lets price discover itself. The argument has not moved in twenty-five centuries. Shang Yang — Both are designing a route to a strong state. Shang Yang binds people to the land and suppresses trade, Smith credits division and exchange. Both routes work, at wildly different prices. Friedrich Hayek — Smith explains how the division of labour makes brute effort rich; Hayek explains how the information gets back afterwards. Why Nations Fail — Smith says the market runs itself; this book says somebody has to build the institutions that hold the market up. The missing half, supplied two centuries later.
+Guan Zhong — Two origins for the idea of national wealth: Guan Zhong steers prices and money from the centre, Smith lets price discover itself. The argument has not moved in twenty-five centuries. Shang Yang — Both are designing a route to a strong state. Shang Yang binds people to the land and suppresses trade, Smith credits division and exchange. Both routes work, at wildly different prices. Friedrich Hayek — Smith explains how the division of labour makes brute effort rich; Hayek explains how the information gets back afterwards. Why Nations Fail — Smith says the market runs itself; this book says somebody has to build the institutions that hold the market up. The missing half, supplied two centuries later. Thorstein Veblen — Both are about buying and selling. Smith has people trading from self-interest, with price as a signal; Veblen adds a kind of trade where the buyer uses the goods to say something about himself, and the price goes home with the goods.
 
 ### Further
-Guan Zhong Shang Yang Thinking in Systems Li Ka-shing Naval Ravikant Guns, Germs, and Steel Friedrich Hayek Why Nations Fail Gary Becker Ronald Coase Michael Porter
+Guan Zhong Shang Yang Thinking in Systems Li Ka-shing Naval Ravikant Guns, Germs, and Steel Friedrich Hayek Why Nations Fail Gary Becker Ronald Coase Michael Porter Thorstein Veblen
 
 ========================================================================
 ## The Yellow Emperor's Inner Classic
@@ -6342,6 +6342,40 @@ Strategies of the Warring States — Two arts of negotiation: the persuaders cha
 
 ### Further
 Strategies of the Warring States Han Feizi Peter Thiel Nassim Taleb Sun Tzu Otto von Bismarck Chris Voss Robert Axelrod
+
+========================================================================
+## Thorstein Veblen
+URL: https://ourword.ai/en/i/veblen/
+Tags: How the world works, The industrial age, Display
+
+Thorstein Veblen (USA · 1857–1929) — Display. An American economist born in 1857 on a Norwegian immigrant farm in Wisconsin, where Norwegian was spoken at home.
+
+### Q: What did this one leave behind?
+An American economist born in 1857 on a Norwegian immigrant farm in Wisconsin, where Norwegian was spoken at home. He took a PhD in philosophy at Yale in 1884 and later taught at Chicago, Stanford, Missouri and the New School. He founded institutional economics, rejecting the lone calculating individual of the textbooks: wants, he argued, are learned from habit, institutions and the people around us. The Theory of the Leisure Class (1899) gave us conspicuous consumption, conspicuous leisure and pecuniary emulation.
+
+### Q: What actually happened?
+In 1884 Veblen had a Yale doctorate in philosophy and no job. He went back to his parents' farm in Minnesota and stayed for seven years, mostly reading, with no post and no income. A boy who grew up speaking Norwegian watched from outside the circle that cared most about appearances. The first book he wrote afterwards was about how that circle uses money and idleness to prove itself to the neighbours.
+
+### The parts · People are not calculating machines
+He mocked the isolated, cool figure of the textbooks who only weighs gains and losses. To him, what people want and how they spend is learned, bit by bit, from habit and from the people around them; economics should study how habits harden into institutions and change. e.g. The same income feels like enough in one circle and not nearly enough in another.
+
+### The parts · Three terms, one mechanism
+Conspicuous consumption, conspicuous leisure and pecuniary emulation are one thing seen three ways: esteem goes to what can be seen, so money has to be shown, idleness has to be shown, and when the neighbour shows, you follow. e.g. The neighbour's new car and suddenly yours looks old, though it was fine yesterday.
+
+### The parts · Making money is not making things
+In The Theory of Business Enterprise (1904) he separated business, which looks at prices and profit, from industry, which looks at whether things get made. The two often agree and often do not: to hold a price up, some firms would rather produce less. e.g. To keep the price from falling, half the stock sits in the warehouse.
+
+### Q: How do I use it today?
+Take your three largest recent purchases and write one line after each: bought to use, or bought to be seen. Do not edit the answers. Just look at the proportion.
+
+### Lines to keep
+Esteem is given to what can be seen. The neighbour shows and you follow. Making money and making things are different jobs.
+
+### Q: What should I read alongside?
+The Wealth of Nations — Both are about buying and selling. Smith has people trading from self-interest, with price as a signal; Veblen adds a kind of trade where the buyer uses the goods to say something about himself, and the price goes home with the goods. Robert K. Merton — Both ask who people measure themselves against. Merton gives the reference group; Veblen notices that most people use the rung just above them, so the yardstick moves up as they do.
+
+### Further
+The Wealth of Nations John Maynard Keynes Robert K. Merton Albert O. Hirschman
 
 ========================================================================
 ## Thucydides
@@ -20425,6 +20459,105 @@ Where it goes wrong: turning 'check everything' into trusting nothing. He says t
 derive it from the first source that came to hand
 I did not even trust my own impressions
 tried by the most severe and detailed tests possible
+
+========================================================================
+## Thorstein Veblen · Who Is It Bought For
+URL: https://ourword.ai/en/i/veblen/conspicuous-consumption/
+Source: The Theory of the Leisure Class (1899), chapters 2, 4 and 7
+Tags: Deep read, Thorstein Veblen, Some things are bought to be seen, not to be used
+
+You have talked yourself into the purchase with three reasons, all about function. Veblen's question is who will see it.
+
+### Q: What actually happened?
+In The Theory of the Leisure Class Veblen takes women's fashion as an exhibit. The long skirt, the corset and the high heel share one feature: the woman wearing them cannot work in them. That is exactly what makes them worth having, because each says something on the wearer's behalf, that she has no need to work. The inconvenience is the message. The same is true of much else that is costly and gets in the way.
+
+### The parts · Wealth has to be shown
+In chapter 2 he writes that wealth must be put in evidence, "for esteem is awarded only on evidence." Among neighbours who never see your accounts, what they can judge you by is what you put out where they can see it.
+e.g. You move into a new block of flats. Nobody knows your savings; everybody sees the car parked outside.
+
+### The parts · Waste is the point
+A useful thing invites the suspicion that it was bought to be used. To show you can afford more than use requires, you spend where use ends: needless ornament, labour nobody needs. He called it conspicuous waste, and the waste is itself the message.
+e.g. A watch rated to three hundred metres, worn by someone whose deepest swim is the bath.
+
+### The parts · Leisure is displayed too
+The same reasoning applies to time. Being visibly unproductive, which he named conspicuous leisure, says the person does not have to trade hours for a living.
+e.g. The photo of a Wednesday afternoon in a café shows the afternoon off, not the coffee.
+
+### Q: How do I use it today?
+Where you are: something costly sits in the basket and you have found three reasons for it, all about function.
+Ask first: if no one would ever see that I own it, or what it cost, would I still buy it? Whatever changes is the part you are paying for in other people's eyes.
+Where it goes wrong: concluding that every expensive thing is vanity. He is measuring the status part of a purchase; the feel of the thing, its durability and the pleasure it gives you are not in his ledger.
+
+### Lines to keep
+Money must be seen before it earns respect.
+The less use it has, the better it proves you can pay.
+Would I still buy this if nobody could see it?
+
+========================================================================
+## Thorstein Veblen · Always Just Out of Reach
+URL: https://ourword.ai/en/i/veblen/ideal-just-out-of-reach/
+Source: The Theory of the Leisure Class (1899), chapters 2 and 5
+Tags: Deep read, Thorstein Veblen, The line for enough moves with your income
+
+You earn more than you used to and the gap is exactly the same. Where does the line for enough come from?
+
+### Q: What actually happened?
+Veblen names no family in his book; what he draws is a ladder. The people on each rung admire and imitate those on the rung just above, and seldom compare themselves with anyone below. What the rung above lives like becomes what decency means one rung down. When the lower rung catches up, the line has already moved. The line always sits a little above where you have just stood. Nobody announced it, yet everyone feels it is there.
+
+### The parts · The standard is not the average
+He wrote that the standard we spend towards is not what has already been achieved but "an ideal of consumption that lies just beyond our reach." Whatever we reach stops being the ideal.
+e.g. On fifty thousand a year you eye the life of someone on eighty, not the national average.
+
+### The parts · The neighbour stings, the billionaire does not
+He observed that each class envies and imitates the class next above it, and rarely measures itself against those far ahead. The very rich do not make you feel poor; the colleague with the new flat does.
+e.g. A colleague buys a flat and you notice you have not; a billionaire buys an island and nobody minds.
+
+### The parts · A richer country does not fill it
+His conclusion is harsher: however wealth is shared out, a general rise in a community's wealth cannot satisfy this need, because it is a contest for rank, not a quantity. A raise for everyone lifts everyone one rung.
+e.g. Everyone in the firm gets a grade's raise and nobody feels better off than last year.
+
+### Q: How do I use it today?
+Where you are: your pay went up and the month-end is as tight as ever, and you suspect you are bad with money.
+Ask first: whose life is it that I mean by enough? If you can name the person, the line is borrowed, not yours.
+Where it goes wrong: hearing it as be content and stop striving. He describes how comparison is structured; he does not tell you not to earn more.
+
+### Lines to keep
+The gap you feel is often someone else's lifestyle.
+Everyone rises together and the ranking stays put.
+Watching the neighbour costs more than watching the account.
+
+========================================================================
+## Thorstein Veblen · When the Price Is the Product
+URL: https://ourword.ai/en/i/veblen/costliness-as-beauty/
+Source: The Theory of the Leisure Class (1899), chapter 6; Leibenstein, Quarterly Journal of Economics (1950)
+Tags: Deep read, Thorstein Veblen, For some goods the price is part of what is sold
+
+You cut your price and fewer people asked. When does the price itself become part of the thing being bought?
+
+### Q: What actually happened?
+Veblen asks us to imagine two silver spoons, one beaten out by hand, the other pressed by a machine, a close copy. People pick up the hand-wrought one and find it handsome. Tell them it came from a machine and the same spoon loses some of its charm. Part of what they liked was that it was not cheap.
+
+### The parts · Costliness passes for beauty
+He wrote that much of the pleasure we take in costly things we call beautiful is "a gratification of our sense of costliness masquerading under the name of beauty." The buyer sees the price and reports it as taste.
+e.g. In experiments, the same wine described as dearer is rated as tasting better.
+
+### The parts · Others gave it a name later
+In 1950 the economist Harvey Leibenstein called one version the Veblen effect: some goods are wanted more, not less, as they get dearer. Veblen himself never drew that demand curve; he was writing about display.
+e.g. Some luxury brands raise their prices and the queue gets longer.
+
+### The parts · First find out what is being bought
+If a customer buys for use, a price is a price, and cutting it just makes the thing cheaper. Only when the buyer uses the object to say something about himself does the price go home with the goods. Which kind are your customers?
+e.g. A plumber's quote gets haggled over; a handbag's price tag is half of what the buyer is carrying.
+
+### Q: How do I use it today?
+Where you are: your work is good, you have kept the price low, and fewer people ask.
+Ask first: do the people who buy this buy its use, or what it lets them show? For the first, a cut is a cut; for the second, the price is part of the goods.
+Where it goes wrong: raising the price on everything. It holds only for things bought to be seen; for things bought to be used, high is just high.
+
+### Lines to keep
+A price cut saves money and may lose the signal.
+Part of what they love is that it is not cheap.
+Is this bought to use, or to show?
 
 ========================================================================
 ## Lev Vygotsky · The zone of proximal development

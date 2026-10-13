@@ -214,6 +214,8 @@ SCENES = [
      [("graham", "mr-market"), ("livermore", "hope-and-fear-inverted")]),
 ]),
 ("该不该买", "钱的事", [
+    ("我买它，是图它好用，还是图人看见？",
+     [("veblen", "conspicuous-consumption")]),
     ("买之前，我真的懂它吗？",
      [("buffett", "circle-of-competence"), ("munger", "latticework")]),
     ("这个价，算贵还是算便宜？",
@@ -679,6 +681,8 @@ SCENES = [
      [("weil", "the-factory-year")]),
 ]),
 ("被比下去", "自己的状态", [
+    ("我挣得比以前多了，怎么还是觉得不够。",
+     [("veblen", "ideal-just-out-of-reach")]),
     ("身边人一好，我就不舒服。",
      [("caigentan", "dont-measure-by-yourself"), ("jung", "the-shadow")]),
     ("他比我强，还是只比我早几年。",
@@ -932,6 +936,8 @@ SCENES = [
      [("thinking-fast-and-slow", "wysiati"), ("popper", "seek-refutation")]),
 ]),
 ("定不好价", "跟人打交道", [
+    ("我一降价，反倒没人来问了。",
+     [("veblen", "costliness-as-beauty")]),
     ("东西是好东西，可就是卖不动。",
      [("wealth-of-nations", "not-benevolence"), ("drucker", "create-a-customer")]),
     ("我定多少钱，人才愿意掏？",

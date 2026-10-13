@@ -52,7 +52,7 @@ CN = {
 }
 FO = {
     "bhagavad-gita", "churchill", "curie", "illich", "weil", "postman",
-    "hirschman", "winnicott", "kindleberger", "parkinson", "merton", "axelrod",
+    "hirschman", "veblen", "winnicott", "kindleberger", "parkinson", "merton", "axelrod",
     "becker", "nightingale", "cowan", "herbert-simon", "deci", "coase", "keynes", "porter", "thucydides",
 }
 

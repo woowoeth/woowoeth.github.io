@@ -440,6 +440,13 @@ QUOTE_ASKS = {
         "我躺下了，脑子还停不下来。",
     "huangdi-neijing/nine-qi":
         "家里一吵，我胸口就发闷。",
+    # 凡勃伦
+    "veblen/conspicuous-consumption":
+        "我买它，是图它好用，还是图人看见？",
+    "veblen/ideal-just-out-of-reach":
+        "我挣得比以前多了，怎么还是觉得不够。",
+    "veblen/costliness-as-beauty":
+        "我一降价，反倒没人来问了。",
     # 魏征
     "wei-zheng/if-he-had-listened":
         "新东家问我，当年为什么跟他们作对。",

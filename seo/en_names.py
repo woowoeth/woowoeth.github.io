@@ -39,6 +39,7 @@ NAMES = {
     "li-bi": ("Li Bi", "Power and organisation"),
     "li-shimin": ("Li Shimin", "Power and organisation"),
     "wei-zheng": ("Wei Zheng", "Power and organisation"),
+    "veblen": ("Thorstein Veblen", "How the world works"),
     "liu-bang": ("Liu Bang", "Power and organisation"),
     "xiao-he": ("Xiao He", "Power and organisation"),
     "zhao-wuling-wang": ("King Wuling of Zhao", "Power and organisation"),
