@@ -402,6 +402,10 @@ SCENES = [
      [("merton", "self-fulfilling-prophecy"), ("dweck", "praise-the-process")]),
 ]),
 ("下不了手", "带人", [
+    ("他功劳最大，可这个位子他坐不动了。",
+     [("liu-xiu", "retiring-the-generals")]),
+    ("我立的规矩，头一个撞上的是自己人。",
+     [("liu-xiu", "the-unaskable-counties")]),
     ("该罚的是跟我最久的人。",
      [("zhuge-liang", "executing-ma-su"), ("shang-yang", "law-above-rank")]),
     ("要砍的是我亲手做起来的。",
@@ -432,6 +436,8 @@ SCENES = [
      [("xiao-he", "hunter-and-hounds")]),
 ]),
 ("招人换人", "带人", [
+    ("新并进来的人，个个都在防着我。",
+     [("liu-xiu", "bare-heart")]),
     ("招个比我强的，我压得住吗？",
      [("liu-bang", "three-i-cannot"), ("simons", "simons-principles")]),
     ("想破格提一个人，又怕压不住。",

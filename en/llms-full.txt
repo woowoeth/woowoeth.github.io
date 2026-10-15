@@ -1,7 +1,7 @@
-# OurWord — 196 people and books on how the world actually works, across 2,600 years
+# OurWord — 197 people and books on how the world actually works, across 2,600 years
 # OurWord — See how people before you handled it.
 # https://ourword.ai/en/
-# Full corpus, plain text. 196 entrys.
+# Full corpus, plain text. 197 entrys.
 
 ========================================================================
 ## Albert Einstein
@@ -1580,7 +1580,7 @@ The generals sat down to argue merit. Feng Yi stood under a tree. Lost at sunris
 Zhang Liang — Both stepped back from reward. Zhang Liang turned down thirty thousand households and asked for one small county, stepping back from the ruler's gift. Feng Yi kept his rewards and simply stayed out of the argument about merit, filing plain reports and letting the soldiers and the emperor keep the account. Wang Jian — Both commanded huge armies far from court and knew they would be suspected. Wang Jian sent back again and again asking for land and houses, playing a man who wanted only property. Feng Yi didn't act a part. He wrote that he felt uneasy and asked to come home, and when accused he answered formally: one made himself look small, the other put everything on the table. Xiao He — Both stayed out of the scramble for credit. Feng Yi walked away from the table where merit was argued and let the soldiers and the emperor keep his account. Xiao He had no battle record, and his emperor named his merit aloud in front of every general. One was credited by silence, the other by being spoken for.
 
 ### Further
-Zhang Liang Wang Jian Guo Ziyi Han Xin Duke Wen of Jin Xiao He
+Zhang Liang Wang Jian Guo Ziyi Han Xin Duke Wen of Jin Xiao He Liu Xiu
 
 ========================================================================
 ## Finite and Infinite Games
@@ -3458,10 +3458,47 @@ The next time you hire, write down two answers before the offer goes out: what i
 In the tent, settling a victory a thousand miles off, Zhang Liang beats me. These three are exceptional men, and I could use them. Scatter wealth and people gather. Hoard it and they scatter.
 
 ### Q: What should I read alongside?
-Xiang Yu — Both came out of the same collapse. Liu Bang gave things away and won the empire; Xiang Yu held on to everything and won the legend. Cao Cao — Two masters of using people, working from opposite ends: Liu Bang through generosity, Cao Cao through system. Zhu Yuanzhang — Two emperors from the bottom, opposite policies on the men who got them there: Liu Bang scattered wealth to hold them, Zhu Yuanzhang killed them to be safe.
+Xiang Yu — Both came out of the same collapse. Liu Bang gave things away and won the empire; Xiang Yu held on to everything and won the legend. Cao Cao — Two masters of using people, working from opposite ends: Liu Bang through generosity, Cao Cao through system. Zhu Yuanzhang — Two emperors from the bottom, opposite policies on the men who got them there: Liu Bang scattered wealth to hold them, Zhu Yuanzhang killed them to be safe. Liu Xiu — Both were founders who had to deal with veterans. Under Liu Bang Han Xin was killed, Peng Yue was minced and Ying Bu was executed; under Liu Xiu Jia Fu and Deng Yu gave up their armies and got marquisates, Special Advancement and a seat in counsel. Liu Bang's page is about using people better than yourself; this one is about what to do with them afterwards.
 
 ### Further
-Han Xin Zhang Liang Cao Cao Li Shimin Wu Zetian Zhu Yuanzhang Mao Zedong Julius Caesar Xiang Yu Machiavelli Records of the Grand Historian Xiao He
+Han Xin Zhang Liang Cao Cao Li Shimin Wu Zetian Zhu Yuanzhang Mao Zedong Julius Caesar Xiang Yu Machiavelli Records of the Grand Historian Xiao He Liu Xiu
+
+========================================================================
+## Liu Xiu
+URL: https://ourword.ai/en/i/liu-xiu/
+Tags: Power and organisation, Qin, Han and the Six Dynasties, Absorbing
+
+Liu Xiu (Eastern Han · 5 BC–AD 57) — Absorbing. Founder of the Eastern Han, known as Emperor Guangwu; his annals are in the Book of the Later Han.
+
+### Q: What did this one leave behind?
+Founder of the Eastern Han, known as Emperor Guangwu; his annals are in the Book of the Later Han. A distant kinsman of the Han house from Caiyang in Nanyang, he farmed before he took up arms. He took the throne in AD 25 and defeated Gongsun Shu in 36, and the empire was largely whole again. This page is not about his campaigns but about how he handled people: surrendered troops, veterans whose power had to be taken back, and a rule that was to check everyone.
+
+### Q: What actually happened?
+A general of Jia Fu's killed a man in Yingchuan. Kou Xun, the prefect, arrested him and put him to death in the market. Jia Fu took it as an insult and said that when he met Kou Xun he would kill him with his own hands. Kou Xun refused to meet him and had every county on the way lay in food and wine, two portions per man. He rode out, greeted the column and went home sick. Jia Fu's soldiers were drunk and could not give chase. Guangwu summoned both. Jia Fu was already in the room and half rose to leave. The emperor told him that with the realm not yet settled, two tigers could not be left to bite each other in private, and that he would part them himself. They sat down together in good humour and left in one cart, friends.
+
+### The parts · Find out what they fear before you act
+After the Tongma surrender the men feared reprisals and being broken up. Liu Xiu did not begin with a speech; he rode through their camps. He dealt with what they were afraid of, not with what he wanted to say. e.g. After a merger, new colleagues are not unwilling; they do not know if their posts remain. Settle that first, then talk about targets.
+
+### The parts · Take the power, not the man
+In the thirteenth year of Jianwu the Left and Right Generals were abolished and 365 veterans had their fiefs raised or reassigned. Jia Fu and Deng Yu laid down their commands and received marquisates, Special Advancement and a seat in counsel. The army was taken; dignity and a voice were given. e.g. A co-founder steps back from the front line but keeps a board seat and the quarterly strategy meeting.
+
+### The parts · Two key men are enemies: do not let them fight it out
+He did not decide who was right. He first put the two in one room, then in one cart. The quarrel was over a man's life, and what he wanted was that it should not be carried outside. e.g. Two department heads will not give way: put them in one meeting before each starts lining up supporters in the group chats.
+
+### The parts · The door left open in a rule
+In the land survey he saw 'not to be asked' written on a clerk's tablet, pressed it, and found that the capital and his home region had been quietly left out. The result was uneven: a dozen officials died in prison, and the veteran Liu Long was only reduced to commoner. The gap in a rule tends to be nearest its author. e.g. A firm audits every department but nobody opens the founders' accounts.
+
+### Q: How do I use it today?
+Pick someone you have meant to deal with and not done. Write down which one thing he most fears losing: power, rank or face. Then decide which of the three you must take, and whether the other two can be left intact. Jia Fu and Deng Yu gave up their commands and kept rank and voice; Liu Long was dismissed and kept his life.
+
+### Lines to keep
+With the realm unsettled, two tigers must not fight in private. I part you today. The Prince of Xiao has put his heart in our bellies. Yingchuan and Hongnong may be questioned; Henan and Nanyang may not.
+
+### Q: What should I read alongside?
+Liu Bang — Both were founders who had to deal with veterans. Under Liu Bang Han Xin was killed, Peng Yue was minced and Ying Bu was executed; under Liu Xiu Jia Fu and Deng Yu gave up their armies and got marquisates, Special Advancement and a seat in counsel. Liu Bang's page is about using people better than yourself; this one is about what to do with them afterwards. Zhuge Liang — Both acted against someone close: Zhuge Liang executed Ma Su, whom he valued, to keep military law; Liu Xiu, in the same survey, struck hard at governors without merit and left the veteran Liu Long a way out. One is about no favourites; the other about how closeness makes holes in a rule.
+
+### Further
+Liu Bang Xiao He Feng Yi Zhuge Liang Wei Zheng
 
 ========================================================================
 ## Liu Yan
@@ -6662,7 +6699,7 @@ It is because you draw me out that I dare to speak. Do not nod to his face and c
 Yan Ying — Both said unwelcome things to their lords. Yan Ying went round it: the market price of crutches against shoes, and the duke cut the punishments himself. Wei Zheng said it to his face, and could, because Taizong was willing to be pushed and let him go on. Duke Wen of Jin — Duke Wen is the man whose old enemy comes knocking; Wei Zheng is the one who knocks, asked by Li Shimin about the past. The two pages look at the same meeting from either end.
 
 ### Further
-Li Shimin Yan Ying Duke Wen of Jin Xiao He
+Li Shimin Yan Ying Duke Wen of Jin Xiao He Liu Xiu
 
 ========================================================================
 ## Why Nations Fail
@@ -6844,7 +6881,7 @@ The hound runs down the hare; the hunter points out where. Generals are easy to 
 Han Xin — Both were among the Han founders. Han Xin's merit lay on the battlefield, counted in battles won and cities taken. Xiao He's was in what made those battles possible, and cannot be counted. Liu Bang ranked the second above the first. And Han Xin was the man Xiao He had gone after. Feng Yi — Both stayed out of the scramble for credit. Feng Yi walked away from the table where merit was argued and let the soldiers and the emperor keep his account. Xiao He had no battle record, and his emperor named his merit aloud in front of every general. One was credited by silence, the other by being spoken for.
 
 ### Further
-Liu Bang Zhang Liang Han Xin Feng Yi Wei Zheng
+Liu Bang Zhang Liang Han Xin Feng Yi Wei Zheng Liu Xiu
 
 ========================================================================
 ## Xu Xiake
@@ -7205,10 +7242,10 @@ If you find that everything is passing through you, ask which of the two it is: 
 I shall bend to the task until my strength is spent, and only then stop. Without detachment no clarity of purpose; without stillness no reaching far. If we do not attack, the cause dies anyway. Better than sitting and waiting.
 
 ### Q: What should I read alongside?
-Sima Yi — Talent against longevity: Zhuge Liang burned out at fifty-four, Sima Yi waited until seventy-three and collected everything. Fan Li — Two answers to having succeeded: Fan Li walked away at the summit, Zhuge Liang never put it down at all. Guan Zhong — Two first ministers serving an ambitious lord. Guan Zhong's man became hegemon; Zhuge Liang's cause never arrived. Zhang Juzheng — Two tragedies of being irreplaceable: after Zhuge Liang there was nobody to take over, after Zhang Juzheng the whole programme collapsed at once. Guo Jia — The two great advisers of the age divide on risk: Guo Jia looks for the move nobody expects and takes the narrow window, Zhuge Liang builds the position that cannot be knocked over.
+Sima Yi — Talent against longevity: Zhuge Liang burned out at fifty-four, Sima Yi waited until seventy-three and collected everything. Fan Li — Two answers to having succeeded: Fan Li walked away at the summit, Zhuge Liang never put it down at all. Guan Zhong — Two first ministers serving an ambitious lord. Guan Zhong's man became hegemon; Zhuge Liang's cause never arrived. Zhang Juzheng — Two tragedies of being irreplaceable: after Zhuge Liang there was nobody to take over, after Zhang Juzheng the whole programme collapsed at once. Guo Jia — The two great advisers of the age divide on risk: Guo Jia looks for the move nobody expects and takes the narrow window, Zhuge Liang builds the position that cannot be knocked over. Liu Xiu — Both acted against someone close: Zhuge Liang executed Ma Su, whom he valued, to keep military law; Liu Xiu, in the same survey, struck hard at governors without merit and left the veteran Liu Long a way out. One is about no favourites; the other about how closeness makes holes in a rule.
 
 ### Further
-Cao Cao Sun Tzu Zeng Guofan Fan Li Sima Yi Li Shimin The Comprehensive Mirror
+Cao Cao Sun Tzu Zeng Guofan Fan Li Sima Yi Li Shimin The Comprehensive Mirror Liu Xiu
 <!-- chapters:begin -->
 ========================================================================
 ## Alfred Adler · Whose task is this
@@ -15187,6 +15224,105 @@ Where it goes wrong: treating the reversal as a loss of face and pushing through
 A man who settles the lords becomes a real king. Why acting?
 Zhang Liang and Chen Ping trod on his foot, then spoke into his ear.
 The king of Han understood, and went on swearing.
+
+========================================================================
+## Liu Xiu · A Heart Placed in Another Man's Belly
+URL: https://ourword.ai/en/i/liu-xiu/bare-heart/
+Source: Book of the Later Han, Annals of Emperor Guangwu (part 1)
+Tags: Deep read, Liu Xiu, When newcomers are all guarding against you, do one thing that lets them see you are not guarding against them
+
+The people who have just joined you are on guard, and so are you. Why did Liu Xiu ride through the camps of surrendered rebels with only a light escort?
+
+### Q: What actually happened?
+The Tongma rebels had surrendered, but they were uneasy: afraid of reprisals, afraid of being broken up. Liu Xiu saw it. He did not post more guards. He told the surrendered men to return to their camps and form up, then rode out with a light cavalry escort and went through the lines one camp at a time. He put his own safety under their eyes. The men passed the word round that their lord had taken out his heart and put it inside other men, and from then on they followed him.
+
+### The parts · Find out what they are afraid of
+The history records the men's unease and that he saw it. He did not begin with a speech or a reward. He worked out what was keeping them awake: reprisals, and being broken up. Rewards offered before that look like a test.
+e.g. After a merger, new colleagues are not unwilling; they do not know if their jobs survive. One email saying every post stays does more than ten pep talks.
+
+### The parts · Not guarding is not the same as having no structure
+He rode out lightly escorted, yet afterwards he distributed the surrendered men among his generals to command, and that is how the army grew to hundreds of thousands. Trust was shown to each man's face; the chain of command did not loosen.
+e.g. You inherit a team: spend the first week listening to each person, and settle the names, duties and reporting lines in the same week.
+
+### The parts · Let them be the ones who say it
+It was the surrendered men themselves who spread the word. Liu Xiu did not campaign for it or explain it. He did something people could see and let them say it for him, which carries far more weight than saying it himself.
+e.g. A new hire tells the group chat that the boss gave him the biggest client. That outweighs ten times of the boss saying he trusts them.
+
+### Q: How do I use it today?
+Where you are: you have taken over people who were not yours, and they are watching to see whether you guard against them.
+Ask first: What are they most afraid of right now? Is there one thing I can do today that shows them, in plain sight, that I am not guarding?
+Where it goes wrong: taking it as pouring out your heart. He rode out with a light escort, but the surrendered men were still assigned to his generals, and the structure did not loosen. Put trust in front of people; keep the rules on paper.
+
+### Lines to keep
+The surrendered men were still uneasy; Guangwu knew it.
+He puts his heart in our bellies; how could we not die for him?
+He divided the surrendered men among his generals, hundreds of thousands in all.
+
+========================================================================
+## Liu Xiu · Retiring the Generals
+URL: https://ourword.ai/en/i/liu-xiu/retiring-the-generals/
+Source: Book of the Later Han, Annals of Emperor Guangwu (part 2); Biography of Jia Fu
+Tags: Deep read, Liu Xiu, Give a veteran's power and standing separately: take back the army, leave the rank and the voice
+
+The people who have been with you longest have outgrown their posts. How did Liu Xiu take back the army without breaking the hearts of his veterans?
+
+### Q: What actually happened?
+In the thirteenth year of Jianwu the realm was largely at peace. Guangwu feasted his officers and weighed their merits: 365 veterans had their fiefs increased or reassigned, and the same year the posts of Left and Right General, which commanded troops, were abolished. Jia Fu and Deng Yu had seen what the emperor wanted: no veterans holding armies in the capital. They laid down their commands first and turned to the classics. The power was put down by the very men it was taken from; the rank and the voice stayed.
+
+### The parts · He took the power, not the man
+Jia Fu went home as a marquis with the rank of Special Advancement, and was still called to discuss affairs of state. The history says only three marquises sat in counsel with the ministers, and their treatment was generous. The army was taken; dignity and a voice were given.
+e.g. A co-founder steps back from day-to-day work but keeps a board seat and the quarterly strategy meeting. That is worth more than a thank-you note.
+
+### The parts · Let them speak first
+The history gives the order: the generals saw that the emperor did not want veterans holding armies near the capital and set theirs down, and then the emperor agreed. He did not announce that it was time for them to go. The order itself left them their dignity.
+e.g. When an old hand is due to change roles, ask privately what he wants as a next step before you send the notice.
+
+### The parts · Leave veterans a way out that does not need a rebellion
+Among Liu Bang's veterans, Han Xin was killed, Peng Yue was minced and Ying Bu was executed. Liu Xiu gave marquisates, fiefs and a seat in counsel. The difference is not kindness but whether the veteran has a good road that does not run through revolt.
+e.g. Before you create an adviser's path for long-serving staff, check they have somewhere else to go, so stepping back does not mean losing everything.
+
+### Q: How do I use it today?
+Where you are: the person who has been with you longest has a post that no longer fits, and you have put off acting for months.
+Ask first: Am I taking back his power, or taking him? Can I secure his rank and dignity before I move?
+Where it goes wrong: treating a title as a sidelining. Jia Fu and Deng Yu kept a real seat in counsel. A title without a voice is a different thing.
+
+### Lines to keep
+A great feast for the officers, and merits weighed.
+Jia Fu knew the emperor wished to put away shield and spear.
+The emperor agreed, and abolished the Left and Right Generals.
+
+========================================================================
+## Liu Xiu · Not to Be Asked
+URL: https://ourword.ai/en/i/liu-xiu/the-unaskable-counties/
+Source: Book of the Later Han, Annals of Emperor Guangwu (part 2); Biography of Liu Long
+Tags: Deep read, Liu Xiu, Before you write a rule that checks everyone, look for the door in it that was left open for your own people
+
+You want everyone checked, but a few names are ones nobody dares touch. How did Liu Xiu find the words 'not to be asked' on a clerk's tablet?
+
+### Q: What actually happened?
+Guangwu ordered every commandery to verify its farmland and households, and each sent men to report. On the tablet of a clerk from Chenliu he saw a line: Yingchuan and Hongnong may be questioned; Henan and Nanyang may not. Pressed, the clerk denied it, saying he picked it up in the street. A twelve-year-old prince, the future Emperor Ming, spoke from behind a curtain: Henan has many ministers, Nanyang many kinsmen, their holdings exceed the limits. The clerk then confessed. That line meant the emperor's own people.
+
+### The parts · The gap in a rule is often nearest to its author
+The commanderies' practice was that others could be checked but the capital and the emperor's home region could not. The harder such a survey bears down, the more it falls only on distant people. The places to ask about were exactly the ones quietly marked off.
+e.g. A firm audits every department's expenses, but nobody dares open the accounts of the owner and a few founders.
+
+### The parts · One line, followed to the end
+He did not accept the tablet and move on. He asked where it came from, had the clerk examined again when he denied it, and sent an envoy to check on the ground. A small clerk wrote what he should not have, and the emperor neither ignored it nor stopped at scolding him.
+e.g. A report has a column headed 'except for'. Before asking who wrote it, ask why the column is needed.
+
+### The parts · Do not write it up as impartiality
+Zhang Ji, governor of Henan, and a dozen others died in prison for false survey figures; Liu Long, a veteran charged in the same case, was only reduced to commoner. This is not a ruler who spared nobody. It is one whose blows were weighted, though 'not to be asked' did reach the table.
+e.g. If you spare a veteran, write the exception into the record where all can see it, and do not leave people to guess.
+
+### Q: How do I use it today?
+Where you are: you are about to bring in a rule that checks everyone, and you half know there are a few people no one dares touch.
+Ask first: Does the list this rule runs on have names quietly marked 'not to be asked'? Am I checking the matter, or only the people far from me?
+Where it goes wrong: telling it as a ruler who put his own kin to the knife. In the history he was driven on by a line of writing, and he still left a veteran a way out. This chapter is about finding the gap, not about praising how thoroughly it was closed.
+
+### Lines to keep
+Henan, the imperial city, has many ministers; Nanyang, his home, many kin.
+Then an envoy was sent to verify, and the whole fraud was known.
+Zhang Ji and a dozen governors died in prison for false survey returns.
 
 ========================================================================
 ## Liu Yan · Money grows by turning, not by sitting

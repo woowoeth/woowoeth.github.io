@@ -447,6 +447,13 @@ QUOTE_ASKS = {
         "我挣得比以前多了，怎么还是觉得不够。",
     "veblen/costliness-as-beauty":
         "我一降价，反倒没人来问了。",
+    # 刘秀
+    "liu-xiu/bare-heart":
+        "新并进来的人，个个都在防着我。",
+    "liu-xiu/retiring-the-generals":
+        "他功劳最大，可这个位子他坐不动了。",
+    "liu-xiu/the-unaskable-counties":
+        "我立的规矩，头一个撞上的是自己人。",
     # 魏征
     "wei-zheng/if-he-had-listened":
         "新东家问我，当年为什么跟他们作对。",
