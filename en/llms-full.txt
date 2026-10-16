@@ -1,7 +1,7 @@
-# OurWord — 197 people and books on how the world actually works, across 2,600 years
+# OurWord — 198 people and books on how the world actually works, across 2,600 years
 # OurWord — See how people before you handled it.
 # https://ourword.ai/en/
-# Full corpus, plain text. 197 entrys.
+# Full corpus, plain text. 198 entrys.
 
 ========================================================================
 ## Albert Einstein
@@ -220,10 +220,10 @@ When the work at home lands on one person and saying so hasn't changed it, don't
 That smile is not 'her' smile. The first shift is at work, the second at home. Only one pays. Labour nobody books gets billed to one person anyway.
 
 ### Q: What should I read alongside?
-Christina Maslach — Two kinds of uncounted work: the required feeling, and the six ways a job and a person fail to match. Arthur Kleinman — Both put a price on labour nobody counts: Hochschild on housework and emotional labour, Kleinman on long-term care, and both are assumed to fall on one person. Ruth Schwartz Cowan — Both keep the books on the unseen work at home: Hochschild counts who works the extra shift between two partners, while Cowan goes one step back and shows the ledger was already wrong between people and machines, when the helpers, the delivery man and the men's share left the house as the appliances came in.
+Christina Maslach — Two kinds of uncounted work: the required feeling, and the six ways a job and a person fail to match. Arthur Kleinman — Both put a price on labour nobody counts: Hochschild on housework and emotional labour, Kleinman on long-term care, and both are assumed to fall on one person. Ruth Schwartz Cowan — Both keep the books on the unseen work at home: Hochschild counts who works the extra shift between two partners, while Cowan goes one step back and shows the ledger was already wrong between people and machines, when the helpers, the delivery man and the men's share left the house as the appliances came in. Simone de Beauvoir — Both look at the work at home. Hochschild counts hours and who does them; Beauvoir asks why this kind of work leaves nothing behind, which is a claim about its nature, not its split.
 
 ### Further
-Thomas Gordon Christina Maslach Harvard Study of Adult Development Arthur Kleinman Ruth Schwartz Cowan
+Thomas Gordon Christina Maslach Harvard Study of Adult Development Arthur Kleinman Ruth Schwartz Cowan Simone de Beauvoir
 
 ========================================================================
 ## Arthur Kleinman
@@ -1136,10 +1136,10 @@ Pick something you have lately felt a child, partner or colleague was getting wr
 Perfect care does not raise someone who can face disappointment. The blanket a child clutches is a bridge to being alone. To change the child, first ask who is holding him up.
 
 ### Q: What should I read alongside?
-Attachment Theory — Both are about having someone near in early life. Bowlby asks whether that person is reliable, so the child dares to go far; Winnicott asks whether, when she is there, she can leave him room to be alone for a while. Carl Rogers — Rogers teaches you to step toward the other person and say back what he feels, so he feels understood. Winnicott adds a line: sometimes the right thing is not to ask, but to let him know someone is outside the door and willing to wait until he comes out himself.
+Attachment Theory — Both are about having someone near in early life. Bowlby asks whether that person is reliable, so the child dares to go far; Winnicott asks whether, when she is there, she can leave him room to be alone for a while. Carl Rogers — Rogers teaches you to step toward the other person and say back what he feels, so he feels understood. Winnicott adds a line: sometimes the right thing is not to ask, but to let him know someone is outside the door and willing to wait until he comes out himself. Simone de Beauvoir — Both study a compliant self. Winnicott looks for its origin in the earliest relationships; Beauvoir looks for it in how society teaches a girl, again and again, to please.
 
 ### Further
-Attachment Theory Carl Rogers Virginia Satir Alfred Adler
+Attachment Theory Carl Rogers Virginia Satir Alfred Adler Simone de Beauvoir
 
 ========================================================================
 ## Du Fu
@@ -5259,7 +5259,41 @@ What you call concentrating is straining. Attention is emptying yourself. The ha
 Naval Ravikant — Both ask where a person should put themselves: one wants leverage that works without you present, the other says being present is the one thing you cannot outsource. Taiichi Ohno — Both stared at the same assembly line: one rebuilt it so the worker's thinking is required, the other recorded what the line that needs no thinking does to a person.
 
 ### Further
-Hannah Arendt Ivan Illich Cal Newport Viktor Frankl Mihaly Csikszentmihalyi
+Hannah Arendt Ivan Illich Cal Newport Viktor Frankl Mihaly Csikszentmihalyi Simone de Beauvoir
+
+========================================================================
+## Simone de Beauvoir
+URL: https://ourword.ai/en/i/beauvoir/
+Tags: Family and relationships, The industrial age, Not born
+
+Simone de Beauvoir (France · 1908–1986) — Not born. A French philosopher and writer, born in Paris in 1908. She passed the philosophy agrégation in 1929 and taught in schools in Marseille, Rouen and Paris.
+
+### Q: What did this one leave behind?
+A French philosopher and writer, born in Paris in 1908. She passed the philosophy agrégation in 1929 and taught in schools in Marseille, Rouen and Paris. In 1949 she published The Second Sex, asking from philosophy, history, biology and daily life why woman is treated as the Other and man as the human being. Her method was to take the smallest things, a stack of plates, a doll, a marriage, and ask who decided this. She won the Prix Goncourt in 1954 for The Mandarins and died in 1986.
+
+### Q: What actually happened?
+In 1929, aged twenty-one, Beauvoir sat the French agrégation in philosophy and came second, behind Sartre; she was the youngest person ever to pass it. Twenty years later she published The Second Sex. French newspapers attacked it, and in 1956 the Vatican put it on the Index of forbidden books. It has been read ever since, in dozens of languages.
+
+### The parts · Three small exhibits
+She does not start from a conclusion. She starts with the smallest things and asks who decided them and for whom: a stack of plates, a doll, a marriage. e.g. A parent says 'girls should be quiet'. Take it apart and ask who is asking what of whom.
+
+### The parts · The Other
+Her central claim is that man is taken as the standard, as the human being, and woman is defined as his Other. That does not mean she is lesser; it means whoever defines first stands in the middle. e.g. We say 'woman driver' and 'woman leader'; the same words for a man need no qualifier.
+
+### The parts · Situation, not nature
+Her word is situation, not nature: what a person is like depends on where she has been put, and when the place changes, the person changes with it. e.g. The same person is called 'caring' at home and 'too soft' at the office.
+
+### Q: How do I use it today?
+Pick one small thing you have always put down to 'that is just how I am' and write down when and by whom you were taught it. If you cannot, just notice whether it is a habit with a traceable origin.
+
+### Lines to keep
+One is not born, but rather becomes, a woman. What looks most natural has often been taught longest. Ask who decided it before asking whether it is right.
+
+### Q: What should I read alongside?
+Arlie Hochschild — Both look at the work at home. Hochschild counts hours and who does them; Beauvoir asks why this kind of work leaves nothing behind, which is a claim about its nature, not its split. Donald Winnicott — Both study a compliant self. Winnicott looks for its origin in the earliest relationships; Beauvoir looks for it in how society teaches a girl, again and again, to please.
+
+### Further
+Arlie Hochschild Donald Winnicott Simone Weil
 
 ========================================================================
 ## Socrates
@@ -8070,6 +8104,72 @@ What the age values is what I rank low.
 The ambition is to serve everyone; the practice is to keep oneself in order.
 The order of the takings need not be the order in your head.
 He wrote it in the year he was demoted, not in a good one.
+
+========================================================================
+## Simone de Beauvoir · Nothing Left to Show
+URL: https://ourword.ai/en/i/beauvoir/the-torture-of-sisyphus/
+Source: The Second Sex (1949), Book II, 'The Married Woman'; English quotations from H. M. Parshley's 1953 translation
+Tags: Deep read, Simone de Beauvoir, Work that ends where it began goes unseen, not because it is small but because it leaves no trace
+
+You finish and nothing has changed. Beauvoir asked why the heaviest work at home counts for the least.
+
+### Q: What actually happened?
+In The Second Sex Beauvoir writes about washing up, dusting and making beds. "Few tasks are more like the torture of Sisyphus than housework, with its endless repetition: the clean becomes soiled, the soiled is made clean, over and over, day after day." Then comes the line that matters more: "The housewife wears herself out marking time: she makes nothing, simply perpetuates the present." The better the job is done, the less there is to see: a tidy house is one where nothing seems to have happened.
+
+### The parts · Holding off the bad, not making the good
+She separates work that produces something from work that only stops things getting worse. The first can be pointed at when it is done. The second leaves behind only the absence of mess, and an absence does not show.
+e.g. A meal is eaten in twenty minutes; a kitchen put back to normal looks as if nobody touched it.
+
+### The parts · Nobody notices until it stops
+A clean house draws no comment; a dirty one does. So what gets seen is always the thing not done, and the person doing the work learns that her best result is silence.
+e.g. Nobody thanks you for clean shirts, but everyone knows when the last pair of socks has gone.
+
+### The parts · The difficulty is that it never ends
+Her complaint is less that any one task is hard than that none is ever finished. A job has a hand-in date and a project has a launch. This kind of work has neither, so there is no day on which you can say it is done.
+e.g. On Friday evening you can say the week's work is finished; on Sunday night the kitchen needs doing again.
+
+### Q: How do I use it today?
+Where you are: You do these jobs every day and, said aloud, they sound like complaining about small things.
+Ask first: Which of these jobs leave something I can point to, and which only keep things from getting worse? List the second kind and count the hours a week.
+Where it goes wrong: Using it to say housework is beneath anyone, or that it is not real work. Her point is that it is easy to overlook because it leaves no trace, not that it does not matter.
+
+### Lines to keep
+Nothing left to show is not the same as nothing done.
+A tidy house is one where nothing seems to have happened.
+What gets seen is always the thing that was not done.
+
+========================================================================
+## Simone de Beauvoir · Not Born Knowing How to Please
+URL: https://ourword.ai/en/i/beauvoir/one-is-not-born/
+Source: The Second Sex (1949), Book II, 'Childhood' and 'The Girl'; English quotation from H. M. Parshley's 1953 translation
+Tags: Deep read, Simone de Beauvoir, Some of what we call nature was taught, again and again
+
+Reading faces comes so easily it feels like a gift. Beauvoir asks how much of what feels like temperament was taught.
+
+### Q: What actually happened?
+Book Two of The Second Sex opens with a sentence that went round the world: "One is not born, but rather becomes, a woman." She goes on to say that no biological, psychological or economic fate fixes the figure a woman cuts in society; it is civilisation as a whole that produces what is called feminine. Then she follows a girl growing up: praised for looking pretty, told how to sit, handed a doll to look after. Each time, she learns to look at herself first, through someone else's eyes.
+
+### The parts · What she is arguing against
+She does not say men and women are the same. She says that much of what gets called temperament, being gentle, anxious to help, quick to give way, grows from how a child is brought up rather than arriving with her.
+e.g. One child grabs food at the table and is told she is badly brought up; another waits and is praised for being sensible. Both are being taught.
+
+### The parts · The watched child learns to watch herself
+A child who is always looked at and judged learns to stand where the onlooker stands and ask: is this the right smile, will that remark upset someone? Done long enough, it stops feeling like a habit and starts feeling like character.
+e.g. Before you speak, you run the other person's likely reaction in your head, so fast you no longer notice doing it.
+
+### The parts · What was taught can be taken apart
+To say we become something is to leave a door open. If it was learned, it can be examined piece by piece: which parts do I actually want, and which am I keeping up to avoid being thought badly of?
+e.g. This week, each time you are about to say whatever you like, pause for a second and ask which one you would pick.
+
+### Q: How do I use it today?
+Where you are: You read people very well; others call you considerate and you are increasingly tired.
+Ask first: Who taught me this "that is just how I am", and when? If I can name it, I can choose again.
+Where it goes wrong: Using it to say it is all someone else's fault, or to hand your own choices to your upbringing. She wants you to see a route, not to find someone to blame.
+
+### Lines to keep
+Most "that is just how I am" has a history.
+Looking at yourself first through others' eyes is learned.
+What was learned can be taken apart, piece by piece.
 
 ========================================================================
 ## Gary Becker · The principal you never counted

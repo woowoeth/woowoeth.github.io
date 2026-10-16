@@ -1,11 +1,11 @@
 # OurWord (人類世界生存法則)
 
-> 197 people and books on how the world actually works, across 2,600 years
+> 198 people and books on how the world actually works, across 2,600 years
 > 遇到事了，看看以前的人怎麼處理
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 197 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 198 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
-一個關於「世界到底怎麼運轉」的知識庫：戰略、財富、權力、人性、創業，取自 197 位人物與典籍，跨越 2600 年。每一條都寫清楚這個人真正留下的那一個想法、背後的故事、拆開的分則與例子，以及今天怎麼用。
+一個關於「世界到底怎麼運轉」的知識庫：戰略、財富、權力、人性、創業，取自 198 位人物與典籍，跨越 2600 年。每一條都寫清楚這個人真正留下的那一個想法、背後的故事、拆開的分則與例子，以及今天怎麼用。
 
 ## Read it
 
@@ -19,7 +19,7 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 ## Topics
 
 - [現代](https://ourword.ai/tw/t/modern/) — 62
-- [工業時代](https://ourword.ai/tw/t/industrial-age/) — 60
+- [工業時代](https://ourword.ai/tw/t/industrial-age/) — 61
 - [先秦與古典時代](https://ourword.ai/tw/t/classical-era/) — 29
 - [權力與組織](https://ourword.ai/tw/t/power/) — 29
 - [心智與情緒](https://ourword.ai/tw/t/mind/) — 22
@@ -28,9 +28,9 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 - [學習與成長](https://ourword.ai/tw/t/learning/) — 19
 - [財富與風險](https://ourword.ai/tw/t/wealth/) — 19
 - [世界如何運轉](https://ourword.ai/tw/t/world/) — 19
+- [家庭與關係](https://ourword.ai/tw/t/family/) — 17
 - [身心與生活](https://ourword.ai/tw/t/living/) — 17
 - [中古](https://ourword.ai/tw/t/medieval/) — 17
-- [家庭與關係](https://ourword.ai/tw/t/family/) — 16
 - [秦漢至魏晉](https://ourword.ai/tw/t/han-wei/) — 16
 - [識人與相處](https://ourword.ai/tw/t/people/) — 16
 - [近世](https://ourword.ai/tw/t/early-modern/) — 13
@@ -68,6 +68,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [白圭 · 智勇仁強](https://ourword.ai/tw/i/bai-gui/four-qualifications/): 白圭 · 智勇仁強——四樣缺一樣就別做。他把經商說成和用兵、變法一個等級的事。這一篇要回答的是：他為此開出的四條准入條件。
 - [白居易 · 不卷和退出之間，還有一檔](https://ourword.ai/tw/i/bai-juyi/middle-hiding/): 白居易 · 不卷和退出之間，還有一檔——他給這一檔要來了俸祿和名分。不想再熬，可真放手又不敢。這一篇要回答的是：這兩個選項中間，還有沒有一個待得住的位置。
 - [白居易 · 世人收下的，不是你最用力的](https://ourword.ai/tw/i/bai-juyi/what-i-rank-low/): 白居易 · 世人收下的，不是你最用力的——他活著的時候就知道了，也沒改排序。你最花力氣的那部分沒人要，隨手的那部分傳遍了。這一篇要回答的是：知道了之後怎麼辦。
+- [西蒙娜·德·波伏瓦 · 做完了，什麼也沒留下](https://ourword.ai/tw/i/beauvoir/the-torture-of-sisyphus/): 西蒙娜·德·波伏瓦 · 做完了，什麼也沒留下——做完就回到原點的活，沒人看見，不是因為小，是因為不留痕跡。做完了，什麼也沒留下。這一篇要回答的是：為什麼最累的活，偏偏最不算數。
+- [西蒙娜·德·波伏瓦 · 會看臉色，不是天生的](https://ourword.ai/tw/i/beauvoir/one-is-not-born/): 西蒙娜·德·波伏瓦 · 會看臉色，不是天生的——你以為的天性，有一部分是被一遍遍教出來的。會看臉色，是天生的嗎？這一篇要回答的是：哪些「我就是這樣」，其實是被教出來的。
 - [加里·貝克爾 · 最大的那筆本金，你沒算進去過](https://ourword.ai/tw/i/becker/you-are-the-capital/): 加里·貝克爾 · 最大的那筆本金，你沒算進去過——你自己就是資本，而它的價錢不是學費。我一直在給錢找出路，沒給自己找。這一篇要回答的是：你自己就是最大的那筆本金，而它的價錢多半被你算錯了。
 - [加里·貝克爾 · 公司肯出錢教你的，多半是你帶不走的](https://ourword.ai/tw/i/becker/general-and-specific/): 加里·貝克爾 · 公司肯出錢教你的，多半是你帶不走的——分界線落在你離職那天。我這身本事，出了這家門還值錢嗎。這一篇要回答的是：這個問題有個能算的答案，答案藏在誰替你付了學費裡。
 - [貝索斯 · 永遠是第一天](https://ourword.ai/tw/i/bezos/day-one/): 貝索斯 · 永遠是第一天——第二天是什麼樣。有員工問：第二天會怎樣？這一篇要回答的是：他的答案，和他為攔住第二天裝的四個零件。
@@ -534,7 +536,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [AI Bubble Monitor / AI 泡沫檢測儀](https://ourword.ai/ai/)
 - [Zouni / 走你](https://ourword.ai/zouni/)
 
-## Index (197 entrys)
+## Index (198 entrys)
 
 - [BJ·福格](https://ourword.ai/tw/i/bj-fogg/): BJ·福格（2019年·斯坦福行為設計實驗室）——小到不會失敗。斯坦福行為設計實驗室創始人，研究行為如何被設計出來。他給出一個公式：行為發生需要動機、能力、提示三者同時到位。多數人失敗在只調動機——靠決心和自我激勵——而動機天然起伏，靠它維持的習慣必然崩。他的主張相反：把行為縮到小得不需要動機，然後掛在一個已有的動作後面。
 - [C.S.劉易斯](https://ourword.ai/tw/i/cs-lewis/): C.S.劉易斯（1898-1963年·英國牛津）——妻子死後幾個月的日記。作家，牛津和劍橋的教授，寫過《納尼亞傳奇》和大量勸人信仰的書。五十八歲結婚，妻子喬伊四年後因癌症去世。之後幾個月他在四本練習簿上記自己的狀態，後來用筆名出版，就是《卿卿如晤》。收他是因為「重要的人走了」那六個問題，原來靠弗蘭克爾和蘇軾在答——一個是集中營的倖存者，一個是被貶的官員
@@ -698,6 +700,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [藺相如](https://ourword.ai/tw/i/lin-xiangru/): 藺相如（戰國·趙·生卒年不詳）——曲直。戰國時趙國大臣，本是宦者令繆賢門下的舍人。趙惠文王得了和氏璧，秦昭王來信說願以十五城相換，他奉璧入秦、完璧歸趙，拜為上大夫；澠池之會上當面逼秦王為趙王擊缻，拜為上卿，位在名將廉頗之上。廉頗不服，揚言要當面羞辱他，他一路退讓，最後廉頗負荊請罪。《史記》把兩人合為一傳。他留下的是兩種
 - [薄伽梵歌](https://ourword.ai/tw/i/bhagavad-gita/): 薄伽梵歌（約前2世紀-公元2世紀·印度）——你有權做事，無權要結果。印度史詩《摩訶婆羅多》中的一部分，七百頌十八章，成書年代學界一般定在公元前二世紀至公元二世紀之間。全篇是開戰前阿周那與御者克里希那的對話：阿周那看見對面陣中是自己的親族與師長，扔下弓不肯打。第二章第四十七頌的通行漢譯大意是「你只有做事的權利，沒有對結果的權利」，甘地稱這本書是自己
 - [褚時健](https://ourword.ai/tw/i/chu-shijian/): 褚時健（1928-2019年·雲南）——七十四歲上山種橙。雲南人。五十一歲起管玉溪捲菸廠，把紅塔山做成全國第一的品牌，出名的是把每個環節的標準定死、把每個人的收入和質量綁在一起。七十四歲那年原來的一切都沒了——位置、名聲、積蓄大半也沒了，身體也不好。他和妻子跑到哀牢山，承包兩千四百畝荒山種冰糖橙，橙樹四五年才結果，真正大賣是十年後，他八
+- [西蒙娜·德·波伏瓦](https://ourword.ai/tw/i/beauvoir/): 西蒙娜·德·波伏瓦（法國·1908-1986）——不是天生。法國哲學家、作家，1908年生於巴黎。1929年通過法國哲學教師資格會考，之後在馬賽、魯昂、巴黎的中學教書。1949年出版《第二性》，從哲學、歷史、生物學和日常生活幾頭去問同一個問題：為什麼女人總被當成「另一個」，男人才是「人」。她的辦法不是先下結論，而是拿最不起眼的東西出來問「
 - [西蒙娜·薇依](https://ourword.ai/tw/i/weil/): 西蒙娜·薇依（法國·1909-1943）——注意。法國哲學家，二十二歲考取哲學教師資格。此後十年，她不斷把自己放進想弄懂的處境裡：去工廠當女工，去西班牙上前線，去農田收葡萄。她一生的題目只有一個——注意力。她說注意不是使勁，是把自己騰空到能讓對象進來，這既是學習的全部，也是一個人能給別人的最稀有的東西。反過來，她用同一把尺子看人
 - [論語](https://ourword.ai/tw/i/analects/): 論語（春秋·前551-前479）——仁。孔子和弟子的對話錄，中國兩千年來讀書人的基本教材。但論語被後代統治者包裝成了「聽話」的哲學，實際上孔子說的很多話和這個方向相反：他辭官、周遊列國、不停批評當權者。論語的核心不是禮教，是「仁」——對人真實的關懷。孔子本人是個失敗的政治家，卻是最成功的教育家：三千弟子，七十二賢人，他
 - [諸葛亮](https://ourword.ai/tw/i/zhuge-liang/): 諸葛亮（三國·181-234）——隆中對。「運籌帷幄」的代名詞，「鞠躬盡瘁」的化身。他未出茅廬時就規劃了三分天下的格局，輔佐劉備建立蜀漢，治蜀二十年法治清明，六出祁山以攻代守。

@@ -40,6 +40,7 @@ NAMES = {
     "li-shimin": ("Li Shimin", "Power and organisation"),
     "wei-zheng": ("Wei Zheng", "Power and organisation"),
     "veblen": ("Thorstein Veblen", "How the world works"),
+    "beauvoir": ("Simone de Beauvoir", "Family and relationships"),
     "liu-bang": ("Liu Bang", "Power and organisation"),
     "liu-xiu": ("Liu Xiu", "Power and organisation"),
     "xiao-he": ("Xiao He", "Power and organisation"),

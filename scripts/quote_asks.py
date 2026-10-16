@@ -638,4 +638,10 @@ QUOTE_ASKS = {
     "weil/force-makes-things":
         "\u8d62\u4e86\u4e4b\u540e\uff0c\u6211\u6709\u70b9\u4e0d\u8ba4\u8bc6\u81ea\u5df1\u4e86\u3002",
 
+    # 波伏瓦
+    "beauvoir/the-torture-of-sisyphus":
+        "我天天做完，第二天又回到原点。",
+    "beauvoir/one-is-not-born":
+        "我这么会看人脸色，是天生的吗？",
 }
+

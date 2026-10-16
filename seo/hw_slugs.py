@@ -11,6 +11,7 @@ SLUGS = {
     "魏征": "wei-zheng",
     "刘秀": "liu-xiu",
     "托尔斯坦·凡勃伦": "veblen",
+    "西蒙娜·德·波伏瓦": "beauvoir",
     "林徽因": "lin-huiyin",
     "南丁格尔": "nightingale",
     "晏婴": "yan-ying",

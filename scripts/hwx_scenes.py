@@ -1012,6 +1012,8 @@ SCENES = [
      [("jobs", "focus-is-saying-no"), ("satir", "iceberg")]),
     ("我说「都行」，其实心里不行。",
      [("winnicott", "the-compliant-self")]),
+    ("我这么会看人脸色，是天生的吗？",
+     [("beauvoir", "one-is-not-born")]),
 ]),
 ("推不动别人", "跟人打交道", [
     ("别的部门就是不配合我。",
@@ -1210,6 +1212,8 @@ SCENES = [
      [("nonviolent-communication", "observation-not-evaluation"), ("satir", "iceberg")]),
     ("家里机器都买齐了，活还是全在我身上。",
      [("cowan", "the-helpers-left")]),
+    ("我天天做完，第二天又回到原点。",
+     [("beauvoir", "the-torture-of-sisyphus")]),
 ]),
 ("照顾老人", "家里的事", [
     ("家里人病了，我该从哪下手？",

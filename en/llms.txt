@@ -1,9 +1,9 @@
 # OurWord (OurWord)
 
-> 197 people and books on how the world actually works, across 2,600 years
+> 198 people and books on how the world actually works, across 2,600 years
 > See how people before you handled it.
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 197 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 198 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
 ## Read it
 
@@ -17,7 +17,7 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 ## Topics
 
 - [Modern](https://ourword.ai/en/t/modern/) — 66
-- [The industrial age](https://ourword.ai/en/t/the-industrial-age/) — 56
+- [The industrial age](https://ourword.ai/en/t/the-industrial-age/) — 57
 - [Power and organisation](https://ourword.ai/en/t/power-and-organisation/) — 29
 - [Pre-Qin and classical](https://ourword.ai/en/t/pre-qin-and-classical/) — 28
 - [Mind and feeling](https://ourword.ai/en/t/mind-and-feeling/) — 21
@@ -28,7 +28,7 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 - [Strategy and competition](https://ourword.ai/en/t/strategy-and-competition/) — 20
 - [Money and risk](https://ourword.ai/en/t/money-and-risk/) — 18
 - [Body and daily life](https://ourword.ai/en/t/body-and-daily-life/) — 17
-- [Family and relationships](https://ourword.ai/en/t/family-and-relationships/) — 16
+- [Family and relationships](https://ourword.ai/en/t/family-and-relationships/) — 17
 - [Reading people](https://ourword.ai/en/t/reading-people/) — 16
 - [Medieval](https://ourword.ai/en/t/medieval/) — 14
 - [Early modern](https://ourword.ai/en/t/early-modern/) — 13
@@ -62,6 +62,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [Bai Gui · Four things, and no waivers](https://ourword.ai/en/i/bai-gui/four-qualifications/): Bai Gui · Four things, and no waivers — Missing one and the other three stop paying. He put trade on a level with statecraft and war, and then set an entrance requirement that most applicants would fail.
 - [Bai Juyi · There is a setting between all-in and out](https://ourword.ai/en/i/bai-juyi/middle-hiding/): Bai Juyi · There is a setting between all-in and out — He arranged a salary and a title for that setting. You cannot keep going like this and cannot afford to stop. Whether a liveable third position exists between them.
 - [Bai Juyi · What the world keeps is not what you worked hardest on](https://ourword.ai/en/i/bai-juyi/what-i-rank-low/): Bai Juyi · What the world keeps is not what you worked hardest on — He knew it in his lifetime and did not reorder his list. The work you laboured over goes unread and the offhand piece travels. What to do once you know that.
+- [Simone de Beauvoir · Nothing Left to Show](https://ourword.ai/en/i/beauvoir/the-torture-of-sisyphus/): Simone de Beauvoir · Nothing Left to Show — Work that ends where it began goes unseen, not because it is small but because it leaves no trace. You finish and nothing has changed. Beauvoir asked why the heaviest work at home counts for the least.
+- [Simone de Beauvoir · Not Born Knowing How to Please](https://ourword.ai/en/i/beauvoir/one-is-not-born/): Simone de Beauvoir · Not Born Knowing How to Please — Some of what we call nature was taught, again and again. Reading faces comes so easily it feels like a gift. Beauvoir asks how much of what feels like temperament was taught.
 - [Gary Becker · The principal you never counted](https://ourword.ai/en/i/becker/you-are-the-capital/): Gary Becker · The principal you never counted — You are the asset, and its price is not the tuition. You keep looking for somewhere to put the money. The largest principal you hold has never been priced.
 - [Gary Becker · What they pay to teach you is what you cannot take](https://ourword.ai/en/i/becker/general-and-specific/): Gary Becker · What they pay to teach you is what you cannot take — The line falls on the day you leave. Is what I am good at worth anything elsewhere. There is a computable answer, and it is in who paid.
 - [Jeff Bezos · Always Day 1](https://ourword.ai/en/i/bezos/day-one/): Jeff Bezos · Always Day 1 — What Day 2 looks like. Someone asked what Day 2 would look like. The answer, and the four parts he installed to keep it away.
@@ -528,7 +530,7 @@ Cite the individual page URL, not the homepage — each entry page is stable and
 - [AI Bubble Monitor](https://ourword.ai/ai/)
 - [Zouni](https://ourword.ai/zouni/)
 
-## Index (197 entrys)
+## Index (198 entrys)
 
 - [Albert Einstein](https://ourword.ai/en/i/einstein/): Albert Einstein (Germany · 1879–1955) — Imagination. The physicist, and the father of relativity — but the legacy that travels furthest is not a formula, it is a way of working.
 - [Albert O. Hirschman](https://ourword.ai/en/i/hirschman/): Albert O. Hirschman (United States · 1915-2012) — Voice. A German-born American economist. He left Berlin in 1933, fought in Spain in 1936, spent 1940 in Marseille forging papers and finding mountain…
@@ -673,6 +675,7 @@ Cite the individual page URL, not the homepage — each entry page is stable and
 - [Sima Qian](https://ourword.ai/en/i/sima-qian/): Sima Qian (Han · c. 145–86 BC) — Disgraced, and finished the book. Court historian to Emperor Wu of Han, and the author of the Records of the Grand Historian, the founding work of Chinese history…
 - [Sima Yi](https://ourword.ai/en/i/sima-yi/): Sima Yi (Three Kingdoms · 179–251) — Patience. He outlasted four rulers of Wei and at seventy took control of the state in a single morning.
 - [Simone Weil](https://ourword.ai/en/i/weil/): Simone Weil (France · 1909-1943) — Attention. A French philosopher who qualified to teach philosophy at twenty-two and then spent a decade putting herself inside the situations she wanted to…
+- [Simone de Beauvoir](https://ourword.ai/en/i/beauvoir/): Simone de Beauvoir (France · 1908–1986) — Not born. A French philosopher and writer, born in Paris in 1908. She passed the philosophy agrégation in 1929 and taught in schools in Marseille, Rouen and…
 - [Socrates](https://ourword.ai/en/i/socrates/): Socrates (Athens · 470–399 BC) — Knowing you do not know. He wrote nothing. Everything we have comes through other people's dialogues. He charged no fees, which made him the poorest professional…
 - [Steve Jobs](https://ourword.ai/en/i/jobs/): Steve Jobs (Contemporary · 1955–2011) — Subtract. Co-founded Apple, was pushed out of it, spent twelve years at NeXT and Pixar, came back and turned a company weeks from insolvency into the most…
 - [Strategies of the Warring States](https://ourword.ai/en/i/strategies-of-the-warring-states/): Strategies of the Warring States (Warring States · 453–221 BC) — Persuasion. A collection of the persuasions that travelling strategists used on the rulers of the warring kingdoms, recorded close to…
