@@ -643,5 +643,10 @@ QUOTE_ASKS = {
         "我天天做完，第二天又回到原点。",
     "beauvoir/one-is-not-born":
         "我这么会看人脸色，是天生的吗？",
-}
 
+    # 克尔凯郭尔
+    "kierkegaard/regret-either-way":
+        "不管选哪个，我肯定都会后悔。",
+    "kierkegaard/lived-forwards":
+        "要等我想明白了，才敢选。",
+}

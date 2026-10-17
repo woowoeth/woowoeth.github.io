@@ -1,9 +1,9 @@
 # OurWord (OurWord)
 
-> 198 people and books on how the world actually works, across 2,600 years
+> 199 people and books on how the world actually works, across 2,600 years
 > See how people before you handled it.
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 198 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 199 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
 ## Read it
 
@@ -17,10 +17,10 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 ## Topics
 
 - [Modern](https://ourword.ai/en/t/modern/) — 66
-- [The industrial age](https://ourword.ai/en/t/the-industrial-age/) — 57
+- [The industrial age](https://ourword.ai/en/t/the-industrial-age/) — 58
 - [Power and organisation](https://ourword.ai/en/t/power-and-organisation/) — 29
 - [Pre-Qin and classical](https://ourword.ai/en/t/pre-qin-and-classical/) — 28
-- [Mind and feeling](https://ourword.ai/en/t/mind-and-feeling/) — 21
+- [Mind and feeling](https://ourword.ai/en/t/mind-and-feeling/) — 22
 - [How the world works](https://ourword.ai/en/t/how-the-world-works/) — 20
 - [Learning and growth](https://ourword.ai/en/t/learning-and-growth/) — 20
 - [Qin, Han and the Six Dynasties](https://ourword.ai/en/t/qin-han-and-the-six-dynasties/) — 20
@@ -245,6 +245,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [John Maynard Keynes · We simply do not know](https://ourword.ai/en/i/keynes/we-simply-do-not-know/): John Maynard Keynes · We simply do not know — Some things have no odds to calculate; don't pretend. Nobody can say how this plays out, so what am I betting on? This page is about sorting what you can calculate from what you cannot.
 - [John Maynard Keynes · Fail with the crowd](https://ourword.ai/en/i/keynes/fail-conventionally/): John Maynard Keynes · Fail with the crowd — Professionals are often dodging blame, not judging value. I'm not sold on it, I just can't be the only one who didn't buy. This page asks whether that fear is judging value or dodging blame.
 - [John Maynard Keynes · Own what you understand](https://ourword.ai/en/i/keynes/know-what-you-hold/): John Maynard Keynes · Own what you understand — Spread too thin, you have only spread your ignorance evenly. I own a little of everything and understand none of it. This page asks whether spreading out cuts risk, or only hides what you don't know.
+- [Søren Kierkegaard · Regret Comes Either Way](https://ourword.ai/en/i/kierkegaard/regret-either-way/): Søren Kierkegaard · Regret Comes Either Way — You cannot choose by regret, because it turns up whichever you pick. You want both and dread regretting the one you give up. Kierkegaard asks whether "will I regret it?" can decide anything.
+- [Søren Kierkegaard · Waiting Until You Understand](https://ourword.ai/en/i/kierkegaard/lived-forwards/): Søren Kierkegaard · Waiting Until You Understand — Life is understood looking back, but it can only be lived looking ahead. You want to understand it fully before you choose. Kierkegaard asks why that moment never arrives.
 - [Charles P. Kindleberger · Credit is the fuel](https://ourword.ai/en/i/kindleberger/credit-is-the-fuel/): Charles P. Kindleberger · Credit is the fuel — Real opportunities are common. Manias are rare. Every bubble starts with something real. This chapter asks why only a few of those real things ever run away.
 - [Charles P. Kindleberger · A friend gets rich](https://ourword.ai/en/i/kindleberger/a-friend-gets-rich/): Charles P. Kindleberger · A friend gets rich — What breaks your judgment is the person next to you. You think you are judging the market. This chapter says what actually moves you is the person beside you getting rich.
 - [Arthur Kleinman · The Disease and the Illness](https://ourword.ai/en/i/kleinman/disease-and-illness/): Arthur Kleinman · The Disease and the Illness — Two different things. The doctor says it is manageable and your life has caved in. Why Kleinman insists these are two separate things.
@@ -530,7 +532,7 @@ Cite the individual page URL, not the homepage — each entry page is stable and
 - [AI Bubble Monitor](https://ourword.ai/ai/)
 - [Zouni](https://ourword.ai/zouni/)
 
-## Index (198 entrys)
+## Index (199 entrys)
 
 - [Albert Einstein](https://ourword.ai/en/i/einstein/): Albert Einstein (Germany · 1879–1955) — Imagination. The physicist, and the father of relativity — but the legacy that travels furthest is not a formula, it is a way of working.
 - [Albert O. Hirschman](https://ourword.ai/en/i/hirschman/): Albert O. Hirschman (United States · 1915-2012) — Voice. A German-born American economist. He left Berlin in 1933, fought in Spain in 1936, spent 1940 in Marseille forging papers and finding mountain…
@@ -682,6 +684,7 @@ Cite the individual page URL, not the homepage — each entry page is stable and
 - [Su Shi](https://ourword.ai/en/i/su-shi/): Su Shi (Northern Song · 1037–1101) — Unbowed. One of the great Chinese poets, and also a calligrapher, a painter, a hydraulic engineer, a cook and a provincial governor.
 - [Su Yu](https://ourword.ai/en/i/su-yu/): Su Yu (China · 1907–1984) — Outnumbered. A field commander who was almost always the smaller force and who is worth reading for exactly that reason.
 - [Sun Tzu](https://ourword.ai/en/i/sun-tzu/): Sun Tzu (Spring and Autumn · c. 500 BC) — Win first, then fight. Thirteen short chapters, and the most quoted strategy book in the world. The argument underneath it is not about cunning: the winner…
+- [Søren Kierkegaard](https://ourword.ai/en/i/kierkegaard/): Søren Kierkegaard (Denmark · 1813–1855) — Choosing. A Danish philosopher, born in Copenhagen in 1813 and dead in the same city in 1855. In 1843 he published Either/Or under a pseudonym, and that year…
 - [Taiichi Ohno](https://ourword.ai/en/i/ohno/): Taiichi Ohno (1912–1990 · Toyota, Japan) — Ask why five times. The principal architect of the Toyota Production System. Three things he worked out on the shop floor became common sense across…
 - [Tao Te Ching](https://ourword.ai/en/i/tao-te-ching/): Tao Te Ching (Spring and Autumn · c. 500 BC) — Subtract. Five thousand characters, and after the Bible the most translated book there is. Where most instruction is addition — learn more, do more, add…
 - [Tao Yuanming](https://ourword.ai/en/i/tao-yuanming/): Tao Yuanming (365–427 · Xunyang) — Eighty days, then poor for life. A poet, and the founder of the Chinese poetry of retreat. At forty-one he took the magistracy of Pengze and held it a little over…

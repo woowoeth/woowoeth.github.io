@@ -924,6 +924,8 @@ SCENES = [
      [("jobs", "focus-is-saying-no"), ("jobs", "connecting-the-dots")]),
     ("我一直在比，哪个都定不下来。",
      [("herbert-simon", "good-enough")]),
+    ("不管选哪个，我肯定都会后悔。",
+     [("kierkegaard", "regret-either-way")]),
 ]),
 ("信不信直觉", "跟人打交道", [
     ("只有我一个人看出来了，我信不信自己？",
@@ -1796,6 +1798,8 @@ SCENES = [
      [("excellent-sheep", "hurdles"), ("huineng", "originally-not-a-thing")]),
     ("我总觉得后面还有更好的。",
      [("herbert-simon", "good-enough")]),
+    ("要等我想明白了，才敢选。",
+     [("kierkegaard", "lived-forwards")]),
 ]),
 ("要不要现在转向", "回头与往前", [
     ("走错了，但好像还没走远。",

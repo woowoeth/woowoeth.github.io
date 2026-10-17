@@ -1,11 +1,11 @@
 # OurWord (人類世界生存法則)
 
-> 198 people and books on how the world actually works, across 2,600 years
+> 199 people and books on how the world actually works, across 2,600 years
 > 遇到事了，看看以前的人怎麼處理
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 198 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 199 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
-一個關於「世界到底怎麼運轉」的知識庫：戰略、財富、權力、人性、創業，取自 198 位人物與典籍，跨越 2600 年。每一條都寫清楚這個人真正留下的那一個想法、背後的故事、拆開的分則與例子，以及今天怎麼用。
+一個關於「世界到底怎麼運轉」的知識庫：戰略、財富、權力、人性、創業，取自 199 位人物與典籍，跨越 2600 年。每一條都寫清楚這個人真正留下的那一個想法、背後的故事、拆開的分則與例子，以及今天怎麼用。
 
 ## Read it
 
@@ -18,11 +18,11 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 
 ## Topics
 
+- [工業時代](https://ourword.ai/tw/t/industrial-age/) — 62
 - [現代](https://ourword.ai/tw/t/modern/) — 62
-- [工業時代](https://ourword.ai/tw/t/industrial-age/) — 61
 - [先秦與古典時代](https://ourword.ai/tw/t/classical-era/) — 29
 - [權力與組織](https://ourword.ai/tw/t/power/) — 29
-- [心智與情緒](https://ourword.ai/tw/t/mind/) — 22
+- [心智與情緒](https://ourword.ai/tw/t/mind/) — 23
 - [創業與產品](https://ourword.ai/tw/t/startups/) — 20
 - [謀略與競爭](https://ourword.ai/tw/t/strategy/) — 20
 - [學習與成長](https://ourword.ai/tw/t/learning/) — 19
@@ -251,6 +251,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [凱恩斯 · 我們根本不知道](https://ourword.ai/tw/i/keynes/we-simply-do-not-know/): 凱恩斯 · 我們根本不知道——有些事沒有概率可算，別假裝算得出。沒人說得準的事，我憑什麼下注？這一篇要回答的是：先分清哪些事算得出，哪些根本算不出。
 - [凱恩斯 · 失敗也要失敗得合群](https://ourword.ai/tw/i/keynes/fail-conventionally/): 凱恩斯 · 失敗也要失敗得合群——專業人士多半不是在判斷對錯，是在躲被怪。我不是看好它，是怕只有我沒跟。這一篇要回答的是：這份怕，是在判斷價值，還是在躲責怪。
 - [凱恩斯 · 買的得是你懂的](https://ourword.ai/tw/i/keynes/know-what-you-hold/): 凱恩斯 · 買的得是你懂的——分散得太開，只是把不知道攤勻了。每樣都買一點，我其實哪樣都不懂。這一篇要回答的是：分散到底是在降風險，還是在藏著不懂。
+- [索倫·克爾凱郭爾 · 選哪個都會後悔](https://ourword.ai/tw/i/kierkegaard/regret-either-way/): 索倫·克爾凱郭爾 · 選哪個都會後悔——怕後悔不能當判據，因為兩邊它都會來。都想要，又怕選了後悔。這一篇要回答的是：「會不會後悔」能不能拿來當選的依據。
+- [索倫·克爾凱郭爾 · 等想明白再選，等不到](https://ourword.ai/tw/i/kierkegaard/lived-forwards/): 索倫·克爾凱郭爾 · 等想明白再選，等不到——道理只能回頭才看得懂，日子卻只能往前過。總想先想明白再選。這一篇要回答的是：為什麼那一天等不到。
 - [查爾斯·金德爾伯格 · 燃料是信貸](https://ourword.ai/tw/i/kindleberger/credit-is-the-fuel/): 查爾斯·金德爾伯格 · 燃料是信貸——真事天天有，為什麼只有幾次滾成瘋狂。每一次泡沫都從一件真事開始。這一篇要回答的是：真事天天有，為什麼只有極少數滾成瘋狂。
 - [查爾斯·金德爾伯格 · 看見朋友發財](https://ourword.ai/tw/i/kindleberger/a-friend-gets-rich/): 查爾斯·金德爾伯格 · 看見朋友發財——讓你失常的是身邊那個人。你以為自己在判斷行情。這一篇要回答的是：真正讓你坐不住的，是身邊那個賺到錢的人。
 - [凱博文 · 醫生看到的病，和你過的日子](https://ourword.ai/tw/i/kleinman/disease-and-illness/): 凱博文 · 醫生看到的病，和你過的日子——這是兩樣東西。醫生說沒什麼大事，你卻覺得日子塌了。這一篇要回答的是：凱博文為什麼說這是兩件事。
@@ -536,7 +538,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [AI Bubble Monitor / AI 泡沫檢測儀](https://ourword.ai/ai/)
 - [Zouni / 走你](https://ourword.ai/zouni/)
 
-## Index (198 entrys)
+## Index (199 entrys)
 
 - [BJ·福格](https://ourword.ai/tw/i/bj-fogg/): BJ·福格（2019年·斯坦福行為設計實驗室）——小到不會失敗。斯坦福行為設計實驗室創始人，研究行為如何被設計出來。他給出一個公式：行為發生需要動機、能力、提示三者同時到位。多數人失敗在只調動機——靠決心和自我激勵——而動機天然起伏，靠它維持的習慣必然崩。他的主張相反：把行為縮到小得不需要動機，然後掛在一個已有的動作後面。
 - [C.S.劉易斯](https://ourword.ai/tw/i/cs-lewis/): C.S.劉易斯（1898-1963年·英國牛津）——妻子死後幾個月的日記。作家，牛津和劍橋的教授，寫過《納尼亞傳奇》和大量勸人信仰的書。五十八歲結婚，妻子喬伊四年後因癌症去世。之後幾個月他在四本練習簿上記自己的狀態，後來用筆名出版，就是《卿卿如晤》。收他是因為「重要的人走了」那六個問題，原來靠弗蘭克爾和蘇軾在答——一個是集中營的倖存者，一個是被貶的官員
@@ -672,6 +674,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [管仲](https://ourword.ai/tw/i/guan-zhong/): 管仲（春秋·前723-前645）——富民強國。中國歷史上第一個系統性思考「經濟」和「治理」關係的政治家。他幫助齊桓公從一個普通諸侯國做到「九合諸侯，一匡天下」。孔子評價他：「微管仲，吾其被髮左衽矣」。
 - [粟裕](https://ourword.ai/tw/i/su-yu/): 粟裕（近代·1907-1984）——以弱勝強。解放軍第一戰將，淮海戰役以60萬對陣80萬，殲滅國民黨精銳55萬。他從不用蠻力，只用腦子——找對手必須救的地方打，讓對手陷入被動。
 - [系統之美](https://ourword.ai/tw/i/thinking-in-systems/): 系統之美（美國·2008）——槓桿點。一本講「為什麼好人用好意做出壞結果」的書。作者德內拉·梅多斯是系統動力學創始人福瑞斯特的學生、《增長的極限》主創、《第五項修煉》作者彼得·聖吉的老師。手稿寫於1993年，她2001年病逝，同事整理後於2008年出版。她的核心主張是：系統的行為由結構決定，不由參與者的意圖決定——換
+- [索倫·克爾凱郭爾](https://ourword.ai/tw/i/kierkegaard/): 索倫·克爾凱郭爾（丹麥·1813-1855）——選擇。丹麥哲學家，1813年生於哥本哈根，1855年在同一座城市去世。1843年他以假名出版《非此即彼》，同年又出《恐懼與戰慄》；1844年寫《焦慮的概念》。他的寫法很特別：不同的書署不同的假名，讓每個聲音各講各的立場，不替讀者說哪個對。他想弄清的不是哪個答案正確，而是一個人站在兩條路
 - [索羅斯](https://ourword.ai/tw/i/soros/): 索羅斯（當代·1930-）——反身性。量子基金創始人，做空英鎊讓英格蘭銀行屈服，一天賺10億美元，被稱為「打垮英格蘭銀行的人」。但他最重要的貢獻不是賺了多少錢，而是他提出了「反身性理論」——徹底顛覆了「市場總是理性的」這個主流假設。他認為：市場參與者的預期本身會影響市場走勢，而市場走勢又反過來影響參與者的預期——這個
 - [約翰·博伊德](https://ourword.ai/tw/i/boyd/): 約翰·博伊德（美國·1927-1997）——節奏優勢。美國空軍上校，外號「四十秒博伊德」——他曾公開下戰書：任何飛行員，我從劣勢位置起飛，四十秒之內咬到你尾後，做不到賠你40美元。據說無人贏過。他一生沒當上將軍，沒出版過一本書（全部思想留在一份叫《制勝與失敗》的講稿裡），卻重塑了美國戰鬥機的設計標準（F-15、F-16、A-10都受
 - [約翰·卡喬波](https://ourword.ai/tw/i/cacioppo/): 約翰·卡喬波（1951-2018·芝加哥大學）——孤獨是信號不是缺陷。社會神經科學的創立者之一，一輩子研究一件事：孤獨在身體和大腦裡到底是什麼。他做的第一件事是把定義擰緊——孤獨不是身邊沒人，是你想要的聯結和實際有的之間那道差，所以熱鬧的房間裡也可以很孤獨。定義一改，孤獨就從性格問題變成了信號，和飢餓、口渴、疼痛歸進同一類：都在提醒你去補一樣對生存

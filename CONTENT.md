@@ -459,3 +459,6 @@ EOF
 先别跑 `gen_tw_allow.py`（它按当前产物登记，会把错的一起焊进去）：去 `tw_convert.py` 的 `FIX` 补、`NEVER` 补，
 重跑 `build_tw` 那一段（build_tw / gen_pwa / lang_links / split_home_data / stamp_assets）再登记。
 另：index.html 里 `const D=[…]` 追加条目时，上一条末尾已经带了逗号，别再补一个，`build_seo.load_array` 会在第 4 步 JSON 报错。
+
+**⑧ 「上卷开头」被转成「上捲開頭」**（2026-10-17 克尔凯郭尔）。书的分册「上卷」在「卷开」处被分词当成动词，报的是「上捲開」这种**看着像歧义字没登记**的红，其实转错了。别登记，`tw_convert.py` 的 `FIX` 补 `("上捲開頭", "上卷開頭")`、`NEVER` 补同一组合（键落在整个组合上：「向上捲」是合法的）。
+另：章节 `dek` 第一句 11 字以内才一行收住（12 字就折出一行只剩「悔。」）；改过 `dek` 要先删旧 og.png 再 `gen_og.py`，**然后**整条构建，别删了图直接构建（那样繁体站缺图）。

@@ -1,7 +1,7 @@
-# OurWord — 198 people and books on how the world actually works, across 2,600 years
+# OurWord — 199 people and books on how the world actually works, across 2,600 years
 # OurWord — See how people before you handled it.
 # https://ourword.ai/en/
-# Full corpus, plain text. 198 entrys.
+# Full corpus, plain text. 199 entrys.
 
 ========================================================================
 ## Albert Einstein
@@ -2286,10 +2286,10 @@ If you are stuck between two or three decent options, don't go looking for a fou
 You are not looking for the best. You want the first good enough. Reasoning costs computing power, and nobody has much. More information makes attention the thing that runs short. Where you stand is what you see.
 
 ### Q: What should I read alongside?
-Steve Jobs — Both answer what to do when you want two things. Jobs says to say no to a hundred good ideas and cut down to the best one. Simon says the best one was never going to be found: set a line and stop at the first option that clears it. One cuts; the other stops. Cal Newport — Both say attention is being chopped up. Newport is talking about you, and how to protect a stretch of time nobody interrupts. Simon is talking about design: a new tool or a new department must keep out more than it lets in, or it is one more source you have to read.
+Steve Jobs — Both answer what to do when you want two things. Jobs says to say no to a hundred good ideas and cut down to the best one. Simon says the best one was never going to be found: set a line and stop at the first option that clears it. One cuts; the other stops. Cal Newport — Both say attention is being chopped up. Newport is talking about you, and how to protect a stretch of time nobody interrupts. Simon is talking about design: a new tool or a new department must keep out more than it lets in, or it is one more source you have to read. Søren Kierkegaard — Both are about choices that will not settle. Simon puts a stopping rule on the search, good enough and go; Kierkegaard says the search will not stop because we dread regret, and regret comes from both sides.
 
 ### Further
-Thinking, Fast and Slow Charlie Munger Steve Jobs Cal Newport John Boyd
+Thinking, Fast and Slow Charlie Munger Steve Jobs Cal Newport John Boyd Søren Kierkegaard
 
 ========================================================================
 ## Howard Marks
@@ -5361,10 +5361,10 @@ List everything you are currently working on and ask which half you would keep i
 Simple can be harder than complex; you have to work to get your thinking clean. Focus means saying no to the hundred other good ideas that there are. Design is not just how it looks. Design is how it works.
 
 ### Q: What should I read alongside?
-Jeff Bezos — Cut to four products; the other man expanded into everything and won too. Andy Grove — Jobs disrupted other people on instinct and taste; Grove disrupted himself on process and data. The same act performed by two temperaments. Herbert Simon — Both answer what to do when you want two things. Jobs says to say no to a hundred good ideas and cut down to the best one. Simon says the best one was never going to be found: set a line and stop at the first option that clears it. One cuts; the other stops.
+Jeff Bezos — Cut to four products; the other man expanded into everything and won too. Andy Grove — Jobs disrupted other people on instinct and taste; Grove disrupted himself on process and data. The same act performed by two temperaments. Herbert Simon — Both answer what to do when you want two things. Jobs says to say no to a hundred good ideas and cut down to the best one. Simon says the best one was never going to be found: set a line and stop at the first option that clears it. One cuts; the other stops. Søren Kierkegaard — Both face two good things. Jobs says cut one and accept the loss; Kierkegaard says whichever you cut will hurt, and the hurt is not evidence you cut the wrong one.
 
 ### Further
-Peter Thiel Jeff Bezos Paul Graham Huo Qubing Andy Grove Ren Zhengfei Herbert Simon
+Peter Thiel Jeff Bezos Paul Graham Huo Qubing Andy Grove Ren Zhengfei Herbert Simon Søren Kierkegaard
 
 ========================================================================
 ## Strategies of the Warring States
@@ -5510,6 +5510,43 @@ John Boyd — Both put the decision before the clash. Sun Tzu settles it in prep
 
 ### Further
 Han Feizi John Boyd Fan Li Peter Thiel Cao Cao Guan Zhong Zhuge Liang Mao Zedong Guo Jia The I Ching Han Xin Huo Qubing Miyamoto Musashi Napoleon On War Thomas Schelling Sima Yi Strategies of the Warring States Su Yu Xiang Yu Machiavelli Nassim Taleb Sapiens Mozi
+
+========================================================================
+## Søren Kierkegaard
+URL: https://ourword.ai/en/i/kierkegaard/
+Tags: Mind and feeling, The industrial age, Choosing
+
+Søren Kierkegaard (Denmark · 1813–1855) — Choosing. A Danish philosopher, born in Copenhagen in 1813 and dead in the same city in 1855. In 1843 he published Either/Or under a pseudonym, and that year also Fear and…
+
+### Q: What did this one leave behind?
+A Danish philosopher, born in Copenhagen in 1813 and dead in the same city in 1855. In 1843 he published Either/Or under a pseudonym, and that year also Fear and Trembling; in 1844 came The Concept of Anxiety. He signed different books with different invented names and let each voice argue its own position, without telling the reader which was right. What he wanted to know was not which answer is correct but how a person standing before two roads actually chooses, and answers for it.
+
+### Q: What actually happened?
+In October 1841, aged twenty-eight, Kierkegaard returned the engagement ring to Regine Olsen, a little over a year after they had become engaged. He never married. Two years later Either/Or appeared without his name on it: the editor was a made-up Victor Eremita, whose preface says he found the papers in a hidden drawer of an old writing desk.
+
+### The parts · The one choosing is you
+Either/Or sets two ways of living side by side and does not announce a winner. The reader has to do the choosing, which is the point: no one else can do it in your place. e.g. A friend lays out both options and says 'I would take the first', and you still have to be the one who signs.
+
+### The parts · Anxiety is the dizziness of freedom
+In The Concept of Anxiety he says the dizziness comes from looking down into your own possibilities. The more you could do, the more it swims. He does not treat it as a fault; he treats it as what freedom feels like. e.g. Standing in front of twelve career paths, you feel sick, and the sickness is a sign the choice is real.
+
+### The parts · Understood backwards, lived forwards
+His journal says life can only be understood looking back, yet has to be lived looking ahead. So the clarity you are waiting for will not arrive before the decision; it arrives after. e.g. Only on leaving a job do you see which of the early signs mattered.
+
+### The parts · Different names, one reader
+He published under pseudonyms so that readers could not borrow his authority. If the voice is invented, you cannot say 'the author agrees with me'; you have to argue with the position itself. e.g. A manager who writes the case against his own plan, and has someone else sign it.
+
+### Q: How do I use it today?
+Pick one small thing where you do not want to let either side go. Give yourself ten minutes, cross out the column that says 'afraid of regret', and write only which one you are more willing to answer for. Then do it, and do not reopen the other column.
+
+### Lines to keep
+Anxiety is the dizziness of freedom. Regret cannot rank two choices; do not ask it to. Looking back makes sense of it; only going forward gets you there.
+
+### Q: What should I read alongside?
+Steve Jobs — Both face two good things. Jobs says cut one and accept the loss; Kierkegaard says whichever you cut will hurt, and the hurt is not evidence you cut the wrong one. Herbert Simon — Both are about choices that will not settle. Simon puts a stopping rule on the search, good enough and go; Kierkegaard says the search will not stop because we dread regret, and regret comes from both sides.
+
+### Further
+Steve Jobs Herbert Simon Viktor Frankl
 
 ========================================================================
 ## Taiichi Ohno
@@ -6517,7 +6554,7 @@ Everything can be taken from a man but one thing: the last of the human freedoms
 Nelson Mandela — Two answers to extreme adversity: Frankl found meaning inside the camp, Mandela turned twenty-seven years in prison into a political transformation — one worked on the inner position, the other on the outer one. Su Shi — Creation under punishment: Su Shi wrote his best work in exile, Frankl finished logotherapy in the camps — both took the worst stretch of a life and made it the productive one. Marcus Aurelius — Two tests of the inner citadel: Marcus holds it voluntarily at the top of power, Frankl has it tested with everything else taken away. Epictetus — The same finding eighteen centuries apart: Frankl said in the camps that the last human freedom is the choice of one's attitude, which is the dichotomy of control tested at the floor of human experience. Nietzsche — He who has a why to live can bear almost any how is Nietzsche's line, and Frankl carried it into Auschwitz and tested it: one man worked it out in a study, the other verified it where verification cost everything. Arthur Kleinman — Both answer what to do when a situation cannot be changed: Frankl points to the freedom of attitude in an extreme, Kleinman to the ordinary long grind where care is still available every day. Shi Tiesheng — Both answer what holds when a situation leaves no choice: Frankl says meaning, Shi Tiesheng answers much smaller, with one place he went every day and the gaps between dialysis sessions.
 
 ### Further
-Marcus Aurelius Epictetus Nietzsche Socrates Kazuo Inamori Wang Yangming Gandhi Nelson Mandela The Bhagavad Gita Sima Qian Seneca Brené Brown Kristin Neff Records of the Grand Historian Arthur Kleinman Shi Tiesheng Tao Yuanming Mihaly Csikszentmihalyi Alfred Adler Simone Weil
+Marcus Aurelius Epictetus Nietzsche Socrates Kazuo Inamori Wang Yangming Gandhi Nelson Mandela The Bhagavad Gita Sima Qian Seneca Brené Brown Kristin Neff Records of the Grand Historian Arthur Kleinman Shi Tiesheng Tao Yuanming Mihaly Csikszentmihalyi Alfred Adler Simone Weil Søren Kierkegaard
 
 ========================================================================
 ## Virginia Satir
@@ -14188,6 +14225,72 @@ Where it goes wrong: Reading it as "put everything in one place." He said not to
 Spread as wide as you like, you can't spread out what you don't know.
 Owning many is not seeing clearly.
 If you can't explain it, don't size it big.
+
+========================================================================
+## Søren Kierkegaard · Regret Comes Either Way
+URL: https://ourword.ai/en/i/kierkegaard/regret-either-way/
+Source: Either/Or (1843), Part One, 'Diapsalmata'; only the phrase common to the translations is quoted, the rest is our wording
+Tags: Deep read, Søren Kierkegaard, You cannot choose by regret, because it turns up whichever you pick
+
+You want both and dread regretting the one you give up. Kierkegaard asks whether "will I regret it?" can decide anything.
+
+### Q: What actually happened?
+In 1843 Kierkegaard published Either/Or under an editor's invented name. Part One opens with scattered sayings by a young man who believes he has seen through everything. One runs: marry and you will regret it, do not marry and you will regret that too, and whether you marry or not, "you will regret it either way". The same pattern is then run on laughing at the world's follies and on weeping over them. The joke is that the question "will I regret it?" has been taken away from both sides at once.
+
+### The parts · Regret comes from both sides
+Whichever you pick, you will find reasons to wish you had picked the other. So "will I regret it?" cannot tell the two apart. It does not measure which is better; it measures how afraid you are.
+e.g. Two job offers: take the first and you miss the pay of the second; take the second and you miss the colleagues of the first.
+
+### The parts · Fearing regret is asking for a guarantee
+Choosing by what you will not regret is asking for insurance before you act, and nobody sells it. What you can ask beforehand is different: which one am I willing to answer for, and can I really live without the other?
+e.g. You rent the south-facing flat and it is noisy; you rent the quiet one and it is dark. The question is which you can stand, not which has no fault.
+
+### The parts · He does not choose for you
+Even the title gives no answer; Either/Or only sets both ends side by side. The judge who writes Part Two says, roughly, that what matters is not only which you pick but the seriousness with which you pick it. A choice starts to count once it is made.
+e.g. Once you decide, put away the file on the other option instead of opening it every night.
+
+### Q: How do I use it today?
+Where you are: You want both, you have compared them for weeks, and every comparison ends at "I will regret either one".
+Ask first: With "afraid of regret" crossed out, which one am I more willing to answer for? Write it down, and once you pick, act.
+Where it goes wrong: Using it to say the two are the same and you may as well toss a coin. He does not say they are equal. He says regret cannot rank them, so rank them by what each costs you in money, time and what you give up.
+
+### Lines to keep
+Regret comes from both sides; it cannot rank them.
+Fearing regret is wanting a guarantee before you act.
+A choice starts to count once it is made.
+
+========================================================================
+## Søren Kierkegaard · Waiting Until You Understand
+URL: https://ourword.ai/en/i/kierkegaard/lived-forwards/
+Source: Journals, entry IV A 164 (1843); only the phrases common to the translations are quoted, the rest is our wording
+Tags: Deep read, Søren Kierkegaard, Life is understood looking back, but it can only be lived looking ahead
+
+You want to understand it fully before you choose. Kierkegaard asks why that moment never arrives.
+
+### Q: What actually happened?
+In 1843 Kierkegaard noted in his journal that philosophy is right to say life must be "understood backwards". But, he added, people forget the other proposition: that it must be "lived forwards". The entry is only a few lines long. You have to decide while you still cannot see, because seeing clearly comes after the doing. Which means "I will decide when I have thought it through" is itself a decision.
+
+### The parts · Two ways of reading, each half the job
+Looking back, events join up, so "the signs were obvious" feels like plain fact. The person looking ahead has no such line, only a scatter of points that have not yet joined.
+e.g. At the interview you cannot tell which firm will fold; three years later colleagues say there were signs.
+
+### The parts · Waiting for a moment that does not come
+The moment when things are clear always sits after the doing. Someone who keeps waiting is not getting clearer; they are handing the decision to time, and what time picks for you is often "not chosen".
+e.g. The career change you put off for two years: others in your field have made it work or hit a wall, and you have learned nothing from either.
+
+### The parts · Move, and keep reading backwards
+He does not say stop thinking. He wants both: take a step on the part you already understand, then look back over it, and only then is there something to read for the next step.
+e.g. Try it for three months, and on the last day write one page: what I only understand now.
+
+### Q: How do I use it today?
+Where you are: You have thought about it for a long time and feel a little more clarity would settle it.
+Ask first: Is the information I still lack something I can look up, or something I can only learn by going? Look up the first within three days; for the second, pick a direction you can undo and take one step.
+Where it goes wrong: Using it to say stop thinking and just jump. He means thinking and going take turns, not that going replaces thinking.
+
+### Lines to keep
+Looking back makes sense of it; only going forward gets you there.
+Seeing clearly comes after the doing.
+Waiting is letting time choose for you.
 
 ========================================================================
 ## Charles P. Kindleberger · Credit is the fuel
