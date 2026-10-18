@@ -1,11 +1,11 @@
 # OurWord (人类世界生存法则)
 
-> 199 people and books on how the world actually works, across 2,600 years
+> 200 people and books on how the world actually works, across 2,600 years
 > 遇到事了，看看以前的人怎么处理
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 199 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 200 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
-一个关于「世界到底怎么运转」的知识库：战略、财富、权力、人性、创业，取自 199 位人物与典籍，跨越 2600 年。每一条都写清楚这个人真正留下的那一个想法、背后的故事、拆开的分则与例子，以及今天怎么用。
+一个关于「世界到底怎么运转」的知识库：战略、财富、权力、人性、创业，取自 200 位人物与典籍，跨越 2600 年。每一条都写清楚这个人真正留下的那一个想法、背后的故事、拆开的分则与例子，以及今天怎么用。
 
 ## Read it
 
@@ -20,7 +20,7 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 
 - [工业时代](https://ourword.ai/t/industrial-age/) — 62
 - [现代](https://ourword.ai/t/modern/) — 62
-- [先秦与古典时代](https://ourword.ai/t/classical-era/) — 29
+- [先秦与古典时代](https://ourword.ai/t/classical-era/) — 30
 - [权力与组织](https://ourword.ai/t/power/) — 29
 - [心智与情绪](https://ourword.ai/t/mind/) — 23
 - [创业与产品](https://ourword.ai/t/startups/) — 20
@@ -31,8 +31,8 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 - [家庭与关系](https://ourword.ai/t/family/) — 17
 - [身心与生活](https://ourword.ai/t/living/) — 17
 - [中古](https://ourword.ai/t/medieval/) — 17
+- [识人与相处](https://ourword.ai/t/people/) — 17
 - [秦汉至魏晋](https://ourword.ai/t/han-wei/) — 16
-- [识人与相处](https://ourword.ai/t/people/) — 16
 - [近世](https://ourword.ai/t/early-modern/) — 13
 
 ## How it is built
@@ -53,6 +53,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [汉娜·阿伦特 · 平庸之恶](https://ourword.ai/i/arendt/banality-of-evil/): 汉娜·阿伦特 · 平庸之恶——不是坏，是不想。「我这活照单子做，不问为什么」到底是种什么状态。这一篇要回答的是：阿伦特在法庭上看见的那个人为什么让她改了想法。
 - [汉娜·阿伦特 · 停下来想，是每个人的活](https://ourword.ai/i/arendt/thinking-as-a-duty/): 汉娜·阿伦特 · 停下来想，是每个人的活——不能外包。规则是别人定的、大家都这么做的时候，一个人还剩什么。这一篇要回答的是：阿伦特为什么把「想」说成一种责任而不是一种能力。
 - [汉娜·阿伦特 · 三十五岁到纽约](https://ourword.ai/i/arendt/new-york-at-35/): 汉娜·阿伦特 · 三十五岁到纽约——不会英文，从头开始。换了国家、语言、身份，从零开始，靠什么。这一篇要回答的是：阿伦特到纽约时手上有什么、没有什么，她先做了什么。
+- [亚里士多德 · 你们不是同一种朋友](https://ourword.ai/i/aristotle/three-kinds/): 亚里士多德 · 你们不是同一种朋友——交情靠什么撑着，就在那样东西没了的时候散。先分清是哪种朋友。这一篇要回答的是：交情散了，是他变了，还是你们本来就不是一回事。
+- [亚里士多德 · 他变了，旧情还算不算](https://ourword.ai/i/aristotle/when-a-friend-turns/): 亚里士多德 · 他变了，旧情还算不算——先分清是他装的，还是你看错的，再决定断不断。他变了，怎么办。这一篇要回答的是：交情断不断，凭什么断。
 - [智慧书 · 见好就收](https://ourword.ai/i/art-of-worldly-wisdom/quit-while-winning/): 智慧书 · 见好就收——在牌桌热的时候离开。一个耶稣会士写的处世箴言，第38条讲的是赌桌纪律。这一篇要回答的是：为什么要在赢的时候走。
 - [智慧书 · 做，并且让人看见](https://ourword.ai/i/art-of-worldly-wisdom/do-and-be-seen/): 智慧书 · 做，并且让人看见——实与名各占一半。这条箴言在道德上让人不舒服。这一篇要回答的是：为什么他坚持把它写下来。
 - [原子习惯 · 落到系统的水平](https://ourword.ai/i/atomic-habits/systems-over-goals/): 原子习惯 · 落到系统的水平——目标不区分胜负。参赛的每支队都想拿冠军。这一篇要回答的是：那么区别在哪。
@@ -538,7 +540,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [AI Bubble Monitor / AI 泡沫检测仪](https://ourword.ai/ai/)
 - [Zouni / 走你](https://ourword.ai/zouni/)
 
-## Index (199 entrys)
+## Index (200 entrys)
 
 - [BJ·福格](https://ourword.ai/i/bj-fogg/): BJ·福格（2019年·斯坦福行为设计实验室）——小到不会失败。斯坦福行为设计实验室创始人，研究行为如何被设计出来。他给出一个公式：行为发生需要动机、能力、提示三者同时到位。多数人失败在只调动机——靠决心和自我激励——而动机天然起伏，靠它维持的习惯必然崩。他的主张相反：把行为缩到小得不需要动机，然后挂在一个已有的动作后面。
 - [C.S.刘易斯](https://ourword.ai/i/cs-lewis/): C.S.刘易斯（1898-1963年·英国牛津）——妻子死后几个月的日记。作家，牛津和剑桥的教授，写过《纳尼亚传奇》和大量劝人信仰的书。五十八岁结婚，妻子乔伊四年后因癌症去世。之后几个月他在四本练习簿上记自己的状态，后来用笔名出版，就是《卿卿如晤》。收他是因为「重要的人走了」那六个问题，原来靠弗兰克尔和苏轼在答——一个是集中营的幸存者，一个是被贬的官员
@@ -546,6 +548,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [主权个人](https://ourword.ai/i/sovereign-individual/): 主权个人（1997年·戴维森&莫格）——数字主权。1997年出版，比特币诞生早了11年。两位作者用「暴力经济学」解释了人类社会的全部历史：谁控制暴力，谁就控制财富。他们预言了加密货币、远程工作、数字游民、国家权力衰退。
 - [乌合之众](https://ourword.ai/i/crowd/): 乌合之众（法·1895年）——群体心理的操作系统。古斯塔夫·勒庞著，群体心理学的开山之作。写于法国大革命后百年、大众时代来临前夜，一百多年来被政治家、革命者、广告人、操盘手反复研读——据说墨索里尼倒背如流，罗斯福床头常备。核心论断冷酷而精确：个体一旦进入群体，智力被拉平向下，情绪相互传染，责任感因匿名而消失——「群体中累积的只有
 - [乔布斯](https://ourword.ai/i/jobs/): 乔布斯（当代·1955-2011）——极简。苹果联合创始人，被迫离开苹果，在NeXT和皮克斯度过12年，然后回来把濒死的苹果变成了全球最有价值的公司。他的思想核心是：简单比复杂更难，专注意味着说不，设计是产品如何工作而不只是外观。
+- [亚里士多德](https://ourword.ai/i/aristotle/): 亚里士多德（古希腊·前384-前322）——友谊。古希腊哲学家，前384年生于马其顿王国的斯塔吉拉，前322年死于优卑亚岛的卡尔基斯。十七岁进柏拉图的学园，前后待了二十年；做过亚历山大的老师，前335年回雅典办了吕克昂学园。《尼各马可伦理学》有两卷专讲友谊：他不先问友谊高不高尚，先问一份交情到底靠什么撑着，撑不住的时候又该怎么待
 - [人类简史](https://ourword.ai/i/sapiens/): 人类简史（2011年·赫拉利）——虚构。以色列历史学家尤瓦尔·赫拉利用一本书重新解释了人类6万年的历史。核心论点惊人简洁：智人能统治地球，不是因为最强壮或最聪明，而是因为唯一能相信「虚构」的动物——金钱、国家、宗教、法律、公司，都是集体想象出来的「虚构」。这些虚构让陌生人能够大规模合作，这才是人类最危险的武器。
 - [任正非](https://ourword.ai/i/ren-zhengfei/): 任正非（当代·1944-）——韧。1987年，43岁，用2万元创立华为，从交换机代理商起步。30多年后，华为是全球最大电信设备商。他的管理思想：自我批判是组织免疫系统，以客户为中心是组织的北极星。
 - [伊万·伊里奇](https://ourword.ai/i/illich/): 伊万·伊里奇（奥地利—墨西哥·1926-2002）——上限。神父出身的思想家，1970年代连出四本书拆掉了四套人人默认为进步的系统：学校、交通、医疗、以及「工具」这个概念本身。他的核心论断只有一句：每样工具都会跨过两道分水岭，越过第二道，它开始生产它本来要消灭的东西。医疗制造病人，学校制造无知感，交通制造距离。他不反技术，他要给技术设上限

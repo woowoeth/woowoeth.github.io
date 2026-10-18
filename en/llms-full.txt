@@ -1,7 +1,7 @@
-# OurWord — 199 people and books on how the world actually works, across 2,600 years
+# OurWord — 200 people and books on how the world actually works, across 2,600 years
 # OurWord — See how people before you handled it.
 # https://ourword.ai/en/
-# Full corpus, plain text. 199 entrys.
+# Full corpus, plain text. 200 entrys.
 
 ========================================================================
 ## Albert Einstein
@@ -190,6 +190,43 @@ Steve Jobs — Jobs disrupted other people on instinct and taste; Grove disrupte
 
 ### Further
 Jensen Huang Peter Drucker Steve Jobs Jeff Bezos Duan Yongping Xunzi The Innovator's Dilemma Konosuke Matsushita Albert O. Hirschman C. Northcote Parkinson
+
+========================================================================
+## Aristotle
+URL: https://ourword.ai/en/i/aristotle/
+Tags: Reading people, Pre-Qin and classical, Friendship
+
+Aristotle (Ancient Greece · 384–322 BC) — Friendship. An ancient Greek philosopher, born in 384 BC in Stagira, in the kingdom of Macedon, and dead in 322 BC at Chalcis on Euboea.
+
+### Q: What did this one leave behind?
+An ancient Greek philosopher, born in 384 BC in Stagira, in the kingdom of Macedon, and dead in 322 BC at Chalcis on Euboea. He entered Plato's Academy at seventeen and stayed about twenty years, later tutored Alexander, and in 335 BC founded the Lyceum in Athens. Two books of his Nicomachean Ethics are given to friendship. He does not first ask whether a friendship is noble; he asks what a given bond actually rests on, and what to do when it will not bear the weight.
+
+### Q: What actually happened?
+When Plato died in 347 BC, Aristotle was thirty-seven and had spent about twenty years at the Academy. It passed to Plato's nephew Speusippus, and Aristotle left Athens. Later, criticising his teacher's theory of Forms in the Nicomachean Ethics, he admits the task is awkward, because the people who introduced Forms were friends of his. He writes it anyway, and says it is the truth that comes first.
+
+### The parts · Ask what holds it up
+He sorts friendship into three kinds: useful, pleasant, and for the person himself. The first two rest on benefit and enjoyment, so when those go the bond goes. Only the third rests on the person. e.g. Two people at the same dinner, one there for business, the other because they get on.
+
+### The parts · Where the complaints come from
+Grievances and reproaches, he says, arise mostly in friendships of utility, where each side feels it gives more and gets less. The sense of being short-changed is close to built in. e.g. At year end, each partner is sure they put in more.
+
+### The parts · A friend who has changed: can he be saved?
+Book IX asks whether to break with a friend who turns bad. His order is to ask first whether he can be brought back; if he can, help him mend his character, and end it only when he is past saving. Even then, leave some room for the old friendship. e.g. A colleague pads the numbers: say it once to his face, and if he does not stop, deal with him differently.
+
+### The parts · Two ways of being deceived
+If you took someone to like you for yourself when he wanted something else, you misjudged him. If he put on a show to deceive you, you may complain, and he says with more right than against a counterfeiter, since more was taken. e.g. "He never said he admired me" and "he called me his closest friend, then sold what I told him" are not the same case.
+
+### Q: How do I use it today?
+Take one friend who has left you cold. Write two lines: what was this bond resting on, and did I misjudge him or did he put on a show? Only after that decide whether to get in touch; do not decide in the heat of it.
+
+### Lines to keep
+When the support goes, the bond goes. Did he fool me, or did I misjudge him? Parting does not make the old years unreal.
+
+### Q: What should I read alongside?
+John Gottman — Both look at a relationship that has turned. Gottman teaches how to repair it so the two can stay; Aristotle first asks whether it can be saved at all, and if not, to own that and part. Robert Axelrod — Both ask what to do after being burned. Axelrod looks at how you respond to the other side in a repeated game, behaviour; Aristotle first asks what kind of bond this was, what held it up.
+
+### Further
+John Gottman Maria Konnikova The Analects
 
 ========================================================================
 ## Arlie Hochschild
@@ -2767,10 +2804,10 @@ When the same thing gets fought about and every round escalates, check the last 
 The strongest single predictor of divorce is contempt. Criticism targets the person. A complaint targets the act. Happy couples aren't the ones who don't fight. They repair.
 
 ### Q: What should I read alongside?
-Esther Perel — Two different illnesses: he treats the wound, she treats the emptiness, and the moves point opposite ways. Attachment Theory — Attachment says where the pattern came from; Gottman measures how it is running in the room today. Crucial Conversations — Gottman tells you which signals in a fight predict the end; this tells you what to do in the next three minutes.
+Esther Perel — Two different illnesses: he treats the wound, she treats the emptiness, and the moves point opposite ways. Attachment Theory — Attachment says where the pattern came from; Gottman measures how it is running in the room today. Crucial Conversations — Gottman tells you which signals in a fight predict the end; this tells you what to do in the next three minutes. Aristotle — Both look at a relationship that has turned. Gottman teaches how to repair it so the two can stay; Aristotle first asks whether it can be saved at all, and if not, to own that and part.
 
 ### Further
-Esther Perel Harvard Study of Adult Development C.S. Lewis Attachment Theory Murray Bowen Crucial Conversations Robert Axelrod
+Esther Perel Harvard Study of Adult Development C.S. Lewis Attachment Theory Murray Bowen Crucial Conversations Robert Axelrod Aristotle
 
 ========================================================================
 ## John Maynard Keynes
@@ -3689,7 +3726,7 @@ The con artist does not build trust. He uses the need you already have. What get
 Influence — Cialdini explains how the six devices work, Konnikova explains why the same devices work so well on certain people at certain moments. One studies the weapon, the other the target. Scarcity — Both replace how could they be so stupid with what were they short of: Scarcity is about bandwidth being taken, the con is about wanting being used. The Annals of Lu Buwei — Both answer why you believed the wrong thing: Konnikova puts the fault in your own moment, since the con artist picks people at a turning point, while the Annals does not discuss con artists at all and says that with nobody lying anywhere a sentence still turns false on the way to you.
 
 ### Further
-Influence The Crowd Scarcity Zeng Guofan Robert Axelrod
+Influence The Crowd Scarcity Zeng Guofan Robert Axelrod Aristotle
 
 ========================================================================
 ## Maria Montessori
@@ -4818,7 +4855,7 @@ To get something honoured, stop auditing the other person's character and count 
 None of the leading programs was ever the first to defect. Hit back once, then come straight back. No ledger. It never outscored a single opponent and still finished first. A promise holds because of tomorrow's meeting, not his character.
 
 ### Q: What should I read alongside?
-Han Feizi — Neither trusts human nature: Han Feizi holds reward and punishment himself so that nobody dares defect, Axelrod lengthens the relationship until nobody needs to - one runs on power, the other on repetition. Thomas Schelling — Both answer why should I believe you: Schelling has you burn your own way out so the promise is credible right now, Axelrod says credibility depends on how many rounds are still to come.
+Han Feizi — Neither trusts human nature: Han Feizi holds reward and punishment himself so that nobody dares defect, Axelrod lengthens the relationship until nobody needs to - one runs on power, the other on repetition. Thomas Schelling — Both answer why should I believe you: Schelling has you burn your own way out so the promise is credible right now, Axelrod says credibility depends on how many rounds are still to come. Aristotle — Both ask what to do after being burned. Axelrod looks at how you respond to the other side in a repeated game, behaviour; Aristotle first asks what kind of bond this was, what held it up.
 
 ### Further
 Thomas Schelling Han Feizi Maria Konnikova Robert K. Merton John Gottman
@@ -5771,7 +5808,7 @@ Knowing what you know and what you do not: that is knowledge. See what he does. 
 Tao Te Ching — The two main lines of Chinese thought: Confucius adds — cultivate, practise, take part — where Laozi subtracts. Neither is complete without the other. Socrates — Near contemporaries who both taught by asking rather than telling, and both paid for holding a position against the people in power. Mencius — The Analects tells a gentleman how to conduct himself; Mencius tells a ruler what will remove him. Strategies of the Warring States — Two faces of the same broken age: one on what a person ought to become, the other on how people behaved. Read only one and you end up naive or cynical. Guiguzi — Confucius asks whether a thing should be said at all; Guiguzi asks only how to say it so that it works. The avowed and the suppressed halves of the same tradition. La Rochefoucauld — Confucius holds that self-cultivation leads to benevolence. La Rochefoucauld suspects self-cultivation is only the most sophisticated form self-love has found so far. The Annals of Lu Buwei — Both answer how to read a person: the Analects looks backward, at what he has already done, the path he took and what he rests easy in, while the Annals arranges the present, putting him through eight positions and six feelings and watching hardest at the moments when he has nothing to gain. The Book of Rites — Both record how Confucius taught. In the Analects he will not open up a student who is not yet straining to understand, which is about when to speak. The 'Record of Learning' goes a step further: even once you speak, open the way and stop, and leave the last steps to the learner.
 
 ### Further
-Wang Yangming Zeng Guofan Tao Te Ching Socrates Mencius Hannah Arendt Family Instructions for the Yan Clan The Annals of Lu Buwei The Book of Rites Yan Ying
+Wang Yangming Zeng Guofan Tao Te Ching Socrates Mencius Hannah Arendt Family Instructions for the Yan Clan The Annals of Lu Buwei The Book of Rites Yan Ying Aristotle
 
 ========================================================================
 ## The Annals of Lu Buwei
@@ -7614,6 +7651,72 @@ Where it goes wrong: reading it as a good way of thinking is enough to start aga
 The one thing she carried needed no papers: how she thought.
 What disappears when you leave the seat was never yours.
 Start from zero on a ten-year account, not a three-year one.
+
+========================================================================
+## Aristotle · Not the Same Kind of Friend
+URL: https://ourword.ai/en/i/aristotle/three-kinds/
+Source: Nicomachean Ethics, Book VIII chs. 3-4 (1156a-b) and ch. 13 (1162b); paraphrase, not quotation
+Tags: Deep read, Aristotle, A bond falls apart when the thing holding it up is gone
+
+First work out which kind of friend he was. Aristotle asks whether the bond came apart because he changed, or because it was never what you thought.
+
+### Q: What actually happened?
+In Book VIII of the Nicomachean Ethics, Aristotle sorts friendship into three kinds: people who befriend you because you are useful, because you are pleasant company, or because they admire who you are. In the first two, he says, they do not love the person himself but what the person brings, so when the benefit goes or the pleasure fades, the bond goes with it. Only the third is for the person's own sake, and so only the third holds up over time. He adds that complaints and score-keeping turn up almost entirely in the first kind.
+
+### The parts · Three bonds, three supports
+A useful bond rests on the benefit, a pleasant one on the enjoyment, and only the third rests on the person. When the support goes, the bond falls. Sometimes someone wronged you; sometimes the thing holding it up has simply left.
+e.g. Two people grow close over one project; when it folds, the lunches stop too.
+
+### The parts · Most complaints come from the useful kind
+He notes that grievances and reproaches arise mostly in friendships of utility, which is no surprise: each side feels it gives more and gets less. In that kind of bond, the sense of being short-changed is practically built in.
+e.g. A year into running a shop together, each partner is sure they are the one doing more.
+
+### The parts · Name the kind before you name the wrong
+If you thought it was the third kind and he only ever meant the first, that gap is where the sting comes from. Whether he lied to you is a separate question. Whether you took a transaction for a friendship comes first.
+e.g. His warmth always showed up when you held something he needed. You were probably in the first kind all along.
+
+### Q: How do I use it today?
+Where you are: You feel betrayed, but looking back he was warmest when he needed something from you.
+Ask first: What was holding this bond up? What was it on his side, and what on mine? Write both down and set them side by side.
+Where it goes wrong: Using it to say he was only using you, so you had it coming. He does not say that. He says sort it first, so that what you expect and how you guard yourself stop being out of step. Being used is still being used, whatever you call it.
+
+### Lines to keep
+When the support goes, the bond goes.
+Complaints cluster in bonds built on use.
+Name the kind before you name the wrong.
+
+========================================================================
+## Aristotle · When a Friend Has Changed
+URL: https://ourword.ai/en/i/aristotle/when-a-friend-turns/
+Source: Nicomachean Ethics, Book IX ch. 3 (1165b-1166a); paraphrase, not quotation
+Tags: Deep read, Aristotle, First decide whether he put on a show or you misjudged him, then decide whether to end it
+
+He has changed, so what now? Aristotle asks when a friendship should end, and on what grounds.
+
+### Q: What actually happened?
+In Book IX Aristotle asks a very practical question: if a friend turns bad, must you stay his friend? He first separates two ways of being deceived. If you assumed he liked you for your character when he was after something else, the mistake is yours. But if he put on a show to fool you, you have every right to complain, more right than against someone who passes counterfeit coin, because what was taken from you is worth more. First decide whether you misjudged him or he deceived you; only then decide whether to end it.
+
+### The parts · Two ways of being fooled
+If you misread him, the fault lies in treating something he never said as a promise. If he put on a front, the fault is his. Knowing which tells you whom to be angry with, and what to change next time.
+e.g. You assumed he admired you; he never said so, he just liked talking about the project.
+
+### The parts · Rescue before rupture
+His order is: first ask whether the person can be brought back. If he has merely drifted and can be recovered, help him mend his character before anything else, which he thinks closer to friendship than helping with money. Only when he is past saving do you end it.
+e.g. A colleague starts padding numbers: say it to his face once; if he carries on, deal with him differently.
+
+### The parts · Keep a record of the old bond
+When you do part, he says to allow something for the sake of the past friendship, unless the other person has become wicked to an extreme. That is not softness; it admits that something real once existed between you.
+e.g. Former partners who still nod in the street and do not run each other down.
+
+### Q: How do I use it today?
+Where you are: A friend has left you cold and you are wondering whether to delete him from your life.
+Ask first: Did he put on a show to fool me, or did I misread him? Can he still be brought back, or is he past saving? Write down both answers.
+Where it goes wrong: Using it to say he fooled you but you once were friends, so you must forgive. He speaks of leaving some room, not of letting him off; where someone faked it to deceive you, he thinks your complaint is fair.
+
+### Lines to keep
+Did he fool me, or did I misjudge him?
+Help the one who can be saved before you cut him off.
+Parting does not make the old years unreal.
 
 ========================================================================
 ## The Art of Worldly Wisdom · Leave while you are winning

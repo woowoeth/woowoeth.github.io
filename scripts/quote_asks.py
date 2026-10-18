@@ -649,4 +649,10 @@ QUOTE_ASKS = {
         "不管选哪个，我肯定都会后悔。",
     "kierkegaard/lived-forwards":
         "要等我想明白了，才敢选。",
+
+    # 亚里士多德
+    "aristotle/three-kinds":
+        "我拿他当朋友，他只当我有用。",
+    "aristotle/when-a-friend-turns":
+        "他变了，我还要认这个朋友吗？",
 }

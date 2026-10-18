@@ -1246,6 +1246,10 @@ SCENES = [
      [("axelrod", "tit-for-tat"), ("gottman", "repair-attempts")]),
     ("害过我的人，回来找我了。",
      [("jin-wengong", "the-cut-sleeve")]),
+    ("我拿他当朋友，他只当我有用。",
+     [("aristotle", "three-kinds")]),
+    ("他变了，我还要认这个朋友吗？",
+     [("aristotle", "when-a-friend-turns")]),
 ]),
 ("在一起久了没感觉", "家里的事", [
     ("日子过得紧，我们俩还能有什么乐子？",

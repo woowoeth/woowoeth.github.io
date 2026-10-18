@@ -1,9 +1,9 @@
 # OurWord (OurWord)
 
-> 199 people and books on how the world actually works, across 2,600 years
+> 200 people and books on how the world actually works, across 2,600 years
 > See how people before you handled it.
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 199 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 200 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
 ## Read it
 
@@ -19,7 +19,7 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 - [Modern](https://ourword.ai/en/t/modern/) — 66
 - [The industrial age](https://ourword.ai/en/t/the-industrial-age/) — 58
 - [Power and organisation](https://ourword.ai/en/t/power-and-organisation/) — 29
-- [Pre-Qin and classical](https://ourword.ai/en/t/pre-qin-and-classical/) — 28
+- [Pre-Qin and classical](https://ourword.ai/en/t/pre-qin-and-classical/) — 29
 - [Mind and feeling](https://ourword.ai/en/t/mind-and-feeling/) — 22
 - [How the world works](https://ourword.ai/en/t/how-the-world-works/) — 20
 - [Learning and growth](https://ourword.ai/en/t/learning-and-growth/) — 20
@@ -29,7 +29,7 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 - [Money and risk](https://ourword.ai/en/t/money-and-risk/) — 18
 - [Body and daily life](https://ourword.ai/en/t/body-and-daily-life/) — 17
 - [Family and relationships](https://ourword.ai/en/t/family-and-relationships/) — 17
-- [Reading people](https://ourword.ai/en/t/reading-people/) — 16
+- [Reading people](https://ourword.ai/en/t/reading-people/) — 17
 - [Medieval](https://ourword.ai/en/t/medieval/) — 14
 - [Early modern](https://ourword.ai/en/t/early-modern/) — 13
 
@@ -47,6 +47,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [Hannah Arendt · The banality of evil](https://ourword.ai/en/i/arendt/banality-of-evil/): Hannah Arendt · The banality of evil — Not wicked, just not thinking. What kind of state is I only follow the list and never ask why. What she saw in the courtroom changed her mind.
 - [Hannah Arendt · Stopping to think is your own job](https://ourword.ai/en/i/arendt/thinking-as-a-duty/): Hannah Arendt · Stopping to think is your own job — It cannot be outsourced. When the rules are someone else's and everyone around you complies, what is left. Why she calls thinking a duty rather than a talent.
 - [Hannah Arendt · New York at thirty-five](https://ourword.ai/en/i/arendt/new-york-at-35/): Hannah Arendt · New York at thirty-five — No English, no papers, start again. New country, new language, no standing. What she had with her when she landed, what she did not, and what she did first.
+- [Aristotle · Not the Same Kind of Friend](https://ourword.ai/en/i/aristotle/three-kinds/): Aristotle · Not the Same Kind of Friend — A bond falls apart when the thing holding it up is gone. First work out which kind of friend he was. Aristotle asks whether the bond came apart because he changed, or because it was never what you thought.
+- [Aristotle · When a Friend Has Changed](https://ourword.ai/en/i/aristotle/when-a-friend-turns/): Aristotle · When a Friend Has Changed — First decide whether he put on a show or you misjudged him, then decide whether to end it. He has changed, so what now? Aristotle asks when a friendship should end, and on what grounds.
 - [The Art of Worldly Wisdom · Leave while you are winning](https://ourword.ai/en/i/art-of-worldly-wisdom/quit-while-winning/): The Art of Worldly Wisdom · Leave while you are winning — A long run of luck is the warning. Everyone reads it as timidity. Read as written it is a gambler's arithmetic: a long winning run is the thing to distrust.
 - [The Art of Worldly Wisdom · Do, and be seen doing](https://ourword.ai/en/i/art-of-worldly-wisdom/do-and-be-seen/): The Art of Worldly Wisdom · Do, and be seen doing — Half the work is being known to have done it. The maxim is uncomfortable coming from a priest. What it argues is not vanity but arithmetic about whose ledger your work sits on.
 - [Atomic Habits · Fall to the Level of Your Systems](https://ourword.ai/en/i/atomic-habits/systems-over-goals/): Atomic Habits · Fall to the Level of Your Systems — Goals do not separate winners from losers. Every team in the race wants to win it. What Clear says the difference actually is.
@@ -532,13 +534,14 @@ Cite the individual page URL, not the homepage — each entry page is stable and
 - [AI Bubble Monitor](https://ourword.ai/ai/)
 - [Zouni](https://ourword.ai/zouni/)
 
-## Index (199 entrys)
+## Index (200 entrys)
 
 - [Albert Einstein](https://ourword.ai/en/i/einstein/): Albert Einstein (Germany · 1879–1955) — Imagination. The physicist, and the father of relativity — but the legacy that travels furthest is not a formula, it is a way of working.
 - [Albert O. Hirschman](https://ourword.ai/en/i/hirschman/): Albert O. Hirschman (United States · 1915-2012) — Voice. A German-born American economist. He left Berlin in 1933, fought in Spain in 1936, spent 1940 in Marseille forging papers and finding mountain…
 - [Alfred Adler](https://ourword.ai/en/i/adler/): Alfred Adler (1870–1937 · Austria) — Whose task is this. The founder of individual psychology, an early colleague of Freud's who broke with him over a disagreement about direction.
 - [Anders Ericsson](https://ourword.ai/en/i/ericsson/): Anders Ericsson (1993 · the violin study) — Method over hours. A psychologist who spent a career on how the best in any field actually got there. His best-known research reached the public as the…
 - [Andy Grove](https://ourword.ai/en/i/grove/): Andy Grove (1936–2016 · Budapest to Intel) — Strategic inflection point. Intel's third employee and its fourth chief executive. He took over a memory company that Japanese competitors had driven into…
+- [Aristotle](https://ourword.ai/en/i/aristotle/): Aristotle (Ancient Greece · 384–322 BC) — Friendship. An ancient Greek philosopher, born in 384 BC in Stagira, in the kingdom of Macedon, and dead in 322 BC at Chalcis on Euboea.
 - [Arlie Hochschild](https://ourword.ai/en/i/hochschild/): Arlie Hochschild (1983 · UC Berkeley) — Work nobody counts. A sociologist who twice gave a name to work that had none. The Managed Heart (1983) named emotional labour: jobs that require not only that…
 - [Arthur Kleinman](https://ourword.ai/en/i/kleinman/): Arthur Kleinman (1941– · Harvard) — Curing fails, care does not. A Harvard medical anthropologist and a practising psychiatrist, with years of fieldwork in China. His whole career splits one thing…
 - [Atomic Habits](https://ourword.ai/en/i/atomic-habits/): Atomic Habits (2018 · James Clear) — Change the system, not the goal. James Clear's book on how behaviour actually gets built. Its claim is that people overrate goals and underrate systems, because…
