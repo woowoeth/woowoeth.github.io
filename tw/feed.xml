@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>OurWord — 200 people and books on how the world actually works, across 2,600 years</title>
+    <title>OurWord — 201 people and books on how the world actually works, across 2,600 years</title>
     <link>https://ourword.ai/tw/</link>
     <atom:link href="https://ourword.ai/tw/feed.xml" rel="self" type="application/rss+xml"/>
-    <description>A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 200 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.</description>
+    <description>A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 201 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.</description>
     <language>zh-tw</language>
-    <lastBuildDate>Sun, 18 Oct 2026 08:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 19 Oct 2026 08:00:00 +0800</lastBuildDate>
 <!-- chapters:begin -->
     <item><title>阿德勒 · 課題分離</title><link>https://ourword.ai/tw/i/adler/separation-of-tasks/</link><guid isPermaLink="true">https://ourword.ai/tw/i/adler/separation-of-tasks/</guid><description>阿德勒 · 課題分離——先分清這是誰的事。人際關係的痛苦大半來自越界。這一篇要回答的是：邊界到底畫在哪。</description><pubDate>Tue, 01 Sep 2026 08:00:00 +0800</pubDate></item>
     <item><title>阿德勒 · 不是因為，是為了</title><link>https://ourword.ai/tw/i/adler/teleology/</link><guid isPermaLink="true">https://ourword.ai/tw/i/adler/teleology/</guid><description>阿德勒 · 不是因為，是為了——把原因換成目的。弗洛伊德問你經歷過什麼，阿德勒問你想用它做什麼。這一篇要回答的是：這個換問法為什麼能解凍。</description><pubDate>Sun, 30 Aug 2026 08:00:00 +0800</pubDate></item>
@@ -119,6 +119,8 @@
     <item><title>優秀的綿羊 · 給自己一段沒有評分的時間</title><link>https://ourword.ai/tw/i/excellent-sheep/no-scoreboard/</link><guid isPermaLink="true">https://ourword.ai/tw/i/excellent-sheep/no-scoreboard/</guid><description>優秀的綿羊 · 給自己一段沒有評分的時間——有標準就會去優化標準。怎麼才能知道自己真正想要什麼。這一篇要回答的是：條件是什麼。</description><pubDate>Mon, 31 Aug 2026 08:00:00 +0800</pubDate></item>
     <item><title>范蠡 · 旱則資舟</title><link>https://ourword.ai/tw/i/fan-li/stock-the-opposite/</link><guid isPermaLink="true">https://ourword.ai/tw/i/fan-li/stock-the-opposite/</guid><description>范蠡 · 旱則資舟——在沒人要的時候備。什麼時候買最便宜？這一篇要回答的是：在所有人都覺得這東西沒用的時候。</description><pubDate>Sat, 29 Aug 2026 08:00:00 +0800</pubDate></item>
     <item><title>范蠡 · 長頸鳥喙</title><link>https://ourword.ai/tw/i/fan-li/leave-at-the-top/</link><guid isPermaLink="true">https://ourword.ai/tw/i/fan-li/leave-at-the-top/</guid><description>范蠡 · 長頸鳥喙——從人身上讀結局。他走的時候越國剛剛滅吳，正是最好的時候。這一篇要回答的是：他是從哪裡看出來該走的。</description><pubDate>Sat, 29 Aug 2026 08:00:00 +0800</pubDate></item>
+    <item><title>范仲淹 · 論的是國事，不是人</title><link>https://ourword.ai/tw/i/fan-zhongyan/the-quarrel-was-about-the-state/</link><guid isPermaLink="true">https://ourword.ai/tw/i/fan-zhongyan/the-quarrel-was-about-the-state/</guid><description>范仲淹 · 論的是國事，不是人——爭完之後還要同朝做事，就從一開始只爭事。你的方案被某個人否了，往後還要在一處做事。這一篇要回答的是：范仲淹被宰相呂夷簡貶走，後來兩人同朝，他靠什麼把前賬放下。</description><pubDate>Mon, 19 Oct 2026 08:00:00 +0800</pubDate></item>
+    <item><title>范仲淹 · 縱民競渡</title><link>https://ourword.ai/tw/i/fan-zhongyan/the-famine-ledger/</link><guid isPermaLink="true">https://ourword.ai/tw/i/fan-zhongyan/the-famine-ledger/</guid><description>范仲淹 · 縱民競渡——做法看著不像話、結果又沒出來，先把賬算給人看。災年裡你的做法最不像話，上面已來問罪。這一篇要回答的是：范仲淹在杭州被彈劾「嬉遊」，是怎麼答的。</description><pubDate>Mon, 19 Oct 2026 08:00:00 +0800</pubDate></item>
     <item><title>馮道 · 惟皇帝救得</title><link>https://ourword.ai/tw/i/feng-dao/only-you-can-save/</link><guid isPermaLink="true">https://ourword.ai/tw/i/feng-dao/only-you-can-save/</guid><description>馮道 · 惟皇帝救得——改不了局面，就改一句話。契丹滅晉，中原將被屠戮。這一篇要回答的是：一個沒有兵的人在那一刻能做什麼。</description><pubDate>Sat, 29 Aug 2026 08:00:00 +0800</pubDate></item>
     <item><title>馮道 · 長樂老自敘</title><link>https://ourword.ai/tw/i/feng-dao/the-long-happy-old-man/</link><guid isPermaLink="true">https://ourword.ai/tw/i/feng-dao/the-long-happy-old-man/</guid><description>馮道 · 長樂老自敘——一千年的爭議。他歷事四朝十帝，自號長樂老。這一篇要回答的是：罵他的和為他辯的，各自站在什麼位置上。</description><pubDate>Sat, 29 Aug 2026 08:00:00 +0800</pubDate></item>
     <item><title>馮異 · 大樹將軍</title><link>https://ourword.ai/tw/i/feng-yi/big-tree/</link><guid isPermaLink="true">https://ourword.ai/tw/i/feng-yi/big-tree/</guid><description>馮異 · 大樹將軍——只報經過，不報功勞。別人都在搶著報功，我不想去擠，可不擠又怕沒人記得。這一篇要回答的是：馮異從來不爭，功勞是怎麼一直記在他身上的。</description><pubDate>Sun, 27 Sep 2026 08:00:00 +0800</pubDate></item>

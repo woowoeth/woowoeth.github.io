@@ -116,6 +116,10 @@ SCENES = [
      [("hirschman", "rhetoric-of-reaction")]),
     ("没听我的，果然出事了，我还管吗？",
      [("feng-yi", "lost-at-dawn")]),
+    ("他否了我的方案，往后还得共事。",
+     [("fan-zhongyan", "the-quarrel-was-about-the-state")]),
+    ("上头说我做法不对，结果还没出。",
+     [("fan-zhongyan", "the-famine-ledger")]),
 ]),
 ("全票通过", "要做决定", [
     ("大家都这么做，这就算理由了吗。",

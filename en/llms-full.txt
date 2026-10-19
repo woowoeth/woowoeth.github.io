@@ -1,7 +1,7 @@
-# OurWord — 200 people and books on how the world actually works, across 2,600 years
+# OurWord — 201 people and books on how the world actually works, across 2,600 years
 # OurWord — See how people before you handled it.
 # https://ourword.ai/en/
-# Full corpus, plain text. 200 entrys.
+# Full corpus, plain text. 201 entrys.
 
 ========================================================================
 ## Albert Einstein
@@ -1541,6 +1541,40 @@ Li Ka-shing — Two and a half millennia apart, the same two rules: buy when nob
 
 ### Further
 Li Ka-shing Su Shi Sun Tzu Warren Buffett Han Feizi Pu Songling Guan Zhong Zhang Liang Zhuge Liang Li Bi The I Ching Napoleon Sima Yi Strategies of the Warring States Wang Jian Xiang Yu The Art of Worldly Wisdom Bai Gui Ray Dalio Hu Xueyan Jesse Livermore Records of the Grand Historian Nassim Taleb The Sovereign Individual Liu Yan
+
+========================================================================
+## Fan Zhongyan
+URL: https://ourword.ai/en/i/fan-zhongyan/
+Tags: Power and organisation, Medieval, Arguing the case
+
+Fan Zhongyan (Northern Song · 989–1052) — Arguing the case. A Northern Song statesman with a full biography in the History of Song. Born in 989 in Suzhou, he lost his father at two, was taken by his mother into a new family, and…
+
+### Q: What did this one leave behind?
+A Northern Song statesman with a full biography in the History of Song. Born in 989 in Suzhou, he lost his father at two, was taken by his mother into a new family, and studied hard until he passed the jinshi examination. At court he spoke out: a chart of promotions that accused the chief minister of favouritism got him sent away to Raozhou. Later he defended the north-west and, in 1043, set out ten proposals for reform; within about two years he asked to be relieved. This page is about how he argued within one court: what he said while arguing, how he worked with the man who had overruled him, and how he answered when his methods were challenged.
+
+### Q: What actually happened?
+Fan Zhongyan lost his father at two. His mother remarried into the Zhu family of Changshan, and the boy took their name and was called Zhu Yue. When he grew up and learned who his family had been, he wept, took leave of his mother and went to Yingtianfu to study. By day and night he hardly stopped; in winter, worn out, he splashed his face with cold water, and when there was no food he made do with thin porridge. Only after he passed the examination and brought his mother to live with him did he take back the name Fan.
+
+### The parts · Argue the case, not the man
+In the chart of officials he sorted names into those promoted in order and those not, those moved for the public good and those for private reasons. When Lü Yijian came back into office and the emperor asked him to forget it, he said he had argued state business and held no grudge. e.g. In a review you say the cost basis on page three does not add up, not that he always does this.
+
+### The parts · Charged with frivolity, lay out the method
+In the famine of 1050 he let Hangzhou race boats and had the temples build. An inspector charged him with neglecting relief; he answered item by item, saying it put money into the hands of people who live on wages. That year only Hangzhou saw no one forced to leave. e.g. Asked what a spend was for, you paste the model in.
+
+### The parts · Ten proposals at once draw their opponents together
+In 1043 he set out ten proposals, from judging officials on results to lightening labour service, and most were issued. The History of Song says the changes came without gradualness and were too wide in scope; slander spread, talk of faction reached the emperor, and he asked to be relieved. e.g. A reform that touches six departments in one quarter gives every department a reason to wait for it to fail.
+
+### Q: How do I use it today?
+Pick one proposal that was turned down in a meeting this month. Write down what you said when you argued, and mark which lines were about the decision and which were really about him. Cross out the second kind, and see what you would still say next time you sit at the same table.
+
+### Lines to keep
+Argue the list. Whoever wants to answer has to answer it first. Looking wrong is not being wrong, but you have to prove it. Changes made all at once gather their opponents all at once.
+
+### Q: What should I read alongside?
+Wei Zheng — Both said no to power to its face. Wei Zheng was telling an emperor, and was kept on as a remonstrator; Fan Zhongyan was taking on a chief minister, was sent away, and had to share a court with him afterwards. One is about getting those above you to listen, the other about the day after. Su Yu — Both had a plan turned down. Su Yu telegraphed his superiors a third time to bring it back; Fan Zhongyan was transferred for arguing, and years later sat in the same court as the man who had overruled him. One is about whether to bring it again, the other about how to live with the answer.
+
+### Further
+Wei Zheng Su Yu Zhang Juzheng Yan Ying
 
 ========================================================================
 ## Feng Dao
@@ -5509,10 +5543,10 @@ Facing something much larger, stop looking at its strongest product. Find the th
 Fight when you can win; withdraw when you cannot. Attack what they must relieve; destroy them as they withdraw. When the situation is clear, the decision can be bold.
 
 ### Q: What should I read alongside?
-Han Xin — Two commanders who made a habit of winning outnumbered: Han Xin by putting his own men where retreat was impossible, Su Yu by choosing what the enemy had to come and save. On War — He kept enlarging plans mid-operation, which is exactly the risk Clausewitz names: every step past your culminating point weakens you.
+Han Xin — Two commanders who made a habit of winning outnumbered: Han Xin by putting his own men where retreat was impossible, Su Yu by choosing what the enemy had to come and save. On War — He kept enlarging plans mid-operation, which is exactly the risk Clausewitz names: every step past your culminating point weakens you. Fan Zhongyan — Both had a plan turned down. Su Yu telegraphed his superiors a third time to bring it back; Fan Zhongyan was transferred for arguing, and years later sat in the same court as the man who had overruled him. One is about whether to bring it again, the other about how to live with the answer.
 
 ### Further
-Sun Tzu Han Xin On War John Boyd
+Sun Tzu Han Xin On War John Boyd Fan Zhongyan
 
 ========================================================================
 ## Sun Tzu
@@ -6804,10 +6838,10 @@ Pick one thing you recently disagreed with and nodded at. Go back and write down
 It is because you draw me out that I dare to speak. Do not nod to his face and complain behind his back. They say he is rough in manner; I only find him charming.
 
 ### Q: What should I read alongside?
-Yan Ying — Both said unwelcome things to their lords. Yan Ying went round it: the market price of crutches against shoes, and the duke cut the punishments himself. Wei Zheng said it to his face, and could, because Taizong was willing to be pushed and let him go on. Duke Wen of Jin — Duke Wen is the man whose old enemy comes knocking; Wei Zheng is the one who knocks, asked by Li Shimin about the past. The two pages look at the same meeting from either end.
+Yan Ying — Both said unwelcome things to their lords. Yan Ying went round it: the market price of crutches against shoes, and the duke cut the punishments himself. Wei Zheng said it to his face, and could, because Taizong was willing to be pushed and let him go on. Duke Wen of Jin — Duke Wen is the man whose old enemy comes knocking; Wei Zheng is the one who knocks, asked by Li Shimin about the past. The two pages look at the same meeting from either end. Fan Zhongyan — Both said no to power to its face. Wei Zheng was telling an emperor, and was kept on as a remonstrator; Fan Zhongyan was taking on a chief minister, was sent away, and had to share a court with him afterwards. One is about getting those above you to listen, the other about the day after.
 
 ### Further
-Li Shimin Yan Ying Duke Wen of Jin Xiao He Liu Xiu
+Li Shimin Yan Ying Duke Wen of Jin Xiao He Liu Xiu Fan Zhongyan
 
 ========================================================================
 ## Why Nations Fail
@@ -7094,7 +7128,7 @@ Shoes for the maimed are dear; ordinary shoes are cheap. To know me and show me 
 Li Shimin — Both are about getting words across between above and below. Li Shimin sat above, and with ministers like Wei Zheng he could stand to be contradicted. Yan Ying stood below, did not contradict, and handed over a figure so the man above could see it for himself. One teaches how to listen, the other how to speak. Han Feizi — Both guard against being walled in by the people around you. Han Feizi relies on technique and audit, against ministers who hide things. Yan Ying relies on being someone people dare to tell, and on hearing the man out when he is told he was wrong. One closes the gaps from the system, the other opens up in himself first. Wei Zheng — Both said unwelcome things to their lords. Yan Ying went round it: the market price of crutches against shoes, and the duke cut the punishments himself. Wei Zheng said it to his face, and could, because Taizong was willing to be pushed and let him go on.
 
 ### Further
-Guan Zhong Li Shimin Han Feizi The Analects Wei Zheng
+Guan Zhong Li Shimin Han Feizi The Analects Wei Zheng Fan Zhongyan
 
 ========================================================================
 ## Zeng Guofan
@@ -7171,7 +7205,7 @@ The hard part is not making the law; it is making sure the law is carried out. I
 Shang Yang — The reformer's fate in two versions: Shang Yang died and his system stood, Zhang Juzheng died and his was dismantled. The difference is who was left to defend it. Zhuge Liang — Two tragedies of being irreplaceable: after Zhuge Liang there was nobody to take over, after Zhang Juzheng the whole programme collapsed at once. The Old Regime and the Revolution — Two ways for a reformer to die: Zhang Juzheng touched interests and was settled with after his death; Tocqueville describes the quieter one, where the reform itself manufactures the force that overturns it.
 
 ### Further
-Guan Zhong Han Feizi Zeng Guofan Wang Yangming Shang Yang Otto von Bismarck Zhu Yuanzhang The Old Regime and the Revolution Liu Yan
+Guan Zhong Han Feizi Zeng Guofan Wang Yangming Shang Yang Otto von Bismarck Zhu Yuanzhang The Old Regime and the Revolution Liu Yan Fan Zhongyan
 
 ========================================================================
 ## Zhang Liang
@@ -11077,6 +11111,72 @@ Where it goes wrong: reading only whether the situation is favourable and never 
 You can share hardship with him. You cannot share ease.
 Three times he made a fortune, and three times gave it away.
 The construction of a person doesn't change. The situation does.
+
+========================================================================
+## Fan Zhongyan · A Quarrel About the State, Not the Man
+URL: https://ourword.ai/en/i/fan-zhongyan/the-quarrel-was-about-the-state/
+Source: History of Song, biography of Fan Zhongyan (juan 314)
+Tags: Deep read, Fan Zhongyan, If you will have to work with him afterwards, argue only the case
+
+Your proposal was turned down by someone you will still have to work with. How did Fan Zhongyan set down a quarrel with the chief minister who sent him away?
+
+### Q: What actually happened?
+Fan Zhongyan presented a chart of officials to the court and pointed out which men had been promoted in order and which skipped ahead, accusing the chief minister, Lü Yijian, of favouritism. Lü told the emperor that Fan was sowing discord and building a faction. Fan was posted away to Raozhou, and three men who spoke up for him were demoted too. Later Lü returned as chief minister, and the emperor told Fan to let the old grievance go. Fan bowed and said his criticism had been about the affairs of the state, and he held nothing against Lü.
+
+### The parts · Argue the list, not the man
+The chart had no insults in it. He laid out the register and sorted it: these were in order, these were not, this was done for the public good, that for private reasons. Anyone who wanted to answer him had to answer the list first.
+e.g. In a review you reject a colleague's plan by saying the cost basis on page three does not add up, not that he always does this.
+
+### The parts · Own the cost of being right
+The price was real: he was sent to Raozhou, and the men who spoke for him were demoted with him. Arguing the case does not mean escaping the consequences, and he did not turn round and run down the other side's character to recover.
+e.g. You object openly in the meeting, accept that some people are cooler towards you this quarter, and do not go round the office complaining about him.
+
+### The parts · "No grudge" holds only if none was there
+When Lü came back into office and the emperor asked Fan to forget it, his answer was that he had argued about state business and held nothing personal. That reply stood up because he had argued only the case; had a private quarrel been in it, Lü would have heard it.
+e.g. Two people who shouted at each other over a budget can sit down together next quarter, because the shouting was about the budget.
+
+### Q: How do I use it today?
+Where you are: a colleague or boss turned down your proposal, and you will keep working in the same project.
+Ask first: was what I said about this decision, or about my opinion of him? If someone else had made the same proposal, would I have said the same?
+Where it goes wrong: treating this as "put up with it". Fan did not take back his criticism when he was sent away; what he put down was the personal quarrel, not his judgement of the matter.
+
+### Lines to keep
+Argue the list. Anyone who wants to answer has to answer it first.
+The cost of being right is yours to pay, not his.
+He can say no grudge only because there was none.
+
+========================================================================
+## Fan Zhongyan · Boat Races in a Famine
+URL: https://ourword.ai/en/i/fan-zhongyan/the-famine-ledger/
+Source: Shen Kuo, Brush Talks from Dream Brook, juan 11; History of Song, biography of Fan Zhongyan
+Tags: Deep read, Fan Zhongyan, When what you are doing looks wrong and the results are not in, show your arithmetic
+
+What you are doing looks indefensible, and a superior already wants an answer. How did Fan Zhongyan reply when charged with frivolity in Hangzhou?
+
+### Q: What actually happened?
+In 1050 a great famine struck the Wu region and the dead lay along the roads. Fan, in charge in Zhejiang, handed out grain and hired labour. The people of Hangzhou loved boat races and Buddhist rites, so he let them race, feasted on the lake himself, and urged the temples to build while wages were low; the government built too, hiring a thousand a day. An inspector charged him with neglecting famine relief and with frivolity. Fan answered item by item: the feasts and the building were a way of getting money to people who had none. That year only Hangzhou saw no one forced to leave.
+
+### The parts · Absurd on its face, but the sums were done
+Feasting and building in a famine looks the least defensible thing to do. His sum was different: with wages low, if officials and temples hired more, money would pass from those who had it to those who had nothing. Tens of thousands depended on that work for a day's food.
+e.g. You schedule the refit in the off-season: the crew has work and the price is below the peak rate.
+
+### The parts · Charged, lay the method out
+The inspector said he was neglecting the famine. Fan did not argue about his own character or complain that no one understood. He answered by writing out, item by item, what each thing was for. Once the sums are on paper, whoever objects must bring a different set.
+e.g. Asked what a spend was for, you paste the model in, which does more than half an hour of explaining.
+
+### The parts · The same man had opposed building
+He was no friend of building as such. Years earlier he had objected when the court wanted to build the Taiyi Palace and a monastery, saying it drained the people's property. What differs between the two cases is where the money comes from and where it goes: one drains, one circulates.
+e.g. Two projects both labelled "investment": in one you make suppliers pay up front, in the other you pay people to work, and the ledgers run opposite ways.
+
+### Q: How do I use it today?
+Where you are: what you are doing looks out of line, someone above you wants an account, and the results are not in.
+Ask first: can I write out, line by line, what each step is for? Once I have, do I still want to do it?
+Where it goes wrong: treating this as "do it first and explain later". He acted within the one prefecture he ran and could say what each item was for; an action you cannot account for is not one to shelter behind his name.
+
+### Lines to keep
+Looking wrong is not being wrong, but you have to prove it.
+Put the sums on the page. Whoever objects must bring another set.
+The test is where the money comes from and where it goes.
 
 ========================================================================
 ## Feng Dao · Only the emperor can save them

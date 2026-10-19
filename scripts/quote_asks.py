@@ -655,4 +655,10 @@ QUOTE_ASKS = {
         "我拿他当朋友，他只当我有用。",
     "aristotle/when-a-friend-turns":
         "他变了，我还要认这个朋友吗？",
+
+    # 范仲淹
+    "fan-zhongyan/the-quarrel-was-about-the-state":
+        "他否了我的方案，往后还得共事。",
+    "fan-zhongyan/the-famine-ledger":
+        "上头说我做法不对，结果还没出。",
 }
