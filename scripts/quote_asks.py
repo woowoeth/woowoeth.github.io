@@ -661,4 +661,10 @@ QUOTE_ASKS = {
         "他否了我的方案，往后还得共事。",
     "fan-zhongyan/the-famine-ledger":
         "上头说我做法不对，结果还没出。",
+
+    # 子产
+    "zichan/noon-to-dusk":
+        "他们按大户的价压我，我怎么谈？",
+    "zichan/the-pair-of-rings":
+        "他要得不多，给一次又何妨？",
 }

@@ -1,11 +1,11 @@
 # OurWord (人類世界生存法則)
 
-> 201 people and books on how the world actually works, across 2,600 years
+> 202 people and books on how the world actually works, across 2,600 years
 > 遇到事了，看看以前的人怎麼處理
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 201 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 202 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
-一個關於「世界到底怎麼運轉」的知識庫：戰略、財富、權力、人性、創業，取自 201 位人物與典籍，跨越 2600 年。每一條都寫清楚這個人真正留下的那一個想法、背後的故事、拆開的分則與例子，以及今天怎麼用。
+一個關於「世界到底怎麼運轉」的知識庫：戰略、財富、權力、人性、創業，取自 202 位人物與典籍，跨越 2600 年。每一條都寫清楚這個人真正留下的那一個想法、背後的故事、拆開的分則與例子，以及今天怎麼用。
 
 ## Read it
 
@@ -20,8 +20,8 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 
 - [工業時代](https://ourword.ai/tw/t/industrial-age/) — 62
 - [現代](https://ourword.ai/tw/t/modern/) — 62
-- [先秦與古典時代](https://ourword.ai/tw/t/classical-era/) — 30
-- [權力與組織](https://ourword.ai/tw/t/power/) — 30
+- [先秦與古典時代](https://ourword.ai/tw/t/classical-era/) — 31
+- [權力與組織](https://ourword.ai/tw/t/power/) — 31
 - [心智與情緒](https://ourword.ai/tw/t/mind/) — 23
 - [創業與產品](https://ourword.ai/tw/t/startups/) — 20
 - [謀略與競爭](https://ourword.ai/tw/t/strategy/) — 20
@@ -528,6 +528,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [諸葛亮 · 隆中對](https://ourword.ai/tw/i/zhuge-liang/longzhong-plan/): 諸葛亮 · 隆中對——先說清哪一塊不能碰。一個二十七歲的人給出的戰略，管了後面幾十年。這一篇要回答的是：它最狠的地方在前半段。
 - [諸葛亮 · 親賢臣，遠小人](https://ourword.ai/tw/i/zhuge-liang/close-the-worthy/): 諸葛亮 · 親賢臣，遠小人——關住那條通道。這八個字被當成道德訓誡。這一篇要回答的是：諸葛亮說的其實是一件很具體的事——誰能單獨見到你。
 - [諸葛亮 · 揮淚斬馬謖](https://ourword.ai/tw/i/zhuge-liang/executing-ma-su/): 諸葛亮 · 揮淚斬馬謖——自己也一起罰。殺一個自己最看重的人，還不是最難的部分。這一篇要回答的是：他接著做的那件事才是。
+- [子產 · 從日中爭到昏](https://ourword.ai/tw/i/zichan/noon-to-dusk/): 子產 · 從日中爭到昏——對方按大戶的價壓你，先翻出他自己認的舊規矩。對方按大戶的價壓你。這一篇要回答的是：子產在平丘會盟上，一個小國的執政，憑什麼在晉人面前把貢賦爭下來。
+- [子產 · 一環不給](https://ourword.ai/tw/i/zichan/the-pair-of-rings/): 子產 · 一環不給——他要得不多，不給，是因為這一次給了，下一次就沒法不給。對方只要一件小東西。這一篇要回答的是：韓宣子向鄭國要一隻玉環，子產為什麼不給，又怎麼讓他自己收回了話。
 - [資治通鑑 · 才德之辨](https://ourword.ai/tw/i/zizhi-tongjian/talent-and-virtue/): 資治通鑑 · 才德之辨——才勝德的人最危險。全書第一篇的第一個議論，講的是選人。這一篇要回答的是：司馬光為什麼把它放在最前面。
 - [資治通鑑 · 善可為法，惡可為戒](https://ourword.ai/tw/i/zizhi-tongjian/what-to-keep/): 資治通鑑 · 善可為法，惡可為戒——先定收錄標準。一千三百六十二年的事，怎麼決定哪些寫、哪些不寫？這一篇要回答的是：他只用了一條標準。
 
@@ -542,7 +544,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [AI Bubble Monitor / AI 泡沫檢測儀](https://ourword.ai/ai/)
 - [Zouni / 走你](https://ourword.ai/zouni/)
 
-## Index (201 entrys)
+## Index (202 entrys)
 
 - [BJ·福格](https://ourword.ai/tw/i/bj-fogg/): BJ·福格（2019年·斯坦福行為設計實驗室）——小到不會失敗。斯坦福行為設計實驗室創始人，研究行為如何被設計出來。他給出一個公式：行為發生需要動機、能力、提示三者同時到位。多數人失敗在只調動機——靠決心和自我激勵——而動機天然起伏，靠它維持的習慣必然崩。他的主張相反：把行為縮到小得不需要動機，然後掛在一個已有的動作後面。
 - [C.S.劉易斯](https://ourword.ai/tw/i/cs-lewis/): C.S.劉易斯（1898-1963年·英國牛津）——妻子死後幾個月的日記。作家，牛津和劍橋的教授，寫過《納尼亞傳奇》和大量勸人信仰的書。五十八歲結婚，妻子喬伊四年後因癌症去世。之後幾個月他在四本練習簿上記自己的狀態，後來用筆名出版，就是《卿卿如晤》。收他是因為「重要的人走了」那六個問題，原來靠弗蘭克爾和蘇軾在答——一個是集中營的倖存者，一個是被貶的官員
@@ -602,6 +604,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [大野耐一](https://ourword.ai/tw/i/ohno/): 大野耐一（1912-1990年·日本豐田）——問五次為什麼。豐田生產方式的主要建立者。他在車間裡做出來的幾件事後來成了整個製造業的常識：問五次為什麼、任何工人都可以拉繩停線、把庫存壓低讓問題露出來。收他是因為「把事做成」和「帶人」兩組裡，錯反覆犯、交上來走樣、成本降不動這幾個問題，原來答的多是道理；他是把這幾件事一條條做出來的人，每一條都
 - [契克森米哈賴](https://ourword.ai/tw/i/csikszentmihalyi/): 契克森米哈賴（1990年·芝加哥大學）——心流。心理學家，用「經驗取樣法」研究人什麼時候最投入——給幾千人配呼叫器，隨機時刻響起就記錄當下在做什麼、感覺如何。他發現最好的體驗不是放鬆，而是一種全神貫注到忘記時間的狀態，他稱之為心流。觸發條件很具體：任務難度與你的能力剛好匹配，目標清晰，反饋即時。三者缺一，人要麼焦慮要麼無聊。
 - [奧古斯丁](https://ourword.ai/tw/i/augustine/): 奧古斯丁（354-430年·北非希波）——賜我貞潔，但不是現在。基督教思想家，《懺悔錄》的作者。這本書是他四十多歲回頭寫自己的前半生：十六歲偷梨、年輕時的放縱、想改改不動、三十二歲在一個花園裡的下午終於改了過來。收他是因為「知道做不到」「拖著不開始」「想戒又戒不掉」這幾組問題，原來答的是原子習慣、福格、老鼠公園——都是方法；他是一千六百年前把
+- [子產](https://ourword.ai/tw/i/zichan/): 子產（春秋·鄭·前522年卒）——據理。春秋後期鄭國的執政，名公孫僑，字子產。鄭國夾在晉、楚兩個大國之間，他執政二十多年，對外不卑不亢，對內定章程。《左傳》記他的事最多，《史記·循吏列傳》有傳。這一頁只取他怎麼和比自己大得多的一方談條件：先拿出對方自己也認的舊規矩，再說難處；對方開口要東西，先想第一次讓了，往後拿什麼理
 - [孫子兵法](https://ourword.ai/tw/i/sun-tzu/): 孫子兵法（春秋·前500年前後）——先勝後戰。十三篇，中國最重要的戰略體系，2500年來被兵家、商家、政治家反覆研讀。孫子的核心邏輯是：贏家在開戰前就確保了勝利，失敗者是先打再想怎麼贏。這不是在說運氣，是在說準備的深度決定結果的高度。孫子本人憑此書被吳王重用，以三萬兵破楚國二十萬，攻入楚國都城郢。
 - [孟子](https://ourword.ai/tw/i/mencius/): 孟子（戰國·前372—前289）——得民。孔子之後最能把儒家寫成統治操作系統的人。他不把「仁」當成德行標語，而是當成權力能不能續上的約束條件：稅、兵、殺人權一旦失據，政權先空再垮。周遊列國而不遇合，這份清醒沒換來官位，卻把「民為貴」寫成了後世治國者躲不掉的警句。
 - [安迪·格魯夫](https://ourword.ai/tw/i/grove/): 安迪·格魯夫（美國·1936-2016）——戰略轉折點。英特爾第三號員工、第四任 CEO。接手時英特爾是一家被日本人打到牆角的內存公司，卸任時是全球最大的芯片公司，市值增長約 30 倍。他真正的貢獻不是造芯片，是把「一家已經贏了的公司如何不死」寫成了方法論——《只有偏執狂才能生存》講戰略轉折點，《高產出管理》是今天所有 OKR 與一對

@@ -46,6 +46,7 @@ NAMES = {
     "liu-bang": ("Liu Bang", "Power and organisation"),
     "liu-xiu": ("Liu Xiu", "Power and organisation"),
     "fan-zhongyan": ("Fan Zhongyan", "Power and organisation"),
+    "zichan": ("Zichan", "Power and organisation"),
     "xiao-he": ("Xiao He", "Power and organisation"),
     "zhao-wuling-wang": ("King Wuling of Zhao", "Power and organisation"),
     "zhou-gong": ("The Duke of Zhou", "Power and organisation"),

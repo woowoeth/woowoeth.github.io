@@ -11,6 +11,7 @@ SLUGS = {
     "魏征": "wei-zheng",
     "刘秀": "liu-xiu",
     "范仲淹": "fan-zhongyan",
+    "子产": "zichan",
     "托尔斯坦·凡勃伦": "veblen",
     "西蒙娜·德·波伏瓦": "beauvoir",
     "索伦·克尔凯郭尔": "kierkegaard",

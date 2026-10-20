@@ -1,7 +1,7 @@
-# OurWord — 201 people and books on how the world actually works, across 2,600 years
+# OurWord — 202 people and books on how the world actually works, across 2,600 years
 # OurWord — See how people before you handled it.
 # https://ourword.ai/en/
-# Full corpus, plain text. 201 entrys.
+# Full corpus, plain text. 202 entrys.
 
 ========================================================================
 ## Albert Einstein
@@ -1987,7 +1987,7 @@ Full granaries, and the people know propriety. The way to govern a state must be
 Shang Yang — Two routes to a strong state: Guan Zhong enriches the people and the state follows, Shang Yang installs the law and the wealth follows. Zhuge Liang — Two first ministers serving an ambitious lord. Guan Zhong's man became hegemon; Zhuge Liang's cause never arrived. Lee Kuan Yew — Two operators building a small state from nothing, twenty-six centuries apart: Guan Zhong through trade and price control, Lee through institutions and balance. The Wealth of Nations — Two origins for the idea of national wealth: Guan Zhong steers prices and money from the centre, Smith lets price discover itself. The argument has not moved in twenty-five centuries.
 
 ### Further
-The Wealth of Nations Fan Li Sun Tzu Han Feizi Cao Cao Lee Kuan Yew Shang Yang Zhang Juzheng Liu Yan Duke Wen of Jin King Wuling of Zhao Yan Ying
+The Wealth of Nations Fan Li Sun Tzu Han Feizi Cao Cao Lee Kuan Yew Shang Yang Zhang Juzheng Liu Yan Duke Wen of Jin King Wuling of Zhao Yan Ying Zichan
 
 ========================================================================
 ## Guiguzi
@@ -3492,10 +3492,10 @@ If you are facing someone stronger who will not play fair, don't start by arguin
 Better to agree and leave the wrong with Qin. Within five paces, I can spatter Your Majesty with my blood. When two tigers fight, one of them does not survive. The state's emergency first, my private quarrel second.
 
 ### Q: What should I read alongside?
-Gandhi — Both face a stronger party that will not reason and neither relies on force: Gandhi puts the other side's violence in front of everyone until it loses its legitimacy, while Lin moves earlier, choosing before anyone acts the path on which a broken promise can only be theirs, and keeping something he can take back. Zhang Liang — Both step back when they could press their claim: Zhang Liang turned down thirty thousand households for one small county, yielding to his ruler to disarm suspicion, while Lin yielded to a colleague to keep standing the one line of defence the two of them held together.
+Gandhi — Both face a stronger party that will not reason and neither relies on force: Gandhi puts the other side's violence in front of everyone until it loses its legitimacy, while Lin moves earlier, choosing before anyone acts the path on which a broken promise can only be theirs, and keeping something he can take back. Zhang Liang — Both step back when they could press their claim: Zhang Liang turned down thirty thousand households for one small county, yielding to his ruler to disarm suspicion, while Lin yielded to a colleague to keep standing the one line of defence the two of them held together. Zichan — Both held out for a small state against a great one. Lin Xiangru did it with nerve in a single confrontation in front of the king of Qin; Zichan did it with an old rule and a day-long argument. One is a moment, the other is an afternoon.
 
 ### Further
-Guo Ziyi Zhang Liang Gandhi Su Shi
+Guo Ziyi Zhang Liang Gandhi Su Shi Zichan
 
 ========================================================================
 ## Liu Bang
@@ -5475,7 +5475,7 @@ There is no tiger in the marketplace, and three men can make one. My wife favour
 Sun Tzu — One states principles that can be taught in public; the other records what was actually said to one man on one day to change his mind. The Analects — Two faces of the same broken age: one on what a person ought to become, the other on how people behaved. Read only one and you end up naive or cynical. Thomas Schelling — Two arts of negotiation: the persuaders change what the other side believes, Schelling changes what the other side can choose.
 
 ### Further
-Sun Tzu Fan Li Records of the Grand Historian Han Feizi Guiguzi Thomas Schelling The Annals of Lu Buwei
+Sun Tzu Fan Li Records of the Grand Historian Han Feizi Guiguzi Thomas Schelling The Annals of Lu Buwei Zichan
 
 ========================================================================
 ## Su Shi
@@ -6517,7 +6517,7 @@ Next time you are stuck, do not raise the threat. Ask why they believe you will 
 The power to constrain an adversary may depend on the power to bind oneself. In bargaining, weakness is often strength. A promise that costs nothing carries no information.
 
 ### Q: What should I read alongside?
-Strategies of the Warring States — Two arts of negotiation: the persuaders change what the other side believes, Schelling changes what the other side can choose. Nassim Taleb — Skin in the game and credible commitment are one coin: Taleb uses cost to decide whose word to trust, Schelling to make his own word land. Chris Voss — The two halves of bargaining: Schelling works on structural commitments and threats, Voss on the language in the room. One alters the payoff matrix, the other alters the person. Robert Axelrod — Both answer why should I believe you: Schelling has you burn your own way out so the promise is credible right now, Axelrod says credibility depends on how many rounds are still to come.
+Strategies of the Warring States — Two arts of negotiation: the persuaders change what the other side believes, Schelling changes what the other side can choose. Nassim Taleb — Skin in the game and credible commitment are one coin: Taleb uses cost to decide whose word to trust, Schelling to make his own word land. Chris Voss — The two halves of bargaining: Schelling works on structural commitments and threats, Voss on the language in the room. One alters the payoff matrix, the other alters the person. Robert Axelrod — Both answer why should I believe you: Schelling has you burn your own way out so the promise is credible right now, Axelrod says credibility depends on how many rounds are still to come. Zichan — Both write about the weaker party in a negotiation. Schelling teaches you to tie your own hands so the other side knows you cannot retreat; Zichan ties nothing, he finds the rule the other side has already accepted so it cannot call him wrong. One works by commitment, the other by the opponent's own words.
 
 ### Further
 Strategies of the Warring States Han Feizi Peter Thiel Nassim Taleb Sun Tzu Otto von Bismarck Chris Voss Robert Axelrod
@@ -7128,7 +7128,7 @@ Shoes for the maimed are dear; ordinary shoes are cheap. To know me and show me 
 Li Shimin — Both are about getting words across between above and below. Li Shimin sat above, and with ministers like Wei Zheng he could stand to be contradicted. Yan Ying stood below, did not contradict, and handed over a figure so the man above could see it for himself. One teaches how to listen, the other how to speak. Han Feizi — Both guard against being walled in by the people around you. Han Feizi relies on technique and audit, against ministers who hide things. Yan Ying relies on being someone people dare to tell, and on hearing the man out when he is told he was wrong. One closes the gaps from the system, the other opens up in himself first. Wei Zheng — Both said unwelcome things to their lords. Yan Ying went round it: the market price of crutches against shoes, and the duke cut the punishments himself. Wei Zheng said it to his face, and could, because Taizong was willing to be pushed and let him go on.
 
 ### Further
-Guan Zhong Li Shimin Han Feizi The Analects Wei Zheng Fan Zhongyan
+Guan Zhong Li Shimin Han Feizi The Analects Wei Zheng Fan Zhongyan Zichan
 
 ========================================================================
 ## Zeng Guofan
@@ -7388,6 +7388,40 @@ Sima Yi — Talent against longevity: Zhuge Liang burned out at fifty-four, Sima
 
 ### Further
 Cao Cao Sun Tzu Zeng Guofan Fan Li Sima Yi Li Shimin The Comprehensive Mirror Liu Xiu
+
+========================================================================
+## Zichan
+URL: https://ourword.ai/en/i/zichan/
+Tags: Power and organisation, Pre-Qin and classical, Standing on the rule
+
+Zichan (Spring and Autumn · Zheng · d. 522 BC) — Standing on the rule. Gongsun Qiao, known as Zichan, ran the state of Zheng for over twenty years in the sixth century BC.
+
+### Q: What did this one leave behind?
+Gongsun Qiao, known as Zichan, ran the state of Zheng for over twenty years in the sixth century BC. Zheng sat between two great powers, Jin and Chu, and he dealt with both without grovelling to either, while setting rules at home. The Zuo Commentary records his deeds at length, and Sima Qian gave him a biography among the 'upright officials'. This page takes one thing from him: how a small state talks to a far bigger one. Quote a rule the other side already accepts, then state your difficulty, and when they ask for something small, work out what the first yes will cost every day after it.
+
+### Q: What actually happened?
+In his first year running Zheng, the people sang a song against Zichan: take away my clothes and cap, carve my fields into groups of five households, and whoever kills Zichan, I will join him. In the third year the words changed: if I have sons, Zichan teaches them; if I have fields, Zichan feeds them; if Zichan dies, who will take his place?
+
+### The parts · Speak from the other side's own rule
+At Pingqiu, Jin wanted little Zheng to pay tribute at a marquis's rate. He did not open with hardship. He set out the Zhou schedule of tribute by rank, then said Zheng could not meet that figure. The other side can dispute your hardship, but it is hard to deny its own rule. e.g. Given a big-client price, you show the price list they quote to firms your size before you state your budget.
+
+### The parts · The first price is every later price
+Han Xuanzi wanted a jade ring and others urged giving it. Zichan counted the future: if a great state's envoys get whatever they ask for, nothing is left to give later, and a yes followed by a no offends more than a no at the start. He refused the way the thing was asked for, not Jin. e.g. A client gets one free feature from you in the first quarter; by the next, as far as he is concerned, it is in the contract.
+
+### The parts · Firm outside because something is done inside
+He reorganised the fields and the taxes; for a year the people cursed him and by the third they hoped he would not die. A small state's chief minister could argue until dark in front of Jin because there were people at home on his side. e.g. Before you bargain with the people above you, check you hold one finished result they can see.
+
+### Q: How do I use it today?
+Pick one condition you will negotiate next week and write two lines: the rule the other side already accepts; and, if I give way this once, what reason I will have to refuse next time. If you cannot write the second line, do not give way yet.
+
+### Lines to keep
+Covenants are sworn to keep small states alive. Yield once and refuse once, and the offence is worse. A state that will not contest is trampled all the same.
+
+### Q: What should I read alongside?
+Thomas Schelling — Both write about the weaker party in a negotiation. Schelling teaches you to tie your own hands so the other side knows you cannot retreat; Zichan ties nothing, he finds the rule the other side has already accepted so it cannot call him wrong. One works by commitment, the other by the opponent's own words. Lin Xiangru — Both held out for a small state against a great one. Lin Xiangru did it with nerve in a single confrontation in front of the king of Qin; Zichan did it with an old rule and a day-long argument. One is a moment, the other is an afternoon.
+
+### Further
+Yan Ying Lin Xiangru Strategies of the Warring States Guan Zhong
 <!-- chapters:begin -->
 ========================================================================
 ## Alfred Adler · Whose task is this
@@ -23522,6 +23556,71 @@ Where it goes wrong: closing the file once the executor is dealt with; or stoppi
 He executed Ma Su to answer to the army.
 I was not clear-sighted about men, and muddled in handling affairs.
 By the rule of the Spring and Autumn, the commander answers for it.
+
+========================================================================
+## Zichan · From Noon to Dusk
+URL: https://ourword.ai/en/i/zichan/noon-to-dusk/
+Source: Zuo Commentary, Duke Zhao, year 13
+Tags: Deep read, Zichan, When they price you like a big player, find the rule they already accept
+
+They price you like a big player. How did Zichan, head of a small state, get mighty Jin to lower its tribute?
+
+### Q: What actually happened?
+In 529 BC Jin gathered the lords at Pingqiu to swear a covenant, and expected little Zheng to pay tribute at the rate of a marquis. When the oath was sworn, Zichan spoke up. In the Zhou system, he said, the higher the rank the heavier the tribute, and Zheng's ruler ranked as a baron. To make him pay like a marquis was to ask for what he could not supply. He asked Jin to change it. He argued from noon until dark, and Jin gave way.
+
+### The parts · Start with the rule they already accept
+He did not open with "we cannot afford it". He opened with the Zhou schedule Jin itself recognised: the higher the rank, the heavier the tribute. Zheng's ruler was a baron, asked to pay like a marquis. The hardship came last, in one sentence, as a consequence of that rule.
+e.g. Handed a big-client price, you first show the price list they quote to firms your size, then your budget.
+
+### The parts · Count the other side's interest too
+He did not say only that Zheng was losing. A covenant, he said, exists to keep small states alive; tribute without a limit leaves them short, gives offence, and ends them. Which of those it would be was being settled that day. He spoke for the covenant's own purpose.
+e.g. Haggling over payment terms with a large customer, you say the delay will break their own supply line first, not that you are short of cash.
+
+### The parts · Judge when they cannot spare the attention, then outlast them
+He argued from noon to dusk, and Jin agreed. Afterwards a colleague feared punishment. Zichan answered that Jin's government had many doors and no time for reprisals, and that a state which will not contest is trampled anyway. He pressed because he had judged Jin could not turn on him that day.
+e.g. The other side is racing another deadline and does not want a fight over your order, so one more round counts for more than usual.
+
+### Q: How do I use it today?
+Where you are: The other side has priced you like a large player, and you are the smaller one.
+Ask first: What rule do they already accept, and can I put it on the table before my hardships?
+Where it goes wrong: Treating it as "never give way". It worked because the rule was Jin's own and Jin could not spare the attention that day; without both, sitting until dark is just stubbornness.
+
+### Lines to keep
+Covenants are sworn to keep small states alive.
+Tribute without limit, and ruin is only a matter of time.
+A state that will not contest is trampled all the same.
+
+========================================================================
+## Zichan · The Ring He Would Not Give
+URL: https://ourword.ai/en/i/zichan/the-pair-of-rings/
+Source: Zuo Commentary, Duke Zhao, year 16
+Tags: Deep read, Zichan, When they ask for little, remember that the first yes sets the price of every later one
+
+They want only one small thing. Why did Zichan refuse a jade ring to Jin's Han Xuanzi, and how did the envoy end up withdrawing his own request?
+
+### Q: What actually happened?
+Han Xuanzi of Jin, visiting Zheng, owned one of a pair of jade rings; the other was in the hands of a Zheng merchant. He asked the ruler of Zheng for it, and Zichan refused: it was not state property, and his lord knew nothing of it. Colleagues urged him to give way rather than offend a great state. Zichan answered that a great state's demands never end, so how long could Zheng go on meeting them? Yield once and refuse once, and the offence is worse.
+
+### The parts · Not state property, so not his to give
+His first reason was authority, not mood: the ring was not the government's to hand over, and his lord did not know of it. When what they ask lies outside what you can give, say where the boundary is. It lands better than "I would rather not".
+e.g. A client asks for another client's contact list; you say the list is not yours to share, not that you would rather not.
+
+### The parts · The first price is every later price
+His colleagues counted the cost of one ring. Zichan counted the cost of the habit: if visitors from a great state get whatever they ask for, how long can that last? A yes followed later by a no offends more than a no from the start.
+e.g. A client gets one free feature from you in the first quarter; by the next, as far as he is concerned, it is in the contract.
+
+### The parts · Quote the oath they both swore, and let them withdraw
+Han bought the ring from the merchant, who said he must tell the officials. Zichan cited Zheng's old oath with its merchants: we will not seize from you, you will not turn on us. Taking the ring, he said, would teach Zheng to break it. Han withdrew.
+e.g. The other side wants an exception; you point to the clause they signed themselves, not to how you feel.
+
+### Q: How do I use it today?
+Where you are: Someone is asking for a small thing that is not yours to give.
+Ask first: If I give this once, what reason will I have to refuse next time, and is there a rule they have already signed up to?
+Where it goes wrong: Treating it as "never yield to the big party". The ring was not the state's to give, and there was a mutual oath to cite; without both, refusing is just offending.
+
+### Lines to keep
+A great state asks without limit. How long can a small one keep giving?
+You would not take the jade and lose the lords.
 
 ========================================================================
 ## The Comprehensive Mirror · Talent and character

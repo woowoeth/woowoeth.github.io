@@ -1,9 +1,9 @@
 # OurWord (OurWord)
 
-> 201 people and books on how the world actually works, across 2,600 years
+> 202 people and books on how the world actually works, across 2,600 years
 > See how people before you handled it.
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 201 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 202 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
 ## Read it
 
@@ -18,8 +18,8 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 
 - [Modern](https://ourword.ai/en/t/modern/) — 66
 - [The industrial age](https://ourword.ai/en/t/the-industrial-age/) — 58
-- [Power and organisation](https://ourword.ai/en/t/power-and-organisation/) — 30
-- [Pre-Qin and classical](https://ourword.ai/en/t/pre-qin-and-classical/) — 29
+- [Power and organisation](https://ourword.ai/en/t/power-and-organisation/) — 31
+- [Pre-Qin and classical](https://ourword.ai/en/t/pre-qin-and-classical/) — 30
 - [Mind and feeling](https://ourword.ai/en/t/mind-and-feeling/) — 22
 - [How the world works](https://ourword.ai/en/t/how-the-world-works/) — 20
 - [Learning and growth](https://ourword.ai/en/t/learning-and-growth/) — 20
@@ -522,6 +522,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [Zhuge Liang · The plan at Longzhong](https://ourword.ai/en/i/zhuge-liang/longzhong-plan/): Zhuge Liang · The plan at Longzhong — The first half is what not to touch. A twenty-seven-year-old lays out a strategy that governs the next several decades. Its hardest work is done in the opening section.
 - [Zhuge Liang · Near the worthy, far from the small](https://ourword.ai/en/i/zhuge-liang/close-the-worthy/): Zhuge Liang · Near the worthy, far from the small — It is about who can reach you alone. Eight characters usually read as a moral instruction. What he means is narrower and more mechanical: who is able to see you privately.
 - [Zhuge Liang · The tears, and then the demotion](https://ourword.ai/en/i/zhuge-liang/executing-ma-su/): Zhuge Liang · The tears, and then the demotion — He put himself on the same list. Executing the man he had promoted is not the hard part of this story. What he did immediately afterwards is.
+- [Zichan · From Noon to Dusk](https://ourword.ai/en/i/zichan/noon-to-dusk/): Zichan · From Noon to Dusk — When they price you like a big player, find the rule they already accept. They price you like a big player. How did Zichan, head of a small state, get mighty Jin to lower its tribute?
+- [Zichan · The Ring He Would Not Give](https://ourword.ai/en/i/zichan/the-pair-of-rings/): Zichan · The Ring He Would Not Give — When they ask for little, remember that the first yes sets the price of every later one. They want only one small thing. Why did Zichan refuse a jade ring to Jin's Han Xuanzi, and how did the envoy end up withdrawing his own request?
 - [The Comprehensive Mirror · Talent and character](https://ourword.ai/en/i/zizhi-tongjian/talent-and-virtue/): The Comprehensive Mirror · Talent and character — The dangerous man is the able one. The first argument in the first book of the whole work is about choosing people. This is about why it sits there.
 - [The Comprehensive Mirror · Worth copying, worth avoiding](https://ourword.ai/en/i/zizhi-tongjian/what-to-keep/): The Comprehensive Mirror · Worth copying, worth avoiding — Fix the selection rule first. One thousand three hundred and sixty-two years of events. This is about the single rule that decided what went in.
 
@@ -536,7 +538,7 @@ Cite the individual page URL, not the homepage — each entry page is stable and
 - [AI Bubble Monitor](https://ourword.ai/ai/)
 - [Zouni](https://ourword.ai/zouni/)
 
-## Index (201 entrys)
+## Index (202 entrys)
 
 - [Albert Einstein](https://ourword.ai/en/i/einstein/): Albert Einstein (Germany · 1879–1955) — Imagination. The physicist, and the father of relativity — but the legacy that travels furthest is not a formula, it is a way of working.
 - [Albert O. Hirschman](https://ourword.ai/en/i/hirschman/): Albert O. Hirschman (United States · 1915-2012) — Voice. A German-born American economist. He left Berlin in 1933, fought in Spain in 1936, spent 1940 in Marseille forging papers and finding mountain…
@@ -739,3 +741,4 @@ Cite the individual page URL, not the homepage — each entry page is stable and
 - [Zhu Yuanzhang](https://ourword.ai/en/i/zhu-yuanzhang/): Zhu Yuanzhang (Ming · 1328–1398) — Nothing to lose. The most complete rise from the bottom in Chinese history. Starting point: a sixteen-year-old orphan whose family had died in a famine, begging…
 - [Zhuangzi](https://ourword.ai/en/i/zhuangzi/): Zhuangzi (Warring States · c. 369–286 BC) — Free and equal. The second peak of Daoism, and a very different writer from Laozi. Where Laozi addresses the person who has to govern, Zhuangzi addresses…
 - [Zhuge Liang](https://ourword.ai/en/i/zhuge-liang/): Zhuge Liang (Three Kingdoms · 181–234) — The Longzhong plan. The most admired administrator in Chinese history, and the standard image of both strategic foresight and working yourself to death.
+- [Zichan](https://ourword.ai/en/i/zichan/): Zichan (Spring and Autumn · Zheng · d. 522 BC) — Standing on the rule. Gongsun Qiao, known as Zichan, ran the state of Zheng for over twenty years in the sixth century BC.

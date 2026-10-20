@@ -362,6 +362,10 @@ SCENES = [
      [("schelling", "focal-points"), ("crowd", "assert-repeat-contaminate")]),
     ("眼前这笔我亏了，值不值得。",
      [("strategies-of-the-warring-states", "burning-the-debts"), ("guiguzi", "open-and-close")]),
+    ("他们按大户的价压我，我怎么谈？",
+     [("zichan", "noon-to-dusk")]),
+    ("他要得不多，给一次又何妨？",
+     [("zichan", "the-pair-of-rings")]),
 ]),
 ("被猜忌", "跟人打交道", [
     ("我替大家扛了事，回头却被怀疑。",
