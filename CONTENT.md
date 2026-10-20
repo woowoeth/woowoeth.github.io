@@ -185,7 +185,7 @@ python3 scripts/build_all.py      # 第一遍：把新条目的页面目录建�
 python3 scripts/gen_og.py         # 分享图，必须在**最后一遍** build_all 之前
 # 英文分享图不用单独跑：build_en 会在清空并重建 en/ 之后自己出图（scripts/gen_og_en.py），check_en ⑰ 守着
 python3 scripts/build_all.py      # 第二遍：build_tw 这次才复制得到 og.png
-python3 scripts/gate.py           # 十九道闸
+python3 scripts/gate.py           # 二十三道闸；它自己会提示「提交前跑 --full」（约 13 分钟，会被后台超时杀，用后台跑 + 轮询）
 python3 scripts/gate_selftest.py  # 反向验：注入缺陷必须被拦下
 ```
 
