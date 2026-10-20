@@ -400,6 +400,24 @@ def _drop_og():
     return go
 
 
+QPAGE = os.path.join(ROOT, "i", "su-shi", "index.html")
+
+
+def _quote_marker():
+    """在一个条目页的金句段里放回字面的「==」——模拟去标记那一步丢了。"""
+    def go():
+        if not os.path.exists(QPAGE):
+            return False
+        t = read(QPAGE)
+        i = t.find('<section class="quotes" id="quotes">')
+        j = t.find("<p>", i) if i >= 0 else -1
+        if j < 0:
+            return False
+        write(QPAGE, t[:j + 3] + "==" + t[j + 3:])
+        return True
+    return go
+
+
 OMITTAB = os.path.join(ROOT, "seo", "hw_omit.py")
 
 
@@ -1677,6 +1695,7 @@ CASES = [
     ("问题·过长",       "check_questions.py", SCENES, _q_sub("我每天都在想这件事情到底该怎么办才好呢真的很累"), "过长"),
     ("覆盖·坏引用",     "check_coverage.py",  SCENES, _bad_ref(),           "引用指向不存在的章节"),
     ("完整·缺分享图",   "check_integrity.py", OGPNG,  _drop_og(),           "章节无分享图"),
+    ("完整·金句露出标记", "check_integrity.py", QPAGE, _quote_marker(), "金句段露出标记"),
     ("完整·条目没归类", "check_integrity.py", KINDTAB, _unclassify(),      "条目没有归类"),
     ("完整·典籍没问不取", "check_integrity.py", OMITTAB, _drop_omit(), "典籍没问过不取哪部分"),
     ("重复·同页重块",   "check_repetition.py", PAGE,  _html_ins(PAGE, "<p>%s</p>" % MARK, 2), MARK),

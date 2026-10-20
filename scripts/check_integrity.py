@@ -20,6 +20,7 @@
 
 每一条都曾经是「我以为做完了」。现在改成构建失败。
 """
+import glob
 import json
 import os
 import re
@@ -205,6 +206,13 @@ for e in entries:
         continue
     if '<h2 class="sec-k">金句</h2>' not in open(_f, encoding="utf-8").read():
         _no_q.append(e["n"])
+# 金句段露出字面「==」：条目数据里 q 用 ==…== 标「今日一句」的重点，条目页要去掉标记再输出。
+# 2026-10-20 站主看到 41 个条目页上「==你是爱……==」原样露着。从产物出发查，不看渲染代码。
+for _f in sorted(glob.glob("i/*/index.html")):
+    _t = open(_f, encoding="utf-8").read()
+    _m = re.search(r'<section class="quotes" id="quotes">(.*?)</section>', _t, re.S)
+    if _m and "==" in _m.group(1):
+        bad("金句段露出标记", "%s 的金句段里有字面的「==」（高亮标记没去掉）" % _f)
 for _n in _no_q:
     if _n not in LEGACY_NO_QUOTES:
         bad("金句段未渲染",

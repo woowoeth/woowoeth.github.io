@@ -2126,7 +2126,9 @@ def theme_widget():
         ':root[data-theme="dark"] .map,:root[data-theme="dark"] .map *,'
         ':root[data-theme="dark"] .rel,:root[data-theme="dark"] .rel *{background-color:transparent}'
         ':root[data-theme="dark"] .map,:root[data-theme="dark"] .rel{background:var(--surface)!important}'
-        ':root[data-theme="dark"] .map-cat,:root[data-theme="dark"] .map-list,'
+        # 深度阅读：只有每张卡片自己有底色。外框 .map-cat 和列表 .map-list 原来也被涂成 surface，
+        # 深色下卡片背后多垫了一整块背景，标题四周和卡片缝里都看得见（站主 2026-10-20 指出）。
+        ':root[data-theme="dark"] .map-cat,:root[data-theme="dark"] .map-list{background:transparent!important}'
         ':root[data-theme="dark"] .map-row{background:var(--surface)!important;border-color:var(--rule)!important}'
         ':root[data-theme="dark"] .map-n{color:var(--ink)!important}'
         ':root[data-theme="dark"] .map-w,:root[data-theme="dark"] .map-line{color:var(--muted)!important}'

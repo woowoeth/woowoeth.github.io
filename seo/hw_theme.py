@@ -528,7 +528,9 @@ def _render_blocks(it, zh):
     if keep:
         toc.append(("quotes", "金句"))
         html.append('<section class="quotes" id="quotes"><h2 class="sec-k">金句</h2>')
-        html.extend("<blockquote><p>%s</p></blockquote>" % esc(q) for q in keep)
+        # 条目数据里 q 的第一句常用 ==…== 标「今日一句」的重点（首页用）；条目页金句段原样
+        # 输出，41 个条目页上露出了字面的「==」。这里去掉标记再输出。
+        html.extend("<blockquote><p>%s</p></blockquote>" % esc(q.replace("==", "")) for q in keep)
         html.append("</section>")
     pool = [c for c in pool if c[2] > 0 and c[1] not in rendered]
     for si, span, _sc in sorted(_pick_pullquotes(pool, want),
