@@ -412,8 +412,8 @@
   "h": "97fb295a35611d16"
  },
  "i/coase/": {
-  "d": "2026-10-01",
-  "h": "f34290089b94125b"
+  "d": "2026-10-21",
+  "h": "0fcf8d7fc274b0c5"
  },
  "i/coase/harm-goes-both-ways/": {
   "d": "2026-10-01",
@@ -1196,8 +1196,8 @@
   "h": "022338654353723f"
  },
  "i/keynes/": {
-  "d": "2026-10-13",
-  "h": "99a2fcad8c640e5b"
+  "d": "2026-10-21",
+  "h": "962b4550671941f3"
  },
  "i/keynes/fail-conventionally/": {
   "d": "2026-10-04",
@@ -1951,6 +1951,18 @@
   "d": "2026-08-29",
   "h": "53ff9d7fb462f9df"
  },
+ "i/ricardo/": {
+  "d": "2026-10-21",
+  "h": "9986ba2a9daea8ca"
+ },
+ "i/ricardo/better-at-both/": {
+  "d": "2026-10-21",
+  "h": "f42d48870d840a8d"
+ },
+ "i/ricardo/the-last-field/": {
+  "d": "2026-10-21",
+  "h": "b91198faa7ae6d0c"
+ },
  "i/sapiens/": {
   "d": "2026-08-28",
   "h": "86413aca5c2fd744"
@@ -2324,8 +2336,8 @@
   "h": "9564e424aea6e4b0"
  },
  "i/veblen/": {
-  "d": "2026-10-13",
-  "h": "9d6d5c5d03982442"
+  "d": "2026-10-21",
+  "h": "3e3bb6bbc5d76d1e"
  },
  "i/veblen/conspicuous-consumption/": {
   "d": "2026-10-13",
@@ -2396,8 +2408,8 @@
   "h": "37e42acf076f2f5c"
  },
  "i/wealth-of-nations/": {
-  "d": "2026-10-13",
-  "h": "ff7b3439f52402cf"
+  "d": "2026-10-21",
+  "h": "e0b9efb10276c313"
  },
  "i/wealth-of-nations/not-benevolence/": {
   "d": "2026-08-29",

@@ -667,4 +667,10 @@ QUOTE_ASKS = {
         "他们按大户的价压我，我怎么谈？",
     "zichan/the-pair-of-rings":
         "他要得不多，给一次又何妨？",
+
+    # 大卫·李嘉图
+    "ricardo/better-at-both":
+        "样样我都比他强，为什么还要交给他？",
+    "ricardo/the-last-field":
+        "我越铺越大，怎么新开的越挣越少？",
 }

@@ -541,6 +541,8 @@ SCENES = [
      [("coase", "price-has-a-cost")]),
     ("机会一来，我该先抓哪一样？",
      [("xiao-he", "take-the-records")]),
+    ("我越铺越大，怎么新开的越挣越少？",
+     [("ricardo", "the-last-field")]),
 ]),
 ("成本降不动", "把事做成", [
     ("我哪个环节总留着余量。",
@@ -1386,6 +1388,8 @@ SCENES = [
      [("cowan", "effort-saved-time-not")]),
     ("以前送上门的，现在全要我开车去。",
      [("cowan", "the-helpers-left")]),
+    ("样样我都比他强，为什么还要交给他？",
+     [("ricardo", "better-at-both")]),
 ]),
 ("病了", "身体与精力", [
     ("为什么偏偏是我。",

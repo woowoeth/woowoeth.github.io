@@ -1,9 +1,9 @@
 # OurWord (OurWord)
 
-> 202 people and books on how the world actually works, across 2,600 years
+> 203 people and books on how the world actually works, across 2,600 years
 > See how people before you handled it.
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 202 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 203 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
 ## Read it
 
@@ -17,11 +17,11 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 ## Topics
 
 - [Modern](https://ourword.ai/en/t/modern/) — 66
-- [The industrial age](https://ourword.ai/en/t/the-industrial-age/) — 58
+- [The industrial age](https://ourword.ai/en/t/the-industrial-age/) — 59
 - [Power and organisation](https://ourword.ai/en/t/power-and-organisation/) — 31
 - [Pre-Qin and classical](https://ourword.ai/en/t/pre-qin-and-classical/) — 30
 - [Mind and feeling](https://ourword.ai/en/t/mind-and-feeling/) — 22
-- [How the world works](https://ourword.ai/en/t/how-the-world-works/) — 20
+- [How the world works](https://ourword.ai/en/t/how-the-world-works/) — 21
 - [Learning and growth](https://ourword.ai/en/t/learning-and-growth/) — 20
 - [Qin, Han and the Six Dynasties](https://ourword.ai/en/t/qin-han-and-the-six-dynasties/) — 20
 - [Starting and building](https://ourword.ai/en/t/starting-and-building/) — 20
@@ -380,6 +380,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [Records of the Grand Historian · I find myself in much perplexity](https://ourword.ai/en/i/records-of-the-grand-historian/i-am-confused/): Records of the Grand Historian · I find myself in much perplexity — Write down what you could not work out. He admits in the first of the biographies that he cannot work it out. Why those words outrank any conclusion.
 - [Ren Zhengfei · Huawei's winter](https://ourword.ai/en/i/ren-zhengfei/huaweis-winter/): Ren Zhengfei · Huawei's winter — Talking bankruptcy in a record year. In the company's best year he circulated an essay about failing. The parts that turn a mood into a mechanism.
 - [Ren Zhengfei · Let those who hear the gunfire call for artillery](https://ourword.ai/en/i/ren-zhengfei/sound-of-gunfire/): Ren Zhengfei · Let those who hear the gunfire call for artillery — Turning authority toward the front. Headquarters that will not release authority leaves the front line unable to fight. The organisational inversion behind the slogan.
+- [David Ricardo · Better at Both, and Still Hand One Over](https://ourword.ai/en/i/ricardo/better-at-both/): David Ricardo · Better at Both, and Still Hand One Over — Keep the job where your lead is widest. You are the best person for every job on the list. Ricardo's question is what each one stops you doing.
+- [David Ricardo · The Last Field Ploughed](https://ourword.ai/en/i/ricardo/the-last-field/): David Ricardo · The Last Field Ploughed — The further you spread, the poorer the ground the next share lands on. The business keeps growing and every new branch earns less than the one before. Ricardo explains why, and what that last branch quietly sets.
 - [Sapiens · Cooperation runs on fiction](https://ourword.ai/en/i/sapiens/fictions-that-cooperate/): Sapiens · Cooperation runs on fiction — A company is a story too. Chimpanzees top out at a few dozen collaborators. Sapiens run to millions. Harari says the difference is something nobody can touch.
 - [Sapiens · Wheat domesticated us](https://ourword.ai/en/i/sapiens/wheat-domesticated-us/): Sapiens · Wheat domesticated us — The luxury trap. The agricultural revolution multiplied people and made the average life worse. This is how a species can win while every member of it loses.
 - [Robert Sapolsky · Built for escape, left switched on](https://ourword.ai/en/i/sapolsky/stress-mismatch/): Robert Sapolsky · Built for escape, left switched on — The problem is that it won't turn off. People and zebras run the same stress system. Why only one of them gets sick from it.
@@ -538,7 +540,7 @@ Cite the individual page URL, not the homepage — each entry page is stable and
 - [AI Bubble Monitor](https://ourword.ai/ai/)
 - [Zouni](https://ourword.ai/zouni/)
 
-## Index (202 entrys)
+## Index (203 entrys)
 
 - [Albert Einstein](https://ourword.ai/en/i/einstein/): Albert Einstein (Germany · 1879–1955) — Imagination. The physicist, and the father of relativity — but the legacy that travels furthest is not a formula, it is a way of working.
 - [Albert O. Hirschman](https://ourword.ai/en/i/hirschman/): Albert O. Hirschman (United States · 1915-2012) — Voice. A German-born American economist. He left Berlin in 1933, fought in Spain in 1936, spent 1940 in Marseille forging papers and finding mountain…
@@ -571,6 +573,7 @@ Cite the individual page URL, not the homepage — each entry page is stable and
 - [Christina Maslach](https://ourword.ai/en/i/maslach/): Christina Maslach (1946– · UC Berkeley) — Burnout is the job. Burnout became measurable largely because of her work. Her 1981 inventory split it into three components — emotional exhaustion…
 - [Chu Shijian](https://ourword.ai/en/i/chu-shijian/): Chu Shijian (1928–2019 · Yunnan) — Up the mountain at seventy-four. A man from Yunnan who ran a cigarette factory from the age of fifty-one and made Hongtashan the best-selling brand in China, known…
 - [Crucial Conversations](https://ourword.ai/en/i/crucial-conversations/): Crucial Conversations (2002 · Patterson, Grenny, McMillan and Switzler) — Safety first. Four authors studied more than twenty thousand people across a thousand organisations to answer one question…
+- [David Ricardo](https://ourword.ai/en/i/ricardo/): David Ricardo (England · 1772–1823) — Dividing the work. English economist. He joined his father on the London Stock Exchange at fourteen, made a fortune dealing in stocks and government loans, and…
 - [Donald Winnicott](https://ourword.ai/en/i/winnicott/): Donald Winnicott (Britain · 1896–1971) — Good enough. A British paediatrician who became a psychoanalyst. He worked in a London children's hospital for forty years, listening to mothers as much as…
 - [Du Fu](https://ourword.ai/en/i/du-fu/): Du Fu (Tang · 712–770) — Left office at forty-eight. A poet, ranked in China beside Li Bai and read for twelve centuries. He arrived in the capital at thirty-five to find a post and spent ten years…
 - [Duan Yongping](https://ourword.ai/en/i/duan-yongping/): Duan Yongping (Contemporary · 1961–) — The stop-doing list. Founder of BBK, and the source of the culture behind OPPO and vivo, two of the largest phone brands on earth, neither of which invented…

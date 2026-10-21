@@ -40,6 +40,7 @@ NAMES = {
     "li-shimin": ("Li Shimin", "Power and organisation"),
     "wei-zheng": ("Wei Zheng", "Power and organisation"),
     "veblen": ("Thorstein Veblen", "How the world works"),
+    "ricardo": ("David Ricardo", "How the world works"),
     "beauvoir": ("Simone de Beauvoir", "Family and relationships"),
     "kierkegaard": ("Søren Kierkegaard", "Mind and feeling"),
     "aristotle": ("Aristotle", "Reading people"),
