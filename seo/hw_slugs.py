@@ -13,6 +13,7 @@ SLUGS = {
     "范仲淹": "fan-zhongyan",
     "子产": "zichan",
     "大卫·李嘉图": "ricardo",
+    "牛顿": "newton",
     "托尔斯坦·凡勃伦": "veblen",
     "西蒙娜·德·波伏瓦": "beauvoir",
     "索伦·克尔凯郭尔": "kierkegaard",

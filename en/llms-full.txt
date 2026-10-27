@@ -1,7 +1,7 @@
-# OurWord — 203 people and books on how the world actually works, across 2,600 years
+# OurWord — 204 people and books on how the world actually works, across 2,600 years
 # OurWord — See how people before you handled it.
 # https://ourword.ai/en/
-# Full corpus, plain text. 203 entrys.
+# Full corpus, plain text. 204 entrys.
 
 ========================================================================
 ## Albert Einstein
@@ -35,10 +35,10 @@ Next time something is declared impossible, run his order of operations: first a
 Imagination is more important than knowledge. I have no special talent. I am only passionately curious. God does not play dice.
 
 ### Q: What should I read alongside?
-Richard Feynman — Both refuse to fool themselves; one starts from a picture in the head, the other from what the instrument says.
+Richard Feynman — Both refuse to fool themselves; one starts from a picture in the head, the other from what the instrument says. Isaac Newton — Both faced a cause nobody had. Newton said he would not invent one and left it empty while the calculation stood; Einstein invented one and pushed it until it contradicted itself. One shelves what he cannot prove, the other puts it out to be tested.
 
 ### Further
-Elon Musk Bruce Lee Charlie Munger Socrates Peter Thiel Richard Feynman Karl Popper
+Elon Musk Bruce Lee Charlie Munger Socrates Peter Thiel Richard Feynman Karl Popper Isaac Newton
 
 ========================================================================
 ## Albert O. Hirschman
@@ -957,10 +957,10 @@ Next time you feel the pull, put the chart away and write three lines. One: what
 What turns something real into a mania is credit, not optimism. Every mania opens with something genuinely real. That is the trap. Prices leave the ground on borrowed money, not on mood. How long a crisis lasts depends on who is willing.
 
 ### Q: What should I read alongside?
-Howard Marks — Both take the market's temperature: Marks reads where sentiment sits on the pendulum, Kindleberger counts how much of the money in the room was borrowed. Technological Revolutions — Both say bubbles follow a script. Perez times hers by the installation phase of a technology, Kindleberger times his by the looseness of credit - one mania, two rulers.
+Howard Marks — Both take the market's temperature: Marks reads where sentiment sits on the pendulum, Kindleberger counts how much of the money in the room was borrowed. Technological Revolutions — Both say bubbles follow a script. Perez times hers by the installation phase of a technology, Kindleberger times his by the looseness of credit - one mania, two rulers. Isaac Newton — The same South Sea bubble of 1720. Kindleberger stood outside it and laid three hundred years of crashes into one table; Newton was one cell in that table, inside it and swept along. One counted from outside, the other was pushed from within.
 
 ### Further
-George Soros Howard Marks Technological Revolutions The Crowd Jesse Livermore
+George Soros Howard Marks Technological Revolutions The Crowd Jesse Livermore Isaac Newton
 
 ========================================================================
 ## Charlie Munger
@@ -1984,7 +1984,7 @@ I'm only rich because I know when I'm wrong. Market prices always distort the un
 Warren Buffett — Two poles of investment philosophy: Buffett trusts that the market gets there in the end, Soros treats it as permanently wrong. Nassim Taleb — Two bets on uncertainty: Soros finds the market's error and pushes on it, Taleb builds a structure that pays when the error finally breaks. The Crowd — Reflexivity is the financial version of this book: the crowd's mistaken belief moves the price and the price confirms the belief. Le Bon describes the pathology, Soros priced it. Benjamin Graham — Graham assumes price returns to value; Soros trades the stretch where price drives value away from itself. Jim Simons — Soros uses reflexivity to understand the market, Simons gave up understanding entirely — and the money comes out of the same place. Robert K. Merton — Both say belief rewrites fact: Soros watches price and fundamentals push each other in markets, Merton watches suspicion and reputation confirm themselves in a room. John Maynard Keynes — Both saw expectations pushing prices. Soros treated that loop as something to trade, riding it and leaving the moment he was wrong. Keynes treated it as something to be wary of, because the professionals were following the crowd to avoid blame, not because they had judged worth.
 
 ### Further
-Ray Dalio Warren Buffett Nassim Taleb Charlie Munger The Crowd Jesse Livermore Howard Marks Jim Simons Thinking, Fast and Slow Charles P. Kindleberger Robert K. Merton John Maynard Keynes
+Ray Dalio Warren Buffett Nassim Taleb Charlie Munger The Crowd Jesse Livermore Howard Marks Jim Simons Thinking, Fast and Slow Charles P. Kindleberger Robert K. Merton John Maynard Keynes Isaac Newton
 
 ========================================================================
 ## Guan Zhong
@@ -2583,6 +2583,40 @@ Han Feizi — Two systems for moving people: Han Feizi designed law, technique a
 
 ### Further
 Han Feizi Charlie Munger The Crowd Maria Konnikova Guiguzi The Art of Worldly Wisdom Chris Voss La Rochefoucauld Thinking, Fast and Slow
+
+========================================================================
+## Isaac Newton
+URL: https://ourword.ai/en/i/newton/
+Tags: Learning and growth, Early modern, Framing no hypotheses
+
+Isaac Newton (England · 1643–1727) — Framing no hypotheses. English physicist and mathematician. His Mathematical Principles of Natural Philosophy (1687) put the orbits of the heavens and the fall of an apple into one set of laws.
+
+### Q: What did this one leave behind?
+English physicist and mathematician. His Mathematical Principles of Natural Philosophy (1687) put the orbits of the heavens and the fall of an apple into one set of laws. In 1696 he left Cambridge to work at the Royal Mint in London, became its Master in 1699, and from 1703 was President of the Royal Society. This page takes two things: how to keep what you can calculate apart from what you can only guess, and how a man who lived by sums sold a stock well and then bought it back.
+
+### Q: What actually happened?
+In August 1684 the astronomer Edmond Halley came to Cambridge and asked what curve a planet would follow if the sun's pull weakened with the square of the distance. An ellipse, Newton said, and he had worked it out, but he could not find the paper among the others on his desk. After Halley left he did the sum again, and in November sent a short tract that grew into the Principia. It came out in 1687, and Halley paid for the printing.
+
+### The parts · Keep the rule apart from the cause
+He gave the formula for gravity in full, and when asked how it reaches across empty space he said he did not yet know and would not make something up. What was not drawn from the phenomena he called a hypothesis and kept out of his conclusions. e.g. You see from the data that sales move with the weather. 'People are in a better mood' is only a guess, and in the report it gets a line to itself.
+
+### The parts · Sold well, then bought back in
+In spring 1720 he sold his South Sea stock for a profit of a few thousand pounds. In summer he watched the price keep rising, bought a larger stake, and by the autumn crash had lost about twenty thousand pounds in all. e.g. You cash out, it rises another twenty per cent, and what you remember is the twenty per cent, not the gain already in your hand.
+
+### The parts · Admit no extra cause
+The Principia opens with rules of reasoning, and the first says to admit no more causes than are true and enough to explain the thing. The extra one is your taste, not evidence. e.g. Traffic fell and your data shows two changes you made. Check those two before you wonder whether the algorithm changed.
+
+### Q: How do I use it today?
+This week take one conclusion you are about to give someone and split it into two columns: what I measured or calculated, and what I guessed. When you report it, say the two columns separately.
+
+### Lines to keep
+Use the rule now; the cause can wait. After selling, do not keep the books on the rise. Explain a thing without adding a cause.
+
+### Q: What should I read alongside?
+Albert Einstein — Both faced a cause nobody had. Newton said he would not invent one and left it empty while the calculation stood; Einstein invented one and pushed it until it contradicted itself. One shelves what he cannot prove, the other puts it out to be tested. Charles P. Kindleberger — The same South Sea bubble of 1720. Kindleberger stood outside it and laid three hundred years of crashes into one table; Newton was one cell in that table, inside it and swept along. One counted from outside, the other was pushed from within.
+
+### Further
+Albert Einstein Richard Feynman Charles P. Kindleberger George Soros
 
 ========================================================================
 ## Ivan Illich
@@ -4889,7 +4923,7 @@ After you've not fooled yourself, it's easy not to fool other scientists. Nature
 Albert Einstein — Two physicists' habits: Einstein restated the problem until it turned simple, Feynman rebuilt the answer until it was his. Socrates — Both use questions to force ignorance into the open. Socrates aims them at other people, Feynman at himself. Karl Popper — The same rule from two sides: Popper gives the logical criterion, Feynman the psychological warning about who breaks it first.
 
 ### Further
-Albert Einstein Socrates Charlie Munger Karl Popper The Last Hot-Metal Edition
+Albert Einstein Socrates Charlie Munger Karl Popper The Last Hot-Metal Edition Isaac Newton
 
 ========================================================================
 ## Robert Axelrod
@@ -17659,6 +17693,72 @@ Where it goes wrong: reading productise as everyone should sell a course — wit
 Productise yourself.
 Specific knowledge feels like play to you but looks like work to others.
 Code and media are permissionless leverage.
+
+========================================================================
+## Isaac Newton · Sold Too Early, Bought Back In
+URL: https://ourword.ai/en/i/newton/sold-too-early/
+Source: The South Sea Bubble, 1720; Andrew Odlyzko's study of Newton's investments
+Tags: Deep read, Isaac Newton, What hurts most after a good sale is having sold early
+
+I sold and it kept rising. Newton shows why a well-timed sale is what most often sends people back in.
+
+### Q: What actually happened?
+In the spring of 1720 Newton sold his South Sea Company stock and made a few thousand pounds. The price did not stop. All summer it climbed, and people around him grew rich. He could not sit still, bought back in, and this time put in more. In the autumn it collapsed, and he lost about twenty thousand pounds in all. He was Master of the Mint and had spent his life doing sums.
+
+### The parts · The first sale was right
+He got out in spring at a good price, and at the time that was no mistake. The mistake came after: he treated everything the stock rose from then on as money he had left lying on the table.
+e.g. You sell the fund at a high, it climbs another twenty per cent, and what you remember is the twenty per cent, not the gain already in your hand.
+
+### The parts · Regret pulls the leaver back in
+After you sell, every day shows you what you might have made. It hurts more than a loss, because the loss never happened and has nowhere to go, so it goes into buying back.
+e.g. You cash out, a friend says over dinner that he has doubled up, and the first thing you do at home is open the account.
+
+### The parts · The second stake is often the biggest
+Someone who has won once has a success to lean on and thinks the earlier call proved sound, so the second bet is heavier. He mistook one good judgment for a gift for judging.
+e.g. The person who got it right once is the one most likely to borrow to buy more. He is not wiser then, only more sure.
+
+### Q: How do I use it today?
+Where you are: you sold, you made money, it has gone up since, and you want back in.
+Ask first: am I going back because I have seen something new, or because I cannot bear others earning more than me? Which of the reasons I wrote down the day I sold has changed?
+Where it goes wrong: reading it as never look back after selling. His fault was a bigger bet with no new reason, only regret. With new evidence and a limit set beforehand, going back is not a mistake.
+
+### Lines to keep
+After selling, do not keep the books on the rise.
+Going back in needs a new reason, not regret.
+After one win, the next stake should be smaller.
+
+========================================================================
+## Isaac Newton · Can't Say Why, Use It Anyway
+URL: https://ourword.ai/en/i/newton/no-hypotheses/
+Source: Principia, second edition (1713), General Scholium
+Tags: Deep read, Isaac Newton, Keep what you can calculate apart from what you can guess
+
+I only know how it moves. Newton shows what to do when the rule works and the cause is still missing.
+
+### Q: What actually happened?
+Newton's law of gravity could give the orbit of the Moon, the tides and the return of comets, and his critics kept pressing: how can two bodies far apart pull on each other? No rope, no collision, nothing in between to carry it. In 1713 he added a General Scholium to the second edition of the Principia and answered. He had not yet found the cause of gravity's properties in the phenomena, and he would 'frame no hypotheses'.
+
+### The parts · The rule, and the cause behind it
+He kept two things apart. How strong gravity is and how it falls off with distance could be calculated and measured. Why it behaves so was a separate matter. He gave the first in full and left the second empty.
+e.g. A doctor sees from the data that a drug works but does not know how. Using it and explaining it are two different questions.
+
+### The parts · Whatever was not drawn from the phenomena was a hypothesis
+He used the word narrowly. If it was not deduced from observation, he called it a hypothesis, however plausible, and kept it out of his conclusions. You may think it. You may not file it in the same report as the figures.
+e.g. You can show sales move with the weather. 'People are in a better mood' is your guess, and in the report it gets a line to itself.
+
+### The parts · Do not add a cause you do not need
+At the start of the Principia he set out rules of reasoning, and the first is to admit no more causes than are true and enough to explain the thing. The extra one is your taste, not evidence.
+e.g. Traffic fell and the data shows two changes you made. Check those two before you start wondering whether the algorithm changed.
+
+### Q: How do I use it today?
+Where you are: you have seen a rule that is useful, people are pressing you for why, and you are tempted to make something up to fill the gap.
+Ask first: did I calculate this or guess it? Can I write the two in separate columns?
+Where it goes wrong: reading it as do not act until you know. He kept using the law of gravity without knowing its cause; he simply wrote down that this column was still empty.
+
+### Lines to keep
+Use the rule now; the cause can wait.
+What you calculated and what you guessed need separate columns.
+'I do not know yet' is an honest sentence.
 
 ========================================================================
 ## Nietzsche · What does not kill me, conditions included

@@ -1,11 +1,11 @@
 # OurWord (人类世界生存法则)
 
-> 203 people and books on how the world actually works, across 2,600 years
+> 204 people and books on how the world actually works, across 2,600 years
 > 遇到事了，看看以前的人怎么处理
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 203 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 204 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
-一个关于「世界到底怎么运转」的知识库：战略、财富、权力、人性、创业，取自 203 位人物与典籍，跨越 2600 年。每一条都写清楚这个人真正留下的那一个想法、背后的故事、拆开的分则与例子，以及今天怎么用。
+一个关于「世界到底怎么运转」的知识库：战略、财富、权力、人性、创业，取自 204 位人物与典籍，跨越 2600 年。每一条都写清楚这个人真正留下的那一个想法、背后的故事、拆开的分则与例子，以及今天怎么用。
 
 ## Read it
 
@@ -23,17 +23,17 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 - [先秦与古典时代](https://ourword.ai/t/classical-era/) — 31
 - [权力与组织](https://ourword.ai/t/power/) — 31
 - [心智与情绪](https://ourword.ai/t/mind/) — 23
+- [学习与成长](https://ourword.ai/t/learning/) — 20
 - [创业与产品](https://ourword.ai/t/startups/) — 20
 - [谋略与竞争](https://ourword.ai/t/strategy/) — 20
 - [世界如何运转](https://ourword.ai/t/world/) — 20
-- [学习与成长](https://ourword.ai/t/learning/) — 19
 - [财富与风险](https://ourword.ai/t/wealth/) — 19
 - [中古](https://ourword.ai/t/medieval/) — 18
 - [家庭与关系](https://ourword.ai/t/family/) — 17
 - [身心与生活](https://ourword.ai/t/living/) — 17
 - [识人与相处](https://ourword.ai/t/people/) — 17
 - [秦汉至魏晋](https://ourword.ai/t/han-wei/) — 16
-- [近世](https://ourword.ai/t/early-modern/) — 13
+- [近世](https://ourword.ai/t/early-modern/) — 14
 
 ## How it is built
 
@@ -349,6 +349,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [拿破仑 · 从伟大到可笑只有一步](https://ourword.ai/i/napoleon/sublime-to-ridiculous/): 拿破仑 · 从伟大到可笑只有一步——没有退出条件的成功。这句俏皮话的出处一点也不俏皮。这一篇要回答的是：他是在什么路上说出它的。
 - [纳瓦尔 · 睡觉时也在赚钱的资产](https://ourword.ai/i/naval/assets-while-you-sleep/): 纳瓦尔 · 睡觉时也在赚钱的资产——财富不是钱。那条著名推文串的第一句就是三个词的切割。这一篇要回答的是：切开之后各自通向哪里。
 - [纳瓦尔 · 把自己产品化](https://ourword.ai/i/naval/productize-yourself/): 纳瓦尔 · 把自己产品化——特定知识乘以杠杆。他把整套方法压成四个字。这一篇要回答的是：「自己」和「产品化」各指什么，以及新杠杆好在哪。
+- [牛顿 · 卖早了，又买回来](https://ourword.ai/i/newton/sold-too-early/): 牛顿 · 卖早了，又买回来——卖对了的人，最疼的是卖早了。我卖了，它还在涨。这一篇要回答的是：卖对了一次，为什么反而最容易追回去。
+- [牛顿 · 说不清为什么，先用着](https://ourword.ai/i/newton/no-hypotheses/): 牛顿 · 说不清为什么，先用着——算得出的和猜得出的，分开放。我只知道它怎么动。这一篇要回答的是：原因还没弄清的时候，规律能不能先用，原因要不要先编一个。
 - [尼采 · 杀不死我的](https://ourword.ai/i/nietzsche/what-does-not-kill/): 尼采 · 杀不死我的——这句话有使用条件。这可能是被引用最多也被用错最多的一句话。这一篇要回答的是：它在什么条件下才成立。
 - [尼采 · 凝视深渊](https://ourword.ai/i/nietzsche/gazing-into-abyss/): 尼采 · 凝视深渊——与怪物战斗的代价。这条箴言只有两句话，却是一整套职业风险提示。这一篇要回答的是：那个变化是怎么发生的。
 - [南丁格尔 · 先别让病人更糟](https://ourword.ai/i/nightingale/do-no-harm/): 南丁格尔 · 先别让病人更糟——照顾一个人，第一条是先拿掉让他变糟的东西。家里有人病了，你急着做点什么，可从哪里下手？这一篇要回答的是：南丁格尔到战地医院先做了什么。
@@ -546,7 +548,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [AI Bubble Monitor / AI 泡沫检测仪](https://ourword.ai/ai/)
 - [Zouni / 走你](https://ourword.ai/zouni/)
 
-## Index (203 entrys)
+## Index (204 entrys)
 
 - [BJ·福格](https://ourword.ai/i/bj-fogg/): BJ·福格（2019年·斯坦福行为设计实验室）——小到不会失败。斯坦福行为设计实验室创始人，研究行为如何被设计出来。他给出一个公式：行为发生需要动机、能力、提示三者同时到位。多数人失败在只调动机——靠决心和自我激励——而动机天然起伏，靠它维持的习惯必然崩。他的主张相反：把行为缩到小得不需要动机，然后挂在一个已有的动作后面。
 - [C.S.刘易斯](https://ourword.ai/i/cs-lewis/): C.S.刘易斯（1898-1963年·英国牛津）——妻子死后几个月的日记。作家，牛津和剑桥的教授，写过《纳尼亚传奇》和大量劝人信仰的书。五十八岁结婚，妻子乔伊四年后因癌症去世。之后几个月他在四本练习簿上记自己的状态，后来用笔名出版，就是《卿卿如晤》。收他是因为「重要的人走了」那六个问题，原来靠弗兰克尔和苏轼在答——一个是集中营的幸存者，一个是被贬的官员
@@ -670,6 +672,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [爱因斯坦](https://ourword.ai/i/einstein/): 爱因斯坦（德国·1879-1955）——想象。物理学家，相对论之父，但他最重要的遗产不是某个具体的公式，而是一种思考方式——思想实验。「如果我骑在一束光上，我会看到什么？」这个问题，他16岁时就开始想，想了十年，最终推导出狭义相对论。他证明了：在物理学实验室无法进行的实验，可以在脑子里完成。他把「想象力」从艺术领域带进了科学
 - [爱德华·德西](https://ourword.ai/i/deci/): 爱德华·德西（美国·1942-）——内在动机。美国心理学家，1942年生，1970年在卡内基梅隆大学拿到心理学博士，此后长期在罗切斯特大学任教。1971年他发表了一个当时的行为主义者很难接受的实验：花钱让人去做一件他本来爱做的事，钱一停，他比从没拿过钱的时候做得还少。此后他和理查德·瑞安一起，把这条线索做成了自我决定理论：人
 - [爱比克泰德](https://ourword.ai/i/epictetus/): 爱比克泰德（古罗马·约55-135）——控制二分法。生下来就是奴隶，主人埃帕弗罗狄图斯是尼禄的秘书。他一条腿瘸，终身未愈。获释后在罗马讲学，公元93年图密善把所有哲学家赶出意大利，他迁到希腊西北的尼科波利斯办学，一直讲到死。他一个字都没写过——现存的《论说集》和《手册》全是学生阿里安记的课堂笔记，语气直白，时常带着训人的口吻，因为
+- [牛顿](https://ourword.ai/i/newton/): 牛顿（英国·1643-1727）——不造假说。英国物理学家、数学家。1687 年出版《自然哲学的数学原理》，用一套定律把天上的轨道和地上的落体算进了同一个公式。1696 年离开剑桥去伦敦管铸币厂，1699 年升任厂长，1703 年起任皇家学会会长。这一页只取他的两件事：算得出的和猜得出的怎样分开放；以及一个靠算数吃饭的人，怎
 - [王兴](https://ourword.ai/i/wang-xing/): 王兴（当代·1979-）——九败一胜。美团创始人，清华大学毕业。在创立美团之前，他已经失败了八次：做过中国版Facebook（校内网），卖掉了；做过中国版Twitter（饭否），被关掉了。第十次创业，他押注团购，赢得了史上竞争最激烈的互联网大战「千团大战」，把2000家对手打垮，最终把美团做成了一个管吃、管住、管出行
 - [王翦](https://ourword.ai/i/wang-jian/): 王翦（秦·前280-前220）——自保。秦国第一名将，灭赵、灭燕、灭楚，参与灭五国，是秦始皇统一六国的最核心执行者。但更重要的是：他是知识库里在「功高震主」这个问题上处理得最好的人。与他同时代的白起（同等才华，被赐死），形成了最清晰的对比。
 - [王阳明](https://ourword.ai/i/wang-yangming/): 王阳明（明·1472-1529）——知行合一。龙场悟道，创立心学。他是中国历史上极罕见的「立德、立功、立言」三不朽者。他的核心洞察：理不在外物，在人心——不是向外格物，而是向内致良知。

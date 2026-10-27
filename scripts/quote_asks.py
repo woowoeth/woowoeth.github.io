@@ -668,6 +668,12 @@ QUOTE_ASKS = {
     "zichan/the-pair-of-rings":
         "他要得不多，给一次又何妨？",
 
+    # 牛顿
+    "newton/sold-too-early":
+        "我早卖了，看他们还涨，又买回去了。",
+    "newton/no-hypotheses":
+        "我说不清为什么，能先照数据做吗？",
+
     # 大卫·李嘉图
     "ricardo/better-at-both":
         "样样我都比他强，为什么还要交给他？",

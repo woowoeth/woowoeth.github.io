@@ -92,6 +92,8 @@ SCENES = [
      [("boyd", "ooda"), ("grove", "inflection-and-cassandras")]),
     ("我凭什么相信自己这次的判断？",
      [("mao", "on-practice"), ("dalio", "believability")]),
+    ("我说不清为什么，能先照数据做吗？",
+     [("newton", "no-hypotheses")]),
     ("我是不是根本问错了问题？",
      [("einstein", "formulating-the-problem"), ("socrates", "midwifery")]),
     ("我对自己和对手都没底。",
@@ -234,6 +236,8 @@ SCENES = [
 ("怕错过", "钱的事", [
     ("这趟不上，是不是就没了？",
      [("soros", "reflexivity"), ("crowd", "assert-repeat-contaminate")]),
+    ("我早卖了，看他们还涨，又买回去了。",
+     [("newton", "sold-too-early")]),
     ("这是真机会，还是击鼓传花？",
      [("technological-revolutions", "bubble-in-the-script"), ("marks", "second-level-thinking")]),
     ("所有人都在冲，我怕自己踏空。",
