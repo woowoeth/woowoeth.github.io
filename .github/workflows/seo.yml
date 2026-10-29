@@ -14,7 +14,10 @@ permissions:
   contents: read
 jobs:
   seo:
-    runs-on: ubuntu-latest
+    # 钉死到 24.04：ubuntu-latest 已经滚到 26.04，而 playwright 1.58 不支持它，
+    # 「装浏览器」那一步直接失败，整条流水线连着挂了一周多
+    # （Pages 部署是独立的，所以站点内容没受影响，但闸门和 SEO 重建停了）。
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
         with:
