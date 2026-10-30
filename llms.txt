@@ -1,11 +1,11 @@
 # OurWord (人类世界生存法则)
 
-> 204 people and books on how the world actually works, across 2,600 years
+> 205 people and books on how the world actually works, across 2,600 years
 > 遇到事了，看看以前的人怎么处理
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 204 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 205 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
-一个关于「世界到底怎么运转」的知识库：战略、财富、权力、人性、创业，取自 204 位人物与典籍，跨越 2600 年。每一条都写清楚这个人真正留下的那一个想法、背后的故事、拆开的分则与例子，以及今天怎么用。
+一个关于「世界到底怎么运转」的知识库：战略、财富、权力、人性、创业，取自 205 位人物与典籍，跨越 2600 年。每一条都写清楚这个人真正留下的那一个想法、背后的故事、拆开的分则与例子，以及今天怎么用。
 
 ## Read it
 
@@ -20,7 +20,7 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 
 - [工业时代](https://ourword.ai/t/industrial-age/) — 63
 - [现代](https://ourword.ai/t/modern/) — 62
-- [先秦与古典时代](https://ourword.ai/t/classical-era/) — 31
+- [先秦与古典时代](https://ourword.ai/t/classical-era/) — 32
 - [权力与组织](https://ourword.ai/t/power/) — 31
 - [心智与情绪](https://ourword.ai/t/mind/) — 23
 - [学习与成长](https://ourword.ai/t/learning/) — 20
@@ -29,9 +29,9 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 - [世界如何运转](https://ourword.ai/t/world/) — 20
 - [财富与风险](https://ourword.ai/t/wealth/) — 19
 - [中古](https://ourword.ai/t/medieval/) — 18
+- [识人与相处](https://ourword.ai/t/people/) — 18
 - [家庭与关系](https://ourword.ai/t/family/) — 17
 - [身心与生活](https://ourword.ai/t/living/) — 17
-- [识人与相处](https://ourword.ai/t/people/) — 17
 - [秦汉至魏晋](https://ourword.ai/t/han-wei/) — 16
 - [近世](https://ourword.ai/t/early-modern/) — 14
 
@@ -422,6 +422,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [主权个人 · 从公民到顾客](https://ourword.ai/i/sovereign-individual/citizen-to-customer/): 主权个人 · 从公民到顾客——管辖权的竞争。1997年，两位作者预言了数字货币和远程工作。这一篇要回答的是：他们推出这些的那条链条。
 - [战国策 · 焚券市义](https://ourword.ai/i/strategies-of-the-warring-states/burning-the-debts/): 战国策 · 焚券市义——买一样账上没有的东西。派去收债的人把债契烧了。这一篇要回答的是：这笔看起来纯亏的账，后来怎么结的。
 - [战国策 · 邹忌照镜子](https://ourword.ai/i/strategies-of-the-warring-states/three-mirrors/): 战国策 · 邹忌照镜子——三个人夸你，三种动机。妻、妾、客都说他比城北徐公美。这一篇要回答的是：他从三句同样的话里读出了三件不同的事。
+- [苏秦 · 十次被拒，先回去补](https://ourword.ai/i/su-qin/ten-pitches/): 苏秦 · 十次被拒，先回去补——被拒绝之后，先怪一句，再补一样。十次都被拒了。这一篇要回答的是：被拒之后，是怪买家、躲起来，还是回去补一样东西。
+- [苏秦 · 秦不买，去找燕](https://ourword.ai/i/su-qin/wrong-buyer/): 苏秦 · 秦不买，去找燕——被拒之后，先看对面缺不缺这件事。秦王不要他的方案。这一篇要回答的是：被拒之后，该改方案，还是改对象。
 - [苏轼 · 也无风雨也无晴](https://ourword.ai/i/su-shi/no-wind-no-rain/): 苏轼 · 也无风雨也无晴——把评价系统关掉。同行的人都狼狈不堪，他不觉得。这一篇要回答的是：那一刻他关掉的是什么。
 - [苏轼 · 黄州惠州儋州](https://ourword.ai/i/su-shi/three-exiles/): 苏轼 · 黄州惠州儋州——在被贬的地方干实事。他晚年自评一生功业，列的是三个贬所。这一篇要回答的是：为什么不是他做过的那些高官。
 - [苏轼 · 眼前见天下无一个不好人](https://ourword.ai/i/su-shi/no-bad-people/): 苏轼 · 眼前见天下无一个不好人——把人当人处理。一个被政敌整到差点丧命的人，说眼前没有一个坏人。这一篇要回答的是：这句话不是天真。
@@ -548,7 +550,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [AI Bubble Monitor / AI 泡沫检测仪](https://ourword.ai/ai/)
 - [Zouni / 走你](https://ourword.ai/zouni/)
 
-## Index (204 entrys)
+## Index (205 entrys)
 
 - [BJ·福格](https://ourword.ai/i/bj-fogg/): BJ·福格（2019年·斯坦福行为设计实验室）——小到不会失败。斯坦福行为设计实验室创始人，研究行为如何被设计出来。他给出一个公式：行为发生需要动机、能力、提示三者同时到位。多数人失败在只调动机——靠决心和自我激励——而动机天然起伏，靠它维持的习惯必然崩。他的主张相反：把行为缩到小得不需要动机，然后挂在一个已有的动作后面。
 - [C.S.刘易斯](https://ourword.ai/i/cs-lewis/): C.S.刘易斯（1898-1963年·英国牛津）——妻子死后几个月的日记。作家，牛津和剑桥的教授，写过《纳尼亚传奇》和大量劝人信仰的书。五十八岁结婚，妻子乔伊四年后因癌症去世。之后几个月他在四本练习簿上记自己的状态，后来用笔名出版，就是《卿卿如晤》。收他是因为「重要的人走了」那六个问题，原来靠弗兰克尔和苏轼在答——一个是集中营的幸存者，一个是被贬的官员
@@ -703,6 +705,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [胡雪岩](https://ourword.ai/i/hu-xueyan/): 胡雪岩（清·1823-1885）——靠山。晚清最著名的商人，白手起家做到大清首富，官至布政使衔、赏穿黄马褂、戴二品红顶子——「红顶商人」这个词就是为他造的。他也是中国近代第一个和外商正面打商战的人，并且输得干干净净：从巅峰到抄家，只用了两年。他的成功和失败，用的是同一套逻辑。（注意：坊间流传的大量「胡雪岩语录」出自高阳的
 - [艾利克森](https://ourword.ai/i/ericsson/): 艾利克森（1993年·刻意练习研究）——练法比时长重要。心理学家，专门研究各领域顶尖高手是怎么练出来的。他最广为人知的研究被流行文化简化成了「一万小时定律」，而这恰恰是他反复澄清过的误读——决定水平的不是时长，是练法。重复做已经会的事，做十年也不会变强；只有持续在能力边缘、带着明确目标和即时反馈的练习，才产生进步。他把这种练法叫「刻意
 - [苏格拉底](https://ourword.ai/i/socrates/): 苏格拉底（古希腊·前470-前399）——无知之知。他没有留下任何文字，所有思想都通过对话流传下来。他是职业哲学家里最穷的那个，不收学费，整天在广场上问人问题。他被雅典判处死刑，罪名是「腐蚀青年」和「不敬神」——其实是因为他的问题让权贵太难堪。他可以逃跑，弟子们为他安排好了一切，他拒绝了，饮下毒芹。两千年来，他是人类史上死得最明白
+- [苏秦](https://ourword.ai/i/su-qin/): 苏秦（战国·生年不详）——先补本事。战国纵横家，《史记》有本传，说他出自鬼谷先生门下，主张六国联合抗秦，一度佩六国相印。据《史记》，他最落魄的一年，是上书秦惠王十次都没成，穿破皮袍、花光了钱回家，妻子嫂子父母都不理他。这一页只取他的两件事：被拒之后先回去补什么，以及被拒的时候要不要换一个更需要你的人。（马王堆帛书《
 - [苏轼](https://ourword.ai/i/su-shi/): 苏轼（北宋·1037-1101）——旷达。唐宋八大家之一，词、诗、文、书、画全能，同时是美食家、工程师、政治家。他被贬三次，越贬越旷达——不是被打倒了还在撑着，而是真的在最糟的处境里发现了最好的自己。黄州时写出赤壁赋、念奴娇，惠州时写「日啖荔枝三百颗，不辞长作岭南人」，逆境没有摧毁他，反而成全了他。
 - [范仲淹](https://ourword.ai/i/fan-zhongyan/): 范仲淹（北宋·989-1052）——争事。北宋名臣，本传在《宋史》卷三一四。苏州吴县人，两岁丧父，随母改嫁姓朱，长大知道身世，辞母去应天府读书，中进士后才改回范姓。他在朝里敢说话：上《百官图》批宰相用人偏私，被贬饶州；西北用兵时守边，之后主持庆历新政，一口气提出十条，又在一年多后因朋党之论请求外任。这一页不讲他的文章，讲
 - [范蠡](https://ourword.ai/i/fan-li/): 范蠡（春秋战国·前536-前448）——进退。中国历史上最成功的退隐者，商圣陶朱公。他帮助越王勾践从囚徒做到春秋霸主，然后在功成之日彻底离开——改名换姓，三次迁移，三次积累巨富。

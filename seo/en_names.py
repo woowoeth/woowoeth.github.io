@@ -98,6 +98,7 @@ NAMES = {
     "crowd": ("The Crowd", "Reading people"),
     "gandhi": ("Gandhi", "Reading people"),
     "guiguzi": ("Guiguzi", "Reading people"),
+    "su-qin": ("Su Qin", "Reading people"),
     "influence": ("Influence", "Reading people"),
     "konnikova": ("Maria Konnikova", "Reading people"),
     "la-rochefoucauld": ("La Rochefoucauld", "Reading people"),

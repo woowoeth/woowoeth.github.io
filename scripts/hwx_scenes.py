@@ -276,6 +276,8 @@ SCENES = [
      [("paul-graham", "dont-scale"), ("kevin-kelly", "direct-relationship")]),
     ("没人找我，是因为还没人找过我。",
      [("merton", "matthew-effect"), ("kevin-kelly", "thousand-true-fans")]),
+    ("十家都没谈成，家里人也不看好我。",
+     [("su-qin", "ten-pitches")]),
 ]),
 ("钱不够", "钱的事", [
     ("选了自己要的路，钱就一直紧。",
@@ -354,6 +356,8 @@ SCENES = [
      [("guo-ziyi", "riding-out-alone"), ("wu-zetian", "the-manifesto")]),
     ("我想劝老板，又不敢当面顶他。",
      [("yan-ying", "price-of-shoes")]),
+    ("我的方案不差，是不是找错了人谈？",
+     [("su-qin", "wrong-buyer")]),
 ]),
 ("谈条件", "跟人打交道", [
     ("我说的话，他们好像不太当真。",

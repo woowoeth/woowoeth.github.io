@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>OurWord — 204 people and books on how the world actually works, across 2,600 years</title>
+    <title>OurWord — 205 people and books on how the world actually works, across 2,600 years</title>
     <link>https://ourword.ai/tw/</link>
     <atom:link href="https://ourword.ai/tw/feed.xml" rel="self" type="application/rss+xml"/>
-    <description>A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 204 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.</description>
+    <description>A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 205 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.</description>
     <language>zh-tw</language>
-    <lastBuildDate>Tue, 27 Oct 2026 08:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 29 Oct 2026 08:00:00 +0800</lastBuildDate>
 <!-- chapters:begin -->
     <item><title>阿德勒 · 課題分離</title><link>https://ourword.ai/tw/i/adler/separation-of-tasks/</link><guid isPermaLink="true">https://ourword.ai/tw/i/adler/separation-of-tasks/</guid><description>阿德勒 · 課題分離——先分清這是誰的事。人際關係的痛苦大半來自越界。這一篇要回答的是：邊界到底畫在哪。</description><pubDate>Tue, 01 Sep 2026 08:00:00 +0800</pubDate></item>
     <item><title>阿德勒 · 不是因為，是為了</title><link>https://ourword.ai/tw/i/adler/teleology/</link><guid isPermaLink="true">https://ourword.ai/tw/i/adler/teleology/</guid><description>阿德勒 · 不是因為，是為了——把原因換成目的。弗洛伊德問你經歷過什麼，阿德勒問你想用它做什麼。這一篇要回答的是：這個換問法為什麼能解凍。</description><pubDate>Sun, 30 Aug 2026 08:00:00 +0800</pubDate></item>
@@ -386,6 +386,8 @@
     <item><title>主權個人 · 從公民到顧客</title><link>https://ourword.ai/tw/i/sovereign-individual/citizen-to-customer/</link><guid isPermaLink="true">https://ourword.ai/tw/i/sovereign-individual/citizen-to-customer/</guid><description>主權個人 · 從公民到顧客——管轄權的競爭。1997年，兩位作者預言了數字貨幣和遠程工作。這一篇要回答的是：他們推出這些的那條鏈條。</description><pubDate>Sat, 29 Aug 2026 08:00:00 +0800</pubDate></item>
     <item><title>戰國策 · 焚券市義</title><link>https://ourword.ai/tw/i/strategies-of-the-warring-states/burning-the-debts/</link><guid isPermaLink="true">https://ourword.ai/tw/i/strategies-of-the-warring-states/burning-the-debts/</guid><description>戰國策 · 焚券市義——買一樣賬上沒有的東西。派去收債的人把債契燒了。這一篇要回答的是：這筆看起來純虧的賬，後來怎麼結的。</description><pubDate>Sat, 29 Aug 2026 08:00:00 +0800</pubDate></item>
     <item><title>戰國策 · 鄒忌照鏡子</title><link>https://ourword.ai/tw/i/strategies-of-the-warring-states/three-mirrors/</link><guid isPermaLink="true">https://ourword.ai/tw/i/strategies-of-the-warring-states/three-mirrors/</guid><description>戰國策 · 鄒忌照鏡子——三個人誇你，三種動機。妻、妾、客都說他比城北徐公美。這一篇要回答的是：他從三句同樣的話裡讀出了三件不同的事。</description><pubDate>Sat, 29 Aug 2026 08:00:00 +0800</pubDate></item>
+    <item><title>蘇秦 · 十次被拒，先回去補</title><link>https://ourword.ai/tw/i/su-qin/ten-pitches/</link><guid isPermaLink="true">https://ourword.ai/tw/i/su-qin/ten-pitches/</guid><description>蘇秦 · 十次被拒，先回去補——被拒絕之後，先怪一句，再補一樣。十次都被拒了。這一篇要回答的是：被拒之後，是怪買家、躲起來，還是回去補一樣東西。</description><pubDate>Thu, 29 Oct 2026 08:00:00 +0800</pubDate></item>
+    <item><title>蘇秦 · 秦不買，去找燕</title><link>https://ourword.ai/tw/i/su-qin/wrong-buyer/</link><guid isPermaLink="true">https://ourword.ai/tw/i/su-qin/wrong-buyer/</guid><description>蘇秦 · 秦不買，去找燕——被拒之後，先看對面缺不缺這件事。秦王不要他的方案。這一篇要回答的是：被拒之後，該改方案，還是改對象。</description><pubDate>Thu, 29 Oct 2026 08:00:00 +0800</pubDate></item>
     <item><title>蘇軾 · 也無風雨也無晴</title><link>https://ourword.ai/tw/i/su-shi/no-wind-no-rain/</link><guid isPermaLink="true">https://ourword.ai/tw/i/su-shi/no-wind-no-rain/</guid><description>蘇軾 · 也無風雨也無晴——把評價系統關掉。同行的人都狼狽不堪，他不覺得。這一篇要回答的是：那一刻他關掉的是什麼。</description><pubDate>Sat, 29 Aug 2026 08:00:00 +0800</pubDate></item>
     <item><title>蘇軾 · 黃州惠州儋州</title><link>https://ourword.ai/tw/i/su-shi/three-exiles/</link><guid isPermaLink="true">https://ourword.ai/tw/i/su-shi/three-exiles/</guid><description>蘇軾 · 黃州惠州儋州——在被貶的地方幹實事。他晚年自評一生功業，列的是三個貶所。這一篇要回答的是：為什麼不是他做過的那些高官。</description><pubDate>Sat, 29 Aug 2026 08:00:00 +0800</pubDate></item>
     <item><title>蘇軾 · 眼前見天下無一個不好人</title><link>https://ourword.ai/tw/i/su-shi/no-bad-people/</link><guid isPermaLink="true">https://ourword.ai/tw/i/su-shi/no-bad-people/</guid><description>蘇軾 · 眼前見天下無一個不好人——把人當人處理。一個被政敵整到差點喪命的人，說眼前沒有一個壞人。這一篇要回答的是：這句話不是天真。</description><pubDate>Sat, 29 Aug 2026 08:00:00 +0800</pubDate></item>

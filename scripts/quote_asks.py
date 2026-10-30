@@ -668,6 +668,12 @@ QUOTE_ASKS = {
     "zichan/the-pair-of-rings":
         "他要得不多，给一次又何妨？",
 
+    # 苏秦
+    "su-qin/ten-pitches":
+        "十家都没谈成，家里人也不看好我。",
+    "su-qin/wrong-buyer":
+        "我的方案不差，是不是找错了人谈？",
+
     # 牛顿
     "newton/sold-too-early":
         "我早卖了，看他们还涨，又买回去了。",

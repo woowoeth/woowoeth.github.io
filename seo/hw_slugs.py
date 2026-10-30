@@ -14,6 +14,7 @@ SLUGS = {
     "子产": "zichan",
     "大卫·李嘉图": "ricardo",
     "牛顿": "newton",
+    "苏秦": "su-qin",
     "托尔斯坦·凡勃伦": "veblen",
     "西蒙娜·德·波伏瓦": "beauvoir",
     "索伦·克尔凯郭尔": "kierkegaard",

@@ -1,7 +1,7 @@
-# OurWord — 204 people and books on how the world actually works, across 2,600 years
+# OurWord — 205 people and books on how the world actually works, across 2,600 years
 # OurWord — See how people before you handled it.
 # https://ourword.ai/en/
-# Full corpus, plain text. 204 entrys.
+# Full corpus, plain text. 205 entrys.
 
 ========================================================================
 ## Albert Einstein
@@ -2058,10 +2058,10 @@ Before the next conversation that matters, write down two lines instead of a scr
 The mouth is the door of the heart. To hear him speak, be silent. To take, first give. Knowing begins with yourself; know yourself, then you know others. It is better to control others than to be controlled by them.
 
 ### Q: What should I read alongside?
-Influence — The same set of human switches, approached from opposite ends: Cialdini runs experiments and teaches you to spot them being pulled, Guiguzi writes the operating manual. The Analects — Confucius asks whether a thing should be said at all; Guiguzi asks only how to say it so that it works. The avowed and the suppressed halves of the same tradition. Nonviolent Communication — Two opposite arts of persuasion: Guiguzi works out what the other side is holding before moving on them, Rosenberg puts both sides' needs on the table in the open.
+Influence — The same set of human switches, approached from opposite ends: Cialdini runs experiments and teaches you to spot them being pulled, Guiguzi writes the operating manual. The Analects — Confucius asks whether a thing should be said at all; Guiguzi asks only how to say it so that it works. The avowed and the suppressed halves of the same tradition. Nonviolent Communication — Two opposite arts of persuasion: Guiguzi works out what the other side is holding before moving on them, Rosenberg puts both sides' needs on the table in the open. Su Qin — One school of thought, two lives. The master put it into a book and stayed in the mountains; his pupil took the book out into the market and was refused ten times. One guarded the method, the other tested it in the field.
 
 ### Further
-Strategies of the Warring States Han Feizi Influence The Art of Worldly Wisdom Zhang Liang Chris Voss Nonviolent Communication The Annals of Lu Buwei
+Strategies of the Warring States Han Feizi Influence The Art of Worldly Wisdom Zhang Liang Chris Voss Nonviolent Communication The Annals of Lu Buwei Su Qin
 
 ========================================================================
 ## Guns, Germs, and Steel
@@ -5543,7 +5543,41 @@ There is no tiger in the marketplace, and three men can make one. My wife favour
 Sun Tzu — One states principles that can be taught in public; the other records what was actually said to one man on one day to change his mind. The Analects — Two faces of the same broken age: one on what a person ought to become, the other on how people behaved. Read only one and you end up naive or cynical. Thomas Schelling — Two arts of negotiation: the persuaders change what the other side believes, Schelling changes what the other side can choose.
 
 ### Further
-Sun Tzu Fan Li Records of the Grand Historian Han Feizi Guiguzi Thomas Schelling The Annals of Lu Buwei Zichan
+Sun Tzu Fan Li Records of the Grand Historian Han Feizi Guiguzi Thomas Schelling The Annals of Lu Buwei Zichan Su Qin
+
+========================================================================
+## Su Qin
+URL: https://ourword.ai/en/i/su-qin/
+Tags: Reading people, Pre-Qin and classical, Fix one thing first
+
+Su Qin (Warring States · dates unknown) — Fix one thing first. A Warring States strategist with a biography in the Records of the Grand Historian, which says he studied under Master Guigu, argued for an alliance of the six states…
+
+### Q: What did this one leave behind?
+A Warring States strategist with a biography in the Records of the Grand Historian, which says he studied under Master Guigu, argued for an alliance of the six states against Qin, and for a time wore the seals of office of all six. His worst year, by the Records, was ten failed letters to the King of Qin, then home in a worn coat with the money gone to a family that would not speak to him. This page takes two things: what to fix after a refusal, and whether to change the buyer. The Mawangdui silk manuscripts give a different Su Qin from the Records in dates and deeds, and this page follows the Records.
+
+### Q: What actually happened?
+According to the Records, years later Su Qin passed through his home town of Luoyang with so many carriages and so much baggage that it looked like a king's progress, and envoys from several states came to see him off. The brothers and wife and sister-in-law who had refused him food stood with lowered eyes and served him at table on their knees. He asked his sister-in-law, smiling, why she had been so proud before and was so humble now. Because your rank is high and you have much gold, she said. He sighed: had he owned two good fields outside Luoyang, would he ever have worn six seals? Then he gave a thousand in gold to his clan and friends.
+
+### The parts · After a refusal, fix one thing
+After ten failed letters to the King of Qin he went home, opened the old books and gave himself a year. What he practised was seeing what one person wanted and how to speak to it. He fixed one specific thing, not more books. e.g. Ten applications and no replies: do not blame the market yet. Look at your portfolio for the page least like what they asked for.
+
+### The parts · The strongest may need you least
+He spoke to the King of Qin about swallowing the other states, and the king did not want it. In Yan he spoke about not being swallowed and settled it in one audience. He did not change his skill, only who was across the table. e.g. The same tool: big companies say they already have one, and a team of a dozen has the owner asking the price on the spot.
+
+### The parts · A soft fallback can hold you back
+He said it himself later: with two good fields he would never have worn the seals. That is no case for being poor. It is a prompt to notice when comfort began making your decisions. e.g. A side project stays a side project because the day job pays the bills, and being able to afford it may be the reason you stop pushing.
+
+### Q: How do I use it today?
+This week dig out one refusal on record (a quote, an application, a proposal). Write down which part they did not want, then name one person who has the problem you can solve and go to them next week.
+
+### Lines to keep
+After a refusal, fix one thing, then go out again. The biggest player is often the one that needs you least. When the fallback is comfortable, ask if you still want to leave.
+
+### Q: What should I read alongside?
+Guiguzi — One school of thought, two lives. The master put it into a book and stayed in the mountains; his pupil took the book out into the market and was refused ten times. One guarded the method, the other tested it in the field.
+
+### Further
+Guiguzi Strategies of the Warring States Sun Tzu
 
 ========================================================================
 ## Su Shi
@@ -5648,7 +5682,7 @@ The victorious army wins first and seeks battle afterwards. Winning a hundred ba
 John Boyd — Both put the decision before the clash. Sun Tzu settles it in preparation, Boyd in speed of turning. On War — The two halves of the subject: Sun Tzu on how to win, Clausewitz on why the plan deforms. One assumes the count can be completed, the other that it never is. Strategies of the Warring States — One states principles that can be taught in public; the other records what was actually said to one man on one day to change his mind. Finite and Infinite Games — Sun Tzu solves competition entirely as a finite game and every technique serves the win; Carse asks why you assumed this round had to end at all. Thinking, Fast and Slow — Reckoning in the temple is a forced start-up of the slow system: settle the count before deciding whether to fight at all. Mozi — Sun Tzu teaches how to win: work out the odds first, then move. Mozi teaches how to make the other side afraid to start: put the odds in front of him and ask him to work them out.
 
 ### Further
-Han Feizi John Boyd Fan Li Peter Thiel Cao Cao Guan Zhong Zhuge Liang Mao Zedong Guo Jia The I Ching Han Xin Huo Qubing Miyamoto Musashi Napoleon On War Thomas Schelling Sima Yi Strategies of the Warring States Su Yu Xiang Yu Machiavelli Nassim Taleb Sapiens Mozi
+Han Feizi John Boyd Fan Li Peter Thiel Cao Cao Guan Zhong Zhuge Liang Mao Zedong Guo Jia The I Ching Han Xin Huo Qubing Miyamoto Musashi Napoleon On War Thomas Schelling Sima Yi Strategies of the Warring States Su Yu Xiang Yu Machiavelli Nassim Taleb Sapiens Mozi Su Qin
 
 ========================================================================
 ## Søren Kierkegaard
@@ -20115,6 +20149,72 @@ Where it goes wrong: treating unanimity as proof of quality; and never going to 
 My wife favours me, my concubine fears me, my guest wants something.
 Seen this way, the king is very thoroughly screened.
 Three people agreeing is not evidence. It is a relationship map.
+
+========================================================================
+## Su Qin · Ten Refusals, Then Back to the Books
+URL: https://ourword.ai/en/i/su-qin/ten-pitches/
+Source: Sima Qian, Records of the Grand Historian, 'Biography of Su Qin'; Strategies of the Warring States, Qin 1
+Tags: Deep read, Su Qin, After a refusal, blame once, then fix one thing
+
+Ten pitches, ten refusals. This asks what to do next: blame the buyer, hide, or go back and fix one thing.
+
+### Q: What actually happened?
+According to the Records, Su Qin wrote to the King of Qin ten times and was never taken up. His sable coat wore through and his hundred catties of gold ran out, and he went home. His wife would not leave her loom, his sister-in-law would not cook for him, and his parents would not speak to him. He sighed that it was all Qin's fault, and that night he dragged out a chest of books and, when he grew sleepy, stabbed his thigh with an awl. A year later he said he was ready to persuade the rulers of his day.
+
+### The parts · Blaming once is normal
+His first reaction was to blame someone else: his family had turned on him, and Qin was to blame. But that same night he opened the chest. Blame once if you must; after it you need a next step, or all you keep is the grievance.
+e.g. Ten applications and no replies. Curse the market for one evening, then look at your portfolio and find the page least like what they asked for.
+
+### The parts · Fix the part that faces a person
+He read a treatise on strategy, and what he practised was working out what one particular ruler wanted and feared, and how he himself should speak to that. The books were material. The skill was opening his mouth.
+e.g. Someone who cannot land work may not lack a certificate. They may lack one sentence that lets the client see what they would solve.
+
+### The parts · Give the retreat an end date
+He gave himself a year, and went out again at the end of it. A deadline keeps the fixing specific. Without one, going back to the books drifts into hiding.
+e.g. Give yourself two months to improve one thing, then take it and knock on a door.
+
+### Q: How do I use it today?
+Where you are: you have tried many times, nothing has landed, and the people around you have started to doubt you.
+Ask first: what did they turn down, me or the one thing I put in front of them? If I fix one thing, what do I bring next time?
+Where it goes wrong: reading it as fail, then shut the door and study. He shut it for a year in order to come out again. Studying until you dare not try again is hiding.
+
+### Lines to keep
+Blame once, then go back and fix one thing.
+Fix what lets someone grasp you in one line.
+A retreat needs an end date. The door opens again.
+
+========================================================================
+## Su Qin · Qin Won't Buy, Try Yan
+URL: https://ourword.ai/en/i/su-qin/wrong-buyer/
+Source: Sima Qian, Records of the Grand Historian, 'Biography of Su Qin' (the audience with the Marquis of Yan); Strategies of the Warring States, Qin 1
+Tags: Deep read, Su Qin, After a refusal, ask whether they lack the need
+
+The King of Qin did not want his plan. This asks whether to change the plan or change who hears it.
+
+### Q: What actually happened?
+To the King of Qin, Su Qin had proposed how to swallow the other states and rule an empire. The king answered that a bird whose feathers are not full cannot fly high. Qin had just put Shang Yang to death and had no love for talkers. Su Qin turned to Yan and waited more than a year for an audience. Then he changed his pitch: Yan had been spared invasion only because Zhao shielded it to the south, so it should ally with Zhao. The Marquis of Yan gave him carriages and silks and sent him on to Zhao.
+
+### The parts · The strongest may need you least
+Qin was strong and busy swallowing others. It wanted to do it faster and had no time for an alliance. Yan sat between great powers and feared being swallowed, so a plan for staying safe found a ready ear.
+e.g. You pitch a management tool to a big company and they say they already have one. You pitch it to a team of a dozen and the owner asks the price on the spot.
+
+### The parts · Keep the skill, change where you start
+To Qin he spoke of swallowing, to Yan of not being swallowed. He did not change what he could do. He changed the direction of the plan and his first sentence.
+e.g. The same quote: lead with delivery time for the client who is in a hurry, and with price for the one on a tight budget.
+
+### The parts · The right person is worth a wait
+The Marquis of Yan did not see him on the first day. Su Qin waited over a year for a place in the queue, and one meeting settled it. Finding the right person can take time. With the wrong one, a year of waiting is wasted.
+e.g. The right client may need a quarter to fit you in. That is cheaper than ten meetings with the wrong one.
+
+### Q: How do I use it today?
+Where you are: you keep making your case and the person across the table does not want it.
+Ask first: do they refuse because my work is weak, or because they do not lack this and do not fear it? Who has the very problem I can solve?
+Where it goes wrong: reading it as one refusal means switch targets. In Qin he pitched ten times. Switch when the person truly has no need, not because they said no today.
+
+### Lines to keep
+The biggest player is often the one that needs you least.
+Keep the skill; find someone who fears this problem.
+Wait a year for the right person, not a day for the wrong one.
 
 ========================================================================
 ## Su Shi · No wind, no rain, no sun
