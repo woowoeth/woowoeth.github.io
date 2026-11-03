@@ -1,11 +1,11 @@
 # OurWord (人類世界生存法則)
 
-> 205 people and books on how the world actually works, across 2,600 years
+> 206 people and books on how the world actually works, across 2,600 years
 > 遇到事了，看看以前的人怎麼處理
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 205 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 206 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
-一個關於「世界到底怎麼運轉」的知識庫：戰略、財富、權力、人性、創業，取自 205 位人物與典籍，跨越 2600 年。每一條都寫清楚這個人真正留下的那一個想法、背後的故事、拆開的分則與例子，以及今天怎麼用。
+一個關於「世界到底怎麼運轉」的知識庫：戰略、財富、權力、人性、創業，取自 206 位人物與典籍，跨越 2600 年。每一條都寫清楚這個人真正留下的那一個想法、背後的故事、拆開的分則與例子，以及今天怎麼用。
 
 ## Read it
 
@@ -27,13 +27,13 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 - [創業與產品](https://ourword.ai/tw/t/startups/) — 20
 - [謀略與競爭](https://ourword.ai/tw/t/strategy/) — 20
 - [世界如何運轉](https://ourword.ai/tw/t/world/) — 20
+- [識人與相處](https://ourword.ai/tw/t/people/) — 19
 - [財富與風險](https://ourword.ai/tw/t/wealth/) — 19
 - [中古](https://ourword.ai/tw/t/medieval/) — 18
-- [識人與相處](https://ourword.ai/tw/t/people/) — 18
 - [家庭與關係](https://ourword.ai/tw/t/family/) — 17
 - [身心與生活](https://ourword.ai/tw/t/living/) — 17
 - [秦漢至魏晉](https://ourword.ai/tw/t/han-wei/) — 16
-- [近世](https://ourword.ai/tw/t/early-modern/) — 14
+- [近世](https://ourword.ai/tw/t/early-modern/) — 15
 
 ## How it is built
 
@@ -270,6 +270,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [拉羅什富科 · 虛偽是惡行向美德的致敬](https://ourword.ai/tw/i/la-rochefoucauld/vice-pays-tribute/): 拉羅什富科 · 虛偽是惡行向美德的致敬——偽裝暴露了行情。他把虛偽寫成一種致敬。這一篇要回答的是：這個刻薄的比喻裡藏著一條讀人的方法。
 - [李光耀 · 管用嗎](https://ourword.ai/tw/i/lee-kuan-yew/does-it-work/): 李光耀 · 管用嗎——讓理論排在結果後面。左右兩邊的理論家都批評過新加坡。這一篇要回答的是：他用哪一個問題打發了所有理論。
 - [李光耀 · 從病床上爬起來](https://ourword.ai/tw/i/lee-kuan-yew/from-my-sickbed/): 李光耀 · 從病床上爬起來——把自己和結果綁死。一句在退休邊緣說出的話，嚇到了很多人。這一篇要回答的是：這種綁定的用處和毒性。
+- [達·芬奇 · 先寫他要的，畫放最後](https://ourword.ai/tw/i/leonardo/their-list-first/): 達·芬奇 · 先寫他要的，畫放最後——求人之前，先把清單換成對方的清單。三十歲的他要找一份活。這一篇要回答的是：手裡本事很多的時候，信裡先寫哪一樣。
+- [達·芬奇 · 我願意當面試給您看](https://ourword.ai/tw/i/leonardo/show-it-in-the-park/): 達·芬奇 · 我願意當面試給您看——對方怕的是請錯人，把試的那一小塊遞過去。對方不認識他，憑什麼信。這一篇要回答的是：怎麼讓一個沒見過你的人放心。
 - [李泌 · 先取范陽](https://ourword.ai/tw/i/li-bi/strike-the-base/): 李泌 · 先取范陽——打老巢還是收首都。安史之亂中，唐肅宗急著收復長安洛陽。這一篇要回答的是：李泌為什麼說那是最差的一步。
 - [李泌 · 臣絕粒無家](https://ourword.ai/tw/i/li-bi/no-office/): 李泌 · 臣絕粒無家——不要職位，只要說話。他四次進入朝廷中樞，四次退回山裡。這一篇要回答的是：不受官職換來的是什麼。
 - [李嘉誠 · 九成時間想失敗](https://ourword.ai/tw/i/li-ka-shing/ninety-percent-failure/): 李嘉誠 · 九成時間想失敗——先想輸再想贏。華人首富自述的時間分配令人意外。這一篇要回答的是：想失敗到底在想什麼。
@@ -550,7 +552,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [AI Bubble Monitor / AI 泡沫檢測儀](https://ourword.ai/ai/)
 - [Zouni / 走你](https://ourword.ai/zouni/)
 
-## Index (205 entrys)
+## Index (206 entrys)
 
 - [BJ·福格](https://ourword.ai/tw/i/bj-fogg/): BJ·福格（2019年·斯坦福行為設計實驗室）——小到不會失敗。斯坦福行為設計實驗室創始人，研究行為如何被設計出來。他給出一個公式：行為發生需要動機、能力、提示三者同時到位。多數人失敗在只調動機——靠決心和自我激勵——而動機天然起伏，靠它維持的習慣必然崩。他的主張相反：把行為縮到小得不需要動機，然後掛在一個已有的動作後面。
 - [C.S.劉易斯](https://ourword.ai/tw/i/cs-lewis/): C.S.劉易斯（1898-1963年·英國牛津）——妻子死後幾個月的日記。作家，牛津和劍橋的教授，寫過《納尼亞傳奇》和大量勸人信仰的書。五十八歲結婚，妻子喬伊四年後因癌症去世。之後幾個月他在四本練習簿上記自己的狀態，後來用筆名出版，就是《卿卿如晤》。收他是因為「重要的人走了」那六個問題，原來靠弗蘭克爾和蘇軾在答——一個是集中營的倖存者，一個是被貶的官員
@@ -732,6 +734,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [資治通鑑](https://ourword.ai/tw/i/zizhi-tongjian/): 資治通鑑（北宋·1065-1084）——鑑。司馬光用19年主持編寫，294卷，記錄前403年到959年共1362年歷史。書名由宋神宗題：「鑑於往事，有資於治道」。它是給統治者看的歷史教科書，核心問題只有一個：政權為什麼興，政權為什麼亡。186篇「臣光曰」是司馬光的判斷，精華在這裡。與史記的「寫人」不同，資治通鑑寫的是「權力
 - [赫伯特·西蒙](https://ourword.ai/tw/i/herbert-simon/): 赫伯特·西蒙（美國·1916-2001）——有限理性。美國學者，1916年生於密爾沃基，芝加哥大學政治學博士，1949年起在卡內基理工學院（後來的卡內基梅隆大學）教書，一待五十多年，2001年在匹茲堡去世。他沒有固定在一門學科裡：1947年的《管理行為》成了管理學的經典，1975年他和艾倫·紐厄爾一起得了圖靈獎，1978年又得了諾貝
 - [趙武靈王](https://ourword.ai/tw/i/zhao-wuling-wang/): 趙武靈王（戰國·趙·前295年卒）——胡服。戰國時趙國國君，前325年即位，前299年傳位給兒子，自稱主父，前295年死於沙丘之亂——這一頁只取他改制的辦法，不論他晚年立嗣的事。他一生做成的主要是一件事：前307年起，下令趙國改穿胡人的短衣窄袖，學騎馬射箭，把靠戰車和步兵的舊打法換成騎兵。這件事難在兩頭：外面是鄰國的強敵，
+- [達·芬奇](https://ourword.ai/tw/i/leonardo/): 達·芬奇（意大利·1452-1519）——先寫他要的。意大利文藝復興的畫家、工程師和解剖學研究者，《最後的晚餐》《蒙娜麗莎》的作者，留下數千頁筆記。約 1482 年，他給米蘭的實際掌權者盧多維科·斯福爾扎寫了一封求職信，草稿留在《大西洋古抄本》裡。這一頁取這封信的兩件事：他把什麼放在最前面，以及信是怎麼收尾的。不假裝知道這封信是不是
 - [達里奧](https://ourword.ai/tw/i/dalio/): 達里奧（當代·1949-）——原則。橋水基金創始人，《原則》作者，全球規模最大的對沖基金。他在華爾街工作40年，經歷了無數市場崩潰，總結出一套可複製的決策框架。他最重要的信念：所有事情都有原則，原則可以被總結，總結後可以被系統化，系統化後可以被複製。
 - [邁克爾·波特](https://ourword.ai/tw/i/porter/): 邁克爾·波特（美國·1947-）——競爭戰略。美國學者，1947年生，哈佛商學院教授，經濟學博士出身，被普遍視為競爭戰略這門學問的奠基人。1979年他在《哈佛商業評論》提出「五種力量」，1980年出版《競爭戰略》，1996年又寫了《What Is Strategy?》。他反覆問的是同一件事：同一個行業裡，有的公司利潤總是高，
 - [道德經](https://ourword.ai/tw/i/tao-te-ching/): 道德經（春秋·前500年前後）——損。老子五千言，是中國哲學的減法源頭。與儒家「為學日益」相對，老子說「為道日損」——不斷減掉，直到無為，然後無不為。道德經在西方被翻譯次數僅次於聖經。

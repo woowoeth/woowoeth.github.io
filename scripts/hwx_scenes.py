@@ -278,6 +278,10 @@ SCENES = [
      [("merton", "matthew-effect"), ("kevin-kelly", "thousand-true-fans")]),
     ("十家都没谈成，家里人也不看好我。",
      [("su-qin", "ten-pitches")]),
+    ("我什么都能做，可他为什么没回我？",
+     [("leonardo", "their-list-first")]),
+    ("他们怕请错人，我拿什么让他们放心？",
+     [("leonardo", "show-it-in-the-park")]),
 ]),
 ("钱不够", "钱的事", [
     ("选了自己要的路，钱就一直紧。",

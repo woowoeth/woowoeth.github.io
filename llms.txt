@@ -1,11 +1,11 @@
 # OurWord (人类世界生存法则)
 
-> 205 people and books on how the world actually works, across 2,600 years
+> 206 people and books on how the world actually works, across 2,600 years
 > 遇到事了，看看以前的人怎么处理
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 205 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 206 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
-一个关于「世界到底怎么运转」的知识库：战略、财富、权力、人性、创业，取自 205 位人物与典籍，跨越 2600 年。每一条都写清楚这个人真正留下的那一个想法、背后的故事、拆开的分则与例子，以及今天怎么用。
+一个关于「世界到底怎么运转」的知识库：战略、财富、权力、人性、创业，取自 206 位人物与典籍，跨越 2600 年。每一条都写清楚这个人真正留下的那一个想法、背后的故事、拆开的分则与例子，以及今天怎么用。
 
 ## Read it
 
@@ -27,13 +27,13 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 - [创业与产品](https://ourword.ai/t/startups/) — 20
 - [谋略与竞争](https://ourword.ai/t/strategy/) — 20
 - [世界如何运转](https://ourword.ai/t/world/) — 20
+- [识人与相处](https://ourword.ai/t/people/) — 19
 - [财富与风险](https://ourword.ai/t/wealth/) — 19
 - [中古](https://ourword.ai/t/medieval/) — 18
-- [识人与相处](https://ourword.ai/t/people/) — 18
 - [家庭与关系](https://ourword.ai/t/family/) — 17
 - [身心与生活](https://ourword.ai/t/living/) — 17
 - [秦汉至魏晋](https://ourword.ai/t/han-wei/) — 16
-- [近世](https://ourword.ai/t/early-modern/) — 14
+- [近世](https://ourword.ai/t/early-modern/) — 15
 
 ## How it is built
 
@@ -270,6 +270,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [拉罗什富科 · 虚伪是恶行向美德的致敬](https://ourword.ai/i/la-rochefoucauld/vice-pays-tribute/): 拉罗什富科 · 虚伪是恶行向美德的致敬——伪装暴露了行情。他把虚伪写成一种致敬。这一篇要回答的是：这个刻薄的比喻里藏着一条读人的方法。
 - [李光耀 · 管用吗](https://ourword.ai/i/lee-kuan-yew/does-it-work/): 李光耀 · 管用吗——让理论排在结果后面。左右两边的理论家都批评过新加坡。这一篇要回答的是：他用哪一个问题打发了所有理论。
 - [李光耀 · 从病床上爬起来](https://ourword.ai/i/lee-kuan-yew/from-my-sickbed/): 李光耀 · 从病床上爬起来——把自己和结果绑死。一句在退休边缘说出的话，吓到了很多人。这一篇要回答的是：这种绑定的用处和毒性。
+- [达·芬奇 · 先写他要的，画放最后](https://ourword.ai/i/leonardo/their-list-first/): 达·芬奇 · 先写他要的，画放最后——求人之前，先把清单换成对方的清单。三十岁的他要找一份活。这一篇要回答的是：手里本事很多的时候，信里先写哪一样。
+- [达·芬奇 · 我愿意当面试给您看](https://ourword.ai/i/leonardo/show-it-in-the-park/): 达·芬奇 · 我愿意当面试给您看——对方怕的是请错人，把试的那一小块递过去。对方不认识他，凭什么信。这一篇要回答的是：怎么让一个没见过你的人放心。
 - [李泌 · 先取范阳](https://ourword.ai/i/li-bi/strike-the-base/): 李泌 · 先取范阳——打老巢还是收首都。安史之乱中，唐肃宗急着收复长安洛阳。这一篇要回答的是：李泌为什么说那是最差的一步。
 - [李泌 · 臣绝粒无家](https://ourword.ai/i/li-bi/no-office/): 李泌 · 臣绝粒无家——不要职位，只要说话。他四次进入朝廷中枢，四次退回山里。这一篇要回答的是：不受官职换来的是什么。
 - [李嘉诚 · 九成时间想失败](https://ourword.ai/i/li-ka-shing/ninety-percent-failure/): 李嘉诚 · 九成时间想失败——先想输再想赢。华人首富自述的时间分配令人意外。这一篇要回答的是：想失败到底在想什么。
@@ -550,7 +552,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [AI Bubble Monitor / AI 泡沫检测仪](https://ourword.ai/ai/)
 - [Zouni / 走你](https://ourword.ai/zouni/)
 
-## Index (205 entrys)
+## Index (206 entrys)
 
 - [BJ·福格](https://ourword.ai/i/bj-fogg/): BJ·福格（2019年·斯坦福行为设计实验室）——小到不会失败。斯坦福行为设计实验室创始人，研究行为如何被设计出来。他给出一个公式：行为发生需要动机、能力、提示三者同时到位。多数人失败在只调动机——靠决心和自我激励——而动机天然起伏，靠它维持的习惯必然崩。他的主张相反：把行为缩到小得不需要动机，然后挂在一个已有的动作后面。
 - [C.S.刘易斯](https://ourword.ai/i/cs-lewis/): C.S.刘易斯（1898-1963年·英国牛津）——妻子死后几个月的日记。作家，牛津和剑桥的教授，写过《纳尼亚传奇》和大量劝人信仰的书。五十八岁结婚，妻子乔伊四年后因癌症去世。之后几个月他在四本练习簿上记自己的状态，后来用笔名出版，就是《卿卿如晤》。收他是因为「重要的人走了」那六个问题，原来靠弗兰克尔和苏轼在答——一个是集中营的幸存者，一个是被贬的官员
@@ -732,6 +734,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [资治通鉴](https://ourword.ai/i/zizhi-tongjian/): 资治通鉴（北宋·1065-1084）——鉴。司马光用19年主持编写，294卷，记录前403年到959年共1362年历史。书名由宋神宗题：「鉴于往事，有资于治道」。它是给统治者看的历史教科书，核心问题只有一个：政权为什么兴，政权为什么亡。186篇「臣光曰」是司马光的判断，精华在这里。与史记的「写人」不同，资治通鉴写的是「权力
 - [赫伯特·西蒙](https://ourword.ai/i/herbert-simon/): 赫伯特·西蒙（美国·1916-2001）——有限理性。美国学者，1916年生于密尔沃基，芝加哥大学政治学博士，1949年起在卡内基理工学院（后来的卡内基梅隆大学）教书，一待五十多年，2001年在匹兹堡去世。他没有固定在一门学科里：1947年的《管理行为》成了管理学的经典，1975年他和艾伦·纽厄尔一起得了图灵奖，1978年又得了诺贝
 - [赵武灵王](https://ourword.ai/i/zhao-wuling-wang/): 赵武灵王（战国·赵·前295年卒）——胡服。战国时赵国国君，前325年即位，前299年传位给儿子，自称主父，前295年死于沙丘之乱——这一页只取他改制的办法，不论他晚年立嗣的事。他一生做成的主要是一件事：前307年起，下令赵国改穿胡人的短衣窄袖，学骑马射箭，把靠战车和步兵的旧打法换成骑兵。这件事难在两头：外面是邻国的强敌，
+- [达·芬奇](https://ourword.ai/i/leonardo/): 达·芬奇（意大利·1452-1519）——先写他要的。意大利文艺复兴的画家、工程师和解剖学研究者，《最后的晚餐》《蒙娜丽莎》的作者，留下数千页笔记。约 1482 年，他给米兰的实际掌权者卢多维科·斯福尔扎写了一封求职信，草稿留在《大西洋古抄本》里。这一页取这封信的两件事：他把什么放在最前面，以及信是怎么收尾的。不假装知道这封信是不是
 - [达里奥](https://ourword.ai/i/dalio/): 达里奥（当代·1949-）——原则。桥水基金创始人，《原则》作者，全球规模最大的对冲基金。他在华尔街工作40年，经历了无数市场崩溃，总结出一套可复制的决策框架。他最重要的信念：所有事情都有原则，原则可以被总结，总结后可以被系统化，系统化后可以被复制。
 - [迈克尔·波特](https://ourword.ai/i/porter/): 迈克尔·波特（美国·1947-）——竞争战略。美国学者，1947年生，哈佛商学院教授，经济学博士出身，被普遍视为竞争战略这门学问的奠基人。1979年他在《哈佛商业评论》提出「五种力量」，1980年出版《竞争战略》，1996年又写了《What Is Strategy?》。他反复问的是同一件事：同一个行业里，有的公司利润总是高，
 - [道德经](https://ourword.ai/i/tao-te-ching/): 道德经（春秋·前500年前后）——损。老子五千言，是中国哲学的减法源头。与儒家「为学日益」相对，老子说「为道日损」——不断减掉，直到无为，然后无不为。道德经在西方被翻译次数仅次于圣经。

@@ -674,6 +674,12 @@ QUOTE_ASKS = {
     "su-qin/wrong-buyer":
         "我的方案不差，是不是找错了人谈？",
 
+    # 达·芬奇
+    "leonardo/their-list-first":
+        "我什么都能做，可他为什么没回我？",
+    "leonardo/show-it-in-the-park":
+        "他们怕请错人，我拿什么让他们放心？",
+
     # 牛顿
     "newton/sold-too-early":
         "我早卖了，看他们还涨，又买回去了。",
