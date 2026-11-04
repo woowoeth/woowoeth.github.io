@@ -1,7 +1,7 @@
-# OurWord — 206 people and books on how the world actually works, across 2,600 years
+# OurWord — 207 people and books on how the world actually works, across 2,600 years
 # OurWord — See how people before you handled it.
 # https://ourword.ai/en/
-# Full corpus, plain text. 206 entrys.
+# Full corpus, plain text. 207 entrys.
 
 ========================================================================
 ## Albert Einstein
@@ -997,6 +997,40 @@ Warren Buffett — Same desk for fifty years: Buffett holds the temperament, Mun
 Warren Buffett Han Feizi John Boyd Elon Musk Influence Benjamin Franklin Ray Dalio Benjamin Graham Peter Lynch Jim Simons George Soros Richard Feynman Socrates Thinking, Fast and Slow Thinking in Systems Bruce Lee Albert Einstein Herbert Simon
 
 ========================================================================
+## Chen Ping
+URL: https://ourword.ai/en/i/chen-ping/
+Tags: Reading people, Qin, Han and the Six Dynasties, Leaving clean
+
+Chen Ping (Western Han · d. 178 BC) — Leaving clean. Chancellor of the early Han, with a hereditary house of his own in the Records of the Grand Historian.
+
+### Q: What did this one leave behind?
+Chancellor of the early Han, with a hereditary house of his own in the Records of the Grand Historian. He served the king of Wei, then Xiang Yu, then Liu Bang, advised Liu Bang in the war against Xiang Yu, and after the empress dowager Lü died he joined Zhou Bo in destroying her clan and installing Emperor Wen. This page takes one stretch only: how he left Xiang Yu, and how he answered, in Liu Bang's camp, the charge that he changed sides too often.
+
+### Q: What actually happened?
+Chen Ping grew up on thirty mu of land, with his elder brother farming while he studied. One year, at the village sacrifice, he was put in charge of carving the meat, and he divided it so evenly that the elders praised him. He sighed and said that if he were given the running of the world, he would divide it just like this meat.
+
+### The parts · Leave what is not yours
+He sealed the gold and seal of office his old master gave him and sent them back. Nothing of Xiang Yu's went with him, which left his old master one less thing to say about him. e.g. Hand over accounts, files and client lists before you go.
+
+### The parts · Answer suspicion where they can see
+A boatman suspected him of carrying valuables, and he took his clothes off to help pole the boat. Doubt cannot be talked away; it has to be answered with something the other person's eyes can check. e.g. If they suspect you took data, go through the handover list with them.
+
+### The parts · Have something to be tested on
+Liu Bang asked why he should be trusted, and Chen Ping said to use his plans if useful and hand the gold in if not. He could say it because he really had plans to deliver. e.g. Say you will deliver one concrete thing in your first three months.
+
+### Q: How do I use it today?
+This week, list the things you hold that were given to you by someone else: accounts, files, keys, client lists. If you ever leave, that list is your sealed gold and seal.
+
+### Lines to keep
+Hand back what is not yours before you go. When they doubt you, let them see for themselves. Have something to be checked before you invite the check.
+
+### Q: What should I read alongside?
+Fan Li — Fan Li left at the top, with the work done and the time of his choosing. Chen Ping left in fear, with nothing but his clothes. For one, leaving was about when; for the other, only how.
+
+### Further
+Liu Bang Zhang Liang Fan Li
+
+========================================================================
 ## Chris Voss
 URL: https://ourword.ai/en/i/chris-voss/
 Tags: Reading people, Modern, Label it first
@@ -1571,10 +1605,10 @@ At every stage of a career, ask periodically: is this relationship, or this job,
 The birds are gone, so the good bow is put away. You can share hardship with him. You cannot share ease. In drought, stock boats. In flood, stock carts.
 
 ### Q: What should I read alongside?
-Li Ka-shing — Two and a half millennia apart, the same two rules: buy when nobody wants it, and leave before the top. Zhang Liang — The two men who understood leaving. Fan Li left to trade, Zhang Liang left to study the way. Different exits, identical result. Zhuge Liang — Two answers to having succeeded: Fan Li walked away at the summit, Zhuge Liang never put it down at all. Li Bi — Two versions of leaving without going far: Fan Li disappeared completely, Li Bi kept walking through the centre of power in a robe that let him leave at will. Guo Jia — Two ways a gifted adviser ends. Guo Jia burned out at thirty-eight inside the work; Fan Li walked away on the day it was won and lived a long time afterwards. Wang Jian — Two ways of leaving at the top: Fan Li vanished and became a merchant, Wang Jian resigned and went home to his fields. Bai Gui — Two ancient fortunes: Fan Li teaches how to get out intact, Bai Gui teaches a method you can repeat. Hu Xueyan — Both worked between officials and trade. Fan Li left at the summit; Hu Xueyan tied the knots tighter every year. Jesse Livermore — Both understood exits. Fan Li left at every summit; Livermore never once got up from the table.
+Li Ka-shing — Two and a half millennia apart, the same two rules: buy when nobody wants it, and leave before the top. Zhang Liang — The two men who understood leaving. Fan Li left to trade, Zhang Liang left to study the way. Different exits, identical result. Zhuge Liang — Two answers to having succeeded: Fan Li walked away at the summit, Zhuge Liang never put it down at all. Li Bi — Two versions of leaving without going far: Fan Li disappeared completely, Li Bi kept walking through the centre of power in a robe that let him leave at will. Guo Jia — Two ways a gifted adviser ends. Guo Jia burned out at thirty-eight inside the work; Fan Li walked away on the day it was won and lived a long time afterwards. Wang Jian — Two ways of leaving at the top: Fan Li vanished and became a merchant, Wang Jian resigned and went home to his fields. Bai Gui — Two ancient fortunes: Fan Li teaches how to get out intact, Bai Gui teaches a method you can repeat. Hu Xueyan — Both worked between officials and trade. Fan Li left at the summit; Hu Xueyan tied the knots tighter every year. Jesse Livermore — Both understood exits. Fan Li left at every summit; Livermore never once got up from the table. Chen Ping — Fan Li left at the top, with the work done and the time of his choosing. Chen Ping left in fear, with nothing but his clothes. For one, leaving was about when; for the other, only how.
 
 ### Further
-Li Ka-shing Su Shi Sun Tzu Warren Buffett Han Feizi Pu Songling Guan Zhong Zhang Liang Zhuge Liang Li Bi The I Ching Napoleon Sima Yi Strategies of the Warring States Wang Jian Xiang Yu The Art of Worldly Wisdom Bai Gui Ray Dalio Hu Xueyan Jesse Livermore Records of the Grand Historian Nassim Taleb The Sovereign Individual Liu Yan
+Li Ka-shing Su Shi Sun Tzu Warren Buffett Han Feizi Pu Songling Guan Zhong Zhang Liang Zhuge Liang Li Bi The I Ching Napoleon Sima Yi Strategies of the Warring States Wang Jian Xiang Yu The Art of Worldly Wisdom Bai Gui Ray Dalio Hu Xueyan Jesse Livermore Records of the Grand Historian Nassim Taleb The Sovereign Individual Liu Yan Chen Ping
 
 ========================================================================
 ## Fan Zhongyan
@@ -3634,7 +3668,7 @@ In the tent, settling a victory a thousand miles off, Zhang Liang beats me. Thes
 Xiang Yu — Both came out of the same collapse. Liu Bang gave things away and won the empire; Xiang Yu held on to everything and won the legend. Cao Cao — Two masters of using people, working from opposite ends: Liu Bang through generosity, Cao Cao through system. Zhu Yuanzhang — Two emperors from the bottom, opposite policies on the men who got them there: Liu Bang scattered wealth to hold them, Zhu Yuanzhang killed them to be safe. Liu Xiu — Both were founders who had to deal with veterans. Under Liu Bang Han Xin was killed, Peng Yue was minced and Ying Bu was executed; under Liu Xiu Jia Fu and Deng Yu gave up their armies and got marquisates, Special Advancement and a seat in counsel. Liu Bang's page is about using people better than yourself; this one is about what to do with them afterwards.
 
 ### Further
-Han Xin Zhang Liang Cao Cao Li Shimin Wu Zetian Zhu Yuanzhang Mao Zedong Julius Caesar Xiang Yu Machiavelli Records of the Grand Historian Xiao He Liu Xiu
+Han Xin Zhang Liang Cao Cao Li Shimin Wu Zetian Zhu Yuanzhang Mao Zedong Julius Caesar Xiang Yu Machiavelli Records of the Grand Historian Xiao He Liu Xiu Chen Ping
 
 ========================================================================
 ## Liu Xiu
@@ -7378,7 +7412,7 @@ Enfeoff me at Liu and it is enough. I wish to drop the affairs of men and follow
 Han Xin — Same founding, opposite endings: Zhang Liang withdrew completely and died old, Han Xin kept both his army and his ambitions and was killed. Fan Li — The two men who understood leaving. Fan Li left to trade, Zhang Liang left to study the way. Different exits, identical result. Guo Ziyi — Two ways to survive success: Zhang Liang left the table, Guo Ziyi stayed at it with his cards face up, which is much the harder trick. Li Bi — One reign or four: Zhang Liang withdrew for good once the founding was over, Li Bi came back and left four times and finished holding the top office. Lin Xiangru — Both step back when they could press their claim: Zhang Liang turned down thirty thousand households for one small county, yielding to his ruler to disarm suspicion, while Lin yielded to a colleague to keep standing the one line of defence the two of them held together. Feng Yi — Both stepped back from reward. Zhang Liang turned down thirty thousand households and asked for one small county, stepping back from the ruler's gift. Feng Yi kept his rewards and simply stayed out of the argument about merit, filing plain reports and letting the soldiers and the emperor keep the account.
 
 ### Further
-Fan Li Li Bi Han Xin Tao Te Ching Liu Bang Guo Ziyi Wang Jian Guiguzi Lin Xiangru Feng Yi Xiao He The Duke of Zhou
+Fan Li Li Bi Han Xin Tao Te Ching Liu Bang Guo Ziyi Wang Jian Guiguzi Lin Xiangru Feng Yi Xiao He The Duke of Zhou Chen Ping
 
 ========================================================================
 ## Zhang Yiming
@@ -9718,6 +9752,72 @@ Where it goes wrong: running the restatement as a script, or reflecting for ever
 If I can listen to what he tells me, I can help him.
 Real communication happens when we listen with understanding.
 Change tracks whether the listener understood, not which method he used.
+
+========================================================================
+## Chen Ping · Seal the Gold and Send It Back
+URL: https://ourword.ai/en/i/chen-ping/return-the-seal/
+Source: Sima Qian, Records of the Grand Historian, 'Hereditary House of Chancellor Chen'
+Tags: Deep read, Chen Ping, When you have to leave, leave behind what is not yours
+
+He ran because he was frightened. This asks how to leave when you have no choice.
+
+### Q: What actually happened?
+Chen Ping served Xiang Yu and was rewarded with gold after a campaign. Soon the Han king took the same territory, and Xiang Yu, furious, moved to punish the officers who had won it. Chen Ping panicked. He sealed up the gold and his seal of office, sent them back, and slipped away alone with a sword to join Liu Bang. Crossing a river, the boatman took him for a deserter with valuables and eyed him for the kill. Chen Ping stripped off his clothes and helped pole the boat, and the boatman, seeing he carried nothing, let it go.
+
+### The parts · Do not carry off what your old master gave you
+The gold and the seal were Xiang Yu's. Taking them would make him a man who ran with the goods. He sent them back and left with nothing of his old master's. Whether he planned it as insurance, the Records do not say.
+e.g. Before you resign, hand over accounts, files and client lists and leave them behind.
+
+### The parts · Suspicion is answered with what people can see
+Saying he had no money would only have sounded like hiding it. He took his clothes off and let the boatman see. Suspicion lives in the eyes, so it has to be answered where the eyes can reach.
+e.g. If someone suspects you of taking data, put the handover list on the table and go through it line by line.
+
+### The parts · Leaving cleanly is not the same as leaving well
+He left out of fear, not because he had worked out where to go. In Liu Bang's camp he had to prove himself all over again, which is the next chapter. This one takes only how he went, not why.
+e.g. A tidy exit from one job does not mean you chose the next one well; ask both questions.
+
+### Q: How do I use it today?
+Where you are: you have decided to go, or you are being pushed.
+Ask first: what do I hold that this place gave me and that is not mine? Is there anything people might say I took?
+Where it goes wrong: treating a clean exit as the whole job. He ran from danger, not toward a plan, and a new set of doubters was waiting.
+
+### Lines to keep
+Hand back what is not yours before you go.
+Answer suspicion with what they can see.
+A clean exit is not a good destination.
+
+========================================================================
+## Chen Ping · The Gold Is All Here
+URL: https://ourword.ai/en/i/chen-ping/let-them-check/
+Source: Sima Qian, Records of the Grand Historian, 'Hereditary House of Chancellor Chen'
+Tags: Deep read, Chen Ping, Asked why you keep changing sides, hand over something they can check
+
+The new camp thought he changed masters too often. This asks what to say when they ask why they should trust you.
+
+### Q: What actually happened?
+Chen Ping joined Liu Bang and was made a commander that same day, overseeing the generals. The veterans erupted: a deserter from yesterday! Zhou Bo and Guan Ying added that he looked fine but was hollow inside, was rumoured to have wronged his sister-in-law, and had already left Wei and Chu. Liu Bang asked him directly. Chen Ping swore nothing. His old masters could not use him, he said; he took the gold for lack of money; use his plans if they were good, and if not, the gold was all there, to be sealed and handed in. Liu Bang apologised and gave him charge of all the generals.
+
+### The parts · A reference speaks to skill, not character
+Wei Wuzhi, who had recommended him, told Liu Bang he had vouched for ability, while Liu Bang was asking about conduct, and in a war conduct does not decide the outcome. Use the line with care: he was saying what the moment needed, not that character does not matter.
+e.g. Asked why you changed jobs, state what each move produced and what you can bring, rather than only saying you are steady.
+
+### The parts · Speak of your old place only in checkable terms
+He said Wei's king would not use his advice and Xiang Yu trusted no one outside his own clan. That is about how they used people, not about their character, and Liu Bang could verify it by asking around. He did not deny taking gold; he explained why.
+e.g. Asked why you left, say that team had no use for the work you do best, not that the boss was bad.
+
+### The parts · Hand them the means to check you
+His last words: use my plans if they are useful; if not, seal the gold, hand it in and let me go. Keep me if I am of use, send me off if not, money returned. He gave the other side the switch. It stood because he really did have plans to deliver.
+e.g. At the start of a job, say you will hand over one concrete result in three months and they can decide on that.
+
+### Q: How do I use it today?
+Where you are: you have changed jobs several times and the new people murmur about it.
+Ask first: what are they really afraid of, and can I hand them one thing they can check themselves?
+Where it goes wrong: using this as licence to run down the old employer, or to deny everything. He admitted taking the gold and made nothing up, and he had plans to deliver. With nothing to check, do not offer the line.
+
+### Lines to keep
+They fear misjudging you, not your CV.
+Speak of the old place only as far as they can check.
+Have something to test before you invite the test.
 
 ========================================================================
 ## Chris Voss · Say their feeling out loud

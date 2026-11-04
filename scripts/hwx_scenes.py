@@ -1098,6 +1098,10 @@ SCENES = [
      [("becker", "general-and-specific")]),
     ("这儿太舒服了，舒服得我有点怕。",
      [("jin-wengong", "ease-ruins-a-name")]),
+    ("我要走了，怎么走才不留话柄？",
+     [("chen-ping", "return-the-seal")]),
+    ("我跳过几次槽，新老板凭什么信我？",
+     [("chen-ping", "let-them-check")]),
 ]),
 ("信错了人", "跟人打交道", [
     ("我信错了人，现在不敢再信谁。",

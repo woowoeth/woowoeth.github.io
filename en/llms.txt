@@ -1,9 +1,9 @@
 # OurWord (OurWord)
 
-> 206 people and books on how the world actually works, across 2,600 years
+> 207 people and books on how the world actually works, across 2,600 years
 > See how people before you handled it.
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 206 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 207 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
 ## Read it
 
@@ -23,10 +23,10 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 - [Mind and feeling](https://ourword.ai/en/t/mind-and-feeling/) — 22
 - [How the world works](https://ourword.ai/en/t/how-the-world-works/) — 21
 - [Learning and growth](https://ourword.ai/en/t/learning-and-growth/) — 21
-- [Qin, Han and the Six Dynasties](https://ourword.ai/en/t/qin-han-and-the-six-dynasties/) — 20
+- [Qin, Han and the Six Dynasties](https://ourword.ai/en/t/qin-han-and-the-six-dynasties/) — 21
+- [Reading people](https://ourword.ai/en/t/reading-people/) — 20
 - [Starting and building](https://ourword.ai/en/t/starting-and-building/) — 20
 - [Strategy and competition](https://ourword.ai/en/t/strategy-and-competition/) — 20
-- [Reading people](https://ourword.ai/en/t/reading-people/) — 19
 - [Money and risk](https://ourword.ai/en/t/money-and-risk/) — 18
 - [Body and daily life](https://ourword.ai/en/t/body-and-daily-life/) — 17
 - [Family and relationships](https://ourword.ai/en/t/family-and-relationships/) — 17
@@ -102,6 +102,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [Cao Cao · Burning the letters at Guandu](https://ourword.ai/en/i/cao-cao/burning-the-letters/): Cao Cao · Burning the letters at Guandu — Some accounts must not be settled. A stack of evidence in hand, enough to name everyone who hedged against you. Why he burned it in front of everybody.
 - [Carl Rogers · Unconditional positive regard](https://ourword.ai/en/i/carl-rogers/unconditional-regard/): Carl Rogers · Unconditional positive regard — Accept the person, judge the act. Unconditional sounds like having no standards. What exactly is the thing that carries no conditions.
 - [Carl Rogers · Say it back until they nod](https://ourword.ai/en/i/carl-rogers/reflective-listening/): Carl Rogers · Say it back until they nod — Empathy is a move, not a sentence. I understand how you feel does nothing at all. What the act of empathy actually consists of.
+- [Chen Ping · Seal the Gold and Send It Back](https://ourword.ai/en/i/chen-ping/return-the-seal/): Chen Ping · Seal the Gold and Send It Back — When you have to leave, leave behind what is not yours. He ran because he was frightened. This asks how to leave when you have no choice.
+- [Chen Ping · The Gold Is All Here](https://ourword.ai/en/i/chen-ping/let-them-check/): Chen Ping · The Gold Is All Here — Asked why you keep changing sides, hand over something they can check. The new camp thought he changed masters too often. This asks what to say when they ask why they should trust you.
 - [Chris Voss · Say their feeling out loud](https://ourword.ai/en/i/chris-voss/labeling/): Chris Voss · Say their feeling out loud — Name it before you negotiate it. The other side has gone quiet and will not take a call. What Voss says to say first, and why it is not a concession.
 - [Chris Voss · You want that's right, not yes](https://ourword.ai/en/i/chris-voss/thats-right/): Chris Voss · You want that's right, not yes — Two kinds of agreement, nothing alike. They nodded and nothing moved afterwards. This is about telling which of the two agreements you actually walked out with.
 - [Chu Shijian · Up the mountain at seventy-four](https://ourword.ai/en/i/chu-shijian/orchard-at-74/): Chu Shijian · Up the mountain at seventy-four — Beginning one thing from zero. Is it too late to begin at this age? What he decided in the year he turned seventy-four, and the arithmetic behind it.
@@ -546,7 +548,7 @@ Cite the individual page URL, not the homepage — each entry page is stable and
 - [AI Bubble Monitor](https://ourword.ai/ai/)
 - [Zouni](https://ourword.ai/zouni/)
 
-## Index (206 entrys)
+## Index (207 entrys)
 
 - [Albert Einstein](https://ourword.ai/en/i/einstein/): Albert Einstein (Germany · 1879–1955) — Imagination. The physicist, and the father of relativity — but the legacy that travels furthest is not a formula, it is a way of working.
 - [Albert O. Hirschman](https://ourword.ai/en/i/hirschman/): Albert O. Hirschman (United States · 1915-2012) — Voice. A German-born American economist. He left Berlin in 1933, fought in Spain in 1936, spent 1940 in Marseille forging papers and finding mountain…
@@ -575,6 +577,7 @@ Cite the individual page URL, not the homepage — each entry page is stable and
 - [Carol Dweck](https://ourword.ai/en/i/dweck/): Carol Dweck (2006 · Stanford) — Ability can grow. The Stanford psychologist behind the distinction between fixed and growth mindsets: whether you believe ability is a fixed quantity or something that…
 - [Charles P. Kindleberger](https://ourword.ai/en/i/kindleberger/): Charles P. Kindleberger (United States · 1910-2003) — Credit. An American economist, born in New York in 1910, on the faculty at MIT from 1948 for half a century, author of more than thirty books.
 - [Charlie Munger](https://ourword.ai/en/i/munger/): Charlie Munger (Contemporary · 1924–2023) — Invert. Buffett's partner for more than half a century, and the reason Berkshire stopped buying cheap broken companies and started buying good ones at fair…
+- [Chen Ping](https://ourword.ai/en/i/chen-ping/): Chen Ping (Western Han · d. 178 BC) — Leaving clean. Chancellor of the early Han, with a hereditary house of his own in the Records of the Grand Historian.
 - [Chris Voss](https://ourword.ai/en/i/chris-voss/): Chris Voss (2016 · Never Split the Difference) — Label it first. A former lead international kidnapping negotiator for the FBI, with a career spent on sieges, abductions and hostage-takings.
 - [Christina Maslach](https://ourword.ai/en/i/maslach/): Christina Maslach (1946– · UC Berkeley) — Burnout is the job. Burnout became measurable largely because of her work. Her 1981 inventory split it into three components — emotional exhaustion…
 - [Chu Shijian](https://ourword.ai/en/i/chu-shijian/): Chu Shijian (1928–2019 · Yunnan) — Up the mountain at seventy-four. A man from Yunnan who ran a cigarette factory from the age of fifty-one and made Hongtashan the best-selling brand in China, known…

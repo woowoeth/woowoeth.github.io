@@ -100,6 +100,7 @@ NAMES = {
     "guiguzi": ("Guiguzi", "Reading people"),
     "su-qin": ("Su Qin", "Reading people"),
     "leonardo": ("Leonardo da Vinci", "Reading people"),
+    "chen-ping": ("Chen Ping", "Reading people"),
     "influence": ("Influence", "Reading people"),
     "konnikova": ("Maria Konnikova", "Reading people"),
     "la-rochefoucauld": ("La Rochefoucauld", "Reading people"),

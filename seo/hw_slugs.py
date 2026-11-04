@@ -16,6 +16,7 @@ SLUGS = {
     "牛顿": "newton",
     "苏秦": "su-qin",
     "达·芬奇": "leonardo",
+    "陈平": "chen-ping",
     "托尔斯坦·凡勃伦": "veblen",
     "西蒙娜·德·波伏瓦": "beauvoir",
     "索伦·克尔凯郭尔": "kierkegaard",

@@ -674,6 +674,12 @@ QUOTE_ASKS = {
     "su-qin/wrong-buyer":
         "我的方案不差，是不是找错了人谈？",
 
+    # 陈平
+    "chen-ping/return-the-seal":
+        "我要走了，怎么走才不留话柄？",
+    "chen-ping/let-them-check":
+        "我跳过几次槽，新老板凭什么信我？",
+
     # 达·芬奇
     "leonardo/their-list-first":
         "我什么都能做，可他为什么没回我？",
