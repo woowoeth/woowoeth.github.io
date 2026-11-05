@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>OurWord — 207 people and books on how the world actually works, across 2,600 years</title>
+    <title>OurWord — 208 people and books on how the world actually works, across 2,600 years</title>
     <link>https://ourword.ai/</link>
     <atom:link href="https://ourword.ai/feed.xml" rel="self" type="application/rss+xml"/>
-    <description>A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 207 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.</description>
+    <description>A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 208 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.</description>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 04 Nov 2026 08:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 05 Nov 2026 08:00:00 +0800</lastBuildDate>
 <!-- chapters:begin -->
     <item><title>阿德勒 · 课题分离</title><link>https://ourword.ai/i/adler/separation-of-tasks/</link><guid isPermaLink="true">https://ourword.ai/i/adler/separation-of-tasks/</guid><description>阿德勒 · 课题分离——先分清这是谁的事。人际关系的痛苦大半来自越界。这一篇要回答的是：边界到底画在哪。</description><pubDate>Tue, 01 Sep 2026 08:00:00 +0800</pubDate></item>
     <item><title>阿德勒 · 不是因为，是为了</title><link>https://ourword.ai/i/adler/teleology/</link><guid isPermaLink="true">https://ourword.ai/i/adler/teleology/</guid><description>阿德勒 · 不是因为，是为了——把原因换成目的。弗洛伊德问你经历过什么，阿德勒问你想用它做什么。这一篇要回答的是：这个换问法为什么能解冻。</description><pubDate>Sun, 30 Aug 2026 08:00:00 +0800</pubDate></item>
@@ -423,6 +423,8 @@
     <item><title>系统之美 · 杠杆点</title><link>https://ourword.ai/i/thinking-in-systems/leverage-points/</link><guid isPermaLink="true">https://ourword.ai/i/thinking-in-systems/leverage-points/</guid><description>系统之美 · 杠杆点——位置找对了，方向常推反。她列了十二个介入系统的位置，从弱到强。这一篇要回答的是：为什么最强的几个几乎没人用。</description><pubDate>Sat, 29 Aug 2026 08:00:00 +0800</pubDate></item>
     <item><title>托马斯·戈登 · 我信息</title><link>https://ourword.ai/i/thomas-gordon/i-message/</link><guid isPermaLink="true">https://ourword.ai/i/thomas-gordon/i-message/</guid><description>托马斯·戈登 · 我信息——说影响，不说人品。同样一件事，一种说法引发对抗，一种引发行动。这一篇要回答的是：结构差在哪。</description><pubDate>Mon, 31 Aug 2026 08:00:00 +0800</pubDate></item>
     <item><title>托马斯·戈登 · 这问题是谁的</title><link>https://ourword.ai/i/thomas-gordon/problem-ownership/</link><guid isPermaLink="true">https://ourword.ai/i/thomas-gordon/problem-ownership/</guid><description>托马斯·戈登 · 这问题是谁的——归属不同，方法相反。孩子难受时你讲道理，越讲他越远。这一篇要回答的是：那时候该做什么。</description><pubDate>Mon, 31 Aug 2026 08:00:00 +0800</pubDate></item>
+    <item><title>梭罗 · 先算清「够」是多少</title><link>https://ourword.ai/i/thoreau/count-enough/</link><guid isPermaLink="true">https://ourword.ai/i/thoreau/count-enough/</guid><description>梭罗 · 先算清「够」是多少——想少拼一点之前，先把一年的开销记成账。他先把「够」算出来。这一篇要回答的是：想从拼命里退一步，先算什么。</description><pubDate>Thu, 05 Nov 2026 08:00:00 +0800</pubDate></item>
+    <item><title>梭罗 · 一张九十美分的车票</title><link>https://ourword.ai/i/thoreau/ride-or-walk/</link><guid isPermaLink="true">https://ourword.ai/i/thoreau/ride-or-walk/</guid><description>梭罗 · 一张九十美分的车票——一件东西的价钱，是你要拿多少日子去换。他没说别坐车。这一篇要回答的是：一样东西值不值，拿什么来算。</description><pubDate>Thu, 05 Nov 2026 08:00:00 +0800</pubDate></item>
     <item><title>修昔底德 · 他只认实力，我还讲不讲理</title><link>https://ourword.ai/i/thucydides/the-strong-do-what-they-can/</link><guid isPermaLink="true">https://ourword.ai/i/thucydides/the-strong-do-what-they-can/</guid><description>修昔底德 · 他只认实力，我还讲不讲理——道理在你这边，不等于有人替你出手。对面明说只讲谁更强，不谈谁有理。这一篇要回答的是：这时候你手里有什么，不该押什么。</description><pubDate>Wed, 07 Oct 2026 08:00:00 +0800</pubDate></item>
     <item><title>修昔底德 · 第二天就后悔的决定</title><link>https://ourword.ai/i/thucydides/the-morrow-brought-repentance/</link><guid isPermaLink="true">https://ourword.ai/i/thucydides/the-morrow-brought-repentance/</guid><description>修昔底德 · 第二天就后悔的决定——气头上定的事，要留一个能收回的口子。你在火头上做了一个决定，第二天睡醒就想收回。这一篇要回答的是：雅典人怎么把一个已经发出去的死刑令追回来。</description><pubDate>Wed, 07 Oct 2026 08:00:00 +0800</pubDate></item>
     <item><title>修昔底德 · 不拿听来的第一个说法当事实</title><link>https://ourword.ai/i/thucydides/first-source-that-came-to-hand/</link><guid isPermaLink="true">https://ourword.ai/i/thucydides/first-source-that-came-to-hand/</guid><description>修昔底德 · 不拿听来的第一个说法当事实——连自己的印象，也要拿来验。几个人对同一件事的说法对不上，而你要靠它做决定。这一篇要回答的是：修昔底德是怎么查的，查到对不上时他先问什么。</description><pubDate>Wed, 07 Oct 2026 08:00:00 +0800</pubDate></item>

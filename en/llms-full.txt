@@ -1,7 +1,7 @@
-# OurWord — 207 people and books on how the world actually works, across 2,600 years
+# OurWord — 208 people and books on how the world actually works, across 2,600 years
 # OurWord — See how people before you handled it.
 # https://ourword.ai/en/
-# Full corpus, plain text. 207 entrys.
+# Full corpus, plain text. 208 entrys.
 
 ========================================================================
 ## Albert Einstein
@@ -2391,6 +2391,40 @@ John Cacioppo — The same finding from opposite ends: he measures what the abse
 Mark Granovetter John Cacioppo Arlie Hochschild John Gottman Esther Perel Attachment Theory
 
 ========================================================================
+## Henry David Thoreau
+URL: https://ourword.ai/en/i/thoreau/
+Tags: Mind and feeling, The industrial age, Counting enough
+
+Henry David Thoreau (United States · 1817–1862) — Counting enough. American writer, author of Walden. In 1845 he built a small cabin by Walden Pond outside Concord, lived in it for two years and two months, and then wrote the book.
+
+### Q: What did this one leave behind?
+American writer, author of Walden. In 1845 he built a small cabin by Walden Pond outside Concord, lived in it for two years and two months, and then wrote the book. Its most solid part is the first chapter, 'Economy', where he itemises the house and the food, clothes and fuel and works out that about six weeks of paid work a year would cover it. This page takes only his method of counting, not his criticism of society, and passes no verdict on his way of life.
+
+### Q: What actually happened?
+In the spring of 1845 Thoreau borrowed an axe from his friend Bronson Alcott and went down to the pond to cut white pines for the frame of his cabin. When he was done he took the axe back. He wrote that he returned it sharper than he had received it.
+
+### The parts · Turn enough into a number
+He cut necessities down to four, food, shelter, clothing and fuel, and recorded what he actually spent on each. Wanting to spend less is a feeling; a ledger gives you something to compare. e.g. Sort the last three months into food, housing, getting about and utilities.
+
+### The parts · Count the days you pay with
+He worked out that a year needed only a few weeks of labour. He then used the same method on a ninety-cent train fare: a price is the part of your life you give up for it. e.g. Before a big purchase, convert it into extra working days.
+
+### The parts · Borrow the method, not the number
+He lived on a friend's land, close to town, and often ate at friends' tables. His figures had conditions of their own. What travels is the habit of counting. e.g. Do not say 'Thoreau needed twenty-eight dollars'. Say 'what did my year cost?'
+
+### Q: How do I use it today?
+This week, sort the last three months of spending into food, housing, getting about and utilities, and write one total for each. Then ask which part is there only so as not to be outdone.
+
+### Lines to keep
+To do less, first write the costs down. A price is the days you will pay with. Borrow the habit of counting, not the figures.
+
+### Q: What should I read alongside?
+Montaigne — Montaigne retired to his tower on income from the family estate and used the time to read and think. Thoreau went to the pond on a number he had worked out himself. One could afford to step back; the other first checked whether he could.
+
+### Further
+Zhuangzi Montaigne Warren Buffett
+
+========================================================================
 ## Herbert Simon
 URL: https://ourword.ai/en/i/herbert-simon/
 Tags: Learning and growth, Modern, Bounded rationality
@@ -4177,10 +4211,10 @@ Pick the fault you would least like exposed and find a plain sentence for it tha
 He put his own cowardice in the book, and nobody has been able to use it since. He kept death as an acquaintance so it would stop being a stranger. Keep one piece for yourself. Let the rest run.
 
 ### Q: What should I read alongside?
-Brené Brown — Both take shame and fear apart. She has the laboratory findings; he has one man running the experiment on himself four hundred years earlier. Seneca — Both on learning to die. Seneca instructs from above; Montaigne writes outward from the afternoon he was thrown off a horse.
+Brené Brown — Both take shame and fear apart. She has the laboratory findings; he has one man running the experiment on himself four hundred years earlier. Seneca — Both on learning to die. Seneca instructs from above; Montaigne writes outward from the afternoon he was thrown off a horse. Henry David Thoreau — Montaigne retired to his tower on income from the family estate and used the time to read and think. Thoreau went to the pond on a number he had worked out himself. One could afford to step back; the other first checked whether he could.
 
 ### Further
-Seneca Marcus Aurelius Brené Brown Shi Tiesheng
+Seneca Marcus Aurelius Brené Brown Shi Tiesheng Henry David Thoreau
 
 ========================================================================
 ## Mozi
@@ -6977,7 +7011,7 @@ Be fearful when others are greedy and greedy when others are fearful. Rule one: 
 Charlie Munger — The partner who moved him from cheap and broken to good and fairly priced. Duan Yongping — Duan Yongping is Buffett's most serious Chinese student, but he moved the moat from investing to operating: Buffett buys the company that has one, Duan builds one by entering last and building better. Wang Xing — Two shapes of the long view: Buffett will not own something for ten minutes he would not own for ten years, Wang Xing asks whether the thing will still matter in ten years. Benjamin Graham — The student past the teacher: Graham bought cheap ordinary companies, Buffett bought great ones at fair prices. Jesse Livermore — Speculation against investment: Livermore took the price movement and rose and fell four times, Buffett took the business and compounded. Jim Simons — The two poles of investing: Buffett bets heavily on a few near-certainties, Simons bets tiny amounts on millions of near coin-flips — and both refuse the middle ground. George Soros — Two poles of investment philosophy: Buffett trusts that the market gets there in the end, Soros treats it as permanently wrong.
 
 ### Further
-Charlie Munger Li Ka-shing Fan Li Jeff Bezos Peter Thiel Naval Ravikant Duan Yongping Kazuo Inamori Wang Xing Benjamin Franklin Bai Gui Benjamin Graham Jesse Livermore Peter Lynch Howard Marks Jim Simons George Soros
+Charlie Munger Li Ka-shing Fan Li Jeff Bezos Peter Thiel Naval Ravikant Duan Yongping Kazuo Inamori Wang Xing Benjamin Franklin Bai Gui Benjamin Graham Jesse Livermore Peter Lynch Howard Marks Jim Simons George Soros Henry David Thoreau
 
 ========================================================================
 ## Wei Zheng
@@ -7520,7 +7554,7 @@ Everyone knows the use of the useful. Nobody knows the use of the useless. A fro
 Han Feizi — The same century, opposite conclusions: Han Feizi builds the machine of state, Zhuangzi declines to be a part in it. Tao Te Ching — Same tradition, different address: Laozi writes for whoever has to govern, Zhuangzi for whoever wants out. Su Shi — Two ways of not being owned: Zhuangzi refuses the post, Su Shi takes it and refuses to be defined by losing it. Finite and Infinite Games — The use of the useless runs the same way as the infinite game: not winning inside the given rules, but keeping room to change them.
 
 ### Further
-Su Shi Huineng Wang Yangming Tao Te Ching Carl Jung The I Ching The Bhagavad Gita Epictetus Finite and Infinite Games Ivan Illich Bai Juyi Xu Xiake The Yellow Emperor's Inner Classic
+Su Shi Huineng Wang Yangming Tao Te Ching Carl Jung The I Ching The Bhagavad Gita Epictetus Finite and Infinite Games Ivan Illich Bai Juyi Xu Xiake The Yellow Emperor's Inner Classic Henry David Thoreau
 
 ========================================================================
 ## Zhuge Liang
@@ -21436,6 +21470,72 @@ Where it goes wrong: using ownership as a way to hand things off. 'That's your p
 Work out whose problem this is before choosing a method.
 Conflict doesn't have to end with somebody winning.
 Advice moves them from solving their problem to handling you.
+
+========================================================================
+## Henry David Thoreau · Count What Is Enough
+URL: https://ourword.ai/en/i/thoreau/count-enough/
+Source: Thoreau, Walden, 'Economy'
+Tags: Deep read, Henry David Thoreau, Before you try to do less, put your year's costs into a ledger
+
+He counted first. This asks what to work out before you step back from the race.
+
+### Q: What actually happened?
+On 4 July 1845 Thoreau moved into the cabin he had built by Walden Pond. Then he did what most people who say they want a simpler life never do: he wrote down every cost. He itemised the boards, nails and bricks of the house, which came to a little over twenty-eight dollars, and then the food, clothes and fuel. He concluded that about six weeks of paid work a year would cover all his expenses. The rest of the year he used to read, walk and write.
+
+### The parts · Four needs, each written down
+He cut necessities down to four, food, shelter, clothing and fuel, and recorded what he actually spent on each. Most people who say they want to spend less are describing a feeling. He ended up holding a number.
+e.g. Sort the last three months into food, housing, getting about and utilities, and see which one is the big one.
+
+### The parts · The number tells you how long you must work
+What had to be bought with labour turned out to be a few weeks of the year. The rest was not idleness. It was the very thing the rest of us work flat out to buy: time of our own.
+e.g. Divide your fixed monthly costs by your daily pay and see how many days of work cover them.
+
+### The parts · His number is not yours
+He lived on land belonging to his friend Emerson, a mile or so outside Concord, and often walked into town to dine with friends. His ledger had conditions. What travels is his habit of keeping it, not his figures.
+e.g. Do not say 'Thoreau needed twenty-eight dollars'. Say 'what did my own year actually cost?'
+
+### Q: How do I use it today?
+Where you are: you want to step back from the grind, but fear that once you slow down you will fall behind.
+Ask first: what does my year really cost, and which parts are things I need versus things I buy so as not to be outdone?
+Where it goes wrong: reading it as 'the less the better'. He counted to find where enough sits, not to see who could spend least. Once you know it is enough, stop there.
+
+### Lines to keep
+To do less, first write the year's costs down.
+Whether it is enough is a number, not a feeling.
+Borrow his habit of counting, not his figures.
+
+========================================================================
+## Henry David Thoreau · The Ninety-Cent Ticket
+URL: https://ourword.ai/en/i/thoreau/ride-or-walk/
+Source: Thoreau, Walden, 'Economy'
+Tags: Deep read, Henry David Thoreau, The price of a thing is the days of your life you hand over for it
+
+He never said not to ride. This asks how to tell whether a thing is worth it.
+
+### Q: What actually happened?
+Thoreau set himself a small sum. Fitchburg is thirty miles from Concord, and the train fare was ninety cents, nearly a day's pay. He would start now on foot and arrive before night. You, he said, must first work a day to earn the fare, and will get there tomorrow, or tonight if you are lucky. His rule: "The cost of a thing is the amount of what I will call life which is required to be exchanged for it, immediately or in the long run."
+
+### The parts · The price is days, not dollars
+In his arithmetic a price is not the number on the label. It is the part of your life you give up to get the thing, paid now or paid later. Ninety cents, for him, was a day.
+e.g. Before buying a twenty-thousand-dollar machine, work out how many extra days of work it takes to earn it back.
+
+### The parts · Both roads on one ruler
+He was not telling anyone to walk. He measured walking and riding on the same ruler: the walker spends the day on the road, the rider spends it earning the fare. Each costs a day. The question is which day you would rather have lived.
+e.g. Set the hour you save by ordering in against the hour you worked to pay for it.
+
+### The parts · Seeing the trade is not refusing every trade
+He wanted you to know you were trading, not to decline everything. Some things are worth those days and some are not. You have to weigh them one by one, and he did not do the weighing for you.
+e.g. List the three biggest costs this month, note the working days each took, and keep only the ones worth it.
+
+### Q: How do I use it today?
+Where you are: you keep working more and buying more, and the pile grows while you feel emptier.
+Ask first: how many days of my life does this cost, and am I willing to pay them?
+Where it goes wrong: reading it as 'buy nothing'. He wanted you to see the exchange, not to decide for you what is worth it. He ate, too.
+
+### Lines to keep
+The price is not on the tag but in the days.
+Ask what life it costs before asking whether to buy.
+Seeing the trade is not the same as refusing it.
 
 ========================================================================
 ## Thucydides · When He Only Counts Strength

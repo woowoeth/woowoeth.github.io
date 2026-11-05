@@ -101,6 +101,7 @@ NAMES = {
     "su-qin": ("Su Qin", "Reading people"),
     "leonardo": ("Leonardo da Vinci", "Reading people"),
     "chen-ping": ("Chen Ping", "Reading people"),
+    "thoreau": ("Henry David Thoreau", "Mind and feeling"),
     "influence": ("Influence", "Reading people"),
     "konnikova": ("Maria Konnikova", "Reading people"),
     "la-rochefoucauld": ("La Rochefoucauld", "Reading people"),

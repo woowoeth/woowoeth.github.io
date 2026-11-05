@@ -707,6 +707,8 @@ SCENES = [
      [("harvard-study", "relationships-predict-health"), ("harvard-study", "social-fitness")]),
     ("我天天在干活，却不觉得那是我。",
      [("weil", "the-factory-year")]),
+    ("我拿时间换来的这些，到底值不值？",
+     [("thoreau", "ride-or-walk")]),
 ]),
 ("被比下去", "自己的状态", [
     ("我挣得比以前多了，怎么还是觉得不够。",
@@ -739,6 +741,8 @@ SCENES = [
      [("xunzi", "borrow-from-things"), ("naval", "productize-yourself")]),
     ("我想慢下来，又怕没了位置。",
      [("bai-juyi", "middle-hiding"), ("zhuangzi", "use-of-uselessness")]),
+    ("我想少拼点，可到底要多少才够？",
+     [("thoreau", "count-enough")]),
 ]),
 
 # ── 位置 ──

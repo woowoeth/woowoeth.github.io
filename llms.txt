@@ -1,11 +1,11 @@
 # OurWord (人类世界生存法则)
 
-> 207 people and books on how the world actually works, across 2,600 years
+> 208 people and books on how the world actually works, across 2,600 years
 > 遇到事了，看看以前的人怎么处理
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 207 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 208 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
-一个关于「世界到底怎么运转」的知识库：战略、财富、权力、人性、创业，取自 207 位人物与典籍，跨越 2600 年。每一条都写清楚这个人真正留下的那一个想法、背后的故事、拆开的分则与例子，以及今天怎么用。
+一个关于「世界到底怎么运转」的知识库：战略、财富、权力、人性、创业，取自 208 位人物与典籍，跨越 2600 年。每一条都写清楚这个人真正留下的那一个想法、背后的故事、拆开的分则与例子，以及今天怎么用。
 
 ## Read it
 
@@ -18,11 +18,11 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 
 ## Topics
 
-- [工业时代](https://ourword.ai/t/industrial-age/) — 63
+- [工业时代](https://ourword.ai/t/industrial-age/) — 64
 - [现代](https://ourword.ai/t/modern/) — 62
 - [先秦与古典时代](https://ourword.ai/t/classical-era/) — 33
 - [权力与组织](https://ourword.ai/t/power/) — 31
-- [心智与情绪](https://ourword.ai/t/mind/) — 23
+- [心智与情绪](https://ourword.ai/t/mind/) — 24
 - [学习与成长](https://ourword.ai/t/learning/) — 20
 - [识人与相处](https://ourword.ai/t/people/) — 20
 - [创业与产品](https://ourword.ai/t/startups/) — 20
@@ -459,6 +459,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [系统之美 · 杠杆点](https://ourword.ai/i/thinking-in-systems/leverage-points/): 系统之美 · 杠杆点——位置找对了，方向常推反。她列了十二个介入系统的位置，从弱到强。这一篇要回答的是：为什么最强的几个几乎没人用。
 - [托马斯·戈登 · 我信息](https://ourword.ai/i/thomas-gordon/i-message/): 托马斯·戈登 · 我信息——说影响，不说人品。同样一件事，一种说法引发对抗，一种引发行动。这一篇要回答的是：结构差在哪。
 - [托马斯·戈登 · 这问题是谁的](https://ourword.ai/i/thomas-gordon/problem-ownership/): 托马斯·戈登 · 这问题是谁的——归属不同，方法相反。孩子难受时你讲道理，越讲他越远。这一篇要回答的是：那时候该做什么。
+- [梭罗 · 先算清「够」是多少](https://ourword.ai/i/thoreau/count-enough/): 梭罗 · 先算清「够」是多少——想少拼一点之前，先把一年的开销记成账。他先把「够」算出来。这一篇要回答的是：想从拼命里退一步，先算什么。
+- [梭罗 · 一张九十美分的车票](https://ourword.ai/i/thoreau/ride-or-walk/): 梭罗 · 一张九十美分的车票——一件东西的价钱，是你要拿多少日子去换。他没说别坐车。这一篇要回答的是：一样东西值不值，拿什么来算。
 - [修昔底德 · 他只认实力，我还讲不讲理](https://ourword.ai/i/thucydides/the-strong-do-what-they-can/): 修昔底德 · 他只认实力，我还讲不讲理——道理在你这边，不等于有人替你出手。对面明说只讲谁更强，不谈谁有理。这一篇要回答的是：这时候你手里有什么，不该押什么。
 - [修昔底德 · 第二天就后悔的决定](https://ourword.ai/i/thucydides/the-morrow-brought-repentance/): 修昔底德 · 第二天就后悔的决定——气头上定的事，要留一个能收回的口子。你在火头上做了一个决定，第二天睡醒就想收回。这一篇要回答的是：雅典人怎么把一个已经发出去的死刑令追回来。
 - [修昔底德 · 不拿听来的第一个说法当事实](https://ourword.ai/i/thucydides/first-source-that-came-to-hand/): 修昔底德 · 不拿听来的第一个说法当事实——连自己的印象，也要拿来验。几个人对同一件事的说法对不上，而你要靠它做决定。这一篇要回答的是：修昔底德是怎么查的，查到对不上时他先问什么。
@@ -554,7 +556,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [AI Bubble Monitor / AI 泡沫检测仪](https://ourword.ai/ai/)
 - [Zouni / 走你](https://ourword.ai/zouni/)
 
-## Index (207 entrys)
+## Index (208 entrys)
 
 - [BJ·福格](https://ourword.ai/i/bj-fogg/): BJ·福格（2019年·斯坦福行为设计实验室）——小到不会失败。斯坦福行为设计实验室创始人，研究行为如何被设计出来。他给出一个公式：行为发生需要动机、能力、提示三者同时到位。多数人失败在只调动机——靠决心和自我激励——而动机天然起伏，靠它维持的习惯必然崩。他的主张相反：把行为缩到小得不需要动机，然后挂在一个已有的动作后面。
 - [C.S.刘易斯](https://ourword.ai/i/cs-lewis/): C.S.刘易斯（1898-1963年·英国牛津）——妻子死后几个月的日记。作家，牛津和剑桥的教授，写过《纳尼亚传奇》和大量劝人信仰的书。五十八岁结婚，妻子乔伊四年后因癌症去世。之后几个月他在四本练习簿上记自己的状态，后来用笔名出版，就是《卿卿如晤》。收他是因为「重要的人走了」那六个问题，原来靠弗兰克尔和苏轼在答——一个是集中营的幸存者，一个是被贬的官员
@@ -671,6 +673,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [查理·芒格](https://ourword.ai/i/munger/): 查理·芒格（当代·1924-2023）——逆向。巴菲特的合伙人，伯克希尔·哈撒韦副主席，99岁去世。他最重要的贡献：把巴菲特从「捡烟蒂」进化到「以合理价格买优秀公司」。他的思维工具箱：多元思维模型+认知偏差清单。
 - [格兰诺维特](https://ourword.ai/i/granovetter/): 格兰诺维特（1973年·美国社会学杂志）——弱连接。社会学家，1973年发表《弱连接的力量》，一篇被引用了几万次的论文。他调查282个人怎么找到工作，发现靠人际关系拿到工作的那批人里，56%说自己只是「偶尔」见到那位帮上忙的人，28%说「极少」——真正起作用的是关系不深的那些人。原因不在意愿，在信息结构：你和好友的圈子高度重叠，他
 - [格雷厄姆](https://ourword.ai/i/graham/): 格雷厄姆（美·1894-1976年）——安全边际·市场先生。本杰明·格雷厄姆，「证券分析之父」「华尔街教父」，价值投资体系的开创者。《证券分析》和《聪明的投资者》至今仍是投资界的圣经。他在哥伦比亚大学教出的学生里走出了巴菲特——巴菲特说自己血管里流的血液「85%来自格雷厄姆」。格雷厄姆的伟大在于：在一个把股票当赌博筹码的年代，他第一个证明
+- [梭罗](https://ourword.ai/i/thoreau/): 梭罗（1817-1862年·美国康科德）——算清够用。美国作家，《瓦尔登湖》的作者。1845 年他在康科德城外的瓦尔登湖边自己盖了一间小木屋，住了两年两个月，然后写成这本书。书里最扎实的是第一章「经济篇」：他把房子和吃穿烧的开销一项项记成账，算出一年只要打大约六个星期的零工就够用。这一页只取他算账的方法，不取他对社会的批评，也不替他
 - [武则天](https://ourword.ai/i/wu-zetian/): 武则天（唐·624-705）——破局。中国历史上唯一的女皇帝。从14岁入宫做才人，到80岁退位，用了66年时间打破了所有规则。在一个「女人不得干政」的时代，她把每一条规则都变成了可以穿越的障碍。
 - [段永平](https://ourword.ai/i/duan-yongping/): 段永平（当代·1961-）——本分。步步高集团创始人，OPPO和vivo的精神源头，巴菲特股东大会上，出价62万美元与巴菲特共进午餐的那个中国人。他的核心：本分（说话算数，做对的事）、长期主义、错事即停。
 - [毛泽东](https://ourword.ai/i/mao/): 毛泽东（近代·1893-1976）——集中优势。从师范生到建立新中国，毛泽东一生最重要的能力是：在最混乱的局面里找到主要矛盾，然后把全部力量压上去。《矛盾论》《实践论》《论持久战》，是他把军事实践升华为哲学的三件代表作。

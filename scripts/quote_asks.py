@@ -674,6 +674,12 @@ QUOTE_ASKS = {
     "su-qin/wrong-buyer":
         "我的方案不差，是不是找错了人谈？",
 
+    # 梭罗
+    "thoreau/count-enough":
+        "我想少拼点，可到底要多少才够？",
+    "thoreau/ride-or-walk":
+        "我拿时间换来的这些，到底值不值？",
+
     # 陈平
     "chen-ping/return-the-seal":
         "我要走了，怎么走才不留话柄？",
