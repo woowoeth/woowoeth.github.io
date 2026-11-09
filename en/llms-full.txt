@@ -1,7 +1,7 @@
-# OurWord — 208 people and books on how the world actually works, across 2,600 years
+# OurWord — 209 people and books on how the world actually works, across 2,600 years
 # OurWord — See how people before you handled it.
 # https://ourword.ai/en/
-# Full corpus, plain text. 208 entrys.
+# Full corpus, plain text. 209 entrys.
 
 ========================================================================
 ## Albert Einstein
@@ -1429,6 +1429,40 @@ Charlie Munger — Reduce to physics, or carry many borrowed models at once — 
 Peter Thiel Jeff Bezos Charlie Munger Jensen Huang Albert Einstein
 
 ========================================================================
+## Emperor Wu of Han
+URL: https://ourword.ai/en/i/han-wudi/
+Tags: Power and organisation, Qin, Han and the Six Dynasties, Knowing when to stop
+
+Emperor Wu of Han (Western Han · 156–87 BCE) — Knowing when to stop. Western Han emperor, personal name Liu Che, who took the throne in 141 BCE and ruled for fifty-four years; his annals are in the Book of Han.
+
+### Q: What did this one leave behind?
+Western Han emperor, personal name Liu Che, who took the throne in 141 BCE and ruled for fifty-four years; his annals are in the Book of Han. For most of his reign he fought the Xiongnu and pushed into the Western Regions, and at home he put salt and iron under state control and set up recommendation for office. This page passes no verdict on his life. It takes one late episode: in 89 BCE he was asked to plant military farms at Luntai, refused, set the cost of the decades before on the table, and turned the effort back to farming. He is here for the 'expansion' group, which says how to judge whether to enter and how to feed what you hold, but not when to stop once you are spread out, or what comes next.
+
+### Q: What actually happened?
+In the first years of Wu's reign the treasury overflowed. According to Sima Qian's Records of the Grand Historian, the coin in the capital had piled up until the cords strung through it rotted and could not be counted, and the grain in the great granary was stacked outdoors, year on year, until it spoiled. What he took over had been saved by his father and grandfather.
+
+### The parts · The savings were somebody else's
+The money, grain and horses he went to war with had been put by the two reigns before him. Being able to afford a campaign does not mean every one is worth it. The more room you have, the more it matters to ask whether this one has to be fought. e.g. A big cash pile in the bank does not make every new business worth funding.
+
+### The parts · Later writers counted the cost
+In his note on the Zhao emperor's annals, Ban Gu says that after Wu the empire was drained and its registered households halved. The total was counted afterwards. People inside the reign could not see it. Each campaign had reasons on its own; the sum is the number. e.g. Each monthly top-up has a reason, and at year-end the budget has doubled.
+
+### The parts · The hardest thing he did was stop
+Late in life he was asked to push one step further west. He refused and admitted fault in an edict. This page splits the edict into two chapters: whose accounts to open when you stop, and where the effort goes afterwards. e.g. Cutting a three-year project is not the hard part. Saying in the meeting 'I judged this wrong' is.
+
+### Q: How do I use it today?
+This week, take one thing you are expanding and write down what it has actually cost so far and what it has brought back. Then ask: if someone asked tomorrow for another round, what would I use to decide when to stop?
+
+### Lines to keep
+The more room you have, the more you must ask whether it is worth it. Each item has a reason; the sum is the number. The hardest step is to stop, so open your own books first.
+
+### Q: What should I read alongside?
+Liu Xiu — Both faced the Western Regions. Wu stopped only after decades of campaigns. Liu Xiu, with his own country just settled, was asked by the states there to send a protector-general and declined at the start. One pulled back after spreading out; the other worked out first whether he could carry it.
+
+### Further
+Huo Qubing Sima Qian Liu Bang
+
+========================================================================
 ## Epictetus
 URL: https://ourword.ai/en/i/epictetus/
 Tags: Mind and feeling, Qin, Han and the Six Dynasties, What is yours, what is not
@@ -2613,7 +2647,7 @@ The Xiongnu are not yet destroyed. How can I make a home? What matters is the pl
 Sima Yi — The two extreme life strategies here: Huo Qubing burnt out at twenty-four, Sima Yi moved at seventy. Miyamoto Musashi — Both gave everything to one craft. Musashi got sixty years of it and wrote it down; Huo Qubing got seven. Han Xin — Two kinds of military genius. Han Xin wins by arrangement and misjudges his own position; Huo Qubing wins by pure speed and never lives long enough for the position to matter.
 
 ### Further
-Han Xin Sima Yi Sun Tzu Steve Jobs Julius Caesar
+Han Xin Sima Yi Sun Tzu Steve Jobs Julius Caesar Emperor Wu of Han
 
 ========================================================================
 ## Influence
@@ -3702,7 +3736,7 @@ In the tent, settling a victory a thousand miles off, Zhang Liang beats me. Thes
 Xiang Yu — Both came out of the same collapse. Liu Bang gave things away and won the empire; Xiang Yu held on to everything and won the legend. Cao Cao — Two masters of using people, working from opposite ends: Liu Bang through generosity, Cao Cao through system. Zhu Yuanzhang — Two emperors from the bottom, opposite policies on the men who got them there: Liu Bang scattered wealth to hold them, Zhu Yuanzhang killed them to be safe. Liu Xiu — Both were founders who had to deal with veterans. Under Liu Bang Han Xin was killed, Peng Yue was minced and Ying Bu was executed; under Liu Xiu Jia Fu and Deng Yu gave up their armies and got marquisates, Special Advancement and a seat in counsel. Liu Bang's page is about using people better than yourself; this one is about what to do with them afterwards.
 
 ### Further
-Han Xin Zhang Liang Cao Cao Li Shimin Wu Zetian Zhu Yuanzhang Mao Zedong Julius Caesar Xiang Yu Machiavelli Records of the Grand Historian Xiao He Liu Xiu Chen Ping
+Han Xin Zhang Liang Cao Cao Li Shimin Wu Zetian Zhu Yuanzhang Mao Zedong Julius Caesar Xiang Yu Machiavelli Records of the Grand Historian Xiao He Liu Xiu Chen Ping Emperor Wu of Han
 
 ========================================================================
 ## Liu Xiu
@@ -3736,7 +3770,7 @@ Pick someone you have meant to deal with and not done. Write down which one thin
 With the realm unsettled, two tigers must not fight in private. I part you today. The Prince of Xiao has put his heart in our bellies. Yingchuan and Hongnong may be questioned; Henan and Nanyang may not.
 
 ### Q: What should I read alongside?
-Liu Bang — Both were founders who had to deal with veterans. Under Liu Bang Han Xin was killed, Peng Yue was minced and Ying Bu was executed; under Liu Xiu Jia Fu and Deng Yu gave up their armies and got marquisates, Special Advancement and a seat in counsel. Liu Bang's page is about using people better than yourself; this one is about what to do with them afterwards. Zhuge Liang — Both acted against someone close: Zhuge Liang executed Ma Su, whom he valued, to keep military law; Liu Xiu, in the same survey, struck hard at governors without merit and left the veteran Liu Long a way out. One is about no favourites; the other about how closeness makes holes in a rule.
+Liu Bang — Both were founders who had to deal with veterans. Under Liu Bang Han Xin was killed, Peng Yue was minced and Ying Bu was executed; under Liu Xiu Jia Fu and Deng Yu gave up their armies and got marquisates, Special Advancement and a seat in counsel. Liu Bang's page is about using people better than yourself; this one is about what to do with them afterwards. Zhuge Liang — Both acted against someone close: Zhuge Liang executed Ma Su, whom he valued, to keep military law; Liu Xiu, in the same survey, struck hard at governors without merit and left the veteran Liu Long a way out. One is about no favourites; the other about how closeness makes holes in a rule. Emperor Wu of Han — Both faced the Western Regions. Wu stopped only after decades of campaigns. Liu Xiu, with his own country just settled, was asked by the states there to send a protector-general and declined at the start. One pulled back after spreading out; the other worked out first whether he could carry it.
 
 ### Further
 Liu Bang Xiao He Feng Yi Zhuge Liang Wei Zheng
@@ -5423,7 +5457,7 @@ The shame was real and so was the work. He let the work speak. The books that la
 Brené Brown — Both on shame. She is the researcher and gives the mechanism; he is the subject and gives the sample of someone finishing the work while carrying it. Pu Songling — Two kinds of it never worked. Pu Songling came close for forty years with no turning point; Sima Qian has one catastrophe and a life visibly divided by it. Records of the Grand Historian — The same story from two sides: his page is about why a man chose to stay alive in order to finish it, this one is about the method the book itself laid down. Thucydides — Both were historians who wanted the facts straight. Sima Qian travelled the country and questioned the people involved. Thucydides checked each eyewitness against the others, and asked why they differed. One relied on going and asking, the other on checking and asking why they do not match. Xu Xiake — Both crossed much of China and both turned their worst years into a book. Sima Qian travelled widely from the age of twenty and finished his history after castration; Xu was robbed and lost his companion and kept writing day by day. One recorded people, the other mountains and rivers.
 
 ### Further
-Records of the Grand Historian Su Shi Viktor Frankl Brené Brown The Comprehensive Mirror Du Fu Thucydides Xu Xiake
+Records of the Grand Historian Su Shi Viktor Frankl Brené Brown The Comprehensive Mirror Du Fu Thucydides Xu Xiake Emperor Wu of Han
 
 ========================================================================
 ## Sima Yi
@@ -12868,6 +12902,72 @@ Where it goes wrong: chasing only shortfalls and never overshoots, which pushes 
 Let the name define itself, and the task define itself.
 Deed fits the task and task fits the words: reward. Otherwise: punish.
 Change the ruler at review and nobody writes a real commitment again.
+
+========================================================================
+## Emperor Wu of Han · The Edict of Luntai
+URL: https://ourword.ai/en/i/han-wudi/luntai-edict/
+Source: Ban Gu, Book of Han, 'Account of the Western Regions II'
+Tags: Deep read, Emperor Wu of Han, The hardest part of stopping is turning over the old accounts first
+
+Someone urged him one step further, and he opened the old accounts instead. This asks what to say when it is time to stop.
+
+### Q: What actually happened?
+In 89 BCE Sang Hongyang and others asked the emperor to plant military farms east of Luntai in the Western Regions and station troops there, pushing the frontier one more step west. Wu refused, and issued an edict. It began with the old bills: the extra levy already laid on the people, and the last march on Cheshi, where the army ran short of grain and dozens died on the road. Since taking the throne, he said, much of what he had done had been reckless, had made the empire miserable, and could not be undone.
+
+### The parts · Open last time's books, not next time's forecast
+Sang Hongyang had a case: good pasture, land for grain, soldiers who could feed themselves. Wu did not argue the sums. He asked what the last expedition had actually cost, in hunger, deaths and extra tax. He looked at what had happened, not at what was projected.
+e.g. Before a third branch opens, look at what the second one really spent and how long it lost money, not at the founder's forecast.
+
+### The parts · The word 'stop' should come from whoever signed the cheque
+The hardest line in the edict is the emperor calling his own conduct reckless. The larger the earlier investment, the less anyone dares say stop, because stopping implies the past was wrong. It carries weight only from the person who ordered it.
+e.g. Three years into a project nobody dares cut it. The lead says in a meeting, 'I judged this wrong', and only then do others tell the truth.
+
+### The parts · Stop the new push, keep the existing line
+In the same edict he says the priorities now are to curb harshness, end unauthorised levies, encourage farming and mend the horse administration, and to keep up the defences, nothing more. What he pulled back was the next reach, not the garrisons already in place.
+e.g. Cancel the market you have not entered yet. Do not cut one person from serving the customers you already have.
+
+### Q: How do I use it today?
+Where you are: You have put a lot behind one direction, someone now asks for another round, and you suspect it is wrong but cannot say stop.
+Ask first: What did the last round actually cost and return? Am I looking at forecasts or at what happened?
+Where it goes wrong: Reading it as 'never expand'. He did not dismantle the frontier or say every earlier campaign was a mistake. He stopped the next step and kept what he held. Say stop and hold separately, or one will take the other down with it.
+
+### Lines to keep
+Count what the last push cost, then talk about the next.
+Whoever ordered it is best placed to call it off.
+Stop the new reach. Keep what is already held.
+
+========================================================================
+## Emperor Wu of Han · Where the Effort Goes Next
+URL: https://ourword.ai/en/i/han-wudi/after-the-retreat/
+Source: Ban Gu, Book of Han, 'Treatise on Food and Money I'
+Tags: Deep read, Emperor Wu of Han, Stopping is not resting: the effort you pull back needs somewhere to go
+
+He stopped the war and then found the army, the labour and the grain somewhere else to go. This asks what to do after you pull back.
+
+### Q: What actually happened?
+After the edict, Wu made his chancellor Tian Qianqiu Marquis Who Enriches the People, and the one line that mattered in the decree was that the business of the moment is to put effort into farming. He appointed Zhao Guo as chief of grain procurement and set him to spread alternating-field farming: three furrows to a mu, crops planted in the furrows, ridge and furrow swapped the next year, so the land took turns resting. The people and grain that had been headed for the frontier had a new destination.
+
+### The parts · Give the effort you pull back a named destination
+Saying 'no more war' leaves soldiers, labourers and officials with energy and nowhere to put it, which easily turns into the next flurry. He wrote farming into the decree, named a man to run it and gave him a method.
+e.g. When you close a product line, say in the same message where its people are going and who they report to.
+
+### The parts · A change of direction needs a concrete method
+The record of alternating-field farming is specific: three furrows to a mu, ridge and furrow swapped each year. According to the Treatise, land worked this way regularly out-yielded the old kind, the best by double. A slogan is not a method.
+e.g. 'Focus on existing customers' is not enough. Write down who calls which customer, and how often.
+
+### The parts · A turn takes time, so do not read it too soon
+When the decree went out nothing was growing yet. The road paid off only after some years, and meanwhile the frontier had no new victories to report. Pulling back means accepting a stretch with no visible score.
+e.g. Stop chasing new users to work on retention and the numbers look worse for two months. Agree beforehand which figures you will watch.
+
+### Q: How do I use it today?
+Where you are: You have just decided to close one operation, and the people and resources it freed are idle. You worry that with nothing to do they will drift.
+Ask first: Which concrete job does this effort go to? Who runs it? What counts as moving forward in the first three months?
+Where it goes wrong: Treating it as 'stop, then do something else'. His turn had a person, a method and one clear sentence in the decree. Without those three, the effort you pulled back only becomes the next round of upheaval.
+
+### Lines to keep
+On the day you stop, say where the people go.
+A turn needs someone in charge and a method, not a slogan.
+The first stretch after stopping looks bad on paper.
 
 ========================================================================
 ## Han Xin · With the river at their backs

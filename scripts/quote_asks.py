@@ -674,6 +674,12 @@ QUOTE_ASKS = {
     "su-qin/wrong-buyer":
         "我的方案不差，是不是找错了人谈？",
 
+    # 汉武帝
+    "han-wudi/luntai-edict":
+        "仗已经打了这么久，我该什么时候收手？",
+    "han-wudi/after-the-retreat":
+        "收了手，我手下这些人往哪儿放？",
+
     # 梭罗
     "thoreau/count-enough":
         "我想少拼点，可到底要多少才够？",

@@ -1,9 +1,9 @@
 # OurWord (OurWord)
 
-> 208 people and books on how the world actually works, across 2,600 years
+> 209 people and books on how the world actually works, across 2,600 years
 > See how people before you handled it.
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 208 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 209 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
 ## Read it
 
@@ -18,12 +18,12 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 
 - [Modern](https://ourword.ai/en/t/modern/) — 66
 - [The industrial age](https://ourword.ai/en/t/the-industrial-age/) — 60
-- [Power and organisation](https://ourword.ai/en/t/power-and-organisation/) — 31
+- [Power and organisation](https://ourword.ai/en/t/power-and-organisation/) — 32
 - [Pre-Qin and classical](https://ourword.ai/en/t/pre-qin-and-classical/) — 31
 - [Mind and feeling](https://ourword.ai/en/t/mind-and-feeling/) — 23
+- [Qin, Han and the Six Dynasties](https://ourword.ai/en/t/qin-han-and-the-six-dynasties/) — 22
 - [How the world works](https://ourword.ai/en/t/how-the-world-works/) — 21
 - [Learning and growth](https://ourword.ai/en/t/learning-and-growth/) — 21
-- [Qin, Han and the Six Dynasties](https://ourword.ai/en/t/qin-han-and-the-six-dynasties/) — 21
 - [Reading people](https://ourword.ai/en/t/reading-people/) — 20
 - [Starting and building](https://ourword.ai/en/t/starting-and-building/) — 20
 - [Strategy and competition](https://ourword.ai/en/t/strategy-and-competition/) — 20
@@ -195,6 +195,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [Han Feizi · Don't build a system that needs good people](https://ourword.ai/en/i/han-feizi/not-counting-on-goodness/): Han Feizi · Don't build a system that needs good people — Make the right move the cheap one. A system that only runs when people are conscientious hasn't started working yet. How to design rules that don't need it.
 - [Han Feizi · The two handles](https://ourword.ai/en/i/han-feizi/two-handles/): Han Feizi · The two handles — Reward and punishment can't be lent out. What power actually consists of. It turns out to be two things, and neither can be handed to anyone.
 - [Han Feizi · Match the deed to the word](https://ourword.ai/en/i/han-feizi/form-and-name/): Han Feizi · Match the deed to the word — What was said, what was done. The hard part of review isn't setting standards. It's what you do when the standard and the facts disagree.
+- [Emperor Wu of Han · The Edict of Luntai](https://ourword.ai/en/i/han-wudi/luntai-edict/): Emperor Wu of Han · The Edict of Luntai — The hardest part of stopping is turning over the old accounts first. Someone urged him one step further, and he opened the old accounts instead. This asks what to say when it is time to stop.
+- [Emperor Wu of Han · Where the Effort Goes Next](https://ourword.ai/en/i/han-wudi/after-the-retreat/): Emperor Wu of Han · Where the Effort Goes Next — Stopping is not resting: the effort you pull back needs somewhere to go. He stopped the war and then found the army, the labour and the grain somewhere else to go. This asks what to do after you pull back.
 - [Han Xin · With the river at their backs](https://ourword.ai/en/i/han-xin/back-to-the-river/): Han Xin · With the river at their backs — Take the retreat away first. Drawing up with a river behind you is the classic blunder, and he won anyway. Two preconditions get left out of the telling.
 - [Han Xin · Neither revolt nor retire](https://ourword.ai/en/i/han-xin/neither-nor/): Han Xin · Neither revolt nor retire — The middle is the dangerous place. He held the chance to split the empire three ways and the chance to walk away whole. Taking neither is what killed him.
 - [Harvard Study of Adult Development · Your relationships at 50 predict your body at 80](https://ourword.ai/en/i/harvard-study/relationships-predict-health/): Harvard Study of Adult Development · Your relationships at 50 predict your body at 80 — More accurate than cholesterol. What actually decides how healthy you are late in life. What eighty years of tracking put in first place.
@@ -550,7 +552,7 @@ Cite the individual page URL, not the homepage — each entry page is stable and
 - [AI Bubble Monitor](https://ourword.ai/ai/)
 - [Zouni](https://ourword.ai/zouni/)
 
-## Index (208 entrys)
+## Index (209 entrys)
 
 - [Albert Einstein](https://ourword.ai/en/i/einstein/): Albert Einstein (Germany · 1879–1955) — Imagination. The physicist, and the father of relativity — but the legacy that travels furthest is not a formula, it is a way of working.
 - [Albert O. Hirschman](https://ourword.ai/en/i/hirschman/): Albert O. Hirschman (United States · 1915-2012) — Voice. A German-born American economist. He left Berlin in 1933, fought in Spain in 1936, spent 1940 in Marseille forging papers and finding mountain…
@@ -591,6 +593,7 @@ Cite the individual page URL, not the homepage — each entry page is stable and
 - [Duke Wen of Jin](https://ourword.ai/en/i/jin-wengong/): Duke Wen of Jin (Spring and Autumn · died 628 BCE) — Taking advice. Ruler of the state of Jin, born Chong'er, a son of Duke Xian. Driven out in a palace feud, he fled in 655 BCE and spent nineteen…
 - [Edward Deci](https://ourword.ai/en/i/deci/): Edward Deci (United States · 1942–) — Intrinsic motivation. American psychologist, born in 1942, who took his doctorate at Carnegie Mellon in 1970 and spent his career at the University of Rochester.
 - [Elon Musk](https://ourword.ai/en/i/musk/): Elon Musk (Contemporary · 1971–) — First principles. Co-founder of PayPal, Tesla, SpaceX and Neuralink. The method is a single move repeated: go back to what is physically true and re-derive…
+- [Emperor Wu of Han](https://ourword.ai/en/i/han-wudi/): Emperor Wu of Han (Western Han · 156–87 BCE) — Knowing when to stop. Western Han emperor, personal name Liu Che, who took the throne in 141 BCE and ruled for fifty-four years; his annals are in the…
 - [Epictetus](https://ourword.ai/en/i/epictetus/): Epictetus (c. AD 55–135 · Rome and Nicopolis) — What is yours, what is not. Born a slave; his owner was Epaphroditus, a secretary to Nero. One leg was lame and stayed lame.
 - [Esther Perel](https://ourword.ai/en/i/perel/): Esther Perel (1958– · Belgium and New York) — Flat isn't broken. Thirty years of couples therapy, nine languages, and a caseload across many cultures. She doesn't work on how to argue — Gottman…
 - [Excellent Sheep](https://ourword.ai/en/i/excellent-sheep/): Excellent Sheep (2014 · William Deresiewicz) — Can clear, can't choose. A critique of elite education by someone who taught at Yale for ten years and sat on admissions.

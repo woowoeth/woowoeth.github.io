@@ -541,6 +541,10 @@ SCENES = [
      [("on-war", "friction"), ("zeng-guofan", "solid-camp-dull-fight")]),
 ]),
 ("扩不扩张", "把事做成", [
+    ("仗已经打了这么久，我该什么时候收手？",
+     [("han-wudi", "luntai-edict")]),
+    ("收了手，我手下这些人往哪儿放？",
+     [("han-wudi", "after-the-retreat")]),
     ("什么该做什么不做，我拿不准。",
      [("wang-xing", "core-not-boundary"), ("bezos", "what-wont-change")]),
     ("摊子越铺越大，我有点怕。",
