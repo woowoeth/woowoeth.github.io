@@ -674,6 +674,12 @@ QUOTE_ASKS = {
     "su-qin/wrong-buyer":
         "我的方案不差，是不是找错了人谈？",
 
+    # 托尔斯泰
+    "tolstoy/what-then":
+        "做成的越多，我越不知道为了什么。",
+    "tolstoy/look-elsewhere":
+        "大家都劝我别想太多，可我停不下来。",
+
     # 汉武帝
     "han-wudi/luntai-edict":
         "仗已经打了这么久，我该什么时候收手？",

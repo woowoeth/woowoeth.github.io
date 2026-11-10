@@ -19,6 +19,7 @@ SLUGS = {
     "陈平": "chen-ping",
     "梭罗": "thoreau",
     "汉武帝": "han-wudi",
+    "托尔斯泰": "tolstoy",
     "托尔斯坦·凡勃伦": "veblen",
     "西蒙娜·德·波伏瓦": "beauvoir",
     "索伦·克尔凯郭尔": "kierkegaard",

@@ -885,6 +885,8 @@ SCENES = [
      [("drucker", "right-things-first"), ("csikszentmihalyi", "flow-channel")]),
     ("忙完一整天，我没记住任何一件事。",
      [("weil", "attention-is-emptying")]),
+    ("做成的越多，我越不知道为了什么。",
+     [("tolstoy", "what-then")]),
 ]),
 ("人人都在喊风口", "AI 来了", [
     ("所有人都说这是风口，我慌。",
@@ -1090,6 +1092,8 @@ SCENES = [
      [("huineng", "in-the-world"), ("feng-dao", "the-long-happy-old-man")]),
     ("每天做的事跟我在意的相反。",
      [("maslach", "six-mismatches"), ("frankl", "happiness-ensues")]),
+    ("大家都劝我别想太多，可我停不下来。",
+     [("tolstoy", "look-elsewhere")]),
 ]),
 ("要不要跳槽", "跟人打交道", [
     ("新东家问我，当年为什么跟他们作对。",

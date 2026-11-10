@@ -103,6 +103,7 @@ NAMES = {
     "chen-ping": ("Chen Ping", "Reading people"),
     "thoreau": ("Henry David Thoreau", "Mind and feeling"),
     "han-wudi": ("Emperor Wu of Han", "Power and organisation"),
+    "tolstoy": ("Leo Tolstoy", "Mind and feeling"),
     "influence": ("Influence", "Reading people"),
     "konnikova": ("Maria Konnikova", "Reading people"),
     "la-rochefoucauld": ("La Rochefoucauld", "Reading people"),

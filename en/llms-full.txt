@@ -1,7 +1,7 @@
-# OurWord — 209 people and books on how the world actually works, across 2,600 years
+# OurWord — 210 people and books on how the world actually works, across 2,600 years
 # OurWord — See how people before you handled it.
 # https://ourword.ai/en/
-# Full corpus, plain text. 209 entrys.
+# Full corpus, plain text. 210 entrys.
 
 ========================================================================
 ## Albert Einstein
@@ -2456,7 +2456,7 @@ To do less, first write the costs down. A price is the days you will pay with. B
 Montaigne — Montaigne retired to his tower on income from the family estate and used the time to read and think. Thoreau went to the pond on a number he had worked out himself. One could afford to step back; the other first checked whether he could.
 
 ### Further
-Zhuangzi Montaigne Warren Buffett
+Zhuangzi Montaigne Warren Buffett Leo Tolstoy
 
 ========================================================================
 ## Herbert Simon
@@ -3419,6 +3419,40 @@ Guan Zhong — Two operators building a small state from nothing, twenty-six cen
 
 ### Further
 Guan Zhong Shang Yang Why Nations Fail Machiavelli Ren Zhengfei Mencius Otto von Bismarck
+
+========================================================================
+## Leo Tolstoy
+URL: https://ourword.ai/en/i/tolstoy/
+Tags: Mind and feeling, The industrial age, And what then
+
+Leo Tolstoy (Russia · 1828–1910) — And what then. Russian novelist who wrote War and Peace between 1863 and 1869 and Anna Karenina between 1873 and 1877.
+
+### Q: What did this one leave behind?
+Russian novelist who wrote War and Peace between 1863 and 1869 and Anna Karenina between 1873 and 1877. This page does not judge the novels, and leaves aside the religious and social teaching of his old age. It takes one stretch of A Confession: nearly fifty and holding everything, he was stopped by the question 'and what then?', and slowly worked his way out. He is here for the 'more output, emptier' group, which covers efficiency, tools and doing the right things first, but not where the emptiness comes from once you have achieved what you set out to do.
+
+### Q: What actually happened?
+In late autumn 1910, at eighty-two, Tolstoy slipped away before dawn from the estate where he had lived most of his life and boarded a train. A few days later he fell ill on the way and was carried into the stationmaster's house at Astapovo, where he died ten days after leaving home. The question he had written down in A Confession more than thirty years before had never let him go.
+
+### The parts · After the two great books
+War and Peace took about six years and Anna Karenina more than four. With both finished he had nothing left to prove as a writer, and that is exactly when the crisis came. e.g. The hardest stretch sometimes comes right after the biggest thing you have ever finished.
+
+### The parts · Thinking of a rope at the best of times
+He writes that he was not yet fifty, with a loving wife, good children, a thriving estate and a famous name. Yet he hid a cord from himself and stopped taking a gun out shooting, in case he used them. e.g. The person who seems to lack nothing is the one who finds it hardest to say they feel empty.
+
+### The parts · He wrote those years down
+In A Confession he set out how he got stuck, whom he looked at and which ways out he tried, without sparing himself. A vague misery only takes a shape you can see once it is written. e.g. Write your recent low in three lines: when it started, what makes it worst, what you are avoiding.
+
+### Q: How do I use it today?
+This week, take something you recently finished and write down what you actually want now that it is done. If you cannot write it, hold off before starting the next thing.
+
+### Lines to keep
+Only once you have done it all does the hardest question arrive. The man who hid the rope seemed to have everything. Answer 'what for' before you take on the next thing.
+
+### Q: What should I read alongside?
+Viktor Frankl — Frankl had everything taken from him in the camps and still held on to a reason to live. Tolstoy had everything and could not find one. One shows that meaning does not depend on circumstances; the other, that circumstances cannot supply it.
+
+### Further
+Søren Kierkegaard Henry David Thoreau Viktor Frankl
 
 ========================================================================
 ## Leonardo da Vinci
@@ -5855,7 +5889,7 @@ Anxiety is the dizziness of freedom. Regret cannot rank two choices; do not ask 
 Steve Jobs — Both face two good things. Jobs says cut one and accept the loss; Kierkegaard says whichever you cut will hurt, and the hurt is not evidence you cut the wrong one. Herbert Simon — Both are about choices that will not settle. Simon puts a stopping rule on the search, good enough and go; Kierkegaard says the search will not stop because we dread regret, and regret comes from both sides.
 
 ### Further
-Steve Jobs Herbert Simon Viktor Frankl
+Steve Jobs Herbert Simon Viktor Frankl Leo Tolstoy
 
 ========================================================================
 ## Taiichi Ohno
@@ -6860,10 +6894,10 @@ When the emptiness arrives, his question is not how do I become happy. It is wha
 Everything can be taken from a man but one thing: the last of the human freedoms. If there is a meaning in life at all, then there must be a meaning in suffering. Don't aim at success. The more you aim at it and make it a target, the more you are going to miss it. He who has a why to live for can bear with almost any how.
 
 ### Q: What should I read alongside?
-Nelson Mandela — Two answers to extreme adversity: Frankl found meaning inside the camp, Mandela turned twenty-seven years in prison into a political transformation — one worked on the inner position, the other on the outer one. Su Shi — Creation under punishment: Su Shi wrote his best work in exile, Frankl finished logotherapy in the camps — both took the worst stretch of a life and made it the productive one. Marcus Aurelius — Two tests of the inner citadel: Marcus holds it voluntarily at the top of power, Frankl has it tested with everything else taken away. Epictetus — The same finding eighteen centuries apart: Frankl said in the camps that the last human freedom is the choice of one's attitude, which is the dichotomy of control tested at the floor of human experience. Nietzsche — He who has a why to live can bear almost any how is Nietzsche's line, and Frankl carried it into Auschwitz and tested it: one man worked it out in a study, the other verified it where verification cost everything. Arthur Kleinman — Both answer what to do when a situation cannot be changed: Frankl points to the freedom of attitude in an extreme, Kleinman to the ordinary long grind where care is still available every day. Shi Tiesheng — Both answer what holds when a situation leaves no choice: Frankl says meaning, Shi Tiesheng answers much smaller, with one place he went every day and the gaps between dialysis sessions.
+Nelson Mandela — Two answers to extreme adversity: Frankl found meaning inside the camp, Mandela turned twenty-seven years in prison into a political transformation — one worked on the inner position, the other on the outer one. Su Shi — Creation under punishment: Su Shi wrote his best work in exile, Frankl finished logotherapy in the camps — both took the worst stretch of a life and made it the productive one. Marcus Aurelius — Two tests of the inner citadel: Marcus holds it voluntarily at the top of power, Frankl has it tested with everything else taken away. Epictetus — The same finding eighteen centuries apart: Frankl said in the camps that the last human freedom is the choice of one's attitude, which is the dichotomy of control tested at the floor of human experience. Nietzsche — He who has a why to live can bear almost any how is Nietzsche's line, and Frankl carried it into Auschwitz and tested it: one man worked it out in a study, the other verified it where verification cost everything. Arthur Kleinman — Both answer what to do when a situation cannot be changed: Frankl points to the freedom of attitude in an extreme, Kleinman to the ordinary long grind where care is still available every day. Shi Tiesheng — Both answer what holds when a situation leaves no choice: Frankl says meaning, Shi Tiesheng answers much smaller, with one place he went every day and the gaps between dialysis sessions. Leo Tolstoy — Frankl had everything taken from him in the camps and still held on to a reason to live. Tolstoy had everything and could not find one. One shows that meaning does not depend on circumstances; the other, that circumstances cannot supply it.
 
 ### Further
-Marcus Aurelius Epictetus Nietzsche Socrates Kazuo Inamori Wang Yangming Gandhi Nelson Mandela The Bhagavad Gita Sima Qian Seneca Brené Brown Kristin Neff Records of the Grand Historian Arthur Kleinman Shi Tiesheng Tao Yuanming Mihaly Csikszentmihalyi Alfred Adler Simone Weil Søren Kierkegaard
+Marcus Aurelius Epictetus Nietzsche Socrates Kazuo Inamori Wang Yangming Gandhi Nelson Mandela The Bhagavad Gita Sima Qian Seneca Brené Brown Kristin Neff Records of the Grand Historian Arthur Kleinman Shi Tiesheng Tao Yuanming Mihaly Csikszentmihalyi Alfred Adler Simone Weil Søren Kierkegaard Leo Tolstoy
 
 ========================================================================
 ## Virginia Satir
@@ -21735,6 +21769,72 @@ Where it goes wrong: turning 'check everything' into trusting nothing. He says t
 derive it from the first source that came to hand
 I did not even trust my own impressions
 tried by the most severe and detailed tests possible
+
+========================================================================
+## Leo Tolstoy · And What Then?
+URL: https://ourword.ai/en/i/tolstoy/what-then/
+Source: Tolstoy, A Confession, chapters III and IV
+Tags: Deep read, Leo Tolstoy, Success cannot answer 'what is it for', and each success makes the silence louder
+
+He had everything. This asks why getting more done can leave you emptier, and where the trouble really lies.
+
+### Q: What actually happened?
+In the late 1870s Tolstoy was nearly fifty. War and Peace and Anna Karenina were finished, his wife and children were well, his estate was growing and his name was known. Then, whenever he set out to do something, a question came: and what then? Six thousand desyatinas of land in Samara and three hundred horses, and what then? More famous than Gogol, Pushkin or Shakespeare, and what then? He could not answer a single one. Later he wrote: "My life came to a standstill."
+
+### The parts · Not tiredness, but no answer
+He insists he was neither mad nor ill, and stronger in body than most men of his class. The emptiness was not exhaustion. It was one question he could not answer: what is this for? Rest and new projects both run into it again.
+e.g. The week after a promotion is the lowest, not from fatigue but because the next step has no reason.
+
+### The parts · Each success turns up the volume
+Everything on his list was something he truly wanted: land, horses, fame, his son's education. Each one achieved left 'what for?' unanswered and louder, because there was no longer a goal in front of it to keep it quiet.
+e.g. The day the house deposit is finally saved can feel blanker than the years of saving.
+
+### The parts · Take the question seriously before adding more
+He wrote that before managing his Samara estate, educating his son or writing a book, he had to know why he was doing it. He did not bury the question under a bigger project. He stopped and treated it as the first piece of work.
+e.g. Before signing the next offer, write one line: once I have it, what do I actually want?
+
+### Q: How do I use it today?
+Where you are: you deliver more and better work than ever, and feel emptier every month.
+Ask first: if the thing in front of me succeeds, and what then? Can I answer that?
+Where it goes wrong: reading it as 'nothing means anything, so do nothing'. He did not treat the missing answer as a reason to stop. He treated it as the problem to solve first, because a bigger task leaves it exactly where it was.
+
+### Lines to keep
+If you can't answer 'and what then?', no success will fill it.
+This emptiness isn't tiredness. A week off won't repair it.
+A bigger project won't shield you from this question.
+
+========================================================================
+## Leo Tolstoy · Whose Life Is Empty
+URL: https://ourword.ai/en/i/tolstoy/look-elsewhere/
+Source: Tolstoy, A Confession
+Tags: Deep read, Leo Tolstoy, Everyone told him not to think about it, so he went and looked at different people
+
+He refused all four ways out. This asks where to look once you have noticed the emptiness.
+
+### Q: What actually happened?
+In the years he could not find an answer, Tolstoy looked around at people of his own kind and saw four ways of dealing with the question: not knowing it; enjoying whatever could still be enjoyed; ending one's life; or seeing that life was senseless and dragging on anyway. He admitted he was in the fourth group. Then he looked away from his circle, to the working people who lived off the land, and they did not find their lives meaningless. Perhaps, he concluded, the verdict of emptiness was true only of the way he lived.
+
+### The parts · Every way out avoids looking
+Not knowing, enjoying, ending it, dragging on: what the four share is that nobody looks at the question any longer. Most of the educated and wealthy people around him took the first two, and their advice was mostly not to think so much.
+e.g. A friend says stop overthinking and take a weekend away. You come back and the question is where you left it.
+
+### The parts · Look at different people
+Among the learned, rich and leisured he found no answer, so he looked at people unlike himself: peasants who fed their families with their hands. Their lives were hard, but they did not have his kind of emptiness.
+e.g. Instead of discussing meaning over dinner with colleagues, watch the craftsman who still enjoys the job after thirty years.
+
+### The parts · You can leave his answer
+In the end he found his answer in faith, and in old age built a religious teaching of his own. This page leaves that answer aside and keeps the direction of his search: when you feel empty, ask whether it is your way of living that is empty.
+e.g. You need not take up farming. You can ask whose life all this busyness is being lived for.
+
+### Q: How do I use it today?
+Where you are: you feel hollow, and everyone around you says don't think so much, or go and enjoy yourself.
+Ask first: the people who don't feel this, how is their day different from mine?
+Where it goes wrong: reading it as 'go and experience a simpler life for a while'. He looked at those people to see what his own life lacked, not to treat their lives as scenery.
+
+### Lines to keep
+Being told not to think never made a question leave.
+Maybe it isn't life that's empty, only your way of living it.
+When you can't answer, go and watch people who can.
 
 ========================================================================
 ## Thorstein Veblen · Who Is It Bought For
