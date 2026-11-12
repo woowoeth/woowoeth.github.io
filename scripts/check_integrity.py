@@ -213,6 +213,13 @@ for _f in sorted(glob.glob("i/*/index.html")):
     _m = re.search(r'<section class="quotes" id="quotes">(.*?)</section>', _t, re.S)
     if _m and "==" in _m.group(1):
         bad("金句段露出标记", "%s 的金句段里有字面的「==」（高亮标记没去掉）" % _f)
+# sitemap 里不许有空行：lang_links 曾经每跑一遍就多一行（2026-11-12），本地闸全绿，
+# 只有 CI 的「产物和提交逐字节一致」才拦得住。在这里先拦。
+for _f in ("sitemap.xml", "en/sitemap.xml", "tw/sitemap.xml"):
+    if os.path.exists(_f):
+        _blank = sum(1 for _l in open(_f, encoding="utf-8") if not _l.strip())
+        if _blank:
+            bad("sitemap 有空行", "%s 有 %d 行空行（多半是 lang_links 重复跑、没有幂等）" % (_f, _blank))
 for _n in _no_q:
     if _n not in LEGACY_NO_QUOTES:
         bad("金句段未渲染",

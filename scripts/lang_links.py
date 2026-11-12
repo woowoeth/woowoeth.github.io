@@ -116,7 +116,10 @@ def do(path, prefix):
         if len(alts) < 3:                      # 只有自己 + x-default 时不写，没有信息量
             return whole
         done[0] += 1
-        body = whole[:-len("</url>")]
+        # rstrip：第二次跑时，上一轮的「\n  </url>」摘掉链接后剩下「\n  」，不去掉就每跑一次多一个空行。
+        # 2026-11-12：日更在 build_all 之后又单跑了一遍本脚本，提交里的 sitemap 多出 735 行空行，
+        # CI 重新构建（只跑一遍）对不上，「产物和提交逐字节一致」那步红了。
+        body = whole[:-len("</url>")].rstrip()
         return body + "\n" + "\n".join(alts) + "\n  </url>"
 
     t = re.sub(r"  <url><loc>([^<]+)</loc>.*?</url>", one, t, flags=re.S)
