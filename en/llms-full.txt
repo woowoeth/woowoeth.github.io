@@ -1,7 +1,7 @@
-# OurWord — 210 people and books on how the world actually works, across 2,600 years
+# OurWord — 211 people and books on how the world actually works, across 2,600 years
 # OurWord — See how people before you handled it.
 # https://ourword.ai/en/
-# Full corpus, plain text. 210 entrys.
+# Full corpus, plain text. 211 entrys.
 
 ========================================================================
 ## Albert Einstein
@@ -1898,10 +1898,10 @@ Write down the three things you will actually need at work tomorrow morning, and
 Heaven does not create one man above or below another man. Learn what you need tomorrow first. Once a year can wait. The gap was made after birth, so it can be closed.
 
 ### Q: What should I read alongside?
-Excellent Sheep — Excellent Sheep diagnoses what happens to someone who lived on scores and then has no scores; Fukuzawa hands a beginner an order of operations instead. Bruce Lee — Both say the inherited set of moves stops working, but Fukuzawa is the more literal of the two: change the content the day you see it, keep the method. King Wuling of Zhao — Both learned from the side their own people looked down on: Fukuzawa from the West, Wuling from the nomads. Fukuzawa wrote to change minds. Wuling put on the coat himself and knocked on his uncle's door.
+Excellent Sheep — Excellent Sheep diagnoses what happens to someone who lived on scores and then has no scores; Fukuzawa hands a beginner an order of operations instead. Bruce Lee — Both say the inherited set of moves stops working, but Fukuzawa is the more literal of the two: change the content the day you see it, keep the method. King Wuling of Zhao — Both learned from the side their own people looked down on: Fukuzawa from the West, Wuling from the nomads. Fukuzawa wrote to change minds. Wuling put on the coat himself and knocked on his uncle's door. Xu Guangqi — Fukuzawa spent years on Dutch, saw that the signs in Yokohama were all in English, and switched at once: learn first what you can use now. Xu chose the book least usable on its own, the Elements: learn first what lies at the bottom. One warns against investing in a tool that is going out of date; the other says that under the new things there is a layer that does not.
 
 ### Further
-Anders Ericsson Excellent Sheep Kazuo Inamori Garry Kasparov Bruce Lee King Wuling of Zhao
+Anders Ericsson Excellent Sheep Kazuo Inamori Garry Kasparov Bruce Lee King Wuling of Zhao Xu Guangqi
 
 ========================================================================
 ## Gandhi
@@ -5093,7 +5093,7 @@ After you've not fooled yourself, it's easy not to fool other scientists. Nature
 Albert Einstein — Two physicists' habits: Einstein restated the problem until it turned simple, Feynman rebuilt the answer until it was his. Socrates — Both use questions to force ignorance into the open. Socrates aims them at other people, Feynman at himself. Karl Popper — The same rule from two sides: Popper gives the logical criterion, Feynman the psychological warning about who breaks it first.
 
 ### Further
-Albert Einstein Socrates Charlie Munger Karl Popper The Last Hot-Metal Edition Isaac Newton
+Albert Einstein Socrates Charlie Munger Karl Popper The Last Hot-Metal Edition Isaac Newton Xu Guangqi
 
 ========================================================================
 ## Robert Axelrod
@@ -7298,6 +7298,40 @@ Han Xin — Both were among the Han founders. Han Xin's merit lay on the battlef
 Liu Bang Zhang Liang Han Xin Feng Yi Wei Zheng Liu Xiu
 
 ========================================================================
+## Xu Guangqi
+URL: https://ourword.ai/en/i/xu-guangqi/
+Tags: Learning and growth, Early modern, Start from the bottom
+
+Xu Guangqi (Ming · 1562–1633) — Start from the bottom. Ming-dynasty scholar from Shanghai who passed the highest civil-service examination in 1604 and rose to Minister of Rites and Grand Secretary; his biography is in the…
+
+### Q: What did this one leave behind?
+Ming-dynasty scholar from Shanghai who passed the highest civil-service examination in 1604 and rose to Minister of Rites and Grand Secretary; his biography is in the History of Ming. In his forties he translated the first six books of Euclid's Elements with the Jesuit Matteo Ricci, printed in 1607, and late in life he led a reform of the calendar and compiled a great treatise on agriculture. He is here for 'I can't keep up with the new thing', which covers practice, attention and learning from people below you, but not where to begin when a whole new field arrives in mid-career.
+
+### Q: What actually happened?
+In 1608 floods across the lower Yangtze wiped out the wheat and rice. Xu was at home in Shanghai, mourning his father and looking for a crop that could tide people over. He heard that sweet potatoes did well in Fujian, and a visitor from Putian brought him planting stock three times. They grew as well as they did in the south, so he wrote a short treatise on how to plant them, for others to copy.
+
+### The parts · The final exam at forty-two
+He came first in the provincial examination at thirty-five and passed the final one only at forty-two. Two years later he began translating the Elements with Ricci, starting a whole new subject at an age when most men stop. e.g. Someone who moves into programming at forty need not feel they started late.
+
+### The parts · What he learned went into the ground
+He took European surveying and hydraulics straight into flood control and farming. The sweet potato went into a book only after he had grown it. His test for anything new was whether he could make it work with his own hands. e.g. Learn a new tool, then use it to finish one real piece of work on your own desk.
+
+### The parts · Learn one thing, write one thing
+The Elements, a book on surveying, a book on Western water methods, the treatise on agriculture: almost everything he learned he turned into writing. Once it was written down, he was no longer the only one who knew it. e.g. Learn a new method, write one page about it for a colleague, and find out whether you understand it.
+
+### Q: How do I use it today?
+This week pick one new thing you feel you cannot keep up with. Find the most basic course or book underneath it, and get the definitions in its first chapter clear before you look at any of the applications.
+
+### Lines to keep
+Exams passed at forty-two, geometry begun at forty-four. Learn something new, then make it work with your own hands. Write down what you learned, and you are not the only one who knows it.
+
+### Q: What should I read alongside?
+Fukuzawa Yukichi — Fukuzawa spent years on Dutch, saw that the signs in Yokohama were all in English, and switched at once: learn first what you can use now. Xu chose the book least usable on its own, the Elements: learn first what lies at the bottom. One warns against investing in a tool that is going out of date; the other says that under the new things there is a layer that does not.
+
+### Further
+Xu Xiake Fukuzawa Yukichi Richard Feynman
+
+========================================================================
 ## Xu Xiake
 URL: https://ourword.ai/en/i/xu-xiake/
 Tags: Learning and growth, Early modern, The long road
@@ -7329,7 +7363,7 @@ The clouds scattered, the sun was bright, the hills looked glad. If I go home no
 Sima Qian — Both crossed much of China and both turned their worst years into a book. Sima Qian travelled widely from the age of twenty and finished his history after castration; Xu was robbed and lost his companion and kept writing day by day. One recorded people, the other mountains and rivers. Tao Yuanming — Neither took the road of office. Tao went back to his own fields so as not to live against his heart; Xu went outward so as to see with his own eyes. One turned inward, the other set out, and both began by knowing what they wanted. Lin Huiyin — Both learned the country on foot. Xu Xiake walked to see mountains and rivers with his own eyes; Lin Huiyin climbed into temple roofs among the bats to measure buildings no one had recorded.
 
 ### Further
-Sima Qian Su Shi Zhuangzi Tao Yuanming Lin Huiyin
+Sima Qian Su Shi Zhuangzi Tao Yuanming Lin Huiyin Xu Guangqi
 
 ========================================================================
 ## Xunzi
@@ -22990,6 +23024,72 @@ Where it goes wrong: treating the rear as a reason to expect credit for free. An
 The hound chases the hare; the hunter shows where it is.
 You can only catch game, so you are the hounds.
 He brought dozens of his clan; that merit is not to be forgotten.
+
+========================================================================
+## Xu Guangqi · The Book at the Bottom
+URL: https://ourword.ai/en/i/xu-guangqi/start-from-the-root/
+Source: Matteo Ricci, preface to the Chinese Elements; Xu Guangqi, preface and 'Miscellaneous Remarks'; History of Ming, biography of Xu Guangqi
+Tags: Deep read, Xu Guangqi, When the new things keep changing, find the layer underneath that does not
+
+He picked the driest book on offer. This asks where to start when new things arrive faster than you can learn them.
+
+### Q: What actually happened?
+In 1606 Xu Guangqi was forty-four, two years past the top civil-service examination and serving at the Hanlin Academy in Beijing. From the Italian Jesuit Matteo Ricci he could have learned astronomy, calendar-making or firearms, all of them useful at once. He chose a book of points, lines and proofs: Euclid's Elements. He picked the driest book, the one at the bottom of all the others. Ricci explained it aloud, Xu wrote it out in Chinese, and they went through three drafts.
+
+### The parts · The surface changes, the bottom stays
+In his preface Xu called the book the root of all measurement: calendars, surveying, waterworks and machines all draw on it. The applications change every generation. The definitions and proofs underneath had barely moved in nearly two thousand years.
+e.g. Frameworks turn over every year. The data structures and network protocols underneath have stayed much the same for decades.
+
+### The parts · At forty-four, from the first definition
+As a senior scholar he could simply have memorised ready-made calendar rules. He started from 'A point is that which has no part' and followed each proof in turn. Whoever masters this book, he wrote, can master anything.
+e.g. Moving into data work, skip the ten tool tutorials and learn the first chapter of statistics properly.
+
+### The parts · Learn the bottom and the rest holds
+In 1629, at sixty-seven, he was put in charge of reforming the calendar, and his writing on water control and farming leans on the same ground. What he learned in his forties served him for the rest of his life.
+e.g. Someone with solid foundations picks up a new tool in a week.
+
+### Q: How do I use it today?
+Where you are: New things keep arriving, you chase each one, and each feels out of date as soon as you have learned it.
+Ask first: Under all these new things, is there a layer they all rely on that has not changed in years?
+Where it goes wrong: Reading it as 'stick to the basics and ignore the new'. Xu learned geometry to use it on calendars, rivers and surveying. The bottom layer is there to catch the new things, not to hide from them.
+
+### Lines to keep
+The surface changes every year. The book at the bottom does not.
+Forty-four, and starting from the first definition.
+Learn the bottom layer and new things have somewhere to land.
+
+========================================================================
+## Xu Guangqi · Hand Over the Needle
+URL: https://ourword.ai/en/i/xu-guangqi/golden-needle/
+Source: Xu Guangqi, 'Miscellaneous Remarks on the Elements'; Matteo Ricci, preface to the Chinese Elements
+Tags: Deep read, Xu Guangqi, What you want is not the finished embroidery but the needle that made it
+
+He wanted the needle, not the embroidery. This asks what to hold on to when answers come too easily.
+
+### Q: What actually happened?
+In the spring of 1607 the first six books of the Elements were finished. An old Chinese saying went: show people the embroidered mandarin ducks, but never hand over the golden needle. In his notes on the book Xu turned it round: hand over the needle for others to use, and never mind the finished ducks. This book, he added, does more than give you a needle. It teaches you to mine the ore, smelt the iron and draw the wire to make one.
+
+### The parts · Results are the ducks, reasoning is the needle
+The European calendar methods gave accurate results. That was the finished embroidery. Xu wanted the reasoning that let him work them out again himself. A borrowed result fails when conditions change; with the needle you can stitch a new pattern.
+e.g. A formula copied from somewhere breaks in a new setting. One you have derived, you can adapt.
+
+### The parts · What can be derived need not be guessed
+He wrote that this book left nothing to doubt, guess, test or correct. Each step follows from the one before, so you can check it yourself, without trusting anyone and without relying on luck.
+e.g. Sign off on a tool's conclusion only once you can trace it back step by step.
+
+### The parts · Hold the needle yourself
+Ricci explained aloud and Xu wrote every sentence, which meant understanding each one well enough to put it into Chinese. They went through three drafts. Following someone else's explanation is not the same as being able to write it.
+e.g. Close the tool and redo its derivation from scratch. Wherever you get stuck is what you still have to learn.
+
+### Q: How do I use it today?
+Where you are: The tool's answers are quick and right, and you are less and less able to say how they were reached.
+Ask first: If one condition changed, could I work this answer out again myself?
+Where it goes wrong: Reading it as 'invent everything from scratch'. Xu did not invent geometry. He took someone else's proofs and wrote them into words he could explain. The point is being able to redo it, not refusing to use it.
+
+### Lines to keep
+Don't settle for the embroidered ducks. Ask for the needle.
+What you can derive, you don't have to take on trust.
+Write it out yourself, and the needle is in your hand.
 
 ========================================================================
 ## Xu Xiake · Robbed on the Xiang

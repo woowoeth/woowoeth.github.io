@@ -841,6 +841,8 @@ SCENES = [
      [("herbert-simon", "poverty-of-attention")]),
     ("我拉不下脸，向不如我的人学。",
      [("zhao-wuling-wang", "learn-from-the-lesser")]),
+    ("四十多了，我学新东西该从哪本下手？",
+     [("xu-guangqi", "start-from-the-root")]),
 ]),
 ("手艺不值钱了", "AI 来了", [
     ("我这身本事，眼下用不上。",
@@ -871,6 +873,8 @@ SCENES = [
      [("wiener", "human-use"), ("drucker", "right-things-first")]),
     ("活儿都替我安排好了，我只管做。",
      [("weil", "the-factory-year")]),
+    ("它给的答案都对，可我不知道怎么来的。",
+     [("xu-guangqi", "golden-needle")]),
 ]),
 ("出得多了人却空了", "AI 来了", [
     ("东西没少做，标准又涨了。",

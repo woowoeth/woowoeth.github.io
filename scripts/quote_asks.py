@@ -680,6 +680,12 @@ QUOTE_ASKS = {
     "tolstoy/look-elsewhere":
         "大家都劝我别想太多，可我停不下来。",
 
+    # 徐光启
+    "xu-guangqi/start-from-the-root":
+        "四十多了，我学新东西该从哪本下手？",
+    "xu-guangqi/golden-needle":
+        "它给的答案都对，可我不知道怎么来的。",
+
     # 汉武帝
     "han-wudi/luntai-edict":
         "仗已经打了这么久，我该什么时候收手？",

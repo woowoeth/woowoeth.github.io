@@ -104,6 +104,7 @@ NAMES = {
     "thoreau": ("Henry David Thoreau", "Mind and feeling"),
     "han-wudi": ("Emperor Wu of Han", "Power and organisation"),
     "tolstoy": ("Leo Tolstoy", "Mind and feeling"),
+    "xu-guangqi": ("Xu Guangqi", "Learning and growth"),
     "influence": ("Influence", "Reading people"),
     "konnikova": ("Maria Konnikova", "Reading people"),
     "la-rochefoucauld": ("La Rochefoucauld", "Reading people"),
