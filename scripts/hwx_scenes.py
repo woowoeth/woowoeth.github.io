@@ -264,6 +264,10 @@ SCENES = [
      [("keynes", "we-simply-do-not-know")]),
     ("每样都买一点，我其实哪样都不懂。",
      [("keynes", "know-what-you-hold")]),
+    ("我挑基金只看收益，从没看过费用。",
+     [("bogle", "humble-arithmetic")]),
+    ("我挑不出哪只会涨，还要不要投？",
+     [("bogle", "buy-the-haystack")]),
 ]),
 ("接不到活", "钱的事", [
     ("这个月没有单子，我开始慌了。",

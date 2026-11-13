@@ -1,11 +1,11 @@
 # OurWord (人类世界生存法则)
 
-> 211 people and books on how the world actually works, across 2,600 years
+> 212 people and books on how the world actually works, across 2,600 years
 > 遇到事了，看看以前的人怎么处理
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 211 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 212 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
-一个关于「世界到底怎么运转」的知识库：战略、财富、权力、人性、创业，取自 211 位人物与典籍，跨越 2600 年。每一条都写清楚这个人真正留下的那一个想法、背后的故事、拆开的分则与例子，以及今天怎么用。
+一个关于「世界到底怎么运转」的知识库：战略、财富、权力、人性、创业，取自 212 位人物与典籍，跨越 2600 年。每一条都写清楚这个人真正留下的那一个想法、背后的故事、拆开的分则与例子，以及今天怎么用。
 
 ## Read it
 
@@ -19,7 +19,7 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 ## Topics
 
 - [工业时代](https://ourword.ai/t/industrial-age/) — 65
-- [现代](https://ourword.ai/t/modern/) — 62
+- [现代](https://ourword.ai/t/modern/) — 63
 - [先秦与古典时代](https://ourword.ai/t/classical-era/) — 33
 - [权力与组织](https://ourword.ai/t/power/) — 32
 - [心智与情绪](https://ourword.ai/t/mind/) — 25
@@ -27,8 +27,8 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 - [识人与相处](https://ourword.ai/t/people/) — 20
 - [创业与产品](https://ourword.ai/t/startups/) — 20
 - [谋略与竞争](https://ourword.ai/t/strategy/) — 20
+- [财富与风险](https://ourword.ai/t/wealth/) — 20
 - [世界如何运转](https://ourword.ai/t/world/) — 20
-- [财富与风险](https://ourword.ai/t/wealth/) — 19
 - [中古](https://ourword.ai/t/medieval/) — 18
 - [家庭与关系](https://ourword.ai/t/family/) — 17
 - [秦汉至魏晋](https://ourword.ai/t/han-wei/) — 17
@@ -83,6 +83,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [俾斯麦 · 可能性的艺术](https://ourword.ai/i/bismarck/art-of-the-possible/): 俾斯麦 · 可能性的艺术——赢三场就急刹车。三场速胜之后，他把此后二十年全部用来防止下一场战争。这一篇要回答的是：这个急刹车比开战更难。
 - [BJ·福格 · 小到最糟那天也做得到](https://ourword.ai/i/bj-fogg/tiny-habits/): BJ·福格 · 小到最糟那天也做得到——别跟动机赌。下决心那天什么都做得到，问题是没劲的那天。这一篇要回答的是：该怎么办。
 - [BJ·福格 · 挂在锚点上，做完就庆祝](https://ourword.ai/i/bj-fogg/anchor-and-celebrate/): BJ·福格 · 挂在锚点上，做完就庆祝——提示与情绪。想不起来做，和做了也没固化，是两个不同的问题。这一篇要回答的是：分别怎么解。
+- [约翰·博格 · 先把成本压下来](https://ourword.ai/i/bogle/humble-arithmetic/): 约翰·博格 · 先把成本压下来——收益你定不了，付出去多少你定得了。他赌的是平均数。这一篇要回答的是：钱交出去之前，先看哪一个数。
+- [约翰·博格 · 把草堆买下来](https://ourword.ai/i/bogle/buy-the-haystack/): 约翰·博格 · 把草堆买下来——挑不出哪一只会涨，就别去挑。他不去找那根针。这一篇要回答的是：看不准哪一只的人，还能不能投。
 - [鲍恩 · 既在关系里，又是自己](https://ourword.ai/i/bowen/differentiation/): 鲍恩 · 既在关系里，又是自己——融合与切割都不是分化。跟家人相处，要么被卷走要么想逃开。这一篇要回答的是：有没有第三条路。
 - [鲍恩 · 拉进第三个人](https://ourword.ai/i/bowen/triangles/): 鲍恩 · 拉进第三个人——张力被固定下来。两个人的矛盾，为什么总会变成三个人的事。这一篇要回答的是：那样做的代价。
 - [约翰·博伊德 · OODA循环](https://ourword.ai/i/boyd/ooda/): 约翰·博伊德 · OODA循环——快在转向不在动作。他先是王牌飞行教官，四十秒内必能反败为胜。这一篇要回答的是：他从空战里提炼的那个循环，快指的是什么。
@@ -562,7 +564,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [AI Bubble Monitor / AI 泡沫检测仪](https://ourword.ai/ai/)
 - [Zouni / 走你](https://ourword.ai/zouni/)
 
-## Index (211 entrys)
+## Index (212 entrys)
 
 - [BJ·福格](https://ourword.ai/i/bj-fogg/): BJ·福格（2019年·斯坦福行为设计实验室）——小到不会失败。斯坦福行为设计实验室创始人，研究行为如何被设计出来。他给出一个公式：行为发生需要动机、能力、提示三者同时到位。多数人失败在只调动机——靠决心和自我激励——而动机天然起伏，靠它维持的习惯必然崩。他的主张相反：把行为缩到小得不需要动机，然后挂在一个已有的动作后面。
 - [C.S.刘易斯](https://ourword.ai/i/cs-lewis/): C.S.刘易斯（1898-1963年·英国牛津）——妻子死后几个月的日记。作家，牛津和剑桥的教授，写过《纳尼亚传奇》和大量劝人信仰的书。五十八岁结婚，妻子乔伊四年后因癌症去世。之后几个月他在四本练习簿上记自己的状态，后来用笔名出版，就是《卿卿如晤》。收他是因为「重要的人走了」那六个问题，原来靠弗兰克尔和苏轼在答——一个是集中营的幸存者，一个是被贬的官员
@@ -709,6 +711,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [索伦·克尔凯郭尔](https://ourword.ai/i/kierkegaard/): 索伦·克尔凯郭尔（丹麦·1813-1855）——选择。丹麦哲学家，1813年生于哥本哈根，1855年在同一座城市去世。1843年他以假名出版《非此即彼》，同年又出《恐惧与战栗》；1844年写《焦虑的概念》。他的写法很特别：不同的书署不同的假名，让每个声音各讲各的立场，不替读者说哪个对。他想弄清的不是哪个答案正确，而是一个人站在两条路
 - [索罗斯](https://ourword.ai/i/soros/): 索罗斯（当代·1930-）——反身性。量子基金创始人，做空英镑让英格兰银行屈服，一天赚10亿美元，被称为「打垮英格兰银行的人」。但他最重要的贡献不是赚了多少钱，而是他提出了「反身性理论」——彻底颠覆了「市场总是理性的」这个主流假设。他认为：市场参与者的预期本身会影响市场走势，而市场走势又反过来影响参与者的预期——这个
 - [约翰·博伊德](https://ourword.ai/i/boyd/): 约翰·博伊德（美国·1927-1997）——节奏优势。美国空军上校，外号「四十秒博伊德」——他曾公开下战书：任何飞行员，我从劣势位置起飞，四十秒之内咬到你尾后，做不到赔你40美元。据说无人赢过。他一生没当上将军，没出版过一本书（全部思想留在一份叫《制胜与失败》的讲稿里），却重塑了美国战斗机的设计标准（F-15、F-16、A-10都受
+- [约翰·博格](https://ourword.ai/i/bogle/): 约翰·博格（美国·1929-2019）——成本。美国先锋集团（Vanguard）创始人，1976 年推出面向普通人的第一只指数基金，开创了指数投资这个行业。他的主张只有两句：扣费之前，所有投资者合起来拿的就是市场的回报，扣费之后整体一定落后；既然挑不出赢家，就把整个市场买下来，把成本压到最低，然后别动。收他是因为「让钱生钱」那
 - [约翰·卡乔波](https://ourword.ai/i/cacioppo/): 约翰·卡乔波（1951-2018·芝加哥大学）——孤独是信号不是缺陷。社会神经科学的创立者之一，一辈子研究一件事：孤独在身体和大脑里到底是什么。他做的第一件事是把定义拧紧——孤独不是身边没人，是你想要的联结和实际有的之间那道差，所以热闹的房间里也可以很孤独。定义一改，孤独就从性格问题变成了信号，和饥饿、口渴、疼痛归进同一类：都在提醒你去补一样对生存
 - [约翰·戈特曼](https://ourword.ai/i/gottman/): 约翰·戈特曼（1994年·华盛顿大学）——四种致命信号。心理学家，在实验室里录下几千对夫妻的对话，逐帧标记表情、语气、心率，然后追踪他们几年后是否离婚。他的结论不靠理论：只看一段十五分钟的争吵，他判断这对夫妻会不会分开，准确率超过九成。真正预测破裂的不是吵得凶不凶，是吵的时候有没有出现四种特定的信号。（注意：那个「九成」是模型在自己拟
 - [约翰·瑞迪](https://ourword.ai/i/john-ratey/): 约翰·瑞迪（2008年·哈佛医学院）——先动再想。哈佛医学院精神科教授。他把运动重新定义了一遍：运动的首要收益不是身材，是大脑。运动会促使大脑分泌一类支持神经元生长与连接的蛋白，他称之为「大脑的肥料」，直接影响学习效率、情绪调节和抗压能力。他的主张是，把运动当成健身房里的事，等于把最便宜的认知与情绪药物放着不用。

@@ -680,6 +680,12 @@ QUOTE_ASKS = {
     "tolstoy/look-elsewhere":
         "大家都劝我别想太多，可我停不下来。",
 
+    # 约翰·博格
+    "bogle/humble-arithmetic":
+        "我挑基金只看收益，从没看过费用。",
+    "bogle/buy-the-haystack":
+        "我挑不出哪只会涨，还要不要投？",
+
     # 徐光启
     "xu-guangqi/start-from-the-root":
         "四十多了，我学新东西该从哪本下手？",

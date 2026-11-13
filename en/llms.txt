@@ -1,9 +1,9 @@
 # OurWord (OurWord)
 
-> 211 people and books on how the world actually works, across 2,600 years
+> 212 people and books on how the world actually works, across 2,600 years
 > See how people before you handled it.
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 211 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 212 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
 ## Read it
 
@@ -16,7 +16,7 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 
 ## Topics
 
-- [Modern](https://ourword.ai/en/t/modern/) — 66
+- [Modern](https://ourword.ai/en/t/modern/) — 67
 - [The industrial age](https://ourword.ai/en/t/the-industrial-age/) — 61
 - [Power and organisation](https://ourword.ai/en/t/power-and-organisation/) — 32
 - [Pre-Qin and classical](https://ourword.ai/en/t/pre-qin-and-classical/) — 31
@@ -27,7 +27,7 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 - [Reading people](https://ourword.ai/en/t/reading-people/) — 20
 - [Starting and building](https://ourword.ai/en/t/starting-and-building/) — 20
 - [Strategy and competition](https://ourword.ai/en/t/strategy-and-competition/) — 20
-- [Money and risk](https://ourword.ai/en/t/money-and-risk/) — 18
+- [Money and risk](https://ourword.ai/en/t/money-and-risk/) — 19
 - [Body and daily life](https://ourword.ai/en/t/body-and-daily-life/) — 17
 - [Family and relationships](https://ourword.ai/en/t/family-and-relationships/) — 17
 - [Early modern](https://ourword.ai/en/t/early-modern/) — 16
@@ -77,6 +77,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [Otto von Bismarck · The art of the possible](https://ourword.ai/en/i/bismarck/art-of-the-possible/): Otto von Bismarck · The art of the possible — Three wins, then the brake. After three quick victories he spent twenty years preventing the next war. Stopping was the part that took more from him than winning.
 - [BJ Fogg · Small Enough for Your Worst Day](https://ourword.ai/en/i/bj-fogg/tiny-habits/): BJ Fogg · Small Enough for Your Worst Day — Do not bet on motivation. On the day you decide, anything is possible. The problem is the day with nothing in the tank. What to do then.
 - [BJ Fogg · Anchor It, Then Celebrate](https://ourword.ai/en/i/bj-fogg/anchor-and-celebrate/): BJ Fogg · Anchor It, Then Celebrate — Prompt and emotion. Forgetting to do it and doing it without it sticking are two different faults. How each one is fixed.
+- [John C. Bogle · Cut the cost first](https://ourword.ai/en/i/bogle/humble-arithmetic/): John C. Bogle · Cut the cost first — You cannot set the return, but you can set what you pay. He bet on the average. Before you hand your money over, which number should you look at first?
+- [John C. Bogle · Own the haystack](https://ourword.ai/en/i/bogle/buy-the-haystack/): John C. Bogle · Own the haystack — If you cannot tell which one will rise, stop trying to choose. He stopped hunting for the needle. Can someone who cannot pick winners still invest?
 - [Murray Bowen · In the relationship and still yourself](https://ourword.ai/en/i/bowen/differentiation/): Murray Bowen · In the relationship and still yourself — Fusion and cut-off are the same failure. With family it is either being swept along or getting out. Whether there is a third road.
 - [Murray Bowen · Pulling in a third person](https://ourword.ai/en/i/bowen/triangles/): Murray Bowen · Pulling in a third person — The tension gets fixed in place. A problem between two people always seems to end up being three people's problem. What that costs.
 - [John Boyd · The OODA loop](https://ourword.ai/en/i/boyd/ooda/): John Boyd · The OODA loop — Fast means turning, not moving. He was a fighter instructor who could win from any position in forty seconds. What 'fast' meant in the loop he built.
@@ -556,7 +558,7 @@ Cite the individual page URL, not the homepage — each entry page is stable and
 - [AI Bubble Monitor](https://ourword.ai/ai/)
 - [Zouni](https://ourword.ai/zouni/)
 
-## Index (211 entrys)
+## Index (212 entrys)
 
 - [Albert Einstein](https://ourword.ai/en/i/einstein/): Albert Einstein (Germany · 1879–1955) — Imagination. The physicist, and the father of relativity — but the legacy that travels furthest is not a formula, it is a way of working.
 - [Albert O. Hirschman](https://ourword.ai/en/i/hirschman/): Albert O. Hirschman (United States · 1915-2012) — Voice. A German-born American economist. He left Berlin in 1933, fought in Spain in 1936, spent 1940 in Marseille forging papers and finding mountain…
@@ -638,6 +640,7 @@ Cite the individual page URL, not the homepage — each entry page is stable and
 - [Jesse Livermore](https://ourword.ai/en/i/livermore/): Jesse Livermore (United States · 1877–1940) — Sitting tight. The most famous speculator in American history and the model for Reminiscences of a Stock Operator.
 - [Jim Simons](https://ourword.ai/en/i/simons/): Jim Simons (United States · 1938–2024) — A small edge, repeated. A mathematician first: a doctorate at twenty-three, teaching at MIT and Harvard, code-breaking for the defence establishment, and the…
 - [John Boyd](https://ourword.ai/en/i/boyd/): John Boyd (United States · 1927–1997) — Tempo. A US Air Force colonel known as Forty-Second Boyd, from a standing bet: any pilot, he starts from the disadvantaged position, and if he isn't on their…
+- [John C. Bogle](https://ourword.ai/en/i/bogle/): John C. Bogle (United States · 1929–2019) — Cost. Founder of Vanguard, who in 1976 launched the first index fund for ordinary investors and so created the index-investing industry. His case comes…
 - [John Cacioppo](https://ourword.ai/en/i/cacioppo/): John Cacioppo (1951–2018 · University of Chicago) — Loneliness is a signal. A founder of social neuroscience who spent a career on one question: what loneliness actually is in the body and the brain.
 - [John Gottman](https://ourword.ai/en/i/gottman/): John Gottman (1994 · University of Washington) — Four fatal signals. A psychologist who recorded thousands of couples in a laboratory, coding expression, tone and heart rate frame by frame, then…
 - [John Maynard Keynes](https://ourword.ai/en/i/keynes/): John Maynard Keynes (Britain · 1883–1946) — Not knowing. British economist, born in Cambridge in 1883, whose General Theory of 1936 founded macroeconomics.

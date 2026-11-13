@@ -105,6 +105,7 @@ NAMES = {
     "han-wudi": ("Emperor Wu of Han", "Power and organisation"),
     "tolstoy": ("Leo Tolstoy", "Mind and feeling"),
     "xu-guangqi": ("Xu Guangqi", "Learning and growth"),
+    "bogle": ("John C. Bogle", "Money and risk"),
     "influence": ("Influence", "Reading people"),
     "konnikova": ("Maria Konnikova", "Reading people"),
     "la-rochefoucauld": ("La Rochefoucauld", "Reading people"),

@@ -1,11 +1,11 @@
 # OurWord (人類世界生存法則)
 
-> 211 people and books on how the world actually works, across 2,600 years
+> 212 people and books on how the world actually works, across 2,600 years
 > 遇到事了，看看以前的人怎麼處理
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 211 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 212 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
-一個關於「世界到底怎麼運轉」的知識庫：戰略、財富、權力、人性、創業，取自 211 位人物與典籍，跨越 2600 年。每一條都寫清楚這個人真正留下的那一個想法、背後的故事、拆開的分則與例子，以及今天怎麼用。
+一個關於「世界到底怎麼運轉」的知識庫：戰略、財富、權力、人性、創業，取自 212 位人物與典籍，跨越 2600 年。每一條都寫清楚這個人真正留下的那一個想法、背後的故事、拆開的分則與例子，以及今天怎麼用。
 
 ## Read it
 
@@ -19,7 +19,7 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 ## Topics
 
 - [工業時代](https://ourword.ai/tw/t/industrial-age/) — 65
-- [現代](https://ourword.ai/tw/t/modern/) — 62
+- [現代](https://ourword.ai/tw/t/modern/) — 63
 - [先秦與古典時代](https://ourword.ai/tw/t/classical-era/) — 33
 - [權力與組織](https://ourword.ai/tw/t/power/) — 32
 - [心智與情緒](https://ourword.ai/tw/t/mind/) — 25
@@ -27,8 +27,8 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 - [識人與相處](https://ourword.ai/tw/t/people/) — 20
 - [創業與產品](https://ourword.ai/tw/t/startups/) — 20
 - [謀略與競爭](https://ourword.ai/tw/t/strategy/) — 20
+- [財富與風險](https://ourword.ai/tw/t/wealth/) — 20
 - [世界如何運轉](https://ourword.ai/tw/t/world/) — 20
-- [財富與風險](https://ourword.ai/tw/t/wealth/) — 19
 - [中古](https://ourword.ai/tw/t/medieval/) — 18
 - [家庭與關係](https://ourword.ai/tw/t/family/) — 17
 - [秦漢至魏晉](https://ourword.ai/tw/t/han-wei/) — 17
@@ -83,6 +83,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [俾斯麥 · 可能性的藝術](https://ourword.ai/tw/i/bismarck/art-of-the-possible/): 俾斯麥 · 可能性的藝術——贏三場就急剎車。三場速勝之後，他把此後二十年全部用來防止下一場戰爭。這一篇要回答的是：這個急剎車比開戰更難。
 - [BJ·福格 · 小到最糟那天也做得到](https://ourword.ai/tw/i/bj-fogg/tiny-habits/): BJ·福格 · 小到最糟那天也做得到——別跟動機賭。下決心那天什麼都做得到，問題是沒勁的那天。這一篇要回答的是：該怎麼辦。
 - [BJ·福格 · 掛在錨點上，做完就慶祝](https://ourword.ai/tw/i/bj-fogg/anchor-and-celebrate/): BJ·福格 · 掛在錨點上，做完就慶祝——提示與情緒。想不起來做，和做了也沒固化，是兩個不同的問題。這一篇要回答的是：分別怎麼解。
+- [約翰·博格 · 先把成本壓下來](https://ourword.ai/tw/i/bogle/humble-arithmetic/): 約翰·博格 · 先把成本壓下來——收益你定不了，付出去多少你定得了。他賭的是平均數。這一篇要回答的是：錢交出去之前，先看哪一個數。
+- [約翰·博格 · 把草堆買下來](https://ourword.ai/tw/i/bogle/buy-the-haystack/): 約翰·博格 · 把草堆買下來——挑不出哪一隻會漲，就別去挑。他不去找那根針。這一篇要回答的是：看不準哪一隻的人，還能不能投。
 - [鮑恩 · 既在關係裡，又是自己](https://ourword.ai/tw/i/bowen/differentiation/): 鮑恩 · 既在關係裡，又是自己——融合與切割都不是分化。跟家人相處，要麼被捲走要麼想逃開。這一篇要回答的是：有沒有第三條路。
 - [鮑恩 · 拉進第三個人](https://ourword.ai/tw/i/bowen/triangles/): 鮑恩 · 拉進第三個人——張力被固定下來。兩個人的矛盾，為什麼總會變成三個人的事。這一篇要回答的是：那樣做的代價。
 - [約翰·博伊德 · OODA循環](https://ourword.ai/tw/i/boyd/ooda/): 約翰·博伊德 · OODA循環——快在轉向不在動作。他先是王牌飛行教官，四十秒內必能反敗為勝。這一篇要回答的是：他從空戰裡提煉的那個循環，快指的是什麼。
@@ -562,7 +564,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [AI Bubble Monitor / AI 泡沫檢測儀](https://ourword.ai/ai/)
 - [Zouni / 走你](https://ourword.ai/zouni/)
 
-## Index (211 entrys)
+## Index (212 entrys)
 
 - [BJ·福格](https://ourword.ai/tw/i/bj-fogg/): BJ·福格（2019年·斯坦福行為設計實驗室）——小到不會失敗。斯坦福行為設計實驗室創始人，研究行為如何被設計出來。他給出一個公式：行為發生需要動機、能力、提示三者同時到位。多數人失敗在只調動機——靠決心和自我激勵——而動機天然起伏，靠它維持的習慣必然崩。他的主張相反：把行為縮到小得不需要動機，然後掛在一個已有的動作後面。
 - [C.S.劉易斯](https://ourword.ai/tw/i/cs-lewis/): C.S.劉易斯（1898-1963年·英國牛津）——妻子死後幾個月的日記。作家，牛津和劍橋的教授，寫過《納尼亞傳奇》和大量勸人信仰的書。五十八歲結婚，妻子喬伊四年後因癌症去世。之後幾個月他在四本練習簿上記自己的狀態，後來用筆名出版，就是《卿卿如晤》。收他是因為「重要的人走了」那六個問題，原來靠弗蘭克爾和蘇軾在答——一個是集中營的倖存者，一個是被貶的官員
@@ -709,6 +711,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [索倫·克爾凱郭爾](https://ourword.ai/tw/i/kierkegaard/): 索倫·克爾凱郭爾（丹麥·1813-1855）——選擇。丹麥哲學家，1813年生於哥本哈根，1855年在同一座城市去世。1843年他以假名出版《非此即彼》，同年又出《恐懼與戰慄》；1844年寫《焦慮的概念》。他的寫法很特別：不同的書署不同的假名，讓每個聲音各講各的立場，不替讀者說哪個對。他想弄清的不是哪個答案正確，而是一個人站在兩條路
 - [索羅斯](https://ourword.ai/tw/i/soros/): 索羅斯（當代·1930-）——反身性。量子基金創始人，做空英鎊讓英格蘭銀行屈服，一天賺10億美元，被稱為「打垮英格蘭銀行的人」。但他最重要的貢獻不是賺了多少錢，而是他提出了「反身性理論」——徹底顛覆了「市場總是理性的」這個主流假設。他認為：市場參與者的預期本身會影響市場走勢，而市場走勢又反過來影響參與者的預期——這個
 - [約翰·博伊德](https://ourword.ai/tw/i/boyd/): 約翰·博伊德（美國·1927-1997）——節奏優勢。美國空軍上校，外號「四十秒博伊德」——他曾公開下戰書：任何飛行員，我從劣勢位置起飛，四十秒之內咬到你尾後，做不到賠你40美元。據說無人贏過。他一生沒當上將軍，沒出版過一本書（全部思想留在一份叫《制勝與失敗》的講稿裡），卻重塑了美國戰鬥機的設計標準（F-15、F-16、A-10都受
+- [約翰·博格](https://ourword.ai/tw/i/bogle/): 約翰·博格（美國·1929-2019）——成本。美國先鋒集團（Vanguard）創始人，1976 年推出面向普通人的第一隻指數基金，開創了指數投資這個行業。他的主張只有兩句：扣費之前，所有投資者合起來拿的就是市場的回報，扣費之後整體一定落後；既然挑不出贏家，就把整個市場買下來，把成本壓到最低，然後別動。收他是因為「讓錢生錢」那
 - [約翰·卡喬波](https://ourword.ai/tw/i/cacioppo/): 約翰·卡喬波（1951-2018·芝加哥大學）——孤獨是信號不是缺陷。社會神經科學的創立者之一，一輩子研究一件事：孤獨在身體和大腦裡到底是什麼。他做的第一件事是把定義擰緊——孤獨不是身邊沒人，是你想要的聯結和實際有的之間那道差，所以熱鬧的房間裡也可以很孤獨。定義一改，孤獨就從性格問題變成了信號，和飢餓、口渴、疼痛歸進同一類：都在提醒你去補一樣對生存
 - [約翰·戈特曼](https://ourword.ai/tw/i/gottman/): 約翰·戈特曼（1994年·華盛頓大學）——四種致命信號。心理學家，在實驗室裡錄下幾千對夫妻的對話，逐幀標記表情、語氣、心率，然後追蹤他們幾年後是否離婚。他的結論不靠理論：只看一段十五分鐘的爭吵，他判斷這對夫妻會不會分開，準確率超過九成。真正預測破裂的不是吵得兇不兇，是吵的時候有沒有出現四種特定的信號。（注意：那個「九成」是模型在自己擬
 - [約翰·瑞迪](https://ourword.ai/tw/i/john-ratey/): 約翰·瑞迪（2008年·哈佛醫學院）——先動再想。哈佛醫學院精神科教授。他把運動重新定義了一遍：運動的首要收益不是身材，是大腦。運動會促使大腦分泌一類支持神經元生長與連接的蛋白，他稱之為「大腦的肥料」，直接影響學習效率、情緒調節和抗壓能力。他的主張是，把運動當成健身房裡的事，等於把最便宜的認知與情緒藥物放著不用。
