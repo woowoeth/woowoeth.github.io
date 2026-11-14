@@ -1,11 +1,11 @@
 # OurWord (人类世界生存法则)
 
-> 212 people and books on how the world actually works, across 2,600 years
+> 213 people and books on how the world actually works, across 2,600 years
 > 遇到事了，看看以前的人怎么处理
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 212 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 213 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
-一个关于「世界到底怎么运转」的知识库：战略、财富、权力、人性、创业，取自 212 位人物与典籍，跨越 2600 年。每一条都写清楚这个人真正留下的那一个想法、背后的故事、拆开的分则与例子，以及今天怎么用。
+一个关于「世界到底怎么运转」的知识库：战略、财富、权力、人性、创业，取自 213 位人物与典籍，跨越 2600 年。每一条都写清楚这个人真正留下的那一个想法、背后的故事、拆开的分则与例子，以及今天怎么用。
 
 ## Read it
 
@@ -24,14 +24,14 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 - [权力与组织](https://ourword.ai/t/power/) — 32
 - [心智与情绪](https://ourword.ai/t/mind/) — 25
 - [学习与成长](https://ourword.ai/t/learning/) — 21
+- [创业与产品](https://ourword.ai/t/startups/) — 21
 - [识人与相处](https://ourword.ai/t/people/) — 20
-- [创业与产品](https://ourword.ai/t/startups/) — 20
 - [谋略与竞争](https://ourword.ai/t/strategy/) — 20
 - [财富与风险](https://ourword.ai/t/wealth/) — 20
 - [世界如何运转](https://ourword.ai/t/world/) — 20
+- [秦汉至魏晋](https://ourword.ai/t/han-wei/) — 18
 - [中古](https://ourword.ai/t/medieval/) — 18
 - [家庭与关系](https://ourword.ai/t/family/) — 17
-- [秦汉至魏晋](https://ourword.ai/t/han-wei/) — 17
 - [身心与生活](https://ourword.ai/t/living/) — 17
 - [近世](https://ourword.ai/t/early-modern/) — 16
 
@@ -533,6 +533,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [张良 · 圯上受书](https://ourword.ai/i/zhang-liang/picking-up-the-shoe/): 张良 · 圯上受书——先过忍的那一关。一个老人反复刁难一个年轻人。这一篇要回答的是：这场看似无理的考验，考的到底是什么。
 - [张良 · 借箸代筹](https://ourword.ai/i/zhang-liang/borrowing-chopsticks/): 张良 · 借箸代筹——拆一个听起来很好的方案。一个方案听起来完全正确，怎么证明它错？这一篇要回答的是：张良当场拆解的那套方法。
 - [张良 · 愿封留足矣](https://ourword.ai/i/zhang-liang/asking-for-less/): 张良 · 愿封留足矣——在顶点主动要小的。论功行赏时让你自己挑，挑大的还是挑小的？这一篇要回答的是：张良为什么挑了最小的那个。
+- [张骞 · 百余人去，二人还](https://ourword.ai/i/zhang-qian/two-came-back/): 张骞 · 百余人去，二人还——原来要办的事没办成，路上记下的成了本钱。他要办的事没办成。这一篇要回答的是：往没人去过的地方走，走空了还剩什么。
+- [张骞 · 十年持节](https://ourword.ai/i/zhang-qian/hold-the-tally/): 张骞 · 十年持节——卡在半路的那些年，别忘了自己原来要去哪儿。他被扣了十多年。这一篇要回答的是：事情卡在半路，等的那些年手里攥着什么。
 - [张一鸣 · 延迟满足感](https://ourword.ai/i/zhang-yiming/delayed-gratification/): 张一鸣 · 延迟满足感——他最看重的特质。被问看重什么品质，他反复给同一个答案。这一篇要回答的是：这个词在他那里的具体用法。
 - [张一鸣 · 平常心做非常事](https://ourword.ai/i/zhang-yiming/ordinary-mind/): 张一鸣 · 平常心做非常事——九周年演讲。一家以凶猛著称的公司，九周年讲的是平常心。这一篇要回答的是：他点名的那几种干扰。
 - [赵武灵王 · 向胡人学](https://ourword.ai/i/zhao-wuling-wang/learn-from-the-lesser/): 赵武灵王 · 向胡人学——新东西挡在前面的，往往不是难，是拉不下脸。你要学的东西，来自一群你一向看不上的人。这一篇要回答的是：赵武灵王怎么越过「向蛮夷学」这道脸面的坎。
@@ -564,7 +566,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [AI Bubble Monitor / AI 泡沫检测仪](https://ourword.ai/ai/)
 - [Zouni / 走你](https://ourword.ai/zouni/)
 
-## Index (212 entrys)
+## Index (213 entrys)
 
 - [BJ·福格](https://ourword.ai/i/bj-fogg/): BJ·福格（2019年·斯坦福行为设计实验室）——小到不会失败。斯坦福行为设计实验室创始人，研究行为如何被设计出来。他给出一个公式：行为发生需要动机、能力、提示三者同时到位。多数人失败在只调动机——靠决心和自我激励——而动机天然起伏，靠它维持的习惯必然崩。他的主张相反：把行为缩到小得不需要动机，然后挂在一个已有的动作后面。
 - [C.S.刘易斯](https://ourword.ai/i/cs-lewis/): C.S.刘易斯（1898-1963年·英国牛津）——妻子死后几个月的日记。作家，牛津和剑桥的教授，写过《纳尼亚传奇》和大量劝人信仰的书。五十八岁结婚，妻子乔伊四年后因癌症去世。之后几个月他在四本练习簿上记自己的状态，后来用笔名出版，就是《卿卿如晤》。收他是因为「重要的人走了」那六个问题，原来靠弗兰克尔和苏轼在答——一个是集中营的幸存者，一个是被贬的官员
@@ -640,6 +642,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [张一鸣](https://ourword.ai/i/zhang-yiming/): 张一鸣（当代·1983-）——延迟满足。字节跳动创始人，抖音和今日头条的缔造者。他的特点：极度理性，反对模糊，用算法驱动一切。他相信人的认知偏差是最大的效率损耗，因此把「延迟满足」和「反模糊」当成了个人和团队的核心操作系统。
 - [张居正](https://ourword.ai/i/zhang-juzheng/): 张居正（明·1525-1582）——改。明朝两百七十余年，唯一一个真正做到「改变国家」的宰相。万历新政期间，他推行一条鞭法（税制改革）、考成法（官员考核）、清丈田亩——国库从亏空变为储银400万两。他活着时权倾天下，死后不到一年被清算，家破人亡。这是知识库里改革者宿命的最完整版本。
 - [张良](https://ourword.ai/i/zhang-liang/): 张良（汉·前250-前186）——退。汉初三杰里最聪明的那个，也是唯一善终的那个。他的一生是三幕戏：第一幕学忍（圯上老人），第二幕用谋（鸿门宴），第三幕退场（留侯请退）。他的比较对象是韩信（不退被杀）和萧何（半退苟活），张良选择了最彻底也最优雅的路。
+- [张骞](https://ourword.ai/i/zhang-qian/): 张骞（西汉·卒于前114年）——开路。西汉使者，两次出使西域，《史记·大宛列传》《汉书》有传。第一趟奉汉武帝之命去联络大月氏夹击匈奴，被匈奴扣了十多年，逃出来找到月氏，月氏不肯打；他带回来的是西边十来个国家的底细，汉朝从此知道往西有路。司马迁给他的评语是「凿空」。收他是因为「要不要现在跳进去」那一组：现有篇目讲跟不跟
 - [影响力](https://ourword.ai/i/influence/): 影响力（1984年·西奥迪尼）——触发。罗伯特·西奥迪尼花三年时间卧底到销售员、募捐者、广告人中间，研究说服是怎么发生的。他发现人类大脑有六个「触发器」——一旦被激活，人就会像程序一样按预设模式行动，不经过深思熟虑。了解这六个触发器，你既能识别别人对你的操控，也能更有效地影响别人。
 - [彼得·德鲁克](https://ourword.ai/i/drucker/): 彼得·德鲁克（奥—美·1909—2005）——成果。把管理从「管人」改成「对成果负责」的人。他不写职位说明书，写的是：你被雇不是因为忙，是因为要产出一个别人用得上的结果。GM、日本企业、非营利都用过他的问题清单。核心只有一句：活动不算数，成果才算。
 - [彼得·林奇](https://ourword.ai/i/lynch/): 彼得·林奇（美国·1944-）——翻石头。富达麦哲伦基金经理13年（1977-1990），年化29%，管理资产从2000万美元做到140亿美元，累计回报27倍，同期标普500只有4.7倍。他46岁在业绩巅峰主动退休，理由是不想错过女儿长大。他的方法没有任何秘密可言，恰恰因此最难复制：一年调研200到300家公司，办公室里

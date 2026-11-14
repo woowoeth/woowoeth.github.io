@@ -1,7 +1,7 @@
-# OurWord — 212 people and books on how the world actually works, across 2,600 years
+# OurWord — 213 people and books on how the world actually works, across 2,600 years
 # OurWord — See how people before you handled it.
 # https://ourword.ai/en/
-# Full corpus, plain text. 212 entrys.
+# Full corpus, plain text. 213 entrys.
 
 ========================================================================
 ## Albert Einstein
@@ -1312,10 +1312,10 @@ This week find one thing you know is wrong and are still doing, and stop it. You
 Do the right thing, and then do the thing right. However large the cost of stopping today, it is the smallest one. Dare to be last, then come first from behind. I know a great many things not to do.
 
 ### Q: What should I read alongside?
-Warren Buffett — Duan Yongping is Buffett's most serious Chinese student, but he moved the moat from investing to operating: Buffett buys the company that has one, Duan builds one by entering last and building better. Peter Thiel — Thiel says be first into a category nobody believes in; Duan says be last into one somebody else has already proved. Both are refusals to fight in a crowd, from opposite ends. Jensen Huang — Opposite entries into a new category. Huang goes in before it exists and pays for a decade; Duan waits until somebody else has proved it and then builds the better version. Michael Porter — Both are about whether to learn from others. Duan says dare to be last: let others test the road, then do it well. Porter says that if everyone studies the same best practice they end up alike and the profit thins together. One is about turning what you learn into your own; the other is about why learning is not enough.
+Warren Buffett — Duan Yongping is Buffett's most serious Chinese student, but he moved the moat from investing to operating: Buffett buys the company that has one, Duan builds one by entering last and building better. Peter Thiel — Thiel says be first into a category nobody believes in; Duan says be last into one somebody else has already proved. Both are refusals to fight in a crowd, from opposite ends. Jensen Huang — Opposite entries into a new category. Huang goes in before it exists and pays for a decade; Duan waits until somebody else has proved it and then builds the better version. Michael Porter — Both are about whether to learn from others. Duan says dare to be last: let others test the road, then do it well. Porter says that if everyone studies the same best practice they end up alike and the profit thins together. One is about turning what you learn into your own; the other is about why learning is not enough. Zhang Qian — Duan Yongping prefers to come second, entering only once the ground is clear. Zhang Qian went first, when even the Yuezhi's location was hearsay. One warns you off racing to be first; the other says that if you do go first, expect the original goal to fail and be ready to live on what you recorded along the way.
 
 ### Further
-Warren Buffett Kazuo Inamori Jensen Huang Chu Shijian Andy Grove Kevin Kelly Konosuke Matsushita Zhang Yiming Peter Lynch Michael Porter
+Warren Buffett Kazuo Inamori Jensen Huang Chu Shijian Andy Grove Kevin Kelly Konosuke Matsushita Zhang Yiming Peter Lynch Michael Porter Zhang Qian
 
 ========================================================================
 ## Duke Wen of Jin
@@ -1460,7 +1460,7 @@ The more room you have, the more you must ask whether it is worth it. Each item 
 Liu Xiu — Both faced the Western Regions. Wu stopped only after decades of campaigns. Liu Xiu, with his own country just settled, was asked by the states there to send a protector-general and declined at the start. One pulled back after spreading out; the other worked out first whether he could carry it.
 
 ### Further
-Huo Qubing Sima Qian Liu Bang
+Huo Qubing Sima Qian Liu Bang Zhang Qian
 
 ========================================================================
 ## Epictetus
@@ -7397,7 +7397,7 @@ The clouds scattered, the sun was bright, the hills looked glad. If I go home no
 Sima Qian — Both crossed much of China and both turned their worst years into a book. Sima Qian travelled widely from the age of twenty and finished his history after castration; Xu was robbed and lost his companion and kept writing day by day. One recorded people, the other mountains and rivers. Tao Yuanming — Neither took the road of office. Tao went back to his own fields so as not to live against his heart; Xu went outward so as to see with his own eyes. One turned inward, the other set out, and both began by knowing what they wanted. Lin Huiyin — Both learned the country on foot. Xu Xiake walked to see mountains and rivers with his own eyes; Lin Huiyin climbed into temple roofs among the bats to measure buildings no one had recorded.
 
 ### Further
-Sima Qian Su Shi Zhuangzi Tao Yuanming Lin Huiyin Xu Guangqi
+Sima Qian Su Shi Zhuangzi Tao Yuanming Lin Huiyin Xu Guangqi Zhang Qian
 
 ========================================================================
 ## Xunzi
@@ -7583,6 +7583,40 @@ Han Xin — Same founding, opposite endings: Zhang Liang withdrew completely and
 
 ### Further
 Fan Li Li Bi Han Xin Tao Te Ching Liu Bang Guo Ziyi Wang Jian Guiguzi Lin Xiangru Feng Yi Xiao He The Duke of Zhou Chen Ping
+
+========================================================================
+## Zhang Qian
+URL: https://ourword.ai/en/i/zhang-qian/
+Tags: Starting and building, Qin, Han and the Six Dynasties, Going first
+
+Zhang Qian (Western Han · d. 114 BCE) — Going first. Western Han envoy who went west twice, with a biography in Sima Qian's Records of the Grand Historian.
+
+### Q: What did this one leave behind?
+Western Han envoy who went west twice, with a biography in Sima Qian's Records of the Grand Historian. Sent by Emperor Wu to recruit the Yuezhi against the Xiongnu, he was held captive for over ten years, escaped, found the Yuezhi unwilling to fight, and came home with an account of a dozen kingdoms nobody in Han had seen. He is here for 'Do I jump in now', where nothing yet says what is left when you go in first and the original goal fails.
+
+### Q: What actually happened?
+Arriving late to a battle against the Xiongnu, Zhang Qian was sentenced to death, paid a ransom, and lost his title. He then proposed to the emperor that the Wusun in the far west could be won over. He was sent again with three hundred men, two horses each, herds in the tens of thousands and a fortune in gold and silk. The Wusun would not move east, so he sent his deputies on to other kingdoms. He died about a year after returning. A year later the deputies began arriving with envoys from those kingdoms.
+
+### The parts · Others travelled under his name
+After his death, Han envoys going west all called themselves by his title, the Marquis of Bowang, to win trust abroad, and it worked. The first one through leaves a road and also a credit others can borrow. e.g. In a new industry, the first firm known for keeping its word lets later firms skip rounds of negotiation by citing it.
+
+### The parts · A road inferred from a walking stick
+In Bactria he saw bamboo canes and cloth from Shu, in the southwest of Han, and was told merchants bought them in India. He reasoned that India could not be far from Shu. The emperor sent men to find that road; hill peoples blocked them and it was never opened. e.g. On a shelf in a foreign market, notice the thing that should not be there, and ask how it arrived.
+
+### The parts · After the disgrace, his knowledge was the asset
+Stripped of his title, he did not recover by begging. He recovered because he knew better than anyone which kingdoms lay west and how each stood with the Xiongnu. What the failed first trip gathered paid for the second. e.g. When the project dies and the role goes with it, what you learned on the front line is often what you still own.
+
+### Q: How do I use it today?
+Today, write three lines about the new thing you are working on: the original goal; if it fails, what this trip can still bring back; and where you are recording what you see.
+
+### Lines to keep
+Every envoy after him spoke in his name. The first one through leaves trust behind. He lost the title and kept the map.
+
+### Q: What should I read alongside?
+Duan Yongping — Duan Yongping prefers to come second, entering only once the ground is clear. Zhang Qian went first, when even the Yuezhi's location was hearsay. One warns you off racing to be first; the other says that if you do go first, expect the original goal to fail and be ready to live on what you recorded along the way.
+
+### Further
+Emperor Wu of Han Duan Yongping Xu Xiake
 
 ========================================================================
 ## Zhang Yiming
@@ -24061,6 +24095,72 @@ Where it goes wrong: converting every bit of credit into position; or, on the wa
 Enfeoff me at Liu. That is enough. I dare not take thirty thousand.
 I wish to drop the affairs of men and follow Master Red Pine.
 He declined not the money but a structure somebody would later dismantle.
+
+========================================================================
+## Zhang Qian · A Hundred Went, Two Came Back
+URL: https://ourword.ai/en/i/zhang-qian/two-came-back/
+Source: Sima Qian, Records of the Grand Historian, ch. 123, 'Account of Dayuan'
+Tags: Deep read, Zhang Qian, The mission failed; what he wrote down on the road became the capital
+
+The job he was sent to do could not be done. This asks what is left when you go first and come back empty.
+
+### Q: What actually happened?
+Emperor Wu wanted an alliance with the Yuezhi, a people the Xiongnu had driven west, to strike the Xiongnu from both sides. The road ran through Xiongnu land, so the court asked for volunteers. Zhang Qian, a junior court officer, stepped forward and left with over a hundred men. The Xiongnu caught him at once and held him for more than ten years. When he finally reached the Yuezhi, they had settled on rich land and wanted no war. Thirteen years after setting out, two men came home.
+
+### The parts · The original goal failing is normal
+His goal was set in the capital by people who had never been there. On arrival he found the Yuezhi comfortable, far from Han, and with no wish for revenge. Whoever goes in first usually carries a goal imagined by people outside.
+e.g. The first team sent into a new market arrives with head office's sales target and finds nobody there needs the product.
+
+### The parts · What you record is what you bring back
+He had been to four kingdoms and heard of five or six more, and he told the emperor all of it: where they lay, what they grew, their horses, their armies. The Han push west over the next decades ran on that report.
+e.g. The pilot produced no numbers, but your notes on what customers actually use and where they get stuck decide the next round.
+
+### The parts · Take someone who can keep you alive
+The other man who came back was Ganfu, a Xiongnu by birth and a fine archer, who shot game to feed them when food ran out. In unknown country the companion who matters most is the one who knows the ground.
+e.g. Entering an industry you don't know, the first partner to find is someone who has worked in it and knows the traps.
+
+### Q: How do I use it today?
+Where you are: a direction nobody has tried is in front of you, and you are afraid of going in and coming out with nothing.
+Ask first: if the original goal fails, what can this trip still bring back, and how will I record what I see?
+Where it goes wrong: reading it as 'you always get something, so just go'. He left with a specific job and did reach the Yuezhi. The report was what he salvaged after failing, not a reason to stop caring about the goal. He did not know that only two of a hundred would return; you can count first.
+
+### Lines to keep
+The goal failed. The notes from the road did not.
+The first one in brings back the map.
+Going where nobody has been, take someone who knows the ground.
+
+========================================================================
+## Zhang Qian · Ten Years Holding the Tally
+URL: https://ourword.ai/en/i/zhang-qian/hold-the-tally/
+Source: Sima Qian, Records of the Grand Historian, ch. 123, 'Account of Dayuan'
+Tags: Deep read, Zhang Qian, In the years you are stuck halfway, keep hold of where you were going
+
+He was held for more than ten years. This asks what to keep hold of while a plan is stuck halfway.
+
+### Q: What actually happened?
+Soon after leaving the frontier, Zhang Qian was captured and taken to the Xiongnu ruler. The Yuezhi lie north of us, the ruler said; how could Han send envoys there? Would Han let me send mine across its land to the south? He kept Zhang Qian for more than ten years and gave him a wife, who bore him a son. Through all of it Zhang Qian kept the envoy's tally. When the guard slackened, he escaped with his men, and went west.
+
+### The parts · Do not lose the tally
+The tally was an envoy's proof of office. For ten years he lived among the Xiongnu, married, raised a child, and kept it. It reminded him who had sent him and where he was going. The longer you are stuck, the easier that is to lose.
+e.g. Moved to a side role for two years, you still keep the plan you meant to finish and revise it now and then.
+
+### The parts · Wait for the slack, not for a pardon
+He neither defied the ruler nor surrendered to his fate. He lived there until the watch on him loosened. Nobody set him free; the people guarding him simply relaxed over time.
+e.g. Your project is frozen. You neither fight nor give up; you finish the groundwork and wait for the quarter the budget loosens.
+
+### The parts · West, not east
+The easy road after escaping was home; after ten years nobody would have blamed him. He walked west for dozens of days to find the Yuezhi. The job you had before you got stuck is the first thing to do once free.
+e.g. Out of a long slump, go back and finish the thing you left undone, rather than picking an easier goal.
+
+### Q: How do I use it today?
+Where you are: something you started has been stuck for years, life has gone on, and the original plan feels like another life.
+Ask first: what do I still keep that reminds me where I was going, and if things loosen tomorrow, which way is my first step?
+Where it goes wrong: reading it as 'hold out at any cost'. He married, raised a son and lived an ordinary life there; he did not fight his captors. What he kept was the tally and the direction. When the Yuezhi refused, he came home. Keeping the direction is not the same as insisting it must succeed.
+
+### Lines to keep
+The longer you are stuck, remember who sent you.
+Nobody frees you. The people watching you relax.
+Once free, go back to the job you left.
 
 ========================================================================
 ## Zhang Yiming · Delayed gratification

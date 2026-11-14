@@ -106,6 +106,7 @@ NAMES = {
     "tolstoy": ("Leo Tolstoy", "Mind and feeling"),
     "xu-guangqi": ("Xu Guangqi", "Learning and growth"),
     "bogle": ("John C. Bogle", "Money and risk"),
+    "zhang-qian": ("Zhang Qian", "Starting and building"),
     "influence": ("Influence", "Reading people"),
     "konnikova": ("Maria Konnikova", "Reading people"),
     "la-rochefoucauld": ("La Rochefoucauld", "Reading people"),

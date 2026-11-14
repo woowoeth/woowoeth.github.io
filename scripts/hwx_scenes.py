@@ -917,6 +917,8 @@ SCENES = [
      [("huang", "zero-billion-markets"), ("duan-yongping", "dare-to-be-last")]),
     ("别人都抢先了，我还来得及吗。",
      [("duan-yongping", "dare-to-be-last"), ("huang", "zero-billion-markets")]),
+    ("没人走过的路，我去了要是白跑呢？",
+     [("zhang-qian", "two-came-back")]),
     ("没人说得准的事，我凭什么下注？",
      [("keynes", "we-simply-do-not-know")]),
     ("大家都说有用，我拿什么验？",
@@ -1682,6 +1684,8 @@ SCENES = [
      [("pu-songling", "forty-years-of-failing"), ("li-ka-shing", "knowing-when-to-stop")]),
     ("一年下来，只剩「又没成」这一句。",
      [("pu-songling", "forty-years-of-failing"), ("maslach", "three-signs")]),
+    ("被卡在半路好几年，我还往前走吗？",
+     [("zhang-qian", "hold-the-tally")]),
 ]),
 ("主线没成副业成了", "回头与往前", [
     ("正职平平，业余那件却越做越好。",

@@ -1,11 +1,11 @@
 # OurWord (人類世界生存法則)
 
-> 212 people and books on how the world actually works, across 2,600 years
+> 213 people and books on how the world actually works, across 2,600 years
 > 遇到事了，看看以前的人怎麼處理
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 212 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 213 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
-一個關於「世界到底怎麼運轉」的知識庫：戰略、財富、權力、人性、創業，取自 212 位人物與典籍，跨越 2600 年。每一條都寫清楚這個人真正留下的那一個想法、背後的故事、拆開的分則與例子，以及今天怎麼用。
+一個關於「世界到底怎麼運轉」的知識庫：戰略、財富、權力、人性、創業，取自 213 位人物與典籍，跨越 2600 年。每一條都寫清楚這個人真正留下的那一個想法、背後的故事、拆開的分則與例子，以及今天怎麼用。
 
 ## Read it
 
@@ -24,14 +24,14 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 - [權力與組織](https://ourword.ai/tw/t/power/) — 32
 - [心智與情緒](https://ourword.ai/tw/t/mind/) — 25
 - [學習與成長](https://ourword.ai/tw/t/learning/) — 21
+- [創業與產品](https://ourword.ai/tw/t/startups/) — 21
 - [識人與相處](https://ourword.ai/tw/t/people/) — 20
-- [創業與產品](https://ourword.ai/tw/t/startups/) — 20
 - [謀略與競爭](https://ourword.ai/tw/t/strategy/) — 20
 - [財富與風險](https://ourword.ai/tw/t/wealth/) — 20
 - [世界如何運轉](https://ourword.ai/tw/t/world/) — 20
+- [秦漢至魏晉](https://ourword.ai/tw/t/han-wei/) — 18
 - [中古](https://ourword.ai/tw/t/medieval/) — 18
 - [家庭與關係](https://ourword.ai/tw/t/family/) — 17
-- [秦漢至魏晉](https://ourword.ai/tw/t/han-wei/) — 17
 - [身心與生活](https://ourword.ai/tw/t/living/) — 17
 - [近世](https://ourword.ai/tw/t/early-modern/) — 16
 
@@ -533,6 +533,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [張良 · 圯上受書](https://ourword.ai/tw/i/zhang-liang/picking-up-the-shoe/): 張良 · 圯上受書——先過忍的那一關。一個老人反覆刁難一個年輕人。這一篇要回答的是：這場看似無理的考驗，考的到底是什麼。
 - [張良 · 藉箸代籌](https://ourword.ai/tw/i/zhang-liang/borrowing-chopsticks/): 張良 · 藉箸代籌——拆一個聽起來很好的方案。一個方案聽起來完全正確，怎麼證明它錯？這一篇要回答的是：張良當場拆解的那套方法。
 - [張良 · 願封留足矣](https://ourword.ai/tw/i/zhang-liang/asking-for-less/): 張良 · 願封留足矣——在頂點主動要小的。論功行賞時讓你自己挑，挑大的還是挑小的？這一篇要回答的是：張良為什麼挑了最小的那個。
+- [張騫 · 百餘人去，二人還](https://ourword.ai/tw/i/zhang-qian/two-came-back/): 張騫 · 百餘人去，二人還——原來要辦的事沒辦成，路上記下的成了本錢。他要辦的事沒辦成。這一篇要回答的是：往沒人去過的地方走，走空了還剩什麼。
+- [張騫 · 十年持節](https://ourword.ai/tw/i/zhang-qian/hold-the-tally/): 張騫 · 十年持節——卡在半路的那些年，別忘了自己原來要去哪兒。他被扣了十多年。這一篇要回答的是：事情卡在半路，等的那些年手裡攥著什麼。
 - [張一鳴 · 延遲滿足感](https://ourword.ai/tw/i/zhang-yiming/delayed-gratification/): 張一鳴 · 延遲滿足感——他最看重的特質。被問看重什麼品質，他反覆給同一個答案。這一篇要回答的是：這個詞在他那裡的具體用法。
 - [張一鳴 · 平常心做非常事](https://ourword.ai/tw/i/zhang-yiming/ordinary-mind/): 張一鳴 · 平常心做非常事——九週年演講。一家以兇猛著稱的公司，九週年講的是平常心。這一篇要回答的是：他點名的那幾種干擾。
 - [趙武靈王 · 向胡人學](https://ourword.ai/tw/i/zhao-wuling-wang/learn-from-the-lesser/): 趙武靈王 · 向胡人學——新東西擋在前面的，往往不是難，是拉不下臉。你要學的東西，來自一群你一向看不上的人。這一篇要回答的是：趙武靈王怎麼越過「向蠻夷學」這道臉面的坎。
@@ -564,7 +566,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [AI Bubble Monitor / AI 泡沫檢測儀](https://ourword.ai/ai/)
 - [Zouni / 走你](https://ourword.ai/zouni/)
 
-## Index (212 entrys)
+## Index (213 entrys)
 
 - [BJ·福格](https://ourword.ai/tw/i/bj-fogg/): BJ·福格（2019年·斯坦福行為設計實驗室）——小到不會失敗。斯坦福行為設計實驗室創始人，研究行為如何被設計出來。他給出一個公式：行為發生需要動機、能力、提示三者同時到位。多數人失敗在只調動機——靠決心和自我激勵——而動機天然起伏，靠它維持的習慣必然崩。他的主張相反：把行為縮到小得不需要動機，然後掛在一個已有的動作後面。
 - [C.S.劉易斯](https://ourword.ai/tw/i/cs-lewis/): C.S.劉易斯（1898-1963年·英國牛津）——妻子死後幾個月的日記。作家，牛津和劍橋的教授，寫過《納尼亞傳奇》和大量勸人信仰的書。五十八歲結婚，妻子喬伊四年後因癌症去世。之後幾個月他在四本練習簿上記自己的狀態，後來用筆名出版，就是《卿卿如晤》。收他是因為「重要的人走了」那六個問題，原來靠弗蘭克爾和蘇軾在答——一個是集中營的倖存者，一個是被貶的官員
@@ -640,6 +642,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [張一鳴](https://ourword.ai/tw/i/zhang-yiming/): 張一鳴（當代·1983-）——延遲滿足。字節跳動創始人，抖音和今日頭條的締造者。他的特點：極度理性，反對模糊，用算法驅動一切。他相信人的認知偏差是最大的效率損耗，因此把「延遲滿足」和「反模糊」當成了個人和團隊的核心操作系統。
 - [張居正](https://ourword.ai/tw/i/zhang-juzheng/): 張居正（明·1525-1582）——改。明朝兩百七十餘年，唯一一個真正做到「改變國家」的宰相。萬曆新政期間，他推行一條鞭法（稅制改革）、考成法（官員考核）、清丈田畝——國庫從虧空變為儲銀400萬兩。他活著時權傾天下，死後不到一年被清算，家破人亡。這是知識庫裡改革者宿命的最完整版本。
 - [張良](https://ourword.ai/tw/i/zhang-liang/): 張良（漢·前250-前186）——退。漢初三傑裡最聰明的那個，也是唯一善終的那個。他的一生是三幕戲：第一幕學忍（圯上老人），第二幕用謀（鴻門宴），第三幕退場（留侯請退）。他的比較對象是韓信（不退被殺）和蕭何（半退苟活），張良選擇了最徹底也最優雅的路。
+- [張騫](https://ourword.ai/tw/i/zhang-qian/): 張騫（西漢·卒於前114年）——開路。西漢使者，兩次出使西域，《史記·大宛列傳》《漢書》有傳。第一趟奉漢武帝之命去聯絡大月氏夾擊匈奴，被匈奴扣了十多年，逃出來找到月氏，月氏不肯打；他帶回來的是西邊十來個國家的底細，漢朝從此知道往西有路。司馬遷給他的評語是「鑿空」。收他是因為「要不要現在跳進去」那一組：現有篇目講跟不跟
 - [影響力](https://ourword.ai/tw/i/influence/): 影響力（1984年·西奧迪尼）——觸發。羅伯特·西奧迪尼花三年時間臥底到銷售員、募捐者、廣告人中間，研究說服是怎麼發生的。他發現人類大腦有六個「觸發器」——一旦被激活，人就會像程序一樣按預設模式行動，不經過深思熟慮。瞭解這六個觸發器，你既能識別別人對你的操控，也能更有效地影響別人。
 - [彼得·德魯克](https://ourword.ai/tw/i/drucker/): 彼得·德魯克（奧—美·1909—2005）——成果。把管理從「管人」改成「對成果負責」的人。他不寫職位說明書，寫的是：你被僱不是因為忙，是因為要產出一個別人用得上的結果。GM、日本企業、非營利都用過他的問題清單。核心只有一句：活動不算數，成果才算。
 - [彼得·林奇](https://ourword.ai/tw/i/lynch/): 彼得·林奇（美國·1944-）——翻石頭。富達麥哲倫基金經理13年（1977-1990），年化29%，管理資產從2000萬美元做到140億美元，累計回報27倍，同期標普500只有4.7倍。他46歲在業績巔峰主動退休，理由是不想錯過女兒長大。他的方法沒有任何秘密可言，恰恰因此最難複製：一年調研200到300家公司，辦公室裡

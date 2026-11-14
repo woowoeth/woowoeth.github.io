@@ -686,6 +686,12 @@ QUOTE_ASKS = {
     "bogle/buy-the-haystack":
         "我挑不出哪只会涨，还要不要投？",
 
+    # 张骞
+    "zhang-qian/two-came-back":
+        "没人走过的路，我去了要是白跑呢？",
+    "zhang-qian/hold-the-tally":
+        "被卡在半路好几年，我还往前走吗？",
+
     # 徐光启
     "xu-guangqi/start-from-the-root":
         "四十多了，我学新东西该从哪本下手？",
