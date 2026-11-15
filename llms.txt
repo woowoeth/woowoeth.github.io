@@ -1,11 +1,11 @@
 # OurWord (人类世界生存法则)
 
-> 213 people and books on how the world actually works, across 2,600 years
+> 214 people and books on how the world actually works, across 2,600 years
 > 遇到事了，看看以前的人怎么处理
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 213 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 214 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
-一个关于「世界到底怎么运转」的知识库：战略、财富、权力、人性、创业，取自 213 位人物与典籍，跨越 2600 年。每一条都写清楚这个人真正留下的那一个想法、背后的故事、拆开的分则与例子，以及今天怎么用。
+一个关于「世界到底怎么运转」的知识库：战略、财富、权力、人性、创业，取自 214 位人物与典籍，跨越 2600 年。每一条都写清楚这个人真正留下的那一个想法、背后的故事、拆开的分则与例子，以及今天怎么用。
 
 ## Read it
 
@@ -18,13 +18,13 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 
 ## Topics
 
-- [工业时代](https://ourword.ai/t/industrial-age/) — 65
+- [工业时代](https://ourword.ai/t/industrial-age/) — 66
 - [现代](https://ourword.ai/t/modern/) — 63
 - [先秦与古典时代](https://ourword.ai/t/classical-era/) — 33
 - [权力与组织](https://ourword.ai/t/power/) — 32
 - [心智与情绪](https://ourword.ai/t/mind/) — 25
+- [创业与产品](https://ourword.ai/t/startups/) — 22
 - [学习与成长](https://ourword.ai/t/learning/) — 21
-- [创业与产品](https://ourword.ai/t/startups/) — 21
 - [识人与相处](https://ourword.ai/t/people/) — 20
 - [谋略与竞争](https://ourword.ai/t/strategy/) — 20
 - [财富与风险](https://ourword.ai/t/wealth/) — 20
@@ -212,6 +212,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [哈佛成人发展研究 · 半夜两点能打给谁](https://ourword.ai/i/harvard-study/someone-to-count-on/): 哈佛成人发展研究 · 半夜两点能打给谁——数量不算，托底的算。衡量一个人的关系状况，最短的问法是哪一句。这一篇要回答的是：它为什么骗不了人。
 - [哈耶克 · 知识是分散的](https://ourword.ai/i/hayek/knowledge-is-dispersed/): 哈耶克 · 知识是分散的——没人拿得到全图。一篇十几页的论文，后来被评为百年最重要的经济学文章之一。这一篇要回答的是：它到底推翻了什么假设。
 - [哈耶克 · 致命的自负](https://ourword.ai/i/hayek/fatal-conceit/): 哈耶克 · 致命的自负——经济学的奇特任务。他给自己学科定的任务不是预测，是泼冷水。这一篇要回答的是：为什么越聪明的人越需要这盆水。
+- [亨利·福特 · 先定价，再去够它](https://ourword.ai/i/henry-ford/price-first/): 亨利·福特 · 先定价，再去够它——价格先落下来，成本跟在后面。价格先落下来。这一篇要回答的是：算出来的价卖不动，先改价还是先改做法。
+- [亨利·福特 · 日薪五美元](https://ourword.ai/i/henry-ford/five-dollar-day/): 亨利·福特 · 日薪五美元——他给工人加一倍的钱，为的是省钱。他涨薪是为了省钱。这一篇要回答的是：工资已经是最大一笔开销时，该不该再加。
 - [赫伯特·西蒙 · 最好的那个，你本来就等不到](https://ourword.ai/i/herbert-simon/good-enough/): 赫伯特·西蒙 · 最好的那个，你本来就等不到——买主是一个一个来的，不会一起到齐。两个都不错，我已经比了很久，还在等更好的那个。这一篇要回答的是：什么时候该停下来不比了。
 - [赫伯特·西蒙 · 信息越多，你越穷](https://ourword.ai/i/herbert-simon/poverty-of-attention/): 赫伯特·西蒙 · 信息越多，你越穷——缺的从来不是消息，是读消息的那个人。每天冒出来的新东西，我都怕漏看。这一篇要回答的是：为什么看得越多越乱，该从哪一头下手。
 - [阿尔伯特·赫希曼 · 走人，还是开口](https://ourword.ai/i/hirschman/exit-voice-loyalty/): 阿尔伯特·赫希曼 · 走人，还是开口——退出的门越好走，开口的人越少。不满意的时候，人只数得出两个选项：走，或者忍。这一篇要回答的是，第三个选项去哪了。
@@ -566,7 +568,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [AI Bubble Monitor / AI 泡沫检测仪](https://ourword.ai/ai/)
 - [Zouni / 走你](https://ourword.ai/zouni/)
 
-## Index (213 entrys)
+## Index (214 entrys)
 
 - [BJ·福格](https://ourword.ai/i/bj-fogg/): BJ·福格（2019年·斯坦福行为设计实验室）——小到不会失败。斯坦福行为设计实验室创始人，研究行为如何被设计出来。他给出一个公式：行为发生需要动机、能力、提示三者同时到位。多数人失败在只调动机——靠决心和自我激励——而动机天然起伏，靠它维持的习惯必然崩。他的主张相反：把行为缩到小得不需要动机，然后挂在一个已有的动作后面。
 - [C.S.刘易斯](https://ourword.ai/i/cs-lewis/): C.S.刘易斯（1898-1963年·英国牛津）——妻子死后几个月的日记。作家，牛津和剑桥的教授，写过《纳尼亚传奇》和大量劝人信仰的书。五十八岁结婚，妻子乔伊四年后因癌症去世。之后几个月他在四本练习簿上记自己的状态，后来用笔名出版，就是《卿卿如晤》。收他是因为「重要的人走了」那六个问题，原来靠弗兰克尔和苏轼在答——一个是集中营的幸存者，一个是被贬的官员
@@ -575,6 +577,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [乌合之众](https://ourword.ai/i/crowd/): 乌合之众（法·1895年）——群体心理的操作系统。古斯塔夫·勒庞著，群体心理学的开山之作。写于法国大革命后百年、大众时代来临前夜，一百多年来被政治家、革命者、广告人、操盘手反复研读——据说墨索里尼倒背如流，罗斯福床头常备。核心论断冷酷而精确：个体一旦进入群体，智力被拉平向下，情绪相互传染，责任感因匿名而消失——「群体中累积的只有
 - [乔布斯](https://ourword.ai/i/jobs/): 乔布斯（当代·1955-2011）——极简。苹果联合创始人，被迫离开苹果，在NeXT和皮克斯度过12年，然后回来把濒死的苹果变成了全球最有价值的公司。他的思想核心是：简单比复杂更难，专注意味着说不，设计是产品如何工作而不只是外观。
 - [亚里士多德](https://ourword.ai/i/aristotle/): 亚里士多德（古希腊·前384-前322）——友谊。古希腊哲学家，前384年生于马其顿王国的斯塔吉拉，前322年死于优卑亚岛的卡尔基斯。十七岁进柏拉图的学园，前后待了二十年；做过亚历山大的老师，前335年回雅典办了吕克昂学园。《尼各马可伦理学》有两卷专讲友谊：他不先问友谊高不高尚，先问一份交情到底靠什么撑着，撑不住的时候又该怎么待
+- [亨利·福特](https://ourword.ai/i/henry-ford/): 亨利·福特（美国·1863-1947）——降价。美国福特汽车公司创始人。1908 年推出 T 型车，1913 年起在高地公园厂装起移动装配线，把汽车从少数人的奢侈品变成普通人买得起的东西，流水线大规模生产从此成了制造业的范式。他的办法是先把价格定在更多人买得起的地方，再逼着生产去够这个价；1914 年把工人日薪提到五美元，说那
 - [人类简史](https://ourword.ai/i/sapiens/): 人类简史（2011年·赫拉利）——虚构。以色列历史学家尤瓦尔·赫拉利用一本书重新解释了人类6万年的历史。核心论点惊人简洁：智人能统治地球，不是因为最强壮或最聪明，而是因为唯一能相信「虚构」的动物——金钱、国家、宗教、法律、公司，都是集体想象出来的「虚构」。这些虚构让陌生人能够大规模合作，这才是人类最危险的武器。
 - [任正非](https://ourword.ai/i/ren-zhengfei/): 任正非（当代·1944-）——韧。1987年，43岁，用2万元创立华为，从交换机代理商起步。30多年后，华为是全球最大电信设备商。他的管理思想：自我批判是组织免疫系统，以客户为中心是组织的北极星。
 - [伊万·伊里奇](https://ourword.ai/i/illich/): 伊万·伊里奇（奥地利—墨西哥·1926-2002）——上限。神父出身的思想家，1970年代连出四本书拆掉了四套人人默认为进步的系统：学校、交通、医疗、以及「工具」这个概念本身。他的核心论断只有一句：每样工具都会跨过两道分水岭，越过第二道，它开始生产它本来要消灭的东西。医疗制造病人，学校制造无知感，交通制造距离。他不反技术，他要给技术设上限

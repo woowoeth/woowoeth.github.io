@@ -577,6 +577,8 @@ SCENES = [
      [("parkinson", "officials-make-work"), ("musk", "idiot-index")]),
     ("外包看着省钱，我怎么算？",
      [("coase", "price-has-a-cost")]),
+    ("我这边人来了又走，成本怎么降？",
+     [("henry-ford", "five-dollar-day")]),
 ]),
 ("顺境里发慌", "把事做成", [
     ("当初我熬得住，如今日子好了反倒松了。",
@@ -998,6 +1000,8 @@ SCENES = [
      [("naval", "productize-yourself"), ("naval", "assets-while-you-sleep")]),
     ("我想又便宜又高端，价怎么定？",
      [("porter", "what-not-to-do")]),
+    ("成本一算，我的价高得没人买。",
+     [("henry-ford", "price-first")]),
 ]),
 ("遇上不讲理", "跟人打交道", [
     ("我跟他讲道理，完全没用。",

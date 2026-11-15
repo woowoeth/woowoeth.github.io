@@ -686,6 +686,12 @@ QUOTE_ASKS = {
     "bogle/buy-the-haystack":
         "我挑不出哪只会涨，还要不要投？",
 
+    # 亨利·福特
+    "henry-ford/price-first":
+        "成本一算，我的价高得没人买。",
+    "henry-ford/five-dollar-day":
+        "我这边人来了又走，成本怎么降？",
+
     # 张骞
     "zhang-qian/two-came-back":
         "没人走过的路，我去了要是白跑呢？",
