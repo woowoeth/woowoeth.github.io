@@ -1,7 +1,7 @@
-# OurWord — 214 people and books on how the world actually works, across 2,600 years
+# OurWord — 215 people and books on how the world actually works, across 2,600 years
 # OurWord — See how people before you handled it.
 # https://ourword.ai/en/
-# Full corpus, plain text. 214 entrys.
+# Full corpus, plain text. 215 entrys.
 
 ========================================================================
 ## Albert Einstein
@@ -479,7 +479,7 @@ When the world sells, I buy. When the world buys, I sell. Wit to adapt, courage 
 Fan Li — Two ancient fortunes: Fan Li teaches how to get out intact, Bai Gui teaches a method you can repeat. Benjamin Graham — Twenty-two centuries apart, the same claim: price is set by mood, value by supply and demand. Liu Yan — Two routes to making money work: Bai Gui buys what others discard and earns the spread on a single trade, while Liu Yan pays for a reporting network to know days earlier, earns the number of turns, and wants the spread closed.
 
 ### Further
-Fan Li Benjamin Graham Warren Buffett Records of the Grand Historian Shang Yang Liu Yan
+Fan Li Benjamin Graham Warren Buffett Records of the Grand Historian Shang Yang Liu Yan Lu Buwei
 
 ========================================================================
 ## Bai Juyi
@@ -1639,10 +1639,10 @@ At every stage of a career, ask periodically: is this relationship, or this job,
 The birds are gone, so the good bow is put away. You can share hardship with him. You cannot share ease. In drought, stock boats. In flood, stock carts.
 
 ### Q: What should I read alongside?
-Li Ka-shing — Two and a half millennia apart, the same two rules: buy when nobody wants it, and leave before the top. Zhang Liang — The two men who understood leaving. Fan Li left to trade, Zhang Liang left to study the way. Different exits, identical result. Zhuge Liang — Two answers to having succeeded: Fan Li walked away at the summit, Zhuge Liang never put it down at all. Li Bi — Two versions of leaving without going far: Fan Li disappeared completely, Li Bi kept walking through the centre of power in a robe that let him leave at will. Guo Jia — Two ways a gifted adviser ends. Guo Jia burned out at thirty-eight inside the work; Fan Li walked away on the day it was won and lived a long time afterwards. Wang Jian — Two ways of leaving at the top: Fan Li vanished and became a merchant, Wang Jian resigned and went home to his fields. Bai Gui — Two ancient fortunes: Fan Li teaches how to get out intact, Bai Gui teaches a method you can repeat. Hu Xueyan — Both worked between officials and trade. Fan Li left at the summit; Hu Xueyan tied the knots tighter every year. Jesse Livermore — Both understood exits. Fan Li left at every summit; Livermore never once got up from the table. Chen Ping — Fan Li left at the top, with the work done and the time of his choosing. Chen Ping left in fear, with nothing but his clothes. For one, leaving was about when; for the other, only how.
+Li Ka-shing — Two and a half millennia apart, the same two rules: buy when nobody wants it, and leave before the top. Zhang Liang — The two men who understood leaving. Fan Li left to trade, Zhang Liang left to study the way. Different exits, identical result. Zhuge Liang — Two answers to having succeeded: Fan Li walked away at the summit, Zhuge Liang never put it down at all. Li Bi — Two versions of leaving without going far: Fan Li disappeared completely, Li Bi kept walking through the centre of power in a robe that let him leave at will. Guo Jia — Two ways a gifted adviser ends. Guo Jia burned out at thirty-eight inside the work; Fan Li walked away on the day it was won and lived a long time afterwards. Wang Jian — Two ways of leaving at the top: Fan Li vanished and became a merchant, Wang Jian resigned and went home to his fields. Bai Gui — Two ancient fortunes: Fan Li teaches how to get out intact, Bai Gui teaches a method you can repeat. Hu Xueyan — Both worked between officials and trade. Fan Li left at the summit; Hu Xueyan tied the knots tighter every year. Jesse Livermore — Both understood exits. Fan Li left at every summit; Livermore never once got up from the table. Chen Ping — Fan Li left at the top, with the work done and the time of his choosing. Chen Ping left in fear, with nothing but his clothes. For one, leaving was about when; for the other, only how. Lu Buwei — Fan Li was also a strategist turned merchant, but he left at the height of his success and later gave away his wealth more than once. Lu Buwei stayed on his estate after his dismissal with envoys at his gate and died over one letter from the king. One knew when to take his stake off the table; the other stepped down and left the door open.
 
 ### Further
-Li Ka-shing Su Shi Sun Tzu Warren Buffett Han Feizi Pu Songling Guan Zhong Zhang Liang Zhuge Liang Li Bi The I Ching Napoleon Sima Yi Strategies of the Warring States Wang Jian Xiang Yu The Art of Worldly Wisdom Bai Gui Ray Dalio Hu Xueyan Jesse Livermore Records of the Grand Historian Nassim Taleb The Sovereign Individual Liu Yan Chen Ping
+Li Ka-shing Su Shi Sun Tzu Warren Buffett Han Feizi Pu Songling Guan Zhong Zhang Liang Zhuge Liang Li Bi The I Ching Napoleon Sima Yi Strategies of the Warring States Wang Jian Xiang Yu The Art of Worldly Wisdom Bai Gui Ray Dalio Hu Xueyan Jesse Livermore Records of the Grand Historian Nassim Taleb The Sovereign Individual Liu Yan Chen Ping Lu Buwei
 
 ========================================================================
 ## Fan Zhongyan
@@ -3916,6 +3916,40 @@ Bai Gui — Two routes to making money work: Bai Gui buys what others discard an
 
 ### Further
 Bai Gui Fan Li Guan Zhong Zhang Juzheng Han Feizi
+
+========================================================================
+## Lu Buwei
+URL: https://ourword.ai/en/i/lu-buwei/
+Tags: Money and risk, Pre-Qin and classical, The bet
+
+Lu Buwei (Warring States Qin · died 235 BC) — The bet. A great merchant of the late Warring States period with his own biography in Sima Qian's Records.
+
+### Q: What did this one leave behind?
+A great merchant of the late Warring States period with his own biography in Sima Qian's Records. In the Zhao capital he spotted Zichu, a neglected Qin prince held as a hostage, spent a fortune getting the childless Lady Huayang to adopt him as heir, and became chancellor when Zichu took the throne. Dismissed by the next king, he died by poison. He is here because no entry yet says a thing's price depends on who lacks it.
+
+### Q: What actually happened?
+Zichu took the throne as King Zhuangxiang. In his first year he made Lu Buwei chancellor, ennobled him and gave him the revenue of a hundred thousand households in Henan. Three years later the king died and the young crown prince Zheng succeeded, made Lu chancellor of state and called him Second Father. By then Lu's household had ten thousand servants. Some fifteen years earlier he had been a merchant buying cheap and selling dear.
+
+### The parts · Buying cheap and selling dear was his trade
+He made his fortune travelling between markets, buying low and selling high. He judged people the same way: get in while nobody rates the thing, and collect once its worth shows. e.g. Whatever everyone is already scrambling for has already had its price run up.
+
+### The parts · My gate grows when yours does
+At their first meeting he told Zichu he could make his house great. Zichu laughed and told him to make his own house great first. Lu answered that his house would only grow once Zichu's did. Zichu understood and sat him down to talk. e.g. When you pitch a partnership, show first that your gain is tied to theirs.
+
+### The parts · He staked everything he had
+He told Zichu that although he was not rich he would spend a thousand pieces of gold on his behalf. That was the whole fortune his trade had built. The bet paid a hundred thousand households, but it rested on one man. e.g. Before you put everything on one client or one boss, decide what you do if they go.
+
+### Q: How do I use it today?
+This week write down your largest stake, money, time or a relationship, and one more line: whose success is it riding on, and what would you still hold if that person left?
+
+### Lines to keep
+From merchant to chancellor, with one man in between. My gate grows when yours does. Stake everything on one person and you win or lose with them.
+
+### Q: What should I read alongside?
+Fan Li — Fan Li was also a strategist turned merchant, but he left at the height of his success and later gave away his wealth more than once. Lu Buwei stayed on his estate after his dismissal with envoys at his gate and died over one letter from the king. One knew when to take his stake off the table; the other stepped down and left the door open.
+
+### Further
+Fan Li Bai Gui The Annals of Lu Buwei
 
 ========================================================================
 ## Machiavelli
@@ -6225,7 +6259,7 @@ What he wants is easy to fake; what he refuses is not. A sentence needs no liar 
 The Analects — Both answer how to read a person: the Analects looks backward, at what he has already done, the path he took and what he rests easy in, while the Annals arranges the present, putting him through eight positions and six feelings and watching hardest at the moments when he has nothing to gain. Maria Konnikova — Both answer why you believed the wrong thing: Konnikova puts the fault in your own moment, since the con artist picks people at a turning point, while the Annals does not discuss con artists at all and says that with nobody lying anywhere a sentence still turns false on the way to you.
 
 ### Further
-The Analects Han Feizi Strategies of the Warring States Guiguzi Zeng Guofan
+The Analects Han Feizi Strategies of the Warring States Guiguzi Zeng Guofan Lu Buwei
 
 ========================================================================
 ## The Art of Worldly Wisdom
@@ -16649,6 +16683,72 @@ Where it goes wrong: running it as blind momentum chasing, or knowing the rule a
 Instead of hoping he must fear; instead of fearing he must hope.
 He must fear that his loss may develop into a much bigger loss.
 There is nothing new in Wall Street. Speculation is as old as the hills.
+
+========================================================================
+## Lu Buwei · A rare commodity
+URL: https://ourword.ai/en/i/lu-buwei/rare-goods/
+Source: Sima Qian, Records of the Grand Historian, Biography of Lu Buwei, from his first meeting with Zichu to the jade tally naming Zichu heir
+Tags: Deep read, Lu Buwei, What a thing is worth depends on who you sell it to
+
+A price depends on the buyer. How do you value something nobody around you takes seriously?
+
+### Q: What actually happened?
+Lu Buwei was a great merchant of Yangdi who bought cheap, sold dear and had a fortune of a thousand pieces of gold. In the Zhao capital he met Zichu, a Qin prince held there as a hostage: a middle son among more than twenty, his mother out of favour, his hosts cold because Qin kept attacking them, short even of carriages. Lu looked at him and called him a rare commodity worth holding on to. The question was who lacked him. The crown prince's favourite, Lady Huayang, had no son, and only she could name an heir.
+
+### The parts · Find the person who lacks it
+In Zhao Zichu was a neglected hostage; in Qin he was one grandson among twenty. Lu put him next to Lady Huayang: one had a claim and no favour, the other had favour and no son. Together each was suddenly worth something.
+e.g. A skill nobody in your own trade values may be exactly what a neighbouring trade is missing.
+
+### The parts · Half the money went on being seen
+He split his thousand pieces of gold. Five hundred let Zichu entertain guests and build a name in Zhao; five hundred bought rare objects, which Lu carried west and presented through the lady's elder sister, praising Zichu as able and well connected.
+e.g. Before you name a price, put the thing the buyer cares about most where they can see it.
+
+### The parts · He did the buyer's sums for her
+Through the sister he put it to her: beauty fades and favour fades with it. Adopt a worthy son now and have him named heir, and she keeps her standing after the crown prince is gone. She agreed, and a jade tally sealed it.
+e.g. In a negotiation, start with what the client loses by not buying, then talk about the product.
+
+### Q: How do I use it today?
+Where you are: you hold something, a skill, a project, an overlooked person, that nobody around you rates, and you have no idea what to ask for it.
+Ask first: who lacks this, and what do they lose without it?
+Where it goes wrong: reading it as buy low and wait for someone to pay high. Lu did not wait. He found the one buyer, staked everything on the connection and did her accounting for her. And the stake was a single person, which is where his cost came later.
+
+### Lines to keep
+A thing is worth what the one who lacks it will give.
+He was not selling a prince. He was selling her future.
+Being good is not enough. The buyer has to see it.
+
+========================================================================
+## Lu Buwei · What have you done for Qin?
+URL: https://ourword.ai/en/i/lu-buwei/what-merit/
+Source: Sima Qian, Records of the Grand Historian, Biography of Lu Buwei, from his dismissal in the tenth year of the King of Qin to his death
+Tags: Deep read, Lu Buwei, When the one person you rose with is gone, the account is reopened
+
+Your patron is gone and the account is reopened. What do you stand on when the person who raised you is no longer there?
+
+### Q: What actually happened?
+In the tenth month of the king's tenth year, Lu Buwei was dismissed as chancellor and later sent to his estate in Henan. More than a year on, guests and envoys from the other states were still passing one another on the road to visit him. The king feared a revolt and wrote to him: what have you done for Qin that Qin should give you a hundred thousand households? What kin are you to Qin, to be called Second Father? Take your family and move to Shu. Lu judged that he was being squeezed step by step, feared execution, and drank poison.
+
+### The parts · Between him and Qin stood one man
+Everything he had was negotiated with Zichu, who had once bowed and promised to share the state with him if the plan worked. Zichu reigned three years and died. Under the new king, the estate and the title were things Lu had to explain.
+e.g. A promise from one boss needs confirming the day a new boss arrives.
+
+### The parts · The traffic at his gate was the charge
+He had left the capital, yet envoys from every state kept travelling to see him. He did not have to do anything. To the king, the crowd on the road said this man could still raise a following.
+e.g. If former staff still come to you after you step down, the new head is reading it as a signal.
+
+### The parts · The two questions were his old capital
+The king asked what service he had done and what kinship he had. His service was raising Zichu; his kinship was the title Second Father. Those were the two things his gold had bought, and with Zichu gone they turned from assets into liabilities.
+e.g. If you rose by backing one person, decide early what you stand on without them.
+
+### Q: How do I use it today?
+Where you are: you rose with one person, who gave you your role and your terms. Now they have gone, the new people are polite, and something feels wrong.
+Ask first: how much of what I hold is written into the rules, and how much did only that one person recognise?
+Where it goes wrong: reading it as big achievements get punished, so leave early. Lu's trouble was not the size of his service. It was a busy gate after he stepped down, and a position resting on one man that he never turned into something the new ruler also accepted.
+
+### Lines to keep
+Yesterday's capital becomes tomorrow's charge sheet.
+Once you step down, keep your gate quiet.
+A promise made by one man binds only that man.
 
 ========================================================================
 ## The Annals of Lu Buwei · Stop reading the impression; change his position

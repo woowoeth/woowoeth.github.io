@@ -108,6 +108,7 @@ NAMES = {
     "bogle": ("John C. Bogle", "Money and risk"),
     "zhang-qian": ("Zhang Qian", "Starting and building"),
     "henry-ford": ("Henry Ford", "Starting and building"),
+    "lu-buwei": ("Lu Buwei", "Money and risk"),
     "influence": ("Influence", "Reading people"),
     "konnikova": ("Maria Konnikova", "Reading people"),
     "la-rochefoucauld": ("La Rochefoucauld", "Reading people"),

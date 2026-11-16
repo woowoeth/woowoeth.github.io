@@ -1,11 +1,11 @@
 # OurWord (人类世界生存法则)
 
-> 214 people and books on how the world actually works, across 2,600 years
+> 215 people and books on how the world actually works, across 2,600 years
 > 遇到事了，看看以前的人怎么处理
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 214 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 215 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
-一个关于「世界到底怎么运转」的知识库：战略、财富、权力、人性、创业，取自 214 位人物与典籍，跨越 2600 年。每一条都写清楚这个人真正留下的那一个想法、背后的故事、拆开的分则与例子，以及今天怎么用。
+一个关于「世界到底怎么运转」的知识库：战略、财富、权力、人性、创业，取自 215 位人物与典籍，跨越 2600 年。每一条都写清楚这个人真正留下的那一个想法、背后的故事、拆开的分则与例子，以及今天怎么用。
 
 ## Read it
 
@@ -20,14 +20,14 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 
 - [工业时代](https://ourword.ai/t/industrial-age/) — 66
 - [现代](https://ourword.ai/t/modern/) — 63
-- [先秦与古典时代](https://ourword.ai/t/classical-era/) — 33
+- [先秦与古典时代](https://ourword.ai/t/classical-era/) — 34
 - [权力与组织](https://ourword.ai/t/power/) — 32
 - [心智与情绪](https://ourword.ai/t/mind/) — 25
 - [创业与产品](https://ourword.ai/t/startups/) — 22
 - [学习与成长](https://ourword.ai/t/learning/) — 21
+- [财富与风险](https://ourword.ai/t/wealth/) — 21
 - [识人与相处](https://ourword.ai/t/people/) — 20
 - [谋略与竞争](https://ourword.ai/t/strategy/) — 20
-- [财富与风险](https://ourword.ai/t/wealth/) — 20
 - [世界如何运转](https://ourword.ai/t/world/) — 20
 - [秦汉至魏晋](https://ourword.ai/t/han-wei/) — 18
 - [中古](https://ourword.ai/t/medieval/) — 18
@@ -308,6 +308,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [刘晏 · 先让那个位子有前程](https://ourword.ai/i/liu-yan/rank-outweighs-profit/): 刘晏 · 先让那个位子有前程——他不去挑清廉的人，他改的是位子。位子上的人换过一轮，事照样出。这一篇要回答的是：该换的到底是人，还是那个位子。
 - [利弗莫尔 · 坐功](https://ourword.ai/i/livermore/sitting-tight/): 利弗莫尔 · 坐功——对了就别动。一个以进出神速闻名的投机客，把功劳记在了不动上。这一篇要回答的是：坐着为什么比判断难。
 - [利弗莫尔 · 把希望和恐惧对调](https://ourword.ai/i/livermore/hope-and-fear-inverted/): 利弗莫尔 · 把希望和恐惧对调——本能用反了方向。他四起四落，破产过多次。这一篇要回答的是：他从自己的血里提炼出的那条对调法则。
+- [吕不韦 · 奇货可居](https://ourword.ai/i/lu-buwei/rare-goods/): 吕不韦 · 奇货可居——同一个人，值多少要看卖给谁。价钱看卖给谁。这一篇要回答的是：手上的东西眼前没人当回事，它到底值多少。
+- [吕不韦 · 君何功于秦](https://ourword.ai/i/lu-buwei/what-merit/): 吕不韦 · 君何功于秦——靠一个人起来的，那个人走了账要重算。靠山走了，账要重算。这一篇要回答的是：你是靠一个人起来的，那个人不在了，你还凭什么站着。
 - [吕氏春秋 · 别凭印象断人，换八个位置去看他](https://ourword.ai/i/lushi-chunqiu/eight-observations/): 吕氏春秋 · 别凭印象断人，换八个位置去看他——八观六验：看他要什么，更要看他不要什么。我总是看走眼，事后才发现破绽一直在。这一篇要回答的是：印象不是证据，得知道在哪几个位置上看。
 - [吕氏春秋 · 一个人都没说谎，话还是假的](https://ourword.ai/i/lushi-chunqiu/hearing-must-be-checked/): 吕氏春秋 · 一个人都没说谎，话还是假的——数传而白为黑：失真是转述本身带的。报上来的都不假，我却总觉得哪儿不对。这一篇要回答的是：话在路上自己就会变形。
 - [吕氏春秋 · 你手上那份情况，是上一次的水位](https://ourword.ai/i/lushi-chunqiu/the-water-has-risen/): 吕氏春秋 · 你手上那份情况，是上一次的水位——循表夜涉：功课做过了，只是它过期了。该知道的我没摸全，只能凭手上这点东西拍板。这一篇要回答的是：比不全更麻烦的是不新。
@@ -568,7 +570,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [AI Bubble Monitor / AI 泡沫检测仪](https://ourword.ai/ai/)
 - [Zouni / 走你](https://ourword.ai/zouni/)
 
-## Index (214 entrys)
+## Index (215 entrys)
 
 - [BJ·福格](https://ourword.ai/i/bj-fogg/): BJ·福格（2019年·斯坦福行为设计实验室）——小到不会失败。斯坦福行为设计实验室创始人，研究行为如何被设计出来。他给出一个公式：行为发生需要动机、能力、提示三者同时到位。多数人失败在只调动机——靠决心和自我激励——而动机天然起伏，靠它维持的习惯必然崩。他的主张相反：把行为缩到小得不需要动机，然后挂在一个已有的动作后面。
 - [C.S.刘易斯](https://ourword.ai/i/cs-lewis/): C.S.刘易斯（1898-1963年·英国牛津）——妻子死后几个月的日记。作家，牛津和剑桥的教授，写过《纳尼亚传奇》和大量劝人信仰的书。五十八岁结婚，妻子乔伊四年后因癌症去世。之后几个月他在四本练习簿上记自己的状态，后来用笔名出版，就是《卿卿如晤》。收他是因为「重要的人走了」那六个问题，原来靠弗兰克尔和苏轼在答——一个是集中营的幸存者，一个是被贬的官员
@@ -614,6 +616,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [司马懿](https://ourword.ai/i/sima-yi/): 司马懿（三国·179-251）——忍。熬过曹操、曹丕、曹叡、曹芳四代，在70岁时发动高平陵之变，一夜夺取曹魏实际控制权。他用一生证明：在长期博弈里，活得最久的那个人赢。
 - [司马迁](https://ourword.ai/i/sima-qian/): 司马迁（前145-约前86年·夏阳）——受辱之后把书写完。太史令，《史记》的作者。天汉二年李陵兵败投降，他替李陵说了几句话，触怒武帝下狱，第二年受腐刑。按当时士人的规矩，受这种刑体面的做法是自杀，他没有。多年后给狱中的任安写信，把这件事说透了：不是不知道该死，是书没写完。《史记》这部书早在库里，收他本人是因为他自己那件事——真受过辱、真
 - [吉姆·西蒙斯](https://ourword.ai/i/simons/): 吉姆·西蒙斯（美国·1938-2024）——概率优势。数学家出身——23岁拿到博士，在MIT和哈佛教书，为国防部破译过冷战密码，与陈省身合作提出「陈-西蒙斯理论」，这是他在数学史上的位置，和投资毫无关系。他48岁才全职做投资，创立文艺复兴科技。旗舰的大奖章基金1988年至今费前年化约66%，在收取5%管理费和44%业绩提成之后仍有约
+- [吕不韦](https://ourword.ai/i/lu-buwei/): 吕不韦（战国·秦·卒于前235年）——下注。战国末年阳翟的大商人，《史记》有本传。他在邯郸看中秦国送去赵国做人质、处境窘迫的公子子楚，说「此奇货可居」，拿出千金替他在秦国活动，让没有儿子的华阳夫人认子楚为嫡子；子楚即位后，他做了秦国丞相，封文信侯，秦王政即位又尊为相国、号称仲父，后来被免相，饮鸩而死。他门下宾客编的《吕氏春
 - [吕氏春秋](https://ourword.ai/i/lushi-chunqiu/): 吕氏春秋（战国末·前239年·吕不韦门客）——论人与察传。秦相吕不韦召集三千门客集体编成的一部大书，成于公元前239年前后，分十二纪、八览、六论，二十余万言。它不是一家之言：儒、墨、道、法、农、阴阳各家的说法都收在里面，编排上却有自己的主意——全书反复回到同一组问题：这个人可用吗，这句话可信吗，这条老规矩还成立吗。我们从里面取三篇。《论
 - [周公](https://ourword.ai/i/zhou-gong/): 周公（西周·周初·约前11世纪）——摄政。周文王的儿子、周武王的弟弟，名旦，后来封在鲁。武王去世后成王年幼，他代为执政，平定了管叔、武庚的叛乱；成王长大，他把政权交还。这一页只取他怎么对待流言、怎么对待比自己低的人、怎么交权这三件事，不论他制礼作乐的制度细节。他留下的是三个办法：被猜忌时，先去说服和你一起扛事的人；位置越
 - [哈佛成人发展研究](https://ourword.ai/i/harvard-study/): 哈佛成人发展研究（1938年至今·哈佛医学院）——关系的质量决定晚年。人类史上最长的一项成年人追踪研究。1938年从268名哈佛大二学生开始，后来并入波士顿贫民区的456个男孩，两组人每两年问一次近况、每五年做一次体检，很多人被跟了一辈子，如今已经跟到他们的子女。第四任主任罗伯特·瓦尔丁格把八十多年的数据压成一句话：让人晚年健康又快活的，既不是财富

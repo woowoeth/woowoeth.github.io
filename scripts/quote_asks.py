@@ -692,6 +692,12 @@ QUOTE_ASKS = {
     "henry-ford/five-dollar-day":
         "我这边人来了又走，成本怎么降？",
 
+    # 吕不韦
+    "lu-buwei/rare-goods":
+        "眼前没人当回事，我该开多少价？",
+    "lu-buwei/what-merit":
+        "我已经退下来了，他怎么还不放心？",
+
     # 张骞
     "zhang-qian/two-came-back":
         "没人走过的路，我去了要是白跑呢？",

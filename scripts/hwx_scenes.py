@@ -398,6 +398,8 @@ SCENES = [
      [("fan-li", "leave-at-the-top"), ("han-xin", "neither-nor")]),
     ("我越做越好，上面反而防着我。",
      [("wang-jian", "asking-for-fields"), ("han-xin", "neither-nor")]),
+    ("我已经退下来了，他怎么还不放心？",
+     [("lu-buwei", "what-merit")]),
     ("怀疑一起来，我做什么都像证据。",
      [("merton", "self-fulfilling-prophecy"), ("guo-ziyi", "open-gates")]),
     ("有人背后告我的状，我怎么回？",
@@ -1002,6 +1004,8 @@ SCENES = [
      [("porter", "what-not-to-do")]),
     ("成本一算，我的价高得没人买。",
      [("henry-ford", "price-first")]),
+    ("眼前没人当回事，我该开多少价？",
+     [("lu-buwei", "rare-goods")]),
 ]),
 ("遇上不讲理", "跟人打交道", [
     ("我跟他讲道理，完全没用。",

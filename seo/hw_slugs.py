@@ -24,6 +24,7 @@ SLUGS = {
     "约翰·博格": "bogle",
     "张骞": "zhang-qian",
     "亨利·福特": "henry-ford",
+    "吕不韦": "lu-buwei",
     "托尔斯坦·凡勃伦": "veblen",
     "西蒙娜·德·波伏瓦": "beauvoir",
     "索伦·克尔凯郭尔": "kierkegaard",
