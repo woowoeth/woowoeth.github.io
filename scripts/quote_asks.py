@@ -692,6 +692,12 @@ QUOTE_ASKS = {
     "henry-ford/five-dollar-day":
         "我这边人来了又走，成本怎么降？",
 
+    # 大癫狂
+    "popular-delusions/bought-to-sell":
+        "我手里这东西，没人接盘还值多少？",
+    "popular-delusions/one-by-one":
+        "人人都在买，我还用问它是什么吗？",
+
     # 吕不韦
     "lu-buwei/rare-goods":
         "眼前没人当回事，我该开多少价？",

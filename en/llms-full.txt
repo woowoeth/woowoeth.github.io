@@ -1,7 +1,7 @@
-# OurWord — 215 people and books on how the world actually works, across 2,600 years
+# OurWord — 216 people and books on how the world actually works, across 2,600 years
 # OurWord — See how people before you handled it.
 # https://ourword.ai/en/
-# Full corpus, plain text. 215 entrys.
+# Full corpus, plain text. 216 entrys.
 
 ========================================================================
 ## Albert Einstein
@@ -960,7 +960,7 @@ What turns something real into a mania is credit, not optimism. Every mania open
 Howard Marks — Both take the market's temperature: Marks reads where sentiment sits on the pendulum, Kindleberger counts how much of the money in the room was borrowed. Technological Revolutions — Both say bubbles follow a script. Perez times hers by the installation phase of a technology, Kindleberger times his by the looseness of credit - one mania, two rulers. Isaac Newton — The same South Sea bubble of 1720. Kindleberger stood outside it and laid three hundred years of crashes into one table; Newton was one cell in that table, inside it and swept along. One counted from outside, the other was pushed from within.
 
 ### Further
-George Soros Howard Marks Technological Revolutions The Crowd Jesse Livermore Isaac Newton John C. Bogle
+George Soros Howard Marks Technological Revolutions The Crowd Jesse Livermore Isaac Newton John C. Bogle Extraordinary Popular Delusions
 
 ========================================================================
 ## Charlie Munger
@@ -1566,6 +1566,43 @@ Pu Songling — Two ways of having no scoreboard: they were never given one, he 
 
 ### Further
 Pu Songling Carol Dweck Carl Jung Fukuzawa Yukichi Edward Deci
+
+========================================================================
+## Extraordinary Popular Delusions
+URL: https://ourword.ai/en/i/popular-delusions/
+Tags: Money and risk, The industrial age, Manias
+
+Extraordinary Popular Delusions (Britain · 1841) — Manias. Charles Mackay's Extraordinary Popular Delusions and the Madness of Crowds, first published in 1841 and in print ever since.
+
+### Q: What did this one leave behind?
+Charles Mackay's Extraordinary Popular Delusions and the Madness of Crowds, first published in 1841 and in print ever since. Its opening chapters are on money: John Law's Mississippi Scheme, the South Sea Bubble and the Dutch tulip mania. Many of its anecdotes are second-hand and it is no careful history, but it leaves a way of watching crowds. It is here because no entry yet says that buyers stop wanting the thing itself, or that nobody tells you when it is over.
+
+### Q: What actually happened?
+A wealthy Dutch merchant, proud of his rare tulips, rewarded a sailor who brought news of a cargo with a red herring for breakfast. The sailor, fond of onions, saw what looked like one on the counter, pocketed it and ate it with his herring on the quay. It was a Semper Augustus bulb worth three thousand florins. The household found him sitting on a coil of ropes, finishing the last of it. Mackay, who took the story from an older travel book, says that breakfast could have fed a whole ship's crew for a year.
+
+### The parts · One bulb, one list
+Mackay copies out what was handed over for a single Viceroy bulb: two lasts of wheat, four of rye, four fat oxen, eight fat swine, twelve fat sheep, wine, beer, butter, a thousand pounds of cheese, a bed, a suit of clothes and a silver cup. Total: 2,500 florins. e.g. Turn a price into things you can see and use. It often sobers you up at once.
+
+### The parts · From nobles to chimney-sweeps
+At the height of it nobles, citizens, farmers, mechanics, seamen, footmen, maid-servants, even chimney-sweeps and old clothes-women dabbled in tulips. People turned their property into cash to buy flowers, and houses and land went at ruinously low prices. e.g. When people who never touch this kind of thing start telling you about it, most of the buyers are already in.
+
+### The parts · No rescue and no court
+After the crash, tulip-holders sent deputies to Amsterdam to ask the government for a remedy. It refused at first to interfere. In the end contracts made before November 1636 were declared void, later buyers were released on paying ten per cent, and the courts would not hear gambling debts. e.g. Money staked on a mania is rarely bailed out when it goes wrong.
+
+### Q: What part do we leave out?
+We take only the chapters on money - the Mississippi Scheme, the South Sea Bubble and the tulipomania - and leave the ones on alchemists, prophecies, fortune-telling, the magnetisers, the Crusades and the witch mania. Many of its anecdotes are second-hand from older books and travellers' accounts, and later historians working in the Dutch archives think Mackay overstated the scale of the tulip episode; we read it for how crowds think, not as a record of what happened.
+
+### Q: How do I use it today?
+Next time you are about to follow everyone into something that is soaring, write one line first: am I buying it to use, or only to sell to the next person? If it is the second, write down who that person is.
+
+### Lines to keep
+To an outsider it was an onion. That breakfast could have fed a ship's crew for a year. Mad together, sane one at a time.
+
+### Q: What should I read alongside?
+Technological Revolutions — Perez sees bubbles as part of a technology's installation, with the wasted money laying the railways and fibre that later pay off. Mackay's tulips left nothing behind when they crashed. One asks whether a mania will leave something; the other asks whether you will be the last one holding it.
+
+### Further
+The Crowd Charles P. Kindleberger Isaac Newton
 
 ========================================================================
 ## Family Instructions for the Yan Clan
@@ -2752,7 +2789,7 @@ Use the rule now; the cause can wait. After selling, do not keep the books on th
 Albert Einstein — Both faced a cause nobody had. Newton said he would not invent one and left it empty while the calculation stood; Einstein invented one and pushed it until it contradicted itself. One shelves what he cannot prove, the other puts it out to be tested. Charles P. Kindleberger — The same South Sea bubble of 1720. Kindleberger stood outside it and laid three hundred years of crashes into one table; Newton was one cell in that table, inside it and swept along. One counted from outside, the other was pushed from within.
 
 ### Further
-Albert Einstein Richard Feynman Charles P. Kindleberger George Soros
+Albert Einstein Richard Feynman Charles P. Kindleberger George Soros Extraordinary Popular Delusions
 
 ========================================================================
 ## Ivan Illich
@@ -6133,7 +6170,7 @@ Stop asking whether this is a bubble and ask three more useful questions. First,
 Every technological revolution has an installation period and a deployment period. The frenzy builds infrastructure that rational capital would never have funded. Golden ages begin after the crash, on infrastructure the frenzy paid for. The crisis is not the end. It is the turning point.
 
 ### Q: What should I read alongside?
-The Innovator's Dilemma — Christensen watches one firm get disrupted, Perez watches a whole society absorb the disruption — the same event under a microscope and a wide lens. Ray Dalio — Two clocks: Dalio times the debt cycle on the financial side, Perez the technology cycle on the production side. Overlay them to know the hour. Sapiens — Harari explains why people come to believe shared fictions, Perez shows that belief turning into actual rail and fibre. Charles P. Kindleberger — Both say bubbles follow a script. Perez times hers by the installation phase of a technology, Kindleberger times his by the looseness of credit - one mania, two rulers.
+The Innovator's Dilemma — Christensen watches one firm get disrupted, Perez watches a whole society absorb the disruption — the same event under a microscope and a wide lens. Ray Dalio — Two clocks: Dalio times the debt cycle on the financial side, Perez the technology cycle on the production side. Overlay them to know the hour. Sapiens — Harari explains why people come to believe shared fictions, Perez shows that belief turning into actual rail and fibre. Charles P. Kindleberger — Both say bubbles follow a script. Perez times hers by the installation phase of a technology, Kindleberger times his by the looseness of credit - one mania, two rulers. Extraordinary Popular Delusions — Perez sees bubbles as part of a technology's installation, with the wasted money laying the railways and fibre that later pay off. Mackay's tulips left nothing behind when they crashed. One asks whether a mania will leave something; the other asks whether you will be the last one holding it.
 
 ### Further
 Ray Dalio Nassim Taleb The Innovator's Dilemma Thinking in Systems Peter Thiel Why Nations Fail Charles P. Kindleberger
@@ -6447,7 +6484,7 @@ In crowds it is stupidity and not mother wit that is accumulated. Isolated, he m
 Influence — Micro and macro of the same subject: Cialdini works on the switches that persuade one person, Le Bon on what happens to judgement when many are in a room together. George Soros — Reflexivity is the financial version of this book: the crowd's mistaken belief moves the price and the price confirms the belief. Le Bon describes the pathology, Soros priced it. The Old Regime and the Revolution — Le Bon explains why a crowd loses control once the revolution is under way; Tocqueville explains why it starts at the moment it least should — one is mechanism, the other timing.
 
 ### Further
-Influence George Soros Machiavelli Thinking, Fast and Slow Maria Konnikova The Old Regime and the Revolution Charles P. Kindleberger
+Influence George Soros Machiavelli Thinking, Fast and Slow Maria Konnikova The Old Regime and the Revolution Charles P. Kindleberger Extraordinary Popular Delusions
 
 ========================================================================
 ## The Duke of Zhou
@@ -19293,6 +19330,72 @@ Where it goes wrong: making refutation a way of never deciding — the point is 
 No number of white swans establishes that all swans are white.
 One black swan is enough to settle it.
 It is easy to obtain confirmations for nearly every theory, if we look.
+
+========================================================================
+## Extraordinary Popular Delusions · Bought to sell, not to plant
+URL: https://ourword.ai/en/i/popular-delusions/bought-to-sell/
+Source: Charles Mackay, Extraordinary Popular Delusions and the Madness of Crowds, 'The Tulipomania', from 'the more prudent began to see' to the defaults and the cancelled contracts
+Tags: Deep read, Extraordinary Popular Delusions, Who is buying, and what for
+
+The buyers no longer wanted the flowers. When everyone is scrambling for something, what is its price actually resting on?
+
+### Q: What actually happened?
+Mackay describes a Holland where nobles, farmers, sailors, maid-servants and even chimney-sweeps dabbled in tulips, and small towns closed their deals in taverns, over tables set with vases of flowers in full bloom. Then, he writes, the more prudent began to see that it could not last. Rich people no longer bought tulips for their gardens, only to sell them on at double the price. Somebody was bound to lose badly in the end. As that thought spread, prices fell and never rose again.
+
+### The parts · The change was in the buyers
+The turn Mackay records is not in the price but in who was buying. Early buyers wanted tulips for their gardens; later ones wanted only to sell to someone else. Once nobody wants the thing itself, the next buyer is all that holds the price up.
+e.g. A flat nobody plans to live in, stock nobody plans to use: count the people lined up to take it off you.
+
+### The parts · A contract price counts on delivery day
+Mackay records one deal. A agreed to buy ten Semper Augustus bulbs from B at four thousand florins each, six weeks later. B had the flowers ready on the day, but the price had fallen to three or four hundred, and A would neither pay the difference nor take the tulips.
+e.g. A paper gain is yours only on the day someone actually hands over the money.
+
+### The parts · Everyone assumed it would last
+Everyone, Mackay says, imagined the passion for tulips would last for ever, and that the rich of every country would send to Holland and pay whatever was asked. Everyone knew someone would lose in the end. Nobody counted themselves in.
+e.g. Ask yourself: if I turn out to be the last buyer, would I still buy?
+
+### Q: How do I use it today?
+Where you are: everyone around you is buying the same thing, the price has multiplied in months, and you hold a little and wonder whether to add.
+Ask first: how many of the buyers mean to keep it and use it? If nobody took it off my hands, what would it be worth?
+Where it goes wrong: reading it as 'anything that rises fast is a bubble, so stay out'. The tulips were real flowers and the gardeners were real. What changed was the buyer, from someone who wanted a flower to someone who wanted the next buyer.
+
+### Lines to keep
+When the buyer doesn't want it, the price hangs on the next one.
+Someone loses in the end; nobody counts themselves in.
+A contract price counts on delivery day.
+
+========================================================================
+## Extraordinary Popular Delusions · One by one
+URL: https://ourword.ai/en/i/popular-delusions/one-by-one/
+Source: Charles Mackay, Extraordinary Popular Delusions and the Madness of Crowds, Preface; and 'The South-Sea Bubble', the company for 'an undertaking of great advantage'
+Tags: Deep read, Extraordinary Popular Delusions, Nobody announces the end
+
+There is no signal to wake up. When everyone is pushing in, what lets you be the one who stops and asks?
+
+### Q: What actually happened?
+In 1720, the year of the South Sea Bubble, new companies were floated in London almost daily. The most absurd, Mackay says, was 'A company for carrying on an undertaking of great advantage, but nobody to know what it is'. The prospectus asked a deposit of two pounds a share and promised a hundred a year. At nine the next morning its founder opened an office in Cornhill and crowds besieged his door. By three o'clock a thousand shares were paid for. He left for the Continent that evening and was never heard of again.
+
+### The parts · The queue was all they knew
+The company would not say what it did. All anyone in the queue could see was that plenty of people were ahead of them. Mackay's preface has the line for it: 'Men, it has been well said, think in herds; it will be seen that they go mad in herds'.
+e.g. If you can't say how a venture makes money, only who else has invested, you are looking at the queue, not the venture.
+
+### The parts · Nobody wakes up together
+The sentence goes on: 'while they only recover their senses slowly, and one by one.' Going mad has leaders and noise. Coming round has no signal, and nobody announces that it is over. By the time everyone wakes together, it has usually crashed.
+e.g. Don't wait for someone in the group chat to say it's time to get out. By then the exit is crowded.
+
+### The parts · Ask what it is
+The company put the answer in its name: nobody to know what it is. Anyone in that queue who asked what the business was would have got no answer, and for five hours nobody asked. Asking first, in a crowd, feels like spoiling things. That is why people wake one at a time.
+e.g. Before you pay in, write three sentences on what it is and how it earns. If you can't, don't pay yet.
+
+### Q: How do I use it today?
+Where you are: suddenly everyone is talking about something and buying it. You can't quite say what it is, only that people you know are in.
+Ask first: leaving aside that other people bought it, can I say in three sentences what it is and how it makes money?
+Where it goes wrong: reading it as 'the crowd is always wrong, so do the opposite'. Mackay doesn't say crowds are always wrong; he says don't expect the crowd to come round for you. Doing the opposite is still steering by the crowd. The work is asking the question yourself.
+
+### Lines to keep
+The queue told them only that others were queuing.
+Madness has a crowd behind it. Sanity comes back alone.
+Ask what it is before you ask who else is in.
 
 ========================================================================
 ## Michael Porter · Everyone getting better is not a strategy

@@ -1,11 +1,11 @@
 # OurWord (人类世界生存法则)
 
-> 215 people and books on how the world actually works, across 2,600 years
+> 216 people and books on how the world actually works, across 2,600 years
 > 遇到事了，看看以前的人怎么处理
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 215 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 216 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
-一个关于「世界到底怎么运转」的知识库：战略、财富、权力、人性、创业，取自 215 位人物与典籍，跨越 2600 年。每一条都写清楚这个人真正留下的那一个想法、背后的故事、拆开的分则与例子，以及今天怎么用。
+一个关于「世界到底怎么运转」的知识库：战略、财富、权力、人性、创业，取自 216 位人物与典籍，跨越 2600 年。每一条都写清楚这个人真正留下的那一个想法、背后的故事、拆开的分则与例子，以及今天怎么用。
 
 ## Read it
 
@@ -18,14 +18,14 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 
 ## Topics
 
-- [工业时代](https://ourword.ai/t/industrial-age/) — 66
+- [工业时代](https://ourword.ai/t/industrial-age/) — 67
 - [现代](https://ourword.ai/t/modern/) — 63
 - [先秦与古典时代](https://ourword.ai/t/classical-era/) — 34
 - [权力与组织](https://ourword.ai/t/power/) — 32
 - [心智与情绪](https://ourword.ai/t/mind/) — 25
 - [创业与产品](https://ourword.ai/t/startups/) — 22
+- [财富与风险](https://ourword.ai/t/wealth/) — 22
 - [学习与成长](https://ourword.ai/t/learning/) — 21
-- [财富与风险](https://ourword.ai/t/wealth/) — 21
 - [识人与相处](https://ourword.ai/t/people/) — 20
 - [谋略与竞争](https://ourword.ai/t/strategy/) — 20
 - [世界如何运转](https://ourword.ai/t/world/) — 20
@@ -386,6 +386,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [埃丝特·佩雷尔 · 不是次数少，是没在场](https://ourword.ai/i/perel/quality-not-frequency/): 埃丝特·佩雷尔 · 不是次数少，是没在场——人在，注意力不在。都住在一起，为什么还是像异地。这一篇要回答的是：佩雷尔说要数的不是时间。
 - [卡尔·波普尔 · 能不能被推翻](https://ourword.ai/i/popper/falsifiability/): 卡尔·波普尔 · 能不能被推翻——解释一切等于没解释。占星术和物理学都能解释现象。这一篇要回答的是：凭什么说后者才是科学。
 - [卡尔·波普尔 · 去找反例，别再找支持](https://ourword.ai/i/popper/seek-refutation/): 卡尔·波普尔 · 去找反例，别再找支持——一个反例胜过一百个例证。再多的白天鹅也证明不了天鹅都是白的。这一篇要回答的是：那该收集什么。
+- [大癫狂 · 买花不为种花](https://ourword.ai/i/popular-delusions/bought-to-sell/): 大癫狂 · 买花不为种花——买主变了，价钱就悬空了。买的人不想要它。这一篇要回答的是：手里的东西人人在抢，它的价钱到底撑在哪儿。
+- [大癫狂 · 一个一个醒](https://ourword.ai/i/popular-delusions/one-by-one/): 大癫狂 · 一个一个醒——疯有人带头，醒没有人通知。醒没有集合号。这一篇要回答的是：人人都在往里挤的时候，我凭什么先停下来问一句。
 - [迈克尔·波特 · 都做得更好，不等于有了自己的路](https://ourword.ai/i/porter/better-is-not-different/): 迈克尔·波特 · 都做得更好，不等于有了自己的路——同行互相学最好的做法，最后长得一模一样，利润一起被磨掉。同行都在提速降本，我也在做，利润为什么还是薄？这一篇要回答的是：「做得更好」和「做得不一样」差在哪。
 - [迈克尔·波特 · 战略，是决定不做什么](https://ourword.ai/i/porter/what-not-to-do/): 迈克尔·波特 · 战略，是决定不做什么——每多答应一样，就少一块让人记住你的地方。同行有的我也得有吗？这一篇要回答的是：为什么什么都想要的，最后哪样都不突出。
 - [尼尔·波斯曼 · 不是加了一样东西](https://ourword.ai/i/postman/ecological-change/): 尼尔·波斯曼 · 不是加了一样东西——新技术换掉的是整个环境。都说这只是多了一件工具，用不用随你。这一篇要回答的是：他为什么说没有「只是」。
@@ -570,7 +572,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [AI Bubble Monitor / AI 泡沫检测仪](https://ourword.ai/ai/)
 - [Zouni / 走你](https://ourword.ai/zouni/)
 
-## Index (215 entrys)
+## Index (216 entrys)
 
 - [BJ·福格](https://ourword.ai/i/bj-fogg/): BJ·福格（2019年·斯坦福行为设计实验室）——小到不会失败。斯坦福行为设计实验室创始人，研究行为如何被设计出来。他给出一个公式：行为发生需要动机、能力、提示三者同时到位。多数人失败在只调动机——靠决心和自我激励——而动机天然起伏，靠它维持的习惯必然崩。他的主张相反：把行为缩到小得不需要动机，然后挂在一个已有的动作后面。
 - [C.S.刘易斯](https://ourword.ai/i/cs-lewis/): C.S.刘易斯（1898-1963年·英国牛津）——妻子死后几个月的日记。作家，牛津和剑桥的教授，写过《纳尼亚传奇》和大量劝人信仰的书。五十八岁结婚，妻子乔伊四年后因癌症去世。之后几个月他在四本练习簿上记自己的状态，后来用笔名出版，就是《卿卿如晤》。收他是因为「重要的人走了」那六个问题，原来靠弗兰克尔和苏轼在答——一个是集中营的幸存者，一个是被贬的官员
@@ -630,6 +632,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [塞涅卡](https://ourword.ai/i/seneca/): 塞涅卡（前4-65年·罗马）——先算时间。尼禄的老师、罗马最富有的人之一，也是斯多噶派留下书信最多的人。他的特别之处在于：他不是在书斋里谈节制，他一边在权力核心里周旋一边写这些东西，最后被自己教过的学生赐死。他谈愤怒、谈时间、谈死亡，都带着一种被生活反复验证过的具体，而不是道德劝诫。
 - [墨子](https://ourword.ai/i/mozi/): 墨子（春秋战国之际·鲁·约前470-前391年）——非攻。春秋战国之际的思想家，墨家学派的创始人，鲁国人。他主张兼爱、非攻，门下弟子既读书，也懂守城的器械。《墨子》里的几则故事讲的是同一件事：怎么让一个不想听你的人，把你的话听进去。这一页取他的三个办法：理讲通了对方还不收手，就让他自己算打不赢；被骂得最重的时候，想想骂你的人把什么交到了
 - [大卫·李嘉图](https://ourword.ai/i/ricardo/): 大卫·李嘉图（英国·1772-1823）——分工。英国古典经济学家。十四岁跟着父亲进伦敦的证券交易所，后来自己做证券和公债，四十出头就退出交易所、买下乡间庄园。1817 年出版《政治经济学及赋税原理》，书里的比较优势到今天还是国际贸易理论的地基。这一页只取他的两笔账：样样都强的人，为什么还要分工；新加的那一份，为什么总比前面的差
+- [大癫狂](https://ourword.ai/i/popular-delusions/): 大癫狂（英·1841年）——群体狂热。苏格兰作家查尔斯·麦基 1841 年出版的《非同寻常的大众幻想与群众性癫狂》，中文常简称《大癫狂》，一百八十多年来一直在印。开头三章写钱：法国的密西西比计划、英国的南海泡沫、荷兰的郁金香狂热。书里的逸闻多从前人的书和游记里转抄，算不上严谨的史书；它留下的是一个看人群的办法——人是
 - [大野耐一](https://ourword.ai/i/ohno/): 大野耐一（1912-1990年·日本丰田）——问五次为什么。丰田生产方式的主要建立者。他在车间里做出来的几件事后来成了整个制造业的常识：问五次为什么、任何工人都可以拉绳停线、把库存压低让问题露出来。收他是因为「把事做成」和「带人」两组里，错反复犯、交上来走样、成本降不动这几个问题，原来答的多是道理；他是把这几件事一条条做出来的人，每一条都
 - [契克森米哈赖](https://ourword.ai/i/csikszentmihalyi/): 契克森米哈赖（1990年·芝加哥大学）——心流。心理学家，用「经验取样法」研究人什么时候最投入——给几千人配呼叫器，随机时刻响起就记录当下在做什么、感觉如何。他发现最好的体验不是放松，而是一种全神贯注到忘记时间的状态，他称之为心流。触发条件很具体：任务难度与你的能力刚好匹配，目标清晰，反馈即时。三者缺一，人要么焦虑要么无聊。
 - [奥古斯丁](https://ourword.ai/i/augustine/): 奥古斯丁（354-430年·北非希波）——赐我贞洁，但不是现在。基督教思想家，《忏悔录》的作者。这本书是他四十多岁回头写自己的前半生：十六岁偷梨、年轻时的放纵、想改改不动、三十二岁在一个花园里的下午终于改了过来。收他是因为「知道做不到」「拖着不开始」「想戒又戒不掉」这几组问题，原来答的是原子习惯、福格、老鼠公园——都是方法；他是一千六百年前把

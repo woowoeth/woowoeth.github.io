@@ -115,6 +115,19 @@ OMIT = {
         "how people choose under pressure, which still holds; the admiration "
         "we do not."),
 
+    "大癫狂": (
+        "只取讲钱的那几章——密西西比计划、南海泡沫、郁金香狂热，不取后面写炼金术士、"
+        "预言、算命、催眠术、十字军、猎巫的篇章。书里的逸闻多是麦基从前人的书和游记里"
+        "转抄的，后来的史家查过荷兰档案，认为郁金香那一场的规模被写大了；我们拿它看"
+        "人群怎么想，不拿它当史实。",
+        "We take only the chapters on money - the Mississippi Scheme, the South "
+        "Sea Bubble and the tulipomania - and leave the ones on alchemists, "
+        "prophecies, fortune-telling, the magnetisers, the Crusades and the "
+        "witch mania. Many of its anecdotes are second-hand from older books and "
+        "travellers' accounts, and later historians working in the Dutch "
+        "archives think Mackay overstated the scale of the tulip episode; we "
+        "read it for how crowds think, not as a record of what happened."),
+
     # ── 判过，没有要声明的部分 ────────────────────────────
     "孙子兵法": None, "道德经": None, "史记": None, "资治通鉴": None,
     "智慧书": None, "菜根谭": None,

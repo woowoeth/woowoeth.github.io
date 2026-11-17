@@ -902,7 +902,7 @@ SCENES = [
 ]),
 ("人人都在喊风口", "AI 来了", [
     ("所有人都说这是风口，我慌。",
-     [("crowd", "assert-repeat-contaminate"), ("soros", "reflexivity")]),
+     [("crowd", "assert-repeat-contaminate"), ("soros", "reflexivity"), ("popular-delusions", "one-by-one")]),
     ("越涨我越怕，越怕越想追。",
      [("soros", "reflexivity"), ("technological-revolutions", "bubble-in-the-script")]),
     ("这轮是真的，还是又一次。",
@@ -911,6 +911,10 @@ SCENES = [
      [("kindleberger", "credit-is-the-fuel"), ("technological-revolutions", "bubble-in-the-script")]),
     ("这轮的钱，是借来的还是自己的。",
      [("kindleberger", "credit-is-the-fuel"), ("marks", "second-level-thinking")]),
+    ("我手里这东西，没人接盘还值多少？",
+     [("popular-delusions", "bought-to-sell")]),
+    ("人人都在买，我还用问它是什么吗？",
+     [("popular-delusions", "one-by-one")]),
 ]),
 ("要不要现在跳进去", "AI 来了", [
     ("大家都在上这个，我要不要跟。",
