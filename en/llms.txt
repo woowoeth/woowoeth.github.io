@@ -1,9 +1,9 @@
 # OurWord (OurWord)
 
-> 216 people and books on how the world actually works, across 2,600 years
+> 217 people and books on how the world actually works, across 2,600 years
 > See how people before you handled it.
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 216 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 217 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
 ## Read it
 
@@ -18,14 +18,14 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 
 - [Modern](https://ourword.ai/en/t/modern/) — 67
 - [The industrial age](https://ourword.ai/en/t/the-industrial-age/) — 63
+- [Pre-Qin and classical](https://ourword.ai/en/t/pre-qin-and-classical/) — 33
 - [Power and organisation](https://ourword.ai/en/t/power-and-organisation/) — 32
-- [Pre-Qin and classical](https://ourword.ai/en/t/pre-qin-and-classical/) — 32
 - [Mind and feeling](https://ourword.ai/en/t/mind-and-feeling/) — 24
 - [Qin, Han and the Six Dynasties](https://ourword.ai/en/t/qin-han-and-the-six-dynasties/) — 23
 - [Learning and growth](https://ourword.ai/en/t/learning-and-growth/) — 22
+- [Money and risk](https://ourword.ai/en/t/money-and-risk/) — 22
 - [Starting and building](https://ourword.ai/en/t/starting-and-building/) — 22
 - [How the world works](https://ourword.ai/en/t/how-the-world-works/) — 21
-- [Money and risk](https://ourword.ai/en/t/money-and-risk/) — 21
 - [Reading people](https://ourword.ai/en/t/reading-people/) — 20
 - [Strategy and competition](https://ourword.ai/en/t/strategy-and-competition/) — 20
 - [Body and daily life](https://ourword.ai/en/t/body-and-daily-life/) — 17
@@ -552,6 +552,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [Zhuge Liang · The tears, and then the demotion](https://ourword.ai/en/i/zhuge-liang/executing-ma-su/): Zhuge Liang · The tears, and then the demotion — He put himself on the same list. Executing the man he had promoted is not the hard part of this story. What he did immediately afterwards is.
 - [Zichan · From Noon to Dusk](https://ourword.ai/en/i/zichan/noon-to-dusk/): Zichan · From Noon to Dusk — When they price you like a big player, find the rule they already accept. They price you like a big player. How did Zichan, head of a small state, get mighty Jin to lower its tribute?
 - [Zichan · The Ring He Would Not Give](https://ourword.ai/en/i/zichan/the-pair-of-rings/): Zichan · The Ring He Would Not Give — When they ask for little, remember that the first yes sets the price of every later one. They want only one small thing. Why did Zichan refuse a jade ring to Jin's Han Xuanzi, and how did the envoy end up withdrawing his own request?
+- [Zigong · Rich, and loving the rites](https://ourword.ai/en/i/zigong/rich-and-courteous/): Zigong · Rich, and loving the rites — Not being spoiled by money is a pass mark, not the top. Staying unspoiled is only a pass. Do you really have to choose between making money and keeping what you cared about?
+- [Zigong · The ransom he would not take](https://ourword.ai/en/i/zigong/ransom-money/): Zigong · The ransom he would not take — A good deed done too cleanly can stop anyone else doing it. Set the bar too high and the good deed stops. Why did nobody follow when you led the way?
 - [The Comprehensive Mirror · Talent and character](https://ourword.ai/en/i/zizhi-tongjian/talent-and-virtue/): The Comprehensive Mirror · Talent and character — The dangerous man is the able one. The first argument in the first book of the whole work is about choosing people. This is about why it sits there.
 - [The Comprehensive Mirror · Worth copying, worth avoiding](https://ourword.ai/en/i/zizhi-tongjian/what-to-keep/): The Comprehensive Mirror · Worth copying, worth avoiding — Fix the selection rule first. One thousand three hundred and sixty-two years of events. This is about the single rule that decided what went in.
 
@@ -566,7 +568,7 @@ Cite the individual page URL, not the homepage — each entry page is stable and
 - [AI Bubble Monitor](https://ourword.ai/ai/)
 - [Zouni](https://ourword.ai/zouni/)
 
-## Index (216 entrys)
+## Index (217 entrys)
 
 - [Albert Einstein](https://ourword.ai/en/i/einstein/): Albert Einstein (Germany · 1879–1955) — Imagination. The physicist, and the father of relativity — but the legacy that travels furthest is not a formula, it is a way of working.
 - [Albert O. Hirschman](https://ourword.ai/en/i/hirschman/): Albert O. Hirschman (United States · 1915-2012) — Voice. A German-born American economist. He left Berlin in 1933, fought in Spain in 1936, spent 1940 in Marseille forging papers and finding mountain…
@@ -784,3 +786,4 @@ Cite the individual page URL, not the homepage — each entry page is stable and
 - [Zhuangzi](https://ourword.ai/en/i/zhuangzi/): Zhuangzi (Warring States · c. 369–286 BC) — Free and equal. The second peak of Daoism, and a very different writer from Laozi. Where Laozi addresses the person who has to govern, Zhuangzi addresses…
 - [Zhuge Liang](https://ourword.ai/en/i/zhuge-liang/): Zhuge Liang (Three Kingdoms · 181–234) — The Longzhong plan. The most admired administrator in Chinese history, and the standard image of both strategic foresight and working yourself to death.
 - [Zichan](https://ourword.ai/en/i/zichan/): Zichan (Spring and Autumn · Zheng · d. 522 BC) — Standing on the rule. Gongsun Qiao, known as Zichan, ran the state of Zheng for over twenty years in the sixth century BC.
+- [Zigong](https://ourword.ai/en/i/zigong/): Zigong (Spring and Autumn · Wei · born 520 BC) — Money and purpose. Duanmu Ci, styled Zigong, a man of Wei thirty-one years younger than Confucius and one of his ten leading disciples.

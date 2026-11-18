@@ -698,6 +698,12 @@ QUOTE_ASKS = {
     "popular-delusions/one-by-one":
         "人人都在买，我还用问它是什么吗？",
 
+    # 子贡
+    "zigong/rich-and-courteous":
+        "我想多挣钱，又怕自己变俗。",
+    "zigong/ransom-money":
+        "我带头不要报酬，怎么没人跟？",
+
     # 吕不韦
     "lu-buwei/rare-goods":
         "眼前没人当回事，我该开多少价？",

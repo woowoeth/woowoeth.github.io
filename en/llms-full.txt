@@ -1,7 +1,7 @@
-# OurWord — 216 people and books on how the world actually works, across 2,600 years
+# OurWord — 217 people and books on how the world actually works, across 2,600 years
 # OurWord — See how people before you handled it.
 # https://ourword.ai/en/
-# Full corpus, plain text. 216 entrys.
+# Full corpus, plain text. 217 entrys.
 
 ========================================================================
 ## Albert Einstein
@@ -479,7 +479,7 @@ When the world sells, I buy. When the world buys, I sell. Wit to adapt, courage 
 Fan Li — Two ancient fortunes: Fan Li teaches how to get out intact, Bai Gui teaches a method you can repeat. Benjamin Graham — Twenty-two centuries apart, the same claim: price is set by mood, value by supply and demand. Liu Yan — Two routes to making money work: Bai Gui buys what others discard and earns the spread on a single trade, while Liu Yan pays for a reporting network to know days earlier, earns the number of turns, and wants the spread closed.
 
 ### Further
-Fan Li Benjamin Graham Warren Buffett Records of the Grand Historian Shang Yang Liu Yan Lu Buwei
+Fan Li Benjamin Graham Warren Buffett Records of the Grand Historian Shang Yang Liu Yan Lu Buwei Zigong
 
 ========================================================================
 ## Bai Juyi
@@ -1679,7 +1679,7 @@ The birds are gone, so the good bow is put away. You can share hardship with him
 Li Ka-shing — Two and a half millennia apart, the same two rules: buy when nobody wants it, and leave before the top. Zhang Liang — The two men who understood leaving. Fan Li left to trade, Zhang Liang left to study the way. Different exits, identical result. Zhuge Liang — Two answers to having succeeded: Fan Li walked away at the summit, Zhuge Liang never put it down at all. Li Bi — Two versions of leaving without going far: Fan Li disappeared completely, Li Bi kept walking through the centre of power in a robe that let him leave at will. Guo Jia — Two ways a gifted adviser ends. Guo Jia burned out at thirty-eight inside the work; Fan Li walked away on the day it was won and lived a long time afterwards. Wang Jian — Two ways of leaving at the top: Fan Li vanished and became a merchant, Wang Jian resigned and went home to his fields. Bai Gui — Two ancient fortunes: Fan Li teaches how to get out intact, Bai Gui teaches a method you can repeat. Hu Xueyan — Both worked between officials and trade. Fan Li left at the summit; Hu Xueyan tied the knots tighter every year. Jesse Livermore — Both understood exits. Fan Li left at every summit; Livermore never once got up from the table. Chen Ping — Fan Li left at the top, with the work done and the time of his choosing. Chen Ping left in fear, with nothing but his clothes. For one, leaving was about when; for the other, only how. Lu Buwei — Fan Li was also a strategist turned merchant, but he left at the height of his success and later gave away his wealth more than once. Lu Buwei stayed on his estate after his dismissal with envoys at his gate and died over one letter from the king. One knew when to take his stake off the table; the other stepped down and left the door open.
 
 ### Further
-Li Ka-shing Su Shi Sun Tzu Warren Buffett Han Feizi Pu Songling Guan Zhong Zhang Liang Zhuge Liang Li Bi The I Ching Napoleon Sima Yi Strategies of the Warring States Wang Jian Xiang Yu The Art of Worldly Wisdom Bai Gui Ray Dalio Hu Xueyan Jesse Livermore Records of the Grand Historian Nassim Taleb The Sovereign Individual Liu Yan Chen Ping Lu Buwei
+Li Ka-shing Su Shi Sun Tzu Warren Buffett Han Feizi Pu Songling Guan Zhong Zhang Liang Zhuge Liang Li Bi The I Ching Napoleon Sima Yi Strategies of the Warring States Wang Jian Xiang Yu The Art of Worldly Wisdom Bai Gui Ray Dalio Hu Xueyan Jesse Livermore Records of the Grand Historian Nassim Taleb The Sovereign Individual Liu Yan Chen Ping Lu Buwei Zigong
 
 ========================================================================
 ## Fan Zhongyan
@@ -3983,7 +3983,7 @@ This week write down your largest stake, money, time or a relationship, and one 
 From merchant to chancellor, with one man in between. My gate grows when yours does. Stake everything on one person and you win or lose with them.
 
 ### Q: What should I read alongside?
-Fan Li — Fan Li was also a strategist turned merchant, but he left at the height of his success and later gave away his wealth more than once. Lu Buwei stayed on his estate after his dismissal with envoys at his gate and died over one letter from the king. One knew when to take his stake off the table; the other stepped down and left the door open.
+Fan Li — Fan Li was also a strategist turned merchant, but he left at the height of his success and later gave away his wealth more than once. Lu Buwei stayed on his estate after his dismissal with envoys at his gate and died over one letter from the king. One knew when to take his stake off the table; the other stepped down and left the door open. Zigong — Both were great merchants who spent money on lords. Lu Buwei staked everything on one man and was paid in power at the Qin court. Zigong spent his on spreading his teacher's name and stayed Confucius's student to the end. One bought a position; the other paved the way for something bigger than himself.
 
 ### Further
 Fan Li Bai Gui The Annals of Lu Buwei
@@ -6253,7 +6253,7 @@ Knowing what you know and what you do not: that is knowledge. See what he does. 
 Tao Te Ching — The two main lines of Chinese thought: Confucius adds — cultivate, practise, take part — where Laozi subtracts. Neither is complete without the other. Socrates — Near contemporaries who both taught by asking rather than telling, and both paid for holding a position against the people in power. Mencius — The Analects tells a gentleman how to conduct himself; Mencius tells a ruler what will remove him. Strategies of the Warring States — Two faces of the same broken age: one on what a person ought to become, the other on how people behaved. Read only one and you end up naive or cynical. Guiguzi — Confucius asks whether a thing should be said at all; Guiguzi asks only how to say it so that it works. The avowed and the suppressed halves of the same tradition. La Rochefoucauld — Confucius holds that self-cultivation leads to benevolence. La Rochefoucauld suspects self-cultivation is only the most sophisticated form self-love has found so far. The Annals of Lu Buwei — Both answer how to read a person: the Analects looks backward, at what he has already done, the path he took and what he rests easy in, while the Annals arranges the present, putting him through eight positions and six feelings and watching hardest at the moments when he has nothing to gain. The Book of Rites — Both record how Confucius taught. In the Analects he will not open up a student who is not yet straining to understand, which is about when to speak. The 'Record of Learning' goes a step further: even once you speak, open the way and stop, and leave the last steps to the learner.
 
 ### Further
-Wang Yangming Zeng Guofan Tao Te Ching Socrates Mencius Hannah Arendt Family Instructions for the Yan Clan The Annals of Lu Buwei The Book of Rites Yan Ying Aristotle
+Wang Yangming Zeng Guofan Tao Te Ching Socrates Mencius Hannah Arendt Family Instructions for the Yan Clan The Annals of Lu Buwei The Book of Rites Yan Ying Aristotle Zigong
 
 ========================================================================
 ## The Annals of Lu Buwei
@@ -7901,6 +7901,40 @@ Thomas Schelling — Both write about the weaker party in a negotiation. Schelli
 
 ### Further
 Yan Ying Lin Xiangru Strategies of the Warring States Guan Zhong
+
+========================================================================
+## Zigong
+URL: https://ourword.ai/en/i/zigong/
+Tags: Money and risk, Pre-Qin and classical, Money and purpose
+
+Zigong (Spring and Autumn · Wei · born 520 BC) — Money and purpose. Duanmu Ci, styled Zigong, a man of Wei thirty-one years younger than Confucius and one of his ten leading disciples.
+
+### Q: What did this one leave behind?
+Duanmu Ci, styled Zigong, a man of Wei thirty-one years younger than Confucius and one of his ten leading disciples. He was a fine speaker, served as chief minister in Lu and Wei, and traded on the side, buying low and selling with the times until his family held a thousand pieces of gold. Sima Qian calls him the richest of the seventy disciples. When Confucius died the others mourned three years and left; Zigong stayed by the grave three more. He is here because he did not choose between learning and money.
+
+### Q: What actually happened?
+After Confucius died, his student Yuan Xian went to live in the wilds. Zigong, by then chief minister of Wei, came with a train of carriages, pushed through the weeds into the poor lane and called on him. Yuan Xian came out in a worn cap and robe. Zigong, embarrassed for him, asked whether he was ill. Yuan Xian said he had heard that having no money is called poverty, and learning the Way without living it is called illness. He was poor, not ill. Zigong left ashamed, and was ashamed of that remark for the rest of his life.
+
+### The parts · He would not accept his lot
+Confucius set him beside Yan Hui. Yan Hui was nearly there, and often had nothing at all. Zigong would not accept his lot, went into trade, and his guesses about the market were often right. Confucius did not call him vulgar; he said the two had taken different roads. e.g. Refusing to accept your lot and going out to earn is nothing to be ashamed of.
+
+### The parts · Money spent on making his teacher seen
+He travelled with teams of horses and bolts of silk as gifts to the lords, and wherever he went rulers received him as an equal. Sima Qian says it was Zigong, going ahead and following behind, who spread Confucius's name across the world. e.g. Let some of what you earn pave the way for the thing you care about most.
+
+### The parts · My wall only comes to the shoulder
+When a Lu minister said at court that Zigong was better than Confucius, Zigong used a wall. Mine reaches the shoulder, so anyone can look over and see the fine rooms. My teacher's is many times a man's height; without finding the gate you never see the temple or the officials inside. e.g. When someone says you have outgrown your teacher, ask whether they only saw the part outside the wall.
+
+### Q: How do I use it today?
+This week write the thing you earn from and the thing you care about most on the same page, with a line between them. Is the first doing anything for the second? If not, move a little money or time across.
+
+### Lines to keep
+Poor is not the same as ill. Learning the Way without living it: that is illness. A wall to the shoulder lets everyone see in.
+
+### Q: What should I read alongside?
+Lu Buwei — Both were great merchants who spent money on lords. Lu Buwei staked everything on one man and was paid in power at the Qin court. Zigong spent his on spreading his teacher's name and stayed Confucius's student to the end. One bought a position; the other paved the way for something bigger than himself.
+
+### Further
+The Analects Fan Li Bai Gui
 <!-- chapters:begin -->
 ========================================================================
 ## Alfred Adler · Whose task is this
@@ -25024,6 +25058,72 @@ Where it goes wrong: Treating it as "never yield to the big party". The ring was
 ### Lines to keep
 A great state asks without limit. How long can a small one keep giving?
 You would not take the jade and lose the lords.
+
+========================================================================
+## Zigong · Rich, and loving the rites
+URL: https://ourword.ai/en/i/zigong/rich-and-courteous/
+Source: The Analects, Book 1 (Xue Er), the exchange that begins with Zigong asking about the poor who do not flatter and the rich who are not arrogant
+Tags: Deep read, Zigong, Not being spoiled by money is a pass mark, not the top
+
+Staying unspoiled is only a pass. Do you really have to choose between making money and keeping what you cared about?
+
+### Q: What actually happened?
+Zigong was the best trader among Confucius's students; the historian Sima Qian says he was the richest of them all. One day he brought his teacher a line he had worked out for himself: poor, yet not fawning; rich, yet not arrogant. Was that as far as it went? Confucius said it would do. Better still is the poor man who is happy and the rich man who loves the rites. Zigong answered at once with a line from the Odes about cutting and filing, carving and polishing jade. Now, said Confucius, I can talk about the Odes with you.
+
+### The parts · Both of his rules are defences
+Not fawning and not being arrogant both mean the same thing: do not let money change you. Do not bow when poor, do not strut when rich. It is a floor. Confucius said it would do, which is to say it passes, and only passes.
+e.g. Promising yourself you will not change once the money comes is a rule about what not to do.
+
+### The parts · The next level is something else you care about
+The poor man is not happy about being poor, and the rich man does not love money. Each has something else he cannot leave alone, so how much money there is stops being the subject. Then money and purpose are not two sides; money is one condition of the work.
+e.g. Worried that earning more will make you shallow? Ask what you would spend it on that you already wanted to do.
+
+### The parts · Cut, then keep filing
+Zigong saw it at once. Jade that has been cut still has to be filed; once carved, it still has to be polished. His rule was the rough cut. Confucius praised him as someone who, told one thing, sees the next for himself.
+e.g. The day you feel sure you have held the line is a good day to look for the next one.
+
+### Q: How do I use it today?
+Where you are: You want to earn more and fear becoming the kind of person you used to look down on, as if money and purpose were a choice.
+Ask first: Apart from not being spoiled by money, what is the one thing I would do whether I had more or less of it?
+Where it goes wrong: Reading it as permission for show once you are rich. The rites here are not display. Zigong's rule already passed; the step above it is having something bigger than money in mind, so money never becomes the subject.
+
+### Lines to keep
+Not fawning, not arrogant: that is a pass.
+Care about something else and money stops being the subject.
+The jade is cut. Now it needs polishing.
+
+========================================================================
+## Zigong · The ransom he would not take
+URL: https://ourword.ai/en/i/zigong/ransom-money/
+Source: Lüshi Chunqiu, Xian Shi Lan, the chapter Cha Wei (Examining the Small), the passage on the law of Lu
+Tags: Deep read, Zigong, A good deed done too cleanly can stop anyone else doing it
+
+Set the bar too high and the good deed stops. Why did nobody follow when you led the way?
+
+### Q: What actually happened?
+The state of Lu had a law. If a man of Lu had become a slave in another state and someone bought him back, the rescuer could claim the ransom from the treasury. Zigong ransomed a Lu man from one of the lords, came home and declined to take the money. Confucius said Zigong got this wrong. From now on, he said, nobody in Lu will ransom anyone. Taking the money would have cost Zigong nothing in virtue; refusing it meant others would stop ransoming people.
+
+### The parts · His deed became everyone else's price
+Zigong was rich and did not need the money; refusing it looked nobler. But once the story spread, anyone who ransomed a man and then claimed the refund looked smaller than Zigong, and anyone who could not afford to refuse it was stuck. Easier not to ransom at all.
+e.g. A manager who works weekends and never claims overtime leaves the team unable either to claim it or to skip it.
+
+### The parts · Zilu kept the ox
+In the same passage Zilu pulled a drowning man out of the water. The man thanked him with an ox, and Zilu accepted it. Confucius said the people of Lu would now be sure to save the drowning. Taking the gift told everyone watching that it does not cost you to help.
+e.g. Name the colleague who helped in the meeting and put it in the review, and next time people compete to help.
+
+### The parts · Watch the ordinary person behind you
+The book files this under examining the small: Confucius saw from a small act how far its influence would run. Whether a deed was good is not only a question of your own virtue, but of the price it sets for the ordinary people who come after.
+e.g. Before you set a rule, picture an ordinary person following it and ask whether they can keep it up.
+
+### Q: How do I use it today?
+Where you are: You led by example, working unpaid, never claiming, paying out of your own pocket, and instead of a good habit spreading, fewer people do it than before.
+Ask first: What price does my example set for the ordinary person after me? If they copy it, do they lose out?
+Where it goes wrong: Reading it as 'always get paid for doing good'. Confucius did not say Zigong should not have ransomed the man. He said the refund was there to be taken, so that the bar sits where an ordinary person can step over it.
+
+### Lines to keep
+The example you set becomes everyone else's price.
+Take the refund, and others will keep doing it.
+Set the bar at sainthood and nobody comes in.
 
 ========================================================================
 ## The Comprehensive Mirror · Talent and character
