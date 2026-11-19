@@ -1,7 +1,7 @@
-# OurWord — 217 people and books on how the world actually works, across 2,600 years
+# OurWord — 218 people and books on how the world actually works, across 2,600 years
 # OurWord — See how people before you handled it.
 # https://ourword.ai/en/
-# Full corpus, plain text. 217 entrys.
+# Full corpus, plain text. 218 entrys.
 
 ========================================================================
 ## Albert Einstein
@@ -921,6 +921,40 @@ Lev Vygotsky — Both about where learning happens. He locates it in the task's 
 
 ### Further
 Lev Vygotsky Excellent Sheep Kristin Neff Anders Ericsson Edward Deci
+
+========================================================================
+## Charles Darwin
+URL: https://ourword.ai/en/i/darwin/
+Tags: Learning and growth, The industrial age, Slow work
+
+Charles Darwin (England · 1809–1882) — Slow work. English naturalist and founder of evolutionary biology. At twenty-two he sailed on the Beagle for nearly five years; in 1837 he opened his first notebook on species; in…
+
+### Q: What did this one leave behind?
+English naturalist and founder of evolutionary biology. At twenty-two he sailed on the Beagle for nearly five years; in 1837 he opened his first notebook on species; in 1859 he published On the Origin of Species and gave biology natural selection. He gathered facts for more than twenty years before the book, much of that time ill. He is here for two things anyone may meet: being beaten to your own idea, and working with a body that will not cooperate.
+
+### Q: What actually happened?
+In the summer of 1831 Darwin, twenty-two, had a letter: the captain of the Beagle would give up part of his own cabin to a young man willing to sail unpaid as naturalist. He was eager at once. His father strongly objected, and added: "If you can find any man of common sense who advises you to go I will give my consent." Darwin wrote that evening and refused. Next morning, out shooting at his uncle Josiah Wedgwood's, he was sent for. The uncle thought he should go and drove him home to say so. His father held the uncle one of the most sensible men in the world, and consented at once.
+
+### The parts · Write down the fact against you, at once
+For many years he kept what he called a golden rule: whenever a fact, observation or thought turned up that went against his results, he made a note of it without fail and at once. He had found such things slip from memory far more easily than welcome ones. e.g. Keep one page in the plan for what counts against it, and fill it in the same day.
+
+### The parts · A theory in hand, and nothing written
+Once he had natural selection he was so anxious to avoid prejudice that he decided not to write even the briefest sketch for some time. In June 1842 he allowed himself 35 pages in pencil. In the summer of 1844 he enlarged it to 230 and had it fairly copied. e.g. When an explanation feels beautiful, go looking for what it cannot explain.
+
+### The parts · His own verdict on himself
+In old age he took stock. No great quickness of apprehension or wit, unlike Huxley; little power to follow a long abstract argument, so no mathematics. He put his success down to love of science, patience in reflecting, industry in collecting facts and a fair share of common sense. e.g. If you are not the quickest in the room, be the one who thinks about it longest.
+
+### Q: How do I use it today?
+This week keep one page beside the thing you are pushing, headed 'against it'. Note each item the moment you meet it. If the page is empty by Friday, you probably did not write, not that there was nothing.
+
+### Lines to keep
+The fact against you is the first one you forget. Not the quickest? Think about it longest. Find one person of common sense who says go.
+
+### Q: What should I read alongside?
+Isaac Newton — Both faced the question of who thought of it first. Newton fought Leibniz over the calculus for years, and the Royal Society report that found for him came from a committee appointed while he was its president. Darwin handed his old draft to two friends, published jointly with Wallace, and Wallace later called his own book on evolution Darwinism.
+
+### Further
+Isaac Newton Richard Feynman Karl Popper
 
 ========================================================================
 ## Charles P. Kindleberger
@@ -2786,10 +2820,10 @@ This week take one conclusion you are about to give someone and split it into tw
 Use the rule now; the cause can wait. After selling, do not keep the books on the rise. Explain a thing without adding a cause.
 
 ### Q: What should I read alongside?
-Albert Einstein — Both faced a cause nobody had. Newton said he would not invent one and left it empty while the calculation stood; Einstein invented one and pushed it until it contradicted itself. One shelves what he cannot prove, the other puts it out to be tested. Charles P. Kindleberger — The same South Sea bubble of 1720. Kindleberger stood outside it and laid three hundred years of crashes into one table; Newton was one cell in that table, inside it and swept along. One counted from outside, the other was pushed from within.
+Albert Einstein — Both faced a cause nobody had. Newton said he would not invent one and left it empty while the calculation stood; Einstein invented one and pushed it until it contradicted itself. One shelves what he cannot prove, the other puts it out to be tested. Charles P. Kindleberger — The same South Sea bubble of 1720. Kindleberger stood outside it and laid three hundred years of crashes into one table; Newton was one cell in that table, inside it and swept along. One counted from outside, the other was pushed from within. Charles Darwin — Both faced the question of who thought of it first. Newton fought Leibniz over the calculus for years, and the Royal Society report that found for him came from a committee appointed while he was its president. Darwin handed his old draft to two friends, published jointly with Wallace, and Wallace later called his own book on evolution Darwinism.
 
 ### Further
-Albert Einstein Richard Feynman Charles P. Kindleberger George Soros Extraordinary Popular Delusions
+Albert Einstein Richard Feynman Charles P. Kindleberger George Soros Extraordinary Popular Delusions Charles Darwin
 
 ========================================================================
 ## Ivan Illich
@@ -3264,7 +3298,7 @@ We cannot prove a theory true. We can only fail to refute it. A claim that fits 
 Richard Feynman — The same rule from two sides: Popper gives the logical criterion, Feynman the psychological warning about who breaks it first. Thinking, Fast and Slow — Popper says what a careful mind should do; Kahneman measures how far an ordinary one departs from it.
 
 ### Further
-Richard Feynman Albert Einstein Socrates Thinking, Fast and Slow
+Richard Feynman Albert Einstein Socrates Thinking, Fast and Slow Charles Darwin
 
 ========================================================================
 ## Kazuo Inamori
@@ -5232,7 +5266,7 @@ After you've not fooled yourself, it's easy not to fool other scientists. Nature
 Albert Einstein — Two physicists' habits: Einstein restated the problem until it turned simple, Feynman rebuilt the answer until it was his. Socrates — Both use questions to force ignorance into the open. Socrates aims them at other people, Feynman at himself. Karl Popper — The same rule from two sides: Popper gives the logical criterion, Feynman the psychological warning about who breaks it first.
 
 ### Further
-Albert Einstein Socrates Charlie Munger Karl Popper The Last Hot-Metal Edition Isaac Newton Xu Guangqi
+Albert Einstein Socrates Charlie Munger Karl Popper The Last Hot-Metal Edition Isaac Newton Xu Guangqi Charles Darwin
 
 ========================================================================
 ## Robert Axelrod
@@ -11097,6 +11131,72 @@ Where it goes wrong: using believability to freeze the old guard in place so new
 An idea meritocracy is a system in which the best ideas win out.
 Everyone speaks. Not everyone's vote weighs the same.
 Believability is earned in one field at a time.
+
+========================================================================
+## Charles Darwin · Forestalled
+URL: https://ourword.ai/en/i/darwin/forestalled/
+Source: Darwin's letters to Charles Lyell of 18, 25 and 26 June 1858; Darwin's Autobiography
+Tags: Deep read, Charles Darwin, Dated evidence, the case against yourself, and someone else to judge
+
+Twenty years of work, and someone else wrote it down first. How do you claim what is yours without behaving badly?
+
+### Q: What actually happened?
+In June 1858 Darwin opened a packet from Alfred Russel Wallace in the Malay Archipelago. The essay inside set out almost exactly the theory he had been building, unpublished, for twenty years. He wrote to the geologist Charles Lyell that day: "So all my originality, whatever it may amount to, will be smashed." A week later he wrote again. Everything in Wallace's essay was in his own draft of 1844, but would rushing into print now be base? "I would far rather burn my whole book" than have anyone think so.
+
+### The parts · He had something with a date on it
+He did not simply say he had thought of it first. The botanist Joseph Hooker had read his long 1844 draft some dozen years before. In September 1857 he had set the theory out in a letter to Asa Gray at Harvard. A date and a witness: that is evidence.
+e.g. Send the idea early to one or two people you trust, and keep the dated email.
+
+### The parts · He made the case against himself first
+Next day he sent a postscript, written, he said, "to make the case as strong as possible against myself". He put Wallace's objection in Wallace's mouth, admitted that losing years of priority was hard, and said that did not change what was just. Then he left it to Lyell and Hooker.
+e.g. Before you claim credit, write the other side's best objection and show it to a third person.
+
+### The parts · Two names read together, then the book
+On 1 July Lyell and Hooker had Wallace's essay, an extract from Darwin's old draft and the Gray letter read at the Linnean Society as a joint paper. Darwin recalled that it drew very little attention. He began writing in September and finished the Origin in thirteen months and ten days.
+e.g. Settling who gets the credit is the start; what people remember is the finished book.
+
+### Q: How do I use it today?
+Where you are: You worked on something for years and someone else has produced it first, or it is about to go under another name. You want to claim it and fear looking petty.
+Ask first: What do I hold that is dated and that a third person has seen? What is the other side's strongest objection?
+Where it goes wrong: Reading it as a lesson in graceful surrender. Darwin gave nothing away; his name came first on the joint paper. He just did not grab. The evidence was old, the objection was his own, the ruling was someone else's. Without that dated draft none of it works.
+
+### Lines to keep
+Write the hardest objection to your claim yourself.
+A date and a witness make it evidence.
+Credit settled, the book still has to be written.
+
+========================================================================
+## Charles Darwin · A four-hour day
+URL: https://ourword.ai/en/i/darwin/a-good-days-work/
+Source: Francis Darwin, 'Reminiscences of My Father's Everyday Life', in The Life and Letters of Charles Darwin (1887), vol. 1, ch. 3; Darwin's Autobiography
+Tags: Deep read, Charles Darwin, When strength is fixed, give its best stretch to the one thing that matters
+
+He was ill for nearly forty years. If your health will not improve and you have a few good hours a day, can real work still get done?
+
+### Q: What actually happened?
+Darwin's son Francis wrote down his father's day at the house in Kent. Breakfast alone at about 7.45, then straight to the study: eight to half past nine was one of his best working times. At 9.30 he came out and lay on the sofa while letters were read to him. At half past ten he went back until about noon. By then he counted the day's work finished and would often say, pleased, "I've done a good day's work." He walked, wet or fine. From half past four to half past five he worked once more.
+
+### The parts · The best stretch goes to one thing
+He did not work when he found time; he worked at the same hour every day. Eight to half past nine was for work alone; the post waited until he came out. Francis says he was so regular that his step on the stairs meant it was within a few minutes of four.
+e.g. Find the ninety minutes when your head is clearest and pin the most important job there.
+
+### The parts · At the limit, he stopped
+Francis saw him work to the very edge of his strength and break off in the middle of dictating: "I believe I mustn't do any more." Half an hour of extra talk after dinner could cost a sleepless night and half the next day's work, so he never stayed.
+e.g. The hour you force out tonight is borrowed from tomorrow morning.
+
+### The parts · Scraps of time count
+He liked to say that saving the minutes was the way to get work done. He felt the difference between ten minutes and a quarter of an hour, and never thought a few spare minutes too short to start. Illness, he wrote, also spared him society and amusement.
+e.g. If your time is short, drop the sentence 'there's no point starting now'.
+
+### Q: How do I use it today?
+Where you are: Your body or energy has a ceiling that will not lift: a chronic illness, small children, age. You get a few usable hours a day and doubt that anything serious can come of them.
+Ask first: Which stretch of my day is the best one, and who has it now?
+Where it goes wrong: Reading it as proof that four hours a day is enough. Darwin did not have to earn his bread, as he said himself, and his four hours were kept to the clock, day after day, for decades. Copy the guarding of the hours and the stopping, not the small number.
+
+### Lines to keep
+If strength has a ceiling, don't let it leak.
+Stop at the limit today and there is work tomorrow.
+Ten minutes left? Sit down and start.
 
 ========================================================================
 ## Edward Deci · Pay him, and he stops playing

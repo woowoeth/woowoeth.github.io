@@ -698,6 +698,12 @@ QUOTE_ASKS = {
     "popular-delusions/one-by-one":
         "人人都在买，我还用问它是什么吗？",
 
+    # 达尔文
+    "darwin/forestalled":
+        "我做了很多年，被人抢先说了。",
+    "darwin/a-good-days-work":
+        "我身体就这样了，还能做成事吗？",
+
     # 子贡
     "zigong/rich-and-courteous":
         "我想多挣钱，又怕自己变俗。",

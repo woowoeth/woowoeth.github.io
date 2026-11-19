@@ -110,6 +110,7 @@ NAMES = {
     "henry-ford": ("Henry Ford", "Starting and building"),
     "lu-buwei": ("Lu Buwei", "Money and risk"),
     "zigong": ("Zigong", "Money and risk"),
+    "darwin": ("Charles Darwin", "Learning and growth"),
     "popular-delusions": ("Extraordinary Popular Delusions", "Money and risk"),
     "influence": ("Influence", "Reading people"),
     "konnikova": ("Maria Konnikova", "Reading people"),

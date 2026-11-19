@@ -1042,6 +1042,8 @@ SCENES = [
      [("feng-yi", "big-tree")]),
     ("我干的是后方的活，没人算我功劳。",
      [("xiao-he", "hunter-and-hounds")]),
+    ("我做了很多年，被人抢先说了。",
+     [("darwin", "forestalled")]),
 ]),
 ("该不该妥协", "跟人打交道", [
     ("退这一步，是务实还是没底线？",
@@ -1360,6 +1362,8 @@ SCENES = [
      [("huangdi-neijing", "water-before-thirst")]),
     ("我一口气冲了半年，没停过。",
      [("liji", "one-tension-one-release")]),
+    ("我身体就这样了，还能做成事吗？",
+     [("darwin", "a-good-days-work")]),
 ]),
 ("坐不住", "身体与精力", [
     ("我一会儿就想去看手机。",

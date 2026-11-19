@@ -26,6 +26,7 @@ SLUGS = {
     "亨利·福特": "henry-ford",
     "吕不韦": "lu-buwei",
     "子贡": "zigong",
+    "达尔文": "darwin",
     "大癫狂": "popular-delusions",
     "托尔斯坦·凡勃伦": "veblen",
     "西蒙娜·德·波伏瓦": "beauvoir",
