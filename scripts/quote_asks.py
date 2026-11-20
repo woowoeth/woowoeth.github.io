@@ -698,6 +698,12 @@ QUOTE_ASKS = {
     "popular-delusions/one-by-one":
         "人人都在买，我还用问它是什么吗？",
 
+    # 舜
+    "shun/never-caught":
+        "家里人对我狠，我还要管他们吗？",
+    "shun/rich-not-ruling":
+        "坑过我的是亲兄弟，还帮不帮？",
+
     # 达尔文
     "darwin/forestalled":
         "我做了很多年，被人抢先说了。",

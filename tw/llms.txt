@@ -1,11 +1,11 @@
 # OurWord (人類世界生存法則)
 
-> 218 people and books on how the world actually works, across 2,600 years
+> 219 people and books on how the world actually works, across 2,600 years
 > 遇到事了，看看以前的人怎麼處理
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 218 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 219 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
-一個關於「世界到底怎麼運轉」的知識庫：戰略、財富、權力、人性、創業，取自 218 位人物與典籍，跨越 2600 年。每一條都寫清楚這個人真正留下的那一個想法、背後的故事、拆開的分則與例子，以及今天怎麼用。
+一個關於「世界到底怎麼運轉」的知識庫：戰略、財富、權力、人性、創業，取自 219 位人物與典籍，跨越 2600 年。每一條都寫清楚這個人真正留下的那一個想法、背後的故事、拆開的分則與例子，以及今天怎麼用。
 
 ## Read it
 
@@ -20,7 +20,7 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 
 - [工業時代](https://ourword.ai/tw/t/industrial-age/) — 68
 - [現代](https://ourword.ai/tw/t/modern/) — 63
-- [先秦與古典時代](https://ourword.ai/tw/t/classical-era/) — 35
+- [先秦與古典時代](https://ourword.ai/tw/t/classical-era/) — 36
 - [權力與組織](https://ourword.ai/tw/t/power/) — 32
 - [心智與情緒](https://ourword.ai/tw/t/mind/) — 25
 - [財富與風險](https://ourword.ai/tw/t/wealth/) — 23
@@ -29,9 +29,9 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 - [識人與相處](https://ourword.ai/tw/t/people/) — 20
 - [謀略與競爭](https://ourword.ai/tw/t/strategy/) — 20
 - [世界如何運轉](https://ourword.ai/tw/t/world/) — 20
+- [家庭與關係](https://ourword.ai/tw/t/family/) — 18
 - [秦漢至魏晉](https://ourword.ai/tw/t/han-wei/) — 18
 - [中古](https://ourword.ai/tw/t/medieval/) — 18
-- [家庭與關係](https://ourword.ai/tw/t/family/) — 17
 - [身心與生活](https://ourword.ai/tw/t/living/) — 17
 - [近世](https://ourword.ai/tw/t/early-modern/) — 16
 
@@ -423,6 +423,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [史鐵生 · 出生了，就不再是一個可以辯論的問題](https://ourword.ai/tw/i/shi-tiesheng/not-a-question-to-debate/): 史鐵生 · 出生了，就不再是一個可以辯論的問題——我與地壇。「為什麼是我」這個問題要不要想。這一篇要回答的是：史鐵生在地壇裡坐了十五年，把哪幾道題收掉了。
 - [史鐵生 · 職業是生病，業餘在寫作](https://ourword.ai/tw/i/shi-tiesheng/job-is-being-ill/): 史鐵生 · 職業是生病，業餘在寫作——把病放在主位。長期帶著病，怎麼安排日子。這一篇要回答的是：史鐵生為什麼說自己的職業是生病，這句話怎麼用。
 - [史鐵生 · 死是一個必然會降臨的節日](https://ourword.ai/tw/i/shi-tiesheng/death-is-not-urgent/): 史鐵生 · 死是一個必然會降臨的節日——不必急於求成。夜裡想到死就睜眼到天亮的人，怎麼辦。這一篇要回答的是：史鐵生為什麼把死叫做節日，這話對他起了什麼作用。
+- [舜 · 躲開刀，不躲人](https://ourword.ai/tw/i/shun/never-caught/): 舜 · 躲開刀，不躲人——傷害要躲開，人不必走遠。一家人都想要他的命。這一篇要回答的是：家裡人對你狠，遷就和斷掉之外，還有沒有第三條路。
+- [舜 · 給他富貴，不給他權](https://ourword.ai/tw/i/shun/rich-not-ruling/): 舜 · 給他富貴，不給他權——親情照給，傷人的那隻手不交到他手上。弟弟害過他好幾次。這一篇要回答的是：坑過你的親人，幫還是不幫，幫到哪一步為止。
 - [司馬遷 · 他為什麼沒有去死](https://ourword.ai/tw/i/sima-qian/letter-to-ren-an/): 司馬遷 · 他為什麼沒有去死——報任安書。受了說不出口的辱之後，人靠什麼活下去。這一篇要回答的是：司馬遷在信裡怎麼解釋自己沒有自殺。
 - [司馬遷 · 那些書都是在最壞的時候寫的](https://ourword.ai/tw/i/sima-qian/written-in-adversity/): 司馬遷 · 那些書都是在最壞的時候寫的——文王拘而演周易。身處最壞的境地，做得出東西嗎。這一篇要回答的是：司馬遷為什麼在信裡列了一長串倒霉人的名單。
 - [司馬遷 · 活下去需要一件沒做完的事](https://ourword.ai/tw/i/sima-qian/one-thing-to-finish/): 司馬遷 · 活下去需要一件沒做完的事——成一家之言。撐不住的時候，靠什麼撐。這一篇要回答的是：司馬遷給自己定的那件事為什麼定得那麼大。
@@ -576,7 +578,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [AI Bubble Monitor / AI 泡沫檢測儀](https://ourword.ai/ai/)
 - [Zouni / 走你](https://ourword.ai/zouni/)
 
-## Index (218 entrys)
+## Index (219 entrys)
 
 - [BJ·福格](https://ourword.ai/tw/i/bj-fogg/): BJ·福格（2019年·斯坦福行為設計實驗室）——小到不會失敗。斯坦福行為設計實驗室創始人，研究行為如何被設計出來。他給出一個公式：行為發生需要動機、能力、提示三者同時到位。多數人失敗在只調動機——靠決心和自我激勵——而動機天然起伏，靠它維持的習慣必然崩。他的主張相反：把行為縮到小得不需要動機，然後掛在一個已有的動作後面。
 - [C.S.劉易斯](https://ourword.ai/tw/i/cs-lewis/): C.S.劉易斯（1898-1963年·英國牛津）——妻子死後幾個月的日記。作家，牛津和劍橋的教授，寫過《納尼亞傳奇》和大量勸人信仰的書。五十八歲結婚，妻子喬伊四年後因癌症去世。之後幾個月他在四本練習簿上記自己的狀態，後來用筆名出版，就是《卿卿如晤》。收他是因為「重要的人走了」那六個問題，原來靠弗蘭克爾和蘇軾在答——一個是集中營的倖存者，一個是被貶的官員
@@ -739,6 +741,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [羅納德·科斯](https://ourword.ai/tw/i/coase/): 羅納德·科斯（英國·1910—2013）——交易成本。英國經濟學家，1910年生於倫敦，後來到美國，在芝加哥大學教到1982年退休，1991年拿諾貝爾經濟學獎，2013年去世，活了一百零二歲。他一生被引用最多的是兩篇論文，一篇寫在1937年他二十六歲，一篇寫在1960年，各問了一個別人覺得不必問的問題：既然價格能協調一切，為什麼還有
 - [老鼠公園](https://ourword.ai/tw/i/rat-park/): 老鼠公園（1978年·西蒙菲莎大學）——成癮要看籠子。七十年代末的一組實驗，加上一場沒人設計的自然實驗，合起來動搖了關於成癮的一個常識。標準做法是把老鼠單獨關在空籠子裡，給一瓶摻嗎啡的水，它會喝到死——結論看著很硬：一沾就完。布魯斯·亞歷山大問了另一個問題：如果籠子不是空的呢。他造了一個有同伴、有輪子、有隧道的大圍欄，同樣兩瓶水，那
 - [胡雪巖](https://ourword.ai/tw/i/hu-xueyan/): 胡雪巖（清·1823-1885）——靠山。晚清最著名的商人，白手起家做到大清首富，官至布政使銜、賞穿黃馬褂、戴二品紅頂子——「紅頂商人」這個詞就是為他造的。他也是中國近代第一個和外商正面打商戰的人，並且輸得乾乾淨淨：從巔峰到抄家，只用了兩年。他的成功和失敗，用的是同一套邏輯。（注意：坊間流傳的大量「胡雪巖語錄」出自高陽的
+- [舜](https://ourword.ai/tw/i/shun/): 舜（上古·傳說時代·《史記·五帝本紀》）——處家。舜，名重華，傳說中的五帝之一。堯把天下讓給他，他又讓給禹，「堯舜」從此成了中國人說好君主的代稱。他出身平民，父親瞽叟、繼母和異母弟象都想殺他，他二十歲就以孝出名。他是傳說時代的人物，這裡的事都照《史記·五帝本紀》和《孟子》的記載講。收他是因為家裡那幾組處境：現有篇目講的多是怎麼劃
 - [艾利克森](https://ourword.ai/tw/i/ericsson/): 艾利克森（1993年·刻意練習研究）——練法比時長重要。心理學家，專門研究各領域頂尖高手是怎麼練出來的。他最廣為人知的研究被流行文化簡化成了「一萬小時定律」，而這恰恰是他反覆澄清過的誤讀——決定水平的不是時長，是練法。重複做已經會的事，做十年也不會變強；只有持續在能力邊緣、帶著明確目標和即時反饋的練習，才產生進步。他把這種練法叫「刻意
 - [蘇格拉底](https://ourword.ai/tw/i/socrates/): 蘇格拉底（古希臘·前470-前399）——無知之知。他沒有留下任何文字，所有思想都通過對話流傳下來。他是職業哲學家裡最窮的那個，不收學費，整天在廣場上問人問題。他被雅典判處死刑，罪名是「腐蝕青年」和「不敬神」——其實是因為他的問題讓權貴太難堪。他可以逃跑，弟子們為他安排好了一切，他拒絕了，飲下毒芹。兩千年來，他是人類史上死得最明白
 - [蘇秦](https://ourword.ai/tw/i/su-qin/): 蘇秦（戰國·生年不詳）——先補本事。戰國縱橫家，《史記》有本傳，說他出自鬼谷先生門下，主張六國聯合抗秦，一度佩六國相印。據《史記》，他最落魄的一年，是上書秦惠王十次都沒成，穿破皮袍、花光了錢回家，妻子嫂子父母都不理他。這一頁只取他的兩件事：被拒之後先回去補什麼，以及被拒的時候要不要換一個更需要你的人。（馬王堆帛書《

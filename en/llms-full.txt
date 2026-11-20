@@ -1,7 +1,7 @@
-# OurWord — 218 people and books on how the world actually works, across 2,600 years
+# OurWord — 219 people and books on how the world actually works, across 2,600 years
 # OurWord — See how people before you handled it.
 # https://ourword.ai/en/
-# Full corpus, plain text. 218 entrys.
+# Full corpus, plain text. 219 entrys.
 
 ========================================================================
 ## Albert Einstein
@@ -4310,7 +4310,7 @@ The people come first, the altars of the state next, the ruler last. He who has 
 Han Feizi — Both are writing about how to govern. Han Feizi trusts reward and punishment; Mencius asks whether people are still willing to follow you at all. The Analects — The Analects tells a gentleman how to conduct himself; Mencius tells a ruler what will remove him. Xunzi — One holds that people can be taught, the other that people can be shaped. Mencius cultivates; Xunzi processes. Mozi — Mencius condemned the Mohists for impartial care, saying it left a man with no father. Both lived by persuading rulers: Mencius first showed the ruler righteousness, Mozi first showed him the bill.
 
 ### Further
-The Analects Han Feizi Shang Yang Li Shimin Lee Kuan Yew Xunzi Family Instructions for the Yan Clan The Book of Rites Mozi
+The Analects Han Feizi Shang Yang Li Shimin Lee Kuan Yew Xunzi Family Instructions for the Yan Clan The Book of Rites Mozi Shun
 
 ========================================================================
 ## Michael Porter
@@ -5192,7 +5192,7 @@ No empty praise, no concealment of evil: therefore, a true record. To examine al
 Sima Qian — The same story from two sides: his page is about why a man chose to stay alive in order to finish it, this one is about the method the book itself laid down. The Comprehensive Mirror — Two philosophies of Chinese historical writing: the Records write people, the Mirror writes the system — one shows how a person works, the other how power works. Sapiens — Two scales of historical narrative: Sima Qian lights up history through individual fates, Harari takes the species apart.
 
 ### Further
-The Comprehensive Mirror Han Xin Liu Bang Fan Li Bai Gui Viktor Frankl Strategies of the Warring States Sima Qian
+The Comprehensive Mirror Han Xin Liu Bang Fan Li Bai Gui Viktor Frankl Strategies of the Warring States Sima Qian Shun
 
 ========================================================================
 ## Ren Zhengfei
@@ -5631,6 +5631,40 @@ Arthur Kleinman — One is a doctor writing about patients, the other is the pat
 
 ### Further
 Arthur Kleinman Viktor Frankl Su Shi Montaigne
+
+========================================================================
+## Shun
+URL: https://ourword.ai/en/i/shun/
+Tags: Family and relationships, Pre-Qin and classical, Family
+
+Shun (Legendary age · Records of the Grand Historian) — Family. Shun, one of the legendary Five Emperors. Yao passed the realm to him and he passed it to Yu, and 'Yao and Shun' became the Chinese byword for good rulers.
+
+### Q: What did this one leave behind?
+Shun, one of the legendary Five Emperors. Yao passed the realm to him and he passed it to Yu, and 'Yao and Shun' became the Chinese byword for good rulers. He was born a commoner; his father, his stepmother and his half-brother Xiang all tried to kill him, and by twenty he was known for devotion to them. Everything here follows Sima Qian and Mencius. He is here for families that do real harm, where neither giving in nor cutting off will do.
+
+### Q: What actually happened?
+When Yao grew old he asked who could be trusted, and the chiefs of the four quarters named Shun. Yao gave him his two daughters in marriage, to see how he ran his house, and sent his nine sons to live beside him, to see how he dealt with others. Where Shun farmed, at Mount Li, people yielded field boundaries to one another. Where he fished, they yielded the best spots. Where he made pots, no pot was shoddy. Wherever he settled, in a year it was a village, in two a town, in three a city.
+
+### The parts · A thirty-one-year trial
+Yao raised him at thirty, had him act for the throne at fifty, and died when Shun was fifty-eight. Shun took the throne at sixty-one. For thirty-one years he was watched and tested before he was given the thing itself. e.g. The long probation before anyone trusts you is part of the answer, not a delay before it.
+
+### The parts · The imperial banner at his father's door
+As emperor he went to pay his respects to his father under the imperial banner, with all the care of a son. The ranks between them had turned over; what he did there was still a son's part. e.g. Once you have the upper hand, you need not go back to collect an apology.
+
+### The parts · Not to his own son
+His son Shangjun was unworthy, so Shun put Yu forward as his successor. After Shun died and the mourning ended, Yu stepped aside for Shangjun, but the lords all went to Yu, and only then did he take the throne. e.g. Give the post to the most capable person, not the closest one.
+
+### Q: How do I use it today?
+This week think of the person at home who is hardest on you. Make two columns: what I can give him (time, money, company) and what I will not put in his hands (keys, passwords, decisions about my life). Look at the page before you next see him.
+
+### Lines to keep
+Wherever he settled, people gathered. The ranks turned over; he still played the son. The post goes to the most capable, not the closest.
+
+### Q: What should I read alongside?
+The Duke of Zhou — Both had brothers who turned on them. Xiang tried to kill Shun, and Shun as emperor gave him a fief but no say in running it. The Duke of Zhou's brothers Guan and Cai joined Wugeng's rising, and the Duke marched against them, executing Guan and exiling Cai. Xiang threatened one man; Guan took up arms against the realm. Once others are hurt, kinship no longer covers it.
+
+### Further
+Mencius The Duke of Zhou Records of the Grand Historian
 
 ========================================================================
 ## Sima Qian
@@ -6549,10 +6583,10 @@ Pick one matter where you are suspected and cannot walk away. Write three lines:
 I do not step aside because I fear the realm will turn against Zhou. One bath, three times I seize my hair; one meal, three times I rise. Bury me at Chengzhou, to show I dare not leave King Cheng.
 
 ### Q: What should I read alongside?
-Guo Ziyi — Both were suspected by their courts. Guo Ziyi made himself smaller: he opened his gates and let anyone walk in, showing he was harmless. The duke would not hide. He told those carrying the work with him, and let the finished work answer. One showed he was no threat, the other showed the work could not do without him. Li Shimin — Both wanted to hear the uncomfortable thing. Li Shimin relied on ministers like Wei Zheng and tolerated being contradicted. The duke opened the door first and went out to meet people with his hair still wet. One relied on tolerance, the other on lowering the cost of reaching him.
+Guo Ziyi — Both were suspected by their courts. Guo Ziyi made himself smaller: he opened his gates and let anyone walk in, showing he was harmless. The duke would not hide. He told those carrying the work with him, and let the finished work answer. One showed he was no threat, the other showed the work could not do without him. Li Shimin — Both wanted to hear the uncomfortable thing. Li Shimin relied on ministers like Wei Zheng and tolerated being contradicted. The duke opened the door first and went out to meet people with his hair still wet. One relied on tolerance, the other on lowering the cost of reaching him. Shun — Both had brothers who turned on them. Xiang tried to kill Shun, and Shun as emperor gave him a fief but no say in running it. The Duke of Zhou's brothers Guan and Cai joined Wugeng's rising, and the Duke marched against them, executing Guan and exiling Cai. Xiang threatened one man; Guan took up arms against the realm. Once others are hurt, kinship no longer covers it.
 
 ### Further
-Guo Ziyi Li Shimin Zhang Liang Shang Yang
+Guo Ziyi Li Shimin Zhang Liang Shang Yang Shun
 
 ========================================================================
 ## The I Ching
@@ -20627,6 +20661,72 @@ Where it goes wrong: reading it as being above life and death. He was not above 
 It is certainly coming, so there is no need to hurry.
 The thought that returns at night was never followed through by day.
 How to live waits until whether to die leaves the table.
+
+========================================================================
+## Shun · Out of reach, never out of call
+URL: https://ourword.ai/en/i/shun/never-caught/
+Source: Sima Qian, Records of the Grand Historian, Basic Annals of the Five Emperors
+Tags: Deep read, Shun, Step away from the harm without walking away from the people
+
+His whole household wanted him dead. Between giving in and cutting them off, is there a third way to stand?
+
+### Q: What actually happened?
+Shun's father was blind. His mother died, his father remarried and had another son, Xiang, and favoured him. Father, stepmother and Xiang all wanted Shun dead. His father sent him up to plaster the granary roof and set fire to it from below; sent him to dig a well and, once he was deep, filled it with earth alongside Xiang. Shun came out both times and went on serving them. The historian sums up the house in a line: when they wanted to kill him, he could not be found; when they needed him, he was at their side.
+
+### The parts · Punishment, yes; murder, no
+He did not simply take whatever came. The record is precise: when his father meant to kill him he slipped away; when he had done some small wrong, he accepted the punishment. The household's rules he would follow. His life he would not hand over.
+e.g. A parent's scolding you can sit through. Violence, broken things, your money taken: leave the room.
+
+### The parts · Hard to hurt, easy to find
+When they wanted to kill him, nobody could find him. When there was real need, he was there. What he stepped away from was the harm of that moment, not the family. He was known for devotion at twenty, and never walked into the fire to prove it.
+e.g. Move out, stop answering the midnight calls, and still be at the hospital the day your father is admitted.
+
+### The parts · Dig the side tunnel first
+His obedience was not naive. On the granary roof he had two broad straw hats, and when the fire rose he used them to break his fall. Digging the well, he first cut a hidden passage out to one side, and left by it.
+e.g. Going back to a home where you know it will go wrong? Book the ticket out before you walk in.
+
+### Q: How do I use it today?
+Where you are: someone at home is cruel to you, through years of contempt, a raised hand or being their outlet, and you swing between giving in and cutting them off.
+Ask first: what can I put up with, and what will I not hand over? Can I be present without standing next to the fire?
+Where it goes wrong: reading it as 'however bad your parents are, endure and obey'. Shun did not stand in the fire. When his life was at stake he ran, and ran where no one could find him. What the record praises is not endurance but the line he drew. Staying within call was his choice, not a debt anyone can collect from you.
+
+### Lines to keep
+He stepped away from the fire, not from the family.
+Keep your life, and keep within call.
+Before you walk in, know how you walk out.
+
+========================================================================
+## Shun · Wealth, but no power
+URL: https://ourword.ai/en/i/shun/rich-not-ruling/
+Source: Sima Qian, Basic Annals of the Five Emperors; Mencius, Wan Zhang I
+Tags: Deep read, Shun, Give family everything except the hand that can hurt others
+
+His brother tried to kill him more than once. Help a relative who wronged you, and how far?
+
+### Q: What actually happened?
+With the well filled in, Xiang thought Shun was dead and divided his things: the cattle and granaries to their parents, Shun's two wives and his zither to himself. He moved straight into Shun's house and sat playing the zither. Shun walked in. Xiang froze, plainly displeased, and said he had been sick at heart with missing him. Shun did not call the lie; he let it stand. Afterwards he served his father and cared for his brother more carefully than ever. Later, as emperor, he made Xiang a lord.
+
+### The parts · He came as a brother, so receive him as one
+A disciple of Mencius asked: did Shun not know Xiang meant to kill him? Of course he knew, Mencius said. When Xiang was sad, Shun was sad; when Xiang was glad, so was he. Xiang came in the guise of a loving brother, and Shun took him in that guise.
+e.g. The cousin who cheated you comes for the new year. At the table he is a guest; the old account waits.
+
+### The parts · Give the wealth in full
+The disciple pressed: Shun exiled or executed other wicked men, yet gave the worst of them a fief. What had its people done? Mencius: a good man holds no hidden anger towards his brother. Love him and you want him honoured and rich.
+e.g. If your brother cannot get by, money you can give, and the dignity that goes with it.
+
+### The parts · Give none of the power
+Then Mencius added: Xiang could do nothing in his own fief. The emperor sent officials to govern it and passed only the taxes to Xiang, which is why some called it exile. He could not take it out on those people, and Shun saw him often.
+e.g. Lend a relative money, by all means. The company seal, the bank passwords, the job of managing people: no.
+
+### Q: How do I use it today?
+Where you are: someone in your family wronged you badly, with an unpaid debt, a quiet sabotage or worse, and is back in your life. You cannot decide between breaking with him and carrying on.
+Ask first: what can I give him, and what must never be put in his hands?
+Where it goes wrong: reading it as 'forgive and prop up family whatever they do'. Shun gave Xiang income and rank and no say at all in governing; the people of the fief had the emperor's officials between them and him. That is where Mencius rests the defence. If you cannot tell those two apart, your generosity is paid for by someone else.
+
+### Lines to keep
+Money and a title, yes. The knife, no.
+No hidden anger, no grudge, and no power.
+Kindness that someone else pays for is not kindness.
 
 ========================================================================
 ## Sima Qian · Why he did not kill himself

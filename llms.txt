@@ -1,11 +1,11 @@
 # OurWord (人类世界生存法则)
 
-> 218 people and books on how the world actually works, across 2,600 years
+> 219 people and books on how the world actually works, across 2,600 years
 > 遇到事了，看看以前的人怎么处理
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 218 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 219 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
-一个关于「世界到底怎么运转」的知识库：战略、财富、权力、人性、创业，取自 218 位人物与典籍，跨越 2600 年。每一条都写清楚这个人真正留下的那一个想法、背后的故事、拆开的分则与例子，以及今天怎么用。
+一个关于「世界到底怎么运转」的知识库：战略、财富、权力、人性、创业，取自 219 位人物与典籍，跨越 2600 年。每一条都写清楚这个人真正留下的那一个想法、背后的故事、拆开的分则与例子，以及今天怎么用。
 
 ## Read it
 
@@ -20,7 +20,7 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 
 - [工业时代](https://ourword.ai/t/industrial-age/) — 68
 - [现代](https://ourword.ai/t/modern/) — 63
-- [先秦与古典时代](https://ourword.ai/t/classical-era/) — 35
+- [先秦与古典时代](https://ourword.ai/t/classical-era/) — 36
 - [权力与组织](https://ourword.ai/t/power/) — 32
 - [心智与情绪](https://ourword.ai/t/mind/) — 25
 - [财富与风险](https://ourword.ai/t/wealth/) — 23
@@ -29,9 +29,9 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 - [识人与相处](https://ourword.ai/t/people/) — 20
 - [谋略与竞争](https://ourword.ai/t/strategy/) — 20
 - [世界如何运转](https://ourword.ai/t/world/) — 20
+- [家庭与关系](https://ourword.ai/t/family/) — 18
 - [秦汉至魏晋](https://ourword.ai/t/han-wei/) — 18
 - [中古](https://ourword.ai/t/medieval/) — 18
-- [家庭与关系](https://ourword.ai/t/family/) — 17
 - [身心与生活](https://ourword.ai/t/living/) — 17
 - [近世](https://ourword.ai/t/early-modern/) — 16
 
@@ -423,6 +423,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [史铁生 · 出生了，就不再是一个可以辩论的问题](https://ourword.ai/i/shi-tiesheng/not-a-question-to-debate/): 史铁生 · 出生了，就不再是一个可以辩论的问题——我与地坛。「为什么是我」这个问题要不要想。这一篇要回答的是：史铁生在地坛里坐了十五年，把哪几道题收掉了。
 - [史铁生 · 职业是生病，业余在写作](https://ourword.ai/i/shi-tiesheng/job-is-being-ill/): 史铁生 · 职业是生病，业余在写作——把病放在主位。长期带着病，怎么安排日子。这一篇要回答的是：史铁生为什么说自己的职业是生病，这句话怎么用。
 - [史铁生 · 死是一个必然会降临的节日](https://ourword.ai/i/shi-tiesheng/death-is-not-urgent/): 史铁生 · 死是一个必然会降临的节日——不必急于求成。夜里想到死就睁眼到天亮的人，怎么办。这一篇要回答的是：史铁生为什么把死叫做节日，这话对他起了什么作用。
+- [舜 · 躲开刀，不躲人](https://ourword.ai/i/shun/never-caught/): 舜 · 躲开刀，不躲人——伤害要躲开，人不必走远。一家人都想要他的命。这一篇要回答的是：家里人对你狠，迁就和断掉之外，还有没有第三条路。
+- [舜 · 给他富贵，不给他权](https://ourword.ai/i/shun/rich-not-ruling/): 舜 · 给他富贵，不给他权——亲情照给，伤人的那只手不交到他手上。弟弟害过他好几次。这一篇要回答的是：坑过你的亲人，帮还是不帮，帮到哪一步为止。
 - [司马迁 · 他为什么没有去死](https://ourword.ai/i/sima-qian/letter-to-ren-an/): 司马迁 · 他为什么没有去死——报任安书。受了说不出口的辱之后，人靠什么活下去。这一篇要回答的是：司马迁在信里怎么解释自己没有自杀。
 - [司马迁 · 那些书都是在最坏的时候写的](https://ourword.ai/i/sima-qian/written-in-adversity/): 司马迁 · 那些书都是在最坏的时候写的——文王拘而演周易。身处最坏的境地，做得出东西吗。这一篇要回答的是：司马迁为什么在信里列了一长串倒霉人的名单。
 - [司马迁 · 活下去需要一件没做完的事](https://ourword.ai/i/sima-qian/one-thing-to-finish/): 司马迁 · 活下去需要一件没做完的事——成一家之言。撑不住的时候，靠什么撑。这一篇要回答的是：司马迁给自己定的那件事为什么定得那么大。
@@ -576,7 +578,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [AI Bubble Monitor / AI 泡沫检测仪](https://ourword.ai/ai/)
 - [Zouni / 走你](https://ourword.ai/zouni/)
 
-## Index (218 entrys)
+## Index (219 entrys)
 
 - [BJ·福格](https://ourword.ai/i/bj-fogg/): BJ·福格（2019年·斯坦福行为设计实验室）——小到不会失败。斯坦福行为设计实验室创始人，研究行为如何被设计出来。他给出一个公式：行为发生需要动机、能力、提示三者同时到位。多数人失败在只调动机——靠决心和自我激励——而动机天然起伏，靠它维持的习惯必然崩。他的主张相反：把行为缩到小得不需要动机，然后挂在一个已有的动作后面。
 - [C.S.刘易斯](https://ourword.ai/i/cs-lewis/): C.S.刘易斯（1898-1963年·英国牛津）——妻子死后几个月的日记。作家，牛津和剑桥的教授，写过《纳尼亚传奇》和大量劝人信仰的书。五十八岁结婚，妻子乔伊四年后因癌症去世。之后几个月他在四本练习簿上记自己的状态，后来用笔名出版，就是《卿卿如晤》。收他是因为「重要的人走了」那六个问题，原来靠弗兰克尔和苏轼在答——一个是集中营的幸存者，一个是被贬的官员
@@ -739,6 +741,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [罗纳德·科斯](https://ourword.ai/i/coase/): 罗纳德·科斯（英国·1910—2013）——交易成本。英国经济学家，1910年生于伦敦，后来到美国，在芝加哥大学教到1982年退休，1991年拿诺贝尔经济学奖，2013年去世，活了一百零二岁。他一生被引用最多的是两篇论文，一篇写在1937年他二十六岁，一篇写在1960年，各问了一个别人觉得不必问的问题：既然价格能协调一切，为什么还有
 - [老鼠公园](https://ourword.ai/i/rat-park/): 老鼠公园（1978年·西蒙菲莎大学）——成瘾要看笼子。七十年代末的一组实验，加上一场没人设计的自然实验，合起来动摇了关于成瘾的一个常识。标准做法是把老鼠单独关在空笼子里，给一瓶掺吗啡的水，它会喝到死——结论看着很硬：一沾就完。布鲁斯·亚历山大问了另一个问题：如果笼子不是空的呢。他造了一个有同伴、有轮子、有隧道的大围栏，同样两瓶水，那
 - [胡雪岩](https://ourword.ai/i/hu-xueyan/): 胡雪岩（清·1823-1885）——靠山。晚清最著名的商人，白手起家做到大清首富，官至布政使衔、赏穿黄马褂、戴二品红顶子——「红顶商人」这个词就是为他造的。他也是中国近代第一个和外商正面打商战的人，并且输得干干净净：从巅峰到抄家，只用了两年。他的成功和失败，用的是同一套逻辑。（注意：坊间流传的大量「胡雪岩语录」出自高阳的
+- [舜](https://ourword.ai/i/shun/): 舜（上古·传说时代·《史记·五帝本纪》）——处家。舜，名重华，传说中的五帝之一。尧把天下让给他，他又让给禹，「尧舜」从此成了中国人说好君主的代称。他出身平民，父亲瞽叟、继母和异母弟象都想杀他，他二十岁就以孝出名。他是传说时代的人物，这里的事都照《史记·五帝本纪》和《孟子》的记载讲。收他是因为家里那几组处境：现有篇目讲的多是怎么划
 - [艾利克森](https://ourword.ai/i/ericsson/): 艾利克森（1993年·刻意练习研究）——练法比时长重要。心理学家，专门研究各领域顶尖高手是怎么练出来的。他最广为人知的研究被流行文化简化成了「一万小时定律」，而这恰恰是他反复澄清过的误读——决定水平的不是时长，是练法。重复做已经会的事，做十年也不会变强；只有持续在能力边缘、带着明确目标和即时反馈的练习，才产生进步。他把这种练法叫「刻意
 - [苏格拉底](https://ourword.ai/i/socrates/): 苏格拉底（古希腊·前470-前399）——无知之知。他没有留下任何文字，所有思想都通过对话流传下来。他是职业哲学家里最穷的那个，不收学费，整天在广场上问人问题。他被雅典判处死刑，罪名是「腐蚀青年」和「不敬神」——其实是因为他的问题让权贵太难堪。他可以逃跑，弟子们为他安排好了一切，他拒绝了，饮下毒芹。两千年来，他是人类史上死得最明白
 - [苏秦](https://ourword.ai/i/su-qin/): 苏秦（战国·生年不详）——先补本事。战国纵横家，《史记》有本传，说他出自鬼谷先生门下，主张六国联合抗秦，一度佩六国相印。据《史记》，他最落魄的一年，是上书秦惠王十次都没成，穿破皮袍、花光了钱回家，妻子嫂子父母都不理他。这一页只取他的两件事：被拒之后先回去补什么，以及被拒的时候要不要换一个更需要你的人。（马王堆帛书《
