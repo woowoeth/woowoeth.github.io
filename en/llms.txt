@@ -1,9 +1,9 @@
 # OurWord (OurWord)
 
-> 219 people and books on how the world actually works, across 2,600 years
+> 220 people and books on how the world actually works, across 2,600 years
 > See how people before you handled it.
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 219 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 220 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
 ## Read it
 
@@ -17,7 +17,7 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 ## Topics
 
 - [Modern](https://ourword.ai/en/t/modern/) — 67
-- [The industrial age](https://ourword.ai/en/t/the-industrial-age/) — 64
+- [The industrial age](https://ourword.ai/en/t/the-industrial-age/) — 65
 - [Pre-Qin and classical](https://ourword.ai/en/t/pre-qin-and-classical/) — 34
 - [Power and organisation](https://ourword.ai/en/t/power-and-organisation/) — 32
 - [Mind and feeling](https://ourword.ai/en/t/mind-and-feeling/) — 24
@@ -28,8 +28,8 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 - [How the world works](https://ourword.ai/en/t/how-the-world-works/) — 21
 - [Reading people](https://ourword.ai/en/t/reading-people/) — 20
 - [Strategy and competition](https://ourword.ai/en/t/strategy-and-competition/) — 20
+- [Body and daily life](https://ourword.ai/en/t/body-and-daily-life/) — 18
 - [Family and relationships](https://ourword.ai/en/t/family-and-relationships/) — 18
-- [Body and daily life](https://ourword.ai/en/t/body-and-daily-life/) — 17
 - [Early modern](https://ourword.ai/en/t/early-modern/) — 16
 - [Medieval](https://ourword.ai/en/t/medieval/) — 15
 
@@ -500,6 +500,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [Norbert Wiener · He wrote to the union first](https://ourword.ai/en/i/wiener/wrote-to-the-union/): Norbert Wiener · He wrote to the union first — Before automation landed. Is there a move to make before a technology reaches you? What the man who built it did first.
 - [Norbert Wiener · What a machine can do, and what to give it](https://ourword.ai/en/i/wiener/human-use/): Norbert Wiener · What a machine can do, and what to give it — Two separate questions. Which work belongs to a tool and which doesn't. Why Wiener said capability doesn't settle it.
 - [Norbert Wiener · Control is a loop, not an order](https://ourword.ai/en/i/wiener/feedback-not-command/): Norbert Wiener · Control is a loop, not an order — Seeing the result beats issuing instructions. Why the thing you carefully explained still comes back wrong. How Wiener defined control instead.
+- [William James · This time doesn't count](https://ourword.ai/en/i/william-james/no-exceptions/): William James · This time doesn't count — Until a new habit has taken root, allow no exceptions. You have made the resolution many times. Why does it always break on 'just this once'?
+- [William James · Decide, then let go](https://ourword.ai/en/i/william-james/unclamp/): William James · Decide, then let go — Most tension is a learned manner, not a measure of the workload. The work is not that heavy, yet you never come off the boil. Where does the tension come from, and where should it stop?
 - [Donald Winnicott · A Joy to Be Hidden](https://ourword.ai/en/i/winnicott/joy-to-be-hidden/): Donald Winnicott · A Joy to Be Hidden — The closed door is not a refusal of you. Your child shuts the bedroom door and will not say a word. Do you go in, or leave him alone? Winnicott's answer is that the question has two halves.
 - [Donald Winnicott · The Self That Says Yes](https://ourword.ai/en/i/winnicott/the-compliant-self/): Donald Winnicott · The Self That Says Yes — The most successful false self is the one nobody can see. You are good at everything and never any trouble, yet something feels empty. Winnicott asks who it is that is so easy to get along with.
 - [Donald Winnicott · Alone in the Room](https://ourword.ai/en/i/winnicott/alone-in-company/): Donald Winnicott · Alone in the Room — Being able to be alone is what being well accompanied leaves behind. Two people sit in one room all afternoon and neither speaks. Has it gone cold, or has it grown comfortable? Winnicott gives you a way to tell.
@@ -572,7 +574,7 @@ Cite the individual page URL, not the homepage — each entry page is stable and
 - [AI Bubble Monitor](https://ourword.ai/ai/)
 - [Zouni](https://ourword.ai/zouni/)
 
-## Index (219 entrys)
+## Index (220 entrys)
 
 - [Albert Einstein](https://ourword.ai/en/i/einstein/): Albert Einstein (Germany · 1879–1955) — Imagination. The physicist, and the father of relativity — but the legacy that travels furthest is not a formula, it is a way of working.
 - [Albert O. Hirschman](https://ourword.ai/en/i/hirschman/): Albert O. Hirschman (United States · 1915-2012) — Voice. A German-born American economist. He left Berlin in 1933, fought in Spain in 1936, spent 1940 in Marseille forging papers and finding mountain…
@@ -775,6 +777,7 @@ Cite the individual page URL, not the homepage — each entry page is stable and
 - [Warren Buffett](https://ourword.ai/en/i/buffett/): Warren Buffett (Contemporary · 1930–) — The moat. Sixty years of compounding, and a method simple enough to say in a sentence: buy a business with a durable advantage at a sensible price and then do…
 - [Wei Zheng](https://ourword.ai/en/i/wei-zheng/): Wei Zheng (Tang · 580–643) — Plain speaking. A leading minister of the early Tang, with biographies in both Tang histories. He served Li Mi and Dou Jiande before ending up in the household of the…
 - [Why Nations Fail](https://ourword.ai/en/i/why-nations-fail/): Why Nations Fail (2012 · Acemoglu and Robinson) — Institutions. Daron Acemoglu and James Robinson, published in 2012. The argument is blunt: whether a country is rich or poor turns on neither…
+- [William James](https://ourword.ai/en/i/william-james/): William James (United States · 1842–1910) — Habit. American psychologist and philosopher, founder of psychology as a science in the United States.
 - [Winston Churchill](https://ourword.ai/en/i/churchill/): Winston Churchill (1874–1965 · Britain) — Ten years out, back at 65. Politician and writer. He went out with the government in 1929, lost the Exchequer, and held no office for ten years — the…
 - [Wu Zetian](https://ourword.ai/en/i/wu-zetian/): Wu Zetian (Tang · 624–705) — Breaking the frame. The only woman to rule China as emperor in her own name. She entered the palace at fourteen as a junior concubine and abdicated at eighty, and in…
 - [Xiang Yu](https://ourword.ai/en/i/xiang-yu/): Xiang Yu (Chu · 232–202 BC) — Unbending. The most complete loser in Chinese history, which is why he is worth the time. He brought down the Qin almost single-handedly, something his rival could not…

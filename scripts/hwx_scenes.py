@@ -1392,6 +1392,8 @@ SCENES = [
      [("ericsson", "not-ten-thousand-hours"), ("vygotsky", "zpd")]),
     ("热情一过，我就断了。",
      [("murakami", "focus-and-endurance"), ("bj-fogg", "tiny-habits")]),
+    ("我总跟自己说，就这一次不算。",
+     [("william-james", "no-exceptions")]),
 ]),
 ("长期紧绷", "身体与精力", [
     ("我好像很久没真正松下来了。",
@@ -1406,6 +1408,8 @@ SCENES = [
      [("huangdi-neijing", "mind-kept-within")]),
     ("我一放松下来就有罪恶感。",
      [("liji", "one-tension-one-release")]),
+    ("我一干活就急，像有人在后面追。",
+     [("william-james", "unclamp")]),
 ]),
 ("想戒又戒不掉", "身体与精力", [
     ("「等这阵过了」我说了几次了。",

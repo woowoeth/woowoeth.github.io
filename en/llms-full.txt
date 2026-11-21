@@ -1,7 +1,7 @@
-# OurWord — 219 people and books on how the world actually works, across 2,600 years
+# OurWord — 220 people and books on how the world actually works, across 2,600 years
 # OurWord — See how people before you handled it.
 # https://ourword.ai/en/
-# Full corpus, plain text. 219 entrys.
+# Full corpus, plain text. 220 entrys.
 
 ========================================================================
 ## Albert Einstein
@@ -334,7 +334,7 @@ You do not rise to the level of your goals. You fall to the level of your system
 Benjamin Franklin — Two schemes of self-improvement: Franklin worked one virtue a week by attention, Clear takes the four stages of a behaviour apart and edits the surroundings instead. Zeng Guofan — Both accumulate by small daily acts: Zeng Guofan by a written daily examination of himself, Clear by design that removes the need for one. Augustine — One gives the method for redesigning the system, the other reports what is happening inside when no method will go in. BJ Fogg — Clear works on the system and the identity, Fogg on the trigger and the smallest possible action. One changes the frame, the other moves the starting line. Cal Newport — Both work by design rather than by will: Clear edits the environment to lower the cost of starting, Newport edits the diary to protect the block.
 
 ### Further
-Benjamin Franklin Bruce Lee Anders Ericsson Zeng Guofan Augustine BJ Fogg Cal Newport Mihaly Csikszentmihalyi
+Benjamin Franklin Bruce Lee Anders Ericsson Zeng Guofan Augustine BJ Fogg Cal Newport Mihaly Csikszentmihalyi William James
 
 ========================================================================
 ## Attachment Theory
@@ -442,7 +442,7 @@ Behavior happens when motivation, ability and a prompt come together. Shrink the
 Atomic Habits — Clear works on the system and the identity, Fogg on the trigger and the smallest possible action. One changes the frame, the other moves the starting line. Benjamin Franklin — Franklin practised one virtue a week and ran on self-discipline. Fogg lowers the difficulty until no discipline is required. Haruki Murakami — Two ends of one idea: Fogg shrinks the behaviour until the worst day can do it, Murakami caps the daily output so the best day cannot overspend.
 
 ### Further
-Atomic Habits Mihaly Csikszentmihalyi Cal Newport Benjamin Franklin Augustine Haruki Murakami
+Atomic Habits Mihaly Csikszentmihalyi Cal Newport Benjamin Franklin Augustine Haruki Murakami William James
 
 ========================================================================
 ## Bai Gui
@@ -553,10 +553,10 @@ Turn self-improvement from resolve into a system. Pick one behaviour for this we
 Never leave that till tomorrow which you can do today. It is hard for an empty bag to stand upright. Well done is better than well said. He that has once done you a kindness will be more ready to do you another.
 
 ### Q: What should I read alongside?
-Zeng Guofan — The matched pair of the two hemispheres: both of ordinary natural ability, both forging themselves with a daily ledger — between them the evidence that character is an engineering problem rather than a gift. Naval Ravikant — The same algorithm two hundred and fifty years apart: compounding, leverage, reputation, and the pursuit of knowledge once money stops being the question. La Rochefoucauld — Franklin believed virtue could be drilled in with a chart. La Rochefoucauld thought what gets drilled in is the appearance of virtue. Read the two together for a year. Atomic Habits — Two schemes of self-improvement: Franklin worked one virtue a week by attention, Clear takes the four stages of a behaviour apart and edits the surroundings instead. BJ Fogg — Franklin practised one virtue a week and ran on self-discipline. Fogg lowers the difficulty until no discipline is required.
+Zeng Guofan — The matched pair of the two hemispheres: both of ordinary natural ability, both forging themselves with a daily ledger — between them the evidence that character is an engineering problem rather than a gift. Naval Ravikant — The same algorithm two hundred and fifty years apart: compounding, leverage, reputation, and the pursuit of knowledge once money stops being the question. La Rochefoucauld — Franklin believed virtue could be drilled in with a chart. La Rochefoucauld thought what gets drilled in is the appearance of virtue. Read the two together for a year. Atomic Habits — Two schemes of self-improvement: Franklin worked one virtue a week by attention, Clear takes the four stages of a behaviour apart and edits the surroundings instead. BJ Fogg — Franklin practised one virtue a week and ran on self-discipline. Fogg lowers the difficulty until no discipline is required. William James — Both taught people to change their habits. Franklin listed thirteen virtues, watched one a week, marked each fault with a black spot in a little book, and admitted he never reached the perfection he wanted, only became better and happier. James said to allow no exception until a new habit has rooted, because every lapse is counted. One tolerates daily marks and lets them shrink; the other refuses the first gap.
 
 ### Further
-Zeng Guofan Charlie Munger Warren Buffett Naval Ravikant Xunzi Atomic Habits BJ Fogg Cal Newport
+Zeng Guofan Charlie Munger Warren Buffett Naval Ravikant Xunzi Atomic Habits BJ Fogg Cal Newport William James
 
 ========================================================================
 ## Benjamin Graham
@@ -7361,6 +7361,40 @@ The Wealth of Nations — Smith says the market runs itself; this book says some
 
 ### Further
 The Wealth of Nations The Old Regime and the Revolution Shang Yang Sapiens Technological Revolutions Lee Kuan Yew Guns, Germs, and Steel
+
+========================================================================
+## William James
+URL: https://ourword.ai/en/i/william-james/
+Tags: Body and daily life, The industrial age, Habit
+
+William James (United States · 1842–1910) — Habit. American psychologist and philosopher, founder of psychology as a science in the United States.
+
+### Q: What did this one leave behind?
+American psychologist and philosopher, founder of psychology as a science in the United States. Trained as a doctor, he began teaching psychology at Harvard in the 1870s, and in 1890 published the two volumes of The Principles of Psychology, whose chapters on habit, attention, emotion and will are still quoted. He is here for two everyday things: why habits break on 'just this once', and why people stay tense when the work is not that heavy.
+
+### Q: What actually happened?
+In 1869 James, twenty-seven, took his medical degree at Harvard and was ill, listless and unsure what to do; that winter his diary is full of misery. In the spring of 1870 he read the French philosopher Charles Renouvier on free will and wrote that he would assume, at least until next year, that it was no illusion: "My first act of free will shall be to believe in free will." He did not wait for a proof. Three years later his father wrote that William credited his recovery to reading Renouvier.
+
+### The parts · Act the feeling first
+He held that feeling follows the body more than we think. To recover lost cheerfulness, sit up cheerfully, look round cheerfully, and speak as if it were already there. To feel brave, act as if you were. Wrestling with a bad feeling only pins your attention on it. e.g. Before meeting someone you resent, say the friendly sentence out loud first.
+
+### The parts · Hand the routine to habit
+The great thing in education, he wrote, is to make the nervous system an ally instead of an enemy. The more daily detail is left to habit, the more the mind is free for real work. The most miserable person is one in whom nothing is habitual but indecision. e.g. Fix the hour you get up and the hour you start, so mornings are not a negotiation.
+
+### The parts · A little gratuitous effort
+His prescription for the will: every day or two, do something for no other reason than that you would rather not. It is like insurance on a house. The premium does no good at the time and may never pay out, but if the fire comes it saves you. e.g. When both stairs and lift will do, take the stairs.
+
+### Q: How do I use it today?
+This week fix one small thing you currently decide afresh every day: when you get up, when you start, what you do first when you sit down. Once it is fixed, stop negotiating, and spend the saved effort on what needs thought.
+
+### Lines to keep
+To feel cheerful, sit up as if you already were. Nothing habitual but indecision: the most miserable state. A little needless effort is insurance for the will.
+
+### Q: What should I read alongside?
+Benjamin Franklin — Both taught people to change their habits. Franklin listed thirteen virtues, watched one a week, marked each fault with a black spot in a little book, and admitted he never reached the perfection he wanted, only became better and happier. James said to allow no exception until a new habit has rooted, because every lapse is counted. One tolerates daily marks and lets them shrink; the other refuses the first gap.
+
+### Further
+Benjamin Franklin Atomic Habits BJ Fogg
 
 ========================================================================
 ## Winston Churchill
@@ -23398,6 +23432,72 @@ Where it goes wrong: reading it as watch more closely — he means shorten the r
 Control isn't issuing an order. It's correcting from the result.
 It came back wrong because the loop was cut, not because nobody listened.
 Feedback later than the correctable window is no feedback.
+
+========================================================================
+## William James · This time doesn't count
+URL: https://ourword.ai/en/i/william-james/no-exceptions/
+Source: William James, The Principles of Psychology (1890), chapter IV, 'Habit'
+Tags: Deep read, William James, Until a new habit has taken root, allow no exceptions
+
+You have made the resolution many times. Why does it always break on 'just this once'?
+
+### Q: What actually happened?
+In the chapter on habit in The Principles of Psychology (1890), William James recalled the drunken Rip Van Winkle of Jefferson's play, who excused every fresh lapse with 'I won't count this time!' James answered: "Well! he may not count it, and a kind Heaven may not count it; but it is being counted none the less." Down among the nerve cells, he wrote, the lapse was being stored up, ready for use against him when the next temptation came.
+
+### The parts · Start as hard as you can
+The first maxim, which James took from the psychologist Alexander Bain: begin a new habit, or drop an old one, with as strong and decided an initiative as possible. Change your surroundings, make engagements that clash with the old way, pledge it publicly. Every day the breakdown is postponed makes it less likely.
+e.g. The day you give up late-night snacks, empty the fridge and tell whoever you live with.
+
+### The parts · No exceptions until it has rooted
+The second: never suffer an exception until the new habit is securely rooted. James compared each lapse to letting fall a ball of string you are carefully winding up. One slip undoes more than many turns will wind again. Continuity is what trains the nerves.
+e.g. If you run every morning, run ten minutes indoors when it rains. Never let 'skip today' happen once.
+
+### The parts · Act on the resolution at once
+The third: seize the very first chance to act on every resolution. Resolves work on the brain not when they are formed but when they turn into movement. A glow of feeling that fades without action is worse than a lost chance: it makes the next resolve harder to carry out.
+e.g. Finish an article about sleeping earlier, then set tonight's alarm instead of bookmarking the page.
+
+### Q: How do I use it today?
+Where you are: You are trying to build or break a habit, and every attempt has died on 'just this once'.
+Ask first: Has this habit actually rooted yet? How many times have I already opened this particular gap?
+Where it goes wrong: Reading it as 'one slip and it is all over, so give up'. A dropped ball of string means more winding, not no string. On the same page James says the good side is counted too: people become experts by so many separate acts and hours of work. And the rule is for the early days, not for life.
+
+### Lines to keep
+You may not count it. It is counted anyway.
+Drop the ball of string once, and rewind many turns.
+A resolution not acted on weakens the next one.
+
+========================================================================
+## William James · Decide, then let go
+URL: https://ourword.ai/en/i/william-james/unclamp/
+Source: William James, 'The Gospel of Relaxation', in Talks to Teachers on Psychology; and to Students on Some of Life's Ideals (1899)
+Tags: Deep read, William James, Most tension is a learned manner, not a measure of the workload
+
+The work is not that heavy, yet you never come off the boil. Where does the tension come from, and where should it stop?
+
+### Q: What actually happened?
+In a talk to students published in 1899, William James repeated what Dr Thomas Clouston, a leading Scottish asylum physician, had said after visiting the United States: "You Americans wear too much expression on your faces. You are living like an army with all its reserves engaged in action." James then asked his listeners to picture someone who never gives himself up to the chair, keeps his muscles half braced to rise, and breathes too fast without ever breathing out. What mood could he be in but inner panting?
+
+### The parts · It is not the work that breaks people
+James suspected that neither the nature nor the amount of work explained why so many of his countrymen broke down and were sent abroad to rest. The cause lay in what came with the work: the feeling of hurry and having no time, breathlessness, anxious faces, constant concern for results.
+e.g. While you work, notice whether part of your mind keeps counting how much is left and whether you will make it.
+
+### The parts · Learned, so it can be unlearned
+He called the tension primarily social and only secondarily physiological: a bad habit picked up from the people around us, the way an accent is. So the cure spreads the same way. One person who becomes calm is copied, like circles spreading from a stone dropped in a lake.
+e.g. In a tense meeting, slow your own speech first. The room often slows with you.
+
+### The parts · Worry while planning, not while doing
+Prudence, duty, ambition and anxiety have their place, he said, but keep them to the moments when you make resolutions and plan the campaign. Once the decision is made and it is time to act, drop all care about the outcome. He told students to fling the book away the day before an examination.
+e.g. The evening before a presentation, close the slides, go for a walk, and go to bed early.
+
+### Q: How do I use it today?
+Where you are: The workload is reasonable, yet you are always braced, as if someone were chasing you, and you cannot switch off even when resting.
+Ask first: Does the task need this tension, or did I pick it up from someone? Am I still planning, or already doing?
+Where it goes wrong: Reading it as 'do not prepare, do not care'. James told teachers to know the subject so well it is always on tap, and only then trust themselves in the classroom. Letting go comes after the plan, not instead of it. He also granted that some people really are tired.
+
+### Lines to keep
+Do the worrying while you plan, not while you act.
+Tension is caught from the people around you.
+Become calm, and someone nearby will copy you.
 
 ========================================================================
 ## Donald Winnicott · A Joy to Be Hidden

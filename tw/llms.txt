@@ -1,11 +1,11 @@
 # OurWord (人類世界生存法則)
 
-> 219 people and books on how the world actually works, across 2,600 years
+> 220 people and books on how the world actually works, across 2,600 years
 > 遇到事了，看看以前的人怎麼處理
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 219 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 220 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
-一個關於「世界到底怎麼運轉」的知識庫：戰略、財富、權力、人性、創業，取自 219 位人物與典籍，跨越 2600 年。每一條都寫清楚這個人真正留下的那一個想法、背後的故事、拆開的分則與例子，以及今天怎麼用。
+一個關於「世界到底怎麼運轉」的知識庫：戰略、財富、權力、人性、創業，取自 220 位人物與典籍，跨越 2600 年。每一條都寫清楚這個人真正留下的那一個想法、背後的故事、拆開的分則與例子，以及今天怎麼用。
 
 ## Read it
 
@@ -18,7 +18,7 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 
 ## Topics
 
-- [工業時代](https://ourword.ai/tw/t/industrial-age/) — 68
+- [工業時代](https://ourword.ai/tw/t/industrial-age/) — 69
 - [現代](https://ourword.ai/tw/t/modern/) — 63
 - [先秦與古典時代](https://ourword.ai/tw/t/classical-era/) — 36
 - [權力與組織](https://ourword.ai/tw/t/power/) — 32
@@ -31,8 +31,8 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 - [世界如何運轉](https://ourword.ai/tw/t/world/) — 20
 - [家庭與關係](https://ourword.ai/tw/t/family/) — 18
 - [秦漢至魏晉](https://ourword.ai/tw/t/han-wei/) — 18
+- [身心與生活](https://ourword.ai/tw/t/living/) — 18
 - [中古](https://ourword.ai/tw/t/medieval/) — 18
-- [身心與生活](https://ourword.ai/tw/t/living/) — 17
 - [近世](https://ourword.ai/tw/t/early-modern/) — 16
 
 ## How it is built
@@ -506,6 +506,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [諾伯特·維納 · 他先去找了工會](https://ourword.ai/tw/i/wiener/wrote-to-the-union/): 諾伯特·維納 · 他先去找了工會——在自動化落地之前。被技術沖掉之前有沒有先手。這一篇要回答的是：一個親手推動自動化的人，為什麼去找了會被它沖掉的那批人。
 - [諾伯特·維納 · 機器能做的和該讓它做的](https://ourword.ai/tw/i/wiener/human-use/): 諾伯特·維納 · 機器能做的和該讓它做的——是兩個問題。什麼活該交給工具，什麼活不該。這一篇要回答的是：維納憑什麼說有些事機器做得到也不該讓它做。
 - [諾伯特·維納 · 控制靠迴路，不靠命令](https://ourword.ai/tw/i/wiener/feedback-not-command/): 諾伯特·維納 · 控制靠迴路，不靠命令——看結果比下指令重要。為什麼反覆交代還是走樣。這一篇要回答的是：維納把控制定義成什麼，以及這跟下命令差在哪。
+- [威廉·詹姆斯 · 就這一次不算](https://ourword.ai/tw/i/william-james/no-exceptions/): 威廉·詹姆斯 · 就這一次不算——新習慣紮根之前，別給自己開那個口子。決心下了很多回。這一篇要回答的是：為什麼每次都斷在「就這一次」上。
+- [威廉·詹姆斯 · 定了就鬆手](https://ourword.ai/tw/i/william-james/unclamp/): 威廉·詹姆斯 · 定了就鬆手——緊繃多半不是活太多，是學來的一股勁。活不多，人卻一直繃著。這一篇要回答的是：這股勁是從哪來的，又該在哪兒鬆開。
 - [唐納德·溫尼科特 · 躲起來，是盼著被找](https://ourword.ai/tw/i/winnicott/joy-to-be-hidden/): 唐納德·溫尼科特 · 躲起來，是盼著被找——門關上了，他不是不要你。孩子關上房門，一個字也不肯說。這一篇要回答的是：這時候該推門進去，還是該走開。
 - [唐納德·溫尼科特 · 太聽話的那個我](https://ourword.ai/tw/i/winnicott/the-compliant-self/): 唐納德·溫尼科特 · 太聽話的那個我——最成功的假我，旁人幾乎看不出來。你樣樣做得好，也從不讓人為難，可心裡空空的。這一篇要回答的是：這個好說話的你，是誰。
 - [唐納德·溫尼科特 · 有人在場的獨處](https://ourword.ai/tw/i/winnicott/alone-in-company/): 唐納德·溫尼科特 · 有人在場的獨處——能自己待著，是被人好好陪過的結果。兩個人在一間屋裡，半天誰也沒說話。這一篇要回答的是：這是涼了，還是熟了。
@@ -578,7 +580,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [AI Bubble Monitor / AI 泡沫檢測儀](https://ourword.ai/ai/)
 - [Zouni / 走你](https://ourword.ai/zouni/)
 
-## Index (219 entrys)
+## Index (220 entrys)
 
 - [BJ·福格](https://ourword.ai/tw/i/bj-fogg/): BJ·福格（2019年·斯坦福行為設計實驗室）——小到不會失敗。斯坦福行為設計實驗室創始人，研究行為如何被設計出來。他給出一個公式：行為發生需要動機、能力、提示三者同時到位。多數人失敗在只調動機——靠決心和自我激勵——而動機天然起伏，靠它維持的習慣必然崩。他的主張相反：把行為縮到小得不需要動機，然後掛在一個已有的動作後面。
 - [C.S.劉易斯](https://ourword.ai/tw/i/cs-lewis/): C.S.劉易斯（1898-1963年·英國牛津）——妻子死後幾個月的日記。作家，牛津和劍橋的教授，寫過《納尼亞傳奇》和大量勸人信仰的書。五十八歲結婚，妻子喬伊四年後因癌症去世。之後幾個月他在四本練習簿上記自己的狀態，後來用筆名出版，就是《卿卿如晤》。收他是因為「重要的人走了」那六個問題，原來靠弗蘭克爾和蘇軾在答——一個是集中營的倖存者，一個是被貶的官員
@@ -642,6 +644,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [大野耐一](https://ourword.ai/tw/i/ohno/): 大野耐一（1912-1990年·日本豐田）——問五次為什麼。豐田生產方式的主要建立者。他在車間裡做出來的幾件事後來成了整個製造業的常識：問五次為什麼、任何工人都可以拉繩停線、把庫存壓低讓問題露出來。收他是因為「把事做成」和「帶人」兩組裡，錯反覆犯、交上來走樣、成本降不動這幾個問題，原來答的多是道理；他是把這幾件事一條條做出來的人，每一條都
 - [契克森米哈賴](https://ourword.ai/tw/i/csikszentmihalyi/): 契克森米哈賴（1990年·芝加哥大學）——心流。心理學家，用「經驗取樣法」研究人什麼時候最投入——給幾千人配呼叫器，隨機時刻響起就記錄當下在做什麼、感覺如何。他發現最好的體驗不是放鬆，而是一種全神貫注到忘記時間的狀態，他稱之為心流。觸發條件很具體：任務難度與你的能力剛好匹配，目標清晰，反饋即時。三者缺一，人要麼焦慮要麼無聊。
 - [奧古斯丁](https://ourword.ai/tw/i/augustine/): 奧古斯丁（354-430年·北非希波）——賜我貞潔，但不是現在。基督教思想家，《懺悔錄》的作者。這本書是他四十多歲回頭寫自己的前半生：十六歲偷梨、年輕時的放縱、想改改不動、三十二歲在一個花園裡的下午終於改了過來。收他是因為「知道做不到」「拖著不開始」「想戒又戒不掉」這幾組問題，原來答的是原子習慣、福格、老鼠公園——都是方法；他是一千六百年前把
+- [威廉·詹姆斯](https://ourword.ai/tw/i/william-james/): 威廉·詹姆斯（美國·1842-1910）——習慣。威廉·詹姆斯，美國心理學的奠基人。他學醫出身，1875 年前後在哈佛開始講心理學，是美國最早把它當成一門實驗科學來教的人；1890 年出版兩卷本《心理學原理》，講習慣、注意、情緒、意志的那幾章，一百多年後還被反覆引用。收他是因為兩件天天都會碰上的事：習慣為什麼總斷在「就這一次」上
 - [子產](https://ourword.ai/tw/i/zichan/): 子產（春秋·鄭·前522年卒）——據理。春秋後期鄭國的執政，名公孫僑，字子產。鄭國夾在晉、楚兩個大國之間，他執政二十多年，對外不卑不亢，對內定章程。《左傳》記他的事最多，《史記·循吏列傳》有傳。這一頁只取他怎麼和比自己大得多的一方談條件：先拿出對方自己也認的舊規矩，再說難處；對方開口要東西，先想第一次讓了，往後拿什麼理
 - [子貢](https://ourword.ai/tw/i/zigong/): 子貢（春秋·衛·前520年生）——義利。端木賜，字子貢，衛國人，比孔子小三十一歲，《史記·仲尼弟子列傳》有本傳，孔門十哲裡以言語著稱。他口才好，做過魯、衛兩國的相；又會做生意，賤買貴賣、隨行情轉手，家累千金，《貨殖列傳》說孔子七十多個弟子裡數他最富。孔子死後，弟子們守喪三年各自散去，只有他在墓旁又住了三年。收他是因為「
 - [孫子兵法](https://ourword.ai/tw/i/sun-tzu/): 孫子兵法（春秋·前500年前後）——先勝後戰。十三篇，中國最重要的戰略體系，2500年來被兵家、商家、政治家反覆研讀。孫子的核心邏輯是：贏家在開戰前就確保了勝利，失敗者是先打再想怎麼贏。這不是在說運氣，是在說準備的深度決定結果的高度。孫子本人憑此書被吳王重用，以三萬兵破楚國二十萬，攻入楚國都城郢。

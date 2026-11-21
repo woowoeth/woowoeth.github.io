@@ -704,6 +704,12 @@ QUOTE_ASKS = {
     "shun/rich-not-ruling":
         "坑过我的是亲兄弟，还帮不帮？",
 
+    # 威廉·詹姆斯
+    "william-james/no-exceptions":
+        "我总跟自己说，就这一次不算。",
+    "william-james/unclamp":
+        "我一干活就急，像有人在后面追。",
+
     # 达尔文
     "darwin/forestalled":
         "我做了很多年，被人抢先说了。",
