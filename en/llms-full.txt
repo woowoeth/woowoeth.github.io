@@ -1,7 +1,7 @@
-# OurWord — 220 people and books on how the world actually works, across 2,600 years
+# OurWord — 221 people and books on how the world actually works, across 2,600 years
 # OurWord — See how people before you handled it.
 # https://ourword.ai/en/
-# Full corpus, plain text. 220 entrys.
+# Full corpus, plain text. 221 entrys.
 
 ========================================================================
 ## Albert Einstein
@@ -1352,6 +1352,40 @@ Warren Buffett — Duan Yongping is Buffett's most serious Chinese student, but 
 Warren Buffett Kazuo Inamori Jensen Huang Chu Shijian Andy Grove Kevin Kelly Konosuke Matsushita Zhang Yiming Peter Lynch Michael Porter Zhang Qian
 
 ========================================================================
+## Duke Huan of Qi
+URL: https://ourword.ai/en/i/qi-huangong/
+Tags: Power and organisation, Pre-Qin and classical, Keeping faith
+
+Duke Huan of Qi (Spring and Autumn · Qi · died 643 BC) — Keeping faith. Duke Huan of Qi, personal name Xiaobai, ruled the state of Qi for forty-three years from 685 BC.
+
+### Q: What did this one leave behind?
+Duke Huan of Qi, personal name Xiaobai, ruled the state of Qi for forty-three years from 685 BC. He made Guan Zhong, the man who had once shot an arrow at him, his chief minister, and became the first hegemon of the Spring and Autumn period. Everything here follows Sima Qian. He is here for two situations: whether a promise forced out of you still binds, and what to make of someone who is too devoted. He got the first right and the second wrong.
+
+### Q: What actually happened?
+Qi was in turmoil, its rulers killed one after another, and two exiled princes raced home to claim it. Lu sent Guan Zhong with troops to block the road, and his arrow struck Prince Xiaobai on the belt hook. Xiaobai played dead. Guan Zhong sent word to Lu, and the party escorting the rival prince slowed down; by the time it arrived six days later, Xiaobai was already in the capital and on the throne. He then demanded that Lu hand Guan Zhong over so he could have him chopped to pieces. What he actually meant to do was employ him.
+
+### The parts · One sentence changed his mind
+Bao Shuya told him: to govern Qi, Gao Xi and I are enough; to lead the realm, you need Guan Zhong. The duke let go of the arrow, made Guan Zhong a high officer and handed him the government. e.g. The person you most want to punish may be the one the job most needs. Decide which you are after.
+
+### The parts · When they say you need not bow
+At the gathering at Kuiqiu the Zhou king sent sacrificial meat and said the duke need not bow. He was ready to accept it so; Guan Zhong said no, and he bowed. Later that year, Sima Qian says, he grew prouder, and lords began to drift away. e.g. When a superior says there is no need for formality between you, keep the formality anyway.
+
+### The parts · The moment he wanted a ceremony
+He counted his achievements, nine gatherings of the lords and the realm set right, and wanted to perform the great sacrifice at Mount Tai. Guan Zhong argued and failed, then said the rite needed rare tribute from distant lands first. Only then did the duke drop it. e.g. The moment you most want to celebrate yourself is when you most need someone willing to stop you.
+
+### Q: How do I use it today?
+This week list the three people around you who agree with you most. Beside each, write when they last told you something would not work. For the one you cannot remember, take them a decision you are unsure about next week and see whether they dare say no.
+
+### Lines to keep
+The man who shot at him became his minister. When they say you need not bow, bow anyway. The urge to celebrate is when you need a brake.
+
+### Q: What should I read alongside?
+Duke Wen of Jin — Both were hegemons, and both employed men who had tried to harm them: Guan Zhong's arrow hit Xiaobai's belt hook, the eunuch Pi cut off Chong'er's sleeve. They part on listening. Chong'er kept listening to the people who pushed back. Duke Huan listened to Guan Zhong for forty years and ignored him the one time it mattered most, keeping only the men who pleased him.
+
+### Further
+Guan Zhong Duke Wen of Jin Records of the Grand Historian
+
+========================================================================
 ## Duke Wen of Jin
 URL: https://ourword.ai/en/i/jin-wengong/
 Tags: Power and organisation, Pre-Qin and classical, Taking advice
@@ -1383,10 +1417,10 @@ If someone near you is saying what you don't want to hear, that you should leave
 Longing and ease ruin a name. A ruler's command allows no second mind. When a ruler bears a grudge against a commoner, many are afraid. We fall back three stages to repay them.
 
 ### Q: What should I read alongside?
-Cao Cao — Both faced people who had wavered. After Guandu, Cao Cao found letters his own officers had sent the enemy and burned them unread, clearing a whole group at once. Duke Wen faced them one at a time at his door, the man who had hunted him and the servant who ran off with his stores. He shut the door first, and opened it once they had made their case. Xiang Yu — Both chose between comfort and the long road. Xiang Yu took the Qin capital, longed to go home to Chu, and would not hear the man who urged him to stay. Chong'er also wanted to stay in Qi, and was pushed into a carriage by his wife and his uncle. One had nobody able to stop him; the other had people who dared. Wei Zheng — Duke Wen is the man whose old enemy comes knocking; Wei Zheng is the one who knocks, asked by Li Shimin about the past. The two pages look at the same meeting from either end.
+Cao Cao — Both faced people who had wavered. After Guandu, Cao Cao found letters his own officers had sent the enemy and burned them unread, clearing a whole group at once. Duke Wen faced them one at a time at his door, the man who had hunted him and the servant who ran off with his stores. He shut the door first, and opened it once they had made their case. Xiang Yu — Both chose between comfort and the long road. Xiang Yu took the Qin capital, longed to go home to Chu, and would not hear the man who urged him to stay. Chong'er also wanted to stay in Qi, and was pushed into a carriage by his wife and his uncle. One had nobody able to stop him; the other had people who dared. Wei Zheng — Duke Wen is the man whose old enemy comes knocking; Wei Zheng is the one who knocks, asked by Li Shimin about the past. The two pages look at the same meeting from either end. Duke Huan of Qi — Both were hegemons, and both employed men who had tried to harm them: Guan Zhong's arrow hit Xiaobai's belt hook, the eunuch Pi cut off Chong'er's sleeve. They part on listening. Chong'er kept listening to the people who pushed back. Duke Huan listened to Guan Zhong for forty years and ignored him the one time it mattered most, keeping only the men who pleased him.
 
 ### Further
-Guan Zhong Cao Cao Xiang Yu Feng Yi King Wuling of Zhao Wei Zheng
+Guan Zhong Cao Cao Xiang Yu Feng Yi King Wuling of Zhao Wei Zheng Duke Huan of Qi
 
 ========================================================================
 ## Edward Deci
@@ -2160,7 +2194,7 @@ Full granaries, and the people know propriety. The way to govern a state must be
 Shang Yang — Two routes to a strong state: Guan Zhong enriches the people and the state follows, Shang Yang installs the law and the wealth follows. Zhuge Liang — Two first ministers serving an ambitious lord. Guan Zhong's man became hegemon; Zhuge Liang's cause never arrived. Lee Kuan Yew — Two operators building a small state from nothing, twenty-six centuries apart: Guan Zhong through trade and price control, Lee through institutions and balance. The Wealth of Nations — Two origins for the idea of national wealth: Guan Zhong steers prices and money from the centre, Smith lets price discover itself. The argument has not moved in twenty-five centuries.
 
 ### Further
-The Wealth of Nations Fan Li Sun Tzu Han Feizi Cao Cao Lee Kuan Yew Shang Yang Zhang Juzheng Liu Yan Duke Wen of Jin King Wuling of Zhao Yan Ying Zichan
+The Wealth of Nations Fan Li Sun Tzu Han Feizi Cao Cao Lee Kuan Yew Shang Yang Zhang Juzheng Liu Yan Duke Wen of Jin King Wuling of Zhao Yan Ying Zichan Duke Huan of Qi
 
 ========================================================================
 ## Guiguzi
@@ -5192,7 +5226,7 @@ No empty praise, no concealment of evil: therefore, a true record. To examine al
 Sima Qian — The same story from two sides: his page is about why a man chose to stay alive in order to finish it, this one is about the method the book itself laid down. The Comprehensive Mirror — Two philosophies of Chinese historical writing: the Records write people, the Mirror writes the system — one shows how a person works, the other how power works. Sapiens — Two scales of historical narrative: Sima Qian lights up history through individual fates, Harari takes the species apart.
 
 ### Further
-The Comprehensive Mirror Han Xin Liu Bang Fan Li Bai Gui Viktor Frankl Strategies of the Warring States Sima Qian Shun
+The Comprehensive Mirror Han Xin Liu Bang Fan Li Bai Gui Viktor Frankl Strategies of the Warring States Sima Qian Shun Duke Huan of Qi
 
 ========================================================================
 ## Ren Zhengfei
@@ -19837,6 +19871,72 @@ Where it goes wrong: using him to argue against focus — he collected one kind 
 He didn't quit the job to write. He wrote on the job.
 Scattered hours add up because something catches them, not because there are many.
 What kills a side project is gambling your living alongside it.
+
+========================================================================
+## Duke Huan of Qi · A promise made at knife point
+URL: https://ourword.ai/en/i/qi-huangong/forced-promise/
+Source: Sima Qian, Records of the Grand Historian, Hereditary House of Taigong of Qi
+Tags: Deep read, Duke Huan of Qi, Whether you keep your word is something everyone watching remembers
+
+He agreed with a dagger at his throat. When a promise is forced out of you, do you still keep it afterwards?
+
+### Q: What actually happened?
+In the duke's fifth year Qi defeated Lu, and the two states met at Ke to swear peace. On the altar the Lu general Cao Mo suddenly seized the duke with a dagger and demanded the land Qi had taken. The duke agreed. Cao Mo put the dagger down and went back to his place. Then the duke had second thoughts: keep the land, kill Cao Mo. Guan Zhong told him that breaking faith and killing the man would buy one small moment of satisfaction and cost him the trust of every state. The duke handed back all of it.
+
+### The parts · The account is not with him alone
+Guan Zhong's arithmetic was cold. Killing Cao Mo would earn one small satisfaction. Breaking faith would cost the trust of every lord. How unreasonable the man who forced you was is between you and him; whether your word holds is what everyone watching remembers.
+e.g. A client corners you in a group chat and you agree to a refund. Change the process afterwards, drop the client, but pay this one.
+
+### The parts · Land given back, a hegemon made
+The record goes on: when the lords heard, they all trusted Qi and wanted to join it. Two years later they gathered to meet the duke at Juan, and from then on he led them. The land was a real loss; it became the capital of his leadership.
+e.g. The deal where you gave ground under pressure tells others that your word holds. The next big client may come from that.
+
+### The parts · Regret is allowed; it does not get to decide
+Sima Qian does not cover for him: the duke regretted it and wanted the man dead. What he got right was a single thing. He stopped before acting and let someone who was not angry finish the sums.
+e.g. The night you want to withdraw a promise, send nothing. Tell someone who was not there what keeping it and breaking it would each cost.
+
+### Q: How do I use it today?
+Where you are: someone pushed you into agreeing to something in front of others, and the longer you think about it the more you want a reason to back out.
+Ask first: who saw this? If I renege I get to vent; whose trust do I lose?
+Where it goes wrong: reading it as 'every forced promise must be kept'. Guan Zhong's reason was not that a pledge is sacred. It was that every state was watching and Qi needed their support. Something signed under fraud or a threat, something that should never have been signed, is not covered. Before deciding, be clear whose trust you are after.
+
+### Lines to keep
+Words forced out of you are still heard by everyone.
+Killing him would feel good; it would cost everyone's trust.
+The land went back, and the lords came.
+
+========================================================================
+## Duke Huan of Qi · Against human feeling
+URL: https://ourword.ai/en/i/qi-huangong/against-nature/
+Source: Sima Qian, Records of the Grand Historian, Hereditary House of Taigong of Qi
+Tags: Deep read, Duke Huan of Qi, When someone gives up their own flesh and blood to please you, the devotion itself is the warning
+
+His three favourite courtiers. When someone throws aside ordinary feeling to please you, do you trust them or watch them?
+
+### Q: What actually happened?
+In the duke's forty-first year Guan Zhong lay dying, and the duke asked who could succeed him. No one knows a minister like his lord, said Guan Zhong. The duke went through the names. Yi Ya? He killed his own son to please you. That goes against human feeling; no. Kaifang? He turned his back on his own family to please you. Against human feeling; keep him at a distance. Shu Diao? He castrated himself to please you. Against human feeling; do not draw him close. Guan Zhong died. The duke kept all three, and they took power.
+
+### The parts · The stranger the sacrifice, the harder to ask what it buys
+To the duke these three were the most loyal men he had: one gave up a son, one his family, one his own body. Guan Zhong answered with a single judgement. A man who can do that to his own blood is not devoted to you as a person.
+e.g. A new hire skips a sick child and works through weekends unasked to handle your errands. Before feeling grateful, ask what they want.
+
+### The parts · It felt good, so it was hard to see
+Guan Zhong could not have put it more plainly, and the duke heard him. He kept the three anyway: all that devotion landed on him, and it was pleasant. When someone is too good to you, the person most easily persuaded is the one being flattered.
+e.g. Think of the person around you who never says no. When did you last hear them say this will not work?
+
+### The parts · The bill for the mistake
+Two years later the duke fell ill and his five sons formed factions. When he died, Yi Ya and Shu Diao killed officials and set up a son of their choosing. The sons fought; the palace emptied. His body lay on the bed for sixty-seven days.
+e.g. Keep only people who tell you what you like, and on the bad day there is no one left to clean up.
+
+### Q: How do I use it today?
+Where you are: looking back, the person who betrayed you was once too good to you, always available, carrying everything, neglecting their own family for you, and you thought you had found a patron.
+Ask first: did what they gave me cost the people closest to them? Would an ordinary person do this for another?
+Where it goes wrong: reading it as 'never trust anyone who is good to you'. Guan Zhong did not say the three were suspect because they were kind. He said the price was against human feeling: trading your child, your family or your body for one man's favour. Ordinary kindness has limits, and a life of its own.
+
+### Lines to keep
+Someone who trades their own blood can trade you.
+Devotion beyond human feeling is a warning.
+The kindness that feels best is the hardest to see.
 
 ========================================================================
 ## Rat Park · Swap the cage for a park

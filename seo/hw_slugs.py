@@ -28,6 +28,7 @@ SLUGS = {
     "子贡": "zigong",
     "达尔文": "darwin",
     "舜": "shun",
+    "齐桓公": "qi-huangong",
     "威廉·詹姆斯": "william-james",
     "大癫狂": "popular-delusions",
     "托尔斯坦·凡勃伦": "veblen",

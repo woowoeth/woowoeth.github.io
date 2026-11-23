@@ -112,6 +112,7 @@ NAMES = {
     "zigong": ("Zigong", "Money and risk"),
     "darwin": ("Charles Darwin", "Learning and growth"),
     "shun": ("Shun", "Family and relationships"),
+    "qi-huangong": ("Duke Huan of Qi", "Power and organisation"),
     "william-james": ("William James", "Body and daily life"),
     "popular-delusions": ("Extraordinary Popular Delusions", "Money and risk"),
     "influence": ("Influence", "Reading people"),

@@ -1028,6 +1028,8 @@ SCENES = [
      [("lin-xiangru", "crooked-on-qin")]),
     ("他只认实力，我讲理有用吗？",
      [("thucydides", "the-strong-do-what-they-can")]),
+    ("被逼着答应的事，我还要认吗？",
+     [("qi-huangong", "forced-promise")]),
 ]),
 ("功劳被抢", "跟人打交道", [
     ("事是我做的，功是别人的。",
@@ -1156,6 +1158,8 @@ SCENES = [
      [("lushi-chunqiu", "eight-observations")]),
     ("他坑过我，现在说是来帮我的。",
      [("jin-wengong", "the-cut-sleeve")]),
+    ("他对我好得反常，我当时怎么没起疑？",
+     [("qi-huangong", "against-nature")]),
 ]),
 ("一个能约的人都没有", "跟人打交道", [
     ("来了三年，我一个能约的人都没有。",

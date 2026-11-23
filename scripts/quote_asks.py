@@ -698,6 +698,12 @@ QUOTE_ASKS = {
     "popular-delusions/one-by-one":
         "人人都在买，我还用问它是什么吗？",
 
+    # 齐桓公
+    "qi-huangong/forced-promise":
+        "被逼着答应的事，我还要认吗？",
+    "qi-huangong/against-nature":
+        "他对我好得反常，我当时怎么没起疑？",
+
     # 舜
     "shun/never-caught":
         "家里人对我狠，我还要管他们吗？",

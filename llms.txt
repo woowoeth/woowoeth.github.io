@@ -1,11 +1,11 @@
 # OurWord (人类世界生存法则)
 
-> 220 people and books on how the world actually works, across 2,600 years
+> 221 people and books on how the world actually works, across 2,600 years
 > 遇到事了，看看以前的人怎么处理
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 220 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 221 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
-一个关于「世界到底怎么运转」的知识库：战略、财富、权力、人性、创业，取自 220 位人物与典籍，跨越 2600 年。每一条都写清楚这个人真正留下的那一个想法、背后的故事、拆开的分则与例子，以及今天怎么用。
+一个关于「世界到底怎么运转」的知识库：战略、财富、权力、人性、创业，取自 221 位人物与典籍，跨越 2600 年。每一条都写清楚这个人真正留下的那一个想法、背后的故事、拆开的分则与例子，以及今天怎么用。
 
 ## Read it
 
@@ -20,8 +20,8 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 
 - [工业时代](https://ourword.ai/t/industrial-age/) — 69
 - [现代](https://ourword.ai/t/modern/) — 63
-- [先秦与古典时代](https://ourword.ai/t/classical-era/) — 36
-- [权力与组织](https://ourword.ai/t/power/) — 32
+- [先秦与古典时代](https://ourword.ai/t/classical-era/) — 37
+- [权力与组织](https://ourword.ai/t/power/) — 33
 - [心智与情绪](https://ourword.ai/t/mind/) — 25
 - [财富与风险](https://ourword.ai/t/wealth/) — 23
 - [学习与成长](https://ourword.ai/t/learning/) — 22
@@ -397,6 +397,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [蒲松龄 · 考了四十年](https://ourword.ai/i/pu-songling/forty-years-of-failing/): 蒲松龄 · 考了四十年——一直没成，也没有转折点。有一种失败没有决定性的一仗。这一篇要回答的是：这种日子怎么过下去。
 - [蒲松龄 · 没成的是主业，成的是副业](https://ourword.ai/i/pu-songling/the-side-thing/): 蒲松龄 · 没成的是主业，成的是副业——而他自己不知道。他一辈子想成的没成，顺手做的成了。这一篇要回答的是：这件事能不能安排。
 - [蒲松龄 · 在路边收故事](https://ourword.ai/i/pu-songling/collecting-at-the-roadside/): 蒲松龄 · 在路边收故事——把没人管的时间用起来。四十年坐馆的碎时间，他拿来做什么。这一篇要回答的是：素材是怎么攒出来的。
+- [齐桓公 · 刀下许的，也照还](https://ourword.ai/i/qi-huangong/forced-promise/): 齐桓公 · 刀下许的，也照还——当众答应过的话，认不认是给所有人看的。刀架在脖子上答应的。这一篇要回答的是：被人逼着许下的事，事后还认不认。
+- [齐桓公 · 非人情](https://ourword.ai/i/qi-huangong/against-nature/): 齐桓公 · 非人情——为讨好你连骨肉都不顾的人，那份好本身就是警报。他最宠的三个人。这一篇要回答的是：一个人为讨好你连常情都不顾，该信还是该防。
 - [老鼠公园 · 把笼子换成公园](https://ourword.ai/i/rat-park/rat-park/): 老鼠公园 · 把笼子换成公园——同一只老鼠，不同的处境。关于成瘾最有名的那个实验，结论和直觉相反。这一篇要回答的是：换了笼子会发生什么。
 - [老鼠公园 · 回国之后，大部分人自己停了](https://ourword.ai/i/rat-park/vietnam-veterans/): 老鼠公园 · 回国之后，大部分人自己停了——最硬的那个自然实验。有没有比老鼠更硬的证据。这一篇要回答的是：越战归国士兵那组数字说明了什么。
 - [老鼠公园 · 先拆笼子，不是先拼意志](https://ourword.ai/i/rat-park/change-the-cage/): 老鼠公园 · 先拆笼子，不是先拼意志——以及这条能推到哪儿为止。知道处境要紧之后，具体该动哪一处。这一篇要回答的是：怎么把笼子一格一格拆掉。
@@ -580,7 +582,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [AI Bubble Monitor / AI 泡沫检测仪](https://ourword.ai/ai/)
 - [Zouni / 走你](https://ourword.ai/zouni/)
 
-## Index (220 entrys)
+## Index (221 entrys)
 
 - [BJ·福格](https://ourword.ai/i/bj-fogg/): BJ·福格（2019年·斯坦福行为设计实验室）——小到不会失败。斯坦福行为设计实验室创始人，研究行为如何被设计出来。他给出一个公式：行为发生需要动机、能力、提示三者同时到位。多数人失败在只调动机——靠决心和自我激励——而动机天然起伏，靠它维持的习惯必然崩。他的主张相反：把行为缩到小得不需要动机，然后挂在一个已有的动作后面。
 - [C.S.刘易斯](https://ourword.ai/i/cs-lewis/): C.S.刘易斯（1898-1963年·英国牛津）——妻子死后几个月的日记。作家，牛津和剑桥的教授，写过《纳尼亚传奇》和大量劝人信仰的书。五十八岁结婚，妻子乔伊四年后因癌症去世。之后几个月他在四本练习簿上记自己的状态，后来用笔名出版，就是《卿卿如晤》。收他是因为「重要的人走了」那六个问题，原来靠弗兰克尔和苏轼在答——一个是集中营的幸存者，一个是被贬的官员
@@ -802,3 +804,4 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [鲍恩](https://ourword.ai/i/bowen/): 鲍恩（1978年·家庭系统理论）——分化。精神科医生，提出家庭系统理论。他关注的核心是「自我分化」——一个人在与亲近的人保持连接的同时，能不能保有独立的思考和情绪。分化低的人被家庭的情绪场裹挟：别人焦虑他就焦虑，为了平息冲突不惜放弃立场。他的另一个重要概念是三角关系：两个人之间张力过大时，会自动拉进第三个人来分散，而这会
 - [黄仁勋](https://ourword.ai/i/huang/): 黄仁勋（当代·1963-）——押注。英伟达创始人兼CEO，30年没有被赶走。他在2006年做了一个当时看来「浪费资源」的决定：开发CUDA，让GPU可以做通用计算。2023年，ChatGPT爆发，AI需要大量GPU算力，英伟达成为全球最重要的公司之一。他押注了一个能力，等了17年。
 - [黄帝内经](https://ourword.ai/i/huangdi-neijing/): 黄帝内经（战国至西汉·托名黄帝·《素问》《灵枢》）——治未病。托名黄帝与岐伯、雷公等人问答的医学经典，战国到西汉陆续写成，传世分《素问》《灵枢》两部分，汉以后被奉为中医的根本典籍。它大半在讲诊断、经络、针药，也有一部分讲人怎么过日子才不出事。我们不取诊脉方药，不取五脏配五行，只取《素问》里的三处。《四气调神大论》篇末：圣人不治已病治未病，病
+- [齐桓公](https://ourword.ai/i/qi-huangong/): 齐桓公（春秋·齐·前643年卒）——守信。齐桓公，名小白，春秋时齐国国君，前685年即位，在位四十三年。他拜射过自己一箭的管仲为相，九合诸侯、一匡天下，是春秋第一个霸主。这里的事只照《史记·齐太公世家》讲。收他是因为两种处境：被人当众逼着许下的事，事后还认不认；一个人对你好得不合常情，该信还是该防。前一件他做对了，后一件
