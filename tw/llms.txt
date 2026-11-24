@@ -1,11 +1,11 @@
 # OurWord (人類世界生存法則)
 
-> 221 people and books on how the world actually works, across 2,600 years
+> 222 people and books on how the world actually works, across 2,600 years
 > 遇到事了，看看以前的人怎麼處理
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 221 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 222 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
-一個關於「世界到底怎麼運轉」的知識庫：戰略、財富、權力、人性、創業，取自 221 位人物與典籍，跨越 2600 年。每一條都寫清楚這個人真正留下的那一個想法、背後的故事、拆開的分則與例子，以及今天怎麼用。
+一個關於「世界到底怎麼運轉」的知識庫：戰略、財富、權力、人性、創業，取自 222 位人物與典籍，跨越 2600 年。每一條都寫清楚這個人真正留下的那一個想法、背後的故事、拆開的分則與例子，以及今天怎麼用。
 
 ## Read it
 
@@ -18,13 +18,13 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 
 ## Topics
 
-- [工業時代](https://ourword.ai/tw/t/industrial-age/) — 69
+- [工業時代](https://ourword.ai/tw/t/industrial-age/) — 70
 - [現代](https://ourword.ai/tw/t/modern/) — 63
 - [先秦與古典時代](https://ourword.ai/tw/t/classical-era/) — 37
 - [權力與組織](https://ourword.ai/tw/t/power/) — 33
 - [心智與情緒](https://ourword.ai/tw/t/mind/) — 25
+- [學習與成長](https://ourword.ai/tw/t/learning/) — 23
 - [財富與風險](https://ourword.ai/tw/t/wealth/) — 23
-- [學習與成長](https://ourword.ai/tw/t/learning/) — 22
 - [創業與產品](https://ourword.ai/tw/t/startups/) — 22
 - [識人與相處](https://ourword.ai/tw/t/people/) — 20
 - [謀略與競爭](https://ourword.ai/tw/t/strategy/) — 20
@@ -340,6 +340,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [孟子 · 民為貴](https://ourword.ai/tw/i/mencius/people-first/): 孟子 · 民為貴——權力的地基在最下面。這句話被當成兩千年前的民本情懷。這一篇要回答的是：它其實是一句關於權力從哪來的技術判斷。
 - [孟子 · 以力服人與以德服人](https://ourword.ai/tw/i/mencius/force-vs-virtue/): 孟子 · 以力服人與以德服人——順從和心服的區別。同樣是聽你的，有兩種完全不同的聽。這一篇要回答的是：怎麼分辨你手上的是哪一種。
 - [孟子 · 養浩然之氣](https://ourword.ai/tw/i/mencius/flood-like-qi/): 孟子 · 養浩然之氣——頂得住壓力的那口氣。公孫丑問什麼是浩然之氣，孟子說難言也。這一篇要回答的是：這口氣到底怎麼來的，以及怎麼弄丟。
+- [孟德爾 · 先挑豌豆](https://ourword.ai/tw/i/mendel/pick-the-pea/): 孟德爾 · 先挑豌豆——副業要成，先把它當正經事做。業餘那件事你很在乎。這一篇要回答的是：怎麼做，它才不只是玩玩。
+- [孟德爾 · 印出來，放著](https://ourword.ai/tw/i/mendel/on-the-record/): 孟德爾 · 印出來，放著——做的東西沒人看，先讓它被找得到。做得紮實，卻沒人理。這一篇要回答的是：沒人看的時候，該把它怎麼放著。
 - [羅伯特·K·默頓 · 假話怎麼變成真事](https://ourword.ai/tw/i/merton/self-fulfilling-prophecy/): 羅伯特·K·默頓 · 假話怎麼變成真事——懷疑會替自己造出證據。有人開始防著你，你越澄清越像心虛。這一篇要回答的是：這個圈是怎麼合上的，又只能從哪裡斷開。
 - [羅伯特·K·默頓 · 凡有的還要加給他](https://ourword.ai/tw/i/merton/matthew-effect/): 羅伯特·K·默頓 · 凡有的還要加給他——功勞按名氣分，不按出力分。活是你幹的，記住的卻是另一個名字。這一篇要回答的是：這件事多半不是有人搶，是系統按名氣發錢。
 - [蒙田 · 哲學就是學習死亡](https://ourword.ai/tw/i/montaigne/learning-to-die/): 蒙田 · 哲學就是學習死亡——他從馬上摔下來之後。夜裡想到死就睜著眼的人，能拿它怎麼辦。這一篇要回答的是：蒙田為什麼說要天天想死，而且他真的死過一回。
@@ -582,7 +584,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [AI Bubble Monitor / AI 泡沫檢測儀](https://ourword.ai/ai/)
 - [Zouni / 走你](https://ourword.ai/zouni/)
 
-## Index (221 entrys)
+## Index (222 entrys)
 
 - [BJ·福格](https://ourword.ai/tw/i/bj-fogg/): BJ·福格（2019年·斯坦福行為設計實驗室）——小到不會失敗。斯坦福行為設計實驗室創始人，研究行為如何被設計出來。他給出一個公式：行為發生需要動機、能力、提示三者同時到位。多數人失敗在只調動機——靠決心和自我激勵——而動機天然起伏，靠它維持的習慣必然崩。他的主張相反：把行為縮到小得不需要動機，然後掛在一個已有的動作後面。
 - [C.S.劉易斯](https://ourword.ai/tw/i/cs-lewis/): C.S.劉易斯（1898-1963年·英國牛津）——妻子死後幾個月的日記。作家，牛津和劍橋的教授，寫過《納尼亞傳奇》和大量勸人信仰的書。五十八歲結婚，妻子喬伊四年後因癌症去世。之後幾個月他在四本練習簿上記自己的狀態，後來用筆名出版，就是《卿卿如晤》。收他是因為「重要的人走了」那六個問題，原來靠弗蘭克爾和蘇軾在答——一個是集中營的倖存者，一個是被貶的官員
@@ -651,6 +653,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [子貢](https://ourword.ai/tw/i/zigong/): 子貢（春秋·衛·前520年生）——義利。端木賜，字子貢，衛國人，比孔子小三十一歲，《史記·仲尼弟子列傳》有本傳，孔門十哲裡以言語著稱。他口才好，做過魯、衛兩國的相；又會做生意，賤買貴賣、隨行情轉手，家累千金，《貨殖列傳》說孔子七十多個弟子裡數他最富。孔子死後，弟子們守喪三年各自散去，只有他在墓旁又住了三年。收他是因為「
 - [孫子兵法](https://ourword.ai/tw/i/sun-tzu/): 孫子兵法（春秋·前500年前後）——先勝後戰。十三篇，中國最重要的戰略體系，2500年來被兵家、商家、政治家反覆研讀。孫子的核心邏輯是：贏家在開戰前就確保了勝利，失敗者是先打再想怎麼贏。這不是在說運氣，是在說準備的深度決定結果的高度。孫子本人憑此書被吳王重用，以三萬兵破楚國二十萬，攻入楚國都城郢。
 - [孟子](https://ourword.ai/tw/i/mencius/): 孟子（戰國·前372—前289）——得民。孔子之後最能把儒家寫成統治操作系統的人。他不把「仁」當成德行標語，而是當成權力能不能續上的約束條件：稅、兵、殺人權一旦失據，政權先空再垮。周遊列國而不遇合，這份清醒沒換來官位，卻把「民為貴」寫成了後世治國者躲不掉的警句。
+- [孟德爾](https://ourword.ai/tw/i/mendel/): 孟德爾（奧地利帝國·1822-1884）——遺傳。孟德爾，奧地利帝國布爾諾一座奧古斯丁會修道院的修士，遺傳學的奠基人。1856 年到 1863 年，他在修道院的園子裡做豌豆雜交，1866 年發表《植物雜交實驗》，頭一次拿數出來的比例說明性狀怎樣一代代往下傳。論文當時幾乎沒人注意，1900 年被三位植物學家各自重新找到，遺傳學從這
 - [安迪·格魯夫](https://ourword.ai/tw/i/grove/): 安迪·格魯夫（美國·1936-2016）——戰略轉折點。英特爾第三號員工、第四任 CEO。接手時英特爾是一家被日本人打到牆角的內存公司，卸任時是全球最大的芯片公司，市值增長約 30 倍。他真正的貢獻不是造芯片，是把「一家已經贏了的公司如何不死」寫成了方法論——《只有偏執狂才能生存》講戰略轉折點，《高產出管理》是今天所有 OKR 與一對
 - [宮本武藏](https://ourword.ai/tw/i/musashi/): 宮本武藏（日本·1584-1645）——無二。日本歷史上最著名的劍客，一生參與超過60場決鬥，從無敗績。13歲第一次決鬥，60歲寫下《五輪書》。他不只是武藝高超，而是把劍道昇華為一套完整的人生哲學——「兵法之道，即萬事萬物之道」。他影響了日本此後四百年的武士文化、商業哲學和管理思想，被稱為「劍聖」。他和李小龍跨越三百年，說的
 - [富蘭克林](https://ourword.ai/tw/i/franklin/): 富蘭克林（美·1706-1790年）——十三美德·複利人生。本傑明·富蘭克林，人類歷史上罕見的「全棧人生」：印刷工出身，17歲身無分文闖費城，42歲靠印刷生意實現財務自由後退休，轉身成為科學家（電學）、發明家（避雷針、雙焦眼鏡）、作家（《窮理查年鑑》）、外交家（促成法國援美）、開國元勳（唯一在獨立宣言、美法同盟、巴黎和約、憲法四大文件上都

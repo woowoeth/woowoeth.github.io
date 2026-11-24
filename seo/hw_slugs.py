@@ -30,6 +30,7 @@ SLUGS = {
     "舜": "shun",
     "齐桓公": "qi-huangong",
     "威廉·詹姆斯": "william-james",
+    "孟德尔": "mendel",
     "大癫狂": "popular-delusions",
     "托尔斯坦·凡勃伦": "veblen",
     "西蒙娜·德·波伏瓦": "beauvoir",

@@ -704,6 +704,12 @@ QUOTE_ASKS = {
     "qi-huangong/against-nature":
         "他对我好得反常，我当时怎么没起疑？",
 
+    # 孟德尔
+    "mendel/pick-the-pea":
+        "我想把业余那件事，当真做一回。",
+    "mendel/on-the-record":
+        "我做得很扎实，可就是没人理。",
+
     # 舜
     "shun/never-caught":
         "家里人对我狠，我还要管他们吗？",

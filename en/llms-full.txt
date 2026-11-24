@@ -1,7 +1,7 @@
-# OurWord — 221 people and books on how the world actually works, across 2,600 years
+# OurWord — 222 people and books on how the world actually works, across 2,600 years
 # OurWord — See how people before you handled it.
 # https://ourword.ai/en/
-# Full corpus, plain text. 221 entrys.
+# Full corpus, plain text. 222 entrys.
 
 ========================================================================
 ## Albert Einstein
@@ -951,10 +951,10 @@ This week keep one page beside the thing you are pushing, headed 'against it'. N
 The fact against you is the first one you forget. Not the quickest? Think about it longest. Find one person of common sense who says go.
 
 ### Q: What should I read alongside?
-Isaac Newton — Both faced the question of who thought of it first. Newton fought Leibniz over the calculus for years, and the Royal Society report that found for him came from a committee appointed while he was its president. Darwin handed his old draft to two friends, published jointly with Wallace, and Wallace later called his own book on evolution Darwinism.
+Isaac Newton — Both faced the question of who thought of it first. Newton fought Leibniz over the calculus for years, and the Royal Society report that found for him came from a committee appointed while he was its president. Darwin handed his old draft to two friends, published jointly with Wallace, and Wallace later called his own book on evolution Darwinism. Gregor Mendel — They lived at the same time and both asked how living things pass on what they are. Darwin gathered material for twenty years and wrote a book that covered everything and was argued over at once. Mendel worked on one plant, wrote one paper, and was not cited for thirty-four years. One went as wide as possible, the other as narrow; later genetics needed both.
 
 ### Further
-Isaac Newton Richard Feynman Karl Popper
+Isaac Newton Richard Feynman Karl Popper Gregor Mendel
 
 ========================================================================
 ## Charles P. Kindleberger
@@ -2160,6 +2160,40 @@ Warren Buffett — Two poles of investment philosophy: Buffett trusts that the m
 Ray Dalio Warren Buffett Nassim Taleb Charlie Munger The Crowd Jesse Livermore Howard Marks Jim Simons Thinking, Fast and Slow Charles P. Kindleberger Robert K. Merton John Maynard Keynes Isaac Newton
 
 ========================================================================
+## Gregor Mendel
+URL: https://ourword.ai/en/i/mendel/
+Tags: Learning and growth, The industrial age, Heredity
+
+Gregor Mendel (Austrian Empire · 1822–1884) — Heredity. Augustinian friar at the abbey in Brünn (now Brno) and the founder of genetics. Between 1856 and 1863 he crossed peas in the monastery garden, and in 1866 published…
+
+### Q: What did this one leave behind?
+Augustinian friar at the abbey in Brünn (now Brno) and the founder of genetics. Between 1856 and 1863 he crossed peas in the monastery garden, and in 1866 published 'Experiments in Plant Hybridisation', the first account of heredity in counted ratios. The paper was almost ignored until three botanists found it independently in 1900. He is here for two situations: how to make the thing you do on the side more than a hobby, and what to do with good work that nobody reads.
+
+### Q: What actually happened?
+In 1850 Mendel sat the exam to become a certified schoolteacher and failed its last part, the oral. His abbot, Cyril Napp, sent him to the University of Vienna, where from 1851 to 1853 he studied physics and natural science. Back in Brünn he taught as a substitute teacher. In 1856 he took the exam again and again failed the oral. That same year he planted the first peas for his crosses in the monastery garden.
+
+### The parts · One pair at a time
+He chose seven pairs of characters that anyone could tell apart: round or wrinkled seed, yellow or green seed leaves, the colour of the seed coat, inflated or constricted pods, green or yellow unripe pods, flowers along the stem or at its end, tall or short stems. He followed one pair at a time. e.g. To judge whether something is improving, watch one measure at a time, not ten at once.
+
+### The parts · What hides comes back
+In the first hybrid generation only one character of each pair showed. He called it dominant and the hidden one recessive. When the hybrids set seed, the hidden character returned, in about one in four. Hidden is not gone. e.g. A pupil who shows no progress this term has not lost everything you taught.
+
+### The parts · After he became abbot
+In 1868 he was elected abbot of the monastery. With the duties that came with it, his scientific work largely ended. Most of what he did in science was done in the dozen or so years before. e.g. When the main job finally takes off, keep a fixed slot for the side thing you care about.
+
+### Q: How do I use it today?
+This week pick one thing you do on the side and care about, and choose a number to record every week: pieces written, sessions practised, people who came. Record it for four weeks before deciding whether it is working.
+
+### Lines to keep
+Watch one pair of characters at a time. Hidden is not gone. Treat the side project as real work.
+
+### Q: What should I read alongside?
+Charles Darwin — They lived at the same time and both asked how living things pass on what they are. Darwin gathered material for twenty years and wrote a book that covered everything and was argued over at once. Mendel worked on one plant, wrote one paper, and was not cited for thirty-four years. One went as wide as possible, the other as narrow; later genetics needed both.
+
+### Further
+Charles Darwin Pu Songling Isaac Newton
+
+========================================================================
 ## Guan Zhong
 URL: https://ourword.ai/en/i/guan-zhong/
 Tags: Power and organisation, Pre-Qin and classical, Granaries first
@@ -2857,7 +2891,7 @@ Use the rule now; the cause can wait. After selling, do not keep the books on th
 Albert Einstein — Both faced a cause nobody had. Newton said he would not invent one and left it empty while the calculation stood; Einstein invented one and pushed it until it contradicted itself. One shelves what he cannot prove, the other puts it out to be tested. Charles P. Kindleberger — The same South Sea bubble of 1720. Kindleberger stood outside it and laid three hundred years of crashes into one table; Newton was one cell in that table, inside it and swept along. One counted from outside, the other was pushed from within. Charles Darwin — Both faced the question of who thought of it first. Newton fought Leibniz over the calculus for years, and the Royal Society report that found for him came from a committee appointed while he was its president. Darwin handed his old draft to two friends, published jointly with Wallace, and Wallace later called his own book on evolution Darwinism.
 
 ### Further
-Albert Einstein Richard Feynman Charles P. Kindleberger George Soros Extraordinary Popular Delusions Charles Darwin
+Albert Einstein Richard Feynman Charles P. Kindleberger George Soros Extraordinary Popular Delusions Charles Darwin Gregor Mendel
 
 ========================================================================
 ## Ivan Illich
@@ -5115,7 +5149,7 @@ Almost everyone here eventually made it. He didn't. He called it an idle book un
 Excellent Sheep — Two ways of having no scoreboard: they were never given one, he had one and it never once said yes. Winston Churchill — Both spent decades unrecognised. His day came; Pu Songling's never did, and the advice has to work either way. Sima Qian — Two kinds of it never worked. Pu Songling came close for forty years with no turning point; Sima Qian has one catastrophe and a life visibly divided by it. Tao Yuanming — Both were poor for life: Pu Songling kept sitting the exam and never passed, Tao Yuanming stopped sitting it on purpose. One had no choice, the other chose. Bai Juyi — Both got the wrong success: Pu Songling died believing the examinations were the real work and the tales were a sideline, while Bai Juyi laid both lists out in his own lifetime and said which one was his.
 
 ### Further
-Excellent Sheep Fan Li Winston Churchill Du Fu Tao Yuanming Bai Juyi
+Excellent Sheep Fan Li Winston Churchill Du Fu Tao Yuanming Bai Juyi Gregor Mendel
 
 ========================================================================
 ## Rat Park
@@ -17962,6 +17996,72 @@ Where it goes wrong: substituting encouragement and slogans for real completed w
 It is produced by accumulated rightness, not seized by one act from outside.
 Do a thing your heart cannot approve, and the breath starves.
 Keep the work in hand. Do not forget it. Do not help it grow.
+
+========================================================================
+## Gregor Mendel · Choose the pea first
+URL: https://ourword.ai/en/i/mendel/pick-the-pea/
+Source: Gregor Mendel, 'Experiments in Plant Hybridisation' (1866), in William Bateson's translation (1902)
+Tags: Deep read, Gregor Mendel, A side project succeeds when you run it like a real one
+
+There is a thing you do on the side that you care about. How do you make it more than a hobby?
+
+### Q: What actually happened?
+Mendel twice failed the oral part of the exam to become a certified schoolteacher, and taught as a substitute. His peas grew in the monastery garden. Before making a single cross he obtained thirty-four varieties from several seedsmen and grew them for two years, only to see which kept their characters true. In a pea the pollen reaches the stigma before the flower opens, so stray pollen rarely gets in. With the right material, the counting could be trusted.
+
+### The parts · Decide what the material must do
+His paper opens the method by saying that "the value and utility of any experiment are determined by the fitness of the material to the purpose for which it is used". Then the conditions: constant, clearly different characters; hybrids that can be protected from foreign pollen; offspring that stay fertile.
+e.g. Before starting a podcast on the side, try three formats for two weeks and keep the one you can measure the same way every time.
+
+### The parts · Count, don't look
+He noted that among all the hybrid experiments before him, none had been carried far enough to count the forms of the offspring and their ratios. He counted: 253 hybrids gave 7,324 seeds, 5,474 round and 1,850 wrinkled, a ratio of 2.96 to 1.
+e.g. To know whether the side project is going anywhere, write down the same number every week for three months.
+
+### The parts · Keep it small, finish it
+He said the work was practically confined to a small plant group and took eight years to conclude in all essentials. "It requires indeed some courage to undertake a labour of such far-reaching extent", he wrote, yet it seemed the only right way.
+e.g. Pick one narrow question and carry it through to a complete result before widening it.
+
+### Q: How do I use it today?
+Where you are: The day job is going nowhere, and the thing you do on the side matters to you, but you have always treated it as play.
+Ask first: Can the results of this thing be counted? Am I recording numbers, or impressions?
+Where it goes wrong: Reading it as 'take your side project seriously and it will succeed'. Mendel did the work properly and nobody recognised it in his lifetime. Rigour buys a result that others can check later, not a guarantee.
+
+### Lines to keep
+An experiment is worth what its material is fit for.
+Many had crossed plants. Nobody had counted to the end.
+One kind of pea, eight years.
+
+========================================================================
+## Gregor Mendel · Print it and leave it
+URL: https://ourword.ai/en/i/mendel/on-the-record/
+Source: Gregor Mendel, 'Experiments in Plant Hybridisation' (1866); William Bateson, Mendel's Principles of Heredity: A Defence (1902)
+Tags: Deep read, Gregor Mendel, When nobody reads your work, make sure it can be found
+
+The work is solid and nobody pays attention. What should you do with it while nobody is looking?
+
+### Q: What actually happened?
+In February and March 1865 Mendel read his pea experiments to the Natural History Society of Brünn, and the next year the paper appeared in the society's proceedings. For more than thirty years almost nobody cited it. He died in 1884. In 1900 Hugo de Vries, Carl Correns and Erich von Tschermak, working separately, reached the same ratios, and each of them pointed back to that paper. William Bateson, reading it, called the account "excellent and complete".
+
+### The parts · Write it so others can check it
+He recorded how many plants were used, how many seeds they bore, of which kinds and in what ratio, down to extreme cases such as one plant with 14 round and 15 angular seeds. Thirty-four years later others laid their own counts beside his, and they matched.
+e.g. For the piece nobody read, add how you did it and what the numbers were, so someone could repeat it.
+
+### The parts · A lecture lasts one evening; print lasts
+Reading the paper aloud reached one room of listeners. Printing it put it on paper and onto shelves. The three men of 1900 could find it because of the printed copy, not because anyone remembered those two evenings.
+e.g. Put finished work somewhere public, dated and searchable, not only on your own laptop.
+
+### The parts · Neglect is often bad timing
+Bateson offered a reason for the silence: around 1865 new methods of research had opened up, and the most original investigators preferred them to the tedious observations of hybridisers. He still admitted that the total neglect of such a discovery was not easy to account for.
+e.g. When everyone is chasing another field, an empty audience is not proof that you did the work badly.
+
+### Q: How do I use it today?
+Where you are: You made something you believe is solid, you put it out, and nobody paid attention. You are starting to think it was wasted.
+Ask first: Is it written up completely? If someone wanted to check it one day, could they? Is it somewhere it can be found?
+Where it goes wrong: Reading it as 'good work is always discovered, so just wait'. Mendel did not live to see it. It was found because of the complete record and the printed copy, and both of those he made himself.
+
+### Lines to keep
+Unread does not mean badly done.
+A complete record still matched thirty-four years later.
+Put it where it can be found.
 
 ========================================================================
 ## Robert K. Merton · How a false story makes itself true

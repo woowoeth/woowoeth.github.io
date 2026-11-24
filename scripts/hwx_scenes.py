@@ -619,6 +619,8 @@ SCENES = [
      [("murakami", "stop-while-it-flows"), ("bj-fogg", "tiny-habits")]),
     ("我做的东西越来越像别人的。",
      [("murakami", "no-one-asked-you-to"), ("thiel", "competition-is-for-losers")]),
+    ("我做得很扎实，可就是没人理。",
+     [("mendel", "on-the-record")]),
 ]),
 
 # ── 自己 ──
@@ -1730,6 +1732,8 @@ SCENES = [
      [("pu-songling", "collecting-at-the-roadside"), ("murakami", "focus-and-endurance")]),
     ("世人爱的，不是我最用力的。",
      [("bai-juyi", "what-i-rank-low"), ("pu-songling", "the-side-thing")]),
+    ("我想把业余那件事，当真做一回。",
+     [("mendel", "pick-the-pea")]),
 ]),
 ("被晾在一边", "使不上劲", [
     ("没人再找我商量了。",

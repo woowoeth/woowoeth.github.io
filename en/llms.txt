@@ -1,9 +1,9 @@
 # OurWord (OurWord)
 
-> 221 people and books on how the world actually works, across 2,600 years
+> 222 people and books on how the world actually works, across 2,600 years
 > See how people before you handled it.
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 221 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 222 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
 ## Read it
 
@@ -17,11 +17,11 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 ## Topics
 
 - [Modern](https://ourword.ai/en/t/modern/) — 67
-- [The industrial age](https://ourword.ai/en/t/the-industrial-age/) — 65
+- [The industrial age](https://ourword.ai/en/t/the-industrial-age/) — 66
 - [Pre-Qin and classical](https://ourword.ai/en/t/pre-qin-and-classical/) — 35
 - [Power and organisation](https://ourword.ai/en/t/power-and-organisation/) — 33
+- [Learning and growth](https://ourword.ai/en/t/learning-and-growth/) — 24
 - [Mind and feeling](https://ourword.ai/en/t/mind-and-feeling/) — 24
-- [Learning and growth](https://ourword.ai/en/t/learning-and-growth/) — 23
 - [Qin, Han and the Six Dynasties](https://ourword.ai/en/t/qin-han-and-the-six-dynasties/) — 23
 - [Money and risk](https://ourword.ai/en/t/money-and-risk/) — 22
 - [Starting and building](https://ourword.ai/en/t/starting-and-building/) — 22
@@ -334,6 +334,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [Mencius · The people come first](https://ourword.ai/en/i/mencius/people-first/): Mencius · The people come first — Where the ground under power actually is. Read for two thousand years as ancient humanism. It reads better as a technical claim about where a government's power comes from.
 - [Mencius · Two different ways of being obeyed](https://ourword.ai/en/i/mencius/force-vs-virtue/): Mencius · Two different ways of being obeyed — Compliance and conviction look identical. Two people are doing what you asked, and the two cases have nothing in common. This is how to tell which one you have.
 - [Mencius · The flood-like breath](https://ourword.ai/en/i/mencius/flood-like-qi/): Mencius · The flood-like breath — It accumulates, and it cannot be hurried. Asked what the flood-like breath was, he said it is hard to put into words. Here is where it comes from, and how it leaks away.
+- [Gregor Mendel · Choose the pea first](https://ourword.ai/en/i/mendel/pick-the-pea/): Gregor Mendel · Choose the pea first — A side project succeeds when you run it like a real one. There is a thing you do on the side that you care about. How do you make it more than a hobby?
+- [Gregor Mendel · Print it and leave it](https://ourword.ai/en/i/mendel/on-the-record/): Gregor Mendel · Print it and leave it — When nobody reads your work, make sure it can be found. The work is solid and nobody pays attention. What should you do with it while nobody is looking?
 - [Robert K. Merton · How a false story makes itself true](https://ourword.ai/en/i/merton/self-fulfilling-prophecy/): Robert K. Merton · How a false story makes itself true — Suspicion manufactures the evidence for itself. People have begun guarding themselves against you and explaining makes it worse. How the loop closes, and where it can be cut.
 - [Robert K. Merton · To every one that hath](https://ourword.ai/en/i/merton/matthew-effect/): Robert K. Merton · To every one that hath — Credit is paid on reputation, not on effort. You did the work and another name is the one people kept. Why this is usually allocation rather than theft.
 - [Montaigne · To philosophise is to learn to die](https://ourword.ai/en/i/montaigne/learning-to-die/): Montaigne · To philosophise is to learn to die — After he was thrown from the horse. He tells you to think about death daily, which sounds morbid. Then he reports having very nearly done it.
@@ -576,7 +578,7 @@ Cite the individual page URL, not the homepage — each entry page is stable and
 - [AI Bubble Monitor](https://ourword.ai/ai/)
 - [Zouni](https://ourword.ai/zouni/)
 
-## Index (221 entrys)
+## Index (222 entrys)
 
 - [Albert Einstein](https://ourword.ai/en/i/einstein/): Albert Einstein (Germany · 1879–1955) — Imagination. The physicist, and the father of relativity — but the legacy that travels furthest is not a formula, it is a way of working.
 - [Albert O. Hirschman](https://ourword.ai/en/i/hirschman/): Albert O. Hirschman (United States · 1915-2012) — Voice. A German-born American economist. He left Berlin in 1933, fought in Spain in 1936, spent 1940 in Marseille forging papers and finding mountain…
@@ -637,6 +639,7 @@ Cite the individual page URL, not the homepage — each entry page is stable and
 - [Garry Kasparov](https://ourword.ai/en/i/kasparov/): Garry Kasparov (1963– · Baku) — After losing to the machine. World chess champion for fifteen years, from 1985 to 2000. In 1996 he beat IBM's Deep Blue in Philadelphia; in the May 1997 rematch in New…
 - [Gary Becker](https://ourword.ai/en/i/becker/): Gary Becker (United States · 1930-2014) — Human capital. The economist who spent a career doing one thing: taking a subject everyone agreed was not about money and putting a price on it…
 - [George Soros](https://ourword.ai/en/i/soros/): George Soros (1930– · Budapest and New York) — Reflexivity. Founder of the Quantum Fund, and the man who forced the Bank of England to give way, making a billion dollars in a day.
+- [Gregor Mendel](https://ourword.ai/en/i/mendel/): Gregor Mendel (Austrian Empire · 1822–1884) — Heredity. Augustinian friar at the abbey in Brünn (now Brno) and the founder of genetics. Between 1856 and 1863 he crossed peas in the monastery garden…
 - [Guan Zhong](https://ourword.ai/en/i/guan-zhong/): Guan Zhong (Spring and Autumn · 723–645 BC) — Granaries first. The first statesman in China to think systematically about the relation between the economy and government.
 - [Guiguzi](https://ourword.ai/en/i/guiguzi/): Guiguzi (Warring States · c. 400–320 BC) — Open, close, sound out. The founding text of the Warring States persuaders, attributed to a recluse of Ghost Valley about whom nothing verifiable survives.
 - [Guns, Germs, and Steel](https://ourword.ai/en/i/guns-germs-steel/): Guns, Germs, and Steel (1997 · Jared Diamond) — Environment, not race. Diamond's 1997 book, which took the Pulitzer the following year. It answers a question almost everyone has had and few ask out…

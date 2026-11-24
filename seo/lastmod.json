@@ -540,8 +540,8 @@
   "h": "3b8a6fadc6c3e86d"
  },
  "i/darwin/": {
-  "d": "2026-11-19",
-  "h": "5d080dfc7ad0bc11"
+  "d": "2026-11-24",
+  "h": "a5c3388d795d3df7"
  },
  "i/darwin/a-good-days-work/": {
   "d": "2026-11-19",
@@ -1691,6 +1691,18 @@
   "d": "2026-08-28",
   "h": "a6356aca438b4535"
  },
+ "i/mendel/": {
+  "d": "2026-11-24",
+  "h": "30f7256f8a7b9600"
+ },
+ "i/mendel/on-the-record/": {
+  "d": "2026-11-24",
+  "h": "a54ae66fb2e8c63b"
+ },
+ "i/mendel/pick-the-pea/": {
+  "d": "2026-11-24",
+  "h": "8e24d35fe4c370e0"
+ },
  "i/merton/": {
   "d": "2026-10-13",
   "h": "01fa7fef3112dbc2"
@@ -1824,8 +1836,8 @@
   "h": "e52d225d8c73578d"
  },
  "i/newton/": {
-  "d": "2026-11-19",
-  "h": "bbe71c9c097cddb0"
+  "d": "2026-11-24",
+  "h": "dddbd31d9fdfb07e"
  },
  "i/newton/no-hypotheses/": {
   "d": "2026-10-27",
@@ -2004,8 +2016,8 @@
   "h": "1fa144840a82b0df"
  },
  "i/pu-songling/": {
-  "d": "2026-09-17",
-  "h": "6f36c3c9f03c8fb4"
+  "d": "2026-11-24",
+  "h": "74e35c23b19af6a4"
  },
  "i/pu-songling/collecting-at-the-roadside/": {
   "d": "2026-09-01",
