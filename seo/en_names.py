@@ -115,6 +115,7 @@ NAMES = {
     "qi-huangong": ("Duke Huan of Qi", "Power and organisation"),
     "william-james": ("William James", "Body and daily life"),
     "mendel": ("Gregor Mendel", "Learning and growth"),
+    "gou-jian": ("Goujian of Yue", "Strategy and competition"),
     "popular-delusions": ("Extraordinary Popular Delusions", "Money and risk"),
     "influence": ("Influence", "Reading people"),
     "konnikova": ("Maria Konnikova", "Reading people"),

@@ -154,6 +154,8 @@ SCENES = [
      [("li-bi", "strike-the-base"), ("sima-yi", "eight-days")]),
     ("我讲理他都认，可他就是不停手。",
      [("mozi", "belt-and-sticks")]),
+    ("我准备好了，可现在动手是不是太早？",
+     [("gou-jian", "hide-the-talons")]),
 ]),
 ("被牵着走", "有对手", [
     ("他每出一招，我都得接吗？",
@@ -1608,6 +1610,8 @@ SCENES = [
      [("xiang-yu", "sinking-the-boats"), ("han-xin", "back-to-the-river")]),
     ("从头再来的地方，我该先干什么。",
      [("su-shi", "three-exiles"), ("su-shi", "no-wind-no-rain")]),
+    ("从头来，我放不下原来的身份。",
+     [("gou-jian", "the-gall")]),
 ]),
 ("扛不动了", "人生转弯", [
     ("撑着我的那套说法，这回撑不住了。",

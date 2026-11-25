@@ -29,6 +29,7 @@ SLUGS = {
     "达尔文": "darwin",
     "舜": "shun",
     "齐桓公": "qi-huangong",
+    "勾践": "gou-jian",
     "威廉·詹姆斯": "william-james",
     "孟德尔": "mendel",
     "大癫狂": "popular-delusions",

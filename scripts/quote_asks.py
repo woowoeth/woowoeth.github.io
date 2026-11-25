@@ -704,6 +704,12 @@ QUOTE_ASKS = {
     "qi-huangong/against-nature":
         "他对我好得反常，我当时怎么没起疑？",
 
+    # 勾践
+    "gou-jian/the-gall":
+        "从头来，我放不下原来的身份。",
+    "gou-jian/hide-the-talons":
+        "我准备好了，可现在动手是不是太早？",
+
     # 孟德尔
     "mendel/pick-the-pea":
         "我想把业余那件事，当真做一回。",

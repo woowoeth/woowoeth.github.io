@@ -1,9 +1,9 @@
 # OurWord (OurWord)
 
-> 222 people and books on how the world actually works, across 2,600 years
+> 223 people and books on how the world actually works, across 2,600 years
 > See how people before you handled it.
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 222 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 223 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
 ## Read it
 
@@ -18,7 +18,7 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 
 - [Modern](https://ourword.ai/en/t/modern/) — 67
 - [The industrial age](https://ourword.ai/en/t/the-industrial-age/) — 66
-- [Pre-Qin and classical](https://ourword.ai/en/t/pre-qin-and-classical/) — 35
+- [Pre-Qin and classical](https://ourword.ai/en/t/pre-qin-and-classical/) — 36
 - [Power and organisation](https://ourword.ai/en/t/power-and-organisation/) — 33
 - [Learning and growth](https://ourword.ai/en/t/learning-and-growth/) — 24
 - [Mind and feeling](https://ourword.ai/en/t/mind-and-feeling/) — 24
@@ -26,8 +26,8 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 - [Money and risk](https://ourword.ai/en/t/money-and-risk/) — 22
 - [Starting and building](https://ourword.ai/en/t/starting-and-building/) — 22
 - [How the world works](https://ourword.ai/en/t/how-the-world-works/) — 21
+- [Strategy and competition](https://ourword.ai/en/t/strategy-and-competition/) — 21
 - [Reading people](https://ourword.ai/en/t/reading-people/) — 20
-- [Strategy and competition](https://ourword.ai/en/t/strategy-and-competition/) — 20
 - [Body and daily life](https://ourword.ai/en/t/body-and-daily-life/) — 18
 - [Family and relationships](https://ourword.ai/en/t/family-and-relationships/) — 18
 - [Early modern](https://ourword.ai/en/t/early-modern/) — 16
@@ -177,6 +177,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [Gandhi · The means are the seed](https://ourword.ai/en/i/gandhi/means-are-seeds/): Gandhi · The means are the seed — However you win is what you get. If the cause is right, can the method be rough? He closed the question in 1909 with a single image.
 - [John Gottman · The four horsemen](https://ourword.ai/en/i/gottman/four-horsemen/): John Gottman · The four horsemen — Four signals that predict a breakup. He watches fifteen minutes of one argument. This piece is about what he is actually watching.
 - [John Gottman · Repair attempts](https://ourword.ai/en/i/gottman/repair-attempts/): John Gottman · Repair attempts — Whether you fight matters less than whether you stop. Healthy relationships argue fiercely too. So where do they differ from the ones that break.
+- [Goujian of Yue · The gall by his seat](https://ourword.ai/en/i/gou-jian/the-gall/): Goujian of Yue · The gall by his seat — Starting over, drop the dignity and keep the grievance. A gall bladder hung by his seat. When you start again from the bottom, what should you let go of, and what must you keep?
+- [Goujian of Yue · The hawk hides its shape](https://ourword.ai/en/i/gou-jian/hide-the-talons/): Goujian of Yue · The hawk hides its shape — Being ready is not the same as it being time. Seven years of building. Once you are ready, how do you know it is time to move?
 - [Benjamin Graham · Mr. Market](https://ourword.ai/en/i/graham/mr-market/): Benjamin Graham · Mr. Market — A quote is a service, not a verdict. He turns the entire market into one manic-depressive business partner. What that story actually unlocks is smaller and stranger than it looks.
 - [Benjamin Graham · The margin of safety](https://ourword.ai/en/i/graham/margin-of-safety/): Benjamin Graham · The margin of safety — The room you leave for being wrong. He said the whole secret of sound investment fits in three words. The question is what those three words are actually buying.
 - [Mark Granovetter · The strength of weak ties](https://ourword.ai/en/i/granovetter/weak-ties/): Mark Granovetter · The strength of weak ties — Opportunity arrives from people you rarely see. Who to ask when you're looking for work. Your instinct gives the wrong answer; here's what the data gave.
@@ -578,7 +580,7 @@ Cite the individual page URL, not the homepage — each entry page is stable and
 - [AI Bubble Monitor](https://ourword.ai/ai/)
 - [Zouni](https://ourword.ai/zouni/)
 
-## Index (222 entrys)
+## Index (223 entrys)
 
 - [Albert Einstein](https://ourword.ai/en/i/einstein/): Albert Einstein (Germany · 1879–1955) — Imagination. The physicist, and the father of relativity — but the legacy that travels furthest is not a formula, it is a way of working.
 - [Albert O. Hirschman](https://ourword.ai/en/i/hirschman/): Albert O. Hirschman (United States · 1915-2012) — Voice. A German-born American economist. He left Berlin in 1933, fought in Spain in 1936, spent 1940 in Marseille forging papers and finding mountain…
@@ -639,6 +641,7 @@ Cite the individual page URL, not the homepage — each entry page is stable and
 - [Garry Kasparov](https://ourword.ai/en/i/kasparov/): Garry Kasparov (1963– · Baku) — After losing to the machine. World chess champion for fifteen years, from 1985 to 2000. In 1996 he beat IBM's Deep Blue in Philadelphia; in the May 1997 rematch in New…
 - [Gary Becker](https://ourword.ai/en/i/becker/): Gary Becker (United States · 1930-2014) — Human capital. The economist who spent a career doing one thing: taking a subject everyone agreed was not about money and putting a price on it…
 - [George Soros](https://ourword.ai/en/i/soros/): George Soros (1930– · Budapest and New York) — Reflexivity. Founder of the Quantum Fund, and the man who forced the Bank of England to give way, making a billion dollars in a day.
+- [Goujian of Yue](https://ourword.ai/en/i/gou-jian/): Goujian of Yue (Spring and Autumn · Yue · took the throne 496 BC) — Starting over. Goujian became king of Yue in 496 BC. Three years later he attacked Wu against Fan Li's advice, was crushed, and was…
 - [Gregor Mendel](https://ourword.ai/en/i/mendel/): Gregor Mendel (Austrian Empire · 1822–1884) — Heredity. Augustinian friar at the abbey in Brünn (now Brno) and the founder of genetics. Between 1856 and 1863 he crossed peas in the monastery garden…
 - [Guan Zhong](https://ourword.ai/en/i/guan-zhong/): Guan Zhong (Spring and Autumn · 723–645 BC) — Granaries first. The first statesman in China to think systematically about the relation between the economy and government.
 - [Guiguzi](https://ourword.ai/en/i/guiguzi/): Guiguzi (Warring States · c. 400–320 BC) — Open, close, sound out. The founding text of the Warring States persuaders, attributed to a recluse of Ghost Valley about whom nothing verifiable survives.

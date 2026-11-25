@@ -1,7 +1,7 @@
-# OurWord — 222 people and books on how the world actually works, across 2,600 years
+# OurWord — 223 people and books on how the world actually works, across 2,600 years
 # OurWord — See how people before you handled it.
 # https://ourword.ai/en/
-# Full corpus, plain text. 222 entrys.
+# Full corpus, plain text. 223 entrys.
 
 ========================================================================
 ## Albert Einstein
@@ -1747,7 +1747,7 @@ The birds are gone, so the good bow is put away. You can share hardship with him
 Li Ka-shing — Two and a half millennia apart, the same two rules: buy when nobody wants it, and leave before the top. Zhang Liang — The two men who understood leaving. Fan Li left to trade, Zhang Liang left to study the way. Different exits, identical result. Zhuge Liang — Two answers to having succeeded: Fan Li walked away at the summit, Zhuge Liang never put it down at all. Li Bi — Two versions of leaving without going far: Fan Li disappeared completely, Li Bi kept walking through the centre of power in a robe that let him leave at will. Guo Jia — Two ways a gifted adviser ends. Guo Jia burned out at thirty-eight inside the work; Fan Li walked away on the day it was won and lived a long time afterwards. Wang Jian — Two ways of leaving at the top: Fan Li vanished and became a merchant, Wang Jian resigned and went home to his fields. Bai Gui — Two ancient fortunes: Fan Li teaches how to get out intact, Bai Gui teaches a method you can repeat. Hu Xueyan — Both worked between officials and trade. Fan Li left at the summit; Hu Xueyan tied the knots tighter every year. Jesse Livermore — Both understood exits. Fan Li left at every summit; Livermore never once got up from the table. Chen Ping — Fan Li left at the top, with the work done and the time of his choosing. Chen Ping left in fear, with nothing but his clothes. For one, leaving was about when; for the other, only how. Lu Buwei — Fan Li was also a strategist turned merchant, but he left at the height of his success and later gave away his wealth more than once. Lu Buwei stayed on his estate after his dismissal with envoys at his gate and died over one letter from the king. One knew when to take his stake off the table; the other stepped down and left the door open.
 
 ### Further
-Li Ka-shing Su Shi Sun Tzu Warren Buffett Han Feizi Pu Songling Guan Zhong Zhang Liang Zhuge Liang Li Bi The I Ching Napoleon Sima Yi Strategies of the Warring States Wang Jian Xiang Yu The Art of Worldly Wisdom Bai Gui Ray Dalio Hu Xueyan Jesse Livermore Records of the Grand Historian Nassim Taleb The Sovereign Individual Liu Yan Chen Ping Lu Buwei Zigong
+Li Ka-shing Su Shi Sun Tzu Warren Buffett Han Feizi Pu Songling Guan Zhong Zhang Liang Zhuge Liang Li Bi The I Ching Napoleon Sima Yi Strategies of the Warring States Wang Jian Xiang Yu The Art of Worldly Wisdom Bai Gui Ray Dalio Hu Xueyan Jesse Livermore Records of the Grand Historian Nassim Taleb The Sovereign Individual Liu Yan Chen Ping Lu Buwei Zigong Goujian of Yue
 
 ========================================================================
 ## Fan Zhongyan
@@ -2158,6 +2158,40 @@ Warren Buffett — Two poles of investment philosophy: Buffett trusts that the m
 
 ### Further
 Ray Dalio Warren Buffett Nassim Taleb Charlie Munger The Crowd Jesse Livermore Howard Marks Jim Simons Thinking, Fast and Slow Charles P. Kindleberger Robert K. Merton John Maynard Keynes Isaac Newton
+
+========================================================================
+## Goujian of Yue
+URL: https://ourword.ai/en/i/gou-jian/
+Tags: Strategy and competition, Pre-Qin and classical, Starting over
+
+Goujian of Yue (Spring and Autumn · Yue · took the throne 496 BC) — Starting over. Goujian became king of Yue in 496 BC. Three years later he attacked Wu against Fan Li's advice, was crushed, and was besieged on Mount Kuaiji with five thousand men.
+
+### Q: What did this one leave behind?
+Goujian became king of Yue in 496 BC. Three years later he attacked Wu against Fan Li's advice, was crushed, and was besieged on Mount Kuaiji with five thousand men. He survived by becoming the vassal of King Fuchai of Wu. Over the next twenty-odd years he rebuilt, destroyed Wu, and became the last hegemon of the Spring and Autumn period. Everything here follows Sima Qian. He is here for two situations: what to let go of when you start over from a fall, and when to move once you are ready.
+
+### Q: What actually happened?
+After the defeat, Goujian retreated with five thousand men to Mount Kuaiji, and Wu surrounded them. He sent his minister Wen Zhong to the Wu camp to crawl forward on his knees and offer Goujian as Wu's servant and his wife as a concubine. Wu's adviser Wu Zixu said refuse. Goujian wanted to kill his own family, burn his treasures and fight to the death. Wen Zhong stopped him and bribed Wu's chief minister instead, and Wu's king pardoned Yue. Trapped, Goujian sighed: is this where I end? Wen Zhong listed founders who had been imprisoned or exiled, and all of them later ruled.
+
+### The parts · When you did not listen, say so first
+In 494 BC he heard Wu was drilling troops day and night and wanted to strike first. Fan Li told him not to. I have decided, he said. After the rout his first words to Fan Li were: this is because I did not listen to you; what now? e.g. When you push something through and it fails, go back to the person who warned you and say so before asking what next.
+
+### The parts · Give the job to whoever fits it
+Back home he wanted Fan Li to run the state. Fan Li said: in war, Wen Zhong is not my equal; in calming the country and winning the people, I am not his. Goujian gave the government to Wen Zhong, and Fan Li went to Wu as a hostage for two years. e.g. In the years of rebuilding, give the key posts to the people who fit them best, not the people closest to you.
+
+### The parts · After twenty-two years, the hard part is not relenting
+At the end Wu's king, besieged on a hill, sent an envoy stripped to the waist to beg for peace, recalling that he had once spared Goujian. Goujian could not bear it and wanted to agree. Fan Li asked whether twenty-two years of planning should be thrown away in one morning, and drummed the advance. e.g. When the rival you spent years beating comes to plead, first remember why you needed to win.
+
+### Q: How do I use it today?
+This week write your most recent fall as one sentence: where you lost, who warned you, and which warning you ignored. Put a copy somewhere you open every day, and for a month, each time you see it, ask whether today's work has anything to do with that sentence.
+
+### Lines to keep
+This is because I did not listen to you. Give the key post to whoever fits it best. At the last step, the hard part is not relenting.
+
+### Q: What should I read alongside?
+Xiang Yu — Both lost a decisive war down to almost nothing. Goujian, trapped at Kuaiji, bowed as a vassal, went home to farm, and twenty-odd years later destroyed Wu. Xiang Yu, at the Wu River, was urged to cross home and start again; eight thousand men had crossed with him and none returned, he said, and he could not face their elders. One dropped his dignity and started over. The other kept it and did not.
+
+### Further
+Fan Li Xiang Yu Sima Yi
 
 ========================================================================
 ## Gregor Mendel
@@ -5803,7 +5837,7 @@ Liang is not going to live long. Riding a tiger, you cannot get down. The patien
 Zhuge Liang — The sharpest pairing on the site: one attacked to defend and spent his life doing it, the other defended to attack and outlived him. Huo Qubing — Two extreme strategies for a life: burn everything at twenty-four, or hold everything back until seventy.
 
 ### Further
-Fan Li Li Bi Zhuge Liang Sun Tzu Cao Cao Feng Dao Guo Ziyi Huo Qubing Wang Jian Machiavelli
+Fan Li Li Bi Zhuge Liang Sun Tzu Cao Cao Feng Dao Guo Ziyi Huo Qubing Wang Jian Machiavelli Goujian of Yue
 
 ========================================================================
 ## Simone Weil
@@ -7567,10 +7601,10 @@ Look at your own team for the Fan Zeng: the person who has been right and whom y
 To be rich and not go home is to wear brocade at night. Heaven is destroying me. It is no fault of my arms. Not one of the eight thousand is going back. What face could I meet them with?
 
 ### Q: What should I read alongside?
-Liu Bang — The perfect loser against the imperfect winner: the ceiling of one man's talent against the ceiling of what many people will do for you. Julius Caesar — Two tragic ends in two traditions: Caesar killed by the people he trusted, Xiang Yu by refusing to get into a boat. Duke Wen of Jin — Both chose between comfort and the long road. Xiang Yu took the Qin capital, longed to go home to Chu, and would not hear the man who urged him to stay. Chong'er also wanted to stay in Qi, and was pushed into a carriage by his wife and his uncle. One had nobody able to stop him; the other had people who dared.
+Liu Bang — The perfect loser against the imperfect winner: the ceiling of one man's talent against the ceiling of what many people will do for you. Julius Caesar — Two tragic ends in two traditions: Caesar killed by the people he trusted, Xiang Yu by refusing to get into a boat. Duke Wen of Jin — Both chose between comfort and the long road. Xiang Yu took the Qin capital, longed to go home to Chu, and would not hear the man who urged him to stay. Chong'er also wanted to stay in Qi, and was pushed into a carriage by his wife and his uncle. One had nobody able to stop him; the other had people who dared. Goujian of Yue — Both lost a decisive war down to almost nothing. Goujian, trapped at Kuaiji, bowed as a vassal, went home to farm, and twenty-odd years later destroyed Wu. Xiang Yu, at the Wu River, was urged to cross home and start again; eight thousand men had crossed with him and none returned, he said, and he could not face their elders. One dropped his dignity and started over. The other kept it and did not.
 
 ### Further
-Liu Bang Han Xin Sun Tzu Fan Li On War Hu Xueyan Duke Wen of Jin Li Qingzhao
+Liu Bang Han Xin Sun Tzu Fan Li On War Hu Xueyan Duke Wen of Jin Li Qingzhao Goujian of Yue
 
 ========================================================================
 ## Xiao He
@@ -12753,6 +12787,72 @@ Where it goes wrong: making repair something the same person always does. That i
 Happy couples aren't the ones who don't fight. They repair.
 In stable relationships, positives run about five to one.
 Whether a repair works depends on the account built beforehand.
+
+========================================================================
+## Goujian of Yue · The gall by his seat
+URL: https://ourword.ai/en/i/gou-jian/the-gall/
+Source: Sima Qian, Records of the Grand Historian, Hereditary House of King Goujian of Yue
+Tags: Deep read, Goujian of Yue, Starting over, drop the dignity and keep the grievance
+
+A gall bladder hung by his seat. When you start again from the bottom, what should you let go of, and what must you keep?
+
+### Q: What actually happened?
+King Fuchai of Wu pardoned Yue, and Goujian went home. He hung a gall bladder beside his seat. Sitting or lying down he looked up at it; before eating or drinking he tasted it, and asked himself: have you forgotten the shame of Kuaiji? He worked the fields himself while his wife wove. No meat was added to his meals, no second colour to his clothes. He humbled himself before able men, treated guests generously, helped the poor, mourned the dead, and shared the people's labour.
+
+### The parts · Put the rank down first
+A few years earlier he had been a king marching on Wu. Back home he lived as a commoner: his own fields, his wife's loom, no meat. The first thing to throw away when you start over is rarely money. It is the dignity your old position seemed to require.
+e.g. Someone who once ran a team of twenty goes back to frontline sales and makes the client calls herself in week one.
+
+### The parts · Keep the grievance where you will touch it
+The gall was not there to make him suffer; it was there so he would remember. Memory does not hold a humiliation once life gets comfortable, so he put it by his seat and at his table, where every meal would meet it.
+e.g. Write the harshest line from the review that sank your proposal on the first page of the notebook you open every morning.
+
+### The parts · Count it in years
+From his return to the conquest of Wu, his minister Fan Li later said, they had planned for twenty-two years. Most of it was farming, settling people and drilling troops, with nothing to show. Measured month by month, a restart only discourages you.
+e.g. Changing careers at forty, do not judge the move by the first three months. Give yourself a three-year horizon.
+
+### Q: How do I use it today?
+Where you are: you have fallen from somewhere fairly high, a company gone, a title gone, beaten in front of everyone, and you have to start again. You cannot let go of how things used to be, and you fear that once life settles you will forget why you fell.
+Ask first: what I cannot let go of, is it the dignity of the old position, or the reason I fell? Drop the first. Keep the second.
+Where it goes wrong: reading it as 'suffer enough and you will rise'. The gall was a reminder, not a punishment. At the same time he was courting able men, welcoming guests and working beside his people, winning loyalty back. Hardship without the work is just hardship.
+
+### Lines to keep
+The gall by the seat was for remembering.
+Throw away the dignity; keep the grievance.
+A real restart is counted in years.
+
+========================================================================
+## Goujian of Yue · The hawk hides its shape
+URL: https://ourword.ai/en/i/gou-jian/hide-the-talons/
+Source: Sima Qian, Records of the Grand Historian, Hereditary House of King Goujian of Yue
+Tags: Deep read, Goujian of Yue, Being ready is not the same as it being time
+
+Seven years of building. Once you are ready, how do you know it is time to move?
+
+### Q: What actually happened?
+Seven years after his return, Goujian's people were settled and his soldiers trained, and he wanted to use them against Wu. His officer Feng Tong objected: a state just back from ruin, prosperous again, repairing its weapons, will frighten Wu, and fear brings attack. A bird of prey hides its shape before it strikes. Better to befriend Qi, Chu and Jin and let Wu overreach. Years later, when Wu's best adviser had been forced to kill himself, Goujian asked Fan Li: now? Not yet. The next spring Wu's king took his best troops north to a summit. Goujian asked again. Now.
+
+### The parts · Your strength is visible to them too
+Feng Tong did not say Yue was too weak. He said the opposite: Yue was rich and rearmed, Wu would see it, and a frightened rival strikes first. The most dangerous thing during preparation is letting your rival know you are preparing.
+e.g. Building an internal venture at a big company, do not announce at the all-hands what it will replace before it can stand.
+
+### The parts · Asked twice, and the test was their house
+With Wu's sharpest critic dead and only flatterers left, Goujian thought the time had come, and Fan Li said no. Only when Wu's elite troops were away and only the old and weak guarded home did he say yes. The test was not his readiness but where the rival's strength was.
+e.g. To take customers from a giant, pick the season its best people are tied up elsewhere, not the day you feel ready.
+
+### The parts · Win one battle, take only what you can hold
+That spring Yue beat Wu's army and killed the crown prince. When Wu sued for peace, Yue judged it could not yet destroy Wu and agreed. Four years passed before it struck again, and the siege that followed took three more.
+e.g. After winning your first big account from a large rival, do not declare all-out war the next day. Serve that one well.
+
+### Q: How do I use it today?
+Where you are: you have built up for years, skills, money, a team, and the rival who has kept you down is still there. You badly want to move now.
+Ask first: do I want to move because something on their side has opened up, or because I cannot bear to wait any longer?
+Where it goes wrong: reading it as 'endure long enough and the chance will come'. Goujian was not idly waiting; he was settling people, training troops, courting allies. And the moment Fan Li said now, he marched. Waiting needs a test: what on their side is empty, not how long you have endured.
+
+### Lines to keep
+A hawk hides its shape before it strikes.
+Whether to strike depends on whether their house is empty.
+Win one battle; take only what you can hold.
 
 ========================================================================
 ## Benjamin Graham · Mr. Market
