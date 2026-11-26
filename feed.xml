@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>OurWord — 223 people and books on how the world actually works, across 2,600 years</title>
+    <title>OurWord — 224 people and books on how the world actually works, across 2,600 years</title>
     <link>https://ourword.ai/</link>
     <atom:link href="https://ourword.ai/feed.xml" rel="self" type="application/rss+xml"/>
-    <description>A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 223 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.</description>
+    <description>A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 224 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.</description>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 25 Nov 2026 08:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 08:00:00 +0800</lastBuildDate>
 <!-- chapters:begin -->
     <item><title>阿德勒 · 课题分离</title><link>https://ourword.ai/i/adler/separation-of-tasks/</link><guid isPermaLink="true">https://ourword.ai/i/adler/separation-of-tasks/</guid><description>阿德勒 · 课题分离——先分清这是谁的事。人际关系的痛苦大半来自越界。这一篇要回答的是：边界到底画在哪。</description><pubDate>Tue, 01 Sep 2026 08:00:00 +0800</pubDate></item>
     <item><title>阿德勒 · 不是因为，是为了</title><link>https://ourword.ai/i/adler/teleology/</link><guid isPermaLink="true">https://ourword.ai/i/adler/teleology/</guid><description>阿德勒 · 不是因为，是为了——把原因换成目的。弗洛伊德问你经历过什么，阿德勒问你想用它做什么。这一篇要回答的是：这个换问法为什么能解冻。</description><pubDate>Sun, 30 Aug 2026 08:00:00 +0800</pubDate></item>
@@ -349,6 +349,8 @@
     <item><title>战争论 · 摩擦</title><link>https://ourword.ai/i/on-war/friction/</link><guid isPermaLink="true">https://ourword.ai/i/on-war/friction/</guid><description>战争论 · 摩擦——最简单的事也是困难的。他为战争学发明了一个物理词。这一篇要回答的是：摩擦从哪里来，以及为什么它不可消除、只可折算。</description><pubDate>Sat, 29 Aug 2026 08:00:00 +0800</pubDate></item>
     <item><title>诺斯古德·帕金森 · 工作会胀满时间</title><link>https://ourword.ai/i/parkinson/work-expands/</link><guid isPermaLink="true">https://ourword.ai/i/parkinson/work-expands/</guid><description>诺斯古德·帕金森 · 工作会胀满时间——你不是不会安排，是容器太大。你觉得时间不够用。这一篇要回答的是：事情有多少，其实是被你给它的那段时间定下来的。</description><pubDate>Tue, 15 Sep 2026 08:00:00 +0800</pubDate></item>
     <item><title>诺斯古德·帕金森 · 人越加越忙</title><link>https://ourword.ai/i/parkinson/officials-make-work/</link><guid isPermaLink="true">https://ourword.ai/i/parkinson/officials-make-work/</guid><description>诺斯古德·帕金森 · 人越加越忙——机构的膨胀和事情的多少无关。队伍天天喊忙，你准备再招两个人。这一篇要回答的是：加进来的人，会不会自己造出新的忙。</description><pubDate>Tue, 15 Sep 2026 08:00:00 +0800</pubDate></item>
+    <item><title>帕斯卡 · 待在自己房间里</title><link>https://ourword.ai/i/pascal/a-quiet-room/</link><guid isPermaLink="true">https://ourword.ai/i/pascal/a-quiet-room/</guid><description>帕斯卡 · 待在自己房间里——坐不住，多半不是缺专注。坐下没多久就想起身。这一篇要回答的是：那股躁动，到底在躲什么。</description><pubDate>Thu, 26 Nov 2026 08:00:00 +0800</pubDate></item>
+    <item><title>帕斯卡 · 要的是追，不是兔子</title><link>https://ourword.ai/i/pascal/the-chase-not-the-hare/</link><guid isPermaLink="true">https://ourword.ai/i/pascal/the-chase-not-the-hare/</guid><description>帕斯卡 · 要的是追，不是兔子——到手就没劲，先认清自己要的是哪一样。追到手，就没劲了。这一篇要回答的是：你要的究竟是那样东西，还是追它的那段日子。</description><pubDate>Thu, 26 Nov 2026 08:00:00 +0800</pubDate></item>
     <item><title>保罗·格雷厄姆 · 做不能规模化的事</title><link>https://ourword.ai/i/paul-graham/dont-scale/</link><guid isPermaLink="true">https://ourword.ai/i/paul-graham/dont-scale/</guid><description>保罗·格雷厄姆 · 做不能规模化的事——早期要手工。创业者满脑子都是规模化，他劝的是反方向。这一篇要回答的是：手工阶段买到的是什么。</description><pubDate>Sat, 29 Aug 2026 08:00:00 +0800</pubDate></item>
     <item><title>保罗·格雷厄姆 · 默认活着还是默认死去</title><link>https://ourword.ai/i/paul-graham/default-alive/</link><guid isPermaLink="true">https://ourword.ai/i/paul-graham/default-alive/</guid><description>保罗·格雷厄姆 · 默认活着还是默认死去——先算这道题。他和创业者聊天必先问一道题，多数创始人答不上来。这一篇要回答的是：这道题为什么排在一切讨论之前。</description><pubDate>Sat, 29 Aug 2026 08:00:00 +0800</pubDate></item>
     <item><title>埃丝特·佩雷尔 · 安全感和欲望要的东西相反</title><link>https://ourword.ai/i/perel/security-and-desire/</link><guid isPermaLink="true">https://ourword.ai/i/perel/security-and-desire/</guid><description>埃丝特·佩雷尔 · 安全感和欲望要的东西相反——所以过得越好越平淡。日子过得越安稳，感觉越淡，很多人以为是自己变了。这一篇要回答的是：佩雷尔说这是结构决定的。</description><pubDate>Tue, 01 Sep 2026 08:00:00 +0800</pubDate></item>

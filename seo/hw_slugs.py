@@ -32,6 +32,7 @@ SLUGS = {
     "勾践": "gou-jian",
     "威廉·詹姆斯": "william-james",
     "孟德尔": "mendel",
+    "帕斯卡": "pascal",
     "大癫狂": "popular-delusions",
     "托尔斯坦·凡勃伦": "veblen",
     "西蒙娜·德·波伏瓦": "beauvoir",

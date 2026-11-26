@@ -1284,8 +1284,8 @@
   "h": "eec00d649b260f7b"
  },
  "i/kierkegaard/": {
-  "d": "2026-11-10",
-  "h": "1a5190823d0b01b5"
+  "d": "2026-11-26",
+  "h": "1ab56ae543ac1961"
  },
  "i/kierkegaard/lived-forwards/": {
   "d": "2026-10-17",
@@ -1728,8 +1728,8 @@
   "h": "b2efa77f327d9aca"
  },
  "i/montaigne/": {
-  "d": "2026-11-05",
-  "h": "a5c7dec1049b4fd3"
+  "d": "2026-11-26",
+  "h": "4b9c82a36d44f3d9"
  },
  "i/montaigne/learning-to-die/": {
   "d": "2026-09-02",
@@ -1848,8 +1848,8 @@
   "h": "e52d225d8c73578d"
  },
  "i/newton/": {
-  "d": "2026-11-24",
-  "h": "dddbd31d9fdfb07e"
+  "d": "2026-11-26",
+  "h": "1e0f0f0d90ccf503"
  },
  "i/newton/no-hypotheses/": {
   "d": "2026-10-27",
@@ -1950,6 +1950,18 @@
  "i/parkinson/work-expands/": {
   "d": "2026-09-15",
   "h": "eacc983febb26089"
+ },
+ "i/pascal/": {
+  "d": "2026-11-26",
+  "h": "2a5a9e1f6bbf6f97"
+ },
+ "i/pascal/a-quiet-room/": {
+  "d": "2026-11-26",
+  "h": "065570f7b5634abb"
+ },
+ "i/pascal/the-chase-not-the-hare/": {
+  "d": "2026-11-26",
+  "h": "0445612baa6aea6c"
  },
  "i/paul-graham/": {
   "d": "2026-09-01",

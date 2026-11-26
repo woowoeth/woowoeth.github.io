@@ -1,7 +1,7 @@
-# OurWord — 223 people and books on how the world actually works, across 2,600 years
+# OurWord — 224 people and books on how the world actually works, across 2,600 years
 # OurWord — See how people before you handled it.
 # https://ourword.ai/en/
-# Full corpus, plain text. 223 entrys.
+# Full corpus, plain text. 224 entrys.
 
 ========================================================================
 ## Albert Einstein
@@ -594,6 +594,40 @@ Warren Buffett — The student past the teacher: Graham bought cheap ordinary co
 
 ### Further
 Bai Gui Warren Buffett Charlie Munger Ray Dalio Nassim Taleb Peter Lynch Howard Marks Scarcity
+
+========================================================================
+## Blaise Pascal
+URL: https://ourword.ai/en/i/pascal/
+Tags: Mind and feeling, Early modern, Diversion
+
+Blaise Pascal (France · 1623–1662) — Diversion. French mathematician, physicist and writer. At nineteen he built a calculating machine; the law of pressure in fluids carries his name; his letters with Fermat in 1654…
+
+### Q: What did this one leave behind?
+French mathematician, physicist and writer. At nineteen he built a calculating machine; the law of pressure in fluids carries his name; his letters with Fermat in 1654 on how to divide the stakes of an unfinished game began probability theory. He died at thirty-nine, and friends published his notes as the Pensées in 1670. He is here for what those notes say about why people cannot stop, not for the religious conclusion he drew from it.
+
+### Q: What actually happened?
+In 1640 Pascal's father was posted to Rouen to oversee taxes and spent his days checking columns of figures. His son, not yet twenty, set out to spare him the drudgery, and in 1642 began building a machine that could add and subtract. In 1645 he presented one to the Chancellor, Séguier, with a letter. Years later he wrote that the machine produces effects nearer to thought than anything animals do, but has no will.
+
+### The parts · A thinking reed
+"Man is but a reed, the most feeble thing in nature; but he is a thinking reed." A vapour or a drop of water can kill him, yet if the universe crushed him he would still be nobler, because he knows he dies and the universe knows nothing. e.g. When nothing seems to be in your control, you can still think the next thing through clearly. That part is yours.
+
+### The parts · We never live in the present
+Examine your thoughts, he said, and you will find them all taken up with the past and the future; we think of the present only to arrange the future. "So we never live, but we hope to live." e.g. You finish dinner and cannot say what you ate, because the whole meal was spent on tomorrow's meeting.
+
+### The parts · Two kinds of mind
+He distinguished the mathematical mind, whose principles are far from ordinary use but plain once you turn to them, from the intuitive mind, whose principles are in front of everyone but so fine and numerous that some always escape notice. e.g. The person who can run the numbers often misreads the room, and the reverse. A team needs both.
+
+### Q: How do I use it today?
+Today find fifteen minutes with no screen and sit alone. Each time you want to get up, note what had just come into your head. Afterwards look at the list, pick the thing that came up most, and give it one concrete step this week.
+
+### Lines to keep
+Feeble as a reed, and still able to think. Always preparing to be happy, never happy. Keep the mathematical mind and the intuitive one.
+
+### Q: What should I read alongside?
+Montaigne — Both were French and both wrote about a person alone in a room; Pascal read Montaigne closely and argued with him throughout the Pensées. Montaigne withdrew to his tower at thirty-eight and wrote there for twenty years, treating a room of one's own as a good. Pascal said people are exactly the creatures who cannot stay in that room. One teaches how to stay; the other asks first why we can't.
+
+### Further
+Montaigne Isaac Newton Søren Kierkegaard
 
 ========================================================================
 ## Brené Brown
@@ -2925,7 +2959,7 @@ Use the rule now; the cause can wait. After selling, do not keep the books on th
 Albert Einstein — Both faced a cause nobody had. Newton said he would not invent one and left it empty while the calculation stood; Einstein invented one and pushed it until it contradicted itself. One shelves what he cannot prove, the other puts it out to be tested. Charles P. Kindleberger — The same South Sea bubble of 1720. Kindleberger stood outside it and laid three hundred years of crashes into one table; Newton was one cell in that table, inside it and swept along. One counted from outside, the other was pushed from within. Charles Darwin — Both faced the question of who thought of it first. Newton fought Leibniz over the calculus for years, and the Royal Society report that found for him came from a committee appointed while he was its president. Darwin handed his old draft to two friends, published jointly with Wallace, and Wallace later called his own book on evolution Darwinism.
 
 ### Further
-Albert Einstein Richard Feynman Charles P. Kindleberger George Soros Extraordinary Popular Delusions Charles Darwin Gregor Mendel
+Albert Einstein Richard Feynman Charles P. Kindleberger George Soros Extraordinary Popular Delusions Charles Darwin Gregor Mendel Blaise Pascal
 
 ========================================================================
 ## Ivan Illich
@@ -4554,10 +4588,10 @@ Pick the fault you would least like exposed and find a plain sentence for it tha
 He put his own cowardice in the book, and nobody has been able to use it since. He kept death as an acquaintance so it would stop being a stranger. Keep one piece for yourself. Let the rest run.
 
 ### Q: What should I read alongside?
-Brené Brown — Both take shame and fear apart. She has the laboratory findings; he has one man running the experiment on himself four hundred years earlier. Seneca — Both on learning to die. Seneca instructs from above; Montaigne writes outward from the afternoon he was thrown off a horse. Henry David Thoreau — Montaigne retired to his tower on income from the family estate and used the time to read and think. Thoreau went to the pond on a number he had worked out himself. One could afford to step back; the other first checked whether he could.
+Brené Brown — Both take shame and fear apart. She has the laboratory findings; he has one man running the experiment on himself four hundred years earlier. Seneca — Both on learning to die. Seneca instructs from above; Montaigne writes outward from the afternoon he was thrown off a horse. Henry David Thoreau — Montaigne retired to his tower on income from the family estate and used the time to read and think. Thoreau went to the pond on a number he had worked out himself. One could afford to step back; the other first checked whether he could. Blaise Pascal — Both were French and both wrote about a person alone in a room; Pascal read Montaigne closely and argued with him throughout the Pensées. Montaigne withdrew to his tower at thirty-eight and wrote there for twenty years, treating a room of one's own as a good. Pascal said people are exactly the creatures who cannot stay in that room. One teaches how to stay; the other asks first why we can't.
 
 ### Further
-Seneca Marcus Aurelius Brené Brown Shi Tiesheng Henry David Thoreau
+Seneca Marcus Aurelius Brené Brown Shi Tiesheng Henry David Thoreau Blaise Pascal
 
 ========================================================================
 ## Mozi
@@ -6198,7 +6232,7 @@ Anxiety is the dizziness of freedom. Regret cannot rank two choices; do not ask 
 Steve Jobs — Both face two good things. Jobs says cut one and accept the loss; Kierkegaard says whichever you cut will hurt, and the hurt is not evidence you cut the wrong one. Herbert Simon — Both are about choices that will not settle. Simon puts a stopping rule on the search, good enough and go; Kierkegaard says the search will not stop because we dread regret, and regret comes from both sides.
 
 ### Further
-Steve Jobs Herbert Simon Viktor Frankl Leo Tolstoy
+Steve Jobs Herbert Simon Viktor Frankl Leo Tolstoy Blaise Pascal
 
 ========================================================================
 ## Taiichi Ohno
@@ -19535,6 +19569,72 @@ Where it goes wrong: reading it as never hire. He measured an office that grew w
 An official wants to multiply subordinates, not rivals.
 Officials make work for each other.
 The smaller the sum, the longer the meeting.
+
+========================================================================
+## Blaise Pascal · Staying in your own room
+URL: https://ourword.ai/en/i/pascal/a-quiet-room/
+Source: Blaise Pascal, Pensées, fragment 139, 'Diversion', in W. F. Trotter's translation
+Tags: Deep read, Blaise Pascal, Restlessness is rarely a focus problem
+
+You sit down and within minutes you want to get up. What is the restlessness actually running from?
+
+### Q: What actually happened?
+Pascal watched people at court and in war, and all the quarrels and reckless ventures that came of it, and concluded that "all the unhappiness of men arises from one single fact, that they cannot stay quietly in their own chamber." A man with enough to live on would not go to sea or besiege a town if he could bear to stay home. People seek talk and games, he said, because they cannot remain at home with pleasure.
+
+### The parts · It is running from a thought
+He asked why, and found the answer in our condition: frail, mortal, and hard to think about up close. Even a king with every pleasure, left without diversion to reflect on what he is, is unhappier than the least of his subjects at play.
+e.g. The second your hand goes to the phone, ask what thought had just started to surface.
+
+### The parts · The noise is doing a job
+This is why, he wrote, men so love noise and stir, why "the prison is so horrible a punishment", and why the pleasure of solitude seems incomprehensible. A king is surrounded by people whose only thought is to keep him from thinking of himself.
+e.g. If you eat alone with a video playing, switch it off once and notice what turns up in ten minutes.
+
+### The parts · Anything will do
+A man may have a thousand reasons for weariness, he said, and yet "the least thing, such as playing billiards or hitting a ball, is sufficient to amuse him." So finding something more interesting does not cure it. Anything that leads you away will serve.
+e.g. A better focus app and a quieter desk did not fix it. The trouble was never the desk.
+
+### Q: How do I use it today?
+Where you are: You sit down and want to get up, and every focus technique you have tried has not kept you in the chair.
+Ask first: At the moment I want to get up, what has just come into my head? Which thing have I been avoiding?
+Where it goes wrong: Reading it as 'shut yourself in a room and be still'. Pascal did not tell people to stop acting. He said see first what you are running from; then decide whether to deal with it or sit back down.
+
+### Lines to keep
+When you can't sit still, ask what you are avoiding.
+Idleness is easy. What surfaces in it is not.
+A more interesting distraction is still a distraction.
+
+========================================================================
+## Blaise Pascal · The chase, not the hare
+URL: https://ourword.ai/en/i/pascal/the-chase-not-the-hare/
+Source: Blaise Pascal, Pensées, fragment 139, 'Diversion', in W. F. Trotter's translation
+Tags: Deep read, Blaise Pascal, When the prize goes flat, ask which of the two you wanted
+
+You got it, and within days it meant nothing. Did you want the thing, or the stretch of life spent going after it?
+
+### Q: What actually happened?
+Pascal describes a man who spends his life without weariness, playing every day for a small stake. "Give him each morning the money he can win each day, on condition he does not play; you make him miserable." Let him play for nothing instead, and he is bored. He needs a goal to get excited about, and has to persuade himself that he will be happy to win what he would refuse as a gift.
+
+### The parts · Nobody wants the hare as a present
+Some laugh at people who spend a whole day "chasing a hare which they would not have bought". Those who laugh, Pascal said, scarcely know our nature. The hare does not screen us from troubling thoughts. The chase does.
+e.g. The promotion felt good for one evening, and a week later you were eyeing the next one. That may not be greed.
+
+### The parts · The mistake is believing it
+Seeking excitement is not the error, he wrote, if you know it is diversion. The error is believing that having the thing will make you happy. "They think they are truly seeking quiet, and they are only seeking excitement."
+e.g. Under each goal write two lines: what changes when I have it, and what I will be doing every day until then.
+
+### The parts · Then the rest is unbearable
+So passes a whole life, he said. "Men seek rest in a struggle against difficulties; and when they have conquered these, rest becomes insufferable." And off they go to find the next difficulty.
+e.g. On day three of the holiday you longed for, you miss work. Don't call yourself hopeless for it.
+
+### Q: How do I use it today?
+Where you are: You can't say what you want, and the things you wanted go flat a few days after you get them.
+Ask first: What has really lit me up these past years, the moment of getting it, or the stretch of going after it? If it was the stretch, I should be choosing a way of spending my days, not a prize.
+Where it goes wrong: Reading it as 'nothing satisfies, so want nothing'. Pascal says the error is not chasing but not knowing what you chase. Know it, and you can still go after things; just don't mistake the prize for the answer.
+
+### Lines to keep
+Nobody wants the hare as a gift.
+You thought you wanted rest. You wanted something to do.
+Before choosing a prize, choose a chase worth living in.
 
 ========================================================================
 ## Paul Graham · Do things that do not scale

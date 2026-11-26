@@ -704,6 +704,12 @@ QUOTE_ASKS = {
     "qi-huangong/against-nature":
         "他对我好得反常，我当时怎么没起疑？",
 
+    # 帕斯卡
+    "pascal/a-quiet-room":
+        "我一静下来，就浑身不自在。",
+    "pascal/the-chase-not-the-hare":
+        "我追到手，就不想要了。",
+
     # 勾践
     "gou-jian/the-gall":
         "从头来，我放不下原来的身份。",

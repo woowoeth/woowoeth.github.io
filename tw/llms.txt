@@ -1,11 +1,11 @@
 # OurWord (人類世界生存法則)
 
-> 223 people and books on how the world actually works, across 2,600 years
+> 224 people and books on how the world actually works, across 2,600 years
 > 遇到事了，看看以前的人怎麼處理
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 223 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 224 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
-一個關於「世界到底怎麼運轉」的知識庫：戰略、財富、權力、人性、創業，取自 223 位人物與典籍，跨越 2600 年。每一條都寫清楚這個人真正留下的那一個想法、背後的故事、拆開的分則與例子，以及今天怎麼用。
+一個關於「世界到底怎麼運轉」的知識庫：戰略、財富、權力、人性、創業，取自 224 位人物與典籍，跨越 2600 年。每一條都寫清楚這個人真正留下的那一個想法、背後的故事、拆開的分則與例子，以及今天怎麼用。
 
 ## Read it
 
@@ -22,7 +22,7 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 - [現代](https://ourword.ai/tw/t/modern/) — 63
 - [先秦與古典時代](https://ourword.ai/tw/t/classical-era/) — 38
 - [權力與組織](https://ourword.ai/tw/t/power/) — 33
-- [心智與情緒](https://ourword.ai/tw/t/mind/) — 25
+- [心智與情緒](https://ourword.ai/tw/t/mind/) — 26
 - [學習與成長](https://ourword.ai/tw/t/learning/) — 23
 - [財富與風險](https://ourword.ai/tw/t/wealth/) — 23
 - [創業與產品](https://ourword.ai/tw/t/startups/) — 22
@@ -33,7 +33,7 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 - [秦漢至魏晉](https://ourword.ai/tw/t/han-wei/) — 18
 - [身心與生活](https://ourword.ai/tw/t/living/) — 18
 - [中古](https://ourword.ai/tw/t/medieval/) — 18
-- [近世](https://ourword.ai/tw/t/early-modern/) — 16
+- [近世](https://ourword.ai/tw/t/early-modern/) — 17
 
 ## How it is built
 
@@ -385,6 +385,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [戰爭論 · 摩擦](https://ourword.ai/tw/i/on-war/friction/): 戰爭論 · 摩擦——最簡單的事也是困難的。他為戰爭學發明了一個物理詞。這一篇要回答的是：摩擦從哪裡來，以及為什麼它不可消除、只可折算。
 - [諾斯古德·帕金森 · 工作會脹滿時間](https://ourword.ai/tw/i/parkinson/work-expands/): 諾斯古德·帕金森 · 工作會脹滿時間——你不是不會安排，是容器太大。你覺得時間不夠用。這一篇要回答的是：事情有多少，其實是被你給它的那段時間定下來的。
 - [諾斯古德·帕金森 · 人越加越忙](https://ourword.ai/tw/i/parkinson/officials-make-work/): 諾斯古德·帕金森 · 人越加越忙——機構的膨脹和事情的多少無關。隊伍天天喊忙，你準備再招兩個人。這一篇要回答的是：加進來的人，會不會自己造出新的忙。
+- [帕斯卡 · 待在自己房間裡](https://ourword.ai/tw/i/pascal/a-quiet-room/): 帕斯卡 · 待在自己房間裡——坐不住，多半不是缺專注。坐下沒多久就想起身。這一篇要回答的是：那股躁動，到底在躲什麼。
+- [帕斯卡 · 要的是追，不是兔子](https://ourword.ai/tw/i/pascal/the-chase-not-the-hare/): 帕斯卡 · 要的是追，不是兔子——到手就沒勁，先認清自己要的是哪一樣。追到手，就沒勁了。這一篇要回答的是：你要的究竟是那樣東西，還是追它的那段日子。
 - [保羅·格雷厄姆 · 做不能規模化的事](https://ourword.ai/tw/i/paul-graham/dont-scale/): 保羅·格雷厄姆 · 做不能規模化的事——早期要手工。創業者滿腦子都是規模化，他勸的是反方向。這一篇要回答的是：手工階段買到的是什麼。
 - [保羅·格雷厄姆 · 默認活著還是默認死去](https://ourword.ai/tw/i/paul-graham/default-alive/): 保羅·格雷厄姆 · 默認活著還是默認死去——先算這道題。他和創業者聊天必先問一道題，多數創始人答不上來。這一篇要回答的是：這道題為什麼排在一切討論之前。
 - [埃絲特·佩雷爾 · 安全感和慾望要的東西相反](https://ourword.ai/tw/i/perel/security-and-desire/): 埃絲特·佩雷爾 · 安全感和慾望要的東西相反——所以過得越好越平淡。日子過得越安穩，感覺越淡，很多人以為是自己變了。這一篇要回答的是：佩雷爾說這是結構決定的。
@@ -586,7 +588,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [AI Bubble Monitor / AI 泡沫檢測儀](https://ourword.ai/ai/)
 - [Zouni / 走你](https://ourword.ai/zouni/)
 
-## Index (223 entrys)
+## Index (224 entrys)
 
 - [BJ·福格](https://ourword.ai/tw/i/bj-fogg/): BJ·福格（2019年·斯坦福行為設計實驗室）——小到不會失敗。斯坦福行為設計實驗室創始人，研究行為如何被設計出來。他給出一個公式：行為發生需要動機、能力、提示三者同時到位。多數人失敗在只調動機——靠決心和自我激勵——而動機天然起伏，靠它維持的習慣必然崩。他的主張相反：把行為縮到小得不需要動機，然後掛在一個已有的動作後面。
 - [C.S.劉易斯](https://ourword.ai/tw/i/cs-lewis/): C.S.劉易斯（1898-1963年·英國牛津）——妻子死後幾個月的日記。作家，牛津和劍橋的教授，寫過《納尼亞傳奇》和大量勸人信仰的書。五十八歲結婚，妻子喬伊四年後因癌症去世。之後幾個月他在四本練習簿上記自己的狀態，後來用筆名出版，就是《卿卿如晤》。收他是因為「重要的人走了」那六個問題，原來靠弗蘭克爾和蘇軾在答——一個是集中營的倖存者，一個是被貶的官員
@@ -664,6 +666,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [尼采](https://ourword.ai/tw/i/nietzsche/): 尼采（德國·1844-1900）——超越。最被誤讀的哲學家。納粹用他的「超人」理論為種族主義背書——但他本人極度厭惡反猶太主義，和姐姐決裂正是因為這個原因。他真正說的是：人能夠超越「群眾道德」成為「創造自己價值的人」。他10歲喪父，身體極度虛弱，幾乎一生在病痛中度過，最終44歲精神崩潰——卻在此之前寫下了西方哲學史上最有
 - [巴菲特](https://ourword.ai/tw/i/buffett/): 巴菲特（當代·1930-）——護城河。奧馬哈的神奇老人，用60年把10000美元變成了一個千億美元帝國。他的方法：找到有護城河的好公司，以合理價格買入，然後長期持有。他最大的競爭優勢不是選股技能，而是情緒控制。
 - [布琳·布朗](https://ourword.ai/tw/i/brene-brown/): 布琳·布朗（2010年·休斯頓大學）——羞恥與內疚。社會工作研究者，花二十年做一件別人不願碰的事：把「羞恥」變成可以研究的對象，幾千份訪談。她最有用的貢獻不是鼓勵，是一個區分——內疚是「我做了一件壞事」，羞恥是「我是個壞人」。前者指向行為，後者指向人本身；同一件錯事，兩種說法帶來相反的後果。（注意：她關於羞恥與成癮、抑鬱、攻擊相關
+- [帕斯卡](https://ourword.ai/tw/i/pascal/): 帕斯卡（法國·1623-1662）——消遣。帕斯卡，法國數學家、物理學家、思想家。十九歲造出能做加減的計算器；液體壓強的帕斯卡定律是他的；1654 年和費馬通信討論賭局怎麼分錢，開了概率論的頭。三十九歲去世，朋友把他留下的札記編成《思想錄》，1670 年出版。收他，取《思想錄》裡講人為什麼停不下來的那幾段，只取對人的觀察，
 - [莊子](https://ourword.ai/tw/i/zhuangzi/): 莊子（戰國·約前369-前286年）——逍遙齊物。名周，宋國蒙人，道家第二座高峰。老子講柔弱勝剛強，是給用世者的兵法；莊子講逍遙齊物，是給個體的精神出路。他做過漆園小吏，此後終身不仕，窮到向人借米，卻拒絕了楚國相位。《莊子》三十三篇，用寓言把一件事說透：人被功名、是非、得失捆住時，如何贏回內心的自由。兩千年來，中國讀書人得意時讀
 - [弗蘭克爾](https://ourword.ai/tw/i/frankl/): 弗蘭克爾（奧地利·1905-1997）——意義。心理學家，納粹集中營倖存者，意義療法（Logotherapy）創始人。他在奧斯維辛集中營裡觀察到一個現象：同樣的極端條件下，有人崩潰，有人存活，差別不在於體力，而在於「有沒有活下去的理由」。他的核心命題：人類最後的自由，是在任何境遇中選擇自己態度的自由。
 - [張一鳴](https://ourword.ai/tw/i/zhang-yiming/): 張一鳴（當代·1983-）——延遲滿足。字節跳動創始人，抖音和今日頭條的締造者。他的特點：極度理性，反對模糊，用算法驅動一切。他相信人的認知偏差是最大的效率損耗，因此把「延遲滿足」和「反模糊」當成了個人和團隊的核心操作系統。

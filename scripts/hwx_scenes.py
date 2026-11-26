@@ -1388,6 +1388,8 @@ SCENES = [
      [("csikszentmihalyi", "flow-channel"), ("csikszentmihalyi", "leisure-paradox")]),
     ("我一坐下就被打断。",
      [("murakami", "focus-and-endurance"), ("cal-newport", "schedule-the-depth")]),
+    ("我一静下来，就浑身不自在。",
+     [("pascal", "a-quiet-room")]),
 ]),
 ("想改个习惯", "身体与精力", [
     ("我下过很多次决心，每次都断。",
@@ -1880,6 +1882,8 @@ SCENES = [
      [("excellent-sheep", "no-scoreboard"), ("excellent-sheep", "hurdles")]),
     ("日子越过越好，我却越来越不快活。",
      [("sapiens", "wheat-domesticated-us"), ("finite-and-infinite-games", "two-kinds")]),
+    ("我追到手，就不想要了。",
+     [("pascal", "the-chase-not-the-hare")]),
 ]),
 ("路太多，选不出来", "回头与往前", [
     ("每条路看着都成立，我选不出来。",
