@@ -1,7 +1,7 @@
-# OurWord — 224 people and books on how the world actually works, across 2,600 years
+# OurWord — 225 people and books on how the world actually works, across 2,600 years
 # OurWord — See how people before you handled it.
 # https://ourword.ai/en/
-# Full corpus, plain text. 224 entrys.
+# Full corpus, plain text. 225 entrys.
 
 ========================================================================
 ## Albert Einstein
@@ -5732,7 +5732,7 @@ When the law is not carried out, it is those above who break it. A sage who can 
 Zhang Juzheng — The same fate, opposite legacies: Shang Yang died and his system lived, Zhang Juzheng died and his was taken apart. The difference is who was left with a reason to defend it. Han Feizi — Theory and practice of the same school: Han Feizi wrote the system down, Shang Yang ran it, and both were killed by the thing they had built. Guan Zhong — Two routes to a strong state: Guan Zhong enriches the people and the state follows, Shang Yang installs the law and the wealth follows. Wu Zetian — Two people who broke a settled order: Shang Yang broke aristocratic privilege, she broke the bar on her sex, and both paid heavily for it. The Wealth of Nations — Both are designing a route to a strong state. Shang Yang binds people to the land and suppresses trade, Smith credits division and exchange. Both routes work, at wildly different prices. King Wuling of Zhao — Both rewrote a state's old rules. Shang Yang put down opposition with decrees and heavy penalties, building trust first and law second, and did not argue with opponents. Wuling walked to the opponent's door and argued to the point he cared about.
 
 ### Further
-Han Feizi Zhang Juzheng Guan Zhong Cao Cao Li Shimin The Wealth of Nations Mencius Lee Kuan Yew Napoleon Bai Gui The Old Regime and the Revolution Why Nations Fail King Wuling of Zhao The Duke of Zhou
+Han Feizi Zhang Juzheng Guan Zhong Cao Cao Li Shimin The Wealth of Nations Mencius Lee Kuan Yew Napoleon Bai Gui The Old Regime and the Revolution Why Nations Fail King Wuling of Zhao The Duke of Zhou Wang Anshi
 
 ========================================================================
 ## Shi Tiesheng
@@ -6121,10 +6121,10 @@ Next time you're overruled, shelved, or watching something fail, try treating th
 A bamboo stick and straw sandals beat a horse. Who's afraid? Looking back at that bleak road — no wind, no rain, no sun. Where the heart is at rest, that is my home.
 
 ### Q: What should I read alongside?
-Zhuangzi — Two ways of not being owned: Zhuangzi refuses the post, Su Shi takes it and refuses to be defined by losing it. C.S. Lewis — Both wrote through the worst of it. Lewis to find out what he actually believed, Su Shi to find out what was still enjoyable. Chu Shijian — Both began with one small concrete job after losing the position: Su Shi broke ground at Huangzhou, Chu Shijian built the irrigation first. Neither waited to be recognised again. Seneca — Two ways of writing out of adversity: Seneca writes about restraint from inside the machinery of power, Su Shi writes about lightness on the road into exile, and both had been tested before either wrote a line. Viktor Frankl — Creation under punishment: Su Shi wrote his best work in exile, Frankl finished logotherapy in the camps — both took the worst stretch of a life and made it the productive one. Du Fu — Both rebuilt after forty: Su Shi broke ground at Huangzhou, Du Fu put up a roof at Chengdu, and both took what a life runs on before any position. Su Shi went back; Du Fu never did. Tao Yuanming — Two ways out of office: Su Shi was exiled and moved by other people, Tao Yuanming walked out himself on the day. One is about living well inside an arrangement, the other about making the decision. Li Qingzhao — Her father was Su Shi's student, and she still wrote that his lyrics often missed the music. Both lived through exile and loss: Su Shi wrote the hard years as breadth of mind, she wrote them as an exact list of what was lost.
+Zhuangzi — Two ways of not being owned: Zhuangzi refuses the post, Su Shi takes it and refuses to be defined by losing it. C.S. Lewis — Both wrote through the worst of it. Lewis to find out what he actually believed, Su Shi to find out what was still enjoyable. Chu Shijian — Both began with one small concrete job after losing the position: Su Shi broke ground at Huangzhou, Chu Shijian built the irrigation first. Neither waited to be recognised again. Seneca — Two ways of writing out of adversity: Seneca writes about restraint from inside the machinery of power, Su Shi writes about lightness on the road into exile, and both had been tested before either wrote a line. Viktor Frankl — Creation under punishment: Su Shi wrote his best work in exile, Frankl finished logotherapy in the camps — both took the worst stretch of a life and made it the productive one. Du Fu — Both rebuilt after forty: Su Shi broke ground at Huangzhou, Du Fu put up a roof at Chengdu, and both took what a life runs on before any position. Su Shi went back; Du Fu never did. Tao Yuanming — Two ways out of office: Su Shi was exiled and moved by other people, Tao Yuanming walked out himself on the day. One is about living well inside an arrangement, the other about making the decision. Li Qingzhao — Her father was Su Shi's student, and she still wrote that his lyrics often missed the music. Both lived through exile and loss: Su Shi wrote the hard years as breadth of mind, she wrote them as an exact list of what was lost. Wang Anshi — Both were among the great prose masters and both were spotted early by Ouyang Xiu: Zeng Gong carried Wang's essays to him, and Ouyang was the chief examiner when Su passed. On the New Policies they stood apart. Wang, in the History of Song's words, was set on his own judgment and pushed the reform through; Su opposed it, and later opposed the old party when it tried to scrap all of it. One would not turn back; the other would not follow either side all the way.
 
 ### Further
-Wang Yangming Fan Li Zhuangzi Tao Te Ching Huineng Winston Churchill Feng Dao Nelson Mandela Sima Qian Seneca Du Fu Shi Tiesheng Tao Yuanming Bai Juyi Lin Xiangru Xu Xiake Li Qingzhao
+Wang Yangming Fan Li Zhuangzi Tao Te Ching Huineng Winston Churchill Feng Dao Nelson Mandela Sima Qian Seneca Du Fu Shi Tiesheng Tao Yuanming Bai Juyi Lin Xiangru Xu Xiake Li Qingzhao Wang Anshi
 
 ========================================================================
 ## Su Yu
@@ -7280,6 +7280,40 @@ Murray Bowen — Two readings of one family: Bowen tracks differentiation down t
 Murray Bowen Carl Rogers Attachment Theory Nonviolent Communication Family Instructions for the Yan Clan Donald Winnicott
 
 ========================================================================
+## Wang Anshi
+URL: https://ourword.ai/en/i/wang-anshi/
+Tags: Learning and growth, Medieval, Learning
+
+Wang Anshi (Northern Song · 1021–1086) — Learning. Chief minister of the Northern Song and one of the great prose writers of Tang and Song. The History of Song says he loved books as a boy and never forgot what he had…
+
+### Q: What did this one leave behind?
+Chief minister of the Northern Song and one of the great prose writers of Tang and Song. The History of Song says he loved books as a boy and never forgot what he had read once. After years as a local official he became vice chief councillor in 1069 and drove the New Policies, the reform that still bears his name. He is here for two short essays he wrote before he held power, one on talent and study, one on turning back halfway. The reform itself is not judged here.
+
+### Q: What actually happened?
+The court offered him posts in the imperial libraries again and again, and he kept declining, until scholars said he had no wish for office and regretted never having met him. When he was later named a court diarist he refused for days. A clerk brought the appointment to his door; he would not take it. The clerk followed him bowing, and he hid in the privy. The clerk left it on his desk; he sent it back. Only after eight or nine memorials did he accept.
+
+### The parts · Learn the intent, not the form
+In a long memorial to the emperor in the late 1050s he argued that following the ancient kings meant following their intent and nothing more. Learn why they acted as they did, and change can come without alarming the realm. e.g. Studying a company you admire, find out why it set its rules before you copy its org chart.
+
+### The parts · Books were always meant for work
+When he took office the emperor told him people thought he knew the classics but not the world. He replied that the classics exist to run the world; most so-called scholars were mediocre, so people assumed the two did not meet. e.g. If you have read every management book and still cannot lead three people, the gap is rarely the books. It is reading without meaning to use them.
+
+### The parts · First, one county
+After passing the exams he skipped the usual route to a library post and stayed a local official. In Yin county he built dykes and dug reservoirs, and lent grain to farmers to be repaid with interest, so old stock and new kept turning over. e.g. Run a new process in one team for a quarter before rolling it out to the whole company.
+
+### Q: How do I use it today?
+This week pick one thing you were praised as a natural at. Ask what you have learned in it in the past year. If you cannot name anything, put a fixed practice slot for it in your calendar instead of waiting to remember.
+
+### Lines to keep
+Copy the reason, not the rule. The classics were meant for running things. Make it work in one county first.
+
+### Q: What should I read alongside?
+Su Shi — Both were among the great prose masters and both were spotted early by Ouyang Xiu: Zeng Gong carried Wang's essays to him, and Ouyang was the chief examiner when Su passed. On the New Policies they stood apart. Wang, in the History of Song's words, was set on his own judgment and pushed the reform through; Su opposed it, and later opposed the old party when it tried to scrap all of it. One would not turn back; the other would not follow either side all the way.
+
+### Further
+Su Shi Zhang Juzheng Shang Yang
+
+========================================================================
 ## Wang Jian
 URL: https://ourword.ai/en/i/wang-jian/
 Tags: Strategy and competition, Pre-Qin and classical, Self-preservation
@@ -7888,7 +7922,7 @@ The hard part is not making the law; it is making sure the law is carried out. I
 Shang Yang — The reformer's fate in two versions: Shang Yang died and his system stood, Zhang Juzheng died and his was dismantled. The difference is who was left to defend it. Zhuge Liang — Two tragedies of being irreplaceable: after Zhuge Liang there was nobody to take over, after Zhang Juzheng the whole programme collapsed at once. The Old Regime and the Revolution — Two ways for a reformer to die: Zhang Juzheng touched interests and was settled with after his death; Tocqueville describes the quieter one, where the reform itself manufactures the force that overturns it.
 
 ### Further
-Guan Zhong Han Feizi Zeng Guofan Wang Yangming Shang Yang Otto von Bismarck Zhu Yuanzhang The Old Regime and the Revolution Liu Yan Fan Zhongyan
+Guan Zhong Han Feizi Zeng Guofan Wang Yangming Shang Yang Otto von Bismarck Zhu Yuanzhang The Old Regime and the Revolution Liu Yan Fan Zhongyan Wang Anshi
 
 ========================================================================
 ## Zhang Liang
@@ -23139,6 +23173,72 @@ Where it goes wrong: using 'it has to come down' as a reason to stop helping alt
 Scaffolding goes up in order to come down.
 Whether help worked shows in how much they need next time.
 Help that stays leaves people at the level where they're held.
+
+========================================================================
+## Wang Anshi · Back among the ordinary
+URL: https://ourword.ai/en/i/wang-anshi/fang-zhongyong/
+Source: Wang Anshi, 'Lament for Zhongyong', Collected Works of Wang Linchuan, juan 71
+Tags: Deep read, Wang Anshi, A gift is where you start, not what you keep
+
+A boy who could write poems at five. Why do the children everyone called brilliant so often end up ordinary?
+
+### Q: What actually happened?
+Fang Zhongyong came from a family that had farmed for generations. At five, never having seen a brush, he cried for one, and when his father borrowed one he wrote four lines of verse on the spot and signed them. After that he could make a poem about anything pointed out to him. Neighbours invited his father round and paid for poems, so the father toured him daily and never let him study. At twelve or so his verse no longer matched his fame. Seven years later he was simply ordinary.
+
+### The parts · One share from heaven, one from people
+Wang's verdict comes in two halves. The boy's quickness was a gift, far above most talented people. He ended ordinary because the share that has to come from people, from teaching and study, never arrived.
+e.g. The top maths student in school stops doing hard problems at university, and three years later is lost in the same lecture hall.
+
+### The parts · Performed, and frozen on the day of performance
+Every visit meant a poem on demand. Writing became a paid act, and in all those years of touring there was not one day of learning. The audience grew; the skill stayed exactly where it was.
+e.g. A new hire is famous for one demo and spends six months presenting the same case at every meeting, learning nothing new.
+
+### The parts · The last line is for the rest of us
+He ends by saying that if a boy so gifted became ordinary without study, those born without the gift who also skip study may not even manage ordinary. The piece is written to everyone never called a prodigy.
+e.g. When the brilliant colleague gets stuck too, don't relax. Take it as the reason you need to practise more.
+
+### Q: How do I use it today?
+Where you are: you were the clever one all through school, and now the people around you have caught up and passed you.
+Ask first: in these years, have I been adding to the gift, or only taking it out to show people?
+Where it goes wrong: reading it as talent does not matter, only effort. Wang says plainly the gift was real and rare; that is what he mourns. Talent counts. It is a starting point, and it stays there unless someone builds on it.
+
+### Lines to keep
+A gift that nobody adds to ends up ordinary.
+Talent put on show stops growing on show day.
+If prodigies fade without study, the rest of us must study more.
+
+========================================================================
+## Wang Anshi · The torch was still bright
+URL: https://ourword.ai/en/i/wang-anshi/the-back-cave/
+Source: Wang Anshi, 'A Trip to Mount Baochan', Collected Works of Wang Linchuan, juan 83 (1054)
+Tags: Deep read, Wang Anshi, Before you turn back with everyone else, look at your own torch
+
+The torches were still burning. When everyone turns back and you still have strength, should you go with them?
+
+### Q: What actually happened?
+Mount Baochan had a back cave so deep that even keen explorers never reached its end. Wang and four companions went in with torches; the further they went, the harder the going and the stranger the sights. One of them grew tired and said they must leave or the torches would burn out, and they all followed him out. They had gone barely a tenth as far as the keenest visitors. He still had the strength to go on, and the torches were still bright. Afterwards he regretted following.
+
+### The parts · Check the warning against the torch
+The torches will burn out sounded like a fact. It was a worry. The light was fine, yet nobody stopped to look, and five people turned round on one sentence. Test a reason to retreat against what you hold, not against someone's fear.
+e.g. Someone says the budget will blow if the team keeps going, and everyone stops. Later the numbers show half the budget unspent.
+
+### The parts · Three things to get there
+He concluded that reaching the far places takes will that does not stop when others stop, the strength to go on, and, in the dark and confusing stretches, something to light the way. The one other people most easily take from you is the first.
+e.g. In an exam year, as flatmates give up one by one, the first thing to guard is not your hours but your will.
+
+### The parts · Keep regret for one case only
+He split falling short in two. Able to arrive and stopping anyway, others may mock you and you will regret it. Giving everything and still not arriving, there is nothing to regret and nobody has grounds to mock.
+e.g. After three years of a failed start-up, ask whether the money and energy truly ran out, or you left because others did.
+
+### Q: How do I use it today?
+Where you are: the people you started with are dropping out, classmates, a co-founder, the team, and you know you still have strength, but staying alone feels foolish.
+Ask first: have I checked that reason against my own torch, or only heard someone say it is going out?
+Where it goes wrong: reading it as never quit. His other half is that falling short after giving everything leaves no regret. Leaving when you should is no shame; turning round only because others turned is.
+
+### Lines to keep
+While your torch is bright, don't turn back with the crowd.
+Give it everything and fall short: no regret.
+Strong enough and stopped anyway: that is what you regret.
 
 ========================================================================
 ## Wang Jian · Six hundred thousand or nothing

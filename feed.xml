@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>OurWord — 224 people and books on how the world actually works, across 2,600 years</title>
+    <title>OurWord — 225 people and books on how the world actually works, across 2,600 years</title>
     <link>https://ourword.ai/</link>
     <atom:link href="https://ourword.ai/feed.xml" rel="self" type="application/rss+xml"/>
-    <description>A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 224 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.</description>
+    <description>A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 225 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.</description>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 26 Nov 2026 08:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 08:00:00 +0800</lastBuildDate>
 <!-- chapters:begin -->
     <item><title>阿德勒 · 课题分离</title><link>https://ourword.ai/i/adler/separation-of-tasks/</link><guid isPermaLink="true">https://ourword.ai/i/adler/separation-of-tasks/</guid><description>阿德勒 · 课题分离——先分清这是谁的事。人际关系的痛苦大半来自越界。这一篇要回答的是：边界到底画在哪。</description><pubDate>Tue, 01 Sep 2026 08:00:00 +0800</pubDate></item>
     <item><title>阿德勒 · 不是因为，是为了</title><link>https://ourword.ai/i/adler/teleology/</link><guid isPermaLink="true">https://ourword.ai/i/adler/teleology/</guid><description>阿德勒 · 不是因为，是为了——把原因换成目的。弗洛伊德问你经历过什么，阿德勒问你想用它做什么。这一篇要回答的是：这个换问法为什么能解冻。</description><pubDate>Sun, 30 Aug 2026 08:00:00 +0800</pubDate></item>
@@ -457,6 +457,8 @@
     <item><title>托尔斯坦·凡勃伦 · 贵本身就是卖点</title><link>https://ourword.ai/i/veblen/costliness-as-beauty/</link><guid isPermaLink="true">https://ourword.ai/i/veblen/costliness-as-beauty/</guid><description>托尔斯坦·凡勃伦 · 贵本身就是卖点——有些东西，价钱就是它在说的话。降了价，问的人反而少了。这一篇要回答的是：什么时候，价钱本身就是商品的一部分。</description><pubDate>Tue, 13 Oct 2026 08:00:00 +0800</pubDate></item>
     <item><title>维果茨基 · 最近发展区</title><link>https://ourword.ai/i/vygotsky/zpd/</link><guid isPermaLink="true">https://ourword.ai/i/vygotsky/zpd/</guid><description>维果茨基 · 最近发展区——看第二条线。两个人现在水平一样，未来差别可能很大。这一篇要回答的是：差在哪个指标上。</description><pubDate>Mon, 31 Aug 2026 08:00:00 +0800</pubDate></item>
     <item><title>维果茨基 · 脚手架：给了要撤</title><link>https://ourword.ai/i/vygotsky/scaffolding/</link><guid isPermaLink="true">https://ourword.ai/i/vygotsky/scaffolding/</guid><description>维果茨基 · 脚手架：给了要撤——不撤就成了依赖。帮到什么程度算帮对了。这一篇要回答的是：判据是撤得掉。</description><pubDate>Mon, 31 Aug 2026 08:00:00 +0800</pubDate></item>
+    <item><title>王安石 · 泯然众人</title><link>https://ourword.ai/i/wang-anshi/fang-zhongyong/</link><guid isPermaLink="true">https://ourword.ai/i/wang-anshi/fang-zhongyong/</guid><description>王安石 · 泯然众人——天分只是起点，往上添的那份要靠学。五岁能作诗的孩子。这一篇要回答的是：从小被夸聪明的人，为什么后来成了普通人。</description><pubDate>Fri, 27 Nov 2026 08:00:00 +0800</pubDate></item>
+    <item><title>王安石 · 火尚足以明</title><link>https://ourword.ai/i/wang-anshi/the-back-cave/</link><guid isPermaLink="true">https://ourword.ai/i/wang-anshi/the-back-cave/</guid><description>王安石 · 火尚足以明——跟着别人退之前，先看自己的火还剩多少。火把还够亮。这一篇要回答的是：大家都往回走的时候，我还走得动，要不要跟着退。</description><pubDate>Fri, 27 Nov 2026 08:00:00 +0800</pubDate></item>
     <item><title>王翦 · 非六十万不可</title><link>https://ourword.ai/i/wang-jian/sixty-thousand/</link><guid isPermaLink="true">https://ourword.ai/i/wang-jian/sixty-thousand/</guid><description>王翦 · 非六十万不可——报真实的数。老板问要多少资源，报多了显得无能，报少了拿不下。这一篇要回答的是：王翦为什么坚持报那个吓人的数。</description><pubDate>Sat, 29 Aug 2026 08:00:00 +0800</pubDate></item>
     <item><title>王翦 · 请美田宅</title><link>https://ourword.ai/i/wang-jian/asking-for-fields/</link><guid isPermaLink="true">https://ourword.ai/i/wang-jian/asking-for-fields/</guid><description>王翦 · 请美田宅——主动给对方一个把柄。手上握着全国几乎全部的兵，怎么让君主睡得着？这一篇要回答的是：他选择让自己显得贪财。</description><pubDate>Sat, 29 Aug 2026 08:00:00 +0800</pubDate></item>
     <item><title>王兴 · 关注核心，不关注边界</title><link>https://ourword.ai/i/wang-xing/core-not-boundary/</link><guid isPermaLink="true">https://ourword.ai/i/wang-xing/core-not-boundary/</guid><description>王兴 · 关注核心，不关注边界——扩张的判据。美团四面出击时，所有人问他边界在哪。这一篇要回答的是：他把问题换成了什么。</description><pubDate>Sat, 29 Aug 2026 08:00:00 +0800</pubDate></item>

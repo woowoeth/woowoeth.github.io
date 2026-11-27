@@ -777,6 +777,8 @@ SCENES = [
      [("zhuge-liang", "longzhong-plan"), ("zhuge-liang", "close-the-worthy")]),
 ]),
 ("该不该退", "进退取舍", [
+    ("大家都要撤，可我还走得动。",
+     [("wang-anshi", "the-back-cave")]),
     ("一路只学了进，我没练过退。",
      [("i-ching", "arrogant-dragon"), ("fan-li", "leave-at-the-top")]),
     ("我该什么时候退，才不难看？",
@@ -1493,6 +1495,8 @@ SCENES = [
 #    内容存在、走不到，和当初 9 个家庭条目挂不上处境是同一种事故。
 #    这一组不写新内容，只接线。 ──
 ("一路优秀，突然没了标准", "刚起步", [
+    ("小时候都说我聪明，现在我很普通。",
+     [("wang-anshi", "fang-zhongyong")]),
     ("从小按分数活，现在没人给我打分了。",
      [("excellent-sheep", "hurdles"), ("excellent-sheep", "no-scoreboard")]),
     ("我一直很优秀，可我不知道要去哪。",

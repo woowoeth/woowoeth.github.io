@@ -710,6 +710,12 @@ QUOTE_ASKS = {
     "pascal/the-chase-not-the-hare":
         "我追到手，就不想要了。",
 
+    # 王安石
+    "wang-anshi/fang-zhongyong":
+        "小时候都说我聪明，现在我很普通。",
+    "wang-anshi/the-back-cave":
+        "大家都要撤，可我还走得动。",
+
     # 勾践
     "gou-jian/the-gall":
         "从头来，我放不下原来的身份。",

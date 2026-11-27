@@ -1,11 +1,11 @@
 # OurWord (人类世界生存法则)
 
-> 224 people and books on how the world actually works, across 2,600 years
+> 225 people and books on how the world actually works, across 2,600 years
 > 遇到事了，看看以前的人怎么处理
 
-A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 224 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
+A knowledge base of the durable rules people have worked out about strategy, money, power, human nature and building things — drawn from 225 figures and classic texts across 2,600 years. Each entry gives the one idea that person is actually remembered for, the story behind it, the sub-principles with worked examples, and how it applies today.
 
-一个关于「世界到底怎么运转」的知识库：战略、财富、权力、人性、创业，取自 224 位人物与典籍，跨越 2600 年。每一条都写清楚这个人真正留下的那一个想法、背后的故事、拆开的分则与例子，以及今天怎么用。
+一个关于「世界到底怎么运转」的知识库：战略、财富、权力、人性、创业，取自 225 位人物与典籍，跨越 2600 年。每一条都写清楚这个人真正留下的那一个想法、背后的故事、拆开的分则与例子，以及今天怎么用。
 
 ## Read it
 
@@ -23,16 +23,16 @@ A knowledge base of the durable rules people have worked out about strategy, mon
 - [先秦与古典时代](https://ourword.ai/t/classical-era/) — 38
 - [权力与组织](https://ourword.ai/t/power/) — 33
 - [心智与情绪](https://ourword.ai/t/mind/) — 26
-- [学习与成长](https://ourword.ai/t/learning/) — 23
+- [学习与成长](https://ourword.ai/t/learning/) — 24
 - [财富与风险](https://ourword.ai/t/wealth/) — 23
 - [创业与产品](https://ourword.ai/t/startups/) — 22
 - [谋略与竞争](https://ourword.ai/t/strategy/) — 21
 - [识人与相处](https://ourword.ai/t/people/) — 20
 - [世界如何运转](https://ourword.ai/t/world/) — 20
+- [中古](https://ourword.ai/t/medieval/) — 19
 - [家庭与关系](https://ourword.ai/t/family/) — 18
 - [秦汉至魏晋](https://ourword.ai/t/han-wei/) — 18
 - [身心与生活](https://ourword.ai/t/living/) — 18
-- [中古](https://ourword.ai/t/medieval/) — 18
 - [近世](https://ourword.ai/t/early-modern/) — 17
 
 ## How it is built
@@ -493,6 +493,8 @@ Long-form chapters hanging off a person page. Not part of the entry index above.
 - [托尔斯坦·凡勃伦 · 贵本身就是卖点](https://ourword.ai/i/veblen/costliness-as-beauty/): 托尔斯坦·凡勃伦 · 贵本身就是卖点——有些东西，价钱就是它在说的话。降了价，问的人反而少了。这一篇要回答的是：什么时候，价钱本身就是商品的一部分。
 - [维果茨基 · 最近发展区](https://ourword.ai/i/vygotsky/zpd/): 维果茨基 · 最近发展区——看第二条线。两个人现在水平一样，未来差别可能很大。这一篇要回答的是：差在哪个指标上。
 - [维果茨基 · 脚手架：给了要撤](https://ourword.ai/i/vygotsky/scaffolding/): 维果茨基 · 脚手架：给了要撤——不撤就成了依赖。帮到什么程度算帮对了。这一篇要回答的是：判据是撤得掉。
+- [王安石 · 泯然众人](https://ourword.ai/i/wang-anshi/fang-zhongyong/): 王安石 · 泯然众人——天分只是起点，往上添的那份要靠学。五岁能作诗的孩子。这一篇要回答的是：从小被夸聪明的人，为什么后来成了普通人。
+- [王安石 · 火尚足以明](https://ourword.ai/i/wang-anshi/the-back-cave/): 王安石 · 火尚足以明——跟着别人退之前，先看自己的火还剩多少。火把还够亮。这一篇要回答的是：大家都往回走的时候，我还走得动，要不要跟着退。
 - [王翦 · 非六十万不可](https://ourword.ai/i/wang-jian/sixty-thousand/): 王翦 · 非六十万不可——报真实的数。老板问要多少资源，报多了显得无能，报少了拿不下。这一篇要回答的是：王翦为什么坚持报那个吓人的数。
 - [王翦 · 请美田宅](https://ourword.ai/i/wang-jian/asking-for-fields/): 王翦 · 请美田宅——主动给对方一个把柄。手上握着全国几乎全部的兵，怎么让君主睡得着？这一篇要回答的是：他选择让自己显得贪财。
 - [王兴 · 关注核心，不关注边界](https://ourword.ai/i/wang-xing/core-not-boundary/): 王兴 · 关注核心，不关注边界——扩张的判据。美团四面出击时，所有人问他边界在哪。这一篇要回答的是：他把问题换成了什么。
@@ -588,7 +590,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [AI Bubble Monitor / AI 泡沫检测仪](https://ourword.ai/ai/)
 - [Zouni / 走你](https://ourword.ai/zouni/)
 
-## Index (224 entrys)
+## Index (225 entrys)
 
 - [BJ·福格](https://ourword.ai/i/bj-fogg/): BJ·福格（2019年·斯坦福行为设计实验室）——小到不会失败。斯坦福行为设计实验室创始人，研究行为如何被设计出来。他给出一个公式：行为发生需要动机、能力、提示三者同时到位。多数人失败在只调动机——靠决心和自我激励——而动机天然起伏，靠它维持的习惯必然崩。他的主张相反：把行为缩到小得不需要动机，然后挂在一个已有的动作后面。
 - [C.S.刘易斯](https://ourword.ai/i/cs-lewis/): C.S.刘易斯（1898-1963年·英国牛津）——妻子死后几个月的日记。作家，牛津和剑桥的教授，写过《纳尼亚传奇》和大量劝人信仰的书。五十八岁结婚，妻子乔伊四年后因癌症去世。之后几个月他在四本练习簿上记自己的状态，后来用笔名出版，就是《卿卿如晤》。收他是因为「重要的人走了」那六个问题，原来靠弗兰克尔和苏轼在答——一个是集中营的幸存者，一个是被贬的官员
@@ -727,6 +729,7 @@ Cite the individual entry page. Quotes from classical texts inside an entry belo
 - [爱比克泰德](https://ourword.ai/i/epictetus/): 爱比克泰德（古罗马·约55-135）——控制二分法。生下来就是奴隶，主人埃帕弗罗狄图斯是尼禄的秘书。他一条腿瘸，终身未愈。获释后在罗马讲学，公元93年图密善把所有哲学家赶出意大利，他迁到希腊西北的尼科波利斯办学，一直讲到死。他一个字都没写过——现存的《论说集》和《手册》全是学生阿里安记的课堂笔记，语气直白，时常带着训人的口吻，因为
 - [牛顿](https://ourword.ai/i/newton/): 牛顿（英国·1643-1727）——不造假说。英国物理学家、数学家。1687 年出版《自然哲学的数学原理》，用一套定律把天上的轨道和地上的落体算进了同一个公式。1696 年离开剑桥去伦敦管铸币厂，1699 年升任厂长，1703 年起任皇家学会会长。这一页只取他的两件事：算得出的和猜得出的怎样分开放；以及一个靠算数吃饭的人，怎
 - [王兴](https://ourword.ai/i/wang-xing/): 王兴（当代·1979-）——九败一胜。美团创始人，清华大学毕业。在创立美团之前，他已经失败了八次：做过中国版Facebook（校内网），卖掉了；做过中国版Twitter（饭否），被关掉了。第十次创业，他押注团购，赢得了史上竞争最激烈的互联网大战「千团大战」，把2000家对手打垮，最终把美团做成了一个管吃、管住、管出行
+- [王安石](https://ourword.ai/i/wang-anshi/): 王安石（北宋·1021-1086）——受之人。王安石，字介甫，抚州临川人，北宋宰相，唐宋八大家之一。《宋史》说他少年好读书，一过目终身不忘。中进士后在地方上做了多年官，熙宁二年任参知政事，主持青苗、免役、保甲等新法，史称王安石变法。收他，取他当国以前写的两篇短文：《伤仲永》讲天分和学，《游褒禅山记》讲半路跟着别人退出来。变法
 - [王翦](https://ourword.ai/i/wang-jian/): 王翦（秦·前280-前220）——自保。秦国第一名将，灭赵、灭燕、灭楚，参与灭五国，是秦始皇统一六国的最核心执行者。但更重要的是：他是知识库里在「功高震主」这个问题上处理得最好的人。与他同时代的白起（同等才华，被赐死），形成了最清晰的对比。
 - [王阳明](https://ourword.ai/i/wang-yangming/): 王阳明（明·1472-1529）——知行合一。龙场悟道，创立心学。他是中国历史上极罕见的「立德、立功、立言」三不朽者。他的核心洞察：理不在外物，在人心——不是向外格物，而是向内致良知。
 - [玛丽·居里](https://ourword.ai/i/curie/): 玛丽·居里（1867-1934年·华沙/巴黎）——丈夫死后第七个月接过他的课。物理学家、化学家。1867 年生于华沙，1891 年到巴黎求学，1903 年与丈夫皮埃尔、贝克勒尔同获诺贝尔物理学奖。1906 年 4 月 19 日皮埃尔在巴黎街头被马车撞倒身亡；同年索邦把他的教席给了她，11 月 5 日她上第一堂课，一句悼词没有，从丈夫上次讲停的地方接着往下讲

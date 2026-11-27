@@ -117,6 +117,7 @@ NAMES = {
     "mendel": ("Gregor Mendel", "Learning and growth"),
     "pascal": ("Blaise Pascal", "Mind and feeling"),
     "gou-jian": ("Goujian of Yue", "Strategy and competition"),
+    "wang-anshi": ("Wang Anshi", "Learning and growth"),
     "popular-delusions": ("Extraordinary Popular Delusions", "Money and risk"),
     "influence": ("Influence", "Reading people"),
     "konnikova": ("Maria Konnikova", "Reading people"),
