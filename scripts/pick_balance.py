@@ -52,7 +52,7 @@ CN = {
 }
 FO = {
     "bhagavad-gita", "churchill", "curie", "illich", "weil", "postman",
-    "hirschman", "veblen", "beauvoir", "kierkegaard", "aristotle", "ricardo", "newton", "leonardo", "thoreau", "tolstoy", "bogle", "henry-ford", "popular-delusions", "darwin", "william-james", "mendel", "pascal", "winnicott", "kindleberger", "parkinson", "merton", "axelrod",
+    "hirschman", "veblen", "beauvoir", "kierkegaard", "aristotle", "ricardo", "newton", "leonardo", "thoreau", "tolstoy", "bogle", "henry-ford", "popular-delusions", "darwin", "william-james", "mendel", "pascal", "kafka", "winnicott", "kindleberger", "parkinson", "merton", "axelrod",
     "becker", "nightingale", "cowan", "herbert-simon", "deci", "coase", "keynes", "porter", "thucydides",
 }
 

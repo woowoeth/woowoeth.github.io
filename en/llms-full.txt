@@ -1,7 +1,7 @@
-# OurWord — 225 people and books on how the world actually works, across 2,600 years
+# OurWord — 226 people and books on how the world actually works, across 2,600 years
 # OurWord — See how people before you handled it.
 # https://ourword.ai/en/
-# Full corpus, plain text. 225 entrys.
+# Full corpus, plain text. 226 entrys.
 
 ========================================================================
 ## Albert Einstein
@@ -112,10 +112,10 @@ The next time a relationship is hurting, run the separation first: who finally p
 Whoever finally pays for the outcome owns the task. What other people think of you is their task, not yours. We are not determined by our experiences, but by the meanings we give them.
 
 ### Q: What should I read alongside?
-Thomas Gordon — Two ways of asking whose problem this is: Gordon's answer picks the method, Adler's decides whether it is yours to touch at all. Epictetus — The same cut two thousand years apart — what is up to me and what is not, against my task and your task. Brené Brown — Both are working on what other people think of me: Adler says it is their task and not yours, Brown says it is a mechanism that can be taken apart — one draws a boundary, the other dismantles a structure. Attachment Theory — Two routes into the same trouble: Adler asks what you are using it for, attachment asks how the template got built. Murray Bowen — Two knives for drawing a line: Adler asks whose task this is, Bowen asks whether their feeling has already got inside you. Family Instructions for the Yan Clan — Both draw a boundary: Adler says it is his task, stay out of it and get on with your own life, while Yan Zhitui says an unkind father gets an unfilial son, so the upstream half is permanently in your name and you fill in that column before discussing anyone else.
+Thomas Gordon — Two ways of asking whose problem this is: Gordon's answer picks the method, Adler's decides whether it is yours to touch at all. Epictetus — The same cut two thousand years apart — what is up to me and what is not, against my task and your task. Brené Brown — Both are working on what other people think of me: Adler says it is their task and not yours, Brown says it is a mechanism that can be taken apart — one draws a boundary, the other dismantles a structure. Attachment Theory — Two routes into the same trouble: Adler asks what you are using it for, attachment asks how the template got built. Murray Bowen — Two knives for drawing a line: Adler asks whose task this is, Bowen asks whether their feeling has already got inside you. Family Instructions for the Yan Clan — Both draw a boundary: Adler says it is his task, stay out of it and get on with your own life, while Yan Zhitui says an unkind father gets an unfilial son, so the upstream half is permanently in your name and you fill in that column before discussing anyone else. Franz Kafka — Contemporaries, both born in Austria-Hungary, both wrote about how parents shape a child. Adler said the past does not decide you, the purpose you give it does, and that a parent's task should be separated from your own. Kafka set down thirty years of incidents for his father, admitted they had shaped him, and still refused to make them a charge. One tells you to cut the cord; the other lays the whole account on the table first.
 
 ### Further
-Attachment Theory Carl Rogers Viktor Frankl Epictetus Nonviolent Communication Brené Brown Kristin Neff Murray Bowen Family Instructions for the Yan Clan Donald Winnicott
+Attachment Theory Carl Rogers Viktor Frankl Epictetus Nonviolent Communication Brené Brown Kristin Neff Murray Bowen Family Instructions for the Yan Clan Donald Winnicott Franz Kafka
 
 ========================================================================
 ## Anders Ericsson
@@ -1969,6 +1969,40 @@ Marie Curie — Two women who went to war with their skills: Nightingale took nu
 Marie Curie Lin Huiyin Nelson Mandela
 
 ========================================================================
+## Franz Kafka
+URL: https://ourword.ai/en/i/kafka/
+Tags: Family and relationships, The industrial age, Fathers
+
+Franz Kafka (Prague, Austria-Hungary · 1883–1924) — Fathers. A German-language writer from Prague and the author of The Metamorphosis, The Trial and The Castle.
+
+### Q: What did this one leave behind?
+A German-language writer from Prague and the author of The Metamorphosis, The Trial and The Castle. He worked by day at a workers' accident insurance institute and wrote at night, published little, and died of tuberculosis at forty. In November 1919, aged thirty-six, he wrote his father a letter that ran to forty-five typed pages; according to his friend Max Brod it was given to his mother to pass on, and she never did. He is here for that letter: a son trying to settle accounts with an overwhelming father.
+
+### Q: What actually happened?
+Kafka remembered one night as a small child when he kept whimpering for water, not from thirst, he admits, but partly to annoy and partly to amuse himself. After several stern threats failed, his father lifted him out of bed, carried him out onto the pavlatche, the open gallery outside the flat, shut the door and left him standing there alone in his nightshirt. He does not say it was wrong, he writes. He was obedient afterwards, but it did him inner harm.
+
+### The parts · Rules for me alone
+He saw his father mostly at meals. Food was not to be criticised, yet his father called it swill. Bones were not to be cracked, vinegar not slurped, but his father did both, and cut his nails at the table. The trouble was not the rules but who broke them. e.g. Telling a child to put the phone away at dinner while you answer messages teaches the second lesson, not the first.
+
+### The parts · Kindness can crush
+They often undressed in the same bathing hut, the boy thin and weak, the father big and broad. Meaning well, his father kept demonstrating swimming strokes the boy could not copy, and the boy felt only shame. His father was the measure of all things. e.g. If the fifth demonstration still has not landed, stop. Let someone else teach it, or try tomorrow.
+
+### The parts · Put it on the bedside table
+When he brought his father a new book, his father, usually at cards, would say only to put it on the bedside table. It hurt his vanity, yet it also sounded like being set free. All his writing, he later saw, was about his father: a long, deliberate farewell. e.g. If you are working to show your parents something, ask whether you would still do it if they never looked.
+
+### Q: How do I use it today?
+This week write down one rule at home that binds you but not the person who made it. Do not take it to them. Beside it, note whether you would keep it yourself if it were yours, and drop any such rule from the ones you set for your own children or team.
+
+### Lines to keep
+A rule its maker breaks is only pressure. He meant well, and what I learned was shame. Everything I wrote was a farewell to you.
+
+### Q: What should I read alongside?
+Alfred Adler — Contemporaries, both born in Austria-Hungary, both wrote about how parents shape a child. Adler said the past does not decide you, the purpose you give it does, and that a parent's task should be separated from your own. Kafka set down thirty years of incidents for his father, admitted they had shaped him, and still refused to make them a charge. One tells you to cut the cord; the other lays the whole account on the table first.
+
+### Further
+Leo Tolstoy Murray Bowen Alfred Adler
+
+========================================================================
 ## Friedrich Hayek
 URL: https://ourword.ai/en/i/hayek/
 Tags: How the world works, The industrial age, Dispersed knowledge
@@ -3727,7 +3761,7 @@ Only once you have done it all does the hardest question arrive. The man who hid
 Viktor Frankl — Frankl had everything taken from him in the camps and still held on to a reason to live. Tolstoy had everything and could not find one. One shows that meaning does not depend on circumstances; the other, that circumstances cannot supply it.
 
 ### Further
-Søren Kierkegaard Henry David Thoreau Viktor Frankl
+Søren Kierkegaard Henry David Thoreau Viktor Frankl Franz Kafka
 
 ========================================================================
 ## Leonardo da Vinci
@@ -4662,7 +4696,7 @@ Differentiation is staying connected to people and still being yourself. Too muc
 Virginia Satir — Both read the family as a system: she reads the stance being taken today, he reads the level of differentiation across generations. Alfred Adler — Two knives for drawing a line: Adler asks whose task this is, Bowen asks whether their feeling has already got inside you.
 
 ### Further
-Virginia Satir Alfred Adler Attachment Theory John Gottman
+Virginia Satir Alfred Adler Attachment Theory John Gottman Franz Kafka
 
 ========================================================================
 ## Napoleon
@@ -15379,6 +15413,72 @@ Where it goes wrong: using it to dismiss professional identity — the mask is a
 The mask is necessary. The trouble is taking it for yourself.
 What's left when the identity goes can't be seen in advance.
 Keep one thing the role can't reach. That's what you stand on.
+
+========================================================================
+## Franz Kafka · You are not to blame, and neither am I
+URL: https://ourword.ai/en/i/kafka/both-blameless/
+Source: Franz Kafka, Letter to His Father (November 1919), from the German manuscript
+Tags: Deep read, Franz Kafka, Settling accounts with a parent without naming a debtor
+
+Every visit home ends in the same fight. Does the account between two generations need someone who owes?
+
+### Q: What actually happened?
+"You asked me recently why I maintain that I am afraid of you," the letter begins. He was thirty-six. He first lays out his father's version in full: a lifetime of hard work and sacrifice for the children, a son who never wanted for anything and still hid in books and odd friends, cold and ungrateful. Then he agrees with half of it. His father, he writes, is entirely blameless for their estrangement, and so is he.
+
+### The parts · State their version first
+He does not open with grievances. He sets down, almost word for word, the account his father gave to anyone who would listen. The father reading it meets his own story, not a charge sheet, and the rest has a chance of being heard.
+e.g. Before a hard talk with your parents, write three lines of how they see you, until they would nod.
+
+### The parts · Two natures, not one villain
+He would have been glad, he says, to have this man as a friend, a boss, an uncle, a grandfather. Only as a father was he too strong. A loud, robust, confident man met a thin, anxious child, and nobody had to be wicked.
+e.g. The pushing that suits your cousin may flatten you. That does not have to make anyone the guilty one.
+
+### The parts · Aim for peace, not a new start
+If his father could accept that both were blameless, he writes, it would not mean a new life; they were both too old for that. It would mean a kind of peace, a softening of the reproaches. He kept the hope deliberately small.
+e.g. Set the goal of the conversation as one fewer fight next visit, not finally being understood.
+
+### Q: How do I use it today?
+Where you are: every visit home turns into the same argument, and you are waiting for them to admit fault first.
+Ask first: Am I looking for someone who owes? If nobody does, what do I still want from this talk?
+Where it goes wrong: reading it as nobody is wrong, so nothing has to change. Kafka spent forty pages on exactly how his father pressed on him. He simply refused to turn it into a verdict, because what he wanted was peace.
+
+### Lines to keep
+You are blameless, and so am I.
+A fine friend, too strong a father.
+Not a new life. A little peace.
+
+========================================================================
+## Franz Kafka · Writing his reply for him
+URL: https://ourword.ai/en/i/kafka/his-objection/
+Source: Franz Kafka, Letter to His Father (November 1919), closing pages, from the German manuscript
+Tags: Deep read, Franz Kafka, Argue the other side of your own case before you send it
+
+You have your case ready. The trouble is that you have only prepared your half.
+
+### Q: What actually happened?
+Near the end, Kafka stops and writes his father's answer for him. You claim you are blameless only to look generous. You were the attacker all along. Ours is not a fair fight between knights but the fight of vermin that sting and suck blood. You cannot cope with life, so you make me responsible, and even this letter feeds on me. Having said all that against himself, he replies: the objection does not come from you, it comes from me.
+
+### The parts · The harshest rebuttal is usually yours
+He says his father's distrust of others was never as great as his own distrust of himself, which his father had taught him. Writing the rebuttal meant saying first the thing he most feared to hear.
+e.g. Before the talk, write how they are most likely to answer. The line that stings most is often one you half believe.
+
+### The parts · Concede the part that is true
+He does not rebut it point by point. He says the objection has some justice, which he does not deny, and that it even adds something new about the two of them. He concedes a part, not the whole, and does not itemise which.
+e.g. When they say you are not perfect either, answer that there is something in that, then go on.
+
+### The parts · Life is not a puzzle
+He admits the proofs in his letter fit together more neatly than real life ever does. But with this correction, he says, the letter comes close enough to the truth to calm them both a little and make living and dying easier.
+e.g. Before sending a long message to family, cut your most convincing proof and add that you may remember some of it wrongly.
+
+### Q: How do I use it today?
+Where you are: you have prepared what to say to a parent or partner, and every line is right, yet you can feel the fight coming.
+Ask first: If I stood on their side, what would my first reply be, and which part of it do I also believe?
+Where it goes wrong: using their rebuttal to silence them before they speak. Kafka wrote it to bring his own letter nearer the truth. Having written it, he conceded part of it and did not strike back.
+
+### Lines to keep
+The cruellest objection is often your own.
+Life is more than a puzzle.
+Close enough to the truth to calm you both.
 
 ========================================================================
 ## Garry Kasparov · After losing to it, he changed the rules

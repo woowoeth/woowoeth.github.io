@@ -1,7 +1,7 @@
 {
  "i/adler/": {
-  "d": "2026-10-09",
-  "h": "c404218dcbdd18a9"
+  "d": "2026-11-28",
+  "h": "ec1e015d8bacb115"
  },
  "i/adler/separation-of-tasks/": {
   "d": "2026-09-01",
@@ -236,8 +236,8 @@
   "h": "5e1a670164070baa"
  },
  "i/bowen/": {
-  "d": "2026-09-01",
-  "h": "63c91373503d815d"
+  "d": "2026-11-28",
+  "h": "1818dfbec8ad2f75"
  },
  "i/bowen/differentiation/": {
   "d": "2026-08-31",
@@ -1238,6 +1238,18 @@
  "i/jung/the-shadow/": {
   "d": "2026-09-01",
   "h": "d3bbc0868de9b089"
+ },
+ "i/kafka/": {
+  "d": "2026-11-28",
+  "h": "35e2e685ea8a81b2"
+ },
+ "i/kafka/both-blameless/": {
+  "d": "2026-11-28",
+  "h": "b07be761b7a1be00"
+ },
+ "i/kafka/his-objection/": {
+  "d": "2026-11-28",
+  "h": "2504767fa2dddaf5"
  },
  "i/kasparov/": {
   "d": "2026-09-02",
@@ -2528,8 +2540,8 @@
   "h": "9564e424aea6e4b0"
  },
  "i/tolstoy/": {
-  "d": "2026-11-10",
-  "h": "c4faac1e2d034e96"
+  "d": "2026-11-28",
+  "h": "873e6458d38d660a"
  },
  "i/tolstoy/look-elsewhere/": {
   "d": "2026-11-10",

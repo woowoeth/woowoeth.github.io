@@ -710,6 +710,12 @@ QUOTE_ASKS = {
     "pascal/the-chase-not-the-hare":
         "我追到手，就不想要了。",
 
+    # 卡夫卡
+    "kafka/both-blameless":
+        "我和我爸，到底是谁的错？",
+    "kafka/his-objection":
+        "我想好了怎么说，可只想了我这边。",
+
     # 王安石
     "wang-anshi/fang-zhongyong":
         "小时候都说我聪明，现在我很普通。",

@@ -1200,6 +1200,8 @@ SCENES = [
      [("gottman", "four-horsemen"), ("gottman", "repair-attempts")]),
     ("为了孩子，我们一直硬撑着。",
      [("gottman", "four-horsemen"), ("harvard-study", "relationships-predict-health")]),
+    ("吵完复盘，我只记得自己那半边。",
+     [("kafka", "his-objection")]),
 ]),
 ("孩子不听", "家里的事", [
     ("说了很多遍，他还是不做。",
@@ -1264,6 +1266,10 @@ SCENES = [
      [("crucial-conversations", "start-with-heart"), ("chris-voss", "labeling")]),
     ("两个人的事，总要拉进第三个人。",
      [("bowen", "triangles"), ("adler", "teleology")]),
+    ("我和我爸，到底是谁的错？",
+     [("kafka", "both-blameless")]),
+    ("我想好了怎么说，可只想了我这边。",
+     [("kafka", "his-objection")]),
 ]),
 ("身边人不敢跟我说真话", "家里的事", [
     ("他们只报好消息给我。",

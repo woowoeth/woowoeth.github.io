@@ -116,6 +116,7 @@ NAMES = {
     "william-james": ("William James", "Body and daily life"),
     "mendel": ("Gregor Mendel", "Learning and growth"),
     "pascal": ("Blaise Pascal", "Mind and feeling"),
+    "kafka": ("Franz Kafka", "Family and relationships"),
     "gou-jian": ("Goujian of Yue", "Strategy and competition"),
     "wang-anshi": ("Wang Anshi", "Learning and growth"),
     "popular-delusions": ("Extraordinary Popular Delusions", "Money and risk"),
